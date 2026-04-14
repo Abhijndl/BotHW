@@ -1,13 +1,12 @@
 import json
 import os
 import requests
-from playwright.sync_api import sync_playwright
 
 # ================= CONFIG =================
-URL = "https://www.firstcry.com/hot-wheels/0/0/113?sort=newarrivals"
+URL = "https://www.firstcry.com/api/product/listing"
 SEEN_FILE = "seen.json"
 
-PINCODE = "248001"  # Dehradun
+PINCODE = "248001"
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -40,74 +39,38 @@ def save_seen(data):
         json.dump(data, f)
 
 
-# ================= FETCH (FAST VERSION) =================
+# ================= FETCH (API FAST) =================
 def fetch_products():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+    params = {
+        "category": "113",  # Hot Wheels
+        "sort": "newarrivals",
+        "page": 1,
+        "pincode": PINCODE
+    }
 
-        context = browser.new_context(
-            locale="en-IN",
-            user_agent="Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36"
-        )
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json"
+    }
 
-        # India pincode
-        context.add_cookies([
-            {
-                "name": "fc_city",
-                "value": PINCODE,
-                "domain": ".firstcry.com",
-                "path": "/"
-            }
-        ])
+    response = requests.get(URL, params=params, headers=headers)
+    data = response.json()
 
-        page = context.new_page()
+    products = {}
 
-        page.goto(URL, timeout=60000)
-        page.wait_for_timeout(2500)  # ⚡ faster
+    for item in data.get("products", []):
+        name = item.get("productName", "").lower()
+        url = "https://www.firstcry.com" + item.get("url", "")
 
-        products = {}
+        # stock detection
+        stock = "in_stock"
+        if item.get("isOutOfStock") or item.get("stock") == 0:
+            stock = "out_of_stock"
 
-        anchors = page.locator("a").all()
-
-        for a in anchors:
-            try:
-                href = a.get_attribute("href")
-
-                if not href:
-                    continue
-
-                if "/hot-wheels/" not in href:
-                    continue
-
-                # normalize
-                if href.startswith("/"):
-                    href = "https://www.firstcry.com" + href
-
-                href = href.split("?")[0]
-
-                # must have product ID
-                last = href.split("/")[-1]
-                if not last.isdigit():
-                    continue
-
-                # minimal text extraction (fast)
-                text = a.inner_text().lower()
-
-                # stock detection
-                if "out of stock" in text:
-                    stock = "out_of_stock"
-                else:
-                    stock = "in_stock"
-
-                products[href] = {
-                    "title": text[:60],
-                    "stock": stock
-                }
-
-            except:
-                continue
-
-        browser.close()
+        products[url] = {
+            "title": name[:60],
+            "stock": stock
+        }
 
     return products
 
@@ -134,9 +97,9 @@ def main():
 
     # ALWAYS SEND
     if updates:
-        message = "🚗 HOT WHEELS UPDATE 🇮🇳\n\n" + "\n\n".join(updates[:5])
+        message = "🚗 HOT WHEELS UPDATE 🇮🇳 (FAST)\n\n" + "\n\n".join(updates[:5])
     else:
-        message = "✅ Checked (Dehradun)\nNo updates."
+        message = "⚡ Checked (Dehradun)\nNo updates."
 
     send_telegram(message)
     print(message)
