@@ -8,8 +8,8 @@ from playwright.sync_api import sync_playwright
 URL = "https://www.firstcry.com/hot-wheels/0/0/113?sort=newarrivals"
 SEEN_FILE = "seen.json"
 
-TELEGRAM_BOT_TOKEN = "8301463861:AAGHlp4TM26WdQAPC7Ql6WT75RCwvdGIznQ"
-TELEGRAM_CHAT_ID = "8088114911"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 HEADERS = {
     "User-Agent": (
