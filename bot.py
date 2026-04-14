@@ -4,7 +4,7 @@ import requests
 from playwright.sync_api import sync_playwright
 
 # ================= CONFIG =================
-URL = "https://www.firstcry.com/hot-wheels"
+URL = "https://www.firstcry.com/toys-and-gaming/5/0/0?sort=bestseller&ref2=menu_dd_catlanding#sale=5&brandid=0&searchstring=brand@@~113@@1@0@20@@@@@@@@@@@@@@@@@@@@@&rating=&sort=bestseller&&vi=four&pmonths=&cgen=&skills=&measurement=&material=&curatedcollections=&Color=&Age=&gender=&ser=&premium=&deliverytype=&author=&book=&character=&collection=&format=&genre=&booklanguage=&publication=&skill=&PageNo=1&scrollPos=159.1999969482422&pview=&tc=33467"
 SEEN_FILE = "seen.json"
 
 # 👉 CHANGE THIS TO YOUR PINCODE
