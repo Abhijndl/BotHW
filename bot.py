@@ -41,38 +41,45 @@ def save_seen(data):
 
 # ================= FETCH (API FAST) =================
 def fetch_products():
-    params = {
-        "category": "113",  # Hot Wheels
-        "sort": "newarrivals",
-        "page": 1,
-        "pincode": PINCODE
-    }
+    all_products = {}
 
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "application/json"
     }
 
-    response = requests.get(URL, params=params, headers=headers)
-    data = response.json()
-
-    products = {}
-
-    for item in data.get("products", []):
-        name = item.get("productName", "").lower()
-        url = "https://www.firstcry.com" + item.get("url", "")
-
-        # stock detection
-        stock = "in_stock"
-        if item.get("isOutOfStock") or item.get("stock") == 0:
-            stock = "out_of_stock"
-
-        products[url] = {
-            "title": name[:60],
-            "stock": stock
+    # 🔥 scan multiple pages
+    for page in range(1, 4):  # page 1–3
+        params = {
+            "category": "113",
+            "sort": "newarrivals",
+            "page": page,
+            "pincode": PINCODE
         }
 
-    return products
+        response = requests.get(URL, params=params, headers=headers)
+        data = response.json()
+
+        products = data.get("products", [])
+
+        if not products:
+            break
+
+        for item in products:
+            name = item.get("productName", "").lower()
+            link = "https://www.firstcry.com" + item.get("url", "")
+
+            # stock detection
+            stock = "in_stock"
+            if item.get("isOutOfStock") or item.get("stock") == 0:
+                stock = "out_of_stock"
+
+            all_products[link] = {
+                "title": name[:60],
+                "stock": stock
+            }
+
+    return all_products
 
 
 # ================= MAIN =================
@@ -81,6 +88,7 @@ def main():
     current = fetch_products()
 
     updates = []
+    restocks = []
 
     for link, data in current.items():
         stock = data["stock"]
@@ -89,15 +97,22 @@ def main():
         # NEW
         if link not in seen:
             if stock == "in_stock":
-                updates.append(f"🆕 NEW\n{title}\n{link}")
+                updates.append(f"🆕 {title}\n{link}")
 
         # RESTOCK
         elif seen.get(link) == "out_of_stock" and stock == "in_stock":
-            updates.append(f"🔥 RESTOCK\n{title}\n{link}")
+            restocks.append(f"🔥 {title}\n{link}")
 
-    # ALWAYS SEND
-    if updates:
-        message = "🚗 HOT WHEELS UPDATE 🇮🇳 (FAST)\n\n" + "\n\n".join(updates[:5])
+    # 🔥 SMART MESSAGE
+    if updates or restocks:
+        message = "🚗 HOT WHEELS DROP 🇮🇳\n\n"
+
+        if updates:
+            message += "🆕 NEW:\n" + "\n\n".join(updates[:3]) + "\n\n"
+
+        if restocks:
+            message += "🔥 RESTOCK:\n" + "\n\n".join(restocks[:3])
+
     else:
         message = "⚡ Checked (Dehradun)\nNo updates."
 
