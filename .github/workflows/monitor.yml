@@ -16,17 +16,16 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v6
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Playwright browsers
+      - name: Install Playwright
         run: |
           python -m playwright install --with-deps chromium
 
@@ -37,14 +36,12 @@ jobs:
         run: |
           python bot.py
 
-      - name: Commit updated seen list
+      - name: Save state
         run: |
           if ! git diff --quiet -- seen.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
             git add seen.json
-            git commit -m "Update seen Hot Wheels listings [skip ci]"
+            git commit -m "update seen"
             git push
-          else
-            echo "No seen.json changes"
           fi
