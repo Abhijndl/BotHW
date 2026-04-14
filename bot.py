@@ -1,10 +1,13 @@
 import json
 import os
 import requests
+import time
+from datetime import datetime
 
 # ================= CONFIG =================
 URL = "https://www.firstcry.com/api/product/listing"
 SEEN_FILE = "seen.json"
+STATE_FILE = "state.json"
 
 PINCODE = "248001"
 
@@ -15,41 +18,34 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 # ================= TELEGRAM =================
 def send_telegram(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram config missing")
         return
 
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-
-    requests.post(url, data={
-        "chat_id": TELEGRAM_CHAT_ID,
-        "text": message
-    })
+    requests.post(
+        f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
+        data={"chat_id": TELEGRAM_CHAT_ID, "text": message}
+    )
 
 
 # ================= STORAGE =================
-def load_seen():
-    if os.path.exists(SEEN_FILE):
-        with open(SEEN_FILE, "r") as f:
+def load_json(file, default):
+    if os.path.exists(file):
+        with open(file, "r") as f:
             return json.load(f)
-    return {}
+    return default
 
 
-def save_seen(data):
-    with open(SEEN_FILE, "w") as f:
+def save_json(file, data):
+    with open(file, "w") as f:
         json.dump(data, f)
 
 
-# ================= FETCH (API FAST) =================
-def fetch_products():
+# ================= FETCH =================
+def fetch_products(max_pages=3):
     all_products = {}
 
-    headers = {
-        "User-Agent": "Mozilla/5.0",
-        "Accept": "application/json"
-    }
+    headers = {"User-Agent": "Mozilla/5.0"}
 
-    # 🔥 scan multiple pages
-    for page in range(1, 4):  # page 1–3
+    for page in range(1, max_pages + 1):
         params = {
             "category": "113",
             "sort": "newarrivals",
@@ -57,71 +53,83 @@ def fetch_products():
             "pincode": PINCODE
         }
 
-        response = requests.get(URL, params=params, headers=headers)
-        data = response.json()
+        res = requests.get(URL, params=params, headers=headers)
+        data = res.json()
 
         products = data.get("products", [])
-
         if not products:
             break
 
         for item in products:
-            name = item.get("productName", "").lower()
             link = "https://www.firstcry.com" + item.get("url", "")
-
-            # stock detection
             stock = "in_stock"
+
             if item.get("isOutOfStock") or item.get("stock") == 0:
                 stock = "out_of_stock"
 
-            all_products[link] = {
-                "title": name[:60],
-                "stock": stock
-            }
+            all_products[link] = stock
 
     return all_products
 
 
 # ================= MAIN =================
 def main():
-    seen = load_seen()
-    current = fetch_products()
+    seen = load_json(SEEN_FILE, {})
+    state = load_json(STATE_FILE, {"last_changes": 0})
 
-    updates = []
+    # ⚡ burst scanning
+    scan1 = fetch_products(2)
+    time.sleep(2)
+    scan2 = fetch_products(2)
+
+    # detect change
+    if scan1 != scan2:
+        current = fetch_products(5)
+    else:
+        current = scan2
+
+    new_items = []
     restocks = []
 
-    for link, data in current.items():
-        stock = data["stock"]
-        title = data["title"]
+    for link, stock in current.items():
+        if link not in seen and stock == "in_stock":
+            new_items.append(link)
 
-        # NEW
-        if link not in seen:
-            if stock == "in_stock":
-                updates.append(f"🆕 {title}\n{link}")
-
-        # RESTOCK
         elif seen.get(link) == "out_of_stock" and stock == "in_stock":
-            restocks.append(f"🔥 {title}\n{link}")
+            restocks.append(link)
 
-    # 🔥 SMART MESSAGE
-    if updates or restocks:
-        message = "🚗 HOT WHEELS DROP 🇮🇳\n\n"
+    total = len(new_items) + len(restocks)
 
-        if updates:
-            message += "🆕 NEW:\n" + "\n\n".join(updates[:3]) + "\n\n"
+    # ================= PRIORITY =================
+    if total >= 5:
+        priority = "🚨 HIGH PRIORITY DROP"
+    elif total >= 2:
+        priority = "🔥 ACTIVE DROP WINDOW"
+    elif total == 1:
+        priority = "⚡ MINOR UPDATE"
+    else:
+        priority = None
 
-        if restocks:
-            message += "🔥 RESTOCK:\n" + "\n\n".join(restocks[:3])
+    # ================= MESSAGE =================
+    if priority:
+        message = f"{priority} 🇮🇳 ({datetime.now().strftime('%H:%M')})\n"
+        message += f"📦 Changes: {total}\n\n"
+
+        for link in new_items[:3]:
+            message += f"🆕 {link}\n"
+
+        for link in restocks[:3]:
+            message += f"🔥 {link}\n"
 
     else:
-        message = "⚡ Checked (Dehradun)\nNo updates."
+        message = f"⚡ Checked ({datetime.now().strftime('%H:%M')})\nNo trading signals."
 
     send_telegram(message)
     print(message)
 
-    # save state
-    new_state = {link: data["stock"] for link, data in current.items()}
-    save_seen(new_state)
+    # save
+    save_json(SEEN_FILE, current)
+    save_json(STATE_FILE, {"last_changes": total})
 
 
 if __name__ == "__main__":
