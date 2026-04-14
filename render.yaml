@@ -1,6 +1,0 @@
-services:
-  - type: worker
-    name: hotwheels-bot
-    env: python
-    buildCommand: "pip install -r requirements.txt && playwright install"
-    startCommand: "python bot.py"
