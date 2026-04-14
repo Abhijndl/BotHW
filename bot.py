@@ -1,160 +1,117 @@
 import json
 import os
-import re
-from pathlib import Path
-from urllib.parse import urlparse
-
+import time
 import requests
 from playwright.sync_api import sync_playwright
 
 URL = "https://www.firstcry.com/hot-wheels/0/0/113?sort=newarrivals"
-SEEN_FILE = Path("seen.json")
+SEEN_FILE = "seen.json"
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
-
-
-def load_seen() -> set[str]:
-    if not SEEN_FILE.exists():
-        return set()
-
-    try:
-        with SEEN_FILE.open("r", encoding="utf-8") as f:
-            data = json.load(f)
-        return set(data if isinstance(data, list) else [])
-    except Exception:
-        return set()
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 
-def save_seen(items: set[str]) -> None:
-    with SEEN_FILE.open("w", encoding="utf-8") as f:
-        json.dump(sorted(items), f, indent=2)
+# ================= TELEGRAM =================
+def send_telegram(message):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("❌ Telegram config missing")
+        return
+
+    if len(message) > 3500:
+        message = message[:3500]
+
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+
+    response = requests.post(url, data={
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message
+    })
+
+    print("Telegram:", response.text)
 
 
-def normalize_url(url: str) -> str:
-    url = (url or "").strip()
-    if url.startswith("/"):
-        url = "https://www.firstcry.com" + url
-    return url.split("?")[0].split("#")[0].rstrip("/")
+# ================= STORAGE =================
+def load_seen():
+    if os.path.exists(SEEN_FILE):
+        with open(SEEN_FILE, "r") as f:
+            return set(json.load(f))
+    return set()
 
 
-def is_hotwheels_product(url: str) -> bool:
-    url = normalize_url(url).lower()
-
-    if "firstcry.com" not in url:
-        return False
-
-    parsed = urlparse(url)
-    path = parsed.path.rstrip("/")
-
-    if not path.startswith("/hot-wheels/"):
-        return False
-
-    # Block the category page and similar generic pages
-    blocked_exact = {
-        "/hot-wheels/0/0/113",
-    }
-    if path in blocked_exact:
-        return False
-
-    segments = [seg for seg in path.split("/") if seg]
-    if len(segments) < 3:
-        return False
-
-    # After /hot-wheels/, we want at least one slug segment containing letters,
-    # and the last segment should be a numeric product id.
-    tail = segments[1:]
-    has_letter_segment = any(re.search(r"[a-z]", seg) for seg in tail[:-1])
-    ends_with_numeric_id = re.fullmatch(r"\d{3,}", tail[-1]) is not None
-
-    return has_letter_segment and ends_with_numeric_id
+def save_seen(data):
+    with open(SEEN_FILE, "w") as f:
+        json.dump(list(data), f)
 
 
-def fetch_products() -> dict[str, str]:
-    """
-    Returns:
-        dict of {product_url: product_title}
-    """
+# ================= FETCH PRODUCTS =================
+def fetch_products():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(
-            viewport={"width": 1440, "height": 2200},
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/124.0.0.0 Safari/537.36"
-            ),
-        )
+        page = browser.new_page()
 
-        page.goto(URL, wait_until="domcontentloaded", timeout=60000)
+        page.goto(URL, timeout=60000)
         page.wait_for_timeout(5000)
 
-        anchors = page.locator("a[href]").evaluate_all(
-            """els => els.map(e => ({
-                href: e.href || '',
-                text: (e.innerText || e.textContent || '').trim()
-            }))"""
-        )
+        anchors = page.locator("a").all()
+
+        products = {}
+
+        for a in anchors:
+            try:
+                href = a.get_attribute("href")
+                text = a.inner_text().strip()
+
+                if not href:
+                    continue
+
+                # normalize URL
+                if href.startswith("/"):
+                    href = "https://www.firstcry.com" + href
+
+                href = href.split("?")[0]
+
+                # ✅ STRICT FILTER (ONLY HOT WHEELS PRODUCTS)
+                if (
+                    "hot-wheels" in href.lower()
+                    and href.count("/") > 5
+                    and any(char.isdigit() for char in href.split("/")[-1])
+                    and len(text) > 5
+                ):
+                    products[href] = text
+
+            except:
+                continue
 
         browser.close()
-
-    products: dict[str, str] = {}
-
-    for item in anchors:
-        href = normalize_url(item.get("href", ""))
-        text = re.sub(r"\s+", " ", item.get("text", "")).strip()
-
-        if is_hotwheels_product(href):
-            products[href] = text if text else "Hot Wheels product"
 
     return products
 
 
-def send_telegram(message: str) -> None:
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram config missing. Check GitHub Secrets.")
-        return
-
-    if len(message) > 3500:
-        message = message[:3500] + "\n\n...truncated"
-
-    api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    response = requests.post(
-        api_url,
-        data={
-            "chat_id": TELEGRAM_CHAT_ID,
-            "text": message,
-            "disable_web_page_preview": True,
-        },
-        timeout=30,
-    )
-
-    print("Telegram response:", response.status_code, response.text[:400])
-    response.raise_for_status()
-
-
-def main() -> None:
+# ================= MAIN =================
+def main():
     seen = load_seen()
     current = fetch_products()
+
     current_links = set(current.keys())
 
-    # First run: store baseline only, do not alert.
+    # First run → save baseline + send test msg
     if not seen:
         save_seen(current_links)
-        print(f"Baseline saved with {len(current_links)} Hot Wheels links.")
+        print(f"Baseline saved with {len(current_links)} products")
+
+        send_telegram("✅ Hot Wheels bot is now active!")
         return
 
-    new_links = sorted(current_links - seen)
+    new_links = list(current_links - seen)
 
     if new_links:
-        lines = ["🚨 New Hot Wheels listing added:"]
-        for link in new_links[:3]:
-            title = current.get(link, "Hot Wheels product")
-            lines.append(f"{title}\n{link}")
+        msg = "🚨 New Hot Wheels listing!\n\n"
 
-        message = "\n\n".join(lines)
-        print(message)
-        send_telegram(message)
+        for link in new_links[:3]:
+            msg += f"{current[link]}\n{link}\n\n"
+
+        send_telegram(msg)
+        print(msg)
     else:
         print("No new listings.")
 
