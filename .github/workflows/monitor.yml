@@ -1,4 +1,4 @@
-name: Hot Wheels Monitor
+name: Hot Wheels Monitor (FAST)
 
 on:
   workflow_dispatch:
@@ -20,8 +20,6 @@ jobs:
           python-version: "3.12"
 
       - run: pip install -r requirements.txt
-
-      - run: python -m playwright install --with-deps chromium
 
       - name: Run bot
         env:
