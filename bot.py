@@ -4,11 +4,10 @@ import requests
 from playwright.sync_api import sync_playwright
 
 # ================= CONFIG =================
-URL="https://www.firstcry.com/hotwheels/5/0/113"
+URL = "https://www.firstcry.com/hot-wheels/0/0/113?sort=newarrivals"
 SEEN_FILE = "seen.json"
 
-# 👉 CHANGE THIS TO YOUR PINCODE
-PINCODE = "248001"
+PINCODE = "248001"  # Dehradun
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -17,17 +16,15 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 # ================= TELEGRAM =================
 def send_telegram(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("❌ Telegram config missing")
+        print("Telegram config missing")
         return
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
-    response = requests.post(url, data={
+    requests.post(url, data={
         "chat_id": TELEGRAM_CHAT_ID,
         "text": message
     })
-
-    print("Telegram:", response.text)
 
 
 # ================= STORAGE =================
@@ -40,10 +37,10 @@ def load_seen():
 
 def save_seen(data):
     with open(SEEN_FILE, "w") as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f)
 
 
-# ================= FETCH =================
+# ================= FETCH (FAST VERSION) =================
 def fetch_products():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -53,7 +50,7 @@ def fetch_products():
             user_agent="Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36"
         )
 
-        # 🔥 SET INDIA PINCODE COOKIE
+        # India pincode
         context.add_cookies([
             {
                 "name": "fc_city",
@@ -66,18 +63,20 @@ def fetch_products():
         page = context.new_page()
 
         page.goto(URL, timeout=60000)
-        page.wait_for_timeout(5000)
-
-        anchors = page.locator("a").all()
+        page.wait_for_timeout(2500)  # ⚡ faster
 
         products = {}
+
+        anchors = page.locator("a").all()
 
         for a in anchors:
             try:
                 href = a.get_attribute("href")
-                text = a.inner_text().strip().lower()
 
                 if not href:
+                    continue
+
+                if "/hot-wheels/" not in href:
                     continue
 
                 # normalize
@@ -86,22 +85,24 @@ def fetch_products():
 
                 href = href.split("?")[0]
 
-                # ✅ STRICT HOT WHEELS FILTER
-                if (
-                    "hot-wheels" in href.lower()
-                    and href.count("/") > 5
-                    and any(char.isdigit() for char in href.split("/")[-1])
-                ):
-                    # detect stock
-                    if "out of stock" in text:
-                        stock = "out_of_stock"
-                    else:
-                        stock = "in_stock"
+                # must have product ID
+                last = href.split("/")[-1]
+                if not last.isdigit():
+                    continue
 
-                    products[href] = {
-                        "title": text[:80],
-                        "stock": stock
-                    }
+                # minimal text extraction (fast)
+                text = a.inner_text().lower()
+
+                # stock detection
+                if "out of stock" in text:
+                    stock = "out_of_stock"
+                else:
+                    stock = "in_stock"
+
+                products[href] = {
+                    "title": text[:60],
+                    "stock": stock
+                }
 
             except:
                 continue
@@ -119,26 +120,28 @@ def main():
     updates = []
 
     for link, data in current.items():
-        title = data["title"]
         stock = data["stock"]
+        title = data["title"]
 
-        # 🆕 NEW PRODUCT
+        # NEW
         if link not in seen:
             if stock == "in_stock":
-                updates.append(f"🆕 NEW AVAILABLE\n{title}\n{link}")
+                updates.append(f"🆕 NEW\n{title}\n{link}")
 
-        # 🔥 RESTOCK
-        elif seen[link] == "out_of_stock" and stock == "in_stock":
-            updates.append(f"🔥 RESTOCKED\n{title}\n{link}")
+        # RESTOCK
+        elif seen.get(link) == "out_of_stock" and stock == "in_stock":
+            updates.append(f"🔥 RESTOCK\n{title}\n{link}")
 
+    # ALWAYS SEND
     if updates:
         message = "🚗 HOT WHEELS UPDATE 🇮🇳\n\n" + "\n\n".join(updates[:5])
-        send_telegram(message)
-        print(message)
     else:
-        print("No updates")
+        message = "✅ Checked (Dehradun)\nNo updates."
 
-    # Save latest state
+    send_telegram(message)
+    print(message)
+
+    # save state
     new_state = {link: data["stock"] for link, data in current.items()}
     save_seen(new_state)
 
