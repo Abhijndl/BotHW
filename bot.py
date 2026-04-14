@@ -3,8 +3,12 @@ import os
 import requests
 from playwright.sync_api import sync_playwright
 
-URL = "https://www.firstcry.com/hot-wheels/0/0/113?sort=newarrivals"
+# ================= CONFIG =================
+URL = "https://www.firstcry.com/hot-wheels"
 SEEN_FILE = "seen.json"
+
+# 👉 CHANGE THIS TO YOUR PINCODE
+PINCODE = "248001"
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -13,15 +17,17 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 # ================= TELEGRAM =================
 def send_telegram(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram config missing")
+        print("❌ Telegram config missing")
         return
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
-    requests.post(url, data={
+    response = requests.post(url, data={
         "chat_id": TELEGRAM_CHAT_ID,
         "text": message
     })
+
+    print("Telegram:", response.text)
 
 
 # ================= STORAGE =================
@@ -41,7 +47,23 @@ def save_seen(data):
 def fetch_products():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+
+        context = browser.new_context(
+            locale="en-IN",
+            user_agent="Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36"
+        )
+
+        # 🔥 SET INDIA PINCODE COOKIE
+        context.add_cookies([
+            {
+                "name": "fc_city",
+                "value": PINCODE,
+                "domain": ".firstcry.com",
+                "path": "/"
+            }
+        ])
+
+        page = context.new_page()
 
         page.goto(URL, timeout=60000)
         page.wait_for_timeout(5000)
@@ -58,18 +80,19 @@ def fetch_products():
                 if not href:
                     continue
 
+                # normalize
                 if href.startswith("/"):
                     href = "https://www.firstcry.com" + href
 
                 href = href.split("?")[0]
 
-                # Filter only Hot Wheels product pages
+                # ✅ STRICT HOT WHEELS FILTER
                 if (
                     "hot-wheels" in href.lower()
                     and href.count("/") > 5
                     and any(char.isdigit() for char in href.split("/")[-1])
                 ):
-                    # Detect stock
+                    # detect stock
                     if "out of stock" in text:
                         stock = "out_of_stock"
                     else:
@@ -99,17 +122,17 @@ def main():
         title = data["title"]
         stock = data["stock"]
 
-        # NEW PRODUCT
+        # 🆕 NEW PRODUCT
         if link not in seen:
             if stock == "in_stock":
                 updates.append(f"🆕 NEW AVAILABLE\n{title}\n{link}")
 
-        # RESTOCK
+        # 🔥 RESTOCK
         elif seen[link] == "out_of_stock" and stock == "in_stock":
             updates.append(f"🔥 RESTOCKED\n{title}\n{link}")
 
     if updates:
-        message = "🚗 HOT WHEELS UPDATE\n\n" + "\n\n".join(updates[:5])
+        message = "🚗 HOT WHEELS UPDATE 🇮🇳\n\n" + "\n\n".join(updates[:5])
         send_telegram(message)
         print(message)
     else:
