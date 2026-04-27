@@ -1,1 +1,6 @@
-{}
+{
+  "https://www.firstcry.com/store-locator": {
+    "stock": "out_of_stock",
+    "name": "Select location"
+  }
+}
