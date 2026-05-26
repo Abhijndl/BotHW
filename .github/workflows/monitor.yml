@@ -1,9 +1,10 @@
 name: Hot Wheels Monitor
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:       # run manually from GitHub UI anytime
   schedule:
-    - cron: "*/5 * * * *"
+    # Every 30 minutes  ← change to "0 * * * *" for hourly if on free tier
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
@@ -11,6 +12,7 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 10     # kill runaway jobs so they don't eat your minutes
 
     steps:
       - uses: actions/checkout@v4
@@ -19,24 +21,48 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('requirements.txt') }}
+
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      # Cache the Playwright browser binary (~120 MB) to save CI minutes
+      - name: Cache Playwright browser
+        id: cache-pw
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-v1
+
       - name: Install Playwright browser
+        if: steps.cache-pw.outputs.cache-hit != 'true'
         run: playwright install chromium --with-deps
+
+      - name: Install Playwright system deps (if cache was hit)
+        if: steps.cache-pw.outputs.cache-hit == 'true'
+        run: playwright install-deps chromium
 
       - name: Run bot
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          # SILENT=true  → Telegram message only when something changes (recommended)
+          # SILENT=false → always sends a status summary (noisy)
+          SILENT: "true"
+          # DEBUG=true   → saves screenshots + HTML to help debug selector issues
+          DEBUG: "false"
         run: python bot.py
 
       - name: Save state to repo
         run: |
           if ! git diff --quiet -- seen.json; then
-            git config user.name "github-actions"
+            git config user.name  "github-actions"
             git config user.email "actions@github.com"
             git add seen.json
-            git commit -m "chore: update seen.json"
+            git commit -m "chore: update seen.json [skip ci]"
             git push
           fi
