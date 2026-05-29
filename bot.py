@@ -12,9 +12,46 @@ from inside the page — bypassing every CSS selector / layout change.
 Hamleys uses Magento 2, so we fall back to well-known Magento selectors.
 """
 
-import asyncio, json, os, re, requests
+import asyncio, json, os, re, subprocess, sys, requests
 from urllib.parse import quote
 from playwright.async_api import async_playwright
+
+
+def ensure_browser() -> None:
+    """
+    Guarantee Chromium is installed and on a path Playwright can actually find.
+
+    Root cause: on Render (and some other hosts) the default browser cache dir
+    is /opt/render/.cache/ms-playwright, but after a fresh deploy that directory
+    may not exist yet, or a Playwright version bump changes the expected
+    subdirectory name, leaving a dangling path.  We pin PLAYWRIGHT_BROWSERS_PATH
+    to a location inside the repo working directory so it is always writable and
+    always consistent between install and launch.
+    """
+    # Pin the browser cache to a stable, writable location in the working dir.
+    browsers_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".pw-browsers")
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = browsers_path
+
+    # Check whether Chromium's executable is actually present under that path.
+    needs_install = True
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            exe = p.chromium.executable_path
+        needs_install = not os.path.isfile(exe)
+    except Exception:
+        pass  # If even the check fails, we definitely need to install.
+
+    if needs_install:
+        print(f"[*] Chromium not found under {browsers_path} — installing …")
+        result = subprocess.run(
+            [sys.executable, "-m", "playwright", "install", "chromium", "--with-deps"],
+            check=False,
+        )
+        if result.returncode != 0:
+            print("[!] playwright install exited with code", result.returncode)
+    else:
+        print(f"[*] Chromium found — skipping install.")
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 PINCODE = "248001"
@@ -650,6 +687,8 @@ def build_status(products: list, ch: dict) -> str:
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 async def main_async():
+    ensure_browser()
+
     seen = load_seen()
     all_products: list[dict] = []
     errors: list[str] = []
