@@ -30,21 +30,17 @@ jobs:
       - name: Install Python deps
         run: pip install -r requirements.txt
 
-      # Cache the ~120MB Chromium download across runs
+      # Cache the ~120MB Chromium download across runs.
+      # We still run `playwright install` every time so system deps and the
+      # executable are always present — it's a no-op when the cache is warm.
       - name: Cache Playwright browser
-        id: pw-cache
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: pw-chromium-${{ runner.os }}-v3
 
       - name: Install Playwright + Chromium
-        if: steps.pw-cache.outputs.cache-hit != 'true'
         run: playwright install chromium --with-deps
-
-      - name: Install Playwright system deps (cached run)
-        if: steps.pw-cache.outputs.cache-hit == 'true'
-        run: playwright install-deps chromium
 
       - name: Run tracker
         env:
