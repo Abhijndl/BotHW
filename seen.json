@@ -196,5 +196,11 @@
     "name": "Out Of Stock",
     "price": "",
     "source": "firstcry"
+  },
+  "fc_22240164": {
+    "stock": "out_of_stock",
+    "name": "Out Of Stock",
+    "price": "",
+    "source": "firstcry"
   }
 }
