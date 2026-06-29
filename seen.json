@@ -23,12 +23,6 @@
     "price": "",
     "source": "firstcry"
   },
-  "fc_1440558": {
-    "stock": "out_of_stock",
-    "name": "Out Of Stock",
-    "price": "",
-    "source": "firstcry"
-  },
   "fc_18081015": {
     "stock": "out_of_stock",
     "name": "Out Of Stock",
@@ -263,25 +257,13 @@
     "price": "",
     "source": "firstcry"
   },
+  "fc_1440558": {
+    "stock": "out_of_stock",
+    "name": "Out Of Stock",
+    "price": "",
+    "source": "firstcry"
+  },
   "fc_22548064": {
-    "stock": "out_of_stock",
-    "name": "Out Of Stock",
-    "price": "",
-    "source": "firstcry"
-  },
-  "fc_22591609": {
-    "stock": "out_of_stock",
-    "name": "Out Of Stock",
-    "price": "",
-    "source": "firstcry"
-  },
-  "fc_22592486": {
-    "stock": "out_of_stock",
-    "name": "Out Of Stock",
-    "price": "",
-    "source": "firstcry"
-  },
-  "fc_22592495": {
     "stock": "out_of_stock",
     "name": "Out Of Stock",
     "price": "",
