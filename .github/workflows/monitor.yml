@@ -7,7 +7,7 @@ on:
     # GitHub's free tier gives 2000 min/month for private repos (unlimited for
     # public). Each run here is ~20-40s, so 15-min cadence is safe. If you ever
     # get close to the cap, change to "*/30 * * * *".
-    - cron: "*/15 * * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write           # needed so the job can commit seen.json back
