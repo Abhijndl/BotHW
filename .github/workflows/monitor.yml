@@ -42,6 +42,10 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Minifygram: paste the site's PUBLIC Supabase anon key here (see README).
+          # Without it, the bot tries to auto-discover it but Cloudflare may block
+          # that from GitHub's IPs — so setting this secret is strongly recommended.
+          MINIFYGRAM_ANON_KEY: ${{ secrets.MINIFYGRAM_ANON_KEY }}
           # SILENT=true  → only ping Telegram on real changes (recommended)
           # SILENT=false → send a heartbeat summary every run
           SILENT: "true"
