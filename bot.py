@@ -415,6 +415,11 @@ def scrape_minifygram() -> list[dict]:
         return []
 
     out = []
+    # Log the actual field names from the first row so we can debug stock detection
+    if rows:
+        sample_keys = list(rows[0].keys())
+        print(f"  [MG] row fields: {sample_keys}")
+
     for row in rows:
         kl = {k.lower(): k for k in row}
         def g(*names):
@@ -428,38 +433,57 @@ def scrape_minifygram() -> list[dict]:
         slug  = g("slug", "handle", "id")
         price = g("price", "selling_price", "sale_price", "amount", "mrp")
         brand = str(g("brand", "brand_name", "manufacturer") or "").lower()
-        stockv = g("stock", "in_stock", "available", "quantity", "inventory",
-                   "status", "is_available", "sold_out", "soldout")
 
         if not (rid and name):
             continue
 
+        # ── STRICT brand filter for Minifygram ────────────────────────────────
+        # Minifygram sells many diecast brands: MiniGT, TimeMicro, Poprace, Inno64,
+        # etc. We ONLY want Hotwheels/Mattel. DO NOT fall back to category=Diecast —
+        # that lets every non-HW brand through.
+        brand_norm = brand.replace(" ", "").replace("-", "")
         nl = str(name).lower()
-        brand_norm = brand.replace(" ", "").replace("-", "")   # "hot wheels" → "hotwheels"
-        is_hw = ("hotwheels" in nl.replace(" ", "") or "diecast" in nl.replace(" ", "")
-                 or "1:64" in nl or "hotwheels" in brand_norm or "mattel" in brand_norm)
-        if not is_hw:
-            # also treat anything in a diecast category/scale as trackable
-            cat   = str(g("category", "type") or "").lower()
-            scale = str(g("scale") or "")
-            if "diecast" not in cat.replace(" ", "").replace("-", "") and "1:64" not in scale:
-                continue
+        name_norm = nl.replace(" ", "").replace("-", "")
 
-        # Normalise stock. Note: a "sold_out"/"soldout" field inverts the meaning.
-        sold_out_field = g("sold_out", "soldout")
-        if sold_out_field is not None:
-            in_stock = not (str(sold_out_field).lower() in ("true", "1", "yes"))
-        else:
-            s = str(stockv).lower()
-            if isinstance(stockv, bool):
-                in_stock = stockv
-            elif s in ("true", "in_stock", "instock", "available", "active", "1", "yes", "live"):
-                in_stock = True
-            elif s in ("false", "out_of_stock", "sold_out", "soldout", "0", "no", "sold out", "draft"):
-                in_stock = False
+        is_hw = ("hotwheels" in brand_norm          # Brand field = Hotwheels / Hot Wheels
+                 or "mattel" in brand_norm           # Brand field = Mattel
+                 or "hotwheels" in name_norm)        # Name literally says "Hot Wheels"
+        if not is_hw:
+            continue
+
+        # ── Stock detection ────────────────────────────────────────────────────
+        # From the live site (Image 1) the Supabase row has a boolean 'sold_out'
+        # field: True = sold out, False = available. This is the PRIMARY signal.
+        # We check for it by name first, then try generic positive-sense fields,
+        # and NEVER default to in_stock=True when we can't tell — we default False
+        # (out_of_stock) to avoid false "new in stock" alerts for unknown states.
+        sold_out_raw = (row.get(kl.get("sold_out", "")) if "sold_out" in kl else
+                        row.get(kl.get("soldout", "")) if "soldout" in kl else None)
+
+        if sold_out_raw is not None:
+            # Explicit sold_out boolean/string: True → out of stock
+            if isinstance(sold_out_raw, bool):
+                in_stock = not sold_out_raw
             else:
-                q = price_to_int(stockv)
-                in_stock = (q is not None and q > 0) if q is not None else True
+                in_stock = str(sold_out_raw).lower() not in ("true", "1", "yes")
+        else:
+            # No sold_out field — look for a positive-sense stock/available field
+            stockv = g("in_stock", "available", "is_available", "status", "stock", "quantity", "inventory")
+            if stockv is None:
+                # Can't determine stock → treat as out_of_stock to avoid false alerts
+                in_stock = False
+            elif isinstance(stockv, bool):
+                in_stock = stockv
+            else:
+                sv = str(stockv).lower()
+                if sv in ("true", "in_stock", "instock", "available", "active", "1", "yes", "live"):
+                    in_stock = True
+                elif sv in ("false", "out_of_stock", "sold_out", "soldout", "0", "no", "draft"):
+                    in_stock = False
+                else:
+                    q = price_to_int(stockv)
+                    # Quantity ≥ 1 = in stock; 0 or non-numeric = out of stock
+                    in_stock = (q > 0) if q is not None else False
 
         url = f"https://minifygram.com/product/{slug}" if slug else "https://minifygram.com/"
         pval = price_to_int(price)
@@ -590,25 +614,28 @@ def _line(d, extra="") -> str:
 def build_alert(ch: dict) -> str | None:
     parts = []
 
+    # ── In-stock alerts (loud) ─────────────────────────────────────────────────
     news = [d for d in ch["new_listings"] if _within_budget(d)]
     if news:
         parts.append("🆕 <b>NEW — in stock</b>")
         parts += ["  " + _line(d) for d in news[:25]]
 
     if ch["restocks"]:
-        parts.append("\n🔥 <b>BACK IN STOCK</b>")
+        parts.append("\n🔥 <b>BACK IN STOCK — grab it now</b>")
         parts += ["  " + _line(d) for d in ch["restocks"][:25]]
 
     if ch["price_drops"]:
         parts.append("\n💸 <b>PRICE DROP</b>")
         parts += ["  " + _line(d, extra=f"  (was {d['prev_price']})") for d in ch["price_drops"][:25]]
 
-    # back_soon is quieter — only show if there are no louder alerts, to avoid noise
-    if ch["back_soon"] and not (news or ch["restocks"] or ch["price_drops"]):
-        bs = [d for d in ch["back_soon"] if _within_budget(d)]
-        if bs:
-            parts.append("👀 <b>Newly listed (out of stock — wishlist these)</b>")
-            parts += ["  " + _line(d) for d in bs[:15]]
+    # ── Newly listed but sold out (quiet — always show, capped at 8) ──────────
+    # These are worth knowing about: hit the 💙 wishlist button on the site so
+    # Minifygram notifies you when they restock. Next run the bot will catch the
+    # restock itself too.
+    bs = [d for d in ch["back_soon"] if _within_budget(d)]
+    if bs:
+        parts.append("\n👀 <b>NEW listing — sold out (wishlist it!)</b>")
+        parts += ["  " + _line(d) + "  <i>sold out</i>" for d in bs[:8]]
 
     if not parts:
         return None
@@ -669,9 +696,20 @@ def main():
 
     if first_run and FIRST_RUN_SILENT:
         # First run just learns the baseline — don't fire 200 "new" alerts.
+        by_src = {}
+        for d in current.values():
+            by_src.setdefault(d["source"], [0, 0])
+            by_src[d["source"]][0] += 1
+            if d["stock"] == "in_stock":
+                by_src[d["source"]][1] += 1
+        breakdown = "\n".join(
+            f"  {'🛒FC' if s=='firstcry' else '💎MG' if s=='minifygram' else '⚡BL'} "
+            f"{by_src[s][1]} in stock / {by_src[s][0]} total"
+            for s in ("firstcry", "minifygram", "blinkit") if s in by_src
+        )
         print(f"[=] First run: baseline saved ({len(current)} products). No alerts.")
-        tg(f"✅ <b>Hot Wheels Tracker armed</b>\nBaseline: {len(current)} products across "
-           f"{', '.join(live_sources)}.\nYou'll get pinged on new listings, restocks & price drops.")
+        tg(f"✅ <b>Hot Wheels Tracker re-armed</b>\nBaseline: {len(current)} products\n"
+           f"{breakdown}\n\nYou'll get pinged on new listings, restocks &amp; price drops.")
         save_seen(current)
         return
 
