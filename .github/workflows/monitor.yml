@@ -1,18 +1,26 @@
 name: Hot Wheels Monitor
 
 on:
-  workflow_dispatch:   # run manually anytime from Actions tab
+  workflow_dispatch:        # lets you run it manually from the Actions tab
   schedule:
-    # Every 30 minutes — change to "0 * * * *" for hourly if on free tier
-    - cron: "*/30 * * * *"
+    # Every 15 minutes. Collector drops sell out fast, so tighter is better.
+    # GitHub's free tier gives 2000 min/month for private repos (unlimited for
+    # public). Each run here is ~20-40s, so 15-min cadence is safe. If you ever
+    # get close to the cap, change to "*/30 * * * *".
+    - cron: "*/15 * * * *"
 
 permissions:
-  contents: write
+  contents: write           # needed so the job can commit seen.json back
+
+# If a run is still going when the next fires, skip the new one instead of stacking.
+concurrency:
+  group: hw-monitor
+  cancel-in-progress: false
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 12   # kill runaway jobs to protect your free minutes
+    timeout-minutes: 8      # kill runaway jobs to protect your free minutes
 
     steps:
       - uses: actions/checkout@v4
@@ -20,37 +28,31 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
 
-      - name: Cache pip packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: pip-${{ hashFiles('requirements.txt') }}
-
-      - name: Install Python deps
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Cache the ~120MB Chromium download across runs.
-      # We still run `playwright install` every time so system deps and the
-      # executable are always present — it's a no-op when the cache is warm.
-      - name: Cache Playwright browser
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: pw-chromium-${{ runner.os }}-v3
-
-      - name: Install Playwright + Chromium
-        run: playwright install chromium --with-deps
+      # NOTE: There is deliberately NO "playwright install chromium" step.
+      # This bot uses plain HTTP (curl_cffi) and never launches a browser,
+      # which is why it no longer hits the "chrome-headless-shell doesn't exist"
+      # error and runs in seconds instead of minutes.
 
       - name: Run tracker
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
-          # SILENT=true  → Telegram only when something changes (recommended)
-          # SILENT=false → sends a summary every run
+          # SILENT=true  → only ping Telegram on real changes (recommended)
+          # SILENT=false → send a heartbeat summary every run
           SILENT: "true"
-          # DEBUG=true  → sends screenshots to Telegram + saves HTML files
-          # Set to true temporarily when diagnosing 0-product issues
+          # First run just learns the baseline instead of firing ~200 "new" alerts.
+          FIRST_RUN_SILENT: "true"
+          # Optional: only alert on NEW listings at/under this price (0 = no cap).
+          # Handy to skip pricey track sets and focus on ₹100-300 singles.
+          MAX_ALERT_PRICE: "0"
+          # Optional: comma-separated keywords that get an extra 🎯 flag in alerts.
+          WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard"
+          # DEBUG=true → also sends a heartbeat every run (use while setting up).
           DEBUG: "false"
         run: python bot.py
 
