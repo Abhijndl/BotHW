@@ -1,2 +1,1 @@
-requests
-playwright
+curl_cffi>=0.7.0
