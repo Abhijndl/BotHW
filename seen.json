@@ -119,28 +119,10 @@
     "price": "",
     "source": "firstcry"
   },
-  "fc_14932244": {
-    "stock": "in_stock",
-    "name": "Hot Wheels Loop & Launch Track Set With 1 Car - Multicolour",
-    "price": "",
-    "source": "firstcry"
-  },
-  "fc_14932238": {
-    "stock": "in_stock",
-    "name": "Hot Wheels Track Set with 3 Loops and 1 Hot Wheels Car - Orange & Blue",
-    "price": "",
-    "source": "firstcry"
-  },
   "fc_22600382": {
     "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "",
-    "source": "firstcry"
-  },
-  "fc_24032061": {
-    "stock": "in_stock",
-    "name": "Hot Wheels '2020 Ram 1500 Rebel Toy Car Blue",
-    "price": "₹1500",
     "source": "firstcry"
   },
   "fc_23974124": {
@@ -163,7 +145,13 @@
   },
   "fc_23974120": {
     "stock": "in_stock",
-    "name": "Hot Wheels Die Cast Free Wheel Monster Trucks Mood Crusher - Blue & Yellow Hot Wheels Toys & Gaming Products on Discount Lo",
+    "name": "Hot Wheels Die Cast Free Wheel Monster Trucks Mood Crusher - Blue & Yellow",
+    "price": "",
+    "source": "firstcry"
+  },
+  "fc_23974119": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Die Cast Free Wheel Monster Trucks Bigfoot - Blue & Orange Hot Wheels Toys & Gaming Products on Discount Looking",
     "price": "₹51",
     "source": "firstcry"
   },
