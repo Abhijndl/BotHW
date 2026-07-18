@@ -139,7 +139,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
     now = time.strftime("%Y-%m-%dT%H:%M:%S")
     for pid, d in current.items():
         prev = seen.get(pid, {})
-        seen[pid] = {
+        entry = {
             "stock":  d["stock"],
             "name":   d["name"],
             "price":  d.get("price", "") or prev.get("price", ""),
@@ -151,6 +151,12 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             "alerted_new":        prev.get("alerted_new", False),
             "last_restock_alert": prev.get("last_restock_alert", ""),
         }
+        # per-source bookkeeping (e.g. Minifygram verification metadata)
+        for k in ("mg_updated_at", "mg_verified_at"):
+            v = d.get(k, prev.get(k, ""))
+            if v:
+                entry[k] = v
+        seen[pid] = entry
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
         json.dump(seen, f, indent=2, ensure_ascii=False)
 
@@ -399,26 +405,107 @@ def _mg_headers(key: str) -> dict:
             "Authorization": f"Bearer {key}", "Accept": "application/json"}
 
 
-def _mg_find_table(base: str, headers: dict) -> str | None:
-    """Ask PostgREST's root for the list of tables and pick the products one."""
+def _mg_list_tables(base: str, headers: dict) -> list[str]:
+    """Ask PostgREST's root for the full list of exposed tables."""
     try:
         r = http.get(f"{base}/rest/v1/", headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
         if r.status_code == 200:
             spec = r.json()
             tables = list((spec.get("definitions") or spec.get("paths") or {}).keys())
             tables = [t.lstrip("/") for t in tables if t and not t.startswith("rpc")]
-            # prefer obvious product tables
-            for pref in ("products", "product", "listings", "listing", "items", "collectibles"):
-                if pref in tables:
-                    return pref
-            for t in tables:
-                if "product" in t.lower() or "listing" in t.lower():
-                    return t
             if tables:
-                print(f"  [MG] tables available: {tables[:12]}")
+                print(f"  [MG] tables exposed: {tables}")
+            return tables
     except Exception as e:
         print(f"  [MG] introspection failed: {e}")
-    return None
+    return []
+
+
+def _mg_sku_stock(base: str, headers: dict, tables: list[str]) -> dict:
+    """Try to read per-product stock from a SKU/inventory table.
+
+    The products table has default_sku_id but no quantity — stock lives in a
+    separate table. Returns {product_id_or_sku_id: True/False} or {} if no
+    such table is readable (RLS may hide it from the anon role).
+    """
+    cand = [t for t in tables
+            if any(k in t.lower() for k in ("sku", "invent", "stock", "variant"))]
+    cand += [t for t in ("skus", "product_skus", "inventory", "product_variants",
+                         "variants", "stock") if t not in cand]
+    for t in cand:
+        try:
+            r = http.get(f"{base}/rest/v1/{t}?select=*&limit=3000",
+                         headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+            if r.status_code != 200:
+                continue
+            data = r.json()
+            if not (isinstance(data, list) and data):
+                continue
+        except Exception:
+            continue
+
+        print(f"  [MG] SKU table '{t}' → {len(data)} rows, fields: {list(data[0].keys())}")
+        stock_map: dict = {}
+        for row in data:
+            kl = {k.lower(): k for k in row}
+            def g(*names):
+                for n in names:
+                    if n in kl and row[kl[n]] is not None:
+                        return row[kl[n]]
+                return None
+            ref = g("product_id", "productid", "product", "id", "sku_id")
+            qty = g("quantity", "qty", "stock", "available_quantity", "units",
+                    "inventory", "stock_quantity")
+            avail = g("is_available", "available", "in_stock", "active", "is_active")
+            sold = g("sold_out", "is_sold_out", "is_sold")
+            if ref is None:
+                continue
+            if sold is not None:
+                ok = not (sold is True or str(sold).lower() in ("true", "1", "yes"))
+            elif qty is not None:
+                q = price_to_int(qty)
+                ok = bool(q and q > 0)
+            elif avail is not None:
+                ok = (avail is True or str(avail).lower() in ("true", "1", "yes"))
+            else:
+                continue
+            # a product may have several SKUs — in stock if ANY sku is
+            key = str(ref)
+            stock_map[key] = stock_map.get(key, False) or ok
+        if stock_map:
+            return stock_map
+    print("  [MG] no readable SKU/inventory table (RLS likely) — will verify via product pages.")
+    return {}
+
+
+_MG_META = re.compile(r'<meta[^>]+content="([^"]*)"[^>]*>|<meta[^>]+content=\'([^\']*)\'[^>]*>', re.I)
+
+
+def _mg_page_stock(slug: str) -> str | None:
+    """Read a product page's server-rendered meta tags for the Sold out state.
+
+    Minifygram pre-renders SEO meta per product (we've verified this: the
+    description carries '… · Sold out · Dispatch within 7 days*'). Absence of
+    'Sold out' in the meta/description ⇒ the item is purchasable.
+    Returns 'in_stock' / 'out_of_stock' / None (page unreachable).
+    """
+    try:
+        r = http.get(f"https://minifygram.com/product/{slug}",
+                     headers=COMMON_HEADERS, timeout=20, **_IMPERSONATE)
+        if r.status_code != 200 or len(r.text) < 500:
+            return None
+        # gather all meta content attributes + title
+        metas = " ".join(a or b for a, b in _MG_META.findall(r.text))
+        blob = metas if len(metas) > 40 else r.text[:6000]
+        return "out_of_stock" if re.search(r"sold\s*out", blob, re.I) else "in_stock"
+    except Exception:
+        return None
+
+
+# How many product pages we're willing to verify per run (politeness budget).
+# 173 HW products / 35 per run ⇒ every product's stock is re-verified at least
+# every ~5 runs (~75 min at 15-min cadence); changed/new items jump the queue.
+MG_VERIFY_BUDGET = int(os.getenv("MG_VERIFY_BUDGET", "35"))
 
 
 def scrape_minifygram() -> list[dict]:
@@ -428,39 +515,35 @@ def scrape_minifygram() -> list[dict]:
     base = MINIFYGRAM_SUPABASE
     headers = _mg_headers(key)
 
-    # Find the product table (introspection first, then common guesses)
-    table = _mg_find_table(base, headers)
-    candidates = [table] if table else []
-    candidates += ["products", "product", "listings", "items", "collectibles"]
+    tables = _mg_list_tables(base, headers)
+    prod_table = next((t for t in ("products", "product", "listings") if t in tables),
+                      "products")
 
     rows = None
-    for t in [c for c in dict.fromkeys(candidates) if c]:
-        for q in (f"{base}/rest/v1/{t}?select=*&order=created_at.desc&limit=1000",
-                  f"{base}/rest/v1/{t}?select=*&limit=1000"):
-            try:
-                r = http.get(q, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
-                if r.status_code == 200:
-                    data = r.json()
-                    if isinstance(data, list) and data:
-                        rows = data
-                        print(f"  [MG] table '{t}' → {len(rows)} rows")
-                        break
-            except Exception:
-                continue
-        if rows:
-            break
-
+    for q in (f"{base}/rest/v1/{prod_table}?select=*&order=created_at.desc&limit=1000",
+              f"{base}/rest/v1/{prod_table}?select=*&limit=1000"):
+        try:
+            r = http.get(q, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+            if r.status_code == 200:
+                data = r.json()
+                if isinstance(data, list) and data:
+                    rows = data
+                    print(f"  [MG] table '{prod_table}' → {len(rows)} rows")
+                    break
+        except Exception:
+            continue
     if not rows:
-        print("  [MG] no product rows reachable "
-              "(check the anon key, or RLS may hide the table).")
+        print("  [MG] no product rows reachable (check the anon key).")
         return []
 
-    out = []
-    # Log the actual field names from the first row so we can debug stock detection
-    if rows:
-        sample_keys = list(rows[0].keys())
-        print(f"  [MG] row fields: {sample_keys}")
+    # Optional authoritative stock via SKU table
+    sku_stock = _mg_sku_stock(base, headers, tables)
 
+    # Previous state — used to (a) reuse last verified stock for products we
+    # don't verify this run, and (b) prioritise the verification queue.
+    prev_all = load_seen()
+
+    hw = []          # HW rows after brand filter, before stock resolution
     for row in rows:
         kl = {k.lower(): k for k in row}
         def g(*names):
@@ -469,75 +552,98 @@ def scrape_minifygram() -> list[dict]:
                     return row[kl[n]]
             return None
 
-        rid   = g("id", "product_id", "uuid", "slug", "handle")
-        name  = g("name", "title", "product_name")
-        slug  = g("slug", "handle", "id")
-        price = g("price", "selling_price", "sale_price", "amount", "mrp")
-        brand = str(g("brand", "brand_name", "manufacturer") or "").lower()
-
+        rid   = g("id", "product_id", "uuid", "slug")
+        name  = g("name", "title")
+        slug  = g("slug", "handle") or rid
+        brand = str(g("brand", "brand_name") or "").lower()
         if not (rid and name):
             continue
 
-        # ── STRICT brand filter for Minifygram ────────────────────────────────
-        # Minifygram sells many diecast brands: MiniGT, TimeMicro, Poprace, Inno64,
-        # etc. We ONLY want Hotwheels/Mattel. DO NOT fall back to category=Diecast —
-        # that lets every non-HW brand through.
+        # STRICT brand filter — only Hotwheels/Mattel (keeps MiniGT etc. out)
         brand_norm = brand.replace(" ", "").replace("-", "")
-        nl = str(name).lower()
-        name_norm = nl.replace(" ", "").replace("-", "")
-
-        is_hw = ("hotwheels" in brand_norm          # Brand field = Hotwheels / Hot Wheels
-                 or "mattel" in brand_norm           # Brand field = Mattel
-                 or "hotwheels" in name_norm)        # Name literally says "Hot Wheels"
-        if not is_hw:
+        name_norm  = str(name).lower().replace(" ", "").replace("-", "")
+        if not ("hotwheels" in brand_norm or "mattel" in brand_norm
+                or "hotwheels" in name_norm):
             continue
 
-        # ── Stock detection ────────────────────────────────────────────────────
-        # From the live site (Image 1) the Supabase row has a boolean 'sold_out'
-        # field: True = sold out, False = available. This is the PRIMARY signal.
-        # We check for it by name first, then try generic positive-sense fields,
-        # and NEVER default to in_stock=True when we can't tell — we default False
-        # (out_of_stock) to avoid false "new in stock" alerts for unknown states.
-        sold_out_raw = (row.get(kl.get("sold_out", "")) if "sold_out" in kl else
-                        row.get(kl.get("soldout", "")) if "soldout" in kl else None)
-
-        if sold_out_raw is not None:
-            # Explicit sold_out boolean/string: True → out of stock
-            if isinstance(sold_out_raw, bool):
-                in_stock = not sold_out_raw
-            else:
-                in_stock = str(sold_out_raw).lower() not in ("true", "1", "yes")
-        else:
-            # No sold_out field — look for a positive-sense stock/available field
-            stockv = g("in_stock", "available", "is_available", "status", "stock", "quantity", "inventory")
-            if stockv is None:
-                # Can't determine stock → treat as out_of_stock to avoid false alerts
-                in_stock = False
-            elif isinstance(stockv, bool):
-                in_stock = stockv
-            else:
-                sv = str(stockv).lower()
-                if sv in ("true", "in_stock", "instock", "available", "active", "1", "yes", "live"):
-                    in_stock = True
-                elif sv in ("false", "out_of_stock", "sold_out", "soldout", "0", "no", "draft"):
-                    in_stock = False
-                else:
-                    q = price_to_int(stockv)
-                    # Quantity ≥ 1 = in stock; 0 or non-numeric = out of stock
-                    in_stock = (q > 0) if q is not None else False
-
-        url = f"https://minifygram.com/product/{slug}" if slug else "https://minifygram.com/"
-        pval = price_to_int(price)
-
-        out.append({
-            "id": f"mg_{rid}", "source": "minifygram", "name": str(name)[:180], "url": url,
-            "price": f"₹{pval}" if pval else "",   # many are "sign in to view" → blank
-            "mrp": "",
-            "stock": "in_stock" if in_stock else "out_of_stock",
-            "badge_new": False,
+        # Real schema fields (from the live DB): price_inr, mrp_inr, is_active,
+        # back_in_stock, updated_at, default_sku_id, badge, preorder_status
+        price = price_to_int(g("price_inr", "price", "selling_price"))
+        mrp   = price_to_int(g("mrp_inr", "mrp"))
+        hw.append({
+            "rid": str(rid), "slug": str(slug), "name": str(name)[:180],
+            "price": price, "mrp": mrp,
+            "is_active": g("is_active"),
+            "back_in_stock": bool(g("back_in_stock")),
+            "updated_at": str(g("updated_at") or ""),
+            "sku_id": str(g("default_sku_id") or ""),
+            "badge": str(g("badge") or ""),
         })
 
-    print(f"[*] Minifygram total: {len(out)}")
+    # ── Resolve stock for each HW product ─────────────────────────────────────
+    # Priority: SKU table → page verification (budgeted) → previous state → OOS.
+    # Build the verification queue: unknown-first, then changed, then stalest.
+    verify_queue, resolved = [], {}
+    for p in hw:
+        pid = f"mg_{p['rid']}"
+        if sku_stock:
+            s = sku_stock.get(p["rid"], sku_stock.get(p["sku_id"]))
+            if s is not None:
+                resolved[pid] = "in_stock" if s else "out_of_stock"
+                continue
+        prevrow = prev_all.get(pid, {})
+        never_verified = not prevrow.get("mg_verified_at")
+        db_changed = (p["updated_at"] and
+                      p["updated_at"] != prevrow.get("mg_updated_at"))
+        # score: lower = verify sooner
+        score = (0 if never_verified else
+                 1 if db_changed else
+                 2 if p["back_in_stock"] and prevrow.get("stock") != "in_stock" else
+                 3)
+        verify_queue.append((score, prevrow.get("mg_verified_at", ""), p, pid))
+
+    verify_queue.sort(key=lambda t: (t[0], t[1]))     # priority, then stalest
+    verified = 0
+    for score, _, p, pid in verify_queue:
+        if verified >= MG_VERIFY_BUDGET:
+            break
+        s = _mg_page_stock(p["slug"])
+        if s is not None:
+            resolved[pid] = s
+            p["_verified_now"] = True
+            verified += 1
+            time.sleep(0.7)                            # gentle pacing
+    if verified:
+        print(f"  [MG] page-verified {verified} products this run")
+
+    # ── Emit ──────────────────────────────────────────────────────────────────
+    out = []
+    for p in hw:
+        pid = f"mg_{p['rid']}"
+        prevrow = prev_all.get(pid, {})
+        stock = resolved.get(pid) or prevrow.get("stock") or "out_of_stock"
+        first_verify = p.get("_verified_now") and not prevrow.get("mg_verified_at")
+        d = {
+            "id": pid, "source": "minifygram", "name": p["name"],
+            "url": f"https://minifygram.com/product/{p['slug']}",
+            "price": f"₹{p['price']}" if p["price"] else "",
+            "mrp":   f"₹{p['mrp']}"   if p["mrp"] and p["mrp"] != p["price"] else "",
+            "stock": stock,
+            "badge_new": bool(p["badge"]),
+            # bookkeeping persisted into seen.json by merge_and_save_seen
+            "mg_updated_at":  p["updated_at"],
+            "mg_verified_at": (time.strftime("%Y-%m-%dT%H:%M:%S")
+                               if p.get("_verified_now")
+                               else prevrow.get("mg_verified_at", "")),
+        }
+        if first_verify:
+            # First-ever verification of this product: any OOS→in-stock flip is a
+            # data CORRECTION (our old default was wrong), not a real restock.
+            d["first_verify"] = True
+        out.append(d)
+
+    ins = sum(1 for d in out if d["stock"] == "in_stock")
+    print(f"[*] Minifygram total: {len(out)} ({ins} in stock)")
     return out
 
 
@@ -682,6 +788,7 @@ def compute_changes(current: dict, seen: dict) -> dict:
         prev_price = price_to_int(prev.get("price"))
 
         if (stock == "in_stock" and prev_stock == "out_of_stock"
+                and not d.get("first_verify")
                 and _hours_since(prev.get("last_restock_alert", "")) >= RESTOCK_COOLDOWN_H):
             restocks.append(d)
             prev["last_restock_alert"] = now
