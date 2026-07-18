@@ -115,6 +115,15 @@ def tg(msg: str) -> None:
 
 
 # ── State ─────────────────────────────────────────────────────────────────────────
+# seen.json is a PERMANENT memory of every product ever observed, keyed by id:
+#   { stock, name, price, source, url, first_seen, last_seen, alerted_new, last_restock_alert }
+#
+# CRITICAL DESIGN RULE — MERGE, never overwrite:
+# FirstCry only exposes ~28 items per sort view, and the visible slice rotates
+# between runs. The old code replaced seen.json with just the currently-visible
+# items, so anything that rotated out of view was forgotten — and re-alerted as
+# "NEW" when it rotated back in. That was the repeated-alert bug. Now products
+# that aren't visible this run simply keep their last-known state.
 def load_seen() -> dict:
     if os.path.exists(SEEN_FILE):
         try:
@@ -125,12 +134,35 @@ def load_seen() -> dict:
     return {}
 
 
-def save_seen(current: dict) -> None:
-    slim = {pid: {"stock": d["stock"], "name": d["name"],
-                  "price": d.get("price", ""), "source": d.get("source", "")}
-            for pid, d in current.items()}
+def merge_and_save_seen(seen: dict, current: dict) -> None:
+    """Merge this run's observations into the permanent memory and persist it."""
+    now = time.strftime("%Y-%m-%dT%H:%M:%S")
+    for pid, d in current.items():
+        prev = seen.get(pid, {})
+        seen[pid] = {
+            "stock":  d["stock"],
+            "name":   d["name"],
+            "price":  d.get("price", "") or prev.get("price", ""),
+            "source": d.get("source", ""),
+            "url":    d.get("url", "") or prev.get("url", ""),
+            "first_seen": prev.get("first_seen", now),
+            "last_seen":  now,
+            # alert bookkeeping survives the merge
+            "alerted_new":        prev.get("alerted_new", False),
+            "last_restock_alert": prev.get("last_restock_alert", ""),
+        }
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
-        json.dump(slim, f, indent=2, ensure_ascii=False)
+        json.dump(seen, f, indent=2, ensure_ascii=False)
+
+
+def _hours_since(iso: str) -> float:
+    if not iso:
+        return 1e9
+    try:
+        then = time.mktime(time.strptime(iso, "%Y-%m-%dT%H:%M:%S"))
+        return (time.time() - then) / 3600.0
+    except Exception:
+        return 1e9
 
 
 def price_to_int(p) -> int | None:
@@ -160,7 +192,8 @@ FIRSTCRY_URLS = [
 # "Notify Me". We split the page on the product-detail anchors and parse each block.
 _FC_CARD_SPLIT = re.compile(r'(?=<a\b[^>]*?/(\d{5,})/product-detail)', re.I)
 _FC_ID         = re.compile(r'/(\d{5,})/product-detail', re.I)
-_FC_HREF       = re.compile(r'href="([^"]*?/\d{5,}/product-detail[^"]*)"', re.I)
+_FC_HREF       = re.compile(
+    r'''((?:https?://(?:www\.)?firstcry\.com)?/[^\s"'<>]*?/\d{5,}/product-detail[^\s"'<>]*)''', re.I)
 _FC_TITLE      = re.compile(r'title="([^"]{6,200}?)"', re.I)
 _FC_PRICE      = re.compile(r'₹?\s*([\d,]+(?:\.\d+)?)')
 _TAG           = re.compile(r"<[^>]+>")
@@ -209,9 +242,17 @@ def scrape_firstcry() -> list[dict]:
             if uid in seen_ids:
                 continue
 
-            # href
-            hm = _FC_HREF.search(block)
-            href = html.unescape(hm.group(1)) if hm else url
+            # href — find a path containing THIS product's id. If the page markup
+            # hides the href (JS-attached, single quotes, data-attrs…), build the
+            # canonical URL from the id: FirstCry resolves products by the numeric
+            # id, so /x/x/{id}/product-detail always lands on the right page.
+            href = None
+            for hm in _FC_HREF.finditer(block):
+                if f"/{pid_raw}/" in hm.group(1):
+                    href = html.unescape(hm.group(1))
+                    break
+            if not href:
+                href = f"/x/x/{pid_raw}/product-detail"
             if href.startswith("/"):
                 href = "https://www.firstcry.com" + href
 
@@ -504,25 +545,51 @@ def scrape_minifygram() -> list[dict]:
 # SOURCE 3 — Blinkit  (internal search API, location-pinned) — best effort
 # ══════════════════════════════════════════════════════════════════════════════════
 def scrape_blinkit() -> list[dict]:
-    out, seen = [], set()
+    out, seen_ids = [], set()
     headers = {
         **COMMON_HEADERS,
-        "Accept": "*/*",
+        "Accept": "application/json, text/plain, */*",
         "app_client": "consumer_web",
+        "app_version": "1010101010",
+        "web_app_version": "1008010016",
+        "platform": "desktop_web",
         "lat": str(LAT), "lon": str(LON),
-        "web_app_version": "1000.0.0",
-        "Referer": "https://blinkit.com/",
+        "Referer": "https://blinkit.com/s/?q=hot%20wheels",
         "Origin": "https://blinkit.com",
+        "device_id": "hwtracker-" + PINCODE,
     }
-    for term in ("hot wheels", "hotwheels", "diecast car"):
-        for api in (f"https://blinkit.com/v1/layout/search?q={quote(term)}",
-                    f"https://blinkit.com/v6/search/products?q={quote(term)}"):
+
+    # Step 1: hit the homepage first to establish cookies (Blinkit's API often
+    # rejects cookie-less calls). curl_cffi sessions carry cookies automatically.
+    sess = None
+    try:
+        sess = http.Session(**_IMPERSONATE) if _IMPERSONATE else http.Session()
+        h = sess.get("https://blinkit.com/", headers=COMMON_HEADERS, timeout=TIMEOUT)
+        print(f"  [BL] homepage → HTTP {h.status_code}")
+    except Exception as e:
+        print(f"  [BL] homepage failed: {e}")
+
+    def _get(u):
+        if sess is not None:
+            return sess.get(u, headers=headers, timeout=TIMEOUT)
+        return http.get(u, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+
+    # Step 2: try the search APIs (multiple generations of Blinkit's endpoint)
+    for term in ("hot wheels", "hotwheels"):
+        apis = (
+            f"https://blinkit.com/v1/layout/search?q={quote(term)}&search_type=type_to_search",
+            f"https://blinkit.com/v6/search/products?start=0&size=30&search_type=7&q={quote(term)}",
+            f"https://blinkit.com/v2/search/products?q={quote(term)}",
+        )
+        for api in apis:
             try:
-                r = http.get(api, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+                r = _get(api)
                 if r.status_code != 200:
+                    print(f"  [BL] {api.split('.com')[1][:40]} → HTTP {r.status_code}")
                     continue
                 data = r.json()
-            except Exception:
+            except Exception as e:
+                print(f"  [BL] {api.split('.com')[1][:40]} → {type(e).__name__}")
                 continue
 
             # Walk the JSON for product-ish dicts
@@ -531,22 +598,27 @@ def scrape_blinkit() -> list[dict]:
             while stack:
                 node = stack.pop()
                 if isinstance(node, dict):
-                    name = node.get("name") or node.get("display_name") or node.get("product_name")
+                    name = (node.get("name") or node.get("display_name")
+                            or node.get("product_name") or node.get("title"))
                     pid  = node.get("product_id") or node.get("id") or node.get("merchant_id")
-                    if name and pid and re.search(r"hot\s*wheel|diecast|die-cast", str(name), re.I):
+                    if name and pid and re.search(r"hot\s*wheel", str(name), re.I):
                         uid = f"bl_{pid}"
-                        if uid not in seen:
-                            seen.add(uid)
+                        if uid not in seen_ids:
+                            seen_ids.add(uid)
                             price = (node.get("price") or node.get("offer_price")
                                      or node.get("mrp") or node.get("selling_price"))
-                            inv = node.get("inventory") or node.get("stock") or node.get("available")
+                            inv = node.get("inventory")
+                            if inv is None:
+                                inv = node.get("stock")
+                            unavailable = (node.get("is_sold_out") or node.get("out_of_stock")
+                                           or (isinstance(inv, (int, float)) and inv <= 0))
                             pval = price_to_int(price)
                             out.append({
                                 "id": uid, "source": "blinkit", "name": str(name)[:180],
                                 "url": f"https://blinkit.com/prn/x/prid/{pid}",
                                 "price": f"₹{pval}" if pval else "",
                                 "mrp": "",
-                                "stock": "in_stock" if (inv in (None, "") or price_to_int(inv)) else "out_of_stock",
+                                "stock": "out_of_stock" if unavailable else "in_stock",
                                 "badge_new": False,
                             })
                             found += 1
@@ -555,7 +627,17 @@ def scrape_blinkit() -> list[dict]:
                     stack.extend(node)
             if found:
                 print(f"  [BL] '{term}' → {found}")
-                break   # got results for this term, don't try the other endpoint
+                break   # got results for this term, stop trying other endpoints
+        if out:
+            break
+
+    if not out:
+        # Honest diagnostics: Blinkit is location-locked AND geo-blocks foreign
+        # datacenter IPs. GitHub Actions runs from US IPs, which Blinkit often
+        # rejects outright. This is a known limitation of any free hosted
+        # tracker — see README for the workaround (self-hosted runner / cron
+        # from an Indian IP), which makes this source work reliably.
+        print("  [BL] no results — likely geo-blocked from this runner's IP (US datacenter).")
     print(f"[*] Blinkit total: {len(out)}")
     return out
 
@@ -563,7 +645,20 @@ def scrape_blinkit() -> list[dict]:
 # ══════════════════════════════════════════════════════════════════════════════════
 # DIFF + ALERTS
 # ══════════════════════════════════════════════════════════════════════════════════
+RESTOCK_COOLDOWN_H = 24     # don't re-alert the same product's restock within 24h
+
+
 def compute_changes(current: dict, seen: dict) -> dict:
+    """Diff current observations against permanent memory.
+
+    Dedup rules (this is what stops repeated alerts):
+      • NEW fires at most ONCE EVER per product id (alerted_new flag in seen.json).
+      • RESTOCK fires only on a genuine OOS→in-stock transition, with a 24h
+        cooldown per product so a flapping listing can't spam.
+    Bookkeeping flags are written into `seen` here and persisted by
+    merge_and_save_seen() at the end of the run.
+    """
+    now = time.strftime("%Y-%m-%dT%H:%M:%S")
     new_listings, restocks, price_drops, back_soon = [], [], [], []
 
     for pid, d in current.items():
@@ -571,19 +666,25 @@ def compute_changes(current: dict, seen: dict) -> dict:
         stock = d["stock"]
         cur_price = price_to_int(d.get("price"))
 
-        if prev is None:
-            # never seen before
+        if prev is None or not prev.get("alerted_new", False):
+            # Never alerted as new before → this is its one NEW alert, ever.
             if stock == "in_stock":
                 new_listings.append(d)
             else:
                 back_soon.append(d)      # newly listed but OOS — wishlist candidate
+            # Mark it so it can never fire NEW/back_soon again, even if it
+            # disappears from view for weeks and then comes back.
+            entry = seen.setdefault(pid, {})
+            entry["alerted_new"] = True
             continue
 
         prev_stock = prev.get("stock")
         prev_price = price_to_int(prev.get("price"))
 
-        if stock == "in_stock" and prev_stock == "out_of_stock":
+        if (stock == "in_stock" and prev_stock == "out_of_stock"
+                and _hours_since(prev.get("last_restock_alert", "")) >= RESTOCK_COOLDOWN_H):
             restocks.append(d)
+            prev["last_restock_alert"] = now
 
         if (stock == "in_stock" and cur_price and prev_price
                 and cur_price < prev_price):
@@ -692,10 +793,23 @@ def main():
         return
 
     current = {p["id"]: p for p in all_products}
+
+    # One-time migration: entries written by the old overwrite-style seen.json
+    # lack the alerted_new flag. Treat every pre-existing entry as already
+    # alerted, so upgrading the bot doesn't replay old alerts.
+    if seen and not any("alerted_new" in v for v in seen.values() if isinstance(v, dict)):
+        for v in seen.values():
+            if isinstance(v, dict):
+                v["alerted_new"] = True
+        print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
+
     changes = compute_changes(current, seen)
 
     if first_run and FIRST_RUN_SILENT:
         # First run just learns the baseline — don't fire 200 "new" alerts.
+        # Every baseline product is marked alerted_new so it can never fire NEW later.
+        for pid in current:
+            seen.setdefault(pid, {})["alerted_new"] = True
         by_src = {}
         for d in current.values():
             by_src.setdefault(d["source"], [0, 0])
@@ -710,7 +824,7 @@ def main():
         print(f"[=] First run: baseline saved ({len(current)} products). No alerts.")
         tg(f"✅ <b>Hot Wheels Tracker re-armed</b>\nBaseline: {len(current)} products\n"
            f"{breakdown}\n\nYou'll get pinged on new listings, restocks &amp; price drops.")
-        save_seen(current)
+        merge_and_save_seen(seen, current)
         return
 
     alert = build_alert(changes)
@@ -726,7 +840,7 @@ def main():
     if DEBUG:
         tg(heartbeat(current, changes))
 
-    save_seen(current)
+    merge_and_save_seen(seen, current)
 
 
 if __name__ == "__main__":
