@@ -151,8 +151,8 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             "alerted_new":        prev.get("alerted_new", False),
             "last_restock_alert": prev.get("last_restock_alert", ""),
         }
-        # per-source bookkeeping (e.g. Minifygram verification metadata)
-        for k in ("mg_updated_at", "mg_verified_at", "mg_verifier"):
+        # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
+        for k in ("mg_updated_at", "stock_ver"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -341,28 +341,38 @@ def scrape_firstcry() -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
-# SOURCE 2 — Minifygram  (Supabase REST)
+# SOURCE 2 — Minifygram  (Supabase REST — authoritative, real-time stock)
 # ══════════════════════════════════════════════════════════════════════════════════
-# Minifygram is a Lovable app whose product data lives in this Supabase project
-# (confirmed from the product image URLs it serves). The REST endpoint runs on
-# Supabase's own infra — NOT behind Minifygram's Cloudflare — so it's reachable
-# directly from anywhere with the public anon key.
+# Minifygram is a Lovable app whose data lives in this Supabase project. The REST
+# endpoint runs on Supabase's own infra — NOT behind Minifygram's Cloudflare — so
+# it's reachable directly with the site's own public anon key.
 #
-# The anon key is a PUBLIC client-side key (safe to use; it only grants what the
-# site's own front-end grants). Two ways to supply it, in priority order:
-#   1. Set MINIFYGRAM_ANON_KEY as a repo secret  ← reliable, recommended
-#   2. Let the bot auto-discover it from the site's JS at runtime  ← fallback
-#
-# To grab the key once (60 seconds):
-#   • Open https://minifygram.com in Chrome → press F12 → "Network" tab
-#   • Refresh, then click any product
-#   • Click any request to  seoqlgtbygddyehugjwv.supabase.co
-#   • In Headers, copy the long "apikey" value (starts with eyJ…)
-#   • Add it as repo secret MINIFYGRAM_ANON_KEY
+# v4.4 breakthrough: captured a HAR of minifygram.com's own network traffic and
+# found the EXACT query their front-end uses to check stock. Stock lives in a
+# separate `product_skus` table (field `available`, >0 = in stock), and their own
+# code fetches it EMBEDDED inside the products query via PostgREST's foreign-table
+# syntax:
+#     products?select=...,product_skus!product_skus_product_id_fkey(available)
+# One API call now returns all ~170+ Hot Wheels with their REAL stock. This
+# replaces every earlier guess (sold_out column, page-scraping meta tags, blind
+# SKU-table probing) — all of which were wrong or unreliable. This is the same
+# data Minifygram's own website reads to decide whether to show "Add to cart" or
+# "Sold out".
 MINIFYGRAM_SUPABASE = "https://seoqlgtbygddyehugjwv.supabase.co"
-MINIFYGRAM_ANON_KEY = os.getenv("MINIFYGRAM_ANON_KEY", "").strip()
 
-_SB_URL_RE = re.compile(r'https://([a-z0-9]{18,24})\.supabase\.co')
+# Public anon key, captured directly from a live request Minifygram's own site
+# made to its API. This is a client-side key by design (it ships in their
+# browser JS to every visitor) — safe to embed, grants nothing beyond what any
+# site visitor already has. Override with the MINIFYGRAM_ANON_KEY repo secret
+# if Minifygram ever rotates it (bot will log a clear auth error if so).
+_MINIFYGRAM_ANON_KEY_DEFAULT = (
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
+    "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlb3FsZ3RieWdkZHllaHVnand2Iiwicm9sZSI6"
+    "ImFub24iLCJpYXQiOjE3NzcxMzEwNzgsImV4cCI6MjA5MjcwNzA3OH0."
+    "TxGeE5sXW2zivw6xhJ7TIAWibGxiPzv4wcmaEihUsqY"
+)
+MINIFYGRAM_ANON_KEY = os.getenv("MINIFYGRAM_ANON_KEY", "").strip() or _MINIFYGRAM_ANON_KEY_DEFAULT
+
 _SB_KEY_RE = re.compile(r'(eyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{20,}\.[A-Za-z0-9_\-]{20,})')
 
 
@@ -378,21 +388,21 @@ def _looks_like_anon(jwt: str) -> bool:
         return False
 
 
-def _discover_anon_key() -> str | None:
-    """Fetch Minifygram's JS bundles and pull out the anon key. Fallback only."""
+def _discover_anon_key_from_bundle() -> str | None:
+    """Last-resort fallback: mine the site's JS for a fresh anon key.
+
+    Only used if the hardcoded/secret key stops working (Minifygram rotated
+    it). Not needed in the normal case, since anon keys are long-lived.
+    """
     try:
         idx = http.get("https://minifygram.com/", headers=COMMON_HEADERS,
                        timeout=TIMEOUT, **_IMPERSONATE)
     except Exception as e:
         print(f"  [MG] index fetch failed: {e}")
         return None
-
     shell = idx.text
-    # module scripts + modulepreload links both point at JS chunks
     assets = re.findall(r'(?:src|href)="([^"]+\.js)"', shell)
     assets = [urljoin("https://minifygram.com/", a) for a in assets]
-
-    # search the shell first, then each JS chunk, for an anon-role JWT
     for src in [None] + assets[:12]:
         try:
             text = shell if src is None else http.get(
@@ -401,11 +411,7 @@ def _discover_anon_key() -> str | None:
             continue
         for m in _SB_KEY_RE.finditer(text):
             if _looks_like_anon(m.group(1)):
-                print(f"  [MG] discovered anon key in {'shell' if src is None else src.split('/')[-1]}")
                 return m.group(1)
-    print("  [MG] auto-discovery could not find the anon key "
-          "(Cloudflare may be blocking the JS from this IP). "
-          "Set MINIFYGRAM_ANON_KEY secret for reliability.")
     return None
 
 
@@ -414,288 +420,110 @@ def _mg_headers(key: str) -> dict:
             "Authorization": f"Bearer {key}", "Accept": "application/json"}
 
 
-def _mg_list_tables(base: str, headers: dict) -> list[str]:
-    """Ask PostgREST's root for the full list of exposed tables."""
-    try:
-        r = http.get(f"{base}/rest/v1/", headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
-        if r.status_code == 200:
-            spec = r.json()
-            tables = list((spec.get("definitions") or spec.get("paths") or {}).keys())
-            tables = [t.lstrip("/") for t in tables if t and not t.startswith("rpc")]
-            if tables:
-                print(f"  [MG] tables exposed: {tables}")
-            return tables
-    except Exception as e:
-        print(f"  [MG] introspection failed: {e}")
-    return []
-
-
-def _mg_sku_stock(base: str, headers: dict, tables: list[str]) -> dict:
-    """Try to read per-product stock from a SKU/inventory table.
-
-    The products table has default_sku_id but no quantity — stock lives in a
-    separate table. Returns {product_id_or_sku_id: True/False} or {} if no
-    such table is readable (RLS may hide it from the anon role).
-    """
-    cand = [t for t in tables
-            if any(k in t.lower() for k in ("sku", "invent", "stock", "variant"))]
-    cand += [t for t in ("skus", "product_skus", "inventory", "product_variants",
-                         "variants", "stock") if t not in cand]
-    for t in cand:
-        try:
-            r = http.get(f"{base}/rest/v1/{t}?select=*&limit=3000",
-                         headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
-            if r.status_code != 200:
-                continue
-            data = r.json()
-            if not (isinstance(data, list) and data):
-                continue
-        except Exception:
-            continue
-
-        print(f"  [MG] SKU table '{t}' → {len(data)} rows, fields: {list(data[0].keys())}")
-        stock_map: dict = {}
-        for row in data:
-            kl = {k.lower(): k for k in row}
-            def g(*names):
-                for n in names:
-                    if n in kl and row[kl[n]] is not None:
-                        return row[kl[n]]
-                return None
-            ref = g("product_id", "productid", "product", "id", "sku_id")
-            qty = g("quantity", "qty", "stock", "available_quantity", "units",
-                    "inventory", "stock_quantity")
-            avail = g("is_available", "available", "in_stock", "active", "is_active")
-            sold = g("sold_out", "is_sold_out", "is_sold")
-            if ref is None:
-                continue
-            if sold is not None:
-                ok = not (sold is True or str(sold).lower() in ("true", "1", "yes"))
-            elif qty is not None:
-                q = price_to_int(qty)
-                ok = bool(q and q > 0)
-            elif avail is not None:
-                ok = (avail is True or str(avail).lower() in ("true", "1", "yes"))
-            else:
-                continue
-            # a product may have several SKUs — in stock if ANY sku is
-            key = str(ref)
-            stock_map[key] = stock_map.get(key, False) or ok
-        if stock_map:
-            return stock_map
-    print("  [MG] no readable SKU/inventory table (RLS likely) — will verify via product pages.")
-    return {}
-
-
-_MG_META = re.compile(r'<meta[^>]+content="([^"]*)"[^>]*>|<meta[^>]+content=\'([^\']*)\'[^>]*>', re.I)
-
-# Crawler UAs get the pre-rendered, product-specific meta (Lovable apps do
-# dynamic rendering for bots); a normal browser UA gets the generic SPA shell.
-_CRAWLER_UAS = (
-    "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-    "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+# The exact fields Minifygram's own site requests, plus the embedded stock join.
+_MG_SELECT = (
+    "id,slug,name,brand,scale,category,price_inr,mrp_inr,product_type,"
+    "badge,is_active,updated_at,"
+    "product_skus!product_skus_product_id_fkey(available)"
 )
 
 
-def _mg_page_stock(slug: str) -> str | None:
-    """Read a product page's pre-rendered meta for the Sold-out state.
-
-    VALIDATION RULE (prevents the 35/35-in-stock false positive): the fetched
-    page only counts as an answer if it demonstrably contains THIS product's
-    own content — i.e. the slug's distinctive words appear in the meta/title.
-    A generic site shell ("Minifygram | Rare Hot Wheels…") fails that test and
-    we return None, so the caller keeps the previous state instead of guessing.
-    """
-    toks = [w for w in re.split(r"[-_]", slug.lower()) if len(w) > 2][:3]
-    if not toks:
-        return None
-
-    for ua in (*_CRAWLER_UAS, COMMON_HEADERS["User-Agent"]):
-        try:
-            r = http.get(f"https://minifygram.com/product/{slug}",
-                         headers={**COMMON_HEADERS, "User-Agent": ua},
-                         timeout=20, **_IMPERSONATE)
-        except Exception:
-            continue
-        if r.status_code != 200 or len(r.text) < 500:
-            continue
-        page = r.text
-        metas = " ".join(a or b for a, b in _MG_META.findall(page))
-        tit = re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
-        blob = (metas + " " + (tit.group(1) if tit else "")).lower()
-
-        # product-specific rendering check: most slug words must appear
-        hits = sum(1 for t in toks if t in blob)
-        if hits < max(1, len(toks) - 1):
-            continue        # generic shell for this UA — try the next UA
-
-        return "out_of_stock" if re.search(r"sold\s*out", blob, re.I) else "in_stock"
-    return None             # could not verify — caller keeps previous state
-
-
-# How many product pages we're willing to verify per run (politeness budget).
-# 173 HW products / 35 per run ⇒ every product's stock is re-verified at least
-# every ~5 runs (~75 min at 15-min cadence); changed/new items jump the queue.
-MG_VERIFY_BUDGET = int(os.getenv("MG_VERIFY_BUDGET", "35"))
-
-
 def scrape_minifygram() -> list[dict]:
-    key = MINIFYGRAM_ANON_KEY or _discover_anon_key()
-    if not key:
-        return []
-    base = MINIFYGRAM_SUPABASE
+    key = MINIFYGRAM_ANON_KEY
     headers = _mg_headers(key)
 
-    tables = _mg_list_tables(base, headers)
-    prod_table = next((t for t in ("products", "product", "listings") if t in tables),
-                      "products")
-
-    rows = None
-    for q in (f"{base}/rest/v1/{prod_table}?select=*&order=created_at.desc&limit=1000",
-              f"{base}/rest/v1/{prod_table}?select=*&limit=1000"):
-        try:
-            r = http.get(q, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
-            if r.status_code == 200:
-                data = r.json()
-                if isinstance(data, list) and data:
-                    rows = data
-                    print(f"  [MG] table '{prod_table}' → {len(rows)} rows")
-                    break
-        except Exception:
-            continue
-    if not rows:
-        print("  [MG] no product rows reachable (check the anon key).")
+    url = (f"{MINIFYGRAM_SUPABASE}/rest/v1/products"
+           f"?select={quote(_MG_SELECT, safe=',!()')}&is_active=eq.true&limit=1000")
+    try:
+        r = http.get(url, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+    except Exception as e:
+        print(f"  [MG] request failed: {e}")
         return []
 
-    # Optional authoritative stock via SKU table
-    sku_stock = _mg_sku_stock(base, headers, tables)
+    if r.status_code in (401, 403):
+        # Key rotated? Try to mine a fresh one once, then give up cleanly.
+        print(f"  [MG] auth failed (HTTP {r.status_code}) — key may have rotated. "
+              f"Trying to re-discover…")
+        fresh = _discover_anon_key_from_bundle()
+        if fresh and fresh != key:
+            headers = _mg_headers(fresh)
+            try:
+                r = http.get(url, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+            except Exception as e:
+                print(f"  [MG] retry failed: {e}")
+                return []
+        if r.status_code in (401, 403):
+            print("  [MG] still unauthorized. Set MINIFYGRAM_ANON_KEY repo secret "
+                  "with a fresh key (see README) — the hardcoded default is stale.")
+            return []
 
-    # Previous state — used to (a) reuse last verified stock for products we
-    # don't verify this run, and (b) prioritise the verification queue.
-    prev_all = load_seen()
+    if r.status_code != 200:
+        print(f"  [MG] products query → HTTP {r.status_code}: {r.text[:200]}")
+        return []
 
-    hw = []          # HW rows after brand filter, before stock resolution
+    try:
+        rows = r.json()
+    except Exception as e:
+        print(f"  [MG] bad JSON response: {e}")
+        return []
+
+    if not isinstance(rows, list):
+        print(f"  [MG] unexpected response shape: {type(rows)}")
+        return []
+    print(f"  [MG] products (embedded stock) → {len(rows)} rows")
+
+    out = []
+    no_sku_count = 0
     for row in rows:
-        kl = {k.lower(): k for k in row}
-        def g(*names):
-            for n in names:
-                if n in kl and row[kl[n]] not in (None, ""):
-                    return row[kl[n]]
-            return None
-
-        rid   = g("id", "product_id", "uuid", "slug")
-        name  = g("name", "title")
-        slug  = g("slug", "handle") or rid
-        brand = str(g("brand", "brand_name") or "").lower()
+        rid   = row.get("id")
+        name  = row.get("name")
+        slug  = row.get("slug") or rid
+        brand = str(row.get("brand") or "").lower()
         if not (rid and name):
             continue
 
-        # STRICT brand filter — only Hotwheels/Mattel (keeps MiniGT etc. out)
+        # STRICT brand filter — only Hotwheels/Mattel (Minifygram sells MiniGT,
+        # TimeMicro, Poprace, Inno64, Funko, etc. under the same "Diecast"
+        # category, so category alone is NOT a safe filter).
         brand_norm = brand.replace(" ", "").replace("-", "")
         name_norm  = str(name).lower().replace(" ", "").replace("-", "")
         if not ("hotwheels" in brand_norm or "mattel" in brand_norm
                 or "hotwheels" in name_norm):
             continue
 
-        # Real schema fields (from the live DB): price_inr, mrp_inr, is_active,
-        # back_in_stock, updated_at, default_sku_id, badge, preorder_status
-        price = price_to_int(g("price_inr", "price", "selling_price"))
-        mrp   = price_to_int(g("mrp_inr", "mrp"))
-        hw.append({
-            "rid": str(rid), "slug": str(slug), "name": str(name)[:180],
-            "price": price, "mrp": mrp,
-            "is_active": g("is_active"),
-            "back_in_stock": bool(g("back_in_stock")),
-            "updated_at": str(g("updated_at") or ""),
-            "sku_id": str(g("default_sku_id") or ""),
-            "badge": str(g("badge") or ""),
+        # ── Authoritative stock: product_skus[].available, summed ──────────────
+        skus = row.get("product_skus") or []
+        if skus:
+            total_available = sum(
+                (s.get("available") or 0) for s in skus if isinstance(s, dict))
+            in_stock = total_available > 0
+        else:
+            # No SKU row at all for this product. Fall back to product_type,
+            # which reads "in-stock" on the confirmed live example; anything
+            # else (e.g. "sold-out", "preorder") counts as not-immediately-buyable.
+            no_sku_count += 1
+            ptype = str(row.get("product_type") or "").lower()
+            in_stock = ptype == "in-stock"
+
+        price = price_to_int(row.get("price_inr"))
+        mrp   = price_to_int(row.get("mrp_inr"))
+
+        out.append({
+            "id": f"mg_{rid}", "source": "minifygram", "name": str(name)[:180],
+            "url": f"https://minifygram.com/product/{slug}",
+            "price": f"₹{price}" if price else "",
+            "mrp":   f"₹{mrp}"   if mrp and mrp != price else "",
+            "stock": "in_stock" if in_stock else "out_of_stock",
+            "badge_new": bool(row.get("badge")),
+            "mg_updated_at": str(row.get("updated_at") or ""),
+            # v4.4: authoritative product_skus.available query. Any prior stamp
+            # (page-scraping guesses, sold_out-column guesses) gets silently
+            # corrected once, per the stock_ver mechanism in compute_changes().
+            "stock_ver": "mg_skus_v1",
         })
 
-    # ── Resolve stock for each HW product ─────────────────────────────────────
-    # Priority: SKU table → page verification (budgeted) → previous state → OOS.
-    # Build the verification queue: unknown-first, then changed, then stalest.
-    # MG_VERIFIER_V: bump whenever verification logic changes — all stamps from
-    # older verifier versions are distrusted and silently re-verified (their
-    # corrections won't fire restock alerts, same as first-ever verification).
-    MG_VERIFIER_V = "2"
-    verify_queue, resolved = [], {}
-    for p in hw:
-        pid = f"mg_{p['rid']}"
-        if sku_stock:
-            s = sku_stock.get(p["rid"], sku_stock.get(p["sku_id"]))
-            if s is not None:
-                resolved[pid] = "in_stock" if s else "out_of_stock"
-                continue
-        prevrow = prev_all.get(pid, {})
-        never_verified = (not prevrow.get("mg_verified_at")
-                          or prevrow.get("mg_verifier") != MG_VERIFIER_V)
-        db_changed = (p["updated_at"] and
-                      p["updated_at"] != prevrow.get("mg_updated_at"))
-        p["_never_verified"] = never_verified
-        # score: lower = verify sooner
-        score = (0 if never_verified else
-                 1 if db_changed else
-                 2 if p["back_in_stock"] and prevrow.get("stock") != "in_stock" else
-                 3)
-        verify_queue.append((score, prevrow.get("mg_verified_at", ""), p, pid))
-
-    verify_queue.sort(key=lambda t: (t[0], t[1]))     # priority, then stalest
-    verified, fails, oos_seen = 0, 0, 0
-    for score, _, p, pid in verify_queue:
-        if verified >= MG_VERIFY_BUDGET:
-            break
-        if fails >= 6 and verified == 0:
-            # None of the first attempts produced product-specific pages —
-            # per-product rendering isn't available from this runner. Stop
-            # hammering; previous states are kept and we log the situation.
-            print("  [MG] page verification unavailable (generic shell only) — "
-                  "need the site's own stock query; see README.")
-            break
-        s = _mg_page_stock(p["slug"])
-        if s is not None:
-            resolved[pid] = s
-            p["_verified_now"] = True
-            verified += 1
-            if s == "out_of_stock":
-                oos_seen += 1
-            time.sleep(0.7)                            # gentle pacing
-        else:
-            fails += 1
-    if verified:
-        print(f"  [MG] page-verified {verified} products this run "
-              f"({verified - oos_seen} in stock / {oos_seen} sold out)")
-        if oos_seen == 0 and verified >= 10:
-            print("  [MG] ⚠ suspicious: 0 sold-out among verified — "
-                  "verification may be seeing generic pages; treat with caution.")
-
-    # ── Emit ──────────────────────────────────────────────────────────────────
-    out = []
-    for p in hw:
-        pid = f"mg_{p['rid']}"
-        prevrow = prev_all.get(pid, {})
-        stock = resolved.get(pid) or prevrow.get("stock") or "out_of_stock"
-        # A verification that happens while the product counts as never-verified
-        # (first time ever, OR first time under the current verifier version) is
-        # a data correction — stock flips must stay silent.
-        first_verify = p.get("_verified_now") and p.get("_never_verified")
-        d = {
-            "id": pid, "source": "minifygram", "name": p["name"],
-            "url": f"https://minifygram.com/product/{p['slug']}",
-            "price": f"₹{p['price']}" if p["price"] else "",
-            "mrp":   f"₹{p['mrp']}"   if p["mrp"] and p["mrp"] != p["price"] else "",
-            "stock": stock,
-            "badge_new": bool(p["badge"]),
-            # bookkeeping persisted into seen.json by merge_and_save_seen
-            "mg_updated_at":  p["updated_at"],
-            "mg_verified_at": (time.strftime("%Y-%m-%dT%H:%M:%S")
-                               if p.get("_verified_now")
-                               else prevrow.get("mg_verified_at", "")),
-            "mg_verifier":    (MG_VERIFIER_V if p.get("_verified_now")
-                               else prevrow.get("mg_verifier", "")),
-        }
-        if first_verify:
-            d["first_verify"] = True
-        out.append(d)
+    if no_sku_count:
+        print(f"  [MG] {no_sku_count} products had no SKU row — used product_type fallback")
 
     ins = sum(1 for d in out if d["stock"] == "in_stock")
     print(f"[*] Minifygram total: {len(out)} ({ins} in stock)")
@@ -842,14 +670,24 @@ def compute_changes(current: dict, seen: dict) -> dict:
         prev_stock = prev.get("stock")
         prev_price = price_to_int(prev.get("price"))
 
+        # A source can carry a "stock_ver" tag marking which detection logic
+        # produced its stock reading (e.g. Minifygram's v4.4 rewrite from
+        # page-guessing to the authoritative product_skus query). If this
+        # run's tag differs from what's stored, the stock value may have just
+        # been CORRECTED rather than genuinely changed — so we apply it
+        # silently instead of firing a possibly-false restock alert. Real
+        # restocks after that read normally.
+        stock_ver = d.get("stock_ver")
+        is_correction = bool(stock_ver) and stock_ver != prev.get("stock_ver")
+
         if (stock == "in_stock" and prev_stock == "out_of_stock"
-                and not d.get("first_verify")
+                and not is_correction
                 and _hours_since(prev.get("last_restock_alert", "")) >= RESTOCK_COOLDOWN_H):
             restocks.append(d)
             prev["last_restock_alert"] = now
 
         if (stock == "in_stock" and cur_price and prev_price
-                and cur_price < prev_price):
+                and cur_price < prev_price and not is_correction):
             price_drops.append({**d, "prev_price": prev.get("price")})
 
     return {"new_listings": new_listings, "restocks": restocks,
