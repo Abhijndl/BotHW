@@ -152,7 +152,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             "last_restock_alert": prev.get("last_restock_alert", ""),
         }
         # per-source bookkeeping (e.g. Minifygram verification metadata)
-        for k in ("mg_updated_at", "mg_verified_at"):
+        for k in ("mg_updated_at", "mg_verified_at", "mg_verifier"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -259,8 +259,17 @@ def scrape_firstcry() -> list[dict]:
                     break
             if not href:
                 href = f"/x/x/{pid_raw}/product-detail"
-            if href.startswith("/"):
+            # Normalise every URL shape we can meet: absolute, protocol-relative
+            # (//www…), bare-domain (/www.firstcry.com/…), or site-relative path.
+            href = re.sub(r"^/+(?=www\.firstcry\.com)", "", href)   # "/www.firstcry.com/x" → "www.firstcry.com/x"
+            if href.startswith("www."):
+                href = "https://" + href
+            elif href.startswith("//"):
+                href = "https:" + href
+            elif href.startswith("/"):
                 href = "https://www.firstcry.com" + href
+            # collapse any accidental doubled domain
+            href = re.sub(r"(https://www\.firstcry\.com)/+(?:www\.)?firstcry\.com", r"\1", href)
 
             # name — prefer the anchor title attribute; fall back to alt text / anchor text
             name = ""
@@ -480,26 +489,48 @@ def _mg_sku_stock(base: str, headers: dict, tables: list[str]) -> dict:
 
 _MG_META = re.compile(r'<meta[^>]+content="([^"]*)"[^>]*>|<meta[^>]+content=\'([^\']*)\'[^>]*>', re.I)
 
+# Crawler UAs get the pre-rendered, product-specific meta (Lovable apps do
+# dynamic rendering for bots); a normal browser UA gets the generic SPA shell.
+_CRAWLER_UAS = (
+    "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+)
+
 
 def _mg_page_stock(slug: str) -> str | None:
-    """Read a product page's server-rendered meta tags for the Sold out state.
+    """Read a product page's pre-rendered meta for the Sold-out state.
 
-    Minifygram pre-renders SEO meta per product (we've verified this: the
-    description carries '… · Sold out · Dispatch within 7 days*'). Absence of
-    'Sold out' in the meta/description ⇒ the item is purchasable.
-    Returns 'in_stock' / 'out_of_stock' / None (page unreachable).
+    VALIDATION RULE (prevents the 35/35-in-stock false positive): the fetched
+    page only counts as an answer if it demonstrably contains THIS product's
+    own content — i.e. the slug's distinctive words appear in the meta/title.
+    A generic site shell ("Minifygram | Rare Hot Wheels…") fails that test and
+    we return None, so the caller keeps the previous state instead of guessing.
     """
-    try:
-        r = http.get(f"https://minifygram.com/product/{slug}",
-                     headers=COMMON_HEADERS, timeout=20, **_IMPERSONATE)
-        if r.status_code != 200 or len(r.text) < 500:
-            return None
-        # gather all meta content attributes + title
-        metas = " ".join(a or b for a, b in _MG_META.findall(r.text))
-        blob = metas if len(metas) > 40 else r.text[:6000]
-        return "out_of_stock" if re.search(r"sold\s*out", blob, re.I) else "in_stock"
-    except Exception:
+    toks = [w for w in re.split(r"[-_]", slug.lower()) if len(w) > 2][:3]
+    if not toks:
         return None
+
+    for ua in (*_CRAWLER_UAS, COMMON_HEADERS["User-Agent"]):
+        try:
+            r = http.get(f"https://minifygram.com/product/{slug}",
+                         headers={**COMMON_HEADERS, "User-Agent": ua},
+                         timeout=20, **_IMPERSONATE)
+        except Exception:
+            continue
+        if r.status_code != 200 or len(r.text) < 500:
+            continue
+        page = r.text
+        metas = " ".join(a or b for a, b in _MG_META.findall(page))
+        tit = re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
+        blob = (metas + " " + (tit.group(1) if tit else "")).lower()
+
+        # product-specific rendering check: most slug words must appear
+        hits = sum(1 for t in toks if t in blob)
+        if hits < max(1, len(toks) - 1):
+            continue        # generic shell for this UA — try the next UA
+
+        return "out_of_stock" if re.search(r"sold\s*out", blob, re.I) else "in_stock"
+    return None             # could not verify — caller keeps previous state
 
 
 # How many product pages we're willing to verify per run (politeness budget).
@@ -583,6 +614,10 @@ def scrape_minifygram() -> list[dict]:
     # ── Resolve stock for each HW product ─────────────────────────────────────
     # Priority: SKU table → page verification (budgeted) → previous state → OOS.
     # Build the verification queue: unknown-first, then changed, then stalest.
+    # MG_VERIFIER_V: bump whenever verification logic changes — all stamps from
+    # older verifier versions are distrusted and silently re-verified (their
+    # corrections won't fire restock alerts, same as first-ever verification).
+    MG_VERIFIER_V = "2"
     verify_queue, resolved = [], {}
     for p in hw:
         pid = f"mg_{p['rid']}"
@@ -592,9 +627,11 @@ def scrape_minifygram() -> list[dict]:
                 resolved[pid] = "in_stock" if s else "out_of_stock"
                 continue
         prevrow = prev_all.get(pid, {})
-        never_verified = not prevrow.get("mg_verified_at")
+        never_verified = (not prevrow.get("mg_verified_at")
+                          or prevrow.get("mg_verifier") != MG_VERIFIER_V)
         db_changed = (p["updated_at"] and
                       p["updated_at"] != prevrow.get("mg_updated_at"))
+        p["_never_verified"] = never_verified
         # score: lower = verify sooner
         score = (0 if never_verified else
                  1 if db_changed else
@@ -603,18 +640,33 @@ def scrape_minifygram() -> list[dict]:
         verify_queue.append((score, prevrow.get("mg_verified_at", ""), p, pid))
 
     verify_queue.sort(key=lambda t: (t[0], t[1]))     # priority, then stalest
-    verified = 0
+    verified, fails, oos_seen = 0, 0, 0
     for score, _, p, pid in verify_queue:
         if verified >= MG_VERIFY_BUDGET:
+            break
+        if fails >= 6 and verified == 0:
+            # None of the first attempts produced product-specific pages —
+            # per-product rendering isn't available from this runner. Stop
+            # hammering; previous states are kept and we log the situation.
+            print("  [MG] page verification unavailable (generic shell only) — "
+                  "need the site's own stock query; see README.")
             break
         s = _mg_page_stock(p["slug"])
         if s is not None:
             resolved[pid] = s
             p["_verified_now"] = True
             verified += 1
+            if s == "out_of_stock":
+                oos_seen += 1
             time.sleep(0.7)                            # gentle pacing
+        else:
+            fails += 1
     if verified:
-        print(f"  [MG] page-verified {verified} products this run")
+        print(f"  [MG] page-verified {verified} products this run "
+              f"({verified - oos_seen} in stock / {oos_seen} sold out)")
+        if oos_seen == 0 and verified >= 10:
+            print("  [MG] ⚠ suspicious: 0 sold-out among verified — "
+                  "verification may be seeing generic pages; treat with caution.")
 
     # ── Emit ──────────────────────────────────────────────────────────────────
     out = []
@@ -622,7 +674,10 @@ def scrape_minifygram() -> list[dict]:
         pid = f"mg_{p['rid']}"
         prevrow = prev_all.get(pid, {})
         stock = resolved.get(pid) or prevrow.get("stock") or "out_of_stock"
-        first_verify = p.get("_verified_now") and not prevrow.get("mg_verified_at")
+        # A verification that happens while the product counts as never-verified
+        # (first time ever, OR first time under the current verifier version) is
+        # a data correction — stock flips must stay silent.
+        first_verify = p.get("_verified_now") and p.get("_never_verified")
         d = {
             "id": pid, "source": "minifygram", "name": p["name"],
             "url": f"https://minifygram.com/product/{p['slug']}",
@@ -635,10 +690,10 @@ def scrape_minifygram() -> list[dict]:
             "mg_verified_at": (time.strftime("%Y-%m-%dT%H:%M:%S")
                                if p.get("_verified_now")
                                else prevrow.get("mg_verified_at", "")),
+            "mg_verifier":    (MG_VERIFIER_V if p.get("_verified_now")
+                               else prevrow.get("mg_verifier", "")),
         }
         if first_verify:
-            # First-ever verification of this product: any OOS→in-stock flip is a
-            # data CORRECTION (our old default was wrong), not a real restock.
             d["first_verify"] = True
         out.append(d)
 
