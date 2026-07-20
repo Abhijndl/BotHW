@@ -7,7 +7,7 @@ on:
     # GitHub's free tier gives 2000 min/month for private repos (unlimited for
     # public). Each run here is ~20-40s, so 15-min cadence is safe. If you ever
     # get close to the cap, change to "*/30 * * * *".
-    - cron: "*/10 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write           # needed so the job can commit seen.json back
@@ -46,6 +46,10 @@ jobs:
           # Without it, the bot tries to auto-discover it but Cloudflare may block
           # that from GitHub's IPs — so setting this secret is strongly recommended.
           MINIFYGRAM_ANON_KEY: ${{ secrets.MINIFYGRAM_ANON_KEY }}
+          # Optional: watch specific Blinkit products. Paste share-links from the
+          # Blinkit app, comma-separated. (Only effective from an Indian IP —
+          # GitHub's US runners are geo-blocked by Blinkit.)
+          BLINKIT_WATCH: ""
           # SILENT=true  → only ping Telegram on real changes (recommended)
           # SILENT=false → send a heartbeat summary every run
           SILENT: "true"
