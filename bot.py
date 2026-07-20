@@ -560,6 +560,249 @@ def scrape_minifygram() -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
+# SOURCE 3 — Hamleys  (sitemap catalog discovery + SSR product-page stock)
+# ══════════════════════════════════════════════════════════════════════════════════
+# hamleys.in (Fynd platform) server-renders its listing page but only the first
+# 12 cards, and strips page/sort params server-side (verified live) — so the
+# listing alone can never see all ~46 Hot Wheels products. Architecture:
+#   1. CATALOG: discover every /product/ URL with "hot-wheels" in the slug from
+#      the sitemap (complete — includes items the listing hides), plus the
+#      listing's top-12, plus anything we've ever seen before (seen.json).
+#   2. STOCK:  items visible on the listing render with Add-to-bag → in stock.
+#      Everything else gets its own SSR product page checked on a rotating
+#      budget (HM_VERIFY_BUDGET per run, never-checked first, then stalest).
+#   3. Optional fast path: Fynd's catalog JSON API with a cookie session —
+#      if this store has it open, one call replaces all page checks.
+HM_VERIFY_BUDGET = int(os.getenv("HM_VERIFY_BUDGET", "12"))
+_HM_CARD = re.compile(r'href="(/product/[^"]+)"', re.I)
+
+
+def _hm_session():
+    try:
+        return http.Session(**_IMPERSONATE) if _IMPERSONATE else http.Session()
+    except Exception:
+        return None
+
+
+def _hamleys_api(sess) -> list[dict] | None:
+    """Fynd application catalog API, with site cookies + INR header."""
+    headers = {**COMMON_HEADERS, "Accept": "application/json",
+               "x-currency-code": "INR"}
+    def _g(u):
+        return (sess.get(u, headers=headers, timeout=TIMEOUT) if sess
+                else http.get(u, headers=headers, timeout=TIMEOUT, **_IMPERSONATE))
+    out = []
+    for ver in ("v1.0", "v2.0"):
+        base = (f"https://hamleys.in/api/service/application/catalog/{ver}/products/"
+                f"?brand=hot-wheels&page_size=100")
+        try:
+            r = _g(base)
+            if r.status_code != 200:
+                continue
+            data = r.json()
+        except Exception:
+            continue
+        items = data.get("items") or []
+        if not items:
+            continue
+        for it in items:
+            slug = it.get("slug") or ""
+            name = it.get("name") or ""
+            if not (slug and name):
+                continue
+            price = None
+            pr = it.get("price") or {}
+            for k in ("effective", "marked"):
+                v = pr.get(k) or {}
+                price = price or price_to_int(v.get("min") or v.get("max"))
+            sellable = it.get("sellable")
+            out.append({
+                "id": f"hm_{slug}", "source": "hamleys", "name": str(name)[:180],
+                "url": f"https://hamleys.in/product/{slug}",
+                "price": f"₹{price}" if price else "", "mrp": "",
+                "stock": "in_stock" if (sellable is None or sellable) else "out_of_stock",
+                "badge_new": False, "stock_ver": "hm_api_v1",
+            })
+        if out:
+            print(f"  [HM] Fynd API {ver} → {len(out)} items (sellable flags)")
+            return out
+    return None
+
+
+def _hm_sitemap_slugs(sess) -> set:
+    """Collect all hot-wheels product slugs from the sitemap(s)."""
+    def _g(u):
+        return (sess.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT) if sess
+                else http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE))
+    slugs = set()
+    sitemap_urls = []
+    # robots.txt usually lists the sitemap(s)
+    try:
+        r = _g("https://hamleys.in/robots.txt")
+        if r.status_code == 200:
+            sitemap_urls += re.findall(r"(?im)^sitemap:\s*(\S+)", r.text)
+    except Exception:
+        pass
+    sitemap_urls += ["https://hamleys.in/sitemap.xml"]
+
+    fetched, queue = set(), list(dict.fromkeys(sitemap_urls))
+    while queue and len(fetched) < 12:
+        sm = queue.pop(0)
+        if sm in fetched:
+            continue
+        fetched.add(sm)
+        try:
+            r = _g(sm)
+            if r.status_code != 200:
+                continue
+            locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", r.text)
+        except Exception:
+            continue
+        for loc in locs:
+            if loc.endswith(".xml") and ("product" in loc.lower() or "sitemap" in loc.lower()):
+                queue.append(loc)
+            elif "/product/" in loc and "hot-wheels" in loc.lower():
+                slugs.add(loc.rsplit("/product/", 1)[-1].strip("/"))
+    if slugs:
+        print(f"  [HM] sitemap → {len(slugs)} hot-wheels product slugs")
+    return slugs
+
+
+def _hm_page_check(sess, slug: str) -> dict | None:
+    """SSR product page → {name, price, stock}. None if page invalid/unreachable.
+    Validation: the page must contain this product's own slug words, so an error
+    page or shell can never masquerade as a stock answer (lesson from MG)."""
+    toks = [w for w in re.split(r"[-_]", slug.lower()) if len(w) > 2][:3]
+    u = f"https://hamleys.in/product/{slug}"
+    try:
+        r = (sess.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT) if sess
+             else http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE))
+    except Exception:
+        return None
+    if r.status_code != 200 or len(r.text) < 2000:
+        return None
+    page = r.text
+    tit = re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
+    title = _clean(tit.group(1)) if tit else ""
+    blob = (title + " " + page[:20000]).lower()
+    hits = sum(1 for t in toks if t in blob)
+    if toks and hits < max(1, len(toks) - 1):
+        return None                                   # not this product's page
+    name = re.sub(r"\s*[|–-]\s*Hamleys.*$", "", title, flags=re.I).strip() or slug
+    pnums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+)", page[:30000])]
+    pnums = [p for p in pnums if p and 50 <= p <= 100000]
+    price = min(pnums) if pnums else None
+    up = page.upper()
+    if "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY ME" in up:
+        stock = "out_of_stock"
+    elif "ADD TO BAG" in up or "ADD TO CART" in up:
+        stock = "in_stock"
+    else:
+        stock = "out_of_stock"                        # unknown → conservative
+    return {"name": name[:180], "price": price, "stock": stock}
+
+
+def scrape_hamleys() -> list[dict]:
+    sess = _hm_session()
+    # warm cookies + grab the listing's top-12 (they render Add-to-bag = in stock)
+    listing_items = {}
+    try:
+        r = (sess.get("https://hamleys.in/products?brand=hot-wheels",
+                      headers=COMMON_HEADERS, timeout=TIMEOUT) if sess
+             else http.get("https://hamleys.in/products?brand=hot-wheels",
+                           headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE))
+        if r.status_code == 200 and len(r.text) > 3000:
+            for part in re.split(r'(?=<a[^>]+href="/product/)', r.text):
+                hm = _HM_CARD.search(part or "")
+                if not hm:
+                    continue
+                slug = hm.group(1).rsplit("/", 1)[-1]
+                txt = _clean(part[:2500])
+                nm = re.search(r'(Hot\s*Wheels[^₹]{3,150})', txt, re.I)
+                if not nm:
+                    continue
+                pnums = [price_to_int(x) for x in re.findall(r'₹\s*([\d,]+)', txt)]
+                pnums = [p for p in pnums if p and 50 <= p <= 100000]
+                up = part.upper()
+                oos = "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up
+                listing_items[slug] = {
+                    "name": re.sub(r"\s+", " ", nm.group(1)).strip(" -–|")[:180],
+                    "price": min(pnums) if pnums else None,
+                    "stock": "out_of_stock" if oos else "in_stock",
+                }
+            print(f"  [HM] listing → {len(listing_items)} visible products")
+        else:
+            print(f"  [HM] listing → HTTP {r.status_code}")
+    except Exception as e:
+        print(f"  [HM] listing failed: {e}")
+
+    # fast path: full catalog with sellable flags in one API call
+    api = _hamleys_api(sess)
+    if api:
+        api = [d for d in api if "hot wheel" in d["name"].lower()
+               or "hotwheels" in d["name"].lower().replace(" ", "")]
+        if api:
+            print(f"[*] Hamleys total (API): {len(api)}")
+            return api
+
+    # full catalog: sitemap ∪ listing ∪ everything ever seen
+    prev_all = load_seen()
+    slugs = _hm_sitemap_slugs(sess)
+    slugs |= set(listing_items)
+    slugs |= {pid[3:] for pid, v in prev_all.items()
+              if pid.startswith("hm_") and isinstance(v, dict)}
+
+    # rotate page checks over items NOT visible on the listing
+    to_check = [s for s in slugs if s not in listing_items]
+    to_check.sort(key=lambda s: prev_all.get(f"hm_{s}", {}).get("hm_verified_at", ""))
+    checked, fails = {}, 0
+    now = time.strftime("%Y-%m-%dT%H:%M:%S")
+    for s in to_check:
+        if len(checked) >= HM_VERIFY_BUDGET or (fails >= 5 and not checked):
+            break
+        info = _hm_page_check(sess, s)
+        if info:
+            checked[s] = info
+        else:
+            fails += 1
+        time.sleep(0.8)
+    if checked:
+        oos = sum(1 for v in checked.values() if v["stock"] == "out_of_stock")
+        print(f"  [HM] page-checked {len(checked)} products "
+              f"({len(checked)-oos} in stock / {oos} sold out)")
+
+    out = []
+    for s in sorted(slugs):
+        pid = f"hm_{s}"
+        prevrow = prev_all.get(pid, {})
+        if s in listing_items:
+            info = listing_items[s]
+            verified_at = now
+        elif s in checked:
+            info = checked[s]
+            verified_at = now
+        else:
+            # not checked this run — keep last known state
+            info = {"name": prevrow.get("name") or s.replace("-", " ").title(),
+                    "price": price_to_int(prevrow.get("price")),
+                    "stock": prevrow.get("stock") or "out_of_stock"}
+            verified_at = prevrow.get("hm_verified_at", "")
+        out.append({
+            "id": pid, "source": "hamleys", "name": str(info["name"])[:180],
+            "url": f"https://hamleys.in/product/{s}",
+            "price": f"₹{info['price']}" if info.get("price") else "",
+            "mrp": "",
+            "stock": info["stock"],
+            "badge_new": False,
+            "stock_ver": "hm_pages_v1",
+            "hm_verified_at": verified_at,
+        })
+    ins = sum(1 for d in out if d["stock"] == "in_stock")
+    print(f"[*] Hamleys total: {len(out)} ({ins} in stock)")
+    return out
+
+
+# ══════════════════════════════════════════════════════════════════════════════════
 # SOURCE 4 — Blinkit  (internal search API, location-pinned) — best effort
 # ══════════════════════════════════════════════════════════════════════════════════
 def scrape_blinkit() -> list[dict]:
