@@ -152,7 +152,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             "last_restock_alert": prev.get("last_restock_alert", ""),
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
-        for k in ("mg_updated_at", "stock_ver"):
+        for k in ("mg_updated_at", "stock_ver", "hm_verified_at"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -560,138 +560,6 @@ def scrape_minifygram() -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
-# SOURCE 3 — Hamleys  (Fynd platform: JSON catalog API first, SSR HTML fallback)
-# ══════════════════════════════════════════════════════════════════════════════════
-# hamleys.in runs on the Fynd commerce platform. Two independent ways in:
-#   1. Fynd's application catalog API (JSON, includes a `sellable` stock flag)
-#   2. The brand listing page, which is server-rendered: every card is a plain
-#      <a href="/product/{slug}">Name ₹ price</a> — same parse class as FirstCry.
-HAMLEYS_PAGES = 5          # 46 products / ~12 per page → 4 pages + headroom
-
-
-def _hamleys_api() -> list[dict] | None:
-    """Try Fynd's standard application catalog endpoint. Returns None if the
-    endpoint isn't open on this store (fall back to HTML)."""
-    out = []
-    for page in range(1, HAMLEYS_PAGES + 1):
-        u = (f"https://hamleys.in/api/service/application/catalog/v1.0/products/"
-             f"?brand=hot-wheels&page_no={page}&page_size=50")
-        try:
-            r = http.get(u, headers={**COMMON_HEADERS, "Accept": "application/json"},
-                         timeout=TIMEOUT, **_IMPERSONATE)
-            if r.status_code != 200:
-                return None if page == 1 else out
-            data = r.json()
-        except Exception:
-            return None if page == 1 else out
-        items = data.get("items") or []
-        if not items:
-            break
-        for it in items:
-            slug = it.get("slug") or ""
-            name = it.get("name") or ""
-            if not (slug and name):
-                continue
-            price = None
-            pr = it.get("price") or {}
-            for k in ("effective", "marked"):
-                v = pr.get(k) or {}
-                price = price or price_to_int(v.get("min") or v.get("max"))
-            sellable = it.get("sellable")
-            out.append({
-                "id": f"hm_{slug}", "source": "hamleys", "name": str(name)[:180],
-                "url": f"https://hamleys.in/product/{slug}",
-                "price": f"₹{price}" if price else "",
-                "mrp": "",
-                "stock": "in_stock" if (sellable is None or sellable) else "out_of_stock",
-                "badge_new": False,
-            })
-        if not (data.get("page") or {}).get("has_next"):
-            break
-        time.sleep(0.8)
-    return out
-
-
-_HM_CARD = re.compile(r'href="(/product/[^"]+)"', re.I)
-
-
-def scrape_hamleys() -> list[dict]:
-    # Path 1: JSON API
-    api = _hamleys_api()
-    if api:
-        # keep only actual Hot Wheels (API is brand-filtered already, belt & braces)
-        api = [d for d in api if "hot wheel" in d["name"].lower()
-               or "hotwheels" in d["name"].lower().replace(" ", "")]
-        print(f"[*] Hamleys total (API): {len(api)}")
-        if api:
-            return api
-
-    # Path 2: SSR HTML listing pages
-    out, seen_ids = [], set()
-    for page in range(1, HAMLEYS_PAGES + 1):
-        u = f"https://hamleys.in/products?brand=hot-wheels&page_no={page}"
-        try:
-            r = http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
-        except Exception as e:
-            print(f"  [HM] page {page} failed: {e}")
-            break
-        if r.status_code != 200 or len(r.text) < 3000:
-            print(f"  [HM] page {page} → HTTP {r.status_code}")
-            break
-        page_html = r.text
-
-        # Split into per-card regions on /product/ hrefs (like the FC parser)
-        parts = re.split(r'(?=<a[^>]+href="/product/)', page_html)
-        found = 0
-        for part in parts:
-            hm = _HM_CARD.search(part or "")
-            if not hm:
-                continue
-            path = hm.group(1)
-            slug = path.rsplit("/", 1)[-1]
-            uid = f"hm_{slug}"
-            if uid in seen_ids:
-                continue
-
-            txt = _clean(part[:2500])
-            nm = re.search(r'(Hot\s*Wheels[^₹]{3,150})', txt, re.I)
-            if not nm:
-                continue                    # non-HW or nav link
-            name = re.sub(r"\s+", " ", nm.group(1)).strip(" -–|")[:180]
-
-            pnums = [price_to_int(x) for x in re.findall(r'₹\s*([\d,]+)', txt)]
-            pnums = [p for p in pnums if p and 50 <= p <= 100000]
-            price = min(pnums) if pnums else None
-
-            up = part.upper()
-            if "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up:
-                stock = "out_of_stock"
-            else:
-                stock = "in_stock"          # listing shows Add-to-bag cards
-
-            if price is None and stock == "in_stock":
-                continue                    # nav/footer link, not a card
-
-            seen_ids.add(uid)
-            out.append({
-                "id": uid, "source": "hamleys", "name": name,
-                "url": f"https://hamleys.in{path}",
-                "price": f"₹{price}" if price else "",
-                "mrp": "",
-                "stock": stock,
-                "badge_new": False,
-            })
-            found += 1
-        print(f"  [HM] page {page} → {found} products")
-        if found == 0:
-            break
-        time.sleep(1.0)
-
-    print(f"[*] Hamleys total: {len(out)}")
-    return out
-
-
-# ══════════════════════════════════════════════════════════════════════════════════
 # SOURCE 4 — Blinkit  (internal search API, location-pinned) — best effort
 # ══════════════════════════════════════════════════════════════════════════════════
 def scrape_blinkit() -> list[dict]:
@@ -706,7 +574,12 @@ def scrape_blinkit() -> list[dict]:
     # NOTE: still subject to the same geo-block from GitHub's US runners; this
     # becomes fully live the day the workflow runs from an Indian IP
     # (self-hosted runner). The code is ready either way.
-    watch_ids = re.findall(r"/prid/(\d+)", os.getenv("BLINKIT_WATCH", ""))
+    watch_raw = os.getenv("BLINKIT_WATCH", "")
+    # capture full share-links where given (preferred: we fetch the exact page),
+    # plus any bare /prid/N ids as fallback
+    watch_urls = re.findall(r"https?://blinkit\.com/\S*?/prid/\d+", watch_raw)
+    watch_ids  = re.findall(r"/prid/(\d+)", watch_raw)
+    url_by_id  = {re.search(r"/prid/(\d+)", u).group(1): u for u in watch_urls}
     headers = {
         **COMMON_HEADERS,
         "Accept": "application/json, text/plain, */*",
@@ -735,8 +608,45 @@ def scrape_blinkit() -> list[dict]:
             return sess.get(u, headers=headers, timeout=TIMEOUT)
         return http.get(u, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
 
-    # Step 1b: check each watchlisted product directly (see BLINKIT_WATCH above)
+    # Step 1b: check each watchlisted product (see BLINKIT_WATCH above).
+    # PRIMARY: fetch the product's own share-link page — it's fully
+    # server-rendered (verified live): <title> carries "…Buy Online at ₹685…",
+    # the body carries price/MRP and the Add-to-cart vs Out-of-stock state, and
+    # none of it needs lat/lon. FALLBACK: the internal JSON product API.
     for prid in watch_ids:
+        page_url = url_by_id.get(prid, f"https://blinkit.com/prn/x/prid/{prid}")
+        got = False
+        try:
+            r = _get(page_url)
+            if r.status_code == 200 and len(r.text) > 3000:
+                page = r.text
+                tit = re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
+                title = _clean(tit.group(1)) if tit else ""
+                name = re.sub(r"\s*Price\s*-\s*Buy Online.*$", "", title, flags=re.I).strip()
+                pm = (re.search(r"at\s*₹\s*([\d,]+)", title)
+                      or re.search(r"₹\s*([\d,]+)", page))
+                pval = price_to_int(pm.group(1)) if pm else None
+                up = page.upper()
+                sold = ("OUT OF STOCK" in up or "SOLD OUT" in up
+                        or "CURRENTLY UNAVAILABLE" in up or "NOTIFY ME" in up)
+                if name:
+                    out.append({
+                        "id": f"bl_{prid}", "source": "blinkit",
+                        "name": name[:180], "url": page_url,
+                        "price": f"₹{pval}" if pval else "", "mrp": "",
+                        "stock": "out_of_stock" if sold else "in_stock",
+                        "badge_new": False,
+                    })
+                    seen_ids.add(f"bl_{prid}")
+                    got = True
+            else:
+                print(f"  [BL] watch page {prid} → HTTP {r.status_code}")
+        except Exception as e:
+            print(f"  [BL] watch page {prid} → {type(e).__name__}")
+
+        if got:
+            continue
+        # Fallback: internal product API
         for api in (f"https://blinkit.com/v1/products/{prid}",
                     f"https://blinkit.com/v2/products/{prid}"):
             try:
@@ -1039,6 +949,27 @@ def main():
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
     changes = compute_changes(current, seen)
+
+    # ── Discovery-burst guard ──────────────────────────────────────────────────
+    # A genuine drop is 1-5 new products. If one source suddenly surfaces MANY
+    # never-seen items in a single run, that's coverage expanding (a new sitemap,
+    # a new listing slice, an upgrade) — not 30 simultaneous releases. Absorb
+    # those silently with a one-line summary instead of an alert blast.
+    # compute_changes has already marked them alerted_new, so this stays one-time.
+    BURST_LIMIT = int(os.getenv("DISCOVERY_BURST_LIMIT", "8"))
+    for src_key in {d["source"] for d in current.values()}:
+        burst = [d for d in (changes["new_listings"] + changes["back_soon"])
+                 if d["source"] == src_key]
+        if len(burst) > BURST_LIMIT:
+            changes["new_listings"] = [d for d in changes["new_listings"]
+                                       if d["source"] != src_key]
+            changes["back_soon"] = [d for d in changes["back_soon"]
+                                    if d["source"] != src_key]
+            ins = sum(1 for d in burst if d["stock"] == "in_stock")
+            label = SRC.get(src_key, src_key)
+            print(f"[=] Discovery burst from {src_key}: {len(burst)} items absorbed.")
+            tg(f"📈 <b>Coverage expanded:</b> {label} +{len(burst)} newly tracked "
+               f"products ({ins} in stock). Alerts on changes from here.")
 
     if first_run and FIRST_RUN_SILENT:
         # First run just learns the baseline — don't fire 200 "new" alerts.
