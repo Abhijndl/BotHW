@@ -47,9 +47,9 @@ jobs:
           # that from GitHub's IPs — so setting this secret is strongly recommended.
           MINIFYGRAM_ANON_KEY: ${{ secrets.MINIFYGRAM_ANON_KEY }}
           # Optional: watch specific Blinkit products. Paste share-links from the
-          # Blinkit app, comma-separated. (Only effective from an Indian IP —
-          # GitHub's US runners are geo-blocked by Blinkit.)
-          BLINKIT_WATCH: ""
+          # Blinkit app, comma-separated. (Requires a non-blocked IP — GitHub's
+          # US runners may 403; check the [BL] log lines to see.)
+          BLINKIT_WATCH: "https://blinkit.com/prn/hot-wheels-164-scale-toy-car-colour-designs-may-vary-multicolour/prid/444563"
           # SILENT=true  → only ping Telegram on real changes (recommended)
           # SILENT=false → send a heartbeat summary every run
           SILENT: "true"
@@ -71,5 +71,15 @@ jobs:
             git config user.email "actions@github.com"
             git add seen.json
             git commit -m "chore: update seen.json [skip ci]"
-            git push
+            # Overlapping runs or manual edits can move main between our
+            # checkout and push. Rebase onto the latest remote (keeping THIS
+            # run's seen.json, which is the freshest full state) and retry.
+            for attempt in 1 2 3; do
+              if git push; then
+                break
+              fi
+              echo "push rejected (attempt $attempt) — rebasing onto latest main"
+              git fetch origin main
+              git rebase -X theirs origin/main || { git rebase --abort; git reset --hard origin/main; break; }
+            done
           fi
