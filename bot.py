@@ -196,7 +196,22 @@ FIRSTCRY_URLS = [
     "https://www.firstcry.com/hot-wheels/5/0/113",                  # toys & gaming sub-slice
     "https://www.firstcry.com/search?q=hot%20wheels&sort=new",      # search page — independent slice
     "https://www.firstcry.com/search?q=hot%20wheels%20die%20cast",  # search variant
+    # ── Connoisseur slices ─────────────────────────────────────────────────────
+    # Dedicated searches for the premium lines collectors actually chase. Each
+    # is its own SSR slice (~20 cards), so premium coverage stops depending on
+    # premium items happening to surface in the generic sorts.
+    "https://www.firstcry.com/search?q=hot%20wheels%20premium",
+    "https://www.firstcry.com/search?q=hot%20wheels%20car%20culture",
+    "https://www.firstcry.com/search?q=hot%20wheels%20team%20transport",
+    "https://www.firstcry.com/search?q=hot%20wheels%20boulevard",
+    "https://www.firstcry.com/search?q=hot%20wheels%20fast%20furious",
+    "https://www.firstcry.com/search?q=hot%20wheels%20silhouettes",
 ]
+
+# Products whose NAME contains any of these keywords are ignored everywhere on
+# FirstCry — no tracking, no alerts. Comma-separated, case-insensitive.
+FC_EXCLUDE = [w.strip().lower() for w in
+              os.getenv("FC_EXCLUDE", "monster truck,monster jam").split(",") if w.strip()]
 # Coverage note: FirstCry server-renders only the first ~20-28 cards per view
 # (the rest load via infinite-scroll JS we don't run). Each sort/search view
 # surfaces a DIFFERENT slice, so the union above typically covers the catalog's
@@ -307,6 +322,10 @@ def scrape_firstcry() -> list[dict]:
             # on those views, keep only actual Hot Wheels products. Category
             # 113 pages are Hot-Wheels-only so they skip this check.
             if "/search" in url and "hot wheel" not in name.lower():
+                continue
+
+            # Excluded lines (e.g. Monster Trucks) — never tracked, never alerted.
+            if any(kw in name.lower() for kw in FC_EXCLUDE):
                 continue
 
             # only keep the region of the block that is the card (up to the next 'ADD TO CART'
@@ -511,13 +530,20 @@ def scrape_minifygram() -> list[dict]:
         if not (rid and name):
             continue
 
-        # STRICT brand filter — only Hotwheels/Mattel (Minifygram sells MiniGT,
-        # TimeMicro, Poprace, Inno64, Funko, etc. under the same "Diecast"
-        # category, so category alone is NOT a safe filter).
+        # ── Brand allowlist (configurable) ────────────────────────────────────
+        # Minifygram sells many diecast brands (TimeMicro, Poprace, Inno64,
+        # Funko…) under the same "Diecast" category, so category alone is not a
+        # safe filter — we match by brand/name tokens. Default tracks Hot
+        # Wheels + MiniGT (incl. Kaido House, a MiniGT line). Override with the
+        # MG_BRANDS env (comma-separated tokens, spaces/hyphens ignored).
+        allowed = [t.strip().lower().replace(" ", "").replace("-", "")
+                   for t in os.getenv(
+                       "MG_BRANDS",
+                       "hotwheels,mattel,minigt,mini gt,kaido house").split(",")
+                   if t.strip()]
         brand_norm = brand.replace(" ", "").replace("-", "")
         name_norm  = str(name).lower().replace(" ", "").replace("-", "")
-        if not ("hotwheels" in brand_norm or "mattel" in brand_norm
-                or "hotwheels" in name_norm):
+        if not any(tok in brand_norm or tok in name_norm for tok in allowed):
             continue
 
         # ── Authoritative stock: product_skus[].available, summed ──────────────
@@ -803,6 +829,110 @@ def scrape_hamleys() -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
+# SOURCE — Karz and Dolls  (MiniGT blisters — full catalog server-rendered)
+# ══════════════════════════════════════════════════════════════════════════════════
+# karzanddolls.com is a Next.js store that server-renders ENTIRE category pages
+# in one response ("Showing 107 out of 107 products" — verified live). Each card:
+# a /details/{slug} link, the name, a "MINI GT {n} BLISTER…" sku line, the price
+# (discounted price first when on sale, then struck-through MRP), and an
+# Add to Cart button. One fetch per category = complete catalog with stock.
+# Add more category URLs via the KD_URLS env (comma-separated).
+KD_URLS = [u.strip() for u in os.getenv(
+    "KD_URLS",
+    "https://www.karzanddolls.com/mini-gt/mini-gt-blister-pack").split(",") if u.strip()]
+
+_KD_CARD = re.compile(r'href="([^"]*?/details/[^"]+)"', re.I)
+
+
+def scrape_karzanddolls() -> list[dict]:
+    out, seen_ids = [], set()
+    for cat_url in KD_URLS:
+        try:
+            r = http.get(cat_url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+        except Exception as e:
+            print(f"  [KD] {cat_url} failed: {e}")
+            continue
+        if r.status_code != 200 or len(r.text) < 5000:
+            print(f"  [KD] {cat_url} → HTTP {r.status_code}")
+            continue
+        page = r.text
+
+        cnt = 0
+        for part in re.split(r'(?=<a[^>]+href="[^"]*?/details/)', page):
+            hm = _KD_CARD.search(part or "")
+            if not hm:
+                continue
+            path = html.unescape(hm.group(1)).strip()
+            slug_raw = path.rsplit("/details/", 1)[-1].strip("/ ")
+            # slugs can contain spaces / unicode quotes — normalise for the id,
+            # percent-encode for the link
+            slug_id = re.sub(r"[^a-z0-9]+", "-", slug_raw.lower()).strip("-")
+            if not slug_id:
+                continue
+            uid = f"kd_{slug_id}"
+            if uid in seen_ids:
+                continue
+
+            txt = _clean(part[:3000])
+            # name: text right after the sku line, or the anchor text; take the
+            # longest ALL-CAPS-ish chunk before the ₹
+            nm = re.search(r'([A-Z][A-Z0-9 ()\'"“”\./&#-]{8,150}?)\s*₹', txt)
+            name = nm.group(1).strip(" -–|") if nm else slug_raw.replace("-", " ").upper()
+            name = re.sub(r"\s+", " ", name)[:180]
+            # drop obvious non-product/nav blocks
+            if len(name) < 6:
+                continue
+
+            # sku line like "MINI GT 1204 BLISTER PACKAGING" → keep as suffix tag
+            sku = ""
+            sm = re.search(r'(MINI\s*GT\s*\d{3,4})', txt, re.I)
+            if sm and sm.group(1).upper() not in name.upper():
+                sku = f" [{sm.group(1).upper()}]"
+
+            # prices: with a strikethrough sale the DISCOUNTED price comes first
+            # (e.g. "₹1489₹1599 7% off") — first ₹ number is the pay price.
+            pnums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+)", txt)]
+            pnums = [p for p in pnums if p and 100 <= p <= 100000]
+            price = pnums[0] if pnums else None
+            mrp   = pnums[1] if len(pnums) > 1 and pnums[1] > (price or 0) else None
+
+            up = part.upper()
+            if "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up:
+                stock = "out_of_stock"
+            elif "ADD TO CART" in up:
+                stock = "in_stock"
+            else:
+                continue                      # nav/footer link, not a card
+
+            if price is None:
+                continue
+
+            seen_ids.add(uid)
+            if path.startswith("/"):
+                link = "https://www.karzanddolls.com" + quote(path, safe="/:%")
+            elif path.startswith("http"):
+                link = quote(path, safe="/:%?=&")
+            else:
+                link = "https://www.karzanddolls.com/details/" + quote(slug_raw, safe="")
+            out.append({
+                "id": uid, "source": "karzdolls",
+                "name": (name + sku)[:180],
+                "url": link,
+                "price": f"₹{price}",
+                "mrp": f"₹{mrp}" if mrp else "",
+                "stock": stock,
+                "badge_new": "NEW ARRIVAL" in up,
+            })
+            cnt += 1
+        print(f"  [KD] {cat_url.rsplit('/',1)[-1]} → {cnt} products")
+        time.sleep(1.0)
+
+    ins = sum(1 for d in out if d["stock"] == "in_stock")
+    print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)")
+    return out
+
+
+# ══════════════════════════════════════════════════════════════════════════════════
 # SOURCE 4 — Blinkit  (internal search API, location-pinned) — best effort
 # ══════════════════════════════════════════════════════════════════════════════════
 def scrape_blinkit() -> list[dict]:
@@ -1061,7 +1191,7 @@ def compute_changes(current: dict, seen: dict) -> dict:
             "price_drops": price_drops, "back_soon": back_soon}
 
 
-SRC = {"firstcry": "🛒FC", "minifygram": "💎MG", "hamleys": "🧸HM", "blinkit": "⚡BL"}
+SRC = {"firstcry": "🛒FC", "minifygram": "💎MG", "hamleys": "🧸HM", "karzdolls": "🏁KD", "blinkit": "⚡BL"}
 
 
 def _within_budget(d) -> bool:
@@ -1120,7 +1250,7 @@ def heartbeat(current: dict, ch: dict) -> str:
             by[d["source"]][1] += 1
     lines = ["💓 <b>Heartbeat</b> — tracker is alive"]
     for src, label in (("firstcry", "🛒 FirstCry"), ("minifygram", "💎 Minifygram"),
-                       ("hamleys", "🧸 Hamleys"), ("blinkit", "⚡ Blinkit")):
+                       ("hamleys", "🧸 Hamleys"), ("karzdolls", "🏁 Karz&Dolls"), ("blinkit", "⚡ Blinkit")):
         if src in by:
             total, ins = by[src]
             lines.append(f"{label}: {ins} in stock / {total} tracked")
@@ -1142,6 +1272,7 @@ def main():
     for name, fn in (("FirstCry", scrape_firstcry),
                      ("Minifygram", scrape_minifygram),
                      ("Hamleys", scrape_hamleys),
+                     ("Karz&Dolls", scrape_karzanddolls),
                      ("Blinkit", scrape_blinkit)):
         print(f"\n[*] {name} …")
         try:
