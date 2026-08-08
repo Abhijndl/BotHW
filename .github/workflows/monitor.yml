@@ -59,7 +59,13 @@ jobs:
           # Handy to skip pricey track sets and focus on ₹100-300 singles.
           MAX_ALERT_PRICE: "0"
           # Optional: comma-separated keywords that get an extra 🎯 flag in alerts.
-          WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard"
+          WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
+          # FirstCry lines to fully ignore (comma-separated name keywords).
+          FC_EXCLUDE: "monster truck,monster jam"
+          # Minifygram brands to track (tokens matched in brand or name).
+          MG_BRANDS: "hotwheels,mattel,minigt,mini gt,kaido house"
+          # Karz & Dolls category pages to track (comma-separated URLs).
+          KD_URLS: "https://www.karzanddolls.com/mini-gt/mini-gt-blister-pack"
           # DEBUG=true → also sends a heartbeat every run (use while setting up).
           DEBUG: "false"
         run: python bot.py
