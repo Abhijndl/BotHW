@@ -92,12 +92,11 @@ TELEGRAM_CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID")
 TIMEOUT = 30
 
 # ── Concurrency ────────────────────────────────────────────────────────────────
-# Sources run in parallel with each other, and per-product page checks run in
-# parallel within a source. This is the single biggest latency win: a run drops
-# from ~2 min of sequential fetching to ~20-30s, so alerts land sooner.
-SRC_WORKERS = int(os.getenv("SRC_WORKERS", "5"))    # sources in parallel
-FC_WORKERS  = int(os.getenv("FC_WORKERS", "8"))     # FirstCry product pages
-HM_WORKERS  = int(os.getenv("HM_WORKERS", "8"))     # Hamleys product pages
+# Sources run in parallel with each other, and page fetches run in parallel
+# within a source. A run drops from ~2 min of sequential fetching to ~20-30s.
+SRC_WORKERS = int(os.getenv("SRC_WORKERS", "6"))
+FC_WORKERS  = int(os.getenv("FC_WORKERS", "8"))
+HM_WORKERS  = int(os.getenv("HM_WORKERS", "8"))
 
 COMMON_HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -188,61 +187,83 @@ def price_to_int(p) -> int | None:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
-# SOURCE 1 — FirstCry  (discovery pages + per-product stock rotation)
+# SOURCE 1 — FirstCry  (listing-card parsing, wide facet coverage)
 # ══════════════════════════════════════════════════════════════════════════════════
-# REBUILT in v5. What was wrong before (verified against live HTML):
-#   • ?sort=… and ?ProductPage=… are STRIPPED server-side — every variant URL
-#     returned byte-identical page 1. The 10 "coverage" URLs were 10x the same
-#     20 products. Sorting/pagination is JS-only.
-#   • Cards were split on any /product-detail link. But a single card embeds a
-#     "Sizes:" block listing up to ~20 OTHER product ids (size variants). Each
-#     became a phantom "product" inheriting the wrong neighbour's name — this is
-#     what produced Monster Trucks leaking past the name filter, duplicate spam,
-#     and mismatched names.
-#   • Footer SEO link-lists ("Popular Products", brand blurb) also parsed as
-#     products → junk entries like "hot wheels boulevard'+'".
+# v6 FIX — why every FirstCry alert said "sold out":
+#   v5 read stock from each PRODUCT page. But FirstCry product pages do NOT
+#   server-render the buy box — price and "Add to Cart" are injected by JS, so
+#   the HTML we fetch contains neither. The code defaulted to out_of_stock when
+#   it couldn't find them, so EVERY product read as sold out. Verified by
+#   fetching a live product page: no price, no cart button anywhere in the HTML.
 #
-# The rebuild uses two independent, reliable mechanisms:
+#   LISTING pages, by contrast, DO server-render price + ADD TO CART / Notify Me
+#   inside each card. So stock now comes from the listing card itself — one
+#   fetch gives ~20 products complete with accurate stock, and it's far faster
+#   than 40 individual page fetches.
 #
-#   1. DISCOVERY — parse only the product IMAGE anchors. Every real card has
-#      exactly one <img src=".../products/{W}x{H}/{ID}a.jpg" title="{NAME}">.
-#      The id lives in the image filename and the clean full name in title=,
-#      so id↔name can never be mismatched. Size-variant links have no image, so
-#      they vanish from the parse entirely. We also read the footer's
-#      "New Arrival:" list, which names the genuinely newest SKUs (this is the
-#      best new-drop signal FirstCry exposes without a browser).
-#
-#   2. STOCK — fetch each product's own page on a rotating budget. Product pages
-#      are fully server-rendered with price + Add-to-Cart/Notify-Me, so stock is
-#      exact. Known ids persist in seen.json, so the tracked catalog grows over
-#      time and every product is re-checked on a cycle, independent of whether
-#      it happens to appear on the 20-item listing today.
-FC_LISTING_URLS = [u.strip() for u in os.getenv("FC_LISTING_URLS", ",".join([
-    "https://www.firstcry.com/hot-wheels/0/0/113",     # all Hot Wheels (236)
-    "https://www.firstcry.com/hot-wheels/5/0/113",     # toys & gaming (228)
-    "https://www.firstcry.com/hot-wheels/10/0/113",    # school supplies
-    "https://www.firstcry.com/hot-wheels/22/0/113",    # fashion accessories
-    "https://www.firstcry.com/hot-wheels/14/0/113",    # birthday
-])).split(",") if u.strip()]
+# COVERAGE — sort=/ProductPage= params are stripped server-side (both verified),
+# so the only way to see beyond one page is different FACET pages. FirstCry's
+# character-shop facets (age / sub-type / skills / theme) each return a
+# different ~20-product slice; their union is the tracked catalog. Unknown-good
+# URLs are harmless: each is logged with how many NEW products it contributed,
+# so you can prune or extend the list from the run log.
+_FC_FACET = ("https://www.firstcry.com/toy-cars,-trains-and-vehicles/hotwheels"
+             "?cid=5&scid=94&character-shop=t5-7701")
 
-# Per-run budget of individual product-page stock checks (run in parallel).
-FC_STOCK_BUDGET = int(os.getenv("FC_STOCK_BUDGET", "40"))
+# NOTE: these URLs contain commas ("toy-cars,-trains-and-vehicles"), so the env
+# override is split on "|" (not ",") — a comma split would shred the paths.
+_FC_DEFAULT_URLS = [
+    # brand pages
+    "https://www.firstcry.com/hot-wheels/0/0/113",
+    "https://www.firstcry.com/hot-wheels/5/0/113",
+    "https://www.firstcry.com/hot-wheels/10/0/113",
+    "https://www.firstcry.com/hot-wheels/22/0/113",
+    "https://www.firstcry.com/hot-wheels/14/0/113",
+    # cars & jeeps brand facet
+    "https://www.firstcry.com/toy-cars,-trains-and-vehicles/cars-and-jeeps/hot-wheels"
+    "?cid=5&scid=94&type=t1-7973&brand=113",
+    # sub-type facets
+    _FC_FACET + "&sub-type=t6-7966",            # die-cast models
+    _FC_FACET + "&sub-type=t6-7972",            # free wheel toys
+    # age facets (each a different slice)
+    _FC_FACET + "&age=4",
+    _FC_FACET + "&age=6",
+    _FC_FACET + "&age=8",
+    _FC_FACET + "&age=10",
+    _FC_FACET + "&age=12",
+    # skills / theme facets
+    _FC_FACET + "&skills=4",
+    _FC_FACET + "&skills=7",
+    _FC_FACET + "&sub-type=t6-7966&age=10",
+    _FC_FACET + "&sub-type=t6-7966&age=6",
+    _FC_FACET + "&sub-type=t6-7972&skills=7",
+]
+FC_LISTING_URLS = ([u.strip() for u in os.getenv("FC_LISTING_URLS", "").split("|") if u.strip()]
+                   or _FC_DEFAULT_URLS)
 
 # Products whose NAME contains any of these keywords are ignored everywhere.
 FC_EXCLUDE = [w.strip().lower() for w in
               os.getenv("FC_EXCLUDE", "monster truck,monster jam,monstred,hopper ball")
               .split(",") if w.strip()]
 
-# id + clean name straight from the card image: .../products/80x97/21940394a.jpg
+# Card anchor of truth: the card image's filename holds the product id and its
+# title= holds the clean name, so the two can never be mismatched. Size-variant
+# links have no image, which is what keeps them out of the parse entirely.
 _FC_IMG = re.compile(
     r'<img[^>]+products/\d+x\d+/(\d{5,})[a-z]?\.jpg[^>]*?title="([^"]{6,250})"', re.I)
-# same but title-before-src ordering
-_FC_IMG2 = re.compile(
+_FC_IMG_ALT = re.compile(
     r'<img[^>]+title="([^"]{6,250})"[^>]+products/\d+x\d+/(\d{5,})[a-z]?\.jpg', re.I)
-# footer "New Arrival:" / "Most Popular:" anchors carry title= and the id
 _FC_FOOTER_LINK = re.compile(
     r'href="https://www\.firstcry\.com/hot-wheels/[^"]*?/(\d{5,})/product-detail[^"]*"'
     r'[^>]*title="([^"]{6,250})"', re.I)
+
+
+# Shared HTML helpers (used by FirstCry, Hamleys and Karz&Dolls parsers).
+_TAG = re.compile(r"<[^>]+>")
+
+
+def _clean(s: str) -> str:
+    return html.unescape(_TAG.sub(" ", s)).replace("\xa0", " ").strip()
 
 
 def _fc_excluded(name: str) -> bool:
@@ -250,97 +271,38 @@ def _fc_excluded(name: str) -> bool:
     return any(kw in n for kw in FC_EXCLUDE)
 
 
-def _fc_clean_name(raw: str) -> str:
+def _fc_name(raw: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(raw)).strip()[:180]
 
 
-def fc_discover() -> dict:
-    """Return {id: name} for every Hot Wheels product visible across the
-    server-rendered listing pages and the footer New Arrival list."""
-    found: dict = {}
-    for url in FC_LISTING_URLS:
-        page = None
-        for attempt in range(2):
-            try:
-                r = http.get(url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
-            except Exception as e:
-                print(f"  [FC] {url.rsplit('/',3)[-3:]} request failed: {e}")
-                time.sleep(2); continue
-            if r.status_code == 200 and len(r.text) > 5000:
-                page = r.text; break
-            time.sleep(2)
-        if not page:
-            print(f"  [FC] {url} → unavailable")
-            continue
-
-        before = len(found)
-        for m in _FC_IMG.finditer(page):
-            pid, nm = m.group(1), _fc_clean_name(m.group(2))
-            if nm and not _fc_excluded(nm):
-                found.setdefault(pid, nm)
-        for m in _FC_IMG2.finditer(page):
-            nm, pid = _fc_clean_name(m.group(1)), m.group(2)
-            if nm and not _fc_excluded(nm):
-                found.setdefault(pid, nm)
-        # footer lists (new arrivals / most popular) — clean title + id
-        for m in _FC_FOOTER_LINK.finditer(page):
-            pid, nm = m.group(1), _fc_clean_name(m.group(2))
-            if nm and not _fc_excluded(nm):
-                found.setdefault(pid, nm)
-        print(f"  [FC] {url.split('/hot-wheels/')[-1]} → +{len(found)-before} "
-              f"(total {len(found)})")
-    return found
-
-
-_FC_OOS = ("NOTIFY ME", "OUT OF STOCK", "SOLD OUT", "CURRENTLY UNAVAILABLE")
-
-
-def fc_check_product(pid: str, known_name: str = "") -> dict | None:
-    """Fetch one product page → {name, price, mrp, stock}. None if unreachable.
-
-    Validation: the page must actually reference this product id, so a redirect
-    or error page can never be mistaken for a stock answer.
-    """
-    url = f"https://www.firstcry.com/x/x/{pid}/product-detail"
-    try:
-        r = http.get(url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
-    except Exception:
-        return None
-    if r.status_code != 200 or len(r.text) < 3000:
-        return None
-    page = r.text
-    if pid not in page:
-        return None
-
-    tit = re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
-    title = _clean(tit.group(1)) if tit else ""
-    name = re.sub(r"\s*[-–|]\s*(Buy|Shop|FirstCry).*$", "", title, flags=re.I).strip()
-    if len(name) < 6:
-        name = known_name or f"Hot Wheels {pid}"
-
-    head = page[:60000]
-    # strip noise that would otherwise look like a price
-    txt = _clean(head)
+def _fc_card_stock_price(region: str) -> tuple:
+    """Price/MRP/stock from one card's HTML region."""
+    # Stock markers are read from the WHOLE card region, because the
+    # Add-to-Cart button can sit AFTER the size-variant block. Price, however,
+    # is read from the region with that block removed, so a variant's numbers
+    # can never be mistaken for this product's price.
+    price_region = region
+    cut = re.search(r"Sizes?\s*:", region, re.I)
+    if cut:
+        price_region = region[:cut.start()]
+    txt = _clean(price_region)
     txt = re.sub(r"\(\s*[\d,]+\s*Ratings?\s*\)", " ", txt, flags=re.I)
-    txt = re.sub(r"Club\s*(Price|Cash)[^\d]{0,20}[\d,.]+", " ", txt, flags=re.I)
+    txt = re.sub(r"Club\s*(Price|Cash)[^\d]{0,25}[\d,.]+", " ", txt, flags=re.I)
+    txt = re.sub(r"Earn Club Cash[^.]{0,60}", " ", txt, flags=re.I)
     txt = re.sub(r"\d+%\s*Off", " ", txt, flags=re.I)
     txt = re.sub(r"\b\d{5,}\b", " ", txt)
-    nums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+(?:\.\d+)?)", txt)]
-    if not nums:
-        nums = [price_to_int(x) for x in re.findall(r"\b([\d,]{3,7}(?:\.\d+)?)\b", txt)]
+    nums = [price_to_int(x) for x in re.findall(r"([\d,]+(?:\.\d+)?)", txt)]
     nums = [n for n in nums if n and 50 <= n <= 60000]
     price = min(nums) if nums else None
     mrp = max(nums) if nums else None
-
-    up = head.upper()
-    if any(k in up for k in _FC_OOS) and "ADD TO CART" not in up:
-        stock = "out_of_stock"
-    elif "ADD TO CART" in up or "ADD TO BAG" in up:
+    up = region.upper()
+    if "ADD TO CART" in up or "ADD TO BAG" in up:
         stock = "in_stock"
-    else:
+    elif "NOTIFY ME" in up or "OUT OF STOCK" in up or "SOLD OUT" in up:
         stock = "out_of_stock"
-    return {"name": _fc_clean_name(name), "price": price,
-            "mrp": mrp if mrp and mrp != price else None, "stock": stock}
+    else:
+        stock = None                      # unknown — caller keeps prior state
+    return price, (mrp if mrp and mrp != price else None), stock
 
 
 def scrape_firstcry() -> list[dict]:
@@ -348,77 +310,97 @@ def scrape_firstcry() -> list[dict]:
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
                if pid.startswith("fc_") and isinstance(v, dict)}
 
-    discovered = fc_discover()
+    seen_now: dict = {}          # id -> {name, price, mrp, stock}
 
-    # Full tracked catalog = everything discovered now ∪ everything ever seen.
-    # Legacy junk entries (from the old broken parser) are dropped here: they
-    # either have no numeric id or their stored name is excluded/garbage.
-    catalog: dict = {}
-    for pid, nm in discovered.items():
-        catalog[pid] = nm
-    for pid, v in prev_fc.items():
-        if not pid.isdigit():
-            continue
-        nm = v.get("name", "")
-        if not nm or _fc_excluded(nm):
-            continue
-        # drop known-garbage shapes from the old parser
-        if "'+'" in nm or "captivating young minds" in nm.lower():
-            continue
-        catalog.setdefault(pid, nm)
+    def fetch(url):
+        for _ in range(2):
+            try:
+                r = http.get(url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+                if r.status_code == 200 and len(r.text) > 5000:
+                    return r.text
+            except Exception:
+                pass
+            time.sleep(1.5)
+        return None
 
-    print(f"  [FC] tracked catalog: {len(catalog)} products "
-          f"({len(discovered)} seen on listings this run)")
+    with ThreadPoolExecutor(max_workers=FC_WORKERS) as ex:
+        pages = {ex.submit(fetch, u): u for u in FC_LISTING_URLS}
+        for fut in as_completed(pages):
+            url = pages[fut]
+            try:
+                page = fut.result()
+            except Exception:
+                page = None
+            if not page:
+                print(f"  [FC] {url[-45:]} → unavailable")
+                continue
 
-    # Rotate stock checks: never-checked first, then stalest.
-    order = sorted(catalog, key=lambda p: (
-        prev_fc.get(p, {}).get("fc_checked_at", ""), p))
-    todo = order[:FC_STOCK_BUDGET]
+            # locate every card image (id + name), then take the HTML between
+            # this image and the next as that card's own region
+            marks = []
+            for m in _FC_IMG.finditer(page):
+                marks.append((m.start(), m.group(1), _fc_name(m.group(2))))
+            for m in _FC_IMG_ALT.finditer(page):
+                marks.append((m.start(), m.group(2), _fc_name(m.group(1))))
+            marks.sort()
 
-    results: dict = {}
-    if todo:
-        with ThreadPoolExecutor(max_workers=FC_WORKERS) as ex:
-            futs = {ex.submit(fc_check_product, p, catalog[p]): p for p in todo}
-            for fut in as_completed(futs):
-                p = futs[fut]
-                try:
-                    info = fut.result()
-                except Exception:
-                    info = None
-                if info:
-                    results[p] = info
-        ins = sum(1 for v in results.values() if v["stock"] == "in_stock")
-        print(f"  [FC] stock-checked {len(results)}/{len(todo)} "
-              f"({ins} in stock / {len(results)-ins} sold out)")
+            added = 0
+            for i, (pos, pid, nm) in enumerate(marks):
+                if not nm or _fc_excluded(nm):
+                    continue
+                end = marks[i + 1][0] if i + 1 < len(marks) else min(len(page), pos + 6000)
+                price, mrp, stock = _fc_card_stock_price(page[pos:end])
+                cur = seen_now.get(pid)
+                if cur is None or (cur.get("stock") is None and stock):
+                    seen_now[pid] = {"name": nm, "price": price, "mrp": mrp, "stock": stock}
+                    if cur is None:
+                        added += 1
 
-    now = time.strftime("%Y-%m-%dT%H:%M:%S")
+            # footer New Arrival / Most Popular: names + ids only (no stock)
+            for m in _FC_FOOTER_LINK.finditer(page):
+                pid, nm = m.group(1), _fc_name(m.group(2))
+                if nm and not _fc_excluded(nm) and pid not in seen_now:
+                    seen_now[pid] = {"name": nm, "price": None, "mrp": None, "stock": None}
+                    added += 1
+            print(f"  [FC] +{added:3d} new  ({len(seen_now)} total)  {url[-52:]}")
+
+    if not seen_now:
+        print("[*] FirstCry: nothing parsed (blocked?)")
+        return []
+
+    # carry forward previously known products not visible on today's slices
     out = []
-    for pid, nm in catalog.items():
+    for pid, v in prev_fc.items():
+        if pid.isdigit() and pid not in seen_now:
+            nm = v.get("name", "")
+            if nm and not _fc_excluded(nm) and "'+'" not in nm:
+                seen_now[pid] = {"name": nm, "price": price_to_int(v.get("price")),
+                                 "mrp": None, "stock": None}
+
+    skipped_unknown = 0
+    for pid, v in seen_now.items():
         prevrow = prev_fc.get(pid, {})
-        info = results.get(pid)
-        if info:
-            name, price, mrp, stock, checked = (info["name"], info["price"],
-                                                info["mrp"], info["stock"], now)
-        else:
-            name = prevrow.get("name") or nm
-            price = price_to_int(prevrow.get("price"))
-            mrp = None
-            stock = prevrow.get("stock") or "out_of_stock"
-            checked = prevrow.get("fc_checked_at", "")
-        if _fc_excluded(name):
+        stock = v["stock"] or prevrow.get("stock")
+        if stock is None:
+            # Never seen as a real card and no prior state (e.g. a footer-only
+            # "New Arrival" link). Guessing would either invent a fake in-stock
+            # alert or spam a "sold out" one, so we skip it — it gets picked up
+            # properly the moment it appears on any listing card.
+            skipped_unknown += 1
             continue
+        price = v["price"] if v["price"] else price_to_int(prevrow.get("price"))
         out.append({
-            "id": f"fc_{pid}", "source": "firstcry", "name": name,
+            "id": f"fc_{pid}", "source": "firstcry", "name": v["name"],
             "url": f"https://www.firstcry.com/x/x/{pid}/product-detail",
             "price": f"₹{price}" if price else "",
-            "mrp": f"₹{mrp}" if mrp else "",
+            "mrp": f"₹{v['mrp']}" if v["mrp"] else "",
             "stock": stock,
             "badge_new": False,
-            "stock_ver": "fc_pdp_v1",
-            "fc_checked_at": checked,
+            "stock_ver": "fc_listing_v2",
         })
     ins = sum(1 for d in out if d["stock"] == "in_stock")
-    print(f"[*] FirstCry total: {len(out)} ({ins} in stock)")
+    print(f"[*] FirstCry total: {len(out)} ({ins} in stock, "
+          f"{len(seen_now)} seen this run, {skipped_unknown} unknown-skipped)")
     return out
 
 
@@ -645,47 +627,84 @@ def _hm_session():
 
 
 def _hamleys_api(sess) -> list[dict] | None:
-    """Fynd application catalog API, with site cookies + INR header."""
-    headers = {**COMMON_HEADERS, "Accept": "application/json",
-               "x-currency-code": "INR"}
+    """Fynd application catalog API — the real source behind hamleys.in.
+
+    v7: hamleys.in/brand/hot-wheels renders NO products server-side (the grid is
+    JS-loaded), which is why this source went silent. The page's JS calls Fynd's
+    public storefront API, so we call the same endpoint directly. Fynd uses
+    CURSOR pagination (page_id=* then page.next_id) — the old ?brand=&page_no=
+    guess was the wrong parameter shape and always returned nothing.
+    """
+    headers = {**COMMON_HEADERS, "Accept": "application/json, text/plain, */*",
+               "x-currency-code": "INR", "Referer": "https://hamleys.in/brand/hot-wheels"}
+
     def _g(u):
         return (sess.get(u, headers=headers, timeout=TIMEOUT) if sess
                 else http.get(u, headers=headers, timeout=TIMEOUT, **_IMPERSONATE))
-    out = []
-    for ver in ("v1.0", "v2.0"):
-        base = (f"https://hamleys.in/api/service/application/catalog/{ver}/products/"
-                f"?brand=hot-wheels&page_size=100")
-        try:
-            r = _g(base)
+
+    base = "https://hamleys.in/api/service/application/catalog/v1.0/products/"
+    # Query shapes to try, most precise first.
+    shapes = [
+        base + "?f=brand%3Ahot-wheels&filters=false&page_size=100&page_id={pid}",
+        base + "?q=hot%20wheels&filters=false&page_size=100&page_id={pid}",
+        base + "?f=brand%3Ahotwheels&filters=false&page_size=100&page_id={pid}",
+    ]
+
+    for shape in shapes:
+        out, pid, pages = [], "*", 0
+        ok = False
+        while pages < 8:
+            try:
+                r = _g(shape.format(pid=quote(pid, safe="*")))
+            except Exception as e:
+                print(f"  [HM] api {type(e).__name__}")
+                break
             if r.status_code != 200:
-                continue
-            data = r.json()
-        except Exception:
-            continue
-        items = data.get("items") or []
-        if not items:
-            continue
-        for it in items:
-            slug = it.get("slug") or ""
-            name = it.get("name") or ""
-            if not (slug and name):
-                continue
-            price = None
-            pr = it.get("price") or {}
-            for k in ("effective", "marked"):
-                v = pr.get(k) or {}
-                price = price or price_to_int(v.get("min") or v.get("max"))
-            sellable = it.get("sellable")
-            out.append({
-                "id": f"hm_{slug}", "source": "hamleys", "name": str(name)[:180],
-                "url": f"https://hamleys.in/product/{slug}",
-                "price": f"₹{price}" if price else "", "mrp": "",
-                "stock": "in_stock" if (sellable is None or sellable) else "out_of_stock",
-                "badge_new": False, "stock_ver": "hm_api_v1",
-            })
-        if out:
-            print(f"  [HM] Fynd API {ver} → {len(out)} items (sellable flags)")
+                print(f"  [HM] api → HTTP {r.status_code}")
+                break
+            try:
+                data = r.json()
+            except Exception:
+                break
+            ok = True
+            items = data.get("items") or []
+            if not items:
+                break
+            for it in items:
+                slug = it.get("slug") or ""
+                name = it.get("name") or ""
+                if not (slug and name):
+                    continue
+                nl = name.lower().replace(" ", "")
+                brand = str((it.get("brand") or {}).get("name", "")).lower().replace(" ", "")
+                if "hotwheels" not in nl and "hotwheels" not in brand:
+                    continue
+                price = None
+                pr = it.get("price") or {}
+                for k in ("effective", "marked"):
+                    v = pr.get(k) or {}
+                    price = price or price_to_int(v.get("min") or v.get("max"))
+                sellable = it.get("sellable")
+                out.append({
+                    "id": f"hm_{slug}", "source": "hamleys", "name": str(name)[:180],
+                    "url": f"https://hamleys.in/product/{slug}",
+                    "price": f"₹{price}" if price else "", "mrp": "",
+                    "stock": "in_stock" if (sellable is None or sellable) else "out_of_stock",
+                    "badge_new": False, "stock_ver": "hm_api_v2",
+                })
+            page = data.get("page") or {}
+            nxt = page.get("next_id")
+            if not (page.get("has_next") and nxt):
+                break
+            pid = nxt
+            pages += 1
+            time.sleep(0.4)
+        if ok and out:
+            ins = sum(1 for d in out if d["stock"] == "in_stock")
+            print(f"  [HM] Fynd API → {len(out)} Hot Wheels ({ins} in stock, "
+                  f"{pages+1} page(s))")
             return out
+    print("  [HM] Fynd API returned nothing — falling back to page checks")
     return None
 
 
@@ -831,6 +850,8 @@ def scrape_hamleys() -> list[dict]:
                     checked[s] = info
                 else:
                     fails += 1
+    if fails and not checked:
+        print(f"  [HM] all {fails} page checks failed — site markup may have changed")
     if checked:
         oos = sum(1 for v in checked.values() if v["stock"] == "out_of_stock")
         print(f"  [HM] page-checked {len(checked)} products "
@@ -868,103 +889,161 @@ def scrape_hamleys() -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
-# SOURCE — Karz and Dolls  (MiniGT blisters — full catalog server-rendered)
+# SOURCE — Karz and Dolls  (Hot Wheels + MiniGT, all categories)
 # ══════════════════════════════════════════════════════════════════════════════════
-# karzanddolls.com is a Next.js store that server-renders ENTIRE category pages
-# in one response ("Showing 107 out of 107 products" — verified live). Each card:
-# a /details/{slug} link, the name, a "MINI GT {n} BLISTER…" sku line, the price
-# (discounted price first when on sale, then struck-through MRP), and an
-# Add to Cart button. One fetch per category = complete catalog with stock.
-# Add more category URLs via the KD_URLS env (comma-separated).
-KD_URLS = [u.strip() for u in os.getenv(
-    "KD_URLS",
-    "https://www.karzanddolls.com/mini-gt/mini-gt-blister-pack").split(",") if u.strip()]
+# v6: KND relaunched on a new Next.js site (the old karzanddolls.in is now
+# archive-only), which is why this source went silent. Two changes:
+#   • product links are now /details/{slug}?pid={ID} — the pid is the stable id
+#   • ALL Hot Wheels and MiniGT categories are tracked, not just blister packs
+# Category pages are fully server-rendered (name, SKU line, price, sale price,
+# and Add-to-Cart), so one fetch per category = that whole category with stock.
+_KD = "https://www.karzanddolls.com"
+_KD_DEFAULT_URLS = [
+    # Hot Wheels
+    f"{_KD}/hot-wheels/mainlines",
+    f"{_KD}/hot-wheels/pop-culture",
+    f"{_KD}/hot-wheels/card-art-premiums",
+    f"{_KD}/hot-wheels/gift-pack",
+    f"{_KD}/hot-wheels/car-culture",
+    f"{_KD}/hot-wheels/fast-and-furious",
+    f"{_KD}/hot-wheels/boulevard-series",
+    f"{_KD}/hot-wheels/team-transport",
+    f"{_KD}/hot-wheels/character-cars",
+    f"{_KD}/hot-wheels/disney-cars",
+    f"{_KD}/hot-wheels/hot-wheels-accessories",
+    # MiniGT family
+    f"{_KD}/mini-gt/mini-gt",
+    f"{_KD}/mini-gt/mini-gt-blister-pack",
+    f"{_KD}/mini-gt/kaido-house",
+    # Pre-orders (new MiniGT drops appear here first)
+    f"{_KD}/pre-orders/pre-order-minigt",
+    f"{_KD}/pre-orders/pre-order-special-stock",
+]
+KD_URLS = ([u.strip() for u in os.getenv("KD_URLS", "").split("|") if u.strip()]
+           or _KD_DEFAULT_URLS)
 
-_KD_CARD = re.compile(r'href="([^"]*?/details/[^"]+)"', re.I)
+# Track pre-orders? They're "in stock" in the sense that you can reserve them.
+KD_INCLUDE_PREORDER = os.getenv("KD_INCLUDE_PREORDER", "true").lower() == "true"
+
+# Brands KND also sells that we never want in Hot Wheels / MiniGT alerts.
+_KD_DENY = tuple(t.strip().upper().replace(" ", "") for t in os.getenv(
+    "KD_DENY",
+    "LEGO,BARBIE,FUNKO,MATCHBOX,SOLIDO,SCHUCO,GREENLIGHT,POPRACE,TARMAC,INNO64,"
+    "PARA64,PARAGON,TOMICA,MAJORETTE,BBURAGO,MAISTO,ERACARS,JADA,BBR,SPARK,"
+    "AMERICANDIORAMA,ALMOSTREAL,LCDMODELS,TRENDSHOBBY,GHOSTPLAYER,KILOWORKS,"
+    "ZDTOYS,MARVEL,TRANSFORMERS,WWE,JURASSIC,MASTERVERSE,IMAGINEXT,BOOK,VMB,"
+    "RMZ,MSZ,GOC,QUBECARZ,TSM,TOPSPEED").split(",") if t.strip())
+
+_KD_LINK = re.compile(r'href="(/details/[^"]+?)"', re.I)
+_KD_PID = re.compile(r'[?&]pid=([A-Za-z0-9]+)')
 
 
 def scrape_karzanddolls() -> list[dict]:
     out, seen_ids = [], set()
-    for cat_url in KD_URLS:
+
+    def fetch(u):
         try:
-            r = http.get(cat_url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+            r = http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+            if r.status_code == 200 and len(r.text) > 4000:
+                return r.text
+            print(f"  [KD] {u.rsplit('/',1)[-1]} → HTTP {r.status_code}")
         except Exception as e:
-            print(f"  [KD] {cat_url} failed: {e}")
-            continue
-        if r.status_code != 200 or len(r.text) < 5000:
-            print(f"  [KD] {cat_url} → HTTP {r.status_code}")
-            continue
-        page = r.text
+            print(f"  [KD] {u.rsplit('/',1)[-1]} → {type(e).__name__}")
+        return None
 
-        cnt = 0
-        for part in re.split(r'(?=<a[^>]+href="[^"]*?/details/)', page):
-            hm = _KD_CARD.search(part or "")
-            if not hm:
-                continue
-            path = html.unescape(hm.group(1)).strip()
-            slug_raw = path.rsplit("/details/", 1)[-1].strip("/ ")
-            # slugs can contain spaces / unicode quotes — normalise for the id,
-            # percent-encode for the link
-            slug_id = re.sub(r"[^a-z0-9]+", "-", slug_raw.lower()).strip("-")
-            if not slug_id:
-                continue
-            uid = f"kd_{slug_id}"
-            if uid in seen_ids:
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        pages = {ex.submit(fetch, u): u for u in KD_URLS}
+        for fut in as_completed(pages):
+            cat = pages[fut].rsplit("/", 1)[-1]
+            try:
+                page = fut.result()
+            except Exception:
+                page = None
+            if not page:
                 continue
 
-            txt = _clean(part[:3000])
-            # name: text right after the sku line, or the anchor text; take the
-            # longest ALL-CAPS-ish chunk before the ₹
-            nm = re.search(r'([A-Z][A-Z0-9 ()\'"“”\./&#-]{8,150}?)\s*₹', txt)
-            name = nm.group(1).strip(" -–|") if nm else slug_raw.replace("-", " ").upper()
-            name = re.sub(r"\s+", " ", name)[:180]
-            # drop obvious non-product/nav blocks
-            if len(name) < 6:
-                continue
+            # split into card regions on /details/ links
+            parts = re.split(r'(?=<a[^>]+href="/details/)', page)
+            found = 0
+            for part in parts:
+                lm = _KD_LINK.search(part or "")
+                if not lm:
+                    continue
+                path = html.unescape(lm.group(1))
+                pm = _KD_PID.search(path)
+                if not pm:
+                    continue
+                pid = pm.group(1)
+                uid = f"kd_{pid}"
+                if uid in seen_ids:
+                    continue
 
-            # sku line like "MINI GT 1204 BLISTER PACKAGING" → keep as suffix tag
-            sku = ""
-            sm = re.search(r'(MINI\s*GT\s*\d{3,4})', txt, re.I)
-            if sm and sm.group(1).upper() not in name.upper():
-                sku = f" [{sm.group(1).upper()}]"
+                txt = _clean(part[:3000])
+                # name: the card heading is the longest caps-ish run before ₹
+                nm = re.search(r'([A-Z0-9][A-Z0-9 ()\'"“”\.\,/&#\-\+]{8,150}?)\s*₹', txt)
+                if not nm:
+                    continue
+                name = re.sub(r"\s+", " ", nm.group(1)).strip(" -–|,")[:180]
+                if len(name) < 6:
+                    continue
 
-            # prices: with a strikethrough sale the DISCOUNTED price comes first
-            # (e.g. "₹1489₹1599 7% off") — first ₹ number is the pay price.
-            pnums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+)", txt)]
-            pnums = [p for p in pnums if p and 100 <= p <= 100000]
-            price = pnums[0] if pnums else None
-            mrp   = pnums[1] if len(pnums) > 1 and pnums[1] > (price or 0) else None
+                up = part.upper()
+                is_pre = "PRE-ORDER" in up or "PRE ORDER" in up or name.startswith("PREORDER")
+                if is_pre and not KD_INCLUDE_PREORDER:
+                    continue
 
-            up = part.upper()
-            if "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up:
-                stock = "out_of_stock"
-            elif "ADD TO CART" in up:
-                stock = "in_stock"
-            else:
-                continue                      # nav/footer link, not a card
+                # brand gate: Hot Wheels or MiniGT family only
+                sku = ""
+                sm = re.search(r'((?:MINI\s*GT|HOT\s*WHEELS|HOTWHEELS|KAIDO)[A-Z0-9 \-]{0,30})',
+                               txt, re.I)
+                if sm:
+                    sku = sm.group(1).strip()
+                blob = (name + " " + sku).upper().replace(" ", "")
+                # KND category pages also render "Trending"/"Similar" cards from
+                # other brands, so a category match alone is not enough — an
+                # explicit deny-list keeps LEGO/Barbie/other diecast makers out.
+                # Match the deny-list against the start of the whole card text
+                # (badge + SKU line + name), because the brand often appears
+                # ONLY in the SKU line, e.g. "1:43 SOLIDO 421438273".
+                deny_scope = txt[:250].upper().replace(" ", "").replace("-", "")
+                if any(k in deny_scope for k in _KD_DENY):
+                    continue
+                if not any(k in blob for k in ("MINIGT", "HOTWHEELS", "KAIDO")):
+                    # no brand token on the card — fall back to the category,
+                    # which is brand-specific on this site
+                    if not any(k in cat for k in ("hot-wheels", "mini-gt", "kaido", "minigt")):
+                        continue
 
-            if price is None:
-                continue
+                pnums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+)", txt)]
+                pnums = [p for p in pnums if p and 50 <= p <= 200000]
+                # a pre-order card shows the deposit (₹99) second — ignore it
+                price = pnums[0] if pnums else None
+                mrp = None
+                if len(pnums) > 1 and pnums[1] > (price or 0):
+                    mrp = pnums[1]
 
-            seen_ids.add(uid)
-            if path.startswith("/"):
-                link = "https://www.karzanddolls.com" + quote(path, safe="/:%")
-            elif path.startswith("http"):
-                link = quote(path, safe="/:%?=&")
-            else:
-                link = "https://www.karzanddolls.com/details/" + quote(slug_raw, safe="")
-            out.append({
-                "id": uid, "source": "karzdolls",
-                "name": (name + sku)[:180],
-                "url": link,
-                "price": f"₹{price}",
-                "mrp": f"₹{mrp}" if mrp else "",
-                "stock": stock,
-                "badge_new": "NEW ARRIVAL" in up,
-            })
-            cnt += 1
-        print(f"  [KD] {cat_url.rsplit('/',1)[-1]} → {cnt} products")
-        time.sleep(1.0)
+                if price is None:
+                    continue
+                if "ADD TO CART" in up:
+                    stock = "in_stock"
+                elif "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up:
+                    stock = "out_of_stock"
+                else:
+                    continue
+
+                seen_ids.add(uid)
+                tag = " [PRE-ORDER]" if is_pre else ""
+                link = _KD + quote(path, safe="/:?=&")
+                out.append({
+                    "id": uid, "source": "karzdolls",
+                    "name": (name + tag)[:180], "url": link,
+                    "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp else "",
+                    "stock": stock,
+                    "badge_new": "NEW ARRIVAL" in up,
+                })
+                found += 1
+            if found:
+                print(f"  [KD] {cat} → {found}")
 
     ins = sum(1 for d in out if d["stock"] == "in_stock")
     print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)")
@@ -972,92 +1051,81 @@ def scrape_karzanddolls() -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
-# SOURCE — BigBasket  (search API, best effort — see geo note)
+# SOURCE — BigBasket  (search API, best effort — geo-limited)
 # ══════════════════════════════════════════════════════════════════════════════════
-# BigBasket exposes a JSON listing service that its own web app calls. Like
-# Blinkit it is location-aware and screens datacenter IPs, so from GitHub's US
-# runners this usually returns 403 and the source simply contributes nothing —
-# it never blocks the other sources. From an Indian IP (self-hosted runner) it
-# works and gives new-listing + restock coverage for the quick-commerce channel.
+# Like Blinkit, BigBasket screens datacenter IPs, so from GitHub's US runners this
+# usually returns 403 and simply contributes nothing (it never blocks other
+# sources). It works from an Indian IP — i.e. the phone watcher.
 BB_TERMS = [t.strip() for t in os.getenv("BB_TERMS", "hot wheels,hotwheels").split(",")
             if t.strip()]
 
 
 def scrape_bigbasket() -> list[dict]:
     out, seen_ids = [], set()
-    headers = {
-        **COMMON_HEADERS,
-        "Accept": "application/json, text/plain, */*",
-        "Referer": "https://www.bigbasket.com/",
-        "x-channel": "BB-WEB",
-        "x-tracker": "hw-tracker",
-    }
+    headers = {**COMMON_HEADERS, "Accept": "application/json, text/plain, */*",
+               "Referer": "https://www.bigbasket.com/", "x-channel": "BB-WEB"}
     try:
         sess = http.Session(**_IMPERSONATE) if _IMPERSONATE else http.Session()
         h = sess.get("https://www.bigbasket.com/", headers=COMMON_HEADERS, timeout=TIMEOUT)
         print(f"  [BB] homepage → HTTP {h.status_code}")
     except Exception as e:
         sess = None
-        print(f"  [BB] homepage failed: {e}")
+        print(f"  [BB] homepage failed: {type(e).__name__}")
 
     def _g(u):
         return (sess.get(u, headers=headers, timeout=TIMEOUT) if sess
                 else http.get(u, headers=headers, timeout=TIMEOUT, **_IMPERSONATE))
 
     for term in BB_TERMS:
-        apis = (
-            f"https://www.bigbasket.com/listing-svc/v2/products?type=ps&slug={quote(term)}&page=1",
-            f"https://www.bigbasket.com/product/get-products/?slug={quote(term)}&type=ps&page=1",
-        )
-        for api in apis:
+        for api in (f"https://www.bigbasket.com/listing-svc/v2/products?type=ps&slug={quote(term)}&page=1",
+                    f"https://www.bigbasket.com/product/get-products/?slug={quote(term)}&type=ps&page=1"):
             try:
                 r = _g(api)
                 if r.status_code != 200:
-                    print(f"  [BB] {api.split('.com')[1][:38]} → HTTP {r.status_code}")
+                    print(f"  [BB] {api.split('.com')[1][:34]} → HTTP {r.status_code}")
                     continue
                 data = r.json()
             except Exception as e:
-                print(f"  [BB] {api.split('.com')[1][:38]} → {type(e).__name__}")
+                print(f"  [BB] {api.split('.com')[1][:34]} → {type(e).__name__}")
                 continue
-
-            found = 0
-            stack = [data]
+            found, stack = 0, [data]
             while stack:
-                node = stack.pop()
-                if isinstance(node, dict):
-                    nm = node.get("desc") or node.get("name") or node.get("p_desc")
-                    pid = node.get("id") or node.get("sku") or node.get("p_id")
+                n = stack.pop()
+                if isinstance(n, dict):
+                    nm = n.get("desc") or n.get("name") or n.get("p_desc")
+                    pid = n.get("id") or n.get("sku") or n.get("p_id")
                     if nm and pid and re.search(r"hot\s*wheel", str(nm), re.I):
                         uid = f"bb_{pid}"
                         if uid not in seen_ids:
                             seen_ids.add(uid)
-                            pr = node.get("pricing") or {}
-                            disc = (pr.get("discount") or {}) if isinstance(pr, dict) else {}
-                            pval = price_to_int(disc.get("prim_price", {}).get("sp")
-                                                if isinstance(disc.get("prim_price"), dict)
-                                                else node.get("sp") or node.get("mrp"))
-                            avail = node.get("availability") or {}
-                            st = str(avail.get("avail_status", "")).upper() if isinstance(avail, dict) else ""
-                            oos = st in ("002", "OOS") or node.get("in_stock") is False
-                            slug = node.get("slug") or ""
-                            out.append({
-                                "id": uid, "source": "bigbasket", "name": str(nm)[:180],
-                                "url": (f"https://www.bigbasket.com/pd/{pid}/{slug}/"
-                                        if slug else f"https://www.bigbasket.com/pd/{pid}/"),
-                                "price": f"₹{pval}" if pval else "", "mrp": "",
-                                "stock": "out_of_stock" if oos else "in_stock",
-                                "badge_new": False,
-                            })
+                            pr = n.get("pricing") or {}
+                            sp = None
+                            if isinstance(pr, dict):
+                                d2 = pr.get("discount") or {}
+                                pp = d2.get("prim_price") if isinstance(d2, dict) else None
+                                if isinstance(pp, dict):
+                                    sp = pp.get("sp")
+                            av = n.get("availability") or {}
+                            st = str(av.get("avail_status", "")) if isinstance(av, dict) else ""
+                            sold = st in ("002",) or n.get("in_stock") is False
+                            slug = n.get("slug") or ""
+                            out.append({"id": uid, "source": "bigbasket",
+                                        "name": str(nm)[:180],
+                                        "url": f"https://www.bigbasket.com/pd/{pid}/{slug}/",
+                                        "price": f"₹{price_to_int(sp or n.get('sp') or n.get('mrp'))}"
+                                                 if (sp or n.get('sp') or n.get('mrp')) else "",
+                                        "mrp": "",
+                                        "stock": "out_of_stock" if sold else "in_stock",
+                                        "badge_new": False})
                             found += 1
-                    stack.extend(node.values())
-                elif isinstance(node, list):
-                    stack.extend(node)
+                    stack.extend(n.values())
+                elif isinstance(n, list):
+                    stack.extend(n)
             if found:
                 print(f"  [BB] '{term}' → {found}")
                 break
         if out:
             break
-
     if not out:
         print("  [BB] no results — likely geo/bot-blocked from this runner's IP.")
     print(f"[*] BigBasket total: {len(out)}")
@@ -1409,10 +1477,8 @@ def main():
                ("Karz&Dolls", scrape_karzanddolls),
                ("BigBasket", scrape_bigbasket),
                ("Blinkit", scrape_blinkit))
-
-    # Sources run concurrently — total run time is now the SLOWEST source, not
-    # the sum of all of them. Each is still fully isolated: one failing (or
-    # being geo-blocked) never affects the others.
+    # Sources run concurrently — total time is the SLOWEST source, not the sum.
+    # Each stays fully isolated: one failing never affects the others.
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=SRC_WORKERS) as ex:
         futs = {ex.submit(fn): name for name, fn in sources}
@@ -1428,6 +1494,15 @@ def main():
                 print(f"[!] {name} error:\n{traceback.format_exc()}")
     print(f"\n[*] all sources finished in {time.time()-t0:.1f}s "
           f"→ {len(all_products)} products")
+
+    # Global keyword exclusion — applies to EVERY source, not just FirstCry, so
+    # e.g. Monster Trucks can't reappear via Hamleys or Karz&Dolls.
+    if FC_EXCLUDE:
+        before = len(all_products)
+        all_products = [p for p in all_products if not _fc_excluded(p["name"])]
+        if before != len(all_products):
+            print(f"[*] excluded {before-len(all_products)} products "
+                  f"matching {FC_EXCLUDE}")
 
     if not all_products:
         # Only shout if EVERYTHING died — and keep it actionable, not spammy.
