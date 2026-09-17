@@ -290,7 +290,13 @@ _FC_SITE_COUNT = [0]       # "(380 Items)" as reported by FirstCry itself
 _FC_ENV_URLS = [u.strip() for u in os.getenv("FC_LISTING_URLS", "").split("|") if u.strip()]
 
 FC_EXCLUDE = [w.strip().lower() for w in
-              os.getenv("FC_EXCLUDE", "monster truck,monster jam,monstred,hopper ball")
+              os.getenv("FC_EXCLUDE",
+                        "monster truck,monster jam,monstred,hopper ball,"
+                        "track set,trackset,track and,track with,track builder,"
+                        "track creator,playset,play set,race off,raceway,speedway,"
+                        "garage,car wash,loop dash,loop track,launch & loop,launcher,"
+                        "stunt track,hot wheels city,ultimate garage,super loop,"
+                        "pit stop,action set,crash & track")
               .split(",") if w.strip()]
 
 # Always-track product ids (e.g. your FirstCry Shortlist). Paste ids or full
@@ -359,9 +365,36 @@ def _clean(s: str) -> str:
     return html.unescape(_TAG.sub(" ", s)).replace("\xa0", " ").strip()
 
 
+# Exclusion keywords are matched on WORD BOUNDARIES, not raw substrings.
+# Substring matching silently ate legitimate products: "play set" matched
+# "Dis-play set-s" and killed the Premium Collector Display Set.
+# LEADING word boundary only: a trailing \b would break plurals
+# ("monster truck" must still match "Monster Trucks"), while the leading \b is
+# what stops "play set" matching "dis-play set-s".
+_FC_EXCL_RE = re.compile(
+    "|".join(r"\b" + re.escape(k) for k in FC_EXCLUDE), re.I
+) if FC_EXCLUDE else None
+
+
+
+# ── Cache busting ──────────────────────────────────────────────────────────────
+# FirstCry serves listing/search pages through a CDN. A cached snapshot can show
+# ADD TO CART for a car that sold out minutes ago — which produces a "BACK IN
+# STOCK" alert for something already gone. Every FirstCry request therefore
+# carries a unique cache-buster and no-cache headers so we read live state.
+_FC_NOCACHE = {"Cache-Control": "no-cache, no-store, max-age=0",
+               "Pragma": "no-cache"}
+
+
+def _fc_bust(url: str) -> str:
+    sep = "&" if "?" in url else "?"
+    return f"{url}{sep}_={int(time.time() * 1000)}"
+
+
 def _fc_excluded(name: str) -> bool:
-    n = name.lower()
-    return any(kw in n for kw in FC_EXCLUDE)
+    if not _FC_EXCL_RE:
+        return False
+    return bool(_FC_EXCL_RE.search(name or ""))
 
 
 def _fc_name(raw: str) -> str:
@@ -484,7 +517,8 @@ def fc_check_watched(prev_fc: dict, ids=None) -> dict:
         for term in _fc_watch_terms(pid, prev_fc):
             url = _FC_SEARCH + quote(term)
             try:
-                r = http.get(url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+                r = http.get(_fc_bust(url), headers={**COMMON_HEADERS, **_FC_NOCACHE},
+                             timeout=TIMEOUT, **_IMPERSONATE)
             except Exception:
                 continue
             if r.status_code != 200 or len(r.text) < 5000:
@@ -525,6 +559,50 @@ def fc_check_watched(prev_fc: dict, ids=None) -> dict:
     return found
 
 
+
+def fc_confirm_restocks(changes: dict, current: dict) -> int:
+    """Re-verify FirstCry restocks against a FRESH request before alerting.
+
+    A restock alert is the one that makes you drop everything, so a false
+    positive is expensive. Between our listing read and the alert, the car may
+    already be gone — or the page we read may have been a CDN snapshot. Here we
+    re-check each FirstCry restock candidate individually (cache-busted) and
+    drop any that no longer confirms as in stock, reverting its stored state so
+    a genuine restock can still fire later.
+    Returns how many were suppressed.
+    """
+    cands = [d for d in changes.get("restocks", []) if d["source"] == "firstcry"]
+    if not cands:
+        return 0
+    prev_fc = {}
+    ids = [d["id"][3:] for d in cands]
+    for d in cands:
+        prev_fc[d["id"][3:]] = {"name": d["name"], "url": d.get("url", "")}
+    fresh = fc_check_watched(prev_fc, ids)
+
+    kept, dropped = [], 0
+    for d in changes["restocks"]:
+        if d["source"] != "firstcry":
+            kept.append(d)
+            continue
+        pid = d["id"][3:]
+        info = fresh.get(pid)
+        if info and info["stock"] == "in_stock":
+            kept.append(d)
+        elif info:
+            # confirmed gone again — revert so the next real restock still alerts
+            dropped += 1
+            if d["id"] in current:
+                current[d["id"]]["stock"] = "out_of_stock"
+            print(f"  [FC] restock NOT confirmed (sold out again): {d['name'][:52]}")
+        else:
+            # couldn't verify — send it rather than risk missing a real drop
+            kept.append(d)
+            print(f"  [FC] restock unverified, alerting anyway: {d['name'][:52]}")
+    changes["restocks"] = kept
+    return dropped
+
+
 def scrape_firstcry() -> list[dict]:
     prev_all = load_seen()
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
@@ -534,7 +612,8 @@ def scrape_firstcry() -> list[dict]:
     def fetch(url):
         for _ in range(2):
             try:
-                r = http.get(url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+                r = http.get(_fc_bust(url), headers={**COMMON_HEADERS, **_FC_NOCACHE},
+                             timeout=TIMEOUT, **_IMPERSONATE)
                 if r.status_code == 200 and len(r.text) > 5000:
                     return r.text
             except Exception:
@@ -1785,6 +1864,14 @@ def main():
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
     changes = compute_changes(current, seen)
+
+    # Verify FirstCry restocks against a fresh request before alerting.
+    try:
+        n_sup = fc_confirm_restocks(changes, current)
+        if n_sup:
+            print(f"[*] suppressed {n_sup} unconfirmed FirstCry restock(s)")
+    except Exception as exc:
+        print(f"[!] restock confirmation skipped: {exc}")
 
     # ── Discovery-burst guard ──────────────────────────────────────────────────
     # A genuine drop is 1-5 new products. If one source suddenly surfaces MANY
