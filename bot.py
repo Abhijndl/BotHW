@@ -164,6 +164,11 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             if v:
                 entry[k] = v
         seen[pid] = entry
+    meta = seen.get("_meta")
+    if not isinstance(meta, dict):
+        meta = {}
+    meta["fc_offset"] = _FC_NEXT_OFFSET[0]
+    seen["_meta"] = meta
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
         json.dump(seen, f, indent=2, ensure_ascii=False)
 
@@ -216,45 +221,73 @@ _FC_FACET = ("https://www.firstcry.com/toy-cars,-trains-and-vehicles/hotwheels"
              "?cid=5&scid=94&character-shop=t5-7701")
 _FC_SEARCH = "https://www.firstcry.com/search?searchstring="
 
-_FC_DEFAULT_URLS = [
-    # brand / category pages
+_FC_BRAND = "https://www.firstcry.com/hot-wheels/5/0/113"
+_FC_CAT = "?cid=5&scid=94&character-shop=t5-7701"
+_FC_FACET = "https://www.firstcry.com/toy-cars,-trains-and-vehicles/hotwheels" + _FC_CAT
+
+# CORE pages — fetched EVERY run. The brand pages carry the footer
+# "New Arrivals:" list, which is the fastest signal for a genuinely new SKU.
+_FC_CORE_URLS = [
     "https://www.firstcry.com/hot-wheels/0/0/113",
-    "https://www.firstcry.com/hot-wheels/5/0/113",
-    "https://www.firstcry.com/hot-wheels/10/0/113",
-    "https://www.firstcry.com/hot-wheels/14/0/113",
+    _FC_BRAND,
+    "https://www.firstcry.com/hot-wheels/toy-cars-trains-and-vehicles/5/94/113",
     "https://www.firstcry.com/toy-cars,-trains-and-vehicles/cars-and-jeeps/hot-wheels"
     "?cid=5&scid=94&type=t1-7973&brand=113",
-    # facet slices
-    _FC_FACET + "&sub-type=t6-7966",
-    _FC_FACET + "&sub-type=t6-7972",
-    _FC_FACET + "&age=4",
-    _FC_FACET + "&age=6",
-    _FC_FACET + "&age=8",
-    _FC_FACET + "&age=10",
-    _FC_FACET + "&age=12",
-    _FC_FACET + "&skills=4",
-    _FC_FACET + "&skills=7",
-    # keyword searches — each its own slice; these are what catch new mainlines
     _FC_SEARCH + "hot%20wheels",
     _FC_SEARCH + "hot%20wheels%20die%20cast",
-    _FC_SEARCH + "hot%20wheels%20premium",
-    _FC_SEARCH + "hot%20wheels%20car%20culture",
-    _FC_SEARCH + "hot%20wheels%20team%20transport",
-    _FC_SEARCH + "hot%20wheels%20boulevard",
-    _FC_SEARCH + "hot%20wheels%20fast%20furious",
-    _FC_SEARCH + "hot%20wheels%20exotics",
-    _FC_SEARCH + "hot%20wheels%20porsche",
-    _FC_SEARCH + "hot%20wheels%20ferrari",
-    _FC_SEARCH + "hot%20wheels%20nissan",
-    _FC_SEARCH + "hot%20wheels%20toyota",
-    _FC_SEARCH + "hot%20wheels%20audi",
-    _FC_SEARCH + "hot%20wheels%20lamborghini",
-    _FC_SEARCH + "hot%20wheels%20bmw",
-    _FC_SEARCH + "hot%20wheels%20honda",
 ]
-# env override uses "|" because FirstCry paths themselves contain commas
-FC_LISTING_URLS = ([u.strip() for u in os.getenv("FC_LISTING_URLS", "").split("|") if u.strip()]
-                   or _FC_DEFAULT_URLS)
+
+# ROTATING pool — a slice is fetched each run, advancing every run, so the whole
+# pool is covered every few runs without hammering FirstCry.
+#
+# WHY SO MANY: the brand page reports 380 items but server-renders only ~20.
+# Sorting and "Show More Products" are JavaScript-only (verified: every sort
+# option is a javascript:void(0) link and ?sort=/?ProductPage= are stripped
+# server-side). So each URL is a ~20-product window and the ONLY way to see the
+# rest of the catalog is to open many different windows. Filter facets (price
+# band, colour, age, discount) and keyword searches each produce a different
+# window; their union is our catalog.
+_FC_ROTATE_URLS = (
+    # price bands — the site's own buckets (0-250:164, 250-500:87, 500-1000:103,
+    # 1000-2000:20, 2000-3000:5, 3000-4000:3)
+    [f"{_FC_FACET}&price={a}-{b}" for a, b in
+     ((0, 250), (250, 500), (500, 1000), (1000, 2000), (2000, 3000), (3000, 4000))]
+    + [f"{_FC_BRAND}?price={a}-{b}" for a, b in
+       ((0, 250), (250, 500), (500, 1000), (1000, 2000))]
+    # colours — small buckets, so each window covers most of its colour
+    + [f"{_FC_FACET}&color={c}" for c in
+       ("Blue", "Red", "Black", "White", "Orange", "Yellow", "Green", "Purple",
+        "Grey", "Silver", "Multi%20Color", "Light%2FSky%20Blue", "Dark%20Green",
+        "Golden", "Brown", "Pink", "Maroon", "Navy%20Blue")]
+    # age / discount / gender facets
+    + [f"{_FC_FACET}&age={a}" for a in (4, 6, 8, 10, 12)]
+    + [f"{_FC_FACET}&discount={d}" for d in ("0-10", "10-20", "20-30", "40-100")]
+    + [f"{_FC_FACET}&gender={g}" for g in ("boy", "girl", "unisex")]
+    + [f"{_FC_FACET}&sub-type=t6-7966", f"{_FC_FACET}&sub-type=t6-7972",
+       f"{_FC_FACET}&skills=4", f"{_FC_FACET}&skills=7"]
+    # keyword searches — series, then marques/models seen in the catalogue
+    + [_FC_SEARCH + quote(t) for t in (
+        "hot wheels premium", "hot wheels car culture", "hot wheels team transport",
+        "hot wheels boulevard", "hot wheels fast furious", "hot wheels exotics",
+        "hot wheels silver series", "hot wheels legends", "hot wheels mainline",
+        "hot wheels 5 pack", "hot wheels collector", "hot wheels track",
+        "hot wheels porsche", "hot wheels ferrari", "hot wheels nissan",
+        "hot wheels toyota", "hot wheels audi", "hot wheels lamborghini",
+        "hot wheels bmw", "hot wheels honda", "hot wheels ford", "hot wheels chevy",
+        "hot wheels mazda", "hot wheels subaru", "hot wheels datsun",
+        "hot wheels skyline", "hot wheels mustang", "hot wheels corvette",
+        "hot wheels batman", "hot wheels mario", "hot wheels marvel",
+        "hot wheels tooned", "hot wheels rod", "hot wheels drift")]
+)
+
+# How many rotating URLs to fetch per run (core pages are always fetched too).
+FC_ROTATE_PER_RUN = int(os.getenv("FC_ROTATE_PER_RUN", "18"))
+_FC_NEXT_OFFSET = [0]      # advanced each run, persisted in seen.json
+_FC_SITE_COUNT = [0]       # "(380 Items)" as reported by FirstCry itself
+
+# env override ("|" separated, because FirstCry paths contain commas) pins an
+# explicit list and disables rotation.
+_FC_ENV_URLS = [u.strip() for u in os.getenv("FC_LISTING_URLS", "").split("|") if u.strip()]
 
 FC_EXCLUDE = [w.strip().lower() for w in
               os.getenv("FC_EXCLUDE", "monster truck,monster jam,monstred,hopper ball")
@@ -263,7 +296,11 @@ FC_EXCLUDE = [w.strip().lower() for w in
 # Always-track product ids (e.g. your FirstCry Shortlist). Paste ids or full
 # product URLs, comma separated — these stay in the catalog permanently and are
 # flagged 🎯 in alerts so a restock on your wishlist is unmissable.
-FC_WATCH_IDS = set(re.findall(r"\d{5,}", os.getenv("FC_WATCH", "")))
+_FC_WATCH_RAW = os.getenv("FC_WATCH", "")
+FC_WATCH_IDS = set(re.findall(r"\d{5,}", _FC_WATCH_RAW))
+# keep the full URL per id so a search phrase can be derived from its slug
+FC_WATCH_URLS = {m.group(1): m.group(0) for m in re.finditer(
+    r"https://www\.firstcry\.com/[^\s,]*?/(\d{5,})/product-detail[^\s,]*", _FC_WATCH_RAW)}
 
 # Card anchor of truth: the card image filename carries the product id and its
 # title= carries the clean name, so id↔name can never be mismatched, and size
@@ -363,6 +400,93 @@ def _fc_card_stock_price(region: str, name: str = "") -> tuple:
     return price, mrp, stock
 
 
+# ── Watchlist: per-product stock via FirstCry's own search ─────────────────────
+# WHY THIS EXISTS
+# FirstCry product pages are JS-rendered: fetching a live product page returns
+# NO price and NO Add-to-Cart/Notify-Me anywhere in the HTML (verified on
+# /21161951/product-detail, a live Premium Fast & Furious listing). So a product
+# is only observable to us when it appears on a *listing* page — and a sold-out
+# premium car usually doesn't appear on any of the category slices at all.
+# That's how a wishlist item can restock without us ever seeing it.
+#
+# The fix: FirstCry's SEARCH results ARE server-rendered cards, complete with
+# price and the ADD TO CART / Notify Me state. So for each watched product we
+# search for its own name and read the card whose id matches. That gives an
+# exact, per-product stock check for the things you actually care about,
+# independent of whether they surface in any category listing.
+def _fc_watch_terms(pid: str, prev_fc: dict) -> list[str]:
+    """Search phrases for a watched product, best first."""
+    row = prev_fc.get(pid, {})
+    words = []
+    name = (row.get("name") or "").strip()
+    if name:
+        words = re.sub(r"[^A-Za-z0-9 ]", " ", name).split()
+    if not words:
+        url = row.get("url") or FC_WATCH_URLS.get(pid, "")
+        m = re.search(r"firstcry\.com/[^/]+/([^/]+)/\d{5,}/product-detail", url)
+        if m:
+            words = m.group(1).replace("-", " ").split()
+    if not words:
+        return []
+    terms = []
+    for n in (9, 6, 4):
+        t = " ".join(words[:n]).strip()
+        if t and t not in terms:
+            terms.append(t)
+    return terms
+
+
+def fc_check_watched(prev_fc: dict) -> dict:
+    """Return {pid: {name, price, mrp, stock, url}} for watched products."""
+    if not FC_WATCH_IDS:
+        return {}
+    found = {}
+
+    def one(pid):
+        for term in _fc_watch_terms(pid, prev_fc):
+            url = _FC_SEARCH + quote(term)
+            try:
+                r = http.get(url, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+            except Exception:
+                continue
+            if r.status_code != 200 or len(r.text) < 5000:
+                continue
+            page = r.text
+            marks = [(m.start(), m.group(1), _fc_name(m.group(2)))
+                     for m in _FC_IMG.finditer(page)]
+            marks += [(m.start(), m.group(2), _fc_name(m.group(1)))
+                      for m in _FC_IMG_ALT.finditer(page)]
+            marks.sort()
+            for i, (pos, found_pid, nm) in enumerate(marks):
+                if found_pid != pid:
+                    continue
+                end = marks[i + 1][0] if i + 1 < len(marks) else min(len(page), pos + 6000)
+                region = page[pos:end]
+                price, mrp, stock = _fc_card_stock_price(region, nm)
+                if stock is None:
+                    continue
+                return {"name": nm, "price": price, "mrp": mrp, "stock": stock,
+                        "url": _fc_real_url(page[max(0, pos - 2500):end], pid)}
+            time.sleep(0.3)
+        return None
+
+    with ThreadPoolExecutor(max_workers=min(FC_WORKERS, 6)) as ex:
+        futs = {ex.submit(one, p): p for p in FC_WATCH_IDS}
+        for fut in as_completed(futs):
+            pid = futs[fut]
+            try:
+                info = fut.result()
+            except Exception:
+                info = None
+            if info:
+                found[pid] = info
+    if FC_WATCH_IDS:
+        hit = sum(1 for p in FC_WATCH_IDS if p in found)
+        ins = sum(1 for p in found.values() if p["stock"] == "in_stock")
+        print(f"  [FC] watchlist: resolved {hit}/{len(FC_WATCH_IDS)} ({ins} in stock)")
+    return found
+
+
 def scrape_firstcry() -> list[dict]:
     prev_all = load_seen()
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
@@ -380,8 +504,21 @@ def scrape_firstcry() -> list[dict]:
             time.sleep(1.5)
         return None
 
+    # pick this run's URL set: core + a rotating slice
+    if _FC_ENV_URLS:
+        run_urls = _FC_ENV_URLS
+    else:
+        meta = prev_all.get("_meta", {}) if isinstance(prev_all.get("_meta"), dict) else {}
+        off = int(meta.get("fc_offset", 0)) % max(1, len(_FC_ROTATE_URLS))
+        n = max(0, FC_ROTATE_PER_RUN)
+        slice_ = [_FC_ROTATE_URLS[(off + i) % len(_FC_ROTATE_URLS)] for i in range(n)]
+        run_urls = _FC_CORE_URLS + slice_
+        _FC_NEXT_OFFSET[0] = off + n
+        print(f"  [FC] window {off}-{off+n} of {len(_FC_ROTATE_URLS)} rotating "
+              f"(+{len(_FC_CORE_URLS)} core)")
+
     with ThreadPoolExecutor(max_workers=FC_WORKERS) as ex:
-        pages = {ex.submit(fetch, u): u for u in FC_LISTING_URLS}
+        pages = {ex.submit(fetch, u): u for u in run_urls}
         for fut in as_completed(pages):
             url = pages[fut]
             try:
@@ -423,14 +560,27 @@ def scrape_firstcry() -> list[dict]:
                     seen_now[pid] = {"name": nm, "price": None, "mrp": None,
                                      "stock": None, "url": None}
                     added += 1
+            m = re.search(r"\(\s*(\d{2,5})\s*Items?\s*\)", page, re.I)
+            if m:
+                _FC_SITE_COUNT[0] = max(_FC_SITE_COUNT[0], int(m.group(1)))
             tag = "search" if "searchstring=" in url else "list"
             print(f"  [FC] +{added:3d} ({len(seen_now)} total) [{tag}] {url[-46:]}")
+
+    # Watched products get a direct per-product check via search, so a wishlist
+    # restock is caught even when the item appears on no category listing.
+    for pid, info in fc_check_watched(prev_fc).items():
+        seen_now[pid] = info
 
     if not seen_now:
         print("[*] FirstCry: nothing parsed (blocked?)")
         return []
 
     # carry forward everything previously known (and anything you're watching)
+    for pid in FC_WATCH_IDS:
+        if pid not in seen_now and pid not in prev_fc:
+            seen_now[pid] = {"name": f"Watched product {pid}", "price": None,
+                             "mrp": None, "stock": None,
+                             "url": FC_WATCH_URLS.get(pid)}
     for pid, v in prev_fc.items():
         if pid.isdigit() and pid not in seen_now:
             nm = v.get("name", "")
@@ -458,8 +608,10 @@ def scrape_firstcry() -> list[dict]:
             "stock_ver": "fc_listing_v3",
         })
     ins = sum(1 for d in out if d["stock"] == "in_stock")
+    cov = (f", covering {len(out)}/{_FC_SITE_COUNT[0]} of catalogue"
+           if _FC_SITE_COUNT[0] else "")
     print(f"[*] FirstCry total: {len(out)} ({ins} in stock, "
-          f"{len(seen_now)} seen this run, {unknown} unknown-skipped)")
+          f"{len(seen_now)} seen this run, {unknown} unknown-skipped{cov})")
     return out
 
 
@@ -1368,6 +1520,8 @@ def compute_changes(current: dict, seen: dict) -> dict:
     new_listings, restocks, price_drops, back_soon = [], [], [], []
 
     for pid, d in current.items():
+        if pid == "_meta":
+            continue
         prev = seen.get(pid)
         stock = d["stock"]
         cur_price = price_to_int(d.get("price"))
@@ -1534,6 +1688,16 @@ def main():
            "(likely a temporary block). Will retry next run.\n"
            + (f"<code>{'; '.join(errors)[:300]}</code>" if errors else ""))
         print("[!] No products from any source.")
+        # still advance the FirstCry rotation window, otherwise a run that gets
+        # blocked would pin us to the same slice forever
+        try:
+            meta = seen.get("_meta") if isinstance(seen.get("_meta"), dict) else {}
+            meta["fc_offset"] = _FC_NEXT_OFFSET[0]
+            seen["_meta"] = meta
+            with open(SEEN_FILE, "w", encoding="utf-8") as f:
+                json.dump(seen, f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
         return
 
     current = {p["id"]: p for p in all_products}
@@ -1545,7 +1709,8 @@ def main():
     # shows up, absorb its items silently (mark alerted_new), announce a one-line
     # baseline, and alert only on changes from the next run onward.
     if seen:
-        known_sources = {v.get("source") for v in seen.values() if isinstance(v, dict)}
+        known_sources = {v.get("source") for k, v in seen.items()
+                         if k != "_meta" and isinstance(v, dict)}
         new_sources = {d["source"] for d in current.values()} - known_sources
         for s in new_sources:
             items = [pid for pid, d in current.items() if d["source"] == s]
@@ -1560,9 +1725,10 @@ def main():
     # One-time migration: entries written by the old overwrite-style seen.json
     # lack the alerted_new flag. Treat every pre-existing entry as already
     # alerted, so upgrading the bot doesn't replay old alerts.
-    if seen and not any("alerted_new" in v for v in seen.values() if isinstance(v, dict)):
-        for v in seen.values():
-            if isinstance(v, dict):
+    if seen and not any("alerted_new" in v for k, v in seen.items()
+                        if k != "_meta" and isinstance(v, dict)):
+        for k, v in seen.items():
+            if k != "_meta" and isinstance(v, dict):
                 v["alerted_new"] = True
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
