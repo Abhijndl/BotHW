@@ -62,18 +62,19 @@ jobs:
           WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
           # FirstCry lines to fully ignore (comma-separated name keywords).
           FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball"
-          # Optional: your FirstCry Shortlist. Paste product IDs or full product
-          # URLs (comma separated) — these are tracked permanently and flagged 🎯.
-          # Your FirstCry Shortlist / wishlist. Paste product URLs or IDs,
-          # comma separated. Each is stock-checked directly every run (via
-          # FirstCry's own search), so a restock is caught even when the item
-          # never appears on a category listing. Flagged 🎯 in alerts.
+          # Hand-picked products always checked every run (your FirstCry
+          # Shortlist). Product URLs or IDs, comma separated. Flagged 🎯.
           # Marques/lines to AUTO-WATCH. Any Hot Wheels whose name matches one
           # of these is guarded automatically — checked every run so a restock
           # can't slip past. Edit this list to change what you hunt.
           FC_MARQUES: "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics"
           # Max priority checks per run (each costs 1-3 requests).
           FC_WATCH_MAX: "25"
+          # Rotating catalogue windows per run (on top of 6 core pages).
+          # 18 cycles the full 78-window pool every ~5 runs.
+          FC_ROTATE_PER_RUN: "18"
+          # NOTE: do NOT set FC_LISTING_URLS — leaving it unset is what enables
+          # the rotating sweep. Setting it pins a fixed list instead.
           FC_WATCH: "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail"
           SRC_WORKERS: "6"
           FC_WORKERS: "10"
@@ -81,8 +82,13 @@ jobs:
           BB_TERMS: "hot wheels,hotwheels"
           # Minifygram brands to track (tokens matched in brand or name).
           MG_BRANDS: "hotwheels,mattel,minigt,mini gt,kaido house"
-          # Karz & Dolls category pages to track (comma-separated URLs).
-          KD_URLS: "https://www.karzanddolls.com/mini-gt/mini-gt-blister-pack"
+          # ── Karz & Dolls ─────────────────────────────────────────────────
+          # KD_URLS is deliberately NOT set. The built-in list covers all 16
+          # Hot Wheels + MiniGT categories (mainlines, car culture, team
+          # transport, boulevard, premiums, fast & furious, MiniGT, blister,
+          # Kaido House, pre-orders...). Setting KD_URLS OVERRIDES that list,
+          # which is what limited this source to blister packs only.
+          # If you ever do override it, separate URLs with "|" not commas.
           # DEBUG=true → also sends a heartbeat every run (use while setting up).
           DEBUG: "false"
         run: python bot.py
