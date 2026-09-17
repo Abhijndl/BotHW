@@ -62,14 +62,21 @@ jobs:
           WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
           # FirstCry lines to fully ignore (comma-separated name keywords).
           FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball"
-          # Concurrency — sources run in parallel; pages parallel within a source.
+          # Optional: your FirstCry Shortlist. Paste product IDs or full product
+          # URLs (comma separated) — these are tracked permanently and flagged 🎯.
+          # Your FirstCry Shortlist / wishlist. Paste product URLs or IDs,
+          # comma separated. Each is stock-checked directly every run (via
+          # FirstCry's own search), so a restock is caught even when the item
+          # never appears on a category listing. Flagged 🎯 in alerts.
+          FC_WATCH: "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail"
           SRC_WORKERS: "6"
-          FC_WORKERS: "8"
+          FC_WORKERS: "10"
           HM_WORKERS: "8"
-          # BigBasket search terms (works from an Indian IP; US runners blocked).
           BB_TERMS: "hot wheels,hotwheels"
           # Minifygram brands to track (tokens matched in brand or name).
           MG_BRANDS: "hotwheels,mattel,minigt,mini gt,kaido house"
+          # Karz & Dolls category pages to track (comma-separated URLs).
+          KD_URLS: "https://www.karzanddolls.com/mini-gt/mini-gt-blister-pack"
           # DEBUG=true → also sends a heartbeat every run (use while setting up).
           DEBUG: "false"
         run: python bot.py
