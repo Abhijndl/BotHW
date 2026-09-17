@@ -60,8 +60,11 @@ jobs:
           MAX_ALERT_PRICE: "0"
           # Optional: comma-separated keywords that get an extra 🎯 flag in alerts.
           WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
-          # FirstCry lines to fully ignore (comma-separated name keywords).
-          FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball"
+          # Products to ignore entirely, on EVERY source. Covers monster
+          # trucks and all the big track sets / playsets / garages.
+          # Matched on leading word boundaries, so "monster truck" also catches
+          # "Monster Trucks" while "play set" can't hit "Display Sets".
+          FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track"
           # Hand-picked products always checked every run (your FirstCry
           # Shortlist). Product URLs or IDs, comma separated. Flagged 🎯.
           # Marques/lines to AUTO-WATCH. Any Hot Wheels whose name matches one
