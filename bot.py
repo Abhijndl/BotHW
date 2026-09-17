@@ -484,26 +484,65 @@ def _fc_card_stock_price(region: str, name: str = "") -> tuple:
 # search for its own name and read the card whose id matches. That gives an
 # exact, per-product stock check for the things you actually care about,
 # independent of whether they surface in any category listing.
-def _fc_watch_terms(pid: str, prev_fc: dict) -> list[str]:
-    """Search phrases for a watched product, best first."""
+# Generic words that appear in almost every Hot Wheels name. Searching with
+# them buries the actual model, which is why the first version of this only
+# resolved 3 of 25 watched products: a 9-word query like "hot wheels die cast
+# free wheel toy car 1995" matches everything and pins nothing.
+_FC_STOPWORDS = {
+    "hot", "wheels", "hotwheels", "die", "cast", "diecast", "die-cast", "free",
+    "wheel", "toy", "toys", "car", "cars", "vehicle", "vehicles", "model",
+    "models", "with", "smooth", "rolling", "pack", "of", "scale", "164",
+    "multicolor", "multicolour", "color", "colour", "colours", "the", "and",
+    "for", "adult", "adults", "collectors", "collector", "kids", "years",
+    "year", "new", "edition", "pcs", "piece", "pieces", "a", "an", "in", "to",
+}
+
+
+def _fc_distinctive(name: str) -> list:
+    """The words that actually identify the model (marque, model, variant)."""
+    words = re.sub(r"[^A-Za-z0-9 ]", " ", name or "").split()
+    out = []
+    for w in words:
+        lw = w.lower()
+        if lw in _FC_STOPWORDS:
+            continue
+        if lw.isdigit() and len(lw) != 4:      # keep years, drop 1/64, 250 etc.
+            continue
+        out.append(w)
+    return out
+
+
+def _fc_watch_terms(pid: str, prev_fc: dict) -> list:
+    """Search phrases for a watched product, most specific first."""
     row = prev_fc.get(pid, {})
-    words = []
     name = (row.get("name") or "").strip()
-    if name:
-        words = re.sub(r"[^A-Za-z0-9 ]", " ", name).split()
-    if not words:
+    if not name:
         url = row.get("url") or FC_WATCH_URLS.get(pid, "")
         m = re.search(r"firstcry\.com/[^/]+/([^/]+)/\d{5,}/product-detail", url)
         if m:
-            words = m.group(1).replace("-", " ").split()
-    if not words:
+            name = m.group(1).replace("-", " ")
+    if not name:
         return []
+
+    key = _fc_distinctive(name)
     terms = []
-    for n in (9, 6, 4):
-        t = " ".join(words[:n]).strip()
-        if t and t not in terms:
-            terms.append(t)
-    return terms
+    if key:
+        # "hot wheels <model>" is what a person would actually type
+        terms.append("hot wheels " + " ".join(key[:3]))
+        if len(key) > 2:
+            terms.append("hot wheels " + " ".join(key[:2]))
+        terms.append(" ".join(key[:4]))
+    # last resort: the older whole-name prefix
+    words = re.sub(r"[^A-Za-z0-9 ]", " ", name).split()
+    if words:
+        terms.append(" ".join(words[:6]))
+    seen, out = set(), []
+    for t in terms:
+        t = re.sub(r"\s+", " ", t).strip()
+        if t and t.lower() not in seen:
+            seen.add(t.lower())
+            out.append(t)
+    return out[:4]
 
 
 def fc_check_watched(prev_fc: dict, ids=None) -> dict:
@@ -677,9 +716,15 @@ def scrape_firstcry() -> list[dict]:
                     seen_now[pid] = {"name": nm, "price": None, "mrp": None,
                                      "stock": None, "url": None}
                     added += 1
-            m = re.search(r"\(\s*(\d{2,5})\s*Items?\s*\)", page, re.I)
-            if m:
-                _FC_SITE_COUNT[0] = max(_FC_SITE_COUNT[0], int(m.group(1)))
+            # Only trust the item count from the Hot Wheels BRAND pages. Search
+            # pages report their own (much larger) result totals — that's where
+            # the nonsense "covering 288/5051" came from.
+            if "searchstring=" not in url and "/113" in url:
+                m = re.search(r"\(\s*(\d{2,5})\s*Items?\s*\)", page, re.I)
+                if m:
+                    c = int(m.group(1))
+                    if 50 <= c <= 3000:
+                        _FC_SITE_COUNT[0] = max(_FC_SITE_COUNT[0], c)
             tag = "search" if "searchstring=" in url else "list"
             print(f"  [FC] +{added:3d} ({len(seen_now)} total) [{tag}] {url[-46:]}")
 
@@ -693,7 +738,13 @@ def scrape_firstcry() -> list[dict]:
     auto.sort(key=lambda p: (
         0 if prev_fc.get(p, {}).get("stock") == "out_of_stock" else 1,
         prev_fc.get(p, {}).get("last_seen", "")))
-    priority = list(dict.fromkeys(list(FC_WATCH_IDS) + auto))[:FC_WATCH_MAX]
+    # Items already resolved with a definite stock state on this run's listing
+    # sweep don't need a second lookup — skip them so the budget goes to the
+    # ones only a direct search can answer (typically the sold-out ones).
+    already = {p for p, v in seen_now.items() if v.get("stock")}
+    cand = [p for p in dict.fromkeys(list(FC_WATCH_IDS) + auto)
+            if p not in already or p in FC_WATCH_IDS]
+    priority = cand[:FC_WATCH_MAX]
     if priority:
         n_auto = len([p for p in priority if p not in FC_WATCH_IDS])
         print(f"  [FC] priority: {len(priority)} ({len(FC_WATCH_IDS & set(priority))} "
@@ -968,6 +1019,52 @@ def _hm_session():
         return None
 
 
+_HM_CREDS = [None]          # cached per process: (token, application_id)
+_HM_TOKEN_RE = re.compile(
+    r'["\'](?:x-fp-api-key|applicationToken|api_key|apiKey)["\']\s*[:=]\s*["\']([A-Za-z0-9_\-]{16,64})["\']')
+_HM_APPID_RE = re.compile(r'applications/([0-9a-f]{24})')
+
+
+def _hm_app_creds(sess):
+    """Public Fynd application token + id, mined from hamleys.in's own assets."""
+    if _HM_CREDS[0] is not None:
+        return _HM_CREDS[0]
+    tok = app_id = None
+
+    def _g(u):
+        return (sess.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT) if sess
+                else http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE))
+    try:
+        r = _g("https://hamleys.in/brand/hot-wheels")
+        shell = r.text if r.status_code == 200 else ""
+    except Exception:
+        shell = ""
+    blobs = [shell]
+    for m in list(re.finditer(r'(?:src|href)="([^"]+\.js)"', shell))[:10]:
+        u = urljoin("https://hamleys.in/", m.group(1))
+        try:
+            blobs.append(_g(u).text)
+        except Exception:
+            pass
+    for b in blobs:
+        if not b:
+            continue
+        if app_id is None:
+            ma = _HM_APPID_RE.search(b)
+            if ma:
+                app_id = ma.group(1)
+        if tok is None:
+            mt = _HM_TOKEN_RE.search(b)
+            if mt:
+                tok = mt.group(1)
+        if tok and app_id:
+            break
+    if tok or app_id:
+        print(f"  [HM] creds: token={'yes' if tok else 'no'} app_id={app_id or 'no'}")
+    _HM_CREDS[0] = (tok, app_id)
+    return _HM_CREDS[0]
+
+
 def _hamleys_api(sess) -> list[dict] | None:
     """Fynd application catalog API — the real source behind hamleys.in.
 
@@ -977,8 +1074,18 @@ def _hamleys_api(sess) -> list[dict] | None:
     earlier ?brand=&page_no= guess was the wrong shape and always returned
     nothing, which is why this source went silent.
     """
+    # Fynd storefront APIs are authenticated with the site's PUBLIC application
+    # token (x-fp-api-key) — the same one their own browser JS sends. Without it
+    # every call returns HTTP 401, which is exactly what the logs showed. We mine
+    # it from the site once per run, alongside the application id that appears in
+    # their CDN asset paths (.../applications/<24-hex>/...).
+    tok, app_id = _hm_app_creds(sess)
     headers = {**COMMON_HEADERS, "Accept": "application/json, text/plain, */*",
                "x-currency-code": "INR", "Referer": "https://hamleys.in/brand/hot-wheels"}
+    if tok:
+        headers["x-fp-api-key"] = tok
+    if app_id:
+        headers["x-application-id"] = app_id
 
     def _g(u):
         return (sess.get(u, headers=headers, timeout=TIMEOUT) if sess
@@ -1348,6 +1455,8 @@ def scrape_karzanddolls() -> list[dict]:
                 found += 1
             if found:
                 print(f"  [KD] {cat} → {found}")
+            else:
+                print(f"  [KD] {cat} → 0 (empty or slug changed)")
     ins = sum(1 for d in out if d["stock"] == "in_stock")
     print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)")
     return out
