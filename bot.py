@@ -159,7 +159,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             "last_price_alert":   prev.get("last_price_alert", ""),
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
-        for k in ("mg_updated_at", "stock_ver", "hm_verified_at"):
+        for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -297,6 +297,43 @@ FC_EXCLUDE = [w.strip().lower() for w in
 # product URLs, comma separated — these stay in the catalog permanently and are
 # flagged 🎯 in alerts so a restock on your wishlist is unmissable.
 _FC_WATCH_RAW = os.getenv("FC_WATCH", "")
+# ── Auto-watch by marque ──────────────────────────────────────────────────────
+# Any Hot Wheels whose name matches one of these is automatically added to the
+# priority watch — checked EVERY run via FirstCry's search, the same as a
+# hand-picked FC_WATCH entry. This is what removes the manual step: you never
+# have to paste a link for a sold-out car you care about; if it's a Porsche,
+# Ferrari, Lambo, Supra (etc.) the bot starts guarding it the moment it first
+# sees it, and pings you the instant it returns.
+FC_MARQUES = [w.strip().lower() for w in os.getenv("FC_MARQUES", ",".join([
+    # the ones you named
+    "porsche", "ferrari", "lamborghini", "supra",
+    # JDM icons
+    "skyline", "gt-r", "gtr", "nissan", "datsun", "rx-7", "rx7", "mazda",
+    "civic", "type r", "nsx", "honda", "toyota", "ae86", "silvia", "180sx",
+    "evo", "lancer", "subaru", "wrx", "impreza", "celica", "mr2",
+    # euro / exotic
+    "bmw", "m3", "m4", "audi", "rs6", "rs 6", "mercedes", "amg", "bugatti",
+    "mclaren", "aston martin", "koenigsegg", "pagani", "alfa romeo",
+    "countach", "aventador", "huracan", "diablo", "testarossa", "f40", "f50",
+    "911", "930", "934", "935", "993", "959", "carrera", "singer",
+    # american muscle
+    "mustang", "corvette", "camaro", "challenger", "charger", "plymouth",
+    # collector lines worth guarding regardless of marque
+    "premium", "car culture", "team transport", "boulevard", "rlc",
+    "treasure hunt", "silver series", "fast furious", "fast & furious",
+    "exotics", "legends", "silhouettes", "japan historics", "modern classics",
+])).split(",") if w.strip()]
+
+# Hard cap on per-run priority checks (each costs 1-3 requests). Out-of-stock
+# items are checked first, because in-stock ones are already visible on listings.
+FC_WATCH_MAX = int(os.getenv("FC_WATCH_MAX", "25"))
+
+
+def _fc_is_marque(name: str) -> bool:
+    n = " " + re.sub(r"[^a-z0-9 ]", " ", (name or "").lower()) + " "
+    return any(k in n for k in FC_MARQUES)
+
+
 FC_WATCH_IDS = set(re.findall(r"\d{5,}", _FC_WATCH_RAW))
 # keep the full URL per id so a search phrase can be derived from its slug
 FC_WATCH_URLS = {m.group(1): m.group(0) for m in re.finditer(
@@ -436,9 +473,10 @@ def _fc_watch_terms(pid: str, prev_fc: dict) -> list[str]:
     return terms
 
 
-def fc_check_watched(prev_fc: dict) -> dict:
+def fc_check_watched(prev_fc: dict, ids=None) -> dict:
     """Return {pid: {name, price, mrp, stock, url}} for watched products."""
-    if not FC_WATCH_IDS:
+    ids = FC_WATCH_IDS if ids is None else set(ids)
+    if not ids:
         return {}
     found = {}
 
@@ -471,7 +509,7 @@ def fc_check_watched(prev_fc: dict) -> dict:
         return None
 
     with ThreadPoolExecutor(max_workers=min(FC_WORKERS, 6)) as ex:
-        futs = {ex.submit(one, p): p for p in FC_WATCH_IDS}
+        futs = {ex.submit(one, p): p for p in ids}
         for fut in as_completed(futs):
             pid = futs[fut]
             try:
@@ -480,10 +518,10 @@ def fc_check_watched(prev_fc: dict) -> dict:
                 info = None
             if info:
                 found[pid] = info
-    if FC_WATCH_IDS:
-        hit = sum(1 for p in FC_WATCH_IDS if p in found)
+    if ids:
+        hit = sum(1 for p in ids if p in found)
         ins = sum(1 for p in found.values() if p["stock"] == "in_stock")
-        print(f"  [FC] watchlist: resolved {hit}/{len(FC_WATCH_IDS)} ({ins} in stock)")
+        print(f"  [FC] priority check: resolved {hit}/{len(ids)} ({ins} in stock)")
     return found
 
 
@@ -568,7 +606,20 @@ def scrape_firstcry() -> list[dict]:
 
     # Watched products get a direct per-product check via search, so a wishlist
     # restock is caught even when the item appears on no category listing.
-    for pid, info in fc_check_watched(prev_fc).items():
+    # Priority set = your explicit FC_WATCH ids + every marque match we've ever
+    # recorded. Sold-out ones come first (a restock is the thing we can only
+    # catch here); then the stalest. Capped so the request budget stays sane.
+    auto = [pid for pid, v in prev_fc.items()
+            if v.get("auto_watch") or _fc_is_marque(v.get("name", ""))]
+    auto.sort(key=lambda p: (
+        0 if prev_fc.get(p, {}).get("stock") == "out_of_stock" else 1,
+        prev_fc.get(p, {}).get("last_seen", "")))
+    priority = list(dict.fromkeys(list(FC_WATCH_IDS) + auto))[:FC_WATCH_MAX]
+    if priority:
+        n_auto = len([p for p in priority if p not in FC_WATCH_IDS])
+        print(f"  [FC] priority: {len(priority)} ({len(FC_WATCH_IDS & set(priority))} "
+              f"manual + {n_auto} auto-watch by marque)")
+    for pid, info in fc_check_watched(prev_fc, priority).items():
         seen_now[pid] = info
 
     if not seen_now:
@@ -604,7 +655,8 @@ def scrape_firstcry() -> list[dict]:
             "mrp": f"₹{v['mrp']}" if v["mrp"] else "",
             "stock": stock,
             "badge_new": False,
-            "watched": pid in FC_WATCH_IDS,
+            "watched": pid in FC_WATCH_IDS or _fc_is_marque(v["name"]),
+            "auto_watch": _fc_is_marque(v["name"]),
             "stock_ver": "fc_listing_v3",
         })
     ins = sum(1 for d in out if d["stock"] == "in_stock")
