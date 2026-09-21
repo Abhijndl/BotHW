@@ -798,10 +798,12 @@ def _ci(d: dict, *names):
     return None
 
 
-_ID_KEYS    = ("pid", "productid", "productinfoid", "prodid", "infoid", "id")
-_NAME_KEYS  = ("pname", "productname", "prodname", "name", "title")
+# FirstCry's SearchResult.svc uses abbreviated keys — confirmed from a live
+# response: PId, PInfId, PNm (name), MRP, Disc, CrntStock, P_Grp_ID, BNm …
+_ID_KEYS    = ("pid", "pinfid", "productid", "productinfoid", "prodid", "infoid", "id")
+_NAME_KEYS  = ("pnm", "pname", "productname", "prodname", "prodnm", "name", "title")
 _PRICEY     = ("pricing", "mrp", "price", "discprice", "sellingprice", "sp",
-               "actualprice", "nonclubprice", "stock", "currentstock")
+               "actualprice", "nonclubprice", "stock", "currentstock", "crntstock")
 
 
 def _fc_api_products(data) -> list:
@@ -836,8 +838,8 @@ def _fc_api_stock(p: dict):
     elif s is not None and re.fullmatch(r"-?\d+(\.\d+)?", str(s).strip()):
         cnt = s
     if cnt is None:
-        cnt = _ci(p, "currentstock", "stockqty", "availableqty", "availablestock",
-                  "inventoryqty", "stk")
+        cnt = _ci(p, "crntstock", "currentstock", "curstock", "stockqty", "availableqty",
+                  "availablestock", "inventoryqty", "stk")
     if cnt is not None:
         try:
             c = int(float(cnt))
@@ -854,7 +856,9 @@ def _fc_api_stock(p: dict):
 
 
 def _fc_slug(name: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")[:120] or "hot-wheels"
+    # FirstCry writes "&" as "and" in its URLs (…/fast-and-furious-…)
+    n = (name or "").lower().replace("&", " and ")
+    return re.sub(r"[^a-z0-9]+", "-", n).strip("-")[:150] or "hot-wheels"
 
 
 def fc_api_catalogue():
@@ -879,7 +883,7 @@ def fc_api_catalogue():
     except Exception as e:
         print(f"  [FC-API] warm-up failed: {type(e).__name__}")
 
-    products, seen_ids, size = {}, set(), FC_API_PAGESIZE
+    products, seen_ids, size, expected = {}, set(), FC_API_PAGESIZE, None
     for page in range(1, FC_API_MAXPAGES + 1):
         try:
             r = get(_fc_bust(_fc_api_query(page, size)), headers)
@@ -896,6 +900,12 @@ def fc_api_catalogue():
                   f"({r.text[:120]!r})")
             break
         items = _fc_api_products(data)
+        if page == 1 and isinstance(data, dict):
+            ttl = _ci(data, "ttl", "total", "totalcount", "count")
+            try:
+                expected = int(str(ttl)) if ttl is not None else None
+            except ValueError:
+                expected = None
         if page == 1:
             if not items:
                 top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
@@ -920,11 +930,16 @@ def fc_api_catalogue():
             new += 1
         if new == 0 or len(items) < min(size, 20):
             break                       # last page reached
+        if expected and len(products) >= expected:
+            break                       # got everything the API said exists
         time.sleep(0.4)
 
     if not products:
         return None
-    print(f"  [FC-API] {len(products)} products across {page} page(s)")
+    oos = sum(1 for p in products.values() if (_fc_api_stock(p)[1] == 0))
+    tot = f" of {expected}" if expected else ""
+    print(f"  [FC-API] {len(products)}{tot} products across {page} page(s) "
+          f"({oos} with zero stock)")
     return products
 
 
@@ -940,12 +955,28 @@ def fc_api_records(products: dict, prev_fc: dict) -> list:
             stock = (prev_fc.get(pid) or {}).get("stock")
             if stock is None:
                 continue
-        price = price_to_int(_ci(p, "pricing.discPrice", "discprice", "sellingprice",
-                                 "nonclubprice", "actualprice", "sp", "price"))
         mrp = price_to_int(_ci(p, "pricing.mrp", "mrp"))
+        price = price_to_int(_ci(p, "pricing.discPrice", "discprice", "dpric", "dprice",
+                                 "sprice", "sellprice", "sellingprice", "offerprice",
+                                 "nonclubprice", "actualprice", "actprice", "pric",
+                                 "sp", "price"))
+        if not price and mrp:
+            # FirstCry sends MRP plus a discount ("Disc"). It's a percentage in
+            # their other API (mrp 445, disc 11 -> 397.25); treat small values as
+            # a percent and larger ones as a rupee amount off.
+            try:
+                d = float(str(_ci(p, "disc", "discount", "discper") or 0))
+            except ValueError:
+                d = 0.0
+            if 0 < d < 100:
+                price = int(round(mrp * (1 - d / 100.0)))
+            elif 100 <= d < mrp:
+                price = int(round(mrp - d))
+            else:
+                price = mrp
         if mrp and price and not (price < mrp <= price * 4):
             mrp = None
-        url = _ci(p, "producturl", "url", "seourl", "pdpurl")
+        url = _ci(p, "producturl", "purl", "url", "seourl", "pdpurl", "prdurl")
         if url and str(url).startswith("/"):
             url = "https://www.firstcry.com" + str(url)
         if not (url and str(url).startswith("http")):
