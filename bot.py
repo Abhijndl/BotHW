@@ -73,6 +73,11 @@ LAT, LON  = 30.3165, 78.0322          # Dehradun centre — used for Blinkit
 
 SEEN_FILE = "seen.json"
 
+# Set by runner.py (always-on mode) to run only the sources that are due this
+# tick, so each store can have its own cadence. None = run everything (the
+# normal GitHub Actions behaviour, unchanged).
+ACTIVE_SOURCES = None
+
 # Behaviour toggles (set as env in the workflow)
 DEBUG   = os.getenv("DEBUG",   "false").lower() == "true"   # verbose + heartbeat msg
 SILENT  = os.getenv("SILENT",  "true").lower()  == "true"   # only ping on real changes
@@ -616,7 +621,10 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
     a genuine restock can still fire later.
     Returns how many were suppressed.
     """
-    cands = [d for d in changes.get("restocks", []) if d["source"] == "firstcry"]
+    # API-sourced stock is authoritative and fetched fresh, so only restocks read
+    # from HTML listings need a second look.
+    cands = [d for d in changes.get("restocks", [])
+             if d["source"] == "firstcry" and d.get("stock_ver") != "fc_api_v1"]
     if not cands:
         return 0
     prev_fc = {}
@@ -627,7 +635,7 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
 
     kept, dropped = [], 0
     for d in changes["restocks"]:
-        if d["source"] != "firstcry":
+        if d["source"] != "firstcry" or d.get("stock_ver") == "fc_api_v1":
             kept.append(d)
             continue
         pid = d["id"][3:]
@@ -648,10 +656,370 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
     return dropped
 
 
+# ══════════════════════════════════════════════════════════════════════════════════
+# FirstCry — INTERNAL JSON API (the same call the site's "Show More" button makes)
+# ══════════════════════════════════════════════════════════════════════════════════
+# Discovered from a HAR capture of hotwheels/5/0/113: every "Show More Products"
+# click calls
+#     /svcs/SearchResult.svc/GetSearchResultProductsPaging?PageNo=N&PageSize=20
+#         &MasterBrand=113 (Hot Wheels) ... 59 params in total
+# with only anonymous session cookies — no login. Paging through it returns the
+# WHOLE catalogue, sold-out items included, as JSON. That replaces the entire
+# HTML-window rotation: one short loop of requests gives every product with its
+# real stock, instead of 24 page loads that each see ~20 of ~430 products.
+#
+# FirstCry's internal product records carry an exact unit count
+# ("stock": {"current": 82} / "CurrentStock": 530 — both seen in real captures),
+# so beyond in/out we can warn when a car is nearly gone.
+#
+# The response body wasn't saved in the capture (the page navigated away), so
+# the parser below is deliberately tolerant of FirstCry's known field-name
+# variants, and it prints the detected schema on the first page of every run so
+# the log confirms exactly what it read. If the API ever fails, scrape_firstcry
+# falls back to the proven HTML path automatically.
+FC_USE_API      = os.getenv("FC_USE_API", "true").lower() == "true"
+FC_API_URL      = "https://www.firstcry.com/svcs/SearchResult.svc/GetSearchResultProductsPaging"
+FC_API_BRAND    = os.getenv("FC_API_BRAND", "113")          # Hot Wheels master brand
+FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "100"))  # site uses 20; bigger = fewer calls
+FC_API_MAXPAGES = int(os.getenv("FC_API_MAXPAGES", "40"))
+FC_LOW_STOCK    = int(os.getenv("FC_LOW_STOCK", "5"))       # "only N left" threshold
+_FC_API_REFERER = "https://www.firstcry.com/hotwheels/5/0/113"
+FC_LAST_MODE = [None]      # "api" or "html" — read by runner.py to pick a safe cadence
+
+# exact parameter set, in the order the site sends it
+_FC_API_PARAMS = [
+    ("PageNo", "2"),
+    ("PageSize", "20"),
+    ("SortExpression", "Popularity"),
+    ("OnSale", "5"),
+    ("SearchString", "brand"),
+    ("SubCatId", ""),
+    ("BrandId", ""),
+    ("Price", ""),
+    ("Age", ""),
+    ("Color", ""),
+    ("OptionalFilter", ""),
+    ("OutOfStock", ""),
+    ("Type1", ""),
+    ("Type2", ""),
+    ("Type3", ""),
+    ("Type4", ""),
+    ("Type5", ""),
+    ("Type6", ""),
+    ("Type7", ""),
+    ("Type8", ""),
+    ("Type9", ""),
+    ("Type10", ""),
+    ("Type11", ""),
+    ("Type12", ""),
+    ("Type13", ""),
+    ("Type14", ""),
+    ("Type15", ""),
+    ("combo", ""),
+    ("discount", ""),
+    ("searchwithincat", ""),
+    ("ProductidQstr", ""),
+    ("searchrank", ""),
+    ("pmonths", ""),
+    ("cgen", ""),
+    ("PriceQstr", ""),
+    ("DiscountQstr", ""),
+    ("sorting", ""),
+    ("MasterBrand", "113"),
+    ("Rating", ""),
+    ("Offer", ""),
+    ("skills", ""),
+    ("material", ""),
+    ("curatedcollections", ""),
+    ("measurement", ""),
+    ("gender", ""),
+    ("exclude", ""),
+    ("premium", ""),
+    ("pcode", "0"),
+    ("isclub", "0"),
+    ("deliverytype", ""),
+    ("authors", ""),
+    ("booktype", ""),
+    ("character", ""),
+    ("collections", ""),
+    ("format", ""),
+    ("genre", ""),
+    ("booklanguage", ""),
+    ("publication", ""),
+    ("skill", "")
+]
+
+
+def _fc_api_query(page: int, size: int) -> str:
+    out = []
+    for k, v in _FC_API_PARAMS:
+        if k == "PageNo":
+            v = str(page)
+        elif k == "PageSize":
+            v = str(size)
+        elif k == "MasterBrand":
+            v = FC_API_BRAND
+        out.append(f"{k}={quote(v, safe='')}")
+    return FC_API_URL + "?" + "&".join(out)
+
+
+def _fc_unwrap(o):
+    """WCF services often return {"XResult": "<json encoded as a string>"}."""
+    if isinstance(o, str):
+        s = o.strip()
+        if s[:1] in "[{":
+            try:
+                return _fc_unwrap(json.loads(s))
+            except Exception:
+                return o
+        return o
+    if isinstance(o, dict):
+        return {k: _fc_unwrap(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [_fc_unwrap(v) for v in o]
+    return o
+
+
+def _ci(d: dict, *names):
+    """Case-insensitive lookup; supports dotted paths like 'stock.current'."""
+    low = {k.lower(): k for k in d}
+    for n in names:
+        cur, ok = d, True
+        for part in n.lower().split("."):
+            if isinstance(cur, dict):
+                lk = {k.lower(): k for k in cur}
+                if part in lk:
+                    cur = cur[lk[part]]
+                    continue
+            ok = False
+            break
+        if ok and cur not in (None, ""):
+            return cur
+    return None
+
+
+_ID_KEYS    = ("pid", "productid", "productinfoid", "prodid", "infoid", "id")
+_NAME_KEYS  = ("pname", "productname", "prodname", "name", "title")
+_PRICEY     = ("pricing", "mrp", "price", "discprice", "sellingprice", "sp",
+               "actualprice", "nonclubprice", "stock", "currentstock")
+
+
+def _fc_api_products(data) -> list:
+    """Collect product-like dicts. A product needs an id, a name AND a price or
+    stock field — the last test stops nested {"name","id"} brand/category
+    objects from being mistaken for products."""
+    found, stack = [], [data]
+    while stack:
+        n = stack.pop()
+        if isinstance(n, dict):
+            keys = {k.lower() for k in n}
+            if (any(k in keys for k in _ID_KEYS) and any(k in keys for k in _NAME_KEYS)
+                    and any(k in keys for k in _PRICEY)):
+                found.append(n)
+                continue
+            stack.extend(n.values())
+        elif isinstance(n, list):
+            stack.extend(n)
+    return found
+
+
+def _truthy(v) -> bool:
+    return v is True or str(v).strip().lower() in ("1", "true", "yes", "y")
+
+
+def _fc_api_stock(p: dict):
+    """(stock_state, unit_count_or_None) from a product record."""
+    s = _ci(p, "stock")
+    cnt = None
+    if isinstance(s, dict):
+        cnt = _ci(s, "current", "qty", "available")
+    elif s is not None and re.fullmatch(r"-?\d+(\.\d+)?", str(s).strip()):
+        cnt = s
+    if cnt is None:
+        cnt = _ci(p, "currentstock", "stockqty", "availableqty", "availablestock",
+                  "inventoryqty", "stk")
+    if cnt is not None:
+        try:
+            c = int(float(cnt))
+            return ("in_stock" if c > 0 else "out_of_stock"), c
+        except Exception:
+            pass
+    oos = _ci(p, "isoutofstock", "outofstock", "isoos", "oos", "soldout", "issoldout")
+    if oos is not None:
+        return ("out_of_stock" if _truthy(oos) else "in_stock"), None
+    ins = _ci(p, "instock", "isinstock", "available", "isavailable")
+    if ins is not None:
+        return ("in_stock" if _truthy(ins) else "out_of_stock"), None
+    return None, None
+
+
+def _fc_slug(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")[:120] or "hot-wheels"
+
+
+def fc_api_catalogue():
+    """Full Hot Wheels catalogue via FirstCry's own paging API, or None."""
+    try:
+        sess = http.Session(**_IMPERSONATE) if _IMPERSONATE else http.Session()
+    except Exception:
+        sess = None
+    headers = {**COMMON_HEADERS, **_FC_NOCACHE,
+               "Accept": "application/json, text/javascript, */*; q=0.01",
+               "Content-Type": "application/json; charset=utf-8",
+               "X-Requested-With": "XMLHttpRequest",
+               "Referer": _FC_API_REFERER}
+
+    def get(u, h):
+        return (sess.get(u, headers=h, timeout=TIMEOUT) if sess
+                else http.get(u, headers=h, timeout=TIMEOUT, **_IMPERSONATE))
+
+    # warm up: the listing page issues the anonymous session cookies the API expects
+    try:
+        get(_fc_bust(_FC_API_REFERER), {**COMMON_HEADERS, **_FC_NOCACHE})
+    except Exception as e:
+        print(f"  [FC-API] warm-up failed: {type(e).__name__}")
+
+    products, seen_ids, size = {}, set(), FC_API_PAGESIZE
+    for page in range(1, FC_API_MAXPAGES + 1):
+        try:
+            r = get(_fc_bust(_fc_api_query(page, size)), headers)
+        except Exception as e:
+            print(f"  [FC-API] page {page}: {type(e).__name__}")
+            break
+        if r.status_code != 200:
+            print(f"  [FC-API] page {page} → HTTP {r.status_code}")
+            break
+        try:
+            data = _fc_unwrap(r.json())
+        except Exception:
+            print(f"  [FC-API] page {page}: response is not JSON "
+                  f"({r.text[:120]!r})")
+            break
+        items = _fc_api_products(data)
+        if page == 1:
+            if not items:
+                top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
+                print(f"  [FC-API] no products recognised. top-level: {top}")
+                print(f"  [FC-API] response head: {json.dumps(data)[:400]}")
+                return None
+            print(f"  [FC-API] schema: {sorted(items[0].keys())[:40]}")
+        # If we asked for more than the site's native 20 and got exactly 20, the
+        # server is capping the page size. Paging on with our larger size could
+        # skip products (offset uses our size, response is capped), so drop to
+        # the native size for the remaining pages.
+        if page == 1 and size > 20 and len(items) == 20:
+            print("  [FC-API] server caps page size at 20 — paging at native size")
+            size = 20
+        new = 0
+        for p in items:
+            pid = str(_ci(p, *_ID_KEYS) or "").strip()
+            if not pid.isdigit() or pid in seen_ids:
+                continue
+            seen_ids.add(pid)
+            products[pid] = p
+            new += 1
+        if new == 0 or len(items) < min(size, 20):
+            break                       # last page reached
+        time.sleep(0.4)
+
+    if not products:
+        return None
+    print(f"  [FC-API] {len(products)} products across {page} page(s)")
+    return products
+
+
+def fc_api_records(products: dict, prev_fc: dict) -> list:
+    """Turn raw API records into tracker products (after exclusions)."""
+    out, sample_done = [], False
+    for pid, p in products.items():
+        name = _fc_name(str(_ci(p, *_NAME_KEYS) or ""))
+        if not name or _fc_excluded(name):
+            continue
+        stock, count = _fc_api_stock(p)
+        if stock is None:
+            stock = (prev_fc.get(pid) or {}).get("stock")
+            if stock is None:
+                continue
+        price = price_to_int(_ci(p, "pricing.discPrice", "discprice", "sellingprice",
+                                 "nonclubprice", "actualprice", "sp", "price"))
+        mrp = price_to_int(_ci(p, "pricing.mrp", "mrp"))
+        if mrp and price and not (price < mrp <= price * 4):
+            mrp = None
+        url = _ci(p, "producturl", "url", "seourl", "pdpurl")
+        if url and str(url).startswith("/"):
+            url = "https://www.firstcry.com" + str(url)
+        if not (url and str(url).startswith("http")):
+            url = f"https://www.firstcry.com/hot-wheels/{_fc_slug(name)}/{pid}/product-detail"
+        pre = _ci(p, "tags.ispreorder", "ispreorder", "preorder")
+        if pre is not None and _truthy(pre):
+            name = name + " [PRE-ORDER]"
+        if not sample_done:
+            print(f"  [FC-API] sample: {name[:48]} | stock={stock} count={count} "
+                  f"price={price} mrp={mrp}")
+            sample_done = True
+        out.append({
+            "id": f"fc_{pid}", "source": "firstcry", "name": name, "url": url,
+            "price": f"₹{price}" if price else "",
+            "mrp": f"₹{mrp}" if mrp else "",
+            "stock": stock,
+            "stock_count": count,
+            "badge_new": False,
+            "watched": pid in FC_WATCH_IDS or _fc_is_marque(name),
+            "auto_watch": _fc_is_marque(name),
+            "stock_ver": "fc_api_v1",
+            "fc_listed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        })
+    return out
+
+
 def scrape_firstcry() -> list[dict]:
     prev_all = load_seen()
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
                if pid.startswith("fc_") and isinstance(v, dict)}
+
+    # ── Preferred path: FirstCry's own JSON catalogue API ──────────────────────
+    if FC_USE_API:
+        api = fc_api_catalogue()
+        if api:
+            recs = fc_api_records(api, prev_fc)
+            got = {r["id"][3:] for r in recs}
+            prev_in = [p for p, v in prev_fc.items() if v.get("stock") == "in_stock"]
+            # The API returns the whole catalogue INCLUDING sold-out items, so a
+            # product missing from a healthy response has been delisted/hidden.
+            # Recording it as sold out means a relisting alerts as a restock.
+            # Health guard: skip this if the response looks truncated.
+            healthy = (not prev_in) or len(api) >= 0.6 * len(prev_in)
+            delisted = 0
+            for pid, v in prev_fc.items():
+                if pid in got or not pid.isdigit():
+                    continue
+                nm = v.get("name", "")
+                if not nm or _fc_excluded(nm):
+                    continue
+                st = v.get("stock")
+                if healthy and st == "in_stock":
+                    st, delisted = "out_of_stock", delisted + 1
+                if st is None:
+                    continue
+                recs.append({
+                    "id": f"fc_{pid}", "source": "firstcry", "name": nm,
+                    "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
+                    "price": v.get("price", ""), "mrp": "", "stock": st,
+                    "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
+                    "auto_watch": _fc_is_marque(nm), "stock_ver": "fc_api_v1",
+                    "fc_listed_at": v.get("fc_listed_at", ""),
+                })
+            ins = sum(1 for r in recs if r["stock"] == "in_stock")
+            low = sum(1 for r in recs if r.get("stock_count")
+                      and 0 < r["stock_count"] <= FC_LOW_STOCK)
+            FC_LAST_MODE[0] = "api"
+            print(f"[*] FirstCry total (API): {len(recs)} ({ins} in stock, "
+                  f"{low} low-stock, {delisted} delisted"
+                  f"{'' if healthy else ', health-guard held'})")
+            return recs
+        print("  [FC] API unavailable this run — falling back to HTML listing scrape")
+    FC_LAST_MODE[0] = "html"
+
     seen_now: dict = {}
 
     def fetch(url):
@@ -1859,6 +2227,9 @@ def _line(d, extra="") -> str:
     tag = SRC.get(d["source"], "")
     flag = (" 🎯" if (d.get("watched")
                      or any(w in d["name"].lower() for w in WATCHLIST)) else "")
+    cnt = d.get("stock_count")
+    if isinstance(cnt, int) and 0 < cnt <= FC_LOW_STOCK:
+        flag += f" ⚠️ only {cnt} left"
     price = d.get("price", "")
     mrp = f" <s>{d['mrp']}</s>" if d.get("mrp") else ""
     return f"[{tag}] <b>{html.escape(d['name'])}</b>{flag}  {price}{mrp}{extra}\n{d['url']}"
@@ -1928,6 +2299,10 @@ def main():
     sources = (("FirstCry", scrape_firstcry), ("Minifygram", scrape_minifygram),
                ("Hamleys", scrape_hamleys), ("Karz&Dolls", scrape_karzanddolls),
                ("BigBasket", scrape_bigbasket), ("Blinkit", scrape_blinkit))
+    if ACTIVE_SOURCES is not None:
+        sources = tuple(s for s in sources if s[0] in ACTIVE_SOURCES)
+        if not sources:
+            return
     # Sources run concurrently — total time is the SLOWEST source, not the sum.
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=SRC_WORKERS) as ex:
@@ -1985,6 +2360,10 @@ def main():
         if before != len(all_products):
             print(f"[*] excluded {before-len(all_products)} matching {FC_EXCLUDE}")
 
+    if not all_products and ACTIVE_SOURCES is not None:
+        # Partial tick in always-on mode (e.g. only a geo-blocked source was
+        # due). Nothing to do, and not worth an alarm.
+        return
     if not all_products:
         # Only shout if EVERYTHING died — and keep it actionable, not spammy.
         tg("⚠️ <b>Hot Wheels Tracker</b>\nAll sources returned 0 this run "
