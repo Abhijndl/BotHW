@@ -159,7 +159,8 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             "last_price_alert":   prev.get("last_price_alert", ""),
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
-        for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch"):
+        for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
+                  "fc_listed_at"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -333,6 +334,11 @@ FC_MARQUES = [w.strip().lower() for w in os.getenv("FC_MARQUES", ",".join([
 # Hard cap on per-run priority checks (each costs 1-3 requests). Out-of-stock
 # items are checked first, because in-stock ones are already visible on listings.
 FC_WATCH_MAX = int(os.getenv("FC_WATCH_MAX", "25"))
+
+# Hours a car can go unseen on every listing window before we treat it as sold
+# out. 3h ≈ 7 full sweeps of the 78-window rotation at a 5-minute cadence, so an
+# in-stock car almost always reappears well within it.
+FC_STALE_H = float(os.getenv("FC_STALE_H", "3"))
 
 
 def _fc_is_marque(name: str) -> bool:
@@ -769,13 +775,30 @@ def scrape_firstcry() -> list[dict]:
                 seen_now[pid] = {"name": nm, "price": price_to_int(v.get("price")),
                                  "mrp": None, "stock": None, "url": v.get("url")}
 
-    out, unknown = [], 0
+    out, unknown, aged = [], 0, 0
+    now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
     for pid, v in seen_now.items():
         prevrow = prev_fc.get(pid, {})
+        # "observed" = we actually read this card's stock on a page this run.
+        # Carried-forward entries and footer links arrive with stock=None.
+        observed = v["stock"] is not None
         stock = v["stock"] or prevrow.get("stock")
         if stock is None:
             unknown += 1          # never guess — avoids phantom sold-out alerts
             continue
+        # THE CORE FIX. On FirstCry a sold-out car usually just drops out of the
+        # listings instead of showing "sold out". Previously that meant we kept
+        # its last state ("in stock") forever, so when it came back there was no
+        # sold-out -> in-stock transition and the restock alert could never fire.
+        # Now: if a car we believed in stock hasn't been seen on ANY of the 78
+        # rotating windows for FC_STALE_H hours (several full sweeps), we record
+        # it as sold out. When it reappears, that's a genuine restock and alerts
+        # (after the fresh-request confirmation step).
+        listed_at = now_iso if observed else (prevrow.get("fc_listed_at") or now_iso)
+        if (not observed and stock == "in_stock"
+                and _hours_since(listed_at) >= FC_STALE_H):
+            stock = "out_of_stock"
+            aged += 1
         price = v["price"] if v["price"] else price_to_int(prevrow.get("price"))
         out.append({
             "id": f"fc_{pid}", "source": "firstcry", "name": v["name"],
@@ -788,12 +811,14 @@ def scrape_firstcry() -> list[dict]:
             "watched": pid in FC_WATCH_IDS or _fc_is_marque(v["name"]),
             "auto_watch": _fc_is_marque(v["name"]),
             "stock_ver": "fc_listing_v3",
+            "fc_listed_at": listed_at,
         })
     ins = sum(1 for d in out if d["stock"] == "in_stock")
     cov = (f", covering {len(out)}/{_FC_SITE_COUNT[0]} of catalogue"
            if _FC_SITE_COUNT[0] else "")
-    print(f"[*] FirstCry total: {len(out)} ({ins} in stock, "
-          f"{len(seen_now)} seen this run, {unknown} unknown-skipped{cov})")
+    read_now = sum(1 for v in seen_now.values() if v.get("stock") is not None)
+    print(f"[*] FirstCry total: {len(out)} ({ins} in stock, {read_now} read live "
+          f"this run, {aged} aged to sold-out, {unknown} unknown{cov})")
     return out
 
 
@@ -1743,6 +1768,11 @@ def scrape_blinkit() -> list[dict]:
 # DIFF + ALERTS
 # ══════════════════════════════════════════════════════════════════════════════════
 RESTOCK_COOLDOWN_H = 24
+
+# Sources whose pages show their COMPLETE catalogue, so a product missing from a
+# healthy scrape really has sold out / been delisted.
+ABSENCE_SOURCES = [s.strip() for s in os.getenv("ABSENCE_SOURCES", "karzdolls").split(",")
+                   if s.strip()]
 PRICE_COOLDOWN_H   = 24     # min hours between price-drop alerts per product     # don't re-alert the same product's restock within 24h
 
 
@@ -1914,6 +1944,39 @@ def main():
                 print(f"[!] {name} error:\n{traceback.format_exc()}")
     print(f"\n[*] all sources finished in {time.time()-t0:.1f}s "
           f"→ {len(all_products)} products")
+
+    # ── Absence = sold out, for COMPLETE-catalogue sources ────────────────────
+    # Karz & Dolls category pages list their whole category ("Showing 107 out of
+    # 107") and simply DROP a product when it sells out — which is why the log
+    # showed 284 of 284 "in stock". Treating absence as "unchanged" meant a KND
+    # restock could never be detected. So: any KND product we've seen before that
+    # is missing from this run is recorded as sold out. Guarded by a health
+    # check — if the scrape came back suspiciously small (a failed fetch), we
+    # skip this rather than mark the whole catalogue sold out.
+    for src_key in ABSENCE_SOURCES:
+        got = {p["id"] for p in all_products if p["source"] == src_key}
+        prev_in = {k for k, v in seen.items()
+                   if k != "_meta" and isinstance(v, dict)
+                   and v.get("source") == src_key and v.get("stock") == "in_stock"}
+        if not got:
+            continue
+        if prev_in and len(got) < 0.6 * len(prev_in):
+            print(f"[!] {src_key}: only {len(got)} vs {len(prev_in)} last time — "
+                  f"skipping absence check (likely a partial fetch)")
+            continue
+        gone = 0
+        for k, v in seen.items():
+            if (k == "_meta" or not isinstance(v, dict) or v.get("source") != src_key
+                    or k in got or v.get("stock") != "in_stock"):
+                continue
+            all_products.append({
+                "id": k, "source": src_key, "name": v.get("name", ""),
+                "url": v.get("url", ""), "price": v.get("price", ""), "mrp": "",
+                "stock": "out_of_stock", "badge_new": False,
+            })
+            gone += 1
+        if gone:
+            print(f"[*] {src_key}: {gone} product(s) no longer listed → marked sold out")
 
     # Global keyword exclusion — every source, not just FirstCry.
     if FC_EXCLUDE:
