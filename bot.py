@@ -302,7 +302,7 @@ FC_EXCLUDE = [w.strip().lower() for w in
                         "track creator,playset,play set,race off,raceway,speedway,"
                         "garage,car wash,loop dash,loop track,launch & loop,launcher,"
                         "stunt track,hot wheels city,ultimate garage,super loop,"
-                        "pit stop,action set,crash & track")
+                        "pit stop,action set,crash & track,ultimate")
               .split(",") if w.strip()]
 
 # Always-track product ids (e.g. your FirstCry Shortlist). Paste ids or full
@@ -680,7 +680,8 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
 FC_USE_API      = os.getenv("FC_USE_API", "true").lower() == "true"
 FC_API_URL      = "https://www.firstcry.com/svcs/SearchResult.svc/GetSearchResultProductsPaging"
 FC_API_BRAND    = os.getenv("FC_API_BRAND", "113")          # Hot Wheels master brand
-FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "100"))  # site uses 20; bigger = fewer calls
+FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "20"))   # FirstCry caps pages at 20 anyway
+FC_API_TIMEOUT  = int(os.getenv("FC_API_TIMEOUT", "15"))   # per JSON request; retried on timeout
 FC_API_MAXPAGES = int(os.getenv("FC_API_MAXPAGES", "40"))
 FC_LOW_STOCK    = int(os.getenv("FC_LOW_STOCK", "5"))       # "only N left" threshold
 # v2: the v1 run that misread TTL wrongly flipped ~209 cars to sold out. Bumping
@@ -867,7 +868,14 @@ def _fc_slug(name: str) -> str:
 
 
 def fc_api_catalogue():
-    """Full Hot Wheels catalogue via FirstCry's own paging API, or None."""
+    """Full Hot Wheels catalogue via FirstCry's own paging API, or None.
+
+    Resilience (v11.3): a slow page is retried with backoff instead of ending
+    the sweep. In the first live runs a single page-16 timeout cut the sweep
+    short and cost ~150 cars; now one bad page is retried and, if it still
+    fails, skipped while later pages are still collected. The sweep only counts
+    as COMPLETE when every page up to the natural end succeeded — that flag is
+    what allows a missing car to eventually be treated as delisted."""
     try:
         sess = http.Session(**_IMPERSONATE) if _IMPERSONATE else http.Session()
     except Exception:
@@ -879,8 +887,8 @@ def fc_api_catalogue():
                "Referer": _FC_API_REFERER}
 
     def get(u, h):
-        return (sess.get(u, headers=h, timeout=TIMEOUT) if sess
-                else http.get(u, headers=h, timeout=TIMEOUT, **_IMPERSONATE))
+        return (sess.get(u, headers=h, timeout=FC_API_TIMEOUT) if sess
+                else http.get(u, headers=h, timeout=FC_API_TIMEOUT, **_IMPERSONATE))
 
     # warm up: the listing page issues the anonymous session cookies the API expects
     try:
@@ -888,60 +896,87 @@ def fc_api_catalogue():
     except Exception as e:
         print(f"  [FC-API] warm-up failed: {type(e).__name__}")
 
-    products, seen_ids, size, complete = {}, set(), FC_API_PAGESIZE, False
-    for page in range(1, FC_API_MAXPAGES + 1):
-        try:
-            r = get(_fc_bust(_fc_api_query(page, size)), headers)
-        except Exception as e:
-            print(f"  [FC-API] page {page}: {type(e).__name__}")
-            break
-        if r.status_code != 200:
-            print(f"  [FC-API] page {page} → HTTP {r.status_code}")
-            break
-        try:
-            data = _fc_unwrap(r.json())
-        except Exception:
-            print(f"  [FC-API] page {page}: response is not JSON "
-                  f"({r.text[:120]!r})")
-            break
-        items = _fc_api_products(data)
-        # NOTE: the response's "TTL" field is a cache time-to-live, not a product
-        # count — reading it as a total made paging stop early at 290 of ~437.
-        # We page until FirstCry returns an empty or short page instead.
-        if page == 1:
-            if not items:
-                top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
-                print(f"  [FC-API] no products recognised. top-level: {top}")
-                print(f"  [FC-API] response head: {json.dumps(data)[:400]}")
-                return None
-            print(f"  [FC-API] schema: {sorted(items[0].keys())[:40]}")
-        # If we asked for more than the site's native 20 and got exactly 20, the
-        # server is capping the page size. Paging on with our larger size could
-        # skip products (offset uses our size, response is capped), so drop to
-        # the native size for the remaining pages.
-        if page == 1 and size > 20 and len(items) == 20:
-            print("  [FC-API] server caps page size at 20 — paging at native size")
-            size = 20
-        new = 0
-        for p in items:
-            pid = str(_ci(p, *_ID_KEYS) or "").strip()
-            if not pid.isdigit() or pid in seen_ids:
-                continue
-            seen_ids.add(pid)
-            products[pid] = p
-            new += 1
-        if new == 0 or len(items) < min(size, 20):
-            complete = True             # natural end of the catalogue
-            break
-        time.sleep(0.4)
+    def fetch(page, size):
+        """(decoded JSON or None, error text or None) — up to 3 attempts."""
+        err = None
+        for attempt in range(3):
+            try:
+                r = get(_fc_bust(_fc_api_query(page, size)), headers)
+            except Exception as ex:
+                err = type(ex).__name__
+            else:
+                if r.status_code == 200:
+                    try:
+                        return _fc_unwrap(r.json()), None
+                    except Exception:
+                        err = f"not JSON ({r.text[:100]!r})"
+                else:
+                    err = f"HTTP {r.status_code}"
+            # back off harder when FirstCry is signalling overload
+            time.sleep((3.0 if err in ("HTTP 429", "HTTP 403") else 1.5) * (attempt + 1))
+        return None, err
 
+    size = FC_API_PAGESIZE
+    data, err = fetch(1, size)
+    if data is None:
+        print(f"  [FC-API] page 1 failed after retries: {err}")
+        return None
+    items = _fc_api_products(data)
+    if not items:
+        top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
+        print(f"  [FC-API] no products recognised. top-level: {top}")
+        print(f"  [FC-API] response head: {json.dumps(data)[:400]}")
+        return None
+    print(f"  [FC-API] schema: {sorted(items[0].keys())[:40]}")
+    tt = _ci(items[0], "TTData")
+    if tt is not None:
+        print(f"  [FC-API] TTData sample: {json.dumps(tt)[:200]}")
+    if size > 20 and len(items) == 20:
+        print("  [FC-API] server caps page size at 20 — paging at native size")
+        size = 20
+
+    products, failed = {}, []
+
+    def add(its):
+        n = 0
+        for p in its:
+            pid = str(_ci(p, *_ID_KEYS) or "").strip()
+            if pid.isdigit() and pid not in products:
+                products[pid] = p
+                n += 1
+        return n
+
+    add(items)
+    end_found = len(items) < min(size, 20)
+    page, dry = 1, 0
+    while not end_found and page < FC_API_MAXPAGES:
+        page += 1
+        data, err = fetch(page, size)
+        if data is None:
+            failed.append(f"{page}({err})")
+            continue                    # skip it, keep collecting later pages
+        its = _fc_api_products(data)
+        new = add(its)
+        if len(its) < min(size, 20):
+            end_found = True            # short/empty page = end of catalogue
+            break
+        # two full pages in a row adding nothing means the server is ignoring
+        # PageNo (serving the same page) — stop rather than loop to the cap
+        dry = dry + 1 if new == 0 else 0
+        if dry >= 2:
+            failed.append("paging-stalled")
+            break
+        time.sleep(0.3)
+
+    complete = end_found and not failed
     if not products:
         return None
     oos = sum(1 for p in products.values() if (_fc_api_stock(p)[1] == 0))
     from collections import Counter
     cats = Counter(str(_ci(p, "SCNm") or "?") for p in products.values())
+    note = "" if complete else f" — INCOMPLETE (failed: {', '.join(failed) or 'no end found'})"
     print(f"  [FC-API] {len(products)} products across {page} page(s) "
-          f"({oos} with zero stock){'' if complete else ' — INCOMPLETE'}")
+          f"({oos} with zero stock){note}")
     print(f"  [FC-API] subcategories: {dict(cats.most_common(8))}")
     FC_API_COMPLETE[0] = complete
     return products
