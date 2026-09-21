@@ -165,7 +165,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
-                  "fc_listed_at"):
+                  "fc_listed_at", "fc_api_seen_at"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -624,7 +624,7 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
     # API-sourced stock is authoritative and fetched fresh, so only restocks read
     # from HTML listings need a second look.
     cands = [d for d in changes.get("restocks", [])
-             if d["source"] == "firstcry" and d.get("stock_ver") != "fc_api_v1"]
+             if d["source"] == "firstcry" and not str(d.get("stock_ver", "")).startswith("fc_api")]
     if not cands:
         return 0
     prev_fc = {}
@@ -635,7 +635,7 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
 
     kept, dropped = [], 0
     for d in changes["restocks"]:
-        if d["source"] != "firstcry" or d.get("stock_ver") == "fc_api_v1":
+        if d["source"] != "firstcry" or str(d.get("stock_ver", "")).startswith("fc_api"):
             kept.append(d)
             continue
         pid = d["id"][3:]
@@ -683,8 +683,13 @@ FC_API_BRAND    = os.getenv("FC_API_BRAND", "113")          # Hot Wheels master 
 FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "100"))  # site uses 20; bigger = fewer calls
 FC_API_MAXPAGES = int(os.getenv("FC_API_MAXPAGES", "40"))
 FC_LOW_STOCK    = int(os.getenv("FC_LOW_STOCK", "5"))       # "only N left" threshold
+# v2: the v1 run that misread TTL wrongly flipped ~209 cars to sold out. Bumping
+# the version makes the next run treat every FirstCry reading as a silent
+# correction, so those cars reappearing can NOT fire false restock alerts.
+FC_API_STOCK_VER = "fc_api_v2"
 _FC_API_REFERER = "https://www.firstcry.com/hotwheels/5/0/113"
 FC_LAST_MODE = [None]      # "api" or "html" — read by runner.py to pick a safe cadence
+FC_API_COMPLETE = [False]  # did the last API sweep reach the natural end?
 
 # exact parameter set, in the order the site sends it
 _FC_API_PARAMS = [
@@ -883,7 +888,7 @@ def fc_api_catalogue():
     except Exception as e:
         print(f"  [FC-API] warm-up failed: {type(e).__name__}")
 
-    products, seen_ids, size, expected = {}, set(), FC_API_PAGESIZE, None
+    products, seen_ids, size, complete = {}, set(), FC_API_PAGESIZE, False
     for page in range(1, FC_API_MAXPAGES + 1):
         try:
             r = get(_fc_bust(_fc_api_query(page, size)), headers)
@@ -900,12 +905,9 @@ def fc_api_catalogue():
                   f"({r.text[:120]!r})")
             break
         items = _fc_api_products(data)
-        if page == 1 and isinstance(data, dict):
-            ttl = _ci(data, "ttl", "total", "totalcount", "count")
-            try:
-                expected = int(str(ttl)) if ttl is not None else None
-            except ValueError:
-                expected = None
+        # NOTE: the response's "TTL" field is a cache time-to-live, not a product
+        # count — reading it as a total made paging stop early at 290 of ~437.
+        # We page until FirstCry returns an empty or short page instead.
         if page == 1:
             if not items:
                 top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
@@ -929,17 +931,19 @@ def fc_api_catalogue():
             products[pid] = p
             new += 1
         if new == 0 or len(items) < min(size, 20):
-            break                       # last page reached
-        if expected and len(products) >= expected:
-            break                       # got everything the API said exists
+            complete = True             # natural end of the catalogue
+            break
         time.sleep(0.4)
 
     if not products:
         return None
     oos = sum(1 for p in products.values() if (_fc_api_stock(p)[1] == 0))
-    tot = f" of {expected}" if expected else ""
-    print(f"  [FC-API] {len(products)}{tot} products across {page} page(s) "
-          f"({oos} with zero stock)")
+    from collections import Counter
+    cats = Counter(str(_ci(p, "SCNm") or "?") for p in products.values())
+    print(f"  [FC-API] {len(products)} products across {page} page(s) "
+          f"({oos} with zero stock){'' if complete else ' — INCOMPLETE'}")
+    print(f"  [FC-API] subcategories: {dict(cats.most_common(8))}")
+    FC_API_COMPLETE[0] = complete
     return products
 
 
@@ -950,6 +954,12 @@ def fc_api_records(products: dict, prev_fc: dict) -> list:
         name = _fc_name(str(_ci(p, *_NAME_KEYS) or ""))
         if not name or _fc_excluded(name):
             continue
+        # FirstCry's own category labels (CNm / SCNm) catch big sets whose NAME
+        # doesn't say "track set" (e.g. "Ultimate Dual Dragon Transporter").
+        cat = " ".join(str(_ci(p, k) or "") for k in ("CNm", "SCNm"))
+        if cat.strip() and _fc_excluded(cat):
+            continue
+        premium = _truthy(_ci(p, "IsPremium") or 0)
         stock, count = _fc_api_stock(p)
         if stock is None:
             stock = (prev_fc.get(pid) or {}).get("stock")
@@ -995,10 +1005,11 @@ def fc_api_records(products: dict, prev_fc: dict) -> list:
             "stock": stock,
             "stock_count": count,
             "badge_new": False,
-            "watched": pid in FC_WATCH_IDS or _fc_is_marque(name),
-            "auto_watch": _fc_is_marque(name),
-            "stock_ver": "fc_api_v1",
+            "watched": pid in FC_WATCH_IDS or _fc_is_marque(name) or premium,
+            "auto_watch": _fc_is_marque(name) or premium,
+            "stock_ver": FC_API_STOCK_VER,
             "fc_listed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "fc_api_seen_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         })
     return out
 
@@ -1014,12 +1025,14 @@ def scrape_firstcry() -> list[dict]:
         if api:
             recs = fc_api_records(api, prev_fc)
             got = {r["id"][3:] for r in recs}
-            prev_in = [p for p, v in prev_fc.items() if v.get("stock") == "in_stock"]
-            # The API returns the whole catalogue INCLUDING sold-out items, so a
-            # product missing from a healthy response has been delisted/hidden.
-            # Recording it as sold out means a relisting alerts as a restock.
-            # Health guard: skip this if the response looks truncated.
-            healthy = (not prev_in) or len(api) >= 0.6 * len(prev_in)
+            now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
+            # A product missing from the API is only treated as delisted once it
+            # has been absent for FC_STALE_H hours. The first version flipped
+            # everything missing immediately — and when a response was cut short
+            # (as happened with the TTL bug) that marked 209 cars sold out at once,
+            # setting up a flood of false "restocks" when they reappeared. Aging
+            # means a truncated response can never cause that: a car only flips
+            # after hours of consistent absence, and its return is a real relisting.
             delisted = 0
             for pid, v in prev_fc.items():
                 if pid in got or not pid.isdigit():
@@ -1028,25 +1041,27 @@ def scrape_firstcry() -> list[dict]:
                 if not nm or _fc_excluded(nm):
                     continue
                 st = v.get("stock")
-                if healthy and st == "in_stock":
-                    st, delisted = "out_of_stock", delisted + 1
                 if st is None:
                     continue
+                seen_at = v.get("fc_api_seen_at") or now_iso      # grace for old entries
+                if (st == "in_stock" and FC_API_COMPLETE[0]
+                        and _hours_since(seen_at) >= FC_STALE_H):
+                    st, delisted = "out_of_stock", delisted + 1
                 recs.append({
                     "id": f"fc_{pid}", "source": "firstcry", "name": nm,
                     "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
                     "price": v.get("price", ""), "mrp": "", "stock": st,
                     "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
-                    "auto_watch": _fc_is_marque(nm), "stock_ver": "fc_api_v1",
+                    "auto_watch": _fc_is_marque(nm), "stock_ver": FC_API_STOCK_VER,
                     "fc_listed_at": v.get("fc_listed_at", ""),
+                    "fc_api_seen_at": seen_at,
                 })
             ins = sum(1 for r in recs if r["stock"] == "in_stock")
             low = sum(1 for r in recs if r.get("stock_count")
                       and 0 < r["stock_count"] <= FC_LOW_STOCK)
             FC_LAST_MODE[0] = "api"
             print(f"[*] FirstCry total (API): {len(recs)} ({ins} in stock, "
-                  f"{low} low-stock, {delisted} delisted"
-                  f"{'' if healthy else ', health-guard held'})")
+                  f"{low} low-stock, {delisted} aged to delisted)")
             return recs
         print("  [FC] API unavailable this run — falling back to HTML listing scrape")
     FC_LAST_MODE[0] = "html"
