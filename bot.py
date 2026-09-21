@@ -165,7 +165,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
-                  "fc_listed_at", "fc_api_seen_at"):
+                  "fc_listed_at", "fc_api_seen_at", "fc_trusted"):
             v = d.get(k, prev.get(k, ""))
             if v:
                 entry[k] = v
@@ -1043,6 +1043,8 @@ def fc_api_records(products: dict, prev_fc: dict) -> list:
             "watched": pid in FC_WATCH_IDS or _fc_is_marque(name) or premium,
             "auto_watch": _fc_is_marque(name) or premium,
             "stock_ver": FC_API_STOCK_VER,
+            # trusted = this stock value came from an actual API reading this run
+            "fc_trusted": True,
             "fc_listed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
             "fc_api_seen_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         })
@@ -1087,7 +1089,14 @@ def scrape_firstcry() -> list[dict]:
                     "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
                     "price": v.get("price", ""), "mrp": "", "stock": st,
                     "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
-                    "auto_watch": _fc_is_marque(nm), "stock_ver": FC_API_STOCK_VER,
+                    "auto_watch": _fc_is_marque(nm),
+                    # NOT re-stamped. The v11.2 bug stamped carried (unread) cars
+                    # with the current version, disguising a stale "sold out" as
+                    # a fresh reading — so when those cars were finally read, a
+                    # false "restock" fired. Carried cars now keep exactly the
+                    # version and trust they already had.
+                    "stock_ver": v.get("stock_ver", ""),
+                    "fc_trusted": bool(v.get("fc_trusted")),
                     "fc_listed_at": v.get("fc_listed_at", ""),
                     "fc_api_seen_at": seen_at,
                 })
@@ -1260,6 +1269,7 @@ def scrape_firstcry() -> list[dict]:
             "watched": pid in FC_WATCH_IDS or _fc_is_marque(v["name"]),
             "auto_watch": _fc_is_marque(v["name"]),
             "stock_ver": "fc_listing_v3",
+            "fc_trusted": False,
             "fc_listed_at": listed_at,
         })
     ins = sum(1 for d in out if d["stock"] == "in_stock")
@@ -2269,6 +2279,12 @@ def compute_changes(current: dict, seen: dict) -> dict:
         # restocks after that read normally.
         stock_ver = d.get("stock_ver")
         is_correction = bool(stock_ver) and stock_ver != prev.get("stock_ver")
+        # Trust rule: alerts only fire on a change between TWO genuine readings.
+        # If this is the first trusted reading of a car (its previous state was
+        # carried, guessed, HTML-scraped, or left over from an earlier bug), the
+        # reading is applied silently — it corrects the record, it isn't news.
+        if d.get("fc_trusted") and not prev.get("fc_trusted"):
+            is_correction = True
 
         if (stock == "in_stock" and prev_stock == "out_of_stock"
                 and not is_correction
@@ -2313,7 +2329,7 @@ def _line(d, extra="") -> str:
         flag += f" ⚠️ only {cnt} left"
     price = d.get("price", "")
     mrp = f" <s>{d['mrp']}</s>" if d.get("mrp") else ""
-    return f"[{tag}] <b>{html.escape(d['name'])}</b>{flag}  {price}{mrp}{extra}\n{d['url']}"
+    return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}\n{d['url']}"
 
 
 def build_alert(ch: dict) -> str | None:
