@@ -684,10 +684,24 @@ FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "20"))   # FirstCry caps page
 FC_API_TIMEOUT  = int(os.getenv("FC_API_TIMEOUT", "15"))   # per JSON request; retried on timeout
 FC_API_MAXPAGES = int(os.getenv("FC_API_MAXPAGES", "40"))
 FC_LOW_STOCK    = int(os.getenv("FC_LOW_STOCK", "5"))       # "only N left" threshold
+
+# Your delivery pincode. The site's own call sent pcode=0 (no location), which
+# makes FirstCry report stock across ALL its warehouses nationwide — so a single
+# unit in a distant warehouse looked "in stock" to the bot but was "not
+# deliverable" to you. With your pincode, stock reflects what can reach you.
+# If FirstCry rejects the pincode request, the bot falls back to pcode=0.
+FC_PINCODE = os.getenv("FC_PINCODE", "248001").strip() or "0"
+_FC_PCODE_ACTIVE = [FC_PINCODE]
+
+# Minimum units for a car to count as "in stock" for alerting. A single unit is
+# almost always gone by the time you tap the link, so by default 1 unit is
+# treated as sold out — and when FirstCry actually restocks it (2+ units), you
+# get the alert then. Set to 1 to be alerted even for last-unit cars.
+FC_MIN_ALERT_STOCK = max(1, int(os.getenv("FC_MIN_ALERT_STOCK", "2")))
 # v2: the v1 run that misread TTL wrongly flipped ~209 cars to sold out. Bumping
 # the version makes the next run treat every FirstCry reading as a silent
 # correction, so those cars reappearing can NOT fire false restock alerts.
-FC_API_STOCK_VER = "fc_api_v2"
+FC_API_STOCK_VER = f"fc_api_v3_p{os.getenv('FC_PINCODE', '248001').strip() or '0'}_m{max(1, int(os.getenv('FC_MIN_ALERT_STOCK', '2')))}"
 _FC_API_REFERER = "https://www.firstcry.com/hotwheels/5/0/113"
 FC_LAST_MODE = [None]      # "api" or "html" — read by runner.py to pick a safe cadence
 FC_API_COMPLETE = [False]  # did the last API sweep reach the natural end?
@@ -741,7 +755,7 @@ _FC_API_PARAMS = [
     ("gender", ""),
     ("exclude", ""),
     ("premium", ""),
-    ("pcode", "0"),
+    ("pcode", "0"),                      # replaced at runtime by FC_PINCODE
     ("isclub", "0"),
     ("deliverytype", ""),
     ("authors", ""),
@@ -765,6 +779,8 @@ def _fc_api_query(page: int, size: int) -> str:
             v = str(size)
         elif k == "MasterBrand":
             v = FC_API_BRAND
+        elif k == "pcode":
+            v = _FC_PCODE_ACTIVE[0]
         out.append(f"{k}={quote(v, safe='')}")
     return FC_API_URL + "?" + "&".join(out)
 
@@ -917,11 +933,19 @@ def fc_api_catalogue():
         return None, err
 
     size = FC_API_PAGESIZE
+    _FC_PCODE_ACTIVE[0] = FC_PINCODE
     data, err = fetch(1, size)
+    items = _fc_api_products(data) if data is not None else []
+    if not items and FC_PINCODE != "0":
+        print(f"  [FC-API] pincode {FC_PINCODE} request returned nothing ({err or 'empty'}) "
+              f"— falling back to nationwide stock (pcode=0)")
+        _FC_PCODE_ACTIVE[0] = "0"
+        data, err = fetch(1, size)
+        items = _fc_api_products(data) if data is not None else []
     if data is None:
         print(f"  [FC-API] page 1 failed after retries: {err}")
         return None
-    items = _fc_api_products(data)
+    print(f"  [FC-API] stock for pincode: {_FC_PCODE_ACTIVE[0]}")
     if not items:
         top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
         print(f"  [FC-API] no products recognised. top-level: {top}")
@@ -1000,6 +1024,9 @@ def fc_api_records(products: dict, prev_fc: dict) -> list:
             stock = (prev_fc.get(pid) or {}).get("stock")
             if stock is None:
                 continue
+        if (stock == "in_stock" and isinstance(count, int)
+                and 0 < count < FC_MIN_ALERT_STOCK):
+            stock = "out_of_stock"      # effectively gone — alert when FirstCry restocks it
         mrp = price_to_int(_ci(p, "pricing.mrp", "mrp"))
         price = price_to_int(_ci(p, "pricing.discPrice", "discprice", "dpric", "dprice",
                                  "sprice", "sellprice", "sellingprice", "offerprice",
@@ -2297,7 +2324,11 @@ def compute_changes(current: dict, seen: dict) -> dict:
         # blurb vs the real ₹157) produced the same alert over and over. Now a
         # drop must be genuine (>=5% AND >=₹15) and can only alert once per
         # PRICE_COOLDOWN_H per product.
-        if (stock == "in_stock" and cur_price and prev_price
+        # Must have been in stock BEFORE too. Without this, a car restocking at a
+        # lower price fired both "BACK IN STOCK" and "PRICE DROP" for the same
+        # event — the duplicate lines in the same message.
+        if (stock == "in_stock" and prev_stock == "in_stock"
+                and cur_price and prev_price
                 and not is_correction
                 and cur_price <= prev_price * 0.95
                 and (prev_price - cur_price) >= 15
@@ -2332,28 +2363,51 @@ def _line(d, extra="") -> str:
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}\n{d['url']}"
 
 
+# 👀 "new listing — sold out" alerts tell you about a car you can't buy. Off by
+# default; its restock still alerts normally. Set ALERT_NEW_SOLD_OUT=true to get
+# them back.
+ALERT_NEW_SOLD_OUT = os.getenv("ALERT_NEW_SOLD_OUT", "false").lower() == "true"
+
+
+def _dedupe(items: list, seen_keys: set) -> list:
+    """One line per car per message: FirstCry sometimes lists the same car under
+    more than one product id, which showed up as the same name twice."""
+    out = []
+    for d in items:
+        key = (d.get("source"), re.sub(r"[^a-z0-9]", "", str(d.get("name", "")).lower()))
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        out.append(d)
+    return out
+
+
 def build_alert(ch: dict) -> str | None:
     parts = []
+    shown = set()
 
     # ── In-stock alerts (loud) ─────────────────────────────────────────────────
-    news = [d for d in ch["new_listings"] if _within_budget(d)]
+    news = _dedupe([d for d in ch["new_listings"] if _within_budget(d)], shown)
     if news:
         parts.append("🆕 <b>NEW — in stock</b>")
         parts += ["  " + _line(d) for d in news[:25]]
 
-    if ch["restocks"]:
+    restocks = _dedupe(ch["restocks"], shown)
+    if restocks:
         parts.append("\n🔥 <b>BACK IN STOCK — grab it now</b>")
-        parts += ["  " + _line(d) for d in ch["restocks"][:25]]
+        parts += ["  " + _line(d) for d in restocks[:25]]
 
-    if ch["price_drops"]:
+    drops = _dedupe(ch["price_drops"], shown)
+    if drops:
         parts.append("\n💸 <b>PRICE DROP</b>")
-        parts += ["  " + _line(d, extra=f"  (was {d['prev_price']})") for d in ch["price_drops"][:25]]
+        parts += ["  " + _line(d, extra=f"  (was {d['prev_price']})") for d in drops[:25]]
 
     # ── Newly listed but sold out (quiet — always show, capped at 8) ──────────
     # These are worth knowing about: hit the 💙 wishlist button on the site so
     # Minifygram notifies you when they restock. Next run the bot will catch the
     # restock itself too.
-    bs = [d for d in ch["back_soon"] if _within_budget(d)]
+    bs = (_dedupe([d for d in ch["back_soon"] if _within_budget(d)], shown)
+          if ALERT_NEW_SOLD_OUT else [])
     if bs:
         parts.append("\n👀 <b>NEW listing — sold out (wishlist it!)</b>")
         parts += ["  " + _line(d) + "  <i>sold out</i>" for d in bs[:8]]
@@ -2511,6 +2565,14 @@ def main():
                 v["alerted_new"] = True
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
+    # FirstCry product ids only ever increase: a car whose id is higher than any
+    # id we've seen before is a genuinely NEW listing, while a lower id is an
+    # older product that just became visible. Captured before compute_changes
+    # adds this run's cars to `seen`.
+    _fc_ids = [int(k[3:]) for k, v in seen.items()
+               if k.startswith("fc_") and k[3:].isdigit() and isinstance(v, dict)]
+    fc_max_known = max(_fc_ids) if _fc_ids else 0
+
     changes = compute_changes(current, seen)
 
     # Verify FirstCry restocks against a fresh request before alerting.
@@ -2528,14 +2590,25 @@ def main():
     # those silently with a one-line summary instead of an alert blast.
     # compute_changes has already marked them alerted_new, so this stays one-time.
     BURST_LIMIT = int(os.getenv("DISCOVERY_BURST_LIMIT", "8"))
+
+    def _fresh_fc(d):
+        # a brand-new FirstCry listing (id above everything seen before). These
+        # are NEVER absorbed: a new case drop lists 10-20 cars at once, which the
+        # old guard mistook for a coverage expansion and swallowed silently —
+        # hiding exactly the drops you most wanted.
+        k = d["id"]
+        return (d["source"] == "firstcry" and fc_max_known > 0
+                and k[3:].isdigit() and int(k[3:]) > fc_max_known)
+
     for src_key in {d["source"] for d in current.values()}:
         burst = [d for d in (changes["new_listings"] + changes["back_soon"])
-                 if d["source"] == src_key]
+                 if d["source"] == src_key and not _fresh_fc(d)]
         if len(burst) > BURST_LIMIT:
+            drop = {d["id"] for d in burst}
             changes["new_listings"] = [d for d in changes["new_listings"]
-                                       if d["source"] != src_key]
+                                       if d["id"] not in drop]
             changes["back_soon"] = [d for d in changes["back_soon"]
-                                    if d["source"] != src_key]
+                                    if d["id"] not in drop]
             ins = sum(1 for d in burst if d["stock"] == "in_stock")
             label = SRC.get(src_key, src_key)
             print(f"[=] Discovery burst from {src_key}: {len(burst)} items absorbed.")
