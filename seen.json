@@ -3926,9 +3926,9 @@
     "hm_verified_at": "2026-09-22T15:00:00"
   },
   "fc_23973355": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-574-20-royota-tacoma-die-cast-free-wheel-toy-car-green/23973355/product-detail",
     "first_seen": "2026-07-21T17:56:30",
@@ -15536,15 +15536,15 @@
     "fc_trusted": true
   },
   "fc_23973354": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 2304 Custom Personnalise 69 Volkswahen Squareback Die-cast Free Wheel Toy Car - Light ,green",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2304-custom-personnalise-69-volkswahen-squareback-die-cast-free-wheel-toy-car-light-green/23973354/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-09-23T22:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-23T22:28:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-23T22:15:00",
