@@ -2879,8 +2879,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T13:15:00",
+    "fc_api_seen_at": "2026-09-23T13:15:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -3991,7 +3991,7 @@
   "fc_24032061": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '2020 Ram 1500 Rebel Toy Car Blue",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2020-ram-1500-rebel-toy-car-blue/24032061/product-detail",
     "first_seen": "2026-07-22T06:11:49",
@@ -4000,8 +4000,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T13:15:00",
+    "fc_api_seen_at": "2026-09-23T13:15:00",
     "fc_trusted": true
   },
   "fc_23075645": {
@@ -16750,7 +16750,7 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-23T06:12:27.762091+00:00",
+    "mg_updated_at": "2026-09-23T13:16:30.422369+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_24546338": {
