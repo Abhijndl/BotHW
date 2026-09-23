@@ -12497,8 +12497,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-22T19:45:00",
-    "fc_api_seen_at": "2026-09-22T19:45:00",
+    "fc_listed_at": "2026-09-23T19:30:00",
+    "fc_api_seen_at": "2026-09-23T19:30:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -13095,7 +13095,7 @@
   "fc_24342825": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Czinger 21c 2/5 Die-cast Car - Dark Green - Black",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-czinger-21c-2-5-die-cast-car-dark-green-black/24342825/product-detail",
     "first_seen": "2026-09-17T09:03:37",
@@ -13104,8 +13104,8 @@
     "last_restock_alert": "2026-09-22T06:35:15",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T14:00:00",
-    "fc_api_seen_at": "2026-09-23T14:00:00",
+    "fc_listed_at": "2026-09-23T19:30:00",
+    "fc_api_seen_at": "2026-09-23T19:30:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13745,8 +13745,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T19:15:00",
-    "fc_api_seen_at": "2026-09-23T19:15:00",
+    "fc_listed_at": "2026-09-23T19:30:00",
+    "fc_api_seen_at": "2026-09-23T19:30:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14206,7 +14206,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14336,9 +14336,9 @@
     "fc_trusted": true
   },
   "fc_24473474": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14347,8 +14347,8 @@
     "last_restock_alert": "2026-09-23T17:58:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T19:00:00",
-    "fc_api_seen_at": "2026-09-23T19:00:00",
+    "fc_listed_at": "2026-09-23T19:30:00",
+    "fc_api_seen_at": "2026-09-23T19:30:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -16062,7 +16062,7 @@
   "fc_24390958": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
