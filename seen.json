@@ -154,7 +154,7 @@
     "fc_trusted": true
   },
   "fc_22600382": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "₹764",
     "source": "firstcry",
@@ -162,11 +162,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-09-23T12:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-23T12:22:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T03:45:00",
-    "fc_api_seen_at": "2026-09-23T03:45:00",
+    "fc_listed_at": "2026-09-23T12:15:00",
+    "fc_api_seen_at": "2026-09-23T12:15:00",
     "fc_trusted": true
   },
   "mg_c54400b4-7b93-434f-8d78-b5cf97f72208": {
@@ -5486,8 +5486,8 @@
     "last_price_alert": "2026-09-17T10:35:54",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:00:00",
-    "fc_api_seen_at": "2026-09-23T12:00:00",
+    "fc_listed_at": "2026-09-23T12:15:00",
+    "fc_api_seen_at": "2026-09-23T12:15:00",
     "fc_trusted": true
   },
   "fc_23351190": {
@@ -5651,7 +5651,7 @@
   "fc_24194173": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5715,7 +5715,7 @@
   "fc_24246598": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pass 'N Go Die Cast Toy Car (5/250) With Free Wheel Design - White & Red",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pass-n-go-die-cast-toy-car-5-250-with-free-wheel-design-white-and-red/24246598/product-detail",
     "first_seen": "2026-08-13T02:52:04",
@@ -10490,7 +10490,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23074610": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Super twin mill (169/250) Toy Car - White/Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10500,9 +10500,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T11:15:00",
-    "fc_api_seen_at": "2026-09-22T11:15:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-23T12:15:00",
+    "fc_api_seen_at": "2026-09-23T12:15:00",
     "fc_trusted": true
   },
   "fc_23700379": {
@@ -10833,9 +10833,9 @@
     "fc_trusted": true
   },
   "fc_23074883": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Tooned Volswagen golf MK1 (172/250) Toy Car - White/Red",
-    "price": "₹163",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-tooned-volswagen-golf-mk1-172-250-toy-car-white-red/23074883/product-detail",
     "first_seen": "2026-09-04T05:24:37",
@@ -13247,8 +13247,8 @@
     "last_restock_alert": "2026-09-22T12:04:47",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T10:45:00",
-    "fc_api_seen_at": "2026-09-23T10:45:00",
+    "fc_listed_at": "2026-09-23T12:15:00",
+    "fc_api_seen_at": "2026-09-23T12:15:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -13810,8 +13810,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T06:15:00",
-    "fc_api_seen_at": "2026-09-23T06:15:00",
+    "fc_listed_at": "2026-09-23T12:15:00",
+    "fc_api_seen_at": "2026-09-23T12:15:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -14298,8 +14298,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:00:00",
-    "fc_api_seen_at": "2026-09-23T12:00:00",
+    "fc_listed_at": "2026-09-23T12:15:00",
+    "fc_api_seen_at": "2026-09-23T12:15:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -16061,7 +16061,7 @@
   "fc_24390958": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
