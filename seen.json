@@ -7804,7 +7804,7 @@
     "last_price_alert": ""
   },
   "kd_KbNEYA1NR0": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "PREORDER ASTON MARTIN DBS \"QUANTUM OF SOLACE\" ENGLISH BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1599",
     "source": "karzdolls",
@@ -7812,7 +7812,7 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-09-23T11:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-23T11:51:14",
     "last_price_alert": ""
   },
   "kd_GvLPjwkgod": {
@@ -14417,9 +14417,9 @@
     "fc_trusted": true
   },
   "fc_24473475": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -15940,7 +15940,7 @@
     "fc_trusted": true
   },
   "fc_24390969": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
     "price": "₹299",
     "source": "firstcry",
