@@ -4445,8 +4445,8 @@
     "last_restock_alert": "2026-09-21T19:08:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T06:45:00",
-    "fc_api_seen_at": "2026-09-23T06:45:00",
+    "fc_listed_at": "2026-09-23T07:00:00",
+    "fc_api_seen_at": "2026-09-23T07:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-pantone-assorted-boys-3y-multicolour-17627231": {
@@ -9658,8 +9658,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T05:30:00",
-    "fc_api_seen_at": "2026-09-23T05:30:00",
+    "fc_listed_at": "2026-09-23T07:00:00",
+    "fc_api_seen_at": "2026-09-23T07:00:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -10507,7 +10507,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1879",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -12500,7 +12500,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -12511,8 +12511,8 @@
     "last_restock_alert": "2026-09-22T13:11:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T06:15:00",
-    "fc_api_seen_at": "2026-09-23T06:15:00",
+    "fc_listed_at": "2026-09-23T07:00:00",
+    "fc_api_seen_at": "2026-09-23T07:00:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -12612,7 +12612,7 @@
     "fc_trusted": true
   },
   "fc_24473516": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
     "price": "₹179",
     "source": "firstcry",
@@ -13237,7 +13237,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -14023,7 +14023,7 @@
     "fc_trusted": true
   },
   "fc_24342832": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Yellow",
     "price": "₹269",
     "source": "firstcry",
@@ -15504,7 +15504,7 @@
   "fc_23973359": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-4515-sandblaster-die-cast-free-wheel-toy-car-light-khaki/23973359/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15513,8 +15513,8 @@
     "last_restock_alert": "2026-09-22T21:28:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T06:45:00",
-    "fc_api_seen_at": "2026-09-23T06:45:00",
+    "fc_listed_at": "2026-09-23T07:00:00",
+    "fc_api_seen_at": "2026-09-23T07:00:00",
     "fc_trusted": true
   },
   "fc_23973357": {
