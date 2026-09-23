@@ -109,7 +109,7 @@
     "fc_api_seen_at": "2026-09-21T06:46:09"
   },
   "fc_23074259": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast 41 Willys (153/250) Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -119,9 +119,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T17:00:00",
-    "fc_api_seen_at": "2026-09-21T17:00:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-23T07:45:00",
+    "fc_api_seen_at": "2026-09-23T07:45:00",
     "fc_trusted": true
   },
   "fc_22277228": {
@@ -2902,7 +2902,7 @@
   "fc_23074618": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mercedes-Benz Cla HW (181/250) Toy Car - Blue",
-    "price": "₹163",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-mercedes-benz-cla-hw-181-250-toy-car-blue/23074618/product-detail",
     "first_seen": "2026-07-20T06:31:13",
@@ -2912,8 +2912,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T06:00:00",
-    "fc_api_seen_at": "2026-09-23T06:00:00",
+    "fc_listed_at": "2026-09-23T07:45:00",
+    "fc_api_seen_at": "2026-09-23T07:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -3446,8 +3446,8 @@
     "last_restock_alert": "2026-09-22T12:22:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T05:30:00",
-    "fc_api_seen_at": "2026-09-23T05:30:00",
+    "fc_listed_at": "2026-09-23T07:45:00",
+    "fc_api_seen_at": "2026-09-23T07:45:00",
     "fc_trusted": true
   },
   "fc_23074267": {
@@ -5501,8 +5501,8 @@
     "last_restock_alert": "2026-09-23T06:52:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T07:15:00",
-    "fc_api_seen_at": "2026-09-23T07:15:00",
+    "fc_listed_at": "2026-09-23T07:45:00",
+    "fc_api_seen_at": "2026-09-23T07:45:00",
     "fc_trusted": true
   },
   "fc_24248207": {
@@ -10863,7 +10863,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -16682,8 +16682,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T05:30:00",
-    "fc_api_seen_at": "2026-09-23T05:30:00",
+    "fc_listed_at": "2026-09-23T07:45:00",
+    "fc_api_seen_at": "2026-09-23T07:45:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
