@@ -4270,7 +4270,7 @@
   "fc_24007870": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Ford Ranger Raptor Diecast Model Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-ford-ranger-raptor-diecast-model-car-grey/24007870/product-detail",
     "first_seen": "2026-07-26T04:41:50",
@@ -10194,7 +10194,7 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -11558,10 +11558,10 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-22T06:45:00",
-    "fc_api_seen_at": "2026-09-22T06:45:00",
+    "fc_listed_at": "2026-09-23T15:45:00",
+    "fc_api_seen_at": "2026-09-23T15:45:00",
     "fc_trusted": true
   },
   "fc_21827562": {
@@ -12921,7 +12921,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
