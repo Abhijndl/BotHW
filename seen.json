@@ -27,8 +27,8 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T05:30:00",
-    "fc_api_seen_at": "2026-09-23T05:30:00",
+    "fc_listed_at": "2026-09-23T06:00:00",
+    "fc_api_seen_at": "2026-09-23T06:00:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -3847,7 +3847,7 @@
     "fc_trusted": true
   },
   "fc_23345761": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 57/250 Rajin Express - Multicolour",
     "price": "₹171",
     "source": "firstcry",
@@ -3857,9 +3857,9 @@
     "alerted_new": true,
     "last_restock_alert": "2026-09-22T12:28:45",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T12:45:00",
-    "fc_api_seen_at": "2026-09-22T12:45:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-23T06:00:00",
+    "fc_api_seen_at": "2026-09-23T06:00:00",
     "fc_trusted": true
   },
   "fc_23351187": {
@@ -15069,8 +15069,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T05:45:00",
-    "fc_api_seen_at": "2026-09-23T05:45:00",
+    "fc_listed_at": "2026-09-23T06:00:00",
+    "fc_api_seen_at": "2026-09-23T06:00:00",
     "fc_trusted": true
   },
   "fc_21161950": {
