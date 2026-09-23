@@ -2959,7 +2959,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-premium-collector-assortment-boys-3y-multicolour-17465907": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Premium Collector Assortment, Boys, 3Y+, Multicolour",
     "price": "₹2799",
     "source": "hamleys",
@@ -2967,10 +2967,10 @@
     "first_seen": "2026-07-20T07:43:29",
     "last_seen": "2026-09-23T16:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-15T05:13:19",
+    "last_restock_alert": "2026-09-23T16:51:14",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-23T05:15:00"
+    "hm_verified_at": "2026-09-23T16:45:00"
   },
   "hm_hot-wheels-loop-and-launch-trackset-5y-multicolour-9879163": {
     "stock": "out_of_stock",
@@ -3131,7 +3131,7 @@
     "hm_verified_at": "2026-09-23T05:15:00"
   },
   "hm_hot-wheels-1-64-scale-collectible-volkswagen-kool-kombi-van-3y-premium-mattel-80th-collection-multicolour-14543240": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium 80th Anniversary Volkswagen Kool Kombi 1:64 Collectible Van, 3Y+, Multicolour",
     "price": "₹549",
     "source": "hamleys",
@@ -16833,5 +16833,19 @@
     "fc_listed_at": "2026-09-23T15:15:00",
     "fc_api_seen_at": "2026-09-23T15:15:00",
     "fc_trusted": true
+  },
+  "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
+    "price": "₹1999",
+    "source": "hamleys",
+    "url": "https://hamleys.in/product/hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420",
+    "first_seen": "2026-09-23T16:45:00",
+    "last_seen": "2026-09-23T16:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "hm_pages_v1",
+    "hm_verified_at": "2026-09-23T16:45:00"
   }
 }
