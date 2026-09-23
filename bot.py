@@ -78,6 +78,20 @@ SEEN_FILE = "seen.json"
 # normal GitHub Actions behaviour, unchanged).
 ACTIVE_SOURCES = None
 
+# ONLY_SOURCES lets a single run check just some stores — e.g. the extra
+# every-minute cron-job.org trigger sends only="firstcry". Accepts short names.
+_SRC_ALIASES = {"firstcry": "FirstCry", "fc": "FirstCry",
+                "minifygram": "Minifygram", "mg": "Minifygram",
+                "hamleys": "Hamleys", "hm": "Hamleys",
+                "karzdolls": "Karz&Dolls", "karzanddolls": "Karz&Dolls", "kd": "Karz&Dolls",
+                "bigbasket": "BigBasket", "bb": "BigBasket",
+                "blinkit": "Blinkit", "bl": "Blinkit"}
+_only = {_SRC_ALIASES.get(t.strip().lower().replace(" ", "").replace("&", ""))
+         for t in os.getenv("ONLY_SOURCES", "").split(",") if t.strip()}
+_only.discard(None)
+if _only:
+    ACTIVE_SOURCES = _only
+
 # Behaviour toggles (set as env in the workflow)
 DEBUG   = os.getenv("DEBUG",   "false").lower() == "true"   # verbose + heartbeat msg
 SILENT  = os.getenv("SILENT",  "true").lower()  == "true"   # only ping on real changes
@@ -145,9 +159,23 @@ def load_seen() -> dict:
     return {}
 
 
+def _bucket(ts: str) -> str:
+    """Floor an ISO timestamp to 15 minutes. Timestamps that changed on EVERY run
+    made seen.json differ on every run, forcing a git commit + push each time.
+    Rounded, a quiet run produces an identical file, the save step is skipped,
+    and runs finish sooner. All timing logic works in hours, so 15-minute
+    precision changes nothing about behaviour."""
+    if not ts or len(ts) < 16:
+        return ts
+    try:
+        return f"{ts[:14]}{int(ts[14:16]) // 15 * 15:02d}:00"
+    except ValueError:
+        return ts
+
+
 def merge_and_save_seen(seen: dict, current: dict) -> None:
     """Merge this run's observations into the permanent memory and persist it."""
-    now = time.strftime("%Y-%m-%dT%H:%M:%S")
+    now = _bucket(time.strftime("%Y-%m-%dT%H:%M:%S"))
     for pid, d in current.items():
         prev = seen.get(pid, {})
         entry = {
@@ -167,6 +195,8 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted"):
             v = d.get(k, prev.get(k, ""))
+            if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
+                v = _bucket(v)
             if v:
                 entry[k] = v
         seen[pid] = entry
@@ -682,6 +712,7 @@ FC_API_URL      = "https://www.firstcry.com/svcs/SearchResult.svc/GetSearchResul
 FC_API_BRAND    = os.getenv("FC_API_BRAND", "113")          # Hot Wheels master brand
 FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "20"))   # FirstCry caps pages at 20 anyway
 FC_API_TIMEOUT  = int(os.getenv("FC_API_TIMEOUT", "15"))   # per JSON request; retried on timeout
+FC_API_PARALLEL = max(1, int(os.getenv("FC_API_PARALLEL", "5")))  # pages fetched at once
 FC_API_MAXPAGES = int(os.getenv("FC_API_MAXPAGES", "40"))
 FC_LOW_STOCK    = int(os.getenv("FC_LOW_STOCK", "5"))       # "only N left" threshold
 
@@ -972,25 +1003,65 @@ def fc_api_catalogue():
 
     add(items)
     end_found = len(items) < min(size, 20)
+
+    # Pages 2..N are fetched in PARALLEL batches (FC_API_PARALLEL at a time)
+    # instead of one after another — the 21-page sweep drops from ~15-25 s to a
+    # few seconds, which is the biggest single speed gain available on FirstCry.
+    # Fetching a batch at almost the same instant also gives a more consistent
+    # snapshot (less drift in FirstCry's popularity order between pages).
+    # Each parallel request is stateless and carries the warm-up session's
+    # cookies, so no connection object is shared between threads.
+    try:
+        jar = getattr(sess.cookies, "jar", sess.cookies) if sess else []
+        cookies = {c.name: c.value for c in jar}
+    except Exception:
+        cookies = {}
+
+    def fetch_parallel(page):
+        err = None
+        for attempt in range(3):
+            try:
+                r = http.get(_fc_bust(_fc_api_query(page, size)), headers=headers,
+                             cookies=cookies, timeout=FC_API_TIMEOUT, **_IMPERSONATE)
+            except Exception as ex:
+                err = type(ex).__name__
+            else:
+                if r.status_code == 200:
+                    try:
+                        return _fc_unwrap(r.json()), None
+                    except Exception:
+                        err = "not JSON"
+                else:
+                    err = f"HTTP {r.status_code}"
+            time.sleep((3.0 if err in ("HTTP 429", "HTTP 403") else 1.5) * (attempt + 1))
+        return None, err
+
     page, dry = 1, 0
     while not end_found and page < FC_API_MAXPAGES:
-        page += 1
-        data, err = fetch(page, size)
-        if data is None:
-            failed.append(f"{page}({err})")
-            continue                    # skip it, keep collecting later pages
-        its = _fc_api_products(data)
-        new = add(its)
-        if len(its) < min(size, 20):
-            end_found = True            # short/empty page = end of catalogue
-            break
-        # two full pages in a row adding nothing means the server is ignoring
-        # PageNo (serving the same page) — stop rather than loop to the cap
-        dry = dry + 1 if new == 0 else 0
+        batch = list(range(page + 1, min(page + FC_API_PARALLEL, FC_API_MAXPAGES) + 1))
+        with ThreadPoolExecutor(max_workers=len(batch)) as ex:
+            results = dict(zip(batch, ex.map(fetch_parallel, batch)))
+        for pg in batch:                       # process strictly in page order
+            page = pg
+            data, err = results[pg]
+            if data is None:
+                failed.append(f"{pg}({err})")
+                continue                        # skip it, keep collecting later pages
+            its = _fc_api_products(data)
+            new = add(its)
+            if len(its) < min(size, 20):
+                end_found = True                # short/empty page = end of catalogue
+                break
+            # two full pages in a row adding nothing: the server is ignoring
+            # PageNo (serving the same page) — stop rather than loop to the cap
+            dry = dry + 1 if new == 0 else 0
+            if dry >= 2:
+                failed.append("paging-stalled")
+                end_found = False
+                break
         if dry >= 2:
-            failed.append("paging-stalled")
             break
-        time.sleep(0.3)
+        time.sleep(0.2)
 
     complete = end_found and not failed
     if not products:
