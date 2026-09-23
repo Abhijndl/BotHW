@@ -5790,8 +5790,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T13:45:00",
-    "fc_api_seen_at": "2026-09-23T13:45:00",
+    "fc_listed_at": "2026-09-23T15:30:00",
+    "fc_api_seen_at": "2026-09-23T15:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -10165,7 +10165,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -11371,8 +11371,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T15:15:00",
-    "fc_api_seen_at": "2026-09-23T15:15:00",
+    "fc_listed_at": "2026-09-23T15:30:00",
+    "fc_api_seen_at": "2026-09-23T15:30:00",
     "fc_trusted": true
   },
   "fc_23103132": {
@@ -12230,7 +12230,7 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -14708,7 +14708,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14717,8 +14717,8 @@
     "last_restock_alert": "2026-09-23T11:36:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T14:45:00",
-    "fc_api_seen_at": "2026-09-23T14:45:00",
+    "fc_listed_at": "2026-09-23T15:30:00",
+    "fc_api_seen_at": "2026-09-23T15:30:00",
     "fc_trusted": true
   },
   "fc_24504538": {
@@ -15886,8 +15886,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T15:15:00",
-    "fc_api_seen_at": "2026-09-23T15:15:00",
+    "fc_listed_at": "2026-09-23T15:30:00",
+    "fc_api_seen_at": "2026-09-23T15:30:00",
     "fc_trusted": true
   },
   "fc_24342319": {
