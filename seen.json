@@ -4523,8 +4523,8 @@
     "last_restock_alert": "2026-09-22T04:12:54",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_22548074": {
@@ -11311,8 +11311,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--mask-pack-of-1-for-kids-3y-multicolor-boedi9toks": {
@@ -13311,8 +13311,8 @@
     "last_restock_alert": "2026-09-22T09:03:44",
     "last_price_alert": "2026-09-22T09:03:44",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24503903": {
@@ -14100,8 +14100,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24546537": {
@@ -14286,9 +14286,9 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14298,8 +14298,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -14636,8 +14636,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24235313": {
@@ -15546,8 +15546,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_23973353": {
@@ -15787,8 +15787,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24247519": {
@@ -16221,8 +16221,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24503322": {
@@ -16238,8 +16238,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24503314": {
@@ -16271,8 +16271,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24503308": {
@@ -16287,8 +16287,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-23T12:45:00",
+    "fc_api_seen_at": "2026-09-23T12:45:00",
     "fc_trusted": true
   },
   "fc_24498234": {
