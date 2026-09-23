@@ -99,6 +99,10 @@ jobs:
           SRC_WORKERS: "6"
           FC_WORKERS: "10"
           HM_WORKERS: "8"
+          # FirstCry catalogue pages fetched at once (21 pages in total).
+          # 10 roughly halves the sweep versus 5. If the [FC-API] log lines ever
+          # show HTTP 429, FirstCry is objecting to the pace — set this back to "5".
+          FC_API_PARALLEL: "10"
         run: python bot.py
 
       - name: Save state
