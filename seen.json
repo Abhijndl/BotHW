@@ -3430,8 +3430,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T04:45:00",
-    "fc_api_seen_at": "2026-09-23T04:45:00",
+    "fc_listed_at": "2026-09-23T12:00:00",
+    "fc_api_seen_at": "2026-09-23T12:00:00",
     "fc_trusted": true
   },
   "fc_23074258": {
@@ -3721,7 +3721,7 @@
   "fc_23348043": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 152/250 BMW 635 Csi Die Cat Free Wheel Toy Car- White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-152-250-bmw-635-csi-die-cat-free-wheel-toy-car-white/23348043/product-detail",
     "first_seen": "2026-07-21T04:32:10",
@@ -10833,7 +10833,7 @@
     "fc_trusted": true
   },
   "fc_23074883": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Tooned Volswagen golf MK1 (172/250) Toy Car - White/Red",
     "price": "₹163",
     "source": "firstcry",
@@ -10841,11 +10841,11 @@
     "first_seen": "2026-09-04T05:24:37",
     "last_seen": "2026-09-23T12:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-23T12:06:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-22T21:15:00",
-    "fc_api_seen_at": "2026-09-22T21:15:00",
+    "fc_listed_at": "2026-09-23T12:00:00",
+    "fc_api_seen_at": "2026-09-23T12:00:00",
     "fc_trusted": true
   },
   "fc_16244226": {
@@ -13735,7 +13735,7 @@
   "fc_24514776": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-escort-die-cast-free-wheel-toy-car-blue-and-gold/24514776/product-detail",
     "first_seen": "2026-09-18T14:41:38",
@@ -13744,8 +13744,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T11:15:00",
-    "fc_api_seen_at": "2026-09-23T11:15:00",
+    "fc_listed_at": "2026-09-23T12:00:00",
+    "fc_api_seen_at": "2026-09-23T12:00:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14732,8 +14732,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T11:30:00",
-    "fc_api_seen_at": "2026-09-23T11:30:00",
+    "fc_listed_at": "2026-09-23T12:00:00",
+    "fc_api_seen_at": "2026-09-23T12:00:00",
     "fc_trusted": true
   },
   "fc_22548066": {
