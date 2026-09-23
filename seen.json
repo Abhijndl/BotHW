@@ -9863,19 +9863,19 @@
     "fc_trusted": true
   },
   "fc_22435130": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Car Case Set of 4 Connectible Storage Display Box with Free Car-Orange",
-    "price": "₹349",
+    "price": "₹261",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-car-case-set-of-4-connectible-storage-display-box-with-free-car-orange/22435130/product-detail",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-09-23T09:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T15:37:27",
+    "last_restock_alert": "2026-09-23T09:13:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T03:30:00",
-    "fc_api_seen_at": "2026-09-23T03:30:00",
+    "fc_listed_at": "2026-09-23T09:00:00",
+    "fc_api_seen_at": "2026-09-23T09:00:00",
     "fc_trusted": true
   },
   "fc_22048350": {
@@ -10864,7 +10864,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -13443,7 +13443,7 @@
   "fc_24247514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 94 Toyota Supra Die-Cast Free Wheel Toy Car (222/250) - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-94-toyota-supra-die-cast-free-wheel-toy-car-222-250-black/24247514/product-detail",
     "first_seen": "2026-09-18T03:56:00",
