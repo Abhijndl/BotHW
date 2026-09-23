@@ -1,7 +1,14 @@
 name: Hot Wheels Monitor
+# FirstCry-only runs show up as "Hot Wheels Monitor (firstcry)" in the Actions list
+run-name: ${{ inputs.only && format('Hot Wheels Monitor ({0})', inputs.only) || 'Hot Wheels Monitor' }}
 
 on:
   workflow_dispatch:        # lets you run it manually and lets cron-job.org trigger it
+    inputs:
+      only:
+        description: "Check only these stores (e.g. firstcry). Empty = all stores."
+        required: false
+        default: ""
   schedule:
     # Backup only — cron-job.org drives the real cadence (GitHub's own scheduler
     # is throttled and often 15-60 min late).
@@ -38,6 +45,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Set by the every-minute FirstCry trigger; empty on normal runs = all stores.
+          ONLY_SOURCES: ${{ inputs.only || '' }}
 
           # ── Alerts ───────────────────────────────────────────────────────────
           SILENT: "true"            # only ping on real changes
