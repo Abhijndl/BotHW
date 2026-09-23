@@ -10538,7 +10538,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10549,8 +10549,8 @@
     "last_restock_alert": "2026-09-22T22:02:11",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T07:00:00",
-    "fc_api_seen_at": "2026-09-23T07:00:00",
+    "fc_listed_at": "2026-09-23T13:00:00",
+    "fc_api_seen_at": "2026-09-23T13:00:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -10833,9 +10833,9 @@
     "fc_trusted": true
   },
   "fc_23074883": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Tooned Volswagen golf MK1 (172/250) Toy Car - White/Red",
-    "price": "₹175",
+    "price": "₹163",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-tooned-volswagen-golf-mk1-172-250-toy-car-white-red/23074883/product-detail",
     "first_seen": "2026-09-04T05:24:37",
