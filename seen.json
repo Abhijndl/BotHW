@@ -5795,8 +5795,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:45:00",
-    "fc_api_seen_at": "2026-09-24T20:45:00",
+    "fc_listed_at": "2026-09-24T21:45:00",
+    "fc_api_seen_at": "2026-09-24T21:45:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -11394,8 +11394,8 @@
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T21:15:00",
-    "fc_api_seen_at": "2026-09-24T21:15:00",
+    "fc_listed_at": "2026-09-24T21:45:00",
+    "fc_api_seen_at": "2026-09-24T21:45:00",
     "fc_trusted": true
   },
   "fc_21277638": {
@@ -15029,8 +15029,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:45:00",
-    "fc_api_seen_at": "2026-09-24T20:45:00",
+    "fc_listed_at": "2026-09-24T21:45:00",
+    "fc_api_seen_at": "2026-09-24T21:45:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15699,8 +15699,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T21:30:00",
-    "fc_api_seen_at": "2026-09-24T21:30:00",
+    "fc_listed_at": "2026-09-24T21:45:00",
+    "fc_api_seen_at": "2026-09-24T21:45:00",
     "fc_trusted": true
   },
   "fc_24235309": {
@@ -16888,7 +16888,7 @@
     "fc_trusted": true
   },
   "fc_24473510": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -16896,12 +16896,12 @@
     "first_seen": "2026-09-24T14:15:00",
     "last_seen": "2026-09-24T21:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T21:58:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T21:30:00",
-    "fc_api_seen_at": "2026-09-24T21:30:00",
+    "fc_listed_at": "2026-09-24T21:45:00",
+    "fc_api_seen_at": "2026-09-24T21:45:00",
     "fc_trusted": true
   },
   "fc_24568707": {
