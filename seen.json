@@ -3414,8 +3414,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:45:00",
+    "fc_api_seen_at": "2026-09-24T07:45:00",
     "fc_trusted": true
   },
   "fc_23074888": {
@@ -13367,7 +13367,7 @@
     "fc_trusted": true
   },
   "fc_22623489": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG14-JA10 Pack of 2 - White & Red",
     "price": "₹323",
     "source": "firstcry",
@@ -13377,9 +13377,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "2026-09-18T05:01:59",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T21:15:00",
-    "fc_api_seen_at": "2026-09-21T21:15:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T07:45:00",
+    "fc_api_seen_at": "2026-09-24T07:45:00",
     "fc_trusted": true
   },
   "fc_23355053": {
