@@ -4194,19 +4194,19 @@
     "hm_verified_at": "2026-09-21T18:45:00"
   },
   "fc_24007866": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2019 Jeep Grand Cherokee Trackhawk Diecast Model Car - White",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-jeep-grand-cherokee-trackhawk-diecast-model-car-white/24007866/product-detail",
     "first_seen": "2026-07-23T22:51:46",
     "last_seen": "2026-09-24T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T06:02:51",
+    "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "2026-09-22T06:02:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-1-64-scale-5-pack-formula1-race-cars-for-kids-3y-96307388": {
@@ -4272,19 +4272,19 @@
     "fc_trusted": true
   },
   "fc_24007870": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2019 Ford Ranger Raptor Diecast Model Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-ford-ranger-raptor-diecast-model-car-grey/24007870/product-detail",
     "first_seen": "2026-07-26T04:41:50",
     "last_seen": "2026-09-24T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "fc_23348661": {
@@ -4335,15 +4335,15 @@
     "fc_trusted": true
   },
   "fc_24007869": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2019 Chevrolet Silverado Trail Boss LT Diecast Model Car - Silver",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-chevrolet-silverado-trail-boss-lt-diecast-model-car-silver/24007869/product-detail",
     "first_seen": "2026-07-28T08:21:49",
     "last_seen": "2026-09-24T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "2026-09-18T15:06:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T10:15:00",
@@ -12637,7 +12637,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12668,15 +12668,15 @@
     "fc_trusted": true
   },
   "fc_24342824": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-09-24T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T07:09:08",
+    "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "2026-09-22T07:09:08",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -12793,8 +12793,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "fc_24390968": {
@@ -13524,8 +13524,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "fc_24473460": {
@@ -14144,7 +14144,7 @@
     "fc_trusted": true
   },
   "fc_24473495": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -14155,8 +14155,8 @@
     "last_restock_alert": "2026-09-24T06:36:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:00:00",
-    "fc_api_seen_at": "2026-09-24T07:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -14293,9 +14293,9 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14305,8 +14305,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -14426,7 +14426,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -14611,8 +14611,8 @@
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T09:00:00",
-    "fc_api_seen_at": "2026-09-24T09:00:00",
+    "fc_listed_at": "2026-09-24T10:15:00",
+    "fc_api_seen_at": "2026-09-24T10:15:00",
     "fc_trusted": true
   },
   "fc_24503306": {
