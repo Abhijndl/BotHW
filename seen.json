@@ -3486,7 +3486,7 @@
   "fc_23075644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cadillac Celestiq (163/250) Die Cast Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cadillac-celestiq-163-250-die-cast-toy-car-blue/23075644/product-detail",
     "first_seen": "2026-07-20T09:47:06",
@@ -3495,8 +3495,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:45:00",
-    "fc_api_seen_at": "2026-09-24T14:45:00",
+    "fc_listed_at": "2026-09-24T15:15:00",
+    "fc_api_seen_at": "2026-09-24T15:15:00",
     "fc_trusted": true
   },
   "fc_23346007": {
@@ -13052,7 +13052,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13194,9 +13194,9 @@
     "fc_trusted": true
   },
   "fc_24342822": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -13206,8 +13206,8 @@
     "last_price_alert": "2026-09-22T11:04:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T14:45:00",
-    "fc_api_seen_at": "2026-09-24T14:45:00",
+    "fc_listed_at": "2026-09-24T15:15:00",
+    "fc_api_seen_at": "2026-09-24T15:15:00",
     "fc_trusted": true
   },
   "fc_22548069": {
@@ -14161,7 +14161,7 @@
     "fc_trusted": true
   },
   "fc_24474449": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Beige",
     "price": "₹179",
     "source": "firstcry",
