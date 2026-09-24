@@ -5525,8 +5525,8 @@
     "last_price_alert": "2026-09-22T07:21:20",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24248204": {
@@ -5795,8 +5795,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T13:15:00",
-    "fc_api_seen_at": "2026-09-24T13:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -12638,7 +12638,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12647,14 +12647,14 @@
     "last_restock_alert": "2026-09-24T08:39:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -13140,8 +13140,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24503333": {
@@ -14161,7 +14161,7 @@
     "fc_trusted": true
   },
   "fc_24474449": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Beige",
     "price": "₹179",
     "source": "firstcry",
@@ -14169,7 +14169,7 @@
     "first_seen": "2026-09-19T19:17:20",
     "last_seen": "2026-09-24T14:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T09:11:27",
+    "last_restock_alert": "2026-09-24T14:32:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -14256,8 +14256,8 @@
     "last_restock_alert": "2026-09-24T04:16:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -14420,8 +14420,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24473475": {
@@ -15029,8 +15029,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T13:15:00",
-    "fc_api_seen_at": "2026-09-24T13:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15111,8 +15111,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_20466054": {
@@ -15127,8 +15127,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_3456482": {
@@ -15143,8 +15143,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_2232876": {
@@ -16327,8 +16327,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "fc_24525296": {
@@ -16837,8 +16837,8 @@
     "last_restock_alert": "2026-09-24T04:32:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:15:00",
-    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
@@ -16900,6 +16900,22 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
+    "fc_listed_at": "2026-09-24T14:30:00",
+    "fc_api_seen_at": "2026-09-24T14:30:00",
+    "fc_trusted": true
+  },
+  "fc_24568707": {
+    "stock": "in_stock",
+    "name": "Hot Wheels TRICERATOPS MONST ER TRUCKS- dark green color",
+    "price": "₹549",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-triceratops-monst-er-trucks-dark-green-color/24568707/product-detail",
+    "first_seen": "2026-09-24T14:30:00",
+    "last_seen": "2026-09-24T14:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T14:30:00",
     "fc_api_seen_at": "2026-09-24T14:30:00",
     "fc_trusted": true
