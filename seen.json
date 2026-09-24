@@ -534,7 +534,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_1b8d7562-090e-46f8-9176-741c466961c5": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "‘16 Lamborghini Centenario Roadster",
     "price": "₹499",
     "source": "minifygram",
@@ -542,7 +542,7 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-09-24T08:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T04:21:31",
+    "last_restock_alert": "2026-09-24T08:36:04",
     "last_price_alert": "",
     "mg_updated_at": "2026-07-11T11:36:24.929552+00:00",
     "stock_ver": "mg_skus_v1"
@@ -5985,7 +5985,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
