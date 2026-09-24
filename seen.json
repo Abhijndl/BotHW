@@ -4194,9 +4194,9 @@
     "hm_verified_at": "2026-09-21T18:45:00"
   },
   "fc_24007866": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Jeep Grand Cherokee Trackhawk Diecast Model Car - White",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-jeep-grand-cherokee-trackhawk-diecast-model-car-white/24007866/product-detail",
     "first_seen": "2026-07-23T22:51:46",
@@ -4205,8 +4205,8 @@
     "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "2026-09-22T06:02:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T12:15:00",
-    "fc_api_seen_at": "2026-09-24T12:15:00",
+    "fc_listed_at": "2026-09-24T12:30:00",
+    "fc_api_seen_at": "2026-09-24T12:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-1-64-scale-5-pack-formula1-race-cars-for-kids-3y-96307388": {
@@ -12391,8 +12391,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T12:30:00",
+    "fc_api_seen_at": "2026-09-24T12:30:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12670,7 +12670,7 @@
   "fc_24342824": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14033,7 +14033,7 @@
   "fc_24342832": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Yellow",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-yellow/24342832/product-detail",
     "first_seen": "2026-09-19T11:42:14",
@@ -14107,8 +14107,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T12:15:00",
-    "fc_api_seen_at": "2026-09-24T12:15:00",
+    "fc_listed_at": "2026-09-24T12:30:00",
+    "fc_api_seen_at": "2026-09-24T12:30:00",
     "fc_trusted": true
   },
   "fc_24546537": {
