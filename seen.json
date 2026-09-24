@@ -3381,8 +3381,8 @@
     "last_restock_alert": "2026-09-22T05:48:59",
     "last_price_alert": "2026-09-22T05:48:59",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:00:00",
-    "fc_api_seen_at": "2026-09-24T14:00:00",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
   },
   "fc_23075647": {
@@ -3909,8 +3909,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T13:45:00",
-    "fc_api_seen_at": "2026-09-24T13:45:00",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-vintage-2025-mix-2-assorted-3y-multicolour-17124130": {
@@ -5666,8 +5666,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:00:00",
-    "fc_api_seen_at": "2026-09-24T14:00:00",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -13013,8 +13013,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:00:00",
-    "fc_api_seen_at": "2026-09-24T14:00:00",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
   },
   "fc_21181132": {
@@ -13194,15 +13194,15 @@
     "fc_trusted": true
   },
   "fc_24342822": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
     "last_seen": "2026-09-24T14:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T11:04:48",
+    "last_restock_alert": "2026-09-24T14:17:23",
     "last_price_alert": "2026-09-22T11:04:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -15013,8 +15013,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:30:00",
-    "fc_api_seen_at": "2026-09-24T07:30:00",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
   },
   "fc_24247501": {
@@ -15193,8 +15193,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T14:00:00",
-    "fc_api_seen_at": "2026-09-24T14:00:00",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
   },
   "fc_22548053": {
@@ -16867,6 +16867,39 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_trusted": true
+  },
+  "fc_24568735": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple",
+    "price": "₹549",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volkswagen-drag-busm-onster-trucks-purple/24568735/product-detail",
+    "first_seen": "2026-09-24T14:15:00",
+    "last_seen": "2026-09-24T14:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T14:15:00",
+    "fc_api_seen_at": "2026-09-24T14:15:00",
+    "fc_trusted": true
+  },
+  "fc_24473510": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
+    "price": "₹179",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-custom-personnalise-die-cast-car-60-250-green/24473510/product-detail",
+    "first_seen": "2026-09-24T14:15:00",
+    "last_seen": "2026-09-24T14:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "auto_watch": true,
     "fc_listed_at": "2026-09-24T14:15:00",
     "fc_api_seen_at": "2026-09-24T14:15:00",
     "fc_trusted": true
