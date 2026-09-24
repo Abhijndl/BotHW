@@ -2675,7 +2675,7 @@
   "fc_23354597": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
@@ -10544,7 +10544,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10555,8 +10555,8 @@
     "last_restock_alert": "2026-09-24T09:47:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:45:00",
-    "fc_api_seen_at": "2026-09-24T10:45:00",
+    "fc_listed_at": "2026-09-24T17:45:00",
+    "fc_api_seen_at": "2026-09-24T17:45:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -12671,7 +12671,7 @@
   "fc_24342824": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12681,8 +12681,8 @@
     "last_price_alert": "2026-09-22T07:09:08",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T16:30:00",
-    "fc_api_seen_at": "2026-09-24T16:30:00",
+    "fc_listed_at": "2026-09-24T17:45:00",
+    "fc_api_seen_at": "2026-09-24T17:45:00",
     "fc_trusted": true
   },
   "fc_24314338": {
@@ -13364,8 +13364,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T13:00:00",
-    "fc_api_seen_at": "2026-09-24T13:00:00",
+    "fc_listed_at": "2026-09-24T17:45:00",
+    "fc_api_seen_at": "2026-09-24T17:45:00",
     "fc_trusted": true
   },
   "fc_22623489": {
@@ -14156,8 +14156,8 @@
     "last_restock_alert": "2026-09-24T06:36:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T16:15:00",
-    "fc_api_seen_at": "2026-09-24T16:15:00",
+    "fc_listed_at": "2026-09-24T17:45:00",
+    "fc_api_seen_at": "2026-09-24T17:45:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -14294,9 +14294,9 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14306,8 +14306,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T16:30:00",
-    "fc_api_seen_at": "2026-09-24T16:30:00",
+    "fc_listed_at": "2026-09-24T17:45:00",
+    "fc_api_seen_at": "2026-09-24T17:45:00",
     "fc_trusted": true
   },
   "fc_24476435": {
