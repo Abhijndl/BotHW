@@ -10607,7 +10607,7 @@
     "fc_trusted": true
   },
   "fc_23074619": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy Car - Grey/T. Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10615,11 +10615,11 @@
     "first_seen": "2026-09-02T10:52:45",
     "last_seen": "2026-09-24T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T04:32:26",
+    "last_restock_alert": "2026-09-24T12:41:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T11:15:00",
-    "fc_api_seen_at": "2026-09-23T11:15:00",
+    "fc_listed_at": "2026-09-24T12:30:00",
+    "fc_api_seen_at": "2026-09-24T12:30:00",
     "fc_trusted": true
   },
   "fc_23353036": {
