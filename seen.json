@@ -3403,9 +3403,9 @@
     "fc_trusted": true
   },
   "fc_23351188": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹171",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -3413,9 +3413,10 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T04:15:00",
+    "fc_api_seen_at": "2026-09-24T04:15:00",
+    "fc_trusted": true
   },
   "fc_23074888": {
     "stock": "out_of_stock",
@@ -4147,19 +4148,20 @@
     "fc_trusted": true
   },
   "fc_23973356": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 2404 Rally Finale Die-cast Free Wheel Toy Car - Mint",
-    "price": "₹2404",
+    "price": "₹269",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/23973356/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2404-rally-finale-die-cast-free-wheel-toy-car-mint/23973356/product-detail",
     "first_seen": "2026-07-23T05:51:34",
     "last_seen": "2026-09-24T04:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T04:15:00",
+    "fc_api_seen_at": "2026-09-24T04:15:00",
+    "fc_trusted": true
   },
   "fc_23351684": {
     "stock": "out_of_stock",
@@ -4623,7 +4625,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23354966": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
     "price": "₹160",
     "source": "firstcry",
@@ -4631,11 +4633,11 @@
     "first_seen": "2026-08-01T04:27:10",
     "last_seen": "2026-09-24T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T04:17:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T16:45:00",
-    "fc_api_seen_at": "2026-09-23T16:45:00",
+    "fc_listed_at": "2026-09-24T04:15:00",
+    "fc_api_seen_at": "2026-09-24T04:15:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -13239,7 +13241,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -14338,7 +14340,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14347,8 +14349,8 @@
     "last_restock_alert": "2026-09-23T17:58:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T04:15:00",
+    "fc_api_seen_at": "2026-09-24T04:15:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -15504,19 +15506,19 @@
     "fc_trusted": true
   },
   "fc_23973359": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-4515-sandblaster-die-cast-free-wheel-toy-car-light-khaki/23973359/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-09-24T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T21:28:43",
+    "last_restock_alert": "2026-09-24T04:17:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T04:15:00",
+    "fc_api_seen_at": "2026-09-24T04:15:00",
     "fc_trusted": true
   },
   "fc_23973357": {
@@ -15740,8 +15742,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T04:15:00",
+    "fc_api_seen_at": "2026-09-24T04:15:00",
     "fc_trusted": true
   },
   "fc_24248205": {
