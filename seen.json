@@ -3897,9 +3897,9 @@
     "fc_trusted": true
   },
   "fc_23074614": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mazda Autozam (146/250) Toy Car - Purple",
-    "price": "₹168",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-mazda-autozam-146-250-toy-car-purple/23074614/product-detail",
     "first_seen": "2026-07-21T14:26:47",
@@ -3907,10 +3907,11 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_listed_at": "2026-09-24T12:45:00",
+    "fc_api_seen_at": "2026-09-24T12:45:00",
+    "fc_trusted": true
   },
   "hm_hot-wheels-vintage-2025-mix-2-assorted-3y-multicolour-17124130": {
     "stock": "out_of_stock",
@@ -13611,7 +13612,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24342830": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1993 Honda Civic Coupe Ex Ej1 Car - L - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13619,12 +13620,12 @@
     "first_seen": "2026-09-18T09:36:15",
     "last_seen": "2026-09-24T12:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T09:11:27",
+    "last_restock_alert": "2026-09-24T12:57:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:15:00",
-    "fc_api_seen_at": "2026-09-23T12:15:00",
+    "fc_listed_at": "2026-09-24T12:45:00",
+    "fc_api_seen_at": "2026-09-24T12:45:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
