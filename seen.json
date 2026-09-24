@@ -5490,8 +5490,8 @@
     "last_price_alert": "2026-09-17T10:35:54",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T06:00:00",
-    "fc_api_seen_at": "2026-09-24T06:00:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_23351190": {
@@ -5638,7 +5638,7 @@
   "fc_24194174": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle of 5 1:64 Scale Die-Cast Free Wheel Toy Cars - Multicolor",
-    "price": "₹3599",
+    "price": "₹3999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-bundle-of-5-1-64-scale-die-cast-free-wheel-toy-cars-multicolor/24194174/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5648,8 +5648,8 @@
     "last_price_alert": "2026-09-22T13:08:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:45:00",
-    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_24194173": {
@@ -12649,9 +12649,9 @@
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -12661,8 +12661,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:45:00",
-    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_24342824": {
@@ -13251,8 +13251,8 @@
     "last_restock_alert": "2026-09-22T12:04:47",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:45:00",
-    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -14318,8 +14318,8 @@
     "last_restock_alert": "2026-09-23T20:07:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_24473509": {
@@ -14423,7 +14423,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -14801,8 +14801,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:00:00",
-    "fc_api_seen_at": "2026-09-24T06:00:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_23835985": {
@@ -15130,7 +15130,7 @@
   "fc_3456482": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Master of Universe Wind Rider - Yellow",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-master-of-universe-wind-rider-yellow/3456482/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15518,8 +15518,8 @@
     "last_restock_alert": "2026-09-24T04:17:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_23973357": {
@@ -15566,8 +15566,8 @@
     "last_restock_alert": "2026-09-24T04:12:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:15:00",
-    "fc_api_seen_at": "2026-09-24T05:15:00",
+    "fc_listed_at": "2026-09-24T06:15:00",
+    "fc_api_seen_at": "2026-09-24T06:15:00",
     "fc_trusted": true
   },
   "fc_23832900": {
