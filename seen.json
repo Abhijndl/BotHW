@@ -2766,7 +2766,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074885": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Track Ripper (24/250) Toy Car - Grey/Orange",
     "price": "₹163",
     "source": "firstcry",
@@ -2776,9 +2776,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T09:30:00",
-    "fc_api_seen_at": "2026-09-21T09:30:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_23074260": {
@@ -2879,8 +2879,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -3479,14 +3479,14 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T17:15:00",
-    "fc_api_seen_at": "2026-09-23T17:15:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_23075644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cadillac Celestiq (163/250) Die Cast Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cadillac-celestiq-163-250-die-cast-toy-car-blue/23075644/product-detail",
     "first_seen": "2026-07-20T09:47:06",
@@ -4255,9 +4255,9 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23346403": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 145/250 EL Segundo Rallye - Black",
-    "price": "₹168",
+    "price": "₹160",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-145-250-el-segundo-rallye-black/23346403/product-detail",
     "first_seen": "2026-07-25T19:06:35",
@@ -4265,9 +4265,10 @@
     "alerted_new": true,
     "last_restock_alert": "2026-09-07T13:21:04",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_trusted": true
   },
   "fc_24007870": {
     "stock": "out_of_stock",
@@ -4494,8 +4495,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -4594,7 +4595,7 @@
     "fc_trusted": true
   },
   "fc_23348665": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 191/250 65 Mercury Comet Cyclone Die Cat Free Wheel Toy Car- Red",
     "price": "₹161",
     "source": "firstcry",
@@ -4602,11 +4603,11 @@
     "first_seen": "2026-07-31T06:11:54",
     "last_seen": "2026-09-24T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-07T15:16:49",
+    "last_restock_alert": "2026-09-24T05:49:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T06:00:00",
-    "fc_api_seen_at": "2026-09-23T06:00:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_22548070": {
@@ -4719,7 +4720,7 @@
     "fc_trusted": true
   },
   "fc_22548057": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 8 Crate 133/250 Die-Cast Toy Car - Pink",
     "price": "₹167",
     "source": "firstcry",
@@ -4727,11 +4728,11 @@
     "first_seen": "2026-08-01T05:17:01",
     "last_seen": "2026-09-24T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T05:49:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T21:45:00",
-    "fc_api_seen_at": "2026-09-23T21:45:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_22548060": {
@@ -4907,7 +4908,7 @@
   "fc_23348045": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 164/250 Classic/classique 55 Nomad Die Cat Free Wheel Toy Car- Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-164-250-classic-classique-55-nomad-die-cat-free-wheel-toy-car-black/23348045/product-detail",
     "first_seen": "2026-08-04T14:51:54",
@@ -4915,9 +4916,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T07:00:00",
-    "fc_api_seen_at": "2026-09-22T07:00:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_23355051": {
@@ -5505,8 +5506,8 @@
     "last_restock_alert": "2026-09-23T06:52:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24248207": {
@@ -5760,8 +5761,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T03:45:00",
-    "fc_api_seen_at": "2026-09-24T03:45:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -9662,8 +9663,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:15:00",
-    "fc_api_seen_at": "2026-09-24T04:15:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -10255,7 +10256,7 @@
     "fc_trusted": true
   },
   "fc_23351682": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 46/250 Purple Passion Die Cat Free Wheel Toy Car- Purple",
     "price": "₹171",
     "source": "firstcry",
@@ -10263,11 +10264,11 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-09-24T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T10:28:49",
+    "last_restock_alert": "2026-09-24T05:49:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T18:15:00",
-    "fc_api_seen_at": "2026-09-23T18:15:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24248203": {
@@ -10637,7 +10638,7 @@
     "fc_trusted": true
   },
   "fc_23074887": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast El Segundo Rallye (145/250) Toy Car - Black/Red",
     "price": "₹161",
     "source": "firstcry",
@@ -10645,11 +10646,11 @@
     "first_seen": "2026-09-02T11:14:43",
     "last_seen": "2026-09-24T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T05:49:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T06:00:00",
-    "fc_api_seen_at": "2026-09-23T06:00:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_22928010": {
@@ -11750,7 +11751,7 @@
     "fc_trusted": true
   },
   "fc_23081312": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG15-JA10 Pack of 2- Green & Blue",
     "price": "₹323",
     "source": "firstcry",
@@ -11761,8 +11762,8 @@
     "last_restock_alert": "2026-09-23T12:38:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T13:45:00",
-    "fc_api_seen_at": "2026-09-23T13:45:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24236114": {
@@ -12388,8 +12389,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T03:45:00",
-    "fc_api_seen_at": "2026-09-24T03:45:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12710,8 +12711,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24313540": {
@@ -14061,7 +14062,7 @@
   "fc_24342833": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Blue",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-blue/24342833/product-detail",
     "first_seen": "2026-09-19T13:25:56",
@@ -14240,7 +14241,7 @@
     "fc_trusted": true
   },
   "fc_24476803": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
     "price": "₹179",
     "source": "firstcry",
@@ -14251,8 +14252,8 @@
     "last_restock_alert": "2026-09-24T04:16:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -14267,8 +14268,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24475972": {
@@ -14422,7 +14423,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -15171,8 +15172,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_22548054": {
@@ -15533,8 +15534,8 @@
     "last_restock_alert": "2026-09-24T04:12:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_23973354": {
@@ -16338,8 +16339,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   },
   "fc_24525284": {
@@ -16853,7 +16854,7 @@
   "fc_23104343": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Hype Hauler Camion De Transport Die Cast Toy Truck - Black",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hype-hauler-camion-de-transport-die-cast-toy-truck-black/23104343/product-detail",
     "first_seen": "2026-09-24T02:00:00",
@@ -16862,8 +16863,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T05:45:00",
+    "fc_api_seen_at": "2026-09-24T05:45:00",
     "fc_trusted": true
   }
 }
