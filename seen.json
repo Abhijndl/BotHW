@@ -2879,8 +2879,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -5655,7 +5655,7 @@
   "fc_24194173": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -9716,7 +9716,7 @@
   "fc_22598187": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Mud Studs Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹764",
+    "price": "₹899",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-mud-studs-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22598187/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -9724,9 +9724,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T13:00:00",
-    "fc_api_seen_at": "2026-09-22T13:00:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_14932243": {
@@ -10877,8 +10877,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_22149914": {
@@ -12553,7 +12553,7 @@
     "fc_trusted": true
   },
   "fc_24473512": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
     "price": "₹170",
     "source": "firstcry",
@@ -12561,7 +12561,7 @@
     "first_seen": "2026-09-17T04:21:12",
     "last_seen": "2026-09-24T07:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T11:01:48",
+    "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -12798,7 +12798,7 @@
   "fc_24390968": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 4/5 Silver Series Vintage Club 73 Honda Civic Custom/Personnalise Die-cast Car - Beige",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-4-5-silver-series-vintage-club-73-honda-civic-custom-personnalise-die-cast-car-beige/24390968/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12808,8 +12808,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_24248198": {
@@ -13096,19 +13096,19 @@
     "fc_trusted": true
   },
   "fc_24342825": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Czinger 21c 2/5 Die-cast Car - Dark Green - Black",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-czinger-21c-2-5-die-cast-car-dark-green-black/24342825/product-detail",
     "first_seen": "2026-09-17T09:03:37",
     "last_seen": "2026-09-24T07:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T06:35:15",
+    "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13126,7 +13126,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24525299": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Volvo 240 Drift Camper/Roulotte De Derapage Die Cast Toy Truck - Green",
     "price": "₹549",
     "source": "firstcry",
@@ -13134,11 +13134,11 @@
     "first_seen": "2026-09-17T09:21:08",
     "last_seen": "2026-09-24T07:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_24503333": {
@@ -13170,8 +13170,8 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:30:00",
-    "fc_api_seen_at": "2026-09-24T06:30:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -13306,7 +13306,7 @@
   "fc_22601081": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -14062,7 +14062,7 @@
   "fc_24342833": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Blue",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-blue/24342833/product-detail",
     "first_seen": "2026-09-19T13:25:56",
@@ -14136,8 +14136,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:30:00",
-    "fc_api_seen_at": "2026-09-24T06:30:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -15041,8 +15041,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_21943787": {
@@ -16124,8 +16124,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:30:00",
-    "fc_api_seen_at": "2026-09-24T06:30:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_24503746": {
