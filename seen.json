@@ -3753,9 +3753,9 @@
     "fc_trusted": true
   },
   "fc_23354596": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-250-austin-mini-copper-toy-car-red/23354596/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -3764,8 +3764,8 @@
     "last_restock_alert": "2026-09-24T09:41:05",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-09-24T10:30:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_23074891": {
@@ -5587,8 +5587,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-super-mario-brothers-kong-island-track-set-5y-multicolour-14543177": {
@@ -5762,8 +5762,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -10682,8 +10682,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_22240239": {
@@ -12793,8 +12793,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-09-24T10:30:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24390968": {
@@ -13061,8 +13061,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-09-24T10:30:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13098,7 +13098,7 @@
     "fc_trusted": true
   },
   "fc_24342825": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Czinger 21c 2/5 Die-cast Car - Dark Green - Black",
     "price": "₹269",
     "source": "firstcry",
@@ -13109,8 +13109,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:00:00",
-    "fc_api_seen_at": "2026-09-24T10:00:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13163,7 +13163,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13172,8 +13172,8 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-09-24T10:30:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -14222,8 +14222,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-09-24T10:30:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14370,8 +14370,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-09-24T10:30:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24475755": {
@@ -16391,8 +16391,8 @@
     "last_restock_alert": "2026-09-22T17:44:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24514778": {
@@ -16407,8 +16407,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T10:45:00",
+    "fc_api_seen_at": "2026-09-24T10:45:00",
     "fc_trusted": true
   },
   "fc_24504536": {
