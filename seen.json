@@ -3732,8 +3732,8 @@
     "last_price_alert": "2026-09-20T06:21:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T12:45:00",
-    "fc_api_seen_at": "2026-09-24T12:45:00",
+    "fc_listed_at": "2026-09-24T13:00:00",
+    "fc_api_seen_at": "2026-09-24T13:00:00",
     "fc_trusted": true
   },
   "fc_23076120": {
@@ -5919,8 +5919,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T11:00:00",
-    "fc_api_seen_at": "2026-09-24T11:00:00",
+    "fc_listed_at": "2026-09-24T13:00:00",
+    "fc_api_seen_at": "2026-09-24T13:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160": {
@@ -10512,19 +10512,19 @@
     "fc_trusted": true
   },
   "fc_23700379": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1999",
+    "price": "₹1879",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
     "last_seen": "2026-09-24T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T12:16:58",
+    "last_restock_alert": "2026-09-24T13:03:41",
     "last_price_alert": "2026-09-22T12:16:58",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T12:45:00",
-    "fc_api_seen_at": "2026-09-24T12:45:00",
+    "fc_listed_at": "2026-09-24T13:00:00",
+    "fc_api_seen_at": "2026-09-24T13:00:00",
     "fc_trusted": true
   },
   "fc_23700381": {
@@ -10871,7 +10871,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -14223,8 +14223,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T12:45:00",
-    "fc_api_seen_at": "2026-09-24T12:45:00",
+    "fc_listed_at": "2026-09-24T13:00:00",
+    "fc_api_seen_at": "2026-09-24T13:00:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14388,8 +14388,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T12:45:00",
-    "fc_api_seen_at": "2026-09-24T12:45:00",
+    "fc_listed_at": "2026-09-24T13:00:00",
+    "fc_api_seen_at": "2026-09-24T13:00:00",
     "fc_trusted": true
   },
   "fc_24473732": {
@@ -15134,7 +15134,7 @@
   "fc_3456482": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Master of Universe Wind Rider - Yellow",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-master-of-universe-wind-rider-yellow/3456482/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15143,8 +15143,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:00:00",
-    "fc_api_seen_at": "2026-09-24T07:00:00",
+    "fc_listed_at": "2026-09-24T13:00:00",
+    "fc_api_seen_at": "2026-09-24T13:00:00",
     "fc_trusted": true
   },
   "fc_2232876": {
@@ -16826,7 +16826,7 @@
     "fc_trusted": true
   },
   "fc_24546334": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Dark Red",
     "price": "₹599",
     "source": "firstcry",
