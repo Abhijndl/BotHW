@@ -5795,8 +5795,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T16:45:00",
-    "fc_api_seen_at": "2026-09-24T16:45:00",
+    "fc_listed_at": "2026-09-24T18:00:00",
+    "fc_api_seen_at": "2026-09-24T18:00:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -9665,8 +9665,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T17:45:00",
-    "fc_api_seen_at": "2026-09-24T17:45:00",
+    "fc_listed_at": "2026-09-24T18:00:00",
+    "fc_api_seen_at": "2026-09-24T18:00:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -12850,7 +12850,7 @@
   "fc_24341962": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop GT-Scorcher 7 Wheel Car - Purple",
-    "price": "₹849",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-gt-scorcher-7-wheel-car-purple/24341962/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13164,7 +13164,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13173,8 +13173,8 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T16:45:00",
-    "fc_api_seen_at": "2026-09-24T16:45:00",
+    "fc_listed_at": "2026-09-24T18:00:00",
+    "fc_api_seen_at": "2026-09-24T18:00:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -14345,7 +14345,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14354,8 +14354,8 @@
     "last_restock_alert": "2026-09-23T17:58:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T17:00:00",
-    "fc_api_seen_at": "2026-09-24T17:00:00",
+    "fc_listed_at": "2026-09-24T18:00:00",
+    "fc_api_seen_at": "2026-09-24T18:00:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -15029,8 +15029,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T17:30:00",
-    "fc_api_seen_at": "2026-09-24T17:30:00",
+    "fc_listed_at": "2026-09-24T18:00:00",
+    "fc_api_seen_at": "2026-09-24T18:00:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15331,7 +15331,7 @@
   "fc_22240164": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 70 Chevelle SS Wagon / Remorque (110/250) Toy Car - White",
-    "price": "₹153",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-chevelle-ss-wagon-remorque-110-250-toy-car-white/22240164/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15340,8 +15340,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T17:00:00",
-    "fc_api_seen_at": "2026-09-24T17:00:00",
+    "fc_listed_at": "2026-09-24T18:00:00",
+    "fc_api_seen_at": "2026-09-24T18:00:00",
     "fc_trusted": true
   },
   "fc_23029911": {
