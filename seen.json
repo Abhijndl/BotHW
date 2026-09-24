@@ -78,7 +78,7 @@
     "fc_trusted": true
   },
   "fc_21348": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hotwheels 5 Diecast Free Wheel Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -88,9 +88,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T13:00:00",
-    "fc_api_seen_at": "2026-09-22T13:00:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T08:45:00",
+    "fc_api_seen_at": "2026-09-24T08:45:00",
     "fc_trusted": true
   },
   "fc_21940376": {
@@ -140,7 +140,7 @@
   "fc_23076124": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mach Speeder (158/250) Die Cast Free Wheel Toy Car - Maroon",
-    "price": "₹167",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-158-250-die-cast-free-wheel-toy-car-maroon/23076124/product-detail",
     "first_seen": "2026-07-18T07:36:21",
@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T10:15:00",
-    "fc_api_seen_at": "2026-09-23T10:15:00",
+    "fc_listed_at": "2026-09-24T08:45:00",
+    "fc_api_seen_at": "2026-09-24T08:45:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -2625,7 +2625,7 @@
     "fc_trusted": true
   },
   "fc_22600231": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Hot Rods Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -2633,11 +2633,11 @@
     "first_seen": "2026-07-18T07:36:21",
     "last_seen": "2026-09-24T08:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T08:53:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-22T22:15:00",
-    "fc_api_seen_at": "2026-09-22T22:15:00",
+    "fc_listed_at": "2026-09-24T08:45:00",
+    "fc_api_seen_at": "2026-09-24T08:45:00",
     "fc_trusted": true
   },
   "fc_23075649": {
@@ -13853,7 +13853,7 @@
     "fc_trusted": true
   },
   "fc_2235646": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
     "price": "₹584",
     "source": "firstcry",
@@ -13863,9 +13863,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T21:30:00",
-    "fc_api_seen_at": "2026-09-21T21:30:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T08:45:00",
+    "fc_api_seen_at": "2026-09-24T08:45:00",
     "fc_trusted": true
   },
   "fc_24525301": {
@@ -14243,7 +14243,7 @@
     "fc_trusted": true
   },
   "fc_24476803": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
     "price": "₹179",
     "source": "firstcry",
@@ -15146,9 +15146,9 @@
     "fc_trusted": true
   },
   "fc_2232876": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Twin Flame Bike - Green & Black",
-    "price": "₹649",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-twin-flame-bike-green-and-black/2232876/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15156,9 +15156,9 @@
     "alerted_new": true,
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "2026-09-21T18:21:30",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T08:45:00",
-    "fc_api_seen_at": "2026-09-22T08:45:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T08:45:00",
+    "fc_api_seen_at": "2026-09-24T08:45:00",
     "fc_trusted": true
   },
   "fc_22548058": {
