@@ -4715,8 +4715,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_22548057": {
@@ -10688,17 +10688,18 @@
   "fc_22240239": {
     "stock": "out_of_stock",
     "name": "Hot Wheels VW ID. Buzz Bomb (86/250) Toy Car - White & Purple",
-    "price": "₹86",
+    "price": "₹167",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/22240239/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vw-id-buzz-bomb-86-250-toy-car-white-and-purple/22240239/product-detail",
     "first_seen": "2026-09-02T14:58:37",
     "last_seen": "2026-09-24T07:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
+    "fc_trusted": true
   },
   "fc_22597418": {
     "stock": "in_stock",
@@ -14753,8 +14754,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-24T07:00:00",
+    "fc_api_seen_at": "2026-09-24T07:00:00",
     "fc_trusted": true
   },
   "fc_23835983": {
