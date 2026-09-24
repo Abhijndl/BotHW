@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-09-24T06:36:55",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T08:00:00",
-    "fc_api_seen_at": "2026-09-24T08:00:00",
+    "fc_listed_at": "2026-09-24T09:30:00",
+    "fc_api_seen_at": "2026-09-24T09:30:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -3753,15 +3753,15 @@
     "fc_trusted": true
   },
   "fc_23354596": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-250-austin-mini-copper-toy-car-red/23354596/product-detail",
     "first_seen": "2026-07-21T04:51:19",
     "last_seen": "2026-09-24T09:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T08:55:38",
+    "last_restock_alert": "2026-09-24T09:41:05",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T09:30:00",
@@ -5907,7 +5907,7 @@
   "fc_24248202": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 70 Dodge Charger Die-Cast Free Wheel Toy Car (188/250) - White",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-dodge-charger-die-cast-free-wheel-toy-car-188-250-white/24248202/product-detail",
     "first_seen": "2026-08-16T03:52:16",
@@ -5985,7 +5985,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -13162,7 +13162,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13816,8 +13816,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T07:00:00",
-    "fc_api_seen_at": "2026-09-24T07:00:00",
+    "fc_listed_at": "2026-09-24T09:30:00",
+    "fc_api_seen_at": "2026-09-24T09:30:00",
     "fc_trusted": true
   },
   "fc_24514779": {
