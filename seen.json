@@ -3398,8 +3398,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_23351188": {
@@ -3495,8 +3495,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_23346007": {
@@ -4018,8 +4018,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_23075648": {
@@ -5793,8 +5793,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -5825,8 +5825,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-5-car-pack-rosso-for-boys-age-3y-die-cast-vehicle-collection-96407472": {
@@ -5900,8 +5900,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -12554,9 +12554,9 @@
     "fc_trusted": true
   },
   "fc_24473512": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12566,8 +12566,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24473515": {
@@ -12613,8 +12613,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24473516": {
@@ -12636,7 +12636,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12645,8 +12645,8 @@
     "last_restock_alert": "2026-09-23T05:33:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -13127,7 +13127,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24525299": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Camper/Roulotte De Derapage Die Cast Toy Truck - Green",
     "price": "₹549",
     "source": "firstcry",
@@ -13138,8 +13138,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24503333": {
@@ -14220,8 +14220,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14342,7 +14342,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14351,8 +14351,8 @@
     "last_restock_alert": "2026-09-23T17:58:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14417,8 +14417,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:00:00",
-    "fc_api_seen_at": "2026-09-24T07:00:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24473475": {
@@ -15808,8 +15808,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T07:15:00",
-    "fc_api_seen_at": "2026-09-24T07:15:00",
+    "fc_listed_at": "2026-09-24T07:30:00",
+    "fc_api_seen_at": "2026-09-24T07:30:00",
     "fc_trusted": true
   },
   "fc_24390955": {
