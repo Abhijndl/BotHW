@@ -12850,7 +12850,7 @@
   "fc_24341962": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop GT-Scorcher 7 Wheel Car - Purple",
-    "price": "₹849",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-gt-scorcher-7-wheel-car-purple/24341962/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -16332,7 +16332,7 @@
     "fc_trusted": true
   },
   "fc_24525296": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Chevy Silverado Driftcation Die Cast Toy Truck - Yellow/Red",
     "price": "₹549",
     "source": "firstcry",
@@ -16343,8 +16343,8 @@
     "last_restock_alert": "2026-09-24T20:07:02",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:15:00",
-    "fc_api_seen_at": "2026-09-24T20:15:00",
+    "fc_listed_at": "2026-09-24T20:30:00",
+    "fc_api_seen_at": "2026-09-24T20:30:00",
     "fc_trusted": true
   },
   "fc_24525284": {
