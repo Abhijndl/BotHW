@@ -2610,7 +2610,7 @@
   "fc_23347147": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 8/250 Ford Mustang Mach-E 1400 - White",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-8-250-ford-mustang-mach-e-1400-white/23347147/product-detail",
     "first_seen": "2026-07-18T05:30:14",
@@ -10834,8 +10834,8 @@
     "last_price_alert": "2026-09-22T09:46:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T10:30:00",
+    "fc_api_seen_at": "2026-09-24T10:30:00",
     "fc_trusted": true
   },
   "fc_23074883": {
@@ -12701,7 +12701,7 @@
     "fc_trusted": true
   },
   "fc_24390970": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2/5 Silver Series Vintage Club Aston Martin 1963 Db5 Die-cast Car - Blue",
     "price": "₹299",
     "source": "firstcry",
@@ -12709,7 +12709,7 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-09-24T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T11:32:50",
+    "last_restock_alert": "2026-09-24T10:42:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -13849,8 +13849,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T10:30:00",
+    "fc_api_seen_at": "2026-09-24T10:30:00",
     "fc_trusted": true
   },
   "fc_2235646": {
@@ -16423,8 +16423,8 @@
     "last_restock_alert": "2026-09-23T10:02:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T10:15:00",
-    "fc_api_seen_at": "2026-09-24T10:15:00",
+    "fc_listed_at": "2026-09-24T10:30:00",
+    "fc_api_seen_at": "2026-09-24T10:30:00",
     "fc_trusted": true
   },
   "fc_24503904": {
