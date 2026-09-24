@@ -3372,7 +3372,7 @@
   "fc_23076117": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Lotus Sport Elise (160/250) Die Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-lotus-sport-elise-160-250-die-cast-toy-car-orange/23076117/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -5763,8 +5763,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -10170,7 +10170,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -12236,7 +12236,7 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -12392,8 +12392,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12671,7 +12671,7 @@
   "fc_24342824": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12927,7 +12927,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13062,8 +13062,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13094,8 +13094,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "fc_24342825": {
@@ -13164,7 +13164,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13270,8 +13270,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "fc_24246597": {
@@ -13612,7 +13612,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24342830": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1993 Honda Civic Coupe Ex Ej1 Car - L - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13624,8 +13624,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T13:45:00",
-    "fc_api_seen_at": "2026-09-24T13:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -14206,8 +14206,8 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "fc_24475737": {
@@ -14294,15 +14294,15 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
     "last_seen": "2026-09-24T16:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T11:05:14",
+    "last_restock_alert": "2026-09-24T16:06:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16837,8 +16837,8 @@
     "last_restock_alert": "2026-09-24T04:32:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T16:00:00",
+    "fc_api_seen_at": "2026-09-24T16:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
