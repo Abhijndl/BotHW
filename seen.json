@@ -109,7 +109,7 @@
     "fc_api_seen_at": "2026-09-21T06:46:09"
   },
   "fc_23074259": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast 41 Willys (153/250) Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -117,11 +117,11 @@
     "first_seen": "2026-07-18T07:36:21",
     "last_seen": "2026-09-24T05:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T05:34:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T09:45:00",
-    "fc_api_seen_at": "2026-09-23T09:45:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_22277228": {
@@ -3463,8 +3463,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T18:00:00",
-    "fc_api_seen_at": "2026-09-23T18:00:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_23076125": {
@@ -5637,7 +5637,7 @@
   "fc_24194174": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle of 5 1:64 Scale Die-Cast Free Wheel Toy Cars - Multicolor",
-    "price": "₹3999",
+    "price": "₹3599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-bundle-of-5-1-64-scale-die-cast-free-wheel-toy-cars-multicolor/24194174/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -10632,8 +10632,8 @@
     "last_restock_alert": "2026-09-22T09:27:41",
     "last_price_alert": "2026-09-22T09:27:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_23074887": {
@@ -12504,7 +12504,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -12790,8 +12790,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_24390968": {
@@ -13241,7 +13241,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13250,8 +13250,8 @@
     "last_restock_alert": "2026-09-22T12:04:47",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:00:00",
-    "fc_api_seen_at": "2026-09-24T05:00:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -14135,8 +14135,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T21:30:00",
-    "fc_api_seen_at": "2026-09-23T21:30:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14206,15 +14206,15 @@
     "fc_trusted": true
   },
   "fc_24475737": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
     "last_seen": "2026-09-24T05:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T05:34:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16355,8 +16355,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T05:30:00",
+    "fc_api_seen_at": "2026-09-24T05:30:00",
     "fc_trusted": true
   },
   "fc_24525283": {
