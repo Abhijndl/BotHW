@@ -16847,5 +16847,21 @@
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
     "hm_verified_at": "2026-09-23T22:30:00"
+  },
+  "fc_23104343": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels Hype Hauler Camion De Transport Die Cast Toy Truck - Black",
+    "price": "₹494",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hype-hauler-camion-de-transport-die-cast-toy-truck-black/23104343/product-detail",
+    "first_seen": "2026-09-24T02:00:00",
+    "last_seen": "2026-09-24T02:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T02:00:00",
+    "fc_api_seen_at": "2026-09-24T02:00:00",
+    "fc_trusted": true
   }
 }
