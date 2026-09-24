@@ -2673,19 +2673,19 @@
     "fc_trusted": true
   },
   "fc_23354597": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
     "last_seen": "2026-09-24T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T11:51:16",
+    "last_restock_alert": "2026-09-24T06:36:20",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T04:00:00",
-    "fc_api_seen_at": "2026-09-24T04:00:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -3535,7 +3535,7 @@
   "fc_23347148": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 36/250 70 Dodge Hemi Challenger Die Cat Free Wheel Toy Car- Black",
-    "price": "₹167",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-36-250-70-dodge-hemi-challenger-die-cat-free-wheel-toy-car-black/23347148/product-detail",
     "first_seen": "2026-07-20T10:51:52",
@@ -3545,8 +3545,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:45:00",
-    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_23076122": {
@@ -4148,7 +4148,7 @@
     "fc_trusted": true
   },
   "fc_23973356": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 2404 Rally Finale Die-cast Free Wheel Toy Car - Mint",
     "price": "₹269",
     "source": "firstcry",
@@ -4159,8 +4159,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:45:00",
-    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_23351684": {
@@ -5985,7 +5985,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -12500,8 +12500,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T04:15:00",
-    "fc_api_seen_at": "2026-09-24T04:15:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -12565,8 +12565,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24473515": {
@@ -13771,7 +13771,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -13781,8 +13781,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T06:15:00",
-    "fc_api_seen_at": "2026-09-24T06:15:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -13814,8 +13814,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:30:00",
-    "fc_api_seen_at": "2026-09-23T12:30:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -14141,7 +14141,7 @@
     "fc_trusted": true
   },
   "fc_24473495": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -14149,11 +14149,11 @@
     "first_seen": "2026-09-19T18:21:18",
     "last_seen": "2026-09-24T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T11:01:48",
+    "last_restock_alert": "2026-09-24T06:36:20",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:15:00",
-    "fc_api_seen_at": "2026-09-24T06:15:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -14207,9 +14207,9 @@
     "fc_trusted": true
   },
   "fc_24475737": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14219,8 +14219,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T06:15:00",
-    "fc_api_seen_at": "2026-09-24T06:15:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14416,8 +14416,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:15:00",
-    "fc_api_seen_at": "2026-09-24T06:15:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24473475": {
@@ -16806,7 +16806,7 @@
     "fc_trusted": true
   },
   "fc_24546335": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Light Blue",
     "price": "₹599",
     "source": "firstcry",
@@ -16814,11 +16814,11 @@
     "first_seen": "2026-09-23T12:30:00",
     "last_seen": "2026-09-24T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-24T06:36:20",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "fc_24546334": {
@@ -16833,8 +16833,8 @@
     "last_restock_alert": "2026-09-24T04:32:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T05:30:00",
-    "fc_api_seen_at": "2026-09-24T05:30:00",
+    "fc_listed_at": "2026-09-24T06:30:00",
+    "fc_api_seen_at": "2026-09-24T06:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
