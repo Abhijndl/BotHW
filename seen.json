@@ -5014,7 +5014,7 @@
     "fc_trusted": true
   },
   "fc_23351681": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
     "price": "₹167",
     "source": "firstcry",
@@ -5024,9 +5024,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-22T04:15:00",
-    "fc_api_seen_at": "2026-09-22T04:15:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-24T17:30:00",
+    "fc_api_seen_at": "2026-09-24T17:30:00",
     "fc_trusted": true
   },
   "fc_24236112": {
@@ -10507,8 +10507,8 @@
     "last_restock_alert": "2026-09-24T09:47:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-24T17:30:00",
+    "fc_api_seen_at": "2026-09-24T17:30:00",
     "fc_trusted": true
   },
   "fc_23700379": {
@@ -12250,7 +12250,7 @@
     "fc_trusted": true
   },
   "fc_23206927": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG16-JA10 - Pack of 2 - Purple & Green",
     "price": "₹262",
     "source": "firstcry",
@@ -12261,8 +12261,8 @@
     "last_restock_alert": "2026-09-23T18:14:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T21:15:00",
-    "fc_api_seen_at": "2026-09-23T21:15:00",
+    "fc_listed_at": "2026-09-24T17:30:00",
+    "fc_api_seen_at": "2026-09-24T17:30:00",
     "fc_trusted": true
   },
   "fc_23074882": {
@@ -12392,8 +12392,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T16:15:00",
-    "fc_api_seen_at": "2026-09-24T16:15:00",
+    "fc_listed_at": "2026-09-24T17:30:00",
+    "fc_api_seen_at": "2026-09-24T17:30:00",
     "fc_trusted": true
   },
   "fc_24476800": {
