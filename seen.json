@@ -12556,7 +12556,7 @@
   "fc_24473512": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12566,8 +12566,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T08:15:00",
-    "fc_api_seen_at": "2026-09-24T08:15:00",
+    "fc_listed_at": "2026-09-24T08:30:00",
+    "fc_api_seen_at": "2026-09-24T08:30:00",
     "fc_trusted": true
   },
   "fc_24473515": {
@@ -12613,8 +12613,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T08:15:00",
-    "fc_api_seen_at": "2026-09-24T08:15:00",
+    "fc_listed_at": "2026-09-24T08:30:00",
+    "fc_api_seen_at": "2026-09-24T08:30:00",
     "fc_trusted": true
   },
   "fc_24473516": {
@@ -12634,15 +12634,15 @@
     "fc_trusted": true
   },
   "fc_24473511": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-09-24T08:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T05:33:28",
+    "last_restock_alert": "2026-09-24T08:39:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:30:00",
@@ -13060,8 +13060,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T08:15:00",
-    "fc_api_seen_at": "2026-09-24T08:15:00",
+    "fc_listed_at": "2026-09-24T08:30:00",
+    "fc_api_seen_at": "2026-09-24T08:30:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13783,8 +13783,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T07:00:00",
-    "fc_api_seen_at": "2026-09-24T07:00:00",
+    "fc_listed_at": "2026-09-24T08:30:00",
+    "fc_api_seen_at": "2026-09-24T08:30:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -14386,8 +14386,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T08:15:00",
-    "fc_api_seen_at": "2026-09-24T08:15:00",
+    "fc_listed_at": "2026-09-24T08:30:00",
+    "fc_api_seen_at": "2026-09-24T08:30:00",
     "fc_trusted": true
   },
   "fc_24473732": {
