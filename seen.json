@@ -5795,8 +5795,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:00:00",
-    "fc_api_seen_at": "2026-09-24T20:00:00",
+    "fc_listed_at": "2026-09-24T20:15:00",
+    "fc_api_seen_at": "2026-09-24T20:15:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -11609,8 +11609,8 @@
     "last_restock_alert": "2026-09-23T16:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T19:45:00",
-    "fc_api_seen_at": "2026-09-24T19:45:00",
+    "fc_listed_at": "2026-09-24T20:15:00",
+    "fc_api_seen_at": "2026-09-24T20:15:00",
     "fc_trusted": true
   },
   "fc_23345756": {
@@ -13703,8 +13703,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:00:00",
-    "fc_api_seen_at": "2026-09-24T20:00:00",
+    "fc_listed_at": "2026-09-24T20:15:00",
+    "fc_api_seen_at": "2026-09-24T20:15:00",
     "fc_trusted": true
   },
   "fc_24514777": {
@@ -15029,8 +15029,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:00:00",
-    "fc_api_seen_at": "2026-09-24T20:00:00",
+    "fc_listed_at": "2026-09-24T20:15:00",
+    "fc_api_seen_at": "2026-09-24T20:15:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -16028,8 +16028,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T20:00:00",
-    "fc_api_seen_at": "2026-09-24T20:00:00",
+    "fc_listed_at": "2026-09-24T20:15:00",
+    "fc_api_seen_at": "2026-09-24T20:15:00",
     "fc_trusted": true
   },
   "fc_24390962": {
@@ -16473,8 +16473,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T20:00:00",
-    "fc_api_seen_at": "2026-09-24T20:00:00",
+    "fc_listed_at": "2026-09-24T20:15:00",
+    "fc_api_seen_at": "2026-09-24T20:15:00",
     "fc_trusted": true
   },
   "fc_24248200": {
