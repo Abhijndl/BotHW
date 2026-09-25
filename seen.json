@@ -5765,8 +5765,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T13:15:00",
-    "fc_api_seen_at": "2026-09-25T13:15:00",
+    "fc_listed_at": "2026-09-25T13:45:00",
+    "fc_api_seen_at": "2026-09-25T13:45:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -5904,8 +5904,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T13:15:00",
-    "fc_api_seen_at": "2026-09-25T13:15:00",
+    "fc_listed_at": "2026-09-25T13:45:00",
+    "fc_api_seen_at": "2026-09-25T13:45:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -5989,7 +5989,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -10517,7 +10517,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1879",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -13455,7 +13455,7 @@
   "fc_24247514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 94 Toyota Supra Die-Cast Free Wheel Toy Car (222/250) - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-94-toyota-supra-die-cast-free-wheel-toy-car-222-250-black/24247514/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -16233,8 +16233,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T13:30:00",
-    "fc_api_seen_at": "2026-09-25T13:30:00",
+    "fc_listed_at": "2026-09-25T13:45:00",
+    "fc_api_seen_at": "2026-09-25T13:45:00",
     "fc_trusted": true
   },
   "fc_24503322": {
@@ -17088,8 +17088,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T13:15:00",
-    "fc_api_seen_at": "2026-09-25T13:15:00",
+    "fc_listed_at": "2026-09-25T13:45:00",
+    "fc_api_seen_at": "2026-09-25T13:45:00",
     "fc_trusted": true
   },
   "fc_24248197": {
