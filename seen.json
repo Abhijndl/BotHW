@@ -2887,18 +2887,19 @@
   "fc_23354599": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 26/250 NDA Cinque Pagani ZO Die Cast Free Wheel Toy Car - Orange",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/23354599/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-26-250-nda-cinque-pagani-zo-die-cast-free-wheel-toy-car-orange/23354599/product-detail",
     "first_seen": "2026-07-20T05:45:57",
     "last_seen": "2026-09-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_trusted": true
   },
   "fc_23074618": {
     "stock": "out_of_stock",
@@ -3772,7 +3773,7 @@
   "fc_23074891": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 65 Mercury Cyclone (191/250) Die Cast Toy Car - Red",
-    "price": "₹163",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-65-mercury-cyclone-191-250-die-cast-toy-car-red/23074891/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -3781,8 +3782,8 @@
     "last_restock_alert": "2026-09-23T13:27:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T13:45:00",
-    "fc_api_seen_at": "2026-09-23T13:45:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_23074178": {
@@ -4719,8 +4720,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T16:15:00",
-    "fc_api_seen_at": "2026-09-25T16:15:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_22548057": {
@@ -5765,8 +5766,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T18:30:00",
-    "fc_api_seen_at": "2026-09-25T18:30:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -12618,8 +12619,8 @@
     "last_restock_alert": "2026-09-25T12:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:00:00",
-    "fc_api_seen_at": "2026-09-25T17:00:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24473516": {
@@ -13248,7 +13249,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13257,8 +13258,8 @@
     "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:00:00",
-    "fc_api_seen_at": "2026-09-25T11:00:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -13794,7 +13795,7 @@
     "fc_trusted": true
   },
   "fc_24473477": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
     "price": "₹179",
     "source": "firstcry",
@@ -13805,8 +13806,8 @@
     "last_restock_alert": "2026-09-25T05:02:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:00:00",
-    "fc_api_seen_at": "2026-09-25T18:00:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24473499": {
@@ -13991,7 +13992,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14031,8 +14032,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T15:15:00",
-    "fc_api_seen_at": "2026-09-25T15:15:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14599,8 +14600,8 @@
     "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:15:00",
-    "fc_api_seen_at": "2026-09-25T11:15:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24342823": {
@@ -15033,8 +15034,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:30:00",
-    "fc_api_seen_at": "2026-09-25T18:30:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -16588,7 +16589,7 @@
   "fc_22848390": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Team Transport Volkswagen Corrado VR6 and '67 Off Road Camaro Transport Truck Set- White / Blue",
-    "price": "₹1189",
+    "price": "₹1399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-team-transport-volkswagen-corrado-vr6-and-67-off-road-camaro-transport-truck-set-white-blue/22848390/product-detail",
     "first_seen": "2026-09-21T13:17:34",
@@ -16598,8 +16599,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T17:30:00",
-    "fc_api_seen_at": "2026-09-25T17:30:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24342827": {
@@ -16825,8 +16826,8 @@
     "last_restock_alert": "2026-09-25T09:46:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:00:00",
-    "fc_api_seen_at": "2026-09-25T10:00:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24546334": {
@@ -16904,8 +16905,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T13:45:00",
-    "fc_api_seen_at": "2026-09-25T13:45:00",
+    "fc_listed_at": "2026-09-25T18:45:00",
+    "fc_api_seen_at": "2026-09-25T18:45:00",
     "fc_trusted": true
   },
   "fc_24568707": {
