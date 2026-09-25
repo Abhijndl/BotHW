@@ -2673,9 +2673,9 @@
     "fc_trusted": true
   },
   "fc_23354597": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-09-25T07:54:28",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T09:00:00",
-    "fc_api_seen_at": "2026-09-25T09:00:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -3765,8 +3765,8 @@
     "last_restock_alert": "2026-09-24T09:41:05",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:00:00",
-    "fc_api_seen_at": "2026-09-25T08:00:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_23074891": {
@@ -10872,9 +10872,9 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_24263017": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -10883,8 +10883,8 @@
     "last_restock_alert": "2026-09-25T07:54:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:15:00",
-    "fc_api_seen_at": "2026-09-25T08:15:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_22149914": {
@@ -11479,7 +11479,7 @@
     "last_price_alert": ""
   },
   "fc_24390961": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 64 Chevy nova station wagon/Camionnette Toy Car - Black",
     "price": "₹549",
     "source": "firstcry",
@@ -11487,7 +11487,7 @@
     "first_seen": "2026-09-07T11:02:44",
     "last_seen": "2026-09-25T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T09:34:59",
+    "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T10:30:00",
@@ -11512,7 +11512,7 @@
   "fc_23076119": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Dastun 620 (128/250) Die Cast Toy Car - Orange",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dastun-620-128-250-die-cast-toy-car-orange/23076119/product-detail",
     "first_seen": "2026-09-08T04:18:36",
@@ -11521,8 +11521,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T06:00:00",
-    "fc_api_seen_at": "2026-09-25T06:00:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_23147629": {
@@ -12634,8 +12634,8 @@
     "last_restock_alert": "2026-09-22T13:08:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T06:00:00",
-    "fc_api_seen_at": "2026-09-25T06:00:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24473511": {
@@ -12987,8 +12987,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:15:00",
-    "fc_api_seen_at": "2026-09-25T10:15:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_21993931": {
@@ -13065,8 +13065,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T08:45:00",
-    "fc_api_seen_at": "2026-09-25T08:45:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13102,7 +13102,7 @@
     "fc_trusted": true
   },
   "fc_24342825": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Czinger 21c 2/5 Die-cast Car - Dark Green - Black",
     "price": "₹269",
     "source": "firstcry",
@@ -13110,11 +13110,11 @@
     "first_seen": "2026-09-17T09:03:37",
     "last_seen": "2026-09-25T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T07:06:47",
+    "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:30:00",
-    "fc_api_seen_at": "2026-09-25T08:30:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13160,8 +13160,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T10:15:00",
-    "fc_api_seen_at": "2026-09-25T10:15:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24473514": {
@@ -13246,15 +13246,15 @@
     "fc_trusted": true
   },
   "fc_24342826": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
     "last_seen": "2026-09-25T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T12:04:47",
+    "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T10:30:00",
@@ -14143,8 +14143,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T06:15:00",
-    "fc_api_seen_at": "2026-09-25T06:15:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14582,12 +14582,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T10:15:00",
-    "fc_api_seen_at": "2026-09-25T10:15:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24503331": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Czinger 21C - Green",
     "price": "₹299",
     "source": "firstcry",
@@ -14595,7 +14595,7 @@
     "first_seen": "2026-09-20T11:41:11",
     "last_seen": "2026-09-25T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T10:30:00",
@@ -15789,7 +15789,7 @@
   "fc_24248192": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-alarm-die-cast-free-wheel-toy-car-32-250-yellow/24248192/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -15814,8 +15814,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:15:00",
-    "fc_api_seen_at": "2026-09-25T10:15:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24390955": {
@@ -16886,8 +16886,8 @@
     "last_restock_alert": "2026-09-25T05:18:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:00:00",
-    "fc_api_seen_at": "2026-09-25T10:00:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24473510": {
@@ -16903,8 +16903,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T10:00:00",
-    "fc_api_seen_at": "2026-09-25T10:00:00",
+    "fc_listed_at": "2026-09-25T10:30:00",
+    "fc_api_seen_at": "2026-09-25T10:30:00",
     "fc_trusted": true
   },
   "fc_24568707": {
