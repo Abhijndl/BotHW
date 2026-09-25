@@ -10546,7 +10546,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10557,8 +10557,8 @@
     "last_restock_alert": "2026-09-24T09:47:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:00:00",
-    "fc_api_seen_at": "2026-09-24T20:00:00",
+    "fc_listed_at": "2026-09-25T07:30:00",
+    "fc_api_seen_at": "2026-09-25T07:30:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -13054,7 +13054,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13989,7 +13989,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14215,7 +14215,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
