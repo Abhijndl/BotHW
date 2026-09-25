@@ -5798,8 +5798,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T21:15:00",
-    "fc_api_seen_at": "2026-09-25T21:15:00",
+    "fc_listed_at": "2026-09-25T22:30:00",
+    "fc_api_seen_at": "2026-09-25T22:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -13249,7 +13249,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13291,8 +13291,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T20:30:00",
-    "fc_api_seen_at": "2026-09-25T20:30:00",
+    "fc_listed_at": "2026-09-25T22:30:00",
+    "fc_api_seen_at": "2026-09-25T22:30:00",
     "fc_trusted": true
   },
   "fc_24514783": {
