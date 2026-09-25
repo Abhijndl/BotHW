@@ -12396,8 +12396,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:45:00",
-    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_listed_at": "2026-09-25T20:00:00",
+    "fc_api_seen_at": "2026-09-25T20:00:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -15018,8 +15018,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T14:30:00",
-    "fc_api_seen_at": "2026-09-24T14:30:00",
+    "fc_listed_at": "2026-09-25T20:00:00",
+    "fc_api_seen_at": "2026-09-25T20:00:00",
     "fc_trusted": true
   },
   "fc_24247501": {
@@ -16739,7 +16739,7 @@
     "last_price_alert": ""
   },
   "mg_37609c85-ae03-460a-b86a-f348fb17b98d": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "[Blister] MiniGT 1252 Nissan Skyline GTR Brain O'Conner",
     "price": "₹1799",
     "source": "minifygram",
