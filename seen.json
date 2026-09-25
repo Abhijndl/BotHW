@@ -2913,8 +2913,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T10:00:00",
-    "fc_api_seen_at": "2026-09-25T10:00:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -4276,7 +4276,7 @@
   "fc_24007870": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Ford Ranger Raptor Diecast Model Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-ford-ranger-raptor-diecast-model-car-grey/24007870/product-detail",
     "first_seen": "2026-07-26T04:41:50",
@@ -4332,8 +4332,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:45:00",
-    "fc_api_seen_at": "2026-09-25T10:45:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_24007869": {
@@ -4640,8 +4640,8 @@
     "last_restock_alert": "2026-09-25T09:14:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:30:00",
-    "fc_api_seen_at": "2026-09-25T10:30:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -10558,8 +10558,8 @@
     "last_restock_alert": "2026-09-24T09:47:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:45:00",
-    "fc_api_seen_at": "2026-09-25T08:45:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -10843,7 +10843,7 @@
     "fc_trusted": true
   },
   "fc_23074883": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Tooned Volswagen golf MK1 (172/250) Toy Car - White/Red",
     "price": "₹163",
     "source": "firstcry",
@@ -10851,11 +10851,11 @@
     "first_seen": "2026-09-04T05:24:37",
     "last_seen": "2026-09-25T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T12:06:41",
+    "last_restock_alert": "2026-09-25T11:04:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T14:00:00",
-    "fc_api_seen_at": "2026-09-23T14:00:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_16244226": {
@@ -12561,7 +12561,7 @@
   "fc_24473512": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13016,8 +13016,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:45:00",
-    "fc_api_seen_at": "2026-09-25T10:45:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_21181132": {
@@ -13615,7 +13615,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24342830": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1993 Honda Civic Coupe Ex Ej1 Car - L - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13627,8 +13627,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T16:30:00",
-    "fc_api_seen_at": "2026-09-24T16:30:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -14018,7 +14018,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24514774": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Toyota Land Cruiser 80 Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -14026,7 +14026,7 @@
     "first_seen": "2026-09-19T10:57:04",
     "last_seen": "2026-09-25T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T11:36:01",
+    "last_restock_alert": "2026-09-25T11:04:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -14299,7 +14299,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14603,15 +14603,15 @@
     "fc_trusted": true
   },
   "fc_24342823": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Lamborghini Veneno Die-cast Model Car - Black",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-lamborghini-veneno-die-cast-model-car-black/24342823/product-detail",
     "first_seen": "2026-09-20T12:21:18",
     "last_seen": "2026-09-25T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T16:12:52",
+    "last_restock_alert": "2026-09-25T11:04:28",
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -15032,8 +15032,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:45:00",
-    "fc_api_seen_at": "2026-09-25T10:45:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15459,8 +15459,8 @@
     "last_restock_alert": "2026-09-22T07:09:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:45:00",
-    "fc_api_seen_at": "2026-09-25T10:45:00",
+    "fc_listed_at": "2026-09-25T11:00:00",
+    "fc_api_seen_at": "2026-09-25T11:00:00",
     "fc_trusted": true
   },
   "fc_22548076": {
