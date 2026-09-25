@@ -3753,9 +3753,9 @@
     "fc_trusted": true
   },
   "fc_23354596": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-250-austin-mini-copper-toy-car-red/23354596/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -3834,7 +3834,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹175",
+    "price": "₹163",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -10277,18 +10277,19 @@
   "fc_24248203": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Toy Car (190/250) Toyota Supra 82 Free Wheel - Grey",
-    "price": "₹82",
+    "price": "₹161",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/24248203/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-190-250-toyota-supra-82-free-wheel-grey/24248203/product-detail",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-09-25T07:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-04T18:36:37",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_listed_at": "2026-09-25T07:00:00",
+    "fc_api_seen_at": "2026-09-25T07:00:00",
+    "fc_trusted": true
   },
   "fc_20052941": {
     "stock": "out_of_stock",
@@ -12747,8 +12748,8 @@
     "last_restock_alert": "2026-09-21T06:46:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T06:45:00",
-    "fc_api_seen_at": "2026-09-25T06:45:00",
+    "fc_listed_at": "2026-09-25T07:00:00",
+    "fc_api_seen_at": "2026-09-25T07:00:00",
     "fc_trusted": true
   },
   "fc_23345503": {
@@ -13452,7 +13453,7 @@
   "fc_24247514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 94 Toyota Supra Die-Cast Free Wheel Toy Car (222/250) - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-94-toyota-supra-die-cast-free-wheel-toy-car-222-250-black/24247514/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -13753,8 +13754,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T06:00:00",
-    "fc_api_seen_at": "2026-09-25T06:00:00",
+    "fc_listed_at": "2026-09-25T07:00:00",
+    "fc_api_seen_at": "2026-09-25T07:00:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -13988,7 +13989,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -16922,9 +16923,9 @@
     "fc_trusted": true
   },
   "fc_23074615": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Monster high Ghoul Mobile (48/250) Toy Car - Pink/Black",
-    "price": "₹175",
+    "price": "₹163",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-monster-high-ghoul-mobile-48-250-toy-car-pink-black/23074615/product-detail",
     "first_seen": "2026-09-25T04:15:00",
