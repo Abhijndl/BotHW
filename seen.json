@@ -5765,8 +5765,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T17:00:00",
-    "fc_api_seen_at": "2026-09-25T17:00:00",
+    "fc_listed_at": "2026-09-25T17:15:00",
+    "fc_api_seen_at": "2026-09-25T17:15:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -13859,7 +13859,7 @@
     "fc_trusted": true
   },
   "fc_2235646": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
     "price": "₹584",
     "source": "firstcry",
@@ -13867,11 +13867,11 @@
     "first_seen": "2026-09-19T01:31:53",
     "last_seen": "2026-09-25T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-25T17:17:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-09-24T08:45:00",
+    "fc_listed_at": "2026-09-25T17:15:00",
+    "fc_api_seen_at": "2026-09-25T17:15:00",
     "fc_trusted": true
   },
   "fc_24525301": {
@@ -15152,7 +15152,7 @@
     "fc_trusted": true
   },
   "fc_2232876": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Twin Flame Bike - Green & Black",
     "price": "₹584",
     "source": "firstcry",
@@ -15160,11 +15160,11 @@
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-09-25T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T18:21:30",
+    "last_restock_alert": "2026-09-25T17:17:24",
     "last_price_alert": "2026-09-21T18:21:30",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-09-24T08:45:00",
+    "fc_listed_at": "2026-09-25T17:15:00",
+    "fc_api_seen_at": "2026-09-25T17:15:00",
     "fc_trusted": true
   },
   "fc_22548058": {
@@ -17107,6 +17107,22 @@
     "auto_watch": true,
     "fc_listed_at": "2026-09-25T13:45:00",
     "fc_api_seen_at": "2026-09-25T13:45:00",
+    "fc_trusted": true
+  },
+  "fc_22613240": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Die Cast Free Wheel Vehicle Toy JLG10-jA10 Scale Pack of 2 - Black",
+    "price": "₹300",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toy-jlg10-ja10-scale-pack-of-2-black/22613240/product-detail",
+    "first_seen": "2026-09-25T17:15:00",
+    "last_seen": "2026-09-25T17:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-25T17:15:00",
+    "fc_api_seen_at": "2026-09-25T17:15:00",
     "fc_trusted": true
   }
 }
