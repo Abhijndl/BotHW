@@ -9666,8 +9666,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:15:00",
-    "fc_api_seen_at": "2026-09-25T05:15:00",
+    "fc_listed_at": "2026-09-25T05:30:00",
+    "fc_api_seen_at": "2026-09-25T05:30:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -12520,8 +12520,8 @@
     "last_restock_alert": "2026-09-24T04:32:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:30:00",
+    "fc_api_seen_at": "2026-09-25T05:30:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -12653,15 +12653,15 @@
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
     "last_seen": "2026-09-25T05:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T05:02:54",
+    "last_restock_alert": "2026-09-25T05:34:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -13053,7 +13053,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13063,8 +13063,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:30:00",
+    "fc_api_seen_at": "2026-09-25T05:30:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13111,8 +13111,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T16:45:00",
-    "fc_api_seen_at": "2026-09-24T16:45:00",
+    "fc_listed_at": "2026-09-25T05:30:00",
+    "fc_api_seen_at": "2026-09-25T05:30:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13165,7 +13165,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13174,14 +13174,14 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:30:00",
+    "fc_api_seen_at": "2026-09-25T05:30:00",
     "fc_trusted": true
   },
   "fc_23811697": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Free Wheel Toy Car With Mad Drip Sweet Rides (197/250) - Pink",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-toy-car-with-mad-drip-sweet-rides-197-250-pink/23811697/product-detail",
     "first_seen": "2026-09-17T11:21:23",
@@ -13197,7 +13197,7 @@
   "fc_24342822": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -16333,7 +16333,7 @@
     "fc_trusted": true
   },
   "fc_24525296": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Chevy Silverado Driftcation Die Cast Toy Truck - Yellow/Red",
     "price": "₹549",
     "source": "firstcry",
@@ -16827,7 +16827,7 @@
     "fc_trusted": true
   },
   "fc_24546334": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Dark Red",
     "price": "₹599",
     "source": "firstcry",
