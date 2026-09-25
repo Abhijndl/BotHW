@@ -2766,7 +2766,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074885": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Track Ripper (24/250) Toy Car - Grey/Orange",
     "price": "₹163",
     "source": "firstcry",
@@ -2774,11 +2774,11 @@
     "first_seen": "2026-07-19T10:10:58",
     "last_seen": "2026-09-25T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-25T08:12:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T06:45:00",
-    "fc_api_seen_at": "2026-09-24T06:45:00",
+    "fc_listed_at": "2026-09-25T08:00:00",
+    "fc_api_seen_at": "2026-09-25T08:00:00",
     "fc_trusted": true
   },
   "fc_23074260": {
@@ -3864,7 +3864,7 @@
     "fc_trusted": true
   },
   "fc_23351187": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 129/250 Standard Kart Die Cat Free Wheel Toy Car- Mullticolor",
     "price": "₹175",
     "source": "firstcry",
@@ -3875,8 +3875,8 @@
     "last_restock_alert": "2026-09-24T16:54:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T17:15:00",
-    "fc_api_seen_at": "2026-09-24T17:15:00",
+    "fc_listed_at": "2026-09-25T08:00:00",
+    "fc_api_seen_at": "2026-09-25T08:00:00",
     "fc_trusted": true
   },
   "fc_22928007": {
@@ -13645,7 +13645,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24514773": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels BMW M3 Wagon Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -13653,7 +13653,7 @@
     "first_seen": "2026-09-18T13:41:32",
     "last_seen": "2026-09-25T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T08:17:01",
+    "last_restock_alert": "2026-09-25T08:12:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16693,8 +16693,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T16:15:00",
-    "fc_api_seen_at": "2026-09-23T16:15:00",
+    "fc_listed_at": "2026-09-25T08:00:00",
+    "fc_api_seen_at": "2026-09-25T08:00:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
