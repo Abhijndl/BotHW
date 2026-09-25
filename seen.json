@@ -5797,8 +5797,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:30:00",
-    "fc_api_seen_at": "2026-09-25T12:30:00",
+    "fc_listed_at": "2026-09-25T13:00:00",
+    "fc_api_seen_at": "2026-09-25T13:00:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -12674,7 +12674,7 @@
   "fc_24342824": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12705,7 +12705,7 @@
     "fc_trusted": true
   },
   "fc_24390970": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 2/5 Silver Series Vintage Club Aston Martin 1963 Db5 Die-cast Car - Blue",
     "price": "₹299",
     "source": "firstcry",
@@ -12785,7 +12785,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24390967": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Models 5/5 Silver Series Vintage Club Mercedes-Benz 300 SL Die-Cast Car - Pista",
     "price": "₹299",
     "source": "firstcry",
@@ -12862,8 +12862,8 @@
     "last_restock_alert": "2026-09-21T12:16:49",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:45:00",
-    "fc_api_seen_at": "2026-09-25T12:45:00",
+    "fc_listed_at": "2026-09-25T13:00:00",
+    "fc_api_seen_at": "2026-09-25T13:00:00",
     "fc_trusted": true
   },
   "fc_18313316": {
@@ -13280,7 +13280,7 @@
   "fc_24246597": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Toy Car Porsche Taycan Turbo S Free Wheel (34/250) with Realistic Design - Blue",
-    "price": "₹157",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-porsche-taycan-turbo-s-free-wheel-34-250-with-realistic-design-blue/24246597/product-detail",
     "first_seen": "2026-09-17T13:11:23",
@@ -13288,10 +13288,11 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_listed_at": "2026-09-25T13:00:00",
+    "fc_api_seen_at": "2026-09-25T13:00:00",
+    "fc_trusted": true
   },
   "fc_24514783": {
     "stock": "in_stock",
@@ -14309,8 +14310,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T12:45:00",
-    "fc_api_seen_at": "2026-09-25T12:45:00",
+    "fc_listed_at": "2026-09-25T13:00:00",
+    "fc_api_seen_at": "2026-09-25T13:00:00",
     "fc_trusted": true
   },
   "fc_24476435": {
