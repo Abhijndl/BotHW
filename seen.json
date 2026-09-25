@@ -4678,17 +4678,18 @@
   "fc_22928006": {
     "stock": "out_of_stock",
     "name": "Hot Wheel Die Cast Free Wheel Toy Car 87 Dodge D100 4/6 - Blue",
-    "price": "₹87",
+    "price": "₹179",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/22928006/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheel-die-cast-free-wheel-toy-car-87-dodge-d100-4-6-blue/22928006/product-detail",
     "first_seen": "2026-08-01T04:36:38",
     "last_seen": "2026-09-25T05:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-07T21:48:34",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
+    "fc_trusted": true
   },
   "fc_23351189": {
     "stock": "out_of_stock",
@@ -5698,8 +5699,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_24246602": {
@@ -5763,8 +5764,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T04:15:00",
-    "fc_api_seen_at": "2026-09-25T04:15:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -10912,8 +10913,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_24390944": {
@@ -10946,8 +10947,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_20052943": {
@@ -11509,7 +11510,7 @@
   "fc_23076119": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Dastun 620 (128/250) Die Cast Toy Car - Orange",
-    "price": "₹167",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dastun-620-128-250-die-cast-toy-car-orange/23076119/product-detail",
     "first_seen": "2026-09-08T04:18:36",
@@ -11566,8 +11567,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T05:45:00",
-    "fc_api_seen_at": "2026-09-24T05:45:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_21827562": {
@@ -12392,8 +12393,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T03:30:00",
-    "fc_api_seen_at": "2026-09-25T03:30:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -13937,7 +13938,7 @@
   "fc_24323023": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2699",
+    "price": "₹2999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -16311,8 +16312,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:00:00",
-    "fc_api_seen_at": "2026-09-25T05:00:00",
+    "fc_listed_at": "2026-09-25T05:15:00",
+    "fc_api_seen_at": "2026-09-25T05:15:00",
     "fc_trusted": true
   },
   "fc_24525298": {
@@ -16872,7 +16873,7 @@
     "fc_trusted": true
   },
   "fc_24568735": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple",
     "price": "₹549",
     "source": "firstcry",
@@ -16880,7 +16881,7 @@
     "first_seen": "2026-09-24T14:15:00",
     "last_seen": "2026-09-25T05:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-25T05:18:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T05:15:00",
