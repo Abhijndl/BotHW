@@ -2794,8 +2794,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "mg_1958c29c-b21a-4ead-82d6-a112c4528203": {
@@ -5499,7 +5499,7 @@
     "fc_trusted": true
   },
   "fc_23351190": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 160/250 Lotus Sport Elise Die Cat Free Wheel Toy Car- Orange",
     "price": "₹161",
     "source": "firstcry",
@@ -5510,8 +5510,8 @@
     "last_restock_alert": "2026-09-25T08:27:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:45:00",
-    "fc_api_seen_at": "2026-09-25T08:45:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24248207": {
@@ -5797,8 +5797,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T13:30:00",
-    "fc_api_seen_at": "2026-09-25T13:30:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -10558,8 +10558,8 @@
     "last_restock_alert": "2026-09-24T09:47:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T16:00:00",
-    "fc_api_seen_at": "2026-09-25T16:00:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -12522,8 +12522,8 @@
     "last_restock_alert": "2026-09-25T15:42:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -13143,8 +13143,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T16:00:00",
-    "fc_api_seen_at": "2026-09-25T16:00:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24503333": {
@@ -13789,8 +13789,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -13805,8 +13805,8 @@
     "last_restock_alert": "2026-09-25T05:02:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T16:45:00",
-    "fc_api_seen_at": "2026-09-25T16:45:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24473499": {
@@ -14112,8 +14112,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T17:00:00",
-    "fc_api_seen_at": "2026-09-25T17:00:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24546537": {
@@ -14144,8 +14144,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:45:00",
-    "fc_api_seen_at": "2026-09-25T11:45:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14440,8 +14440,8 @@
     "last_restock_alert": "2026-09-25T12:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24390952": {
@@ -14953,8 +14953,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:37:27",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24514781": {
@@ -15099,8 +15099,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_21034612": {
@@ -16460,8 +16460,8 @@
     "last_restock_alert": "2026-09-22T06:35:15",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T17:30:00",
+    "fc_api_seen_at": "2026-09-25T17:30:00",
     "fc_trusted": true
   },
   "fc_24503819": {
