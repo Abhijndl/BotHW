@@ -3753,9 +3753,9 @@
     "fc_trusted": true
   },
   "fc_23354596": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-250-austin-mini-copper-toy-car-red/23354596/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -9666,8 +9666,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T07:30:00",
-    "fc_api_seen_at": "2026-09-25T07:30:00",
+    "fc_listed_at": "2026-09-25T07:45:00",
+    "fc_api_seen_at": "2026-09-25T07:45:00",
     "fc_trusted": true
   },
   "fc_22912945": {
