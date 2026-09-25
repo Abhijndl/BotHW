@@ -9666,8 +9666,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T06:30:00",
-    "fc_api_seen_at": "2026-09-25T06:30:00",
+    "fc_listed_at": "2026-09-25T06:45:00",
+    "fc_api_seen_at": "2026-09-25T06:45:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -10609,7 +10609,7 @@
     "fc_trusted": true
   },
   "fc_23074619": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy Car - Grey/T. Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10620,8 +10620,8 @@
     "last_restock_alert": "2026-09-24T12:41:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-25T06:45:00",
+    "fc_api_seen_at": "2026-09-25T06:45:00",
     "fc_trusted": true
   },
   "fc_23353036": {
@@ -14214,7 +14214,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
