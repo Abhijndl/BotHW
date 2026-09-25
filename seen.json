@@ -3545,8 +3545,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T08:00:00",
-    "fc_api_seen_at": "2026-09-25T08:00:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_23076122": {
@@ -4419,8 +4419,8 @@
     "last_restock_alert": "2026-09-23T19:21:04",
     "last_price_alert": "2026-09-21T09:51:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:00:00",
-    "fc_api_seen_at": "2026-09-25T08:00:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_23075650": {
@@ -5493,8 +5493,8 @@
     "last_price_alert": "2026-09-17T10:35:54",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T04:15:00",
-    "fc_api_seen_at": "2026-09-25T04:15:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_23351190": {
@@ -5764,8 +5764,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T08:30:00",
-    "fc_api_seen_at": "2026-09-25T08:30:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -9666,8 +9666,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:15:00",
-    "fc_api_seen_at": "2026-09-25T08:15:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -10637,8 +10637,8 @@
     "last_restock_alert": "2026-09-22T09:27:41",
     "last_price_alert": "2026-09-22T09:27:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:15:00",
-    "fc_api_seen_at": "2026-09-25T08:15:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_23074887": {
@@ -11600,7 +11600,7 @@
     "last_price_alert": ""
   },
   "fc_22548055": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Solar Reflex (7/250) Die-Cast Toy Car - Royal Blue",
     "price": "₹167",
     "source": "firstcry",
@@ -11608,7 +11608,7 @@
     "first_seen": "2026-09-10T04:08:35",
     "last_seen": "2026-09-25T08:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T16:07:23",
+    "last_restock_alert": "2026-09-25T08:58:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T08:45:00",
@@ -12394,8 +12394,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T08:30:00",
-    "fc_api_seen_at": "2026-09-25T08:30:00",
+    "fc_listed_at": "2026-09-25T08:45:00",
+    "fc_api_seen_at": "2026-09-25T08:45:00",
     "fc_trusted": true
   },
   "fc_24476800": {
