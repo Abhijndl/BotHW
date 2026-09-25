@@ -4276,7 +4276,7 @@
   "fc_24007870": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Ford Ranger Raptor Diecast Model Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-ford-ranger-raptor-diecast-model-car-grey/24007870/product-detail",
     "first_seen": "2026-07-26T04:41:50",
@@ -5788,7 +5788,7 @@
   "fc_24246604": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 88 Mitsubishi Starion Die-Cast Free Wheel Toy Car (177/250) - White",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-88-mitsubishi-starion-die-cast-free-wheel-toy-car-177-250-white/24246604/product-detail",
     "first_seen": "2026-08-13T05:41:58",
@@ -5797,8 +5797,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:30:00",
-    "fc_api_seen_at": "2026-09-25T11:30:00",
+    "fc_listed_at": "2026-09-25T11:45:00",
+    "fc_api_seen_at": "2026-09-25T11:45:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -13102,9 +13102,9 @@
     "fc_trusted": true
   },
   "fc_24342825": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Czinger 21c 2/5 Die-cast Car - Dark Green - Black",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-czinger-21c-2-5-die-cast-car-dark-green-black/24342825/product-detail",
     "first_seen": "2026-09-17T09:03:37",
@@ -13113,8 +13113,8 @@
     "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:45:00",
-    "fc_api_seen_at": "2026-09-25T10:45:00",
+    "fc_listed_at": "2026-09-25T11:45:00",
+    "fc_api_seen_at": "2026-09-25T11:45:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13746,7 +13746,7 @@
   "fc_24514776": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-escort-die-cast-free-wheel-toy-car-blue-and-gold/24514776/product-detail",
     "first_seen": "2026-09-18T14:41:38",
@@ -13755,8 +13755,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T09:45:00",
-    "fc_api_seen_at": "2026-09-25T09:45:00",
+    "fc_listed_at": "2026-09-25T11:45:00",
+    "fc_api_seen_at": "2026-09-25T11:45:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -16840,8 +16840,8 @@
     "last_restock_alert": "2026-09-25T05:02:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:30:00",
-    "fc_api_seen_at": "2026-09-25T10:30:00",
+    "fc_listed_at": "2026-09-25T11:45:00",
+    "fc_api_seen_at": "2026-09-25T11:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
