@@ -2913,8 +2913,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T15:15:00",
-    "fc_api_seen_at": "2026-09-25T15:15:00",
+    "fc_listed_at": "2026-09-25T18:30:00",
+    "fc_api_seen_at": "2026-09-25T18:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -3432,8 +3432,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-23T12:15:00",
-    "fc_api_seen_at": "2026-09-23T12:15:00",
+    "fc_listed_at": "2026-09-25T18:30:00",
+    "fc_api_seen_at": "2026-09-25T18:30:00",
     "fc_trusted": true
   },
   "fc_23074258": {
@@ -11775,7 +11775,7 @@
   "fc_24236114": {
     "stock": "out_of_stock",
     "name": "Hot Wheels HW Test Ride Toy Car Die-Cast Vehicle Yellow & Orange",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hw-test-ride-toy-car-die-cast-vehicle-yellow-and-orange/24236114/product-detail",
     "first_seen": "2026-09-14T04:32:34",
@@ -12395,8 +12395,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:45:00",
-    "fc_api_seen_at": "2026-09-25T17:45:00",
+    "fc_listed_at": "2026-09-25T18:30:00",
+    "fc_api_seen_at": "2026-09-25T18:30:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12522,8 +12522,8 @@
     "last_restock_alert": "2026-09-25T15:42:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:00:00",
-    "fc_api_seen_at": "2026-09-25T18:00:00",
+    "fc_listed_at": "2026-09-25T18:30:00",
+    "fc_api_seen_at": "2026-09-25T18:30:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -14135,7 +14135,7 @@
   "fc_24546534": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Shy Guy B-Dasher / Intrepide Toy Car - Red",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-shy-guy-b-dasher-intrepide-toy-car-red/24546534/product-detail",
     "first_seen": "2026-09-19T16:21:38",
@@ -16549,8 +16549,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:15:00",
-    "fc_api_seen_at": "2026-09-25T17:15:00",
+    "fc_listed_at": "2026-09-25T18:30:00",
+    "fc_api_seen_at": "2026-09-25T18:30:00",
     "fc_trusted": true
   },
   "fc_23030631": {
@@ -17088,8 +17088,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:15:00",
-    "fc_api_seen_at": "2026-09-25T18:15:00",
+    "fc_listed_at": "2026-09-25T18:30:00",
+    "fc_api_seen_at": "2026-09-25T18:30:00",
     "fc_trusted": true
   },
   "fc_24248197": {
