@@ -14329,7 +14329,7 @@
     "fc_trusted": true
   },
   "fc_24473509": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
     "price": "₹179",
     "source": "firstcry",
@@ -14337,7 +14337,7 @@
     "first_seen": "2026-09-19T22:41:12",
     "last_seen": "2026-09-25T08:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T05:03:16",
+    "last_restock_alert": "2026-09-25T08:44:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T08:30:00",
@@ -14614,8 +14614,8 @@
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T07:30:00",
-    "fc_api_seen_at": "2026-09-25T07:30:00",
+    "fc_listed_at": "2026-09-25T08:30:00",
+    "fc_api_seen_at": "2026-09-25T08:30:00",
     "fc_trusted": true
   },
   "fc_24503306": {
