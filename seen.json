@@ -5673,7 +5673,7 @@
     "fc_trusted": true
   },
   "fc_23353035": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 35/250 Wattzup Die Cat Free Wheel Toy Car- Yellow",
     "price": "₹171",
     "source": "firstcry",
@@ -5681,11 +5681,11 @@
     "first_seen": "2026-08-12T14:27:02",
     "last_seen": "2026-09-25T11:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T15:36:33",
+    "last_restock_alert": "2026-09-25T11:21:11",
     "last_price_alert": "2026-09-19T17:41:09",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T20:15:00",
-    "fc_api_seen_at": "2026-09-24T20:15:00",
+    "fc_listed_at": "2026-09-25T11:15:00",
+    "fc_api_seen_at": "2026-09-25T11:15:00",
     "fc_trusted": true
   },
   "fc_24246603": {
@@ -5797,8 +5797,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T10:00:00",
-    "fc_api_seen_at": "2026-09-25T10:00:00",
+    "fc_listed_at": "2026-09-25T11:15:00",
+    "fc_api_seen_at": "2026-09-25T11:15:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -10172,7 +10172,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -11490,8 +11490,8 @@
     "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:00:00",
-    "fc_api_seen_at": "2026-09-25T11:00:00",
+    "fc_listed_at": "2026-09-25T11:15:00",
+    "fc_api_seen_at": "2026-09-25T11:15:00",
     "fc_trusted": true
   },
   "fc_23353034": {
@@ -12930,7 +12930,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -16694,8 +16694,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T08:15:00",
-    "fc_api_seen_at": "2026-09-25T08:15:00",
+    "fc_listed_at": "2026-09-25T11:15:00",
+    "fc_api_seen_at": "2026-09-25T11:15:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
@@ -16903,8 +16903,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T11:00:00",
-    "fc_api_seen_at": "2026-09-25T11:00:00",
+    "fc_listed_at": "2026-09-25T11:15:00",
+    "fc_api_seen_at": "2026-09-25T11:15:00",
     "fc_trusted": true
   },
   "fc_24568707": {
