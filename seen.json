@@ -5641,9 +5641,9 @@
     "fc_trusted": true
   },
   "fc_24194174": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle of 5 1:64 Scale Die-Cast Free Wheel Toy Cars - Multicolor",
-    "price": "₹3599",
+    "price": "₹3999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-bundle-of-5-1-64-scale-die-cast-free-wheel-toy-cars-multicolor/24194174/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5653,14 +5653,14 @@
     "last_price_alert": "2026-09-22T13:08:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T18:45:00",
-    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24194173": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5669,8 +5669,8 @@
     "last_restock_alert": "2026-09-25T18:21:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:45:00",
-    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -5766,8 +5766,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T19:00:00",
-    "fc_api_seen_at": "2026-09-25T19:00:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -12507,8 +12507,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T16:15:00",
-    "fc_api_seen_at": "2026-09-25T16:15:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -12640,15 +12640,15 @@
     "fc_trusted": true
   },
   "fc_24473511": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-09-25T19:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T08:39:44",
+    "last_restock_alert": "2026-09-25T19:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T19:15:00",
@@ -13312,9 +13312,9 @@
     "fc_trusted": true
   },
   "fc_22601081": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹764",
+    "price": "₹899",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -13323,8 +13323,8 @@
     "last_restock_alert": "2026-09-25T18:21:04",
     "last_price_alert": "2026-09-22T09:03:44",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:45:00",
-    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24503903": {
@@ -13713,7 +13713,7 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -13724,8 +13724,8 @@
     "last_restock_alert": "2026-09-25T12:22:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:30:00",
-    "fc_api_seen_at": "2026-09-25T18:30:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24503325": {
@@ -13942,7 +13942,7 @@
   "fc_24323023": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2999",
+    "price": "₹2699",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -13952,8 +13952,8 @@
     "last_price_alert": "2026-09-22T07:07:02",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T19:00:00",
-    "fc_api_seen_at": "2026-09-25T19:00:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24503315": {
@@ -14720,7 +14720,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14729,14 +14729,14 @@
     "last_restock_alert": "2026-09-23T11:36:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:30:00",
-    "fc_api_seen_at": "2026-09-25T18:30:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14745,8 +14745,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T19:00:00",
-    "fc_api_seen_at": "2026-09-25T19:00:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_22548066": {
@@ -15181,8 +15181,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T19:00:00",
-    "fc_api_seen_at": "2026-09-25T19:00:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_22548054": {
@@ -15198,8 +15198,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T19:00:00",
-    "fc_api_seen_at": "2026-09-25T19:00:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_22548053": {
@@ -16074,7 +16074,7 @@
   "fc_24390958": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16084,8 +16084,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T18:45:00",
-    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_listed_at": "2026-09-25T19:15:00",
+    "fc_api_seen_at": "2026-09-25T19:15:00",
     "fc_trusted": true
   },
   "fc_24390957": {
