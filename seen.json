@@ -17015,5 +17015,53 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_8JNqOGKp4Q": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS CAR CULTURE ROAD TRIP 2026 SET OF 5",
+    "price": "₹2745",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-car-culture-road-trip-2026-set-of-5?pid=8JNqOGKp4Q",
+    "first_seen": "2026-09-25T13:00:00",
+    "last_seen": "2026-09-25T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_P7pRJ37pjm": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS SILVER SERIES FAST AND FURIOUS TOKYO DRIFT",
+    "price": "₹1495",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-fast-and-furious-tokyo-drift%C2%A0?pid=P7pRJ37pjm",
+    "first_seen": "2026-09-25T13:00:00",
+    "last_seen": "2026-09-25T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Pqp2JaRp36": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS POP CULTURE 2024 MIX 3",
+    "price": "₹2549",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot%C2%A0wheels%C2%A0pop%C2%A0culture%C2%A02024-mix-3?pid=Pqp2JaRp36",
+    "first_seen": "2026-09-25T13:00:00",
+    "last_seen": "2026-09-25T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_e7g58kQpmv": {
+    "stock": "in_stock",
+    "name": "NEW HOT WHEELS 2026 BOULEVARD MIX 3 SET OF 5 [PRE-ORDER]",
+    "price": "₹2745",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/new-hot-wheels-2026-boulevard-mix-3%C2%A0set-of-5?pid=e7g58kQpmv",
+    "first_seen": "2026-09-25T13:00:00",
+    "last_seen": "2026-09-25T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
