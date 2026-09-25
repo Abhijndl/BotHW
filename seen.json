@@ -16,7 +16,7 @@
     "fc_trusted": true
   },
   "fc_23074884": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mailed It (168/250) Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -24,11 +24,11 @@
     "first_seen": "2026-07-19T10:01:43",
     "last_seen": "2026-09-25T15:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T05:03:16",
+    "last_restock_alert": "2026-09-25T15:26:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T07:45:00",
-    "fc_api_seen_at": "2026-09-23T07:45:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -165,8 +165,8 @@
     "last_restock_alert": "2026-09-25T12:53:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T13:30:00",
-    "fc_api_seen_at": "2026-09-25T13:30:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "mg_c54400b4-7b93-434f-8d78-b5cf97f72208": {
@@ -2767,7 +2767,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074885": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Track Ripper (24/250) Toy Car - Grey/Orange",
     "price": "₹163",
     "source": "firstcry",
@@ -2778,8 +2778,8 @@
     "last_restock_alert": "2026-09-25T08:12:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T09:15:00",
-    "fc_api_seen_at": "2026-09-25T09:15:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_23074260": {
@@ -5765,8 +5765,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T14:45:00",
-    "fc_api_seen_at": "2026-09-25T14:45:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -10517,7 +10517,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1999",
+    "price": "₹1879",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -11757,7 +11757,7 @@
     "fc_trusted": true
   },
   "fc_23081312": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG15-JA10 Pack of 2- Green & Blue",
     "price": "₹323",
     "source": "firstcry",
@@ -11765,11 +11765,11 @@
     "first_seen": "2026-09-14T04:18:41",
     "last_seen": "2026-09-25T15:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T12:38:33",
+    "last_restock_alert": "2026-09-25T15:26:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T13:15:00",
-    "fc_api_seen_at": "2026-09-24T13:15:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_24236114": {
@@ -13723,8 +13723,8 @@
     "last_restock_alert": "2026-09-25T12:22:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T15:00:00",
-    "fc_api_seen_at": "2026-09-25T15:00:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_24503325": {
@@ -13756,8 +13756,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T15:00:00",
-    "fc_api_seen_at": "2026-09-25T15:00:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14382,7 +14382,7 @@
   "fc_24475755": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -15033,8 +15033,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T14:45:00",
-    "fc_api_seen_at": "2026-09-25T14:45:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -16257,14 +16257,14 @@
   "fc_24503314": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Mighty - Grey",
-    "price": "₹399",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-mighty-grey/24503314/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-09-25T15:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-21T16:28:50",
-    "last_price_alert": "",
+    "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T15:15:00",
     "fc_api_seen_at": "2026-09-25T15:15:00",
@@ -16347,8 +16347,8 @@
     "last_restock_alert": "2026-09-24T20:07:02",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T15:00:00",
-    "fc_api_seen_at": "2026-09-25T15:00:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_24525284": {
@@ -16615,8 +16615,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T15:00:00",
-    "fc_api_seen_at": "2026-09-25T15:00:00",
+    "fc_listed_at": "2026-09-25T15:15:00",
+    "fc_api_seen_at": "2026-09-25T15:15:00",
     "fc_trusted": true
   },
   "fc_24503901": {
@@ -16784,14 +16784,14 @@
   "fc_24546337": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car - Yellow",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-yellow/24546337/product-detail",
     "first_seen": "2026-09-23T12:30:00",
     "last_seen": "2026-09-25T15:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
-    "last_price_alert": "",
+    "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T15:15:00",
     "fc_api_seen_at": "2026-09-25T15:15:00",
@@ -16800,14 +16800,14 @@
   "fc_24546336": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Blue",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-blue/24546336/product-detail",
     "first_seen": "2026-09-23T12:30:00",
     "last_seen": "2026-09-25T15:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
-    "last_price_alert": "",
+    "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T15:15:00",
     "fc_api_seen_at": "2026-09-25T15:15:00",
