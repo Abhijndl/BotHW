@@ -5989,7 +5989,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -17002,5 +17002,17 @@
     "fc_listed_at": "2026-09-25T13:00:00",
     "fc_api_seen_at": "2026-09-25T13:00:00",
     "fc_trusted": true
+  },
+  "kd_BwL6GlXp4q": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS THRILL CLIMBERS SET SET OF 5 2026 [PRE-ORDER]",
+    "price": "₹2570",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-thrill-climbers-set-set-of-5-2026?pid=BwL6GlXp4q",
+    "first_seen": "2026-09-25T13:00:00",
+    "last_seen": "2026-09-25T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
