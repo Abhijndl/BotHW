@@ -4129,8 +4129,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-20T12:06:00",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:15:00",
-    "fc_api_seen_at": "2026-09-25T12:15:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_23345760": {
@@ -5765,8 +5765,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T11:45:00",
-    "fc_api_seen_at": "2026-09-25T11:45:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -9667,8 +9667,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:00:00",
-    "fc_api_seen_at": "2026-09-25T11:00:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -11370,7 +11370,7 @@
   "fc_23029590": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Forza 66 Porsche 906 Carrera 6 Die Cast Toy Car -Orange",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-forza-66-porsche-906-carrera-6-die-cast-toy-car-orange/23029590/product-detail",
     "first_seen": "2026-09-06T17:33:06",
@@ -12395,8 +12395,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:15:00",
-    "fc_api_seen_at": "2026-09-25T12:15:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -13055,7 +13055,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13065,8 +13065,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T12:15:00",
-    "fc_api_seen_at": "2026-09-25T12:15:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13464,8 +13464,8 @@
     "last_price_alert": "2026-09-21T09:34:59",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T11:45:00",
-    "fc_api_seen_at": "2026-09-25T11:45:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_24473476": {
@@ -13778,7 +13778,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -13988,7 +13988,7 @@
     "fc_trusted": true
   },
   "fc_24390949": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
     "price": "₹494",
     "source": "firstcry",
@@ -13996,7 +13996,7 @@
     "first_seen": "2026-09-19T06:47:09",
     "last_seen": "2026-09-25T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T13:47:47",
+    "last_restock_alert": "2026-09-25T12:37:34",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-25T12:30:00",
@@ -14159,8 +14159,8 @@
     "last_restock_alert": "2026-09-24T06:36:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:00:00",
-    "fc_api_seen_at": "2026-09-25T12:00:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -14428,9 +14428,9 @@
     "fc_trusted": true
   },
   "fc_24473475": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -15262,8 +15262,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:15:00",
-    "fc_api_seen_at": "2026-09-25T12:15:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_22240186": {
@@ -16363,8 +16363,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T12:15:00",
-    "fc_api_seen_at": "2026-09-25T12:15:00",
+    "fc_listed_at": "2026-09-25T12:30:00",
+    "fc_api_seen_at": "2026-09-25T12:30:00",
     "fc_trusted": true
   },
   "fc_24525283": {
