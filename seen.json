@@ -3551,7 +3551,7 @@
     "fc_trusted": true
   },
   "fc_23076122": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
     "price": "₹175",
     "source": "firstcry",
@@ -3559,11 +3559,11 @@
     "first_seen": "2026-07-20T10:51:52",
     "last_seen": "2026-09-25T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T14:49:31",
+    "last_restock_alert": "2026-09-25T15:11:13",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T15:15:00",
-    "fc_api_seen_at": "2026-09-23T15:15:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-boulevard-assorted-unisex-2y-multicolor-hzunl8d2kqv": {
@@ -4498,8 +4498,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T10:45:00",
-    "fc_api_seen_at": "2026-09-25T10:45:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -4724,7 +4724,7 @@
     "fc_trusted": true
   },
   "fc_22548057": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 8 Crate 133/250 Die-Cast Toy Car - Pink",
     "price": "₹167",
     "source": "firstcry",
@@ -4732,11 +4732,11 @@
     "first_seen": "2026-08-01T05:17:01",
     "last_seen": "2026-09-25T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T05:49:55",
+    "last_restock_alert": "2026-09-25T15:11:13",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T15:45:00",
-    "fc_api_seen_at": "2026-09-24T15:45:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "fc_22548060": {
@@ -5642,7 +5642,7 @@
   "fc_24194174": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle of 5 1:64 Scale Die-Cast Free Wheel Toy Cars - Multicolor",
-    "price": "₹3999",
+    "price": "₹3599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-bundle-of-5-1-64-scale-die-cast-free-wheel-toy-cars-multicolor/24194174/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5659,7 +5659,7 @@
   "fc_24194173": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1999",
+    "price": "₹1799",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -10611,7 +10611,7 @@
     "fc_trusted": true
   },
   "fc_23074619": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy Car - Grey/T. Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10619,11 +10619,11 @@
     "first_seen": "2026-09-02T10:52:45",
     "last_seen": "2026-09-25T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T12:41:30",
+    "last_restock_alert": "2026-09-25T15:11:13",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T07:00:00",
-    "fc_api_seen_at": "2026-09-25T07:00:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "fc_23353036": {
@@ -12506,8 +12506,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T05:30:00",
-    "fc_api_seen_at": "2026-09-25T05:30:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -14019,7 +14019,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24514774": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Land Cruiser 80 Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -14031,8 +14031,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T12:45:00",
-    "fc_api_seen_at": "2026-09-25T12:45:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -16695,8 +16695,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T12:00:00",
-    "fc_api_seen_at": "2026-09-25T12:00:00",
+    "fc_listed_at": "2026-09-25T15:00:00",
+    "fc_api_seen_at": "2026-09-25T15:00:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
