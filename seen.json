@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-09-25T07:54:28",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:45:00",
-    "fc_api_seen_at": "2026-09-26T17:45:00",
+    "fc_listed_at": "2026-09-26T18:15:00",
+    "fc_api_seen_at": "2026-09-26T18:15:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -5593,8 +5593,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:45:00",
-    "fc_api_seen_at": "2026-09-26T17:45:00",
+    "fc_listed_at": "2026-09-26T18:15:00",
+    "fc_api_seen_at": "2026-09-26T18:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-super-mario-brothers-kong-island-track-set-5y-multicolour-14543177": {
@@ -10614,7 +10614,7 @@
     "fc_trusted": true
   },
   "fc_23074619": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy Car - Grey/T. Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10622,11 +10622,11 @@
     "first_seen": "2026-09-02T10:52:45",
     "last_seen": "2026-09-26T18:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T15:11:35",
+    "last_restock_alert": "2026-09-26T18:16:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T16:15:00",
-    "fc_api_seen_at": "2026-09-25T16:15:00",
+    "fc_listed_at": "2026-09-26T18:15:00",
+    "fc_api_seen_at": "2026-09-26T18:15:00",
     "fc_trusted": true
   },
   "fc_23353036": {
@@ -12644,7 +12644,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12653,8 +12653,8 @@
     "last_restock_alert": "2026-09-25T19:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:15:00",
-    "fc_api_seen_at": "2026-09-26T17:15:00",
+    "fc_listed_at": "2026-09-26T18:15:00",
+    "fc_api_seen_at": "2026-09-26T18:15:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -16399,8 +16399,8 @@
     "last_restock_alert": "2026-09-22T17:44:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:45:00",
-    "fc_api_seen_at": "2026-09-26T17:45:00",
+    "fc_listed_at": "2026-09-26T18:15:00",
+    "fc_api_seen_at": "2026-09-26T18:15:00",
     "fc_trusted": true
   },
   "fc_24514778": {
@@ -16415,8 +16415,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:45:00",
-    "fc_api_seen_at": "2026-09-26T17:45:00",
+    "fc_listed_at": "2026-09-26T18:15:00",
+    "fc_api_seen_at": "2026-09-26T18:15:00",
     "fc_trusted": true
   },
   "fc_24504536": {
