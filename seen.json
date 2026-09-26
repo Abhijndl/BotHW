@@ -3481,8 +3481,8 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T18:15:00",
-    "fc_api_seen_at": "2026-09-26T18:15:00",
+    "fc_listed_at": "2026-09-26T18:30:00",
+    "fc_api_seen_at": "2026-09-26T18:30:00",
     "fc_trusted": true
   },
   "fc_23075644": {
@@ -12514,7 +12514,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -12522,7 +12522,7 @@
     "first_seen": "2026-09-17T04:21:12",
     "last_seen": "2026-09-26T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T15:42:26",
+    "last_restock_alert": "2026-09-26T18:31:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-26T18:30:00",
@@ -14230,8 +14230,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T17:45:00",
-    "fc_api_seen_at": "2026-09-26T17:45:00",
+    "fc_listed_at": "2026-09-26T18:30:00",
+    "fc_api_seen_at": "2026-09-26T18:30:00",
     "fc_trusted": true
   },
   "fc_24472665": {
