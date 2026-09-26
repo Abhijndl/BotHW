@@ -2592,7 +2592,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074611": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Tooned Purple Passion (148/250) Die Cast Free Wheel Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -2600,11 +2600,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-09-26T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T17:06:57",
+    "last_restock_alert": "2026-09-26T04:22:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T07:45:00",
-    "fc_api_seen_at": "2026-09-23T07:45:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "fc_23347147": {
@@ -3836,7 +3836,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹175",
+    "price": "₹163",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -4178,9 +4178,10 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
+    "fc_trusted": true
   },
   "hm_ne-car-culture-asst-vqc7uu0bogkg": {
     "stock": "in_stock",
@@ -4489,7 +4490,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -4499,8 +4500,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T18:30:00",
-    "fc_api_seen_at": "2026-09-25T18:30:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -4630,7 +4631,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23354966": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
     "price": "₹160",
     "source": "firstcry",
@@ -4641,8 +4642,8 @@
     "last_restock_alert": "2026-09-25T09:14:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T12:30:00",
-    "fc_api_seen_at": "2026-09-25T12:30:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -5676,7 +5677,7 @@
   "fc_23353035": {
     "stock": "in_stock",
     "name": "Hot Wheels 35/250 Wattzup Die Cat Free Wheel Toy Car- Yellow",
-    "price": "₹171",
+    "price": "₹160",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-35-250-wattzup-die-cat-free-wheel-toy-car-yellow/23353035/product-detail",
     "first_seen": "2026-08-12T14:27:02",
@@ -11513,7 +11514,7 @@
   "fc_23076119": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Dastun 620 (128/250) Die Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dastun-620-128-250-die-cast-toy-car-orange/23076119/product-detail",
     "first_seen": "2026-09-08T04:18:36",
@@ -13054,7 +13055,7 @@
     "fc_trusted": true
   },
   "fc_24475217": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
     "price": "₹170",
     "source": "firstcry",
@@ -13062,7 +13063,7 @@
     "first_seen": "2026-09-17T08:46:42",
     "last_seen": "2026-09-26T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T21:28:43",
+    "last_restock_alert": "2026-09-26T04:22:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -13166,9 +13167,9 @@
     "fc_trusted": true
   },
   "fc_24473514": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13249,7 +13250,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13314,7 +13315,7 @@
   "fc_22601081": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -14032,8 +14033,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-25T21:15:00",
-    "fc_api_seen_at": "2026-09-25T21:15:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14350,7 +14351,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14359,8 +14360,8 @@
     "last_restock_alert": "2026-09-25T09:14:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T19:00:00",
-    "fc_api_seen_at": "2026-09-25T19:00:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14736,7 +14737,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14842,8 +14843,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T04:00:00",
-    "fc_api_seen_at": "2026-09-26T04:00:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "fc_23835984": {
@@ -16842,8 +16843,8 @@
     "last_restock_alert": "2026-09-25T05:02:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:30:00",
-    "fc_api_seen_at": "2026-09-25T17:30:00",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
@@ -16879,7 +16880,7 @@
   "fc_24568735": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple",
-    "price": "₹549",
+    "price": "₹483",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volkswagen-drag-busm-onster-trucks-purple/24568735/product-detail",
     "first_seen": "2026-09-24T14:15:00",
@@ -17122,6 +17123,23 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-26T04:15:00",
+    "fc_api_seen_at": "2026-09-26T04:15:00",
+    "fc_trusted": true
+  },
+  "fc_22592495": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Premium 27 Kick Sauber- F1 Team Car - Green",
+    "price": "₹719",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-27-kick-sauber-f1-team-car-green/22592495/product-detail",
+    "first_seen": "2026-09-26T04:15:00",
+    "last_seen": "2026-09-26T04:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "auto_watch": true,
     "fc_listed_at": "2026-09-26T04:15:00",
     "fc_api_seen_at": "2026-09-26T04:15:00",
     "fc_trusted": true
