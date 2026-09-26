@@ -5670,8 +5670,8 @@
     "last_restock_alert": "2026-09-25T18:21:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:45:00",
-    "fc_api_seen_at": "2026-09-26T08:45:00",
+    "fc_listed_at": "2026-09-26T09:00:00",
+    "fc_api_seen_at": "2026-09-26T09:00:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -13588,7 +13588,7 @@
   "fc_21252872": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Nissan Skyline GT-R (R32) Car Toy - Red",
-    "price": "₹399",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-nissan-skyline-gt-r-r32-car-toy-red/21252872/product-detail",
     "first_seen": "2026-09-18T08:36:14",
@@ -14735,15 +14735,15 @@
     "fc_trusted": true
   },
   "fc_24504538": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
     "last_seen": "2026-09-26T09:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-26T09:12:30",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-26T09:00:00",
@@ -16235,8 +16235,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T08:45:00",
-    "fc_api_seen_at": "2026-09-26T08:45:00",
+    "fc_listed_at": "2026-09-26T09:00:00",
+    "fc_api_seen_at": "2026-09-26T09:00:00",
     "fc_trusted": true
   },
   "fc_24503322": {
@@ -16634,8 +16634,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T08:45:00",
-    "fc_api_seen_at": "2026-09-26T08:45:00",
+    "fc_listed_at": "2026-09-26T09:00:00",
+    "fc_api_seen_at": "2026-09-26T09:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
