@@ -17159,5 +17159,41 @@
     "fc_listed_at": "2026-09-26T06:45:00",
     "fc_api_seen_at": "2026-09-26T06:45:00",
     "fc_trusted": true
+  },
+  "kd_8JNqykbN4Q": {
+    "stock": "in_stock",
+    "name": "BMW M4 GT3 EVO #90 FIST TEAM AAI 2025 CHINA GT",
+    "price": "₹1699",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bmw-m4-gt3-evo-90-fist-team-aai-2025-china-gt?pid=8JNqykbN4Q",
+    "first_seen": "2026-09-26T13:45:00",
+    "last_seen": "2026-09-26T13:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_zONvj0bNBK": {
+    "stock": "in_stock",
+    "name": "HYUNDAI RN22E (VP1)",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hyundai-rn22e-vp1?pid=zONvj0bNBK",
+    "first_seen": "2026-09-26T13:45:00",
+    "last_seen": "2026-09-26T13:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GvLPeBxpod": {
+    "stock": "in_stock",
+    "name": "HYUNDAI CONCEPT N VISION 74 (VP2)",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hyundai-concept-n-vision-74-vp2?pid=GvLPeBxpod",
+    "first_seen": "2026-09-26T13:45:00",
+    "last_seen": "2026-09-26T13:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
