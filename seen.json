@@ -5906,8 +5906,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:30:00",
-    "fc_api_seen_at": "2026-09-26T08:30:00",
+    "fc_listed_at": "2026-09-26T08:45:00",
+    "fc_api_seen_at": "2026-09-26T08:45:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -11399,8 +11399,8 @@
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T08:30:00",
-    "fc_api_seen_at": "2026-09-26T08:30:00",
+    "fc_listed_at": "2026-09-26T08:45:00",
+    "fc_api_seen_at": "2026-09-26T08:45:00",
     "fc_trusted": true
   },
   "fc_21277638": {
@@ -12627,7 +12627,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13169,7 +13169,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -16150,8 +16150,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:30:00",
-    "fc_api_seen_at": "2026-09-26T08:30:00",
+    "fc_listed_at": "2026-09-26T08:45:00",
+    "fc_api_seen_at": "2026-09-26T08:45:00",
     "fc_trusted": true
   },
   "fc_24503335": {
@@ -16843,8 +16843,8 @@
     "last_restock_alert": "2026-09-25T05:02:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:30:00",
-    "fc_api_seen_at": "2026-09-26T08:30:00",
+    "fc_listed_at": "2026-09-26T08:45:00",
+    "fc_api_seen_at": "2026-09-26T08:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
