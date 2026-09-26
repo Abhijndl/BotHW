@@ -2897,8 +2897,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T05:00:00",
-    "fc_api_seen_at": "2026-09-26T05:00:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_23074618": {
@@ -3755,9 +3755,9 @@
     "fc_trusted": true
   },
   "fc_23354596": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
-    "price": "₹150",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-250-austin-mini-copper-toy-car-red/23354596/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -5783,8 +5783,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T11:42:13",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T07:15:00",
-    "fc_api_seen_at": "2026-09-26T07:15:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_24246604": {
@@ -5799,8 +5799,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T05:45:00",
-    "fc_api_seen_at": "2026-09-26T05:45:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -10528,8 +10528,8 @@
     "last_restock_alert": "2026-09-24T13:03:41",
     "last_price_alert": "2026-09-22T12:16:58",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T07:15:00",
-    "fc_api_seen_at": "2026-09-26T07:15:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_23700381": {
@@ -11492,8 +11492,8 @@
     "last_restock_alert": "2026-09-25T10:32:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T07:15:00",
-    "fc_api_seen_at": "2026-09-26T07:15:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_23353034": {
@@ -13292,8 +13292,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T07:00:00",
-    "fc_api_seen_at": "2026-09-26T07:00:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -13457,7 +13457,7 @@
   "fc_24247514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 94 Toyota Supra Die-Cast Free Wheel Toy Car (222/250) - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-94-toyota-supra-die-cast-free-wheel-toy-car-222-250-black/24247514/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -14114,8 +14114,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T07:15:00",
-    "fc_api_seen_at": "2026-09-26T07:15:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_24546537": {
@@ -15035,8 +15035,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T06:45:00",
-    "fc_api_seen_at": "2026-09-26T06:45:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -16034,8 +16034,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T07:15:00",
-    "fc_api_seen_at": "2026-09-26T07:15:00",
+    "fc_listed_at": "2026-09-26T07:30:00",
+    "fc_api_seen_at": "2026-09-26T07:30:00",
     "fc_trusted": true
   },
   "fc_24390962": {
@@ -16894,7 +16894,7 @@
     "fc_trusted": true
   },
   "fc_24473510": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
     "price": "₹166",
     "source": "firstcry",
