@@ -1822,7 +1822,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_42002edf-d3e9-43dd-b643-a81947470019": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Honda Civic Custom",
     "price": "₹249",
     "source": "minifygram",
@@ -1830,7 +1830,7 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-09-26T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T04:21:31",
+    "last_restock_alert": "2026-09-26T06:51:24",
     "last_price_alert": "",
     "mg_updated_at": "2026-06-13T06:53:20.819965+00:00",
     "stock_ver": "mg_skus_v1"
