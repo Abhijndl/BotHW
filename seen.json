@@ -5670,8 +5670,8 @@
     "last_restock_alert": "2026-09-25T18:21:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T12:30:00",
-    "fc_api_seen_at": "2026-09-26T12:30:00",
+    "fc_listed_at": "2026-09-26T12:45:00",
+    "fc_api_seen_at": "2026-09-26T12:45:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -12719,8 +12719,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T12:30:00",
-    "fc_api_seen_at": "2026-09-26T12:30:00",
+    "fc_listed_at": "2026-09-26T12:45:00",
+    "fc_api_seen_at": "2026-09-26T12:45:00",
     "fc_trusted": true
   },
   "fc_24313540": {
@@ -13055,9 +13055,9 @@
     "fc_trusted": true
   },
   "fc_24475217": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14040,7 +14040,7 @@
   "fc_24342832": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Yellow",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-yellow/24342832/product-detail",
     "first_seen": "2026-09-19T11:42:14",
@@ -14049,8 +14049,8 @@
     "last_restock_alert": "2026-09-23T05:17:52",
     "last_price_alert": "2026-09-21T15:56:48",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T12:30:00",
-    "fc_api_seen_at": "2026-09-26T12:30:00",
+    "fc_listed_at": "2026-09-26T12:45:00",
+    "fc_api_seen_at": "2026-09-26T12:45:00",
     "fc_trusted": true
   },
   "fc_24342831": {
@@ -14319,7 +14319,7 @@
   "fc_24476435": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -17140,8 +17140,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T09:30:00",
-    "fc_api_seen_at": "2026-09-26T09:30:00",
+    "fc_listed_at": "2026-09-26T12:45:00",
+    "fc_api_seen_at": "2026-09-26T12:45:00",
     "fc_trusted": true
   },
   "fc_24247512": {
