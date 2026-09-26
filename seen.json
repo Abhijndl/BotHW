@@ -154,7 +154,7 @@
     "fc_trusted": true
   },
   "fc_22600382": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "₹764",
     "source": "firstcry",
@@ -162,11 +162,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-09-26T17:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T12:53:26",
+    "last_restock_alert": "2026-09-26T17:44:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T07:00:00",
-    "fc_api_seen_at": "2026-09-26T07:00:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "mg_c54400b4-7b93-434f-8d78-b5cf97f72208": {
@@ -4490,7 +4490,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -4500,8 +4500,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T16:30:00",
-    "fc_api_seen_at": "2026-09-26T16:30:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -5654,8 +5654,8 @@
     "last_price_alert": "2026-09-22T13:08:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T17:15:00",
-    "fc_api_seen_at": "2026-09-26T17:15:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "fc_24194173": {
@@ -12627,7 +12627,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13099,8 +13099,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:15:00",
-    "fc_api_seen_at": "2026-09-26T17:15:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "fc_24342825": {
@@ -14229,8 +14229,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T17:15:00",
-    "fc_api_seen_at": "2026-09-26T17:15:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14763,8 +14763,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T17:15:00",
-    "fc_api_seen_at": "2026-09-26T17:15:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "fc_23835983": {
@@ -16398,8 +16398,8 @@
     "last_restock_alert": "2026-09-22T17:44:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T17:15:00",
-    "fc_api_seen_at": "2026-09-26T17:15:00",
+    "fc_listed_at": "2026-09-26T17:30:00",
+    "fc_api_seen_at": "2026-09-26T17:30:00",
     "fc_trusted": true
   },
   "fc_24514778": {
