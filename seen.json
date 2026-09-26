@@ -3773,7 +3773,7 @@
   "fc_23074891": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 65 Mercury Cyclone (191/250) Die Cast Toy Car - Red",
-    "price": "₹167",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-65-mercury-cyclone-191-250-die-cast-toy-car-red/23074891/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -5642,9 +5642,9 @@
     "fc_trusted": true
   },
   "fc_24194174": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle of 5 1:64 Scale Die-Cast Free Wheel Toy Cars - Multicolor",
-    "price": "₹3599",
+    "price": "₹3999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-bundle-of-5-1-64-scale-die-cast-free-wheel-toy-cars-multicolor/24194174/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5661,7 +5661,7 @@
   "fc_24194173": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -12027,7 +12027,7 @@
   "fc_24248201": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Bully Goat Die-Cast Free Wheel Toy Car (206/250) - Red",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bully-goat-die-cast-free-wheel-toy-car-206-250-red/24248201/product-detail",
     "first_seen": "2026-09-15T06:12:41",
@@ -13749,7 +13749,7 @@
   "fc_24514776": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-escort-die-cast-free-wheel-toy-car-blue-and-gold/24514776/product-detail",
     "first_seen": "2026-09-18T14:41:38",
@@ -13758,8 +13758,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T04:15:00",
-    "fc_api_seen_at": "2026-09-26T04:15:00",
+    "fc_listed_at": "2026-09-26T06:30:00",
+    "fc_api_seen_at": "2026-09-26T06:30:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14121,7 +14121,7 @@
   "fc_24546537": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Baby Peach Pipe Frame Retro - Pink",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-baby-peach-pipe-frame-retro-pink/24546537/product-detail",
     "first_seen": "2026-09-19T16:21:38",
@@ -14302,7 +14302,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14349,9 +14349,9 @@
     "fc_trusted": true
   },
   "fc_24473474": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -15035,8 +15035,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T06:15:00",
-    "fc_api_seen_at": "2026-09-26T06:15:00",
+    "fc_listed_at": "2026-09-26T06:30:00",
+    "fc_api_seen_at": "2026-09-26T06:30:00",
     "fc_trusted": true
   },
   "fc_21966060": {
