@@ -1822,7 +1822,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_42002edf-d3e9-43dd-b643-a81947470019": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Honda Civic Custom",
     "price": "₹249",
     "source": "minifygram",
@@ -5991,7 +5991,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
