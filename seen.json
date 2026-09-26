@@ -5906,8 +5906,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T16:30:00",
-    "fc_api_seen_at": "2026-09-26T16:30:00",
+    "fc_listed_at": "2026-09-26T16:45:00",
+    "fc_api_seen_at": "2026-09-26T16:45:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -13099,8 +13099,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T16:30:00",
-    "fc_api_seen_at": "2026-09-26T16:30:00",
+    "fc_listed_at": "2026-09-26T16:45:00",
+    "fc_api_seen_at": "2026-09-26T16:45:00",
     "fc_trusted": true
   },
   "fc_24342825": {
@@ -15010,7 +15010,7 @@
   "fc_24537351": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 68 Mercury Cougar (231/250) Toy Car - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-231-250-toy-car-purple/24537351/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15019,8 +15019,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:30:00",
-    "fc_api_seen_at": "2026-09-26T08:30:00",
+    "fc_listed_at": "2026-09-26T16:45:00",
+    "fc_api_seen_at": "2026-09-26T16:45:00",
     "fc_trusted": true
   },
   "fc_24247501": {
@@ -16398,8 +16398,8 @@
     "last_restock_alert": "2026-09-22T17:44:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T16:30:00",
-    "fc_api_seen_at": "2026-09-26T16:30:00",
+    "fc_listed_at": "2026-09-26T16:45:00",
+    "fc_api_seen_at": "2026-09-26T16:45:00",
     "fc_trusted": true
   },
   "fc_24514778": {
