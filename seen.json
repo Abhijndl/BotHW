@@ -5659,9 +5659,9 @@
     "fc_trusted": true
   },
   "fc_24194173": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5670,8 +5670,8 @@
     "last_restock_alert": "2026-09-25T18:21:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T12:00:00",
-    "fc_api_seen_at": "2026-09-26T12:00:00",
+    "fc_listed_at": "2026-09-26T12:15:00",
+    "fc_api_seen_at": "2026-09-26T12:15:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -12627,7 +12627,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -14033,8 +14033,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T11:45:00",
-    "fc_api_seen_at": "2026-09-26T11:45:00",
+    "fc_listed_at": "2026-09-26T12:15:00",
+    "fc_api_seen_at": "2026-09-26T12:15:00",
     "fc_trusted": true
   },
   "fc_24342832": {
