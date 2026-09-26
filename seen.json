@@ -9669,8 +9669,8 @@
     "last_restock_alert": "2026-09-23T01:39:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:15:00",
-    "fc_api_seen_at": "2026-09-26T08:15:00",
+    "fc_listed_at": "2026-09-26T08:30:00",
+    "fc_api_seen_at": "2026-09-26T08:30:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -12652,8 +12652,8 @@
     "last_restock_alert": "2026-09-25T19:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T08:00:00",
-    "fc_api_seen_at": "2026-09-26T08:00:00",
+    "fc_listed_at": "2026-09-26T08:30:00",
+    "fc_api_seen_at": "2026-09-26T08:30:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -14121,7 +14121,7 @@
   "fc_24546537": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Baby Peach Pipe Frame Retro - Pink",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-baby-peach-pipe-frame-retro-pink/24546537/product-detail",
     "first_seen": "2026-09-19T16:21:38",
@@ -14130,8 +14130,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T07:30:00",
-    "fc_api_seen_at": "2026-09-26T07:30:00",
+    "fc_listed_at": "2026-09-26T08:30:00",
+    "fc_api_seen_at": "2026-09-26T08:30:00",
     "fc_trusted": true
   },
   "fc_24546534": {
@@ -14146,8 +14146,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T07:00:00",
-    "fc_api_seen_at": "2026-09-26T07:00:00",
+    "fc_listed_at": "2026-09-26T08:30:00",
+    "fc_api_seen_at": "2026-09-26T08:30:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14219,7 +14219,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16634,8 +16634,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T08:15:00",
-    "fc_api_seen_at": "2026-09-26T08:15:00",
+    "fc_listed_at": "2026-09-26T08:30:00",
+    "fc_api_seen_at": "2026-09-26T08:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
@@ -16655,7 +16655,7 @@
   "fc_24476887": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
