@@ -4012,7 +4012,7 @@
   "fc_23075645": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-17-audi-rs-6-avant-66-250-die-cast-toy-car-grey/23075645/product-detail",
     "first_seen": "2026-07-22T06:56:40",
@@ -4445,7 +4445,7 @@
   "fc_22548064": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Yellow",
-    "price": "₹179",
+    "price": "₹160",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-yellow/22548064/product-detail",
     "first_seen": "2026-07-28T17:02:20",
@@ -5992,7 +5992,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -12800,8 +12800,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T13:15:00",
-    "fc_api_seen_at": "2026-09-26T13:15:00",
+    "fc_listed_at": "2026-09-26T18:45:00",
+    "fc_api_seen_at": "2026-09-26T18:45:00",
     "fc_trusted": true
   },
   "fc_24390968": {
@@ -16076,7 +16076,7 @@
   "fc_24390958": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16573,7 +16573,7 @@
     "fc_trusted": true
   },
   "fc_23074265": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Kick Sauber F1 Team/Equipe (154/250) Toy Car - Black",
     "price": "₹161",
     "source": "firstcry",
@@ -16583,9 +16583,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T11:30:00",
-    "fc_api_seen_at": "2026-09-21T11:30:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-26T18:45:00",
+    "fc_api_seen_at": "2026-09-26T18:45:00",
     "fc_trusted": true
   },
   "fc_22848390": {
