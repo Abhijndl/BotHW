@@ -16,7 +16,7 @@
     "fc_trusted": true
   },
   "fc_23074884": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mailed It (168/250) Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -24,11 +24,11 @@
     "first_seen": "2026-07-19T10:01:43",
     "last_seen": "2026-09-27T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T15:26:30",
+    "last_restock_alert": "2026-09-27T07:41:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:30:00",
-    "fc_api_seen_at": "2026-09-25T18:30:00",
+    "fc_listed_at": "2026-09-27T07:30:00",
+    "fc_api_seen_at": "2026-09-27T07:30:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -2641,7 +2641,7 @@
     "fc_trusted": true
   },
   "fc_23075649": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
     "price": "₹175",
     "source": "firstcry",
@@ -2649,11 +2649,11 @@
     "first_seen": "2026-07-18T08:22:19",
     "last_seen": "2026-09-27T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T15:05:56",
+    "last_restock_alert": "2026-09-27T07:41:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T17:00:00",
-    "fc_api_seen_at": "2026-09-23T17:00:00",
+    "fc_listed_at": "2026-09-27T07:30:00",
+    "fc_api_seen_at": "2026-09-27T07:30:00",
     "fc_trusted": true
   },
   "fc_23075651": {
@@ -3070,7 +3070,7 @@
     "last_restock_alert": "2026-09-25T17:01:58",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-26T08:30:00"
+    "hm_verified_at": "2026-09-27T07:30:00"
   },
   "hm_ne-championship-trackset-asst-wgtxsbsysnlw": {
     "stock": "in_stock",
@@ -10537,7 +10537,7 @@
   "fc_23700381": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Euro Style Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1999",
+    "price": "₹1879",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-euro-style-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700381/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -13036,8 +13036,8 @@
     "last_restock_alert": "2026-09-21T12:31:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T06:30:00",
-    "fc_api_seen_at": "2026-09-27T06:30:00",
+    "fc_listed_at": "2026-09-27T07:30:00",
+    "fc_api_seen_at": "2026-09-27T07:30:00",
     "fc_trusted": true
   },
   "fc_24473388": {
@@ -13317,7 +13317,7 @@
   "fc_22601081": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -13554,7 +13554,7 @@
     "fc_trusted": true
   },
   "fc_24342829": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mazda Rx-7 Car - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13566,8 +13566,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T06:15:00",
-    "fc_api_seen_at": "2026-09-27T06:15:00",
+    "fc_listed_at": "2026-09-27T07:30:00",
+    "fc_api_seen_at": "2026-09-27T07:30:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -14353,7 +14353,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14419,7 +14419,7 @@
   "fc_24476804": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -16075,20 +16075,20 @@
     "fc_trusted": true
   },
   "fc_24390958": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-09-27T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-27T07:41:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T07:00:00",
-    "fc_api_seen_at": "2026-09-27T07:00:00",
+    "fc_listed_at": "2026-09-27T07:30:00",
+    "fc_api_seen_at": "2026-09-27T07:30:00",
     "fc_trusted": true
   },
   "fc_24390957": {
@@ -16585,8 +16585,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T19:15:00",
-    "fc_api_seen_at": "2026-09-26T19:15:00",
+    "fc_listed_at": "2026-09-27T07:30:00",
+    "fc_api_seen_at": "2026-09-27T07:30:00",
     "fc_trusted": true
   },
   "fc_22848390": {
