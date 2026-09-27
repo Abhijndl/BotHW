@@ -10551,7 +10551,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10559,11 +10559,11 @@
     "first_seen": "2026-09-02T05:28:35",
     "last_seen": "2026-09-27T13:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-26T05:01:55",
+    "last_restock_alert": "2026-09-27T13:46:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T01:30:00",
-    "fc_api_seen_at": "2026-09-27T01:30:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -10825,8 +10825,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:15:00",
-    "fc_api_seen_at": "2026-09-27T13:15:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "fc_23074263": {
@@ -12565,7 +12565,7 @@
   "fc_24473512": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12678,7 +12678,7 @@
   "fc_24342824": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13117,8 +13117,8 @@
     "last_restock_alert": "2026-09-27T05:17:40",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T12:15:00",
-    "fc_api_seen_at": "2026-09-27T12:15:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -14035,8 +14035,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:15:00",
-    "fc_api_seen_at": "2026-09-27T13:15:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14083,8 +14083,8 @@
     "last_restock_alert": "2026-09-22T11:50:17",
     "last_price_alert": "2026-09-22T11:50:17",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T13:15:00",
-    "fc_api_seen_at": "2026-09-27T13:15:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "fc_24342870": {
@@ -14396,8 +14396,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:15:00",
-    "fc_api_seen_at": "2026-09-27T13:15:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "fc_24473732": {
@@ -15348,8 +15348,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T13:15:00",
-    "fc_api_seen_at": "2026-09-27T13:15:00",
+    "fc_listed_at": "2026-09-27T13:45:00",
+    "fc_api_seen_at": "2026-09-27T13:45:00",
     "fc_trusted": true
   },
   "fc_23029911": {
