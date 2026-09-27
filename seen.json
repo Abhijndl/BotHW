@@ -3488,7 +3488,7 @@
   "fc_23075644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cadillac Celestiq (163/250) Die Cast Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cadillac-celestiq-163-250-die-cast-toy-car-blue/23075644/product-detail",
     "first_seen": "2026-07-20T09:47:06",
@@ -3497,8 +3497,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T05:45:00",
-    "fc_api_seen_at": "2026-09-27T05:45:00",
+    "fc_listed_at": "2026-09-27T09:45:00",
+    "fc_api_seen_at": "2026-09-27T09:45:00",
     "fc_trusted": true
   },
   "fc_23346007": {
@@ -16075,9 +16075,9 @@
     "fc_trusted": true
   },
   "fc_24390958": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16087,8 +16087,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T07:45:00",
-    "fc_api_seen_at": "2026-09-27T07:45:00",
+    "fc_listed_at": "2026-09-27T09:45:00",
+    "fc_api_seen_at": "2026-09-27T09:45:00",
     "fc_trusted": true
   },
   "fc_24390957": {
@@ -16772,7 +16772,7 @@
   "fc_24546338": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Orange",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-orange/24546338/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16781,8 +16781,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-25T15:42:26",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T07:00:00",
-    "fc_api_seen_at": "2026-09-27T07:00:00",
+    "fc_listed_at": "2026-09-27T09:45:00",
+    "fc_api_seen_at": "2026-09-27T09:45:00",
     "fc_trusted": true
   },
   "fc_24546337": {
@@ -16845,8 +16845,8 @@
     "last_restock_alert": "2026-09-25T05:02:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T08:30:00",
-    "fc_api_seen_at": "2026-09-27T08:30:00",
+    "fc_listed_at": "2026-09-27T09:45:00",
+    "fc_api_seen_at": "2026-09-27T09:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
