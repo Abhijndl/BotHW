@@ -4438,8 +4438,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_22548064": {
@@ -5613,7 +5613,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-premium-fast-furious-bundle-for-boys-age-3y-premium-die-cast-car-collection-96407425": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle for Boys Age 3Y+ | Premium Die-Cast Car Collection",
     "price": "₹3999",
     "source": "hamleys",
@@ -12645,7 +12645,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12654,8 +12654,8 @@
     "last_restock_alert": "2026-09-25T19:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -14035,8 +14035,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T12:30:00",
-    "fc_api_seen_at": "2026-09-27T12:30:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14221,7 +14221,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14231,8 +14231,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -16036,8 +16036,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_24390962": {
