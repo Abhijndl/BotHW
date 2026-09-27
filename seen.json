@@ -4490,7 +4490,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -4663,7 +4663,7 @@
     "fc_trusted": true
   },
   "fc_22548052": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Deora ll (18/250) Die-Cast Toy Car - Light Pink",
     "price": "₹167",
     "source": "firstcry",
@@ -4671,11 +4671,11 @@
     "first_seen": "2026-08-01T04:36:38",
     "last_seen": "2026-09-27T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-27T05:48:42",
     "last_price_alert": "2026-09-17T16:01:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:45:00",
-    "fc_api_seen_at": "2026-09-25T05:45:00",
+    "fc_listed_at": "2026-09-27T05:45:00",
+    "fc_api_seen_at": "2026-09-27T05:45:00",
     "fc_trusted": true
   },
   "fc_22928006": {
@@ -17204,6 +17204,22 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg13-ja10-pack-of-2-brown-and-green/22623491/product-detail",
     "first_seen": "2026-09-27T04:00:00",
+    "last_seen": "2026-09-27T05:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-27T05:45:00",
+    "fc_api_seen_at": "2026-09-27T05:45:00",
+    "fc_trusted": true
+  },
+  "fc_23835987": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Blue",
+    "price": "₹411",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mega-wrex-die-cast-free-wheel-free-style-dem-derby-monster-toy-truck-blue/23835987/product-detail",
+    "first_seen": "2026-09-27T05:45:00",
     "last_seen": "2026-09-27T05:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
