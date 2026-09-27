@@ -5993,7 +5993,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -10615,7 +10615,7 @@
     "fc_trusted": true
   },
   "fc_23074619": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy Car - Grey/T. Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10626,8 +10626,8 @@
     "last_restock_alert": "2026-09-26T18:16:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T19:00:00",
-    "fc_api_seen_at": "2026-09-26T19:00:00",
+    "fc_listed_at": "2026-09-27T10:15:00",
+    "fc_api_seen_at": "2026-09-27T10:15:00",
     "fc_trusted": true
   },
   "fc_23353036": {
