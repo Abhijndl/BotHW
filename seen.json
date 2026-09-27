@@ -13266,15 +13266,15 @@
     "fc_trusted": true
   },
   "fc_24246605": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mod Mill Die-Cast Free Wheel Toy Car (204/250) - Black & Red",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mod-mill-die-cast-free-wheel-toy-car-204-250-black-and-red/24246605/product-detail",
     "first_seen": "2026-09-17T13:01:58",
     "last_seen": "2026-09-27T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-27T11:02:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-27T11:00:00",
