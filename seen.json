@@ -9659,7 +9659,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_23930405": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -9667,11 +9667,11 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-09-27T01:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-23T01:39:51",
+    "last_restock_alert": "2026-09-27T01:40:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T21:30:00",
-    "fc_api_seen_at": "2026-09-26T21:30:00",
+    "fc_listed_at": "2026-09-27T01:30:00",
+    "fc_api_seen_at": "2026-09-27T01:30:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -12398,8 +12398,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T22:30:00",
-    "fc_api_seen_at": "2026-09-26T22:30:00",
+    "fc_listed_at": "2026-09-27T01:30:00",
+    "fc_api_seen_at": "2026-09-27T01:30:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -16552,8 +16552,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T22:30:00",
-    "fc_api_seen_at": "2026-09-26T22:30:00",
+    "fc_listed_at": "2026-09-27T01:30:00",
+    "fc_api_seen_at": "2026-09-27T01:30:00",
     "fc_trusted": true
   },
   "fc_23030631": {
@@ -17091,8 +17091,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T22:30:00",
-    "fc_api_seen_at": "2026-09-26T22:30:00",
+    "fc_listed_at": "2026-09-27T01:30:00",
+    "fc_api_seen_at": "2026-09-27T01:30:00",
     "fc_trusted": true
   },
   "fc_24248197": {
