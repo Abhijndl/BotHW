@@ -13036,8 +13036,8 @@
     "last_restock_alert": "2026-09-21T12:31:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_24473388": {
@@ -13201,9 +13201,9 @@
     "fc_trusted": true
   },
   "fc_24342822": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -13600,8 +13600,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_24035369": {
@@ -15086,8 +15086,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T13:00:00",
-    "fc_api_seen_at": "2026-09-27T13:00:00",
+    "fc_listed_at": "2026-09-27T13:15:00",
+    "fc_api_seen_at": "2026-09-27T13:15:00",
     "fc_trusted": true
   },
   "fc_21161950": {
@@ -15958,7 +15958,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16389,7 +16389,7 @@
     "fc_trusted": true
   },
   "fc_24514784": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Volkswagen Beetle Bumblebee Toy Car - Light Yellow",
     "price": "₹399",
     "source": "firstcry",
