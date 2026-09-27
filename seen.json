@@ -13632,8 +13632,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T07:15:00",
-    "fc_api_seen_at": "2026-09-27T07:15:00",
+    "fc_listed_at": "2026-09-27T12:15:00",
+    "fc_api_seen_at": "2026-09-27T12:15:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -13751,7 +13751,7 @@
   "fc_24514776": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-escort-die-cast-free-wheel-toy-car-blue-and-gold/24514776/product-detail",
     "first_seen": "2026-09-18T14:41:38",
@@ -13760,8 +13760,8 @@
     "last_restock_alert": "2026-09-22T20:41:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T12:00:00",
-    "fc_api_seen_at": "2026-09-27T12:00:00",
+    "fc_listed_at": "2026-09-27T12:15:00",
+    "fc_api_seen_at": "2026-09-27T12:15:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -13826,8 +13826,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-26T07:15:00",
-    "fc_api_seen_at": "2026-09-26T07:15:00",
+    "fc_listed_at": "2026-09-27T12:15:00",
+    "fc_api_seen_at": "2026-09-27T12:15:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -14723,7 +14723,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15316,8 +15316,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T12:00:00",
-    "fc_api_seen_at": "2026-09-27T12:00:00",
+    "fc_listed_at": "2026-09-27T12:15:00",
+    "fc_api_seen_at": "2026-09-27T12:15:00",
     "fc_trusted": true
   },
   "fc_22240177": {
@@ -16389,7 +16389,7 @@
     "fc_trusted": true
   },
   "fc_24514784": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Volkswagen Beetle Bumblebee Toy Car - Light Yellow",
     "price": "₹399",
     "source": "firstcry",
@@ -16397,7 +16397,7 @@
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-09-27T12:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T17:44:57",
+    "last_restock_alert": "2026-09-27T12:23:37",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-27T12:15:00",
