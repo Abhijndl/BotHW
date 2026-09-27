@@ -3423,7 +3423,7 @@
   "fc_23074888": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast 70 Dodge Heml Challenger (36/250) Toy Car - Black",
-    "price": "₹160",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-70-dodge-heml-challenger-36-250-toy-car-black/23074888/product-detail",
     "first_seen": "2026-07-20T08:32:04",
@@ -10185,8 +10185,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T09:00:00",
-    "fc_api_seen_at": "2026-09-27T09:00:00",
+    "fc_listed_at": "2026-09-27T09:15:00",
+    "fc_api_seen_at": "2026-09-27T09:15:00",
     "fc_trusted": true
   },
   "fc_20363367": {
@@ -11740,8 +11740,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T09:00:00",
-    "fc_api_seen_at": "2026-09-27T09:00:00",
+    "fc_listed_at": "2026-09-27T09:15:00",
+    "fc_api_seen_at": "2026-09-27T09:15:00",
     "fc_trusted": true
   },
   "fc_24246594": {
@@ -13501,8 +13501,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T09:00:00",
-    "fc_api_seen_at": "2026-09-27T09:00:00",
+    "fc_listed_at": "2026-09-27T09:15:00",
+    "fc_api_seen_at": "2026-09-27T09:15:00",
     "fc_trusted": true
   },
   "fc_24473494": {
@@ -13533,8 +13533,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T09:00:00",
-    "fc_api_seen_at": "2026-09-27T09:00:00",
+    "fc_listed_at": "2026-09-27T09:15:00",
+    "fc_api_seen_at": "2026-09-27T09:15:00",
     "fc_trusted": true
   },
   "fc_24473460": {
@@ -13858,8 +13858,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T09:00:00",
-    "fc_api_seen_at": "2026-09-27T09:00:00",
+    "fc_listed_at": "2026-09-27T09:15:00",
+    "fc_api_seen_at": "2026-09-27T09:15:00",
     "fc_trusted": true
   },
   "fc_2235646": {
@@ -13943,9 +13943,9 @@
     "fc_trusted": true
   },
   "fc_24323023": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2699",
+    "price": "₹2999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -16655,19 +16655,19 @@
     "hm_verified_at": "2026-09-22T03:45:00"
   },
   "fc_24476887": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
     "last_seen": "2026-09-27T09:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-26T05:48:26",
+    "last_restock_alert": "2026-09-27T09:18:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T09:00:00",
-    "fc_api_seen_at": "2026-09-27T09:00:00",
+    "fc_listed_at": "2026-09-27T09:15:00",
+    "fc_api_seen_at": "2026-09-27T09:15:00",
     "fc_trusted": true
   },
   "fc_24248194": {
