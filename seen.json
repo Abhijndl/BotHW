@@ -4644,8 +4644,8 @@
     "last_restock_alert": "2026-09-28T06:05:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T18:45:00",
-    "fc_api_seen_at": "2026-09-28T18:45:00",
+    "fc_listed_at": "2026-09-28T20:15:00",
+    "fc_api_seen_at": "2026-09-28T20:15:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -11797,7 +11797,7 @@
   "fc_24194169": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
-    "price": "₹809",
+    "price": "₹899",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-5-pack-die-cast-toy-cars-with-free-wheel-1-64-scale-set-of-5-red/24194169/product-detail",
     "first_seen": "2026-09-14T06:24:40",
@@ -11807,8 +11807,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T07:00:00",
-    "fc_api_seen_at": "2026-09-28T07:00:00",
+    "fc_listed_at": "2026-09-28T20:15:00",
+    "fc_api_seen_at": "2026-09-28T20:15:00",
     "fc_trusted": true
   },
   "kd_ykL0eAKpRZ": {
@@ -12663,7 +12663,7 @@
   "fc_24473731": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -12810,7 +12810,7 @@
   "fc_24390968": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 4/5 Silver Series Vintage Club 73 Honda Civic Custom/Personnalise Die-cast Car - Beige",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-4-5-silver-series-vintage-club-73-honda-civic-custom-personnalise-die-cast-car-beige/24390968/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13508,9 +13508,9 @@
     "fc_trusted": true
   },
   "fc_24473494": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -13519,8 +13519,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T18:30:00",
-    "fc_api_seen_at": "2026-09-28T18:30:00",
+    "fc_listed_at": "2026-09-28T20:15:00",
+    "fc_api_seen_at": "2026-09-28T20:15:00",
     "fc_trusted": true
   },
   "fc_24476257": {
@@ -14044,7 +14044,7 @@
   "fc_24342832": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Yellow",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-yellow/24342832/product-detail",
     "first_seen": "2026-09-19T11:42:14",
@@ -14060,7 +14060,7 @@
   "fc_24342831": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Black",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-black/24342831/product-detail",
     "first_seen": "2026-09-19T13:16:10",
@@ -14069,8 +14069,8 @@
     "last_restock_alert": "2026-09-22T11:50:17",
     "last_price_alert": "2026-09-22T11:50:17",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T10:00:00",
-    "fc_api_seen_at": "2026-09-28T10:00:00",
+    "fc_listed_at": "2026-09-28T20:15:00",
+    "fc_api_seen_at": "2026-09-28T20:15:00",
     "fc_trusted": true
   },
   "fc_24342833": {
@@ -14223,7 +14223,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14322,7 +14322,7 @@
   "fc_24476435": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -14331,8 +14331,8 @@
     "last_restock_alert": "2026-09-27T14:02:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T11:00:00",
-    "fc_api_seen_at": "2026-09-28T11:00:00",
+    "fc_listed_at": "2026-09-28T20:15:00",
+    "fc_api_seen_at": "2026-09-28T20:15:00",
     "fc_trusted": true
   },
   "fc_24473509": {
@@ -15563,8 +15563,8 @@
     "last_restock_alert": "2026-09-23T22:28:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T11:00:00",
-    "fc_api_seen_at": "2026-09-28T11:00:00",
+    "fc_listed_at": "2026-09-28T20:15:00",
+    "fc_api_seen_at": "2026-09-28T20:15:00",
     "fc_trusted": true
   },
   "fc_23973353": {
@@ -15923,15 +15923,15 @@
     "fc_trusted": true
   },
   "fc_24473465": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Porsche Die Cast Free Wheel Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-porsche-die-cast-free-wheel-toy-car-orange/24473465/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-09-28T20:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-28T20:19:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16059,15 +16059,15 @@
     "fc_trusted": true
   },
   "fc_24390959": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 1993 Mercedes-Benz G-Class Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-1993-mercedes-benz-g-class-toy-car-blue/24390959/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-09-28T20:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-28T20:19:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
