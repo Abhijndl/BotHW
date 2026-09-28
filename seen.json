@@ -4459,7 +4459,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-pantone-assorted-boys-3y-multicolour-17627231": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone Assorted, Boys, 3Y+, Multicolour",
     "price": "₹299",
     "source": "hamleys",
@@ -4467,10 +4467,10 @@
     "first_seen": "2026-07-29T12:02:05",
     "last_seen": "2026-09-28T21:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-07-29T12:06:19",
+    "last_restock_alert": "2026-09-28T21:41:05",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-27T10:15:00"
+    "hm_verified_at": "2026-09-28T21:30:00"
   },
   "fc_22548073": {
     "stock": "out_of_stock",
