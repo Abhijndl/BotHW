@@ -10615,7 +10615,7 @@
     "fc_trusted": true
   },
   "fc_23074619": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy Car - Grey/T. Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10623,11 +10623,11 @@
     "first_seen": "2026-09-02T10:52:45",
     "last_seen": "2026-09-28T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-26T18:16:29",
+    "last_restock_alert": "2026-09-28T06:34:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T14:45:00",
-    "fc_api_seen_at": "2026-09-27T14:45:00",
+    "fc_listed_at": "2026-09-28T06:30:00",
+    "fc_api_seen_at": "2026-09-28T06:30:00",
     "fc_trusted": true
   },
   "fc_23353036": {
@@ -14304,7 +14304,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14314,8 +14314,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T04:45:00",
-    "fc_api_seen_at": "2026-09-28T04:45:00",
+    "fc_listed_at": "2026-09-28T06:30:00",
+    "fc_api_seen_at": "2026-09-28T06:30:00",
     "fc_trusted": true
   },
   "fc_24476435": {
