@@ -4788,8 +4788,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T07:30:00",
-    "fc_api_seen_at": "2026-09-28T07:30:00",
+    "fc_listed_at": "2026-09-28T07:45:00",
+    "fc_api_seen_at": "2026-09-28T07:45:00",
     "fc_trusted": true
   },
   "fc_22548068": {
@@ -5994,7 +5994,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -12512,8 +12512,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T21:30:00",
-    "fc_api_seen_at": "2026-09-27T21:30:00",
+    "fc_listed_at": "2026-09-28T07:45:00",
+    "fc_api_seen_at": "2026-09-28T07:45:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -14354,7 +14354,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -15185,8 +15185,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T07:30:00",
-    "fc_api_seen_at": "2026-09-28T07:30:00",
+    "fc_listed_at": "2026-09-28T07:45:00",
+    "fc_api_seen_at": "2026-09-28T07:45:00",
     "fc_trusted": true
   },
   "fc_22548054": {
@@ -17261,5 +17261,19 @@
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
     "hm_verified_at": "2026-09-28T07:45:00"
+  },
+  "mg_1ff34650-6575-4be2-ad2e-0b776667176f": {
+    "stock": "in_stock",
+    "name": "KHMG216 BMW M3 KAIDO GT V2",
+    "price": "₹1849",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/khmg216-bmw-m3-kaido-gt-v2-3",
+    "first_seen": "2026-09-28T07:45:00",
+    "last_seen": "2026-09-28T07:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-09-28T07:50:46.688836+00:00",
+    "stock_ver": "mg_skus_v1"
   }
 }
