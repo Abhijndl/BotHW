@@ -5994,7 +5994,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -17277,7 +17277,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_de787f42-481d-4673-9352-6c72d9781a19": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "KHMG161 Datsun 510 Pro Street Buta V1",
     "price": "₹1699",
     "source": "minifygram",
@@ -17289,5 +17289,65 @@
     "last_price_alert": "",
     "mg_updated_at": "2026-09-28T08:02:09.439842+00:00",
     "stock_ver": "mg_skus_v1"
+  },
+  "kd_QJgnwqwNl6": {
+    "stock": "in_stock",
+    "name": "PREORDER ASTON MARTIN AMR24 #18 LANCE STROLL BLISTER PACKAGING 2024 F1 2024 LAS VEGAS GP [PRE-ORDER]",
+    "price": "₹1949",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-18-lance-stroll-blister-packaging-2024-f1-2024-las-vegas-gp?pid=QJgnwqwNl6",
+    "first_seen": "2026-09-28T08:45:00",
+    "last_seen": "2026-09-28T08:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Pqp2mJnL36": {
+    "stock": "in_stock",
+    "name": "PREORDER ASTON MARTIN AMR24 #18 LANCE STROLL 2024 F1 2024 LAS VEGAS GP [PRE-ORDER]",
+    "price": "₹1799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-18-lance-stroll-2024-f1-2024-las-vegas-gp?pid=Pqp2mJnL36",
+    "first_seen": "2026-09-28T08:45:00",
+    "last_seen": "2026-09-28T08:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_BwL6Pr9g4q": {
+    "stock": "in_stock",
+    "name": "PREORDER ASTON MARTIN AMR24 #14 FERNANDO ALONSO BLISTER PACKAGING2024 F1 2024 LAS VEGAS GP [PRE-ORDER]",
+    "price": "₹1949",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-14-fernando-alonso-blister-packaging2024-f1-2024-las-vegas-gp?pid=BwL6Pr9g4q",
+    "first_seen": "2026-09-28T08:45:00",
+    "last_seen": "2026-09-28T08:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_eKLwYOOgv0": {
+    "stock": "in_stock",
+    "name": "PREORDER ASTON MARTIN AMR24 #14 FERNANDO ALONSO 2024 F1 2024 LAS VEGAS GP [PRE-ORDER]",
+    "price": "₹1799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-14-fernando-alonso-2024-f1-2024-las-vegas-gp?pid=eKLwYOOgv0",
+    "first_seen": "2026-09-28T08:45:00",
+    "last_seen": "2026-09-28T08:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_VbpAQZYprM": {
+    "stock": "in_stock",
+    "name": "PREORDER BUGATTI EB110 GT AZZURRO METALLIZZATO MONDIAL DE L'AUTOMOBILE 1992 BLISTER PACKAGING [PRE-ORDER]",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-bugatti-eb110-gt-azzurro-metallizzato-mondial-de-lautomobile-1992-blister-packaging?pid=VbpAQZYprM",
+    "first_seen": "2026-09-28T08:45:00",
+    "last_seen": "2026-09-28T08:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
