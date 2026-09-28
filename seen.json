@@ -3596,7 +3596,7 @@
     "hm_verified_at": "2026-09-28T16:15:00"
   },
   "hm_hot-wheels-formula-1-assorted-3y-multicolour-17124142": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Formula 1 Assorted, 3Y+, Multicolour",
     "price": "₹799",
     "source": "hamleys",
@@ -3604,10 +3604,10 @@
     "first_seen": "2026-07-20T15:21:46",
     "last_seen": "2026-09-28T16:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-16T19:32:46",
+    "last_restock_alert": "2026-09-28T16:41:03",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-23T05:15:00"
+    "hm_verified_at": "2026-09-28T16:30:00"
   },
   "fc_23345758": {
     "stock": "out_of_stock",
@@ -4225,7 +4225,7 @@
     "last_restock_alert": "2026-09-17T18:46:21",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-28T08:15:00"
+    "hm_verified_at": "2026-09-28T16:30:00"
   },
   "fc_22928009": {
     "stock": "out_of_stock",
@@ -5994,7 +5994,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -16642,18 +16642,18 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Retro Ultra Hots Vintage Die-Cast Vehicle Toys, 3Y+",
-    "price": "",
+    "price": "₹299",
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872",
     "first_seen": "2026-09-22T03:53:13",
     "last_seen": "2026-09-28T16:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-28T16:41:03",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-22T03:45:00"
+    "hm_verified_at": "2026-09-28T16:30:00"
   },
   "fc_24476887": {
     "stock": "out_of_stock",
