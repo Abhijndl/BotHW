@@ -4644,8 +4644,8 @@
     "last_restock_alert": "2026-09-28T06:05:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T12:45:00",
-    "fc_api_seen_at": "2026-09-28T12:45:00",
+    "fc_listed_at": "2026-09-28T13:30:00",
+    "fc_api_seen_at": "2026-09-28T13:30:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -11373,15 +11373,15 @@
     "hm_verified_at": "2026-09-17T09:01:51"
   },
   "fc_23029590": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Forza 66 Porsche 906 Carrera 6 Die Cast Toy Car -Orange",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-forza-66-porsche-906-carrera-6-die-cast-toy-car-orange/23029590/product-detail",
     "first_seen": "2026-09-06T17:33:06",
     "last_seen": "2026-09-28T13:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-28T13:34:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -11518,7 +11518,7 @@
   "fc_23076119": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Dastun 620 (128/250) Die Cast Toy Car - Orange",
-    "price": "₹163",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dastun-620-128-250-die-cast-toy-car-orange/23076119/product-detail",
     "first_seen": "2026-09-08T04:18:36",
@@ -12690,8 +12690,8 @@
     "last_price_alert": "2026-09-22T07:09:08",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T13:15:00",
-    "fc_api_seen_at": "2026-09-28T13:15:00",
+    "fc_listed_at": "2026-09-28T13:30:00",
+    "fc_api_seen_at": "2026-09-28T13:30:00",
     "fc_trusted": true
   },
   "fc_24314338": {
@@ -15627,8 +15627,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T13:15:00",
-    "fc_api_seen_at": "2026-09-28T13:15:00",
+    "fc_listed_at": "2026-09-28T13:30:00",
+    "fc_api_seen_at": "2026-09-28T13:30:00",
     "fc_trusted": true
   },
   "fc_24246593": {
