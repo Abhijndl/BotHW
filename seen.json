@@ -5994,7 +5994,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -13296,8 +13296,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T19:45:00",
-    "fc_api_seen_at": "2026-09-28T19:45:00",
+    "fc_listed_at": "2026-09-28T20:30:00",
+    "fc_api_seen_at": "2026-09-28T20:30:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -15349,8 +15349,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T20:15:00",
-    "fc_api_seen_at": "2026-09-28T20:15:00",
+    "fc_listed_at": "2026-09-28T20:30:00",
+    "fc_api_seen_at": "2026-09-28T20:30:00",
     "fc_trusted": true
   },
   "fc_23029911": {
@@ -15923,9 +15923,9 @@
     "fc_trusted": true
   },
   "fc_24473465": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Porsche Die Cast Free Wheel Toy Car - Orange",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-porsche-die-cast-free-wheel-toy-car-orange/24473465/product-detail",
     "first_seen": "2026-09-21T06:42:53",
