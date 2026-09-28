@@ -4422,8 +4422,8 @@
     "last_restock_alert": "2026-09-23T19:21:04",
     "last_price_alert": "2026-09-21T09:51:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T09:00:00",
-    "fc_api_seen_at": "2026-09-28T09:00:00",
+    "fc_listed_at": "2026-09-28T10:00:00",
+    "fc_api_seen_at": "2026-09-28T10:00:00",
     "fc_trusted": true
   },
   "fc_23075650": {
@@ -5994,7 +5994,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -13238,7 +13238,7 @@
   "fc_24248206": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Supercharged Die-Cast Free Wheel Toy Car (77/250) - Sky Blue",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-supercharged-die-cast-free-wheel-toy-car-77-250-sky-blue/24248206/product-detail",
     "first_seen": "2026-09-17T12:21:19",
@@ -13247,8 +13247,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T09:45:00",
-    "fc_api_seen_at": "2026-09-28T09:45:00",
+    "fc_listed_at": "2026-09-28T10:00:00",
+    "fc_api_seen_at": "2026-09-28T10:00:00",
     "fc_trusted": true
   },
   "fc_24342826": {
@@ -13363,9 +13363,9 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24342834": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Classic Tv Series The Batman Batmobile 1:64 Scale Toy Car -Black",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-classic-tv-series-the-batman-batmobile-1-64-scale-toy-car-black/24342834/product-detail",
     "first_seen": "2026-09-17T18:01:52",
@@ -13374,8 +13374,8 @@
     "last_restock_alert": "2026-09-28T09:08:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T09:15:00",
-    "fc_api_seen_at": "2026-09-28T09:15:00",
+    "fc_listed_at": "2026-09-28T10:00:00",
+    "fc_api_seen_at": "2026-09-28T10:00:00",
     "fc_trusted": true
   },
   "fc_22623489": {
@@ -14320,7 +14320,7 @@
     "fc_trusted": true
   },
   "fc_24476435": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
     "price": "₹170",
     "source": "firstcry",
@@ -14331,8 +14331,8 @@
     "last_restock_alert": "2026-09-27T14:02:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T09:00:00",
-    "fc_api_seen_at": "2026-09-28T09:00:00",
+    "fc_listed_at": "2026-09-28T10:00:00",
+    "fc_api_seen_at": "2026-09-28T10:00:00",
     "fc_trusted": true
   },
   "fc_24473509": {
