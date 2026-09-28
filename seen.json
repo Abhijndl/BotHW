@@ -12528,8 +12528,8 @@
     "last_restock_alert": "2026-09-28T08:04:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T14:15:00",
-    "fc_api_seen_at": "2026-09-28T14:15:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -13995,9 +13995,9 @@
     "fc_trusted": true
   },
   "fc_24390949": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14006,8 +14006,8 @@
     "last_restock_alert": "2026-09-28T13:51:33",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T14:15:00",
-    "fc_api_seen_at": "2026-09-28T14:15:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "mg_de59f004-41e6-4b68-8787-deed3b5edf70": {
@@ -14298,8 +14298,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T14:15:00",
-    "fc_api_seen_at": "2026-09-28T14:15:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "fc_24472644": {
@@ -14766,8 +14766,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T14:15:00",
-    "fc_api_seen_at": "2026-09-28T14:15:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "fc_23835983": {
@@ -16482,8 +16482,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T14:15:00",
-    "fc_api_seen_at": "2026-09-28T14:15:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "fc_24248200": {
@@ -16876,8 +16876,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T14:15:00",
-    "fc_api_seen_at": "2026-09-28T14:15:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "fc_24568735": {
@@ -17093,8 +17093,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T11:30:00",
-    "fc_api_seen_at": "2026-09-28T11:30:00",
+    "fc_listed_at": "2026-09-28T14:30:00",
+    "fc_api_seen_at": "2026-09-28T14:30:00",
     "fc_trusted": true
   },
   "fc_24248197": {
