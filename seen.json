@@ -4071,7 +4071,7 @@
     "last_restock_alert": "2026-09-21T14:09:08",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-22T16:00:00"
+    "hm_verified_at": "2026-09-28T07:15:00"
   },
   "fc_23345757": {
     "stock": "out_of_stock",
@@ -4195,7 +4195,7 @@
     "last_restock_alert": "2026-09-18T13:21:40",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-21T18:45:00"
+    "hm_verified_at": "2026-09-28T07:15:00"
   },
   "fc_24007866": {
     "stock": "out_of_stock",
@@ -4225,7 +4225,7 @@
     "last_restock_alert": "2026-09-17T18:46:21",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-26T10:45:00"
+    "hm_verified_at": "2026-09-28T07:15:00"
   },
   "fc_22928009": {
     "stock": "out_of_stock",
@@ -5864,7 +5864,7 @@
     "last_restock_alert": "2026-09-19T06:07:09",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-26T18:15:00"
+    "hm_verified_at": "2026-09-28T07:15:00"
   },
   "fc_24247503": {
     "stock": "out_of_stock",
@@ -10440,7 +10440,7 @@
     "last_restock_alert": "2026-09-22T03:55:59",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-27T10:00:00"
+    "hm_verified_at": "2026-09-28T07:15:00"
   },
   "fc_21497092": {
     "stock": "in_stock",
@@ -12528,8 +12528,8 @@
     "last_restock_alert": "2026-09-26T18:31:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T07:00:00",
-    "fc_api_seen_at": "2026-09-28T07:00:00",
+    "fc_listed_at": "2026-09-28T07:15:00",
+    "fc_api_seen_at": "2026-09-28T07:15:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -17247,5 +17247,19 @@
     "fc_listed_at": "2026-09-28T07:15:00",
     "fc_api_seen_at": "2026-09-28T07:15:00",
     "fc_trusted": true
+  },
+  "hm_hot-wheels-1-64-scale-celebration-vehicle-themed-vehicles-assortment-3y-multicolour-assorted-14543264": {
+    "stock": "in_stock",
+    "name": "Hot Wheels 1:64 Scale Celebration Vehicle, Themed Vehicles Assortment, 3Y+, Multicolour",
+    "price": "₹279",
+    "source": "hamleys",
+    "url": "https://hamleys.in/product/hot-wheels-1-64-scale-celebration-vehicle-themed-vehicles-assortment-3y-multicolour-assorted-14543264",
+    "first_seen": "2026-09-28T07:15:00",
+    "last_seen": "2026-09-28T07:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "hm_pages_v1",
+    "hm_verified_at": "2026-09-28T07:15:00"
   }
 }
