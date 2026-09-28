@@ -2641,7 +2641,7 @@
     "fc_trusted": true
   },
   "fc_23075649": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
     "price": "₹175",
     "source": "firstcry",
@@ -2652,8 +2652,8 @@
     "last_restock_alert": "2026-09-27T07:41:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T11:45:00",
-    "fc_api_seen_at": "2026-09-27T11:45:00",
+    "fc_listed_at": "2026-09-28T06:00:00",
+    "fc_api_seen_at": "2026-09-28T06:00:00",
     "fc_trusted": true
   },
   "fc_23075651": {
@@ -2705,7 +2705,7 @@
     "fc_trusted": true
   },
   "fc_23354598": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 172/250 Tooned Volkswagen Toy Car- White",
     "price": "₹161",
     "source": "firstcry",
@@ -2713,11 +2713,11 @@
     "first_seen": "2026-07-19T07:01:32",
     "last_seen": "2026-09-28T06:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T05:17:40",
+    "last_restock_alert": "2026-09-28T06:04:17",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T14:15:00",
-    "fc_api_seen_at": "2026-09-27T14:15:00",
+    "fc_listed_at": "2026-09-28T06:00:00",
+    "fc_api_seen_at": "2026-09-28T06:00:00",
     "fc_trusted": true
   },
   "fc_23074886": {
@@ -4632,7 +4632,7 @@
     "fc_trusted": true
   },
   "fc_23354966": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
     "price": "₹160",
     "source": "firstcry",
@@ -4640,11 +4640,11 @@
     "first_seen": "2026-08-01T04:27:10",
     "last_seen": "2026-09-28T06:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T09:14:29",
+    "last_restock_alert": "2026-09-28T06:04:17",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T05:00:00",
-    "fc_api_seen_at": "2026-09-26T05:00:00",
+    "fc_listed_at": "2026-09-28T06:00:00",
+    "fc_api_seen_at": "2026-09-28T06:00:00",
     "fc_trusted": true
   },
   "fc_23105077": {
