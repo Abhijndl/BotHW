@@ -3059,7 +3059,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-die-cast-cars-pack-of-5-nnellivvddel": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Cars Pack of 5 Vehicles, Assorted, 3Y+",
     "price": "₹839",
     "source": "hamleys",
@@ -3593,7 +3593,7 @@
     "last_restock_alert": "2026-09-22T03:55:59",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-28T10:45:00"
+    "hm_verified_at": "2026-09-28T11:00:00"
   },
   "hm_hot-wheels-formula-1-assorted-3y-multicolour-17124142": {
     "stock": "out_of_stock",
@@ -17459,5 +17459,41 @@
     "last_price_alert": "",
     "mg_updated_at": "2026-09-28T09:29:18.153157+00:00",
     "stock_ver": "mg_skus_v1"
+  },
+  "kd_4lgOmX0LoQ": {
+    "stock": "in_stock",
+    "name": "PREORDER HYUNDAI CASPER BUTTER CREAM YELLOW PEARL [PRE-ORDER]",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-hyundai-casper-butter-cream-yellow-pearl?pid=4lgOmX0LoQ",
+    "first_seen": "2026-09-28T11:00:00",
+    "last_seen": "2026-09-28T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_aPgd8RbgJq": {
+    "stock": "in_stock",
+    "name": "PREORDER HYUNDAI STARIA TAXI [PRE-ORDER]",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-hyundai-staria-taxi?pid=aPgd8RbgJq",
+    "first_seen": "2026-09-28T11:00:00",
+    "last_seen": "2026-09-28T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_m8pDDqMpv2": {
+    "stock": "in_stock",
+    "name": "PREORDER HYUNDAI IONIQ 5 POLICE CAR [PRE-ORDER]",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-hyundai-ioniq-5-police-car?pid=m8pDDqMpv2",
+    "first_seen": "2026-09-28T11:00:00",
+    "last_seen": "2026-09-28T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
