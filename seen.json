@@ -27,8 +27,8 @@
     "last_restock_alert": "2026-09-29T15:51:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T16:15:00",
-    "fc_api_seen_at": "2026-09-29T16:15:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -3383,8 +3383,8 @@
     "last_restock_alert": "2026-09-22T05:48:59",
     "last_price_alert": "2026-09-22T05:48:59",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T16:45:00",
-    "fc_api_seen_at": "2026-09-29T16:45:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_23075647": {
@@ -5658,8 +5658,8 @@
     "last_price_alert": "2026-09-22T13:08:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T16:45:00",
-    "fc_api_seen_at": "2026-09-29T16:45:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_24194173": {
@@ -10844,8 +10844,8 @@
     "last_price_alert": "2026-09-22T09:46:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T16:45:00",
-    "fc_api_seen_at": "2026-09-29T16:45:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_23074883": {
@@ -13174,7 +13174,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13183,8 +13183,8 @@
     "last_restock_alert": "2026-09-25T12:53:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T16:30:00",
-    "fc_api_seen_at": "2026-09-29T16:30:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -14119,8 +14119,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T16:45:00",
-    "fc_api_seen_at": "2026-09-29T16:45:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_24546537": {
@@ -14250,8 +14250,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T16:45:00",
-    "fc_api_seen_at": "2026-09-29T16:45:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_24476803": {
@@ -14508,8 +14508,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T16:45:00",
-    "fc_api_seen_at": "2026-09-29T16:45:00",
+    "fc_listed_at": "2026-09-29T17:00:00",
+    "fc_api_seen_at": "2026-09-29T17:00:00",
     "fc_trusted": true
   },
   "fc_24525285": {
