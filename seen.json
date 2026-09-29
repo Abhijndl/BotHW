@@ -3059,7 +3059,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-die-cast-cars-pack-of-5-nnellivvddel": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Cars Pack of 5 Vehicles, Assorted, 3Y+",
     "price": "₹839",
     "source": "hamleys",
@@ -3593,7 +3593,7 @@
     "last_restock_alert": "2026-09-22T03:55:59",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-29T09:00:00"
+    "hm_verified_at": "2026-09-29T13:30:00"
   },
   "hm_hot-wheels-formula-1-assorted-3y-multicolour-17124142": {
     "stock": "in_stock",
@@ -4470,7 +4470,7 @@
     "last_restock_alert": "2026-09-28T21:41:05",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-29T07:15:00"
+    "hm_verified_at": "2026-09-29T13:30:00"
   },
   "fc_22548073": {
     "stock": "out_of_stock",
