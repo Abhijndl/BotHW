@@ -3059,7 +3059,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-die-cast-cars-pack-of-5-nnellivvddel": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Cars Pack of 5 Vehicles, Assorted, 3Y+",
     "price": "₹839",
     "source": "hamleys",
@@ -3067,7 +3067,7 @@
     "first_seen": "2026-07-20T07:43:29",
     "last_seen": "2026-09-29T14:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T10:35:53",
+    "last_restock_alert": "2026-09-29T14:11:11",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
     "hm_verified_at": "2026-09-29T14:00:00"
@@ -5614,7 +5614,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-premium-fast-furious-bundle-for-boys-age-3y-premium-die-cast-car-collection-96407425": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle for Boys Age 3Y+ | Premium Die-Cast Car Collection",
     "price": "₹3999",
     "source": "hamleys",
@@ -5625,7 +5625,7 @@
     "last_restock_alert": "2026-09-29T07:51:02",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-29T13:30:00"
+    "hm_verified_at": "2026-09-29T14:00:00"
   },
   "fc_24194176": {
     "stock": "in_stock",
