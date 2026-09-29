@@ -16,7 +16,7 @@
     "fc_trusted": true
   },
   "fc_23074884": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mailed It (168/250) Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -24,11 +24,11 @@
     "first_seen": "2026-07-19T10:01:43",
     "last_seen": "2026-09-29T15:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T07:41:01",
+    "last_restock_alert": "2026-09-29T15:51:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T11:30:00",
-    "fc_api_seen_at": "2026-09-27T11:30:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -10324,8 +10324,8 @@
     "last_price_alert": "2026-09-22T07:22:59",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T15:30:00",
-    "fc_api_seen_at": "2026-09-29T15:30:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "fc_23345095": {
@@ -10849,7 +10849,7 @@
     "fc_trusted": true
   },
   "fc_23074883": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Tooned Volswagen golf MK1 (172/250) Toy Car - White/Red",
     "price": "₹163",
     "source": "firstcry",
@@ -10860,8 +10860,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T09:00:00",
-    "fc_api_seen_at": "2026-09-29T09:00:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "fc_16244226": {
@@ -11327,8 +11327,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T15:30:00",
-    "fc_api_seen_at": "2026-09-29T15:30:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--mask-pack-of-1-for-kids-3y-multicolor-boedi9toks": {
@@ -12287,8 +12287,8 @@
     "last_restock_alert": "2026-09-28T17:46:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:00:00",
-    "fc_api_seen_at": "2026-09-29T15:00:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "fc_22597520": {
@@ -13345,8 +13345,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:30:00",
-    "fc_api_seen_at": "2026-09-29T15:30:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "mg_fdca91f7-dfa5-4e2d-ae69-a65b0140adc1": {
@@ -14508,8 +14508,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:30:00",
-    "fc_api_seen_at": "2026-09-29T15:30:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "fc_24525285": {
@@ -15805,8 +15805,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:30:00",
-    "fc_api_seen_at": "2026-09-29T15:30:00",
+    "fc_listed_at": "2026-09-29T15:45:00",
+    "fc_api_seen_at": "2026-09-29T15:45:00",
     "fc_trusted": true
   },
   "fc_24247519": {
@@ -16490,7 +16490,7 @@
   "fc_24248200": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 70 Buick GSX Die-Cast Free Wheel Toy Car (183/250) - Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-buick-gsx-die-cast-free-wheel-toy-car-183-250-gold/24248200/product-detail",
     "first_seen": "2026-09-21T06:58:27",
