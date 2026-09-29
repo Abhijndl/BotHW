@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -3383,8 +3383,8 @@
     "last_restock_alert": "2026-09-22T05:48:59",
     "last_price_alert": "2026-09-22T05:48:59",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_23075647": {
@@ -3932,7 +3932,7 @@
   "fc_23973355": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-574-20-royota-tacoma-die-cast-free-wheel-toy-car-green/23973355/product-detail",
     "first_seen": "2026-07-21T17:56:30",
@@ -3941,8 +3941,8 @@
     "last_restock_alert": "2026-09-22T22:31:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_23076123": {
@@ -5909,8 +5909,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -11527,8 +11527,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_23147629": {
@@ -12517,7 +12517,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -13602,8 +13602,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24035369": {
@@ -13634,8 +13634,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T12:00:00",
-    "fc_api_seen_at": "2026-09-29T12:00:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -13783,9 +13783,9 @@
     "fc_trusted": true
   },
   "fc_24473479": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -14085,8 +14085,8 @@
     "last_restock_alert": "2026-09-22T11:50:17",
     "last_price_alert": "2026-09-22T11:50:17",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24342870": {
@@ -14101,8 +14101,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_22848387": {
@@ -14134,8 +14134,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24546534": {
@@ -14150,8 +14150,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14183,8 +14183,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T12:00:00",
-    "fc_api_seen_at": "2026-09-29T12:00:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24476003": {
@@ -14387,7 +14387,7 @@
   "fc_24475755": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14397,8 +14397,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   },
   "fc_24473732": {
@@ -14724,7 +14724,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -16276,7 +16276,7 @@
     "fc_trusted": true
   },
   "fc_24503309": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Porsche 911 Gt3 Cup - Red",
     "price": "₹399",
     "source": "firstcry",
@@ -16284,7 +16284,7 @@
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-09-29T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-29T12:38:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -17508,8 +17508,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:15:00",
-    "fc_api_seen_at": "2026-09-29T12:15:00",
+    "fc_listed_at": "2026-09-29T12:30:00",
+    "fc_api_seen_at": "2026-09-29T12:30:00",
     "fc_trusted": true
   }
 }
