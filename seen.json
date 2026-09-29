@@ -3684,8 +3684,8 @@
     "last_restock_alert": "2026-09-29T06:52:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T11:30:00",
-    "fc_api_seen_at": "2026-09-29T11:30:00",
+    "fc_listed_at": "2026-09-29T12:45:00",
+    "fc_api_seen_at": "2026-09-29T12:45:00",
     "fc_trusted": true
   },
   "fc_23351683": {
@@ -3932,7 +3932,7 @@
   "fc_23973355": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-574-20-royota-tacoma-die-cast-free-wheel-toy-car-green/23973355/product-detail",
     "first_seen": "2026-07-21T17:56:30",
@@ -12739,8 +12739,8 @@
     "last_restock_alert": "2026-09-29T05:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T10:15:00",
-    "fc_api_seen_at": "2026-09-29T10:15:00",
+    "fc_listed_at": "2026-09-29T12:45:00",
+    "fc_api_seen_at": "2026-09-29T12:45:00",
     "fc_trusted": true
   },
   "fc_24314518": {
@@ -13173,7 +13173,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13317,9 +13317,9 @@
     "fc_trusted": true
   },
   "fc_22601081": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹764",
+    "price": "₹899",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -13328,8 +13328,8 @@
     "last_restock_alert": "2026-09-29T11:52:24",
     "last_price_alert": "2026-09-22T09:03:44",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:30:00",
-    "fc_api_seen_at": "2026-09-29T12:30:00",
+    "fc_listed_at": "2026-09-29T12:45:00",
+    "fc_api_seen_at": "2026-09-29T12:45:00",
     "fc_trusted": true
   },
   "fc_24503903": {
@@ -13568,8 +13568,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T10:15:00",
-    "fc_api_seen_at": "2026-09-29T10:15:00",
+    "fc_listed_at": "2026-09-29T12:45:00",
+    "fc_api_seen_at": "2026-09-29T12:45:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -14305,7 +14305,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14322,7 +14322,7 @@
   "fc_24476435": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -15923,9 +15923,9 @@
     "fc_trusted": true
   },
   "fc_24473465": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Porsche Die Cast Free Wheel Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-porsche-die-cast-free-wheel-toy-car-orange/24473465/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -15935,8 +15935,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T12:30:00",
-    "fc_api_seen_at": "2026-09-29T12:30:00",
+    "fc_listed_at": "2026-09-29T12:45:00",
+    "fc_api_seen_at": "2026-09-29T12:45:00",
     "fc_trusted": true
   },
   "fc_24390971": {
