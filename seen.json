@@ -3440,7 +3440,7 @@
   "fc_23074258": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Raijin Express (57/250) Toy Car - Black/Gold",
-    "price": "₹168",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-raijin-express-57-250-toy-car-black-gold/23074258/product-detail",
     "first_seen": "2026-07-20T08:51:47",
@@ -13059,15 +13059,15 @@
     "fc_trusted": true
   },
   "fc_24475217": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
     "last_seen": "2026-09-29T12:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-26T04:22:30",
+    "last_restock_alert": "2026-09-29T12:22:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16846,8 +16846,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T11:30:00",
-    "fc_api_seen_at": "2026-09-29T11:30:00",
+    "fc_listed_at": "2026-09-29T12:15:00",
+    "fc_api_seen_at": "2026-09-29T12:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
