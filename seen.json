@@ -12513,8 +12513,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T14:30:00",
-    "fc_api_seen_at": "2026-09-29T14:30:00",
+    "fc_listed_at": "2026-09-29T16:30:00",
+    "fc_api_seen_at": "2026-09-29T16:30:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -13253,9 +13253,9 @@
     "fc_trusted": true
   },
   "fc_24342826": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13264,8 +13264,8 @@
     "last_restock_alert": "2026-09-29T15:04:28",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:30:00",
-    "fc_api_seen_at": "2026-09-29T15:30:00",
+    "fc_listed_at": "2026-09-29T16:30:00",
+    "fc_api_seen_at": "2026-09-29T16:30:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -16490,7 +16490,7 @@
   "fc_24248200": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 70 Buick GSX Die-Cast Free Wheel Toy Car (183/250) - Gold",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-buick-gsx-die-cast-free-wheel-toy-car-183-250-gold/24248200/product-detail",
     "first_seen": "2026-09-21T06:58:27",
@@ -16499,8 +16499,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T16:00:00",
-    "fc_api_seen_at": "2026-09-29T16:00:00",
+    "fc_listed_at": "2026-09-29T16:30:00",
+    "fc_api_seen_at": "2026-09-29T16:30:00",
     "fc_trusted": true
   },
   "fc_22240175": {
@@ -16555,8 +16555,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T13:00:00",
-    "fc_api_seen_at": "2026-09-29T13:00:00",
+    "fc_listed_at": "2026-09-29T16:30:00",
+    "fc_api_seen_at": "2026-09-29T16:30:00",
     "fc_trusted": true
   },
   "fc_23030631": {
@@ -16638,8 +16638,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-27T17:30:00",
-    "fc_api_seen_at": "2026-09-27T17:30:00",
+    "fc_listed_at": "2026-09-29T16:30:00",
+    "fc_api_seen_at": "2026-09-29T16:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
