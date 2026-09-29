@@ -5022,7 +5022,7 @@
     "fc_trusted": true
   },
   "fc_23351681": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
     "price": "₹179",
     "source": "firstcry",
@@ -5030,11 +5030,11 @@
     "first_seen": "2026-08-08T04:07:23",
     "last_seen": "2026-09-29T15:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-29T15:21:11",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T05:30:00",
-    "fc_api_seen_at": "2026-09-25T05:30:00",
+    "fc_listed_at": "2026-09-29T15:15:00",
+    "fc_api_seen_at": "2026-09-29T15:15:00",
     "fc_trusted": true
   },
   "fc_24236112": {
@@ -12837,8 +12837,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:00:00",
-    "fc_api_seen_at": "2026-09-29T15:00:00",
+    "fc_listed_at": "2026-09-29T15:15:00",
+    "fc_api_seen_at": "2026-09-29T15:15:00",
     "fc_trusted": true
   },
   "fc_24349392": {
@@ -12985,7 +12985,7 @@
   "fc_24476799": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -12994,8 +12994,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T15:00:00",
-    "fc_api_seen_at": "2026-09-29T15:00:00",
+    "fc_listed_at": "2026-09-29T15:15:00",
+    "fc_api_seen_at": "2026-09-29T15:15:00",
     "fc_trusted": true
   },
   "fc_21993931": {
@@ -15746,15 +15746,15 @@
     "fc_trusted": true
   },
   "fc_24014393": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Licensed Play Ball 9 Inch - Yellow",
-    "price": "₹299",
+    "price": "₹149",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-licensed-play-ball-9-inch-yellow/24014393/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-09-29T15:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-29T15:21:11",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-29T15:15:00",
