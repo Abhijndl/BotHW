@@ -5951,7 +5951,7 @@
     "source": "bigbasket",
     "url": "https://www.bigbasket.com/pd/1967/hot-wheels/",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-29T05:15:00",
+    "last_seen": "2026-09-29T12:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11601,7 +11601,7 @@
     "source": "bigbasket",
     "url": "https://www.bigbasket.com/pd/40370180//",
     "first_seen": "2026-09-09T19:08:37",
-    "last_seen": "2026-09-29T05:15:00",
+    "last_seen": "2026-09-29T12:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -16851,7 +16851,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
