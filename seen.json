@@ -10266,7 +10266,7 @@
     "fc_trusted": true
   },
   "fc_23351682": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 46/250 Purple Passion Die Cat Free Wheel Toy Car- Purple",
     "price": "₹171",
     "source": "firstcry",
@@ -10274,11 +10274,11 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-09-29T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T08:06:42",
+    "last_restock_alert": "2026-09-29T17:24:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T09:15:00",
-    "fc_api_seen_at": "2026-09-28T09:15:00",
+    "fc_listed_at": "2026-09-29T17:15:00",
+    "fc_api_seen_at": "2026-09-29T17:15:00",
     "fc_trusted": true
   },
   "fc_24248203": {
@@ -10649,7 +10649,7 @@
     "fc_trusted": true
   },
   "fc_23074887": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast El Segundo Rallye (145/250) Toy Car - Black/Red",
     "price": "₹161",
     "source": "firstcry",
@@ -10657,11 +10657,11 @@
     "first_seen": "2026-09-02T11:14:43",
     "last_seen": "2026-09-29T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T19:54:33",
+    "last_restock_alert": "2026-09-29T17:24:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T21:15:00",
-    "fc_api_seen_at": "2026-09-27T21:15:00",
+    "fc_listed_at": "2026-09-29T17:15:00",
+    "fc_api_seen_at": "2026-09-29T17:15:00",
     "fc_trusted": true
   },
   "fc_22928010": {
@@ -14708,9 +14708,9 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23074612": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast VW ID Buzz Bomb (86/250) Toy Car - Blue/White",
-    "price": "₹157",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-vw-id-buzz-bomb-86-250-toy-car-blue-white/23074612/product-detail",
     "first_seen": "2026-09-21T04:11:10",
@@ -14718,9 +14718,10 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-29T17:15:00",
+    "fc_api_seen_at": "2026-09-29T17:15:00",
+    "fc_trusted": true
   },
   "fc_24514775": {
     "stock": "out_of_stock",
