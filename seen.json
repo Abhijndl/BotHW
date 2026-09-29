@@ -5499,8 +5499,8 @@
     "last_price_alert": "2026-09-17T10:35:54",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T07:30:00",
-    "fc_api_seen_at": "2026-09-29T07:30:00",
+    "fc_listed_at": "2026-09-29T09:00:00",
+    "fc_api_seen_at": "2026-09-29T09:00:00",
     "fc_trusted": true
   },
   "fc_23351190": {
@@ -5664,7 +5664,7 @@
   "fc_24194173": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5673,8 +5673,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T08:45:00",
-    "fc_api_seen_at": "2026-09-29T08:45:00",
+    "fc_listed_at": "2026-09-29T09:00:00",
+    "fc_api_seen_at": "2026-09-29T09:00:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -13061,7 +13061,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13319,7 +13319,7 @@
   "fc_22601081": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -13568,8 +13568,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T08:00:00",
-    "fc_api_seen_at": "2026-09-28T08:00:00",
+    "fc_listed_at": "2026-09-29T09:00:00",
+    "fc_api_seen_at": "2026-09-29T09:00:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -14076,7 +14076,7 @@
   "fc_24342833": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Blue",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-blue/24342833/product-detail",
     "first_seen": "2026-09-19T13:25:56",
@@ -14085,8 +14085,8 @@
     "last_restock_alert": "2026-09-22T11:50:17",
     "last_price_alert": "2026-09-22T11:50:17",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T08:45:00",
-    "fc_api_seen_at": "2026-09-29T08:45:00",
+    "fc_listed_at": "2026-09-29T09:00:00",
+    "fc_api_seen_at": "2026-09-29T09:00:00",
     "fc_trusted": true
   },
   "fc_24342870": {
@@ -14254,7 +14254,7 @@
     "fc_trusted": true
   },
   "fc_24476803": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
     "price": "₹179",
     "source": "firstcry",
@@ -14265,8 +14265,8 @@
     "last_restock_alert": "2026-09-29T05:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T07:30:00",
-    "fc_api_seen_at": "2026-09-29T07:30:00",
+    "fc_listed_at": "2026-09-29T09:00:00",
+    "fc_api_seen_at": "2026-09-29T09:00:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -16093,7 +16093,7 @@
     "fc_trusted": true
   },
   "fc_24390957": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 2024 Toyota Tacoma TRD PRO Toy Car - Red",
     "price": "₹549",
     "source": "firstcry",
@@ -16105,8 +16105,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T08:15:00",
-    "fc_api_seen_at": "2026-09-29T08:15:00",
+    "fc_listed_at": "2026-09-29T09:00:00",
+    "fc_api_seen_at": "2026-09-29T09:00:00",
     "fc_trusted": true
   },
   "fc_24476798": {
