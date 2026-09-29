@@ -9672,8 +9672,8 @@
     "last_restock_alert": "2026-09-27T01:40:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T13:15:00",
-    "fc_api_seen_at": "2026-09-29T13:15:00",
+    "fc_listed_at": "2026-09-29T14:15:00",
+    "fc_api_seen_at": "2026-09-29T14:15:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -12512,8 +12512,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T06:45:00",
-    "fc_api_seen_at": "2026-09-29T06:45:00",
+    "fc_listed_at": "2026-09-29T14:15:00",
+    "fc_api_seen_at": "2026-09-29T14:15:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -13800,7 +13800,7 @@
     "fc_trusted": true
   },
   "fc_24473477": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
     "price": "₹179",
     "source": "firstcry",
@@ -13808,7 +13808,7 @@
     "first_seen": "2026-09-18T17:46:15",
     "last_seen": "2026-09-29T14:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-26T05:17:25",
+    "last_restock_alert": "2026-09-29T14:17:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-29T14:15:00",
@@ -14125,7 +14125,7 @@
   "fc_24546537": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Baby Peach Pipe Frame Retro - Pink",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-baby-peach-pipe-frame-retro-pink/24546537/product-detail",
     "first_seen": "2026-09-19T16:21:38",
@@ -16846,8 +16846,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T12:30:00",
-    "fc_api_seen_at": "2026-09-29T12:30:00",
+    "fc_listed_at": "2026-09-29T14:15:00",
+    "fc_api_seen_at": "2026-09-29T14:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
