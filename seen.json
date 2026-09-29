@@ -4728,7 +4728,7 @@
     "fc_trusted": true
   },
   "fc_22548057": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 8 Crate 133/250 Die-Cast Toy Car - Pink",
     "price": "₹167",
     "source": "firstcry",
@@ -4736,11 +4736,11 @@
     "first_seen": "2026-08-01T05:17:01",
     "last_seen": "2026-09-29T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T15:11:35",
+    "last_restock_alert": "2026-09-29T07:23:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T17:00:00",
-    "fc_api_seen_at": "2026-09-25T17:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_22548060": {
@@ -5673,8 +5673,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -11511,8 +11511,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T06:45:00",
-    "fc_api_seen_at": "2026-09-29T06:45:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_23076119": {
@@ -12560,8 +12560,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_24473512": {
@@ -13296,8 +13296,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -13634,8 +13634,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-28T13:45:00",
-    "fc_api_seen_at": "2026-09-28T13:45:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -13940,8 +13940,8 @@
     "last_restock_alert": "2026-09-21T06:51:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_24323023": {
@@ -13995,9 +13995,9 @@
     "fc_trusted": true
   },
   "fc_24390949": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14076,7 +14076,7 @@
   "fc_24342833": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Blue",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-blue/24342833/product-detail",
     "first_seen": "2026-09-19T13:25:56",
@@ -14118,8 +14118,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_24546537": {
@@ -14150,8 +14150,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T06:45:00",
-    "fc_api_seen_at": "2026-09-29T06:45:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14523,8 +14523,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_24503747": {
@@ -15417,8 +15417,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T07:00:00",
-    "fc_api_seen_at": "2026-09-29T07:00:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   },
   "fc_22598137": {
@@ -17497,9 +17497,9 @@
     "last_price_alert": ""
   },
   "fc_21946653": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Terra Tracktyl (204/250) Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-terra-tracktyl-204-250-toy-car-grey/21946653/product-detail",
     "first_seen": "2026-09-29T03:45:00",
@@ -17508,8 +17508,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T05:30:00",
-    "fc_api_seen_at": "2026-09-29T05:30:00",
+    "fc_listed_at": "2026-09-29T07:15:00",
+    "fc_api_seen_at": "2026-09-29T07:15:00",
     "fc_trusted": true
   }
 }
