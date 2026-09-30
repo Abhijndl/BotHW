@@ -154,7 +154,7 @@
     "fc_trusted": true
   },
   "fc_22600382": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "₹764",
     "source": "firstcry",
@@ -165,8 +165,8 @@
     "last_restock_alert": "2026-09-29T10:32:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T14:15:00",
-    "fc_api_seen_at": "2026-09-29T14:15:00",
+    "fc_listed_at": "2026-09-30T04:00:00",
+    "fc_api_seen_at": "2026-09-30T04:00:00",
     "fc_trusted": true
   },
   "mg_c54400b4-7b93-434f-8d78-b5cf97f72208": {
@@ -3521,7 +3521,7 @@
   "fc_23348664": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 44/250 59 Chevy Impala Die Cat Free Wheel Toy Car- Silver",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-44-250-59-chevy-impala-die-cat-free-wheel-toy-car-silver/23348664/product-detail",
     "first_seen": "2026-07-20T10:16:57",
@@ -3529,9 +3529,9 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T19:00:00",
-    "fc_api_seen_at": "2026-09-21T19:00:00",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-09-30T04:00:00",
+    "fc_api_seen_at": "2026-09-30T04:00:00",
     "fc_trusted": true
   },
   "fc_23347148": {
