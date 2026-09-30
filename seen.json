@@ -10882,7 +10882,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -12666,7 +12666,7 @@
   "fc_24473731": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -12676,14 +12676,14 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T11:30:00",
-    "fc_api_seen_at": "2026-09-30T11:30:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_24342824": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13559,7 +13559,7 @@
     "fc_trusted": true
   },
   "fc_24342829": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mazda Rx-7 Car - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13567,12 +13567,12 @@
     "first_seen": "2026-09-18T08:36:14",
     "last_seen": "2026-09-30T12:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T07:34:45",
+    "last_restock_alert": "2026-09-30T12:09:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -14000,7 +14000,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14040,8 +14040,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T10:45:00",
-    "fc_api_seen_at": "2026-09-30T10:45:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14063,7 +14063,7 @@
   "fc_24342831": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Black",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-black/24342831/product-detail",
     "first_seen": "2026-09-19T13:16:10",
@@ -14308,7 +14308,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14318,8 +14318,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T11:15:00",
-    "fc_api_seen_at": "2026-09-30T11:15:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -14390,7 +14390,7 @@
   "fc_24475755": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14400,8 +14400,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T11:30:00",
-    "fc_api_seen_at": "2026-09-30T11:30:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_24473732": {
@@ -14439,7 +14439,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -14448,8 +14448,8 @@
     "last_restock_alert": "2026-09-25T12:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T11:30:00",
-    "fc_api_seen_at": "2026-09-30T11:30:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_24390952": {
@@ -14624,8 +14624,8 @@
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T11:30:00",
-    "fc_api_seen_at": "2026-09-30T11:30:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "fc_24503306": {
@@ -16841,7 +16841,7 @@
   "fc_24546334": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Dark Red",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-dark-red/24546334/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16850,8 +16850,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T11:30:00",
-    "fc_api_seen_at": "2026-09-30T11:30:00",
+    "fc_listed_at": "2026-09-30T12:00:00",
+    "fc_api_seen_at": "2026-09-30T12:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
