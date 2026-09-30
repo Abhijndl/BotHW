@@ -16,7 +16,7 @@
     "fc_trusted": true
   },
   "fc_23074884": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mailed It (168/250) Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -27,8 +27,8 @@
     "last_restock_alert": "2026-09-29T15:51:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T17:15:00",
-    "fc_api_seen_at": "2026-09-29T17:15:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -5803,8 +5803,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T01:30:00",
-    "fc_api_seen_at": "2026-09-30T01:30:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -12680,15 +12680,15 @@
     "fc_trusted": true
   },
   "fc_24342824": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-09-30T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T10:27:22",
+    "last_restock_alert": "2026-09-30T08:12:28",
     "last_price_alert": "2026-09-22T07:09:08",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -13173,15 +13173,15 @@
     "fc_trusted": true
   },
   "fc_24473514": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
     "last_seen": "2026-09-30T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T12:53:26",
+    "last_restock_alert": "2026-09-30T08:12:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-30T08:00:00",
@@ -13298,8 +13298,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:45:00",
-    "fc_api_seen_at": "2026-09-30T06:45:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -13512,7 +13512,7 @@
   "fc_24473494": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -13797,8 +13797,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:30:00",
-    "fc_api_seen_at": "2026-09-30T06:30:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -13813,8 +13813,8 @@
     "last_restock_alert": "2026-09-29T14:17:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T06:00:00",
-    "fc_api_seen_at": "2026-09-30T06:00:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_24473499": {
@@ -14223,9 +14223,9 @@
     "fc_trusted": true
   },
   "fc_24475737": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14356,7 +14356,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14389,7 +14389,7 @@
   "fc_24475755": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14438,7 +14438,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -15041,8 +15041,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T07:00:00",
-    "fc_api_seen_at": "2026-09-30T07:00:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -16808,7 +16808,7 @@
   "fc_24546336": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Blue",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-blue/24546336/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16817,8 +16817,8 @@
     "last_restock_alert": "2026-09-28T19:33:42",
     "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T07:00:00",
-    "fc_api_seen_at": "2026-09-30T07:00:00",
+    "fc_listed_at": "2026-09-30T08:00:00",
+    "fc_api_seen_at": "2026-09-30T08:00:00",
     "fc_trusted": true
   },
   "fc_24546335": {
