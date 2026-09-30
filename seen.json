@@ -3708,7 +3708,7 @@
   "fc_23075652": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 64 Lincoln Continental (170/250) Die Cast Toy Car - Orange",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-64-lincoln-continental-170-250-die-cast-toy-car-orange/23075652/product-detail",
     "first_seen": "2026-07-21T04:32:10",
@@ -3717,8 +3717,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T08:45:00",
-    "fc_api_seen_at": "2026-09-30T08:45:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_23348043": {
@@ -4439,8 +4439,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_22548064": {
@@ -4619,7 +4619,7 @@
     "fc_trusted": true
   },
   "fc_22548070": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Instant Boost (22/250) Die-Cast - Brown & White",
     "price": "₹167",
     "source": "firstcry",
@@ -4627,11 +4627,11 @@
     "first_seen": "2026-07-31T16:41:47",
     "last_seen": "2026-09-30T09:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-30T09:31:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T08:00:00",
-    "fc_api_seen_at": "2026-09-27T08:00:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_23354966": {
@@ -11329,8 +11329,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--mask-pack-of-1-for-kids-3y-multicolor-boedi9toks": {
@@ -12520,7 +12520,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -12563,8 +12563,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_24473512": {
@@ -12839,8 +12839,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_24349392": {
@@ -13185,8 +13185,8 @@
     "last_restock_alert": "2026-09-30T08:12:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T08:45:00",
-    "fc_api_seen_at": "2026-09-30T08:45:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -14063,7 +14063,7 @@
   "fc_24342831": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Black",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-batman-batmobile-1-64-scale-toy-car-black/24342831/product-detail",
     "first_seen": "2026-09-19T13:16:10",
@@ -14268,8 +14268,8 @@
     "last_restock_alert": "2026-09-29T05:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -15222,8 +15222,8 @@
     "last_restock_alert": "2026-09-22T08:41:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_22240193": {
@@ -16125,8 +16125,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_24473498": {
@@ -16502,8 +16502,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T09:15:00",
-    "fc_api_seen_at": "2026-09-30T09:15:00",
+    "fc_listed_at": "2026-09-30T09:30:00",
+    "fc_api_seen_at": "2026-09-30T09:30:00",
     "fc_trusted": true
   },
   "fc_22240175": {
