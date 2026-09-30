@@ -4645,8 +4645,8 @@
     "last_restock_alert": "2026-09-28T06:05:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T05:45:00",
-    "fc_api_seen_at": "2026-09-30T05:45:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -5533,8 +5533,8 @@
     "last_price_alert": "2026-09-22T07:21:20",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24248204": {
@@ -5927,8 +5927,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160": {
@@ -11387,8 +11387,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_23103132": {
@@ -12419,8 +12419,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_20886794": {
@@ -13073,8 +13073,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T05:45:00",
-    "fc_api_seen_at": "2026-09-30T05:45:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13298,8 +13298,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T09:15:00",
-    "fc_api_seen_at": "2026-09-29T09:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -13319,9 +13319,9 @@
     "fc_trusted": true
   },
   "fc_22601081": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -13959,8 +13959,8 @@
     "last_price_alert": "2026-09-22T07:07:02",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24503315": {
@@ -14168,8 +14168,8 @@
     "last_restock_alert": "2026-09-24T06:36:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T05:45:00",
-    "fc_api_seen_at": "2026-09-30T05:45:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -15386,8 +15386,8 @@
     "last_price_alert": "2026-09-21T14:37:45",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_22955068": {
@@ -15775,8 +15775,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24248199": {
@@ -16323,8 +16323,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T06:15:00",
-    "fc_api_seen_at": "2026-09-30T06:15:00",
+    "fc_listed_at": "2026-09-30T06:30:00",
+    "fc_api_seen_at": "2026-09-30T06:30:00",
     "fc_trusted": true
   },
   "fc_24525298": {
