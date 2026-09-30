@@ -12033,7 +12033,7 @@
   "fc_24248201": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Bully Goat Die-Cast Free Wheel Toy Car (206/250) - Red",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bully-goat-die-cast-free-wheel-toy-car-206-250-red/24248201/product-detail",
     "first_seen": "2026-09-15T06:12:41",
@@ -12403,8 +12403,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T19:30:00",
-    "fc_api_seen_at": "2026-09-29T19:30:00",
+    "fc_listed_at": "2026-09-30T05:15:00",
+    "fc_api_seen_at": "2026-09-30T05:15:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12793,7 +12793,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24390967": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Models 5/5 Silver Series Vintage Club Mercedes-Benz 300 SL Die-Cast Car - Pista",
     "price": "₹299",
     "source": "firstcry",
@@ -12801,7 +12801,7 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-09-30T05:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T12:53:26",
+    "last_restock_alert": "2026-09-30T05:17:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -13240,7 +13240,7 @@
   "fc_24248206": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Supercharged Die-Cast Free Wheel Toy Car (77/250) - Sky Blue",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-supercharged-die-cast-free-wheel-toy-car-77-250-sky-blue/24248206/product-detail",
     "first_seen": "2026-09-17T12:21:19",
@@ -13720,7 +13720,7 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -13728,7 +13728,7 @@
     "first_seen": "2026-09-18T13:46:15",
     "last_seen": "2026-09-30T05:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T04:46:25",
+    "last_restock_alert": "2026-09-30T05:17:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-30T05:15:00",
@@ -13764,8 +13764,8 @@
     "last_restock_alert": "2026-09-29T04:46:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T06:45:00",
-    "fc_api_seen_at": "2026-09-29T06:45:00",
+    "fc_listed_at": "2026-09-30T05:15:00",
+    "fc_api_seen_at": "2026-09-30T05:15:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14725,15 +14725,15 @@
     "fc_trusted": true
   },
   "fc_24514775": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
     "last_seen": "2026-09-30T05:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T08:06:42",
+    "last_restock_alert": "2026-09-30T05:17:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-30T05:15:00",
@@ -16207,8 +16207,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T04:45:00",
-    "fc_api_seen_at": "2026-09-30T04:45:00",
+    "fc_listed_at": "2026-09-30T05:15:00",
+    "fc_api_seen_at": "2026-09-30T05:15:00",
     "fc_trusted": true
   },
   "fc_24503324": {
@@ -16703,8 +16703,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T10:45:00",
-    "fc_api_seen_at": "2026-09-29T10:45:00",
+    "fc_listed_at": "2026-09-30T05:15:00",
+    "fc_api_seen_at": "2026-09-30T05:15:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
