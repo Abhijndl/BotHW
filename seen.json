@@ -3637,7 +3637,7 @@
     "last_restock_alert": "2026-09-19T15:36:11",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-30T09:15:00"
+    "hm_verified_at": "2026-09-30T09:30:00"
   },
   "fc_23074889": {
     "stock": "out_of_stock",
@@ -16855,7 +16855,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
