@@ -13868,19 +13868,19 @@
     "fc_trusted": true
   },
   "fc_2235646": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
     "last_seen": "2026-09-30T15:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T17:17:24",
+    "last_restock_alert": "2026-09-30T15:31:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T01:30:00",
-    "fc_api_seen_at": "2026-09-26T01:30:00",
+    "fc_listed_at": "2026-09-30T15:30:00",
+    "fc_api_seen_at": "2026-09-30T15:30:00",
     "fc_trusted": true
   },
   "fc_24525301": {
@@ -15161,19 +15161,19 @@
     "fc_trusted": true
   },
   "fc_2232876": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Twin Flame Bike - Green & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-twin-flame-bike-green-and-black/2232876/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-09-30T15:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T17:17:24",
+    "last_restock_alert": "2026-09-30T15:31:50",
     "last_price_alert": "2026-09-21T18:21:30",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T18:45:00",
-    "fc_api_seen_at": "2026-09-25T18:45:00",
+    "fc_listed_at": "2026-09-30T15:30:00",
+    "fc_api_seen_at": "2026-09-30T15:30:00",
     "fc_trusted": true
   },
   "fc_22548058": {
