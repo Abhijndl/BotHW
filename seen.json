@@ -13062,7 +13062,7 @@
     "fc_trusted": true
   },
   "fc_24475217": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
     "price": "₹170",
     "source": "firstcry",
@@ -14169,8 +14169,8 @@
     "last_restock_alert": "2026-09-30T12:42:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T13:00:00",
-    "fc_api_seen_at": "2026-09-30T13:00:00",
+    "fc_listed_at": "2026-09-30T20:00:00",
+    "fc_api_seen_at": "2026-09-30T20:00:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -16855,7 +16855,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
