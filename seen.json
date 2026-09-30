@@ -12633,7 +12633,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12697,7 +12697,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12705,11 +12705,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-09-30T04:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-09-30T04:46:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T18:00:00",
-    "fc_api_seen_at": "2026-09-29T18:00:00",
+    "fc_listed_at": "2026-09-30T04:45:00",
+    "fc_api_seen_at": "2026-09-30T04:45:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -13073,8 +13073,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T04:15:00",
-    "fc_api_seen_at": "2026-09-30T04:15:00",
+    "fc_listed_at": "2026-09-30T04:45:00",
+    "fc_api_seen_at": "2026-09-30T04:45:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13570,8 +13570,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T13:00:00",
-    "fc_api_seen_at": "2026-09-29T13:00:00",
+    "fc_listed_at": "2026-09-30T04:45:00",
+    "fc_api_seen_at": "2026-09-30T04:45:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -14356,7 +14356,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
