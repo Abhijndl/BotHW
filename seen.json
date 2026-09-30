@@ -12665,7 +12665,7 @@
   "fc_24473731": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -12675,8 +12675,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T06:30:00",
-    "fc_api_seen_at": "2026-09-30T06:30:00",
+    "fc_listed_at": "2026-09-30T06:45:00",
+    "fc_api_seen_at": "2026-09-30T06:45:00",
     "fc_trusted": true
   },
   "fc_24342824": {
@@ -13720,7 +13720,7 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -13731,8 +13731,8 @@
     "last_restock_alert": "2026-09-30T05:17:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T06:30:00",
-    "fc_api_seen_at": "2026-09-30T06:30:00",
+    "fc_listed_at": "2026-09-30T06:45:00",
+    "fc_api_seen_at": "2026-09-30T06:45:00",
     "fc_trusted": true
   },
   "fc_24503325": {
@@ -15041,8 +15041,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T06:45:00",
+    "fc_api_seen_at": "2026-09-30T06:45:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -17096,8 +17096,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T06:30:00",
-    "fc_api_seen_at": "2026-09-30T06:30:00",
+    "fc_listed_at": "2026-09-30T06:45:00",
+    "fc_api_seen_at": "2026-09-30T06:45:00",
     "fc_trusted": true
   },
   "fc_24248197": {
