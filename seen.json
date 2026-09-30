@@ -5674,8 +5674,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T05:30:00",
+    "fc_api_seen_at": "2026-09-30T05:30:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -12569,7 +12569,7 @@
   "fc_24473512": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12579,8 +12579,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T05:30:00",
+    "fc_api_seen_at": "2026-09-30T05:30:00",
     "fc_trusted": true
   },
   "fc_24473515": {
@@ -14225,7 +14225,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14234,8 +14234,8 @@
     "last_restock_alert": "2026-09-29T12:07:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T05:30:00",
+    "fc_api_seen_at": "2026-09-30T05:30:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14573,8 +14573,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T05:30:00",
+    "fc_api_seen_at": "2026-09-30T05:30:00",
     "fc_trusted": true
   },
   "fc_24503334": {
@@ -15205,8 +15205,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T05:15:00",
-    "fc_api_seen_at": "2026-09-30T05:15:00",
+    "fc_listed_at": "2026-09-30T05:30:00",
+    "fc_api_seen_at": "2026-09-30T05:30:00",
     "fc_trusted": true
   },
   "fc_22548053": {
