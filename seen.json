@@ -17527,5 +17527,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_8JNqO4Bp4Q": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS 2026 NEON SPEEDERS - MIX 1",
+    "price": "₹2990",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-2026-neon-speeders-mix-1?pid=8JNqO4Bp4Q",
+    "first_seen": "2026-09-30T09:00:00",
+    "last_seen": "2026-09-30T09:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
