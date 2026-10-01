@@ -12633,7 +12633,7 @@
     "fc_trusted": true
   },
   "fc_24473516": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
     "price": "₹170",
     "source": "firstcry",
@@ -12651,7 +12651,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13733,8 +13733,8 @@
     "last_restock_alert": "2026-10-01T06:51:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T12:30:00",
-    "fc_api_seen_at": "2026-10-01T12:30:00",
+    "fc_listed_at": "2026-10-01T12:45:00",
+    "fc_api_seen_at": "2026-10-01T12:45:00",
     "fc_trusted": true
   },
   "fc_24503325": {
@@ -14220,8 +14220,8 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T12:30:00",
-    "fc_api_seen_at": "2026-10-01T12:30:00",
+    "fc_listed_at": "2026-10-01T12:45:00",
+    "fc_api_seen_at": "2026-10-01T12:45:00",
     "fc_trusted": true
   },
   "fc_24475737": {
@@ -14358,7 +14358,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -16705,8 +16705,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T12:30:00",
-    "fc_api_seen_at": "2026-10-01T12:30:00",
+    "fc_listed_at": "2026-10-01T12:45:00",
+    "fc_api_seen_at": "2026-10-01T12:45:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
