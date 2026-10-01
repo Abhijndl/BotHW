@@ -12699,7 +12699,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12707,11 +12707,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-01T09:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-30T04:46:28",
+    "last_restock_alert": "2026-10-01T09:27:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T12:30:00",
-    "fc_api_seen_at": "2026-09-30T12:30:00",
+    "fc_listed_at": "2026-10-01T09:15:00",
+    "fc_api_seen_at": "2026-10-01T09:15:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -13766,8 +13766,8 @@
     "last_restock_alert": "2026-09-29T04:46:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T08:30:00",
-    "fc_api_seen_at": "2026-10-01T08:30:00",
+    "fc_listed_at": "2026-10-01T09:15:00",
+    "fc_api_seen_at": "2026-10-01T09:15:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14358,7 +14358,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14745,7 +14745,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14754,8 +14754,8 @@
     "last_restock_alert": "2026-09-28T04:02:50",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:00:00",
-    "fc_api_seen_at": "2026-10-01T09:00:00",
+    "fc_listed_at": "2026-10-01T09:15:00",
+    "fc_api_seen_at": "2026-10-01T09:15:00",
     "fc_trusted": true
   },
   "fc_22548066": {
