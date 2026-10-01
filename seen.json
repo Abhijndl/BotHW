@@ -17569,5 +17569,22 @@
     "fc_listed_at": "2026-10-01T01:30:00",
     "fc_api_seen_at": "2026-10-01T01:30:00",
     "fc_trusted": true
+  },
+  "fc_24247520": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels Ferrari 365 GTB4 Competizione Die-Cast Toy Car (62/250) - White",
+    "price": "₹175",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-365-gtb4-competizione-die-cast-toy-car-62-250-white/24247520/product-detail",
+    "first_seen": "2026-10-01T01:30:00",
+    "last_seen": "2026-10-01T01:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "auto_watch": true,
+    "fc_listed_at": "2026-10-01T01:30:00",
+    "fc_api_seen_at": "2026-10-01T01:30:00",
+    "fc_trusted": true
   }
 }
