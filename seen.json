@@ -4807,8 +4807,8 @@
     "last_restock_alert": "2026-09-21T06:46:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T17:00:00",
-    "fc_api_seen_at": "2026-10-01T17:00:00",
+    "fc_listed_at": "2026-10-01T17:15:00",
+    "fc_api_seen_at": "2026-10-01T17:15:00",
     "fc_trusted": true
   },
   "fc_22548075": {
@@ -12988,7 +12988,7 @@
   "fc_24476799": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -13251,8 +13251,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T17:00:00",
-    "fc_api_seen_at": "2026-10-01T17:00:00",
+    "fc_listed_at": "2026-10-01T17:15:00",
+    "fc_api_seen_at": "2026-10-01T17:15:00",
     "fc_trusted": true
   },
   "fc_24342826": {
@@ -13722,7 +13722,7 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -14204,8 +14204,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T17:00:00",
-    "fc_api_seen_at": "2026-10-01T17:00:00",
+    "fc_listed_at": "2026-10-01T17:15:00",
+    "fc_api_seen_at": "2026-10-01T17:15:00",
     "fc_trusted": true
   },
   "fc_24476471": {
@@ -14269,8 +14269,8 @@
     "last_restock_alert": "2026-09-29T05:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T17:00:00",
-    "fc_api_seen_at": "2026-10-01T17:00:00",
+    "fc_listed_at": "2026-10-01T17:15:00",
+    "fc_api_seen_at": "2026-10-01T17:15:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -15777,8 +15777,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T17:00:00",
-    "fc_api_seen_at": "2026-10-01T17:00:00",
+    "fc_listed_at": "2026-10-01T17:15:00",
+    "fc_api_seen_at": "2026-10-01T17:15:00",
     "fc_trusted": true
   },
   "fc_24248199": {
