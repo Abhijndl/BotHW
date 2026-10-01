@@ -3735,8 +3735,8 @@
     "last_price_alert": "2026-09-20T06:21:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T12:00:00",
-    "fc_api_seen_at": "2026-09-29T12:00:00",
+    "fc_listed_at": "2026-10-01T15:00:00",
+    "fc_api_seen_at": "2026-10-01T15:00:00",
     "fc_trusted": true
   },
   "fc_23076120": {
@@ -13674,9 +13674,9 @@
     "fc_trusted": true
   },
   "fc_24504533": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG22-JA10 Pack of 2 - Maroon & Blue",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg22-ja10-pack-of-2-maroon-and-blue/24504533/product-detail",
     "first_seen": "2026-09-18T13:46:15",
