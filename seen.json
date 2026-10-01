@@ -4424,8 +4424,8 @@
     "last_restock_alert": "2026-09-23T19:21:04",
     "last_price_alert": "2026-09-21T09:51:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:15:00",
-    "fc_api_seen_at": "2026-10-01T11:15:00",
+    "fc_listed_at": "2026-10-01T11:30:00",
+    "fc_api_seen_at": "2026-10-01T11:30:00",
     "fc_trusted": true
   },
   "fc_23075650": {
@@ -13871,7 +13871,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹629",
+    "price": "₹643",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -15962,7 +15962,7 @@
     "fc_trusted": true
   },
   "fc_24390969": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
     "price": "₹269",
     "source": "firstcry",
