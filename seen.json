@@ -3465,8 +3465,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T14:00:00",
-    "fc_api_seen_at": "2026-10-01T14:00:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_23076125": {
@@ -4807,8 +4807,8 @@
     "last_restock_alert": "2026-09-21T06:46:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T14:00:00",
-    "fc_api_seen_at": "2026-10-01T14:00:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_22548075": {
@@ -13235,8 +13235,8 @@
     "last_restock_alert": "2026-09-21T08:17:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T14:00:00",
-    "fc_api_seen_at": "2026-10-01T14:00:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_24248206": {
@@ -14358,7 +14358,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14367,8 +14367,8 @@
     "last_restock_alert": "2026-09-28T13:32:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T14:00:00",
-    "fc_api_seen_at": "2026-10-01T14:00:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14625,8 +14625,8 @@
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_24503306": {
@@ -15504,8 +15504,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T14:00:00",
-    "fc_api_seen_at": "2026-10-01T14:00:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_24007868": {
@@ -16454,8 +16454,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T14:00:00",
-    "fc_api_seen_at": "2026-10-01T14:00:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_24503897": {
@@ -16550,7 +16550,7 @@
   "fc_24247515": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Lil Roar Die-Cast Free Wheel Toy Car (194/250) - White",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-lil-roar-die-cast-free-wheel-toy-car-194-250-white/24247515/product-detail",
     "first_seen": "2026-09-21T09:47:04",
@@ -16559,8 +16559,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:30:00",
-    "fc_api_seen_at": "2026-10-01T11:30:00",
+    "fc_listed_at": "2026-10-01T14:15:00",
+    "fc_api_seen_at": "2026-10-01T14:15:00",
     "fc_trusted": true
   },
   "fc_23030631": {
