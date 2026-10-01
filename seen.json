@@ -3674,7 +3674,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23074262": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels X-Steam (30/250) Die Cast Free Wheel Toy Car - Brown/Beige",
     "price": "₹179",
     "source": "firstcry",
@@ -3682,11 +3682,11 @@
     "first_seen": "2026-07-20T18:56:41",
     "last_seen": "2026-10-01T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T06:52:29",
+    "last_restock_alert": "2026-10-01T10:17:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T12:30:00",
-    "fc_api_seen_at": "2026-09-30T12:30:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_23351683": {
@@ -13065,7 +13065,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13091,8 +13091,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_24475139": {
@@ -14010,8 +14010,8 @@
     "last_restock_alert": "2026-09-28T13:51:33",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "mg_de59f004-41e6-4b68-8787-deed3b5edf70": {
@@ -14204,8 +14204,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_24476471": {
@@ -14302,8 +14302,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_24472644": {
@@ -14511,8 +14511,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:45:00",
-    "fc_api_seen_at": "2026-10-01T09:45:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_24525285": {
@@ -14745,7 +14745,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14754,8 +14754,8 @@
     "last_restock_alert": "2026-09-28T04:02:50",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_22548066": {
@@ -15043,8 +15043,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:00:00",
-    "fc_api_seen_at": "2026-10-01T09:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15092,8 +15092,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_21161950": {
@@ -15109,8 +15109,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_21034612": {
@@ -15125,8 +15125,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_20466054": {
@@ -15141,8 +15141,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_3456482": {
@@ -15907,8 +15907,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:00:00",
-    "fc_api_seen_at": "2026-10-01T10:00:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_24342319": {
@@ -16559,8 +16559,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:15:00",
-    "fc_api_seen_at": "2026-10-01T09:15:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_23030631": {
@@ -17098,8 +17098,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:15:00",
-    "fc_api_seen_at": "2026-10-01T09:15:00",
+    "fc_listed_at": "2026-10-01T10:15:00",
+    "fc_api_seen_at": "2026-10-01T10:15:00",
     "fc_trusted": true
   },
   "fc_24248197": {
