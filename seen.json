@@ -1738,7 +1738,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_3a67168d-9527-4312-81a8-5623751f08ea": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Ford Mustang Shelby GT500",
     "price": "₹347",
     "source": "minifygram",
@@ -1948,7 +1948,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_048fdc18-4220-4881-b074-6343074ac061": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "BMW 635 CSi",
     "price": "₹349",
     "source": "minifygram",
@@ -2004,7 +2004,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_4feaaa92-833d-4a80-8466-4fcb7c3c3b6b": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Ford Mustang Mach -E 1400",
     "price": "₹199",
     "source": "minifygram",
