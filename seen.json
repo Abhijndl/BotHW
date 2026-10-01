@@ -3612,18 +3612,19 @@
   "fc_23345758": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 171/250 1983 Porsche 928S - Black",
-    "price": "₹171",
+    "price": "₹167",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/23345758/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-171-250-1983-porsche-928s-black/23345758/product-detail",
     "first_seen": "2026-07-20T15:32:23",
     "last_seen": "2026-10-01T06:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
+    "fc_trusted": true
   },
   "hm_hot-wheels--team-transport-beutaab8tjwa": {
     "stock": "in_stock",
@@ -4013,7 +4014,7 @@
   "fc_23075645": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car - Grey",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-17-audi-rs-6-avant-66-250-die-cast-toy-car-grey/23075645/product-detail",
     "first_seen": "2026-07-22T06:56:40",
@@ -4492,7 +4493,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -12634,7 +12635,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12643,8 +12644,8 @@
     "last_restock_alert": "2026-09-28T07:34:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T05:45:00",
-    "fc_api_seen_at": "2026-10-01T05:45:00",
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
     "fc_trusted": true
   },
   "fc_24473511": {
@@ -13064,7 +13065,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13074,8 +13075,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T05:45:00",
-    "fc_api_seen_at": "2026-10-01T05:45:00",
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -13398,19 +13399,19 @@
     "fc_trusted": true
   },
   "fc_23355053": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹160",
+    "price": "₹171",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
     "last_seen": "2026-10-01T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T11:08:31",
+    "last_restock_alert": "2026-10-01T06:51:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T14:30:00",
-    "fc_api_seen_at": "2026-09-28T14:30:00",
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
     "fc_trusted": true
   },
   "fc_24503750": {
@@ -14224,7 +14225,7 @@
     "fc_trusted": true
   },
   "fc_24475737": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
     "price": "₹170",
     "source": "firstcry",
@@ -14268,12 +14269,12 @@
     "last_restock_alert": "2026-09-29T05:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T05:45:00",
-    "fc_api_seen_at": "2026-10-01T05:45:00",
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
     "fc_trusted": true
   },
   "fc_24476167": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Team Wheels - Fast Fish Die Cast Toy Car #238/250 - Royal Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -14357,7 +14358,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14366,8 +14367,8 @@
     "last_restock_alert": "2026-09-28T13:32:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T05:45:00",
-    "fc_api_seen_at": "2026-10-01T05:45:00",
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14437,9 +14438,9 @@
     "fc_trusted": true
   },
   "fc_24473475": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -15963,7 +15964,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -15973,8 +15974,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T05:45:00",
-    "fc_api_seen_at": "2026-10-01T05:45:00",
+    "fc_listed_at": "2026-10-01T06:45:00",
+    "fc_api_seen_at": "2026-10-01T06:45:00",
     "fc_trusted": true
   },
   "fc_24390966": {
