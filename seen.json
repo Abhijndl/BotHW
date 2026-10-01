@@ -10646,8 +10646,8 @@
     "last_restock_alert": "2026-09-22T09:27:41",
     "last_price_alert": "2026-09-22T09:27:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:15:00",
+    "fc_api_seen_at": "2026-10-01T12:15:00",
     "fc_trusted": true
   },
   "fc_23074887": {
@@ -13209,7 +13209,7 @@
   "fc_24342822": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -14324,7 +14324,7 @@
     "fc_trusted": true
   },
   "fc_24476435": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
     "price": "₹170",
     "source": "firstcry",
@@ -16705,8 +16705,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T05:45:00",
-    "fc_api_seen_at": "2026-09-30T05:45:00",
+    "fc_listed_at": "2026-10-01T12:15:00",
+    "fc_api_seen_at": "2026-10-01T12:15:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
