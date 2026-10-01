@@ -2641,7 +2641,7 @@
     "fc_trusted": true
   },
   "fc_23075649": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
     "price": "₹175",
     "source": "firstcry",
@@ -2649,11 +2649,11 @@
     "first_seen": "2026-07-18T08:22:19",
     "last_seen": "2026-10-01T18:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T07:41:01",
+    "last_restock_alert": "2026-10-01T18:51:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T04:15:00",
-    "fc_api_seen_at": "2026-10-01T04:15:00",
+    "fc_listed_at": "2026-10-01T18:45:00",
+    "fc_api_seen_at": "2026-10-01T18:45:00",
     "fc_trusted": true
   },
   "fc_23075651": {
@@ -10555,7 +10555,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10563,11 +10563,11 @@
     "first_seen": "2026-09-02T05:28:35",
     "last_seen": "2026-10-01T18:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T06:21:04",
+    "last_restock_alert": "2026-10-01T18:51:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T14:15:00",
-    "fc_api_seen_at": "2026-09-29T14:15:00",
+    "fc_listed_at": "2026-10-01T18:45:00",
+    "fc_api_seen_at": "2026-10-01T18:45:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -13589,8 +13589,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T18:30:00",
-    "fc_api_seen_at": "2026-10-01T18:30:00",
+    "fc_listed_at": "2026-10-01T18:45:00",
+    "fc_api_seen_at": "2026-10-01T18:45:00",
     "fc_trusted": true
   },
   "fc_21252872": {
@@ -13669,8 +13669,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T18:30:00",
-    "fc_api_seen_at": "2026-10-01T18:30:00",
+    "fc_listed_at": "2026-10-01T18:45:00",
+    "fc_api_seen_at": "2026-10-01T18:45:00",
     "fc_trusted": true
   },
   "fc_24504533": {
@@ -13733,8 +13733,8 @@
     "last_restock_alert": "2026-10-01T06:51:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T18:00:00",
-    "fc_api_seen_at": "2026-10-01T18:00:00",
+    "fc_listed_at": "2026-10-01T18:45:00",
+    "fc_api_seen_at": "2026-10-01T18:45:00",
     "fc_trusted": true
   },
   "fc_24503325": {
@@ -14358,7 +14358,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14754,8 +14754,8 @@
     "last_restock_alert": "2026-09-28T04:02:50",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T18:30:00",
-    "fc_api_seen_at": "2026-10-01T18:30:00",
+    "fc_listed_at": "2026-10-01T18:45:00",
+    "fc_api_seen_at": "2026-10-01T18:45:00",
     "fc_trusted": true
   },
   "fc_22548066": {
