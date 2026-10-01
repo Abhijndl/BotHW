@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:15:00",
-    "fc_api_seen_at": "2026-10-01T11:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -5773,8 +5773,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T10:15:00",
-    "fc_api_seen_at": "2026-10-01T10:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -10685,7 +10685,7 @@
   "fc_24247511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pt Fast Die-Cast Free Wheel Toy Car (187/250) - Royal Blue",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pt-fast-die-cast-free-wheel-toy-car-187-250-royal-blue/24247511/product-detail",
     "first_seen": "2026-09-02T12:41:06",
@@ -11753,7 +11753,7 @@
   "fc_24246594": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Street Shaker Toy Car (202/250) With Free Wheel Feature - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-street-shaker-toy-car-202-250-with-free-wheel-feature-blue/24246594/product-detail",
     "first_seen": "2026-09-13T19:21:23",
@@ -13153,8 +13153,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:15:00",
-    "fc_api_seen_at": "2026-10-01T11:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24503333": {
@@ -14041,8 +14041,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T11:00:00",
-    "fc_api_seen_at": "2026-10-01T11:00:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14159,7 +14159,7 @@
     "fc_trusted": true
   },
   "fc_24473495": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -14227,7 +14227,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14745,7 +14745,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14754,8 +14754,8 @@
     "last_restock_alert": "2026-09-28T04:02:50",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:15:00",
-    "fc_api_seen_at": "2026-10-01T11:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_22548066": {
@@ -15378,7 +15378,7 @@
   "fc_22955218": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Culture Team Transport Die Cast Toy Car - Blue, Black & Silver",
-    "price": "₹1259",
+    "price": "₹1399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-culture-team-transport-die-cast-toy-car-blue-black-and-silver/22955218/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15964,7 +15964,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16661,9 +16661,9 @@
     "hm_verified_at": "2026-09-28T17:45:00"
   },
   "fc_24476887": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
@@ -16672,8 +16672,8 @@
     "last_restock_alert": "2026-10-01T09:42:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:30:00",
-    "fc_api_seen_at": "2026-10-01T11:30:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24248194": {
@@ -16810,7 +16810,7 @@
   "fc_24546336": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Blue",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-blue/24546336/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16819,8 +16819,8 @@
     "last_restock_alert": "2026-09-28T19:33:42",
     "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:45:00",
-    "fc_api_seen_at": "2026-10-01T10:45:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24546335": {
