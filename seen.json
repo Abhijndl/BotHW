@@ -2004,7 +2004,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_4feaaa92-833d-4a80-8466-4fcb7c3c3b6b": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Ford Mustang Mach -E 1400",
     "price": "₹199",
     "source": "minifygram",
@@ -2012,7 +2012,7 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-01T18:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-16T04:54:37",
+    "last_restock_alert": "2026-10-01T18:25:51",
     "last_price_alert": "",
     "mg_updated_at": "2026-07-11T12:04:33.207776+00:00",
     "stock_ver": "mg_skus_v1"
