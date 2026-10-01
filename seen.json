@@ -17542,7 +17542,7 @@
     "last_price_alert": ""
   },
   "mg_6488c023-f6ec-4820-a338-8d2cbcd12486": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "[Box] MGT01067 Toyota Supra A80 TS GT-300 Purple",
     "price": "₹1099",
     "source": "minifygram",
@@ -17552,7 +17552,7 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-30T12:30:47.104725+00:00",
+    "mg_updated_at": "2026-10-01T10:08:57.33198+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_24409176": {
