@@ -4492,7 +4492,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -12627,8 +12627,8 @@
     "last_restock_alert": "2026-09-25T12:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T05:30:00",
-    "fc_api_seen_at": "2026-10-01T05:30:00",
+    "fc_listed_at": "2026-10-01T05:45:00",
+    "fc_api_seen_at": "2026-10-01T05:45:00",
     "fc_trusted": true
   },
   "fc_24473516": {
@@ -13511,15 +13511,15 @@
     "fc_trusted": true
   },
   "fc_24473494": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
     "last_seen": "2026-10-01T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-01T05:47:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-01T05:45:00",
@@ -14040,8 +14040,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T05:00:00",
-    "fc_api_seen_at": "2026-10-01T05:00:00",
+    "fc_listed_at": "2026-10-01T05:45:00",
+    "fc_api_seen_at": "2026-10-01T05:45:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14437,19 +14437,19 @@
     "fc_trusted": true
   },
   "fc_24473475": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
     "last_seen": "2026-10-01T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T12:07:23",
+    "last_restock_alert": "2026-10-01T05:47:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T05:30:00",
-    "fc_api_seen_at": "2026-10-01T05:30:00",
+    "fc_listed_at": "2026-10-01T05:45:00",
+    "fc_api_seen_at": "2026-10-01T05:45:00",
     "fc_trusted": true
   },
   "fc_24390952": {
@@ -16777,7 +16777,7 @@
   "fc_24546338": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Orange",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-orange/24546338/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16793,7 +16793,7 @@
   "fc_24546337": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car - Yellow",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-yellow/24546337/product-detail",
     "first_seen": "2026-09-23T12:30:00",
