@@ -4855,8 +4855,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_22240167": {
@@ -10525,7 +10525,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1879",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -11730,8 +11730,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_22240184": {
@@ -11767,7 +11767,7 @@
     "fc_trusted": true
   },
   "fc_23081312": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG15-JA10 Pack of 2- Green & Blue",
     "price": "₹323",
     "source": "firstcry",
@@ -11775,11 +11775,11 @@
     "first_seen": "2026-09-14T04:18:41",
     "last_seen": "2026-10-01T12:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T15:26:30",
+    "last_restock_alert": "2026-10-01T12:08:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T15:45:00",
-    "fc_api_seen_at": "2026-09-25T15:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_24236114": {
@@ -12405,8 +12405,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:30:00",
-    "fc_api_seen_at": "2026-10-01T11:30:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12660,8 +12660,8 @@
     "last_restock_alert": "2026-09-29T07:55:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -13951,7 +13951,7 @@
   "fc_24323023": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2699",
+    "price": "₹2999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -13994,8 +13994,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_24390949": {
@@ -14112,7 +14112,7 @@
   "fc_22848387": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Free Wheels 07 Honda Civic Type R Kousoku Hauler Camion De Transport - Silver Car Transport Truck - WHITE",
-    "price": "₹1399",
+    "price": "₹1189",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheels-07-honda-civic-type-r-kousoku-hauler-camion-de-transport-silver-car-transport-truck-white/22848387/product-detail",
     "first_seen": "2026-09-19T14:06:10",
@@ -14302,8 +14302,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_24472644": {
@@ -16803,8 +16803,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T11:45:00",
-    "fc_api_seen_at": "2026-10-01T11:45:00",
+    "fc_listed_at": "2026-10-01T12:00:00",
+    "fc_api_seen_at": "2026-10-01T12:00:00",
     "fc_trusted": true
   },
   "fc_24546336": {
