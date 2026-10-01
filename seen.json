@@ -1738,7 +1738,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_3a67168d-9527-4312-81a8-5623751f08ea": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Ford Mustang Shelby GT500",
     "price": "₹347",
     "source": "minifygram",
@@ -1746,7 +1746,7 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-01T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-01T18:11:11",
     "last_price_alert": "",
     "mg_updated_at": "2026-07-11T12:05:02.635526+00:00",
     "stock_ver": "mg_skus_v1"
