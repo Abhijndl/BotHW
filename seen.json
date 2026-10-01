@@ -5676,8 +5676,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T05:00:00",
-    "fc_api_seen_at": "2026-10-01T05:00:00",
+    "fc_listed_at": "2026-10-01T08:30:00",
+    "fc_api_seen_at": "2026-10-01T08:30:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -9879,7 +9879,7 @@
     "fc_trusted": true
   },
   "fc_22435130": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Car Case Set of 4 Connectible Storage Display Box with Free Car-Orange",
     "price": "₹261",
     "source": "firstcry",
@@ -9887,11 +9887,11 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-01T08:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T12:11:00",
+    "last_restock_alert": "2026-10-01T08:42:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T07:45:00",
-    "fc_api_seen_at": "2026-09-28T07:45:00",
+    "fc_listed_at": "2026-10-01T08:30:00",
+    "fc_api_seen_at": "2026-10-01T08:30:00",
     "fc_trusted": true
   },
   "fc_22048350": {
@@ -13399,9 +13399,9 @@
     "fc_trusted": true
   },
   "fc_23355053": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹171",
+    "price": "₹160",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -14041,8 +14041,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T07:45:00",
-    "fc_api_seen_at": "2026-10-01T07:45:00",
+    "fc_listed_at": "2026-10-01T08:30:00",
+    "fc_api_seen_at": "2026-10-01T08:30:00",
     "fc_trusted": true
   },
   "fc_24342832": {
