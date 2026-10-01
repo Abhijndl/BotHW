@@ -2880,8 +2880,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T08:30:00",
-    "fc_api_seen_at": "2026-09-28T08:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -2914,8 +2914,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T05:15:00",
-    "fc_api_seen_at": "2026-10-01T05:15:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -3098,8 +3098,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_23075643": {
@@ -12628,8 +12628,8 @@
     "last_restock_alert": "2026-09-25T12:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T06:00:00",
-    "fc_api_seen_at": "2026-10-01T06:00:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_24473516": {
@@ -12775,8 +12775,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_24453327": {
@@ -13316,8 +13316,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_22601081": {
@@ -13401,7 +13401,7 @@
   "fc_23355053": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹160",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -14041,8 +14041,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T09:15:00",
-    "fc_api_seen_at": "2026-10-01T09:15:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14358,7 +14358,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14367,8 +14367,8 @@
     "last_restock_alert": "2026-09-28T13:32:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14729,7 +14729,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14738,8 +14738,8 @@
     "last_restock_alert": "2026-10-01T07:36:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:15:00",
-    "fc_api_seen_at": "2026-10-01T09:15:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_24504538": {
@@ -14995,8 +14995,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_591683": {
@@ -15092,8 +15092,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-01T09:45:00",
+    "fc_api_seen_at": "2026-10-01T09:45:00",
     "fc_trusted": true
   },
   "fc_21161950": {
