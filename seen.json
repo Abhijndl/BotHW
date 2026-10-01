@@ -4502,8 +4502,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T05:15:00",
-    "fc_api_seen_at": "2026-10-01T05:15:00",
+    "fc_listed_at": "2026-10-01T05:30:00",
+    "fc_api_seen_at": "2026-10-01T05:30:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -10846,8 +10846,8 @@
     "last_price_alert": "2026-09-22T09:46:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T04:15:00",
-    "fc_api_seen_at": "2026-10-01T04:15:00",
+    "fc_listed_at": "2026-10-01T05:30:00",
+    "fc_api_seen_at": "2026-10-01T05:30:00",
     "fc_trusted": true
   },
   "fc_23074883": {
@@ -15815,7 +15815,7 @@
   "fc_24247519": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (118/250) - Red & Gold",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pedal-driver-die-cast-free-wheel-toy-car-118-250-red-and-gold/24247519/product-detail",
     "first_seen": "2026-09-21T06:42:53",
