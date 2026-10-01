@@ -4013,7 +4013,7 @@
   "fc_23075645": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-17-audi-rs-6-avant-66-250-die-cast-toy-car-grey/23075645/product-detail",
     "first_seen": "2026-07-22T06:56:40",
@@ -14153,8 +14153,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T21:45:00",
-    "fc_api_seen_at": "2026-09-30T21:45:00",
+    "fc_listed_at": "2026-10-01T05:45:00",
+    "fc_api_seen_at": "2026-10-01T05:45:00",
     "fc_trusted": true
   },
   "fc_24473495": {
@@ -14224,15 +14224,15 @@
     "fc_trusted": true
   },
   "fc_24475737": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
     "last_seen": "2026-10-01T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T12:07:29",
+    "last_restock_alert": "2026-10-01T05:48:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-01T05:45:00",
@@ -16809,7 +16809,7 @@
   "fc_24546336": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Blue",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-blue/24546336/product-detail",
     "first_seen": "2026-09-23T12:30:00",
