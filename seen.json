@@ -5507,7 +5507,7 @@
     "fc_trusted": true
   },
   "fc_23351190": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 160/250 Lotus Sport Elise Die Cat Free Wheel Toy Car- Orange",
     "price": "₹161",
     "source": "firstcry",
@@ -5515,11 +5515,11 @@
     "first_seen": "2026-08-09T12:47:25",
     "last_seen": "2026-10-01T11:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-30T10:03:25",
+    "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T10:15:00",
-    "fc_api_seen_at": "2026-09-30T10:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24248207": {
@@ -10525,7 +10525,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1999",
+    "price": "₹1879",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -12521,7 +12521,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -12529,7 +12529,7 @@
     "first_seen": "2026-09-17T04:21:12",
     "last_seen": "2026-10-01T11:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T11:36:30",
+    "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-01T11:45:00",
@@ -12569,7 +12569,7 @@
     "fc_trusted": true
   },
   "fc_24473512": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
     "price": "₹170",
     "source": "firstcry",
@@ -12633,15 +12633,15 @@
     "fc_trusted": true
   },
   "fc_24473516": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-10-01T11:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T07:34:45",
+    "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-01T11:45:00",
@@ -13112,7 +13112,7 @@
     "fc_trusted": true
   },
   "fc_24342825": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Czinger 21c 2/5 Die-cast Car - Dark Green - Black",
     "price": "₹269",
     "source": "firstcry",
@@ -13120,11 +13120,11 @@
     "first_seen": "2026-09-17T09:03:37",
     "last_seen": "2026-10-01T11:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T05:17:40",
+    "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T16:15:00",
-    "fc_api_seen_at": "2026-09-30T16:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13209,7 +13209,7 @@
   "fc_24342822": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -13258,7 +13258,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13951,7 +13951,7 @@
   "fc_24323023": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2999",
+    "price": "₹2699",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -13961,8 +13961,8 @@
     "last_price_alert": "2026-09-22T07:07:02",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T11:30:00",
-    "fc_api_seen_at": "2026-10-01T11:30:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24503315": {
@@ -14001,7 +14001,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14324,7 +14324,7 @@
     "fc_trusted": true
   },
   "fc_24476435": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
     "price": "₹170",
     "source": "firstcry",
@@ -14332,7 +14332,7 @@
     "first_seen": "2026-09-19T22:36:04",
     "last_seen": "2026-10-01T11:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T07:55:55",
+    "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-01T11:45:00",
@@ -15027,8 +15027,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T08:15:00",
-    "fc_api_seen_at": "2026-09-29T08:15:00",
+    "fc_listed_at": "2026-10-01T11:45:00",
+    "fc_api_seen_at": "2026-10-01T11:45:00",
     "fc_trusted": true
   },
   "fc_24247501": {
