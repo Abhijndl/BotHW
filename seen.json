@@ -3488,7 +3488,7 @@
   "fc_23075644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cadillac Celestiq (163/250) Die Cast Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cadillac-celestiq-163-250-die-cast-toy-car-blue/23075644/product-detail",
     "first_seen": "2026-07-20T09:47:06",
@@ -3497,8 +3497,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T20:00:00",
-    "fc_api_seen_at": "2026-10-01T20:00:00",
+    "fc_listed_at": "2026-10-01T20:15:00",
+    "fc_api_seen_at": "2026-10-01T20:15:00",
     "fc_trusted": true
   },
   "fc_23346007": {
@@ -4807,8 +4807,8 @@
     "last_restock_alert": "2026-09-21T06:46:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T20:00:00",
-    "fc_api_seen_at": "2026-10-01T20:00:00",
+    "fc_listed_at": "2026-10-01T20:15:00",
+    "fc_api_seen_at": "2026-10-01T20:15:00",
     "fc_trusted": true
   },
   "fc_22548075": {
@@ -5773,8 +5773,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-01T20:00:00",
-    "fc_api_seen_at": "2026-10-01T20:00:00",
+    "fc_listed_at": "2026-10-01T20:15:00",
+    "fc_api_seen_at": "2026-10-01T20:15:00",
     "fc_trusted": true
   },
   "fc_24247504": {
@@ -12405,8 +12405,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T20:00:00",
-    "fc_api_seen_at": "2026-10-01T20:00:00",
+    "fc_listed_at": "2026-10-01T20:15:00",
+    "fc_api_seen_at": "2026-10-01T20:15:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -14309,7 +14309,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14324,9 +14324,9 @@
     "fc_trusted": true
   },
   "fc_24476435": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -16808,7 +16808,7 @@
     "fc_trusted": true
   },
   "fc_24546336": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Blue",
     "price": "₹539",
     "source": "firstcry",
