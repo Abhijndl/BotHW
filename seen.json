@@ -10534,8 +10534,8 @@
     "last_restock_alert": "2026-09-24T13:03:41",
     "last_price_alert": "2026-09-22T12:16:58",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T17:15:00",
-    "fc_api_seen_at": "2026-10-02T17:15:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "fc_23700381": {
@@ -11017,8 +11017,8 @@
     "last_restock_alert": "2026-09-22T10:46:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T17:15:00",
-    "fc_api_seen_at": "2026-10-02T17:15:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "kd_10gzYqjpAV": {
@@ -12263,7 +12263,7 @@
     "fc_trusted": true
   },
   "fc_23206927": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG16-JA10 - Pack of 2 - Purple & Green",
     "price": "₹262",
     "source": "firstcry",
@@ -12271,11 +12271,11 @@
     "first_seen": "2026-09-15T16:54:46",
     "last_seen": "2026-10-02T17:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T17:46:31",
+    "last_restock_alert": "2026-10-02T17:39:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T21:15:00",
-    "fc_api_seen_at": "2026-09-28T21:15:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "fc_23074882": {
@@ -12700,7 +12700,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12708,11 +12708,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-02T17:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-01T09:27:24",
+    "last_restock_alert": "2026-10-02T17:39:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T20:30:00",
-    "fc_api_seen_at": "2026-10-01T20:30:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -13492,8 +13492,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T17:15:00",
-    "fc_api_seen_at": "2026-10-02T17:15:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "fc_24475499": {
@@ -15958,8 +15958,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T17:00:00",
-    "fc_api_seen_at": "2026-10-02T17:00:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "fc_24390969": {
@@ -16210,8 +16210,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T17:15:00",
-    "fc_api_seen_at": "2026-10-02T17:15:00",
+    "fc_listed_at": "2026-10-02T17:30:00",
+    "fc_api_seen_at": "2026-10-02T17:30:00",
     "fc_trusted": true
   },
   "fc_24503324": {
