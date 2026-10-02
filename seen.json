@@ -4132,8 +4132,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-20T12:06:00",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_23345760": {
@@ -12678,8 +12678,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_24342824": {
@@ -12989,7 +12989,7 @@
   "fc_24476799": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -12998,8 +12998,8 @@
     "last_restock_alert": "2026-09-30T07:08:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_21993931": {
@@ -13220,8 +13220,8 @@
     "last_price_alert": "2026-09-22T11:04:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_22548069": {
@@ -13573,8 +13573,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -14113,7 +14113,7 @@
   "fc_22848387": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Free Wheels 07 Honda Civic Type R Kousoku Hauler Camion De Transport - Silver Car Transport Truck - WHITE",
-    "price": "₹1189",
+    "price": "₹1399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheels-07-honda-civic-type-r-kousoku-hauler-camion-de-transport-silver-car-transport-truck-white/22848387/product-detail",
     "first_seen": "2026-09-19T14:06:10",
@@ -14123,8 +14123,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T10:00:00",
-    "fc_api_seen_at": "2026-10-02T10:00:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_24546537": {
@@ -14308,7 +14308,7 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
     "price": "₹170",
     "source": "firstcry",
@@ -14320,8 +14320,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -14352,12 +14352,12 @@
     "last_restock_alert": "2026-09-25T08:44:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "fc_24473474": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
     "price": "₹170",
     "source": "firstcry",
@@ -16936,7 +16936,7 @@
     "fc_trusted": true
   },
   "fc_23074615": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Monster high Ghoul Mobile (48/250) Toy Car - Pink/Black",
     "price": "₹175",
     "source": "firstcry",
@@ -16944,11 +16944,11 @@
     "first_seen": "2026-09-25T04:15:00",
     "last_seen": "2026-10-02T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T05:02:58",
+    "last_restock_alert": "2026-10-02T10:32:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-28T07:00:00",
-    "fc_api_seen_at": "2026-09-28T07:00:00",
+    "fc_listed_at": "2026-10-02T10:30:00",
+    "fc_api_seen_at": "2026-10-02T10:30:00",
     "fc_trusted": true
   },
   "kd_PzNbB1ZNbQ": {
