@@ -3114,8 +3114,8 @@
     "last_restock_alert": "2026-09-21T07:13:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--mario-kart-diecast-asst-4mgl8dpbnjr6": {
@@ -3497,8 +3497,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_23346007": {
@@ -3783,8 +3783,8 @@
     "last_restock_alert": "2026-09-23T13:27:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_23074178": {
@@ -4336,8 +4336,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24007869": {
@@ -5789,8 +5789,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T11:42:13",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24246604": {
@@ -5912,8 +5912,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -12636,7 +12636,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13259,7 +13259,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13268,8 +13268,8 @@
     "last_restock_alert": "2026-09-29T15:04:28",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -13788,9 +13788,9 @@
     "fc_trusted": true
   },
   "fc_24473479": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -13833,8 +13833,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-30T22:30:00",
-    "fc_api_seen_at": "2026-09-30T22:30:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -14002,7 +14002,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -14308,7 +14308,7 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
     "price": "₹170",
     "source": "firstcry",
@@ -14626,8 +14626,8 @@
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T04:45:00",
-    "fc_api_seen_at": "2026-10-02T04:45:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24503306": {
@@ -14746,7 +14746,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15762,8 +15762,8 @@
     "last_restock_alert": "2026-09-29T15:21:31",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:15:00",
-    "fc_api_seen_at": "2026-10-02T07:15:00",
+    "fc_listed_at": "2026-10-02T07:30:00",
+    "fc_api_seen_at": "2026-10-02T07:30:00",
     "fc_trusted": true
   },
   "fc_24248205": {
@@ -16349,7 +16349,7 @@
   "fc_24525296": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Chevy Silverado Driftcation Die Cast Toy Truck - Yellow/Red",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chevy-silverado-driftcation-die-cast-toy-truck-yellow-red/24525296/product-detail",
     "first_seen": "2026-09-21T06:42:53",
