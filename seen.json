@@ -2620,8 +2620,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_22600231": {
@@ -3390,7 +3390,7 @@
   "fc_23075647": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Zonda Cinque (26/250) Die Cast Toy Car - Orange",
-    "price": "₹163",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-zonda-cinque-26-250-die-cast-toy-car-orange/23075647/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -12522,7 +12522,7 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -12533,8 +12533,8 @@
     "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -13515,7 +13515,7 @@
   "fc_24473494": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -14359,7 +14359,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14368,8 +14368,8 @@
     "last_restock_alert": "2026-09-28T13:32:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -15372,8 +15372,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_22955218": {
@@ -16244,8 +16244,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_24503322": {
@@ -16576,8 +16576,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T07:00:00",
-    "fc_api_seen_at": "2026-10-02T07:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_23074265": {
@@ -16626,8 +16626,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-29T16:00:00",
-    "fc_api_seen_at": "2026-09-29T16:00:00",
+    "fc_listed_at": "2026-10-02T07:15:00",
+    "fc_api_seen_at": "2026-10-02T07:15:00",
     "fc_trusted": true
   },
   "fc_24503901": {
