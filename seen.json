@@ -10457,8 +10457,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T17:45:00",
-    "fc_api_seen_at": "2026-10-02T17:45:00",
+    "fc_listed_at": "2026-10-02T18:00:00",
+    "fc_api_seen_at": "2026-10-02T18:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-city-stunt-garage-playset-for-boys-age-4y-multi-level-garage-with-stunt-racing-action-96407467": {
@@ -10651,7 +10651,7 @@
     "fc_trusted": true
   },
   "fc_23074887": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast El Segundo Rallye (145/250) Toy Car - Black/Red",
     "price": "₹161",
     "source": "firstcry",
@@ -10659,11 +10659,11 @@
     "first_seen": "2026-09-02T11:14:43",
     "last_seen": "2026-10-02T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T17:24:33",
+    "last_restock_alert": "2026-10-02T18:11:02",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T19:15:00",
-    "fc_api_seen_at": "2026-09-29T19:15:00",
+    "fc_listed_at": "2026-10-02T18:00:00",
+    "fc_api_seen_at": "2026-10-02T18:00:00",
     "fc_trusted": true
   },
   "fc_22928010": {
@@ -13677,7 +13677,7 @@
   "fc_24504533": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG22-JA10 Pack of 2 - Maroon & Blue",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg22-ja10-pack-of-2-maroon-and-blue/24504533/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -15471,8 +15471,8 @@
     "last_restock_alert": "2026-09-22T07:09:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T17:45:00",
-    "fc_api_seen_at": "2026-10-02T17:45:00",
+    "fc_listed_at": "2026-10-02T18:00:00",
+    "fc_api_seen_at": "2026-10-02T18:00:00",
     "fc_trusted": true
   },
   "fc_22548076": {
