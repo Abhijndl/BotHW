@@ -4227,7 +4227,7 @@
     "last_restock_alert": "2026-09-17T18:46:21",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-09-30T17:15:00"
+    "hm_verified_at": "2026-10-02T14:30:00"
   },
   "fc_22928009": {
     "stock": "out_of_stock",
@@ -5617,7 +5617,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-premium-fast-furious-bundle-for-boys-age-3y-premium-die-cast-car-collection-96407425": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle for Boys Age 3Y+ | Premium Die-Cast Car Collection",
     "price": "₹3999",
     "source": "hamleys",
