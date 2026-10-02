@@ -4823,8 +4823,8 @@
     "last_restock_alert": "2026-09-21T13:02:03",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:45:00",
-    "fc_api_seen_at": "2026-10-02T11:45:00",
+    "fc_listed_at": "2026-10-02T12:00:00",
+    "fc_api_seen_at": "2026-10-02T12:00:00",
     "fc_trusted": true
   },
   "fc_23348663": {
@@ -10555,7 +10555,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10566,8 +10566,8 @@
     "last_restock_alert": "2026-10-01T18:51:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T19:00:00",
-    "fc_api_seen_at": "2026-10-01T19:00:00",
+    "fc_listed_at": "2026-10-02T12:00:00",
+    "fc_api_seen_at": "2026-10-02T12:00:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -13324,7 +13324,7 @@
   "fc_22601081": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
