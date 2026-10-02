@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:15:00",
-    "fc_api_seen_at": "2026-10-02T11:15:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-09-25T07:54:28",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T09:00:00",
-    "fc_api_seen_at": "2026-10-02T09:00:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -5805,8 +5805,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T10:45:00",
-    "fc_api_seen_at": "2026-10-02T10:45:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -10550,8 +10550,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:15:00",
-    "fc_api_seen_at": "2026-10-02T11:15:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_23930666": {
@@ -13340,7 +13340,7 @@
   "fc_24503903": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -13556,8 +13556,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:15:00",
-    "fc_api_seen_at": "2026-10-02T11:15:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_24342829": {
@@ -14310,7 +14310,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14359,7 +14359,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -15126,8 +15126,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:15:00",
-    "fc_api_seen_at": "2026-10-02T11:15:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_20466054": {
@@ -15142,8 +15142,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:15:00",
-    "fc_api_seen_at": "2026-10-02T11:15:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_3456482": {
@@ -16795,7 +16795,7 @@
   "fc_24546337": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car - Yellow",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-yellow/24546337/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16804,8 +16804,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-25T15:26:30",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:15:00",
-    "fc_api_seen_at": "2026-10-02T11:15:00",
+    "fc_listed_at": "2026-10-02T11:30:00",
+    "fc_api_seen_at": "2026-10-02T11:30:00",
     "fc_trusted": true
   },
   "fc_24546336": {
