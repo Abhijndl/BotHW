@@ -5617,7 +5617,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-premium-fast-furious-bundle-for-boys-age-3y-premium-die-cast-car-collection-96407425": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle for Boys Age 3Y+ | Premium Die-Cast Car Collection",
     "price": "₹3999",
     "source": "hamleys",
@@ -5628,7 +5628,7 @@
     "last_restock_alert": "2026-10-02T08:01:45",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-02T15:45:00"
+    "hm_verified_at": "2026-10-02T16:45:00"
   },
   "fc_24194176": {
     "stock": "in_stock",
@@ -16857,7 +16857,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
@@ -16865,10 +16865,10 @@
     "first_seen": "2026-09-23T16:45:00",
     "last_seen": "2026-10-02T16:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-30T09:31:24",
+    "last_restock_alert": "2026-10-02T16:58:50",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-02T14:30:00"
+    "hm_verified_at": "2026-10-02T16:45:00"
   },
   "fc_23104343": {
     "stock": "out_of_stock",
