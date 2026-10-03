@@ -3497,8 +3497,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T11:30:00",
-    "fc_api_seen_at": "2026-10-03T11:30:00",
+    "fc_listed_at": "2026-10-03T11:45:00",
+    "fc_api_seen_at": "2026-10-03T11:45:00",
     "fc_trusted": true
   },
   "fc_23346007": {
@@ -13324,7 +13324,7 @@
   "fc_22601081": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-formula-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22601081/product-detail",
     "first_seen": "2026-09-17T16:16:23",
@@ -13333,8 +13333,8 @@
     "last_restock_alert": "2026-09-29T11:52:24",
     "last_price_alert": "2026-09-22T09:03:44",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T10:30:00",
-    "fc_api_seen_at": "2026-10-03T10:30:00",
+    "fc_listed_at": "2026-10-03T11:45:00",
+    "fc_api_seen_at": "2026-10-03T11:45:00",
     "fc_trusted": true
   },
   "fc_24503903": {
@@ -14593,8 +14593,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T11:30:00",
-    "fc_api_seen_at": "2026-10-03T11:30:00",
+    "fc_listed_at": "2026-10-03T11:45:00",
+    "fc_api_seen_at": "2026-10-03T11:45:00",
     "fc_trusted": true
   },
   "fc_24503331": {
@@ -14626,8 +14626,8 @@
     "last_price_alert": "2026-09-21T16:12:52",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T11:00:00",
-    "fc_api_seen_at": "2026-10-03T11:00:00",
+    "fc_listed_at": "2026-10-03T11:45:00",
+    "fc_api_seen_at": "2026-10-03T11:45:00",
     "fc_trusted": true
   },
   "fc_24503306": {
@@ -15941,8 +15941,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T11:30:00",
-    "fc_api_seen_at": "2026-10-03T11:30:00",
+    "fc_listed_at": "2026-10-03T11:45:00",
+    "fc_api_seen_at": "2026-10-03T11:45:00",
     "fc_trusted": true
   },
   "fc_24390971": {
