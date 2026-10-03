@@ -4823,8 +4823,8 @@
     "last_restock_alert": "2026-09-21T13:02:03",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T07:15:00",
-    "fc_api_seen_at": "2026-10-03T07:15:00",
+    "fc_listed_at": "2026-10-03T07:30:00",
+    "fc_api_seen_at": "2026-10-03T07:30:00",
     "fc_trusted": true
   },
   "fc_23348663": {
@@ -9675,8 +9675,8 @@
     "last_restock_alert": "2026-09-27T01:40:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T07:00:00",
-    "fc_api_seen_at": "2026-10-03T07:00:00",
+    "fc_listed_at": "2026-10-03T07:30:00",
+    "fc_api_seen_at": "2026-10-03T07:30:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -9881,7 +9881,7 @@
   "fc_22435130": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Car Case Set of 4 Connectible Storage Display Box with Free Car-Orange",
-    "price": "₹261",
+    "price": "₹349",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-car-case-set-of-4-connectible-storage-display-box-with-free-car-orange/22435130/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -9890,8 +9890,8 @@
     "last_restock_alert": "2026-10-01T08:42:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T06:15:00",
-    "fc_api_seen_at": "2026-10-02T06:15:00",
+    "fc_listed_at": "2026-10-03T07:30:00",
+    "fc_api_seen_at": "2026-10-03T07:30:00",
     "fc_trusted": true
   },
   "fc_22048350": {
@@ -12406,8 +12406,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T07:00:00",
-    "fc_api_seen_at": "2026-10-03T07:00:00",
+    "fc_listed_at": "2026-10-03T07:30:00",
+    "fc_api_seen_at": "2026-10-03T07:30:00",
     "fc_trusted": true
   },
   "fc_24476800": {
@@ -12700,7 +12700,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12711,8 +12711,8 @@
     "last_restock_alert": "2026-10-02T17:39:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T18:15:00",
-    "fc_api_seen_at": "2026-10-02T18:15:00",
+    "fc_listed_at": "2026-10-03T07:30:00",
+    "fc_api_seen_at": "2026-10-03T07:30:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -13178,7 +13178,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13210,7 +13210,7 @@
   "fc_24342822": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -14327,7 +14327,7 @@
   "fc_24476435": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
