@@ -2705,7 +2705,7 @@
     "fc_trusted": true
   },
   "fc_23354598": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 172/250 Tooned Volkswagen Toy Car- White",
     "price": "₹161",
     "source": "firstcry",
@@ -2713,11 +2713,11 @@
     "first_seen": "2026-07-19T07:01:32",
     "last_seen": "2026-10-03T17:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T06:05:24",
+    "last_restock_alert": "2026-10-03T17:56:54",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T07:45:00",
-    "fc_api_seen_at": "2026-10-03T07:45:00",
+    "fc_listed_at": "2026-10-03T17:45:00",
+    "fc_api_seen_at": "2026-10-03T17:45:00",
     "fc_trusted": true
   },
   "fc_23074886": {
@@ -3456,7 +3456,7 @@
   "fc_23074267": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast LA Liebre (31/250) Toy Car - White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-la-liebre-31-250-toy-car-white/23074267/product-detail",
     "first_seen": "2026-07-20T09:02:19",
@@ -3465,8 +3465,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T05:45:00",
-    "fc_api_seen_at": "2026-10-02T05:45:00",
+    "fc_listed_at": "2026-10-03T17:45:00",
+    "fc_api_seen_at": "2026-10-03T17:45:00",
     "fc_trusted": true
   },
   "fc_23076125": {
