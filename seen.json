@@ -2897,8 +2897,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_23074618": {
@@ -3767,8 +3767,8 @@
     "last_restock_alert": "2026-09-26T07:07:25",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_23074891": {
@@ -5837,8 +5837,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-5-car-pack-rosso-for-boys-age-3y-die-cast-vehicle-collection-96407472": {
@@ -12815,7 +12815,7 @@
   "fc_24390968": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 4/5 Silver Series Vintage Club 73 Honda Civic Custom/Personnalise Die-cast Car - Beige",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-4-5-silver-series-vintage-club-73-honda-civic-custom-personnalise-die-cast-car-beige/24390968/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12825,8 +12825,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_24248198": {
@@ -13476,8 +13476,8 @@
     "last_price_alert": "2026-09-21T09:34:59",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_24473476": {
@@ -14841,7 +14841,7 @@
     "fc_trusted": true
   },
   "fc_23835980": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mood Crusher Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Yellow & Blue",
     "price": "₹411",
     "source": "firstcry",
@@ -14849,11 +14849,11 @@
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-03T05:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-03T05:32:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-27T05:45:00",
-    "fc_api_seen_at": "2026-09-27T05:45:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_23835984": {
@@ -15633,8 +15633,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_24246593": {
@@ -15975,8 +15975,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T05:15:00",
-    "fc_api_seen_at": "2026-10-03T05:15:00",
+    "fc_listed_at": "2026-10-03T05:30:00",
+    "fc_api_seen_at": "2026-10-03T05:30:00",
     "fc_trusted": true
   },
   "fc_24390966": {
