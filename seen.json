@@ -12668,7 +12668,7 @@
   "fc_24473731": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -13918,7 +13918,7 @@
     "fc_trusted": true
   },
   "fc_24504534": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG14-JA10 Pack of 2 - White & Red",
     "price": "₹323",
     "source": "firstcry",
@@ -14921,9 +14921,9 @@
     "fc_trusted": true
   },
   "fc_24504537": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG20-JA10 Pack of 2 - Black & Blue",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg20-ja10-pack-of-2-black-and-blue/24504537/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -14932,8 +14932,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T20:45:00",
-    "fc_api_seen_at": "2026-10-03T20:45:00",
+    "fc_listed_at": "2026-10-03T22:00:00",
+    "fc_api_seen_at": "2026-10-03T22:00:00",
     "fc_trusted": true
   },
   "fc_24503311": {
