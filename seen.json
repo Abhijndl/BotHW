@@ -10892,8 +10892,8 @@
     "last_restock_alert": "2026-09-25T07:54:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T17:15:00",
-    "fc_api_seen_at": "2026-10-03T17:15:00",
+    "fc_listed_at": "2026-10-03T17:30:00",
+    "fc_api_seen_at": "2026-10-03T17:30:00",
     "fc_trusted": true
   },
   "fc_22149914": {
@@ -12279,7 +12279,7 @@
     "fc_trusted": true
   },
   "fc_23074882": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast dessert Drifter / Gelee De Derapage (55/250) Toy Car - Orange/White",
     "price": "₹175",
     "source": "firstcry",
@@ -12287,11 +12287,11 @@
     "first_seen": "2026-09-16T04:32:52",
     "last_seen": "2026-10-03T17:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T17:46:31",
+    "last_restock_alert": "2026-10-03T17:38:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T04:45:00",
-    "fc_api_seen_at": "2026-10-01T04:45:00",
+    "fc_listed_at": "2026-10-03T17:30:00",
+    "fc_api_seen_at": "2026-10-03T17:30:00",
     "fc_trusted": true
   },
   "fc_22597520": {
