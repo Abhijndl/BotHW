@@ -2794,8 +2794,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T08:30:00",
-    "fc_api_seen_at": "2026-10-03T08:30:00",
+    "fc_listed_at": "2026-10-03T09:30:00",
+    "fc_api_seen_at": "2026-10-03T09:30:00",
     "fc_trusted": true
   },
   "mg_1958c29c-b21a-4ead-82d6-a112c4528203": {
@@ -4493,7 +4493,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -4503,8 +4503,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T09:15:00",
-    "fc_api_seen_at": "2026-10-03T09:15:00",
+    "fc_listed_at": "2026-10-03T09:30:00",
+    "fc_api_seen_at": "2026-10-03T09:30:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -4647,8 +4647,8 @@
     "last_restock_alert": "2026-09-28T06:05:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T08:45:00",
-    "fc_api_seen_at": "2026-10-03T08:45:00",
+    "fc_listed_at": "2026-10-03T09:30:00",
+    "fc_api_seen_at": "2026-10-03T09:30:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -5667,7 +5667,7 @@
   "fc_24194173": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Formula 1 Toy Cars 10-Pack, 1:64 Scale Die-Cast Free Wheel Race Cars - Multicolor",
-    "price": "₹1999",
+    "price": "₹1799",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-formula-1-toy-cars-10-pack-1-64-scale-die-cast-free-wheel-race-cars-multicolor/24194173/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5676,8 +5676,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T09:15:00",
-    "fc_api_seen_at": "2026-10-03T09:15:00",
+    "fc_listed_at": "2026-10-03T09:30:00",
+    "fc_api_seen_at": "2026-10-03T09:30:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -11499,8 +11499,8 @@
     "last_restock_alert": "2026-09-28T04:32:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T09:15:00",
-    "fc_api_seen_at": "2026-10-03T09:15:00",
+    "fc_listed_at": "2026-10-03T09:30:00",
+    "fc_api_seen_at": "2026-10-03T09:30:00",
     "fc_trusted": true
   },
   "fc_23353034": {
@@ -14804,8 +14804,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T09:15:00",
-    "fc_api_seen_at": "2026-10-03T09:15:00",
+    "fc_listed_at": "2026-10-03T09:30:00",
+    "fc_api_seen_at": "2026-10-03T09:30:00",
     "fc_trusted": true
   },
   "fc_22597474": {
@@ -16084,7 +16084,7 @@
   "fc_24390958": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
