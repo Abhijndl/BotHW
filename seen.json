@@ -2914,8 +2914,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T06:15:00",
-    "fc_api_seen_at": "2026-10-03T06:15:00",
+    "fc_listed_at": "2026-10-03T06:30:00",
+    "fc_api_seen_at": "2026-10-03T06:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -3488,7 +3488,7 @@
   "fc_23075644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cadillac Celestiq (163/250) Die Cast Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cadillac-celestiq-163-250-die-cast-toy-car-blue/23075644/product-detail",
     "first_seen": "2026-07-20T09:47:06",
@@ -10883,7 +10883,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -12652,7 +12652,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13178,7 +13178,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13268,8 +13268,8 @@
     "last_restock_alert": "2026-09-29T15:04:28",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T05:45:00",
-    "fc_api_seen_at": "2026-10-03T05:45:00",
+    "fc_listed_at": "2026-10-03T06:30:00",
+    "fc_api_seen_at": "2026-10-03T06:30:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -16082,15 +16082,15 @@
     "fc_trusted": true
   },
   "fc_24390958": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-03T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T07:41:01",
+    "last_restock_alert": "2026-10-03T06:36:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
