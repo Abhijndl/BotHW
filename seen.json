@@ -14598,7 +14598,7 @@
     "fc_trusted": true
   },
   "fc_24503331": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Czinger 21C - Green",
     "price": "₹299",
     "source": "firstcry",
@@ -14609,8 +14609,8 @@
     "last_restock_alert": "2026-10-03T08:12:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T08:45:00",
-    "fc_api_seen_at": "2026-10-03T08:45:00",
+    "fc_listed_at": "2026-10-03T10:15:00",
+    "fc_api_seen_at": "2026-10-03T10:15:00",
     "fc_trusted": true
   },
   "fc_24342823": {
@@ -16193,8 +16193,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T19:15:00",
-    "fc_api_seen_at": "2026-10-02T19:15:00",
+    "fc_listed_at": "2026-10-03T10:15:00",
+    "fc_api_seen_at": "2026-10-03T10:15:00",
     "fc_trusted": true
   },
   "fc_24503328": {
