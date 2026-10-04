@@ -9890,8 +9890,8 @@
     "last_restock_alert": "2026-10-03T17:08:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T06:30:00",
-    "fc_api_seen_at": "2026-10-04T06:30:00",
+    "fc_listed_at": "2026-10-04T08:45:00",
+    "fc_api_seen_at": "2026-10-04T08:45:00",
     "fc_trusted": true
   },
   "fc_22048350": {
@@ -12634,9 +12634,9 @@
     "fc_trusted": true
   },
   "fc_24473516": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12711,8 +12711,8 @@
     "last_restock_alert": "2026-10-04T05:01:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T06:30:00",
-    "fc_api_seen_at": "2026-10-04T06:30:00",
+    "fc_listed_at": "2026-10-04T08:45:00",
+    "fc_api_seen_at": "2026-10-04T08:45:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -14042,8 +14042,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T07:00:00",
-    "fc_api_seen_at": "2026-10-04T07:00:00",
+    "fc_listed_at": "2026-10-04T08:45:00",
+    "fc_api_seen_at": "2026-10-04T08:45:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14746,7 +14746,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15044,8 +15044,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T08:00:00",
-    "fc_api_seen_at": "2026-10-04T08:00:00",
+    "fc_listed_at": "2026-10-04T08:45:00",
+    "fc_api_seen_at": "2026-10-04T08:45:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -17208,7 +17208,7 @@
   "fc_22623491": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG13-JA10 Pack of 2 - Brown & Green",
-    "price": "₹257",
+    "price": "₹334",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg13-ja10-pack-of-2-brown-and-green/22623491/product-detail",
     "first_seen": "2026-09-27T04:00:00",
