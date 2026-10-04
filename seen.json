@@ -13513,7 +13513,7 @@
     "fc_trusted": true
   },
   "fc_24473494": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
     "price": "₹170",
     "source": "firstcry",
@@ -13677,7 +13677,7 @@
   "fc_24504533": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG22-JA10 Pack of 2 - Maroon & Blue",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg22-ja10-pack-of-2-maroon-and-blue/24504533/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -14160,7 +14160,7 @@
     "fc_trusted": true
   },
   "fc_24473495": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -14168,7 +14168,7 @@
     "first_seen": "2026-09-19T18:21:18",
     "last_seen": "2026-10-04T18:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-30T12:42:33",
+    "last_restock_alert": "2026-10-04T18:51:03",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-04T18:45:00",
