@@ -3943,8 +3943,8 @@
     "last_restock_alert": "2026-09-22T22:31:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T17:15:00",
-    "fc_api_seen_at": "2026-10-04T17:15:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "fc_23076123": {
@@ -11767,7 +11767,7 @@
     "fc_trusted": true
   },
   "fc_23081312": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG15-JA10 Pack of 2- Green & Blue",
     "price": "₹323",
     "source": "firstcry",
@@ -11775,11 +11775,11 @@
     "first_seen": "2026-09-14T04:18:41",
     "last_seen": "2026-10-04T17:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-03T13:32:20",
+    "last_restock_alert": "2026-10-04T17:41:20",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T14:45:00",
-    "fc_api_seen_at": "2026-10-03T14:45:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "fc_24236114": {
@@ -13370,7 +13370,7 @@
   "fc_24342834": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Classic Tv Series The Batman Batmobile 1:64 Scale Toy Car -Black",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-classic-tv-series-the-batman-batmobile-1-64-scale-toy-car-black/24342834/product-detail",
     "first_seen": "2026-09-17T18:01:52",
@@ -13379,8 +13379,8 @@
     "last_restock_alert": "2026-09-28T09:08:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T17:15:00",
-    "fc_api_seen_at": "2026-10-03T17:15:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "fc_22623489": {
@@ -13513,7 +13513,7 @@
     "fc_trusted": true
   },
   "fc_24473494": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
     "price": "₹170",
     "source": "firstcry",
@@ -13524,8 +13524,8 @@
     "last_restock_alert": "2026-10-04T15:04:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T16:15:00",
-    "fc_api_seen_at": "2026-10-04T16:15:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "fc_24476257": {
@@ -13627,7 +13627,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24342830": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1993 Honda Civic Coupe Ex Ej1 Car - L - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13639,8 +13639,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T08:45:00",
-    "fc_api_seen_at": "2026-10-04T08:45:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -13767,8 +13767,8 @@
     "last_restock_alert": "2026-10-04T07:22:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T13:15:00",
-    "fc_api_seen_at": "2026-10-04T13:15:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14368,8 +14368,8 @@
     "last_restock_alert": "2026-10-04T06:35:03",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T07:00:00",
-    "fc_api_seen_at": "2026-10-04T07:00:00",
+    "fc_listed_at": "2026-10-04T17:30:00",
+    "fc_api_seen_at": "2026-10-04T17:30:00",
     "fc_trusted": true
   },
   "fc_24475206": {
