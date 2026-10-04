@@ -4636,19 +4636,19 @@
     "fc_trusted": true
   },
   "fc_23354966": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
-    "price": "₹171",
+    "price": "₹160",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-86-250-vw-id-buzz-bomb-toy-car-blue/23354966/product-detail",
     "first_seen": "2026-08-01T04:27:10",
     "last_seen": "2026-10-04T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T06:05:24",
+    "last_restock_alert": "2026-10-04T07:22:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T12:15:00",
-    "fc_api_seen_at": "2026-10-03T12:15:00",
+    "fc_listed_at": "2026-10-04T07:15:00",
+    "fc_api_seen_at": "2026-10-04T07:15:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -9675,8 +9675,8 @@
     "last_restock_alert": "2026-09-27T01:40:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T05:30:00",
-    "fc_api_seen_at": "2026-10-04T05:30:00",
+    "fc_listed_at": "2026-10-04T07:15:00",
+    "fc_api_seen_at": "2026-10-04T07:15:00",
     "fc_trusted": true
   },
   "fc_22912945": {
@@ -10525,7 +10525,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1999",
+    "price": "₹1879",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -12733,7 +12733,7 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12741,11 +12741,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-04T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T05:48:27",
+    "last_restock_alert": "2026-10-04T07:22:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T10:00:00",
-    "fc_api_seen_at": "2026-09-30T10:00:00",
+    "fc_listed_at": "2026-10-04T07:15:00",
+    "fc_api_seen_at": "2026-10-04T07:15:00",
     "fc_trusted": true
   },
   "fc_24314518": {
@@ -13301,8 +13301,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T05:15:00",
-    "fc_api_seen_at": "2026-10-04T05:15:00",
+    "fc_listed_at": "2026-10-04T07:15:00",
+    "fc_api_seen_at": "2026-10-04T07:15:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -13756,15 +13756,15 @@
     "fc_trusted": true
   },
   "fc_24514776": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-escort-die-cast-free-wheel-toy-car-blue-and-gold/24514776/product-detail",
     "first_seen": "2026-09-18T14:41:38",
     "last_seen": "2026-10-04T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T04:46:25",
+    "last_restock_alert": "2026-10-04T07:22:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-04T07:15:00",
@@ -14728,9 +14728,9 @@
     "fc_trusted": true
   },
   "fc_24514775": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -16099,7 +16099,7 @@
     "fc_trusted": true
   },
   "fc_24390957": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 2024 Toyota Tacoma TRD PRO Toy Car - Red",
     "price": "₹549",
     "source": "firstcry",
@@ -16107,7 +16107,7 @@
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-04T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T07:55:55",
+    "last_restock_alert": "2026-10-04T07:22:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16905,7 +16905,7 @@
   "fc_24473510": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
-    "price": "₹166",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-custom-personnalise-die-cast-car-60-250-green/24473510/product-detail",
     "first_seen": "2026-09-24T14:15:00",
