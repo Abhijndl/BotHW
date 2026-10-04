@@ -16099,7 +16099,7 @@
     "fc_trusted": true
   },
   "fc_24390957": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 2024 Toyota Tacoma TRD PRO Toy Car - Red",
     "price": "₹549",
     "source": "firstcry",
@@ -16111,8 +16111,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T08:45:00",
-    "fc_api_seen_at": "2026-10-04T08:45:00",
+    "fc_listed_at": "2026-10-04T10:00:00",
+    "fc_api_seen_at": "2026-10-04T10:00:00",
     "fc_trusted": true
   },
   "fc_24476798": {
