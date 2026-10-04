@@ -11762,8 +11762,8 @@
     "last_restock_alert": "2026-09-28T12:26:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T05:00:00",
-    "fc_api_seen_at": "2026-10-04T05:00:00",
+    "fc_listed_at": "2026-10-04T05:15:00",
+    "fc_api_seen_at": "2026-10-04T05:15:00",
     "fc_trusted": true
   },
   "fc_23081312": {
@@ -13627,7 +13627,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24342830": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1993 Honda Civic Coupe Ex Ej1 Car - L - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13635,12 +13635,12 @@
     "first_seen": "2026-09-18T09:36:15",
     "last_seen": "2026-10-04T05:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-28T07:08:49",
+    "last_restock_alert": "2026-10-04T05:17:21",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T15:30:00",
-    "fc_api_seen_at": "2026-10-03T15:30:00",
+    "fc_listed_at": "2026-10-04T05:15:00",
+    "fc_api_seen_at": "2026-10-04T05:15:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -16599,7 +16599,7 @@
   "fc_22848390": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Team Transport Volkswagen Corrado VR6 and '67 Off Road Camaro Transport Truck Set- White / Blue",
-    "price": "₹1399",
+    "price": "₹1189",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-team-transport-volkswagen-corrado-vr6-and-67-off-road-camaro-transport-truck-set-white-blue/22848390/product-detail",
     "first_seen": "2026-09-21T13:17:34",
@@ -16609,8 +16609,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-02T10:15:00",
-    "fc_api_seen_at": "2026-10-02T10:15:00",
+    "fc_listed_at": "2026-10-04T05:15:00",
+    "fc_api_seen_at": "2026-10-04T05:15:00",
     "fc_trusted": true
   },
   "fc_24342827": {
@@ -16662,9 +16662,9 @@
     "hm_verified_at": "2026-09-28T17:45:00"
   },
   "fc_24476887": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
@@ -16673,8 +16673,8 @@
     "last_restock_alert": "2026-10-03T09:01:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T05:00:00",
-    "fc_api_seen_at": "2026-10-04T05:00:00",
+    "fc_listed_at": "2026-10-04T05:15:00",
+    "fc_api_seen_at": "2026-10-04T05:15:00",
     "fc_trusted": true
   },
   "fc_24248194": {
