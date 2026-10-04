@@ -10892,8 +10892,8 @@
     "last_restock_alert": "2026-09-25T07:54:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T12:15:00",
-    "fc_api_seen_at": "2026-10-04T12:15:00",
+    "fc_listed_at": "2026-10-04T12:30:00",
+    "fc_api_seen_at": "2026-10-04T12:30:00",
     "fc_trusted": true
   },
   "fc_22149914": {
@@ -11389,8 +11389,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T12:15:00",
-    "fc_api_seen_at": "2026-10-04T12:15:00",
+    "fc_listed_at": "2026-10-04T12:30:00",
+    "fc_api_seen_at": "2026-10-04T12:30:00",
     "fc_trusted": true
   },
   "fc_23103132": {
@@ -11799,7 +11799,7 @@
     "fc_trusted": true
   },
   "fc_24194169": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
     "price": "₹809",
     "source": "firstcry",
@@ -11811,8 +11811,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T09:45:00",
-    "fc_api_seen_at": "2026-10-04T09:45:00",
+    "fc_listed_at": "2026-10-04T12:30:00",
+    "fc_api_seen_at": "2026-10-04T12:30:00",
     "fc_trusted": true
   },
   "kd_ykL0eAKpRZ": {
@@ -12636,7 +12636,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13952,7 +13952,7 @@
   "fc_24323023": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2699",
+    "price": "₹2999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -13962,8 +13962,8 @@
     "last_price_alert": "2026-09-22T07:07:02",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T12:15:00",
-    "fc_api_seen_at": "2026-10-04T12:15:00",
+    "fc_listed_at": "2026-10-04T12:30:00",
+    "fc_api_seen_at": "2026-10-04T12:30:00",
     "fc_trusted": true
   },
   "fc_24503315": {
@@ -15044,8 +15044,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T11:00:00",
-    "fc_api_seen_at": "2026-10-04T11:00:00",
+    "fc_listed_at": "2026-10-04T12:30:00",
+    "fc_api_seen_at": "2026-10-04T12:30:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15372,8 +15372,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T12:15:00",
-    "fc_api_seen_at": "2026-10-04T12:15:00",
+    "fc_listed_at": "2026-10-04T12:30:00",
+    "fc_api_seen_at": "2026-10-04T12:30:00",
     "fc_trusted": true
   },
   "fc_22955218": {
