@@ -2620,8 +2620,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T11:30:00",
-    "fc_api_seen_at": "2026-10-04T11:30:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_22600231": {
@@ -4289,8 +4289,8 @@
     "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T11:30:00",
-    "fc_api_seen_at": "2026-10-02T11:30:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_23348661": {
@@ -5650,7 +5650,7 @@
   "fc_24194174": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle of 5 1:64 Scale Die-Cast Free Wheel Toy Cars - Multicolor",
-    "price": "₹3599",
+    "price": "₹3999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-bundle-of-5-1-64-scale-die-cast-free-wheel-toy-cars-multicolor/24194174/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -5660,8 +5660,8 @@
     "last_price_alert": "2026-09-22T13:08:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T13:15:00",
-    "fc_api_seen_at": "2026-10-04T13:15:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_24194173": {
@@ -13427,8 +13427,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T18:45:00",
-    "fc_api_seen_at": "2026-10-04T18:45:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_23930428": {
@@ -13783,8 +13783,8 @@
     "last_restock_alert": "2026-09-21T08:17:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T18:45:00",
-    "fc_api_seen_at": "2026-10-04T18:45:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_24473479": {
@@ -14466,8 +14466,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T18:45:00",
-    "fc_api_seen_at": "2026-10-04T18:45:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "mg_70cf1a66-5326-4b31-b1a7-e10a0cafecce": {
@@ -15585,8 +15585,8 @@
     "last_restock_alert": "2026-09-24T04:12:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T18:45:00",
-    "fc_api_seen_at": "2026-10-04T18:45:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_23832900": {
@@ -16111,8 +16111,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T18:45:00",
-    "fc_api_seen_at": "2026-10-04T18:45:00",
+    "fc_listed_at": "2026-10-04T19:00:00",
+    "fc_api_seen_at": "2026-10-04T19:00:00",
     "fc_trusted": true
   },
   "fc_24476798": {
