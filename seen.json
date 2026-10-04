@@ -3423,7 +3423,7 @@
   "fc_23074888": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast 70 Dodge Heml Challenger (36/250) Toy Car - Black",
-    "price": "₹160",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-70-dodge-heml-challenger-36-250-toy-car-black/23074888/product-detail",
     "first_seen": "2026-07-20T08:32:04",
@@ -12683,15 +12683,15 @@
     "fc_trusted": true
   },
   "fc_24342824": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-04T19:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-01T09:58:27",
+    "last_restock_alert": "2026-10-04T19:53:40",
     "last_price_alert": "2026-09-22T07:09:08",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
