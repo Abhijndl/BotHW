@@ -11753,7 +11753,7 @@
   "fc_24246594": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Street Shaker Toy Car (202/250) With Free Wheel Feature - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-street-shaker-toy-car-202-250-with-free-wheel-feature-blue/24246594/product-detail",
     "first_seen": "2026-09-13T19:21:23",
@@ -12910,7 +12910,7 @@
     "fc_trusted": true
   },
   "fc_24342667": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Heavy Doody Dumper Wheel Car - Yellow",
     "price": "₹764",
     "source": "firstcry",
@@ -12918,11 +12918,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-04T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T07:55:55",
+    "last_restock_alert": "2026-10-04T06:34:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T10:45:00",
-    "fc_api_seen_at": "2026-10-01T10:45:00",
+    "fc_listed_at": "2026-10-04T06:30:00",
+    "fc_api_seen_at": "2026-10-04T06:30:00",
     "fc_trusted": true
   },
   "fc_22277227": {
@@ -13268,8 +13268,8 @@
     "last_restock_alert": "2026-09-29T15:04:28",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T05:00:00",
-    "fc_api_seen_at": "2026-10-04T05:00:00",
+    "fc_listed_at": "2026-10-04T06:30:00",
+    "fc_api_seen_at": "2026-10-04T06:30:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -14357,7 +14357,7 @@
     "fc_trusted": true
   },
   "fc_24473474": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
     "price": "₹170",
     "source": "firstcry",
@@ -14365,11 +14365,11 @@
     "first_seen": "2026-09-19T22:41:12",
     "last_seen": "2026-10-04T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-02T09:31:48",
+    "last_restock_alert": "2026-10-04T06:34:33",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T09:30:00",
-    "fc_api_seen_at": "2026-10-03T09:30:00",
+    "fc_listed_at": "2026-10-04T06:30:00",
+    "fc_api_seen_at": "2026-10-04T06:30:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14730,7 +14730,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15406,8 +15406,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T06:15:00",
-    "fc_api_seen_at": "2026-10-04T06:15:00",
+    "fc_listed_at": "2026-10-04T06:30:00",
+    "fc_api_seen_at": "2026-10-04T06:30:00",
     "fc_trusted": true
   },
   "fc_22848389": {
@@ -16662,7 +16662,7 @@
     "hm_verified_at": "2026-09-28T17:45:00"
   },
   "fc_24476887": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
     "price": "₹170",
     "source": "firstcry",
