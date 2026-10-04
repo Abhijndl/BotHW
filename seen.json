@@ -7328,15 +7328,15 @@
     "last_price_alert": ""
   },
   "kd_GXpKABQNmx": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT MERCEDES-BENZ EQS 580 4MATIC RED METALLIC",
     "price": "₹1119",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mercedes-benz-eqs-580-4matic-red-metallic?pid=GXpKABQNmx",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-04T16:45:00",
+    "last_seen": "2026-10-04T17:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-04T17:11:09",
     "last_price_alert": ""
   },
   "kd_eJNr9aagBd": {
