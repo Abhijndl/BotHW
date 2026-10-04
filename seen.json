@@ -10566,8 +10566,8 @@
     "last_restock_alert": "2026-10-03T13:50:05",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T07:15:00",
-    "fc_api_seen_at": "2026-10-04T07:15:00",
+    "fc_listed_at": "2026-10-04T07:30:00",
+    "fc_api_seen_at": "2026-10-04T07:30:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -11811,8 +11811,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T07:00:00",
-    "fc_api_seen_at": "2026-10-04T07:00:00",
+    "fc_listed_at": "2026-10-04T07:30:00",
+    "fc_api_seen_at": "2026-10-04T07:30:00",
     "fc_trusted": true
   },
   "kd_ykL0eAKpRZ": {
@@ -12857,8 +12857,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T07:15:00",
-    "fc_api_seen_at": "2026-10-04T07:15:00",
+    "fc_listed_at": "2026-10-04T07:30:00",
+    "fc_api_seen_at": "2026-10-04T07:30:00",
     "fc_trusted": true
   },
   "fc_24341962": {
@@ -13723,7 +13723,7 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹179",
     "source": "firstcry",
@@ -14113,7 +14113,7 @@
   "fc_22848387": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Free Wheels 07 Honda Civic Type R Kousoku Hauler Camion De Transport - Silver Car Transport Truck - WHITE",
-    "price": "₹1189",
+    "price": "₹1399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheels-07-honda-civic-type-r-kousoku-hauler-camion-de-transport-silver-car-transport-truck-white/22848387/product-detail",
     "first_seen": "2026-09-19T14:06:10",
@@ -14852,8 +14852,8 @@
     "last_restock_alert": "2026-10-03T05:32:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T07:15:00",
-    "fc_api_seen_at": "2026-10-04T07:15:00",
+    "fc_listed_at": "2026-10-04T07:30:00",
+    "fc_api_seen_at": "2026-10-04T07:30:00",
     "fc_trusted": true
   },
   "fc_23835984": {
