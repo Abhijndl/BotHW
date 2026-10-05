@@ -17688,15 +17688,15 @@
     "last_price_alert": ""
   },
   "kd_RnLjd4Zgm0": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "NISSAN SKYLINE GT-R R33 BLACK KAIDO CAT",
     "price": "₹2099",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-skyline-gt-r-r33-black-kaido-cat?pid=RnLjd4Zgm0",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-05T10:45:00",
+    "last_seen": "2026-10-05T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-05T11:06:59",
     "last_price_alert": ""
   },
   "kd_aMNBYX8gXd": {
