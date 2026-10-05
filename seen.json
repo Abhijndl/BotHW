@@ -17762,5 +17762,29 @@
     "fc_listed_at": "2026-10-05T13:00:00",
     "fc_api_seen_at": "2026-10-05T13:00:00",
     "fc_trusted": true
+  },
+  "kd_aMNBWARLXd": {
+    "stock": "in_stock",
+    "name": "LAMBORGHINI COUNTACH LPI 800-4 VIOLA 30TH",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lamborghini-countach-lpi-800-4-viola-30th%C2%A0%C2%A0-%C2%A0?pid=aMNBWARLXd",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_V2gJR33ge4": {
+    "stock": "in_stock",
+    "name": "MINI GT TOYOTA GR86 LB NATION",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-lb-nation?pid=V2gJR33ge4",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
