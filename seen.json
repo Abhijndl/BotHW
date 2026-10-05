@@ -17846,5 +17846,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_GoL1JeJpBA": {
+    "stock": "in_stock",
+    "name": "CADILLAC V SERIES R 01 CADILLAC RACING 2024 IMSA PETIT LE MANS",
+    "price": "₹1749",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/cadillac-v-series-r-01-cadillac-racing-2024-imsa-petit-le-mans?pid=GoL1JeJpBA",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
