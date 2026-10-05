@@ -4860,7 +4860,7 @@
     "fc_trusted": true
   },
   "fc_22240167": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Erikenstein ROD (117/250) Toy Car - Dark Green",
     "price": "₹175",
     "source": "firstcry",
@@ -4868,11 +4868,11 @@
     "first_seen": "2026-08-02T12:32:12",
     "last_seen": "2026-10-05T08:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T07:08:27",
+    "last_restock_alert": "2026-10-05T08:25:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T08:00:00",
-    "fc_api_seen_at": "2026-09-29T08:00:00",
+    "fc_listed_at": "2026-10-05T08:15:00",
+    "fc_api_seen_at": "2026-10-05T08:15:00",
     "fc_trusted": true
   },
   "mg_3b21cfa5-7c16-4621-8594-53946771f11c": {
@@ -10525,7 +10525,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1999",
+    "price": "₹1879",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -13856,7 +13856,7 @@
   "fc_24476138": {
     "stock": "out_of_stock",
     "name": "Hot Wheels X-raycers Bullet Proof Diecast Car #132/250 - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-raycers-bullet-proof-diecast-car-132-250-black/24476138/product-detail",
     "first_seen": "2026-09-18T22:31:49",
@@ -13865,8 +13865,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T07:45:00",
-    "fc_api_seen_at": "2026-10-05T07:45:00",
+    "fc_listed_at": "2026-10-05T08:15:00",
+    "fc_api_seen_at": "2026-10-05T08:15:00",
     "fc_trusted": true
   },
   "fc_2235646": {
@@ -14616,7 +14616,7 @@
   "fc_24342823": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Lamborghini Veneno Die-cast Model Car - Black",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-lamborghini-veneno-die-cast-model-car-black/24342823/product-detail",
     "first_seen": "2026-09-20T12:21:18",
