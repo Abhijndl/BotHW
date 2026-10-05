@@ -4424,8 +4424,8 @@
     "last_restock_alert": "2026-09-23T19:21:04",
     "last_price_alert": "2026-09-21T09:51:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T12:15:00",
-    "fc_api_seen_at": "2026-10-05T12:15:00",
+    "fc_listed_at": "2026-10-05T12:45:00",
+    "fc_api_seen_at": "2026-10-05T12:45:00",
     "fc_trusted": true
   },
   "fc_23075650": {
@@ -4860,7 +4860,7 @@
     "fc_trusted": true
   },
   "fc_22240167": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Erikenstein ROD (117/250) Toy Car - Dark Green",
     "price": "₹175",
     "source": "firstcry",
@@ -13124,8 +13124,8 @@
     "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T10:45:00",
-    "fc_api_seen_at": "2026-10-05T10:45:00",
+    "fc_listed_at": "2026-10-05T12:45:00",
+    "fc_api_seen_at": "2026-10-05T12:45:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13709,7 +13709,7 @@
   "fc_24504539": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -16077,8 +16077,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T12:00:00",
-    "fc_api_seen_at": "2026-10-05T12:00:00",
+    "fc_listed_at": "2026-10-05T12:45:00",
+    "fc_api_seen_at": "2026-10-05T12:45:00",
     "fc_trusted": true
   },
   "fc_24390958": {
