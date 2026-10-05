@@ -2880,8 +2880,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T15:15:00",
-    "fc_api_seen_at": "2026-10-05T15:15:00",
+    "fc_listed_at": "2026-10-05T15:30:00",
+    "fc_api_seen_at": "2026-10-05T15:30:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -4289,8 +4289,8 @@
     "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T15:15:00",
-    "fc_api_seen_at": "2026-10-05T15:15:00",
+    "fc_listed_at": "2026-10-05T15:30:00",
+    "fc_api_seen_at": "2026-10-05T15:30:00",
     "fc_trusted": true
   },
   "fc_23348661": {
@@ -4862,7 +4862,7 @@
   "fc_22240167": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Erikenstein ROD (117/250) Toy Car - Dark Green",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-erikenstein-rod-117-250-toy-car-dark-green/22240167/product-detail",
     "first_seen": "2026-08-02T12:32:12",
@@ -15044,8 +15044,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T15:30:00",
+    "fc_api_seen_at": "2026-10-05T15:30:00",
     "fc_trusted": true
   },
   "fc_21966060": {
@@ -15060,8 +15060,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T15:15:00",
-    "fc_api_seen_at": "2026-10-05T15:15:00",
+    "fc_listed_at": "2026-10-05T15:30:00",
+    "fc_api_seen_at": "2026-10-05T15:30:00",
     "fc_trusted": true
   },
   "fc_21943787": {
@@ -16560,8 +16560,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T15:15:00",
-    "fc_api_seen_at": "2026-10-05T15:15:00",
+    "fc_listed_at": "2026-10-05T15:30:00",
+    "fc_api_seen_at": "2026-10-05T15:30:00",
     "fc_trusted": true
   },
   "fc_23030631": {
