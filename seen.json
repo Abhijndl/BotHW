@@ -17920,15 +17920,15 @@
     "last_price_alert": ""
   },
   "kd_JPNY0V8gzO": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "TOYOTA SUPRA A80 TOP SECRET GT300 TOP SECRET GOLD",
     "price": "₹1209",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-supra-a80-top-secret-gt300-top-secret-gold?pid=JPNY0V8gzO",
     "first_seen": "2026-10-05T13:15:00",
-    "last_seen": "2026-10-05T18:30:00",
+    "last_seen": "2026-10-05T18:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-05T18:56:50",
     "last_price_alert": ""
   },
   "kd_ykL0JRKgRZ": {
