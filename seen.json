@@ -2914,8 +2914,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T04:00:00",
-    "fc_api_seen_at": "2026-10-05T04:00:00",
+    "fc_listed_at": "2026-10-05T04:15:00",
+    "fc_api_seen_at": "2026-10-05T04:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -11799,9 +11799,9 @@
     "fc_trusted": true
   },
   "fc_24194169": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
-    "price": "₹899",
+    "price": "₹809",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-5-pack-die-cast-toy-cars-with-free-wheel-1-64-scale-set-of-5-red/24194169/product-detail",
     "first_seen": "2026-09-14T06:24:40",
@@ -13340,7 +13340,7 @@
   "fc_24503903": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -13790,7 +13790,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -16706,8 +16706,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-03T14:45:00",
-    "fc_api_seen_at": "2026-10-03T14:45:00",
+    "fc_listed_at": "2026-10-05T04:15:00",
+    "fc_api_seen_at": "2026-10-05T04:15:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
@@ -16905,7 +16905,7 @@
   "fc_24473510": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
-    "price": "₹179",
+    "price": "₹166",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-custom-personnalise-die-cast-car-60-250-green/24473510/product-detail",
     "first_seen": "2026-09-24T14:15:00",
