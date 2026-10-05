@@ -9308,15 +9308,15 @@
     "last_price_alert": ""
   },
   "kd_x7Le83yNY0": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "NISSAN Z GT500 24 REALIZE CORPORTATION ADVAN Z KONDO RACING 2023",
     "price": "₹1579",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-z-gt500-24-realize-corportation-advan-z-kondo-racing-2023?pid=x7Le83yNY0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-21T06:01:16",
+    "last_seen": "2026-10-05T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-05T13:08:54",
     "last_price_alert": ""
   },
   "kd_GXpKAKPNmx": {
@@ -9369,7 +9369,7 @@
   },
   "kd_GvLPP9BLod": {
     "stock": "in_stock",
-    "name": "MINI GT BMW I7 XDRIVE60 AVENTURIN [PRE-ORDER]",
+    "name": "MINI GT BMW I7 XDRIVE60 AVENTURIN",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-bmw-i7-xdrive60-aventurin?pid=GvLPP9BLod",
@@ -17781,6 +17781,18 @@
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-lb-nation?pid=V2gJR33ge4",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_OdNZW0jLzk": {
+    "stock": "in_stock",
+    "name": "MINI GT JAGUAR C-X75 BLUE [PRE-ORDER]",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-blue?pid=OdNZW0jLzk",
     "first_seen": "2026-10-05T13:00:00",
     "last_seen": "2026-10-05T13:00:00",
     "alerted_new": true,
