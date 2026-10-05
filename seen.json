@@ -9260,15 +9260,15 @@
     "last_price_alert": ""
   },
   "kd_XqLQdoPNvD": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT MERCEDES-BENZ EQS 580 4MATIC RED METALLIC",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mercedes-benz-eqs-580-4matic-red-metallic?pid=XqLQdoPNvD",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-30T04:45:00",
+    "last_seen": "2026-10-05T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-05T13:11:04",
     "last_price_alert": ""
   },
   "kd_rMNMPbBg95": {
@@ -17793,6 +17793,54 @@
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-blue?pid=OdNZW0jLzk",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_XqLQb0npvD": {
+    "stock": "in_stock",
+    "name": "NISSAN SKYLINE GTR DARK METAL GRAY NISMO BCNR33 CRS VERSION",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version%C2%A0?pid=XqLQb0npvD",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Mbga6KVNq8": {
+    "stock": "in_stock",
+    "name": "MINI GT MCLAREN 750S SPIDER CIRRUS GREY",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-mclaren-750s-spider-cirrus-grey%C2%A0?pid=Mbga6KVNq8",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_x7Le8kJNY0": {
+    "stock": "in_stock",
+    "name": "BENTLEY FLYING SPUR WHITE SAND VERDANT",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bentley-flying-spur-white-sand-verdant?pid=x7Le8kJNY0",
+    "first_seen": "2026-10-05T13:00:00",
+    "last_seen": "2026-10-05T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_zONvx9mpBK": {
+    "stock": "in_stock",
+    "name": "MINI GT NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 2023",
+    "price": "₹1579",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lbsuper-silhouette-s15-silvia-555-2023-%C2%A0%C2%A0-%C2%A0?pid=zONvx9mpBK",
     "first_seen": "2026-10-05T13:00:00",
     "last_seen": "2026-10-05T13:00:00",
     "alerted_new": true,
