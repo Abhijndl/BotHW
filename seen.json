@@ -2673,15 +2673,15 @@
     "fc_trusted": true
   },
   "fc_23354597": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
     "last_seen": "2026-10-05T14:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-04T04:46:41",
+    "last_restock_alert": "2026-10-05T14:38:29",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T14:30:00",
@@ -3547,8 +3547,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_23076122": {
@@ -11730,8 +11730,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_22240184": {
@@ -12825,8 +12825,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_24248198": {
@@ -13154,8 +13154,8 @@
     "last_restock_alert": "2026-09-24T07:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_24503333": {
@@ -14642,8 +14642,8 @@
     "last_restock_alert": "2026-09-22T04:26:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_24503310": {
@@ -14916,8 +14916,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_24504537": {
@@ -16310,8 +16310,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "fc_24498234": {
@@ -16843,7 +16843,7 @@
   "fc_24546334": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Dark Red",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-dark-red/24546334/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16852,8 +16852,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T14:15:00",
-    "fc_api_seen_at": "2026-10-05T14:15:00",
+    "fc_listed_at": "2026-10-05T14:30:00",
+    "fc_api_seen_at": "2026-10-05T14:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
