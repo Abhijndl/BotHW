@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -3383,8 +3383,8 @@
     "last_restock_alert": "2026-09-22T05:48:59",
     "last_price_alert": "2026-09-22T05:48:59",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_23075647": {
@@ -3481,8 +3481,8 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_23075644": {
@@ -3514,8 +3514,8 @@
     "last_price_alert": "2026-09-18T06:16:35",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_23348664": {
@@ -3622,8 +3622,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--team-transport-beutaab8tjwa": {
@@ -4493,7 +4493,7 @@
   "fc_23345501": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 146/250 Mazda Autozam Truck Toy -Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-146-250-mazda-autozam-truck-toy-purple/23345501/product-detail",
     "first_seen": "2026-07-30T04:26:48",
@@ -4503,8 +4503,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T15:45:00",
-    "fc_api_seen_at": "2026-10-06T15:45:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -4663,8 +4663,8 @@
     "last_restock_alert": "2026-09-21T09:18:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_22548052": {
@@ -10627,7 +10627,7 @@
     "first_seen": "2026-09-02T10:52:45",
     "last_seen": "2026-10-06T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T18:31:34",
+    "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:30:00",
@@ -11406,8 +11406,8 @@
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_21277638": {
@@ -11638,8 +11638,8 @@
     "last_restock_alert": "2026-09-22T12:04:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_24409190": {
@@ -12966,7 +12966,7 @@
     "first_seen": "2026-09-17T08:42:39",
     "last_seen": "2026-10-06T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T18:31:34",
+    "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:30:00",
@@ -13716,7 +13716,7 @@
     "first_seen": "2026-09-18T13:46:15",
     "last_seen": "2026-10-06T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T18:31:34",
+    "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:30:00",
@@ -14513,8 +14513,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_24525285": {
@@ -14529,8 +14529,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_24503747": {
@@ -14577,8 +14577,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_24503334": {
@@ -16376,8 +16376,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_24525283": {
@@ -16687,7 +16687,7 @@
     "first_seen": "2026-09-22T13:14:53",
     "last_seen": "2026-10-06T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T18:31:34",
+    "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:30:00",
@@ -16883,8 +16883,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-06T18:30:00",
+    "fc_api_seen_at": "2026-10-06T18:30:00",
     "fc_trusted": true
   },
   "fc_24568735": {
