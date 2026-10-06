@@ -18003,5 +18003,19 @@
     "fc_listed_at": "2026-10-06T20:00:00",
     "fc_api_seen_at": "2026-10-06T20:00:00",
     "fc_trusted": true
+  },
+  "mg_cb869f68-7bfa-4fb5-9b1a-71aadb0d4adc": {
+    "stock": "in_stock",
+    "name": "[Box] MGT1087 Lambo Aventador Limited Edition Mattel Black",
+    "price": "₹1399",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/box-mgt1087-lambo-aventador-limited-edition-mattel-black",
+    "first_seen": "2026-10-06T20:00:00",
+    "last_seen": "2026-10-06T20:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-10-06T20:06:49.529771+00:00",
+    "stock_ver": "mg_skus_v1"
   }
 }
