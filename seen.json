@@ -4647,8 +4647,8 @@
     "last_restock_alert": "2026-10-05T19:27:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T04:15:00",
-    "fc_api_seen_at": "2026-10-06T04:15:00",
+    "fc_listed_at": "2026-10-06T06:00:00",
+    "fc_api_seen_at": "2026-10-06T06:00:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -12700,7 +12700,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12711,8 +12711,8 @@
     "last_restock_alert": "2026-10-05T18:16:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T19:30:00",
-    "fc_api_seen_at": "2026-10-05T19:30:00",
+    "fc_listed_at": "2026-10-06T06:00:00",
+    "fc_api_seen_at": "2026-10-06T06:00:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -12733,7 +12733,7 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12741,11 +12741,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-06T06:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-04T07:22:52",
+    "last_restock_alert": "2026-10-06T06:04:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T10:30:00",
-    "fc_api_seen_at": "2026-10-04T10:30:00",
+    "fc_listed_at": "2026-10-06T06:00:00",
+    "fc_api_seen_at": "2026-10-06T06:00:00",
     "fc_trusted": true
   },
   "fc_24314518": {
@@ -14343,7 +14343,7 @@
   "fc_24473509": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
