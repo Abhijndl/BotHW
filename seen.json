@@ -9879,19 +9879,19 @@
     "fc_trusted": true
   },
   "fc_22435130": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Car Case Set of 4 Connectible Storage Display Box with Free Car-Orange",
-    "price": "₹261",
+    "price": "₹314",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-car-case-set-of-4-connectible-storage-display-box-with-free-car-orange/22435130/product-detail",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-06T04:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-03T17:08:39",
+    "last_restock_alert": "2026-10-06T04:14:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T10:30:00",
-    "fc_api_seen_at": "2026-10-04T10:30:00",
+    "fc_listed_at": "2026-10-06T04:00:00",
+    "fc_api_seen_at": "2026-10-06T04:00:00",
     "fc_trusted": true
   },
   "fc_22048350": {
@@ -11767,7 +11767,7 @@
     "fc_trusted": true
   },
   "fc_23081312": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG15-JA10 Pack of 2- Green & Blue",
     "price": "₹323",
     "source": "firstcry",
@@ -11775,11 +11775,11 @@
     "first_seen": "2026-09-14T04:18:41",
     "last_seen": "2026-10-06T04:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-04T17:41:37",
+    "last_restock_alert": "2026-10-06T04:14:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T19:45:00",
-    "fc_api_seen_at": "2026-10-04T19:45:00",
+    "fc_listed_at": "2026-10-06T04:00:00",
+    "fc_api_seen_at": "2026-10-06T04:00:00",
     "fc_trusted": true
   },
   "fc_24236114": {
@@ -13758,7 +13758,7 @@
   "fc_24514776": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹170",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-escort-die-cast-free-wheel-toy-car-blue-and-gold/24514776/product-detail",
     "first_seen": "2026-09-18T14:41:38",
@@ -13767,8 +13767,8 @@
     "last_restock_alert": "2026-10-04T07:22:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T17:45:00",
-    "fc_api_seen_at": "2026-10-04T17:45:00",
+    "fc_listed_at": "2026-10-06T04:00:00",
+    "fc_api_seen_at": "2026-10-06T04:00:00",
     "fc_trusted": true
   },
   "fc_24390951": {
