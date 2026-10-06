@@ -13823,7 +13823,7 @@
   "fc_24473499": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-19-mercedes-benz-a-class-die-cast-toy-car-black/24473499/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -13833,8 +13833,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T09:00:00",
-    "fc_api_seen_at": "2026-10-05T09:00:00",
+    "fc_listed_at": "2026-10-06T10:15:00",
+    "fc_api_seen_at": "2026-10-06T10:15:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -16903,15 +16903,15 @@
     "fc_trusted": true
   },
   "fc_24473510": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
-    "price": "₹179",
+    "price": "₹157",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-custom-personnalise-die-cast-car-60-250-green/24473510/product-detail",
     "first_seen": "2026-09-24T14:15:00",
     "last_seen": "2026-10-06T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-02T05:02:04",
+    "last_restock_alert": "2026-10-06T10:26:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
