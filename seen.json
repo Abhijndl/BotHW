@@ -3059,7 +3059,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-die-cast-cars-pack-of-5-nnellivvddel": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Cars Pack of 5 Vehicles, Assorted, 3Y+",
     "price": "₹839",
     "source": "hamleys",
@@ -10992,7 +10992,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-premium-legends-tour-vehicle-2-pack-for-boys-age-3y-premium-collectible-die-cast-cars-96407424": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Premium Legends Tour Vehicle 2-Pack for Boys Age 3Y+ | Premium Collectible Die-Cast Cars",
     "price": "₹1399",
     "source": "hamleys",
@@ -11000,10 +11000,10 @@
     "first_seen": "2026-09-05T12:14:34",
     "last_seen": "2026-10-06T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-04T16:31:23",
+    "last_restock_alert": "2026-10-06T10:18:53",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-06T10:00:00"
+    "hm_verified_at": "2026-10-06T10:15:00"
   },
   "fc_22240218": {
     "stock": "out_of_stock",
