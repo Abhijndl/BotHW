@@ -62,7 +62,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_22450088": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Batman Die-Cast Car Set 1:64 Scale Toy Cars Pack of 5 Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -73,8 +73,8 @@
     "last_restock_alert": "2026-10-05T18:16:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T21:00:00",
-    "fc_api_seen_at": "2026-10-05T21:00:00",
+    "fc_listed_at": "2026-10-06T18:00:00",
+    "fc_api_seen_at": "2026-10-06T18:00:00",
     "fc_trusted": true
   },
   "fc_21348": {
@@ -4007,8 +4007,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T17:45:00",
-    "fc_api_seen_at": "2026-10-06T17:45:00",
+    "fc_listed_at": "2026-10-06T18:00:00",
+    "fc_api_seen_at": "2026-10-06T18:00:00",
     "fc_trusted": true
   },
   "fc_23075645": {
@@ -9863,7 +9863,7 @@
     "fc_trusted": true
   },
   "fc_22597523": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Group C Fantasy Toy Car Color Changing Die-Cast Vehicle with Free-Rolling Wheels -Orange",
     "price": "₹359",
     "source": "firstcry",
@@ -9871,11 +9871,11 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-06T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T18:14:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T09:00:00",
-    "fc_api_seen_at": "2026-10-05T09:00:00",
+    "fc_listed_at": "2026-10-06T18:00:00",
+    "fc_api_seen_at": "2026-10-06T18:00:00",
     "fc_trusted": true
   },
   "fc_22435130": {
@@ -11613,7 +11613,7 @@
   "fc_22548055": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Solar Reflex (7/250) Die-Cast Toy Car - Royal Blue",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-solar-reflex-7-250-die-cast-toy-car-royal-blue/22548055/product-detail",
     "first_seen": "2026-09-10T04:08:35",
@@ -11746,8 +11746,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T16:30:00",
-    "fc_api_seen_at": "2026-10-06T16:30:00",
+    "fc_listed_at": "2026-10-06T18:00:00",
+    "fc_api_seen_at": "2026-10-06T18:00:00",
     "fc_trusted": true
   },
   "fc_24246594": {
@@ -13687,20 +13687,20 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T17:45:00",
-    "fc_api_seen_at": "2026-10-06T17:45:00",
+    "fc_listed_at": "2026-10-06T18:00:00",
+    "fc_api_seen_at": "2026-10-06T18:00:00",
     "fc_trusted": true
   },
   "fc_24504535": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG19-JA10 Pack of 2 - Beige & Black",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg19-ja10-pack-of-2-beige-and-black/24504535/product-detail",
     "first_seen": "2026-09-18T13:46:15",
     "last_seen": "2026-10-06T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T18:14:29",
     "last_price_alert": "2026-09-21T15:28:56",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:00:00",
@@ -13919,15 +13919,15 @@
     "fc_trusted": true
   },
   "fc_24504534": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG14-JA10 Pack of 2 - White & Red",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg14-ja10-pack-of-2-white-and-red/24504534/product-detail",
     "first_seen": "2026-09-19T04:26:51",
     "last_seen": "2026-10-06T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T18:14:29",
     "last_price_alert": "2026-09-21T15:28:56",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:00:00",
@@ -14906,15 +14906,15 @@
     "fc_trusted": true
   },
   "fc_24503307": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Street Wiener Die Cast Free Wheel Toy Car - Yellow/Green",
-    "price": "₹399",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-street-wiener-die-cast-free-wheel-toy-car-yellow-green/24503307/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-06T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T18:14:29",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:00:00",
@@ -14922,15 +14922,15 @@
     "fc_trusted": true
   },
   "fc_24504537": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG20-JA10 Pack of 2 - Black & Blue",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg20-ja10-pack-of-2-black-and-blue/24504537/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-06T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T18:14:29",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T18:00:00",
