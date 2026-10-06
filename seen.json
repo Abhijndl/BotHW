@@ -17960,7 +17960,7 @@
     "fc_trusted": true
   },
   "mg_f20f0434-4471-4539-8540-e3ad47600ced": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Blister] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
     "price": "₹2399",
     "source": "minifygram",
@@ -17968,9 +17968,9 @@
     "first_seen": "2026-10-05T21:15:00",
     "last_seen": "2026-10-06T04:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T04:58:46",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-06T04:45:12.247973+00:00",
+    "mg_updated_at": "2026-10-06T04:58:07.604432+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_a09fe8c3-da07-49ca-b071-ce34c4a93ff2": {
@@ -17984,7 +17984,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-06T04:46:52",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-06T04:46:47.334491+00:00",
+    "mg_updated_at": "2026-10-06T04:57:55.274662+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_23835981": {
