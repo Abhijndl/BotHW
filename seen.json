@@ -4636,9 +4636,9 @@
     "fc_trusted": true
   },
   "fc_23354966": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹171",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-86-250-vw-id-buzz-bomb-toy-car-blue/23354966/product-detail",
     "first_seen": "2026-08-01T04:27:10",
@@ -4647,8 +4647,8 @@
     "last_restock_alert": "2026-10-05T19:27:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T09:45:00",
-    "fc_api_seen_at": "2026-10-06T09:45:00",
+    "fc_listed_at": "2026-10-06T19:15:00",
+    "fc_api_seen_at": "2026-10-06T19:15:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -12620,7 +12620,7 @@
   "fc_24473713": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-66-buick-riviera-die-cast-toy-car-copper-brown/24473713/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12629,8 +12629,8 @@
     "last_restock_alert": "2026-09-25T12:07:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T19:00:00",
-    "fc_api_seen_at": "2026-10-06T19:00:00",
+    "fc_listed_at": "2026-10-06T19:15:00",
+    "fc_api_seen_at": "2026-10-06T19:15:00",
     "fc_trusted": true
   },
   "fc_24473516": {
@@ -14262,7 +14262,7 @@
   "fc_24476803": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
