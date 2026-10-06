@@ -12733,7 +12733,7 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12744,8 +12744,8 @@
     "last_restock_alert": "2026-10-06T06:04:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-10-06T13:15:00",
+    "fc_listed_at": "2026-10-06T16:45:00",
+    "fc_api_seen_at": "2026-10-06T16:45:00",
     "fc_trusted": true
   },
   "fc_24314518": {
