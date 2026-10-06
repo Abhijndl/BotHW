@@ -2592,7 +2592,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074611": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Tooned Purple Passion (148/250) Die Cast Free Wheel Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -2600,11 +2600,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-06T16:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-03T18:12:51",
+    "last_restock_alert": "2026-10-06T16:08:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T14:30:00",
-    "fc_api_seen_at": "2026-10-04T14:30:00",
+    "fc_listed_at": "2026-10-06T16:00:00",
+    "fc_api_seen_at": "2026-10-06T16:00:00",
     "fc_trusted": true
   },
   "fc_23347147": {
