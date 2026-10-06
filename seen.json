@@ -3607,7 +3607,7 @@
     "last_restock_alert": "2026-09-28T16:41:03",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-05T13:30:00"
+    "hm_verified_at": "2026-10-06T15:00:00"
   },
   "fc_23345758": {
     "stock": "out_of_stock",
@@ -4472,7 +4472,7 @@
     "last_restock_alert": "2026-09-28T21:41:05",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-06T14:15:00"
+    "hm_verified_at": "2026-10-06T15:00:00"
   },
   "fc_22548073": {
     "stock": "out_of_stock",
@@ -10992,7 +10992,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-premium-legends-tour-vehicle-2-pack-for-boys-age-3y-premium-collectible-die-cast-cars-96407424": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Legends Tour Vehicle 2-Pack for Boys Age 3Y+ | Premium Collectible Die-Cast Cars",
     "price": "₹1399",
     "source": "hamleys",
