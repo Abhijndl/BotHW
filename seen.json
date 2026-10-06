@@ -17974,7 +17974,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_a09fe8c3-da07-49ca-b071-ce34c4a93ff2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
     "price": "₹1899",
     "source": "minifygram",
@@ -17984,7 +17984,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-06T04:46:52",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-06T07:14:29.538098+00:00",
+    "mg_updated_at": "2026-10-06T10:11:13.929827+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_23835981": {
