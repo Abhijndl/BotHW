@@ -4950,7 +4950,7 @@
     "fc_trusted": true
   },
   "mg_e57fd304-e928-4684-b17d-fe401233398d": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Mercedes Benz 500E Factory Sealed",
     "price": "₹849",
     "source": "minifygram",
@@ -4958,7 +4958,7 @@
     "first_seen": "2026-08-07T00:02:54",
     "last_seen": "2026-10-06T20:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-16T15:48:37",
+    "last_restock_alert": "2026-10-06T20:42:39",
     "last_price_alert": "",
     "mg_updated_at": "2026-08-06T23:57:08.034643+00:00",
     "stock_ver": "mg_skus_v1"
