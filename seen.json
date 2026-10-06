@@ -109,19 +109,19 @@
     "fc_api_seen_at": "2026-09-21T06:46:09"
   },
   "fc_23074259": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast 41 Willys (153/250) Toy Car - Purple",
-    "price": "₹175",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-41-willys-153-250-toy-car-purple/23074259/product-detail",
     "first_seen": "2026-07-18T07:36:21",
     "last_seen": "2026-10-06T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T05:48:27",
+    "last_restock_alert": "2026-10-06T12:32:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-29T18:15:00",
-    "fc_api_seen_at": "2026-09-29T18:15:00",
+    "fc_listed_at": "2026-10-06T12:30:00",
+    "fc_api_seen_at": "2026-10-06T12:30:00",
     "fc_trusted": true
   },
   "fc_22277228": {
@@ -154,19 +154,19 @@
     "fc_trusted": true
   },
   "fc_22600382": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
-    "price": "₹764",
+    "price": "₹809",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-hw-torque-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/22600382/product-detail",
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-06T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T10:04:57",
+    "last_restock_alert": "2026-10-06T12:32:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T12:00:00",
-    "fc_api_seen_at": "2026-10-05T12:00:00",
+    "fc_listed_at": "2026-10-06T12:30:00",
+    "fc_api_seen_at": "2026-10-06T12:30:00",
     "fc_trusted": true
   },
   "mg_c54400b4-7b93-434f-8d78-b5cf97f72208": {
@@ -3966,7 +3966,7 @@
   "fc_23074890": {
     "stock": "in_stock",
     "name": "Hot Wheels Quick Chat (49/250) Die Cast Toy Car - White & Black",
-    "price": "₹161",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-quick-chat-49-250-die-cast-toy-car-white-and-black/23074890/product-detail",
     "first_seen": "2026-07-21T19:52:07",
@@ -4540,19 +4540,19 @@
     "fc_trusted": true
   },
   "fc_22548074": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Flippin Fast (135/250) Die-Cast Toy Car - Blue",
-    "price": "₹167",
+    "price": "₹153",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-flippin-fast-135-250-die-cast-toy-car-blue/22548074/product-detail",
     "first_seen": "2026-07-30T05:22:14",
     "last_seen": "2026-10-06T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-06T12:32:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T11:45:00",
-    "fc_api_seen_at": "2026-09-30T11:45:00",
+    "fc_listed_at": "2026-10-06T12:30:00",
+    "fc_api_seen_at": "2026-10-06T12:30:00",
     "fc_trusted": true
   },
   "fc_23973362": {
@@ -5681,19 +5681,19 @@
     "fc_trusted": true
   },
   "fc_23353035": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 35/250 Wattzup Die Cat Free Wheel Toy Car- Yellow",
-    "price": "₹160",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-35-250-wattzup-die-cat-free-wheel-toy-car-yellow/23353035/product-detail",
     "first_seen": "2026-08-12T14:27:02",
     "last_seen": "2026-10-06T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-03T09:47:41",
+    "last_restock_alert": "2026-10-06T12:32:25",
     "last_price_alert": "2026-09-19T17:41:09",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-04T14:15:00",
-    "fc_api_seen_at": "2026-10-04T14:15:00",
+    "fc_listed_at": "2026-10-06T12:30:00",
+    "fc_api_seen_at": "2026-10-06T12:30:00",
     "fc_trusted": true
   },
   "fc_24246603": {
@@ -11490,7 +11490,7 @@
   "fc_24390961": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 64 Chevy nova station wagon/Camionnette Toy Car - Black",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-64-chevy-nova-station-wagon-camionnette-toy-car-black/24390961/product-detail",
     "first_seen": "2026-09-07T11:02:44",
@@ -12666,15 +12666,15 @@
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
     "last_seen": "2026-10-06T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T16:07:23",
+    "last_restock_alert": "2026-10-06T12:32:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -14392,7 +14392,7 @@
   "fc_24475755": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14457,7 +14457,7 @@
   "fc_24390952": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel '71 El Camino Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-el-camino-toy-car-grey/24390952/product-detail",
     "first_seen": "2026-09-20T05:36:02",
@@ -15576,7 +15576,7 @@
   "fc_23973353": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
