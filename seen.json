@@ -5929,8 +5929,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T07:45:00",
-    "fc_api_seen_at": "2026-10-07T07:45:00",
+    "fc_listed_at": "2026-10-07T08:00:00",
+    "fc_api_seen_at": "2026-10-07T08:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160": {
@@ -10883,7 +10883,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -10892,8 +10892,8 @@
     "last_restock_alert": "2026-10-05T10:52:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T06:30:00",
-    "fc_api_seen_at": "2026-10-07T06:30:00",
+    "fc_listed_at": "2026-10-07T08:00:00",
+    "fc_api_seen_at": "2026-10-07T08:00:00",
     "fc_trusted": true
   },
   "fc_22149914": {
@@ -14358,7 +14358,7 @@
     "fc_trusted": true
   },
   "fc_24473474": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
     "price": "₹170",
     "source": "firstcry",
@@ -14369,8 +14369,8 @@
     "last_restock_alert": "2026-10-07T04:02:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T05:15:00",
-    "fc_api_seen_at": "2026-10-07T05:15:00",
+    "fc_listed_at": "2026-10-07T08:00:00",
+    "fc_api_seen_at": "2026-10-07T08:00:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14440,7 +14440,7 @@
     "fc_trusted": true
   },
   "fc_24473475": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
     "price": "₹170",
     "source": "firstcry",
@@ -15143,8 +15143,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T07:45:00",
-    "fc_api_seen_at": "2026-10-07T07:45:00",
+    "fc_listed_at": "2026-10-07T08:00:00",
+    "fc_api_seen_at": "2026-10-07T08:00:00",
     "fc_trusted": true
   },
   "fc_3456482": {
