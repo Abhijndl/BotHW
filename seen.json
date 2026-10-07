@@ -2673,7 +2673,7 @@
     "fc_trusted": true
   },
   "fc_23354597": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
     "price": "₹150",
     "source": "firstcry",
@@ -2681,7 +2681,7 @@
     "first_seen": "2026-07-19T05:21:03",
     "last_seen": "2026-10-07T20:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T14:38:58",
+    "last_restock_alert": "2026-10-07T20:24:26",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T20:15:00",
@@ -13210,7 +13210,7 @@
   "fc_24342822": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Utopia 1/5 Die-cast -Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pagani-utopia-1-5-die-cast-red/24342822/product-detail",
     "first_seen": "2026-09-17T12:02:32",
@@ -13273,7 +13273,7 @@
     "fc_trusted": true
   },
   "fc_24246605": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mod Mill Die-Cast Free Wheel Toy Car (204/250) - Black & Red",
     "price": "₹161",
     "source": "firstcry",
@@ -13281,7 +13281,7 @@
     "first_seen": "2026-09-17T13:01:58",
     "last_seen": "2026-10-07T20:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T11:02:28",
+    "last_restock_alert": "2026-10-07T20:24:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T20:15:00",
@@ -13724,9 +13724,9 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-fiat-500e-die-cast-free-wheel-toy-car-blue-and-gold/24514777/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -14213,7 +14213,7 @@
   "fc_24476471": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -15966,7 +15966,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16397,15 +16397,15 @@
     "fc_trusted": true
   },
   "fc_24514784": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Volkswagen Beetle Bumblebee Toy Car - Light Yellow",
-    "price": "₹399",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-volkswagen-beetle-bumblebee-toy-car-light-yellow/24514784/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-07T20:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T12:23:37",
+    "last_restock_alert": "2026-10-07T20:24:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T20:15:00",
@@ -16828,7 +16828,7 @@
   "fc_24546335": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Light Blue",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-light-blue/24546335/product-detail",
     "first_seen": "2026-09-23T12:30:00",
