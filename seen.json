@@ -464,7 +464,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_f42834b3-7094-4c0a-a32b-6058e23b8b6b": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "2019 Audi R8 Spyder",
     "price": "₹449",
     "source": "minifygram",
