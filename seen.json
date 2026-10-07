@@ -2716,8 +2716,8 @@
     "last_restock_alert": "2026-10-05T19:27:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:30:00",
+    "fc_api_seen_at": "2026-10-07T10:30:00",
     "fc_trusted": true
   },
   "fc_23074886": {
@@ -12620,7 +12620,7 @@
   "fc_24473713": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-66-buick-riviera-die-cast-toy-car-copper-brown/24473713/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12652,7 +12652,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12661,8 +12661,8 @@
     "last_restock_alert": "2026-10-05T10:36:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:30:00",
+    "fc_api_seen_at": "2026-10-07T10:30:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -14213,7 +14213,7 @@
   "fc_24476471": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14222,8 +14222,8 @@
     "last_restock_alert": "2026-09-21T18:21:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:30:00",
+    "fc_api_seen_at": "2026-10-07T10:30:00",
     "fc_trusted": true
   },
   "fc_24475737": {
@@ -14634,7 +14634,7 @@
   "fc_24503306": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Layin Lowrider - Yellow",
-    "price": "₹359",
+    "price": "₹399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-layin-lowrider-yellow/24503306/product-detail",
     "first_seen": "2026-09-20T12:31:42",
