@@ -17971,11 +17971,11 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-06T04:58:46",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-06T19:34:32.830131+00:00",
+    "mg_updated_at": "2026-10-07T09:06:06.837907+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_a09fe8c3-da07-49ca-b071-ce34c4a93ff2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
     "price": "₹1899",
     "source": "minifygram",
@@ -17985,7 +17985,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-07T07:11:05",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-07T07:10:57.548845+00:00",
+    "mg_updated_at": "2026-10-07T09:05:49.688685+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_23835981": {
@@ -18005,7 +18005,7 @@
     "fc_trusted": true
   },
   "mg_cb869f68-7bfa-4fb5-9b1a-71aadb0d4adc": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1087 Lambo Aventador Limited Edition Mattel Black",
     "price": "₹1399",
     "source": "minifygram",
@@ -18015,7 +18015,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-07T06:01:43",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-07T07:20:07.695933+00:00",
+    "mg_updated_at": "2026-10-07T09:05:27.834339+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "kd_ykL0eJMpRZ": {
