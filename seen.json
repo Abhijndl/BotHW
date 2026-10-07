@@ -11499,8 +11499,8 @@
     "last_restock_alert": "2026-09-28T04:32:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:45:00",
-    "fc_api_seen_at": "2026-10-07T10:45:00",
+    "fc_listed_at": "2026-10-07T11:00:00",
+    "fc_api_seen_at": "2026-10-07T11:00:00",
     "fc_trusted": true
   },
   "fc_23353034": {
@@ -12718,7 +12718,7 @@
   "fc_24390970": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 2/5 Silver Series Vintage Club Aston Martin 1963 Db5 Die-cast Car - Blue",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2-5-silver-series-vintage-club-aston-martin-1963-db5-die-cast-car-blue/24390970/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12728,8 +12728,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T10:30:00",
-    "fc_api_seen_at": "2026-10-07T10:30:00",
+    "fc_listed_at": "2026-10-07T11:00:00",
+    "fc_api_seen_at": "2026-10-07T11:00:00",
     "fc_trusted": true
   },
   "fc_24313540": {
@@ -12815,7 +12815,7 @@
   "fc_24390968": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 4/5 Silver Series Vintage Club 73 Honda Civic Custom/Personnalise Die-cast Car - Beige",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-4-5-silver-series-vintage-club-73-honda-civic-custom-personnalise-die-cast-car-beige/24390968/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12825,8 +12825,8 @@
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T07:45:00",
-    "fc_api_seen_at": "2026-10-07T07:45:00",
+    "fc_listed_at": "2026-10-07T11:00:00",
+    "fc_api_seen_at": "2026-10-07T11:00:00",
     "fc_trusted": true
   },
   "fc_24248198": {
@@ -13192,15 +13192,15 @@
     "fc_trusted": true
   },
   "fc_23811697": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Free Wheel Toy Car With Mad Drip Sweet Rides (197/250) - Pink",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-toy-car-with-mad-drip-sweet-rides-197-250-pink/23811697/product-detail",
     "first_seen": "2026-09-17T11:21:23",
     "last_seen": "2026-10-07T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-07T11:07:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T11:00:00",
@@ -13724,9 +13724,9 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-fiat-500e-die-cast-free-wheel-toy-car-blue-and-gold/24514777/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13873,7 +13873,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -14179,7 +14179,7 @@
   "fc_24474449": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Beige",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-beige/24474449/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -14189,8 +14189,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T10:30:00",
-    "fc_api_seen_at": "2026-10-07T10:30:00",
+    "fc_listed_at": "2026-10-07T11:00:00",
+    "fc_api_seen_at": "2026-10-07T11:00:00",
     "fc_trusted": true
   },
   "fc_24476003": {
@@ -15166,7 +15166,7 @@
   "fc_2232876": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Twin Flame Bike - Green & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-twin-flame-bike-green-and-black/2232876/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15577,7 +15577,7 @@
   "fc_23973353": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15586,8 +15586,8 @@
     "last_restock_alert": "2026-09-24T04:12:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:30:00",
-    "fc_api_seen_at": "2026-10-07T10:30:00",
+    "fc_listed_at": "2026-10-07T11:00:00",
+    "fc_api_seen_at": "2026-10-07T11:00:00",
     "fc_trusted": true
   },
   "fc_23832900": {
@@ -15816,15 +15816,15 @@
     "fc_trusted": true
   },
   "fc_24247519": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (118/250) - Red & Gold",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pedal-driver-die-cast-free-wheel-toy-car-118-250-red-and-gold/24247519/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-07T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-07T11:07:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T11:00:00",
