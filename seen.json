@@ -534,7 +534,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_1b8d7562-090e-46f8-9176-741c466961c5": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "‘16 Lamborghini Centenario Roadster",
     "price": "₹499",
     "source": "minifygram",
@@ -4357,7 +4357,7 @@
     "fc_trusted": true
   },
   "mg_3ac631be-1c17-46ac-b052-5f2690c08b49": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Ford GT40 Kroger Exclusive",
     "price": "₹649",
     "source": "minifygram",
