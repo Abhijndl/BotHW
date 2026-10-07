@@ -2914,8 +2914,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T05:30:00",
-    "fc_api_seen_at": "2026-10-07T05:30:00",
+    "fc_listed_at": "2026-10-07T05:45:00",
+    "fc_api_seen_at": "2026-10-07T05:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -10883,7 +10883,7 @@
   "fc_24263017": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pixar Toy Story Rc Voiture Telecommandee Die-Cast Free Wheel Toy Car - Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pixar-toy-story-rc-voiture-telecommandee-die-cast-free-wheel-toy-car-green/24263017/product-detail",
     "first_seen": "2026-09-04T13:07:19",
@@ -12718,7 +12718,7 @@
   "fc_24390970": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 2/5 Silver Series Vintage Club Aston Martin 1963 Db5 Die-cast Car - Blue",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2-5-silver-series-vintage-club-aston-martin-1963-db5-die-cast-car-blue/24390970/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13145,7 +13145,7 @@
   "fc_24525299": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Camper/Roulotte De Derapage Die Cast Toy Truck - Green",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-camper-roulotte-de-derapage-die-cast-toy-truck-green/24525299/product-detail",
     "first_seen": "2026-09-17T09:21:08",
@@ -13259,7 +13259,7 @@
   "fc_24342826": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1995 Mitsubishi Eclipse Car - Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-1995-mitsubishi-eclipse-car-grey/24342826/product-detail",
     "first_seen": "2026-09-17T12:46:07",
@@ -13724,15 +13724,15 @@
     "fc_trusted": true
   },
   "fc_24514777": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-fiat-500e-die-cast-free-wheel-toy-car-blue-and-gold/24514777/product-detail",
     "first_seen": "2026-09-18T13:46:15",
     "last_seen": "2026-10-07T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-03T11:20:00",
+    "last_restock_alert": "2026-10-07T05:48:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T05:45:00",
@@ -13791,7 +13791,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -14262,7 +14262,7 @@
   "fc_24476803": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -15143,8 +15143,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T05:30:00",
-    "fc_api_seen_at": "2026-10-07T05:30:00",
+    "fc_listed_at": "2026-10-07T05:45:00",
+    "fc_api_seen_at": "2026-10-07T05:45:00",
     "fc_trusted": true
   },
   "fc_3456482": {
@@ -15577,7 +15577,7 @@
   "fc_23973353": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15964,15 +15964,15 @@
     "fc_trusted": true
   },
   "fc_24390969": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-07T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-01T10:31:42",
+    "last_restock_alert": "2026-10-07T05:48:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
