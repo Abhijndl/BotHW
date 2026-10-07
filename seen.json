@@ -4165,8 +4165,8 @@
     "last_restock_alert": "2026-09-27T18:17:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_23351684": {
@@ -10892,8 +10892,8 @@
     "last_restock_alert": "2026-10-05T10:52:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_22149914": {
@@ -13443,8 +13443,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T09:45:00",
-    "fc_api_seen_at": "2026-10-07T09:45:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_24473028": {
@@ -14353,8 +14353,8 @@
     "last_restock_alert": "2026-09-25T08:44:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_24473474": {
@@ -14731,7 +14731,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14740,8 +14740,8 @@
     "last_restock_alert": "2026-10-05T10:36:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_24504538": {
@@ -15127,8 +15127,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_20466054": {
@@ -15554,8 +15554,8 @@
     "last_restock_alert": "2026-09-24T04:12:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T10:00:00",
-    "fc_api_seen_at": "2026-10-07T10:00:00",
+    "fc_listed_at": "2026-10-07T10:15:00",
+    "fc_api_seen_at": "2026-10-07T10:15:00",
     "fc_trusted": true
   },
   "fc_23973354": {
