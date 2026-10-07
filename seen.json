@@ -5509,7 +5509,7 @@
   "fc_23351190": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 160/250 Lotus Sport Elise Die Cat Free Wheel Toy Car- Orange",
-    "price": "₹179",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-160-250-lotus-sport-elise-die-cat-free-wheel-toy-car-orange/23351190/product-detail",
     "first_seen": "2026-08-09T12:47:25",
@@ -5708,8 +5708,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T15:00:00",
-    "fc_api_seen_at": "2026-10-07T15:00:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_24246602": {
@@ -13574,8 +13574,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T08:45:00",
-    "fc_api_seen_at": "2026-10-06T08:45:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -13687,8 +13687,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T15:00:00",
-    "fc_api_seen_at": "2026-10-07T15:00:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_24504535": {
@@ -13726,7 +13726,7 @@
   "fc_24514777": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-fiat-500e-die-cast-free-wheel-toy-car-blue-and-gold/24514777/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13735,8 +13735,8 @@
     "last_restock_alert": "2026-10-07T05:49:20",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T14:45:00",
-    "fc_api_seen_at": "2026-10-07T14:45:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_24503325": {
@@ -13773,15 +13773,15 @@
     "fc_trusted": true
   },
   "fc_24390951": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Guinevere Van/Fourgonnette Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-guinevere-van-fourgonnette-toy-car-blue/24390951/product-detail",
     "first_seen": "2026-09-18T15:46:42",
     "last_seen": "2026-10-07T15:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T08:17:01",
+    "last_restock_alert": "2026-10-07T15:18:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-07T15:15:00",
@@ -14650,7 +14650,7 @@
   "fc_24503310": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Track Dwagon - Green",
-    "price": "₹359",
+    "price": "₹399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-track-dwagon-green/24503310/product-detail",
     "first_seen": "2026-09-20T13:06:07",
@@ -14659,8 +14659,8 @@
     "last_restock_alert": "2026-10-02T15:33:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T14:45:00",
-    "fc_api_seen_at": "2026-10-07T14:45:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_24235313": {
@@ -15111,8 +15111,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T15:00:00",
-    "fc_api_seen_at": "2026-10-07T15:00:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_21034612": {
@@ -15127,8 +15127,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T15:00:00",
-    "fc_api_seen_at": "2026-10-07T15:00:00",
+    "fc_listed_at": "2026-10-07T15:15:00",
+    "fc_api_seen_at": "2026-10-07T15:15:00",
     "fc_trusted": true
   },
   "fc_20466054": {
@@ -16235,7 +16235,7 @@
   "fc_24503323": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi 90 Quattro -White",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-90-quattro-white/24503323/product-detail",
     "first_seen": "2026-09-21T06:42:53",
