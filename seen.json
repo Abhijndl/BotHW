@@ -4726,8 +4726,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T11:15:00",
-    "fc_api_seen_at": "2026-10-07T11:15:00",
+    "fc_listed_at": "2026-10-07T11:30:00",
+    "fc_api_seen_at": "2026-10-07T11:30:00",
     "fc_trusted": true
   },
   "fc_22548057": {
@@ -13791,7 +13791,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -13801,8 +13801,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T10:30:00",
-    "fc_api_seen_at": "2026-10-07T10:30:00",
+    "fc_listed_at": "2026-10-07T11:30:00",
+    "fc_api_seen_at": "2026-10-07T11:30:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -16916,8 +16916,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T11:15:00",
-    "fc_api_seen_at": "2026-10-07T11:15:00",
+    "fc_listed_at": "2026-10-07T11:30:00",
+    "fc_api_seen_at": "2026-10-07T11:30:00",
     "fc_trusted": true
   },
   "fc_24568707": {
