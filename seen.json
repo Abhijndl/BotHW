@@ -18029,5 +18029,41 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_XqLQjyapvD": {
+    "stock": "in_stock",
+    "name": "PREORDER DATSUN KAIDO 510 WAGON POLICE [PRE-ORDER]",
+    "price": "₹2099",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-datsun-kaido-510-wagon-police?pid=XqLQjyapvD",
+    "first_seen": "2026-10-07T05:30:00",
+    "last_seen": "2026-10-07T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_rMNMeMkN95": {
+    "stock": "in_stock",
+    "name": "PREORDER CHEVROLET SILVERADO DUALLY KAIDO RACING TEAM V1 [PRE-ORDER]",
+    "price": "₹2099",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-chevrolet-silverado-dually-kaido-racing-team-v1?pid=rMNMeMkN95",
+    "first_seen": "2026-10-07T05:30:00",
+    "last_seen": "2026-10-07T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Mbgabz0Nq8": {
+    "stock": "in_stock",
+    "name": "PREORDER SUBARU IMPREZA WRX STI KAIDO WORKS V1 [PRE-ORDER]",
+    "price": "₹2099",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-subaru-impreza-wrx-sti-kaido-works-v1?pid=Mbgabz0Nq8",
+    "first_seen": "2026-10-07T05:30:00",
+    "last_seen": "2026-10-07T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
