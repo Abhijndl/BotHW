@@ -4165,8 +4165,8 @@
     "last_restock_alert": "2026-09-27T18:17:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_23351684": {
@@ -11622,8 +11622,8 @@
     "last_restock_alert": "2026-09-25T08:58:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_23345756": {
@@ -13427,8 +13427,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_23930428": {
@@ -13628,7 +13628,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24342830": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-cast Free Wheel 1993 Honda Civic Coupe Ex Ej1 Car - L - Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -13636,12 +13636,12 @@
     "first_seen": "2026-09-18T09:36:15",
     "last_seen": "2026-10-07T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T06:52:07",
+    "last_restock_alert": "2026-10-07T12:42:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-05T09:30:00",
-    "fc_api_seen_at": "2026-10-05T09:30:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
@@ -13708,9 +13708,9 @@
     "fc_trusted": true
   },
   "fc_24504539": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -14467,8 +14467,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "mg_70cf1a66-5326-4b31-b1a7-e10a0cafecce": {
@@ -14545,8 +14545,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_24503821": {
@@ -14747,7 +14747,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15225,8 +15225,8 @@
     "last_restock_alert": "2026-09-22T08:41:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_22240193": {
@@ -15554,8 +15554,8 @@
     "last_restock_alert": "2026-09-24T04:12:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_23973354": {
@@ -16112,8 +16112,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T12:15:00",
-    "fc_api_seen_at": "2026-10-07T12:15:00",
+    "fc_listed_at": "2026-10-07T12:30:00",
+    "fc_api_seen_at": "2026-10-07T12:30:00",
     "fc_trusted": true
   },
   "fc_24476798": {
