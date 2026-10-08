@@ -2902,9 +2902,9 @@
     "fc_trusted": true
   },
   "fc_23074618": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mercedes-Benz Cla HW (181/250) Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-mercedes-benz-cla-hw-181-250-toy-car-blue/23074618/product-detail",
     "first_seen": "2026-07-20T06:31:13",
@@ -2914,8 +2914,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T10:30:00",
-    "fc_api_seen_at": "2026-10-08T10:30:00",
+    "fc_listed_at": "2026-10-08T10:45:00",
+    "fc_api_seen_at": "2026-10-08T10:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -5677,8 +5677,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:30:00",
-    "fc_api_seen_at": "2026-10-08T10:30:00",
+    "fc_listed_at": "2026-10-08T10:45:00",
+    "fc_api_seen_at": "2026-10-08T10:45:00",
     "fc_trusted": true
   },
   "fc_23353035": {
