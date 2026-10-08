@@ -18101,5 +18101,41 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_0mNyyRVNkj": {
+    "stock": "in_stock",
+    "name": "MINI GT DATSUN 510 4X4 WAGON KAIDO OFFROAD V2",
+    "price": "₹1999",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini%C2%A0gt%C2%A0datsun%C2%A0510%C2%A04x4%C2%A0wagon%C2%A0kaido%C2%A0offroad%C2%A0v2?pid=0mNyyRVNkj",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GoL1mjqLBA": {
+    "stock": "in_stock",
+    "name": "MINI GT NISSAN SKYLINE GTR KPGC10 KAIDO WORKS V1",
+    "price": "₹1859",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-kpgc10-kaido-works-v1?pid=GoL1mjqLBA",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_KbNE8zKgR0": {
+    "stock": "in_stock",
+    "name": "ASTON MARTIN DB5 GOLDFINGER",
+    "price": "₹1439",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/aston-martin-db5-goldfinger?pid=KbNE8zKgR0",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
