@@ -3514,8 +3514,8 @@
     "last_price_alert": "2026-09-18T06:16:35",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T21:45:00",
-    "fc_api_seen_at": "2026-10-08T21:45:00",
+    "fc_listed_at": "2026-10-08T22:00:00",
+    "fc_api_seen_at": "2026-10-08T22:00:00",
     "fc_trusted": true
   },
   "fc_23348664": {
@@ -11500,8 +11500,8 @@
     "last_restock_alert": "2026-09-28T04:32:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T21:45:00",
-    "fc_api_seen_at": "2026-10-08T21:45:00",
+    "fc_listed_at": "2026-10-08T22:00:00",
+    "fc_api_seen_at": "2026-10-08T22:00:00",
     "fc_trusted": true
   },
   "fc_23353034": {
@@ -11812,8 +11812,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T14:00:00",
-    "fc_api_seen_at": "2026-10-08T14:00:00",
+    "fc_listed_at": "2026-10-08T22:00:00",
+    "fc_api_seen_at": "2026-10-08T22:00:00",
     "fc_trusted": true
   },
   "kd_ykL0eAKpRZ": {
@@ -13808,7 +13808,7 @@
   "fc_24473477": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -16489,8 +16489,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T21:45:00",
-    "fc_api_seen_at": "2026-10-08T21:45:00",
+    "fc_listed_at": "2026-10-08T22:00:00",
+    "fc_api_seen_at": "2026-10-08T22:00:00",
     "fc_trusted": true
   },
   "fc_24248200": {
