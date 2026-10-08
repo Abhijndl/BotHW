@@ -18139,7 +18139,7 @@
     "last_price_alert": ""
   },
   "kd_0mNyqD6Nkj": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT PORSCHE 911 DAKAR ICE GRAY METALLIC",
     "price": "₹1119",
     "source": "karzdolls",
@@ -18151,11 +18151,47 @@
     "last_price_alert": ""
   },
   "kd_aMNBWeRLXd": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA AUTO FINESSE SEMA 2023",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-auto-finesse-sema-2023?pid=aMNBWeRLXd",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_RWg8VKRLKe": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS SILVER SERIES 2026 EURO STYLE -CAR BOX SET JLB25",
+    "price": "₹1999",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-2026-euro%C2%A0style-car-box-set-jlb25?pid=RWg8VKRLKe",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_eKLwOzyLv0": {
+    "stock": "in_stock",
+    "name": "MINI GT PORSCHE 911 DAKAR SHADE GREEN METALLIC",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-porsche-911-dakar-shade-green-metallic?pid=eKLwOzyLv0",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_VbpAZq2grM": {
+    "stock": "in_stock",
+    "name": "MINI GT NISSAN SKYLINE KENMERI LIBERTY WALK LBWK KUMA",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-kenmeri-liberty-walk-lbwk-kuma?pid=VbpAZq2grM",
     "first_seen": "2026-10-08T13:00:00",
     "last_seen": "2026-10-08T13:00:00",
     "alerted_new": true,
