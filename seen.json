@@ -18223,5 +18223,19 @@
     "last_price_alert": "",
     "mg_updated_at": "2026-10-08T18:49:19.606169+00:00",
     "stock_ver": "mg_skus_v1"
+  },
+  "mg_6a87abc7-0e6f-4f56-ba13-41a84167c79b": {
+    "stock": "in_stock",
+    "name": "[Box] MGT1129 Lambo Huracan GT3 EVO2 #45 DEX Imaging 2024",
+    "price": "₹1699",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/mgt1129-lambo-huracan-gt3-evo2-45-dex-imaging-2024",
+    "first_seen": "2026-10-08T19:00:00",
+    "last_seen": "2026-10-08T19:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-10-08T19:14:36.999019+00:00",
+    "stock_ver": "mg_skus_v1"
   }
 }
