@@ -11004,7 +11004,7 @@
     "last_restock_alert": "2026-10-07T13:12:58",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-08T13:00:00"
+    "hm_verified_at": "2026-10-08T13:15:00"
   },
   "fc_22240218": {
     "stock": "out_of_stock",
@@ -18187,7 +18187,7 @@
     "last_price_alert": ""
   },
   "kd_VbpAZq2grM": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT NISSAN SKYLINE KENMERI LIBERTY WALK LBWK KUMA",
     "price": "₹1399",
     "source": "karzdolls",
