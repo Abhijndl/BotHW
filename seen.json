@@ -7281,15 +7281,15 @@
     "last_price_alert": ""
   },
   "kd_Ezgl6GrLMr": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT ALPHATAURI AT04 21 NYCK DE VRIES 2023 F1",
     "price": "₹1699",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-alphatauri-at04-21-nyck-de-vries-2023-f1?pid=Ezgl6GrLMr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-21T06:01:16",
+    "last_seen": "2026-10-08T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-08T13:09:05",
     "last_price_alert": ""
   },
   "kd_OdNZWk3Lzk": {
@@ -18088,6 +18088,18 @@
     "last_seen": "2026-10-08T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-08T11:32:40",
+    "last_price_alert": ""
+  },
+  "kd_KBg7z6lpRr": {
+    "stock": "in_stock",
+    "name": "BMW 750IL SORRENTO BLUE METALLIC",
+    "price": "₹1199",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bmw-750il-sorrento-blue-metallic?pid=KBg7z6lpRr",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
     "last_price_alert": ""
   }
 }
