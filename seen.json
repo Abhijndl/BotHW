@@ -1794,7 +1794,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_1c95f110-d33f-4196-bdac-dcd272aa72e2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Honda Odyssey",
     "price": "₹220",
     "source": "minifygram",
