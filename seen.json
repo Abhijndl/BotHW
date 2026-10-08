@@ -4663,8 +4663,8 @@
     "last_restock_alert": "2026-09-21T09:18:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T18:45:00",
-    "fc_api_seen_at": "2026-10-08T18:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_22548052": {
@@ -12874,8 +12874,8 @@
     "last_restock_alert": "2026-09-21T12:16:49",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T18:45:00",
-    "fc_api_seen_at": "2026-10-08T18:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_18313316": {
@@ -13428,8 +13428,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T18:45:00",
-    "fc_api_seen_at": "2026-10-08T18:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_23930428": {
@@ -13525,8 +13525,8 @@
     "last_restock_alert": "2026-10-04T15:04:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T13:15:00",
-    "fc_api_seen_at": "2026-10-08T13:15:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_24476257": {
@@ -15802,7 +15802,7 @@
   "fc_24248192": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-alarm-die-cast-free-wheel-toy-car-32-250-yellow/24248192/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -15811,8 +15811,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T15:45:00",
-    "fc_api_seen_at": "2026-10-08T15:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_24247519": {
@@ -16456,8 +16456,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T18:45:00",
-    "fc_api_seen_at": "2026-10-08T18:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_24503897": {
@@ -16472,8 +16472,8 @@
     "last_restock_alert": "2026-09-22T06:35:15",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T18:45:00",
-    "fc_api_seen_at": "2026-10-08T18:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_24503819": {
@@ -16489,8 +16489,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T18:45:00",
-    "fc_api_seen_at": "2026-10-08T18:45:00",
+    "fc_listed_at": "2026-10-08T19:00:00",
+    "fc_api_seen_at": "2026-10-08T19:00:00",
     "fc_trusted": true
   },
   "fc_24248200": {
