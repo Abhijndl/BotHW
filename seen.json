@@ -18139,15 +18139,15 @@
     "last_price_alert": ""
   },
   "kd_0mNyqD6Nkj": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT PORSCHE 911 DAKAR ICE GRAY METALLIC",
     "price": "₹1119",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-porsche-911-dakar-ice-gray-metallic?pid=0mNyqD6Nkj",
     "first_seen": "2026-10-08T13:00:00",
-    "last_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-08T13:24:50",
     "last_price_alert": ""
   },
   "kd_aMNBWeRLXd": {
@@ -18193,6 +18193,18 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-kenmeri-liberty-walk-lbwk-kuma?pid=VbpAZq2grM",
     "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_lng3Q6ALqy": {
+    "stock": "in_stock",
+    "name": "N STERRATO BIANCO ASOPO",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-hurac%C3%A1n-sterrato-bianco-asopo?pid=lng3Q6ALqy",
+    "first_seen": "2026-10-08T13:15:00",
     "last_seen": "2026-10-08T13:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
