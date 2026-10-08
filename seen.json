@@ -3943,8 +3943,8 @@
     "last_restock_alert": "2026-09-22T22:31:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:15:00",
-    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_23076123": {
@@ -12874,8 +12874,8 @@
     "last_restock_alert": "2026-09-21T12:16:49",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:15:00",
-    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_18313316": {
@@ -13444,8 +13444,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T09:45:00",
-    "fc_api_seen_at": "2026-10-08T09:45:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_24473028": {
@@ -13964,8 +13964,8 @@
     "last_price_alert": "2026-09-22T07:07:02",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T10:15:00",
-    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_24503315": {
@@ -14272,8 +14272,8 @@
     "last_restock_alert": "2026-09-29T05:48:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:15:00",
-    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -15571,8 +15571,8 @@
     "last_restock_alert": "2026-10-01T17:12:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:15:00",
-    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_23973353": {
@@ -16129,8 +16129,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:15:00",
-    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_listed_at": "2026-10-08T10:30:00",
+    "fc_api_seen_at": "2026-10-08T10:30:00",
     "fc_trusted": true
   },
   "fc_24473498": {
@@ -16829,7 +16829,7 @@
   "fc_24546335": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Light Blue",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-light-blue/24546335/product-detail",
     "first_seen": "2026-09-23T12:30:00",
