@@ -18137,5 +18137,29 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_0mNyqD6Nkj": {
+    "stock": "in_stock",
+    "name": "MINI GT PORSCHE 911 DAKAR ICE GRAY METALLIC",
+    "price": "₹1119",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-porsche-911-dakar-ice-gray-metallic?pid=0mNyqD6Nkj",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_aMNBWeRLXd": {
+    "stock": "in_stock",
+    "name": "MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA AUTO FINESSE SEMA 2023",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-auto-finesse-sema-2023?pid=aMNBWeRLXd",
+    "first_seen": "2026-10-08T13:00:00",
+    "last_seen": "2026-10-08T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
