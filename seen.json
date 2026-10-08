@@ -6837,15 +6837,15 @@
     "last_price_alert": ""
   },
   "kd_RWg8VMyLKe": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT FORD MUSTANG DARK HORSE 2024 CARBONIZED GRAY",
     "price": "₹1199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-dark-horse-2024-carbonized-gray?pid=RWg8VMyLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-21T06:01:16",
+    "last_seen": "2026-10-08T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-08T11:12:48",
     "last_price_alert": ""
   },
   "kd_OyLoZEwNb2": {
@@ -18062,6 +18062,30 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-subaru-impreza-wrx-sti-kaido-works-v1?pid=Mbgabz0Nq8",
     "first_seen": "2026-10-07T05:30:00",
+    "last_seen": "2026-10-08T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GoL1JzZpBA": {
+    "stock": "in_stock",
+    "name": "N GT3 EVO2 78 FORTE RACING 2024 IMSA DAYTONA 24 HRS",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lamborghini-hurac%C3%A1n-gt3-evo2-78-forte-racing-2024-imsa-daytona-24-hrs?pid=GoL1JzZpBA",
+    "first_seen": "2026-10-08T11:00:00",
+    "last_seen": "2026-10-08T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_V2gJeXype4": {
+    "stock": "in_stock",
+    "name": "PORSCHE 911 DAKAR RALLY 1974",
+    "price": "₹1149",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/porsche-911-dakar-rally-1974?pid=V2gJeXype4",
+    "first_seen": "2026-10-08T11:00:00",
     "last_seen": "2026-10-08T11:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
