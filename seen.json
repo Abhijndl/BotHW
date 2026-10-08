@@ -4447,7 +4447,7 @@
   "fc_22548064": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Yellow",
-    "price": "₹150",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-yellow/22548064/product-detail",
     "first_seen": "2026-07-28T17:02:20",
@@ -4456,8 +4456,8 @@
     "last_restock_alert": "2026-09-21T19:08:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T06:30:00",
-    "fc_api_seen_at": "2026-10-08T06:30:00",
+    "fc_listed_at": "2026-10-08T10:15:00",
+    "fc_api_seen_at": "2026-10-08T10:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-pantone-assorted-boys-3y-multicolour-17627231": {
@@ -5574,17 +5574,18 @@
   "fc_24247508": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Haulerback Toy Car (33/250) With Free Wheel Design - Red & Black",
-    "price": "₹250",
+    "price": "₹161",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/x/x/24247508/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-haulerback-toy-car-33-250-with-free-wheel-design-red-and-black/24247508/product-detail",
     "first_seen": "2026-08-10T19:46:53",
     "last_seen": "2026-10-08T10:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-10-08T10:15:00",
+    "fc_api_seen_at": "2026-10-08T10:15:00",
+    "fc_trusted": true
   },
   "fc_24247507": {
     "stock": "out_of_stock",
@@ -5724,8 +5725,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:00:00",
-    "fc_api_seen_at": "2026-10-08T10:00:00",
+    "fc_listed_at": "2026-10-08T10:15:00",
+    "fc_api_seen_at": "2026-10-08T10:15:00",
     "fc_trusted": true
   },
   "fc_24246598": {
@@ -13227,7 +13228,7 @@
   "fc_22548069": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Custom/Personnalise 72 Chevy Luv (127/250) Die-Cast Toy Car - White & Orange",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-72-chevy-luv-127-250-die-cast-toy-car-white-and-orange/22548069/product-detail",
     "first_seen": "2026-09-17T12:06:10",
@@ -13236,8 +13237,8 @@
     "last_restock_alert": "2026-09-21T08:17:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T08:30:00",
-    "fc_api_seen_at": "2026-10-08T08:30:00",
+    "fc_listed_at": "2026-10-08T10:15:00",
+    "fc_api_seen_at": "2026-10-08T10:15:00",
     "fc_trusted": true
   },
   "fc_24248206": {
