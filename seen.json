@@ -11736,7 +11736,7 @@
     "fc_trusted": true
   },
   "fc_22240184": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
     "price": "₹175",
     "source": "firstcry",
@@ -11744,11 +11744,11 @@
     "first_seen": "2026-09-12T13:28:40",
     "last_seen": "2026-10-08T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-08T17:26:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T21:15:00",
-    "fc_api_seen_at": "2026-10-06T21:15:00",
+    "fc_listed_at": "2026-10-08T17:15:00",
+    "fc_api_seen_at": "2026-10-08T17:15:00",
     "fc_trusted": true
   },
   "fc_24246594": {
