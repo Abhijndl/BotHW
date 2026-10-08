@@ -2705,7 +2705,7 @@
     "fc_trusted": true
   },
   "fc_23354598": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 172/250 Tooned Volkswagen Toy Car- White",
     "price": "₹161",
     "source": "firstcry",
@@ -2713,11 +2713,11 @@
     "first_seen": "2026-07-19T07:01:32",
     "last_seen": "2026-10-08T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T19:27:57",
+    "last_restock_alert": "2026-10-08T04:18:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T14:30:00",
-    "fc_api_seen_at": "2026-10-07T14:30:00",
+    "fc_listed_at": "2026-10-08T04:15:00",
+    "fc_api_seen_at": "2026-10-08T04:15:00",
     "fc_trusted": true
   },
   "fc_23074886": {
@@ -4920,7 +4920,7 @@
   "fc_23348045": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 164/250 Classic/classique 55 Nomad Die Cat Free Wheel Toy Car- Black",
-    "price": "₹161",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-164-250-classic-classique-55-nomad-die-cat-free-wheel-toy-car-black/23348045/product-detail",
     "first_seen": "2026-08-04T14:51:54",
@@ -4929,8 +4929,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T06:45:00",
-    "fc_api_seen_at": "2026-10-07T06:45:00",
+    "fc_listed_at": "2026-10-08T04:15:00",
+    "fc_api_seen_at": "2026-10-08T04:15:00",
     "fc_trusted": true
   },
   "fc_23355051": {
@@ -12517,8 +12517,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-10-06T13:15:00",
+    "fc_listed_at": "2026-10-08T04:15:00",
+    "fc_api_seen_at": "2026-10-08T04:15:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -13509,8 +13509,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T04:00:00",
-    "fc_api_seen_at": "2026-10-08T04:00:00",
+    "fc_listed_at": "2026-10-08T04:15:00",
+    "fc_api_seen_at": "2026-10-08T04:15:00",
     "fc_trusted": true
   },
   "fc_24473494": {
@@ -13775,7 +13775,7 @@
   "fc_24390951": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Guinevere Van/Fourgonnette Toy Car - Blue",
-    "price": "₹494",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-guinevere-van-fourgonnette-toy-car-blue/24390951/product-detail",
     "first_seen": "2026-09-18T15:46:42",
@@ -13784,8 +13784,8 @@
     "last_restock_alert": "2026-10-07T15:18:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T20:15:00",
-    "fc_api_seen_at": "2026-10-07T20:15:00",
+    "fc_listed_at": "2026-10-08T04:15:00",
+    "fc_api_seen_at": "2026-10-08T04:15:00",
     "fc_trusted": true
   },
   "fc_24473479": {
@@ -14321,8 +14321,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T19:30:00",
-    "fc_api_seen_at": "2026-10-07T19:30:00",
+    "fc_listed_at": "2026-10-08T04:15:00",
+    "fc_api_seen_at": "2026-10-08T04:15:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -14426,7 +14426,7 @@
   "fc_24476804": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -15966,7 +15966,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
