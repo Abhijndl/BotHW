@@ -18080,15 +18080,15 @@
     "last_price_alert": ""
   },
   "kd_V2gJeXype4": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "PORSCHE 911 DAKAR RALLY 1974",
     "price": "₹1149",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/porsche-911-dakar-rally-1974?pid=V2gJeXype4",
     "first_seen": "2026-10-08T11:00:00",
-    "last_seen": "2026-10-08T11:15:00",
+    "last_seen": "2026-10-08T11:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-08T11:32:40",
     "last_price_alert": ""
   }
 }
