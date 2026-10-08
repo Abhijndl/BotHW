@@ -4327,7 +4327,7 @@
   "fc_24031181": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '2019 Chevrolet Silverado Trail Boss Lt Toy Car - Light Brown",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-chevrolet-silverado-trail-boss-lt-toy-car-light-brown/24031181/product-detail",
     "first_seen": "2026-07-27T16:26:43",
@@ -12651,7 +12651,7 @@
     "fc_trusted": true
   },
   "fc_24473511": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
     "price": "₹161",
     "source": "firstcry",
@@ -12659,11 +12659,11 @@
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-10-08T12:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T10:36:49",
+    "last_restock_alert": "2026-10-08T12:08:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T19:00:00",
-    "fc_api_seen_at": "2026-10-07T19:00:00",
+    "fc_listed_at": "2026-10-08T12:00:00",
+    "fc_api_seen_at": "2026-10-08T12:00:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -12990,7 +12990,7 @@
   "fc_24476799": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -12999,8 +12999,8 @@
     "last_restock_alert": "2026-10-02T18:26:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T11:15:00",
-    "fc_api_seen_at": "2026-10-08T11:15:00",
+    "fc_listed_at": "2026-10-08T12:00:00",
+    "fc_api_seen_at": "2026-10-08T12:00:00",
     "fc_trusted": true
   },
   "fc_21993931": {
@@ -13125,8 +13125,8 @@
     "last_restock_alert": "2026-10-01T11:48:27",
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T15:00:00",
-    "fc_api_seen_at": "2026-10-07T15:00:00",
+    "fc_listed_at": "2026-10-08T12:00:00",
+    "fc_api_seen_at": "2026-10-08T12:00:00",
     "fc_trusted": true
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -13341,7 +13341,7 @@
   "fc_24503903": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -13450,17 +13450,16 @@
   },
   "fc_24473028": {
     "stock": "in_stock",
-    "name": "Hot Wheels Audi EI Segundo Rallye Die Cast Free Wheel Toy Car - Yellow",
+    "name": "Hot wheels EI Segundo Rallye Die cast Car (145/250) - Yellow",
     "price": "₹170",
     "source": "firstcry",
-    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-ei-segundo-rallye-die-cast-free-wheel-toy-car-yellow/24473028/product-detail",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ei-segundo-rallye-die-cast-car-145-250-yellow/24473028/product-detail",
     "first_seen": "2026-09-18T03:56:00",
     "last_seen": "2026-10-08T12:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "auto_watch": true,
     "fc_listed_at": "2026-10-08T12:00:00",
     "fc_api_seen_at": "2026-10-08T12:00:00",
     "fc_trusted": true
@@ -13517,7 +13516,7 @@
   "fc_24473494": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -13727,7 +13726,7 @@
   "fc_24514777": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Fiat 500e Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-fiat-500e-die-cast-free-wheel-toy-car-blue-and-gold/24514777/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13769,8 +13768,8 @@
     "last_restock_alert": "2026-10-04T07:22:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T14:30:00",
-    "fc_api_seen_at": "2026-10-07T14:30:00",
+    "fc_listed_at": "2026-10-08T12:00:00",
+    "fc_api_seen_at": "2026-10-08T12:00:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14361,7 +14360,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
