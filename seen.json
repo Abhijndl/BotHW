@@ -109,7 +109,7 @@
     "fc_api_seen_at": "2026-09-21T06:46:09"
   },
   "fc_23074259": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast 41 Willys (153/250) Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -117,11 +117,11 @@
     "first_seen": "2026-07-18T07:36:21",
     "last_seen": "2026-10-08T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T12:32:43",
+    "last_restock_alert": "2026-10-08T06:53:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T16:00:00",
-    "fc_api_seen_at": "2026-10-06T16:00:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_22277228": {
@@ -5535,8 +5535,8 @@
     "last_price_alert": "2026-09-22T07:21:20",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T06:30:00",
-    "fc_api_seen_at": "2026-10-08T06:30:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_24248204": {
@@ -5731,7 +5731,7 @@
   "fc_24246598": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pass 'N Go Die Cast Toy Car (5/250) With Free Wheel Design - White & Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pass-n-go-die-cast-toy-car-5-250-with-free-wheel-design-white-and-red/24246598/product-detail",
     "first_seen": "2026-08-13T02:52:04",
@@ -11522,7 +11522,7 @@
   "fc_23076119": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Dastun 620 (128/250) Die Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dastun-620-128-250-die-cast-toy-car-orange/23076119/product-detail",
     "first_seen": "2026-09-08T04:18:36",
@@ -11531,8 +11531,8 @@
     "last_restock_alert": "2026-09-22T11:01:48",
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T06:30:00",
-    "fc_api_seen_at": "2026-10-08T06:30:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_23147629": {
@@ -12636,7 +12636,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12733,7 +12733,7 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12741,11 +12741,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-08T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T06:04:58",
+    "last_restock_alert": "2026-10-08T06:53:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T18:15:00",
-    "fc_api_seen_at": "2026-10-06T18:15:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_24314518": {
@@ -13801,8 +13801,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-08T06:30:00",
-    "fc_api_seen_at": "2026-10-08T06:30:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -14309,9 +14309,9 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14731,7 +14731,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15802,7 +15802,7 @@
   "fc_24248192": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-alarm-die-cast-free-wheel-toy-car-32-250-yellow/24248192/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -15811,8 +15811,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T20:30:00",
-    "fc_api_seen_at": "2026-10-07T20:30:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_24247519": {
@@ -16151,7 +16151,7 @@
   "fc_24503746": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16828,7 +16828,7 @@
   "fc_24546335": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Light Blue",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-light-blue/24546335/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16837,14 +16837,14 @@
     "last_restock_alert": "2026-10-05T08:41:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T21:00:00",
-    "fc_api_seen_at": "2026-10-07T21:00:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "fc_24546334": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Dark Red",
-    "price": "₹599",
+    "price": "₹539",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-dark-red/24546334/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -16853,8 +16853,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T21:00:00",
-    "fc_api_seen_at": "2026-10-07T21:00:00",
+    "fc_listed_at": "2026-10-08T06:45:00",
+    "fc_api_seen_at": "2026-10-08T06:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
