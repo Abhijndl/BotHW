@@ -394,7 +394,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_7308499a-9066-4927-951d-63bbf9995a1f": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "2020 Koenigsegg Jesko",
     "price": "₹599",
     "source": "minifygram",
