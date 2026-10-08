@@ -3405,7 +3405,7 @@
     "fc_trusted": true
   },
   "fc_23351188": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
     "price": "₹175",
     "source": "firstcry",
@@ -3413,11 +3413,11 @@
     "first_seen": "2026-07-20T08:21:54",
     "last_seen": "2026-10-08T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-29T15:04:28",
+    "last_restock_alert": "2026-10-08T15:04:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-30T04:15:00",
-    "fc_api_seen_at": "2026-09-30T04:15:00",
+    "fc_listed_at": "2026-10-08T15:00:00",
+    "fc_api_seen_at": "2026-10-08T15:00:00",
     "fc_trusted": true
   },
   "fc_23074888": {
@@ -4211,8 +4211,8 @@
     "last_restock_alert": "2026-09-24T10:27:22",
     "last_price_alert": "2026-09-22T06:02:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T14:45:00",
-    "fc_api_seen_at": "2026-10-08T14:45:00",
+    "fc_listed_at": "2026-10-08T15:00:00",
+    "fc_api_seen_at": "2026-10-08T15:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-1-64-scale-5-pack-formula1-race-cars-for-kids-3y-96307388": {
@@ -4456,8 +4456,8 @@
     "last_restock_alert": "2026-09-21T19:08:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T14:45:00",
-    "fc_api_seen_at": "2026-10-08T14:45:00",
+    "fc_listed_at": "2026-10-08T15:00:00",
+    "fc_api_seen_at": "2026-10-08T15:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-pantone-assorted-boys-3y-multicolour-17627231": {
@@ -9864,7 +9864,7 @@
     "fc_trusted": true
   },
   "fc_22597523": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Group C Fantasy Toy Car Color Changing Die-Cast Vehicle with Free-Rolling Wheels -Orange",
     "price": "₹359",
     "source": "firstcry",
@@ -9872,11 +9872,11 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-08T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T18:14:57",
+    "last_restock_alert": "2026-10-08T15:04:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T05:30:00",
-    "fc_api_seen_at": "2026-10-07T05:30:00",
+    "fc_listed_at": "2026-10-08T15:00:00",
+    "fc_api_seen_at": "2026-10-08T15:00:00",
     "fc_trusted": true
   },
   "fc_22435130": {
@@ -15802,7 +15802,7 @@
   "fc_24248192": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-alarm-die-cast-free-wheel-toy-car-32-250-yellow/24248192/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16674,8 +16674,8 @@
     "last_restock_alert": "2026-10-07T20:08:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T14:45:00",
-    "fc_api_seen_at": "2026-10-08T14:45:00",
+    "fc_listed_at": "2026-10-08T15:00:00",
+    "fc_api_seen_at": "2026-10-08T15:00:00",
     "fc_trusted": true
   },
   "fc_24248194": {
