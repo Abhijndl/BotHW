@@ -14229,7 +14229,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14238,8 +14238,8 @@
     "last_restock_alert": "2026-10-04T04:31:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T18:45:00",
-    "fc_api_seen_at": "2026-10-09T18:45:00",
+    "fc_listed_at": "2026-10-09T20:00:00",
+    "fc_api_seen_at": "2026-10-09T20:00:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -16134,9 +16134,9 @@
     "fc_trusted": true
   },
   "fc_24473498": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Armored Batmobile Die-Cast Toy Car - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-armored-batmobile-die-cast-toy-car-black/24473498/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16145,8 +16145,8 @@
     "last_restock_alert": "2026-10-09T18:32:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T19:30:00",
-    "fc_api_seen_at": "2026-10-09T19:30:00",
+    "fc_listed_at": "2026-10-09T20:00:00",
+    "fc_api_seen_at": "2026-10-09T20:00:00",
     "fc_trusted": true
   },
   "fc_24503746": {
@@ -16682,7 +16682,7 @@
   "fc_24248194": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Chop N Bloc Die-Cast Free Wheel Toy Car (182/250) - Cream",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chop-n-bloc-die-cast-free-wheel-toy-car-182-250-cream/24248194/product-detail",
     "first_seen": "2026-09-22T13:14:53",
@@ -16691,8 +16691,8 @@
     "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T18:30:00",
-    "fc_api_seen_at": "2026-10-09T18:30:00",
+    "fc_listed_at": "2026-10-09T20:00:00",
+    "fc_api_seen_at": "2026-10-09T20:00:00",
     "fc_trusted": true
   },
   "fc_24342828": {
