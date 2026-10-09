@@ -5997,15 +5997,15 @@
     "last_price_alert": ""
   },
   "kd_10gzmv6pAV": {
-    "stock": "out_of_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "stock": "in_stock",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-01T11:15:00",
+    "last_seen": "2026-10-09T12:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-09T12:20:47",
     "last_price_alert": ""
   },
   "kd_6nNVYyXgYk": {
