@@ -4945,8 +4945,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-18T04:56:27",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T08:30:00",
-    "fc_api_seen_at": "2026-10-09T08:30:00",
+    "fc_listed_at": "2026-10-09T12:00:00",
+    "fc_api_seen_at": "2026-10-09T12:00:00",
     "fc_trusted": true
   },
   "mg_e57fd304-e928-4684-b17d-fe401233398d": {
@@ -10327,8 +10327,8 @@
     "last_price_alert": "2026-09-22T07:22:59",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T11:45:00",
-    "fc_api_seen_at": "2026-10-09T11:45:00",
+    "fc_listed_at": "2026-10-09T12:00:00",
+    "fc_api_seen_at": "2026-10-09T12:00:00",
     "fc_trusted": true
   },
   "fc_23345095": {
@@ -11802,7 +11802,7 @@
   "fc_24194169": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
-    "price": "₹809",
+    "price": "₹899",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-5-pack-die-cast-toy-cars-with-free-wheel-1-64-scale-set-of-5-red/24194169/product-detail",
     "first_seen": "2026-09-14T06:24:40",
@@ -11812,8 +11812,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T10:15:00",
-    "fc_api_seen_at": "2026-10-09T10:15:00",
+    "fc_listed_at": "2026-10-09T12:00:00",
+    "fc_api_seen_at": "2026-10-09T12:00:00",
     "fc_trusted": true
   },
   "kd_ykL0eAKpRZ": {
@@ -13285,8 +13285,8 @@
     "last_restock_alert": "2026-10-07T20:24:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T11:45:00",
-    "fc_api_seen_at": "2026-10-09T11:45:00",
+    "fc_listed_at": "2026-10-09T12:00:00",
+    "fc_api_seen_at": "2026-10-09T12:00:00",
     "fc_trusted": true
   },
   "fc_24246597": {
@@ -13694,7 +13694,7 @@
   "fc_24504535": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG19-JA10 Pack of 2 - Beige & Black",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg19-ja10-pack-of-2-beige-and-black/24504535/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13703,8 +13703,8 @@
     "last_restock_alert": "2026-10-07T19:04:53",
     "last_price_alert": "2026-09-21T15:28:56",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T11:30:00",
-    "fc_api_seen_at": "2026-10-09T11:30:00",
+    "fc_listed_at": "2026-10-09T12:00:00",
+    "fc_api_seen_at": "2026-10-09T12:00:00",
     "fc_trusted": true
   },
   "fc_24504539": {
