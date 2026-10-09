@@ -62,7 +62,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_22450088": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Batman Die-Cast Car Set 1:64 Scale Toy Cars Pack of 5 Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -70,11 +70,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-09T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T18:16:53",
+    "last_restock_alert": "2026-10-09T05:01:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-06T21:15:00",
-    "fc_api_seen_at": "2026-10-06T21:15:00",
+    "fc_listed_at": "2026-10-09T05:00:00",
+    "fc_api_seen_at": "2026-10-09T05:00:00",
     "fc_trusted": true
   },
   "fc_21348": {
@@ -12686,7 +12686,7 @@
   "fc_24342824": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva 3/5 Die-cast Car -orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-3-5-die-cast-car-orange/24342824/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13791,7 +13791,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
