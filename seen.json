@@ -17054,15 +17054,15 @@
     "last_price_alert": ""
   },
   "kd_Pqp2JaRp36": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS POP CULTURE 2024 MIX 3",
     "price": "₹2549",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot%C2%A0wheels%C2%A0pop%C2%A0culture%C2%A02024-mix-3?pid=Pqp2JaRp36",
     "first_seen": "2026-09-25T13:00:00",
-    "last_seen": "2026-09-25T13:15:00",
+    "last_seen": "2026-10-09T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-09T05:58:42",
     "last_price_alert": ""
   },
   "kd_e7g58kQpmv": {
@@ -18241,7 +18241,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
@@ -18257,6 +18257,18 @@
     "price": "₹2056",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-assortment-set-of-4-cars?pid=XqLQdvwNvD",
+    "first_seen": "2026-10-09T05:45:00",
+    "last_seen": "2026-10-09T05:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_jPp9YRrpDa": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS POP CULTURE ASSORTMENT OF 5 CARS",
+    "price": "₹2549",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-assortment-of-5-cars?pid=jPp9YRrpDa",
     "first_seen": "2026-10-09T05:45:00",
     "last_seen": "2026-10-09T05:45:00",
     "alerted_new": true,
