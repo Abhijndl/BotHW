@@ -13992,7 +13992,7 @@
     "first_seen": "2026-09-19T06:37:07",
     "last_seen": "2026-10-09T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T18:32:27",
+    "last_restock_alert": "2026-10-09T18:32:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -16142,7 +16142,7 @@
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-09T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T18:32:27",
+    "last_restock_alert": "2026-10-09T18:32:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-09T18:30:00",
@@ -18212,7 +18212,7 @@
     "last_price_alert": ""
   },
   "mg_2f44ab58-a631-4f0f-850b-9f4ce8e6268b": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MGT1052 Porsche 911 GT3R #77",
     "price": "₹1999",
     "source": "minifygram",
@@ -18222,7 +18222,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-09T06:32:46",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-09T18:08:43.609392+00:00",
+    "mg_updated_at": "2026-10-09T18:31:54.611622+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_6a87abc7-0e6f-4f56-ba13-41a84167c79b": {
