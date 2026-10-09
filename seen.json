@@ -18226,7 +18226,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_6a87abc7-0e6f-4f56-ba13-41a84167c79b": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1129 Lambo Huracan GT3 EVO2 #45 DEX Imaging 2024",
     "price": "₹1699",
     "source": "minifygram",
@@ -18241,7 +18241,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
