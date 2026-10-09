@@ -3383,8 +3383,8 @@
     "last_restock_alert": "2026-09-22T05:48:59",
     "last_price_alert": "2026-09-22T05:48:59",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T19:15:00",
-    "fc_api_seen_at": "2026-10-09T19:15:00",
+    "fc_listed_at": "2026-10-09T19:30:00",
+    "fc_api_seen_at": "2026-10-09T19:30:00",
     "fc_trusted": true
   },
   "fc_23075647": {
@@ -3718,8 +3718,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T19:15:00",
-    "fc_api_seen_at": "2026-10-09T19:15:00",
+    "fc_listed_at": "2026-10-09T19:30:00",
+    "fc_api_seen_at": "2026-10-09T19:30:00",
     "fc_trusted": true
   },
   "fc_23348043": {
@@ -13824,7 +13824,7 @@
   "fc_24473499": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-19-mercedes-benz-a-class-die-cast-toy-car-black/24473499/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -13834,8 +13834,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T11:15:00",
-    "fc_api_seen_at": "2026-10-09T11:15:00",
+    "fc_listed_at": "2026-10-09T19:30:00",
+    "fc_api_seen_at": "2026-10-09T19:30:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -14644,8 +14644,8 @@
     "last_restock_alert": "2026-09-22T04:26:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T19:15:00",
-    "fc_api_seen_at": "2026-10-09T19:15:00",
+    "fc_listed_at": "2026-10-09T19:30:00",
+    "fc_api_seen_at": "2026-10-09T19:30:00",
     "fc_trusted": true
   },
   "fc_24503310": {
