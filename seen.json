@@ -18212,7 +18212,7 @@
     "last_price_alert": ""
   },
   "mg_2f44ab58-a631-4f0f-850b-9f4ce8e6268b": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MGT1052 Porsche 911 GT3R #77",
     "price": "₹1999",
     "source": "minifygram",
@@ -18220,13 +18220,13 @@
     "first_seen": "2026-10-08T14:30:00",
     "last_seen": "2026-10-09T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-09T06:32:46",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-08T18:49:19.606169+00:00",
+    "mg_updated_at": "2026-10-09T06:32:34.68853+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_6a87abc7-0e6f-4f56-ba13-41a84167c79b": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1129 Lambo Huracan GT3 EVO2 #45 DEX Imaging 2024",
     "price": "₹1699",
     "source": "minifygram",
@@ -18234,9 +18234,9 @@
     "first_seen": "2026-10-08T19:00:00",
     "last_seen": "2026-10-09T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-09T06:32:46",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-08T19:20:19.597141+00:00",
+    "mg_updated_at": "2026-10-09T06:32:08.269165+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "kd_KBg7zVGpRr": {
@@ -18276,7 +18276,7 @@
     "last_price_alert": ""
   },
   "kd_4lgO2xRpoQ": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "HOT WHEELS POP CULTURE 2026 SET OF 5",
     "price": "₹2745",
     "source": "karzdolls",
@@ -18324,7 +18324,7 @@
     "last_price_alert": ""
   },
   "kd_lng35ekLqy": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "HOT WHEELS BOULEVARD MIX 4 ASSORTMENT OF 5 CAR [PRE-ORDER]",
     "price": "₹2745",
     "source": "karzdolls",
