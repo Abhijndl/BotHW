@@ -18346,5 +18346,53 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_V2gJEjApe4": {
+    "stock": "in_stock",
+    "name": "N STERRATO ALL-TERRAIN TERRA",
+    "price": "₹1599",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-terra?pid=V2gJEjApe4",
+    "first_seen": "2026-10-09T10:30:00",
+    "last_seen": "2026-10-09T10:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_KBg7ZKvpRr": {
+    "stock": "in_stock",
+    "name": "N STERRATO ALL-TERRAIN BOSCO",
+    "price": "₹1599",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-bosco?pid=KBg7ZKvpRr",
+    "first_seen": "2026-10-09T10:30:00",
+    "last_seen": "2026-10-09T10:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_0mNyKoGpkj": {
+    "stock": "in_stock",
+    "name": "N STERRATO ALL-TERRAIN SABBIA",
+    "price": "₹1599",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-sabbia?pid=0mNyKoGpkj",
+    "first_seen": "2026-10-09T10:30:00",
+    "last_seen": "2026-10-09T10:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_PzNbxrOpbQ": {
+    "stock": "in_stock",
+    "name": "N STERRATO ALL-TERRAIN NEVE",
+    "price": "₹1599",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-neve?pid=PzNbxrOpbQ",
+    "first_seen": "2026-10-09T10:30:00",
+    "last_seen": "2026-10-09T10:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
