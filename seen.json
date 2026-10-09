@@ -6262,7 +6262,7 @@
   },
   "kd_6nNVYMagYk": {
     "stock": "in_stock",
-    "name": "HOT WHEELS BATMAN SILVER SERIES SET OF 5 CAR [PRE-ORDER]",
+    "name": "HOT WHEELS BATMAN SILVER SERIES SET OF 5 CAR",
     "price": "₹1495",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-batman-silver-series-set-of-5-car-?pid=6nNVYMagYk",
@@ -18241,7 +18241,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
@@ -18276,15 +18276,15 @@
     "last_price_alert": ""
   },
   "kd_4lgO2xRpoQ": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS POP CULTURE 2026 SET OF 5",
     "price": "₹2745",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-2026-set-of-5?pid=4lgO2xRpoQ",
     "first_seen": "2026-10-09T06:00:00",
-    "last_seen": "2026-10-09T06:00:00",
+    "last_seen": "2026-10-09T06:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-09T06:22:43",
     "last_price_alert": ""
   },
   "kd_OyLoZBxNb2": {
@@ -18293,6 +18293,18 @@
     "price": "₹1495",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-2026-silver-series-vintage-grand-prix-set-of-5-car?pid=OyLoZBxNb2",
+    "first_seen": "2026-10-09T06:15:00",
+    "last_seen": "2026-10-09T06:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_OyLodk3pb2": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS NEON SPEEDERS SERIES 2025 MIX 2 [PRE-ORDER]",
+    "price": "₹2232",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-neon-speeders-series-2025-mix-2?pid=OyLodk3pb2",
     "first_seen": "2026-10-09T06:15:00",
     "last_seen": "2026-10-09T06:15:00",
     "alerted_new": true,
