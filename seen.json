@@ -18236,7 +18236,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-10-09T06:32:46",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-09T06:32:08.269165+00:00",
+    "mg_updated_at": "2026-10-09T06:35:49.063588+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "kd_KBg7zVGpRr": {
@@ -18329,6 +18329,18 @@
     "price": "₹2745",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-boulevard-mix-4-assortment-of-5-car?pid=lng35ekLqy",
+    "first_seen": "2026-10-09T06:30:00",
+    "last_seen": "2026-10-09T06:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_eJNr095pBd": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS SILVER SERIES VINTAGE CLUB SERIES SET OF 5 CAR",
+    "price": "₹1395",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-vintage-club-series-set-of-5-car?pid=eJNr095pBd",
     "first_seen": "2026-10-09T06:30:00",
     "last_seen": "2026-10-09T06:30:00",
     "alerted_new": true,
