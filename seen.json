@@ -12679,8 +12679,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T04:15:00",
-    "fc_api_seen_at": "2026-10-09T04:15:00",
+    "fc_listed_at": "2026-10-09T05:30:00",
+    "fc_api_seen_at": "2026-10-09T05:30:00",
     "fc_trusted": true
   },
   "fc_24342824": {
@@ -13146,7 +13146,7 @@
   "fc_24525299": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Camper/Roulotte De Derapage Die Cast Toy Truck - Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-camper-roulotte-de-derapage-die-cast-toy-truck-green/24525299/product-detail",
     "first_seen": "2026-09-17T09:21:08",
@@ -13768,8 +13768,8 @@
     "last_restock_alert": "2026-10-08T12:24:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T13:15:00",
-    "fc_api_seen_at": "2026-10-08T13:15:00",
+    "fc_listed_at": "2026-10-09T05:30:00",
+    "fc_api_seen_at": "2026-10-09T05:30:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14410,7 +14410,7 @@
   "fc_24473732": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Blue",
-    "price": "₹64",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24473732/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14418,10 +14418,11 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_listed_at": "2026-10-09T05:30:00",
+    "fc_api_seen_at": "2026-10-09T05:30:00",
+    "fc_trusted": true
   },
   "fc_24476804": {
     "stock": "out_of_stock",
@@ -16061,8 +16062,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-09-24T00:15:00",
-    "fc_api_seen_at": "2026-09-24T00:15:00",
+    "fc_listed_at": "2026-10-09T05:30:00",
+    "fc_api_seen_at": "2026-10-09T05:30:00",
     "fc_trusted": true
   },
   "fc_24390959": {
@@ -16144,8 +16145,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T04:00:00",
-    "fc_api_seen_at": "2026-10-09T04:00:00",
+    "fc_listed_at": "2026-10-09T05:30:00",
+    "fc_api_seen_at": "2026-10-09T05:30:00",
     "fc_trusted": true
   },
   "fc_24503746": {
@@ -16350,7 +16351,7 @@
   "fc_24525296": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Chevy Silverado Driftcation Die Cast Toy Truck - Yellow/Red",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chevy-silverado-driftcation-die-cast-toy-truck-yellow-red/24525296/product-detail",
     "first_seen": "2026-09-21T06:42:53",
