@@ -18274,5 +18274,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_4lgO2xRpoQ": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS POP CULTURE 2026 SET OF 5",
+    "price": "₹2745",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-2026-set-of-5?pid=4lgO2xRpoQ",
+    "first_seen": "2026-10-09T06:00:00",
+    "last_seen": "2026-10-09T06:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
