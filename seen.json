@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-10-07T20:24:50",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T10:00:00",
-    "fc_api_seen_at": "2026-10-09T10:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -3114,8 +3114,8 @@
     "last_restock_alert": "2026-09-21T07:13:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T18:00:00",
-    "fc_api_seen_at": "2026-10-09T18:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--mario-kart-diecast-asst-4mgl8dpbnjr6": {
@@ -3783,8 +3783,8 @@
     "last_restock_alert": "2026-09-23T13:27:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T17:30:00",
-    "fc_api_seen_at": "2026-10-09T17:30:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_23074178": {
@@ -4336,8 +4336,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T18:00:00",
-    "fc_api_seen_at": "2026-10-09T18:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_24007869": {
@@ -5677,8 +5677,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T09:45:00",
-    "fc_api_seen_at": "2026-10-09T09:45:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -5732,7 +5732,7 @@
   "fc_24246598": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pass 'N Go Die Cast Toy Car (5/250) With Free Wheel Design - White & Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pass-n-go-die-cast-toy-car-5-250-with-free-wheel-design-white-and-red/24246598/product-detail",
     "first_seen": "2026-08-13T02:52:04",
@@ -11516,8 +11516,8 @@
     "last_restock_alert": "2026-10-08T17:40:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T18:00:00",
-    "fc_api_seen_at": "2026-10-09T18:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_23076119": {
@@ -12667,9 +12667,9 @@
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -12679,8 +12679,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T18:00:00",
-    "fc_api_seen_at": "2026-10-09T18:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_24342824": {
@@ -12734,7 +12734,7 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -14229,7 +14229,7 @@
   "fc_24475737": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14238,8 +14238,8 @@
     "last_restock_alert": "2026-10-04T04:31:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T18:00:00",
-    "fc_api_seen_at": "2026-10-09T18:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_24472665": {
@@ -14551,19 +14551,19 @@
     "fc_trusted": true
   },
   "fc_24503821": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Custom '62 Chevy Pickup Die Cast Free Wheel Toy Car - Black/Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-62-chevy-pickup-die-cast-free-wheel-toy-car-black-red/24503821/product-detail",
     "first_seen": "2026-09-20T08:51:11",
     "last_seen": "2026-10-09T18:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T11:01:48",
+    "last_restock_alert": "2026-10-09T18:17:22",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-22T20:15:00",
-    "fc_api_seen_at": "2026-09-22T20:15:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_24525291": {
@@ -15977,8 +15977,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T18:00:00",
-    "fc_api_seen_at": "2026-10-09T18:00:00",
+    "fc_listed_at": "2026-10-09T18:15:00",
+    "fc_api_seen_at": "2026-10-09T18:15:00",
     "fc_trusted": true
   },
   "fc_24390966": {
