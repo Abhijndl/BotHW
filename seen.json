@@ -17078,15 +17078,15 @@
     "last_price_alert": ""
   },
   "kd_RWg8VWeLKe": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS 2026 CAR CULTURE VINTAGE RACING [PRE-ORDER]",
     "price": "₹2745",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-2026-car-culture-vintage-racing?pid=RWg8VWeLKe",
     "first_seen": "2026-09-25T13:15:00",
-    "last_seen": "2026-09-25T13:30:00",
+    "last_seen": "2026-10-09T06:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T13:25:47",
+    "last_restock_alert": "2026-10-09T06:26:48",
     "last_price_alert": ""
   },
   "fc_24247502": {
@@ -18241,7 +18241,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
@@ -18312,7 +18312,7 @@
     "last_price_alert": ""
   },
   "kd_QJgn2z8gl6": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "NEW HOT WHEELS CAR CULTURE 2026 - POWER TRIP [PRE-ORDER]",
     "price": "₹2570",
     "source": "karzdolls",
