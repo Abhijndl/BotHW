@@ -18212,7 +18212,7 @@
     "last_price_alert": ""
   },
   "mg_2f44ab58-a631-4f0f-850b-9f4ce8e6268b": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MGT1052 Porsche 911 GT3R #77",
     "price": "₹1999",
     "source": "minifygram",
