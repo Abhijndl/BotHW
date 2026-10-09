@@ -16145,8 +16145,8 @@
     "last_restock_alert": "2026-10-09T18:32:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T20:15:00",
-    "fc_api_seen_at": "2026-10-09T20:15:00",
+    "fc_listed_at": "2026-10-09T20:30:00",
+    "fc_api_seen_at": "2026-10-09T20:30:00",
     "fc_trusted": true
   },
   "fc_24503746": {
@@ -16478,9 +16478,9 @@
     "fc_trusted": true
   },
   "fc_24503819": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Bugatti Bolide Die Cast Free Wheel Toy Car - White/Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bugatti-bolide-die-cast-free-wheel-toy-car-white-red/24503819/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16490,8 +16490,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T18:15:00",
-    "fc_api_seen_at": "2026-10-09T18:15:00",
+    "fc_listed_at": "2026-10-09T20:30:00",
+    "fc_api_seen_at": "2026-10-09T20:30:00",
     "fc_trusted": true
   },
   "fc_24248200": {
@@ -18402,6 +18402,23 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-152-koenigsegg-cc850-toy-car-grey/23032473/product-detail",
     "first_seen": "2026-10-09T20:15:00",
+    "last_seen": "2026-10-09T20:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "auto_watch": true,
+    "fc_listed_at": "2026-10-09T20:30:00",
+    "fc_api_seen_at": "2026-10-09T20:30:00",
+    "fc_trusted": true
+  },
+  "fc_23973363": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels Die Cast Free Wheel Power Trip 4/5 Ferrari 250 Gto - White",
+    "price": "₹549",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-power-trip-4-5-ferrari-250-gto-white/23973363/product-detail",
+    "first_seen": "2026-10-09T20:30:00",
     "last_seen": "2026-10-09T20:30:00",
     "alerted_new": true,
     "last_restock_alert": "",
