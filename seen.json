@@ -3943,8 +3943,8 @@
     "last_restock_alert": "2026-09-22T22:31:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T13:45:00",
-    "fc_api_seen_at": "2026-10-10T13:45:00",
+    "fc_listed_at": "2026-10-10T14:00:00",
+    "fc_api_seen_at": "2026-10-10T14:00:00",
     "fc_trusted": true
   },
   "fc_23076123": {
@@ -4600,8 +4600,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T13:45:00",
-    "fc_api_seen_at": "2026-10-10T13:45:00",
+    "fc_listed_at": "2026-10-10T14:00:00",
+    "fc_api_seen_at": "2026-10-10T14:00:00",
     "fc_trusted": true
   },
   "fc_23348665": {
@@ -13069,7 +13069,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13079,8 +13079,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T13:45:00",
-    "fc_api_seen_at": "2026-10-10T13:45:00",
+    "fc_listed_at": "2026-10-10T14:00:00",
+    "fc_api_seen_at": "2026-10-10T14:00:00",
     "fc_trusted": true
   },
   "fc_24473478": {
@@ -15032,8 +15032,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T17:30:00",
-    "fc_api_seen_at": "2026-10-09T17:30:00",
+    "fc_listed_at": "2026-10-10T14:00:00",
+    "fc_api_seen_at": "2026-10-10T14:00:00",
     "fc_trusted": true
   },
   "fc_24247501": {
@@ -15573,8 +15573,8 @@
     "last_restock_alert": "2026-10-01T17:12:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T13:45:00",
-    "fc_api_seen_at": "2026-10-10T13:45:00",
+    "fc_listed_at": "2026-10-10T14:00:00",
+    "fc_api_seen_at": "2026-10-10T14:00:00",
     "fc_trusted": true
   },
   "fc_23973353": {
@@ -18443,8 +18443,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T13:45:00",
-    "fc_api_seen_at": "2026-10-10T13:45:00",
+    "fc_listed_at": "2026-10-10T14:00:00",
+    "fc_api_seen_at": "2026-10-10T14:00:00",
     "fc_trusted": true
   },
   "fc_24235312": {
