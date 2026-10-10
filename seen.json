@@ -14311,9 +14311,9 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14323,8 +14323,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T13:00:00",
-    "fc_api_seen_at": "2026-10-10T13:00:00",
+    "fc_listed_at": "2026-10-10T13:30:00",
+    "fc_api_seen_at": "2026-10-10T13:30:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -14516,8 +14516,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T13:15:00",
-    "fc_api_seen_at": "2026-10-10T13:15:00",
+    "fc_listed_at": "2026-10-10T13:30:00",
+    "fc_api_seen_at": "2026-10-10T13:30:00",
     "fc_trusted": true
   },
   "fc_24525285": {
@@ -14580,8 +14580,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T13:15:00",
-    "fc_api_seen_at": "2026-10-10T13:15:00",
+    "fc_listed_at": "2026-10-10T13:30:00",
+    "fc_api_seen_at": "2026-10-10T13:30:00",
     "fc_trusted": true
   },
   "fc_24503334": {
