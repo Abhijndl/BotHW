@@ -154,7 +154,7 @@
     "fc_trusted": true
   },
   "fc_22600382": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "₹764",
     "source": "firstcry",
@@ -162,11 +162,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-10T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-07T14:01:51",
+    "last_restock_alert": "2026-10-10T08:06:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:45:00",
-    "fc_api_seen_at": "2026-10-08T10:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "mg_c54400b4-7b93-434f-8d78-b5cf97f72208": {
@@ -3383,8 +3383,8 @@
     "last_restock_alert": "2026-09-22T05:48:59",
     "last_price_alert": "2026-09-22T05:48:59",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_23075647": {
@@ -4448,7 +4448,7 @@
   "fc_22548064": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Yellow",
-    "price": "₹150",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-yellow/22548064/product-detail",
     "first_seen": "2026-07-28T17:02:20",
@@ -4457,8 +4457,8 @@
     "last_restock_alert": "2026-09-21T19:08:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-pantone-assorted-boys-3y-multicolour-17627231": {
@@ -5743,8 +5743,8 @@
     "last_restock_alert": "2026-09-26T11:18:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_24246595": {
@@ -5922,7 +5922,7 @@
   "fc_24248202": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 70 Dodge Charger Die-Cast Free Wheel Toy Car (188/250) - White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-dodge-charger-die-cast-free-wheel-toy-car-188-250-white/24248202/product-detail",
     "first_seen": "2026-08-16T03:52:16",
@@ -5932,8 +5932,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160": {
@@ -11721,9 +11721,9 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23348662": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 149/250 Honda Odyssey Die Cat Free Wheel Toy Car- Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-149-250-honda-odyssey-die-cat-free-wheel-toy-car-blue/23348662/product-detail",
     "first_seen": "2026-09-12T04:27:05",
@@ -11733,8 +11733,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_22240184": {
@@ -12293,8 +12293,8 @@
     "last_restock_alert": "2026-10-09T09:31:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:00:00",
-    "fc_api_seen_at": "2026-10-10T07:00:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_22597520": {
@@ -13174,8 +13174,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_24473514": {
@@ -13228,9 +13228,9 @@
     "fc_trusted": true
   },
   "fc_22548069": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Custom/Personnalise 72 Chevy Luv (127/250) Die-Cast Toy Car - White & Orange",
-    "price": "₹153",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-72-chevy-luv-127-250-die-cast-toy-car-white-and-orange/22548069/product-detail",
     "first_seen": "2026-09-17T12:06:10",
@@ -13430,8 +13430,8 @@
     "last_restock_alert": "2026-10-09T16:58:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_23930428": {
@@ -13712,7 +13712,7 @@
   "fc_24504539": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13721,8 +13721,8 @@
     "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_24514777": {
@@ -14313,7 +14313,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -15702,8 +15702,8 @@
     "last_restock_alert": "2026-09-21T13:02:03",
     "last_price_alert": "2026-09-21T13:02:03",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_24235315": {
@@ -16197,8 +16197,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:00:00",
+    "fc_api_seen_at": "2026-10-10T08:00:00",
     "fc_trusted": true
   },
   "fc_24503328": {
