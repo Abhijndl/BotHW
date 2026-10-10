@@ -2675,7 +2675,7 @@
   "fc_23354597": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹167",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-10-07T20:24:50",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T04:15:00",
-    "fc_api_seen_at": "2026-10-10T04:15:00",
+    "fc_listed_at": "2026-10-10T05:00:00",
+    "fc_api_seen_at": "2026-10-10T05:00:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -5559,7 +5559,7 @@
   "fc_24248195": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Toy Car (215/250) LIL MAD Free Wheel Model with Silver Gold Finish",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-215-250-lil-mad-free-wheel-model-with-silver-gold-finish/24248195/product-detail",
     "first_seen": "2026-08-10T19:46:53",
@@ -5903,19 +5903,19 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24247517": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Street Shrieker Die-Cast Toy Car (203/250) - Purple & Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-street-shrieker-die-cast-toy-car-203-250-purple-and-red/24247517/product-detail",
     "first_seen": "2026-08-16T03:52:16",
     "last_seen": "2026-10-10T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-10T05:01:35",
     "last_price_alert": "2026-09-19T09:47:18",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T04:30:00",
-    "fc_api_seen_at": "2026-10-10T04:30:00",
+    "fc_listed_at": "2026-10-10T05:00:00",
+    "fc_api_seen_at": "2026-10-10T05:00:00",
     "fc_trusted": true
   },
   "fc_24248202": {
@@ -10509,7 +10509,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23074610": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Super twin mill (169/250) Toy Car - White/Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10517,11 +10517,11 @@
     "first_seen": "2026-09-02T04:10:57",
     "last_seen": "2026-10-10T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-30T10:03:25",
+    "last_restock_alert": "2026-10-10T05:01:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-01T09:30:00",
-    "fc_api_seen_at": "2026-10-01T09:30:00",
+    "fc_listed_at": "2026-10-10T05:00:00",
+    "fc_api_seen_at": "2026-10-10T05:00:00",
     "fc_trusted": true
   },
   "fc_23700379": {
@@ -10591,7 +10591,7 @@
   "fc_24246599": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Decidedly Go Die Cast Toy Car (70/250) with Free Wheel Feature - Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-decidedly-go-die-cast-toy-car-70-250-with-free-wheel-feature-red/24246599/product-detail",
     "first_seen": "2026-09-02T09:10:06",
@@ -10600,8 +10600,8 @@
     "last_restock_alert": "2026-09-11T01:41:02",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T04:30:00",
-    "fc_api_seen_at": "2026-10-10T04:30:00",
+    "fc_listed_at": "2026-10-10T05:00:00",
+    "fc_api_seen_at": "2026-10-10T05:00:00",
     "fc_trusted": true
   },
   "fc_22597522": {
@@ -12035,15 +12035,15 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24248201": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Bully Goat Die-Cast Free Wheel Toy Car (206/250) - Red",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bully-goat-die-cast-free-wheel-toy-car-206-250-red/24248201/product-detail",
     "first_seen": "2026-09-15T06:12:41",
     "last_seen": "2026-10-10T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T11:51:16",
+    "last_restock_alert": "2026-10-10T05:01:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T05:00:00",
@@ -12292,8 +12292,8 @@
     "last_restock_alert": "2026-10-09T09:31:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T04:15:00",
-    "fc_api_seen_at": "2026-10-10T04:15:00",
+    "fc_listed_at": "2026-10-10T05:00:00",
+    "fc_api_seen_at": "2026-10-10T05:00:00",
     "fc_trusted": true
   },
   "fc_22597520": {
@@ -12834,7 +12834,7 @@
   "fc_24248198": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Toy Car with Click Shift Feature (178/250) - Silver Orange",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-with-click-shift-feature-178-250-silver-orange/24248198/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13245,7 +13245,7 @@
   "fc_24248206": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Supercharged Die-Cast Free Wheel Toy Car (77/250) - Sky Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-supercharged-die-cast-free-wheel-toy-car-77-250-sky-blue/24248206/product-detail",
     "first_seen": "2026-09-17T12:21:19",
@@ -13275,15 +13275,15 @@
     "fc_trusted": true
   },
   "fc_24246605": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mod Mill Die-Cast Free Wheel Toy Car (204/250) - Black & Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mod-mill-die-cast-free-wheel-toy-car-204-250-black-and-red/24246605/product-detail",
     "first_seen": "2026-09-17T13:01:58",
     "last_seen": "2026-10-10T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-07T20:24:50",
+    "last_restock_alert": "2026-10-10T05:01:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T05:00:00",
@@ -14034,7 +14034,7 @@
   "fc_24514774": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Land Cruiser 80 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-land-cruiser-80-die-cast-free-wheel-toy-car-blue-and-gold/24514774/product-detail",
     "first_seen": "2026-09-19T10:57:04",
@@ -14044,8 +14044,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T04:15:00",
-    "fc_api_seen_at": "2026-10-10T04:15:00",
+    "fc_listed_at": "2026-10-10T05:00:00",
+    "fc_api_seen_at": "2026-10-10T05:00:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -16683,7 +16683,7 @@
   "fc_24248194": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Chop N Bloc Die-Cast Free Wheel Toy Car (182/250) - Cream",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chop-n-bloc-die-cast-free-wheel-toy-car-182-250-cream/24248194/product-detail",
     "first_seen": "2026-09-22T13:14:53",
