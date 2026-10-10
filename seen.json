@@ -4824,8 +4824,8 @@
     "last_restock_alert": "2026-09-21T13:02:03",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_23348663": {
@@ -12400,7 +12400,7 @@
   "fc_24247510": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 83 Chevy Silverado Die-Cast Free Wheel Toy Car (42/250) - Pink",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-83-chevy-silverado-die-cast-free-wheel-toy-car-42-250-pink/24247510/product-detail",
     "first_seen": "2026-09-16T11:21:11",
@@ -13069,7 +13069,7 @@
   "fc_24475217": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-White & Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -13190,8 +13190,8 @@
     "last_restock_alert": "2026-09-30T08:12:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -13712,7 +13712,7 @@
   "fc_24504539": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13754,8 +13754,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_24514776": {
@@ -13793,7 +13793,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -13803,8 +13803,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_24473477": {
@@ -13868,8 +13868,8 @@
     "last_restock_alert": "2026-10-09T17:14:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_2235646": {
@@ -14224,8 +14224,8 @@
     "last_restock_alert": "2026-10-09T17:14:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_24475737": {
@@ -14909,7 +14909,7 @@
     "fc_trusted": true
   },
   "fc_24503307": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Street Wiener Die Cast Free Wheel Toy Car - Yellow/Green",
     "price": "₹359",
     "source": "firstcry",
@@ -15637,8 +15637,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_24246593": {
@@ -16154,7 +16154,7 @@
   "fc_24503746": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16427,8 +16427,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_24504536": {
@@ -16492,14 +16492,14 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:15:00",
-    "fc_api_seen_at": "2026-10-10T07:15:00",
+    "fc_listed_at": "2026-10-10T08:45:00",
+    "fc_api_seen_at": "2026-10-10T08:45:00",
     "fc_trusted": true
   },
   "fc_24248200": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 70 Buick GSX Die-Cast Free Wheel Toy Car (183/250) - Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-buick-gsx-die-cast-free-wheel-toy-car-183-250-gold/24248200/product-detail",
     "first_seen": "2026-09-21T06:58:27",
