@@ -73,8 +73,8 @@
     "last_restock_alert": "2026-10-10T06:42:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T06:45:00",
-    "fc_api_seen_at": "2026-10-10T06:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_21348": {
@@ -3514,8 +3514,8 @@
     "last_price_alert": "2026-09-18T06:16:35",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T08:45:00",
-    "fc_api_seen_at": "2026-10-10T08:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_23348664": {
@@ -3547,8 +3547,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:15:00",
-    "fc_api_seen_at": "2026-10-10T07:15:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_23076122": {
@@ -3622,8 +3622,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T08:45:00",
-    "fc_api_seen_at": "2026-10-10T08:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--team-transport-beutaab8tjwa": {
@@ -5004,8 +5004,8 @@
     "last_restock_alert": "2026-09-17T19:06:07",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:45:00",
-    "fc_api_seen_at": "2026-10-10T08:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_23353037": {
@@ -6000,7 +6000,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -10569,8 +10569,8 @@
     "last_restock_alert": "2026-10-10T05:54:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T06:30:00",
-    "fc_api_seen_at": "2026-10-10T06:30:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -12525,9 +12525,9 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-cceleron-die-cast-toy-car-grey/24473723/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12669,9 +12669,9 @@
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -13181,7 +13181,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13986,9 +13986,9 @@
     "fc_trusted": true
   },
   "fc_24473264": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari F2004 Die Cast Free Wheel Toy Car - Dark Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-f2004-die-cast-free-wheel-toy-car-dark-red/24473264/product-detail",
     "first_seen": "2026-09-19T06:37:07",
@@ -14165,7 +14165,7 @@
   "fc_24473495": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-galaxie-die-cast-toy-car-blue/24473495/product-detail",
     "first_seen": "2026-09-19T18:21:18",
@@ -14174,8 +14174,8 @@
     "last_restock_alert": "2026-10-09T13:18:08",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:30:00",
-    "fc_api_seen_at": "2026-10-10T08:30:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -14313,7 +14313,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14470,8 +14470,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T08:45:00",
-    "fc_api_seen_at": "2026-10-10T08:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "mg_70cf1a66-5326-4b31-b1a7-e10a0cafecce": {
@@ -14734,7 +14734,7 @@
   "fc_24514775": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Rodger Dodger 2.0 Die Cast Free Wheel Toy Car - Blue & Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-rodger-dodger-2-0-die-cast-free-wheel-toy-car-blue-and-gold/24514775/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -14750,7 +14750,7 @@
   "fc_24504538": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG17-JA10 Pack of 2 - Silver & Maroon",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg17-ja10-pack-of-2-silver-and-maroon/24504538/product-detail",
     "first_seen": "2026-09-21T04:31:42",
@@ -15097,8 +15097,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T08:45:00",
-    "fc_api_seen_at": "2026-10-10T08:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_21161950": {
@@ -15114,8 +15114,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T08:45:00",
-    "fc_api_seen_at": "2026-10-10T08:45:00",
+    "fc_listed_at": "2026-10-10T09:00:00",
+    "fc_api_seen_at": "2026-10-10T09:00:00",
     "fc_trusted": true
   },
   "fc_21034612": {
@@ -15805,7 +15805,7 @@
   "fc_24248192": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-alarm-die-cast-free-wheel-toy-car-32-250-yellow/24248192/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16136,9 +16136,9 @@
     "fc_trusted": true
   },
   "fc_24473498": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Armored Batmobile Die-Cast Toy Car - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-armored-batmobile-die-cast-toy-car-black/24473498/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16154,7 +16154,7 @@
   "fc_24503746": {
     "stock": "out_of_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16466,7 +16466,7 @@
   "fc_24503897": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Wagon Die Cast Free Wheel Toy Car - Yellow",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-wagon-die-cast-free-wheel-toy-car-yellow/24503897/product-detail",
     "first_seen": "2026-09-21T06:42:53",
