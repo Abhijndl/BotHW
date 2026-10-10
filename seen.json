@@ -5781,7 +5781,7 @@
     "fc_trusted": true
   },
   "fc_24247504": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels FIAT 500 C Die-Cast Free Wheel Toy Car (192/250) - Purple",
     "price": "₹161",
     "source": "firstcry",
@@ -12639,7 +12639,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13998,8 +13998,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
+    "fc_listed_at": "2026-10-10T08:30:00",
+    "fc_api_seen_at": "2026-10-10T08:30:00",
     "fc_trusted": true
   },
   "fc_24390949": {
@@ -15803,7 +15803,7 @@
     "fc_trusted": true
   },
   "fc_24248192": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
     "price": "₹161",
     "source": "firstcry",
@@ -16136,9 +16136,9 @@
     "fc_trusted": true
   },
   "fc_24473498": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Armored Batmobile Die-Cast Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-armored-batmobile-die-cast-toy-car-black/24473498/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16147,8 +16147,8 @@
     "last_restock_alert": "2026-10-09T18:32:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:30:00",
-    "fc_api_seen_at": "2026-10-10T07:30:00",
+    "fc_listed_at": "2026-10-10T08:30:00",
+    "fc_api_seen_at": "2026-10-10T08:30:00",
     "fc_trusted": true
   },
   "fc_24503746": {
