@@ -10558,7 +10558,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10566,11 +10566,11 @@
     "first_seen": "2026-09-02T05:28:35",
     "last_seen": "2026-10-10T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T09:47:01",
+    "last_restock_alert": "2026-10-10T05:54:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T10:30:00",
-    "fc_api_seen_at": "2026-10-08T10:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -12703,7 +12703,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12711,11 +12711,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-10T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-07T07:52:48",
+    "last_restock_alert": "2026-10-10T05:54:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T09:15:00",
-    "fc_api_seen_at": "2026-10-07T09:15:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -12736,7 +12736,7 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -13030,8 +13030,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T05:30:00",
-    "fc_api_seen_at": "2026-10-10T05:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_21181132": {
@@ -14224,8 +14224,8 @@
     "last_restock_alert": "2026-10-09T17:14:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T05:15:00",
-    "fc_api_seen_at": "2026-10-10T05:15:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24475737": {
@@ -14438,8 +14438,8 @@
     "last_restock_alert": "2026-10-09T16:58:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T05:30:00",
-    "fc_api_seen_at": "2026-10-10T05:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24473475": {
@@ -14539,7 +14539,7 @@
   "fc_24503747": {
     "stock": "out_of_stock",
     "name": "Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-die-cast-free-wheel-toy-car-green/24503747/product-detail",
     "first_seen": "2026-09-20T08:51:11",
@@ -14564,8 +14564,8 @@
     "last_restock_alert": "2026-10-09T18:17:22",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T20:30:00",
-    "fc_api_seen_at": "2026-10-09T20:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24525291": {
@@ -14679,8 +14679,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T05:30:00",
-    "fc_api_seen_at": "2026-10-10T05:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24342821": {
@@ -16030,8 +16030,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-04T00:15:00",
-    "fc_api_seen_at": "2026-10-04T00:15:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24390963": {
@@ -16152,15 +16152,15 @@
     "fc_trusted": true
   },
   "fc_24503746": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-10T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T04:31:03",
+    "last_restock_alert": "2026-10-10T05:54:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T05:45:00",
@@ -16265,8 +16265,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T05:30:00",
-    "fc_api_seen_at": "2026-10-10T05:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24503314": {
@@ -16434,7 +16434,7 @@
   "fc_24504536": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG21-JA10 Pack of 2 - Green & Red",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg21-ja10-pack-of-2-green-and-red/24504536/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16466,7 +16466,7 @@
   "fc_24503897": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Wagon Die Cast Free Wheel Toy Car - Yellow",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-wagon-die-cast-free-wheel-toy-car-yellow/24503897/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16902,8 +16902,8 @@
     "last_restock_alert": "2026-09-25T05:18:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T05:30:00",
-    "fc_api_seen_at": "2026-10-10T05:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24473510": {
@@ -17153,8 +17153,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T05:30:00",
-    "fc_api_seen_at": "2026-10-10T05:30:00",
+    "fc_listed_at": "2026-10-10T05:45:00",
+    "fc_api_seen_at": "2026-10-10T05:45:00",
     "fc_trusted": true
   },
   "fc_24247512": {
