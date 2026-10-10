@@ -1,6 +1,6 @@
 {
   "fc_20257824": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Multicolor",
     "price": "₹267",
     "source": "firstcry",
@@ -8,11 +8,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-10T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T17:40:52",
+    "last_restock_alert": "2026-10-10T06:58:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T21:45:00",
-    "fc_api_seen_at": "2026-10-08T21:45:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "fc_23074884": {
@@ -2733,8 +2733,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T05:00:00",
-    "fc_api_seen_at": "2026-10-10T05:00:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "fc_23074266": {
@@ -4344,7 +4344,7 @@
   "fc_24007869": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Chevrolet Silverado Trail Boss LT Diecast Model Car - Silver",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-chevrolet-silverado-trail-boss-lt-diecast-model-car-silver/24007869/product-detail",
     "first_seen": "2026-07-28T08:21:49",
@@ -4448,7 +4448,7 @@
   "fc_22548064": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Yellow",
-    "price": "₹167",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-yellow/22548064/product-detail",
     "first_seen": "2026-07-28T17:02:20",
@@ -5544,7 +5544,7 @@
   "fc_24248204": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Toy Car (184/250) 68 Shelby GT500 With Free Wheel Model- Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-184-250-68-shelby-gt500-with-free-wheel-model-green/24248204/product-detail",
     "first_seen": "2026-08-10T19:46:53",
@@ -5553,8 +5553,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-23T07:00:00",
-    "fc_api_seen_at": "2026-09-23T07:00:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "fc_24248195": {
@@ -10590,7 +10590,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24246599": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Decidedly Go Die Cast Toy Car (70/250) with Free Wheel Feature - Red",
     "price": "₹161",
     "source": "firstcry",
@@ -10598,7 +10598,7 @@
     "first_seen": "2026-09-02T09:10:06",
     "last_seen": "2026-10-10T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-11T01:41:02",
+    "last_restock_alert": "2026-10-10T06:58:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T06:45:00",
@@ -12398,15 +12398,15 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24247510": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 83 Chevy Silverado Die-Cast Free Wheel Toy Car (42/250) - Pink",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-83-chevy-silverado-die-cast-free-wheel-toy-car-42-250-pink/24247510/product-detail",
     "first_seen": "2026-09-16T11:21:11",
     "last_seen": "2026-10-10T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-10T06:58:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T06:45:00",
@@ -12525,9 +12525,9 @@
     "fc_trusted": true
   },
   "fc_24473723": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-cceleron-die-cast-toy-car-grey/24473723/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12681,8 +12681,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T06:30:00",
-    "fc_api_seen_at": "2026-10-10T06:30:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "fc_24342824": {
@@ -12867,7 +12867,7 @@
   "fc_24341962": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop GT-Scorcher 7 Wheel Car - Purple",
-    "price": "₹849",
+    "price": "₹764",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-gt-scorcher-7-wheel-car-purple/24341962/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -13228,15 +13228,15 @@
     "fc_trusted": true
   },
   "fc_22548069": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Custom/Personnalise 72 Chevy Luv (127/250) Die-Cast Toy Car - White & Orange",
-    "price": "₹179",
+    "price": "₹153",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-72-chevy-luv-127-250-die-cast-toy-car-white-and-orange/22548069/product-detail",
     "first_seen": "2026-09-17T12:06:10",
     "last_seen": "2026-10-10T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-21T08:17:01",
+    "last_restock_alert": "2026-10-10T06:58:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T06:45:00",
@@ -13759,7 +13759,7 @@
     "fc_trusted": true
   },
   "fc_24514776": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹170",
     "source": "firstcry",
@@ -13767,7 +13767,7 @@
     "first_seen": "2026-09-18T14:41:38",
     "last_seen": "2026-10-10T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T12:24:50",
+    "last_restock_alert": "2026-10-10T06:58:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T06:45:00",
@@ -14587,7 +14587,7 @@
   "fc_24503334": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mclaren Elva - Orange",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mclaren-elva-orange/24503334/product-detail",
     "first_seen": "2026-09-20T11:41:11",
@@ -14597,8 +14597,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T06:30:00",
-    "fc_api_seen_at": "2026-10-10T06:30:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "fc_24503331": {
@@ -16497,19 +16497,19 @@
     "fc_trusted": true
   },
   "fc_24248200": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 70 Buick GSX Die-Cast Free Wheel Toy Car (183/250) - Gold",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-buick-gsx-die-cast-free-wheel-toy-car-183-250-gold/24248200/product-detail",
     "first_seen": "2026-09-21T06:58:27",
     "last_seen": "2026-10-10T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-10T06:58:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T06:30:00",
-    "fc_api_seen_at": "2026-10-10T06:30:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "fc_22240175": {
@@ -17518,8 +17518,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T06:30:00",
-    "fc_api_seen_at": "2026-10-10T06:30:00",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
   },
   "kd_KbNEYa5NR0": {
@@ -18476,6 +18476,39 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
+    "fc_trusted": true
+  },
+  "fc_22623490": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG09-JA10 Pack of 2 - Black & White",
+    "price": "₹300",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg09-ja10-pack-of-2-black-and-white/22623490/product-detail",
+    "first_seen": "2026-10-10T06:45:00",
+    "last_seen": "2026-10-10T06:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-10-10T06:45:00",
+    "fc_api_seen_at": "2026-10-10T06:45:00",
+    "fc_trusted": true
+  },
+  "fc_24247518": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels Mazda Mx 5 Miata Die-Cast Free Wheel Toy Car (1/250) - Blue & Black",
+    "price": "₹161",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mazda-mx-5-miata-die-cast-free-wheel-toy-car-1-250-blue-and-black/24247518/product-detail",
+    "first_seen": "2026-10-10T06:45:00",
+    "last_seen": "2026-10-10T06:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "auto_watch": true,
     "fc_listed_at": "2026-10-10T06:45:00",
     "fc_api_seen_at": "2026-10-10T06:45:00",
     "fc_trusted": true
