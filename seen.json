@@ -3530,8 +3530,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T04:00:00",
-    "fc_api_seen_at": "2026-10-11T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_23347148": {
@@ -5716,19 +5716,19 @@
     "fc_trusted": true
   },
   "fc_24246602": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mountain Mauler Die-Cast Free Wheel Toy Car (179/250)- Yellow & Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mountain-mauler-die-cast-free-wheel-toy-car-179-250-yellow-and-green/24246602/product-detail",
     "first_seen": "2026-08-12T15:02:43",
     "last_seen": "2026-10-11T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-11T04:20:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T00:15:00",
-    "fc_api_seen_at": "2026-10-10T00:15:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24246598": {
@@ -5813,19 +5813,19 @@
     "fc_trusted": true
   },
   "fc_24246596": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Duck N Roll Die Cast Toy Car (174/250) With Free Wheel Design - Orange Brown",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-duck-n-roll-die-cast-toy-car-174-250-with-free-wheel-design-orange-brown/24246596/product-detail",
     "first_seen": "2026-08-13T06:52:39",
     "last_seen": "2026-10-11T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-11T04:20:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-24T00:30:00",
-    "fc_api_seen_at": "2026-09-24T00:30:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24247516": {
@@ -10833,8 +10833,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T04:00:00",
-    "fc_api_seen_at": "2026-10-11T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_23074263": {
@@ -11749,8 +11749,8 @@
     "last_restock_alert": "2026-10-10T17:42:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T04:00:00",
-    "fc_api_seen_at": "2026-10-11T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24246594": {
@@ -12527,7 +12527,7 @@
   "fc_24473723": {
     "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹171",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-cceleron-die-cast-toy-car-grey/24473723/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13181,7 +13181,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13770,8 +13770,8 @@
     "last_restock_alert": "2026-10-10T06:58:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:00:00",
-    "fc_api_seen_at": "2026-10-10T07:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -13923,7 +13923,7 @@
   "fc_24504534": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG14-JA10 Pack of 2 - White & Red",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg14-ja10-pack-of-2-white-and-red/24504534/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -14388,8 +14388,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T04:00:00",
-    "fc_api_seen_at": "2026-10-11T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24475755": {
@@ -14532,8 +14532,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T04:00:00",
-    "fc_api_seen_at": "2026-10-11T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24503747": {
@@ -15332,19 +15332,19 @@
     "fc_trusted": true
   },
   "fc_22240177": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 1966 Bat Boat Bateau (107/250) Toy Boat - Black",
-    "price": "₹167",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1966-bat-boat-bateau-107-250-toy-boat-black/22240177/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-11T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-11T04:20:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-26T04:00:00",
-    "fc_api_seen_at": "2026-09-26T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_22240164": {
@@ -15637,8 +15637,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T04:00:00",
-    "fc_api_seen_at": "2026-10-11T04:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24246593": {
@@ -15771,19 +15771,19 @@
     "fc_trusted": true
   },
   "fc_24248205": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels EL Segundo Coupe Clip A Attache Die-Cast Free Wheel Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-clip-a-attache-die-cast-free-wheel-toy-car-blue/24248205/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-11T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-11T04:20:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T07:00:00",
-    "fc_api_seen_at": "2026-10-10T07:00:00",
+    "fc_listed_at": "2026-10-11T04:15:00",
+    "fc_api_seen_at": "2026-10-11T04:15:00",
     "fc_trusted": true
   },
   "fc_24248199": {
@@ -16071,7 +16071,7 @@
   "fc_24390959": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 1993 Mercedes-Benz G-Class Toy Car - Blue",
-    "price": "₹477",
+    "price": "₹549",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-1993-mercedes-benz-g-class-toy-car-blue/24390959/product-detail",
     "first_seen": "2026-09-21T06:42:53",
