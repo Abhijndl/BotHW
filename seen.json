@@ -10758,8 +10758,8 @@
     "last_restock_alert": "2026-09-23T09:46:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T01:30:00",
-    "fc_api_seen_at": "2026-10-11T01:30:00",
+    "fc_listed_at": "2026-10-11T03:45:00",
+    "fc_api_seen_at": "2026-10-11T03:45:00",
     "fc_trusted": true
   },
   "fc_21993918": {
@@ -13304,8 +13304,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T01:30:00",
-    "fc_api_seen_at": "2026-10-11T01:30:00",
+    "fc_listed_at": "2026-10-11T03:45:00",
+    "fc_api_seen_at": "2026-10-11T03:45:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -18527,6 +18527,22 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T07:15:00",
     "fc_api_seen_at": "2026-10-10T07:15:00",
+    "fc_trusted": true
+  },
+  "fc_21945496": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels Sushi Tuner (106/250) Toy Car - Pink & White",
+    "price": "₹153",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-sushi-tuner-106-250-toy-car-pink-and-white/21945496/product-detail",
+    "first_seen": "2026-10-11T03:45:00",
+    "last_seen": "2026-10-11T03:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-10-11T03:45:00",
+    "fc_api_seen_at": "2026-10-11T03:45:00",
     "fc_trusted": true
   }
 }
