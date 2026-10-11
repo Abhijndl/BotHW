@@ -5553,8 +5553,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T12:00:00",
-    "fc_api_seen_at": "2026-10-10T12:00:00",
+    "fc_listed_at": "2026-10-11T01:30:00",
+    "fc_api_seen_at": "2026-10-11T01:30:00",
     "fc_trusted": true
   },
   "fc_24248195": {
@@ -17094,7 +17094,7 @@
   "fc_24247502": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Punk Rod Die-Cast Free Wheel Toy Car (200/250) - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-punk-rod-die-cast-free-wheel-toy-car-200-250-blue/24247502/product-detail",
     "first_seen": "2026-09-25T13:15:00",
@@ -17103,8 +17103,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-03T21:45:00",
-    "fc_api_seen_at": "2026-10-03T21:45:00",
+    "fc_listed_at": "2026-10-11T01:30:00",
+    "fc_api_seen_at": "2026-10-11T01:30:00",
     "fc_trusted": true
   },
   "fc_24248197": {
