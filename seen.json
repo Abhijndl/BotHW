@@ -2716,8 +2716,8 @@
     "last_restock_alert": "2026-10-09T08:44:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T04:30:00",
-    "fc_api_seen_at": "2026-10-11T04:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_23074886": {
@@ -3114,8 +3114,8 @@
     "last_restock_alert": "2026-09-21T07:13:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels--mario-kart-diecast-asst-4mgl8dpbnjr6": {
@@ -4727,8 +4727,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_22548057": {
@@ -5716,7 +5716,7 @@
     "fc_trusted": true
   },
   "fc_24246602": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mountain Mauler Die-Cast Free Wheel Toy Car (179/250)- Yellow & Green",
     "price": "₹161",
     "source": "firstcry",
@@ -10697,8 +10697,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_22240239": {
@@ -11797,8 +11797,8 @@
     "last_restock_alert": "2026-10-09T17:14:45",
     "last_price_alert": "2026-09-21T17:49:05",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_24194169": {
@@ -12038,7 +12038,7 @@
   "fc_24248201": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Bully Goat Die-Cast Free Wheel Toy Car (206/250) - Red",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bully-goat-die-cast-free-wheel-toy-car-206-250-red/24248201/product-detail",
     "first_seen": "2026-09-15T06:12:41",
@@ -12047,8 +12047,8 @@
     "last_restock_alert": "2026-10-10T05:01:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "kd_RWg8Z1KLKe": {
@@ -12655,7 +12655,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12664,8 +12664,8 @@
     "last_restock_alert": "2026-10-08T12:09:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_24473731": {
@@ -13181,7 +13181,7 @@
   "fc_24473514": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
@@ -13712,7 +13712,7 @@
   "fc_24504539": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13721,8 +13721,8 @@
     "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_24514777": {
@@ -14213,19 +14213,19 @@
     "fc_trusted": true
   },
   "fc_24476471": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
     "last_seen": "2026-10-11T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T17:14:45",
+    "last_restock_alert": "2026-10-11T05:48:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_24475737": {
@@ -15525,8 +15525,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_23973359": {
@@ -15771,9 +15771,9 @@
     "fc_trusted": true
   },
   "fc_24248205": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels EL Segundo Coupe Clip A Attache Die-Cast Free Wheel Toy Car - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-clip-a-attache-die-cast-free-wheel-toy-car-blue/24248205/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -15805,7 +15805,7 @@
   "fc_24248192": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - Yellow",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-alarm-die-cast-free-wheel-toy-car-32-250-yellow/24248192/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16147,8 +16147,8 @@
     "last_restock_alert": "2026-10-09T18:32:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T04:30:00",
-    "fc_api_seen_at": "2026-10-11T04:30:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "fc_24503746": {
@@ -16635,20 +16635,20 @@
     "fc_trusted": true
   },
   "fc_24503901": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Nissan Maxima Drift Car Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-maxima-drift-car-die-cast-free-wheel-toy-car-black/24503901/product-detail",
     "first_seen": "2026-09-21T16:25:21",
     "last_seen": "2026-10-11T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T04:06:47",
+    "last_restock_alert": "2026-10-11T05:48:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-10T19:15:00",
-    "fc_api_seen_at": "2026-10-10T19:15:00",
+    "fc_listed_at": "2026-10-11T05:45:00",
+    "fc_api_seen_at": "2026-10-11T05:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
