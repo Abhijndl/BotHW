@@ -13271,8 +13271,8 @@
     "last_restock_alert": "2026-09-29T15:04:28",
     "last_price_alert": "2026-09-22T12:04:47",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T06:15:00",
-    "fc_api_seen_at": "2026-10-11T06:15:00",
+    "fc_listed_at": "2026-10-11T07:15:00",
+    "fc_api_seen_at": "2026-10-11T07:15:00",
     "fc_trusted": true
   },
   "fc_24246605": {
@@ -13759,7 +13759,7 @@
     "fc_trusted": true
   },
   "fc_24514776": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Escort Die Cast Free Wheel Toy Car - Blue & Gold",
     "price": "₹170",
     "source": "firstcry",
@@ -13767,11 +13767,11 @@
     "first_seen": "2026-09-18T14:41:38",
     "last_seen": "2026-10-11T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-10T06:58:49",
+    "last_restock_alert": "2026-10-11T07:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:15:00",
-    "fc_api_seen_at": "2026-10-11T05:15:00",
+    "fc_listed_at": "2026-10-11T07:15:00",
+    "fc_api_seen_at": "2026-10-11T07:15:00",
     "fc_trusted": true
   },
   "fc_24390951": {
@@ -14005,7 +14005,7 @@
   "fc_24390949": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Pizza Planet Truck/Camion Toy Car - Grey",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-pizza-planet-truck-camion-toy-car-grey/24390949/product-detail",
     "first_seen": "2026-09-19T06:47:09",
@@ -15709,7 +15709,7 @@
   "fc_24235315": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Street Shrieker Die-Cast Toy Car (203/250) - Purple & Red",
-    "price": "₹150",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-street-shrieker-die-cast-toy-car-203-250-purple-and-red/24235315/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15718,8 +15718,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T07:00:00",
-    "fc_api_seen_at": "2026-10-11T07:00:00",
+    "fc_listed_at": "2026-10-11T07:15:00",
+    "fc_api_seen_at": "2026-10-11T07:15:00",
     "fc_trusted": true
   },
   "fc_24235309": {
@@ -16402,7 +16402,7 @@
   "fc_24514784": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Volkswagen Beetle Bumblebee Toy Car - Light Yellow",
-    "price": "₹399",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-volkswagen-beetle-bumblebee-toy-car-light-yellow/24514784/product-detail",
     "first_seen": "2026-09-21T06:42:53",
