@@ -3998,7 +3998,7 @@
   "fc_24032061": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '2020 Ram 1500 Rebel Toy Car Blue",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2020-ram-1500-rebel-toy-car-blue/24032061/product-detail",
     "first_seen": "2026-07-22T06:11:49",
@@ -4007,8 +4007,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T07:30:00",
-    "fc_api_seen_at": "2026-10-11T07:30:00",
+    "fc_listed_at": "2026-10-11T07:45:00",
+    "fc_api_seen_at": "2026-10-11T07:45:00",
     "fc_trusted": true
   },
   "fc_23075645": {
@@ -11802,15 +11802,15 @@
     "fc_trusted": true
   },
   "fc_24194169": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
-    "price": "₹899",
+    "price": "₹809",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-5-pack-die-cast-toy-cars-with-free-wheel-1-64-scale-set-of-5-red/24194169/product-detail",
     "first_seen": "2026-09-14T06:24:40",
     "last_seen": "2026-10-11T07:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-04T05:01:59",
+    "last_restock_alert": "2026-10-11T07:54:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -13246,7 +13246,7 @@
   "fc_24248206": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Supercharged Die-Cast Free Wheel Toy Car (77/250) - Sky Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-supercharged-die-cast-free-wheel-toy-car-77-250-sky-blue/24248206/product-detail",
     "first_seen": "2026-09-17T12:21:19",
@@ -15969,7 +15969,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16402,7 +16402,7 @@
   "fc_24514784": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Volkswagen Beetle Bumblebee Toy Car - Light Yellow",
-    "price": "₹359",
+    "price": "₹399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-volkswagen-beetle-bumblebee-toy-car-light-yellow/24514784/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -18541,8 +18541,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T07:30:00",
-    "fc_api_seen_at": "2026-10-11T07:30:00",
+    "fc_listed_at": "2026-10-11T07:45:00",
+    "fc_api_seen_at": "2026-10-11T07:45:00",
     "fc_trusted": true
   }
 }
