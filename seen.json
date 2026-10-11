@@ -2620,8 +2620,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_22600231": {
@@ -2684,8 +2684,8 @@
     "last_restock_alert": "2026-10-07T20:24:50",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_23074616": {
@@ -3783,8 +3783,8 @@
     "last_restock_alert": "2026-09-23T13:27:19",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_23074178": {
@@ -11677,19 +11677,19 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24235314": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Hyper Rocker Toy Car Die Cast Vehicle with Sporty Design Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hyper-rocker-toy-car-die-cast-vehicle-with-sporty-design-green/24235314/product-detail",
     "first_seen": "2026-09-11T13:15:58",
     "last_seen": "2026-10-11T06:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-11T06:04:21",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-02T00:15:00",
-    "fc_api_seen_at": "2026-10-02T00:15:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_23930659": {
@@ -13810,7 +13810,7 @@
   "fc_24473477": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -13819,8 +13819,8 @@
     "last_restock_alert": "2026-10-08T16:22:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24473499": {
@@ -14061,8 +14061,8 @@
     "last_restock_alert": "2026-09-23T05:17:52",
     "last_price_alert": "2026-09-21T15:56:48",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24342831": {
@@ -14445,7 +14445,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -14454,8 +14454,8 @@
     "last_restock_alert": "2026-10-09T16:58:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24390952": {
@@ -14597,8 +14597,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24503331": {
@@ -15709,7 +15709,7 @@
   "fc_24235315": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Street Shrieker Die-Cast Toy Car (203/250) - Purple & Red",
-    "price": "₹179",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-street-shrieker-die-cast-toy-car-203-250-purple-and-red/24235315/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15718,8 +15718,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T00:15:00",
-    "fc_api_seen_at": "2026-10-09T00:15:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24235309": {
@@ -16163,8 +16163,8 @@
     "last_restock_alert": "2026-10-10T05:54:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24503335": {
@@ -16305,7 +16305,7 @@
   "fc_24503308": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Volkswagen Beetle Bumblebee - Yellow",
-    "price": "₹399",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-shifters-volkswagen-beetle-bumblebee-yellow/24503308/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16466,7 +16466,7 @@
   "fc_24503897": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Wagon Die Cast Free Wheel Toy Car - Yellow",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-wagon-die-cast-free-wheel-toy-car-yellow/24503897/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16475,8 +16475,8 @@
     "last_restock_alert": "2026-10-09T04:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_24503819": {
@@ -16831,7 +16831,7 @@
   "fc_24546335": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Mariocart Toy Car -Light Blue",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-mariocart-toy-car-light-blue/24546335/product-detail",
     "first_seen": "2026-09-23T12:30:00",
@@ -18476,8 +18476,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:45:00",
-    "fc_api_seen_at": "2026-10-11T05:45:00",
+    "fc_listed_at": "2026-10-11T06:00:00",
+    "fc_api_seen_at": "2026-10-11T06:00:00",
     "fc_trusted": true
   },
   "fc_22623490": {
