@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -3481,8 +3481,8 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_23075644": {
@@ -13305,8 +13305,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_24514783": {
@@ -14094,8 +14094,8 @@
     "last_restock_alert": "2026-09-22T11:50:17",
     "last_price_alert": "2026-09-22T11:50:17",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_24342870": {
@@ -14110,8 +14110,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_22848387": {
@@ -15295,8 +15295,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_22240185": {
@@ -16198,8 +16198,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T18:15:00",
-    "fc_api_seen_at": "2026-10-11T18:15:00",
+    "fc_listed_at": "2026-10-11T18:30:00",
+    "fc_api_seen_at": "2026-10-11T18:30:00",
     "fc_trusted": true
   },
   "fc_24503328": {
