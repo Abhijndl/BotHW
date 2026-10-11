@@ -12528,7 +12528,7 @@
   "fc_24473723": {
     "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-cceleron-die-cast-toy-car-grey/24473723/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12537,8 +12537,8 @@
     "last_restock_alert": "2026-10-11T15:52:54",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T16:00:00",
-    "fc_api_seen_at": "2026-10-11T16:00:00",
+    "fc_listed_at": "2026-10-11T20:00:00",
+    "fc_api_seen_at": "2026-10-11T20:00:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -13420,9 +13420,9 @@
     "fc_trusted": true
   },
   "fc_24503750": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '33 Ford Lo Boy Die Cast Free Wheel Toy Car - White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-33-ford-lo-boy-die-cast-free-wheel-toy-car-white/24503750/product-detail",
     "first_seen": "2026-09-17T21:56:03",
@@ -14444,9 +14444,9 @@
     "fc_trusted": true
   },
   "fc_24473475": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -14455,8 +14455,8 @@
     "last_restock_alert": "2026-10-11T18:31:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T19:30:00",
-    "fc_api_seen_at": "2026-10-11T19:30:00",
+    "fc_listed_at": "2026-10-11T20:00:00",
+    "fc_api_seen_at": "2026-10-11T20:00:00",
     "fc_trusted": true
   },
   "fc_24390952": {
