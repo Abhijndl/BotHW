@@ -4274,8 +4274,8 @@
     "last_restock_alert": "2026-09-07T13:21:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T06:00:00",
-    "fc_api_seen_at": "2026-10-11T06:00:00",
+    "fc_listed_at": "2026-10-11T06:15:00",
+    "fc_api_seen_at": "2026-10-11T06:15:00",
     "fc_trusted": true
   },
   "fc_24007870": {
@@ -12811,8 +12811,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T06:00:00",
-    "fc_api_seen_at": "2026-10-11T06:00:00",
+    "fc_listed_at": "2026-10-11T06:15:00",
+    "fc_api_seen_at": "2026-10-11T06:15:00",
     "fc_trusted": true
   },
   "fc_24390968": {
@@ -13610,8 +13610,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-11T06:00:00",
-    "fc_api_seen_at": "2026-10-11T06:00:00",
+    "fc_listed_at": "2026-10-11T06:15:00",
+    "fc_api_seen_at": "2026-10-11T06:15:00",
     "fc_trusted": true
   },
   "fc_24035369": {
@@ -14952,8 +14952,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T06:00:00",
-    "fc_api_seen_at": "2026-10-11T06:00:00",
+    "fc_listed_at": "2026-10-11T06:15:00",
+    "fc_api_seen_at": "2026-10-11T06:15:00",
     "fc_trusted": true
   },
   "fc_24514780": {
@@ -15000,8 +15000,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T06:00:00",
-    "fc_api_seen_at": "2026-10-11T06:00:00",
+    "fc_listed_at": "2026-10-11T06:15:00",
+    "fc_api_seen_at": "2026-10-11T06:15:00",
     "fc_trusted": true
   },
   "fc_591683": {
@@ -16710,8 +16710,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-09T06:30:00",
-    "fc_api_seen_at": "2026-10-09T06:30:00",
+    "fc_listed_at": "2026-10-11T06:15:00",
+    "fc_api_seen_at": "2026-10-11T06:15:00",
     "fc_trusted": true
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
@@ -18532,7 +18532,7 @@
   "fc_21945496": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Sushi Tuner (106/250) Toy Car - Pink & White",
-    "price": "₹153",
+    "price": "₹167",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-sushi-tuner-106-250-toy-car-pink-and-white/21945496/product-detail",
     "first_seen": "2026-10-11T03:45:00",
