@@ -16,7 +16,7 @@
     "fc_trusted": true
   },
   "fc_23074884": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Mailed It (168/250) Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -24,11 +24,11 @@
     "first_seen": "2026-07-19T10:01:43",
     "last_seen": "2026-10-12T20:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T06:38:48",
+    "last_restock_alert": "2026-10-12T20:10:56",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T08:45:00",
-    "fc_api_seen_at": "2026-10-08T08:45:00",
+    "fc_listed_at": "2026-10-12T20:00:00",
+    "fc_api_seen_at": "2026-10-12T20:00:00",
     "fc_trusted": true
   },
   "fc_21497090": {
@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T19:45:00",
-    "fc_api_seen_at": "2026-10-12T19:45:00",
+    "fc_listed_at": "2026-10-12T20:00:00",
+    "fc_api_seen_at": "2026-10-12T20:00:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -3481,8 +3481,8 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T19:45:00",
-    "fc_api_seen_at": "2026-10-12T19:45:00",
+    "fc_listed_at": "2026-10-12T20:00:00",
+    "fc_api_seen_at": "2026-10-12T20:00:00",
     "fc_trusted": true
   },
   "fc_23075644": {
@@ -14614,8 +14614,8 @@
     "last_restock_alert": "2026-10-03T08:12:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T19:45:00",
-    "fc_api_seen_at": "2026-10-12T19:45:00",
+    "fc_listed_at": "2026-10-12T20:00:00",
+    "fc_api_seen_at": "2026-10-12T20:00:00",
     "fc_trusted": true
   },
   "fc_24342823": {
@@ -15970,7 +15970,7 @@
   "fc_24390969": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-3-5-silver-series-vintage-club-69-copo-corvette-die-cast-car-red/24390969/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16198,8 +16198,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-12T19:45:00",
-    "fc_api_seen_at": "2026-10-12T19:45:00",
+    "fc_listed_at": "2026-10-12T20:00:00",
+    "fc_api_seen_at": "2026-10-12T20:00:00",
     "fc_trusted": true
   },
   "fc_24503328": {
