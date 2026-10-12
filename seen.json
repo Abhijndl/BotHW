@@ -2691,7 +2691,7 @@
   "fc_23074616": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Purple Passion (46/250) Toy Car - Purple/White",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-purple-passion-46-250-toy-car-purple-white/23074616/product-detail",
     "first_seen": "2026-07-19T07:01:32",
@@ -2700,8 +2700,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-09-25T11:15:00",
-    "fc_api_seen_at": "2026-09-25T11:15:00",
+    "fc_listed_at": "2026-10-12T18:30:00",
+    "fc_api_seen_at": "2026-10-12T18:30:00",
     "fc_trusted": true
   },
   "fc_23354598": {
@@ -12812,8 +12812,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-12T18:15:00",
-    "fc_api_seen_at": "2026-10-12T18:15:00",
+    "fc_listed_at": "2026-10-12T18:30:00",
+    "fc_api_seen_at": "2026-10-12T18:30:00",
     "fc_trusted": true
   },
   "fc_24390968": {
@@ -16153,15 +16153,15 @@
     "fc_trusted": true
   },
   "fc_24503746": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-12T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-10T05:54:58",
+    "last_restock_alert": "2026-10-12T18:32:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-12T18:30:00",
