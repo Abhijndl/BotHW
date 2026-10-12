@@ -4157,7 +4157,7 @@
   "fc_23973356": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 2404 Rally Finale Die-cast Free Wheel Toy Car - Mint",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2404-rally-finale-die-cast-free-wheel-toy-car-mint/23973356/product-detail",
     "first_seen": "2026-07-23T05:51:34",
@@ -10559,7 +10559,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10570,8 +10570,8 @@
     "last_restock_alert": "2026-10-11T17:28:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T17:45:00",
-    "fc_api_seen_at": "2026-10-11T17:45:00",
+    "fc_listed_at": "2026-10-12T17:00:00",
+    "fc_api_seen_at": "2026-10-12T17:00:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -14046,8 +14046,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-12T16:30:00",
-    "fc_api_seen_at": "2026-10-12T16:30:00",
+    "fc_listed_at": "2026-10-12T17:00:00",
+    "fc_api_seen_at": "2026-10-12T17:00:00",
     "fc_trusted": true
   },
   "fc_24342832": {
@@ -14312,15 +14312,15 @@
     "fc_trusted": true
   },
   "fc_24472644": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
     "last_seen": "2026-10-12T17:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T19:22:50",
+    "last_restock_alert": "2026-10-12T17:14:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -15533,7 +15533,7 @@
   "fc_23973359": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-4515-sandblaster-die-cast-free-wheel-toy-car-light-khaki/23973359/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -16465,15 +16465,15 @@
     "fc_trusted": true
   },
   "fc_24503897": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Volvo 240 Drift Wagon Die Cast Free Wheel Toy Car - Yellow",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-wagon-die-cast-free-wheel-toy-car-yellow/24503897/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-12T17:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T04:06:47",
+    "last_restock_alert": "2026-10-12T17:14:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-12T17:00:00",
