@@ -2914,8 +2914,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-12T04:30:00",
-    "fc_api_seen_at": "2026-10-12T04:30:00",
+    "fc_listed_at": "2026-10-12T08:30:00",
+    "fc_api_seen_at": "2026-10-12T08:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg": {
@@ -3943,8 +3943,8 @@
     "last_restock_alert": "2026-10-12T05:01:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T08:00:00",
-    "fc_api_seen_at": "2026-10-12T08:00:00",
+    "fc_listed_at": "2026-10-12T08:30:00",
+    "fc_api_seen_at": "2026-10-12T08:30:00",
     "fc_trusted": true
   },
   "fc_23076123": {
@@ -3966,7 +3966,7 @@
   "fc_23074890": {
     "stock": "in_stock",
     "name": "Hot Wheels Quick Chat (49/250) Die Cast Toy Car - White & Black",
-    "price": "₹163",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-quick-chat-49-250-die-cast-toy-car-white-and-black/23074890/product-detail",
     "first_seen": "2026-07-21T19:52:07",
@@ -3980,7 +3980,7 @@
     "fc_trusted": true
   },
   "fc_23076127": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot wheels Gone mad (165/250) Die Cast Free Wheel Toy Car - Brown",
     "price": "₹161",
     "source": "firstcry",
@@ -3988,11 +3988,11 @@
     "first_seen": "2026-07-22T04:51:46",
     "last_seen": "2026-10-12T08:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T04:23:14",
+    "last_restock_alert": "2026-10-12T08:43:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-09T08:45:00",
-    "fc_api_seen_at": "2026-10-09T08:45:00",
+    "fc_listed_at": "2026-10-12T08:30:00",
+    "fc_api_seen_at": "2026-10-12T08:30:00",
     "fc_trusted": true
   },
   "fc_24032061": {
@@ -14166,7 +14166,7 @@
   "fc_24473495": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-galaxie-die-cast-toy-car-blue/24473495/product-detail",
     "first_seen": "2026-09-19T18:21:18",
@@ -14314,7 +14314,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -15590,8 +15590,8 @@
     "last_restock_alert": "2026-10-12T05:01:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T08:00:00",
-    "fc_api_seen_at": "2026-10-12T08:00:00",
+    "fc_listed_at": "2026-10-12T08:30:00",
+    "fc_api_seen_at": "2026-10-12T08:30:00",
     "fc_trusted": true
   },
   "fc_23832900": {
