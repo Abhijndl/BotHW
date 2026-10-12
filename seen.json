@@ -18653,5 +18653,53 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_GvLPeZxpod": {
+    "stock": "in_stock",
+    "name": "PREORDER PORSCHE 911 GT3 RS STAPLE X INOZETEK BLISTER PACKAGING [PRE-ORDER]",
+    "price": "₹1549",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-staple-x-inozetek-blister-packaging?pid=GvLPeZxpod",
+    "first_seen": "2026-10-12T09:00:00",
+    "last_seen": "2026-10-12T09:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GoL194ALBA": {
+    "stock": "in_stock",
+    "name": "PREORDER PORSCHE 911 GT3 RS STAPLE X INOZETEK [PRE-ORDER]",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-staple-x-inozetek?pid=GoL194ALBA",
+    "first_seen": "2026-10-12T09:00:00",
+    "last_seen": "2026-10-12T09:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_EzglwWvpMr": {
+    "stock": "in_stock",
+    "name": "PREORDER LB-SILHOUETTE WORKS GT NISSAN 35GT-RR VER.2 INOZETEK EDITION BLISTER PACKAGING [PRE-ORDER]",
+    "price": "₹1549",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-lb-silhouette-works-gt-nissan-35gt-rr-ver2-inozetek-edition-blister-packaging?pid=EzglwWvpMr",
+    "first_seen": "2026-10-12T09:00:00",
+    "last_seen": "2026-10-12T09:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_OyLoyW3gb2": {
+    "stock": "in_stock",
+    "name": "PREORDER LB-SILHOUETTE WORKS GT NISSAN 35GT-RR VER.2 INOZETEK EDITION [PRE-ORDER]",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-lb-silhouette-works-gt-nissan-35gt-rr-ver2-inozetek-edition?pid=OyLoyW3gb2",
+    "first_seen": "2026-10-12T09:00:00",
+    "last_seen": "2026-10-12T09:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
