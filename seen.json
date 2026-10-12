@@ -3964,7 +3964,7 @@
     "fc_trusted": true
   },
   "fc_23074890": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Quick Chat (49/250) Die Cast Toy Car - White & Black",
     "price": "₹163",
     "source": "firstcry",
@@ -3972,11 +3972,11 @@
     "first_seen": "2026-07-21T19:52:07",
     "last_seen": "2026-10-12T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T08:38:54",
+    "last_restock_alert": "2026-10-12T07:40:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-08T20:15:00",
-    "fc_api_seen_at": "2026-10-08T20:15:00",
+    "fc_listed_at": "2026-10-12T07:30:00",
+    "fc_api_seen_at": "2026-10-12T07:30:00",
     "fc_trusted": true
   },
   "fc_23076127": {
