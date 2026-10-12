@@ -6001,7 +6001,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -17979,7 +17979,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_a09fe8c3-da07-49ca-b071-ce34c4a93ff2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
     "price": "₹1899",
     "source": "minifygram",
@@ -17987,7 +17987,7 @@
     "first_seen": "2026-10-05T21:15:00",
     "last_seen": "2026-10-12T15:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T10:54:47",
+    "last_restock_alert": "2026-10-12T15:42:47",
     "last_price_alert": "",
     "mg_updated_at": "2026-10-08T10:53:00.665361+00:00",
     "stock_ver": "mg_skus_v1"
