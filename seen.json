@@ -5128,7 +5128,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_b9b384f8-473b-4669-9de3-563c466ddaed": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MiniGT 1081 Lamborghini Countach LB-Works",
     "price": "₹1399",
     "source": "minifygram",
@@ -5138,7 +5138,7 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "mg_updated_at": "2026-06-13T07:44:59.069041+00:00",
+    "mg_updated_at": "2026-10-12T20:40:38.983868+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_3b661b11-8821-46bd-af3a-b095872a7120": {
@@ -6001,7 +6001,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
