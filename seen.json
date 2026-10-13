@@ -62,7 +62,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_22450088": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Batman Die-Cast Car Set 1:64 Scale Toy Cars Pack of 5 Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -70,11 +70,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-13T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-12T09:46:54",
+    "last_restock_alert": "2026-10-13T10:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T20:15:00",
-    "fc_api_seen_at": "2026-10-12T20:15:00",
+    "fc_listed_at": "2026-10-13T10:15:00",
+    "fc_api_seen_at": "2026-10-13T10:15:00",
     "fc_trusted": true
   },
   "fc_21348": {
@@ -10839,7 +10839,7 @@
     "fc_trusted": true
   },
   "fc_23074263": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast 20 Toyota GR Supra (157/250) Toy Car - Grey",
     "price": "₹161",
     "source": "firstcry",
@@ -10851,8 +10851,8 @@
     "last_price_alert": "2026-09-22T09:46:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-13T09:15:00",
-    "fc_api_seen_at": "2026-10-13T09:15:00",
+    "fc_listed_at": "2026-10-13T10:15:00",
+    "fc_api_seen_at": "2026-10-13T10:15:00",
     "fc_trusted": true
   },
   "fc_23074883": {
@@ -12569,8 +12569,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T10:00:00",
-    "fc_api_seen_at": "2026-10-13T10:00:00",
+    "fc_listed_at": "2026-10-13T10:15:00",
+    "fc_api_seen_at": "2026-10-13T10:15:00",
     "fc_trusted": true
   },
   "fc_24473512": {
@@ -13713,7 +13713,7 @@
   "fc_24504539": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹359",
+    "price": "₹323",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -15565,7 +15565,7 @@
   "fc_23973354": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 2304 Custom Personnalise 69 Volkswahen Squareback Die-cast Free Wheel Toy Car - Light ,green",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2304-custom-personnalise-69-volkswahen-squareback-die-cast-free-wheel-toy-car-light-green/23973354/product-detail",
     "first_seen": "2026-09-21T06:34:27",
