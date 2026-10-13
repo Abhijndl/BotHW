@@ -3454,9 +3454,9 @@
     "fc_trusted": true
   },
   "fc_23074267": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast LA Liebre (31/250) Toy Car - White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-la-liebre-31-250-toy-car-white/23074267/product-detail",
     "first_seen": "2026-07-20T09:02:19",
@@ -4732,7 +4732,7 @@
     "fc_trusted": true
   },
   "fc_22548057": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 8 Crate 133/250 Die-Cast Toy Car - Pink",
     "price": "₹150",
     "source": "firstcry",
@@ -4740,11 +4740,11 @@
     "first_seen": "2026-08-01T05:17:01",
     "last_seen": "2026-10-13T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T15:01:43",
+    "last_restock_alert": "2026-10-13T15:04:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T10:00:00",
-    "fc_api_seen_at": "2026-10-10T10:00:00",
+    "fc_listed_at": "2026-10-13T15:00:00",
+    "fc_api_seen_at": "2026-10-13T15:00:00",
     "fc_trusted": true
   },
   "fc_22548060": {
@@ -12704,7 +12704,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12712,11 +12712,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-13T15:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-10T05:54:58",
+    "last_restock_alert": "2026-10-13T15:04:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T15:00:00",
-    "fc_api_seen_at": "2026-10-10T15:00:00",
+    "fc_listed_at": "2026-10-13T15:00:00",
+    "fc_api_seen_at": "2026-10-13T15:00:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -14246,9 +14246,9 @@
     "fc_trusted": true
   },
   "fc_24472665": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Porsche Carrera Die Cast Free Wheel Toy Car - Red",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-porsche-carrera-die-cast-free-wheel-toy-car-red/24472665/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -14258,8 +14258,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-13T14:45:00",
-    "fc_api_seen_at": "2026-10-13T14:45:00",
+    "fc_listed_at": "2026-10-13T15:00:00",
+    "fc_api_seen_at": "2026-10-13T15:00:00",
     "fc_trusted": true
   },
   "fc_24476803": {
