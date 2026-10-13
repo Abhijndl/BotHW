@@ -5041,15 +5041,15 @@
     "fc_trusted": true
   },
   "fc_24236112": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cast Model with Realistic Design - Orange",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-sunny-coupe-1972-toy-car-die-cast-model-with-realistic-design-orange/24236112/product-detail",
     "first_seen": "2026-08-08T12:21:47",
     "last_seen": "2026-10-13T18:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-13T18:49:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -5636,7 +5636,7 @@
   "fc_24194176": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Pack Toy Cars 1:64 Scale Die-Cast Free Wheel Batman Super Villains Silver Series - Multicolor",
-    "price": "₹1999",
+    "price": "₹1399",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-pack-toy-cars-1-64-scale-die-cast-free-wheel-batman-super-villains-silver-series-multicolor/24194176/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -13422,7 +13422,7 @@
   "fc_24503750": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '33 Ford Lo Boy Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-33-ford-lo-boy-die-cast-free-wheel-toy-car-white/24503750/product-detail",
     "first_seen": "2026-09-17T21:56:03",
