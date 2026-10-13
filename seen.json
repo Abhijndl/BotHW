@@ -3481,8 +3481,8 @@
     "last_restock_alert": "2026-09-23T05:03:16",
     "last_price_alert": "2026-09-21T12:16:49",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T06:15:00",
-    "fc_api_seen_at": "2026-10-13T06:15:00",
+    "fc_listed_at": "2026-10-13T06:30:00",
+    "fc_api_seen_at": "2026-10-13T06:30:00",
     "fc_trusted": true
   },
   "fc_23075644": {
@@ -12640,7 +12640,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12649,8 +12649,8 @@
     "last_restock_alert": "2026-10-08T14:49:00",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T06:15:00",
-    "fc_api_seen_at": "2026-10-13T06:15:00",
+    "fc_listed_at": "2026-10-13T06:30:00",
+    "fc_api_seen_at": "2026-10-13T06:30:00",
     "fc_trusted": true
   },
   "fc_24473511": {
@@ -13820,8 +13820,8 @@
     "last_restock_alert": "2026-10-08T16:22:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T06:15:00",
-    "fc_api_seen_at": "2026-10-13T06:15:00",
+    "fc_listed_at": "2026-10-13T06:30:00",
+    "fc_api_seen_at": "2026-10-13T06:30:00",
     "fc_trusted": true
   },
   "fc_24473499": {
@@ -14455,8 +14455,8 @@
     "last_restock_alert": "2026-10-11T18:31:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T06:15:00",
-    "fc_api_seen_at": "2026-10-13T06:15:00",
+    "fc_listed_at": "2026-10-13T06:30:00",
+    "fc_api_seen_at": "2026-10-13T06:30:00",
     "fc_trusted": true
   },
   "fc_24390952": {
@@ -15312,8 +15312,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-13T06:15:00",
-    "fc_api_seen_at": "2026-10-13T06:15:00",
+    "fc_listed_at": "2026-10-13T06:30:00",
+    "fc_api_seen_at": "2026-10-13T06:30:00",
     "fc_trusted": true
   },
   "fc_22240181": {
@@ -15344,8 +15344,8 @@
     "last_restock_alert": "2026-10-11T04:20:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T06:15:00",
-    "fc_api_seen_at": "2026-10-13T06:15:00",
+    "fc_listed_at": "2026-10-13T06:30:00",
+    "fc_api_seen_at": "2026-10-13T06:30:00",
     "fc_trusted": true
   },
   "fc_22240164": {
