@@ -5226,7 +5226,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_d94389ff-4ebe-4cac-bc73-415c33005382": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MiniGT 1053 Lamborghini Murcielago GT EVO",
     "price": "₹1599",
     "source": "minifygram",
