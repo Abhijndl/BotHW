@@ -13422,7 +13422,7 @@
   "fc_24503750": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '33 Ford Lo Boy Die Cast Free Wheel Toy Car - White",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-33-ford-lo-boy-die-cast-free-wheel-toy-car-white/24503750/product-detail",
     "first_seen": "2026-09-17T21:56:03",
@@ -13713,7 +13713,7 @@
   "fc_24504539": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys JLG18-JA10 Pack of 2 - Orange & Black",
-    "price": "₹323",
+    "price": "₹359",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg18-ja10-pack-of-2-orange-and-black/24504539/product-detail",
     "first_seen": "2026-09-18T13:46:15",
@@ -13722,8 +13722,8 @@
     "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T18:30:00",
-    "fc_api_seen_at": "2026-10-13T18:30:00",
+    "fc_listed_at": "2026-10-13T20:00:00",
+    "fc_api_seen_at": "2026-10-13T20:00:00",
     "fc_trusted": true
   },
   "fc_24514777": {
@@ -14361,15 +14361,15 @@
     "fc_trusted": true
   },
   "fc_24473474": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
     "last_seen": "2026-10-13T20:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T17:14:45",
+    "last_restock_alert": "2026-10-13T20:08:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-13T20:00:00",
@@ -15033,8 +15033,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T15:15:00",
-    "fc_api_seen_at": "2026-10-13T15:15:00",
+    "fc_listed_at": "2026-10-13T20:00:00",
+    "fc_api_seen_at": "2026-10-13T20:00:00",
     "fc_trusted": true
   },
   "fc_24247501": {
@@ -16908,9 +16908,9 @@
     "fc_trusted": true
   },
   "fc_24473510": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
-    "price": "₹166",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-custom-personnalise-die-cast-car-60-250-green/24473510/product-detail",
     "first_seen": "2026-09-24T14:15:00",
@@ -19035,7 +19035,7 @@
     "fc_trusted": true
   },
   "fc_24761907": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -19043,7 +19043,7 @@
     "first_seen": "2026-10-13T13:45:00",
     "last_seen": "2026-10-13T20:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-13T20:08:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-13T20:00:00",
