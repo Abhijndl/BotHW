@@ -3735,8 +3735,8 @@
     "last_price_alert": "2026-09-20T06:21:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-13T17:30:00",
-    "fc_api_seen_at": "2026-10-13T17:30:00",
+    "fc_listed_at": "2026-10-13T22:30:00",
+    "fc_api_seen_at": "2026-10-13T22:30:00",
     "fc_trusted": true
   },
   "fc_23076120": {
@@ -4441,8 +4441,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T22:00:00",
-    "fc_api_seen_at": "2026-10-13T22:00:00",
+    "fc_listed_at": "2026-10-13T22:30:00",
+    "fc_api_seen_at": "2026-10-13T22:30:00",
     "fc_trusted": true
   },
   "fc_22548064": {
@@ -5636,7 +5636,7 @@
   "fc_24194176": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 5 Pack Toy Cars 1:64 Scale Die-Cast Free Wheel Batman Super Villains Silver Series - Multicolor",
-    "price": "₹1399",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-5-pack-toy-cars-1-64-scale-die-cast-free-wheel-batman-super-villains-silver-series-multicolor/24194176/product-detail",
     "first_seen": "2026-08-12T00:42:10",
@@ -9894,8 +9894,8 @@
     "last_restock_alert": "2026-10-13T17:47:00",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T22:00:00",
-    "fc_api_seen_at": "2026-10-13T22:00:00",
+    "fc_listed_at": "2026-10-13T22:30:00",
+    "fc_api_seen_at": "2026-10-13T22:30:00",
     "fc_trusted": true
   },
   "fc_22048350": {
@@ -10538,8 +10538,8 @@
     "last_restock_alert": "2026-09-24T13:03:41",
     "last_price_alert": "2026-09-22T12:16:58",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T22:00:00",
-    "fc_api_seen_at": "2026-10-13T22:00:00",
+    "fc_listed_at": "2026-10-13T22:30:00",
+    "fc_api_seen_at": "2026-10-13T22:30:00",
     "fc_trusted": true
   },
   "fc_23700381": {
@@ -12654,7 +12654,7 @@
     "fc_trusted": true
   },
   "fc_24473511": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
     "price": "₹161",
     "source": "firstcry",
@@ -12861,8 +12861,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T22:00:00",
-    "fc_api_seen_at": "2026-10-13T22:00:00",
+    "fc_listed_at": "2026-10-13T22:30:00",
+    "fc_api_seen_at": "2026-10-13T22:30:00",
     "fc_trusted": true
   },
   "fc_24341962": {
@@ -15122,7 +15122,7 @@
   "fc_21034612": {
     "stock": "out_of_stock",
     "name": "Hot Wheels HW First Response Die Cast or Free Wheel Car - Blue",
-    "price": "₹167",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hw-first-response-die-cast-or-free-wheel-car-blue/21034612/product-detail",
     "first_seen": "2026-09-21T06:34:27",
