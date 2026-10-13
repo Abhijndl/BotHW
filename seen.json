@@ -12574,7 +12574,7 @@
     "fc_trusted": true
   },
   "fc_24473512": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
     "price": "₹161",
     "source": "firstcry",
@@ -12582,7 +12582,7 @@
     "first_seen": "2026-09-17T04:21:12",
     "last_seen": "2026-10-13T14:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T12:44:47",
+    "last_restock_alert": "2026-10-13T14:31:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
