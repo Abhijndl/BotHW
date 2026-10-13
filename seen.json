@@ -2657,7 +2657,7 @@
     "fc_trusted": true
   },
   "fc_23075651": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Classic TV Series Batmobile (144/250) Die Cast Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -2668,8 +2668,8 @@
     "last_restock_alert": "2026-10-12T17:46:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-12T18:30:00",
-    "fc_api_seen_at": "2026-10-12T18:30:00",
+    "fc_listed_at": "2026-10-13T08:15:00",
+    "fc_api_seen_at": "2026-10-13T08:15:00",
     "fc_trusted": true
   },
   "fc_23354597": {
@@ -4637,7 +4637,7 @@
     "fc_trusted": true
   },
   "fc_23354966": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -4645,11 +4645,11 @@
     "first_seen": "2026-08-01T04:27:10",
     "last_seen": "2026-10-13T08:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-09T10:04:50",
+    "last_restock_alert": "2026-10-13T08:28:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-10T05:00:00",
-    "fc_api_seen_at": "2026-10-10T05:00:00",
+    "fc_listed_at": "2026-10-13T08:15:00",
+    "fc_api_seen_at": "2026-10-13T08:15:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -10511,7 +10511,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_23074610": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Super twin mill (169/250) Toy Car - White/Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -10519,11 +10519,11 @@
     "first_seen": "2026-09-02T04:10:57",
     "last_seen": "2026-10-13T08:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-10T05:01:35",
+    "last_restock_alert": "2026-10-13T08:28:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-11T05:30:00",
-    "fc_api_seen_at": "2026-10-11T05:30:00",
+    "fc_listed_at": "2026-10-13T08:15:00",
+    "fc_api_seen_at": "2026-10-13T08:15:00",
     "fc_trusted": true
   },
   "fc_23700379": {
@@ -10839,15 +10839,15 @@
     "fc_trusted": true
   },
   "fc_23074263": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast 20 Toyota GR Supra (157/250) Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-20-toyota-gr-supra-157-250-toy-car-grey/23074263/product-detail",
     "first_seen": "2026-09-04T05:21:35",
     "last_seen": "2026-10-13T08:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-22T09:46:46",
+    "last_restock_alert": "2026-10-13T08:28:27",
     "last_price_alert": "2026-09-22T09:46:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -11815,8 +11815,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-13T05:45:00",
-    "fc_api_seen_at": "2026-10-13T05:45:00",
+    "fc_listed_at": "2026-10-13T08:15:00",
+    "fc_api_seen_at": "2026-10-13T08:15:00",
     "fc_trusted": true
   },
   "kd_ykL0eAKpRZ": {
