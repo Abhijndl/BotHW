@@ -5958,7 +5958,7 @@
     "source": "bigbasket",
     "url": "https://www.bigbasket.com/pd/1967/hot-wheels/",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-14T20:00:00",
+    "last_seen": "2026-10-14T21:30:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11609,7 +11609,7 @@
     "source": "bigbasket",
     "url": "https://www.bigbasket.com/pd/40370180//",
     "first_seen": "2026-09-09T19:08:37",
-    "last_seen": "2026-10-14T20:00:00",
+    "last_seen": "2026-10-14T21:30:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -17633,15 +17633,15 @@
     "last_price_alert": ""
   },
   "kd_96pm9YMpVK": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT ACURA ARX-06 GTP #93 ACURA MEYER SHANK RACING 2025 IMSA DAYTONA 24 HRS",
     "price": "₹1699",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-acura-arx-06-gtp-93-acura-meyer-shank-racing-2025-imsa-daytona-24-hrs?pid=96pm9YMpVK",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-14T21:15:00",
+    "last_seen": "2026-10-14T21:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-14T21:40:53",
     "last_price_alert": ""
   },
   "kd_GXpKRo8Lmx": {
