@@ -19065,5 +19065,17 @@
     "fc_listed_at": "2026-10-14T06:45:00",
     "fc_api_seen_at": "2026-10-14T06:45:00",
     "fc_trusted": true
+  },
+  "kd_xeLXQz8p1W": {
+    "stock": "in_stock",
+    "name": "HOT WHEELS 2026 PANTONE SERIES MIX 2 -SET OF 10",
+    "price": "₹2990",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-2026-pantone-series-mix-2-set-of-10?pid=xeLXQz8p1W",
+    "first_seen": "2026-10-14T07:15:00",
+    "last_seen": "2026-10-14T07:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
