@@ -6001,7 +6001,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -14263,9 +14263,9 @@
     "fc_trusted": true
   },
   "fc_24476803": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -14274,8 +14274,8 @@
     "last_restock_alert": "2026-10-09T16:58:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T16:15:00",
-    "fc_api_seen_at": "2026-10-14T16:15:00",
+    "fc_listed_at": "2026-10-14T16:30:00",
+    "fc_api_seen_at": "2026-10-14T16:30:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -16638,7 +16638,7 @@
   "fc_24503901": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Maxima Drift Car Die Cast Free Wheel Toy Car - Black",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-maxima-drift-car-die-cast-free-wheel-toy-car-black/24503901/product-detail",
     "first_seen": "2026-09-21T16:25:21",
@@ -16648,8 +16648,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-14T08:45:00",
-    "fc_api_seen_at": "2026-10-14T08:45:00",
+    "fc_listed_at": "2026-10-14T16:30:00",
+    "fc_api_seen_at": "2026-10-14T16:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
