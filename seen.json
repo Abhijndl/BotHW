@@ -3943,8 +3943,8 @@
     "last_restock_alert": "2026-10-13T08:44:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T21:15:00",
-    "fc_api_seen_at": "2026-10-14T21:15:00",
+    "fc_listed_at": "2026-10-14T21:30:00",
+    "fc_api_seen_at": "2026-10-14T21:30:00",
     "fc_trusted": true
   },
   "fc_23076123": {
@@ -13063,8 +13063,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T21:15:00",
-    "fc_api_seen_at": "2026-10-14T21:15:00",
+    "fc_listed_at": "2026-10-14T21:30:00",
+    "fc_api_seen_at": "2026-10-14T21:30:00",
     "fc_trusted": true
   },
   "fc_24475217": {
@@ -14192,8 +14192,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-14T21:15:00",
-    "fc_api_seen_at": "2026-10-14T21:15:00",
+    "fc_listed_at": "2026-10-14T21:30:00",
+    "fc_api_seen_at": "2026-10-14T21:30:00",
     "fc_trusted": true
   },
   "fc_24476003": {
@@ -14377,9 +14377,9 @@
     "fc_trusted": true
   },
   "fc_24475206": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-purple/24475206/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -15574,8 +15574,8 @@
     "last_restock_alert": "2026-10-13T06:52:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T21:15:00",
-    "fc_api_seen_at": "2026-10-14T21:15:00",
+    "fc_listed_at": "2026-10-14T21:30:00",
+    "fc_api_seen_at": "2026-10-14T21:30:00",
     "fc_trusted": true
   },
   "fc_23973353": {
@@ -15590,8 +15590,8 @@
     "last_restock_alert": "2026-10-12T05:01:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T21:15:00",
-    "fc_api_seen_at": "2026-10-14T21:15:00",
+    "fc_listed_at": "2026-10-14T21:30:00",
+    "fc_api_seen_at": "2026-10-14T21:30:00",
     "fc_trusted": true
   },
   "fc_23832900": {
@@ -19121,7 +19121,7 @@
     "hm_verified_at": "2026-10-14T20:30:00"
   },
   "fc_24761908": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Skyline 2000 GT-R Die Cast Free Wheel Toy Car - Light Grey",
     "price": "₹179",
     "source": "firstcry",
