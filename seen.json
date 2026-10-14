@@ -4664,8 +4664,8 @@
     "last_restock_alert": "2026-09-21T09:18:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T10:30:00",
-    "fc_api_seen_at": "2026-10-14T10:30:00",
+    "fc_listed_at": "2026-10-14T10:45:00",
+    "fc_api_seen_at": "2026-10-14T10:45:00",
     "fc_trusted": true
   },
   "fc_22548052": {
@@ -10602,8 +10602,8 @@
     "last_restock_alert": "2026-10-10T06:58:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T10:30:00",
-    "fc_api_seen_at": "2026-10-14T10:30:00",
+    "fc_listed_at": "2026-10-14T10:45:00",
+    "fc_api_seen_at": "2026-10-14T10:45:00",
     "fc_trusted": true
   },
   "fc_22597522": {
@@ -11021,8 +11021,8 @@
     "last_restock_alert": "2026-09-22T10:46:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T10:30:00",
-    "fc_api_seen_at": "2026-10-14T10:30:00",
+    "fc_listed_at": "2026-10-14T10:45:00",
+    "fc_api_seen_at": "2026-10-14T10:45:00",
     "fc_trusted": true
   },
   "kd_10gzYqjpAV": {
@@ -12638,7 +12638,7 @@
     "fc_trusted": true
   },
   "fc_24473516": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
     "price": "₹170",
     "source": "firstcry",
@@ -13207,8 +13207,8 @@
     "last_restock_alert": "2026-10-07T11:07:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T10:30:00",
-    "fc_api_seen_at": "2026-10-14T10:30:00",
+    "fc_listed_at": "2026-10-14T10:45:00",
+    "fc_api_seen_at": "2026-10-14T10:45:00",
     "fc_trusted": true
   },
   "fc_24342822": {
@@ -13917,8 +13917,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:21:37",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T10:30:00",
-    "fc_api_seen_at": "2026-10-14T10:30:00",
+    "fc_listed_at": "2026-10-14T10:45:00",
+    "fc_api_seen_at": "2026-10-14T10:45:00",
     "fc_trusted": true
   },
   "fc_24504534": {
@@ -14230,9 +14230,9 @@
     "fc_trusted": true
   },
   "fc_24475737": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14413,7 +14413,7 @@
   "fc_24473732": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24473732/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -16493,8 +16493,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-14T09:15:00",
-    "fc_api_seen_at": "2026-10-14T09:15:00",
+    "fc_listed_at": "2026-10-14T10:45:00",
+    "fc_api_seen_at": "2026-10-14T10:45:00",
     "fc_trusted": true
   },
   "fc_24248200": {
@@ -18873,7 +18873,7 @@
     "hm_verified_at": "2026-10-14T10:45:00"
   },
   "fc_24768898": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '96 Dodge Viper GTS Die Cast Free Wheel Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -18954,7 +18954,7 @@
     "fc_trusted": true
   },
   "fc_24768895": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '71 Lamborghini Miura SV Die Cast Free Wheel Toy Car - Purple",
     "price": "₹179",
     "source": "firstcry",
@@ -18962,7 +18962,7 @@
     "first_seen": "2026-10-13T13:45:00",
     "last_seen": "2026-10-14T10:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-14T10:48:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -19035,7 +19035,7 @@
     "fc_trusted": true
   },
   "fc_24761907": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
