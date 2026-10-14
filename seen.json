@@ -16862,7 +16862,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
@@ -19077,5 +19077,47 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "hm_hot-wheels-1-64-diecast-fiat-beast-of-turin-car-for-kids-3y-18040887": {
+    "stock": "in_stock",
+    "name": "Hot Wheels 1:64 Diecast Fiat Beast Of Turin Car for Kids 3Y+",
+    "price": "₹179",
+    "source": "hamleys",
+    "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-fiat-beast-of-turin-car-for-kids-3y-18040887",
+    "first_seen": "2026-10-14T13:00:00",
+    "last_seen": "2026-10-14T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "hm_pages_v1",
+    "hm_verified_at": "2026-10-14T13:00:00"
+  },
+  "hm_hot-wheels-1-64-diecast-tooned-volkswagen-golf-mk1-car-for-kids-3y-18040872": {
+    "stock": "in_stock",
+    "name": "Hot Wheels 1:64 Diecast Tooned Volkswagen Golf Mk1 Car for Kids 3Y+",
+    "price": "₹179",
+    "source": "hamleys",
+    "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-tooned-volkswagen-golf-mk1-car-for-kids-3y-18040872",
+    "first_seen": "2026-10-14T13:00:00",
+    "last_seen": "2026-10-14T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "hm_pages_v1",
+    "hm_verified_at": "2026-10-14T13:00:00"
+  },
+  "hm_hot-wheels-1-64-diecast-total-chevelle-car-for-kids-3y-18040869": {
+    "stock": "in_stock",
+    "name": "Hot Wheels 1:64 Diecast Total Chevelle Car for Kids 3Y+",
+    "price": "₹179",
+    "source": "hamleys",
+    "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-total-chevelle-car-for-kids-3y-18040869",
+    "first_seen": "2026-10-14T13:00:00",
+    "last_seen": "2026-10-14T13:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "hm_pages_v1",
+    "hm_verified_at": "2026-10-14T13:00:00"
   }
 }
