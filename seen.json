@@ -4441,8 +4441,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T20:00:00",
-    "fc_api_seen_at": "2026-10-14T20:00:00",
+    "fc_listed_at": "2026-10-14T20:15:00",
+    "fc_api_seen_at": "2026-10-14T20:15:00",
     "fc_trusted": true
   },
   "fc_22548064": {
@@ -5679,8 +5679,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T20:00:00",
-    "fc_api_seen_at": "2026-10-14T20:00:00",
+    "fc_listed_at": "2026-10-14T20:15:00",
+    "fc_api_seen_at": "2026-10-14T20:15:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -16215,8 +16215,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-14T20:00:00",
-    "fc_api_seen_at": "2026-10-14T20:00:00",
+    "fc_listed_at": "2026-10-14T20:15:00",
+    "fc_api_seen_at": "2026-10-14T20:15:00",
     "fc_trusted": true
   },
   "fc_24503324": {
@@ -18873,7 +18873,7 @@
     "hm_verified_at": "2026-10-14T12:00:00"
   },
   "fc_24768898": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '96 Dodge Viper GTS Die Cast Free Wheel Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -18884,8 +18884,8 @@
     "last_restock_alert": "2026-10-14T06:04:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T20:00:00",
-    "fc_api_seen_at": "2026-10-14T20:00:00",
+    "fc_listed_at": "2026-10-14T20:15:00",
+    "fc_api_seen_at": "2026-10-14T20:15:00",
     "fc_trusted": true
   },
   "fc_24761909": {
