@@ -12852,7 +12852,7 @@
   "fc_24349392": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Super Rigs Drivin Wild Wheel Car - Red & White",
-    "price": "₹764",
+    "price": "₹849",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-drivin-wild-wheel-car-red-and-white/24349392/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -12914,7 +12914,7 @@
     "fc_trusted": true
   },
   "fc_24342667": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Heavy Doody Dumper Wheel Car - Yellow",
     "price": "₹764",
     "source": "firstcry",
@@ -12922,11 +12922,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-14T15:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-07T13:15:20",
+    "last_restock_alert": "2026-10-14T15:20:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-07T13:45:00",
-    "fc_api_seen_at": "2026-10-07T13:45:00",
+    "fc_listed_at": "2026-10-14T15:15:00",
+    "fc_api_seen_at": "2026-10-14T15:15:00",
     "fc_trusted": true
   },
   "fc_22277227": {
@@ -14216,7 +14216,7 @@
   "fc_24476471": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
