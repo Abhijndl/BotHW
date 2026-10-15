@@ -17769,7 +17769,7 @@
     "fc_trusted": true
   },
   "kd_aMNBWARLXd": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "LAMBORGHINI COUNTACH LPI 800-4 VIOLA 30TH",
     "price": "₹1299",
     "source": "karzdolls",
@@ -19167,6 +19167,18 @@
     "price": "₹1389",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s15-top-secret-d1gp?pid=x7Le8Z6NY0",
+    "first_seen": "2026-10-15T11:00:00",
+    "last_seen": "2026-10-15T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GvLPjZWgod": {
+    "stock": "in_stock",
+    "name": "MINI GT ASTON MARTIN DBS HYPER RED",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-hyper-red%C2%A0%C2%A0-%C2%A0?pid=GvLPjZWgod",
     "first_seen": "2026-10-15T11:00:00",
     "last_seen": "2026-10-15T11:00:00",
     "alerted_new": true,
