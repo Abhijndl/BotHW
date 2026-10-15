@@ -62,7 +62,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_22450088": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Batman Die-Cast Car Set 1:64 Scale Toy Cars Pack of 5 Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -70,11 +70,11 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-15T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-13T10:22:45",
+    "last_restock_alert": "2026-10-15T06:36:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T03:00:00",
-    "fc_api_seen_at": "2026-10-15T03:00:00",
+    "fc_listed_at": "2026-10-15T06:30:00",
+    "fc_api_seen_at": "2026-10-15T06:30:00",
     "fc_trusted": true
   },
   "fc_21348": {
@@ -3552,7 +3552,7 @@
     "fc_trusted": true
   },
   "fc_23076122": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
     "price": "₹175",
     "source": "firstcry",
@@ -3560,7 +3560,7 @@
     "first_seen": "2026-07-20T10:51:52",
     "last_seen": "2026-10-15T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-30T05:01:44",
+    "last_restock_alert": "2026-10-15T06:36:28",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T06:30:00",
@@ -4414,9 +4414,9 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23347149": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 151/250 Ford F-150 Lightning Supertruck Die Cat Free Wheel Toy Car- Multicolor",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-151-250-ford-f-150-lightning-supertruck-die-cat-free-wheel-toy-car-multicolor/23347149/product-detail",
     "first_seen": "2026-07-28T14:46:56",
@@ -4648,8 +4648,8 @@
     "last_restock_alert": "2026-10-14T20:08:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T06:00:00",
-    "fc_api_seen_at": "2026-10-15T06:00:00",
+    "fc_listed_at": "2026-10-15T06:30:00",
+    "fc_api_seen_at": "2026-10-15T06:30:00",
     "fc_trusted": true
   },
   "fc_23105077": {
@@ -10320,7 +10320,7 @@
   "fc_22912948": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Silver Series Zamac Die Cast Free Wheel Toy Car - Silver",
-    "price": "₹1999",
+    "price": "₹1799",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-silver-series-zamac-die-cast-free-wheel-toy-car-silver/22912948/product-detail",
     "first_seen": "2026-09-01T13:58:45",
