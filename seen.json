@@ -5958,7 +5958,7 @@
     "source": "bigbasket",
     "url": "https://www.bigbasket.com/pd/1967/hot-wheels/",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-15T05:30:00",
+    "last_seen": "2026-10-15T07:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6001,7 +6001,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -11609,7 +11609,7 @@
     "source": "bigbasket",
     "url": "https://www.bigbasket.com/pd/40370180//",
     "first_seen": "2026-09-09T19:08:37",
-    "last_seen": "2026-10-15T05:30:00",
+    "last_seen": "2026-10-15T07:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12574,9 +12574,9 @@
     "fc_trusted": true
   },
   "fc_24473512": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12586,8 +12586,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-15T07:00:00",
-    "fc_api_seen_at": "2026-10-15T07:00:00",
+    "fc_listed_at": "2026-10-15T07:15:00",
+    "fc_api_seen_at": "2026-10-15T07:15:00",
     "fc_trusted": true
   },
   "fc_24473515": {
@@ -12646,7 +12646,7 @@
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-10-15T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-15T07:22:25",
+    "last_restock_alert": "2026-10-15T07:22:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T07:15:00",
