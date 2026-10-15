@@ -12945,14 +12945,14 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹597",
+    "price": "₹519",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-15T16:30:00",
     "alerted_new": true,
     "last_restock_alert": "",
-    "last_price_alert": "2026-10-13T16:12:52",
+    "last_price_alert": "2026-10-15T16:38:27",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T16:30:00",
     "fc_api_seen_at": "2026-10-15T16:30:00",
@@ -13191,8 +13191,8 @@
     "last_restock_alert": "2026-10-14T05:48:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T16:15:00",
-    "fc_api_seen_at": "2026-10-15T16:15:00",
+    "fc_listed_at": "2026-10-15T16:30:00",
+    "fc_api_seen_at": "2026-10-15T16:30:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -16920,8 +16920,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-15T15:45:00",
-    "fc_api_seen_at": "2026-10-15T15:45:00",
+    "fc_listed_at": "2026-10-15T16:30:00",
+    "fc_api_seen_at": "2026-10-15T16:30:00",
     "fc_trusted": true
   },
   "fc_24568707": {
