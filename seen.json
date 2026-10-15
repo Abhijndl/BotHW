@@ -19292,5 +19292,29 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_aPgdnrlLJq": {
+    "stock": "in_stock",
+    "name": "MINI GT FORD MUSTANG MACH 1 DIAMONDS ARE FOREVER",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini%C2%A0gt%C2%A0ford%C2%A0mustang%C2%A0mach%C2%A01%C2%A0diamonds%C2%A0are%C2%A0forever?pid=aPgdnrlLJq",
+    "first_seen": "2026-10-15T11:15:00",
+    "last_seen": "2026-10-15T11:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_aPgdlQbgJq": {
+    "stock": "in_stock",
+    "name": "MINI GT BENTLEY FLYING SPUR ORANGE FLAME ONYX",
+    "price": "₹1389",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-bentley-flying-spur-orange-flame-onyx?pid=aPgdlQbgJq",
+    "first_seen": "2026-10-15T11:15:00",
+    "last_seen": "2026-10-15T11:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
