@@ -2880,8 +2880,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T11:15:00",
-    "fc_api_seen_at": "2026-10-15T11:15:00",
+    "fc_listed_at": "2026-10-15T11:30:00",
+    "fc_api_seen_at": "2026-10-15T11:30:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -10522,8 +10522,8 @@
     "last_restock_alert": "2026-10-13T08:28:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T10:30:00",
-    "fc_api_seen_at": "2026-10-15T10:30:00",
+    "fc_listed_at": "2026-10-15T11:30:00",
+    "fc_api_seen_at": "2026-10-15T11:30:00",
     "fc_trusted": true
   },
   "fc_23700379": {
@@ -13876,7 +13876,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -13885,8 +13885,8 @@
     "last_restock_alert": "2026-09-30T15:31:50",
     "last_price_alert": "2026-10-03T01:42:52",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T11:15:00",
-    "fc_api_seen_at": "2026-10-15T11:15:00",
+    "fc_listed_at": "2026-10-15T11:30:00",
+    "fc_api_seen_at": "2026-10-15T11:30:00",
     "fc_trusted": true
   },
   "fc_24525301": {
@@ -13933,8 +13933,8 @@
     "last_restock_alert": "2026-10-06T18:14:57",
     "last_price_alert": "2026-09-21T15:28:56",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T11:15:00",
-    "fc_api_seen_at": "2026-10-15T11:15:00",
+    "fc_listed_at": "2026-10-15T11:30:00",
+    "fc_api_seen_at": "2026-10-15T11:30:00",
     "fc_trusted": true
   },
   "fc_24473503": {
@@ -16164,8 +16164,8 @@
     "last_restock_alert": "2026-10-14T06:04:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T10:30:00",
-    "fc_api_seen_at": "2026-10-15T10:30:00",
+    "fc_listed_at": "2026-10-15T11:30:00",
+    "fc_api_seen_at": "2026-10-15T11:30:00",
     "fc_trusted": true
   },
   "fc_24503335": {
