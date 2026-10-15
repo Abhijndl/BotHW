@@ -4416,7 +4416,7 @@
   "fc_23347149": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 151/250 Ford F-150 Lightning Supertruck Die Cat Free Wheel Toy Car- Multicolor",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-151-250-ford-f-150-lightning-supertruck-die-cat-free-wheel-toy-car-multicolor/23347149/product-detail",
     "first_seen": "2026-07-28T14:46:56",
@@ -4425,8 +4425,8 @@
     "last_restock_alert": "2026-10-15T04:31:05",
     "last_price_alert": "2026-09-21T09:51:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T15:45:00",
-    "fc_api_seen_at": "2026-10-15T15:45:00",
+    "fc_listed_at": "2026-10-15T16:15:00",
+    "fc_api_seen_at": "2026-10-15T16:15:00",
     "fc_trusted": true
   },
   "fc_23075650": {
@@ -10184,14 +10184,14 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹597",
+    "price": "₹519",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-15T16:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
-    "last_price_alert": "2026-10-13T16:12:52",
+    "last_price_alert": "2026-10-15T16:22:26",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T16:15:00",
     "fc_api_seen_at": "2026-10-15T16:15:00",
@@ -10213,14 +10213,14 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹597",
+    "price": "₹519",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-15T16:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-09T10:36:50",
-    "last_price_alert": "2026-10-13T16:12:52",
+    "last_price_alert": "2026-10-15T16:22:26",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T16:15:00",
     "fc_api_seen_at": "2026-10-15T16:15:00",
@@ -12253,14 +12253,14 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹597",
+    "price": "₹519",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
     "last_seen": "2026-10-15T16:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-05T11:22:58",
-    "last_price_alert": "2026-10-13T16:12:52",
+    "last_price_alert": "2026-10-15T16:22:26",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T16:15:00",
     "fc_api_seen_at": "2026-10-15T16:15:00",
@@ -12509,7 +12509,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24473724": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
     "price": "₹161",
     "source": "firstcry",
@@ -12517,12 +12517,12 @@
     "first_seen": "2026-09-17T04:21:12",
     "last_seen": "2026-10-15T16:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-13T16:29:04",
+    "last_restock_alert": "2026-10-15T16:22:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-14T05:45:00",
-    "fc_api_seen_at": "2026-10-14T05:45:00",
+    "fc_listed_at": "2026-10-15T16:15:00",
+    "fc_api_seen_at": "2026-10-15T16:15:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -13577,8 +13577,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-07T15:45:00",
-    "fc_api_seen_at": "2026-10-07T15:45:00",
+    "fc_listed_at": "2026-10-15T16:15:00",
+    "fc_api_seen_at": "2026-10-15T16:15:00",
     "fc_trusted": true
   },
   "fc_22548071": {
@@ -13876,7 +13876,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -14329,9 +14329,9 @@
     "fc_trusted": true
   },
   "fc_24476435": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -15170,7 +15170,7 @@
   "fc_2232876": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Twin Flame Bike - Green & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-twin-flame-bike-green-and-black/2232876/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15756,7 +15756,7 @@
     "fc_trusted": true
   },
   "fc_24014393": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Licensed Play Ball 9 Inch - Yellow",
     "price": "₹149",
     "source": "firstcry",
@@ -16638,7 +16638,7 @@
   "fc_24503901": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Maxima Drift Car Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-maxima-drift-car-die-cast-free-wheel-toy-car-black/24503901/product-detail",
     "first_seen": "2026-09-21T16:25:21",
