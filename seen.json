@@ -19210,7 +19210,7 @@
     "last_price_alert": ""
   },
   "kd_QJgn0R8Ll6": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT MERCEDES-MAYBACH S 680 BLACK",
     "price": "₹1299",
     "source": "karzdolls",
@@ -19239,6 +19239,18 @@
     "price": "₹1399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini%C2%A0gt%C2%A0jaguar%C2%A0cx75%C2%A0spectre%C2%A0?pid=OyLoZKxNb2",
+    "first_seen": "2026-10-15T11:15:00",
+    "last_seen": "2026-10-15T11:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_8JNqOdep4Q": {
+    "stock": "in_stock",
+    "name": "MINI GT PORSCHE 911 DAKAR BLACK",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-porsche-911-dakar-black?pid=8JNqOdep4Q",
     "first_seen": "2026-10-15T11:15:00",
     "last_seen": "2026-10-15T11:15:00",
     "alerted_new": true,
