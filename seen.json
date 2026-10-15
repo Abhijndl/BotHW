@@ -6001,7 +6001,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -17769,15 +17769,15 @@
     "fc_trusted": true
   },
   "kd_aMNBWARLXd": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "LAMBORGHINI COUNTACH LPI 800-4 VIOLA 30TH",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-countach-lpi-800-4-viola-30th%C2%A0%C2%A0-%C2%A0?pid=aMNBWARLXd",
     "first_seen": "2026-10-05T13:00:00",
-    "last_seen": "2026-10-07T16:30:00",
+    "last_seen": "2026-10-15T11:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-15T11:08:45",
     "last_price_alert": ""
   },
   "kd_V2gJR33ge4": {
@@ -19155,6 +19155,18 @@
     "price": "₹1149",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-m5-touring-marina-bay-blue-metallic?pid=x7LelByNY0",
+    "first_seen": "2026-10-15T11:00:00",
+    "last_seen": "2026-10-15T11:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_x7Le8Z6NY0": {
+    "stock": "in_stock",
+    "name": "NISSAN SILVIA S15 TOP SECRET D1GP",
+    "price": "₹1389",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/nissan-silvia-s15-top-secret-d1gp?pid=x7Le8Z6NY0",
     "first_seen": "2026-10-15T11:00:00",
     "last_seen": "2026-10-15T11:00:00",
     "alerted_new": true,
