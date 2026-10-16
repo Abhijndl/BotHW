@@ -2880,8 +2880,8 @@
     "last_restock_alert": "2026-09-22T06:31:43",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T15:00:00",
-    "fc_api_seen_at": "2026-10-16T15:00:00",
+    "fc_listed_at": "2026-10-16T15:15:00",
+    "fc_api_seen_at": "2026-10-16T15:15:00",
     "fc_trusted": true
   },
   "fc_23354599": {
@@ -4228,7 +4228,7 @@
     "last_restock_alert": "2026-09-17T18:46:21",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-16T15:00:00"
+    "hm_verified_at": "2026-10-16T15:15:00"
   },
   "fc_22928009": {
     "stock": "out_of_stock",
@@ -14079,8 +14079,8 @@
     "last_restock_alert": "2026-09-22T11:50:17",
     "last_price_alert": "2026-09-22T11:50:17",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T15:00:00",
-    "fc_api_seen_at": "2026-10-16T15:00:00",
+    "fc_listed_at": "2026-10-16T15:15:00",
+    "fc_api_seen_at": "2026-10-16T15:15:00",
     "fc_trusted": true
   },
   "fc_24342833": {
@@ -16165,8 +16165,8 @@
     "last_restock_alert": "2026-10-14T06:04:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T14:15:00",
-    "fc_api_seen_at": "2026-10-16T14:15:00",
+    "fc_listed_at": "2026-10-16T15:15:00",
+    "fc_api_seen_at": "2026-10-16T15:15:00",
     "fc_trusted": true
   },
   "fc_24503335": {
@@ -16364,8 +16364,8 @@
     "last_restock_alert": "2026-09-24T20:07:02",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T15:00:00",
-    "fc_api_seen_at": "2026-10-16T15:00:00",
+    "fc_listed_at": "2026-10-16T15:15:00",
+    "fc_api_seen_at": "2026-10-16T15:15:00",
     "fc_trusted": true
   },
   "fc_24525284": {
@@ -19124,7 +19124,7 @@
   "fc_24761908": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Skyline 2000 GT-R Die Cast Free Wheel Toy Car - Light Grey",
-    "price": "₹179",
+    "price": "₹166",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-skyline-2000-gt-r-die-cast-free-wheel-toy-car-light-grey/24761908/product-detail",
     "first_seen": "2026-10-14T20:00:00",
@@ -19134,8 +19134,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T07:45:00",
-    "fc_api_seen_at": "2026-10-16T07:45:00",
+    "fc_listed_at": "2026-10-16T15:15:00",
+    "fc_api_seen_at": "2026-10-16T15:15:00",
     "fc_trusted": true
   },
   "kd_rMNM6XEL95": {
