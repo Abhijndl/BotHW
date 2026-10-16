@@ -19329,5 +19329,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_VbpAlVVLrM": {
+    "stock": "in_stock",
+    "name": "NISSAN FAIRLADY Z KAIDO GT POLICE",
+    "price": "₹1999",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/nissan-fairlady-z-kaido-gt-police?pid=VbpAlVVLrM",
+    "first_seen": "2026-10-16T06:30:00",
+    "last_seen": "2026-10-16T06:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
