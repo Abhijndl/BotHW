@@ -7272,7 +7272,7 @@
     "last_price_alert": ""
   },
   "kd_BwL69mxN4q": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT MAZDA MIATA MX5 NA TUNED VERSION DARK BLUE",
     "price": "₹1149",
     "source": "karzdolls",
@@ -7280,7 +7280,7 @@
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-16T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-16T10:26:51",
     "last_price_alert": ""
   },
   "kd_Ezgl6GrLMr": {
