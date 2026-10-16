@@ -19353,5 +19353,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_e7g58MApmv": {
+    "stock": "in_stock",
+    "name": "MINI GT LB WORKS LAMBORGHINI AVENTADOR LIMITED EDITION MATTE BLACK",
+    "price": "₹1199",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-lb-works-lamborghini-aventador-limited-edition-matte-black?pid=e7g58MApmv",
+    "first_seen": "2026-10-16T06:45:00",
+    "last_seen": "2026-10-16T06:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
