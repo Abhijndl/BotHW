@@ -10699,8 +10699,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T15:30:00",
-    "fc_api_seen_at": "2026-10-16T15:30:00",
+    "fc_listed_at": "2026-10-16T15:45:00",
+    "fc_api_seen_at": "2026-10-16T15:45:00",
     "fc_trusted": true
   },
   "fc_22240239": {
@@ -14308,14 +14308,14 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T15:30:00",
-    "fc_api_seen_at": "2026-10-16T15:30:00",
+    "fc_listed_at": "2026-10-16T15:45:00",
+    "fc_api_seen_at": "2026-10-16T15:45:00",
     "fc_trusted": true
   },
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -14325,8 +14325,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T15:15:00",
-    "fc_api_seen_at": "2026-10-16T15:15:00",
+    "fc_listed_at": "2026-10-16T15:45:00",
+    "fc_api_seen_at": "2026-10-16T15:45:00",
     "fc_trusted": true
   },
   "fc_24476435": {
@@ -16468,7 +16468,7 @@
   "fc_24503897": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volvo 240 Drift Wagon Die Cast Free Wheel Toy Car - Yellow",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-wagon-die-cast-free-wheel-toy-car-yellow/24503897/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -16477,8 +16477,8 @@
     "last_restock_alert": "2026-10-15T07:07:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T15:15:00",
-    "fc_api_seen_at": "2026-10-16T15:15:00",
+    "fc_listed_at": "2026-10-16T15:45:00",
+    "fc_api_seen_at": "2026-10-16T15:45:00",
     "fc_trusted": true
   },
   "fc_24503819": {
@@ -19390,8 +19390,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T15:30:00",
-    "fc_api_seen_at": "2026-10-16T15:30:00",
+    "fc_listed_at": "2026-10-16T15:45:00",
+    "fc_api_seen_at": "2026-10-16T15:45:00",
     "fc_trusted": true
   },
   "fc_24776096": {
