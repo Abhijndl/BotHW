@@ -12529,7 +12529,7 @@
   "fc_24473723": {
     "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-cceleron-die-cast-toy-car-grey/24473723/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -12538,8 +12538,8 @@
     "last_restock_alert": "2026-10-13T19:21:05",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T17:30:00",
-    "fc_api_seen_at": "2026-10-16T17:30:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -13192,8 +13192,8 @@
     "last_restock_alert": "2026-10-14T05:48:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T17:45:00",
-    "fc_api_seen_at": "2026-10-16T17:45:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_23811697": {
@@ -13795,7 +13795,7 @@
   "fc_24473479": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Personnalise Die-Cast Toy Car - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-personnalise-die-cast-toy-car-green/24473479/product-detail",
     "first_seen": "2026-09-18T16:32:00",
@@ -14264,15 +14264,15 @@
     "fc_trusted": true
   },
   "fc_24476803": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
     "last_seen": "2026-10-16T18:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-15T06:52:49",
+    "last_restock_alert": "2026-10-16T18:13:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-16T18:00:00",
@@ -14330,9 +14330,9 @@
     "fc_trusted": true
   },
   "fc_24476435": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -14414,7 +14414,7 @@
   "fc_24473732": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car -Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-blue/24473732/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14424,14 +14424,14 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T17:00:00",
-    "fc_api_seen_at": "2026-10-16T17:00:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24476804": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -14440,8 +14440,8 @@
     "last_restock_alert": "2026-10-13T06:20:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T17:15:00",
-    "fc_api_seen_at": "2026-10-16T17:15:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24473475": {
@@ -16090,7 +16090,7 @@
   "fc_24390958": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT Toy Car - Blue",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-subaru-legacy-gt-toy-car-blue/24390958/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -17574,8 +17574,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T16:45:00",
-    "fc_api_seen_at": "2026-10-16T16:45:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24247520": {
@@ -18452,7 +18452,7 @@
   "fc_24235312": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 98 Honda Prelude Toy Car with Color Die-Cast Model - Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-98-honda-prelude-toy-car-with-color-die-cast-model-green/24235312/product-detail",
     "first_seen": "2026-10-10T04:30:00",
@@ -18462,8 +18462,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T15:00:00",
-    "fc_api_seen_at": "2026-10-16T15:00:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24235310": {
@@ -18885,8 +18885,8 @@
     "last_restock_alert": "2026-10-15T08:26:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T07:45:00",
-    "fc_api_seen_at": "2026-10-16T07:45:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24761909": {
@@ -18967,8 +18967,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T08:00:00",
-    "fc_api_seen_at": "2026-10-16T08:00:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "fc_24762190": {
@@ -19063,8 +19063,8 @@
     "last_restock_alert": "2026-10-16T05:16:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T12:15:00",
-    "fc_api_seen_at": "2026-10-16T12:15:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "kd_xeLXQz8p1W": {
@@ -19124,7 +19124,7 @@
   "fc_24761908": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Skyline 2000 GT-R Die Cast Free Wheel Toy Car - Light Grey",
-    "price": "₹166",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-skyline-2000-gt-r-die-cast-free-wheel-toy-car-light-grey/24761908/product-detail",
     "first_seen": "2026-10-14T20:00:00",
@@ -19134,8 +19134,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T16:15:00",
-    "fc_api_seen_at": "2026-10-16T16:15:00",
+    "fc_listed_at": "2026-10-16T18:00:00",
+    "fc_api_seen_at": "2026-10-16T18:00:00",
     "fc_trusted": true
   },
   "kd_rMNM6XEL95": {
@@ -19477,7 +19477,7 @@
     "fc_trusted": true
   },
   "fc_24775936": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Toy Car McLaren W1 (74/250) - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -19494,7 +19494,7 @@
     "fc_trusted": true
   },
   "fc_24776075": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver",
     "price": "₹179",
     "source": "firstcry",
@@ -19511,7 +19511,7 @@
     "fc_trusted": true
   },
   "fc_24776064": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
     "price": "₹179",
     "source": "firstcry",
@@ -19527,7 +19527,7 @@
     "fc_trusted": true
   },
   "fc_24776061": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels NISSAN SKYLINE HT 2000GT-X (244/250) Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
