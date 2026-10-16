@@ -19341,5 +19341,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_P7pRJKypjm": {
+    "stock": "in_stock",
+    "name": "HONDA NSX KAIDO TEST CAR SPEC V1",
+    "price": "₹1999",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/honda-nsx-kaido-test-car-spec-v1?pid=P7pRJKypjm",
+    "first_seen": "2026-10-16T06:30:00",
+    "last_seen": "2026-10-16T06:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
