@@ -7309,15 +7309,15 @@
     "last_price_alert": ""
   },
   "kd_aMNBW9mLXd": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOUKI WITH RE AMEMIY",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-with-re-amemiy?pid=aMNBW9mLXd",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-06T18:00:00",
+    "last_seen": "2026-10-17T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T12:44:49",
     "last_price_alert": ""
   },
   "kd_96pmZmygVK": {
@@ -7333,15 +7333,15 @@
     "last_price_alert": ""
   },
   "kd_GXpKABQNmx": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT MERCEDES-BENZ EQS 580 4MATIC RED METALLIC",
     "price": "₹1119",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mercedes-benz-eqs-580-4matic-red-metallic?pid=GXpKABQNmx",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-09T08:45:00",
+    "last_seen": "2026-10-17T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-04T17:11:09",
+    "last_restock_alert": "2026-10-17T12:44:49",
     "last_price_alert": ""
   },
   "kd_eJNr9aagBd": {
@@ -7369,15 +7369,15 @@
     "last_price_alert": ""
   },
   "kd_m8pD9Oqgv2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "NISSAN SKYLINE GTR R32 VEILSIDE COMBAT CI VEILSIDE COMBAT GREY",
     "price": "₹1119",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-r32-veilside-combat-ci-veilside-combat-grey?pid=m8pD9Oqgv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-21T06:01:16",
+    "last_seen": "2026-10-17T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T12:44:49",
     "last_price_alert": ""
   },
   "kd_KbNE8GlgR0": {
@@ -19567,6 +19567,66 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-black?pid=zONvZyaNBK",
     "first_seen": "2026-10-17T09:15:00",
+    "last_seen": "2026-10-17T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_96pm2KegVK": {
+    "stock": "in_stock",
+    "name": "LBSILHOUETTE WORKS GT NISSAN 35GTRR VER2 BLUE",
+    "price": "₹1349",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/lbsilhouette-works-gt-nissan-35gtrr-ver2-blue?pid=96pm2KegVK",
+    "first_seen": "2026-10-17T12:30:00",
+    "last_seen": "2026-10-17T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Ezgl2PoLMr": {
+    "stock": "in_stock",
+    "name": "MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA GARASIDRIFT X L",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-garasidrift-x-l?pid=Ezgl2PoLMr",
+    "first_seen": "2026-10-17T12:30:00",
+    "last_seen": "2026-10-17T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_xeLXQQ8p1W": {
+    "stock": "in_stock",
+    "name": "MINI GT LAMBORGHINI REVUELTO GIALLO",
+    "price": "₹1149",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-revuelto-giallo-%C2%A0-%C2%A0?pid=xeLXQQ8p1W",
+    "first_seen": "2026-10-17T12:30:00",
+    "last_seen": "2026-10-17T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_RnLjVVmLm0": {
+    "stock": "in_stock",
+    "name": "BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE",
+    "price": "₹1149",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bmw%C2%A0i7%C2%A0xdrive60%C2%A0alpine%C2%A0white%C2%A0black%C2%A0sapphire%C2%A0%C2%A0%C2%A0%C2%A0?pid=RnLjVVmLm0",
+    "first_seen": "2026-10-17T12:30:00",
+    "last_seen": "2026-10-17T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_jPp9Yj2pDa": {
+    "stock": "in_stock",
+    "name": "MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHROME",
+    "price": "₹1489",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-z-veilside-fz400-gold-chrome?pid=jPp9Yj2pDa",
+    "first_seen": "2026-10-17T12:30:00",
     "last_seen": "2026-10-17T12:30:00",
     "alerted_new": true,
     "last_restock_alert": "",
