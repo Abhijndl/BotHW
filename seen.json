@@ -2989,7 +2989,7 @@
     "hm_verified_at": "2026-09-17T09:02:38"
   },
   "hm_hot-wheels-basic-car-fans-for-kids-assorted-3y-multicolor-deyopvnpaxx": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Basic Car Assortment, 3Y+, Multicolour",
     "price": "₹167",
     "source": "hamleys",
@@ -2997,7 +2997,7 @@
     "first_seen": "2026-07-20T07:43:29",
     "last_seen": "2026-10-17T10:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-16T23:24:38",
+    "last_restock_alert": "2026-10-17T10:18:40",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
     "hm_verified_at": "2026-10-17T10:15:00"
@@ -5632,7 +5632,7 @@
     "last_restock_alert": "2026-10-08T04:04:47",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-17T10:00:00"
+    "hm_verified_at": "2026-10-17T10:15:00"
   },
   "fc_24194176": {
     "stock": "in_stock",
@@ -18246,7 +18246,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
