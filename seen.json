@@ -4504,8 +4504,8 @@
     "last_price_alert": "2026-09-22T06:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T18:15:00",
-    "fc_api_seen_at": "2026-10-17T18:15:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "fc_22548062": {
@@ -4664,8 +4664,8 @@
     "last_restock_alert": "2026-09-21T09:18:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T18:15:00",
-    "fc_api_seen_at": "2026-10-17T18:15:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "fc_22548052": {
@@ -5528,7 +5528,7 @@
   "fc_24248207": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Toy Car (175/250) Audi Avant RS2 94 with Free Wheel Feature - Grey",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-175-250-audi-avant-rs2-94-with-free-wheel-feature-grey/24248207/product-detail",
     "first_seen": "2026-08-10T19:46:53",
@@ -5538,8 +5538,8 @@
     "last_price_alert": "2026-09-22T07:21:20",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T11:45:00",
-    "fc_api_seen_at": "2026-10-17T11:45:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "fc_24248204": {
@@ -5809,8 +5809,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T18:15:00",
-    "fc_api_seen_at": "2026-10-17T18:15:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "fc_24246596": {
@@ -11644,8 +11644,8 @@
     "last_restock_alert": "2026-09-22T12:04:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T18:15:00",
-    "fc_api_seen_at": "2026-10-17T18:15:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "fc_24409190": {
@@ -14542,7 +14542,7 @@
   "fc_24503747": {
     "stock": "out_of_stock",
     "name": "Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-die-cast-free-wheel-toy-car-green/24503747/product-detail",
     "first_seen": "2026-09-20T08:51:11",
@@ -14551,8 +14551,8 @@
     "last_restock_alert": "2026-10-17T10:01:37",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T11:45:00",
-    "fc_api_seen_at": "2026-10-17T11:45:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "fc_24503821": {
@@ -16650,8 +16650,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T18:15:00",
-    "fc_api_seen_at": "2026-10-17T18:15:00",
+    "fc_listed_at": "2026-10-17T18:30:00",
+    "fc_api_seen_at": "2026-10-17T18:30:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
