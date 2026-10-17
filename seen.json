@@ -3454,7 +3454,7 @@
     "fc_trusted": true
   },
   "fc_23074267": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast LA Liebre (31/250) Toy Car - White",
     "price": "₹161",
     "source": "firstcry",
@@ -3462,11 +3462,11 @@
     "first_seen": "2026-07-20T09:02:19",
     "last_seen": "2026-10-17T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-13T11:54:52",
+    "last_restock_alert": "2026-10-17T07:24:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-14T21:15:00",
-    "fc_api_seen_at": "2026-10-14T21:15:00",
+    "fc_listed_at": "2026-10-17T07:15:00",
+    "fc_api_seen_at": "2026-10-17T07:15:00",
     "fc_trusted": true
   },
   "fc_23076125": {
@@ -3804,7 +3804,7 @@
     "fc_trusted": true
   },
   "fc_23353374": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car - Brown",
     "price": "₹161",
     "source": "firstcry",
@@ -4430,15 +4430,15 @@
     "fc_trusted": true
   },
   "fc_23075650": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Dino 206 GT (150/250) Die Cast Toy Car - Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dino-206-gt-150-250-die-cast-toy-car-red/23075650/product-detail",
     "first_seen": "2026-07-28T16:02:27",
     "last_seen": "2026-10-17T07:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T07:24:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T07:15:00",
@@ -15582,7 +15582,7 @@
   "fc_23973353": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -19539,6 +19539,22 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
+    "fc_listed_at": "2026-10-17T07:15:00",
+    "fc_api_seen_at": "2026-10-17T07:15:00",
+    "fc_trusted": true
+  },
+  "fc_23030309": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels G.I.JOE 788 Cobra H.I.S.S Die Cast Toy Car - Black",
+    "price": "₹549",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-g-i-joe-788-cobra-h-i-s-s-die-cast-toy-car-black/23030309/product-detail",
+    "first_seen": "2026-10-17T07:15:00",
+    "last_seen": "2026-10-17T07:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T07:15:00",
     "fc_api_seen_at": "2026-10-17T07:15:00",
     "fc_trusted": true
