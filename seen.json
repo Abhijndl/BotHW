@@ -4007,8 +4007,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:45:00",
-    "fc_api_seen_at": "2026-10-17T08:45:00",
+    "fc_listed_at": "2026-10-17T09:00:00",
+    "fc_api_seen_at": "2026-10-17T09:00:00",
     "fc_trusted": true
   },
   "fc_23075645": {
@@ -14267,7 +14267,7 @@
   "fc_24476803": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -14276,8 +14276,8 @@
     "last_restock_alert": "2026-10-16T18:13:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:45:00",
-    "fc_api_seen_at": "2026-10-17T08:45:00",
+    "fc_listed_at": "2026-10-17T09:00:00",
+    "fc_api_seen_at": "2026-10-17T09:00:00",
     "fc_trusted": true
   },
   "fc_24476167": {
@@ -14473,8 +14473,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:45:00",
-    "fc_api_seen_at": "2026-10-17T08:45:00",
+    "fc_listed_at": "2026-10-17T09:00:00",
+    "fc_api_seen_at": "2026-10-17T09:00:00",
     "fc_trusted": true
   },
   "mg_70cf1a66-5326-4b31-b1a7-e10a0cafecce": {
@@ -14665,8 +14665,8 @@
     "last_restock_alert": "2026-10-02T15:33:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:45:00",
-    "fc_api_seen_at": "2026-10-17T08:45:00",
+    "fc_listed_at": "2026-10-17T09:00:00",
+    "fc_api_seen_at": "2026-10-17T09:00:00",
     "fc_trusted": true
   },
   "fc_24235313": {
@@ -16905,8 +16905,8 @@
     "last_restock_alert": "2026-09-25T05:18:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:45:00",
-    "fc_api_seen_at": "2026-10-17T08:45:00",
+    "fc_listed_at": "2026-10-17T09:00:00",
+    "fc_api_seen_at": "2026-10-17T09:00:00",
     "fc_trusted": true
   },
   "fc_24473510": {
