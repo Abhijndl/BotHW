@@ -2989,7 +2989,7 @@
     "hm_verified_at": "2026-09-17T09:02:38"
   },
   "hm_hot-wheels-basic-car-fans-for-kids-assorted-3y-multicolor-deyopvnpaxx": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Basic Car Assortment, 3Y+, Multicolour",
     "price": "₹167",
     "source": "hamleys",
@@ -5621,7 +5621,7 @@
     "hm_verified_at": "2026-09-17T09:05:47"
   },
   "hm_hot-wheels-premium-fast-furious-bundle-for-boys-age-3y-premium-die-cast-car-collection-96407425": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Premium Fast & Furious Bundle for Boys Age 3Y+ | Premium Die-Cast Car Collection",
     "price": "₹3999",
     "source": "hamleys",
@@ -5629,10 +5629,10 @@
     "first_seen": "2026-08-11T16:34:24",
     "last_seen": "2026-10-17T11:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T04:04:47",
+    "last_restock_alert": "2026-10-17T11:22:49",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-17T10:45:00"
+    "hm_verified_at": "2026-10-17T11:15:00"
   },
   "fc_24194176": {
     "stock": "in_stock",
@@ -18246,7 +18246,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
