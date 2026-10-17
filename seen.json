@@ -10561,7 +10561,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10569,11 +10569,11 @@
     "first_seen": "2026-09-02T05:28:35",
     "last_seen": "2026-10-17T14:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-16T07:40:59",
+    "last_restock_alert": "2026-10-17T14:06:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T08:45:00",
-    "fc_api_seen_at": "2026-10-16T08:45:00",
+    "fc_listed_at": "2026-10-17T14:00:00",
+    "fc_api_seen_at": "2026-10-17T14:00:00",
     "fc_trusted": true
   },
   "fc_24248193": {
