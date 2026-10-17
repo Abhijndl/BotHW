@@ -12511,7 +12511,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24473724": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
     "price": "₹161",
     "source": "firstcry",
@@ -12523,8 +12523,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-16T18:00:00",
-    "fc_api_seen_at": "2026-10-16T18:00:00",
+    "fc_listed_at": "2026-10-17T12:30:00",
+    "fc_api_seen_at": "2026-10-17T12:30:00",
     "fc_trusted": true
   },
   "fc_24473723": {
@@ -15567,7 +15567,7 @@
   "fc_23973354": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 2304 Custom Personnalise 69 Volkswahen Squareback Die-cast Free Wheel Toy Car - Light ,green",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2304-custom-personnalise-69-volkswahen-squareback-die-cast-free-wheel-toy-car-light-green/23973354/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15581,9 +15581,9 @@
     "fc_trusted": true
   },
   "fc_23973353": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -16251,8 +16251,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T12:15:00",
-    "fc_api_seen_at": "2026-10-17T12:15:00",
+    "fc_listed_at": "2026-10-17T12:30:00",
+    "fc_api_seen_at": "2026-10-17T12:30:00",
     "fc_trusted": true
   },
   "fc_24503322": {
@@ -16680,8 +16680,8 @@
     "last_restock_alert": "2026-10-16T22:01:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T11:30:00",
-    "fc_api_seen_at": "2026-10-17T11:30:00",
+    "fc_listed_at": "2026-10-17T12:30:00",
+    "fc_api_seen_at": "2026-10-17T12:30:00",
     "fc_trusted": true
   },
   "fc_24248194": {
