@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T14:30:00",
-    "fc_api_seen_at": "2026-10-17T14:30:00",
+    "fc_listed_at": "2026-10-17T14:45:00",
+    "fc_api_seen_at": "2026-10-17T14:45:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -12539,8 +12539,8 @@
     "last_restock_alert": "2026-10-13T19:21:05",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T11:30:00",
-    "fc_api_seen_at": "2026-10-17T11:30:00",
+    "fc_listed_at": "2026-10-17T14:45:00",
+    "fc_api_seen_at": "2026-10-17T14:45:00",
     "fc_trusted": true
   },
   "fc_24473712": {
@@ -13449,8 +13449,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T14:00:00",
-    "fc_api_seen_at": "2026-10-17T14:00:00",
+    "fc_listed_at": "2026-10-17T14:45:00",
+    "fc_api_seen_at": "2026-10-17T14:45:00",
     "fc_trusted": true
   },
   "fc_24473028": {
@@ -13968,8 +13968,8 @@
     "last_price_alert": "2026-09-22T07:07:02",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T14:30:00",
-    "fc_api_seen_at": "2026-10-17T14:30:00",
+    "fc_listed_at": "2026-10-17T14:45:00",
+    "fc_api_seen_at": "2026-10-17T14:45:00",
     "fc_trusted": true
   },
   "fc_24503315": {
@@ -16234,8 +16234,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T14:30:00",
-    "fc_api_seen_at": "2026-10-17T14:30:00",
+    "fc_listed_at": "2026-10-17T14:45:00",
+    "fc_api_seen_at": "2026-10-17T14:45:00",
     "fc_trusted": true
   },
   "fc_24503323": {
@@ -16650,8 +16650,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T13:45:00",
-    "fc_api_seen_at": "2026-10-17T13:45:00",
+    "fc_listed_at": "2026-10-17T14:45:00",
+    "fc_api_seen_at": "2026-10-17T14:45:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
