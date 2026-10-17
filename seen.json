@@ -3932,9 +3932,9 @@
     "hm_verified_at": "2026-09-27T09:45:00"
   },
   "fc_23973355": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-574-20-royota-tacoma-die-cast-free-wheel-toy-car-green/23973355/product-detail",
     "first_seen": "2026-07-21T17:56:30",
@@ -4228,7 +4228,7 @@
     "last_restock_alert": "2026-09-17T18:46:21",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-16T17:00:00"
+    "hm_verified_at": "2026-10-17T07:30:00"
   },
   "fc_22928009": {
     "stock": "out_of_stock",
@@ -4328,7 +4328,7 @@
   "fc_24031181": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '2019 Chevrolet Silverado Trail Boss Lt Toy Car - Light Brown",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-chevrolet-silverado-trail-boss-lt-toy-car-light-brown/24031181/product-detail",
     "first_seen": "2026-07-27T16:26:43",
@@ -5921,15 +5921,15 @@
     "fc_trusted": true
   },
   "fc_24248202": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 70 Dodge Charger Die-Cast Free Wheel Toy Car (188/250) - White",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-dodge-charger-die-cast-free-wheel-toy-car-188-250-white/24248202/product-detail",
     "first_seen": "2026-08-16T03:52:16",
     "last_seen": "2026-10-17T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-24T10:58:26",
+    "last_restock_alert": "2026-10-17T07:40:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -6001,7 +6001,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -11394,8 +11394,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T07:15:00",
-    "fc_api_seen_at": "2026-10-17T07:15:00",
+    "fc_listed_at": "2026-10-17T07:30:00",
+    "fc_api_seen_at": "2026-10-17T07:30:00",
     "fc_trusted": true
   },
   "fc_23103132": {
@@ -12575,7 +12575,7 @@
     "fc_trusted": true
   },
   "fc_24473512": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
     "price": "₹161",
     "source": "firstcry",
@@ -12625,7 +12625,7 @@
   "fc_24473713": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-66-buick-riviera-die-cast-toy-car-copper-brown/24473713/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12641,7 +12641,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -12650,8 +12650,8 @@
     "last_restock_alert": "2026-10-15T07:22:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T16:30:00",
-    "fc_api_seen_at": "2026-10-15T16:30:00",
+    "fc_listed_at": "2026-10-17T07:30:00",
+    "fc_api_seen_at": "2026-10-17T07:30:00",
     "fc_trusted": true
   },
   "fc_24473511": {
@@ -14167,7 +14167,7 @@
   "fc_24473495": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
-    "price": "₹171",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-galaxie-die-cast-toy-car-blue/24473495/product-detail",
     "first_seen": "2026-09-19T18:21:18",
@@ -14176,8 +14176,8 @@
     "last_restock_alert": "2026-10-14T20:08:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T06:45:00",
-    "fc_api_seen_at": "2026-10-17T06:45:00",
+    "fc_listed_at": "2026-10-17T07:30:00",
+    "fc_api_seen_at": "2026-10-17T07:30:00",
     "fc_trusted": true
   },
   "fc_24474449": {
@@ -14217,7 +14217,7 @@
   "fc_24476471": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -14395,7 +14395,7 @@
     "fc_trusted": true
   },
   "fc_24475755": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
     "price": "₹170",
     "source": "firstcry",
@@ -16494,8 +16494,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T06:45:00",
-    "fc_api_seen_at": "2026-10-17T06:45:00",
+    "fc_listed_at": "2026-10-17T07:30:00",
+    "fc_api_seen_at": "2026-10-17T07:30:00",
     "fc_trusted": true
   },
   "fc_24248200": {
@@ -16863,7 +16863,7 @@
     "fc_trusted": true
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
@@ -19063,8 +19063,8 @@
     "last_restock_alert": "2026-10-16T05:16:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T06:45:00",
-    "fc_api_seen_at": "2026-10-17T06:45:00",
+    "fc_listed_at": "2026-10-17T07:30:00",
+    "fc_api_seen_at": "2026-10-17T07:30:00",
     "fc_trusted": true
   },
   "kd_xeLXQz8p1W": {
@@ -19395,7 +19395,7 @@
     "fc_trusted": true
   },
   "fc_24776096": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Lotus Cortina (67/250) Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -19489,12 +19489,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T06:45:00",
-    "fc_api_seen_at": "2026-10-17T06:45:00",
+    "fc_listed_at": "2026-10-17T07:30:00",
+    "fc_api_seen_at": "2026-10-17T07:30:00",
     "fc_trusted": true
   },
   "fc_24776075": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver",
     "price": "₹179",
     "source": "firstcry",
@@ -19502,7 +19502,7 @@
     "first_seen": "2026-10-16T16:30:00",
     "last_seen": "2026-10-17T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T07:40:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -19511,7 +19511,7 @@
     "fc_trusted": true
   },
   "fc_24776064": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
     "price": "₹179",
     "source": "firstcry",
@@ -19519,7 +19519,7 @@
     "first_seen": "2026-10-16T16:30:00",
     "last_seen": "2026-10-17T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T07:40:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T07:30:00",
