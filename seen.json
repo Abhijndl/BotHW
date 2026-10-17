@@ -4024,8 +4024,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T09:30:00",
-    "fc_api_seen_at": "2026-10-17T09:30:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_23075648": {
@@ -4701,15 +4701,15 @@
     "fc_trusted": true
   },
   "fc_23351189": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 55/250 Dessert Drifter/ Gelee De Derapage Die Cat Free Wheel Toy Car- Orange",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-55-250-dessert-drifter-gelee-de-derapage-die-cat-free-wheel-toy-car-orange/23351189/product-detail",
     "first_seen": "2026-08-01T04:36:38",
     "last_seen": "2026-10-17T10:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T10:01:37",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T10:00:00",
@@ -12911,8 +12911,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T09:30:00",
-    "fc_api_seen_at": "2026-10-17T09:30:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_24342667": {
@@ -13984,8 +13984,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T09:30:00",
-    "fc_api_seen_at": "2026-10-17T09:30:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_24473264": {
@@ -14145,8 +14145,8 @@
     "last_restock_alert": "2026-09-21T19:01:43",
     "last_price_alert": "2026-09-21T19:01:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T09:30:00",
-    "fc_api_seen_at": "2026-10-17T09:30:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_24546534": {
@@ -14540,7 +14540,7 @@
     "fc_trusted": true
   },
   "fc_24503747": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - Green",
     "price": "₹161",
     "source": "firstcry",
@@ -14548,11 +14548,11 @@
     "first_seen": "2026-09-20T08:51:11",
     "last_seen": "2026-10-17T10:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-14T10:16:46",
+    "last_restock_alert": "2026-10-17T10:01:37",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T06:45:00",
-    "fc_api_seen_at": "2026-10-17T06:45:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_24503821": {
@@ -14923,8 +14923,8 @@
     "last_restock_alert": "2026-10-06T18:14:57",
     "last_price_alert": "2026-09-21T15:15:41",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T09:30:00",
-    "fc_api_seen_at": "2026-10-17T09:30:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_24504537": {
@@ -16317,8 +16317,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T09:30:00",
-    "fc_api_seen_at": "2026-10-17T09:30:00",
+    "fc_listed_at": "2026-10-17T10:00:00",
+    "fc_api_seen_at": "2026-10-17T10:00:00",
     "fc_trusted": true
   },
   "fc_24498234": {
