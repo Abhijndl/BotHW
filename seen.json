@@ -2897,8 +2897,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_23074618": {
@@ -3767,8 +3767,8 @@
     "last_restock_alert": "2026-09-26T07:07:25",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_23074891": {
@@ -3847,8 +3847,8 @@
     "last_restock_alert": "2026-10-15T04:46:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_23345761": {
@@ -3975,8 +3975,8 @@
     "last_restock_alert": "2026-10-12T07:40:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_23076127": {
@@ -4457,8 +4457,8 @@
     "last_restock_alert": "2026-09-21T19:08:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-pantone-assorted-boys-3y-multicolour-17627231": {
@@ -5933,8 +5933,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160": {
@@ -9799,8 +9799,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_21627431": {
@@ -10619,8 +10619,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_23074619": {
@@ -12473,8 +12473,8 @@
     "last_restock_alert": "2026-10-08T21:54:46",
     "last_price_alert": "2026-09-21T15:27:01",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_19995092": {
@@ -12673,7 +12673,7 @@
   "fc_24473731": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
@@ -12910,8 +12910,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_24342667": {
@@ -12974,8 +12974,8 @@
     "last_restock_alert": "2026-10-08T16:22:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_21993932": {
@@ -14395,15 +14395,15 @@
     "fc_trusted": true
   },
   "fc_24475755": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
     "last_seen": "2026-10-17T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-13T16:12:52",
+    "last_restock_alert": "2026-10-17T05:01:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
@@ -14826,8 +14826,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_23835985": {
@@ -14906,8 +14906,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T14:01:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_24503307": {
@@ -15639,8 +15639,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T04:30:00",
-    "fc_api_seen_at": "2026-10-17T04:30:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_24246593": {
@@ -19395,7 +19395,7 @@
     "fc_trusted": true
   },
   "fc_24776096": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Lotus Cortina (67/250) Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -19403,11 +19403,11 @@
     "first_seen": "2026-10-16T12:30:00",
     "last_seen": "2026-10-17T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T05:01:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T19:00:00",
-    "fc_api_seen_at": "2026-10-16T19:00:00",
+    "fc_listed_at": "2026-10-17T05:00:00",
+    "fc_api_seen_at": "2026-10-17T05:00:00",
     "fc_trusted": true
   },
   "fc_24776095": {
@@ -19477,7 +19477,7 @@
     "fc_trusted": true
   },
   "fc_24775936": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Toy Car McLaren W1 (74/250) - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -19485,7 +19485,7 @@
     "first_seen": "2026-10-16T16:30:00",
     "last_seen": "2026-10-17T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-17T05:01:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
