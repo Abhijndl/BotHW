@@ -4616,8 +4616,8 @@
     "last_restock_alert": "2026-10-17T14:24:10",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T15:30:00",
-    "fc_api_seen_at": "2026-10-17T15:30:00",
+    "fc_listed_at": "2026-10-17T15:45:00",
+    "fc_api_seen_at": "2026-10-17T15:45:00",
     "fc_trusted": true
   },
   "fc_22548070": {
@@ -5680,8 +5680,8 @@
     "last_restock_alert": "2026-09-28T05:02:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T15:30:00",
-    "fc_api_seen_at": "2026-10-17T15:30:00",
+    "fc_listed_at": "2026-10-17T15:45:00",
+    "fc_api_seen_at": "2026-10-17T15:45:00",
     "fc_trusted": true
   },
   "fc_23353035": {
@@ -12739,15 +12739,15 @@
     "fc_trusted": true
   },
   "fc_24313540": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 - Multicolor",
-    "price": "₹899",
+    "price": "₹809",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-safari-mode-tm-die-cast-toy-cars-pack-of-5-multicolor/24313540/product-detail",
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-17T15:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-13T14:01:39",
+    "last_restock_alert": "2026-10-17T15:58:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T15:45:00",
@@ -14201,7 +14201,7 @@
   "fc_24476003": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic green",
-    "price": "₹179",
+    "price": "₹171",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-metallic-green/24476003/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -14211,8 +14211,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T15:30:00",
-    "fc_api_seen_at": "2026-10-17T15:30:00",
+    "fc_listed_at": "2026-10-17T15:45:00",
+    "fc_api_seen_at": "2026-10-17T15:45:00",
     "fc_trusted": true
   },
   "fc_24476471": {
@@ -14567,8 +14567,8 @@
     "last_restock_alert": "2026-10-15T05:48:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T07:30:00",
-    "fc_api_seen_at": "2026-10-17T07:30:00",
+    "fc_listed_at": "2026-10-17T15:45:00",
+    "fc_api_seen_at": "2026-10-17T15:45:00",
     "fc_trusted": true
   },
   "fc_24525291": {
