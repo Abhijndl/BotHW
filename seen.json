@@ -4712,8 +4712,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_22548065": {
@@ -11736,8 +11736,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_22240184": {
@@ -13724,8 +13724,8 @@
     "last_restock_alert": "2026-10-06T18:31:51",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_24514777": {
@@ -14365,7 +14365,7 @@
   "fc_24473474": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black",
-    "price": "₹170",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-maserati-die-cast-free-wheel-toy-car-black/24473474/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -14374,8 +14374,8 @@
     "last_restock_alert": "2026-10-15T05:48:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_24475206": {
@@ -14457,8 +14457,8 @@
     "last_restock_alert": "2026-10-14T20:08:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_24390952": {
@@ -14762,8 +14762,8 @@
     "last_restock_alert": "2026-10-02T15:02:49",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_22548066": {
@@ -15567,7 +15567,7 @@
   "fc_23973354": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 2304 Custom Personnalise 69 Volkswahen Squareback Die-cast Free Wheel Toy Car - Light ,green",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2304-custom-personnalise-69-volkswahen-squareback-die-cast-free-wheel-toy-car-light-green/23973354/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -15576,14 +15576,14 @@
     "last_restock_alert": "2026-10-16T16:06:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:30:00",
-    "fc_api_seen_at": "2026-10-17T08:30:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "fc_23973353": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
-    "price": "₹269",
+    "price": "₹299",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -19064,8 +19064,8 @@
     "last_restock_alert": "2026-10-16T05:16:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T08:00:00",
-    "fc_api_seen_at": "2026-10-17T08:00:00",
+    "fc_listed_at": "2026-10-17T08:45:00",
+    "fc_api_seen_at": "2026-10-17T08:45:00",
     "fc_trusted": true
   },
   "kd_xeLXQz8p1W": {
