@@ -2720,7 +2720,7 @@
     "fc_listed_at": "2026-10-18T22:15:00",
     "fc_api_seen_at": "2026-10-18T22:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
@@ -3875,7 +3875,7 @@
     "fc_gid": "23076120"
   },
   "fc_23354596": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
     "price": "₹161",
     "source": "firstcry",
@@ -3889,7 +3889,7 @@
     "fc_listed_at": "2026-10-18T22:15:00",
     "fc_api_seen_at": "2026-10-18T22:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
@@ -3932,7 +3932,7 @@
     "fc_gid": "23074178"
   },
   "fc_23353374": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car - Brown",
     "price": "₹161",
     "source": "firstcry",
@@ -3946,7 +3946,7 @@
     "fc_listed_at": "2026-10-18T22:15:00",
     "fc_api_seen_at": "2026-10-18T22:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
@@ -4791,7 +4791,7 @@
     "fc_trusted": true
   },
   "fc_23348665": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 191/250 65 Mercury Comet Cyclone Die Cat Free Wheel Toy Car- Red",
     "price": "₹161",
     "source": "firstcry",
@@ -4805,7 +4805,7 @@
     "fc_listed_at": "2026-10-18T22:15:00",
     "fc_api_seen_at": "2026-10-18T22:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23347148"
   },
@@ -10162,7 +10162,7 @@
     "fc_gid": "22597417"
   },
   "fc_22597523": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Color Shifters Group C Fantasy Toy Car Color Changing Die-Cast Vehicle with Free-Rolling Wheels -Orange",
     "price": "₹359",
     "source": "firstcry",
@@ -10176,7 +10176,7 @@
     "fc_listed_at": "2026-10-18T22:15:00",
     "fc_api_seen_at": "2026-10-18T22:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22597523"
   },
