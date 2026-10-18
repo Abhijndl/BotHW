@@ -10,16 +10,20 @@ Host    : GitHub Actions, triggered every minute by cron-job.org; state lives in
 
 HOW A RUN WORKS (v13)
 ---------------------
-Each run stays alive RUN_SECONDS (45 s on GitHub) and checks in passes:
-  • FirstCry every FC_EVERY seconds (15 s): a full catalogue sweep first, then
-    quick sweeps of the in-stock list. Every request asks for a cache key
-    FirstCry hasn't built yet, so the data is computed live — the plain request
-    the bot used to make was answered from a 15-minute cache (measured: 9-15
-    minutes old), which is why alerts used to arrive after cars had sold out.
+Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
+  • FirstCry every FC_EVERY seconds (12 s), reading FirstCry's own in-stock
+    list — the cars you can actually buy, with real unit counts. Every request
+    asks for a cache key FirstCry hasn't built yet, so the data is computed
+    live: the plain request the bot used to make was answered from a 15-minute
+    cache (measured: 9-15 minutes old). The whole catalogue (sold-out cars too)
+    is read every 10 min but never decides "in stock" — its unit counts include
+    units nobody can buy (v13.1).
   • Minifygram: full list every 2 min, plus a tiny "anything changed?" check
     every pass that pulls new listings in within seconds. Trading cards too.
   • Karz & Dolls every 2 min, read from the JSON the site embeds in its pages.
   • Hamleys every 10 min.
+  The slower stores only run in each run's first pass, so runs end before the
+  next trigger.
 Alerts go out the moment a store's check finishes; nothing waits for slower
 stores. Runs are chained back to back, so the watch is continuous.
 
@@ -110,10 +114,11 @@ HM_WORKERS  = int(os.getenv("HM_WORKERS", "8"))
 # dispatching every minute, runs follow each other back to back, so FirstCry is
 # watched continuously instead of once a minute. 0 = classic single pass.
 RUN_SECONDS   = float(os.getenv("RUN_SECONDS", "0"))
-FC_EVERY      = max(8.0, float(os.getenv("FC_EVERY", "15")))
-# Within a long run, a FULL catalogue sweep happens at least this often; the
-# sweeps in between are quick "hot" sweeps of the in-stock part of the catalogue.
-FC_FULL_EVERY = float(os.getenv("FC_FULL_EVERY", "60"))
+FC_EVERY      = max(8.0, float(os.getenv("FC_EVERY", "12")))
+# How often the WHOLE FirstCry catalogue (sold-out cars included) is read, in
+# seconds. Every pass reads FirstCry's in-stock list; the full catalogue only
+# keeps new sold-out listings and names/prices current, so it's needed rarely.
+FC_CATALOGUE_EVERY = float(os.getenv("FC_CATALOGUE_EVERY", "600"))
 
 # Each store is checked when it is due, whatever triggered the run, so one
 # every-minute trigger covers everything. Seconds between checks; -1 = never.
@@ -1051,7 +1056,6 @@ def _fc_slug(name: str) -> str:
 
 
 FC_THROTTLED = [0.0]   # epoch until which quick sweeps pause (FirstCry sent 429/403)
-_FC_PREV_INSTOCK = [None]  # ids on the previous complete in-stock list (this run)
 _FC_INSTOCK_PAGES = [9]  # pages the in-stock-only list takes (178 cars → 9 pages)
 _FC_SESSION = {"cookies": None, "at": 0.0}
 FC_LAST_SWEEP = {"hot": False, "pages": 0, "fresh": "", "secs": 0.0, "complete": False}
@@ -1310,109 +1314,115 @@ def fc_api_records(products: dict, prev_fc: dict, quiet: bool = False) -> list:
     return out
 
 
-def scrape_firstcry(prev_all: dict | None = None, hot: bool = False) -> list[dict]:
+def _fc_oos_record(pid: str, v: dict) -> dict:
+    """A stored FirstCry car re-recorded as not buyable (live reading)."""
+    nm = v.get("name", "")
+    return {"id": f"fc_{pid}", "source": "firstcry", "name": nm,
+            "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
+            "price": v.get("price", ""), "mrp": "", "stock": "out_of_stock",
+            "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
+            "auto_watch": _fc_is_marque(nm), "stock_ver": FC_API_STOCK_VER,
+            "fc_trusted": True, "fc_listed_at": v.get("fc_listed_at", ""),
+            "fc_api_seen_at": v.get("fc_api_seen_at", "")}
+
+
+def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[dict]:
+    """FirstCry, read live (see the fresh-data notes above fc_api_catalogue).
+
+    WHAT COUNTS AS IN STOCK (v13.1): only cars on FirstCry's own "in stock"
+    list (OutOfStock filter). The catalogue's CrntStock number also counts
+    units you can't buy — on 18 Oct the Plymouth Road Runner showed 2 there
+    while its product page said 0 and it was missing from the in-stock list,
+    which is exactly the "opened the alert, already sold out" case. Checked on
+    23 cars: everything on the in-stock list was buyable on its product page
+    with matching counts, and nothing missing from it was buyable at 2+ units.
+
+    Every pass reads the in-stock list (~10 pages). full=True (every
+    FC_CATALOGUE_EVERY seconds) also reads the whole catalogue, sold-out cars
+    included, so new listings and names/prices of sold-out cars stay known —
+    but the catalogue never marks anything in stock.
+    """
     if prev_all is None:
         prev_all = load_seen()
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
                if pid.startswith("fc_") and isinstance(v, dict)}
 
-    # ── Quick sweep: FirstCry's in-stock list only ────────────────────────────
-    # Cars on the list are read live; a car that drops off it between two
-    # complete lists is recorded as sold out (see below); everything else keeps
-    # its last state until the next full sweep.
-    if hot:
-        if not FC_USE_API or FC_LAST_MODE[0] == "html":
+    if FC_USE_API:
+        if FC_THROTTLED[0] > time.time() and not full:
+            print("  [FC-API] paused for a few minutes — FirstCry answered 429/403")
             return []
-        if FC_THROTTLED[0] > time.time():
-            print("  [FC-API] quick sweeps paused — FirstCry answered 429/403 recently")
-            return []
-        api = fc_api_catalogue(hot=True)
-        if api is None:
-            return []
-        recs = fc_api_records(api, prev_fc, quiet=True)
-        # A car that WAS on the previous complete in-stock list and has dropped
-        # off this one has sold out. Recording that now (instead of at the next
-        # full sweep) means a sell-out followed by a quick restock still fires
-        # its alert. Only list-to-list changes count: the in-stock filter and
-        # the full catalogue can disagree about a handful of cars (live dry run:
-        # 182 vs 178), and those must never flip-flop into false restocks.
-        listed = {str(pid) for pid in api}
-        prev_listed = _FC_PREV_INSTOCK[0]
-        _FC_PREV_INSTOCK[0] = listed if FC_LAST_SWEEP["complete"] else None
-        if FC_LAST_SWEEP["complete"] and prev_listed:
+        inst = fc_api_catalogue(hot=True)            # what you can actually buy
+        inst_ok = inst is not None and FC_LAST_SWEEP["complete"]
+        listed = {str(k) for k in (inst or {})}
+        cat = fc_api_catalogue() if full else None   # everything, sold-out too
+        if inst is not None or cat:
+            recs = fc_api_records(inst or {}, prev_fc, quiet=True)
             got = {r["id"][3:] for r in recs}
-            prev_in = [pid for pid in prev_listed - listed
-                       if (prev_fc.get(pid) or {}).get("stock") == "in_stock"
-                       and not _fc_excluded((prev_fc.get(pid) or {}).get("name", ""))]
-            if len(listed) >= 0.7 * len(prev_listed):
-                for pid in prev_in:
-                    if pid in got:
+            delisted = 0
+            if cat:
+                for r in fc_api_records({k: v for k, v in cat.items() if str(k) not in listed},
+                                        prev_fc):
+                    pid = r["id"][3:]
+                    # not on the in-stock list = not buyable; if that list was
+                    # incomplete this time, keep whatever we knew before
+                    r["stock"] = ("out_of_stock" if inst_ok
+                                  else (prev_fc.get(pid) or {}).get("stock") or "out_of_stock")
+                    r["stock_count"] = None
+                    recs.append(r)
+                    got.add(pid)
+                # cars missing from the catalogue: kept as they were, and only
+                # treated as delisted after FC_STALE_H hours of absence
+                now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
+                for pid, v in prev_fc.items():
+                    if pid in got or not pid.isdigit():
                         continue
-                    v = prev_fc[pid]
                     nm = v.get("name", "")
+                    if not nm or _fc_excluded(nm) or v.get("stock") is None:
+                        continue
+                    st = v.get("stock")
+                    seen_at = v.get("fc_api_seen_at") or now_iso
+                    if (st == "in_stock" and FC_API_COMPLETE[0]
+                            and _hours_since(seen_at) >= FC_STALE_H):
+                        st, delisted = "out_of_stock", delisted + 1
                     recs.append({
                         "id": f"fc_{pid}", "source": "firstcry", "name": nm,
                         "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
-                        "price": v.get("price", ""), "mrp": "", "stock": "out_of_stock",
+                        "price": v.get("price", ""), "mrp": "", "stock": st,
                         "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
                         "auto_watch": _fc_is_marque(nm),
-                        "stock_ver": FC_API_STOCK_VER, "fc_trusted": True,
+                        # carried cars keep exactly the version/trust they had
+                        "stock_ver": v.get("stock_ver", ""),
+                        "fc_trusted": bool(v.get("fc_trusted")),
                         "fc_listed_at": v.get("fc_listed_at", ""),
-                        "fc_api_seen_at": v.get("fc_api_seen_at", ""),
+                        "fc_api_seen_at": seen_at,
                     })
-        return recs
-
-    # ── Preferred path: FirstCry's own JSON catalogue API ──────────────────────
-    if FC_USE_API:
-        api = fc_api_catalogue()
-        if api:
-            recs = fc_api_records(api, prev_fc)
-            got = {r["id"][3:] for r in recs}
-            now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
-            # A product missing from the API is only treated as delisted once it
-            # has been absent for FC_STALE_H hours. The first version flipped
-            # everything missing immediately — and when a response was cut short
-            # (as happened with the TTL bug) that marked 209 cars sold out at once,
-            # setting up a flood of false "restocks" when they reappeared. Aging
-            # means a truncated response can never cause that: a car only flips
-            # after hours of consistent absence, and its return is a real relisting.
-            delisted = 0
-            for pid, v in prev_fc.items():
-                if pid in got or not pid.isdigit():
-                    continue
-                nm = v.get("name", "")
-                if not nm or _fc_excluded(nm):
-                    continue
-                st = v.get("stock")
-                if st is None:
-                    continue
-                seen_at = v.get("fc_api_seen_at") or now_iso      # grace for old entries
-                if (st == "in_stock" and FC_API_COMPLETE[0]
-                        and _hours_since(seen_at) >= FC_STALE_H):
-                    st, delisted = "out_of_stock", delisted + 1
-                recs.append({
-                    "id": f"fc_{pid}", "source": "firstcry", "name": nm,
-                    "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
-                    "price": v.get("price", ""), "mrp": "", "stock": st,
-                    "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
-                    "auto_watch": _fc_is_marque(nm),
-                    # NOT re-stamped. The v11.2 bug stamped carried (unread) cars
-                    # with the current version, disguising a stale "sold out" as
-                    # a fresh reading — so when those cars were finally read, a
-                    # false "restock" fired. Carried cars now keep exactly the
-                    # version and trust they already had.
-                    "stock_ver": v.get("stock_ver", ""),
-                    "fc_trusted": bool(v.get("fc_trusted")),
-                    "fc_listed_at": v.get("fc_listed_at", ""),
-                    "fc_api_seen_at": seen_at,
-                })
-            ins = sum(1 for r in recs if r["stock"] == "in_stock")
-            low = sum(1 for r in recs if r.get("stock_count")
-                      and 0 < r["stock_count"] <= FC_LOW_STOCK)
+                    got.add(pid)
+            if inst_ok:
+                # A complete in-stock list is the truth: anything we had as in
+                # stock that isn't on it can't be bought. Guarded against a
+                # broken, suspiciously short list.
+                n_prev_in = sum(1 for v in prev_fc.values() if v.get("stock") == "in_stock")
+                if n_prev_in < 20 or len(listed) >= 0.5 * n_prev_in:
+                    for pid, v in prev_fc.items():
+                        if (v.get("stock") == "in_stock" and pid.isdigit() and pid not in listed
+                                and pid not in got and not _fc_excluded(v.get("name", ""))):
+                            recs.append(_fc_oos_record(pid, v))
+                            got.add(pid)
+                    for r in recs:
+                        if r["stock"] == "in_stock" and r["id"][3:] not in listed:
+                            r["stock"] = "out_of_stock"
+                else:
+                    print(f"  [FC-API] in-stock list unusually short ({len(listed)} vs "
+                          f"{n_prev_in} in stock before) — nothing marked sold out")
             FC_LAST_MODE[0] = "api"
-            print(f"[*] FirstCry total (API): {len(recs)} ({ins} in stock, "
-                  f"{low} low-stock, {delisted} aged to delisted)")
+            if full:
+                ins = sum(1 for r in recs if r["stock"] == "in_stock")
+                print(f"[*] FirstCry total (API): {len(recs)} tracked, {ins} buyable now "
+                      f"(in-stock list {'complete' if inst_ok else 'INCOMPLETE'}), "
+                      f"{delisted} aged to delisted")
             return recs
+        if not full:
+            return []
         print("  [FC] API unavailable this run — falling back to HTML listing scrape")
     FC_LAST_MODE[0] = "html"
 
@@ -2940,8 +2950,8 @@ def heartbeat(current: dict, ch: dict) -> str:
 # ══════════════════════════════════════════════════════════════════════════════════
 # MAIN
 # ══════════════════════════════════════════════════════════════════════════════════
-def _source_table(snap: dict, fc_hot: bool):
-    return (("FirstCry",   lambda: scrape_firstcry(snap, hot=fc_hot)),
+def _source_table(snap: dict, fc_full: bool):
+    return (("FirstCry",   lambda: scrape_firstcry(snap, full=fc_full)),
             ("Minifygram", scrape_minifygram),
             ("Hamleys",    scrape_hamleys),
             ("Karz&Dolls", scrape_karzanddolls),
@@ -2950,12 +2960,13 @@ def _source_table(snap: dict, fc_hot: bool):
 
 
 def _due(name: str, t: float, t_prev: float) -> bool:
-    """Is a store due in the pass at time t (previous pass at t_prev)?
+    """Is a store due at time t, looking back to t_prev?
 
-    Stateless on purpose: a store checked every E seconds runs in whichever pass
-    first crosses a multiple of E on the wall clock. Back-to-back runs therefore
-    share one schedule without storing timestamps in seen.json — storing them
-    would change the file on every run and force a git commit every minute."""
+    Stateless on purpose: a store checked every E seconds is due when a multiple
+    of E on the wall clock fell between t_prev and t. Chained runs (one a
+    minute, each looking back 60 s) therefore share one schedule without
+    storing timestamps in seen.json — storing them would change the file on
+    every run and force a git commit every minute."""
     if ACTIVE_SOURCES is not None:
         return name in ACTIVE_SOURCES
     every = SOURCE_EVERY.get(name, 0)
@@ -2999,7 +3010,7 @@ def _absence_check(seen: dict, products: list, src_key: str) -> list:
     return gone
 
 
-def _process(seen: dict, products: list, store: str, fc_hot: bool) -> int:
+def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
     """Diff ONE store's fresh results against memory, alert at once, save.
     Each store is handled the moment its own check finishes, so a FirstCry
     alert never waits for a slower store (Hamleys can take 20 s)."""
@@ -3078,16 +3089,17 @@ def _process(seen: dict, products: list, store: str, fc_hot: bool) -> int:
         print("\n" + alert)
     else:
         n = sum(len(v) for v in changes.values())
-        if n or not fc_hot:
+        if n or not quiet:
             print(f"[=] {store}: no alert-worthy changes ({n} minor)")
     merge_and_save_seen(seen, current)
     return len(current)
 
 
-def run_pass(seen: dict, names: list, first_run: bool, fc_hot: bool, label: str) -> None:
+def run_pass(seen: dict, names: list, first_run: bool, fc_full: bool, label: str,
+             first_pass: bool = True) -> None:
     t0 = time.time()
     snap = dict(seen)            # scrapers read this; only the main thread writes `seen`
-    sources = [(n, fn) for n, fn in _source_table(snap, fc_hot) if n in names]
+    sources = [(n, fn) for n, fn in _source_table(snap, fc_full) if n in names]
     total, errors, live = 0, [], []
     first_products = []
     with ThreadPoolExecutor(max_workers=max(1, min(SRC_WORKERS, len(sources)))) as ex:
@@ -3107,7 +3119,7 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_hot: bool, label: str)
                 first_products.extend(prods)
                 continue
             try:
-                _process(seen, prods, name, fc_hot)
+                _process(seen, prods, name, quiet=not first_pass)
             except Exception:
                 errors.append(f"{name}: processing failed")
                 print(f"[!] {name} processing error:\n{traceback.format_exc()}")
@@ -3138,13 +3150,13 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_hot: bool, label: str)
         merge_and_save_seen(seen, current)
         return
 
-    if (total == 0 and not fc_hot and ACTIVE_SOURCES is None
+    if (total == 0 and first_pass and ACTIVE_SOURCES is None
             and len(names) >= 3 and errors):
         # Only shout if EVERYTHING died on a full pass — actionable, not spammy.
         tg("⚠️ <b>Hot Wheels Tracker</b>\nAll stores returned nothing this run "
            "(likely a temporary block). Will retry automatically.\n"
            f"<code>{html.escape('; '.join(errors)[:300], quote=False)}</code>")
-    if DEBUG and not fc_hot:
+    if DEBUG and first_pass:
         tg(heartbeat({k: v for k, v in seen.items()
                       if k != "_meta" and isinstance(v, dict) and "source" in v},
                      {"new_listings": [], "restocks": [], "price_drops": [], "back_soon": []}))
@@ -3166,15 +3178,23 @@ def main():
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
     all_names = [n for n, _ in _source_table(seen, False)]
-    # Runs are chained back to back, so the previous run's last check was roughly
-    # 30 s before this one started; the first pass covers that gap.
-    t_prev = t_run - 30
-    last_full_fc = 0.0
+    # Runs are chained back to back about a minute apart. The slower stores
+    # are only checked in each run's FIRST pass, looking back over the last
+    # 60 s for a due time, so the later passes are quick FirstCry-only checks
+    # and every run finishes before the next trigger arrives.
+    look_back = t_run - 60
     pass_no = 0
     while True:
         t = time.time()
         pass_no += 1
-        names = [n for n in all_names if _due(n, t, t_prev)]
+        if pass_no == 1:
+            names = [n for n in all_names if _due(n, t, look_back)]
+            fc_full = ("FirstCry" in names and
+                       (int(t // FC_CATALOGUE_EVERY) != int(look_back // FC_CATALOGUE_EVERY)
+                        or not any(k.startswith("fc_") for k in seen)))
+        else:
+            names = ["FirstCry"] if "FirstCry" in all_names and _due("FirstCry", t, t) else []
+            fc_full = False
         if ("Minifygram" not in names and MG_WATCH and ACTIVE_SOURCES is None
                 and SOURCE_EVERY.get("Minifygram", 0) >= 0 and not first_run):
             wm = mg_watermark()
@@ -3182,18 +3202,13 @@ def main():
             if wm and wm != meta.get("mg_wm"):
                 print("[*] Minifygram changed since the last check — checking it now")
                 names.append("Minifygram")
-        fc_hot = (pass_no > 1 and "FirstCry" in names
-                  and (t - last_full_fc) < FC_FULL_EVERY - 1)
-        label = f"pass {pass_no}" + (" (FirstCry quick sweep)" if fc_hot else "")
+        label = f"pass {pass_no}" + (" (+ full FirstCry catalogue)" if fc_full else "")
         if names:
             try:
-                run_pass(seen, names, first_run, fc_hot, label)
+                run_pass(seen, names, first_run, fc_full, label, first_pass=(pass_no == 1))
             except Exception:
                 # one bad pass must not end the run (earlier results are saved)
                 print(f"[!] {label} failed:\n{traceback.format_exc()}")
-        if "FirstCry" in names and not fc_hot:
-            last_full_fc = t
-        t_prev = t
         if first_run or RUN_SECONDS <= 0:
             break
         nxt = t + FC_EVERY

@@ -18,10 +18,10 @@ on:
 permissions:
   contents: write           # needed so the job can commit seen.json back
 
-# One run at a time. While a run is going, the next trigger waits in line and
-# starts the moment it finishes, so runs follow each other back to back. (A
-# trigger that arrives while another is already waiting replaces it — those
-# show up as grey "cancelled" runs, which is normal.)
+# One run at a time. A trigger that arrives while a run is going waits in line;
+# if yet another arrives meanwhile, GitHub drops the older waiting one and it
+# shows as a grey "cancelled" run — harmless, nothing is missed. One
+# cron-job.org trigger per minute is all this needs now.
 concurrency:
   group: hw-monitor
   cancel-in-progress: false
@@ -55,15 +55,18 @@ jobs:
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
 
           # ── Speed ───────────────────────────────────────────────────────────
-          # Each run stays alive ~50 s and re-checks FirstCry every 15 s (at 0,
-          # 15, 30 and 45 s), so with the every-minute trigger FirstCry is
+          # Each run checks FirstCry 4 times, 12 s apart (at 0, 12, 24 and 36 s),
+          # and ends before the next every-minute trigger, so FirstCry is
           # watched about every 15 s around the clock. Other stores are checked
-          # when due (see below).
-          RUN_SECONDS: "50"
-          FC_EVERY: "15"
-          FC_FULL_EVERY: "60"
+          # in each run's first pass when due (see below).
+          RUN_SECONDS: "40"
+          FC_EVERY: "12"
+          # The full FirstCry catalogue (sold-out cars too) every 10 min; every
+          # check in between reads FirstCry's in-stock list, which is what
+          # decides whether a car is really buyable.
+          FC_CATALOGUE_EVERY: "600"
           # Seconds between checks for the other stores (-1 = off). Minifygram
-          # also gets a tiny "anything changed?" check every 15 s, so its new
+          # also gets a tiny "anything changed?" check every 12 s, so its new
           # listings arrive within seconds; the full list is re-read every 2 min.
           MG_EVERY_S: "120"
           KD_EVERY_S: "120"
