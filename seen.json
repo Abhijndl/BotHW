@@ -11281,7 +11281,9 @@
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T13:15:00",
     "fc_api_seen_at": "2026-10-18T13:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_gid": "22548079"
   },
   "fc_24390944": {
     "stock": "out_of_stock",
@@ -14174,7 +14176,9 @@
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T13:15:00",
     "fc_api_seen_at": "2026-10-18T13:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_gid": "22548071"
   },
   "fc_21252872": {
     "stock": "out_of_stock",
@@ -18059,7 +18063,9 @@
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T13:15:00",
     "fc_api_seen_at": "2026-10-18T13:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_gid": "22592495"
   },
   "fc_24247512": {
     "stock": "out_of_stock",
