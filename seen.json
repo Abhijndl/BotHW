@@ -1234,7 +1234,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_0b34119c-16bb-456f-a8c2-f157a79161f8": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Lamborghini Huracan Sterrato",
     "price": "₹599",
     "source": "minifygram",
@@ -1242,7 +1242,7 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-18T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T07:37:03",
     "last_price_alert": "",
     "mg_updated_at": "2026-07-11T11:49:08.214072+00:00",
     "stock_ver": "mg_skus_v1"
