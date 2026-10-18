@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v13
+Hot Wheels / Diecast Collector Tracker  ·  v13.1.1
 ==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -1363,10 +1363,13 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
                 for r in fc_api_records({k: v for k, v in cat.items() if str(k) not in listed},
                                         prev_fc):
                     pid = r["id"][3:]
-                    # not on the in-stock list = not buyable; if that list was
-                    # incomplete this time, keep whatever we knew before
-                    r["stock"] = ("out_of_stock" if inst_ok
-                                  else (prev_fc.get(pid) or {}).get("stock") or "out_of_stock")
+                    # Not on the in-stock list. If the catalogue also says sold
+                    # out, it is. If the catalogue still shows units, the two
+                    # disagree: keep what we knew. (The in-stock list drops cars
+                    # for a few minutes whenever it refreshes; flipping them to
+                    # sold out made them "come back" as false restock alerts.)
+                    if r["stock"] == "in_stock":
+                        r["stock"] = (prev_fc.get(pid) or {}).get("stock") or "out_of_stock"
                     r["stock_count"] = None
                     recs.append(r)
                     got.add(pid)
@@ -1397,23 +1400,11 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
                         "fc_api_seen_at": seen_at,
                     })
                     got.add(pid)
-            if inst_ok:
-                # A complete in-stock list is the truth: anything we had as in
-                # stock that isn't on it can't be bought. Guarded against a
-                # broken, suspiciously short list.
-                n_prev_in = sum(1 for v in prev_fc.values() if v.get("stock") == "in_stock")
-                if n_prev_in < 20 or len(listed) >= 0.5 * n_prev_in:
-                    for pid, v in prev_fc.items():
-                        if (v.get("stock") == "in_stock" and pid.isdigit() and pid not in listed
-                                and pid not in got and not _fc_excluded(v.get("name", ""))):
-                            recs.append(_fc_oos_record(pid, v))
-                            got.add(pid)
-                    for r in recs:
-                        if r["stock"] == "in_stock" and r["id"][3:] not in listed:
-                            r["stock"] = "out_of_stock"
-                else:
-                    print(f"  [FC-API] in-stock list unusually short ({len(listed)} vs "
-                          f"{n_prev_in} in stock before) — nothing marked sold out")
+            # v13.1.1: a car missing from the in-stock list is NOT marked sold
+            # out on that alone (18 Oct: Street Wiener, 222 units, vanished from
+            # the list for 5 minutes and came back as a false "back in stock").
+            # It goes sold out when the list shows it below FC_MIN_ALERT_STOCK,
+            # when the catalogue agrees it's gone, or after FC_STALE_H hours away.
             FC_LAST_MODE[0] = "api"
             if full:
                 ins = sum(1 for r in recs if r["stock"] == "in_stock")
