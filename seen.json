@@ -5297,8 +5297,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_a6731805-8e94-4179-b745-53b5bcf6f505": {
-    "stock": "in_stock",
-    "name": "[Blister] MiniGT 1337 Lamborghini LB-Silhouette Works Murcielago GT Evo Advan",
+    "stock": "out_of_stock",
+    "name": "[Blister] MiniGT 1337 Lamborghini LB-Silhouette Works Murcielago GT Evo Advan [PRE-ORDER]",
     "price": "₹1749",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-minigt-1337-lamborghini-lb-silhouette-works-murcielago-gt-evo-advan",
@@ -5339,8 +5339,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_144c8ffe-555a-460a-9520-96aee444207c": {
-    "stock": "in_stock",
-    "name": "[Box] Toyota Vellfire 40 Kuhl Gold",
+    "stock": "out_of_stock",
+    "name": "[Box] Toyota Vellfire 40 Kuhl Gold [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-toyota-vellfire-40-kuhl-gold",
@@ -5353,8 +5353,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_a7f3de20-86ee-4ffd-aec1-3e1691f1b8c0": {
-    "stock": "in_stock",
-    "name": "[Box] MiniGt 1337 Lamborghini LB-Silhouette Works Murcielago GT Evo Advan",
+    "stock": "out_of_stock",
+    "name": "[Box] MiniGt 1337 Lamborghini LB-Silhouette Works Murcielago GT Evo Advan [PRE-ORDER]",
     "price": "₹1649",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt-1337-lamborghini-lb-silhouette-works-murcielago-gt-evo-advan",
@@ -5367,8 +5367,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_72f71aec-eb4b-417d-8731-947e02ac1f24": {
-    "stock": "in_stock",
-    "name": "[Box] MiniGT 1236 Porsche Carrera GT Silver",
+    "stock": "out_of_stock",
+    "name": "[Box] MiniGT 1236 Porsche Carrera GT Silver [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt-1236-porsche-carrera-gt-silver",
@@ -5381,8 +5381,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_c47cc74b-22f1-40b8-8ef6-7053448db4e1": {
-    "stock": "in_stock",
-    "name": "[Box] MiniGT 1333 Nissan GTR Nismo with Matsuda Figure",
+    "stock": "out_of_stock",
+    "name": "[Box] MiniGT 1333 Nissan GTR Nismo with Matsuda Figure [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt-1333-nissan-gtr-nismo-with-matsuda-figure",
@@ -5395,8 +5395,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_1fb754f1-08b5-4d41-a158-41c9a33e986a": {
-    "stock": "in_stock",
-    "name": "[Box] MiniGT 1336 Mercedes AMG GT3 888",
+    "stock": "out_of_stock",
+    "name": "[Box] MiniGT 1336 Mercedes AMG GT3 888 [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt-1336-mercedes-amg-gt3-888",
@@ -5409,8 +5409,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_382ef497-8d1f-4240-a489-17ec963093d0": {
-    "stock": "in_stock",
-    "name": "[Blister] MiniGT 1336 Mercedes AMG GT3 888",
+    "stock": "out_of_stock",
+    "name": "[Blister] MiniGT 1336 Mercedes AMG GT3 888 [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-minigt-1336-mercedes-amg-gt3-888",
@@ -5423,8 +5423,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_1b98bd54-095d-4069-9c1e-04fa40fc0c72": {
-    "stock": "in_stock",
-    "name": "[Box] MiniGT 1334 Aston Martin Vantage GT3 EVO",
+    "stock": "out_of_stock",
+    "name": "[Box] MiniGT 1334 Aston Martin Vantage GT3 EVO [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt-1334-aston-martin-vantage-gt3-evo",
@@ -5437,8 +5437,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_65ec87be-1e6b-4aff-a255-d76a2b622075": {
-    "stock": "in_stock",
-    "name": "[Blister] MiniGT 1334 Aston Martin Vantage GT3",
+    "stock": "out_of_stock",
+    "name": "[Blister] MiniGT 1334 Aston Martin Vantage GT3 [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-minigt-1334-aston-martin-vantage-gt3",
@@ -5452,7 +5452,7 @@
   },
   "mg_0e131245-979d-4396-99ea-7dd3c495bd95": {
     "stock": "out_of_stock",
-    "name": "Kaido House Nissan Skyline KHMG273",
+    "name": "Kaido House Nissan Skyline KHMG273 [PRE-ORDER]",
     "price": "₹2000",
     "source": "minifygram",
     "url": "https://minifygram.com/product/kaido-house-nissan-skyline-khmg273",
@@ -6002,7 +6002,7 @@
   },
   "kd_10gzmv6pAV": {
     "stock": "in_stock",
-    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43 [PRE-ORDER]",
+    "name": "HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43",
     "price": "₹2399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
@@ -6025,15 +6025,15 @@
     "last_price_alert": ""
   },
   "kd_V2gJRwAge4": {
-    "stock": "out_of_stock",
-    "name": "HOT WHEELS POP CULTURE ASSORTMENT SET OF 5 CARS",
+    "stock": "in_stock",
+    "name": "HOT WHEELS POP CULTURE ASSORTMENT SET OF 5 CARS 955k",
     "price": "₹2469",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-assortment-set-of-5-cars?pid=V2gJRwAge4",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-assortment-set-of-5-cars-955k?pid=V2gJRwAge4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-09-21T06:01:16",
+    "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T08:28:23",
     "last_price_alert": ""
   },
   "kd_BwL6916N4q": {
@@ -6077,7 +6077,7 @@
     "name": "HOT WHEELS FORMULA PACK OF 10",
     "price": "₹1999",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/hot-wheels-formula-pack-of-10%C2%A0?pid=V2gJemWpe4",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-formula-pack-of-10?pid=V2gJemWpe4",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6137,7 +6137,7 @@
     "name": "HOT WHEELS 2025 PREMIUM HONDA TYPE-R HERITAGE GIFT PACK",
     "price": "₹2549",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/hot-wheels-2025-premium-honda-type-r-heritage-gift-pack%C2%A0?pid=GvLPP2xLod",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-2025-premium-honda-type-r-heritage-gift-pack?pid=GvLPP2xLod",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6161,7 +6161,7 @@
     "name": "BAJA BLAZERS HOT WHEELS GIFT PACK",
     "price": "₹839",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/baja-blazers-hot%C2%A0wheels%C2%A0gift%C2%A0pack%C2%A0?pid=GoL1mX5LBA",
+    "url": "https://www.karzanddolls.com/details/baja-blazers-hot%C2%A0wheels%C2%A0gift%C2%A0pack?pid=GoL1mX5LBA",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6221,7 +6221,7 @@
     "name": "HOT WHEELS PERFORMANCE TRUCKS LINEUP 2026 SET OF 5",
     "price": "₹1495",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/hot-wheels-performance-trucks-lineup-2026-set-of-5%C2%A0?pid=OdNZBvRNzk",
+    "url": "https://www.karzanddolls.com/details/hot-wheels-performance-trucks-lineup-2026-set-of-5?pid=OdNZBvRNzk",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6266,7 +6266,7 @@
   },
   "kd_6nNVYMagYk": {
     "stock": "in_stock",
-    "name": "HOT WHEELS BATMAN SILVER SERIES SET OF 5 CAR [PRE-ORDER]",
+    "name": "HOT WHEELS BATMAN SILVER SERIES SET OF 5 CAR",
     "price": "₹1495",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-batman-silver-series-set-of-5-car-?pid=6nNVYMagYk",
@@ -6314,7 +6314,7 @@
   },
   "kd_8JNqO1op4Q": {
     "stock": "in_stock",
-    "name": "HOT WHEELS MARIO KART MARIO WITH LUIGI [PRE-ORDER]",
+    "name": "HOT WHEELS MARIO KART MARIO WITH LUIGI",
     "price": "₹1598",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-mario-kart-mario-with-luigi?pid=8JNqO1op4Q",
@@ -6593,7 +6593,7 @@
     "name": "NISSAN LB WORKS HAKOSUKA BABY BLUE",
     "price": "₹1199",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/nissan-lb-works-hakosuka-baby-blue%C2%A0?pid=m8pDlYYpv2",
+    "url": "https://www.karzanddolls.com/details/nissan-lb-works-hakosuka-baby-blue?pid=m8pDlYYpv2",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6605,7 +6605,7 @@
     "name": "LOTUS 99T 11 SATORU NAKAJIMA 1987 MONACO GRAND PRIX",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix%C2%A0?pid=Pqp2n7wp36",
+    "url": "https://www.karzanddolls.com/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix?pid=Pqp2n7wp36",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6617,7 +6617,7 @@
     "name": "HYUNDAI KONA N PHANTOM BLACK",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/hyundai-kona-n-phantom-black%C2%A0?pid=VbpAlx2LrM",
+    "url": "https://www.karzanddolls.com/details/hyundai-kona-n-phantom-black?pid=VbpAlx2LrM",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6629,7 +6629,7 @@
     "name": "LAMBORGHINI COUNTACH 25TH ANNIVERSARY RED",
     "price": "₹1199",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/lamborghini-countach-25th-anniversary-red%C2%A0?pid=KbNEYxnNR0",
+    "url": "https://www.karzanddolls.com/details/lamborghini-countach-25th-anniversary-red?pid=KbNEYxnNR0",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6641,7 +6641,7 @@
     "name": "MAZDA RX-7 RE-AMEMIYA 2025 D1GP",
     "price": "₹1699",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-2025-d1gp%C2%A0?pid=10gzm3ApAV",
+    "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-2025-d1gp?pid=10gzm3ApAV",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6653,7 +6653,7 @@
     "name": "TOLEMAN TG184 20 JOHNNY CECOTTO 1984 MONACO GRAND PRIX",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix%C2%A0?pid=8JNqOYqp4Q",
+    "url": "https://www.karzanddolls.com/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix?pid=8JNqOYqp4Q",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6665,7 +6665,7 @@
     "name": "FORD MUSTANG DARK HORSE 24 FORD PERFORMANCE RACING SCHOOL",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/ford-mustang-dark-horse-24-ford-performance-racing-school%C2%A0?pid=GvLPjxegod",
+    "url": "https://www.karzanddolls.com/details/ford-mustang-dark-horse-24-ford-performance-racing-school?pid=GvLPjxegod",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6689,7 +6689,7 @@
     "name": "TOYOTA GR86 LB NATION ADVAN",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/toyota-gr86-lb-nation-advan%C2%A0?pid=V2gJexype4",
+    "url": "https://www.karzanddolls.com/details/toyota-gr86-lb-nation-advan?pid=V2gJexype4",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6701,7 +6701,7 @@
     "name": "LOTUS 99T 12 AYRTON SENNA 1987 MONACO GRAND PRIX WINNER",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner%C2%A0?pid=ykL04RaLRZ",
+    "url": "https://www.karzanddolls.com/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner?pid=ykL04RaLRZ",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6710,10 +6710,10 @@
   },
   "kd_4lgO2VvpoQ": {
     "stock": "in_stock",
-    "name": "N GT RONIN",
+    "name": "LB WORKS LAMBORGHINI HURACÁN GT RONIN",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/lb-works-lamborghini-hurac%C3%A1n-gt-ronin%C2%A0?pid=4lgO2VvpoQ",
+    "url": "https://www.karzanddolls.com/details/lb-works-lamborghini-hurac%C3%A1n-gt-ronin?pid=4lgO2VvpoQ",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6854,10 +6854,10 @@
   },
   "kd_OyLoZEwNb2": {
     "stock": "in_stock",
-    "name": "RBURGRING RACE OF CHAMPIONS SET LIMITED EDITION",
+    "name": "MINI GT 1984 NÜRBURGRING RACE OF CHAMPIONS SET LIMITED EDITION",
     "price": "₹22999",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-1984-n%C3%BCrburgring-race-of-champions-set-limited-edition%C2%A0?pid=OyLoZEwNb2",
+    "url": "https://www.karzanddolls.com/details/mini-gt-1984-n%C3%BCrburgring-race-of-champions-set-limited-edition?pid=OyLoZEwNb2",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6893,7 +6893,7 @@
     "name": "LANCIA DELTA HF INTEGRALE EVOLUZIONE 1 1993 RALLYE MONTECARLO",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo%C2%A0?pid=PzNbBwkNbQ",
+    "url": "https://www.karzanddolls.com/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo?pid=PzNbBwkNbQ",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6905,7 +6905,7 @@
     "name": "MINI GT TOYOTA GR86 LBNATION BLACKGOLD",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-%C2%A0toyota-gr86-lbnation-blackgold%C2%A0?pid=XqLQb4MpvD",
+    "url": "https://www.karzanddolls.com/details/mini-gt-%C2%A0toyota-gr86-lbnation-blackgold?pid=XqLQb4MpvD",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6929,7 +6929,7 @@
     "name": "MINI GT NISSAN GTR 2013 DARK METAL GRAYNISMO R35 CRS VERSION",
     "price": "₹1199",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version%C2%A0?pid=lng33yAgqy",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version?pid=lng33yAgqy",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6941,7 +6941,7 @@
     "name": "MINI GT SUBARU IMPREZA WRC97 1 1999 DRM CHAMPION",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion%C2%A0?pid=aMNB2y0NXd",
+    "url": "https://www.karzanddolls.com/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion?pid=aMNB2y0NXd",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6953,7 +6953,7 @@
     "name": "MAZDA RX-7 RE-AMEMIYA SILVER METALLIC",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-silver-metallic%C2%A0?pid=x7LelnlNY0",
+    "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-silver-metallic?pid=x7LelnlNY0",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -6965,7 +6965,7 @@
     "name": "MINI GT VOLKSWAGEN IDBUZZ CANDY WHITE POMELO YELLOW",
     "price": "₹1199",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow%C2%A0%C2%A0-%C2%A0?pid=E5N4nRqpMq",
+    "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow%C2%A0%C2%A0-?pid=E5N4nRqpMq",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -7157,7 +7157,7 @@
     "name": "MINI GT LANCIA STRATOS HF 4 1979 SPANISH RALLY CHAMPION",
     "price": "₹1149",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion%C2%A0%C2%A0-%C2%A0?pid=ykL0445LRZ",
+    "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion%C2%A0%C2%A0-?pid=ykL0445LRZ",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -7169,7 +7169,7 @@
     "name": "ABARTH 595 LB-WORKS X ABAS WORKS FIGHTERS",
     "price": "₹1149",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/abarth-595-lb-works-x-abas-works-fighters%C2%A0%C2%A0-%C2%A0?pid=rMNM66OL95",
+    "url": "https://www.karzanddolls.com/details/abarth-595-lb-works-x-abas-works-fighters%C2%A0%C2%A0-?pid=rMNM66OL95",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -7418,7 +7418,7 @@
   },
   "kd_4lgO9nVLoQ": {
     "stock": "in_stock",
-    "name": "MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO [PRE-ORDER]",
+    "name": "MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO",
     "price": "₹1019",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-stradale-rosso-arancio?pid=4lgO9nVLoQ",
@@ -7481,7 +7481,7 @@
     "name": "NISSAN SILVIA S13-R CIRCUIT SPEC V1",
     "price": "₹2099",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/nissan-silvia-s13-r-circuit-spec-v1%C2%A0?pid=Pqp2neYp36",
+    "url": "https://www.karzanddolls.com/details/nissan-silvia-s13-r-circuit-spec-v1?pid=Pqp2neYp36",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -7493,7 +7493,7 @@
     "name": "CHEVROLET SILVERADO KAIDO INTIMIDATOR V1",
     "price": "₹2099",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/chevrolet-silverado-kaido-intimidator-v1%C2%A0?pid=RWg8VRwLKe",
+    "url": "https://www.karzanddolls.com/details/chevrolet-silverado-kaido-intimidator-v1?pid=RWg8VRwLKe",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -7517,7 +7517,7 @@
     "name": "MINI GT TOYOTA AE86 SPRINTER TRUENO KAIDO RACING V1",
     "price": "₹1999",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1%C2%A0%C2%A0-%C2%A0?pid=aPgdn5aLJq",
+    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1%C2%A0%C2%A0-?pid=aPgdn5aLJq",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -7634,7 +7634,7 @@
   },
   "kd_jPp91MrpDa": {
     "stock": "in_stock",
-    "name": "MINI GT DATSUN 510 PRO STREET BRE V1 [PRE-ORDER]",
+    "name": "MINI GT DATSUN 510 PRO STREET BRE V1",
     "price": "₹1859",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-bre-v1?pid=jPp91MrpDa",
@@ -8558,7 +8558,7 @@
   },
   "kd_jPp9E9JpDa": {
     "stock": "in_stock",
-    "name": "N GT RONIN BLISTER PACKAGING",
+    "name": "LB WORKS LAMBORGHINI HURACÁN GT RONIN BLISTER PACKAGING",
     "price": "₹1549",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lb-works-lamborghini-huracan-gt-ronin-blister-packaging?pid=jPp9E9JpDa",
@@ -8609,7 +8609,7 @@
     "name": "TOYOTA SUPRA VEILSIDE COMBAT V-I RED",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/toyota-supra-veilside-combat-v-i-red%C2%A0?pid=Mbga1v9gq8",
+    "url": "https://www.karzanddolls.com/details/toyota-supra-veilside-combat-v-i-red?pid=Mbga1v9gq8",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8645,7 +8645,7 @@
     "name": "MINI GT NISSAN SKYLINE GTR DARK METAL GRAY NISMO BNR34 CRS VERSION",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version%C2%A0?pid=P7pRJbJpjm",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version?pid=P7pRJbJpjm",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8657,7 +8657,7 @@
     "name": "MINI GT ASTON MARTIN AMR24 18 LANCE STROLL 2024 F1 2024",
     "price": "₹1999",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024%C2%A0?pid=aMNB2DRNXd",
+    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024?pid=aMNB2DRNXd",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8693,7 +8693,7 @@
     "name": "MINI GT BMW M3 COMPETITION TOURING PORTIMAO BLUE METALLIC",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic%C2%A0?pid=eJNr0MnpBd",
+    "url": "https://www.karzanddolls.com/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic?pid=eJNr0MnpBd",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8705,7 +8705,7 @@
     "name": "MINI GT FORD MUSTANG MACH 1 GRABBER BLUE",
     "price": "₹1399",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-mach-1-grabber-blue%C2%A0?pid=ywNWeG1pAX",
+    "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-mach-1-grabber-blue?pid=ywNWeG1pAX",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8825,7 +8825,7 @@
     "name": "MINI GT TOYOTA GR86 LBNATION BLACKGOLD",
     "price": "₹1499",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-lbnation-blackgold%C2%A0?pid=ykL04xKLRZ",
+    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-lbnation-blackgold?pid=ykL04xKLRZ",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8873,7 +8873,7 @@
     "name": "MINI GT MAZDA RX-7 RE-AMEMIYA SILVER METALLIC",
     "price": "₹1499",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic%C2%A0?pid=96pm2W9gVK",
+    "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic?pid=96pm2W9gVK",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -8981,7 +8981,7 @@
     "name": "FORD PUMA RALLY1 16 MSPORT FORD WRT 2024 RALLY FINLAND 3RD PLACE",
     "price": "₹1749",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place%C2%A0%C2%A0-%C2%A0?pid=ywNWedxpAX",
+    "url": "https://www.karzanddolls.com/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place%C2%A0%C2%A0-?pid=ywNWedxpAX",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -9305,7 +9305,7 @@
     "name": "MINI GT JAGUAR C-X75 TEST CAR",
     "price": "₹1389",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-test-car%C2%A0%C2%A0-%C2%A0?pid=aPgdlVmgJq",
+    "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-test-car%C2%A0%C2%A0-?pid=aPgdlVmgJq",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -9341,7 +9341,7 @@
     "name": "LB-WORKS X ABAS WORKS ABARTH 595 RED",
     "price": "₹1299",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/lb-works-x-abas-works-abarth-595-red%C2%A0%C2%A0-%C2%A0?pid=4lgOPj2NoQ",
+    "url": "https://www.karzanddolls.com/details/lb-works-x-abas-works-abarth-595-red%C2%A0%C2%A0-?pid=4lgOPj2NoQ",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -9385,8 +9385,8 @@
     "last_price_alert": ""
   },
   "mg_9ec0a032-e111-4eaa-8f08-047d56af0edb": {
-    "stock": "in_stock",
-    "name": "[Blister] Lamborghini Countach LP500S White",
+    "stock": "out_of_stock",
+    "name": "[Blister] Lamborghini Countach LP500S White [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/lamborghini-countach-lp500s-white",
@@ -9399,8 +9399,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_f6d4de3e-71df-4d1c-846c-4510a8340594": {
-    "stock": "in_stock",
-    "name": "[Box] Lancia Delta HF Integrale 1993 Rallye #1368",
+    "stock": "out_of_stock",
+    "name": "[Box] Lancia Delta HF Integrale 1993 Rallye #1368 [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-lancia-delta-hf-integrale-1993-rallye-1368",
@@ -9413,8 +9413,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_c3354669-feb6-4ff6-9f22-db70a99250b5": {
-    "stock": "in_stock",
-    "name": "[Blister] Lancia Delta HF Integrale 1993 Rallye #1368",
+    "stock": "out_of_stock",
+    "name": "[Blister] Lancia Delta HF Integrale 1993 Rallye #1368 [PRE-ORDER]",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-lancia-delta-hf-integrale-1993-rallye-1368",
@@ -9427,8 +9427,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_3849bb8c-5d45-464a-9b51-a624c7159341": {
-    "stock": "in_stock",
-    "name": "[Blister] Lambo Huracan GT3 EVO2 #45",
+    "stock": "out_of_stock",
+    "name": "[Blister] Lambo Huracan GT3 EVO2 #45 [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-lambo-huracan-gt3-evo2-45",
@@ -9441,8 +9441,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_63b2c0ce-71db-43e4-9cc9-22dbd648275a": {
-    "stock": "in_stock",
-    "name": "[Box] Lamborghini Countach LP500S White",
+    "stock": "out_of_stock",
+    "name": "[Box] Lamborghini Countach LP500S White [PRE-ORDER]",
     "price": "₹1249",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-lamborghini-countach-lp500s-white",
@@ -9455,8 +9455,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_aed69cbf-640c-4b96-b71f-6ee0340562cf": {
-    "stock": "in_stock",
-    "name": "[Box] Nissan GTR R35 Custom DuckTail Auto Finesse",
+    "stock": "out_of_stock",
+    "name": "[Box] Nissan GTR R35 Custom DuckTail Auto Finesse [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/nissan-gtr-r35-custom-ducktail-auto-finesse",
@@ -9469,8 +9469,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_b247b71c-82f4-4fd4-9f6c-9c07e6fc894f": {
-    "stock": "in_stock",
-    "name": "[Box] Lambo Huracan GT3 EVO2 #45",
+    "stock": "out_of_stock",
+    "name": "[Box] Lambo Huracan GT3 EVO2 #45 [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-lambo-huracan-gt3-evo2-45",
@@ -9483,8 +9483,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_f4f94c39-0136-4662-9937-7050413d8b84": {
-    "stock": "in_stock",
-    "name": "[Box] Mazda Miata MX5 Modo Red #1367",
+    "stock": "out_of_stock",
+    "name": "[Box] Mazda Miata MX5 Modo Red #1367 [PRE-ORDER]",
     "price": "₹1249",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-mazda-miata-mx5-modo-red-1367",
@@ -9497,8 +9497,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_fdeb0263-c7e0-46cf-9854-d87c8e3e8eb2": {
-    "stock": "in_stock",
-    "name": "[Blister] Mazda Miata MX5 Modo Red #1367",
+    "stock": "out_of_stock",
+    "name": "[Blister] Mazda Miata MX5 Modo Red #1367 [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-mazda-miata-mx5-modo-red-1367",
@@ -9511,8 +9511,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_4acd145f-dbab-46a1-905a-e2f0f9964938": {
-    "stock": "in_stock",
-    "name": "[Blister] Nissan GTR R35 DuckTail Auto Finesse",
+    "stock": "out_of_stock",
+    "name": "[Blister] Nissan GTR R35 DuckTail Auto Finesse [PRE-ORDER]",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-nissan-gtr-r35-ducktail-auto-finesse",
@@ -9525,8 +9525,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_ea3116b7-2881-42cd-a09a-d98a19e71d20": {
-    "stock": "in_stock",
-    "name": "Hotwheels Lunar Porsche Silver Series",
+    "stock": "out_of_stock",
+    "name": "Hotwheels Lunar Porsche Silver Series [PRE-ORDER]",
     "price": "₹799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/hotwheels-lunar-porsche-silver-series",
@@ -9539,8 +9539,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_f06a2540-57d4-44e5-9ab8-140543f547f6": {
-    "stock": "in_stock",
-    "name": "[Blister] Lambo Huracan GT3 EVO2 #93",
+    "stock": "out_of_stock",
+    "name": "[Blister] Lambo Huracan GT3 EVO2 #93 [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-lambo-huracan-gt3-evo2-93",
@@ -9554,7 +9554,7 @@
   },
   "mg_608173b5-90bb-4624-9319-7526d0e8f7b7": {
     "stock": "out_of_stock",
-    "name": "Hotwheels x Supercar Blondie Lamborghini Huracan",
+    "name": "Hotwheels x Supercar Blondie Lamborghini Huracan [PRE-ORDER]",
     "price": "₹3999",
     "source": "minifygram",
     "url": "https://minifygram.com/product/hotwheels-x-supercar-blondie-lamborghini-huracan",
@@ -9567,8 +9567,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_cbb4ae44-255c-4be1-94ff-faa04ce0d89f": {
-    "stock": "in_stock",
-    "name": "[Box] Cadillac Vseries #40 Wayne Taylor 24h IMSA Daytona",
+    "stock": "out_of_stock",
+    "name": "[Box] Cadillac Vseries #40 Wayne Taylor 24h IMSA Daytona [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/cadillac-vseries-40-wayne-taylor-24h-imsa-daytona",
@@ -9581,8 +9581,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_cca2ae79-7c58-4dcd-998f-0b8b61dab1eb": {
-    "stock": "in_stock",
-    "name": "[Box] Lambo Huracan GT3 EVO2 #93",
+    "stock": "out_of_stock",
+    "name": "[Box] Lambo Huracan GT3 EVO2 #93 [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-lambo-huracan-gt3-evo2-93",
@@ -10353,8 +10353,8 @@
     "fc_trusted": true
   },
   "mg_aa621ecb-3a11-4155-8f86-c31ea6fe16ef": {
-    "stock": "in_stock",
-    "name": "[Blister] Cadillac Vseries #40 Wayne Taylor 24h IMSA Daytona",
+    "stock": "out_of_stock",
+    "name": "[Blister] Cadillac Vseries #40 Wayne Taylor 24h IMSA Daytona [PRE-ORDER]",
     "price": "₹1999",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-cadillac-vseries-40-wayne-taylor-24h-imsa-daytona",
@@ -10367,8 +10367,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_29bf98e0-51a5-40f2-b3f2-19da6f974521": {
-    "stock": "in_stock",
-    "name": "[Box] Aston Martin Valhalla Podium Green",
+    "stock": "out_of_stock",
+    "name": "[Box] Aston Martin Valhalla Podium Green [PRE-ORDER]",
     "price": "₹1249",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-aston-martin-valhalla-podium-green",
@@ -10381,8 +10381,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_eadcce18-a140-4e36-8543-b751d1a4c6d6": {
-    "stock": "in_stock",
-    "name": "[Blister] Aston Martin Valhalla Podium Green",
+    "stock": "out_of_stock",
+    "name": "[Blister] Aston Martin Valhalla Podium Green [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-aston-martin-valhalla-podium-green",
@@ -10395,8 +10395,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_3ad43619-3b36-4866-b685-9525faf8a706": {
-    "stock": "in_stock",
-    "name": "[Blister] Merc AMG 63 Metallic Silver",
+    "stock": "out_of_stock",
+    "name": "[Blister] Merc AMG 63 Metallic Silver [PRE-ORDER]",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-merc-amg-63-metallic-silver",
@@ -10409,8 +10409,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_d14d1f23-6170-456e-af76-9194974291e7": {
-    "stock": "in_stock",
-    "name": "[Box] Merc AMG 63 Metallic Silver",
+    "stock": "out_of_stock",
+    "name": "[Box] Merc AMG 63 Metallic Silver [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-merc-amg-63-metallic-silver",
@@ -11433,7 +11433,7 @@
   },
   "mg_9d2ec933-36a5-4bf3-a9c1-91159a836ce6": {
     "stock": "out_of_stock",
-    "name": "Nissan Skyline GT-R (R34) Tamiya X Kaido \"THE HORNET\" V2",
+    "name": "Nissan Skyline GT-R (R34) Tamiya X Kaido \"THE HORNET\" V2 [PRE-ORDER]",
     "price": "₹2099",
     "source": "minifygram",
     "url": "https://minifygram.com/product/nissan-skyline-gt-r-r34-tamiya-x-kaido-the-hornet-v2",
@@ -11919,7 +11919,7 @@
   },
   "kd_GXpKRYALmx": {
     "stock": "in_stock",
-    "name": "WORKS LIME METALLIC BLISTER PACKAGING [PRE-ORDER]",
+    "name": "PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-huracan-lb-works-lime-metallic-blister-packaging?pid=GXpKRYALmx",
@@ -11931,7 +11931,7 @@
   },
   "kd_eJNrZDWNBd": {
     "stock": "in_stock",
-    "name": "WORKS LIME METALLIC [PRE-ORDER]",
+    "name": "PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-huracan-lb-works-lime-metallic?pid=eJNrZDWNBd",
@@ -11955,8 +11955,8 @@
     "stock_ver": "fc_listing_v3"
   },
   "mg_09c388a5-1e76-468f-b5f3-8f4e43b61f59": {
-    "stock": "in_stock",
-    "name": "[Box] MGT01377 Lamborghini Huracán LB★WORKS Lime Metallic",
+    "stock": "out_of_stock",
+    "name": "[Box] MGT01377 Lamborghini Huracán LB★WORKS Lime Metallic [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/mgt01377-lamborghini-hurac-n-lb-works-lime-metallic",
@@ -11969,8 +11969,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_6255bf46-23dd-4894-b8a7-a8b8ed9ed7b3": {
-    "stock": "in_stock",
-    "name": "[Blister] MGT01377 Lamborghini Huracán LB★WORKS Lime Metallic",
+    "stock": "out_of_stock",
+    "name": "[Blister] MGT01377 Lamborghini Huracán LB★WORKS Lime Metallic [PRE-ORDER]",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-mgt01377-lamborghini-hurac-n-lb-works-lime-metallic",
@@ -11983,8 +11983,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_e5bd5e13-195d-47f1-86f0-edb317db9dc6": {
-    "stock": "in_stock",
-    "name": "[Box] MGT01386 BMW Z3 Hellrot",
+    "stock": "out_of_stock",
+    "name": "[Box] MGT01386 BMW Z3 Hellrot [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-mgt01386-bmw-z3-hellrot",
@@ -11997,8 +11997,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_ca9584b2-a7ff-4dfb-99ac-e9922a9a5824": {
-    "stock": "in_stock",
-    "name": "[Blister] MGT01386 BMW Z3 Hellrot",
+    "stock": "out_of_stock",
+    "name": "[Blister] MGT01386 BMW Z3 Hellrot [PRE-ORDER]",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-mgt01386-bmw-z3-hellrot",
@@ -12011,8 +12011,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_8e2d5062-c2f3-4cb2-99e0-162e94490be8": {
-    "stock": "in_stock",
-    "name": "[Blister] MGT01381 Lamborghini Urus Performante Viola Pasifae",
+    "stock": "out_of_stock",
+    "name": "[Blister] MGT01381 Lamborghini Urus Performante Viola Pasifae [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-mgt01381-lamborghini-urus-performante-viola-pasifae",
@@ -12025,8 +12025,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_176dcb59-d75a-4f17-9caa-115b215a7c61": {
-    "stock": "in_stock",
-    "name": "[Blister] MGT01379 Cadillac Eldorado Biarritz 1959 Black",
+    "stock": "out_of_stock",
+    "name": "[Blister] MGT01379 Cadillac Eldorado Biarritz 1959 Black [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-mgt01379-cadillac-eldorado-biarritz-1959-black",
@@ -12056,7 +12056,7 @@
   },
   "kd_RWg8Z1KLKe": {
     "stock": "in_stock",
-    "name": "N STERRATO ALL-TERRAIN SET",
+    "name": "LAMBORGHINI HURACÁN STERRATO ALL-TERRAIN SET",
     "price": "₹5999",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-set?pid=RWg8Z1KLKe",
@@ -12224,7 +12224,7 @@
   },
   "mg_d178ec18-05e2-4c26-a917-f3eedb8577f9": {
     "stock": "out_of_stock",
-    "name": "MGT1204",
+    "name": "MGT1204 [PRE-ORDER]",
     "price": "₹1499",
     "source": "minifygram",
     "url": "https://minifygram.com/product/mgt1204",
@@ -12318,7 +12318,7 @@
   },
   "mg_cfbd3caf-fa6b-437a-a751-bfcd7e01f210": {
     "stock": "out_of_stock",
-    "name": "KHMG177 BMW M3 Kaido V1",
+    "name": "KHMG177 BMW M3 Kaido V1 [PRE-ORDER]",
     "price": "₹1749",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg177-bmw-m3-kaido-v1",
@@ -12332,7 +12332,7 @@
   },
   "mg_1f6b2803-8cab-4542-8a3c-d13a29d51853": {
     "stock": "out_of_stock",
-    "name": "KHMG173 Honda NSX V2",
+    "name": "KHMG173 Honda NSX V2 [PRE-ORDER]",
     "price": "₹1799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg173-honda-nsx-v2",
@@ -12346,7 +12346,7 @@
   },
   "mg_ad9dfbfd-fae4-4415-bfdb-cfde88a4d302": {
     "stock": "out_of_stock",
-    "name": "KHMG162 BMW M3 Kaido V1",
+    "name": "KHMG162 BMW M3 Kaido V1 [PRE-ORDER]",
     "price": "₹1799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg162-bmw-m3-kaido-v1",
@@ -12360,7 +12360,7 @@
   },
   "mg_76033d4f-35da-4892-a4df-b396e1128a0b": {
     "stock": "out_of_stock",
-    "name": "MiniGT869 Nissan Skyline GTR Gunmetal Matsuda",
+    "name": "MiniGT869 Nissan Skyline GTR Gunmetal Matsuda [PRE-ORDER]",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/minigt869-nissan-skyline-gtr-gunmetal-matsuda",
@@ -12373,8 +12373,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_140e0f5f-8ef0-4723-80cc-343d69ace16c": {
-    "stock": "in_stock",
-    "name": "[Box] MiniGT 1022 Silvia S15 LB-Super Silhouette",
+    "stock": "out_of_stock",
+    "name": "[Box] MiniGT 1022 Silvia S15 LB-Super Silhouette [PRE-ORDER]",
     "price": "₹1299",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt-1022-silvia-s15-lb-super-silhouette",
@@ -12388,7 +12388,7 @@
   },
   "mg_310ac2f5-670f-4bd3-9bba-44d8750b05b4": {
     "stock": "out_of_stock",
-    "name": "[Box] MiniGT00970 MERC EQS 580 4matic Red Mettalic",
+    "name": "[Box] MiniGT00970 MERC EQS 580 4matic Red Mettalic [PRE-ORDER]",
     "price": "₹1199",
     "source": "minifygram",
     "url": "https://minifygram.com/product/minigt00970-merc-eqs-580-4matic-red-mettalic",
@@ -12961,7 +12961,8 @@
     "fc_trusted": true
   },
   "_meta": {
-    "fc_offset": 0
+    "fc_offset": 0,
+    "mg_wm": "2026-10-15T17:49:41.381906+00:00"
   },
   "fc_24473502": {
     "stock": "in_stock",
@@ -13136,7 +13137,7 @@
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
     "stock": "out_of_stock",
-    "name": "KHMG216 BMW M3 KAIDO GT V2",
+    "name": "KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]",
     "price": "₹1749",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg216-bmw-m3-kaido-gt-v2",
@@ -13361,7 +13362,7 @@
   },
   "mg_fdca91f7-dfa5-4e2d-ae69-a65b0140adc1": {
     "stock": "out_of_stock",
-    "name": "KHMG163 Kaido House Nissan Skyline GTR R33 Carbon V2",
+    "name": "KHMG163 Kaido House Nissan Skyline GTR R33 Carbon V2 [PRE-ORDER]",
     "price": "₹1799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg163-kaido-house-nissan-skyline-gtr-r33-carbon-v2",
@@ -13651,7 +13652,7 @@
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
     "stock": "out_of_stock",
-    "name": "[Box] MiniGT961 Supra A80 TS Gold",
+    "name": "[Box] MiniGT961 Supra A80 TS Gold [PRE-ORDER]",
     "price": "₹999",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt961-supra-a80-ts-gold",
@@ -14023,7 +14024,7 @@
   },
   "mg_de59f004-41e6-4b68-8787-deed3b5edf70": {
     "stock": "out_of_stock",
-    "name": "KHMG216 BMW M3 KAIDO GT V2",
+    "name": "KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]",
     "price": "₹1999",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg216-bmw-m3-kaido-gt-v2-2",
@@ -14479,7 +14480,7 @@
   },
   "mg_70cf1a66-5326-4b31-b1a7-e10a0cafecce": {
     "stock": "out_of_stock",
-    "name": "[Box] MiniGT1218 Porsche Rexy #77",
+    "name": "[Box] MiniGT1218 Porsche Rexy #77 [PRE-ORDER]",
     "price": "₹1599",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box",
@@ -15965,8 +15966,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-18T08:00:00",
-    "fc_api_seen_at": "2026-10-18T08:00:00",
+    "fc_listed_at": "2026-10-18T08:15:00",
+    "fc_api_seen_at": "2026-10-18T08:15:00",
     "fc_trusted": true
   },
   "fc_24390969": {
@@ -16155,7 +16156,7 @@
     "fc_trusted": true
   },
   "fc_24503746": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
     "price": "₹161",
     "source": "firstcry",
@@ -16166,8 +16167,8 @@
     "last_restock_alert": "2026-10-18T05:48:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:30:00",
-    "fc_api_seen_at": "2026-10-18T06:30:00",
+    "fc_listed_at": "2026-10-18T08:15:00",
+    "fc_api_seen_at": "2026-10-18T08:15:00",
     "fc_trusted": true
   },
   "fc_24503335": {
@@ -16719,7 +16720,7 @@
   },
   "mg_d4867c37-4c2f-4230-8c16-21194c38ce87": {
     "stock": "out_of_stock",
-    "name": "RLC Exclusive Porsche 959",
+    "name": "RLC Exclusive Porsche 959 [PRE-ORDER]",
     "price": "₹4500",
     "source": "minifygram",
     "url": "https://minifygram.com/product/rlc-exclusive-porsche-959",
@@ -16757,7 +16758,7 @@
   },
   "mg_37609c85-ae03-460a-b86a-f348fb17b98d": {
     "stock": "out_of_stock",
-    "name": "[Blister] MiniGT 1252 Nissan Skyline GTR Brain O'Conner",
+    "name": "[Blister] MiniGT 1252 Nissan Skyline GTR Brain O'Conner [PRE-ORDER]",
     "price": "₹1799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-minigt-1252-nissan-skyline-gtr-brain-o-conner",
@@ -16770,8 +16771,8 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_b5888b7e-034a-4c31-8762-835b786ee346": {
-    "stock": "in_stock",
-    "name": "[Blister] MiniGT 1256 Dodge Charger Fast Five Dominic Toretto",
+    "stock": "out_of_stock",
+    "name": "[Blister] MiniGT 1256 Dodge Charger Fast Five Dominic Toretto [PRE-ORDER]",
     "price": "₹1599",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-minigt-1256-dodge-charger-fast-five-dominic-toretto",
@@ -17276,8 +17277,8 @@
     "hm_verified_at": "2026-10-17T09:15:00"
   },
   "mg_1ff34650-6575-4be2-ad2e-0b776667176f": {
-    "stock": "in_stock",
-    "name": "KHMG216 BMW M3 KAIDO GT V2",
+    "stock": "out_of_stock",
+    "name": "KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg216-bmw-m3-kaido-gt-v2-3",
@@ -17291,7 +17292,7 @@
   },
   "mg_de787f42-481d-4673-9352-6c72d9781a19": {
     "stock": "out_of_stock",
-    "name": "KHMG161 Datsun 510 Pro Street Buta V1",
+    "name": "KHMG161 Datsun 510 Pro Street Buta V1 [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg161-datsun-510-pro-street-buta-v1",
@@ -17460,8 +17461,8 @@
     "last_price_alert": ""
   },
   "mg_af2bb81c-07a2-4216-a872-8e83359f6e48": {
-    "stock": "in_stock",
-    "name": "MGT855",
+    "stock": "out_of_stock",
+    "name": "MGT855 [PRE-ORDER]",
     "price": "₹1649",
     "source": "minifygram",
     "url": "https://minifygram.com/product/mgt855",
@@ -17551,7 +17552,7 @@
   },
   "mg_6488c023-f6ec-4820-a338-8d2cbcd12486": {
     "stock": "out_of_stock",
-    "name": "[Box] MGT01067 Toyota Supra A80 TS GT-300 Purple",
+    "name": "[Box] MGT01067 Toyota Supra A80 TS GT-300 Purple [PRE-ORDER]",
     "price": "₹1099",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-mgt01067-toyota-supra-a80-ts-gt-300-purple",
@@ -17609,8 +17610,8 @@
     "last_price_alert": ""
   },
   "mg_72362b74-bf28-4200-9d46-027ec0cc830b": {
-    "stock": "in_stock",
-    "name": "KHMG211 Nissan Skyline 2000GT-R V2",
+    "stock": "out_of_stock",
+    "name": "KHMG211 Nissan Skyline 2000GT-R V2 [PRE-ORDER]",
     "price": "₹1799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg211-nissan-skyline-2000gt-r-v2",
@@ -17796,7 +17797,7 @@
   },
   "kd_OdNZW0jLzk": {
     "stock": "in_stock",
-    "name": "MINI GT JAGUAR C-X75 BLUE [PRE-ORDER]",
+    "name": "MINI GT JAGUAR C-X75 BLUE",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-blue?pid=OdNZW0jLzk",
@@ -17847,7 +17848,7 @@
     "name": "MINI GT NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 2023",
     "price": "₹1579",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lbsuper-silhouette-s15-silvia-555-2023-%C2%A0%C2%A0-%C2%A0?pid=zONvx9mpBK",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lbsuper-silhouette-s15-silvia-555-2023-%C2%A0%C2%A0-?pid=zONvx9mpBK",
     "first_seen": "2026-10-05T13:00:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -17907,7 +17908,7 @@
     "name": "MINI GT BENTLEY FLYING SPUR MONACO YELLOW",
     "price": "₹1299",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-bentley-flying-spur-monaco-yellow%C2%A0%C2%A0-%C2%A0?pid=GXpKAkjNmx",
+    "url": "https://www.karzanddolls.com/details/mini-gt-bentley-flying-spur-monaco-yellow%C2%A0%C2%A0-?pid=GXpKAkjNmx",
     "first_seen": "2026-10-05T13:15:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -17919,7 +17920,7 @@
     "name": "MINI GT NISSAN Z LB NATION WORKS LB GOLD",
     "price": "₹1299",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-z-lb-nation-works-lb-gold%C2%A0%C2%A0-%C2%A0?pid=rMNMPkOg95",
+    "url": "https://www.karzanddolls.com/details/mini-gt-nissan-z-lb-nation-works-lb-gold%C2%A0%C2%A0-?pid=rMNMPkOg95",
     "first_seen": "2026-10-05T13:15:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -17968,7 +17969,7 @@
   },
   "mg_f20f0434-4471-4539-8540-e3ad47600ced": {
     "stock": "out_of_stock",
-    "name": "[Blister] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
+    "name": "[Blister] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\" [PRE-ORDER]",
     "price": "₹2399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/blister-mgt1143-porsche-911-gt3-r-77-ao-racing-skeleton-rexy",
@@ -17982,7 +17983,7 @@
   },
   "mg_a09fe8c3-da07-49ca-b071-ce34c4a93ff2": {
     "stock": "out_of_stock",
-    "name": "[Box] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
+    "name": "[Box] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\" [PRE-ORDER]",
     "price": "₹1899",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-mgt1143-porsche-911-gt3-r-77-ao-racing-skeleton-rexy",
@@ -18012,7 +18013,7 @@
   },
   "mg_cb869f68-7bfa-4fb5-9b1a-71aadb0d4adc": {
     "stock": "out_of_stock",
-    "name": "[Box] MGT1087 Lambo Aventador Limited Edition Mattel Black",
+    "name": "[Box] MGT1087 Lambo Aventador Limited Edition Mattel Black [PRE-ORDER]",
     "price": "₹1399",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-mgt1087-lambo-aventador-limited-edition-mattel-black",
@@ -18218,7 +18219,7 @@
   },
   "mg_2f44ab58-a631-4f0f-850b-9f4ce8e6268b": {
     "stock": "out_of_stock",
-    "name": "MGT1052 Porsche 911 GT3R #77",
+    "name": "MGT1052 Porsche 911 GT3R #77 [PRE-ORDER]",
     "price": "₹1999",
     "source": "minifygram",
     "url": "https://minifygram.com/product/mgt1052-porsche-911-gt3r-77",
@@ -18232,7 +18233,7 @@
   },
   "mg_6a87abc7-0e6f-4f56-ba13-41a84167c79b": {
     "stock": "out_of_stock",
-    "name": "[Box] MGT1129 Lambo Huracan GT3 EVO2 #45 DEX Imaging 2024",
+    "name": "[Box] MGT1129 Lambo Huracan GT3 EVO2 #45 DEX Imaging 2024 [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/mgt1129-lambo-huracan-gt3-evo2-45-dex-imaging-2024",
@@ -18354,7 +18355,7 @@
   },
   "kd_V2gJEjApe4": {
     "stock": "in_stock",
-    "name": "N STERRATO ALL-TERRAIN TERRA",
+    "name": "LAMBORGHINI HURACÁN STERRATO ALL-TERRAIN TERRA",
     "price": "₹1599",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-terra?pid=V2gJEjApe4",
@@ -18366,7 +18367,7 @@
   },
   "kd_KBg7ZKvpRr": {
     "stock": "in_stock",
-    "name": "N STERRATO ALL-TERRAIN BOSCO",
+    "name": "LAMBORGHINI HURACÁN STERRATO ALL-TERRAIN BOSCO",
     "price": "₹1599",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-bosco?pid=KBg7ZKvpRr",
@@ -18378,7 +18379,7 @@
   },
   "kd_0mNyKoGpkj": {
     "stock": "in_stock",
-    "name": "N STERRATO ALL-TERRAIN SABBIA",
+    "name": "LAMBORGHINI HURACÁN STERRATO ALL-TERRAIN SABBIA",
     "price": "₹1599",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-sabbia?pid=0mNyKoGpkj",
@@ -18390,7 +18391,7 @@
   },
   "kd_PzNbxrOpbQ": {
     "stock": "in_stock",
-    "name": "N STERRATO ALL-TERRAIN NEVE",
+    "name": "LAMBORGHINI HURACÁN STERRATO ALL-TERRAIN NEVE",
     "price": "₹1599",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-neve?pid=PzNbxrOpbQ",
@@ -19144,7 +19145,7 @@
     "name": "NISSAN SKYLINE GTR DARK METAL GRAY NISMO BCNR33 CRS VERSION",
     "price": "₹1199",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version%C2%A0?pid=rMNM6XEL95",
+    "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version?pid=rMNM6XEL95",
     "first_seen": "2026-10-15T11:00:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -19180,7 +19181,7 @@
     "name": "MINI GT ASTON MARTIN DBS HYPER RED",
     "price": "₹1299",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-hyper-red%C2%A0%C2%A0-%C2%A0?pid=GvLPjZWgod",
+    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-hyper-red%C2%A0%C2%A0-?pid=GvLPjZWgod",
     "first_seen": "2026-10-15T11:00:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -19276,7 +19277,7 @@
     "name": "BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE",
     "price": "₹1299",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/bmw-i7-xdrive60-alpine-white-black-sapphire%C2%A0%C2%A0-%C2%A0?pid=x7Le8Y3NY0",
+    "url": "https://www.karzanddolls.com/details/bmw-i7-xdrive60-alpine-white-black-sapphire%C2%A0%C2%A0-?pid=x7Le8Y3NY0",
     "first_seen": "2026-10-15T11:15:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -19613,7 +19614,7 @@
     "name": "BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE",
     "price": "₹1149",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/bmw%C2%A0i7%C2%A0xdrive60%C2%A0alpine%C2%A0white%C2%A0black%C2%A0sapphire%C2%A0%C2%A0%C2%A0%C2%A0?pid=RnLjVVmLm0",
+    "url": "https://www.karzanddolls.com/details/bmw%C2%A0i7%C2%A0xdrive60%C2%A0alpine%C2%A0white%C2%A0black%C2%A0sapphire?pid=RnLjVVmLm0",
     "first_seen": "2026-10-17T12:30:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -19637,7 +19638,7 @@
     "name": "MINI GT ASTON MARTIN DBS 007 EDITION",
     "price": "₹1199",
     "source": "karzdolls",
-    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-007-edition%C2%A0%C2%A0-%C2%A0-%C2%A0-%C2%A0?pid=PzNbBXDNbQ",
+    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-007-edition%C2%A0%C2%A0-%C2%A0-%C2%A0-?pid=PzNbBXDNbQ",
     "first_seen": "2026-10-17T12:45:00",
     "last_seen": "2026-10-18T08:15:00",
     "alerted_new": true,
@@ -19782,8 +19783,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T08:00:00",
-    "fc_api_seen_at": "2026-10-18T08:00:00",
+    "fc_listed_at": "2026-10-18T08:15:00",
+    "fc_api_seen_at": "2026-10-18T08:15:00",
     "fc_trusted": true
   },
   "fc_24776070": {
@@ -19801,5 +19802,319 @@
     "fc_listed_at": "2026-10-18T08:15:00",
     "fc_api_seen_at": "2026-10-18T08:15:00",
     "fc_trusted": true
+  },
+  "mg_9dc55db8-837e-4280-b1d8-5fc5810cc8ec": {
+    "stock": "out_of_stock",
+    "name": "🃏 OnePiece TCG Booster single pack OP-08",
+    "price": "₹399",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/onepiece-tcg-booster-single-pack-op-08",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-08-02T16:04:13.270619+00:00",
+    "stock_ver": "mg_skus_v1"
+  },
+  "kd_aPgdnJbLJq": {
+    "stock": "in_stock",
+    "name": "KOOL KOMBI PANTONE ORANGE",
+    "price": "₹299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/kool-kombi-pantone-orange?pid=aPgdnJbLJq",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Pqp26OOp36": {
+    "stock": "in_stock",
+    "name": "73 HONDA CIVIC CUSTOM AERO LIFT",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/73%C2%A0honda%C2%A0civic%C2%A0custom%C2%A0%C2%A0aero%C2%A0lift?pid=Pqp26OOp36",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_ykL04keLRZ": {
+    "stock": "in_stock",
+    "name": "24 HONDA CIVIC TYPE R WITH KOUSOKU CAMION DE TRANSPORT",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/24-honda-civic-type-r-with-kousoku-camion-de-transport?pid=ykL04keLRZ",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Pqp2nvKp36": {
+    "stock": "in_stock",
+    "name": "07 HONDA CIVIC TYPE R KOUSOKU HAULER",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/07-honda-civic-type-r-kousoku-hauler?pid=Pqp2nvKp36",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_zONvZ89NBK": {
+    "stock": "in_stock",
+    "name": "VOLKSWAGEN CORRADO VR6 WITH RETRO RIGCAMION",
+    "price": "₹1399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/volkswagen-corrado-vr6-with-retro-rigcamion-?pid=zONvZ89NBK",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_VbpAZqQgrM": {
+    "stock": "in_stock",
+    "name": "77 PACKIN PACER",
+    "price": "₹399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/77%C2%A0packin%C2%A0pacer?pid=VbpAZqQgrM",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_RWg8JbwLKe": {
+    "stock": "in_stock",
+    "name": "RAPID PULSE RED",
+    "price": "₹167",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/rapid-pulse-red?pid=RWg8JbwLKe",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_8JNqdRvg4Q": {
+    "stock": "in_stock",
+    "name": "HOT WHEENGS",
+    "price": "₹167",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hot-wheengs?pid=8JNqdRvg4Q",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_KbNEYylNR0": {
+    "stock": "in_stock",
+    "name": "HW BOGZILLA GREEN",
+    "price": "₹167",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hw-bogzilla-green?pid=KbNEYylNR0",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_zONv0GmpBK": {
+    "stock": "in_stock",
+    "name": "RETRO RACERS WITH STREET BEASTS",
+    "price": "₹1672",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/retro-racers-with-street-beasts?pid=zONv0GmpBK",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GwLxK5ZNXY": {
+    "stock": "in_stock",
+    "name": "HW FUN PARK WHEELS GIFT PACK",
+    "price": "₹759",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hw-fun-park-wheels-gift-pack%C2%A0%C2%A0-?pid=GwLxK5ZNXY",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_y7gGzQopre": {
+    "stock": "in_stock",
+    "name": "HW GASSERS 5PC GIFT PACK WITH STREET BEASTS",
+    "price": "₹1678",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/hw-gassers-5pc-gift-pack%C2%A0with-street-beasts?pid=y7gGzQopre",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_10gzmPApAV": {
+    "stock": "in_stock",
+    "name": "MARIO KART VEHICLE 4 PC GIFT PACK",
+    "price": "₹2399",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mario-kart-vehicle-4-pc-gift-pack?pid=10gzmPApAV",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_8JNqOX1p4Q": {
+    "stock": "in_stock",
+    "name": "FERRARI WITH STREET BEASTS JKG19",
+    "price": "₹1798",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/ferrari-with-street-beasts-jkg19?pid=8JNqOX1p4Q",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_e7g58G0pmv": {
+    "stock": "in_stock",
+    "name": "FERRARI WITH X-RAYCERS",
+    "price": "₹1798",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/ferrari-with-x-raycers?pid=e7g58G0pmv",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_P7pRJo7pjm": {
+    "stock": "in_stock",
+    "name": "FERRARI WITH HW FUN PARK JBJ88",
+    "price": "₹1708",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/ferrari-with-hw-fun-park-jbj88?pid=P7pRJo7pjm",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Pqp2n9Op36": {
+    "stock": "in_stock",
+    "name": "BATMAN 10 COLLECTION PACK OF 10 CARS",
+    "price": "₹2999",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/batman-10-collection-pack-of-10-cars?pid=Pqp2n9Op36",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_V2gJeAxpe4": {
+    "stock": "in_stock",
+    "name": "MARIO GVD30",
+    "price": "₹799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mario-gvd30?pid=V2gJeAxpe4",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_OyLoZOjNb2": {
+    "stock": "in_stock",
+    "name": "BOWSER JR",
+    "price": "₹799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bowser-jr?pid=OyLoZOjNb2",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Ezgl2nXLMr": {
+    "stock": "in_stock",
+    "name": "YOSHI GVD30",
+    "price": "₹799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/yoshi-gvd30?pid=Ezgl2nXLMr",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GoL1JD5pBA": {
+    "stock": "in_stock",
+    "name": "TOAD GVD30",
+    "price": "₹799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/toad-gvd30?pid=GoL1JD5pBA",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GvLPjdVgod": {
+    "stock": "in_stock",
+    "name": "LUIGI GVD30",
+    "price": "₹799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/luigi-gvd30?pid=GvLPjdVgod",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_aMNBWa0LXd": {
+    "stock": "in_stock",
+    "name": "MINI GT MAZDA AZ-1 LIBERTY WALK LB40 WHITE 2024 TOKYO AUTO Salon",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon?pid=aMNBWa0LXd",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_aMNBY40gXd": {
+    "stock": "in_stock",
+    "name": "PREORDER LAND ROVER DEFENDER 110 1998 CAMEL TROPHY TIERRA DEL FUEGO CT.24 ITALY [PRE-ORDER]",
+    "price": "₹1699",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-1998-camel-trophy-tierra-del-fuego-ct24-italy?pid=aMNBY40gXd",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_RnLjdRDgm0": {
+    "stock": "in_stock",
+    "name": "PREORDER LAND ROVER DEFENDER 110 1998 CAMEL TROPHY TIERRA DEL FUEGO CT.24 ITALY BLISTER PACKAGING [PRE-ORDER]",
+    "price": "₹1799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-1998-camel-trophy-tierra-del-fuego-ct24-italy-blister-packaging?pid=RnLjdRDgm0",
+    "first_seen": "2026-10-18T08:15:00",
+    "last_seen": "2026-10-18T08:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
