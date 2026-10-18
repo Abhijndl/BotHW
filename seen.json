@@ -3868,7 +3868,7 @@
     "fc_trusted": true
   },
   "fc_23351187": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 129/250 Standard Kart Die Cat Free Wheel Toy Car- Mullticolor",
     "price": "₹175",
     "source": "firstcry",
@@ -3876,11 +3876,11 @@
     "first_seen": "2026-07-21T11:11:54",
     "last_seen": "2026-10-18T06:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-05T12:26:49",
+    "last_restock_alert": "2026-10-18T06:52:26",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-05T12:45:00",
-    "fc_api_seen_at": "2026-10-05T12:45:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_22928007": {
@@ -5054,8 +5054,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-18T06:15:00",
-    "fc_api_seen_at": "2026-10-18T06:15:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "mg_65c33468-f4bb-49a6-a8b5-08098222884f": {
@@ -10531,7 +10531,7 @@
   "fc_23700379": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Streets Of JPN Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
-    "price": "₹1799",
+    "price": "₹1999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-streets-of-jpn-die-cast-free-wheel-toy-car-pack-of-6-multicolor/23700379/product-detail",
     "first_seen": "2026-09-02T04:32:37",
@@ -10540,8 +10540,8 @@
     "last_restock_alert": "2026-09-24T13:03:41",
     "last_price_alert": "2026-09-22T12:16:58",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:15:00",
-    "fc_api_seen_at": "2026-10-18T06:15:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_23700381": {
@@ -10561,7 +10561,7 @@
     "fc_trusted": true
   },
   "fc_23930666": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 - Multcolor",
     "price": "₹764",
     "source": "firstcry",
@@ -10572,8 +10572,8 @@
     "last_restock_alert": "2026-10-17T14:08:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T14:45:00",
-    "fc_api_seen_at": "2026-10-17T14:45:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24248193": {
@@ -10604,8 +10604,8 @@
     "last_restock_alert": "2026-10-10T06:58:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:30:00",
-    "fc_api_seen_at": "2026-10-18T06:30:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_22597522": {
@@ -12734,8 +12734,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-18T06:30:00",
-    "fc_api_seen_at": "2026-10-18T06:30:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24313540": {
@@ -13226,8 +13226,8 @@
     "last_price_alert": "2026-09-22T11:04:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-18T05:15:00",
-    "fc_api_seen_at": "2026-10-18T05:15:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_22548069": {
@@ -13839,8 +13839,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-15T11:15:00",
-    "fc_api_seen_at": "2026-10-15T11:15:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24514779": {
@@ -14542,7 +14542,7 @@
   "fc_24503747": {
     "stock": "out_of_stock",
     "name": "Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - Green",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-die-cast-free-wheel-toy-car-green/24503747/product-detail",
     "first_seen": "2026-09-20T08:51:11",
@@ -14551,8 +14551,8 @@
     "last_restock_alert": "2026-10-17T10:01:37",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:15:00",
-    "fc_api_seen_at": "2026-10-18T06:15:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24503821": {
@@ -15019,8 +15019,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:30:00",
-    "fc_api_seen_at": "2026-10-18T06:30:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24537351": {
@@ -18877,7 +18877,7 @@
   "fc_24768898": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '96 Dodge Viper GTS Die Cast Free Wheel Toy Car - Black",
-    "price": "₹166",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-96-dodge-viper-gts-die-cast-free-wheel-toy-car-black/24768898/product-detail",
     "first_seen": "2026-10-13T13:30:00",
@@ -18886,12 +18886,12 @@
     "last_restock_alert": "2026-10-15T08:26:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24761909": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
     "price": "₹166",
     "source": "firstcry",
@@ -18902,8 +18902,8 @@
     "last_restock_alert": "2026-10-16T14:16:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T05:15:00",
-    "fc_api_seen_at": "2026-10-18T05:15:00",
+    "fc_listed_at": "2026-10-18T06:45:00",
+    "fc_api_seen_at": "2026-10-18T06:45:00",
     "fc_trusted": true
   },
   "fc_24768903": {
