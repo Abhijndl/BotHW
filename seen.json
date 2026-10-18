@@ -20699,7 +20699,7 @@
     "last_price_alert": ""
   },
   "fc_24776080": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey",
     "price": "₹179",
     "source": "firstcry",
@@ -20713,7 +20713,7 @@
     "fc_listed_at": "2026-10-18T19:00:00",
     "fc_api_seen_at": "2026-10-18T19:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24776095"
   },
