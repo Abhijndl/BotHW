@@ -71,48 +71,23 @@ def listing(pcode="248001", instock=False):
 
 
 lst = listing()
-lst0 = listing(pcode="0")
 lin = listing(instock=True)
-print(f"listing 248001: {len(lst)} products; pcode=0: {len(lst0)}; in-stock filter: {len(lin)}")
-target = "24473731"
-t = lst.get(target)
-print("TARGET listing:", {k: t.get(k) for k in ("PId", "PNm", "CrntStock", "MRP", "discprice", "TTData", "P_Grp_ID", "Excl", "SzCnt", "ClrCnt")} if t else "not in listing")
-print("TARGET pcode=0 CrntStock:", (lst0.get(target) or {}).get("CrntStock"), "| in in-stock list:", target in lin)
-
-# product pages: target + a sample of low-stock and normal-stock cars
-low = sorted([p for p in lst.values() if 0 < int(p.get("CrntStock") or 0) <= 4], key=lambda p: int(p["CrntStock"]))[:8]
-mid = [p for p in lst.values() if 20 <= int(p.get("CrntStock") or 0) <= 60][:3]
-zero = [p for p in lst.values() if int(p.get("CrntStock") or 0) == 0][:3]
-sample = ([t] if t else []) + low + mid + zero
-
-
-def pdp(p):
-    pid = str(p["PId"])
-    url = f"https://www.firstcry.com/hot-wheels/x/{pid}/product-detail"
-    r = S.get(url, headers=H, timeout=25)
-    txt = r.text
-    m = re.search(r"CurrentProductDetailJSON\s*=\s*(\{.*?\})\s*[,;]\s*\w+\s*=", txt, re.S)
-    info = None
-    if m:
-        try:
-            j = json.loads(m.group(1))
-            info = j.get(pid)
-        except Exception as e:
-            info = {"parse_error": str(e), "head": m.group(1)[:300]}
-    flags = {k: (info or {}).get(k) for k in ("CS", "Rqty", "SCF", "EC", "QueCount", "StockT", "isOOS", "OOS",
-                                                   "MLfb", "Ms", "Mc", "IsActive", "sz", "Dis")} if isinstance(info, dict) else None
-    stock_like = {k: v for k, v in (info or {}).items()
-                  if isinstance(info, dict) and re.search(r"stock|qty|oos|avail|cs$|^cs|notify|sell|inv", k, re.I)} if isinstance(info, dict) else None
-    return {"pid": pid, "name": p["PNm"][:55], "listing_CrntStock": p.get("CrntStock"),
-            "status": r.status_code, "pdp_fields": flags, "stock_like": stock_like,
-            "keys": sorted(info.keys())[:80] if isinstance(info, dict) else None,
-            "cc": r.headers.get("cache-control"), "st": r.headers.get("server-timing")}
-
-
-with ThreadPoolExecutor(6) as ex:
+print(f"listing 248001: {len(lst)} products; in-stock filter: {len(lin)}")
+pos = {pid: p for pid, p in lst.items() if int(p.get("CrntStock") or 0) > 0}
+not_in = [p for pid, p in pos.items() if pid not in lin]
+in_low = sorted([p for pid, p in pos.items() if pid in lin], key=lambda p: int(p["CrntStock"]))[:14]
+extra = [p for pid, p in lin.items() if pid not in lst][:5]
+print(f"stock>0 in catalogue: {len(pos)}; of those NOT on in-stock list: {len(not_in)}; on in-stock list but missing from catalogue: {len(extra)}")
+sample = not_in[:24] + in_low + extra
+with ThreadPoolExecutor(8) as ex:
     rows = list(ex.map(pdp, sample))
-for i, row in enumerate(rows):
-    if i == 0:
-        print("\nTARGET PDP keys:", row["keys"])
-    print(json.dumps({k: row[k] for k in ("pid", "name", "listing_CrntStock", "status", "pdp_fields", "stock_like", "cc")}, ensure_ascii=False))
+agree = disagree = 0
+for row in rows:
+    on = row["pid"] in lin
+    cs = (row["pdp_fields"] or {}).get("CS")
+    lc = (lin.get(row["pid"]) or {}).get("CrntStock")
+    ok = (on and isinstance(cs, int) and cs > 0) or ((not on) and cs == 0)
+    agree += ok; disagree += (not ok)
+    print(("OK  " if ok else "DIFF"), "on_instock_list=", on, "| catalogue", row["listing_CrntStock"], "| instock-list", lc, "| page CS", cs, "|", row["name"])
+print(f"\nagree={agree} disagree={disagree}")
 json.dump(rows, open("probe_report.json", "w"), indent=1, default=str)
