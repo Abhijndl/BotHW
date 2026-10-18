@@ -1084,7 +1084,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_51889ea5-9660-4ebc-b77f-47192e5c0d25": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "‘16 Lamborghini Centenario Roadster",
     "price": "₹549",
     "source": "minifygram",
@@ -1092,7 +1092,7 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-10-18T17:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T17:04:16",
     "last_price_alert": "",
     "mg_updated_at": "2026-06-14T10:07:09.052687+00:00",
     "stock_ver": "mg_skus_v1"
