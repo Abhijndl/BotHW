@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v13.1.1
+Hot Wheels / Diecast Collector Tracker  ·  v14
 ==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -8,16 +8,19 @@ Runtime : Pure HTTP (curl_cffi with a real Chrome fingerprint). No browser.
 Host    : GitHub Actions, triggered every minute by cron-job.org; state lives in
           seen.json, committed back after each run.
 
-HOW A RUN WORKS (v13)
----------------------
+HOW A RUN WORKS
+---------------
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
-  • FirstCry every FC_EVERY seconds (12 s), reading FirstCry's own in-stock
-    list — the cars you can actually buy, with real unit counts. Every request
-    asks for a cache key FirstCry hasn't built yet, so the data is computed
-    live: the plain request the bot used to make was answered from a 15-minute
-    cache (measured: 9-15 minutes old). The whole catalogue (sold-out cars too)
-    is read every 10 min but never decides "in stock" — its unit counts include
-    units nobody can buy (v13.1).
+  • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
+    pass, whole catalogue every 10 min, both read live) says where to look;
+    the PRODUCT PAGE decides (v14). A car only counts as orderable when its
+    freshly loaded page shows FC_MIN_ALERT_STOCK+ units AND FirstCry's own
+    delivery check says it can be delivered to your pincode — the two things
+    the page itself uses for ADD TO CART and for switching to another car of
+    the set. The listing lagged the page by up to ~10 min and kept showing
+    cars nobody could order. Your 🎯 cars that are out of stock have their
+    product pages read directly, a few sets per pass, so their restock
+    doesn't wait for the listing.
   • Minifygram: full list every 2 min, plus a tiny "anything changed?" check
     every pass that pulls new listings in within seconds. Trading cards too.
   • Karz & Dolls every 2 min, read from the JSON the site embeds in its pages.
@@ -31,7 +34,10 @@ ALERTS
 ------
 🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
 🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units left
-Every product's NEW alert fires once ever; restocks have a 24 h cooldown.
+FirstCry links open a freshly rendered page (…?fresh=…), not a CDN copy that
+can be 20 minutes old.
+Every product's NEW alert fires once ever. Restocks: 1 h cooldown when
+FirstCry's product page confirmed them, 24 h otherwise.
 """
 
 import os
@@ -1451,6 +1457,12 @@ def fc_page(pid: str):
     members = [str(k) for k, v in cur.items() if isinstance(v, dict)]
     out = {}
     with _FC_LIVE_LOCK:
+        if str(pid) not in members:
+            # FirstCry rendered a page that doesn't list this car at all
+            # (delisted): nothing to order
+            _FC_LIVE.setdefault(str(pid), {}).update(cs=0, svc=None, members=[str(pid)],
+                                                     at_page=now, gone=True)
+            out[str(pid)] = _FC_LIVE[str(pid)]
         for k, v in cur.items():
             if not isinstance(v, dict):
                 continue
@@ -1619,7 +1631,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     slot = int(time.time() // 60)
 
     def claim(p):
-        """What the listing says this pass: 'in', 'out', or None (no word)."""
+        """What the listing says this pass: 'list' (on the in-stock list),
+        'cat' (only the catalogue shows units), 'out', or None (no word)."""
         r = by.get(p)
         if r is not None:
             if r["stock"] == "in_stock":
@@ -1628,11 +1641,16 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         # absent from this pass's listing: only meaningful for cars we hold in stock
         return "out" if (prev_fc.get(p) or {}).get("stock") == "in_stock" else None
 
+    def wanted(p):
+        nm = ((by.get(p) or prev_fc.get(p) or {}).get("name") or "")
+        return p.isdigit() and bool(nm) and not _fc_excluded(nm)
+
     cands, held = [], {}
-    pool = set(by) | {p for p, v in prev_fc.items() if v.get("stock") == "in_stock"}
-    for p in pool:
-        if not p.isdigit():
-            continue
+    # (stored entries for track sets etc. from before they were excluded never
+    # reach an alert, so they must not use up page reads either)
+    pool = {p for p in set(by) | {p for p, v in prev_fc.items() if v.get("stock") == "in_stock"}
+            if wanted(p)}
+    for p in sorted(pool, key=lambda p: (by.get(p) or {}).get("stock") != "in_stock"):
         v = prev_fc.get(p) or {}
         c = claim(p)
         if c is None or (c != "out") == (v.get("stock") == "in_stock"):
@@ -1648,7 +1666,7 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     # cars we hold in stock: delivery check every pass (cheap — 40 cars a call),
     # plus cars held back only because they couldn't be delivered here
     hold_in = [p for p in pool if (prev_fc.get(p) or {}).get("stock") == "in_stock" or p in listed_in]
-    nodel = [p for p, v in prev_fc.items() if v.get("fc_live") == "no delivery"]
+    nodel = [p for p, v in prev_fc.items() if v.get("fc_live") == "no delivery" and wanted(p)]
     svc_now = fc_delivery(hold_in + nodel) if (hold_in or nodel) else {}
     for p in nodel:
         if svc_now.get(p) == 1 and p not in cands:
@@ -1746,18 +1764,16 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
 def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[dict]:
     """FirstCry, read live (see the fresh-data notes above fc_api_catalogue).
 
-    WHAT COUNTS AS IN STOCK (v13.1): only cars on FirstCry's own "in stock"
-    list (OutOfStock filter). The catalogue's CrntStock number also counts
-    units you can't buy — on 18 Oct the Plymouth Road Runner showed 2 there
-    while its product page said 0 and it was missing from the in-stock list,
-    which is exactly the "opened the alert, already sold out" case. Checked on
-    23 cars: everything on the in-stock list was buyable on its product page
-    with matching counts, and nothing missing from it was buyable at 2+ units.
-
-    Every pass reads the in-stock list (~10 pages). full=True (every
+    Every pass reads FirstCry's in-stock list (~10 pages). full=True (every
     FC_CATALOGUE_EVERY seconds) also reads the whole catalogue, sold-out cars
-    included, so new listings and names/prices of sold-out cars stay known —
-    but the catalogue never marks anything in stock.
+    included, so new listings and names/prices of sold-out cars stay known.
+
+    WHAT COUNTS AS IN STOCK (v14): the listing only says where to look —
+    fc_apply_live() confirms every change on the car's product page and
+    FirstCry's delivery check for your pincode, and reads the pages of your 🎯
+    cars directly (see the notes above fc_apply_live). If product pages can't
+    be read, the listing's word is used as before: the in-stock list decides,
+    and the catalogue can only confirm a sell-out.
     """
     if prev_all is None:
         prev_all = load_seen()

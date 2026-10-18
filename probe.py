@@ -68,3 +68,17 @@ new.main()
 print(f"main() took {time.time()-t0:.1f}s; {len(sent)} message(s) would have been sent")
 print("stats:", new._FC_LIVE_STATS)
 after2 = {k: v.get("stock") for k, v in seen.items() if k.startswith("fc_") and isinstance(v, dict)}
+
+import collections
+print("verdicts after run 1:", collections.Counter(v.get("fc_live") for k, v in new.load_seen().items() if k.startswith("fc_") and isinstance(v, dict)))
+print("\n================ SECOND RUN (steady state) ================")
+n0 = len(sent); p0 = dict(new._FC_LIVE_STATS)
+t0 = time.time()
+new.main()
+print(f"run 2 took {time.time()-t0:.1f}s; {len(sent) - n0} message(s) would have been sent; "
+      f"pages {new._FC_LIVE_STATS['pages'] - p0['pages']}, delivery checks {new._FC_LIVE_STATS['tat'] - p0['tat']}")
+seen2 = new.load_seen()
+print("verdicts after run 2:", collections.Counter(v.get("fc_live") for k, v in seen2.items() if k.startswith("fc_") and isinstance(v, dict)))
+for k, v in seen2.items():
+    if k.startswith("fc_") and isinstance(v, dict) and v.get("fc_live") in ("no delivery", "unconfirmed", "last unit"):
+        print(f"   {k} {v.get('stock')} {v.get('fc_live')} | {v.get('name', '')[:60]}")
