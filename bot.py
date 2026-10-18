@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v14.1
+Hot Wheels / Diecast Collector Tracker  ·  v14.1.1
 ==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -1375,7 +1375,13 @@ FC_LIVE_MAX     = max(1, int(os.getenv("FC_LIVE_MAX", "14")))    # product pages
 # ordered (or the reverse) is re-read every FC_LIVE_RECHECK_MIN minutes, not
 # every pass — the listing can disagree with the page for half an hour.
 FC_LIVE_RECHECK = max(1, int(os.getenv("FC_LIVE_RECHECK_MIN", "3")))
-FC_PAGE_TIMEOUT = int(os.getenv("FC_PAGE_TIMEOUT", "15"))
+# Product pages normally answer in ~0.5-1.5 s and the delivery check in ~0.4 s.
+# Short timeouts keep a slow FirstCry from stretching a pass: on 18 Oct one run
+# took 195 s instead of ~45 (most likely timeouts piling up), and every second
+# a pass runs long is a second FirstCry isn't re-checked.
+FC_PAGE_TIMEOUT = float(os.getenv("FC_PAGE_TIMEOUT", "8"))
+FC_TAT_TIMEOUT  = float(os.getenv("FC_TAT_TIMEOUT", "6"))
+FC_LIVE_BUDGET  = float(os.getenv("FC_LIVE_BUDGET_S", "15"))   # live-check seconds per pass
 # Restocks confirmed on the page can't be listing flicker, so the same car may
 # alert again an hour later. The 24 h rule (still used for unconfirmed ones)
 # silenced 39 genuine FirstCry comebacks in 3 days — Ferrari 12 Cilindri twice,
@@ -1386,6 +1392,7 @@ FC_TAT_URL      = "https://www.firstcry.com/tatapi/oam/checkdeliveryinfo"
 FC_TAT_BATCH    = 40
 _FC_LIVE: dict = {}         # pid -> {"cs","svc","pn","mrp","dis","gid","members","at_page","at_svc"}
 _FC_LIVE_PAUSE = [0.0]      # epoch until which product pages are left alone (429/403)
+_FC_TAT_PAUSE = [0.0]       # epoch until which the delivery check is left alone
 _FC_LIVE_STATS = {"pages": 0, "tat": 0}
 _FC_LIVE_SINCE = [""]       # when v14 first ran (seen.json _meta), 15-min bucket
 _FC_LIVE_LOCK = threading.Lock()
@@ -1490,7 +1497,8 @@ def fc_delivery(pids, pincode: str | None = None) -> dict:
     makes: {car: 1 (can be delivered) or 0 (can't)}. 40 cars per call."""
     pincode = str(pincode or FC_PINCODE)
     pids = [str(p) for p in dict.fromkeys(pids) if str(p).isdigit()]
-    if not pids or pincode in ("", "0") or _FC_LIVE_PAUSE[0] > time.time():
+    if (not pids or pincode in ("", "0") or _FC_LIVE_PAUSE[0] > time.time()
+            or _FC_TAT_PAUSE[0] > time.time()):
         return {}
     hdr = {**COMMON_HEADERS, "Accept": "application/json, text/javascript, */*; q=0.01",
            "Content-Type": "application/json; charset=utf-8",
@@ -1502,30 +1510,33 @@ def fc_delivery(pids, pincode: str | None = None) -> dict:
                 "AddressType": "Home", "Discount": 0, "minQty": 1, "CatID": 5, "ftk": "",
                 "groupproducts": ",".join(chunk)}
         ref = f"https://www.firstcry.com/hot-wheels/x/{chunk[0]}/product-detail"
-        for _ in range(2):
-            try:
-                r = http.post(FC_TAT_URL, data=json.dumps(body), headers={**hdr, "Referer": ref},
-                              cookies=_fc_cookies(), timeout=FC_PAGE_TIMEOUT, **_IMPERSONATE)
-            except Exception:
-                continue
-            _FC_LIVE_STATS["tat"] += 1
-            if r.status_code == 200:
-                try:
-                    g = ((r.json() or {}).get("Result") or {}).get("groupserviceability") or {}
-                except Exception:
-                    g = {}
-                return {str(k): _fc_int(v) for k, v in g.items()}
-            if r.status_code in (403, 429):
-                return None
-        return None
+        try:
+            r = http.post(FC_TAT_URL, data=json.dumps(body), headers={**hdr, "Referer": ref},
+                          cookies=_fc_cookies(), timeout=FC_TAT_TIMEOUT, **_IMPERSONATE)
+        except Exception:
+            return None
+        _FC_LIVE_STATS["tat"] += 1
+        if r.status_code != 200:
+            return None
+        try:
+            g = ((r.json() or {}).get("Result") or {}).get("groupserviceability") or {}
+        except Exception:
+            g = {}
+        return {str(k): _fc_int(v) for k, v in g.items()}
 
     chunks = [pids[i:i + FC_TAT_BATCH] for i in range(0, len(pids), FC_TAT_BATCH)]
-    out, now = {}, time.time()
+    out, now, failed = {}, time.time(), 0
     with ThreadPoolExecutor(max_workers=min(6, len(chunks))) as ex:
         for res in ex.map(one, chunks):
+            failed += res is None
             for k, v in (res or {}).items():
                 if v in (0, 1):
                     out[k] = v
+    if failed == len(chunks):
+        # not answering at all: leave it alone for a minute (pages still decide
+        # on units; a car off the in-stock list then waits as "unconfirmed")
+        _FC_TAT_PAUSE[0] = time.time() + 60
+        print("  [FC-LIVE] delivery check not answering — paused for 1 min")
     with _FC_LIVE_LOCK:
         for k, v in out.items():
             _FC_LIVE.setdefault(k, {}).update(svc=v, at_svc=now)
@@ -1539,6 +1550,7 @@ def fc_live_check(pids, max_pages: int | None = None) -> dict:
     then one delivery check for every car with units."""
     max_pages = FC_LIVE_MAX if max_pages is None else max_pages
     now = time.time()
+    deadline = now + FC_LIVE_BUDGET
     pids = [str(p) for p in dict.fromkeys(pids) if str(p).isdigit()]
     fresh = lambda p: now - (_FC_LIVE.get(p) or {}).get("at_page", 0) <= 60
     todo, covered = [], set()
@@ -1554,7 +1566,7 @@ def fc_live_check(pids, max_pages: int | None = None) -> dict:
             list(ex.map(fc_page, todo))
         # set membership we remembered was wrong → that car's own page
         again = [p for p in pids if not fresh(p) and p not in todo][:max(0, max_pages - len(todo))]
-        if again:
+        if again and time.time() < deadline:
             with ThreadPoolExecutor(max_workers=min(8, len(again))) as ex:
                 list(ex.map(fc_page, again))
     sets = set()
@@ -1563,7 +1575,7 @@ def fc_live_check(pids, max_pages: int | None = None) -> dict:
             sets.update(_FC_LIVE[p].get("members") or [p])
     res = {p: _FC_LIVE[p] for p in sets if p in _FC_LIVE and fresh(p)}
     ask = [p for p, v in res.items() if (v.get("cs") or 0) > 0 and now - v.get("at_svc", 0) > 30]
-    if ask:
+    if ask and time.time() < deadline:
         fc_delivery(ask)
     return res
 
@@ -1695,7 +1707,7 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     # in-stock cars never confirmed on a page (e.g. from before v14): a few sets a pass
     audit = [p for p in sorted(hold_in, key=int, reverse=True)
              if not (prev_fc.get(p) or {}).get("fc_live") and p not in live and p not in cands]
-    if audit and FC_LIVE_AUDIT:
+    if audit and FC_LIVE_AUDIT and time.time() - t0 < FC_LIVE_BUDGET / 2:
         live.update(fc_live_check(audit, max_pages=FC_LIVE_AUDIT))
     order += [p for p in audit if p in live]
 
@@ -3687,6 +3699,7 @@ def main():
     look_back = t_run - 60
     pass_no = 0
     extended, ext_since = False, None
+    timings = []
     while True:
         t = time.time()
         pass_no += 1
@@ -3720,6 +3733,7 @@ def main():
             except Exception:
                 # one bad pass must not end the run (earlier results are saved)
                 print(f"[!] {label} failed:\n{traceback.format_exc()}")
+        timings.append(f"{int(t - t_run)}s:{'+'.join(n[:2] for n in names) or '-'}={time.time() - t:.0f}s")
         if first_run or RUN_SECONDS <= 0:
             break
         nxt = t + FC_EVERY
@@ -3733,7 +3747,11 @@ def main():
                 extended, ext_since = True, t_run
         time.sleep(max(0.0, nxt - time.time()))
     _fc_fresh_save(seen)
-    print(f"\n[*] run finished: {pass_no} pass(es) in {time.time()-t_run:.0f}s")
+    took = time.time() - t_run
+    print(f"\n[*] run finished: {pass_no} pass(es) in {took:.0f}s ({', '.join(timings)})")
+    if _ON_GITHUB and took > RUN_SECONDS + RUN_EXTEND_S + 25:
+        # visible in the run's summary and through the API, without the logs
+        print(f"::notice title=Long run ({took:.0f}s)::{', '.join(timings)[:900]}")
 
 
 if __name__ == "__main__":
