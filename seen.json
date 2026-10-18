@@ -12672,7 +12672,7 @@
     "fc_trusted": true
   },
   "fc_24473731": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
     "price": "₹170",
     "source": "firstcry",
@@ -14881,7 +14881,7 @@
     "fc_trusted": true
   },
   "fc_24514785": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Street Wiener Toy Car - Yellow/Red",
     "price": "₹279",
     "source": "firstcry",
@@ -14889,7 +14889,7 @@
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-18T09:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T09:22:59",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T09:15:00",
