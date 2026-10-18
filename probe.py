@@ -55,3 +55,4 @@ print("\n================ DRY RUN of main() (alerts printed, not sent) =========
 t0 = time.time()
 new.main()
 print(f"main() took {time.time()-t0:.1f}s; {len(sent)} message(s) would have been sent")
+

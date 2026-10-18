@@ -35,6 +35,7 @@ import re
 import json
 import html
 import time
+import calendar
 import traceback
 from urllib.parse import quote, urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -1315,9 +1316,10 @@ def scrape_firstcry(prev_all: dict | None = None, hot: bool = False) -> list[dic
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
                if pid.startswith("fc_") and isinstance(v, dict)}
 
-    # ── Quick sweep: in-stock part of the catalogue only ──────────────────────
-    # Only cars actually read are returned; everything else keeps its last state
-    # until the next full sweep (nothing is inferred from absence here).
+    # ── Quick sweep: FirstCry's in-stock list only ────────────────────────────
+    # Cars on the list are read live; a car that drops off it between two
+    # complete lists is recorded as sold out (see below); everything else keeps
+    # its last state until the next full sweep.
     if hot:
         if not FC_USE_API or FC_LAST_MODE[0] == "html":
             return []
@@ -1714,7 +1716,7 @@ def _mg_preorder_open(row: dict) -> bool:
     close = str(row.get("preorder_close_at") or "")
     if close:
         try:
-            ts = time.mktime(time.strptime(close[:19], "%Y-%m-%dT%H:%M:%S")) - time.timezone
+            ts = calendar.timegm(time.strptime(close[:19], "%Y-%m-%dT%H:%M:%S"))  # UTC
             if ts < time.time():
                 return False
         except Exception:
@@ -1860,10 +1862,12 @@ def scrape_minifygram() -> list[dict]:
                             and 0 < total_available <= FC_LOW_STOCK else None),
             "badge_new": bool(row.get("badge")),
             "mg_updated_at": str(row.get("updated_at") or ""),
-            # v13: pre-orders count as available only while booking is open,
-            # trading cards added. The version bump applies the new reading
-            # once, silently, instead of alerting on the changed rules.
-            "stock_ver": "mg_skus_v2",
+            # Same tag as before on purpose: v13's rule changes (closed
+            # pre-orders count as unavailable, trading cards added) can only
+            # turn a car unavailable or add new ones — never cause a false
+            # restock — and changing the tag would silence real restocks of
+            # cars that are inactive right now.
+            "stock_ver": "mg_skus_v1",
         })
 
     if no_sku_count:
@@ -2301,11 +2305,17 @@ def _kd_from_next_data(page: str, cat: str):
         line = str(p.get("product_sname") or p.get("sku") or "")
         blob = (name + " " + line).upper()
         flat = blob.replace(" ", "").replace("-", "")
-        if any(k in flat for k in _KD_DENY):
-            continue
-        is_hw_line = blob.startswith("HW ") or " HW " in f" {line.upper()} "
-        if not (cat_ok or is_hw_line or any(k in flat for k in _KD_BRAND_TOKENS)):
-            continue
+        if not cat_ok:
+            # mixed shelves (home page, specials): Hot Wheels / MiniGT / Kaido
+            # only, and never another brand. On the brand's own category pages
+            # every product is that brand — Hot Wheels Marvel or Jurassic
+            # character cars are still Hot Wheels — so the deny-list isn't
+            # applied there.
+            if any(k in flat for k in _KD_DENY):
+                continue
+            is_hw_line = blob.startswith("HW ") or " HW " in f" {line.upper()} "
+            if not (is_hw_line or any(k in flat for k in _KD_BRAND_TOKENS)):
+                continue
         is_pre = str(p.get("is_preorder") or "0") not in ("0", "", "None", "False")
         if is_pre and not KD_INCLUDE_PREORDER:
             continue
@@ -2827,7 +2837,10 @@ def _within_budget(d) -> bool:
 
 
 def _is_flagged(d) -> bool:
-    return bool(d.get("watched")) or any(w in d["name"].lower() for w in WATCHLIST)
+    """🎯: a watched FirstCry car, a WATCHLIST keyword, or one of your marques
+    (Porsche, Ferrari, Lamborghini, Supra …) — on every store."""
+    return (bool(d.get("watched")) or any(w in d["name"].lower() for w in WATCHLIST)
+            or _fc_is_marque(d["name"]))
 
 
 def _line(d, extra="") -> str:
