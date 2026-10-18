@@ -140,7 +140,7 @@
   "fc_23076124": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mach Speeder (158/250) Die Cast Free Wheel Toy Car - Maroon",
-    "price": "₹161",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-158-250-die-cast-free-wheel-toy-car-maroon/23076124/product-detail",
     "first_seen": "2026-07-18T07:36:21",
@@ -149,8 +149,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T05:45:00",
-    "fc_api_seen_at": "2026-10-18T05:45:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "fc_22600382": {
@@ -3718,8 +3718,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "fc_23348043": {
@@ -10604,8 +10604,8 @@
     "last_restock_alert": "2026-10-10T06:58:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "fc_22597522": {
@@ -10777,8 +10777,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "hm_hot-wheels-monster-truck-power-smashers-assortment-boys-3y-multicolour-17465906": {
@@ -12701,8 +12701,8 @@
     "last_price_alert": "2026-09-22T07:09:08",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "fc_24314338": {
@@ -14556,7 +14556,7 @@
     "fc_trusted": true
   },
   "fc_24503821": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Custom '62 Chevy Pickup Die Cast Free Wheel Toy Car - Black/Red",
     "price": "₹161",
     "source": "firstcry",
@@ -14564,11 +14564,11 @@
     "first_seen": "2026-09-20T08:51:11",
     "last_seen": "2026-10-18T06:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-15T05:48:41",
+    "last_restock_alert": "2026-10-18T06:21:00",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T17:15:00",
-    "fc_api_seen_at": "2026-10-17T17:15:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "fc_24525291": {
@@ -16446,8 +16446,8 @@
     "last_restock_alert": "2026-09-23T10:02:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
+    "fc_listed_at": "2026-10-18T06:15:00",
+    "fc_api_seen_at": "2026-10-18T06:15:00",
     "fc_trusted": true
   },
   "fc_24503904": {
@@ -18246,7 +18246,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
