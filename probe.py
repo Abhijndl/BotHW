@@ -1,58 +1,118 @@
 #!/usr/bin/env python3
-"""Probe #3: run the NEW bot (bot_v13.py) for real against the live stores, in a
-dry run — no Telegram credentials (alerts are printed instead of sent) and a
-COPY of the current seen.json, so the live bot and its state are untouched.
-Also compares the new Karz & Dolls JSON parser with the old HTML parser."""
-import importlib.util, json, os, shutil, sys, time, urllib.request
+"""Probe #6: listing-API stock vs product-page (PDP) availability.
+Why: the bot alerted "Plymouth Road Runner — only 2 left" from FirstCry's live
+listing data, but the product page showed out of stock a minute later while the
+listing still reported 2 units. Compare, for several products, the listing's
+CrntStock (pincode 248001) with everything the product page embeds about stock."""
+import json, re, time, random
+from urllib.parse import quote
+from concurrent.futures import ThreadPoolExecutor
+from curl_cffi import requests as http
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-DRY = os.path.join(ROOT, "dry")
-os.makedirs(DRY, exist_ok=True)
-
-# latest live state from main (raw file; may lag a few minutes behind)
-with urllib.request.urlopen("https://raw.githubusercontent.com/Abhijndl/BotHW/main/seen.json", timeout=30) as r:
-    open(os.path.join(DRY, "seen.json"), "wb").write(r.read())
-print("seen.json copied:", os.path.getsize(os.path.join(DRY, "seen.json")), "bytes")
-
-env = {
-    "TELEGRAM_BOT_TOKEN": "", "TELEGRAM_CHAT_ID": "",
-    "RUN_SECONDS": os.getenv("RUN_SECONDS", "45"), "FC_EVERY": "15", "FC_FULL_EVERY": "60",
-    "MG_EVERY_S": "120", "KD_EVERY_S": "120", "HM_EVERY_S": "600",
-    "SILENT": "true", "FIRST_RUN_SILENT": "true", "MAX_ALERT_PRICE": "0", "DEBUG": "false",
-    "WATCHLIST": "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk",
-    "FC_EXCLUDE": "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate",
-    "FC_MARQUES": "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics",
-    "FC_WATCH": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail",
-    "FC_API_PARALLEL": "10", "MG_BRANDS": "hotwheels,mattel,minigt,mini gt,kaido house",
-    "MG_CATEGORIES": "trading card,tcg", "SRC_WORKERS": "6", "FC_WORKERS": "10", "HM_WORKERS": "8",
-}
-os.environ.update(env)
-os.chdir(DRY)
+IMP = {"impersonate": "chrome124"}
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+H = {"User-Agent": UA, "Accept-Language": "en-IN,en;q=0.9",
+     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
+FC_API = "https://www.firstcry.com/svcs/SearchResult.svc/GetSearchResultProductsPaging"
+KEYS = ["PageNo","PageSize","SortExpression","OnSale","SearchString","SubCatId","BrandId","Price","Age","Color","OptionalFilter","OutOfStock","Type1","Type2","Type3","Type4","Type5","Type6","Type7","Type8","Type9","Type10","Type11","Type12","Type13","Type14","Type15","combo","discount","searchwithincat","ProductidQstr","searchrank","pmonths","cgen","PriceQstr","DiscountQstr","sorting","MasterBrand","Rating","Offer","skills","material","curatedcollections","measurement","gender","exclude","premium","pcode","isclub","deliverytype","authors","booktype","character","collections","format","genre","booklanguage","publication","skill"]
+DEF = {"PageNo": "1", "PageSize": "20", "SortExpression": "Popularity", "OnSale": "5",
+       "SearchString": "brand", "MasterBrand": "113", "pcode": "248001", "isclub": "0"}
+REF = "https://www.firstcry.com/hotwheels/5/0/113"
+JH = {**H, "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest", "Referer": REF}
+S = http.Session(**IMP)
+S.get(REF, headers=H, timeout=20)
+COOK = {c.name: c.value for c in getattr(S.cookies, "jar", S.cookies)}
 
 
-def load(path, name):
-    spec = importlib.util.spec_from_file_location(name, path)
-    m = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(m)
-    return m
+def unwrap(o):
+    if isinstance(o, str) and o.strip()[:1] in "[{":
+        try:
+            return unwrap(json.loads(o))
+        except Exception:
+            return o
+    if isinstance(o, dict):
+        return {k: unwrap(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [unwrap(v) for v in o]
+    return o
 
 
-new = load(os.path.join(ROOT, "bot_v13.py"), "bot_v13")
-sent = []
-def fake_tg(msg):
-    sent.append(msg)
-    print("\n----- TELEGRAM (dry run, not sent) -----\n" + msg + "\n----------------------------------------")
-new.tg = fake_tg
+def prods(j):
+    out, st = [], [j]
+    while st:
+        n = st.pop()
+        if isinstance(n, list):
+            st.extend(n)
+        elif isinstance(n, dict):
+            if "PId" in n and "PNm" in n:
+                out.append(n)
+            else:
+                st.extend(n.values())
+    return out
 
-print("\n================ FORCED PASS: every store once ================")
-seen = new.load_seen()
-new._fc_fresh_load(seen)
-t0 = time.time()
-new.run_pass(seen, ["FirstCry", "Minifygram", "Karz&Dolls", "Hamleys"], False, False, "forced pass")
-print(f"forced pass took {time.time()-t0:.1f}s")
 
-print("\n================ DRY RUN of main() (alerts printed, not sent) ================")
-t0 = time.time()
-new.main()
-print(f"main() took {time.time()-t0:.1f}s; {len(sent)} message(s) would have been sent")
+def listing(pcode="248001", instock=False):
+    tok = str(random.randint(10**8, 10**9))
+    def one(p):
+        over = dict(DEF, PageNo=str(p), pcode=pcode, searchrank=tok)
+        if instock:
+            over["OutOfStock"] = "1"
+        u = FC_API + "?" + "&".join(f"{k}={quote(str(over.get(k, '')), safe='')}" for k in KEYS)
+        r = http.get(u, headers=JH, cookies=COOK, timeout=20, **IMP)
+        return prods(unwrap(r.json()))
+    allp = {}
+    with ThreadPoolExecutor(11) as ex:
+        for ps in ex.map(one, range(1, 23)):
+            for p in ps:
+                allp[str(p["PId"])] = p
+    return allp
 
+
+lst = listing()
+lst0 = listing(pcode="0")
+lin = listing(instock=True)
+print(f"listing 248001: {len(lst)} products; pcode=0: {len(lst0)}; in-stock filter: {len(lin)}")
+target = "24473731"
+t = lst.get(target)
+print("TARGET listing:", {k: t.get(k) for k in ("PId", "PNm", "CrntStock", "MRP", "discprice", "TTData", "P_Grp_ID", "Excl", "SzCnt", "ClrCnt")} if t else "not in listing")
+print("TARGET pcode=0 CrntStock:", (lst0.get(target) or {}).get("CrntStock"), "| in in-stock list:", target in lin)
+
+# product pages: target + a sample of low-stock and normal-stock cars
+low = sorted([p for p in lst.values() if 0 < int(p.get("CrntStock") or 0) <= 4], key=lambda p: int(p["CrntStock"]))[:8]
+mid = [p for p in lst.values() if 20 <= int(p.get("CrntStock") or 0) <= 60][:3]
+zero = [p for p in lst.values() if int(p.get("CrntStock") or 0) == 0][:3]
+sample = ([t] if t else []) + low + mid + zero
+
+
+def pdp(p):
+    pid = str(p["PId"])
+    url = f"https://www.firstcry.com/hot-wheels/x/{pid}/product-detail"
+    r = S.get(url, headers=H, timeout=25)
+    txt = r.text
+    m = re.search(r"CurrentProductDetailJSON\s*=\s*(\{.*?\})\s*[,;]\s*\w+\s*=", txt, re.S)
+    info = None
+    if m:
+        try:
+            j = json.loads(m.group(1))
+            info = j.get(pid)
+        except Exception as e:
+            info = {"parse_error": str(e), "head": m.group(1)[:300]}
+    flags = {k: (info or {}).get(k) for k in ("CS", "Rqty", "SCF", "EC", "QueCount", "StockT", "isOOS", "OOS",
+                                                   "MLfb", "Ms", "Mc", "IsActive", "sz", "Dis")} if isinstance(info, dict) else None
+    stock_like = {k: v for k, v in (info or {}).items()
+                  if isinstance(info, dict) and re.search(r"stock|qty|oos|avail|cs$|^cs|notify|sell|inv", k, re.I)} if isinstance(info, dict) else None
+    return {"pid": pid, "name": p["PNm"][:55], "listing_CrntStock": p.get("CrntStock"),
+            "status": r.status_code, "pdp_fields": flags, "stock_like": stock_like,
+            "keys": sorted(info.keys())[:80] if isinstance(info, dict) else None,
+            "cc": r.headers.get("cache-control"), "st": r.headers.get("server-timing")}
+
+
+with ThreadPoolExecutor(6) as ex:
+    rows = list(ex.map(pdp, sample))
+for i, row in enumerate(rows):
+    if i == 0:
+        print("\nTARGET PDP keys:", row["keys"])
+    print(json.dumps({k: row[k] for k in ("pid", "name", "listing_CrntStock", "status", "pdp_fields", "stock_like", "cc")}, ensure_ascii=False))
+json.dump(rows, open("probe_report.json", "w"), indent=1, default=str)
