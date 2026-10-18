@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""One-off research probe (not part of the bot). Measures how fresh FirstCry's
-listing API is and which request variants defeat its 15-minute cache, finds the
-product-page stock API, and inspects Karz & Dolls and Minifygram data feeds.
-Writes probe_report.json + prints a readable report."""
-import json, os, re, sys, time, random, traceback
+"""Research probe #2 (not part of the bot).
+FirstCry: confirm which cache-key variants return the SAME full catalogue but
+freshly computed, and measure how much earlier they see stock changes than the
+cached request the bot uses today. Also: PDP embedded data.
+Minifygram: table columns, payload size, cheap change-detection queries.
+Karz & Dolls: __NEXT_DATA__ structure and the karzOffice API routes."""
+import gzip, json, os, re, sys, time, random, traceback
 from collections import Counter
 from urllib.parse import quote, urljoin
 from concurrent.futures import ThreadPoolExecutor
@@ -39,7 +41,6 @@ def section(name):
     return deco
 
 
-# ───────────────────────────── FirstCry ─────────────────────────────
 FC_API = "https://www.firstcry.com/svcs/SearchResult.svc/GetSearchResultProductsPaging"
 KEYS = ["PageNo","PageSize","SortExpression","OnSale","SearchString","SubCatId","BrandId","Price","Age","Color","OptionalFilter","OutOfStock","Type1","Type2","Type3","Type4","Type5","Type6","Type7","Type8","Type9","Type10","Type11","Type12","Type13","Type14","Type15","combo","discount","searchwithincat","ProductidQstr","searchrank","pmonths","cgen","PriceQstr","DiscountQstr","sorting","MasterBrand","Rating","Offer","skills","material","curatedcollections","measurement","gender","exclude","premium","pcode","isclub","deliverytype","authors","booktype","character","collections","format","genre","booklanguage","publication","skill"]
 DEF = {"PageNo": "1", "PageSize": "20", "SortExpression": "Popularity", "OnSale": "5",
@@ -47,7 +48,7 @@ DEF = {"PageNo": "1", "PageSize": "20", "SortExpression": "Popularity", "OnSale"
 REF = "https://www.firstcry.com/hotwheels/5/0/113"
 JH = {**H, "Accept": "application/json, text/javascript, */*; q=0.01",
       "Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
-      "Referer": REF}
+      "Referer": REF, "Cache-Control": "no-cache, no-store, max-age=0", "Pragma": "no-cache"}
 SESS = http.Session(**IMP)
 try:
     SESS.get(REF, headers=H, timeout=20)
@@ -91,23 +92,17 @@ def prods(j):
     return out
 
 
-def fc_get(over=None, extra="", nocache_headers=False):
-    h = dict(JH)
-    if nocache_headers:
-        h.update({"Cache-Control": "no-cache, no-store, max-age=0", "Pragma": "no-cache"})
+def fc_get(over=None, extra=""):
     u = fc_url(over, extra)
     t0 = time.time()
     try:
-        r = http.get(u, headers=h, cookies=COOK, timeout=20, **IMP)
+        r = http.get(u, headers=JH, cookies=COOK, timeout=20, **IMP)
     except Exception as e:
         return {"err": type(e).__name__}
-    ms = int((time.time() - t0) * 1000)
     st = r.headers.get("server-timing", "") or ""
-    out = {"status": r.status_code, "ms": ms,
+    out = {"status": r.status_code, "ms": int((time.time() - t0) * 1000),
            "cdn": (re.findall(r"cdn-cache; desc=(\w+)", st) or [""])[0],
-           "origin_ms": (re.findall(r"origin; dur=(\d+)", st) or [""])[0],
-           "cc": r.headers.get("cache-control", ""), "age": r.headers.get("age", ""),
-           "bytes": len(r.content)}
+           "cc": r.headers.get("cache-control", "")}
     try:
         j = unwrap(r.json())
     except Exception:
@@ -115,321 +110,248 @@ def fc_get(over=None, extra="", nocache_headers=False):
         return out
     ps = prods(j)
     out.update({"ttl": j.get("TTL") if isinstance(j, dict) else None, "n": len(ps),
-                "zero": sum(1 for p in ps if str(p.get("CrntStock")) in ("0", "0.0")),
-                "pids": [str(p.get("PId")) for p in ps],
-                "stock": {str(p.get("PId")): p.get("CrntStock") for p in ps},
-                "keys": sorted(ps[0].keys()) if ps else [],
-                "top": list(j.keys())[:10] if isinstance(j, dict) else []})
-    if ps and not REPORT.get("_fc_sample"):
-        REPORT["_fc_sample"] = {k: (str(v)[:200]) for k, v in ps[0].items()}
+                "stock": {str(p.get("PId")): p.get("CrntStock") for p in ps}})
     return out
 
 
-def brief(x):
-    return {k: x.get(k) for k in ("status", "ms", "ttl", "cdn", "origin_ms", "cc", "n", "zero", "err", "body")}
-
-
-@section("fc_cache")
-def fc_cache():
-    res = {}
-    base = fc_get()
-    res["base1"] = brief(base); log("base1", res["base1"])
-    time.sleep(3)
-    b2 = fc_get(); res["base2"] = brief(b2); log("base2", res["base2"])
-    bb = fc_get(extra=f"&_={int(time.time()*1000)}", nocache_headers=True)
-    res["bot_style_buster"] = brief(bb); log("bot-style (_=ms + no-cache hdrs)", res["bot_style_buster"])
-    variants = {
-        "sort_lower": ({"SortExpression": "popularity"}, ""),
-        "sort_upper": ({"SortExpression": "POPULARITY"}, ""),
-        "sort_mixed": ({"SortExpression": "PoPuLaRiTy"}, ""),
-        "sort_mixed2": ({"SortExpression": "pOpUlArItY"}, ""),
-        "pcode_pad": ({"pcode": "0248001"}, ""),
-        "pcode_pad2": ({"pcode": "00248001"}, ""),
-        "extra_nc": ({}, f"&nc={random.randint(1, 10**9)}"),
-        "searchrank": ({"searchrank": str(random.randint(1, 999))}, ""),
-        "sorting": ({"sorting": str(random.randint(1, 999))}, ""),
-        "pagesize21": ({"PageSize": "21"}, ""),
-        "pagesize25": ({"PageSize": "25"}, ""),
-        "pagesize19": ({"PageSize": "19"}, ""),
-        "isclub_pad": ({"isclub": "00"}, ""),
-        "onsale_pad": ({"OnSale": "05"}, ""),
-        "masterbrand_pad": ({"MasterBrand": "0113"}, ""),
-        "searchstring_Brand": ({"SearchString": "Brand"}, ""),
-    }
-    bset = set(base.get("pids") or [])
-    for name, (over, extra) in variants.items():
-        x = fc_get(over, extra)
-        same = len(bset & set(x.get("pids") or []))
-        diff_stock = sum(1 for p, s in (x.get("stock") or {}).items()
-                         if p in (base.get("stock") or {}) and str(base["stock"][p]) != str(s))
-        res[name] = {**brief(x), "overlap_with_base_p1": same, "stock_diff_vs_base": diff_stock}
-        log(name, res[name])
-        # repeat immediately: does the SAME variant now come back cached (ttl lower)?
-        if name in ("sort_mixed", "extra_nc", "pcode_pad", "pagesize21"):
-            time.sleep(2)
-            y = fc_get(over, extra)
-            res[name + "_repeat"] = brief(y); log(name + "_repeat", res[name + "_repeat"])
-        time.sleep(0.4)
-    return res
-
-
-@section("fc_filters")
-def fc_filters():
-    res = {}
-    for v in ["1", "0", "true", "false", "Y", "N", "2", "yes", "no"]:
-        x = fc_get({"OutOfStock": v, "SortExpression": "pOPULARITY"})
-        res["OutOfStock=" + v] = brief(x); log("OutOfStock=" + v, res["OutOfStock=" + v])
-        time.sleep(0.3)
-    for v in ["NewArrivals", "newarrivals", "New", "Latest", "NewArrival", "new", "Discount",
-              "PriceLowToHigh", "PriceHighToLow", "Rating", "BestSeller", "Bestseller"]:
-        x = fc_get({"SortExpression": v})
-        res["sort=" + v] = {**brief(x), "first8": (x.get("pids") or [])[:8]}
-        log("sort=" + v, res["sort=" + v])
-        time.sleep(0.3)
-    # ProductidQstr: can it fetch arbitrary ids?
-    for v in ["23351189", "23351189,23353034,23353037", "23351189|23353034"]:
-        x = fc_get({"ProductidQstr": v, "SortExpression": "PoPuLARITY"})
-        res["ProductidQstr=" + v] = {**brief(x), "first8": (x.get("pids") or [])[:8]}
-        log("ProductidQstr=" + v, res["ProductidQstr=" + v])
-    return res
-
-
-def sweep(over, label, size=20, maxpages=30):
-    """Full catalogue sweep with a given variant; returns per-page stats."""
-    pages = {}
+def sweep(over, extra_fn=None, maxpages=22):
+    """All pages in parallel. extra_fn(page) -> extra query string."""
     def one(p):
-        o = dict(over); o["PageNo"] = str(p); o["PageSize"] = str(size)
-        return p, fc_get(o)
-    page = 1
-    allp = {}
-    while page <= maxpages:
-        batch = list(range(page, min(page + 10, maxpages + 1)))
-        with ThreadPoolExecutor(10) as ex:
-            for p, x in ex.map(one, batch):
-                pages[p] = x
-        stop = False
-        for p in batch:
-            x = pages[p]
-            for pid, s in (x.get("stock") or {}).items():
-                allp.setdefault(pid, s)
-            if (x.get("n") or 0) < size:
-                stop = True
-        if stop:
-            break
-        page += 10
-    stats = {p: {"n": x.get("n"), "zero": x.get("zero"), "ttl": x.get("ttl"), "cdn": x.get("cdn"),
-                 "ms": x.get("ms")} for p, x in sorted(pages.items())}
-    return {"label": label, "unique": len(allp), "instock": sum(1 for s in allp.values() if str(s) not in ("0", "0.0")),
-            "pages": stats, "stock": allp}
+        o = dict(over or {}); o["PageNo"] = str(p)
+        return p, fc_get(o, extra_fn(p) if extra_fn else "")
+    with ThreadPoolExecutor(11) as ex:
+        res = dict(ex.map(one, range(1, maxpages + 1)))
+    stock = {}
+    for p in sorted(res):
+        stock.update(res[p].get("stock") or {})
+    ttls = [res[p].get("ttl") for p in sorted(res)]
+    cdns = Counter(res[p].get("cdn") for p in res)
+    errs = [p for p in res if res[p].get("status") != 200]
+    return {"stock": stock, "ttls": ttls, "cdns": dict(cdns), "errs": errs,
+            "n": len(stock), "instock": sum(1 for v in stock.values() if str(v) not in ("0", "0.0"))}
 
 
-@section("fc_sweeps")
-def fc_sweeps():
+def cmp(a, b):
+    sa, sb = a["stock"], b["stock"]
+    only_a = sorted(set(sa) - set(sb)); only_b = sorted(set(sb) - set(sa))
+    diff = [(p, sa[p], sb[p]) for p in set(sa) & set(sb) if str(sa[p]) != str(sb[p])]
+    return {"only_a": only_a[:20], "only_b": only_b[:20], "n_only_a": len(only_a),
+            "n_only_b": len(only_b), "stock_diff": diff[:30], "n_stock_diff": len(diff)}
+
+
+@section("fc_equiv")
+def fc_equiv():
     res = {}
-    a = sweep({"SortExpression": "pOpUlArItY"}, "fresh_variant")
-    log("fresh sweep: unique", a["unique"], "instock", a["instock"])
-    for p, s in a["pages"].items():
-        log("  page", p, s)
-    b = sweep({}, "baseline_cached")
-    log("baseline sweep: unique", b["unique"], "instock", b["instock"])
-    for p, s in b["pages"].items():
-        log("  page", p, s)
-    diffs = []
-    for pid in set(a["stock"]) | set(b["stock"]):
-        sa, sb = a["stock"].get(pid), b["stock"].get(pid)
-        if str(sa) != str(sb):
-            diffs.append((pid, sb, sa))
-    log("stock differences baseline(cached) -> fresh:", len(diffs), diffs[:40])
-    res["fresh"] = {k: v for k, v in a.items() if k != "stock"}
-    res["baseline"] = {k: v for k, v in b.items() if k != "stock"}
-    res["diffs"] = diffs
-    # in-stock-first ordering check
+    r = random.randint(100000, 999999)
+    variants = {
+        "prod_style": ({}, lambda p: f"&_={int(time.time()*1000)}"),
+        "searchrank": ({"searchrank": str(r)}, None),
+        "sorting": ({"sorting": str(r)}, None),
+        "isclub00": ({"isclub": "00"}, None),
+        "searchrank_alpha": ({"searchrank": f"x{r}"}, None),
+    }
+    sw = {}
+    with ThreadPoolExecutor(5) as ex:
+        futs = {name: ex.submit(sweep, o, e) for name, (o, e) in variants.items()}
+        for name, f in futs.items():
+            sw[name] = f.result()
+    for name, s in sw.items():
+        res[name] = {k: s[k] for k in ("n", "instock", "ttls", "cdns", "errs")}
+        log(name, res[name])
+    for name in sw:
+        if name != "prod_style":
+            c = cmp(sw["prod_style"], sw[name]); res["cmp_" + name] = c
+            log("prod_style vs", name, c)
     return res
 
 
-@section("fc_watch")
-def fc_watch():
-    """Watch page 1-3 of a fresh variant vs the cached baseline for ~4 minutes."""
-    res = []
-    prev_f, prev_b = {}, {}
-    t_end = time.time() + float(os.getenv("WATCH_SECONDS", "240"))
-    i = 0
+@section("fc_lag")
+def fc_lag():
+    """Every 30 s for WATCH_SECONDS: cached (bot today) vs fresh (searchrank).
+    Record when each stock change first shows up in each."""
+    secs = float(os.getenv("WATCH_SECONDS", "360"))
+    t_end = time.time() + secs
+    first_seen = {"cached": {}, "fresh": {}}
+    prev = {"cached": None, "fresh": None}
+    rounds = []
     while time.time() < t_end:
-        i += 1
-        variant = "".join(c.upper() if random.random() < 0.5 else c.lower() for c in "popularity")
-        f = {}
-        b = {}
-        for p in (1, 2, 3):
-            xf = fc_get({"SortExpression": variant, "PageNo": str(p)})
-            xb = fc_get({"PageNo": str(p)})
-            f.update(xf.get("stock") or {}); b.update(xb.get("stock") or {})
-        ch_f = {k: (prev_f.get(k), v) for k, v in f.items() if k in prev_f and str(prev_f[k]) != str(v)}
-        ch_b = {k: (prev_b.get(k), v) for k, v in b.items() if k in prev_b and str(prev_b[k]) != str(v)}
-        row = {"t": time.strftime("%H:%M:%S", time.gmtime()), "fresh_changes": ch_f, "cached_changes": ch_b,
-               "ttl_f": xf.get("ttl"), "ttl_b": xb.get("ttl")}
-        res.append(row)
+        tag = time.strftime("%H:%M:%S", time.gmtime())
+        with ThreadPoolExecutor(2) as ex:
+            fc = ex.submit(sweep, {}, lambda p: f"&_={int(time.time()*1000)}", 12)
+            ff = ex.submit(sweep, {"searchrank": str(random.randint(100000, 999999))}, None, 12)
+            cur = {"cached": fc.result(), "fresh": ff.result()}
+        row = {"t": tag}
+        for k in ("cached", "fresh"):
+            s = cur[k]
+            row[k] = {"n": s["n"], "instock": s["instock"],
+                      "ttl_min": min([t for t in s["ttls"] if isinstance(t, (int, float))] or [None]) if any(isinstance(t, (int, float)) for t in s["ttls"]) else None,
+                      "ttl_none": sum(1 for t in s["ttls"] if t is None), "errs": s["errs"]}
+            if prev[k] is not None:
+                for pid, v in s["stock"].items():
+                    pv = prev[k]["stock"].get(pid)
+                    if pv is not None and str(pv) != str(v):
+                        key = f"{pid}:{pv}->{v}"
+                        first_seen[k].setdefault(key, tag)
+            prev[k] = s
+        rounds.append(row)
         log(row)
-        prev_f, prev_b = f, b
-        time.sleep(20)
-    return res
+        time.sleep(max(0, 30 - (time.time() % 30)))
+    log("first_seen cached:", first_seen["cached"])
+    log("first_seen fresh :", first_seen["fresh"])
+    return {"rounds": rounds, "first_seen": first_seen}
 
 
-@section("fc_pdp")
-def fc_pdp():
-    """Find the product page's stock API: fetch a PDP, list scripts/endpoints."""
+@section("fc_misc")
+def fc_misc():
     res = {}
+    for v in ["1", "0", "true"]:
+        for p in (9, 10, 11, 12):
+            x = fc_get({"OutOfStock": v, "PageNo": str(p), "searchrank": str(random.randint(1, 10**6))})
+            zero = sum(1 for s in (x.get("stock") or {}).values() if str(s) in ("0", "0.0"))
+            res[f"OOS={v} p{p}"] = {"n": x.get("n"), "zero": zero, "ttl": x.get("ttl"), "cdn": x.get("cdn")}
+            log(f"OOS={v} p{p}", res[f"OOS={v} p{p}"])
+    # PDP embedded data
     url = "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-mailed-it-168-250-toy-car-blue/23074884/product-detail"
     r = SESS.get(url, headers=H, timeout=25)
     t = r.text
-    res["status"] = r.status_code; res["bytes"] = len(t)
-    res["cc"] = r.headers.get("cache-control"); res["server_timing"] = r.headers.get("server-timing")
-    res["has_add_to_cart"] = "ADD TO CART" in t.upper(); res["has_notify"] = "NOTIFY" in t.upper()
-    res["mentions"] = sorted(set(re.findall(r"(/svcs/[A-Za-z0-9_./]+|/api/[A-Za-z0-9_./-]+|https?://[a-z0-9.-]*fcappservices\.in/[A-Za-z0-9_./-]+)", t)))[:80]
-    res["stock_words"] = sorted(set(m.group(0)[:120] for m in re.finditer(r"[A-Za-z_]*(?:[Ss]tock|Qty|qty|Inventory)[A-Za-z_]*\W{0,4}[:=]\W{0,3}[^,;}\s]{0,40}", t)))[:60]
-    res["product_id_hits"] = len(re.findall("23074884", t))
-    scripts = re.findall(r'<script[^>]+src="([^"]+)"', t)
-    res["scripts"] = scripts[:60]
-    eps = Counter()
-    for s in scripts:
-        u = urljoin(url, s)
-        if not any(x in u for x in ("firstcry", "fcglcdn", "brainbees")):
-            continue
-        try:
-            js = http.get(u, headers=H, timeout=20, **IMP).text
-        except Exception:
-            continue
-        for m in re.finditer(r"""["'`]((?:https?://[a-z0-9.-]+)?/(?:svcs|api)/[A-Za-z0-9_./-]{3,120})""", js):
-            eps[m.group(1)] += 1
-        for m in re.finditer(r"""["'`](https?://[a-z0-9.-]*(?:fcappservices\.in|firstcry\.com)/[A-Za-z0-9_./-]{3,120})""", js):
-            eps[m.group(1)] += 1
-    res["endpoints_in_js"] = eps.most_common(150)
-    for e, c in eps.most_common(150):
-        log("  ep", c, e)
-    for k in ("status", "bytes", "cc", "server_timing", "has_add_to_cart", "has_notify", "product_id_hits"):
-        log(k, res[k])
-    log("mentions", res["mentions"])
-    log("stock_words", res["stock_words"])
+    ctx = []
+    for m in re.finditer(r"(CrntStock|crntstock|\"stock\"|StockQty|\"Rqty\"|instock|InStock|isoos|OutOfStock)", t):
+        ctx.append(t[max(0, m.start() - 200): m.end() + 200].replace("\n", " "))
+        if len(ctx) >= 8:
+            break
+    res["pdp_ctx"] = ctx
+    for c in ctx:
+        log("PDP:", c)
+    m = re.search(r"23074884", t)
+    if m:
+        log("PDP first id ctx:", t[max(0, m.start() - 300): m.start() + 300].replace("\n", " "))
+    scripts_inline = re.findall(r"<script[^>]*>(.*?)</script>", t, re.S)
+    big = sorted(scripts_inline, key=len, reverse=True)[:3]
+    for b in big:
+        log("PDP inline script head:", b[:600].replace("\n", " "))
     return res
 
 
-# ───────────────────────────── Minifygram ─────────────────────────────
 MG = "https://seoqlgtbygddyehugjwv.supabase.co"
 MG_KEY = ("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlb3FsZ3RieWdkZHllaHVnand2Iiwicm9sZSI6"
           "ImFub24iLCJpYXQiOjE3NzcxMzEwNzgsImV4cCI6MjA5MjcwNzA3OH0.TxGeE5sXW2zivw6xhJ7TIAWibGxiPzv4wcmaEihUsqY")
 MGH = {**H, "apikey": MG_KEY, "Authorization": f"Bearer {MG_KEY}", "Accept": "application/json"}
 
 
-@section("mg")
-def mg():
+@section("mg2")
+def mg2():
     res = {}
-    for tbl, sel in (("categories", "id,name,slug,sort_order,is_visible"),
-                     ("brands", "id,name,sort_order,display_label,is_visible,category_id")):
-        r = http.get(f"{MG}/rest/v1/{tbl}?select={sel}", headers=MGH, timeout=20, **IMP)
-        res[tbl] = r.json() if r.status_code == 200 else {"status": r.status_code, "body": r.text[:300]}
-        log(tbl, json.dumps(res[tbl])[:3000])
-    t0 = time.time()
-    r = http.get(f"{MG}/rest/v1/products?select=id,slug,name,brand,scale,category,condition,price_inr,mrp_inr,"
-                 f"booking_amount_inr,product_type,badge,arrival_date,preorder_close_at,preorder_status,"
-                 f"is_active,updated_at,created_at,product_skus!product_skus_product_id_fkey(available)"
-                 f"&is_active=eq.true&limit=2000", headers=MGH, timeout=30, **IMP)
-    res["products_ms"] = int((time.time() - t0) * 1000)
-    res["products_headers"] = {k: v for k, v in r.headers.items() if k.lower() in (
-        "cache-control", "age", "x-cache", "cf-cache-status", "content-range", "content-type", "server", "date")}
-    rows = r.json() if r.status_code == 200 else []
-    if r.status_code != 200:
-        log("products error", r.status_code, r.text[:300])
-        # retry without created_at in case the column doesn't exist
-        r = http.get(f"{MG}/rest/v1/products?select=id,slug,name,brand,scale,category,price_inr,mrp_inr,"
-                     f"booking_amount_inr,product_type,badge,preorder_close_at,preorder_status,is_active,updated_at,"
-                     f"product_skus!product_skus_product_id_fkey(available)&is_active=eq.true&limit=2000",
-                     headers=MGH, timeout=30, **IMP)
+    for path in ("/rest/v1/products?select=*&limit=1&is_active=eq.true",
+                 "/rest/v1/product_skus?select=*&limit=3",
+                 "/rest/v1/product_skus?select=updated_at&order=updated_at.desc&limit=2",
+                 "/rest/v1/products?select=id,updated_at&order=updated_at.desc&limit=2",
+                 "/rest/v1/product_skus?select=product_id,available,updated_at&order=updated_at.desc&limit=5"):
+        r = http.get(MG + path, headers=MGH, timeout=20, **IMP)
+        res[path] = {"status": r.status_code, "bytes": len(r.content), "body": r.text[:1500]}
+        log(path, r.status_code, r.text[:1500])
+    sel = ("id,slug,name,brand,category,price_inr,mrp_inr,product_type,badge,preorder_close_at,"
+           "preorder_status,updated_at,product_skus!product_skus_product_id_fkey(available)")
+    for label, q in (("all", f"select={sel}&is_active=eq.true&limit=2000"),
+                     ("filtered", f"select={sel}&is_active=eq.true&limit=2000&or=(brand.ilike.*hot*wheel*,brand.ilike.*mini*gt*,brand.ilike.*kaido*,category.ilike.*trading*card*,name.ilike.*tcg*)")):
+        hdr = dict(MGH); hdr["Accept-Encoding"] = "gzip"
+        t0 = time.time()
+        r = http.get(f"{MG}/rest/v1/products?{q}", headers=hdr, timeout=30, **IMP)
+        raw = r.content
         rows = r.json() if r.status_code == 200 else []
-    res["n_active"] = len(rows)
-    res["category"] = Counter(str(x.get("category")) for x in rows).most_common()
-    res["brand"] = Counter(str(x.get("brand")) for x in rows).most_common()
-    res["product_type"] = Counter(str(x.get("product_type")) for x in rows).most_common()
-    res["preorder_status"] = Counter(str(x.get("preorder_status")) for x in rows).most_common()
-    res["badge"] = Counter(str(x.get("badge")) for x in rows).most_common(20)
-    cards = [x for x in rows if re.search(r"card|tcg|pok[eé]mon|booster|trading", " ".join(
-        str(x.get(k) or "") for k in ("name", "category", "brand", "product_type", "slug")), re.I)]
-    res["card_like"] = [{k: x.get(k) for k in ("name", "brand", "category", "product_type", "price_inr",
-                                               "preorder_status", "badge", "slug", "product_skus")} for x in cards][:60]
-    res["preorders"] = [{k: x.get(k) for k in ("name", "brand", "category", "product_type", "price_inr",
-                                               "booking_amount_inr", "preorder_status", "preorder_close_at",
-                                               "slug", "product_skus")} for x in rows
-                        if str(x.get("product_type")) == "preorder"][:40]
-    newest = sorted(rows, key=lambda x: str(x.get("created_at") or x.get("updated_at") or ""), reverse=True)[:25]
-    res["newest"] = [{k: x.get(k) for k in ("name", "brand", "category", "product_type", "created_at",
-                                            "updated_at", "product_skus")} for x in newest]
-    for k in ("products_ms", "products_headers", "n_active", "category", "brand", "product_type",
-              "preorder_status", "badge"):
-        log(k, res[k])
-    log("card_like", json.dumps(res["card_like"], ensure_ascii=False)[:4000])
-    log("preorders", json.dumps(res["preorders"], ensure_ascii=False)[:3000])
-    log("newest", json.dumps(res["newest"], ensure_ascii=False)[:3000])
-    # inactive products: are sold-out items set inactive?
-    r2 = http.get(f"{MG}/rest/v1/products?select=id,name,brand,category,product_type,is_active,updated_at"
-                  f"&is_active=eq.false&limit=50&order=updated_at.desc", headers=MGH, timeout=20, **IMP)
-    res["inactive_sample"] = r2.json() if r2.status_code == 200 else {"status": r2.status_code, "body": r2.text[:200]}
-    log("inactive_sample", json.dumps(res["inactive_sample"], ensure_ascii=False)[:1500])
+        res[label] = {"status": r.status_code, "ms": int((time.time() - t0) * 1000), "rows": len(rows),
+                      "bytes": len(raw), "gzip_bytes": len(gzip.compress(raw)),
+                      "brands": Counter(str(x.get("brand")) for x in rows).most_common(12),
+                      "cats": Counter(str(x.get("category")) for x in rows).most_common()}
+        log(label, res[label])
+        if r.status_code != 200:
+            log(r.text[:400])
     return res
 
 
-# ───────────────────────────── Karz & Dolls ─────────────────────────────
 KD = "https://www.karzanddolls.com"
 
 
-@section("kd")
-def kd():
+def next_data(t):
+    m = re.search(r'<script id="__NEXT_DATA__" type="application/json"[^>]*>(.*?)</script>', t, re.S)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1))
+    except Exception:
+        return None
+
+
+def shape(o, depth=0, maxd=4):
+    if depth > maxd:
+        return "…"
+    if isinstance(o, dict):
+        return {k: shape(v, depth + 1, maxd) for k, v in list(o.items())[:40]}
+    if isinstance(o, list):
+        return [f"list[{len(o)}]", shape(o[0], depth + 1, maxd)] if o else "list[0]"
+    if isinstance(o, str):
+        return o[:60]
+    return o
+
+
+@section("kd2")
+def kd2():
     res = {}
-    for path in ("/", "/hot-wheels/mainlines", "/mini-gt/mini-gt", "/specials/chase-car",
-                 "/specials/special-stocks-64-43-scale", "/hot-wheels/car-culture"):
-        u = KD + path
-        out = {}
-        for attempt in (1, 2):
-            t0 = time.time()
-            r = http.get(u, headers=H, timeout=30, **IMP)
-            t = r.text
-            out[f"try{attempt}"] = {
-                "status": r.status_code, "ms": int((time.time() - t0) * 1000), "bytes": len(t),
-                "hdr": {k: v for k, v in r.headers.items() if k.lower() in (
-                    "cache-control", "age", "x-nextjs-cache", "x-vercel-cache", "cf-cache-status", "x-cache",
-                    "server", "x-powered-by", "etag", "last-modified", "x-nextjs-prerender", "vary")},
-                "details_links": len(set(re.findall(r'/details/[^"\'\s<>]+', t))),
-                "showing": (re.findall(r"Showing\s*\d+\s*out\s*of\s*\d+", t) or [""])[0],
-                "next_data": "__NEXT_DATA__" in t, "rsc": "self.__next_f" in t,
-                "new_arrival": t.upper().count("NEW ARRIVAL"),
-                "sold_out": t.upper().count("SOLD OUT") + t.upper().count("OUT OF STOCK"),
-            }
-            time.sleep(4)
-        if path == "/":
-            apis = sorted(set(re.findall(r'https?://[a-z0-9.-]+\.[a-z]{2,}/[A-Za-z0-9_./-]*api[A-Za-z0-9_./-]*', t)))[:40]
-            out["api_mentions"] = apis
-            m = re.search(r'"buildId":"([^"]+)"', t)
-            out["buildId"] = m.group(1) if m else None
-            scripts = re.findall(r'<script[^>]+src="([^"]+)"', t)
-            out["scripts"] = scripts[:40]
-            eps = Counter()
-            for s in scripts[:25]:
-                try:
-                    js = http.get(urljoin(KD, s), headers=H, timeout=20, **IMP).text
-                except Exception:
-                    continue
-                for m2 in re.finditer(r"""["'`](https?://[a-z0-9.-]+(?:\.[a-z]{2,})+(?:/[A-Za-z0-9_./-]{0,100})?)""", js):
-                    if any(x in m2.group(1) for x in ("karz", "api", "backend", "admin", "cms")):
-                        eps[m2.group(1)] += 1
-                for m2 in re.finditer(r"""["'`](/api/[A-Za-z0-9_./-]{2,100})""", js):
-                    eps[m2.group(1)] += 1
-            out["endpoints_in_js"] = eps.most_common(80)
-            # stock signal inside RSC payload?
-            out["rsc_stock_words"] = sorted(set(re.findall(r'\\?"(?:stock|qty|quantity|inStock|in_stock|available|stockStatus|stock_status)\\?":\s*\\?"?[A-Za-z0-9_.-]{0,20}', t)))[:30]
-        res[path] = out
-        log(path, json.dumps(out)[:3000])
+    for path in ("/hot-wheels/mainlines", "/", "/mini-gt/mini-gt"):
+        r = http.get(KD + path, headers=H, timeout=30, **IMP)
+        nd = next_data(r.text)
+        if not nd:
+            log(path, "no __NEXT_DATA__"); continue
+        pp = (nd.get("props") or {}).get("pageProps") or {}
+        res[path] = {"keys": list(nd.keys()), "page": nd.get("page"), "query": nd.get("query"),
+                     "pageProps_shape": shape(pp, 0, 3)}
+        log(path, json.dumps(res[path], ensure_ascii=False)[:5000])
+        # find product-like dicts and print 2 full examples
+        st, found = [pp], []
+        while st and len(found) < 400:
+            n = st.pop()
+            if isinstance(n, list):
+                st.extend(n)
+            elif isinstance(n, dict):
+                ks = {k.lower() for k in n}
+                if ("pid" in ks or "product_id" in ks or "id" in ks) and any(k in ks for k in ("name", "product_name", "title")) and any("price" in k for k in ks):
+                    found.append(n)
+                else:
+                    st.extend(n.values())
+        res[path]["n_products"] = len(found)
+        res[path]["examples"] = found[:3]
+        res[path]["key_union"] = sorted({k for f in found for k in f})[:80]
+        stock_keys = Counter()
+        for f in found:
+            for k, v in f.items():
+                if any(s in k.lower() for s in ("stock", "qty", "quant", "avail", "sold", "status", "new", "pre")):
+                    stock_keys[(k, str(v)[:20])] += 1
+        res[path]["stock_values"] = stock_keys.most_common(40)
+        log(path, "products:", len(found))
+        log(path, "examples:", json.dumps(found[:2], ensure_ascii=False)[:3000])
+        log(path, "stock-ish values:", stock_keys.most_common(40))
+    # API routes from JS chunks
+    r = http.get(KD + "/hot-wheels/mainlines", headers=H, timeout=30, **IMP)
+    scripts = re.findall(r'<script[^>]+src="([^"]+)"', r.text)
+    routes = Counter()
+    for s in scripts:
+        try:
+            js = http.get(urljoin(KD, s), headers=H, timeout=20, **IMP).text
+        except Exception:
+            continue
+        for m in re.finditer(r"karzOffice/api([^\"'`\s]{0,120})", js):
+            routes[m.group(1)] += 1
+        for m in re.finditer(r"""["'`](/(?:api|v1|v2|category|products?|shop|catalog|listing)[A-Za-z0-9_/${}.?=&-]{2,120})["'`]""", js):
+            routes[m.group(1)] += 1
+        for m in re.finditer(r"""\.(?:get|post)\(\s*[`"']([^`"']{3,160})[`"']""", js):
+            routes["CALL " + m.group(1)] += 1
+    res["routes"] = routes.most_common(150)
+    for k, v in routes.most_common(150):
+        log("  route", v, k)
     return res
 
 
 if __name__ == "__main__":
-    for fn in (fc_cache, fc_filters, fc_sweeps, fc_pdp, mg, kd, fc_watch):
+    for fn in (fc_equiv, fc_misc, mg2, kd2, fc_lag):
         fn()
     REPORT["finished"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     with open("probe_report.json", "w") as f:
