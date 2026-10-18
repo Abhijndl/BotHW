@@ -6,14 +6,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-in-1-64-scale-pack-of-2-multicolor/20257824/product-detail",
     "first_seen": "2026-07-18T05:30:14",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-18T05:01:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T06:00:00",
-    "fc_api_seen_at": "2026-10-18T06:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "20257824"
   },
   "fc_23074884": {
     "stock": "out_of_stock",
@@ -84,14 +87,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hotwheels-5-diecast-free-wheel-toy-car-pack-of-5-multicolor/21348/product-detail",
     "first_seen": "2026-07-18T05:30:14",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-09-24T08:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "21348"
   },
   "fc_21940376": {
     "stock": "in_stock",
@@ -2679,14 +2685,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-07T20:24:50",
     "last_price_alert": "2026-09-21T18:06:43",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_23074616": {
     "stock": "out_of_stock",
@@ -2711,14 +2720,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-172-250-tooned-volkswagen-toy-car-white/23354598/product-detail",
     "first_seen": "2026-07-19T07:01:32",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-16T17:58:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-16T21:15:00",
-    "fc_api_seen_at": "2026-10-16T21:15:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_23074886": {
     "stock": "out_of_stock",
@@ -2891,15 +2903,18 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-26-250-nda-cinque-pagani-zo-die-cast-free-wheel-toy-car-orange/23354599/product-detail",
     "first_seen": "2026-07-20T05:45:57",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_23074618": {
     "stock": "out_of_stock",
@@ -3768,14 +3783,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-71-250-austin-mini-copper-toy-car-red/23354596/product-detail",
     "first_seen": "2026-07-21T04:51:19",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-18T06:36:53",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_23074891": {
     "stock": "out_of_stock",
@@ -3816,14 +3834,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-brown/23353374/product-detail",
     "first_seen": "2026-07-21T04:56:46",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T05:32:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_23076126": {
     "stock": "out_of_stock",
@@ -3947,14 +3968,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-574-20-royota-tacoma-die-cast-free-wheel-toy-car-green/23973355/product-detail",
     "first_seen": "2026-07-21T17:56:30",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T04:46:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23973353"
   },
   "fc_23076123": {
     "stock": "in_stock",
@@ -4170,14 +4194,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2404-rally-finale-die-cast-free-wheel-toy-car-mint/23973356/product-detail",
     "first_seen": "2026-07-23T05:51:34",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T05:01:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23973353"
   },
   "fc_23351684": {
     "stock": "out_of_stock",
@@ -4423,7 +4450,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23347149": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 151/250 Ford F-150 Lightning Supertruck Die Cat Free Wheel Toy Car- Multicolor",
     "price": "₹161",
     "source": "firstcry",
@@ -4437,8 +4464,8 @@
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_live": "no delivery",
+    "fc_lst": "out",
     "fc_gid": "23347148"
   },
   "fc_23075650": {
@@ -4658,14 +4685,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-86-250-vw-id-buzz-bomb-toy-car-blue/23354966/product-detail",
     "first_seen": "2026-08-01T04:27:10",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T19:52:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T21:15:00",
-    "fc_api_seen_at": "2026-10-17T21:15:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_23105077": {
     "stock": "out_of_stock",
@@ -4970,7 +5000,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23353372"
   },
   "mg_e57fd304-e928-4684-b17d-fe401233398d": {
     "stock": "in_stock",
@@ -5694,7 +5727,10 @@
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "24194176"
   },
   "fc_24194174": {
     "stock": "in_stock",
@@ -5711,7 +5747,10 @@
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "24194174"
   },
   "fc_24194173": {
     "stock": "out_of_stock",
@@ -9744,20 +9783,23 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_23930405": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-safari-mode-die-cast-free-wheel-toy-car-with-smooth-rolling-wheel-pack-of-5-multicolor/23930405/product-detail",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-27T01:40:56",
+    "last_restock_alert": "2026-10-18T13:09:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-10-05T18:30:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "21348"
   },
   "fc_22912945": {
     "stock": "in_stock",
@@ -10324,20 +10366,24 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_21728779": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Jukku Resembling Ferrari SF90 Diecast Car - Pullback - Openable Doors & Back Bonnet - 1:36 Scale - Black",
     "price": "₹443",
     "source": "firstcry",
     "url": "https://www.firstcry.com/jukku/jukku-resembling-ferrari-sf90-diecast-car-pullback-openable-doors-and-back-bonnet-1-36-scale-black/21728779/product-detail",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-09-21T06:15:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "21728779"
   },
   "fc_22928008": {
     "stock": "out_of_stock",
@@ -10653,14 +10699,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-motor-show-die-cast-free-wheel-toy-car-pack-of-5-multcolor/23930666/product-detail",
     "first_seen": "2026-09-02T05:28:35",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T14:08:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T07:00:00",
-    "fc_api_seen_at": "2026-10-18T07:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "21348"
   },
   "fc_24248193": {
     "stock": "out_of_stock",
@@ -11674,15 +11723,18 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-free-wheel-model-with-smooth-rolling-wheels-diecast-toy-cars-pack-of-5-multicolor/23033009/product-detail",
     "first_seen": "2026-09-08T13:23:02",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-29T04:32:16",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-04T17:00:00",
-    "fc_api_seen_at": "2026-10-04T17:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "21348"
   },
   "fc_21827562": {
     "stock": "out_of_stock",
@@ -11791,7 +11843,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "24235314"
   },
   "fc_23930659": {
     "stock": "in_stock",
@@ -12592,7 +12647,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "20257824"
   },
   "fc_19995092": {
     "stock": "out_of_stock",
@@ -13415,7 +13473,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23811697"
   },
   "fc_24342822": {
     "stock": "out_of_stock",
@@ -13618,14 +13679,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg14-ja10-pack-of-2-white-and-red/22623489/product-detail",
     "first_seen": "2026-09-17T18:01:52",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "2026-09-18T05:01:59",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-27T04:00:00",
-    "fc_api_seen_at": "2026-09-27T04:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "20257824"
   },
   "fc_23355053": {
     "stock": "in_stock",
@@ -13641,7 +13705,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23353372"
   },
   "fc_24503750": {
     "stock": "in_stock",
@@ -13676,7 +13743,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "21348"
   },
   "fc_24473028": {
     "stock": "in_stock",
@@ -14866,14 +14936,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-69-chevelle-ss-396-toy-car-black/24525290/product-detail",
     "first_seen": "2026-09-20T08:51:11",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "24525283"
   },
   "fc_24525285": {
     "stock": "out_of_stock",
@@ -14882,14 +14955,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-old-school-77-pontiac-firebird-ta-toy-car-red/24525285/product-detail",
     "first_seen": "2026-09-20T08:51:11",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "24525283"
   },
   "fc_24503747": {
     "stock": "out_of_stock",
@@ -15158,7 +15234,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "fc_23835986": {
     "stock": "in_stock",
@@ -15174,7 +15253,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "fc_22597474": {
     "stock": "in_stock",
@@ -15206,7 +15288,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "fc_23835980": {
     "stock": "in_stock",
@@ -15222,7 +15307,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "fc_23835984": {
     "stock": "in_stock",
@@ -15238,7 +15326,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "fc_24514785": {
     "stock": "in_stock",
@@ -15918,14 +16009,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-4515-sandblaster-die-cast-free-wheel-toy-car-light-khaki/23973359/product-detail",
     "first_seen": "2026-09-21T06:34:27",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T05:01:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23973353"
   },
   "fc_23973357": {
     "stock": "out_of_stock",
@@ -15934,14 +16028,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-175-67-ford-bronco-die-cast-free-wheel-toy-car-deep-brown/23973357/product-detail",
     "first_seen": "2026-09-21T06:34:27",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T05:01:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23973353"
   },
   "fc_23973354": {
     "stock": "in_stock",
@@ -15957,7 +16054,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23973353"
   },
   "fc_23973353": {
     "stock": "out_of_stock",
@@ -15966,14 +16066,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-7504-land-rover-defender-90-die-cast-free-wheel-toy-car-brown/23973353/product-detail",
     "first_seen": "2026-09-21T06:34:27",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-16T20:10:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23973353"
   },
   "fc_23832900": {
     "stock": "out_of_stock",
@@ -16014,14 +16117,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-steam-toy-car-brown/23353375/product-detail",
     "first_seen": "2026-09-21T06:34:27",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "23353372"
   },
   "fc_24246593": {
     "stock": "out_of_stock",
@@ -16118,7 +16224,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "24235309"
   },
   "fc_24032130": {
     "stock": "out_of_stock",
@@ -16815,15 +16924,18 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-toyota-land-cruiser-toy-car-blue/24525284/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "24525283"
   },
   "fc_24525283": {
     "stock": "out_of_stock",
@@ -16832,14 +16944,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-lotus-esprit-turbo-toy-car-red/24525283/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "24525283"
   },
   "fc_24514784": {
     "stock": "out_of_stock",
@@ -17700,30 +17815,36 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg13-ja10-pack-of-2-brown-and-green/22623491/product-detail",
     "first_seen": "2026-09-27T04:00:00",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T12:45:00",
-    "fc_api_seen_at": "2026-10-18T12:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "out",
+    "fc_gid": "20257824"
   },
   "fc_23835987": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Blue",
     "price": "₹439",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mega-wrex-die-cast-free-wheel-free-style-dem-derby-monster-toy-truck-blue/23835987/product-detail",
     "first_seen": "2026-09-27T05:45:00",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-06T04:46:52",
+    "last_restock_alert": "2026-10-18T13:09:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-09T04:00:00",
-    "fc_api_seen_at": "2026-10-09T04:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "fc_24247506": {
     "stock": "out_of_stock",
@@ -18438,20 +18559,23 @@
     "last_price_alert": ""
   },
   "fc_24505759": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Diecast Toy Car Trophy Case Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor",
     "price": "₹782",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-trophy-case-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/24505759/product-detail",
     "first_seen": "2026-10-05T20:15:00",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T13:09:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-10-06T13:15:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "21348"
   },
   "mg_f20f0434-4471-4539-8540-e3ad47600ced": {
     "stock": "out_of_stock",
@@ -18482,20 +18606,23 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23835981": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Crocovile Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Light Green",
     "price": "₹439",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-crocovile-die-cast-free-wheel-free-style-dem-derby-monster-toy-truck-light-green/23835981/product-detail",
     "first_seen": "2026-10-06T04:45:00",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T13:09:32",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T04:15:00",
-    "fc_api_seen_at": "2026-10-10T04:15:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "23835981"
   },
   "mg_cb869f68-7bfa-4fb5-9b1a-71aadb0d4adc": {
     "stock": "out_of_stock",
@@ -18968,7 +19095,10 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
     "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "24235310"
   },
   "fc_22623490": {
     "stock": "out_of_stock",
@@ -18977,14 +19107,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-jlg09-ja10-pack-of-2-black-and-white/22623490/product-detail",
     "first_seen": "2026-10-10T06:45:00",
-    "last_seen": "2026-10-18T12:45:00",
+    "last_seen": "2026-10-18T13:00:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-10T07:45:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:00:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_lst": "out",
+    "fc_gid": "20257824"
   },
   "fc_24247518": {
     "stock": "out_of_stock",
