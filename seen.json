@@ -3461,7 +3461,7 @@
     "fc_gid": "23074890"
   },
   "fc_23075647": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pagani Zonda Cinque (26/250) Die Cast Toy Car - Orange",
     "price": "₹161",
     "source": "firstcry",
@@ -3476,7 +3476,7 @@
     "fc_listed_at": "2026-10-18T15:30:00",
     "fc_api_seen_at": "2026-10-18T15:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074890"
   },
