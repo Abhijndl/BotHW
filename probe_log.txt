@@ -1,27 +1,71 @@
-listing 248001: 403 products; in-stock filter: 184
-stock>0 in catalogue: 191; of those NOT on in-stock list: 8; on in-stock list but missing from catalogue: 1
-DIFF on_instock_list= False | catalogue 1 | instock-list None | page CS 1 | Hot Wheels Datsun 240Z Die cast car 72/250 - Green
-OK   on_instock_list= False | catalogue 2 | instock-list None | page CS 0 | Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast To
-OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels X-Cceleron Die-Cast Toy Car - Grey
-OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light G
-OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels Toyota Prius Custom /Personnalise Die Cast C
-OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car
-DIFF on_instock_list= False | catalogue 1 | instock-list None | page CS 1 | Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue
-DIFF on_instock_list= False | catalogue 1 | instock-list None | page CS 1 | Hot Wheels Lotus Cortina (67/250) Toy Car - Black
-OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 1 | Hot Wheels Stunt Tracks Slam Jump Challenge Track Set &
-OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 1 | Hot Wheels Dino 206 GT (150/250) Die Cast Toy Car - Yel
-OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 2 | Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black
-OK   on_instock_list= True | catalogue 2 | instock-list 2 | page CS 2 | Hot Wheels Die Cast Free Wheel Color Shifters Night Shi
-OK   on_instock_list= True | catalogue 2 | instock-list 2 | page CS 2 | HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 -
-OK   on_instock_list= True | catalogue 2 | instock-list 2 | page CS 2 | Hot Wheels The Dark Knight Batmobile Die Cast Free Whee
-OK   on_instock_list= True | catalogue 3 | instock-list 3 | page CS 3 | Hot Wheel Die Cast Free Wheel Monster Truck Mutant - Mu
-OK   on_instock_list= True | catalogue 3 | instock-list 3 | page CS 3 | Hot Wheels Die Cast Monster Trucks 3/11 Jeep FC - Yello
-OK   on_instock_list= True | catalogue 3 | instock-list 2 | page CS 2 | Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 
-OK   on_instock_list= True | catalogue 4 | instock-list 4 | page CS 4 | Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (11
-OK   on_instock_list= True | catalogue 5 | instock-list 5 | page CS 5 | Hot Wheels Stunt Tracks Rapid Launch Cyclone Track Set 
-OK   on_instock_list= True | catalogue 5 | instock-list 5 | page CS 5 | Hot Wheels Diecast Toy Car HW Hot Rods Free Wheel Model
-OK   on_instock_list= True | catalogue 5 | instock-list 5 | page CS 7 | Hot Wheels Lucid Air (59/250) Toy Car - Blue
-OK   on_instock_list= True | catalogue 6 | instock-list 6 | page CS 6 | Hot Wheels Premium Collector Display Sets, 3 Cars & 1 T
-OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 1 | Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free W
+seen.json copied: 790028 bytes
 
-agree=20 disagree=3
+================ FORCED PASS: every store once ================
+  [MG] 1 products had no SKU row — used product_type fallback
+[*] Minifygram total: 270 of 273 (36 in stock; 1 trading cards, 62 pre-orders)
+[=] Minifygram: no alert-worthy changes (0 minor)
+  [KD] car-culture → 1
+  [KD] fast-and-furious → 1
+  [KD] gift-pack → 21
+  [KD] team-transport → 5
+  [KD] card-art-premiums → 8
+  [KD] pop-culture → 4
+  [KD] mainlines → 5
+  [KD] boulevard-series → 0 (empty right now)
+  [HM] listing → 12 visible products
+  [KD] character-cars → 8
+  [KD] disney-cars → 0 (empty right now)
+  [KD] pre-order-minigt → 65
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] hot-wheels-accessories → 8
+  [KD] kaido-house → 16
+  [KD] mini-gt → 107
+  [KD] mini-gt-blister-pack → 126
+  [KD] chase-car → 0 (empty right now)
+  [FC-API] quick sweep: 190 in stock from 12 page(s) in 3.7s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [KD] home → 0 new (25 already listed elsewhere)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+[*] Karz&Dolls total: 375 (375 in stock)
+[=] Karz&Dolls: no alert-worthy changes (0 minor)
+  [FC-API] stock for pincode: 248001
+  [HM] creds: token=yes app_id=605884f889251331fe847d80
+  [HM] api → HTTP 401
+  [FC-API] 403 products across 21 page(s) (212 with zero stock) in 1.9s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 399, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels Free Wheel Die Cast Mercedes-Benz Cla | stock=out_of_stock count=0 price=167 mrp=None
+[*] FirstCry total (API): 558 tracked, 114 buyable now (in-stock list complete), 0 aged to delisted
+[=] FirstCry: no alert-worthy changes (0 minor)
+  [HM] api → HTTP 401
+  [HM] api → HTTP 401
+  [HM] Fynd API returned nothing — falling back to page checks
+  [HM] sitemap → 26 hot-wheels product slugs
+  [HM] page-checked 12 products (0 in stock / 12 sold out)
+[*] Hamleys total: 64 (32 in stock)
+[=] Hamleys: no alert-worthy changes (0 minor)
+[*] forced pass: FirstCry, Minifygram, Karz&Dolls, Hamleys → 1267 products in 13.7s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
+FirstCry stock changes in the forced pass: 9
+    ('fc_20257824', 'in_stock', 'out_of_stock', 'Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pa')
+    ('fc_22600382', 'in_stock', 'out_of_stock', 'Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with S')
+    ('fc_23346007', 'in_stock', 'out_of_stock', 'Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW ')
+    ('fc_23074610', 'in_stock', 'out_of_stock', 'Hot Wheels Free Wheel Die Cast Super twin mill (169/250) Toy')
+    ('fc_23930666', 'in_stock', 'out_of_stock', 'Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 ')
+    ('fc_24314338', 'in_stock', 'out_of_stock', 'Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicol')
+    ('fc_24503821', 'in_stock', 'out_of_stock', "Hot Wheels Custom '62 Chevy Pickup Die Cast Free Wheel Toy C")
+    ('fc_24503746', 'in_stock', 'out_of_stock', 'Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy')
+    ('fc_24776024', 'in_stock', 'out_of_stock', 'Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250) Toy Car - Gr')
+forced pass took 13.7s
+
+================ DRY RUN of main() (alerts printed, not sent) ================
+  [FC-API] quick sweep: 190 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry → 123 products in 1.2s (live: FirstCry)
+  [FC-API] quick sweep: 190 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+[*] pass 2: FirstCry → 123 products in 1.1s (live: FirstCry)
+  [FC-API] quick sweep: 190 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+[*] pass 3: FirstCry → 123 products in 0.9s (live: FirstCry)
+  [FC-API] quick sweep: 190 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+[*] pass 4: FirstCry → 123 products in 1.1s (live: FirstCry)
+
+[*] run finished: 4 pass(es) in 38s
+main() took 37.8s; 0 message(s) would have been sent
