@@ -11730,15 +11730,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-forza-66-porsche-906-carrera-6-die-cast-toy-car-orange/23029590/product-detail",
     "first_seen": "2026-09-06T17:33:06",
-    "last_seen": "2026-10-18T13:00:00",
+    "last_seen": "2026-10-18T13:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-28T13:34:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T13:00:00",
-    "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:15:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_gid": "23029510"
   },
   "fc_23103132": {
     "stock": "out_of_stock",
@@ -20547,14 +20549,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-g-i-joe-788-cobra-h-i-s-s-die-cast-toy-car-black/23030309/product-detail",
     "first_seen": "2026-10-17T07:15:00",
-    "last_seen": "2026-10-18T13:00:00",
+    "last_seen": "2026-10-18T13:15:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
-    "fc_api_seen_at": "2026-10-18T13:00:00",
-    "fc_trusted": true
+    "fc_api_seen_at": "2026-10-18T13:15:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_gid": "23029510"
   },
   "kd_zONvZyaNBK": {
     "stock": "in_stock",
@@ -21138,5 +21142,22 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "fc_23030229": {
+    "stock": "out_of_stock",
+    "name": "Hot Wheels Greetings From Spider-Mobile Dead-Buggy Die Cast Toy Car -Red & Black",
+    "price": "₹494",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-greetings-from-spider-mobile-dead-buggy-die-cast-toy-car-red-and-black/23030229/product-detail",
+    "first_seen": "2026-10-18T13:15:00",
+    "last_seen": "2026-10-18T13:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_api_seen_at": "2026-10-18T13:15:00",
+    "fc_trusted": true,
+    "fc_live": "no delivery",
+    "fc_gid": "23029510"
   }
 }
