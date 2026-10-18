@@ -1234,7 +1234,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_0b34119c-16bb-456f-a8c2-f157a79161f8": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Lamborghini Huracan Sterrato",
     "price": "₹599",
     "source": "minifygram",
@@ -18246,7 +18246,7 @@
   },
   "kd_KBg7zVGpRr": {
     "stock": "in_stock",
-    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY [PRE-ORDER]",
+    "name": "HOT WHEELS FAST FURIOUS 5PACKS 25TH ANNIVERSARY",
     "price": "₹3199",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
