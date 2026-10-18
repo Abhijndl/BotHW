@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v14
+Hot Wheels / Diecast Collector Tracker  ·  v14.0.1
 ==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -1379,6 +1379,7 @@ FC_TAT_BATCH    = 40
 _FC_LIVE: dict = {}         # pid -> {"cs","svc","pn","mrp","dis","gid","members","at_page","at_svc"}
 _FC_LIVE_PAUSE = [0.0]      # epoch until which product pages are left alone (429/403)
 _FC_LIVE_STATS = {"pages": 0, "tat": 0}
+_FC_LIVE_SINCE = [""]       # when v14 first ran (seen.json _meta), 15-min bucket
 _FC_LIVE_LOCK = threading.Lock()
 
 
@@ -1627,23 +1628,27 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         return recs
     t0 = time.time()
     by = {r["id"][3:]: r for r in recs}
-    listed_in = {p for p, r in by.items() if r["stock"] == "in_stock"}
+    # what the listing itself said, before any page verdict is applied
+    word = {p: ("list" if r["stock"] == "in_stock" else "cat" if r.get("fc_cat_in") else "out")
+            for p, r in by.items() if not r.get("fc_carried")}
+    listed_in = {p for p, w in word.items() if w == "list"}
     slot = int(time.time() // 60)
 
     def claim(p):
         """What the listing says this pass: 'list' (on the in-stock list),
         'cat' (only the catalogue shows units), 'out', or None (no word)."""
-        r = by.get(p)
-        if r is not None:
-            if r["stock"] == "in_stock":
-                return "list"
-            return "cat" if r.get("fc_cat_in") else "out"
+        if p in word:
+            return word[p]
         # absent from this pass's listing: only meaningful for cars we hold in stock
         return "out" if (prev_fc.get(p) or {}).get("stock") == "in_stock" else None
 
     def wanted(p):
         nm = ((by.get(p) or prev_fc.get(p) or {}).get("name") or "")
-        return p.isdigit() and bool(nm) and not _fc_excluded(nm)
+        if not (p.isdigit() and nm) or _fc_excluded(nm):
+            return False
+        # outside the listing only Hot Wheels count (old records of other things
+        # — a Babyhug RC car — turn up in the sets of Hot Wheels pages)
+        return p in word or bool(_FC_HW_NAME.search(nm))
 
     cands, held = [], {}
     # (stored entries for track sets etc. from before they were excluded never
@@ -1703,6 +1708,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             continue
         v = prev_fc.get(p)
         r = by.get(p)
+        if (r is None or r.get("fc_carried")) and v is not None and not wanted(p):
+            continue
         if verdict == "unconfirmed":
             st = (v or {}).get("stock") or "out_of_stock"   # no word on delivery: no change
         else:
@@ -1731,7 +1738,10 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 if (v.get("stock") == st and v.get("fc_live") == verdict
                         and v.get("fc_gid") == (info.get("gid") or v.get("fc_gid"))):
                     continue                       # nothing new for a car outside the listing
-                if not v.get("name") or _fc_excluded(v.get("name", "")):
+                # outside the listing only Hot Wheels count (an old record for a
+                # Babyhug RC car turned up on a Hot Wheels page's set)
+                if (not v.get("name") or _fc_excluded(v.get("name", ""))
+                        or not _FC_HW_NAME.search(v.get("name", ""))):
                     continue
                 r = {"id": f"fc_{p}", "source": "firstcry", "name": v.get("name", ""),
                      "url": v.get("url") or f"https://www.firstcry.com/x/x/{p}/product-detail",
@@ -1743,6 +1753,15 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             out.append(r)
             by[p] = r
         before = (v or {}).get("stock")
+        # The first page reading of a car tracked from before v14, which the
+        # listing isn't calling in stock, is a correction, not news: cars the
+        # listing was hiding (on sale for hours) must not all fire "back in
+        # stock" the first time their set is read. Later comebacks — and cars
+        # first seen since v14 started — alert normally.
+        if (st == "in_stock" and before != "in_stock" and v and not v.get("fc_live")
+                and claim(p) not in ("list", "cat")
+                and v.get("first_seen", "") < (_FC_LIVE_SINCE[0] or "0")):
+            r["fc_first_read"] = True
         r["stock"] = st
         r["stock_count"] = info.get("cs") if st == "in_stock" else None
         r["fc_live"] = verdict
@@ -1835,6 +1854,7 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
                         "fc_trusted": bool(v.get("fc_trusted")),
                         "fc_listed_at": v.get("fc_listed_at", ""),
                         "fc_api_seen_at": seen_at,
+                        "fc_carried": True,          # not in the listing this time
                     })
                     got.add(pid)
             # v13.1.1: a car missing from the in-stock list is NOT marked sold
@@ -3239,6 +3259,8 @@ def compute_changes(current: dict, seen: dict) -> dict:
         # reading is applied silently — it corrects the record, it isn't news.
         if d.get("fc_trusted") and not prev.get("fc_trusted"):
             is_correction = True
+        if d.get("fc_first_read"):
+            is_correction = True
 
         # a restock confirmed on FirstCry's product page can't be listing
         # flicker, so it may alert again after FC_RESTOCK_COOLDOWN_H hours
@@ -3610,6 +3632,11 @@ def main():
     seen = load_seen()
     first_run = (len(seen) == 0)
     _fc_fresh_load(seen)
+    if FC_LIVE:
+        meta = seen.setdefault("_meta", {}) if isinstance(seen.get("_meta", {}), dict) else {}
+        if not meta.get("fc_live_since"):
+            meta["fc_live_since"] = _bucket(time.strftime("%Y-%m-%dT%H:%M:%S"))
+        _FC_LIVE_SINCE[0] = meta["fc_live_since"]
 
     # One-time migration: entries written by the old overwrite-style seen.json
     # lack the alerted_new flag — treat them all as already alerted.
