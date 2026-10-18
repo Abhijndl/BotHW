@@ -4791,7 +4791,7 @@
     "fc_trusted": true
   },
   "fc_23348665": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 191/250 65 Mercury Comet Cyclone Die Cat Free Wheel Toy Car- Red",
     "price": "₹161",
     "source": "firstcry",
@@ -4805,7 +4805,7 @@
     "fc_listed_at": "2026-10-18T22:15:00",
     "fc_api_seen_at": "2026-10-18T22:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "23347148"
   },
