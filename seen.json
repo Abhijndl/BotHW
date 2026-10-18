@@ -2636,8 +2636,8 @@
     "last_restock_alert": "2026-10-18T04:04:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T05:00:00",
-    "fc_api_seen_at": "2026-10-18T05:00:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_23075649": {
@@ -2675,7 +2675,7 @@
   "fc_23354597": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹167",
+    "price": "₹150",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-156-250-custom-otto-die-cast-free-wheel-toy-car-blue/23354597/product-detail",
     "first_seen": "2026-07-19T05:21:03",
@@ -10556,8 +10556,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T05:30:00",
-    "fc_api_seen_at": "2026-10-18T05:30:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_23930666": {
@@ -12706,7 +12706,7 @@
     "fc_trusted": true
   },
   "fc_24314338": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12714,11 +12714,11 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-18T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-15T06:52:49",
+    "last_restock_alert": "2026-10-18T05:48:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T15:45:00",
-    "fc_api_seen_at": "2026-10-15T15:45:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_24390970": {
@@ -13822,8 +13822,8 @@
     "last_restock_alert": "2026-10-16T22:01:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T04:30:00",
-    "fc_api_seen_at": "2026-10-18T04:30:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_24473499": {
@@ -14398,7 +14398,7 @@
   "fc_24475755": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -15565,15 +15565,15 @@
     "fc_trusted": true
   },
   "fc_23973354": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 2304 Custom Personnalise 69 Volkswahen Squareback Die-cast Free Wheel Toy Car - Light ,green",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-2304-custom-personnalise-69-volkswahen-squareback-die-cast-free-wheel-toy-car-light-green/23973354/product-detail",
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-18T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-16T16:06:47",
+    "last_restock_alert": "2026-10-18T05:48:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T05:45:00",
@@ -15624,8 +15624,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-18T05:30:00",
-    "fc_api_seen_at": "2026-10-18T05:30:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_23353375": {
@@ -16155,19 +16155,19 @@
     "fc_trusted": true
   },
   "fc_24503746": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-18T05:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-14T06:04:45",
+    "last_restock_alert": "2026-10-18T05:48:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-17T14:45:00",
-    "fc_api_seen_at": "2026-10-17T14:45:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_24503335": {
@@ -18453,7 +18453,7 @@
   "fc_24235312": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 98 Honda Prelude Toy Car with Color Die-Cast Model - Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-98-honda-prelude-toy-car-with-color-die-cast-model-green/24235312/product-detail",
     "first_seen": "2026-10-10T04:30:00",
@@ -19507,8 +19507,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-17T18:45:00",
-    "fc_api_seen_at": "2026-10-17T18:45:00",
+    "fc_listed_at": "2026-10-18T05:45:00",
+    "fc_api_seen_at": "2026-10-18T05:45:00",
     "fc_trusted": true
   },
   "fc_24776064": {
