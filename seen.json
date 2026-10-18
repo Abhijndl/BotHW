@@ -13313,7 +13313,7 @@
     "fc_trusted": true
   },
   "fc_24514783": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Color Shifters Layin Lowrider Toy Car - Yellow",
     "price": "₹359",
     "source": "firstcry",
@@ -13321,7 +13321,7 @@
     "first_seen": "2026-09-17T13:11:23",
     "last_seen": "2026-10-18T09:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-18T09:08:02",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T09:00:00",
