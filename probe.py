@@ -16,7 +16,7 @@ print("seen.json copied:", os.path.getsize(os.path.join(DRY, "seen.json")), "byt
 
 env = {
     "TELEGRAM_BOT_TOKEN": "", "TELEGRAM_CHAT_ID": "",
-    "RUN_SECONDS": os.getenv("RUN_SECONDS", "45"), "FC_EVERY": "20", "FC_FULL_EVERY": "60",
+    "RUN_SECONDS": os.getenv("RUN_SECONDS", "45"), "FC_EVERY": "15", "FC_FULL_EVERY": "60",
     "MG_EVERY_S": "120", "KD_EVERY_S": "120", "HM_EVERY_S": "600",
     "SILENT": "true", "FIRST_RUN_SILENT": "true", "MAX_ALERT_PRICE": "0", "DEBUG": "false",
     "WATCHLIST": "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk",
@@ -38,29 +38,20 @@ def load(path, name):
 
 
 new = load(os.path.join(ROOT, "bot_v13.py"), "bot_v13")
-old = load(os.path.join(ROOT, "bot.py"), "bot_old")
+sent = []
+def fake_tg(msg):
+    sent.append(msg)
+    print("\n----- TELEGRAM (dry run, not sent) -----\n" + msg + "\n----------------------------------------")
+new.tg = fake_tg
 
-print("\n================ KND: new JSON parser vs old HTML parser ================")
-t0 = time.time(); kn = new.scrape_karzanddolls(); t1 = time.time()
-ko = old.scrape_karzanddolls(); t2 = time.time()
-sn = {d["id"]: d for d in kn}; so = {d["id"]: d for d in ko}
-print(f"new: {len(sn)} products in {t1-t0:.1f}s (healthy={new.KD_HEALTHY[0]}); old: {len(so)} in {t2-t1:.1f}s")
-print("only in new:", [(k, sn[k]['name'][:50], sn[k]['stock']) for k in sorted(set(sn) - set(so))][:40])
-print("only in old:", [(k, so[k]['name'][:50]) for k in sorted(set(so) - set(sn))][:40])
-diff = [(k, so[k]['stock'], sn[k]['stock'], so[k]['price'], sn[k]['price'], sn[k]['name'][:40])
-        for k in set(sn) & set(so) if (so[k]['stock'], so[k]['price']) != (sn[k]['stock'], sn[k]['price'])]
-print("stock/price differences:", diff[:30])
-names = [(sn[k]['name'][:45], so[k]['name'][:45]) for k in list(set(sn) & set(so))[:8]]
-print("name samples (new, old):", names)
-
-print("\n================ Minifygram ================")
-mg = new.scrape_minifygram()
-print("watermark:", new.mg_watermark(), "| last full-fetch watermark:", new._MG_LAST_WM[0])
-for d in mg:
-    if "🃏" in d["name"] or "[PRE-ORDER]" in d["name"]:
-        print("  ", d["stock"], d["price"], d["name"][:80])
+print("\n================ FORCED PASS: every store once ================")
+seen = new.load_seen()
+new._fc_fresh_load(seen)
+t0 = time.time()
+new.run_pass(seen, ["FirstCry", "Minifygram", "Karz&Dolls", "Hamleys"], False, False, "forced pass")
+print(f"forced pass took {time.time()-t0:.1f}s")
 
 print("\n================ DRY RUN of main() (alerts printed, not sent) ================")
 t0 = time.time()
 new.main()
-print(f"main() took {time.time()-t0:.1f}s")
+print(f"main() took {time.time()-t0:.1f}s; {len(sent)} message(s) would have been sent")

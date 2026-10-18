@@ -1,48 +1,33 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v4 "God Tier"
-========================================================
-Sources  : FirstCry · Minifygram · Blinkit  (Dehradun 248001)
-Runtime  : Pure HTTP. No Playwright, no Chromium, no browser.
-Host     : GitHub Actions (free) — runs on a schedule, pushes state back to the repo.
+Hot Wheels / Diecast Collector Tracker  ·  v13
+==============================================
+Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
+          (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
+Runtime : Pure HTTP (curl_cffi with a real Chrome fingerprint). No browser.
+Host    : GitHub Actions, triggered every minute by cron-job.org; state lives in
+          seen.json, committed back after each run.
 
-WHY THIS REWRITE
-----------------
-The old bot launched a headless Chromium via Playwright. On free hosts that
-browser frequently fails to install ("Executable doesn't exist … chrome-headless-shell"),
-which is exactly the error your Telegram bot kept reporting. It also made every
-run slow (~2-3 min) and fragile.
-
-This version never opens a browser. It talks to the same data the websites'
-own front-ends use:
-
-  • FirstCry  — the category page is fully server-rendered HTML. We fetch it
-                with a real browser TLS fingerprint (curl_cffi) and parse the
-                product cards directly. Every SKU, price, MRP, and in-stock /
-                notify-me state is right there in the markup.
-
-  • Minifygram — a Supabase-backed React app. We call its public Supabase REST
-                 endpoint directly and get clean JSON (id, name, price, stock).
-                 The anon key + project URL are auto-discovered from the site's
-                 JS bundle at runtime, so it keeps working if they redeploy.
-
-  • Blinkit   — quick-commerce, location-locked. We call the same internal
-                search API the website uses, pinned to your Dehradun coordinates.
-                Blinkit is the flakiest of the three (aggressive bot defense);
-                it's best-effort and never blocks the other two sources.
-
-Each source is independent and wrapped in try/except: one failing never stops
-the others. If a source gets blocked, you still get alerts from the rest.
+HOW A RUN WORKS (v13)
+---------------------
+Each run stays alive RUN_SECONDS (45 s on GitHub) and checks in passes:
+  • FirstCry every FC_EVERY seconds (15 s): a full catalogue sweep first, then
+    quick sweeps of the in-stock list. Every request asks for a cache key
+    FirstCry hasn't built yet, so the data is computed live — the plain request
+    the bot used to make was answered from a 15-minute cache (measured: 9-15
+    minutes old), which is why alerts used to arrive after cars had sold out.
+  • Minifygram: full list every 2 min, plus a tiny "anything changed?" check
+    every pass that pulls new listings in within seconds. Trading cards too.
+  • Karz & Dolls every 2 min, read from the JSON the site embeds in its pages.
+  • Hamleys every 10 min.
+Alerts go out the moment a store's check finishes; nothing waits for slower
+stores. Runs are chained back to back, so the watch is continuous.
 
 ALERTS
 ------
-new_listing   a SKU we've never seen, in stock  →  🆕
-restock       was out of stock, now in stock     →  🔥
-price_drop    price fell vs last run             →  💸
-back_soon     newly listed but out of stock      →  👀  (so you can wishlist it)
-
-Everything is diffed against seen.json, which the workflow commits back after
-each run so state survives between runs.
+🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
+🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units left
+Every product's NEW alert fires once ever; restocks have a 24 h cooldown.
 """
 
 import os
@@ -1065,6 +1050,7 @@ def _fc_slug(name: str) -> str:
 
 
 FC_THROTTLED = [0.0]   # epoch until which quick sweeps pause (FirstCry sent 429/403)
+_FC_PREV_INSTOCK = [None]  # ids on the previous complete in-stock list (this run)
 _FC_INSTOCK_PAGES = [9]  # pages the in-stock-only list takes (178 cars → 9 pages)
 _FC_SESSION = {"cookies": None, "at": 0.0}
 FC_LAST_SWEEP = {"hot": False, "pages": 0, "fresh": "", "secs": 0.0, "complete": False}
@@ -1342,17 +1328,21 @@ def scrape_firstcry(prev_all: dict | None = None, hot: bool = False) -> list[dic
         if api is None:
             return []
         recs = fc_api_records(api, prev_fc, quiet=True)
-        # A COMPLETE in-stock list is authoritative: a car we had in stock that
-        # is no longer on it has sold out. Recording that now (instead of at the
-        # next full sweep) means a sell-out followed by a quick restock still
-        # fires its alert. Guarded: only when every page arrived and the list
-        # isn't suspiciously short.
-        if FC_LAST_SWEEP["complete"]:
+        # A car that WAS on the previous complete in-stock list and has dropped
+        # off this one has sold out. Recording that now (instead of at the next
+        # full sweep) means a sell-out followed by a quick restock still fires
+        # its alert. Only list-to-list changes count: the in-stock filter and
+        # the full catalogue can disagree about a handful of cars (live dry run:
+        # 182 vs 178), and those must never flip-flop into false restocks.
+        listed = {str(pid) for pid in api}
+        prev_listed = _FC_PREV_INSTOCK[0]
+        _FC_PREV_INSTOCK[0] = listed if FC_LAST_SWEEP["complete"] else None
+        if FC_LAST_SWEEP["complete"] and prev_listed:
             got = {r["id"][3:] for r in recs}
-            prev_in = [pid for pid, v in prev_fc.items()
-                       if v.get("stock") == "in_stock" and pid.isdigit()
-                       and not _fc_excluded(v.get("name", ""))]
-            if not prev_in or len(got) >= 0.7 * len(prev_in):
+            prev_in = [pid for pid in prev_listed - listed
+                       if (prev_fc.get(pid) or {}).get("stock") == "in_stock"
+                       and not _fc_excluded((prev_fc.get(pid) or {}).get("name", ""))]
+            if len(listed) >= 0.7 * len(prev_listed):
                 for pid in prev_in:
                     if pid in got:
                         continue
@@ -2381,8 +2371,12 @@ def scrape_karzanddolls() -> list[dict]:
                         seen_ids.add(d["id"])
                         out.append(d)
                         found += 1
-                print(f"  [KD] {cat or 'home'} → {found}" if found
-                      else f"  [KD] {cat or 'home'} → 0 (empty right now)")
+                if found:
+                    print(f"  [KD] {cat or 'home'} → {found}")
+                elif recs:
+                    print(f"  [KD] {cat or 'home'} → 0 new ({len(recs)} already listed elsewhere)")
+                else:
+                    print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
                 continue
             found = 0
             for part in re.split(r'(?=<a[^>]+href="/details/)', page):
@@ -3106,6 +3100,11 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_hot: bool, label: str)
                 print(f"[!] {name} processing error:\n{traceback.format_exc()}")
     print(f"[*] {label}: {', '.join(names)} → {total} products in {time.time()-t0:.1f}s"
           + (f" (live: {', '.join(sorted(live))})" if live else ""))
+    if "Minifygram" in names and _MG_LAST_WM[0]:
+        meta = seen.setdefault("_meta", {})
+        if meta.get("mg_wm") != _MG_LAST_WM[0]:
+            meta["mg_wm"] = _MG_LAST_WM[0]
+            _save_seen_file(seen)
 
     if first_run and FIRST_RUN_SILENT and first_products:
         # First run only learns the baseline — no flood of "new" alerts.
@@ -3125,12 +3124,6 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_hot: bool, label: str)
            f"{breakdown}\n\nYou'll get pinged on new listings, restocks &amp; price drops.")
         merge_and_save_seen(seen, current)
         return
-
-    if "Minifygram" in names and _MG_LAST_WM[0]:
-        meta = seen.setdefault("_meta", {})
-        if meta.get("mg_wm") != _MG_LAST_WM[0]:
-            meta["mg_wm"] = _MG_LAST_WM[0]
-            _save_seen_file(seen)
 
     if (total == 0 and not fc_hot and ACTIVE_SOURCES is None
             and len(names) >= 3 and errors):
@@ -3180,7 +3173,11 @@ def main():
                   and (t - last_full_fc) < FC_FULL_EVERY - 1)
         label = f"pass {pass_no}" + (" (FirstCry quick sweep)" if fc_hot else "")
         if names:
-            run_pass(seen, names, first_run, fc_hot, label)
+            try:
+                run_pass(seen, names, first_run, fc_hot, label)
+            except Exception:
+                # one bad pass must not end the run (earlier results are saved)
+                print(f"[!] {label} failed:\n{traceback.format_exc()}")
         if "FirstCry" in names and not fc_hot:
             last_full_fc = t
         t_prev = t
