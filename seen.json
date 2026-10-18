@@ -3951,7 +3951,7 @@
     "fc_gid": "23353372"
   },
   "fc_23076126": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Total Disposal (162/250) Die Cast Free Wheel Toy Car - Orange",
     "price": "₹161",
     "source": "firstcry",
@@ -3965,7 +3965,7 @@
     "fc_listed_at": "2026-10-18T14:00:00",
     "fc_api_seen_at": "2026-10-18T14:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23076120"
   },
