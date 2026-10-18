@@ -1,7 +1,27 @@
 listing 248001: 403 products; in-stock filter: 184
 stock>0 in catalogue: 191; of those NOT on in-stock list: 8; on in-stock list but missing from catalogue: 1
-Traceback (most recent call last):
-  File "/home/runner/work/BotHW/BotHW/probe.py", line 83, in <module>
-    rows = list(ex.map(pdp, sample))
-                       ^^^
-NameError: name 'pdp' is not defined
+DIFF on_instock_list= False | catalogue 1 | instock-list None | page CS 1 | Hot Wheels Datsun 240Z Die cast car 72/250 - Green
+OK   on_instock_list= False | catalogue 2 | instock-list None | page CS 0 | Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast To
+OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels X-Cceleron Die-Cast Toy Car - Grey
+OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light G
+OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels Toyota Prius Custom /Personnalise Die Cast C
+OK   on_instock_list= False | catalogue 1 | instock-list None | page CS 0 | Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car
+DIFF on_instock_list= False | catalogue 1 | instock-list None | page CS 1 | Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue
+DIFF on_instock_list= False | catalogue 1 | instock-list None | page CS 1 | Hot Wheels Lotus Cortina (67/250) Toy Car - Black
+OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 1 | Hot Wheels Stunt Tracks Slam Jump Challenge Track Set &
+OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 1 | Hot Wheels Dino 206 GT (150/250) Die Cast Toy Car - Yel
+OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 2 | Hot Wheels Maserati Die Cast Free Wheel Toy Car - Black
+OK   on_instock_list= True | catalogue 2 | instock-list 2 | page CS 2 | Hot Wheels Die Cast Free Wheel Color Shifters Night Shi
+OK   on_instock_list= True | catalogue 2 | instock-list 2 | page CS 2 | HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pack of 5 -
+OK   on_instock_list= True | catalogue 2 | instock-list 2 | page CS 2 | Hot Wheels The Dark Knight Batmobile Die Cast Free Whee
+OK   on_instock_list= True | catalogue 3 | instock-list 3 | page CS 3 | Hot Wheel Die Cast Free Wheel Monster Truck Mutant - Mu
+OK   on_instock_list= True | catalogue 3 | instock-list 3 | page CS 3 | Hot Wheels Die Cast Monster Trucks 3/11 Jeep FC - Yello
+OK   on_instock_list= True | catalogue 3 | instock-list 2 | page CS 2 | Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 
+OK   on_instock_list= True | catalogue 4 | instock-list 4 | page CS 4 | Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (11
+OK   on_instock_list= True | catalogue 5 | instock-list 5 | page CS 5 | Hot Wheels Stunt Tracks Rapid Launch Cyclone Track Set 
+OK   on_instock_list= True | catalogue 5 | instock-list 5 | page CS 5 | Hot Wheels Diecast Toy Car HW Hot Rods Free Wheel Model
+OK   on_instock_list= True | catalogue 5 | instock-list 5 | page CS 7 | Hot Wheels Lucid Air (59/250) Toy Car - Blue
+OK   on_instock_list= True | catalogue 6 | instock-list 6 | page CS 6 | Hot Wheels Premium Collector Display Sets, 3 Cars & 1 T
+OK   on_instock_list= True | catalogue 1 | instock-list 1 | page CS 1 | Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free W
+
+agree=20 disagree=3
