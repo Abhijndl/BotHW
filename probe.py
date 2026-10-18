@@ -70,6 +70,30 @@ def listing(pcode="248001", instock=False):
     return allp
 
 
+def pdp(p):
+    pid = str(p["PId"])
+    url = f"https://www.firstcry.com/hot-wheels/x/{pid}/product-detail"
+    r = S.get(url, headers=H, timeout=25)
+    txt = r.text
+    m = re.search(r"CurrentProductDetailJSON\s*=\s*(\{.*?\})\s*[,;]\s*\w+\s*=", txt, re.S)
+    info = None
+    if m:
+        try:
+            j = json.loads(m.group(1))
+            info = j.get(pid)
+        except Exception as e:
+            info = {"parse_error": str(e), "head": m.group(1)[:300]}
+    flags = {k: (info or {}).get(k) for k in ("CS", "Rqty", "SCF", "EC", "QueCount", "StockT", "isOOS", "OOS",
+                                                   "MLfb", "Ms", "Mc", "IsActive", "sz", "Dis")} if isinstance(info, dict) else None
+    stock_like = {k: v for k, v in (info or {}).items()
+                  if isinstance(info, dict) and re.search(r"stock|qty|oos|avail|cs$|^cs|notify|sell|inv", k, re.I)} if isinstance(info, dict) else None
+    return {"pid": pid, "name": p["PNm"][:55], "listing_CrntStock": p.get("CrntStock"),
+            "status": r.status_code, "pdp_fields": flags, "stock_like": stock_like,
+            "keys": sorted(info.keys())[:80] if isinstance(info, dict) else None,
+            "cc": r.headers.get("cache-control"), "st": r.headers.get("server-timing")}
+
+
+
 lst = listing()
 lin = listing(instock=True)
 print(f"listing 248001: {len(lst)} products; in-stock filter: {len(lin)}")
