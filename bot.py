@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v14.0.1
+Hot Wheels / Diecast Collector Tracker  ·  v14.1
 ==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -26,7 +26,8 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • Karz & Dolls every 2 min, read from the JSON the site embeds in its pages.
   • Hamleys every 10 min.
   The slower stores only run in each run's first pass, so runs end before the
-  next trigger.
+  next trigger. If no next run is waiting when the time is up (cron-job.org
+  skipped or delayed a trigger), the run keeps watching up to RUN_EXTEND_S more.
 Alerts go out the moment a store's check finishes; nothing waits for slower
 stores. Runs are chained back to back, so the watch is continuous.
 
@@ -122,6 +123,13 @@ HM_WORKERS  = int(os.getenv("HM_WORKERS", "8"))
 # watched continuously instead of once a minute. 0 = classic single pass.
 RUN_SECONDS   = float(os.getenv("RUN_SECONDS", "0"))
 FC_EVERY      = max(8.0, float(os.getenv("FC_EVERY", "12")))
+# v14.1: when RUN_SECONDS is up and NO other run is waiting to take over, keep
+# checking for up to RUN_EXTEND_S more seconds (asking GitHub every pass), so a
+# trigger that cron-job.org skips or sends late doesn't leave FirstCry
+# unwatched. Measured 18 Oct: no trigger ever arrived in minutes ending in 5,
+# and the :x0 one came ~35 s late — gaps of 65-84 s without a single check.
+# If GitHub can't be asked, the run ends on time as before.
+RUN_EXTEND_S  = max(0.0, float(os.getenv("RUN_EXTEND_S", "0")))
 # How often the WHOLE FirstCry catalogue (sold-out cars included) is read, in
 # seconds. Every pass reads FirstCry's in-stock list; the full catalogue only
 # keeps new sold-out listings and names/prices current, so it's needed rarely.
@@ -3436,6 +3444,30 @@ def _due(name: str, t: float, t_prev: float) -> bool:
     return int(t // every) != int(t_prev // every)
 
 
+def _successor_waiting():
+    """Is another run of this workflow already waiting to start? True / False,
+    or None when GitHub can't be asked (then the run just ends on time)."""
+    repo, me = os.getenv("GITHUB_REPOSITORY", ""), os.getenv("GITHUB_RUN_ID", "")
+    if not (repo and me):
+        return None
+    wf = os.getenv("GITHUB_WORKFLOW_REF", "").split("@")[0].rsplit("/", 1)[-1] or "monitor.yml"
+    hdr = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28",
+           "User-Agent": "hw-tracker"}
+    tok = os.getenv("GITHUB_TOKEN", "")
+    if tok:
+        hdr["Authorization"] = f"Bearer {tok}"
+    try:
+        r = http.get(f"https://api.github.com/repos/{repo}/actions/workflows/{wf}/runs?per_page=10",
+                     headers=hdr, timeout=10)
+        if r.status_code != 200:
+            return None
+        runs = (r.json() or {}).get("workflow_runs") or []
+    except Exception:
+        return None
+    return any(str(x.get("id")) != me and x.get("status") in ("queued", "pending", "waiting", "requested")
+               for x in runs)
+
+
 def _absence_check(seen: dict, products: list, src_key: str) -> list:
     """Karz & Dolls category pages list the whole category and simply DROP a car
     when it sells out, so a car we believed in stock that is missing from a
@@ -3654,6 +3686,7 @@ def main():
     # and every run finishes before the next trigger arrives.
     look_back = t_run - 60
     pass_no = 0
+    extended, ext_since = False, None
     while True:
         t = time.time()
         pass_no += 1
@@ -3665,6 +3698,14 @@ def main():
         else:
             names = ["FirstCry"] if "FirstCry" in all_names and _due("FirstCry", t, t) else []
             fc_full = False
+            if ext_since is not None and ACTIVE_SOURCES is None:
+                # Staying on past RUN_SECONDS: the next run's look-back won't
+                # reach back this far, so stores falling due since this run
+                # began are checked here instead of being skipped.
+                names += [n for n in all_names if n != "FirstCry" and _due(n, t, ext_since)]
+                fc_full = ("FirstCry" in names and
+                           int(t // FC_CATALOGUE_EVERY) != int(ext_since // FC_CATALOGUE_EVERY))
+                ext_since = t
         if ("Minifygram" not in names and MG_WATCH and ACTIVE_SOURCES is None
                 and SOURCE_EVERY.get("Minifygram", 0) >= 0 and not first_run):
             wm = mg_watermark()
@@ -3683,7 +3724,13 @@ def main():
             break
         nxt = t + FC_EVERY
         if nxt - t_run > RUN_SECONDS:
-            break
+            # time's up — unless nobody is waiting to take over (a skipped or
+            # late trigger): then keep watching, up to RUN_EXTEND_S longer
+            if nxt - t_run > RUN_SECONDS + RUN_EXTEND_S or _successor_waiting() is not False:
+                break
+            if not extended:
+                print("[*] no run waiting to take over (trigger skipped or late) — still watching")
+                extended, ext_since = True, t_run
         time.sleep(max(0.0, nxt - time.time()))
     _fc_fresh_save(seen)
     print(f"\n[*] run finished: {pass_no} pass(es) in {time.time()-t_run:.0f}s")

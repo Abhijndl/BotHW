@@ -17,11 +17,14 @@ on:
 
 permissions:
   contents: write           # needed so the job can commit seen.json back
+  actions: read             # lets a run see whether the next run is already waiting
 
 # One run at a time. A trigger that arrives while a run is going waits in line;
 # if yet another arrives meanwhile, GitHub drops the older waiting one and it
-# shows as a grey "cancelled" run — harmless, nothing is missed. One
-# cron-job.org trigger per minute is all this needs now.
+# shows as a grey "cancelled" run — harmless, nothing is missed. Two
+# cron-job.org jobs keep a run waiting almost all the time, so runs follow each
+# other back to back; when none is waiting, the current run stays on
+# (RUN_EXTEND_S) instead of leaving a gap.
 concurrency:
   group: hw-monitor
   cancel-in-progress: false
@@ -61,6 +64,11 @@ jobs:
           # in each run's first pass when due (see below).
           RUN_SECONDS: "40"
           FC_EVERY: "12"
+          # If no next run is waiting when the 40 s are up (cron-job.org sent no
+          # trigger in minutes ending in 5, and the :x0 one ~35 s late), the run
+          # keeps checking up to this many seconds more, until one is waiting.
+          RUN_EXTEND_S: "80"
+          GITHUB_TOKEN: ${{ github.token }}
           # The full FirstCry catalogue (sold-out cars too) every 10 min; every
           # check in between reads FirstCry's in-stock list, which is what
           # decides whether a car is really buyable.
