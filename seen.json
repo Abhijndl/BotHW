@@ -4947,7 +4947,7 @@
     "fc_trusted": true
   },
   "fc_22548060": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Bullet (132/250) Die-Cast Toy Car - Red & White",
     "price": "₹153",
     "source": "firstcry",
@@ -4961,8 +4961,8 @@
     "fc_listed_at": "2026-10-18T16:15:00",
     "fc_api_seen_at": "2026-10-18T16:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "cat",
+    "fc_live": "no delivery",
+    "fc_lst": "list",
     "fc_gid": "22548060"
   },
   "fc_22548051": {
