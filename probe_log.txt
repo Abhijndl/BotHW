@@ -1,119 +1,73 @@
-================ A. every group: page CS + delivery check ================
-+   3s catalogue 404 (ok=True), in-stock list 184 (ok=True)
-+  31s 173 groups (listing P_Grp_ID) -> 173 pages read in 27.9s (0 failed); 519 cars with live CS; page median 1209ms, ~141 KB each; CDN hits 0
-+  32s delivery check 248001: 479/519 answered in 13 calls (0 failed) in 1.4s; tat median 457ms
-   per-group calls vs batched answers: agree 19, disagree 0 []
+seen.json copied: 790139 bytes
 
-   page CS | delivery 248001 | in-stock list | catalogue  ->  cars
-   CS=0  | svc=0  | no-list | cat=0  -> 202
-   CS>0  | svc=1  | list    | cat>0  -> 160
-   CS>0  | svc=0  | no-list | no-cat -> 48
-   CS=0  | svc=0  | no-list | no-cat -> 39
-   CS>0  | svc=1  | no-list | no-cat -> 28
-   CS>0  | svc=None | list    | cat>0  -> 22
-   CS=0  | svc=None | no-list | cat=0  -> 18
-   CS>0  | svc=0  | list    | cat>0  -> 1
-   CS=0  | svc=1  | list    | cat=0  -> 1
+================ FORCED PASS: every store once ================
+  [FC-API] quick sweep: 183 in stock from 12 page(s) in 2.2s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [FC-API] stock for pincode: 248001
+  [FC-API] 404 products across 21 page(s) (221 with zero stock) in 2.2s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 400, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels Free Wheel Die Cast El Segundo Rallye | stock=out_of_stock count=0 price=179 mrp=None
+  [FC-LIVE] 24 to confirm, 4 🎯 set(s) read, 6 audited → 21 car(s) seen live in 4.2s; 0 now orderable, 0 not any more, 12 unconfirmed (page not read)
+[*] FirstCry total (API): 558 tracked, 119 buyable now (in-stock list complete), 0 aged to delisted
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] forced pass (FirstCry + full catalogue): FirstCry → 558 products in 8.7s (live: FirstCry)
+FirstCry stock changes in the forced pass: 0
+forced pass took 8.7s
+verdicts stored: Counter({None: 572, 'ok': 6, 'sold out': 2, 'no delivery': 1})
+stats: {'pages': 17, 'tat': 5}
 
-   orderable to 248001 (page CS>=2 and delivery ok): 188
-   in-stock list (>=2) says in stock: 182; of those NOT orderable: 22; orderable but not on list: 28
-   catalogue (>=2) says in stock: 182; of those NOT orderable: 22; orderable but catalogue says no: 28
-     list says yes, not orderable: 13900220 Hot Wheels Monster Trucks Glow In Dark Multipack list 50 page CS 50 svc None
-     list says yes, not orderable: 14933549 Hot Wheels Color Shifters Track and 1 Car - Mult list 720 page CS 720 svc None
-     list says yes, not orderable: 15238726 Hot Wheels Die Cast Free Wheel X-Blade Bike - Bl list 65 page CS 65 svc None
-     list says yes, not orderable: 18313316 Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy S list 126 page CS 126 svc None
-     list says yes, not orderable: 20052944 Hot Wheels Shark Launcher All-In-One Playset & O list 229 page CS 229 svc None
-     list says yes, not orderable: 21497090 Hot Wheels Premium Collector Display Sets, 3 Car list 6 page CS 6 svc None
-     list says yes, not orderable: 21497092 Hot Wheels Color Reveal, Set of 2 1:64 Scale Veh list 267 page CS 268 svc None
-     list says yes, not orderable: 21940372 Hot Wheels  Multi-Loop Race Off Playset Loop Tra list 120 page CS 120 svc None
-     list says yes, not orderable: 21940376 Hot Wheels Ultimate Dual Dragon Transporter & Tw list 69 page CS 69 svc None
-     list says yes, not orderable: 21993918 Hot Wheels Glows in the Dark Die-Cast Monster To list 35 page CS 35 svc None
-     list says yes, not orderable: 21993930 Hot Wheels Stunt Tracks Rapid Launch Cyclone Tra list 5 page CS 5 svc None
-     list says yes, not orderable: 21993938 Hotwheels City Transforming Stunt Garage Die Cas list 13 page CS 13 svc None
-     list says yes, not orderable: 22048350 Hot Wheels Action Gravity Drop Track Set Loop &  list 845 page CS 845 svc None
-     list says yes, not orderable: 22240167 Hot Wheels Erikenstein ROD (117/250) Toy Car - D list 65 page CS 65 svc None
-     list says yes, not orderable: 2224357 Hot Wheels Die Cast Free Wheel Street Power Bike list 56 page CS 56 svc None
-     list says yes, not orderable: 22277228 Hot Wheels Track Creator Starter Pack With 1:64  list 344 page CS 344 svc None
-     list says yes, not orderable: 2232875 Hot Wheels Die Cast Free Wheel Fat Ride Bike - G list 39 page CS 39 svc None
-     list says yes, not orderable: 2232876 Hot Wheels Die Cast Free Wheel Twin Flame Bike - list 35 page CS 35 svc None
-     list says yes, not orderable: 2235646 Hot Wheels Die Cast Free Wheel Rolling Thunder B list 64 page CS 64 svc None
-     list says yes, not orderable: 22485428 Hot Wheels Batman Themed 1:64 Scale Die-Cast Toy list 50 page CS 50 svc None
-     list says yes, not orderable: 23348665 Hot Wheels 191/250 65 Mercury Comet Cyclone Die  list 2 page CS 2 svc 0
-     list says yes, not orderable: 2701025 Hot Wheels X-Blade Bike - RED & Black            list 73 page CS 73 svc None
-     orderable, invisible in listing: 14086941 Manual + Adaptor                                 page CS 20
-     orderable, invisible in listing: 14089139 Electric Rocker BOTTOM 2+3(SPARE PARTS)          page CS 15
-     orderable, invisible in listing: 14094924 Manual + Adaptor                                 page CS 15
-     orderable, invisible in listing: 14095477 Bottom-2                                         page CS 15
-     orderable, invisible in listing: 14106183 GREY IRON PIPE                                   page CS 15
-     orderable, invisible in listing: 14106184 BOTTOM PART                                      page CS 5
-     orderable, invisible in listing: 21581984 Babyhug Baby Powder Puff with Soft Puff for Gent page CS 35
-     orderable, invisible in listing: 22580525 PlayRide Teddy Bear Print Kids Sipper Bottle wit page CS 71
-     orderable, invisible in listing: 22580526 PlayRide Zoom Pilot Print Kids Sipper Bottle wit page CS 216
-     orderable, invisible in listing: 22580527 PlayRide Dinasour Print Kids Sipper Bottle with  page CS 215
-     orderable, invisible in listing: 22597418 Hot Wheels Color Shifters Track Manga Toy Car Co page CS 25
-     orderable, invisible in listing: 23074611 Hot Wheels Tooned Purple Passion (148/250) Die C page CS 84
-     orderable, invisible in listing: 23346404 Hot Wheels Die Cast Free Wheel 166/250 Twin Tags page CS 332
-     orderable, invisible in listing: 23351188 Hot Wheels 131/250 Fiat Beast of Turn Die Cat Fr page CS 135
-     orderable, invisible in listing: 23457509 FNBO001-Display PCB for bonfino 6in1 sterilizer  page CS 4
-     orderable, invisible in listing: 23457510 FNBO001- PCB for bonfino 6in1 sterilizer         page CS 5
-     orderable, invisible in listing: 23457511 FNBO001- heating Plate for bonfino 6in1 steriliz page CS 5
-     orderable, invisible in listing: 23457512 FNBO001- Fan assembly for bonfino 6in1 sterilize page CS 4
-     orderable, invisible in listing: 23457513 FNBO001- Cable for bonfino 6in1 sterilizer       page CS 5
-     orderable, invisible in listing: 23821951 Babyhug Baby Feeding Essentials Set of 6 - Purpl page CS 496
-     orderable, invisible in listing: 23821952 Babyhug Baby Feeding Essentials Set of 6 - Green page CS 495
-     orderable, invisible in listing: 23821953 Babyhug Baby Feeding Essentials Set of 6 - Blue  page CS 492
-     orderable, invisible in listing: 23835981 Hot Wheels Crocovile Die Cast Free Wheel Free St page CS 151
-     orderable, invisible in listing: 23835987 Hot Wheels Mega-Wrex Die Cast Free Wheel Free St page CS 147
-     orderable, invisible in listing: 23930405 Hot Wheels Safari Mode Die Cast Free Wheel Toy C page CS 289
-     orderable, invisible in listing: 23930659 Hot Wheels Stunt Track Die Cast Toy Car  Pack of page CS 283
-     orderable, invisible in listing: 24473514 Hot Wheels '68 Mercury Comet Cyclone Die-Cast To page CS 154
-     orderable, invisible in listing: 24505759 Hot Wheels Diecast Toy Car Trophy Case Free Whee page CS 62
+================ DRY RUN of main() (alerts printed, not sent) ================
+  [MG] 1 products had no SKU row — used product_type fallback
+[*] Minifygram total: 270 of 273 (36 in stock; 1 trading cards, 62 pre-orders)
+[=] Minifygram: no alert-worthy changes (0 minor)
+  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [KD] card-art-premiums → 8
+  [KD] pop-culture → 4
+  [KD] car-culture → 1
+  [KD] boulevard-series → 0 (empty right now)
+  [KD] gift-pack → 22
+  [KD] mainlines → 5
+  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
+  [KD] team-transport → 5
+  [KD] character-cars → 8
+  [KD] kaido-house → 16
+  [KD] disney-cars → 0 (empty right now)
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] hot-wheels-accessories → 8
+  [KD] pre-order-minigt → 65
+  [KD] mini-gt → 107
+  [KD] mini-gt-blister-pack → 126
+  [KD] chase-car → 0 (empty right now)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+  [KD] home → 0 new (25 already listed elsewhere)
+[*] Karz&Dolls total: 375 (375 in stock)
+[=] Karz&Dolls: no alert-worthy changes (0 minor)
+  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 4 audited → 58 car(s) seen live in 4.6s; 2 now orderable, 3 not any more, 2 unconfirmed (page not read)
 
-   cars with page CS>=2 but NOT deliverable to 248001: 41
-     pincode 110001: deliverable 0/41
-     pincode 400001: deliverable 0/41
-     pincode 560001: deliverable 0/41
-     pincode 700001: deliverable 0/41
-     pincode 600001: deliverable 0/41
-     pincode 411001: deliverable 0/41
-     pincode 500001: deliverable 0/41
-     pincode 380001: deliverable 0/41
-     pincode 0     : deliverable 41/41
-   cars with page CS=0 but delivery check says 1: 1  e.g. [('24473510', 'Hot Wheels Toyota Prius Custom')]
-   main-product answer [CS>=2 svc1] 14086941 Manual + Adaptor: {'IsServicable': 20, 'IsServiceable': None, 'Serviceable': None, 'ProductTAT': '6-7', 'IsNDD': False, 'NDDDate': '', 'CODAvailable': True, 'DispatchTAT': '24 Hours', 'Message': None, 'Msg': None}
-   main-product answer [CS>=2 svc0] 22597521 Hot Wheels Color Shifters Bat mobile: {'IsServicable': 0, 'IsServiceable': None, 'Serviceable': None, 'ProductTAT': '12-15', 'IsNDD': False, 'NDDDate': '', 'CODAvailable': True, 'DispatchTAT': '24 Hours', 'Message': None, 'Msg': None}
-   main-product answer [CS0 svc1] 24473510 Hot Wheels Toyota Prius Custom /Pers: {'IsServicable': 1, 'IsServiceable': None, 'Serviceable': None, 'ProductTAT': '6-7', 'IsNDD': False, 'NDDDate': '', 'CODAvailable': True, 'DispatchTAT': '24 Hours', 'Message': None, 'Msg': None}
+----- TELEGRAM (dry run, not sent) -----
+🔥 <b>BACK IN STOCK — grab it now</b>
+  [🛒FC] <b>Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor</b> 📦 289 left  ₹809
+https://www.firstcry.com/hot-wheels/hot-wheels-safari-mode-die-cast-free-wheel-toy-car-with-smooth-rolling-wheel-pack-of-5-multicolor/23930405/product-detail?fresh=328219
+  [🛒FC] <b>Hot Wheels Diecast Toy Car Trophy Case Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor</b> 📦 62 left  ₹782
+https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-trophy-case-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/24505759/product-detail?fresh=328219
+----------------------------------------
 
-================ B. page script around the delivery check ================
-  script: tps://cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.55.min.js 381833 chars
-  …tailJSON.PInfo.StockT.toLowerCase()=="creditvendorstock"){isdrop=true}if(ProductDetailJSON.PInfo.CODA){iscodcheck=true}if(CurrentProductDetailJSON[CurrentProductID].CS>0){let adv_id=getCookie("fc_eng_cur_sid");if(page_load||newpincode=="0"){page_load=0;let url=base_url+"offers/pdpgetsegment";let post_data={adv_id:adv_id};$.ajaxcallpost(url,post_data,loadCoupon)}else{let url=base_url+"offers/getsegmentpincode";let post_data={adv_id:adv_id,pincode:newpincode};$.ajaxcallpost(url,post_data,loadCoupon)}}else{bestofferanddiscount("")}if(result!=null&&result!=undefined&&result!=""&&result.Result!=null&&result.Result!=undefined&&result.Result!=""){TatJson=result.Result;maintatres=TatJson;if(TatJson.groupserviceability!=undefined&&TatJson.groupserviceability!=null&&Object.keys(TatJson.groupserviceability).length>0){let firstProductId=null;if(TatJson.groupserviceability[CurrentProductID]===0){firstProductId=Object.keys(TatJson.groupserviceability).find((key)=>key!==String(CurrentProductID)&&TatJson.groupserviceability[key]>0);if(firstProductId!==undefined&&firstProductId!==null&&firstProductId!==""){CurrentProductID=firstProductId;onReadyFunctions();return false}}}$(".qwik_pdp_block").hide();let gsturl=window.location.href;if(gsturl.toLowerCase().indexOf("ref=googleshopping")>0){tatresult=result;gstval=result.Result.ActualPrice;gstarr=gstval.toString().split(".");$(".prod-price").attr("data-price",gstval).html(gstarr[0]!=undefined?gstarr[0]+(gstarr[1]!=undefined?'<sup class="supertag">'+gstarr[1]+"</sup>":""):gstval)}$(".pdpgroupingsec").html(bindgrouping(pid)).show();$(window).scrol…
+🔥 <b>BACK IN STOCK — grab it now</b>
+  [🛒FC] <b>Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor</b> 📦 289 left  ₹809
+https://www.firstcry.com/hot-wheels/hot-wheels-safari-mode-die-cast-free-wheel-toy-car-with-smooth-rolling-wheel-pack-of-5-multicolor/23930405/product-detail?fresh=328219
+  [🛒FC] <b>Hot Wheels Diecast Toy Car Trophy Case Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor</b> 📦 62 left  ₹782
+https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-trophy-case-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/24505759/product-detail?fresh=328219
+[*] pass 1: FirstCry, Minifygram, Karz&Dolls → 788 products in 5.7s (live: FirstCry, Karz&Dolls, Minifygram)
+  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 4 audited → 108 car(s) seen live in 2.8s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
+[*] pass 2: FirstCry → 140 products in 3.9s (live: FirstCry)
+  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 6 audited → 60 car(s) seen live in 1.9s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
+[*] pass 3: FirstCry → 118 products in 2.9s (live: FirstCry)
+  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 3 audited → 62 car(s) seen live in 2.2s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
+[*] pass 4: FirstCry → 127 products in 3.2s (live: FirstCry)
 
-  …editvendorstock"){isdrop=true}if(ProductDetailJSON.PInfo.CODA){iscodcheck=true}if(CurrentProductDetailJSON[CurrentProductID].CS>0){let adv_id=getCookie("fc_eng_cur_sid");if(page_load||newpincode=="0"){page_load=0;let url=base_url+"offers/pdpgetsegment";let post_data={adv_id:adv_id};$.ajaxcallpost(url,post_data,loadCoupon)}else{let url=base_url+"offers/getsegmentpincode";let post_data={adv_id:adv_id,pincode:newpincode};$.ajaxcallpost(url,post_data,loadCoupon)}}else{bestofferanddiscount("")}if(result!=null&&result!=undefined&&result!=""&&result.Result!=null&&result.Result!=undefined&&result.Result!=""){TatJson=result.Result;maintatres=TatJson;if(TatJson.groupserviceability!=undefined&&TatJson.groupserviceability!=null&&Object.keys(TatJson.groupserviceability).length>0){let firstProductId=null;if(TatJson.groupserviceability[CurrentProductID]===0){firstProductId=Object.keys(TatJson.groupserviceability).find((key)=>key!==String(CurrentProductID)&&TatJson.groupserviceability[key]>0);if(firstProductId!==undefined&&firstProductId!==null&&firstProductId!==""){CurrentProductID=firstProductId;onReadyFunctions();return false}}}$(".qwik_pdp_block").hide();let gsturl=window.location.href;if(gsturl.toLowerCase().indexOf("ref=googleshopping")>0){tatresult=result;gstval=result.Result.ActualPrice;gstarr=gstval.toString().split(".");$(".prod-price").attr("data-price",gstval).html(gstarr[0]!=undefined?gstarr[0]+(gstarr[1]!=undefined?'<sup class="supertag">'+gstarr[1]+"</sup>":""):gstval)}$(".pdpgroupingsec").html(bindgrouping(pid)).show();$(window).scroll(function(){if($.inArray(ProductDetailJ…
-
-  …SON.PInfo.CODA){iscodcheck=true}if(CurrentProductDetailJSON[CurrentProductID].CS>0){let adv_id=getCookie("fc_eng_cur_sid");if(page_load||newpincode=="0"){page_load=0;let url=base_url+"offers/pdpgetsegment";let post_data={adv_id:adv_id};$.ajaxcallpost(url,post_data,loadCoupon)}else{let url=base_url+"offers/getsegmentpincode";let post_data={adv_id:adv_id,pincode:newpincode};$.ajaxcallpost(url,post_data,loadCoupon)}}else{bestofferanddiscount("")}if(result!=null&&result!=undefined&&result!=""&&result.Result!=null&&result.Result!=undefined&&result.Result!=""){TatJson=result.Result;maintatres=TatJson;if(TatJson.groupserviceability!=undefined&&TatJson.groupserviceability!=null&&Object.keys(TatJson.groupserviceability).length>0){let firstProductId=null;if(TatJson.groupserviceability[CurrentProductID]===0){firstProductId=Object.keys(TatJson.groupserviceability).find((key)=>key!==String(CurrentProductID)&&TatJson.groupserviceability[key]>0);if(firstProductId!==undefined&&firstProductId!==null&&firstProductId!==""){CurrentProductID=firstProductId;onReadyFunctions();return false}}}$(".qwik_pdp_block").hide();let gsturl=window.location.href;if(gsturl.toLowerCase().indexOf("ref=googleshopping")>0){tatresult=result;gstval=result.Result.ActualPrice;gstarr=gstval.toString().split(".");$(".prod-price").attr("data-price",gstval).html(gstarr[0]!=undefined?gstarr[0]+(gstarr[1]!=undefined?'<sup class="supertag">'+gstarr[1]+"</sup>":""):gstval)}$(".pdpgroupingsec").html(bindgrouping(pid)).show();$(window).scroll(function(){if($.inArray(ProductDetailJSON.PInfo.PCID,[45,11])>-1&&$.inArray(ProductDe…
-
-  …tProductID].CS>0){let adv_id=getCookie("fc_eng_cur_sid");if(page_load||newpincode=="0"){page_load=0;let url=base_url+"offers/pdpgetsegment";let post_data={adv_id:adv_id};$.ajaxcallpost(url,post_data,loadCoupon)}else{let url=base_url+"offers/getsegmentpincode";let post_data={adv_id:adv_id,pincode:newpincode};$.ajaxcallpost(url,post_data,loadCoupon)}}else{bestofferanddiscount("")}if(result!=null&&result!=undefined&&result!=""&&result.Result!=null&&result.Result!=undefined&&result.Result!=""){TatJson=result.Result;maintatres=TatJson;if(TatJson.groupserviceability!=undefined&&TatJson.groupserviceability!=null&&Object.keys(TatJson.groupserviceability).length>0){let firstProductId=null;if(TatJson.groupserviceability[CurrentProductID]===0){firstProductId=Object.keys(TatJson.groupserviceability).find((key)=>key!==String(CurrentProductID)&&TatJson.groupserviceability[key]>0);if(firstProductId!==undefined&&firstProductId!==null&&firstProductId!==""){CurrentProductID=firstProductId;onReadyFunctions();return false}}}$(".qwik_pdp_block").hide();let gsturl=window.location.href;if(gsturl.toLowerCase().indexOf("ref=googleshopping")>0){tatresult=result;gstval=result.Result.ActualPrice;gstarr=gstval.toString().split(".");$(".prod-price").attr("data-price",gstval).html(gstarr[0]!=undefined?gstarr[0]+(gstarr[1]!=undefined?'<sup class="supertag">'+gstarr[1]+"</sup>":""):gstval)}$(".pdpgroupingsec").html(bindgrouping(pid)).show();$(window).scroll(function(){if($.inArray(ProductDetailJSON.PInfo.PCID,[45,11])>-1&&$.inArray(ProductDetailJSON.PInfo.SCID,[139,140,141,121,112,378,171,272,122,123,461])…
-
-  …T.toLowerCase()=="creditvendorstock"){isdrop=true}if(ProductDetailJSON.PInfo.CODA){iscodcheck=true}let pmrp="0",pdis=ProductDetailJSON.PInfo.Dis!=""&&ProductDetailJSON.PInfo.Dis!=0?ProductDetailJSON.PInfo.Dis:0;if(CurrentProductDetailJSON[CurrentProductID].mrp!=undefined&&CurrentProductDetailJSON[CurrentProductID].mrp!=""){pmrp=CurrentProductDetailJSON[CurrentProductID].mrp;pdis=CurrentProductDetailJSON[CurrentProductID].Dis!=""&&CurrentProductDetailJSON[CurrentProductID].Dis!=0?CurrentProductDetailJSON[CurrentProductID].Dis:0}let ftk=get_cookie("FC_AUTH")!=undefined&&get_cookie("FC_AUTH")!=null&&get_cookie("FC_AUTH")!=""?get_cookie("FC_AUTH"):"";let url="https://www.firstcry.com/tatapi/oam/checkdeliveryinfo";let post_data='{"ProductIDs":"'+CurrentProductID+'","Pincode":"'+newpincode+'","ComboId":0,"CheckTAT":true,"CheckDropShipment":'+isdrop+',"CheckCOD":'+iscodcheck+',"subCatID":'+ProductDetailJSON.PInfo.SCID+',"MRP":'+pmrp+',"AddressType":"Home"'+',"Discount":'+pdis+',"minQty":'+(CurrentProductDetailJSON[CurrentProductID]["minQty"]!=undefined&&CurrentProductDetailJSON[CurrentProductID]["minQty"]!=""&&CurrentProductDetailJSON[CurrentProductID]["minQty"]!=null?CurrentProductDetailJSON[CurrentProductID]["minQty"]:1)+',"CatID":'+(ProductDetailJSON.PInfo.PCID!=""?ProductDetailJSON.PInfo.PCID:0)+', "ftk": "'+ftk+'","groupproducts":"'+last_level_pid.join(",")+'"}';$.ajaxcalljsonpost(url,post_data,bindTAT,pid);if($.inArray(ProductDetailJSON.PInfo.SCID,[26,168,515,246])>-1){loadSimilarStyle(newpincode,CurrentProductID)}};const firstCharCapitalize=function(str){if(str!=undefined&&…
-
-  …}else{return false}}else{return false}};const getlocationdetails=(pid,ispageload,ischkbutcal)=>{let newpincode="";if(!ispageload&&ischkbutcal){newpincode=$(".changepincode").val();if(newpincode!=""&&newpincode.length==6&&$.isNumeric(newpincode)){$.cookie("globalPincode",newpincode,{path:"/",expires:365,domain:DomainName,secure:false});let url="https://tatpdp.fcappservices.in/tatapi/club/getstatecitybypincode?pincode="+newpincode;$.ajaxcallget(url,getstatecitybypincode,pid)}else{return}}else{let Pincode=get_cookie("globalPincode");Pincode=Pincode==null?"":Pincode;if(Pincode==""){Pincode="0"}else{}ManupulateTatApi(Pincode,pid)}};const bindTAT=(res,pid)=>{if(CurrentProductDetailJSON[pid].CS>0){checkdeliveryinfo(res,pid)}else{checkdeliveryinfo(res,pid,1)}};const simProductBind=function(res){if(res!=undefined&&res!=null&&res!=""&&Object.keys(res).length>0&&res.products!=undefined&&res.products!=null&&res.products!=""&&res.products.length>1){let smi_htm="";smi_htm+='<p class="similr_delivrble_heading J16SB_42 cl_21">Similar Deliverable Products</p>';smi_htm+='<div class="simDelvr_row">';$.each(res.products,(key,itm)=>{if(key<12){let bnm=itm.brand.name.replaceAll(/'/g,"\\'"),pname=itm.name.replaceAll(/'/g,"\\'");smi_htm+='<div class="simDelvr_product_block" title="'+itm.name+'" onclick="return ShowQuickView(\''+itm.id+"','rpu','', '"+bnm+"', '"+pname+"','"+key+"')\">";smi_htm+='<div class="simDelvr_product_img">';smi_htm+='<img class="'+(isBotUserAgent()?"googlebot":"")+'" src="'+cdn_path+"images/products/"+(isBotUserAgent()?"80x97":"280x338")+"/"+(itm.id.toString().indexOf("99999…
-
-  …false}};const getlocationdetails=(pid,ispageload,ischkbutcal)=>{let newpincode="";if(!ispageload&&ischkbutcal){newpincode=$(".changepincode").val();if(newpincode!=""&&newpincode.length==6&&$.isNumeric(newpincode)){$.cookie("globalPincode",newpincode,{path:"/",expires:365,domain:DomainName,secure:false});let url="https://tatpdp.fcappservices.in/tatapi/club/getstatecitybypincode?pincode="+newpincode;$.ajaxcallget(url,getstatecitybypincode,pid)}else{return}}else{let Pincode=get_cookie("globalPincode");Pincode=Pincode==null?"":Pincode;if(Pincode==""){Pincode="0"}else{}ManupulateTatApi(Pincode,pid)}};const bindTAT=(res,pid)=>{if(CurrentProductDetailJSON[pid].CS>0){checkdeliveryinfo(res,pid)}else{checkdeliveryinfo(res,pid,1)}};const simProductBind=function(res){if(res!=undefined&&res!=null&&res!=""&&Object.keys(res).length>0&&res.products!=undefined&&res.products!=null&&res.products!=""&&res.products.length>1){let smi_htm="";smi_htm+='<p class="similr_delivrble_heading J16SB_42 cl_21">Similar Deliverable Products</p>';smi_htm+='<div class="simDelvr_row">';$.each(res.products,(key,itm)=>{if(key<12){let bnm=itm.brand.name.replaceAll(/'/g,"\\'"),pname=itm.name.replaceAll(/'/g,"\\'");smi_htm+='<div class="simDelvr_product_block" title="'+itm.name+'" onclick="return ShowQuickView(\''+itm.id+"','rpu','', '"+bnm+"', '"+pname+"','"+key+"')\">";smi_htm+='<div class="simDelvr_product_img">';smi_htm+='<img class="'+(isBotUserAgent()?"googlebot":"")+'" src="'+cdn_path+"images/products/"+(isBotUserAgent()?"80x97":"280x338")+"/"+(itm.id.toString().indexOf("99999")>-1?"cc"+itm.infoId:itm.id)+"a…
-
-  …ice)+"</span>";smi_htm+="</span>";if((!pdpfcclubflag&&FCDiscountround(itm.pricing.disc)>0)||(pdpfcclubflag&&FCDiscountround(itm.pricing.clubdiscount)>0)){smi_htm+='<span class="prdcct_mrp J12R_42 cl_bd">';smi_htm+='<span data-fc-ricon="u" class="multiRs"></span>';smi_htm+="<span>"+itm.pricing.mrp+"</span>";smi_htm+="</span>"}smi_htm+="</p>";smi_htm+="</div>";smi_htm+="</div>"}});smi_htm+="</div>";$(".similr_delivrble_section").html(smi_htm).slideDown(800)}else{$(".similr_delivrble_section").slideUp()}};const loadCoupon=(res)=>{if(res!=null&&res!=undefined&&res!=""&&res.result!=null&&res.result!=undefined&&res.result!=""){bestofferanddiscount(res.result)}else{bestofferanddiscount("")}};const checkdeliveryinfo=(result,pid,isoos=0)=>{let newpincode=$(".changepincode").val()!=undefined?$(".changepincode").val():get_cookie("globalPincode"),isdrop=false,iscodcheck=false,isloadmulhori=0,loadauther=0,iscrispfbt=0;newpincode=newpincode==null?"":newpincode;if(newpincode==""){newpincode="0"}if(ProductDetailJSON.PInfo.StockT!=""&&ProductDetailJSON.PInfo.StockT.toLowerCase()=="creditvendorstock"){isdrop=true}if(ProductDetailJSON.PInfo.CODA){iscodcheck=true}if(CurrentProductDetailJSON[CurrentProductID].CS>0){let adv_id=getCookie("fc_eng_cur_sid");if(page_load||newpincode=="0"){page_load=0;let url=base_url+"offers/pdpgetsegment";let post_data={adv_id:adv_id};$.ajaxcallpost(url,post_data,loadCoupon)}else{let url=base_url+"offers/getsegmentpincode";let post_data={adv_id:adv_id,pincode:newpincode};$.ajaxcallpost(url,post_data,loadCoupon)}}else{bestofferanddiscount("")}if(result!=null&&result…
-
-
-================ C. time series ================
-+  45s watching 42 cars in 25 groups
-+ 207s 24473510 Hot Wheels Toyota Prius Custom /Personna list:1->None
-+ 348s 23346007 Hot Wheels Die Cast Free Wheel 181/250 M svc:0->1
-+ 348s 24473510 Hot Wheels Toyota Prius Custom /Personna svc:1->0
-+ 668s 23346007 Hot Wheels Die Cast Free Wheel 181/250 M svc:1->0
-+ 705s 33 rounds
-
-   per-car order of changes (first signal to show a new state):
-   23346007 Hot Wheels Die Cast Free Wheel 181/250 M 348s svc 0->1 | 668s svc 1->0
-   24473510 Hot Wheels Toyota Prius Custom /Personna 207s list 1->None | 348s svc 1->0
-
-   stats: {'page_ms': 1189, 'page_kb': 146, 'page_hit': 0, 'tat_ms': 436}
-done in 705s
+[*] run finished: 4 pass(es) in 40s
+main() took 39.6s; 1 message(s) would have been sent
+stats: {'pages': 55, 'tat': 24}
