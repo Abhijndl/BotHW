@@ -1,71 +1,219 @@
-seen.json copied: 790028 bytes
+==================== PART A: product-page caching ====================
++    3s catalogue 402 (complete=True, cached pages=0); in-stock list 190 (complete=True, cached pages=0)
+  Road Runner: catalogue CrntStock=2 | in-stock list: yes, 2
+  Mach Speeder: catalogue CrntStock=2 | in-stock list: yes, 2
+  24473731 Hot Wheels 1970 Custom Plymouth Road Runner 
+      plain: CS=2 [REVALIDATE, origin 485ms, max-age 1200, 200] | final lymouth-road-runner-die-cast-toy-car-orange/24473731/product
+      plain: CS=2 [HIT, origin Nonems, max-age 1200, 200] | final lymouth-road-runner-die-cast-toy-car-orange/24473731/product
+      q: CS=2 [MISS, origin 582ms, max-age 1200, 200] | final lymouth-road-runner-die-cast-toy-car-orange/24473731/product
+      slug: CS=2 [HIT, origin Nonems, max-age 1199, 200] | final lymouth-road-runner-die-cast-toy-car-orange/24473731/product
+      plain-mobile: CS=2 [HIT, origin Nonems, max-age 1200, 200] | final lymouth-road-runner-die-cast-toy-car-orange/24473731/product
+  24761909 Hot Wheels Mach Speeder Die Cast Free Wheel 
+      plain: CS=0 [HIT, origin 0ms, max-age 69, 200] | final die-cast-free-wheel-toy-car-blue-and-black/24761909/product-
+      plain: CS=0 [HIT, origin Nonems, max-age 69, 200] | final die-cast-free-wheel-toy-car-blue-and-black/24761909/product-
+      q: CS=2 [MISS, origin 498ms, max-age 1200, 200] | final die-cast-free-wheel-toy-car-blue-and-black/24761909/product-
+      slug: CS=2 [HIT, origin Nonems, max-age 1200, 200] | final die-cast-free-wheel-toy-car-blue-and-black/24761909/product-
+      plain-mobile: CS=2 [HIT, origin 0ms, max-age 1199, 200] | final die-cast-free-wheel-toy-car-blue-and-black/24761909/product-
+  21993932 Hot Wheels Stunt Tracks Slam Jump Challenge 
+      plain: CS=1 [REVALIDATE, origin 420ms, max-age 1200, 200] | final slam-jump-challenge-track-set-and-1-64-scale-die-cast-car-ad
+      plain: CS=1 [HIT, origin Nonems, max-age 1200, 200] | final slam-jump-challenge-track-set-and-1-64-scale-die-cast-car-ad
+      q: CS=1 [MISS, origin 453ms, max-age 1200, 200] | final slam-jump-challenge-track-set-and-1-64-scale-die-cast-car-ad
+      slug: CS=1 [HIT, origin 0ms, max-age 1199, 200] | final slam-jump-challenge-track-set-and-1-64-scale-die-cast-car-ad
+      plain-mobile: CS=1 [HIT, origin Nonems, max-age 1200, 200] | final slam-jump-challenge-track-set-and-1-64-scale-die-cast-car-ad
+  23082353 Hot Wheel Die Cast Free Wheel Monster Truck 
+      plain: CS=3 [HIT, origin 0ms, max-age 98, 200] | final wheel-monster-truck-mutant-multi-color/23082353/product-deta
+      plain: CS=3 [HIT, origin Nonems, max-age 98, 200] | final wheel-monster-truck-mutant-multi-color/23082353/product-deta
+      q: CS=3 [MISS, origin 446ms, max-age 1200, 200] | final wheel-monster-truck-mutant-multi-color/23082353/product-deta
+      slug: CS=3 [HIT, origin 0ms, max-age 1199, 200] | final wheel-monster-truck-mutant-multi-color/23082353/product-deta
+      plain-mobile: CS=3 [HIT, origin Nonems, max-age 1200, 200] | final wheel-monster-truck-mutant-multi-color/23082353/product-deta
+  23033249 Hot Wheels Die Cast Monster Trucks 3/11 Jeep
+      plain: CS=3 [HIT, origin 0ms, max-age 97, 200] | final ter-trucks-3-11-jeep-fc-yellow-black-and-purple/23033249/pro
+      plain: CS=3 [HIT, origin Nonems, max-age 97, 200] | final ter-trucks-3-11-jeep-fc-yellow-black-and-purple/23033249/pro
+      q: CS=3 [MISS, origin 439ms, max-age 1199, 200] | final ter-trucks-3-11-jeep-fc-yellow-black-and-purple/23033249/pro
+      slug: CS=3 [HIT, origin 0ms, max-age 1199, 200] | final ter-trucks-3-11-jeep-fc-yellow-black-and-purple/23033249/pro
+      plain-mobile: CS=3 [HIT, origin Nonems, max-age 1199, 200] | final ter-trucks-3-11-jeep-fc-yellow-black-and-purple/23033249/pro
 
-================ FORCED PASS: every store once ================
-  [MG] 1 products had no SKU row — used product_type fallback
-[*] Minifygram total: 270 of 273 (36 in stock; 1 trading cards, 62 pre-orders)
-[=] Minifygram: no alert-worthy changes (0 minor)
-  [KD] car-culture → 1
-  [KD] fast-and-furious → 1
-  [KD] gift-pack → 21
-  [KD] team-transport → 5
-  [KD] card-art-premiums → 8
-  [KD] pop-culture → 4
-  [KD] mainlines → 5
-  [KD] boulevard-series → 0 (empty right now)
-  [HM] listing → 12 visible products
-  [KD] character-cars → 8
-  [KD] disney-cars → 0 (empty right now)
-  [KD] pre-order-minigt → 65
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] hot-wheels-accessories → 8
-  [KD] kaido-house → 16
-  [KD] mini-gt → 107
-  [KD] mini-gt-blister-pack → 126
-  [KD] chase-car → 0 (empty right now)
-  [FC-API] quick sweep: 190 in stock from 12 page(s) in 3.7s — fresh ✓ (searchrank, 12 page(s) computed live)
-  [KD] home → 0 new (25 already listed elsewhere)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-[*] Karz&Dolls total: 375 (375 in stock)
-[=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [FC-API] stock for pincode: 248001
-  [HM] creds: token=yes app_id=605884f889251331fe847d80
-  [HM] api → HTTP 401
-  [FC-API] 403 products across 21 page(s) (212 with zero stock) in 1.9s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 399, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Free Wheel Die Cast Mercedes-Benz Cla | stock=out_of_stock count=0 price=167 mrp=None
-[*] FirstCry total (API): 558 tracked, 114 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-  [HM] api → HTTP 401
-  [HM] api → HTTP 401
-  [HM] Fynd API returned nothing — falling back to page checks
-  [HM] sitemap → 26 hot-wheels product slugs
-  [HM] page-checked 12 products (0 in stock / 12 sold out)
-[*] Hamleys total: 64 (32 in stock)
-[=] Hamleys: no alert-worthy changes (0 minor)
-[*] forced pass: FirstCry, Minifygram, Karz&Dolls, Hamleys → 1267 products in 13.7s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
-FirstCry stock changes in the forced pass: 9
-    ('fc_20257824', 'in_stock', 'out_of_stock', 'Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pa')
-    ('fc_22600382', 'in_stock', 'out_of_stock', 'Hot Wheels Diecast Toy Car HW Torque Free Wheel Model with S')
-    ('fc_23346007', 'in_stock', 'out_of_stock', 'Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW ')
-    ('fc_23074610', 'in_stock', 'out_of_stock', 'Hot Wheels Free Wheel Die Cast Super twin mill (169/250) Toy')
-    ('fc_23930666', 'in_stock', 'out_of_stock', 'Hot Wheels Motor Show Die Cast Free Wheel Toy Car Pack of 5 ')
-    ('fc_24314338', 'in_stock', 'out_of_stock', 'Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack of 5 - Multicol')
-    ('fc_24503821', 'in_stock', 'out_of_stock', "Hot Wheels Custom '62 Chevy Pickup Die Cast Free Wheel Toy C")
-    ('fc_24503746', 'in_stock', 'out_of_stock', 'Hot Wheels The Dark Knight Batmobile Die Cast Free Wheel Toy')
-    ('fc_24776024', 'in_stock', 'out_of_stock', 'Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250) Toy Car - Gr')
-forced pass took 13.7s
+==================== PART B: endpoints used by the product page ====================
+svcs endpoints in HTML: []
+scripts: ['//cdn.fcglcdn.com/brainbees/php/js/jquery.2.0.0.min.js', '//connect.facebook.net/en_US/sdk.js', '//cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js', '//cdn.fcglcdn.com/brainbees/php/js/master-common.v2.24.min.js?20261018', '//cdn.fcglcdn.com/brainbees/php/js/footer_menuext.1.1.min.js', '//cdn.fcglcdn.com/brainbees/js/v7/swiper.min.js', '//cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.55.min.js', '.com/brainbees/community/jarvissdk/jssdk-jarviscoreindia.js?v=18102026', '//cdn.fcglcdn.com/brainbees/js/v7/menu-1.14-mg-head.min.js?20261018', '//cdn.fcglcdn.com/brainbees/php/js/footerstrip3.0.min.js', 'https://accounts.google.com/gsi/client', '//cdn.fcglcdn.com/brainbees/php/js/internalwebengage.min.js']
+ JS https://cdn.fcglcdn.com/brainbees/php/js/jquery.2.0.0.min.js
+    svcs: []
+    stock-ish strings: ['notify']
+ JS https://cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js
+    svcs: []
+    stock-ish strings: ['/CustomerService.svc/NotifyMe', '/productfilter.svc/RShortlistNotify', 'globalPincode', 'notify']
+ JS //cdn.fcglcdn.com/brainbees/php/js/master-common.v2.24.min.js?20261018
+    svcs: ['/svcs/search.svc/type']
+    stock-ish strings: ['.changepincode', 'globalPincode', 'globalpincodelocality', 'mynotifyme']
+ JS https://cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.55.min.js
+    svcs: ['/svcs/CustomerService.svc/NotifyMe']
+    stock-ish strings: ['.changepincode', '.delivery-heading', '.deliveryDetails', '.notifyMe', '.notifymeBtn', '.span-pincode', 'InStock', 'OutOfStock', 'Pincode', 'availability', 'creditvendorstock', 'deliveryDetails', 'deliveryicon', 'deliveryinput_filled', 'disableNotifyMe', 'euroavail', 'euroavail-', 'globalPincode', 'globalpincodelocality', 'images/m/bst_delivery_truck.png', 'instock', 'notifyMe', 'offers/getsegmentpincode', 'ownedstock', 'sddnnddelivery']
+ JS ps://cdn.fcglcdn.com/brainbees/js/v7/menu-1.14-mg-head.min.js?20261018
+    svcs: []
+    stock-ish strings: ['nonlpincode', 'pincodetext']
+ JS https://cdn.fcglcdn.com/brainbees/php/js/footerstrip3.0.min.js
+    svcs: []
+    stock-ish strings: ['/SaveNotifyMeData', '/same-next-day-delivery', 'btn_qcro_notify']
+ JS https://cdn.fcglcdn.com/brainbees/php/js/internalwebengage.min.js
+    svcs: []
+    stock-ish strings: ['globalPincodelocality']
+  HTML …'og" id="city_pin_data" style="display: none;">                                     <span class="city_pin M12_42" id="geopincode"></span>                                 </div>                             </span>                         </li>                          <li class="na'…
+  HTML …'>             <div class="pin_tnks" style="display: none;">                 <p class="pin_txt3">Thanks for sharing your pincode.</p>                 <p class="pin_txt4">To edit, navigate to any product page on site and update pincode in the delivery information section.</p>      '…
+  HTML …' sharing your pincode.</p>                 <p class="pin_txt4">To edit, navigate to any product page on site and update pincode in the delivery information section.</p>             </div>             <div class="pin_txt">                 <p class="pin_txt1">Firstcry Happiness now'…
+  HTML …'.hide()"></div>                     <span class="msg">You would be notified by Email and Mobile, Once the Product is in stock</span>                 </div>             </div>         </div>     </div>     <div class="overlay-bg bgd" id="cartVatBg">         <div id="overlay-conten'…
+  HTML …'wCount":"23","Rqty":5,"SCID":94,"SD":0,"SOID":0,"SPCID":0,"ST":0,"Seq":0,"Size":"L 6.5 X B 2.5 X H 1 cm","StockT":"ownedstock","SubCN":"Toy Cars, Trains & Vehicles","Unit":"","color":"ffa500","isPremium":false,"pid":24473731,"pnm":"Hot Wheels 1970 Custom Plymouth Road Runner Die-'…
+  HTML …'menuitem" aria-haspopup="true" aria-expanded="false"><a tabindex="-1" href="//www.firstcry.com/mynotifyme" tabindex="0">Notify Me</a></li>                                     <li tabindex="0" role="menuitem" aria-haspopup="true" aria-expanded="false"><a tabindex="-1" href="//www.'…
+  HTML …'transform: capitalize; width: 67%;"></div>                 </div>                 <div id="notifyback" onclick="CartHideNotify(cart_notify)" style="height: 303px; width: 980px; position: absolute; z-index: 2; background: #444; opacity: 0.1; top: 122px; display: none;"></div>     '…
+  HTML …'" class="notify_div" style="display: none;">                     <div class="sp_cl_ic lft sprite_cart" onclick="CartHideNotify(this)"></div>                     <span class="msg">Please Provide your Email Address &amp; Mobile Number. we will inform you once the product becomes Av'…
 
-================ DRY RUN of main() (alerts printed, not sent) ================
-  [FC-API] quick sweep: 190 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 123 products in 1.2s (live: FirstCry)
-  [FC-API] quick sweep: 190 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-[*] pass 2: FirstCry → 123 products in 1.1s (live: FirstCry)
-  [FC-API] quick sweep: 190 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-[*] pass 3: FirstCry → 123 products in 0.9s (live: FirstCry)
-  [FC-API] quick sweep: 190 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-[*] pass 4: FirstCry → 123 products in 1.1s (live: FirstCry)
+==================== PART C: time series ====================
++   16s round 0: catalogue 402 (188 with stock) | in-stock list 190 | disagreements 5
+      24503747 Hot Wheels El Segundo Coupe Die Cast Free Whee list=yes 2 | cat 0
+      24475755 Hot Wheels Datsun 240Z Die cast car 72/250 - G list=yes 1 | cat None
+      24514783 Hot Wheels Color Shifters Layin Lowrider Toy C list=no  None | cat 43
+      24475217 Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Ca list=yes 360 | cat 361
+      24761909 Hot Wheels Mach Speeder Die Cast Free Wheel To list=yes 2 | cat 2
+      24473731 Hot Wheels 1970 Custom Plymouth Road Runner Di list=yes 2 | cat 2
+      24776096 Hot Wheels Lotus Cortina (67/250) Toy Car - Bl list=yes 1 | cat None
++   17s   PDP 24503747 (initial-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 564ms, max-age 1200, 200] | phone gets plain: CS=0 [HIT, origin Nonems, max-age 621, 200]
++   17s   PDP 24475755 (initial-disagree) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 441ms, max-age 1200, 200] | phone gets plain: CS=1 [REVALIDATE, origin 484ms, max-age 1200, 200]
++   17s   PDP 24514783 (initial-disagree) list=False/None cat=43 -> fresh q: CS=43 [MISS, origin 515ms, max-age 1200, 200] | phone gets plain: CS=43 [REVALIDATE, origin 513ms, max-age 1200, 200]
++   18s   PDP 24475217 (initial-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 427ms, max-age 1200, 200] | phone gets plain: CS=361 [REVALIDATE, origin 550ms, max-age 1200, 200]
++   18s   PDP 24761909 (focus) list=True/2 cat=2 -> fresh q: CS=2 [MISS, origin 452ms, max-age 1200, 200] | phone gets plain: CS=2 [HIT, origin Nonems, max-age 1199, 200]
++   18s   PDP 24473731 (focus) list=True/2 cat=2 -> fresh q: CS=2 [MISS, origin 453ms, max-age 1200, 200] | phone gets plain: CS=2 [HIT, origin Nonems, max-age 1200, 200]
++   18s   PDP 24776096 (initial-disagree) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 455ms, max-age 1200, 200] | phone gets plain: CS=1 [HIT, origin Nonems, max-age 90, 200]
++   46s CHANGE 24475755 Hot Wheels Datsun 240Z Die cast car 72/250 - list True/1 -> None/None | cat None -> None
++   46s CHANGE 24514783 Hot Wheels Color Shifters Layin Lowrider Toy list False/None -> True/43 | cat 43 -> 43
++   46s CHANGE 24473474 Hot Wheels Maserati Die Cast Free Wheel Toy  list True/1 -> False/None | cat 1 -> 1
++   46s CHANGE 24473510 Hot Wheels Toyota Prius Custom /Personnalise list True/1 -> False/None | cat 1 -> 1
++   46s CHANGE 24776096 Hot Wheels Lotus Cortina (67/250) Toy Car -  list True/1 -> None/None | cat None -> None
++   46s   PDP 24475755 (change) list=None/None cat=None -> fresh q: CS=1 [MISS, origin 453ms, max-age 1200, 200] | phone gets plain: CS=1 [HIT, origin Nonems, max-age 1170, 200]
++   46s   PDP 24514783 (change) list=True/43 cat=43 -> fresh q: CS=43 [MISS, origin 458ms, max-age 1200, 200] | phone gets plain: CS=43 [HIT, origin Nonems, max-age 1200, 200]
++   47s   PDP 24473474 (change) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 579ms, max-age 1200, 200] | phone gets plain: CS=0 [REVALIDATE, origin 525ms, max-age 1200, 200]
++   47s   PDP 24473510 (change) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 433ms, max-age 1200, 200] | phone gets plain: CS=1 [REVALIDATE, origin 500ms, max-age 1200, 200]
++   47s   PDP 24776096 (change) list=None/None cat=None -> fresh q: CS=1 [MISS, origin 424ms, max-age 1200, 200] | phone gets plain: CS=1 [HIT, origin Nonems, max-age 90, 200]
++   76s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 502ms, max-age 1200, 200]
++   77s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 468ms, max-age 1200, 200]
++   77s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 504ms, max-age 1200, 200]
++   77s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 581ms, max-age 1200, 200]
++  137s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 561ms, max-age 1200, 200]
++  137s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 442ms, max-age 1200, 200]
++  137s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 589ms, max-age 1200, 200]
++  137s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 490ms, max-age 1200, 200]
++  196s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 498ms, max-age 1200, 200]
++  197s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 417ms, max-age 1200, 200]
++  197s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 671ms, max-age 1200, 200]
++  197s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 420ms, max-age 1200, 200]
++  257s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 419ms, max-age 1200, 200]
++  257s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 411ms, max-age 1200, 200]
++  257s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 451ms, max-age 1200, 200]
++  257s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 483ms, max-age 1200, 200]
++  316s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 435ms, max-age 1200, 200]
++  317s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 441ms, max-age 1200, 200]
++  317s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 445ms, max-age 1200, 200]
++  317s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 442ms, max-age 1200, 200]
++  376s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 461ms, max-age 1200, 200]
++  377s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 468ms, max-age 1200, 200]
++  377s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 464ms, max-age 1200, 200]
++  377s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 439ms, max-age 1200, 200]
++  437s   PDP 24503747 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 421ms, max-age 1200, 200]
++  437s   PDP 24475217 (recheck-disagree) list=True/360 cat=361 -> fresh q: CS=361 [MISS, origin 475ms, max-age 1200, 200]
++  437s   PDP 24473474 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=0 [MISS, origin 465ms, max-age 1200, 200]
++  437s   PDP 24473510 (recheck-disagree) list=False/None cat=1 -> fresh q: CS=1 [MISS, origin 464ms, max-age 1199, 200]
++  481s CHANGE 24473028 Hot wheels EI Segundo Rallye Die cast Car (1 list True/196 -> True/196 | cat 196 -> 195
++  481s CHANGE 24473498 Hot Wheels Armored Batmobile Die-Cast Toy Ca list None/None -> False/None | cat None -> 0
++  481s CHANGE 24473388 Hot Wheels Hoto Roto Die Cast Free Wheel Toy list True/297 -> True/297 | cat 297 -> 298
++  481s CHANGE 24503747 Hot Wheels El Segundo Coupe Die Cast Free Wh list True/2 -> True/2 | cat 0 -> 2
++  481s CHANGE 24475755 Hot Wheels Datsun 240Z Die cast car 72/250 - list None/None -> False/None | cat None -> 0
++  481s CHANGE 24762190 Hot Wheels Mailed It Die Cast Free Wheel Toy list True/266 -> True/266 | cat 266 -> 265
++  481s CHANGE 24475217 Hot Wheels Ferrari 12 Cilindri Die-Cast Toy  list True/360 -> True/360 | cat 361 -> 360
++  481s CHANGE 24473474 Hot Wheels Maserati Die Cast Free Wheel Toy  list False/None -> False/None | cat 1 -> 0
++  481s CHANGE 24776089 Hot Wheels Time shifter (109/250) Toy Car -  list True/222 -> True/222 | cat 222 -> 221
++  481s CHANGE 24473510 Hot Wheels Toyota Prius Custom /Personnalise list False/None -> None/None | cat 1 -> None
++  481s CHANGE 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car -  list True/279 -> True/279 | cat 279 -> 280
++  481s CHANGE 24473731 Hot Wheels 1970 Custom Plymouth Road Runner  list True/2 -> True/2 | cat 2 -> 0
++  481s CHANGE 24776096 Hot Wheels Lotus Cortina (67/250) Toy Car -  list None/None -> False/None | cat None -> 0
++  481s CHANGE 23345760 Hot Wheels 128/250 Datsun 620 Die Cast Free  list True/40 -> True/40 | cat 40 -> 39
++  481s CHANGE 24473499 Hot Wheels 19 Mercedes - Benz A -Class Die-C list True/1 -> True/1 | cat 1 -> None
++  481s CHANGE 24473494 Hot Wheels Slide-Burn Die-Cast Toy Car - Tea list True/218 -> True/218 | cat 218 -> 219
++  481s CHANGE 24476800 Hot Wheels Tooned Purple Passion Die Cast To list True/415 -> True/415 | cat 415 -> 414
++  481s CHANGE 24473495 Hot Wheels Ford Galaxie Die-Cast Toy Car - B list True/1 -> True/1 | cat 1 -> None
++  482s   PDP 24473028 (change) list=True/196 cat=195 -> fresh q: CS=196 [MISS, origin 445ms, max-age 1200, 200] | phone gets plain: CS=196 [REVALIDATE, origin 465ms, max-age 1200, 200]
++  482s   PDP 24473498 (change) list=False/None cat=0 -> fresh q: CS=0 [MISS, origin 459ms, max-age 1200, 200] | phone gets plain: CS=0 [REVALIDATE, origin 435ms, max-age 1200, 200]
++  482s   PDP 24473388 (change) list=True/297 cat=298 -> fresh q: CS=297 [MISS, origin 443ms, max-age 1200, 200] | phone gets plain: CS=297 [HIT, origin 0ms, max-age 336, 200]
++  482s   PDP 24503747 (change) list=True/2 cat=2 -> fresh q: CS=0 [MISS, origin 432ms, max-age 1200, 200] | phone gets plain: CS=0 [HIT, origin Nonems, max-age 621, 200]
++  482s   PDP 24475755 (change) list=False/None cat=0 -> fresh q: CS=1 [MISS, origin 451ms, max-age 1200, 200] | phone gets plain: CS=1 [HIT, origin Nonems, max-age 1170, 200]
++  483s   PDP 24762190 (change) list=True/266 cat=265 -> fresh q: CS=266 [MISS, origin 437ms, max-age 1200, 200] | phone gets plain: CS=266 [HIT, origin Nonems, max-age 422, 200]
++  483s   PDP 24475217 (change) list=True/360 cat=360 -> fresh q: CS=361 [MISS, origin 450ms, max-age 1200, 200] | phone gets plain: CS=361 [HIT, origin Nonems, max-age 1200, 200]
++  483s   PDP 24473474 (change) list=False/None cat=0 -> fresh q: CS=0 [MISS, origin 547ms, max-age 1200, 200] | phone gets plain: CS=0 [HIT, origin Nonems, max-age 1200, 200]
++  483s   PDP 24776089 (change) list=True/222 cat=221 -> fresh q: CS=222 [MISS, origin 420ms, max-age 1200, 200] | phone gets plain: CS=222 [REVALIDATE, origin 450ms, max-age 1200, 200]
++  483s   PDP 24473510 (change) list=None/None cat=None -> fresh q: CS=1 [MISS, origin 437ms, max-age 1200, 200] | phone gets plain: CS=1 [HIT, origin Nonems, max-age 1200, 200]
++  483s   PDP 24473712 (change) list=True/279 cat=280 -> fresh q: CS=279 [MISS, origin 472ms, max-age 1200, 200] | phone gets plain: CS=279 [HIT, origin Nonems, max-age 811, 200]
++  483s   PDP 24473731 (change) list=True/2 cat=0 -> fresh q: CS=2 [MISS, origin 451ms, max-age 1200, 200] | phone gets plain: CS=2 [HIT, origin 0ms, max-age 720, 200]
++  483s   PDP 24776096 (change) list=False/None cat=0 -> fresh q: CS=1 [MISS, origin 530ms, max-age 1200, 200] | phone gets plain: CS=1 [HIT, origin 0ms, max-age 734, 200]
++  483s   PDP 23345760 (change) list=True/40 cat=39 -> fresh q: CS=40 [MISS, origin 450ms, max-age 1200, 200] | phone gets plain: CS=40 [REVALIDATE, origin 467ms, max-age 1200, 200]
++  484s   PDP 24473499 (change) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 451ms, max-age 1200, 200] | phone gets plain: CS=1 [REVALIDATE, origin 473ms, max-age 1200, 200]
++  484s   PDP 24473494 (change) list=True/218 cat=219 -> fresh q: CS=218 [MISS, origin 502ms, max-age 1200, 200] | phone gets plain: CS=218 [HIT, origin 0ms, max-age 810, 200]
++  484s   PDP 24476800 (change) list=True/415 cat=414 -> fresh q: CS=415 [MISS, origin 445ms, max-age 1200, 200] | phone gets plain: CS=415 [HIT, origin 0ms, max-age 1076, 200]
++  484s   PDP 24473495 (change) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 450ms, max-age 1200, 200] | phone gets plain: CS=1 [REVALIDATE, origin 455ms, max-age 1200, 200]
++  496s   PDP 24473028 (recheck-disagree) list=True/196 cat=195 -> fresh q: CS=196 [MISS, origin 444ms, max-age 1200, 200]
++  496s   PDP 24473388 (recheck-disagree) list=True/297 cat=298 -> fresh q: CS=297 [MISS, origin 432ms, max-age 1200, 200]
++  496s   PDP 23345760 (recheck-disagree) list=True/40 cat=39 -> fresh q: CS=40 [MISS, origin 444ms, max-age 1200, 200]
++  496s   PDP 24762190 (recheck-disagree) list=True/266 cat=265 -> fresh q: CS=266 [MISS, origin 438ms, max-age 1200, 200]
++  496s   PDP 24473499 (recheck-disagree) list=True/1 cat=None -> fresh q: CS=0 [MISS, origin 505ms, max-age 1200, 200]
++  496s   PDP 24776089 (recheck-disagree) list=True/222 cat=221 -> fresh q: CS=222 [MISS, origin 431ms, max-age 1200, 200]
++  497s   PDP 24473494 (recheck-disagree) list=True/218 cat=219 -> fresh q: CS=218 [MISS, origin 444ms, max-age 1200, 200]
++  497s   PDP 24473712 (recheck-disagree) list=True/279 cat=280 -> fresh q: CS=279 [MISS, origin 470ms, max-age 1200, 200]
++  497s   PDP 24476800 (recheck-disagree) list=True/415 cat=414 -> fresh q: CS=415 [MISS, origin 464ms, max-age 1200, 200]
++  497s   PDP 24473731 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=2 [MISS, origin 492ms, max-age 1200, 200]
++  497s   PDP 24473495 (recheck-disagree) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 466ms, max-age 1200, 200]
++  556s   PDP 24473028 (recheck-disagree) list=True/196 cat=195 -> fresh q: CS=196 [MISS, origin 456ms, max-age 1200, 200]
++  556s   PDP 24473388 (recheck-disagree) list=True/297 cat=298 -> fresh q: CS=297 [MISS, origin 436ms, max-age 1200, 200]
++  556s   PDP 23345760 (recheck-disagree) list=True/40 cat=39 -> fresh q: CS=39 [MISS, origin 474ms, max-age 1200, 200]
++  556s   PDP 24762190 (recheck-disagree) list=True/266 cat=265 -> fresh q: CS=266 [MISS, origin 444ms, max-age 1200, 200]
++  556s   PDP 24473499 (recheck-disagree) list=True/1 cat=None -> fresh q: CS=0 [MISS, origin 478ms, max-age 1200, 200]
++  556s   PDP 24776089 (recheck-disagree) list=True/222 cat=221 -> fresh q: CS=222 [MISS, origin 426ms, max-age 1200, 200]
++  557s   PDP 24473494 (recheck-disagree) list=True/218 cat=219 -> fresh q: CS=218 [MISS, origin 448ms, max-age 1200, 200]
++  557s   PDP 24473712 (recheck-disagree) list=True/279 cat=280 -> fresh q: CS=279 [MISS, origin 481ms, max-age 1200, 200]
++  557s   PDP 24476800 (recheck-disagree) list=True/415 cat=414 -> fresh q: CS=415 [MISS, origin 458ms, max-age 1200, 200]
++  557s   PDP 24473731 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 512ms, max-age 1200, 200]
++  557s   PDP 24473495 (recheck-disagree) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 472ms, max-age 1200, 200]
++  616s   PDP 24473028 (recheck-disagree) list=True/196 cat=195 -> fresh q: CS=196 [MISS, origin 495ms, max-age 1200, 200]
++  616s   PDP 24473388 (recheck-disagree) list=True/297 cat=298 -> fresh q: CS=297 [MISS, origin 476ms, max-age 1200, 200]
++  616s   PDP 23345760 (recheck-disagree) list=True/40 cat=39 -> fresh q: CS=39 [MISS, origin 461ms, max-age 1200, 200]
++  617s   PDP 24762190 (recheck-disagree) list=True/266 cat=265 -> fresh q: CS=265 [MISS, origin 512ms, max-age 1200, 200]
++  617s   PDP 24473499 (recheck-disagree) list=True/1 cat=None -> fresh q: CS=0 [MISS, origin 504ms, max-age 1200, 200]
++  617s   PDP 24776089 (recheck-disagree) list=True/222 cat=221 -> fresh q: CS=222 [MISS, origin 428ms, max-age 1200, 200]
++  617s   PDP 24473494 (recheck-disagree) list=True/218 cat=219 -> fresh q: CS=218 [MISS, origin 434ms, max-age 1200, 200]
++  617s   PDP 24473712 (recheck-disagree) list=True/279 cat=280 -> fresh q: CS=279 [MISS, origin 432ms, max-age 1200, 200]
++  617s   PDP 24476800 (recheck-disagree) list=True/415 cat=414 -> fresh q: CS=415 [MISS, origin 461ms, max-age 1200, 200]
++  617s   PDP 24473731 (recheck-disagree) list=True/2 cat=0 -> fresh q: CS=0 [MISS, origin 462ms, max-age 1200, 200]
++  617s   PDP 24473495 (recheck-disagree) list=True/1 cat=None -> fresh q: CS=1 [MISS, origin 457ms, max-age 1200, 200]
++  631s CHANGE 24473028 Hot wheels EI Segundo Rallye Die cast Car (1 list True/196 -> True/195 | cat 195 -> 195
++  631s CHANGE 24473388 Hot Wheels Hoto Roto Die Cast Free Wheel Toy list True/297 -> True/298 | cat 298 -> 298
++  631s CHANGE 24762190 Hot Wheels Mailed It Die Cast Free Wheel Toy list True/266 -> True/265 | cat 265 -> 265
++  631s CHANGE 24776089 Hot Wheels Time shifter (109/250) Toy Car -  list True/222 -> True/221 | cat 221 -> 221
++  631s CHANGE 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car -  list True/279 -> True/280 | cat 280 -> 280
++  631s CHANGE 22597523 Hot Wheels Color Shifters  Group C Fantasy T list None/None -> True/10 | cat None -> None
++  631s CHANGE 23345760 Hot Wheels 128/250 Datsun 620 Die Cast Free  list True/40 -> True/39 | cat 39 -> 39
++  631s CHANGE 24473494 Hot Wheels Slide-Burn Die-Cast Toy Car - Tea list True/218 -> True/219 | cat 219 -> 219
++  631s CHANGE 24514785 Hot Wheels Color Shifters Street Wiener Toy  list True/222 -> False/None | cat 222 -> 222
++  631s CHANGE 24476800 Hot Wheels Tooned Purple Passion Die Cast To list True/415 -> True/414 | cat 414 -> 414
++  631s CHANGE 24473460 Hot Wheels AKei Swap Die Cast Free Wheel Toy list True/298 -> False/None | cat 298 -> 298
++  632s   PDP 24473028 (change) list=True/195 cat=195 -> fresh q: CS=196 [MISS, origin 425ms, max-age 1200, 200] | phone gets plain: CS=196 [HIT, origin 0ms, max-age 1051, 200]
++  632s   PDP 24473388 (change) list=True/298 cat=298 -> fresh q: CS=297 [MISS, origin 427ms, max-age 1200, 200] | phone gets plain: CS=297 [HIT, origin Nonems, max-age 336, 200]
++  632s   PDP 24762190 (change) list=True/265 cat=265 -> fresh q: CS=265 [MISS, origin 432ms, max-age 1200, 200] | phone gets plain: CS=266 [HIT, origin Nonems, max-age 422, 200]
++  632s   PDP 24776089 (change) list=True/221 cat=221 -> fresh q: CS=221 [MISS, origin 418ms, max-age 1199, 200] | phone gets plain: CS=222 [HIT, origin 0ms, max-age 1051, 200]
++  632s   PDP 24473712 (change) list=True/280 cat=280 -> fresh q: CS=279 [MISS, origin 459ms, max-age 1200, 200] | phone gets plain: CS=279 [HIT, origin 0ms, max-age 663, 200]
++  632s   PDP 22597523 (change) list=True/10 cat=None -> fresh q: CS=9 [MISS, origin 454ms, max-age 1200, 200] | phone gets plain: CS=9 [HIT, origin 0ms, max-age 1073, 200]
++  632s   PDP 23345760 (change) list=True/39 cat=39 -> fresh q: CS=39 [MISS, origin 429ms, max-age 1200, 200] | phone gets plain: CS=40 [HIT, origin Nonems, max-age 1200, 200]
++  632s   PDP 24473494 (change) list=True/219 cat=219 -> fresh q: CS=218 [MISS, origin 431ms, max-age 1200, 200] | phone gets plain: CS=218 [HIT, origin Nonems, max-age 661, 200]
++  632s   PDP 24514785 (change) list=False/None cat=222 -> fresh q: CS=222 [MISS, origin 477ms, max-age 1200, 200] | phone gets plain: CS=222 [REVALIDATE, origin 493ms, max-age 1200, 200]
++  633s   PDP 24476800 (change) list=True/414 cat=414 -> fresh q: CS=415 [MISS, origin 441ms, max-age 1200, 200] | phone gets plain: CS=415 [HIT, origin Nonems, max-age 1076, 200]
++  633s   PDP 24473460 (change) list=False/None cat=298 -> fresh q: CS=298 [MISS, origin 472ms, max-age 1200, 200] | phone gets plain: CS=298 [REVALIDATE, origin 407ms, max-age 1200, 200]
 
-[*] run finished: 4 pass(es) in 38s
-main() took 37.8s; 0 message(s) would have been sent
+==================== SUMMARY ====================
+rounds: 44; events: 34; product-page reads: 102
+fresh product-page reads usable: 102; in-stock list agreed 72/102; catalogue agreed 78/102
+times the page a phone gets disagreed with the fresh page: 0
+done in 675s
