@@ -1,71 +1,26 @@
-+   3s catalogue 402, in-stock list 184
-listing record fields: ['AgeF', 'AgeT', 'BId', 'BNm', 'Bestseller', 'CNm', 'ClrCnt', 'CrntStock', 'Disc', 'Excl', 'Images', 'IsPremium', 'MRP', 'PDsc', 'PId', 'PInfId', 'PNm', 'PUCost', 'PUPad', 'PUWipe', 'P_Grp_ID', 'PcId', 'SCNm', 'ScId', 'SplOfrID', 'SzCnt', 'TTData', 'clubPUCost', 'clubPUPad', 'clubPUWipe', 'clubdisc', 'clubprice', 'collectiontag', 'color', 'cpntxt', 'discprice', 'elaunchoff', 'ercash', 'extrawarm', 'fgift', 'isfestival', 'ispreorder', 'mompick', 'mostgifted', 'newdays', 'newsort', 'offendtoday', 'ofrTp', 'onlyonfc', 'perclubcost', 'percost', 'rating', 'ratings', 'review', 'shippingdate', 'size', 'stockType', 'unit']
++   3s catalogue 402 (stock>0: 184), in-stock list 184
++   8s read 40 pages -> 131 cars; 42 of them never appear in the listing
 
-=== 24473731 Road Runner  (Hot Wheels 1970 Custom Plymouth Road Runner Die-Ca) list=no cat=0
-   page CS: {'24473511': 0, '24473713': 0, '24473731': 0, '24473510': 1, '24473516': 1, '24473723': 1, '24473724': 29, '24473513': 81, '24473512': 93, '24473514': 157, '24473515': 179, '24473712': 279, '24537351': 0}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 0, 'PinC': 0, 'BID': 113, 'Dis': 0, 'MRP': 179}
-   FULL RESPONSE (248001): {"Result": {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "14-56", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Monday, 19th Oct 2026", "SDDDate": "", "NDDLeftTime": "04-03", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473731, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "groupserviceability": {"24473510": 0, "24473511": 0, "24473512": 1, "24473513": 1, "24473514": 1, "24473515": 1, "24473516": 0, "24473712": 1, "24473713": 0, "24473723": 0, "24473724": 1, "24473731": 1, "24537351": 0}, "qwikShippingDate": "0 Mins"}}
-   headers: cache-control None | server-timing cdn-cache; desc=MISS, edge; dur=66, origin; dur=274, ak_p; desc="1792315561112_400321418_25048121_34015_91606_4_12_255";dur=1
-   TAT pin 248001: HTTP 200 463ms | groupserviceability={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0} | {}
-   TAT pin 0     : HTTP 200 571ms | groupserviceability={'24473510': 1, '24473511': 1, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 1, '24473712': 1, '24473713': 1, '24473723': 1, '24473724': 1, '24473731': 1, '24537351': 1} | {}
-   TAT pin 110001: HTTP 200 677ms | groupserviceability={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0} | {}
+=== 1. one call, many cars ===
+     10 ids -> HTTP 200 305ms, answered 10 ids, missing 0
+     50 ids -> HTTP 200 310ms, answered 50 ids, missing 0
+    100 ids -> HTTP 200 294ms, answered 0 ids, missing 100
 
-=== 24503747 El Segundo Coupe  (Hot Wheels El Segundo Coupe Die Cast Free Wheel To) list=yes 2 cat=2
-   page CS: {'24503903': 261, '24503750': 45, '24503904': 0, '24503746': 1, '24503747': 2, '24503821': 0, '24503897': 0, '24503751': 2, '24503901': 0, '24503819': 0}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 2, 'PinC': 0, 'BID': 113, 'Dis': 10, 'MRP': 179}
-   TAT pin 248001: HTTP 200 697ms | groupserviceability={'24503746': 0, '24503747': 0, '24503750': 1, '24503751': 0, '24503819': 0, '24503821': 0, '24503897': 0, '24503901': 0, '24503903': 1, '24503904': 0} | {}
-   TAT pin 0     : HTTP 200 642ms | groupserviceability={'24503746': 1, '24503747': 1, '24503750': 1, '24503751': 1, '24503819': 1, '24503821': 1, '24503897': 1, '24503901': 1, '24503903': 1, '24503904': 1} | {}
-   TAT pin 110001: HTTP 200 651ms | groupserviceability={'24503746': 0, '24503747': 0, '24503750': 1, '24503751': 0, '24503819': 0, '24503821': 0, '24503897': 0, '24503901': 0, '24503903': 1, '24503904': 0} | {}
+=== 2. same cars, different main product ===
+   main 14933549: 0 answers differ
+   main 21993930: 0 answers differ
+   main 22277228: 0 answers differ
+   main 24473512: 0 answers differ
+   main 24476804: 0 answers differ
+   RR group alone : {'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0}
+   RR in big batch: {'24473510': None, '24473511': None, '24473512': None, '24473513': None, '24473514': None, '24473515': None, '24473516': None, '24473712': None, '24473713': None, '24473723': None, '24473724': None, '24473731': None, '24537351': None}
 
-=== 24761909 Mach Speeder  (Hot Wheels Mach Speeder Die Cast Free Wheel Toy Ca) list=yes 2 cat=2
-   page CS: {'24762155': 0, '24762190': 265, '24761908': 0, '24761907': 1, '24761947': 109, '24762188': 195, '24761909': 2, '24762186': 559}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 2, 'PinC': 0, 'BID': 113, 'Dis': 7, 'MRP': 179}
-   TAT pin 248001: HTTP 200 564ms | groupserviceability={'24761907': 0, '24761908': 0, '24761909': 0, '24761947': 1, '24762155': 0, '24762186': 1, '24762188': 1, '24762190': 1} | {}
-   TAT pin 0     : HTTP 200 477ms | groupserviceability={'24761907': 1, '24761908': 1, '24761909': 1, '24761947': 1, '24762155': 1, '24762186': 1, '24762188': 1, '24762190': 1} | {}
-   TAT pin 110001: HTTP 200 527ms | groupserviceability={'24761907': 0, '24761908': 0, '24761909': 0, '24761947': 1, '24762155': 0, '24762186': 1, '24762188': 1, '24762190': 1} | {}
+=== 3. stability over time (every ~15 s) ===
++  12s round 1: 2 calls (296ms, 283ms), 0/227 deliverable to 248001
++ 371s 24 rounds done
+   cars whose answer changed: 0
 
-=== 23074610 Super Twin Mill (absent from listing, page CS 4)  () list=no cat=absent
-   page CS: {'23074883': 43, '23074615': 34, '23074882': 59, '23074884': 57, '23074263': 0, '23074611': 84, '23074614': 13, '23074259': 33, '23074267': 0, '23074617': 0, '23074266': 17, '23074612': 33, '23074260': 0, '23074261': 0, '23074888': 0, '23074885': 5, '23074619': 19, '23074618': 0, '23074887': 0, '23074262': 38, '23074265': 0, '23074613': 0, '23074886': 6, '23074610': 4, '23074258': 0, '23074616': 0, '23074178': 27}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 4, 'PinC': 0, 'BID': 113, 'Dis': 2, 'MRP': 179}
-   TAT pin 248001: HTTP 200 639ms | groupserviceability={'23074178': 0, '23074258': 0, '23074259': 1, '23074260': 0, '23074261': 0, '23074262': 0, '23074263': 0, '23074265': 0, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 0, '23074613': 0, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 0, '23074882': 0, '23074883': 0, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0} | {}
-   TAT pin 0     : HTTP 200 649ms | groupserviceability={'23074178': 1, '23074258': 1, '23074259': 1, '23074260': 1, '23074261': 1, '23074262': 1, '23074263': 1, '23074265': 1, '23074266': 1, '23074267': 1, '23074610': 1, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 1, '23074615': 1, '23074616': 1, '23074617': 1, '23074618': 1, '23074619': 1, '23074882': 1, '23074883': 1, '23074884': 1, '23074885': 1, '23074886': 1, '23074887': 1, '23074888': 1} | {}
-   TAT pin 110001: HTTP 200 565ms | groupserviceability={'23074178': 0, '23074258': 0, '23074259': 1, '23074260': 0, '23074261': 0, '23074262': 0, '23074263': 0, '23074265': 0, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 0, '23074613': 0, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 0, '23074882': 0, '23074883': 0, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0} | {}
-
-=== 23346007 Mercedes CLA (absent from listing, page CS 4)  () list=no cat=absent
-   page CS: {'23346006': 21, '23345760': 39, '23347147': 0, '23345761': 11, '23346007': 4, '23346403': 0, '23346404': 265}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 4, 'PinC': 0, 'BID': 113, 'Dis': 10, 'MRP': 179}
-   TAT pin 248001: HTTP 200 497ms | groupserviceability={'23345760': 1, '23345761': 0, '23346006': 1, '23346007': 0, '23346403': 0, '23346404': 1, '23347147': 0} | {}
-   TAT pin 0     : HTTP 200 416ms | groupserviceability={'23345760': 1, '23345761': 1, '23346006': 1, '23346007': 1, '23346403': 1, '23346404': 1, '23347147': 1} | {}
-   TAT pin 110001: HTTP 200 525ms | groupserviceability={'23345760': 1, '23345761': 0, '23346006': 1, '23346007': 0, '23346403': 0, '23346404': 1, '23347147': 0} | {}
-
-=== 24314338 NIGHTBURNERZ 5-pack (v13.1 phantom)  () list=no cat=absent
-   page CS: {'24314338': 7}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 7, 'PinC': 0, 'BID': 113, 'Dis': 10, 'MRP': 899}
-   TAT pin 248001: HTTP 200 597ms | groupserviceability={'24314338': 0} | {}
-   TAT pin 0     : HTTP 200 448ms | groupserviceability={'24314338': 1} | {}
-   TAT pin 110001: HTTP 200 438ms | groupserviceability={'24314338': 0} | {}
-
-=== 24503746 Batmobile (v13.1 phantom)  () list=no cat=absent
-   page CS: {'24503903': 261, '24503750': 45, '24503904': 0, '24503746': 1, '24503747': 2, '24503821': 0, '24503897': 0, '24503751': 2, '24503901': 0, '24503819': 0}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 1, 'PinC': 0, 'BID': 113, 'Dis': 10, 'MRP': 179}
-   TAT pin 248001: HTTP 200 467ms | groupserviceability={'24503746': 0, '24503747': 0, '24503750': 1, '24503751': 0, '24503819': 0, '24503821': 0, '24503897': 0, '24503901': 0, '24503903': 1, '24503904': 0} | {}
-   TAT pin 0     : HTTP 200 527ms | groupserviceability={'24503746': 1, '24503747': 1, '24503750': 1, '24503751': 1, '24503819': 1, '24503821': 1, '24503897': 1, '24503901': 1, '24503903': 1, '24503904': 1} | {}
-   TAT pin 110001: HTTP 200 480ms | groupserviceability={'24503746': 0, '24503747': 0, '24503750': 1, '24503751': 0, '24503819': 0, '24503821': 0, '24503897': 0, '24503901': 0, '24503903': 1, '24503904': 0} | {}
-
-=== 24776024 Mazda RX-7 FC3S (v13.1 phantom)  () list=no cat=absent
-   page CS: {'24775936': 0, '24776064': 0, '24776075': 0, '24776061': 2, '24776065': 2, '24776024': 3, '24776070': 99, '24776077': 216, '24776076': 263, '24775986': 331}
-   PInfo: {'SCID': 94, 'PCID': 5, 'CODA': True, 'StockT': 'ownedstock', 'CurSt': 3, 'PinC': 0, 'BID': 113, 'Dis': 0, 'MRP': 179}
-   TAT pin 248001: HTTP 200 415ms | groupserviceability={'24775936': 0, '24775986': 1, '24776024': 0, '24776061': 0, '24776064': 0, '24776065': 0, '24776070': 1, '24776075': 0, '24776076': 1, '24776077': 1} | {}
-   TAT pin 0     : HTTP 200 519ms | groupserviceability={'24775936': 1, '24775986': 1, '24776024': 1, '24776061': 1, '24776064': 1, '24776065': 1, '24776070': 1, '24776075': 1, '24776076': 1, '24776077': 1} | {}
-   TAT pin 110001: HTTP 200 471ms | groupserviceability={'24775936': 0, '24775986': 1, '24776024': 0, '24776061': 0, '24776064': 0, '24776065': 0, '24776070': 1, '24776075': 0, '24776076': 1, '24776077': 1} | {}
-
-=== repeat: Datsun 620 group (13 cars), 4 calls
-   #1: 542ms groupserviceability={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0}
-   #2: 401ms groupserviceability={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0}
-   #3: 446ms groupserviceability={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0}
-   #4: 493ms groupserviceability={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 0, '24473712': 1, '24473713': 0, '24473723': 0, '24473724': 1, '24473731': 1, '24537351': 0}
-   page CS: {'24473511': 0, '24473713': 0, '24473731': 0, '24473510': 1, '24473516': 1, '24473723': 1, '24473724': 29, '24473513': 81, '24473512': 93, '24473514': 157, '24473515': 179, '24473712': 280, '24537351': 0}
-   list   : {'24473511': None, '24473713': None, '24473731': None, '24473510': None, '24473516': '1', '24473723': '1', '24473724': '29', '24473513': '81', '24473512': '93', '24473514': None, '24473515': '179', '24473712': '280', '24537351': None}
-   catalog: {'24473511': '0', '24473713': '0', '24473731': '0', '24473510': None, '24473516': '1', '24473723': '1', '24473724': '29', '24473513': '81', '24473512': '93', '24473514': None, '24473515': '179', '24473712': '280', '24537351': None}
-   Result keys: ['ActualNddCharges', 'ActualPrice', 'ActualSddCharges', 'CODAvailable', 'ConvCharge', 'DispatchHrs', 'DispatchTAT', 'DropShipmentAvailable', 'ExpiryDate', 'ExpiryDate2', 'GSTAmt', 'IsAssemblyServiceAvailable', 'IsNDD', 'IsNextDayDeliveryWOPincode', 'IsOnlineAssemblyServiceAvailable', 'IsQwik', 'IsSDD', 'IsSameDayDeliveryWOPincode', 'IsServicable', 'IsTnB', 'NDDCutOffTime', 'NDDDate', 'NDDLeftTime', 'NddCharges', 'PdpSampleInfo', 'ProductID', 'ProductTAT', 'SDDCutOffTime', 'SDDDate', 'SDDLeftTime', 'SddCharges', 'ServerTime', 'ShippingDate', 'arrivingBeforeFest', 'feedAmount', 'groupserviceability', 'isGiftwrapExctype', 'qwikstores']
-done in 34s
+=== 4. deliverable to 248001 vs what the listing says ===
+   in-stock list cars: 184; deliverable: 0; NOT deliverable: 0
+   deliverable + in stock but NEVER in the Hot Wheels listing: 0
+done in 371s
