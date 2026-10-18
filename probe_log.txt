@@ -1,104 +1,134 @@
+seen.json copied: 778249 bytes
 
-==================== fc_equiv ====================
-prod_style {'n': 401, 'instock': 178, 'ttls': [385, 365, 365, 385, 385, 385, 366, 385, 385, 385, 385, 366, 366, 386, 386, 386, 386, 386, 386, 385, 385, None], 'cdns': {'MISS': 22}, 'errs': []}
-searchrank {'n': 401, 'instock': 178, 'ttls': [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None], 'cdns': {'MISS': 22}, 'errs': []}
-sorting {'n': 401, 'instock': 178, 'ttls': [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None], 'cdns': {'MISS': 22}, 'errs': []}
-isclub00 {'n': 401, 'instock': 178, 'ttls': [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None], 'cdns': {'HIT': 1, 'MISS': 21}, 'errs': []}
-searchrank_alpha {'n': 401, 'instock': 178, 'ttls': [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None], 'cdns': {'MISS': 22}, 'errs': []}
-prod_style vs searchrank {'only_a': [], 'only_b': [], 'n_only_a': 0, 'n_only_b': 0, 'stock_diff': [], 'n_stock_diff': 0}
-prod_style vs sorting {'only_a': [], 'only_b': [], 'n_only_a': 0, 'n_only_b': 0, 'stock_diff': [], 'n_stock_diff': 0}
-prod_style vs isclub00 {'only_a': ['21993938'], 'only_b': ['22600382'], 'n_only_a': 1, 'n_only_b': 1, 'stock_diff': [], 'n_stock_diff': 0}
-prod_style vs searchrank_alpha {'only_a': [], 'only_b': [], 'n_only_a': 0, 'n_only_b': 0, 'stock_diff': [], 'n_stock_diff': 0}
-[fc_equiv] done in 1.8s
+================ KND: new JSON parser vs old HTML parser ================
+  [KD] team-transport → 5
+  [KD] fast-and-furious → 1
+  [KD] car-culture → 1
+  [KD] mainlines → 5
+  [KD] card-art-premiums → 8
+  [KD] boulevard-series → 0 (empty right now)
+  [KD] gift-pack → 21
+  [KD] pop-culture → 4
+  [KD] character-cars → 8
+  [KD] disney-cars → 0 (empty right now)
+  [KD] hot-wheels-accessories → 8
+  [KD] mini-gt → 107
+  [KD] kaido-house → 16
+  [KD] mini-gt-blister-pack → 126
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] pre-order-minigt → 63
+  [KD] chase-car → 0 (empty right now)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+  [KD] home → 0 (empty right now)
+[*] Karz&Dolls total: 373 (373 in stock)
+  [KD] mainlines → 2
+  [KD] gift-pack → 15
+  [KD] pop-culture → 2
+  [KD] car-culture → 0 (empty or slug changed)
+  [KD] fast-and-furious → 0 (empty or slug changed)
+  [KD] card-art-premiums → 7
+  [KD] team-transport → 1
+  [KD] disney-cars → 0 (empty or slug changed)
+  [KD] character-cars → 3
+  [KD] hot-wheels-accessories → 8
+  [KD] boulevard-series → 0 (empty or slug changed)
+  [KD] mini-gt → 107
+  [KD] pre-order-special-stock → 0 (empty or slug changed)
+  [KD] kaido-house → 16
+  [KD] mini-gt-blister-pack → 125
+  [KD] pre-order-minigt → 63
+[*] Karz&Dolls total: 349 (349 in stock)
+new: 373 products in 3.5s (healthy=True); old: 349 in 3.2s
+only in new: [('kd_10gzmPApAV', 'MARIO KART VEHICLE 4 PC GIFT PACK', 'in_stock'), ('kd_8JNqOX1p4Q', 'FERRARI WITH STREET BEASTS JKG19', 'in_stock'), ('kd_8JNqdRvg4Q', 'HOT WHEENGS', 'in_stock'), ('kd_Ezgl2nXLMr', 'YOSHI GVD30', 'in_stock'), ('kd_GoL1JD5pBA', 'TOAD GVD30', 'in_stock'), ('kd_GvLPjdVgod', 'LUIGI GVD30', 'in_stock'), ('kd_GwLxK5ZNXY', 'HW FUN PARK WHEELS GIFT PACK', 'in_stock'), ('kd_KbNEYylNR0', 'HW BOGZILLA GREEN', 'in_stock'), ('kd_OyLoZOjNb2', 'BOWSER JR', 'in_stock'), ('kd_P7pRJo7pjm', 'FERRARI WITH HW FUN PARK JBJ88', 'in_stock'), ('kd_Pqp26OOp36', '73 HONDA CIVIC CUSTOM AERO LIFT', 'in_stock'), ('kd_Pqp2n9Op36', 'BATMAN 10 COLLECTION PACK OF 10 CARS', 'in_stock'), ('kd_Pqp2nvKp36', '07 HONDA CIVIC TYPE R KOUSOKU HAULER', 'in_stock'), ('kd_RWg8JbwLKe', 'RAPID PULSE RED', 'in_stock'), ('kd_V2gJRwAge4', 'HOT WHEELS POP CULTURE ASSORTMENT SET OF 5 CARS 95', 'in_stock'), ('kd_V2gJeAxpe4', 'MARIO GVD30', 'in_stock'), ('kd_VbpAZqQgrM', '77 PACKIN PACER', 'in_stock'), ('kd_aMNBWa0LXd', 'MINI GT MAZDA AZ-1 LIBERTY WALK LB40 WHITE 2024 TO', 'in_stock'), ('kd_aPgdnJbLJq', 'KOOL KOMBI PANTONE ORANGE', 'in_stock'), ('kd_e7g58G0pmv', 'FERRARI WITH X-RAYCERS', 'in_stock'), ('kd_y7gGzQopre', 'HW GASSERS 5PC GIFT PACK WITH STREET BEASTS', 'in_stock'), ('kd_ykL04keLRZ', '24 HONDA CIVIC TYPE R WITH KOUSOKU CAMION DE TRANS', 'in_stock'), ('kd_zONv0GmpBK', 'RETRO RACERS WITH STREET BEASTS', 'in_stock'), ('kd_zONvZ89NBK', 'VOLKSWAGEN CORRADO VR6 WITH RETRO RIGCAMION', 'in_stock')]
+only in old: []
+stock/price differences: []
+name samples (new, old): [('PREORDER BMW Z3 HELLROT BLISTER PACKAGING [PR', 'PREORDER BMW Z3 HELLROT BLISTER PACKAGING [PR'), ('PREORDER LAMBORGHINI URUS PERFORMANTE VIOLA P', 'PREORDER LAMBORGHINI URUS PERFORMANTE VIOLA P'), ('BUGATTI W16 MISTRAL YELLOW BLISTER PACKAGING', 'BUGATTI W16 MISTRAL YELLOW BLISTER PACKAGING'), ('HOT WHEELS CITY GHOST GARAGE PLAY SET FJN38', 'HOT WHEELS CITY GHOST GARAGE PLAY SET FJN38'), ('PREORDER LAMBORGHINI TEMERARIO VIOLA PASIFAE ', 'PREORDER LAMBORGHINI TEMERARIO VIOLA PASIFAE '), ('BUGATTI BOLIDE PRESENTATION BOX', 'BUGATTI BOLIDE PRESENTATION BOX'), ('PREORDER DATSUN KAIDO 510 WAGON POLICE [PRE-O', 'PREORDER DATSUN KAIDO 510 WAGON POLICE [PRE-O'), ('HOT WHEELS SILVER SERIES BATMAN THEMED 2026 M', 'HOT WHEELS SILVER SERIES BATMAN THEMED 2026 M')]
 
-==================== fc_misc ====================
-OOS=1 p9 {'n': 18, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=1 p10 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=1 p11 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=1 p12 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=0 p9 {'n': 18, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=0 p10 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=0 p11 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=0 p12 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=true p9 {'n': 18, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=true p10 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=true p11 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-OOS=true p12 {'n': 0, 'zero': 0, 'ttl': None, 'cdn': 'MISS'}
-PDP: b.jpg;23074883c.jpg;23074883d.jpg;23074883e.jpg;23074883f.jpg;23074883bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":2,"EC":1,"SDis":0,"col":"ff0000","isPremium":false,"mrp":167,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074883,"pn":"Hot Wheels Free Whee
-PDP: e.jpg;23074615f.jpg;23074615g.jpg;23074615h.jpg;23074615i.jpg;23074615bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":2,"EC":1,"SDis":0,"col":"000000","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074615,"pn":"Hot Wheels Free Whee
-PDP: b.jpg;23074882c.jpg;23074882d.jpg;23074882e.jpg;23074882f.jpg;23074882bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":2,"EC":1,"SDis":0,"col":"ffa500","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074882,"pn":"Hot Wheels Free Whee
-PDP: b.jpg;23074884c.jpg;23074884d.jpg;23074884e.jpg;23074884f.jpg;23074884bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":4,"EC":1,"SDis":0,"col":"0000ff","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074884,"pn":"Hot Wheels Free Whee
-PDP: b.jpg;23074263c.jpg;23074263d.jpg;23074263e.jpg;23074263f.jpg;23074263bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":0,"EC":1,"SDis":0,"col":"808080","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074263,"pn":"Hot Wheels Free Whee
-PDP: b.jpg;23074611c.jpg;23074611d.jpg;23074611e.jpg;23074611f.jpg;23074611bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":2,"EC":1,"SDis":0,"col":"a020f0","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074611,"pn":"Hot Wheels Tooned Pu
-PDP: b.jpg;23074614c.jpg;23074614d.jpg;23074614e.jpg;23074614f.jpg;23074614bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":2,"EC":1,"SDis":0,"col":"a020f0","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074614,"pn":"Hot Wheels Free Whee
-PDP: b.jpg;23074259c.jpg;23074259d.jpg;23074259e.jpg;23074259f.jpg;23074259bis.jpg;","MLfb":0,"MLft":0,"MLttb":0,"MSh":0,"MW":0,"Mc":0,"Ms":0,"OffTyp":"NoOffer","PerDcost":0,"ProductStyle":"","QueCount":0,"Rqty":5,"SCF":0,"Dis":2,"EC":1,"SDis":0,"col":"a020f0","isPremium":false,"mrp":179,"pd":"3 Years+, Made with sturdy materials for long-lasting and rough play use.","pid":23074259,"pn":"Hot Wheels Free Whee
-PDP first id ctx: bstr(1)):'')+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')});utmx('url','A/B');         </script>         <script type="text/javascript">         var DynImgExtn='.jpg';var redirectretrnurl='https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-mailed-it-168-250-toy-car-blue/23074884/product-detail';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-mailed-it-168-250-toy-car-blue/23074884/product-detail';var Addressservice='https://CID.fcappservices.in/UserInformation/AddressService.svc';var Authser
-PDP inline script head:          var node_url="//www.firstcry.com/",cdn_path="//cdn.fcglcdn.com/brainbees/",base_url="//www.firstcry.com/",cat_url="//www.firstcry.com/toys-and-gaming",scat_url="//www.firstcry.com/toy-cars-trains-and-vehicles/5/94",avg_rating="4.3",totalrating="693",totalreview="28",review_url="//www.firstcry.com/reviews/hot-wheels/hot-wheels-free-wheel-die-cast-mailed-it-168-250-toy-car-blue/23074884?ref2=pdpreviews",cartpdpurl="https://checkout.firstcry.com/pay",CurrentProductID=23074884,CurrentProductDetailJSON={"23074883":{"Af":3,"At":14,"CCOI":"","CIi":"","CIns":"","CMatN":"","CS":43,"CWt":"","Gi
-PDP inline script head:  $(window).load(function(){if($("div").hasClass("footer_google_ad_swap")){$(".footer_google_ad").css("display","none")}else{$(".footer_google_ad").css("display","block")}});$(document).ready(function(){if($("#aswift_0").length>0){$(".footer_google_ad").hide()}else{$(".footer_google_ad").show()}});function validateGASendPageView(){try{return true}catch(e){}}var dontc;var currentMonth=new Date().getMonth()+10;var currentYear=new Date().getFullYear();var currentDay=new Date().getDate();var childYear=new Date().getFullYear()-16;var cltm,cultm;try{(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]
-PDP inline script head:  function handleCredentialResponse(response){$.ajax({type:"GET",url:"https://www.googleapis.com/oauth2/v3/tokeninfo",data:{id_token:response.credential},success:function(result){if(result.email_verified=="true"){$.cookie("forsocial",1+"#social_onetap",{path:"/",expires:365,domain:DomainName});$.cookie("socialredirect",location.href,{path:"/",expires:365,domain:DomainName});var data={id_token:response.credential,email:result.email,uid:result.sub,name:result.name};window.location.href="https://www.firstcry.com/m/login/OnTapLogin?&jsondata="+JSON.stringify(data)}},error:function(e,t){return!1},})
-[fc_misc] done in 5.1s
+================ Minifygram ================
+  [MG] 1 products had no SKU row — used product_type fallback
+[*] Minifygram total: 270 of 273 (36 in stock; 1 trading cards, 62 pre-orders)
+watermark: 2026-10-15T17:49:41.381906+00:00 | last full-fetch watermark: 2026-10-15T17:49:41.381906+00:00
+   out_of_stock ₹1749 [Blister] MiniGT 1337 Lamborghini LB-Silhouette Works Murcielago GT Evo Advan [P
+   out_of_stock ₹1399 [Box] Toyota Vellfire 40 Kuhl Gold [PRE-ORDER]
+   out_of_stock ₹1649 [Box] MiniGt 1337 Lamborghini LB-Silhouette Works Murcielago GT Evo Advan [PRE-O
+   out_of_stock ₹1399 [Box] MiniGT 1236 Porsche Carrera GT Silver [PRE-ORDER]
+   out_of_stock ₹1849 [Box] MiniGT 1333 Nissan GTR Nismo with Matsuda Figure [PRE-ORDER]
+   out_of_stock ₹1699 [Box] MiniGT 1336 Mercedes AMG GT3 888 [PRE-ORDER]
+   out_of_stock ₹1849 [Blister] MiniGT 1336 Mercedes AMG GT3 888 [PRE-ORDER]
+   out_of_stock ₹1699 [Box] MiniGT 1334 Aston Martin Vantage GT3 EVO [PRE-ORDER]
+   out_of_stock ₹1849 [Blister] MiniGT 1334 Aston Martin Vantage GT3 [PRE-ORDER]
+   out_of_stock ₹2000 Kaido House Nissan Skyline KHMG273 [PRE-ORDER]
+   out_of_stock ₹399 🃏 OnePiece TCG Booster single pack OP-08
+   out_of_stock ₹1399 [Blister] Lamborghini Countach LP500S White [PRE-ORDER]
+   out_of_stock ₹1399 [Box] Lancia Delta HF Integrale 1993 Rallye #1368 [PRE-ORDER]
+   out_of_stock ₹1549 [Blister] Lancia Delta HF Integrale 1993 Rallye #1368 [PRE-ORDER]
+   out_of_stock ₹1849 [Blister] Lambo Huracan GT3 EVO2 #45 [PRE-ORDER]
+   out_of_stock ₹1249 [Box] Lamborghini Countach LP500S White [PRE-ORDER]
+   out_of_stock ₹799 Hotwheels Lunar Porsche Silver Series [PRE-ORDER]
+   out_of_stock ₹1399 [Box] Nissan GTR R35 Custom DuckTail Auto Finesse [PRE-ORDER]
+   out_of_stock ₹1699 [Box] Lambo Huracan GT3 EVO2 #45 [PRE-ORDER]
+   out_of_stock ₹1249 [Box] Mazda Miata MX5 Modo Red #1367 [PRE-ORDER]
+   out_of_stock ₹1399 [Blister] Mazda Miata MX5 Modo Red #1367 [PRE-ORDER]
+   out_of_stock ₹1549 [Blister] Nissan GTR R35 DuckTail Auto Finesse [PRE-ORDER]
+   out_of_stock ₹1849 [Box] Cadillac Vseries #40 Wayne Taylor 24h IMSA Daytona [PRE-ORDER]
+   out_of_stock ₹3999 Hotwheels x Supercar Blondie Lamborghini Huracan [PRE-ORDER]
+   out_of_stock ₹1699 [Box] Lambo Huracan GT3 EVO2 #93 [PRE-ORDER]
+   out_of_stock ₹1399 [Blister] Aston Martin Valhalla Podium Green [PRE-ORDER]
+   out_of_stock ₹1399 [Box] Merc AMG 63 Metallic Silver [PRE-ORDER]
+   out_of_stock ₹1849 [Blister] Lambo Huracan GT3 EVO2 #93 [PRE-ORDER]
+   out_of_stock ₹1249 [Box] Aston Martin Valhalla Podium Green [PRE-ORDER]
+   out_of_stock ₹1999 [Blister] Cadillac Vseries #40 Wayne Taylor 24h IMSA Daytona [PRE-ORDER]
+   out_of_stock ₹1549 [Blister] Merc AMG 63 Metallic Silver [PRE-ORDER]
+   out_of_stock ₹2099 Nissan Skyline GT-R (R34) Tamiya X Kaido "THE HORNET" V2 [PRE-ORDER]
+   out_of_stock ₹1399 [Box] MGT01377 Lamborghini Huracán LB★WORKS Lime Metallic [PRE-ORDER]
+   out_of_stock ₹1549 [Blister] MGT01386 BMW Z3 Hellrot [PRE-ORDER]
+   out_of_stock ₹1549 [Blister] MGT01377 Lamborghini Huracán LB★WORKS Lime Metallic [PRE-ORDER]
+   out_of_stock ₹1399 [Blister] MGT01379 Cadillac Eldorado Biarritz 1959 Black [PRE-ORDER]
+   out_of_stock ₹1399 [Box] MGT01386 BMW Z3 Hellrot [PRE-ORDER]
+   out_of_stock ₹1399 [Blister] MGT01381 Lamborghini Urus Performante Viola Pasifae [PRE-ORDER]
+   out_of_stock ₹1499 MGT1204 [PRE-ORDER]
+   out_of_stock ₹1799 KHMG162 BMW M3 Kaido V1 [PRE-ORDER]
+   out_of_stock ₹1799 KHMG173 Honda NSX V2 [PRE-ORDER]
+   out_of_stock ₹1749 KHMG177 BMW M3 Kaido V1 [PRE-ORDER]
+   out_of_stock ₹1549 MiniGT869 Nissan Skyline GTR Gunmetal Matsuda [PRE-ORDER]
+   out_of_stock ₹1299 [Box] MiniGT 1022 Silvia S15 LB-Super Silhouette [PRE-ORDER]
+   out_of_stock ₹1199 [Box] MiniGT00970 MERC EQS 580 4matic Red Mettalic [PRE-ORDER]
+   out_of_stock ₹1599 [Blister] MiniGT 1256 Dodge Charger Fast Five Dominic Toretto [PRE-ORDER]
+   out_of_stock ₹1749 KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]
+   out_of_stock ₹1599 [Box] MiniGT1218 Porsche Rexy #77 [PRE-ORDER]
+   out_of_stock ₹1799 KHMG163 Kaido House Nissan Skyline GTR R33 Carbon V2 [PRE-ORDER]
+   out_of_stock ₹1999 KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]
+   out_of_stock ₹999 [Box] MiniGT961 Supra A80 TS Gold [PRE-ORDER]
+   out_of_stock ₹4500 RLC Exclusive Porsche 959 [PRE-ORDER]
+   out_of_stock ₹1799 [Blister] MiniGT 1252 Nissan Skyline GTR Brain O'Conner [PRE-ORDER]
+   out_of_stock ₹1849 KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]
+   out_of_stock ₹1699 KHMG161 Datsun 510 Pro Street Buta V1 [PRE-ORDER]
+   out_of_stock ₹1649 MGT855 [PRE-ORDER]
+   out_of_stock ₹1799 KHMG211 Nissan Skyline 2000GT-R V2 [PRE-ORDER]
+   out_of_stock ₹1999 MGT1052 Porsche 911 GT3R #77 [PRE-ORDER]
+   out_of_stock ₹1699 [Box] MGT1129 Lambo Huracan GT3 EVO2 #45 DEX Imaging 2024 [PRE-ORDER]
+   out_of_stock ₹1099 [Box] MGT01067 Toyota Supra A80 TS GT-300 Purple [PRE-ORDER]
+   out_of_stock ₹1899 [Box] MGT1143 Porsche 911 GT3 R #77 "AO Racing Skeleton Rexy" [PRE-ORDER]
+   out_of_stock ₹2399 [Blister] MGT1143 Porsche 911 GT3 R #77 "AO Racing Skeleton Rexy" [PRE-ORDER]
+   out_of_stock ₹1399 [Box] MGT1087 Lambo Aventador Limited Edition Mattel Black [PRE-ORDER]
 
-==================== mg2 ====================
-/rest/v1/products?select=*&limit=1&is_active=eq.true 200 [{"id":"6337da2c-c38c-4a72-93c5-5fc2bf4ca962","slug":"mclaren-w1","name":"McLaren W1","brand":"Hotwheels","scale":"1:64","category":"Diecast","description":null,"image_url":"https://seoqlgtbygddyehugjwv.supabase.co/storage/v1/object/public/product-media/6337da2c-c38c-4a72-93c5-5fc2bf4ca962/9b1c51cd-db30-4262-aba2-44138b288093.jpg","price_inr":399,"mrp_inr":null,"booking_amount_inr":null,"product_type":"in-stock","badge":null,"arrival_date":null,"is_active":true,"created_at":"2026-06-09T07:54:20.562467+00:00","updated_at":"2026-06-09T08:03:38.881458+00:00","back_in_stock":false,"default_sku_id":"e5b14aab-a470-4bb0-b12a-c7f2911776d4","is_featured":false,"max_qty_per_user":null,"preorder_close_at":null,"condition":"Jhook crease / bend","preorder_status":null,"preorder_arrived_at":null,"preorder_fulfilled_at":null,"preorder_admin_notes":null,"hold_box_enabled":true,"free_shipping":false,"booking_amount_options":null}]
-/rest/v1/product_skus?select=*&limit=3 401 {"code":"42501","details":null,"hint":null,"message":"permission denied for table product_skus"}
-/rest/v1/product_skus?select=updated_at&order=updated_at.desc&limit=2 401 {"code":"42501","details":null,"hint":null,"message":"permission denied for table product_skus"}
-/rest/v1/products?select=id,updated_at&order=updated_at.desc&limit=2 200 [{"id":"e024d59c-feff-4ba5-88ac-ddbbbc03d239","updated_at":"2026-10-17T19:27:02.390231+00:00"}, 
- {"id":"5874512d-08fe-414e-995a-2769e3a106f8","updated_at":"2026-10-17T13:01:06.004698+00:00"}]
-/rest/v1/product_skus?select=product_id,available,updated_at&order=updated_at.desc&limit=5 401 {"code":"42501","details":null,"hint":null,"message":"permission denied for table product_skus"}
-all {'status': 200, 'ms': 912, 'rows': 528, 'bytes': 200950, 'gzip_bytes': 36571, 'brands': [('Hotwheels', 191), ('MiniGT', 67), ('None', 54), ('Poprace', 44), ('Tarmac', 24), ('Trends Hobby', 23), ('Non-Mint Funko', 14), ('Bburago', 13), ('Almost Real (AR) Box', 13), ('Kaido House', 12), ('Onepiece', 10), ('TimeMicro', 10)], 'cats': [('Diecast', 273), ('Pre-orders', 156), ('Building Bricks', 40), ('Funko Pops', 23), ('Action Figures', 18), ('3D Prints', 8), ('Keychains', 8), ('Trading Cards (TCG)', 1), ('None', 1)]}
-filtered {'status': 200, 'ms': 822, 'rows': 272, 'bytes': 101855, 'gzip_bytes': 18037, 'brands': [('Hotwheels', 191), ('MiniGT', 67), ('Kaido House', 12), ('Hotwheels Stand', 1), ('None', 1)], 'cats': [('Diecast', 207), ('Pre-orders', 61), ('Keychains', 1), ('3D Prints', 1), ('Trading Cards (TCG)', 1), ('None', 1)]}
-[mg2] done in 4.4s
+================ DRY RUN of main() (alerts printed, not sent) ================
+[*] Minifygram changed since the last check — checking it now
+  [MG] 1 products had no SKU row — used product_type fallback
+[*] Minifygram total: 270 of 273 (36 in stock; 1 trading cards, 62 pre-orders)
+[=] Minifygram: no alert-worthy changes (1 minor)
+  [FC-API] stock for pincode: 248001
+  [FC-API] 398 products across 21 page(s) (216 with zero stock) in 2.7s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 394, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels Datsun 620 Die-Cast Toy Car -Purple | stock=in_stock count=94 price=161 mrp=179
+[*] FirstCry total (API): 558 (125 in stock, 7 low-stock, 0 aged to delisted)
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry, Minifygram → 828 products in 2.8s (live: FirstCry, Minifygram)
+  [FC-API] quick sweep: 178 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
+[*] pass 2 (FirstCry quick sweep): FirstCry → 127 products in 1.5s (live: FirstCry)
+  [FC-API] quick sweep: 178 in stock from 9 page(s) in 0.9s — fresh ✓ (searchrank, 9 page(s) computed live)
+[*] pass 3 (FirstCry quick sweep): FirstCry → 111 products in 0.9s (live: FirstCry)
 
-==================== kd2 ====================
-/hot-wheels/mainlines {"keys": ["props", "page", "query", "buildId", "isFallback", "isExperimentalCompile", "dynamicIds", "gssp", "appGip", "scriptLoader"], "page": "/[subcategory]/[child]", "query": {"subcategory": "hot-wheels", "child": "mainlines"}, "pageProps_shape": {"products": ["list[7]", {"id": 11348, "pro_name": "HW BOGZILLA GREEN", "slug": "hw-bogzilla-green", "product_sname": "HW MAINLINES", "sku": "HW MAINLINES", "act_price": 179, "dis_price": 167, "in_stock": 1, "is_preorder": 0, "preorder_price": null, "is_approved": 1, "add_limit": 1, "type": 0, "pid": "KbNEYylNR0", "prd_images": ["list[2]", "…"]}], "childcategory": {"id": 110, "subcid": 5, "sub_name": "Mainlines", "slug": "mainlines", "sub_order": 1, "sub_desc": "<p><br></p>", "sub_img": "1786689433_subpg_6a7eb799d9bc2.png", "cat_sub_img": "1786689433_catpg_6a7eb799b270c.png", "sub_title": "Hot Wheels Mainlines Cars, Buy Mainlines Diecast Cars India", "sub_meta_desc": "Buy Hot Wheels Mainlines Cars and vehicle, Packs of Hot Whee", "sub_meta_key": "Hot Wheels Diecast Cars, Hot Wheels Cars, Hot Wheels Toys, H", "content_description": "<h1>Mainlines Cars</h1>", "canonical": "https://www.karzanddolls.com/details/hotwheels/mainlines/df5", "parent_sub": 0, "sizeChart": "3a126adf7fe8679401b510871c17b0b8.jpg", "status": 1, "created_at": "2025-11-12T05:42:36.000000Z", "updated_at": "2026-08-14T06:37:14.000000Z"}, "subcategory": "hot-wheels", "child": "mainlines"}}
-/hot-wheels/mainlines products: 0
-/hot-wheels/mainlines examples: []
-/hot-wheels/mainlines stock-ish values: []
-/ {"keys": ["props", "page", "query", "buildId", "isFallback", "isExperimentalCompile", "dynamicIds", "gssp", "appGip", "scriptLoader"], "page": "/", "query": {}, "pageProps_shape": {"user": null, "bannerdata": ["list[6]", {"id": 15, "title": "FAST& FURIOUS PRE ORDER", "banner_image": "1790151651_6ab38be323f7c.png", "banner_status": 1, "ban_order": null, "created_at": "2026-09-23T08:06:57.000000Z", "updated_at": "2026-09-23T08:20:51.000000Z"}], "productdata": ["list[6]", {"id": 11531, "pro_name": "HOT WHEELS PREMIUM MOONEYES 2026 DIORAMA BOX SET 952H", "slug": "hot-wheels-premium-mooneyes-2026-diorama-box-set-952h", "product_sname": "HOT WHEELS PREMIUM MOONEYES 2026 DIORAMA BOX SET JHW45", "sku": "HOT WHEELS PREMIUM MOONEYES 2026 DIORAMA BOX SET JHW45", "act_price": 2999, "dis_price": 2399, "in_stock": 1, "is_preorder": 0, "preorder_price": null, "is_approved": 1, "add_limit": 1, "type": 5, "pid": "PzNbBorNbQ", "prd_images": ["list[3]", "…"], "prd_categories": ["list[1]", "…"]}], "offerprddata": ["list[2]", {"id": 11807, "pro_name": "BLOKEES WHEELS BATMAN E02 - THE DARK KNIGHT BLIND PACK OF 1", "slug": "blokees-wheels-batman-e02-the-dark-knight-blind-pack-of-1", "product_sname": "BLOKEES WHEELS BATMAN E02 - THE DARK KNIGHT BLIND PACK OF 1", "sku": "BLOKEES WHEELS BATMAN E02 - THE DARK KNIGHT BLIND PACK OF 1", "act_price": 999, "dis_price": 849, "in_stock": 1, "is_preorder": 0, "preorder_price": null, "is_approved": 1, "add_limit": 1, "type": 4, "pid": "eKLwYWMgv0", "prd_images": ["list[10]", "…"], "prd_categories": ["list[2]", "…"]}], "error": null, "newarrivalsdata": ["list[10]", {"id": 11807, "pro_name": "BLOKEES WHEELS BATMAN E02 - THE DARK KNIGHT BLIND PACK OF 1", "slug": "blokees-wheels-batman-e02-the-dark-knight-blind-pack-of-1", "product_sname": "BLOKEES WHEELS BATMAN E02 - THE DARK KNIGHT BLIND PACK OF 1", "sku": "BLOKEES WHEELS BATMAN E02 - THE DARK KNIGHT BLIND PACK OF 1", "act_price": 999, "dis_price": 849, "in_stock": 1, "is_preorder": 0, "preorder_price": null, "is_approved": 1, "add_limit": 1, "type": 4, "pid": "eKLwYWMgv0", "prd_images": ["list[10]", "…"], "prd_categories": ["list[2]", "…"]}], "ispreorderdata": ["list[10]", {"id": 11792, "pro_name": "PREORDER PORSCHE GT3 R NO.8 AO RACING WINNER SUZUKA 1000KM 2", "slug": "preorder-porsche-gt3-r-no8-ao-racing-winner-suzuka-1000km-20", "product_sname": "1:64 SPARKMODEL 64SP089 ETA MARCH END 2027", "sku": "1:64 SPARKMODEL 64SP089 ETA MARCH END 2027", "act_price": 2799, "dis_price": 2799, "in_stock": 1, "is_preorder": 1, "preorder_price": 99, "is_approved": 1, "add_limit": 24, "type": 4, "pid": "KbNE78KpR0", "prd_images": ["list[4]", "…"], "prd_categories": ["list[1]", "…"]}], "bestdata": "list[0]", "trendingdata": ["list[8]", {"id": 11167, "pro_name": "MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX ", "slug": "matchbox basic cars assortment of 24 pieces box ", "product_sname": "READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES ", "sku": "READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES ", "act_price": 4296, "dis_price": 4296, "in_stock": 1, "is_preorder": 0, "preorder_price": null, "is_approved": 1, "add_limit": 1, "type": 3, "pid": "aMNB2B9NXd", "prd_images": ["list[5]", "…"], "prd_categories": ["list[1]", "…"]}], "legodata": {"category": {"id": 9, "title": "Lego", "slug": "lego", "status": 1, "created_at": "2025-08-01T11:32:13.000000Z", "updated_at": "2025-11-17T05:43:11.000000Z"}, "products": ["list[6]", {"id": "…", "pro_name": "…", "slug": "…", "product_sname": "…", "sku": "…", "act_price": "…", "dis_price": "…", "in_stock": "…", "is_preorder": "…", "preorder_price": "…", "is_approved": "…", "add_limit": "…", "type": "…", "pid": "…", "prd_images": "…", "prd_categories": "…"}]}, "carsdata": {"category": {"id": 12, "title": "Cars", "slug": "cars", "status": 1, "created_at": "2025-08-01T11:32:51.000000Z", "updated_at": "2025-11-17T09:45:03.000000Z"}, "products": ["list[6]", {"id": "…", "pro_name": "…", "slug": "…", "product_sname": "…", "sku": "…", "act_price": "…", "dis_price": "…", "in_stock": "…", "is_preorder": "…", "preorder_price": "…", "is_approved": "…", "add_limit": "…", "type": "…", "pid": "…", "prd_images": "…", "prd_categories": "…"}]}, "booksdata": {"category": {"id": 11, "title": "Books", "slug": "books", "status": 1, "created_at": "2025-08-01T11:32:28.000000Z", "updated_at": "2025-11-15T09:47:52.000000Z"}, "products": ["list[6]", {"id": "…", "pro_name": "…", "slug": "…", "product_sname": "…", "sku": "…", "act_price": "…", "dis_price": "…", "in_stock": "…", "is_preorder": "…", "preorder_price": "…", "is_approved": "…", "add_limit": "…", "type": "…", "pid": "…", "prd_images": "…", "prd_categories": "…"}]}, "dollsdata": {"category": {"title": "Dolls"}, "products": ["list[6]", {"id": "…", "pro_name": "…", "slug": "…", "product_sname": "…", "sku": "…", "act_price": "…", "dis_price": "…", "in_stock": "…", "is_preorder": "…", "preorder_price": "…", "is_approved": "…", "add_limit": "…", "type": "…", "pid": "…", "prd_im
-/ products: 0
-/ examples: []
-/ stock-ish values: []
-/mini-gt/mini-gt {"keys": ["props", "page", "query", "buildId", "isFallback", "isExperimentalCompile", "dynamicIds", "gssp", "appGip", "scriptLoader"], "page": "/[subcategory]/[child]", "query": {"subcategory": "mini-gt", "child": "mini-gt"}, "pageProps_shape": {"products": ["list[107]", {"id": 11803, "pro_name": "FORD PUMA RALLY1 #55 M-SPORT FORD WRT 2025 RALLY MONTE-CARLO", "slug": "ford-puma-rally1-55-m-sport-ford-wrt-2025-rally-monte-carlo", "product_sname": "MINI GT 1176", "sku": "MINI GT 1176", "act_price": 1699, "dis_price": 1699, "in_stock": 1, "is_preorder": 0, "preorder_price": null, "is_approved": 1, "add_limit": 2, "type": 4, "pid": "6nNVKw3LYk", "prd_images": ["list[3]", "…"]}], "childcategory": {"id": 165, "subcid": 17, "sub_name": "Mini Gt", "slug": "mini-gt", "sub_order": 1, "sub_desc": "<p>MINI GT</p>", "sub_img": "1789474402_subpg_6aa9366224986.png", "cat_sub_img": "1789474401_catpg_6aa93661a050b.png", "sub_title": "Buy Mini GT Cars Online in India at Best Prices-Karzanddolls", "sub_meta_desc": "Buy MINI GT Online in India. Karzanddolls has list of unique", "sub_meta_key": "Mini GT 1:64, Shop for MINI GT Diecast Toys & Cars, Buy MINI", "content_description": "<h1>Buy TSM Model Mini GT India At Best Price</h1>", "canonical": null, "parent_sub": 0, "sizeChart": "", "status": 1, "created_at": "2025-11-12T05:42:36.000000Z", "updated_at": "2026-09-15T12:13:22.000000Z"}, "subcategory": "mini-gt", "child": "mini-gt"}}
-/mini-gt/mini-gt products: 0
-/mini-gt/mini-gt examples: []
-/mini-gt/mini-gt stock-ish values: []
-  route 16 
-  route 3 CALL content-type
-  route 3 /api/me
-  route 3 /productimages/
-  route 3 CALL jwt_token
-  route 2 /products?search=
-  route 2 CALL x-middleware-cache
-  route 1 CALL X-Request-URL
-  route 1 CALL [...]
-  route 1 CALL [[...]]
-  route 1 CALL x-nextjs-rewrite
-  route 1 CALL x-nextjs-matched-path
-  route 1 CALL x-nextjs-redirect
-  route 1 CALL x-middleware-skip
-  route 1 /api/auth/signin?
-  route 1 CALL set-cookie
-  route 1 CALL content-length
-  route 1 CALL visitor_id
-  route 1 CALL error
-[kd2] done in 16.9s
-
-==================== fc_lag ====================
-{'t': '08:05:25', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 337, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:05:29', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 333, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:05:59', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 303, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:06:29', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 273, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:06:59', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 243, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:07:29', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 212, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:07:59', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 183, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:08:29', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 153, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:08:59', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 123, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:09:29', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 93, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:09:59', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 63, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:10:30', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 33, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-{'t': '08:10:59', 'cached': {'n': 240, 'instock': 178, 'ttl_min': 3, 'ttl_none': 0, 'errs': []}, 'fresh': {'n': 240, 'instock': 178, 'ttl_min': None, 'ttl_none': 12, 'errs': []}}
-first_seen cached: {}
-first_seen fresh : {}
-[fc_lag] done in 364.3s
-
-report written
+[*] run finished: 3 pass(es) in 42s
+main() took 41.8s
