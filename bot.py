@@ -1,48 +1,33 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v4 "God Tier"
-========================================================
-Sources  : FirstCry · Minifygram · Blinkit  (Dehradun 248001)
-Runtime  : Pure HTTP. No Playwright, no Chromium, no browser.
-Host     : GitHub Actions (free) — runs on a schedule, pushes state back to the repo.
+Hot Wheels / Diecast Collector Tracker  ·  v13
+==============================================
+Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
+          (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
+Runtime : Pure HTTP (curl_cffi with a real Chrome fingerprint). No browser.
+Host    : GitHub Actions, triggered every minute by cron-job.org; state lives in
+          seen.json, committed back after each run.
 
-WHY THIS REWRITE
-----------------
-The old bot launched a headless Chromium via Playwright. On free hosts that
-browser frequently fails to install ("Executable doesn't exist … chrome-headless-shell"),
-which is exactly the error your Telegram bot kept reporting. It also made every
-run slow (~2-3 min) and fragile.
-
-This version never opens a browser. It talks to the same data the websites'
-own front-ends use:
-
-  • FirstCry  — the category page is fully server-rendered HTML. We fetch it
-                with a real browser TLS fingerprint (curl_cffi) and parse the
-                product cards directly. Every SKU, price, MRP, and in-stock /
-                notify-me state is right there in the markup.
-
-  • Minifygram — a Supabase-backed React app. We call its public Supabase REST
-                 endpoint directly and get clean JSON (id, name, price, stock).
-                 The anon key + project URL are auto-discovered from the site's
-                 JS bundle at runtime, so it keeps working if they redeploy.
-
-  • Blinkit   — quick-commerce, location-locked. We call the same internal
-                search API the website uses, pinned to your Dehradun coordinates.
-                Blinkit is the flakiest of the three (aggressive bot defense);
-                it's best-effort and never blocks the other two sources.
-
-Each source is independent and wrapped in try/except: one failing never stops
-the others. If a source gets blocked, you still get alerts from the rest.
+HOW A RUN WORKS (v13)
+---------------------
+Each run stays alive RUN_SECONDS (45 s on GitHub) and checks in passes:
+  • FirstCry every FC_EVERY seconds (15 s): a full catalogue sweep first, then
+    quick sweeps of the in-stock list. Every request asks for a cache key
+    FirstCry hasn't built yet, so the data is computed live — the plain request
+    the bot used to make was answered from a 15-minute cache (measured: 9-15
+    minutes old), which is why alerts used to arrive after cars had sold out.
+  • Minifygram: full list every 2 min, plus a tiny "anything changed?" check
+    every pass that pulls new listings in within seconds. Trading cards too.
+  • Karz & Dolls every 2 min, read from the JSON the site embeds in its pages.
+  • Hamleys every 10 min.
+Alerts go out the moment a store's check finishes; nothing waits for slower
+stores. Runs are chained back to back, so the watch is continuous.
 
 ALERTS
 ------
-new_listing   a SKU we've never seen, in stock  →  🆕
-restock       was out of stock, now in stock     →  🔥
-price_drop    price fell vs last run             →  💸
-back_soon     newly listed but out of stock      →  👀  (so you can wishlist it)
-
-Everything is diffed against seen.json, which the workflow commits back after
-each run so state survives between runs.
+🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
+🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units left
+Every product's NEW alert fires once ever; restocks have a 24 h cooldown.
 """
 
 import os
@@ -50,6 +35,7 @@ import re
 import json
 import html
 import time
+import calendar
 import traceback
 from urllib.parse import quote, urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -107,6 +93,9 @@ WATCHLIST = [w.strip().lower() for w in os.getenv("WATCHLIST", "").split(",") if
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID")
+# The secret may hold SEVERAL chats separated by commas, e.g. your own chat plus a
+# friends' group:  "123456789,-1001234567890"  (group ids start with a minus).
+TELEGRAM_CHAT_IDS  = [c for c in re.split(r"[\s,;]+", TELEGRAM_CHAT_ID or "") if c]
 
 TIMEOUT = 30
 
@@ -114,6 +103,34 @@ TIMEOUT = 30
 SRC_WORKERS = int(os.getenv("SRC_WORKERS", "6"))
 FC_WORKERS  = int(os.getenv("FC_WORKERS", "10"))
 HM_WORKERS  = int(os.getenv("HM_WORKERS", "8"))
+
+# ── Run loop & per-store schedule (v13) ────────────────────────────────────────
+# RUN_SECONDS > 0 keeps one run alive for that long, re-checking FirstCry every
+# FC_EVERY seconds and alerting the moment something changes. With cron-job.org
+# dispatching every minute, runs follow each other back to back, so FirstCry is
+# watched continuously instead of once a minute. 0 = classic single pass.
+RUN_SECONDS   = float(os.getenv("RUN_SECONDS", "0"))
+FC_EVERY      = max(8.0, float(os.getenv("FC_EVERY", "15")))
+# Within a long run, a FULL catalogue sweep happens at least this often; the
+# sweeps in between are quick "hot" sweeps of the in-stock part of the catalogue.
+FC_FULL_EVERY = float(os.getenv("FC_FULL_EVERY", "60"))
+
+# Each store is checked when it is due, whatever triggered the run, so one
+# every-minute trigger covers everything. Seconds between checks; -1 = never.
+_ON_GITHUB = os.getenv("GITHUB_ACTIONS", "").lower() == "true"
+MG_WATCH = os.getenv("MG_WATCH", "true").lower() == "true"
+SOURCE_EVERY = {
+    "FirstCry":   0,
+    # full Minifygram list every 2 min; in between, a tiny "anything changed?"
+    # check every pass (MG_WATCH) pulls it in early when something moves
+    "Minifygram": float(os.getenv("MG_EVERY_S", "120")),
+    "Karz&Dolls": float(os.getenv("KD_EVERY_S", "120")),
+    "Hamleys":    float(os.getenv("HM_EVERY_S", "600")),
+    # Both geo-block GitHub's US runners (HTTP 403 on every call), so on GitHub
+    # they're skipped unless explicitly re-enabled. The phone watcher covers them.
+    "BigBasket":  float(os.getenv("BB_EVERY_S", "-1" if _ON_GITHUB else "900")),
+    "Blinkit":    float(os.getenv("BL_EVERY_S", "-1" if _ON_GITHUB else "900")),
+}
 
 COMMON_HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -124,19 +141,48 @@ COMMON_HEADERS = {
 
 
 # ── Telegram ─────────────────────────────────────────────────────────────────────
-def tg(msg: str) -> None:
-    if not (TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID):
-        print("[TG] (no creds) " + msg[:200]); return
-    try:
+def _tg_send(idx: int, msg: str) -> bool:
+    """Send to one chat. Follows a group→supergroup upgrade (the group gets a new
+    id) and waits out one Telegram rate-limit; anything else is logged plainly."""
+    label = f"chat {idx + 1} (…{TELEGRAM_CHAT_IDS[idx][-4:]})"
+    for _ in range(3):
         r = http.post(
             f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-            data={"chat_id": TELEGRAM_CHAT_ID, "text": msg,
+            data={"chat_id": TELEGRAM_CHAT_IDS[idx], "text": msg,
                   "parse_mode": "HTML", "disable_web_page_preview": "true"},
             timeout=15, **_IMPERSONATE)
-        if not r.ok:
-            print(f"[TG] {r.status_code}: {r.text[:150]}")
-    except Exception as e:
-        print(f"[TG] {e}")
+        if r.ok:
+            return True
+        try:
+            j = r.json() or {}
+        except Exception:
+            j = {}
+        p = j.get("parameters") or {}
+        if p.get("migrate_to_chat_id"):
+            new_id = str(p["migrate_to_chat_id"])
+            print(f"[TG] {label} was upgraded to a supergroup; its id is now {new_id}. "
+                  f"Put {new_id} in the TELEGRAM_CHAT_ID secret.")
+            TELEGRAM_CHAT_IDS[idx] = new_id
+            continue
+        if r.status_code == 429 and p.get("retry_after"):
+            time.sleep(min(int(p["retry_after"]), 30))
+            continue
+        print(f"[TG] {label} failed {r.status_code}: "
+              f"{j.get('description') or r.text[:150]}")
+        return False
+    return False
+
+
+def tg(msg: str) -> None:
+    if not (TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_IDS):
+        print("[TG] (no creds) " + msg[:200]); return
+    ok = 0
+    for i in range(len(TELEGRAM_CHAT_IDS)):
+        try:
+            ok += _tg_send(i, msg)
+        except Exception as e:
+            print(f"[TG] chat {i + 1}: {e}")
+    print(f"[TG] sent to {ok}/{len(TELEGRAM_CHAT_IDS)} chat(s)")
 
 
 # ── State ─────────────────────────────────────────────────────────────────────────
@@ -200,13 +246,21 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
             if v:
                 entry[k] = v
         seen[pid] = entry
+    _save_seen_file(seen)
+
+
+def _save_seen_file(seen: dict) -> None:
     meta = seen.get("_meta")
     if not isinstance(meta, dict):
         meta = {}
     meta["fc_offset"] = _FC_NEXT_OFFSET[0]
     seen["_meta"] = meta
-    with open(SEEN_FILE, "w", encoding="utf-8") as f:
+    # Written to a temp file and swapped in, so a reader never sees half a file
+    # (stores are checked in parallel threads while results are being saved).
+    tmp = SEEN_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(seen, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, SEEN_FILE)
 
 
 def _hours_since(iso: str) -> float:
@@ -801,7 +855,88 @@ _FC_API_PARAMS = [
 ]
 
 
-def _fc_api_query(page: int, size: int) -> str:
+# ── Fresh data: getting past FirstCry's 15-minute cache (v13) ─────────────────
+# Measured, not guessed. This repo's own history (14,000 seen.json commits) shows
+# every FirstCry change the bot ever saw arriving in waves ~16 minutes apart, and
+# live probes of the API confirmed why: FirstCry's server caches each listing
+# answer for 900 s ("Cache-Control: max-age=900"; a cached answer carries "TTL" =
+# seconds it has left). The old "_=<timestamp>" buster only got past the CDN —
+# FirstCry's own cache ignores unknown parameters, so the bot kept reading a
+# snapshot up to 15 minutes old, and a hot car could restock and sell out inside
+# that window without ever being seen.
+#
+# Live probes from GitHub's runners (18 Oct 2026): the request the bot made was
+# answered from that cache with TTL 337→3, i.e. data 9-15 minutes old. FirstCry's
+# cache key DOES include its own "searchrank" and "sorting" parameters, which
+# don't change the results (probe: 401 products, identical stock, all 22 pages
+# computed live), so a new value per sweep makes FirstCry compute the answer
+# fresh. Every answer is checked: a live one carries no TTL. If a trick ever
+# stops working the bot notices within three sweeps, logs it, and tries the
+# next one, falling back to the plain request — never worse than before.
+FC_FRESH = os.getenv("FC_FRESH", "auto").strip().lower()
+_FC_FRESH_ORDER = ["searchrank", "sorting"]
+_FC_FRESH = {"strategy": None, "stale": 0, "dirty": False, "fresh_pages": 0,
+             "stale_pages": 0, "max_age": 0}
+
+
+def _fc_fresh_load(seen: dict) -> None:
+    meta = seen.get("_meta") if isinstance(seen.get("_meta"), dict) else {}
+    st = meta.get("fc_fresh") if isinstance(meta.get("fc_fresh"), dict) else {}
+    s = st.get("s")
+    if FC_FRESH in _FC_FRESH_ORDER:
+        s = FC_FRESH
+    elif FC_FRESH in ("off", "none", "0", "false", "no"):
+        s = "none"
+    elif s not in _FC_FRESH_ORDER + ["none"]:
+        s = _FC_FRESH_ORDER[0]
+    elif s == "none" and _hours_since(st.get("since", "")) >= 6:
+        s = _FC_FRESH_ORDER[0]           # every 6 h, try the tricks again
+    _FC_FRESH["strategy"] = s
+
+
+def _fc_fresh_save(seen: dict) -> None:
+    if not _FC_FRESH["dirty"]:
+        return
+    meta = seen.setdefault("_meta", {})
+    meta["fc_fresh"] = {"s": _FC_FRESH["strategy"],
+                        "since": _bucket(time.strftime("%Y-%m-%dT%H:%M:%S"))}
+    _save_seen_file(seen)
+
+
+def _fc_fresh_params() -> dict:
+    """Extra query values that give this sweep a cache key FirstCry hasn't built."""
+    s = _FC_FRESH["strategy"]
+    token = str(int(time.time() * 1000) % 1_000_000_000)    # unique per sweep
+    if s == "searchrank":
+        return {"searchrank": token}
+    if s == "sorting":
+        return {"sorting": token}
+    return {}
+
+
+def _fc_fresh_verdict(fresh_pages: int, stale_pages: int, max_age: int) -> str:
+    """Judge one sweep; switch trick after 3 stale sweeps in a row."""
+    _FC_FRESH["fresh_pages"], _FC_FRESH["stale_pages"] = fresh_pages, stale_pages
+    _FC_FRESH["max_age"] = max_age
+    s = _FC_FRESH["strategy"]
+    if s in (None, "none"):
+        return f"plain request (cached; data up to {max_age}s old)" if stale_pages else "plain request"
+    if stale_pages == 0:
+        _FC_FRESH["stale"] = 0
+        return f"fresh ✓ ({s}, {fresh_pages} page(s) computed live)"
+    _FC_FRESH["stale"] += 1
+    note = (f"cached ✗ ({s}: {stale_pages} page(s) came from FirstCry's cache, "
+            f"up to {max_age}s old)")
+    if FC_FRESH == "auto" and _FC_FRESH["stale"] >= 3:
+        order = _FC_FRESH_ORDER + ["none"]
+        nxt = order[min(order.index(s) + 1, len(order) - 1)] if s in order else "none"
+        print(f"  [FC-API] fresh-data trick '{s}' stopped working — switching to '{nxt}'")
+        _FC_FRESH["strategy"], _FC_FRESH["stale"], _FC_FRESH["dirty"] = nxt, 0, True
+    return note
+
+
+def _fc_api_query(page: int, size: int, extra: dict | None = None) -> str:
+    extra = extra or {}
     out = []
     for k, v in _FC_API_PARAMS:
         if k == "PageNo":
@@ -812,6 +947,8 @@ def _fc_api_query(page: int, size: int) -> str:
             v = FC_API_BRAND
         elif k == "pcode":
             v = _FC_PCODE_ACTIVE[0]
+        if k in extra:
+            v = extra[k]
         out.append(f"{k}={quote(v, safe='')}")
     return FC_API_URL + "?" + "&".join(out)
 
@@ -835,7 +972,6 @@ def _fc_unwrap(o):
 
 def _ci(d: dict, *names):
     """Case-insensitive lookup; supports dotted paths like 'stock.current'."""
-    low = {k.lower(): k for k in d}
     for n in names:
         cur, ok = d, True
         for part in n.lower().split("."):
@@ -914,81 +1050,118 @@ def _fc_slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", n).strip("-")[:150] or "hot-wheels"
 
 
-def fc_api_catalogue():
-    """Full Hot Wheels catalogue via FirstCry's own paging API, or None.
+FC_THROTTLED = [0.0]   # epoch until which quick sweeps pause (FirstCry sent 429/403)
+_FC_PREV_INSTOCK = [None]  # ids on the previous complete in-stock list (this run)
+_FC_INSTOCK_PAGES = [9]  # pages the in-stock-only list takes (178 cars → 9 pages)
+_FC_SESSION = {"cookies": None, "at": 0.0}
+FC_LAST_SWEEP = {"hot": False, "pages": 0, "fresh": "", "secs": 0.0, "complete": False}
 
-    Resilience (v11.3): a slow page is retried with backoff instead of ending
-    the sweep. In the first live runs a single page-16 timeout cut the sweep
-    short and cost ~150 cars; now one bad page is retried and, if it still
-    fails, skipped while later pages are still collected. The sweep only counts
-    as COMPLETE when every page up to the natural end succeeded — that flag is
-    what allows a missing car to eventually be treated as delisted."""
+
+def _fc_cookies() -> dict:
+    """Anonymous session cookies from one listing-page visit, reused for 10 min
+    rather than paying a warm-up request before every sweep."""
+    if _FC_SESSION["cookies"] is not None and time.time() - _FC_SESSION["at"] < 600:
+        return _FC_SESSION["cookies"]
+    cookies = {}
     try:
         sess = http.Session(**_IMPERSONATE) if _IMPERSONATE else http.Session()
-    except Exception:
-        sess = None
+        sess.get(_fc_bust(_FC_API_REFERER), headers={**COMMON_HEADERS, **_FC_NOCACHE},
+                 timeout=FC_API_TIMEOUT)
+        jar = getattr(sess.cookies, "jar", sess.cookies)
+        cookies = {c.name: c.value for c in jar}
+    except Exception as e:
+        print(f"  [FC-API] warm-up failed: {type(e).__name__}")
+    _FC_SESSION.update(cookies=cookies, at=time.time())
+    return cookies
+
+
+def fc_api_catalogue(hot: bool = False):
+    """Hot Wheels catalogue via FirstCry's own paging API, or None.
+
+    hot=False  FULL sweep: every page (~21), sold-out cars included. Pages are
+               fetched in parallel and a slow page is retried; the sweep only
+               counts as COMPLETE when every page up to the natural end
+               succeeded (that's what lets a car missing for hours be treated
+               as delisted).
+    hot=True   QUICK sweep: FirstCry's own "OutOfStock" filter returns ONLY the
+               cars in stock for your pincode (probe: 178 cars, 9 pages, every
+               one with stock > 0) — every in-stock car, including anything that
+               has just restocked or just been listed, in under half the
+               requests. No retries: the next sweep is seconds away.
+    """
+    t0 = time.time()
     headers = {**COMMON_HEADERS, **_FC_NOCACHE,
                "Accept": "application/json, text/javascript, */*; q=0.01",
                "Content-Type": "application/json; charset=utf-8",
                "X-Requested-With": "XMLHttpRequest",
                "Referer": _FC_API_REFERER}
+    cookies = _fc_cookies()
+    size = FC_API_PAGESIZE
+    base = {"OutOfStock": "1"} if hot else {}
+    fresh = _fc_fresh_params()
+    extra = {**base, **fresh}
+    ages = {}                                   # page -> None (live) or seconds old
 
-    def get(u, h):
-        return (sess.get(u, headers=h, timeout=FC_API_TIMEOUT) if sess
-                else http.get(u, headers=h, timeout=FC_API_TIMEOUT, **_IMPERSONATE))
-
-    # warm up: the listing page issues the anonymous session cookies the API expects
-    try:
-        get(_fc_bust(_FC_API_REFERER), {**COMMON_HEADERS, **_FC_NOCACHE})
-    except Exception as e:
-        print(f"  [FC-API] warm-up failed: {type(e).__name__}")
-
-    def fetch(page, size):
-        """(decoded JSON or None, error text or None) — up to 3 attempts."""
+    def fetch(page, ex):
+        """(decoded JSON or None, error text or None)."""
         err = None
-        for attempt in range(3):
+        for attempt in range(1 if hot else 3):
             try:
-                r = get(_fc_bust(_fc_api_query(page, size)), headers)
-            except Exception as ex:
-                err = type(ex).__name__
+                r = http.get(_fc_bust(_fc_api_query(page, size, ex)), headers=headers,
+                             cookies=cookies, timeout=FC_API_TIMEOUT, **_IMPERSONATE)
+            except Exception as e:
+                err = type(e).__name__
             else:
                 if r.status_code == 200:
                     try:
-                        return _fc_unwrap(r.json()), None
+                        data = _fc_unwrap(r.json())
                     except Exception:
-                        err = f"not JSON ({r.text[:100]!r})"
+                        err = f"not JSON ({r.text[:80]!r})"
+                    else:
+                        ttl = data.get("TTL") if isinstance(data, dict) else None
+                        try:
+                            ages[page] = None if ttl in (None, "") else max(0, 900 - int(float(ttl)))
+                        except (TypeError, ValueError):
+                            ages[page] = None
+                        return data, None
                 else:
                     err = f"HTTP {r.status_code}"
-            # back off harder when FirstCry is signalling overload
-            time.sleep((3.0 if err in ("HTTP 429", "HTTP 403") else 1.5) * (attempt + 1))
+                    if r.status_code in (429, 403):
+                        FC_THROTTLED[0] = time.time() + 300
+            if attempt < 2 and not hot:
+                # back off harder when FirstCry is signalling overload
+                time.sleep((3.0 if err in ("HTTP 429", "HTTP 403") else 1.5) * (attempt + 1))
         return None, err
 
-    size = FC_API_PAGESIZE
-    _FC_PCODE_ACTIVE[0] = FC_PINCODE
-    data, err = fetch(1, size)
+    if not hot:
+        _FC_PCODE_ACTIVE[0] = FC_PINCODE
+    data, err = fetch(1, extra)
     items = _fc_api_products(data) if data is not None else []
-    if not items and FC_PINCODE != "0":
+    if not items and fresh:
+        # the fresh-data value broke the request — never let that cost a sweep
+        print(f"  [FC-API] fresh-data request returned nothing ({err or 'empty'}) — "
+              f"plain request this sweep")
+        if FC_FRESH == "auto":
+            _FC_FRESH["stale"] = 2           # one more miss and the next trick is tried
+        fresh, extra = {}, dict(base)
+        data, err = fetch(1, extra)
+        items = _fc_api_products(data) if data is not None else []
+    if not items and not hot and FC_PINCODE != "0":
         print(f"  [FC-API] pincode {FC_PINCODE} request returned nothing ({err or 'empty'}) "
               f"— falling back to nationwide stock (pcode=0)")
         _FC_PCODE_ACTIVE[0] = "0"
-        data, err = fetch(1, size)
+        data, err = fetch(1, extra)
         items = _fc_api_products(data) if data is not None else []
     if data is None:
-        print(f"  [FC-API] page 1 failed after retries: {err}")
+        print(f"  [FC-API] page 1 failed: {err}")
         return None
-    print(f"  [FC-API] stock for pincode: {_FC_PCODE_ACTIVE[0]}")
-    if not items:
+    if not items and not hot:
         top = list(data.keys())[:12] if isinstance(data, dict) else type(data).__name__
         print(f"  [FC-API] no products recognised. top-level: {top}")
         print(f"  [FC-API] response head: {json.dumps(data)[:400]}")
         return None
-    print(f"  [FC-API] schema: {sorted(items[0].keys())[:40]}")
-    tt = _ci(items[0], "TTData")
-    if tt is not None:
-        print(f"  [FC-API] TTData sample: {json.dumps(tt)[:200]}")
-    if size > 20 and len(items) == 20:
-        print("  [FC-API] server caps page size at 20 — paging at native size")
-        size = 20
+    if not hot:
+        print(f"  [FC-API] stock for pincode: {_FC_PCODE_ACTIVE[0]}")
 
     products, failed = {}, []
 
@@ -1003,44 +1176,17 @@ def fc_api_catalogue():
 
     add(items)
     end_found = len(items) < min(size, 20)
-
-    # Pages 2..N are fetched in PARALLEL batches (FC_API_PARALLEL at a time)
-    # instead of one after another — the 21-page sweep drops from ~15-25 s to a
-    # few seconds, which is the biggest single speed gain available on FirstCry.
-    # Fetching a batch at almost the same instant also gives a more consistent
-    # snapshot (less drift in FirstCry's popularity order between pages).
-    # Each parallel request is stateless and carries the warm-up session's
-    # cookies, so no connection object is shared between threads.
-    try:
-        jar = getattr(sess.cookies, "jar", sess.cookies) if sess else []
-        cookies = {c.name: c.value for c in jar}
-    except Exception:
-        cookies = {}
-
-    def fetch_parallel(page):
-        err = None
-        for attempt in range(3):
-            try:
-                r = http.get(_fc_bust(_fc_api_query(page, size)), headers=headers,
-                             cookies=cookies, timeout=FC_API_TIMEOUT, **_IMPERSONATE)
-            except Exception as ex:
-                err = type(ex).__name__
-            else:
-                if r.status_code == 200:
-                    try:
-                        return _fc_unwrap(r.json()), None
-                    except Exception:
-                        err = "not JSON"
-                else:
-                    err = f"HTTP {r.status_code}"
-            time.sleep((3.0 if err in ("HTTP 429", "HTTP 403") else 1.5) * (attempt + 1))
-        return None, err
-
     page, dry = 1, 0
+
     while not end_found and page < FC_API_MAXPAGES:
-        batch = list(range(page + 1, min(page + FC_API_PARALLEL, FC_API_MAXPAGES) + 1))
+        if hot:
+            # the first batch covers the expected length in one go
+            span = (max(2, _FC_INSTOCK_PAGES[0]) - 1) if page == 1 else 3
+        else:
+            span = FC_API_PARALLEL
+        batch = list(range(page + 1, min(page + max(1, span), FC_API_MAXPAGES) + 1))
         with ThreadPoolExecutor(max_workers=len(batch)) as ex:
-            results = dict(zip(batch, ex.map(fetch_parallel, batch)))
+            results = dict(zip(batch, ex.map(lambda pg: fetch(pg, extra), batch)))
         for pg in batch:                       # process strictly in page order
             page = pg
             data, err = results[pg]
@@ -1050,7 +1196,7 @@ def fc_api_catalogue():
             its = _fc_api_products(data)
             new = add(its)
             if len(its) < min(size, 20):
-                end_found = True                # short/empty page = end of catalogue
+                end_found = True                # short/empty page = end of the list
                 break
             # two full pages in a row adding nothing: the server is ignoring
             # PageNo (serving the same page) — stop rather than loop to the cap
@@ -1061,25 +1207,40 @@ def fc_api_catalogue():
                 break
         if dry >= 2:
             break
-        time.sleep(0.2)
 
     complete = end_found and not failed
+    live = sum(1 for a in ages.values() if a is None)
+    stale = len(ages) - live
+    max_age = max([a for a in ages.values() if a is not None] or [0])
+    verdict = _fc_fresh_verdict(live, stale, max_age) if (fresh or stale) else "plain request"
+    FC_LAST_SWEEP.update(hot=hot, pages=len(ages), fresh=verdict, secs=time.time() - t0,
+                         complete=complete)
+    n_in = sum(1 for p in products.values() if (_fc_api_stock(p)[1] or 0) > 0)
+    if complete:
+        # pages the in-stock list needs, +1 when it's an exact multiple of 20
+        # (the empty page after a full one is how its end is recognised)
+        _FC_INSTOCK_PAGES[0] = max(1, -(-(n_in + 1) // 20))
+    if hot:
+        print(f"  [FC-API] quick sweep: {n_in} in stock from {len(ages)} page(s) in "
+              f"{time.time()-t0:.1f}s — {verdict}"
+              + ("" if complete else f" — incomplete ({', '.join(failed) or 'no end'})"))
+        return products
     if not products:
         return None
-    oos = sum(1 for p in products.values() if (_fc_api_stock(p)[1] == 0))
     from collections import Counter
     cats = Counter(str(_ci(p, "SCNm") or "?") for p in products.values())
     note = "" if complete else f" — INCOMPLETE (failed: {', '.join(failed) or 'no end found'})"
     print(f"  [FC-API] {len(products)} products across {page} page(s) "
-          f"({oos} with zero stock){note}")
+          f"({len(products) - n_in} with zero stock) in {time.time()-t0:.1f}s{note}")
+    print(f"  [FC-API] data: {verdict}")
     print(f"  [FC-API] subcategories: {dict(cats.most_common(8))}")
     FC_API_COMPLETE[0] = complete
     return products
 
 
-def fc_api_records(products: dict, prev_fc: dict) -> list:
+def fc_api_records(products: dict, prev_fc: dict, quiet: bool = False) -> list:
     """Turn raw API records into tracker products (after exclusions)."""
-    out, sample_done = [], False
+    out, sample_done = [], quiet
     for pid, p in products.items():
         name = _fc_name(str(_ci(p, *_NAME_KEYS) or ""))
         if not name or _fc_excluded(name):
@@ -1149,10 +1310,57 @@ def fc_api_records(products: dict, prev_fc: dict) -> list:
     return out
 
 
-def scrape_firstcry() -> list[dict]:
-    prev_all = load_seen()
+def scrape_firstcry(prev_all: dict | None = None, hot: bool = False) -> list[dict]:
+    if prev_all is None:
+        prev_all = load_seen()
     prev_fc = {pid[3:]: v for pid, v in prev_all.items()
                if pid.startswith("fc_") and isinstance(v, dict)}
+
+    # ── Quick sweep: FirstCry's in-stock list only ────────────────────────────
+    # Cars on the list are read live; a car that drops off it between two
+    # complete lists is recorded as sold out (see below); everything else keeps
+    # its last state until the next full sweep.
+    if hot:
+        if not FC_USE_API or FC_LAST_MODE[0] == "html":
+            return []
+        if FC_THROTTLED[0] > time.time():
+            print("  [FC-API] quick sweeps paused — FirstCry answered 429/403 recently")
+            return []
+        api = fc_api_catalogue(hot=True)
+        if api is None:
+            return []
+        recs = fc_api_records(api, prev_fc, quiet=True)
+        # A car that WAS on the previous complete in-stock list and has dropped
+        # off this one has sold out. Recording that now (instead of at the next
+        # full sweep) means a sell-out followed by a quick restock still fires
+        # its alert. Only list-to-list changes count: the in-stock filter and
+        # the full catalogue can disagree about a handful of cars (live dry run:
+        # 182 vs 178), and those must never flip-flop into false restocks.
+        listed = {str(pid) for pid in api}
+        prev_listed = _FC_PREV_INSTOCK[0]
+        _FC_PREV_INSTOCK[0] = listed if FC_LAST_SWEEP["complete"] else None
+        if FC_LAST_SWEEP["complete"] and prev_listed:
+            got = {r["id"][3:] for r in recs}
+            prev_in = [pid for pid in prev_listed - listed
+                       if (prev_fc.get(pid) or {}).get("stock") == "in_stock"
+                       and not _fc_excluded((prev_fc.get(pid) or {}).get("name", ""))]
+            if len(listed) >= 0.7 * len(prev_listed):
+                for pid in prev_in:
+                    if pid in got:
+                        continue
+                    v = prev_fc[pid]
+                    nm = v.get("name", "")
+                    recs.append({
+                        "id": f"fc_{pid}", "source": "firstcry", "name": nm,
+                        "url": v.get("url") or f"https://www.firstcry.com/x/x/{pid}/product-detail",
+                        "price": v.get("price", ""), "mrp": "", "stock": "out_of_stock",
+                        "badge_new": False, "watched": pid in FC_WATCH_IDS or _fc_is_marque(nm),
+                        "auto_watch": _fc_is_marque(nm),
+                        "stock_ver": FC_API_STOCK_VER, "fc_trusted": True,
+                        "fc_listed_at": v.get("fc_listed_at", ""),
+                        "fc_api_seen_at": v.get("fc_api_seen_at", ""),
+                    })
+        return recs
 
     # ── Preferred path: FirstCry's own JSON catalogue API ──────────────────────
     if FC_USE_API:
@@ -1462,19 +1670,114 @@ def _mg_headers(key: str) -> dict:
 # The exact fields Minifygram's own site requests, plus the embedded stock join.
 _MG_SELECT = (
     "id,slug,name,brand,scale,category,price_inr,mrp_inr,product_type,"
+    "badge,is_active,updated_at,preorder_status,preorder_close_at,"
+    "product_skus!product_skus_product_id_fkey(available)"
+)
+# Older column set, used automatically if the pre-order columns ever disappear.
+_MG_SELECT_BASIC = (
+    "id,slug,name,brand,scale,category,price_inr,mrp_inr,product_type,"
     "badge,is_active,updated_at,"
     "product_skus!product_skus_product_id_fkey(available)"
 )
+
+# What to track. Brands are matched as tokens against brand + name (spaces and
+# hyphens ignored); categories are matched against Minifygram's category name,
+# whatever the brand. Default: Hot Wheels + MiniGT (incl. Kaido House) diecast,
+# plus the "Trading Cards (TCG)" category.
+MG_BRANDS = [t.strip().lower().replace(" ", "").replace("-", "")
+             for t in os.getenv("MG_BRANDS", "hotwheels,mattel,minigt,mini gt,kaido house").split(",")
+             if t.strip()]
+MG_CATEGORIES = [t.strip().lower() for t in os.getenv("MG_CATEGORIES", "trading card,tcg").split(",")
+                 if t.strip()]
+# Brand matches only count in these categories, so "Hotwheels Stand" 3D-printed
+# display stands and keychains don't show up as cars.
+MG_CAR_CATEGORIES = [t.strip().lower() for t in os.getenv("MG_CAR_CATEGORIES", "diecast,pre-order").split(",")
+                     if t.strip()]
+
+
+def _mg_wanted(row: dict) -> str | None:
+    """'car', 'card' or None for a Minifygram product row."""
+    cat = str(row.get("category") or "").lower()
+    if MG_CATEGORIES and any(t in cat for t in MG_CATEGORIES):
+        return "card"
+    brand = str(row.get("brand") or "").lower().replace(" ", "").replace("-", "")
+    name = str(row.get("name") or "").lower().replace(" ", "").replace("-", "")
+    if any(tok in brand or tok in name for tok in MG_BRANDS):
+        if not cat or not MG_CAR_CATEGORIES or any(t in cat for t in MG_CAR_CATEGORIES):
+            return "car"
+    return None
+
+
+def _mg_preorder_open(row: dict) -> bool:
+    """A pre-order can be booked: not closed by status or by its closing time."""
+    st = str(row.get("preorder_status") or "").lower()
+    if st in ("booking_closed", "closed", "cancelled", "canceled"):
+        return False
+    close = str(row.get("preorder_close_at") or "")
+    if close:
+        try:
+            ts = calendar.timegm(time.strptime(close[:19], "%Y-%m-%dT%H:%M:%S"))  # UTC
+            if ts < time.time():
+                return False
+        except Exception:
+            pass
+    return True
+
+
+def _mg_or_filter() -> str:
+    """Server-side pre-filter (PostgREST or=) so Minifygram sends only the rows
+    we might track — half the payload. The exact rules are still applied in
+    _mg_wanted(); this only has to be a superset of them."""
+    pats = {"*hot*wheel*", "*mini*gt*", "*kaido*", "*mattel*"}
+    for raw in os.getenv("MG_BRANDS", "").split(","):
+        t = re.sub(r"[^a-z0-9 ]", "", raw.strip().lower())
+        if t:
+            pats.add("*" + "*".join(t.split()) + "*")
+    conds = [f"{col}.ilike.{p}" for p in sorted(pats) for col in ("brand", "name")]
+    for raw in MG_CATEGORIES:
+        t = re.sub(r"[^a-z0-9 ]", "", raw)
+        if t:
+            conds.append("category.ilike.*" + "*".join(t.split()) + "*")
+    return "or=(" + ",".join(conds) + ")"
+
+
+_MG_LAST_WM = [None]   # newest updated_at among the rows of the last full fetch
+
+
+def mg_watermark() -> str | None:
+    """Newest 'updated_at' among the products we track — one tiny request.
+    Minifygram bumps it whenever a product is added or edited (a new listing,
+    a restock entered by the shop, a price change), so checking it every pass
+    and fetching the full list only when it moves catches new arrivals within
+    seconds without re-downloading the catalogue every time."""
+    url = (f"{MINIFYGRAM_SUPABASE}/rest/v1/products?select=updated_at"
+           f"&is_active=eq.true&{_mg_or_filter()}&order=updated_at.desc&limit=1")
+    try:
+        r = http.get(url, headers=_mg_headers(MINIFYGRAM_ANON_KEY), timeout=15, **_IMPERSONATE)
+        if r.status_code != 200:
+            return None
+        rows = r.json()
+        return str(rows[0].get("updated_at") or "") if rows else ""
+    except Exception:
+        return None
 
 
 def scrape_minifygram() -> list[dict]:
     key = MINIFYGRAM_ANON_KEY
     headers = _mg_headers(key)
 
-    url = (f"{MINIFYGRAM_SUPABASE}/rest/v1/products"
-           f"?select={quote(_MG_SELECT, safe=',!()')}&is_active=eq.true&limit=1000")
+    def products_url(select, filtered=True):
+        return (f"{MINIFYGRAM_SUPABASE}/rest/v1/products"
+                f"?select={quote(select, safe=',!()')}&is_active=eq.true&limit=2000"
+                + (f"&{_mg_or_filter()}" if filtered else ""))
+
     try:
-        r = http.get(url, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+        # a rejected filter or column (HTTP 400) steps down to a plainer query
+        for url in (products_url(_MG_SELECT), products_url(_MG_SELECT, filtered=False),
+                    products_url(_MG_SELECT_BASIC, filtered=False)):
+            r = http.get(url, headers=headers, timeout=TIMEOUT, **_IMPERSONATE)
+            if r.status_code != 400:
+                break
     except Exception as e:
         print(f"  [MG] request failed: {e}")
         return []
@@ -1493,7 +1796,7 @@ def scrape_minifygram() -> list[dict]:
                 return []
         if r.status_code in (401, 403):
             print("  [MG] still unauthorized. Set MINIFYGRAM_ANON_KEY repo secret "
-                  "with a fresh key (see README) — the hardcoded default is stale.")
+                  "with a fresh key — the built-in one is stale.")
             return []
 
     if r.status_code != 200:
@@ -1509,32 +1812,18 @@ def scrape_minifygram() -> list[dict]:
     if not isinstance(rows, list):
         print(f"  [MG] unexpected response shape: {type(rows)}")
         return []
-    print(f"  [MG] products (embedded stock) → {len(rows)} rows")
+    _MG_LAST_WM[0] = max((str(x.get("updated_at") or "") for x in rows), default="") or None
 
     out = []
-    no_sku_count = 0
+    no_sku_count = cards = pre = 0
     for row in rows:
         rid   = row.get("id")
         name  = row.get("name")
         slug  = row.get("slug") or rid
-        brand = str(row.get("brand") or "").lower()
         if not (rid and name):
             continue
-
-        # ── Brand allowlist (configurable) ────────────────────────────────────
-        # Minifygram sells many diecast brands (TimeMicro, Poprace, Inno64,
-        # Funko…) under the same "Diecast" category, so category alone is not a
-        # safe filter — we match by brand/name tokens. Default tracks Hot
-        # Wheels + MiniGT (incl. Kaido House, a MiniGT line). Override with the
-        # MG_BRANDS env (comma-separated tokens, spaces/hyphens ignored).
-        allowed = [t.strip().lower().replace(" ", "").replace("-", "")
-                   for t in os.getenv(
-                       "MG_BRANDS",
-                       "hotwheels,mattel,minigt,mini gt,kaido house").split(",")
-                   if t.strip()]
-        brand_norm = brand.replace(" ", "").replace("-", "")
-        name_norm  = str(name).lower().replace(" ", "").replace("-", "")
-        if not any(tok in brand_norm or tok in name_norm for tok in allowed):
+        kind = _mg_wanted(row)
+        if not kind:
             continue
 
         # ── Authoritative stock: product_skus[].available, summed ──────────────
@@ -1544,27 +1833,40 @@ def scrape_minifygram() -> list[dict]:
                 (s.get("available") or 0) for s in skus if isinstance(s, dict))
             in_stock = total_available > 0
         else:
-            # No SKU row at all for this product. Fall back to product_type,
-            # which reads "in-stock" on the confirmed live example; anything
-            # else (e.g. "sold-out", "preorder") counts as not-immediately-buyable.
             no_sku_count += 1
-            ptype = str(row.get("product_type") or "").lower()
-            in_stock = ptype == "in-stock"
+            total_available = None
+            in_stock = str(row.get("product_type") or "").lower() == "in-stock"
+
+        label = str(name)[:170]
+        is_pre = str(row.get("product_type") or "").lower() == "preorder"
+        if is_pre:
+            pre += 1
+            if str(row.get("preorder_status") or "").lower() != "stock_arrived":
+                # bookable = units left AND booking still open
+                in_stock = in_stock and _mg_preorder_open(row)
+                label += " [PRE-ORDER]"
+        if kind == "card":
+            cards += 1
+            label = "🃏 " + label
 
         price = price_to_int(row.get("price_inr"))
         mrp   = price_to_int(row.get("mrp_inr"))
 
         out.append({
-            "id": f"mg_{rid}", "source": "minifygram", "name": str(name)[:180],
+            "id": f"mg_{rid}", "source": "minifygram", "name": label,
             "url": f"https://minifygram.com/product/{slug}",
             "price": f"₹{price}" if price else "",
             "mrp":   f"₹{mrp}"   if mrp and mrp != price else "",
             "stock": "in_stock" if in_stock else "out_of_stock",
+            "stock_count": (total_available if isinstance(total_available, int)
+                            and 0 < total_available <= FC_LOW_STOCK else None),
             "badge_new": bool(row.get("badge")),
             "mg_updated_at": str(row.get("updated_at") or ""),
-            # v4.4: authoritative product_skus.available query. Any prior stamp
-            # (page-scraping guesses, sold_out-column guesses) gets silently
-            # corrected once, per the stock_ver mechanism in compute_changes().
+            # Same tag as before on purpose: v13's rule changes (closed
+            # pre-orders count as unavailable, trading cards added) can only
+            # turn a car unavailable or add new ones — never cause a false
+            # restock — and changing the tag would silence real restocks of
+            # cars that are inactive right now.
             "stock_ver": "mg_skus_v1",
         })
 
@@ -1572,7 +1874,8 @@ def scrape_minifygram() -> list[dict]:
         print(f"  [MG] {no_sku_count} products had no SKU row — used product_type fallback")
 
     ins = sum(1 for d in out if d["stock"] == "in_stock")
-    print(f"[*] Minifygram total: {len(out)} ({ins} in stock)")
+    print(f"[*] Minifygram total: {len(out)} of {len(rows)} ({ins} in stock; "
+          f"{cards} trading cards, {pre} pre-orders)")
     return out
 
 
@@ -1934,9 +2237,19 @@ _KD_DEFAULT_URLS = [
     f"{_KD}/mini-gt/kaido-house",
     f"{_KD}/pre-orders/pre-order-minigt",
     f"{_KD}/pre-orders/pre-order-special-stock",
+    # v13: chase cars and KND's "special stocks" shelf (mixed brands — only Hot
+    # Wheels / MiniGT / Kaido cards pass the brand checks below), plus the home
+    # page, whose "New Arrival" strip is where fresh stock shows up first.
+    f"{_KD}/specials/chase-car",
+    f"{_KD}/specials/special-stocks-64-43-scale",
+    f"{_KD}/",
 ]
 KD_URLS = ([u.strip() for u in os.getenv("KD_URLS", "").split("|") if u.strip()]
            or _KD_DEFAULT_URLS)
+# False when any KND page failed this pass: products on that page would look
+# "missing", so the absence = sold-out check must not run (it would mark them
+# sold out and then fire false restock alerts when the page loads again).
+KD_HEALTHY = [True]
 KD_INCLUDE_PREORDER = os.getenv("KD_INCLUDE_PREORDER", "true").lower() == "true"
 
 # Other brands KND sells that must never appear in Hot Wheels / MiniGT alerts.
@@ -1952,28 +2265,128 @@ _KD_LINK = re.compile(r'href="(/details/[^"]+?)"', re.I)
 _KD_PID = re.compile(r'[?&]pid=([A-Za-z0-9]+)')
 
 
+_KD_NEXT = re.compile(r'<script id="__NEXT_DATA__" type="application/json"[^>]*>(.*?)</script>', re.S)
+_KD_BRAND_TOKENS = ("HOTWHEELS", "MINIGT", "KAIDO")
+
+
+def _kd_from_next_data(page: str, cat: str):
+    """Products from the page's __NEXT_DATA__ JSON (probe, 18 Oct 2026):
+    category pages carry props.pageProps.products, the home page carries
+    newarrivalsdata / productdata / ispreorderdata / carsdata …, each product
+    {pid, pro_name, slug, product_sname, sku, act_price, dis_price, in_stock,
+    is_preorder, preorder_price}. Returns None when the JSON isn't there, so
+    the caller can fall back to parsing the HTML cards."""
+    m = _KD_NEXT.search(page)
+    if not m:
+        return None
+    try:
+        props = (json.loads(m.group(1)).get("props") or {}).get("pageProps") or {}
+    except Exception:
+        return None
+    found, stack = [], [props]
+    while stack:
+        n = stack.pop()
+        if isinstance(n, list):
+            stack.extend(n)
+        elif isinstance(n, dict):
+            if "pid" in n and "pro_name" in n:
+                found.append(n)
+            else:
+                stack.extend(n.values())
+    if not found and "products" not in props:
+        return None          # not the page shape we know — use the HTML parser
+    cat_ok = any(k in cat for k in ("hot-wheels", "mini-gt", "kaido", "minigt"))
+    out = []
+    for p in found:
+        pid = str(p.get("pid") or "").strip()
+        name = re.sub(r"\s+", " ", str(p.get("pro_name") or "")).strip(" -–|,")
+        if not pid or len(name) < 4 or str(p.get("is_approved", 1)) == "0":
+            continue
+        line = str(p.get("product_sname") or p.get("sku") or "")
+        blob = (name + " " + line).upper()
+        flat = blob.replace(" ", "").replace("-", "")
+        if not cat_ok:
+            # mixed shelves (home page, specials): Hot Wheels / MiniGT / Kaido
+            # only, and never another brand. On the brand's own category pages
+            # every product is that brand — Hot Wheels Marvel or Jurassic
+            # character cars are still Hot Wheels — so the deny-list isn't
+            # applied there.
+            if any(k in flat for k in _KD_DENY):
+                continue
+            is_hw_line = blob.startswith("HW ") or " HW " in f" {line.upper()} "
+            if not (is_hw_line or any(k in flat for k in _KD_BRAND_TOKENS)):
+                continue
+        is_pre = str(p.get("is_preorder") or "0") not in ("0", "", "None", "False")
+        if is_pre and not KD_INCLUDE_PREORDER:
+            continue
+        price = price_to_int(p.get("dis_price")) or price_to_int(p.get("act_price"))
+        mrp = price_to_int(p.get("act_price"))
+        if not price:
+            continue
+        slug = str(p.get("slug") or "").strip()
+        out.append({
+            "id": f"kd_{pid}", "source": "karzdolls",
+            "name": (name + (" [PRE-ORDER]" if is_pre else ""))[:180],
+            "url": f"{_KD}/details/{quote(slug, safe='-_.~')}?pid={quote(pid, safe='')}",
+            "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp and mrp > price else "",
+            "stock": "in_stock" if str(p.get("in_stock")) in ("1", "True", "true") else "out_of_stock",
+            "badge_new": False,
+        })
+    return out
+
+
 def scrape_karzanddolls() -> list[dict]:
     out, seen_ids = [], set()
+    KD_HEALTHY[0] = True
 
     def fetch(u):
-        try:
-            r = http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
-            if r.status_code == 200 and len(r.text) > 4000:
-                return r.text
-            print(f"  [KD] {u.rsplit('/',1)[-1]} → HTTP {r.status_code}")
-        except Exception as e:
-            print(f"  [KD] {u.rsplit('/',1)[-1]} → {type(e).__name__}")
+        label = u.rstrip("/").rsplit("/", 1)[-1] if u.rstrip("/") != _KD else "home"
+        for attempt in range(2):
+            try:
+                r = http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+                if r.status_code == 200 and len(r.text) > 4000:
+                    return r.text
+                if r.status_code == 404:
+                    # a removed/renamed category is not a failed fetch
+                    print(f"  [KD] {label} → HTTP 404 (category gone)")
+                    return None
+                err = f"HTTP {r.status_code}"
+            except Exception as e:
+                err = type(e).__name__
+            time.sleep(1.5)
+        print(f"  [KD] {label} → {err}")
+        KD_HEALTHY[0] = False
         return None
 
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    with ThreadPoolExecutor(max_workers=8) as ex:
         pages = {ex.submit(fetch, u): u for u in KD_URLS}
         for fut in as_completed(pages):
-            cat = pages[fut].rsplit("/", 1)[-1]
+            u = pages[fut]
+            cat = u.rstrip("/").rsplit("/", 1)[-1] if u.rstrip("/") != _KD else ""
             try:
                 page = fut.result()
             except Exception:
                 page = None
+                KD_HEALTHY[0] = False
             if not page:
+                continue
+            # Preferred: the product list Next.js embeds in the page as JSON
+            # (exact names, prices, in_stock and pre-order flags). The HTML card
+            # parser below is the fallback if that ever disappears.
+            recs = _kd_from_next_data(page, cat)
+            if recs is not None:
+                found = 0
+                for d in recs:
+                    if d["id"] not in seen_ids:
+                        seen_ids.add(d["id"])
+                        out.append(d)
+                        found += 1
+                if found:
+                    print(f"  [KD] {cat or 'home'} → {found}")
+                elif recs:
+                    print(f"  [KD] {cat or 'home'} → 0 new ({len(recs)} already listed elsewhere)")
+                else:
+                    print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
                 continue
             found = 0
             for part in re.split(r'(?=<a[^>]+href="/details/)', page):
@@ -2036,11 +2449,12 @@ def scrape_karzanddolls() -> list[dict]:
                 })
                 found += 1
             if found:
-                print(f"  [KD] {cat} → {found}")
+                print(f"  [KD] {cat or 'home'} → {found}")
             else:
-                print(f"  [KD] {cat} → 0 (empty or slug changed)")
+                print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
     ins = sum(1 for d in out if d["stock"] == "in_stock")
-    print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)")
+    print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)"
+          + ("" if KD_HEALTHY[0] else " — some pages failed, sold-out check skipped"))
     return out
 
 
@@ -2422,16 +2836,28 @@ def _within_budget(d) -> bool:
     return (p is None) or (p <= MAX_ALERT_PRICE)
 
 
+def _is_flagged(d) -> bool:
+    """🎯: a watched FirstCry car, a WATCHLIST keyword, or one of your marques
+    (Porsche, Ferrari, Lamborghini, Supra …) — on every store."""
+    return (bool(d.get("watched")) or any(w in d["name"].lower() for w in WATCHLIST)
+            or _fc_is_marque(d["name"]))
+
+
 def _line(d, extra="") -> str:
     tag = SRC.get(d["source"], "")
-    flag = (" 🎯" if (d.get("watched")
-                     or any(w in d["name"].lower() for w in WATCHLIST)) else "")
+    flag = " 🎯" if _is_flagged(d) else ""
     cnt = d.get("stock_count")
-    if isinstance(cnt, int) and 0 < cnt <= FC_LOW_STOCK:
-        flag += f" ⚠️ only {cnt} left"
+    if isinstance(cnt, int) and cnt > 0:
+        # how many FirstCry has right now — "only 3 left" means move fast
+        flag += f" ⚠️ only {cnt} left" if cnt <= FC_LOW_STOCK else f" 📦 {cnt} left"
     price = d.get("price", "")
     mrp = f" <s>{d['mrp']}</s>" if d.get("mrp") else ""
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}\n{d['url']}"
+
+
+def _flagged_first(items: list) -> list:
+    """🎯 cars (your marques / watchlist) at the top of each section."""
+    return sorted(items, key=lambda d: 0 if _is_flagged(d) else 1)
 
 
 # 👀 "new listing — sold out" alerts tell you about a car you can't buy. Off by
@@ -2458,19 +2884,19 @@ def build_alert(ch: dict) -> str | None:
     shown = set()
 
     # ── In-stock alerts (loud) ─────────────────────────────────────────────────
-    news = _dedupe([d for d in ch["new_listings"] if _within_budget(d)], shown)
+    news = _flagged_first(_dedupe([d for d in ch["new_listings"] if _within_budget(d)], shown))
     if news:
         parts.append("🆕 <b>NEW — in stock</b>")
         parts += ["  " + _line(d) for d in news[:25]]
 
-    restocks = _dedupe(ch["restocks"], shown)
+    restocks = _flagged_first(_dedupe(ch["restocks"], shown))
     if restocks:
-        parts.append("\n🔥 <b>BACK IN STOCK — grab it now</b>")
+        parts.append(("\n" if parts else "") + "🔥 <b>BACK IN STOCK — grab it now</b>")
         parts += ["  " + _line(d) for d in restocks[:25]]
 
-    drops = _dedupe(ch["price_drops"], shown)
+    drops = _flagged_first(_dedupe(ch["price_drops"], shown))
     if drops:
-        parts.append("\n💸 <b>PRICE DROP</b>")
+        parts.append(("\n" if parts else "") + "💸 <b>PRICE DROP</b>")
         parts += ["  " + _line(d, extra=f"  (was {d['prev_price']})") for d in drops[:25]]
 
     # ── Newly listed but sold out (quiet — always show, capped at 8) ──────────
@@ -2480,13 +2906,14 @@ def build_alert(ch: dict) -> str | None:
     bs = (_dedupe([d for d in ch["back_soon"] if _within_budget(d)], shown)
           if ALERT_NEW_SOLD_OUT else [])
     if bs:
-        parts.append("\n👀 <b>NEW listing — sold out (wishlist it!)</b>")
+        parts.append(("\n" if parts else "") + "👀 <b>NEW listing — sold out (wishlist it!)</b>")
         parts += ["  " + _line(d) + "  <i>sold out</i>" for d in bs[:8]]
 
     if not parts:
         return None
-    header = "🏎️ <b>Hot Wheels Tracker</b> — Dehradun\n"
-    return header + "\n".join(parts)
+    # No banner line: the notification preview starts straight with what
+    # happened and the first car, so you can decide from the lock screen.
+    return "\n".join(parts)
 
 
 def heartbeat(current: dict, ch: dict) -> str:
@@ -2513,182 +2940,188 @@ def heartbeat(current: dict, ch: dict) -> str:
 # ══════════════════════════════════════════════════════════════════════════════════
 # MAIN
 # ══════════════════════════════════════════════════════════════════════════════════
-def main():
-    seen = load_seen()
-    first_run = (len(seen) == 0)
+def _source_table(snap: dict, fc_hot: bool):
+    return (("FirstCry",   lambda: scrape_firstcry(snap, hot=fc_hot)),
+            ("Minifygram", scrape_minifygram),
+            ("Hamleys",    scrape_hamleys),
+            ("Karz&Dolls", scrape_karzanddolls),
+            ("BigBasket",  scrape_bigbasket),
+            ("Blinkit",    scrape_blinkit))
 
-    all_products, errors, live_sources = [], [], []
-    sources = (("FirstCry", scrape_firstcry), ("Minifygram", scrape_minifygram),
-               ("Hamleys", scrape_hamleys), ("Karz&Dolls", scrape_karzanddolls),
-               ("BigBasket", scrape_bigbasket), ("Blinkit", scrape_blinkit))
+
+def _due(name: str, t: float, t_prev: float) -> bool:
+    """Is a store due in the pass at time t (previous pass at t_prev)?
+
+    Stateless on purpose: a store checked every E seconds runs in whichever pass
+    first crosses a multiple of E on the wall clock. Back-to-back runs therefore
+    share one schedule without storing timestamps in seen.json — storing them
+    would change the file on every run and force a git commit every minute."""
     if ACTIVE_SOURCES is not None:
-        sources = tuple(s for s in sources if s[0] in ACTIVE_SOURCES)
-        if not sources:
-            return
-    # Sources run concurrently — total time is the SLOWEST source, not the sum.
-    t0 = time.time()
-    with ThreadPoolExecutor(max_workers=SRC_WORKERS) as ex:
-        futs = {ex.submit(fn): name for name, fn in sources}
-        for fut in as_completed(futs):
-            name = futs[fut]
-            try:
-                prods = fut.result()
-                if prods:
-                    live_sources.append(name)
-                all_products.extend(prods)
-            except Exception as exc:
-                errors.append(f"{name}: {exc}")
-                print(f"[!] {name} error:\n{traceback.format_exc()}")
-    print(f"\n[*] all sources finished in {time.time()-t0:.1f}s "
-          f"→ {len(all_products)} products")
+        return name in ACTIVE_SOURCES
+    every = SOURCE_EVERY.get(name, 0)
+    if every < 0:
+        return False
+    if every == 0:
+        return True
+    return int(t // every) != int(t_prev // every)
 
-    # ── Absence = sold out, for COMPLETE-catalogue sources ────────────────────
-    # Karz & Dolls category pages list their whole category ("Showing 107 out of
-    # 107") and simply DROP a product when it sells out — which is why the log
-    # showed 284 of 284 "in stock". Treating absence as "unchanged" meant a KND
-    # restock could never be detected. So: any KND product we've seen before that
-    # is missing from this run is recorded as sold out. Guarded by a health
-    # check — if the scrape came back suspiciously small (a failed fetch), we
-    # skip this rather than mark the whole catalogue sold out.
-    for src_key in ABSENCE_SOURCES:
-        got = {p["id"] for p in all_products if p["source"] == src_key}
-        prev_in = {k for k, v in seen.items()
-                   if k != "_meta" and isinstance(v, dict)
-                   and v.get("source") == src_key and v.get("stock") == "in_stock"}
-        if not got:
-            continue
-        if prev_in and len(got) < 0.6 * len(prev_in):
-            print(f"[!] {src_key}: only {len(got)} vs {len(prev_in)} last time — "
-                  f"skipping absence check (likely a partial fetch)")
-            continue
-        gone = 0
-        for k, v in seen.items():
-            if (k == "_meta" or not isinstance(v, dict) or v.get("source") != src_key
-                    or k in got or v.get("stock") != "in_stock"):
-                continue
-            all_products.append({
-                "id": k, "source": src_key, "name": v.get("name", ""),
-                "url": v.get("url", ""), "price": v.get("price", ""), "mrp": "",
-                "stock": "out_of_stock", "badge_new": False,
-            })
-            gone += 1
-        if gone:
-            print(f"[*] {src_key}: {gone} product(s) no longer listed → marked sold out")
 
-    # Global keyword exclusion — every source, not just FirstCry.
+def _absence_check(seen: dict, products: list, src_key: str) -> list:
+    """Karz & Dolls category pages list the whole category and simply DROP a car
+    when it sells out, so a car we believed in stock that is missing from a
+    healthy scrape is recorded as sold out — that's what lets its return fire a
+    restock alert. Skipped when the scrape looks partial."""
+    if src_key not in ABSENCE_SOURCES:
+        return []
+    got = {p["id"] for p in products if p["source"] == src_key}
+    if not got:
+        return []
+    if src_key == "karzdolls" and not KD_HEALTHY[0]:
+        print("[!] karzdolls: a category page failed — skipping absence check")
+        return []
+    prev_in = {k for k, v in seen.items()
+               if k != "_meta" and isinstance(v, dict)
+               and v.get("source") == src_key and v.get("stock") == "in_stock"}
+    if prev_in and len(got) < 0.6 * len(prev_in):
+        print(f"[!] {src_key}: only {len(got)} vs {len(prev_in)} last time — "
+              f"skipping absence check (likely a partial fetch)")
+        return []
+    gone = []
+    for k, v in seen.items():
+        if (k == "_meta" or not isinstance(v, dict) or v.get("source") != src_key
+                or k in got or v.get("stock") != "in_stock"):
+            continue
+        gone.append({"id": k, "source": src_key, "name": v.get("name", ""),
+                     "url": v.get("url", ""), "price": v.get("price", ""), "mrp": "",
+                     "stock": "out_of_stock", "badge_new": False})
+    if gone:
+        print(f"[*] {src_key}: {len(gone)} product(s) no longer listed → marked sold out")
+    return gone
+
+
+def _process(seen: dict, products: list, store: str, fc_hot: bool) -> int:
+    """Diff ONE store's fresh results against memory, alert at once, save.
+    Each store is handled the moment its own check finishes, so a FirstCry
+    alert never waits for a slower store (Hamleys can take 20 s)."""
+    if not products:
+        return 0
+    src_keys = {p["source"] for p in products}
+    for sk in list(src_keys):
+        products = products + _absence_check(seen, products, sk)
+
+    # Global keyword exclusion — every store, not just FirstCry.
     if FC_EXCLUDE:
-        before = len(all_products)
-        all_products = [p for p in all_products if not _fc_excluded(p["name"])]
-        if before != len(all_products):
-            print(f"[*] excluded {before-len(all_products)} matching {FC_EXCLUDE}")
+        products = [p for p in products if not _fc_excluded(p["name"])]
+    if not products:
+        return 0
+    current = {p["id"]: p for p in products}
 
-    if not all_products and ACTIVE_SOURCES is not None:
-        # Partial tick in always-on mode (e.g. only a geo-blocked source was
-        # due). Nothing to do, and not worth an alarm.
-        return
-    if not all_products:
-        # Only shout if EVERYTHING died — and keep it actionable, not spammy.
-        tg("⚠️ <b>Hot Wheels Tracker</b>\nAll sources returned 0 this run "
-           "(likely a temporary block). Will retry next run.\n"
-           + (f"<code>{'; '.join(errors)[:300]}</code>" if errors else ""))
-        print("[!] No products from any source.")
-        # still advance the FirstCry rotation window, otherwise a run that gets
-        # blocked would pin us to the same slice forever
-        try:
-            meta = seen.get("_meta") if isinstance(seen.get("_meta"), dict) else {}
-            meta["fc_offset"] = _FC_NEXT_OFFSET[0]
-            seen["_meta"] = meta
-            with open(SEEN_FILE, "w", encoding="utf-8") as f:
-                json.dump(seen, f, indent=2, ensure_ascii=False)
-        except Exception:
-            pass
-        return
+    # The first time a store appears (a newly added store) while others already
+    # have history, its whole catalogue is absorbed silently.
+    known_sources = {v.get("source") for k, v in seen.items()
+                     if k != "_meta" and isinstance(v, dict)}
+    for s in src_keys - known_sources:
+        items = [pid for pid, d in current.items() if d["source"] == s]
+        ins = sum(1 for pid in items if current[pid]["stock"] == "in_stock")
+        for pid in items:
+            seen.setdefault(pid, {})["alerted_new"] = True
+        print(f"[=] New source '{s}': baseline {len(items)} items absorbed silently.")
+        tg(f"🆕 <b>New store added:</b> {SRC.get(s, s)} — tracking {len(items)} products "
+           f"({ins} in stock). Alerts start from the next change.")
 
-    current = {p["id"]: p for p in all_products}
-
-    # ── Per-source silent baseline ─────────────────────────────────────────────
-    # When a brand-new SOURCE appears (e.g. Hamleys added in an upgrade) while
-    # other sources already have history, its entire catalog would otherwise
-    # fire as ~dozens of "NEW" alerts at once. Instead: the first time a source
-    # shows up, absorb its items silently (mark alerted_new), announce a one-line
-    # baseline, and alert only on changes from the next run onward.
-    if seen:
-        known_sources = {v.get("source") for k, v in seen.items()
-                         if k != "_meta" and isinstance(v, dict)}
-        new_sources = {d["source"] for d in current.values()} - known_sources
-        for s in new_sources:
-            items = [pid for pid, d in current.items() if d["source"] == s]
-            ins = sum(1 for pid in items if current[pid]["stock"] == "in_stock")
-            for pid in items:
-                seen.setdefault(pid, {})["alerted_new"] = True
-            label = SRC.get(s, s)
-            print(f"[=] New source '{s}': baseline {len(items)} items absorbed silently.")
-            tg(f"🆕 <b>New source added:</b> {label} — tracking {len(items)} products "
-               f"({ins} in stock). Alerts start from the next change.")
-
-    # One-time migration: entries written by the old overwrite-style seen.json
-    # lack the alerted_new flag. Treat every pre-existing entry as already
-    # alerted, so upgrading the bot doesn't replay old alerts.
-    if seen and not any("alerted_new" in v for k, v in seen.items()
-                        if k != "_meta" and isinstance(v, dict)):
-        for k, v in seen.items():
-            if k != "_meta" and isinstance(v, dict):
-                v["alerted_new"] = True
-        print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
-
-    # FirstCry product ids only ever increase: a car whose id is higher than any
-    # id we've seen before is a genuinely NEW listing, while a lower id is an
-    # older product that just became visible. Captured before compute_changes
-    # adds this run's cars to `seen`.
-    _fc_ids = [int(k[3:]) for k, v in seen.items()
-               if k.startswith("fc_") and k[3:].isdigit() and isinstance(v, dict)]
-    fc_max_known = max(_fc_ids) if _fc_ids else 0
+    # FirstCry product ids only ever increase: an id above every id seen before
+    # is a genuinely NEW listing. Captured before compute_changes adds this pass.
+    fc_max_known = 0
+    if "firstcry" in src_keys:
+        _ids = [int(k[3:]) for k, v in seen.items()
+                if k.startswith("fc_") and k[3:].isdigit() and isinstance(v, dict)]
+        fc_max_known = max(_ids) if _ids else 0
 
     changes = compute_changes(current, seen)
 
-    # Verify FirstCry restocks against a fresh request before alerting.
-    try:
-        n_sup = fc_confirm_restocks(changes, current)
-        if n_sup:
-            print(f"[*] suppressed {n_sup} unconfirmed FirstCry restock(s)")
-    except Exception as exc:
-        print(f"[!] restock confirmation skipped: {exc}")
+    # Verify FirstCry restocks read from HTML (fallback path only) before alerting.
+    if "firstcry" in src_keys:
+        try:
+            n_sup = fc_confirm_restocks(changes, current)
+            if n_sup:
+                print(f"[*] suppressed {n_sup} unconfirmed FirstCry restock(s)")
+        except Exception as exc:
+            print(f"[!] restock confirmation skipped: {exc}")
 
     # ── Discovery-burst guard ──────────────────────────────────────────────────
-    # A genuine drop is 1-5 new products. If one source suddenly surfaces MANY
-    # never-seen items in a single run, that's coverage expanding (a new sitemap,
-    # a new listing slice, an upgrade) — not 30 simultaneous releases. Absorb
-    # those silently with a one-line summary instead of an alert blast.
-    # compute_changes has already marked them alerted_new, so this stays one-time.
+    # A genuine drop is a handful of new products. If a store suddenly surfaces
+    # MANY never-seen items at once, that's coverage expanding (a new category, a
+    # site change) — absorbed with a one-line note. Brand-new FirstCry ids are
+    # never absorbed: a case drop really does list 10-20 cars at once.
     BURST_LIMIT = int(os.getenv("DISCOVERY_BURST_LIMIT", "8"))
 
     def _fresh_fc(d):
-        # a brand-new FirstCry listing (id above everything seen before). These
-        # are NEVER absorbed: a new case drop lists 10-20 cars at once, which the
-        # old guard mistook for a coverage expansion and swallowed silently —
-        # hiding exactly the drops you most wanted.
         k = d["id"]
         return (d["source"] == "firstcry" and fc_max_known > 0
                 and k[3:].isdigit() and int(k[3:]) > fc_max_known)
 
-    for src_key in {d["source"] for d in current.values()}:
+    for src_key in src_keys:
         burst = [d for d in (changes["new_listings"] + changes["back_soon"])
                  if d["source"] == src_key and not _fresh_fc(d)]
         if len(burst) > BURST_LIMIT:
             drop = {d["id"] for d in burst}
-            changes["new_listings"] = [d for d in changes["new_listings"]
-                                       if d["id"] not in drop]
-            changes["back_soon"] = [d for d in changes["back_soon"]
-                                    if d["id"] not in drop]
+            changes["new_listings"] = [d for d in changes["new_listings"] if d["id"] not in drop]
+            changes["back_soon"] = [d for d in changes["back_soon"] if d["id"] not in drop]
             ins = sum(1 for d in burst if d["stock"] == "in_stock")
-            label = SRC.get(src_key, src_key)
             print(f"[=] Discovery burst from {src_key}: {len(burst)} items absorbed.")
-            tg(f"📈 <b>Coverage expanded:</b> {label} +{len(burst)} newly tracked "
-               f"products ({ins} in stock). Alerts on changes from here.")
+            tg(f"📈 <b>Coverage expanded:</b> {SRC.get(src_key, src_key)} +{len(burst)} newly "
+               f"tracked products ({ins} in stock). Alerts on changes from here.")
 
-    if first_run and FIRST_RUN_SILENT:
-        # First run just learns the baseline — don't fire 200 "new" alerts.
-        # Every baseline product is marked alerted_new so it can never fire NEW later.
+    alert = build_alert(changes)
+    if alert:
+        tg(alert)
+        print("\n" + alert)
+    else:
+        n = sum(len(v) for v in changes.values())
+        if n or not fc_hot:
+            print(f"[=] {store}: no alert-worthy changes ({n} minor)")
+    merge_and_save_seen(seen, current)
+    return len(current)
+
+
+def run_pass(seen: dict, names: list, first_run: bool, fc_hot: bool, label: str) -> None:
+    t0 = time.time()
+    snap = dict(seen)            # scrapers read this; only the main thread writes `seen`
+    sources = [(n, fn) for n, fn in _source_table(snap, fc_hot) if n in names]
+    total, errors, live = 0, [], []
+    first_products = []
+    with ThreadPoolExecutor(max_workers=max(1, min(SRC_WORKERS, len(sources)))) as ex:
+        futs = {ex.submit(fn): name for name, fn in sources}
+        for fut in as_completed(futs):
+            name = futs[fut]
+            try:
+                prods = fut.result() or []
+            except Exception as exc:
+                errors.append(f"{name}: {exc}")
+                print(f"[!] {name} error:\n{traceback.format_exc()}")
+                continue
+            if prods:
+                live.append(name)
+            total += len(prods)
+            if first_run and FIRST_RUN_SILENT:
+                first_products.extend(prods)
+                continue
+            try:
+                _process(seen, prods, name, fc_hot)
+            except Exception:
+                errors.append(f"{name}: processing failed")
+                print(f"[!] {name} processing error:\n{traceback.format_exc()}")
+    print(f"[*] {label}: {', '.join(names)} → {total} products in {time.time()-t0:.1f}s"
+          + (f" (live: {', '.join(sorted(live))})" if live else ""))
+    if "Minifygram" in names and _MG_LAST_WM[0]:
+        meta = seen.setdefault("_meta", {})
+        if meta.get("mg_wm") != _MG_LAST_WM[0]:
+            meta["mg_wm"] = _MG_LAST_WM[0]
+            _save_seen_file(seen)
+
+    if first_run and FIRST_RUN_SILENT and first_products:
+        # First run only learns the baseline — no flood of "new" alerts.
+        current = {p["id"]: p for p in first_products if not _fc_excluded(p["name"])}
         for pid in current:
             seen.setdefault(pid, {})["alerted_new"] = True
         by_src = {}
@@ -2697,31 +3130,78 @@ def main():
             by_src[d["source"]][0] += 1
             if d["stock"] == "in_stock":
                 by_src[d["source"]][1] += 1
-        breakdown = "\n".join(
-            f"  {'🛒FC' if s=='firstcry' else '💎MG' if s=='minifygram' else '⚡BL'} "
-            f"{by_src[s][1]} in stock / {by_src[s][0]} total"
-            for s in ("firstcry", "minifygram", "blinkit") if s in by_src
-        )
+        breakdown = "\n".join(f"  {SRC.get(s, s)} {v[1]} in stock / {v[0]} total"
+                              for s, v in by_src.items())
         print(f"[=] First run: baseline saved ({len(current)} products). No alerts.")
-        tg(f"✅ <b>Hot Wheels Tracker re-armed</b>\nBaseline: {len(current)} products\n"
+        tg(f"✅ <b>Hot Wheels Tracker armed</b>\nBaseline: {len(current)} products\n"
            f"{breakdown}\n\nYou'll get pinged on new listings, restocks &amp; price drops.")
         merge_and_save_seen(seen, current)
         return
 
-    alert = build_alert(changes)
-    if alert:
-        tg(alert)
-        print("\n" + alert)
-    elif not SILENT:
-        tg(heartbeat(current, changes))
-    else:
-        n = sum(len(v) for v in changes.values())
-        print(f"[=] No alert-worthy changes ({n} minor). Sources live: {', '.join(live_sources)}")
+    if (total == 0 and not fc_hot and ACTIVE_SOURCES is None
+            and len(names) >= 3 and errors):
+        # Only shout if EVERYTHING died on a full pass — actionable, not spammy.
+        tg("⚠️ <b>Hot Wheels Tracker</b>\nAll stores returned nothing this run "
+           "(likely a temporary block). Will retry automatically.\n"
+           f"<code>{html.escape('; '.join(errors)[:300], quote=False)}</code>")
+    if DEBUG and not fc_hot:
+        tg(heartbeat({k: v for k, v in seen.items()
+                      if k != "_meta" and isinstance(v, dict) and "source" in v},
+                     {"new_listings": [], "restocks": [], "price_drops": [], "back_soon": []}))
 
-    if DEBUG:
-        tg(heartbeat(current, changes))
 
-    merge_and_save_seen(seen, current)
+def main():
+    t_run = time.time()
+    seen = load_seen()
+    first_run = (len(seen) == 0)
+    _fc_fresh_load(seen)
+
+    # One-time migration: entries written by the old overwrite-style seen.json
+    # lack the alerted_new flag — treat them all as already alerted.
+    if seen and not any("alerted_new" in v for k, v in seen.items()
+                        if k != "_meta" and isinstance(v, dict)):
+        for k, v in seen.items():
+            if k != "_meta" and isinstance(v, dict):
+                v["alerted_new"] = True
+        print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
+
+    all_names = [n for n, _ in _source_table(seen, False)]
+    # Runs are chained back to back, so the previous run's last check was roughly
+    # 30 s before this one started; the first pass covers that gap.
+    t_prev = t_run - 30
+    last_full_fc = 0.0
+    pass_no = 0
+    while True:
+        t = time.time()
+        pass_no += 1
+        names = [n for n in all_names if _due(n, t, t_prev)]
+        if ("Minifygram" not in names and MG_WATCH and ACTIVE_SOURCES is None
+                and SOURCE_EVERY.get("Minifygram", 0) >= 0 and not first_run):
+            wm = mg_watermark()
+            meta = seen.get("_meta") if isinstance(seen.get("_meta"), dict) else {}
+            if wm and wm != meta.get("mg_wm"):
+                print("[*] Minifygram changed since the last check — checking it now")
+                names.append("Minifygram")
+        fc_hot = (pass_no > 1 and "FirstCry" in names
+                  and (t - last_full_fc) < FC_FULL_EVERY - 1)
+        label = f"pass {pass_no}" + (" (FirstCry quick sweep)" if fc_hot else "")
+        if names:
+            try:
+                run_pass(seen, names, first_run, fc_hot, label)
+            except Exception:
+                # one bad pass must not end the run (earlier results are saved)
+                print(f"[!] {label} failed:\n{traceback.format_exc()}")
+        if "FirstCry" in names and not fc_hot:
+            last_full_fc = t
+        t_prev = t
+        if first_run or RUN_SECONDS <= 0:
+            break
+        nxt = t + FC_EVERY
+        if nxt - t_run > RUN_SECONDS:
+            break
+        time.sleep(max(0.0, nxt - time.time()))
+    _fc_fresh_save(seen)
+    print(f"\n[*] run finished: {pass_no} pass(es) in {time.time()-t_run:.0f}s")
 
 
 if __name__ == "__main__":

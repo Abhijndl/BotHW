@@ -1,12 +1,13 @@
 name: Hot Wheels Monitor
-# FirstCry-only runs show up as "Hot Wheels Monitor (firstcry)" in the Actions list
-run-name: ${{ inputs.only && format('Hot Wheels Monitor ({0})', inputs.only) || 'Hot Wheels Monitor' }}
+run-name: Hot Wheels Monitor
 
 on:
-  workflow_dispatch:        # lets you run it manually and lets cron-job.org trigger it
+  workflow_dispatch:        # cron-job.org triggers this every minute
     inputs:
       only:
-        description: "Check only these stores (e.g. firstcry). Empty = all stores."
+        # Kept so existing cron-job.org jobs that send it keep working. The bot
+        # now decides by itself which stores are due on every run.
+        description: "(not needed any more — every run checks whatever is due)"
         required: false
         default: ""
   schedule:
@@ -17,7 +18,10 @@ on:
 permissions:
   contents: write           # needed so the job can commit seen.json back
 
-# If a run is still going when the next fires, skip the new one instead of stacking.
+# One run at a time. While a run is going, the next trigger waits in line and
+# starts the moment it finishes, so runs follow each other back to back. (A
+# trigger that arrives while another is already waiting replaces it — those
+# show up as grey "cancelled" runs, which is normal.)
 concurrency:
   group: hw-monitor
   cancel-in-progress: false
@@ -25,10 +29,16 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 8      # kill runaway jobs to protect your free minutes
+    timeout-minutes: 8
 
     steps:
+      # ref: main = the LATEST state at start. Without it, a run that was queued
+      # behind another one started from the state as it was when it was queued,
+      # missed the previous run's alerts and sent them again (~28% of FirstCry
+      # restock alerts were duplicates sent twice, 20-60 s apart).
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -36,17 +46,28 @@ jobs:
           cache: pip
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      # No browser step: the bot is pure HTTP (curl_cffi), which is why it runs
-      # in seconds and never hits the old chrome-headless-shell failure.
+        run: pip install -q --disable-pip-version-check -r requirements.txt
 
       - name: Run tracker
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          # One chat id, or several separated by commas (e.g. you + a group).
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Set by the every-minute FirstCry trigger; empty on normal runs = all stores.
-          ONLY_SOURCES: ${{ inputs.only || '' }}
+
+          # ── Speed ───────────────────────────────────────────────────────────
+          # Each run stays alive ~50 s and re-checks FirstCry every 15 s (at 0,
+          # 15, 30 and 45 s), so with the every-minute trigger FirstCry is
+          # watched about every 15 s around the clock. Other stores are checked
+          # when due (see below).
+          RUN_SECONDS: "50"
+          FC_EVERY: "15"
+          FC_FULL_EVERY: "60"
+          # Seconds between checks for the other stores (-1 = off). Minifygram
+          # also gets a tiny "anything changed?" check every 15 s, so its new
+          # listings arrive within seconds; the full list is re-read every 2 min.
+          MG_EVERY_S: "120"
+          KD_EVERY_S: "120"
+          HM_EVERY_S: "600"
 
           # ── Alerts ───────────────────────────────────────────────────────────
           SILENT: "true"            # only ping on real changes
@@ -58,51 +79,39 @@ jobs:
 
           # ── Exclusions (apply to EVERY store) ────────────────────────────────
           # Monster trucks plus all big sets: track sets, playsets, garages, car
-          # washes, launchers — and FirstCry's "Ultimate" line, which is entirely
-          # playsets (Ultimate Garage, Octo Car Wash, Dual Dragon Transporter).
+          # washes, launchers — and FirstCry's "Ultimate" line (all playsets).
           # Matched on leading word boundaries, so "monster truck" also catches
           # "Monster Trucks" while "play set" can't hit "Display Sets".
           FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate"
 
           # ── FirstCry ─────────────────────────────────────────────────────────
-          # FirstCry is read through its own JSON catalogue API (whole catalogue,
-          # sold-out cars included, exact stock counts). If that API is ever
-          # unavailable the bot falls back to HTML scraping automatically, and the
-          # settings below apply to that fallback.
-
-          # Marques/lines to AUTO-WATCH — flagged 🎯 and guarded closely.
+          # Marques/lines to AUTO-WATCH — flagged 🎯 and listed first in alerts.
           FC_MARQUES: "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics"
           # Hand-picked products (your FirstCry Shortlist). URLs or IDs, comma separated.
           FC_WATCH: "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail"
+          # Catalogue pages fetched at once. If the log ever shows HTTP 429,
+          # FirstCry is objecting to the pace — set this to "5".
+          FC_API_PARALLEL: "10"
           # HTML-fallback tuning only (unused while the JSON API works).
           FC_WATCH_MAX: "25"
           FC_ROTATE_PER_RUN: "18"
-          # NOTE: do NOT set FC_LISTING_URLS — leaving it unset keeps the
-          # fallback's rotating sweep enabled.
 
           # ── Minifygram ───────────────────────────────────────────────────────
           # Optional: only needed if Minifygram ever rotates its public anon key.
           MINIFYGRAM_ANON_KEY: ${{ secrets.MINIFYGRAM_ANON_KEY }}
           MG_BRANDS: "hotwheels,mattel,minigt,mini gt,kaido house"
+          # Categories tracked whatever the brand — trading cards.
+          MG_CATEGORIES: "trading card,tcg"
 
           # ── Karz & Dolls ─────────────────────────────────────────────────────
-          # KD_URLS is deliberately NOT set: the built-in list covers all 16
-          # Hot Wheels + MiniGT categories. Setting it overrides that list (this
-          # once limited KND to blister packs only). If you ever do, separate
-          # URLs with "|" not commas.
-
-          # ── Quick commerce (blocked from GitHub's US runners) ────────────────
-          BLINKIT_WATCH: "https://blinkit.com/prn/hot-wheels-164-scale-toy-car-colour-designs-may-vary-multicolour/prid/444563"
-          BB_TERMS: "hot wheels,hotwheels"
+          # KD_URLS is deliberately NOT set: the built-in list covers every Hot
+          # Wheels + MiniGT category, chase cars, special stocks and the home
+          # page's New Arrivals. Setting it overrides that list.
 
           # ── Concurrency ──────────────────────────────────────────────────────
           SRC_WORKERS: "6"
           FC_WORKERS: "10"
           HM_WORKERS: "8"
-          # FirstCry catalogue pages fetched at once (21 pages in total).
-          # 10 roughly halves the sweep versus 5. If the [FC-API] log lines ever
-          # show HTTP 429, FirstCry is objecting to the pace — set this back to "5".
-          FC_API_PARALLEL: "10"
         run: python bot.py
 
       - name: Save state
@@ -111,15 +120,15 @@ jobs:
             git config user.name  "github-actions"
             git config user.email "actions@github.com"
             git add seen.json
-            git commit -m "chore: update seen.json [skip ci]"
-            # Overlapping runs can move main between our checkout and push.
-            # Rebase onto the latest remote (keeping THIS run's seen.json) and retry.
+            git commit -q -m "chore: update seen.json [skip ci]"
+            # If main moved meanwhile, rebase onto it (keeping THIS run's
+            # seen.json, which already includes everything it started from).
             for attempt in 1 2 3; do
-              if git push; then
+              if git push -q; then
                 break
               fi
               echo "push rejected (attempt $attempt) — rebasing onto latest main"
-              git fetch origin main
+              git fetch -q origin main
               git rebase -X theirs origin/main || { git rebase --abort; git reset --hard origin/main; break; }
             done
           fi
