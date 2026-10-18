@@ -4599,7 +4599,7 @@
     "fc_api_seen_at": "2026-10-18T13:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23347148"
   },
   "fc_23075650": {
@@ -4802,7 +4802,7 @@
     "fc_api_seen_at": "2026-10-18T13:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23347148"
   },
   "fc_22548070": {
@@ -13439,7 +13439,8 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-15T17:49:41.381906+00:00"
+    "mg_wm": "2026-10-15T17:49:41.381906+00:00",
+    "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
     "stock": "in_stock",
