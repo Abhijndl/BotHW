@@ -4097,7 +4097,7 @@
     "fc_listed_at": "2026-10-19T10:00:00",
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "23973353"
   },
@@ -12827,7 +12827,7 @@
   "fc_24247510": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 83 Chevy Silverado Die-Cast Free Wheel Toy Car (42/250) - Pink",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-83-chevy-silverado-die-cast-free-wheel-toy-car-42-250-pink/24247510/product-detail",
     "first_seen": "2026-09-16T11:21:11",
@@ -13100,7 +13100,7 @@
   "fc_24473516": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹179",
+    "price": "₹170",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13113,7 +13113,7 @@
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511"
   },
   "fc_24473511": {
@@ -13731,11 +13731,11 @@
     "last_restock_alert": "2026-10-18T13:07:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-19T10:00:00",
+    "fc_listed_at": "2026-10-19T10:30:00",
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511"
   },
   "fc_23811697": {
@@ -14924,7 +14924,7 @@
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473732"
   },
   "fc_24472665": {
@@ -16333,7 +16333,7 @@
     "fc_trusted": true
   },
   "fc_23973359": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
     "price": "₹269",
     "source": "firstcry",
@@ -16341,13 +16341,13 @@
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-19T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T09:12:24",
+    "last_restock_alert": "2026-10-19T10:34:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T10:30:00",
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23973353"
   },
@@ -20056,7 +20056,7 @@
   "fc_24761907": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹166",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -20065,11 +20065,11 @@
     "last_restock_alert": "2026-10-15T05:17:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-19T10:00:00",
+    "fc_listed_at": "2026-10-19T10:30:00",
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24761907"
   },
   "fc_24762155": {
@@ -21283,5 +21283,24 @@
     "last_price_alert": "",
     "mg_updated_at": "2026-10-19T10:10:36.973021+00:00",
     "stock_ver": "mg_skus_v1"
+  },
+  "fc_22128538": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Track Dwagon Toy Car (184/250) - White & Blue",
+    "price": "₹179",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-dwagon-toy-car-184-250-white-and-blue/22128538/product-detail",
+    "first_seen": "2026-10-19T10:30:00",
+    "last_seen": "2026-10-19T10:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-10-19T10:30:00",
+    "fc_api_seen_at": "2026-10-19T10:30:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "22128538"
   }
 }
