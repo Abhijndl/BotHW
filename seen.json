@@ -19875,7 +19875,7 @@
     "fc_listed_at": "2026-10-19T12:30:00",
     "fc_api_seen_at": "2026-10-19T12:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24768895"
   },
@@ -20703,7 +20703,7 @@
     "last_price_alert": ""
   },
   "kd_Pqp26e2p36": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE ADVAN",
     "price": "₹1299",
     "source": "karzdolls",
@@ -21327,15 +21327,15 @@
     "last_price_alert": ""
   },
   "kd_OdNZBGRNzk": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT LAMBORGHINI LB-SILHOUETTE WORKS MURCIELAGO GT EVO BLACK",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-lb-silhouette-works-murcielago-gt-evo-black?pid=OdNZBGRNzk",
     "first_seen": "2026-10-19T12:15:00",
-    "last_seen": "2026-10-19T12:15:00",
+    "last_seen": "2026-10-19T12:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-19T12:36:21",
     "last_price_alert": ""
   },
   "kd_m8pD9wzgv2": {
@@ -21363,7 +21363,7 @@
     "last_price_alert": ""
   },
   "kd_P7pRJ1Apjm": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "LAMBORGHINI REVUELTO VIOLA 30TH MATTE",
     "price": "₹1349",
     "source": "karzdolls",
@@ -21375,11 +21375,59 @@
     "last_price_alert": ""
   },
   "kd_0mNyyyvNkj": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT NISSAN LB-ER34 SUPER SILHOUETTE ATHLETE COLLET",
     "price": "₹1499",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-er34-super-silhouette-athlete-collet%C2%A0%C2%A0-?pid=0mNyyyvNkj",
+    "first_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_ywNWQG2pAX": {
+    "stock": "in_stock",
+    "name": "MINI GT TOYOTA SUPRA VEILSIDE COMBAT V-II COMBAT GREY",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-supra-veilside-combat-v-ii-combat-grey?pid=ywNWQG2pAX",
+    "first_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_OdNZWxJLzk": {
+    "stock": "in_stock",
+    "name": "MINI GT ASTON MARTIN DBS NO TIME TO DIE",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-no-time-to-die?pid=OdNZWxJLzk",
+    "first_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_RnLjnQDLm0": {
+    "stock": "in_stock",
+    "name": "MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE IMSA",
+    "price": "₹1489",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-lb-super-silhouette-imsa?pid=RnLjnQDLm0",
+    "first_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_Pqp2nBqp36": {
+    "stock": "in_stock",
+    "name": "RB VCARB 01 3 DANIEL RICCIARDO 2024 F1 2024 BAHRAIN GP",
+    "price": "₹1799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/rb-vcarb-01-3-daniel-ricciardo-2024-f1-2024-bahrain-gp?pid=Pqp2nBqp36",
     "first_seen": "2026-10-19T12:30:00",
     "last_seen": "2026-10-19T12:30:00",
     "alerted_new": true,
