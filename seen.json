@@ -3875,7 +3875,7 @@
     "fc_gid": "23076120"
   },
   "fc_23354596": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 71/250 Austin Mini Copper Toy Car - Red",
     "price": "₹161",
     "source": "firstcry",
@@ -3883,13 +3883,13 @@
     "first_seen": "2026-07-21T04:51:19",
     "last_seen": "2026-10-19T08:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T07:10:25",
+    "last_restock_alert": "2026-10-19T08:26:33",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T08:15:00",
     "fc_api_seen_at": "2026-10-19T08:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
@@ -14902,7 +14902,7 @@
     "fc_gid": "24476138"
   },
   "fc_24475737": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
     "price": "₹161",
     "source": "firstcry",
@@ -14916,7 +14916,7 @@
     "fc_listed_at": "2026-10-19T08:15:00",
     "fc_api_seen_at": "2026-10-19T08:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24473732"
   },
@@ -20549,7 +20549,7 @@
     "fc_listed_at": "2026-10-19T08:15:00",
     "fc_api_seen_at": "2026-10-19T08:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936"
   },
