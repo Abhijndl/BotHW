@@ -20741,7 +20741,7 @@
     "fc_gid": "24775936"
   },
   "fc_24776024": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250) Toy Car - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -20756,7 +20756,7 @@
     "fc_listed_at": "2026-10-19T05:45:00",
     "fc_api_seen_at": "2026-10-19T05:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936"
   },
