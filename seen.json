@@ -3992,7 +3992,7 @@
     "fc_gid": "23076120"
   },
   "fc_23345761": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 57/250 Rajin Express - Multicolour",
     "price": "₹161",
     "source": "firstcry",
@@ -4006,7 +4006,7 @@
     "fc_listed_at": "2026-10-19T10:45:00",
     "fc_api_seen_at": "2026-10-19T10:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345759"
   },
@@ -4083,7 +4083,7 @@
     "hm_verified_at": "2026-09-27T09:45:00"
   },
   "fc_23973355": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
     "price": "₹269",
     "source": "firstcry",
@@ -4097,7 +4097,7 @@
     "fc_listed_at": "2026-10-19T10:45:00",
     "fc_api_seen_at": "2026-10-19T10:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23973353"
   },
@@ -21285,7 +21285,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_22128538": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Track Dwagon Toy Car (184/250) - White & Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -21299,7 +21299,7 @@
     "fc_listed_at": "2026-10-19T10:45:00",
     "fc_api_seen_at": "2026-10-19T10:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22128538"
   }
