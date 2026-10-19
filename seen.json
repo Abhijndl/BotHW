@@ -4080,7 +4080,7 @@
     "hm_verified_at": "2026-09-27T09:45:00"
   },
   "fc_23973355": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
     "price": "₹269",
     "source": "firstcry",
@@ -4094,7 +4094,7 @@
     "fc_listed_at": "2026-10-19T08:00:00",
     "fc_api_seen_at": "2026-10-19T08:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353"
   },
@@ -6078,7 +6078,7 @@
     "fc_listed_at": "2026-10-18T11:15:00",
     "fc_api_seen_at": "2026-10-19T08:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "1"
   },
@@ -13860,7 +13860,7 @@
     "fc_listed_at": "2026-10-19T08:00:00",
     "fc_api_seen_at": "2026-10-19T08:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "1"
   },
@@ -16326,7 +16326,7 @@
     "fc_trusted": true
   },
   "fc_23973359": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
     "price": "₹269",
     "source": "firstcry",
@@ -16334,13 +16334,13 @@
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-19T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T04:45:49",
+    "last_restock_alert": "2026-10-19T08:02:15",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T07:30:00",
     "fc_api_seen_at": "2026-10-19T08:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23973353"
   },
@@ -16383,7 +16383,7 @@
     "fc_gid": "23973353"
   },
   "fc_23973353": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
     "price": "₹269",
     "source": "firstcry",
@@ -16397,7 +16397,7 @@
     "fc_listed_at": "2026-10-19T08:00:00",
     "fc_api_seen_at": "2026-10-19T08:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353"
   },
