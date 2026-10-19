@@ -3890,9 +3890,9 @@
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T12:30:00",
-    "fc_api_seen_at": "2026-10-19T19:00:00",
+    "fc_api_seen_at": "2026-10-19T19:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
