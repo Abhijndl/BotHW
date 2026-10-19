@@ -20703,15 +20703,15 @@
     "last_price_alert": ""
   },
   "kd_Pqp26e2p36": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE ADVAN",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-lb-super-silhouette-advan?pid=Pqp26e2p36",
     "first_seen": "2026-10-17T12:45:00",
-    "last_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:45:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-19T12:56:38",
     "last_price_alert": ""
   },
   "fc_24776080": {
