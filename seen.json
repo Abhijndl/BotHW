@@ -3535,7 +3535,7 @@
     "fc_api_seen_at": "2026-10-19T08:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23074178"
   },
   "fc_23074267": {
@@ -3579,7 +3579,7 @@
   "fc_23075644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Cadillac Celestiq (163/250) Die Cast Toy Car - Blue",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cadillac-celestiq-163-250-die-cast-toy-car-blue/23075644/product-detail",
     "first_seen": "2026-07-20T09:47:06",
@@ -3591,8 +3591,8 @@
     "fc_listed_at": "2026-10-19T08:30:00",
     "fc_api_seen_at": "2026-10-19T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
-    "fc_lst": "out",
+    "fc_live": "no delivery",
+    "fc_lst": "list",
     "fc_gid": "23074890"
   },
   "fc_23346007": {
@@ -3896,7 +3896,7 @@
   "fc_23074891": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 65 Mercury Cyclone (191/250) Die Cast Toy Car - Red",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-65-mercury-cyclone-191-250-die-cast-toy-car-red/23074891/product-detail",
     "first_seen": "2026-07-21T04:51:19",
@@ -3909,7 +3909,7 @@
     "fc_api_seen_at": "2026-10-19T08:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23074890"
   },
   "fc_23074178": {
@@ -5973,7 +5973,7 @@
   "fc_24246602": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mountain Mauler Die-Cast Free Wheel Toy Car (179/250)- Yellow & Green",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mountain-mauler-die-cast-free-wheel-toy-car-179-250-yellow-and-green/24246602/product-detail",
     "first_seen": "2026-08-12T15:02:43",
@@ -16341,7 +16341,7 @@
     "fc_api_seen_at": "2026-10-19T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "23973353"
   },
   "fc_23973357": {
@@ -17553,7 +17553,7 @@
   "fc_24503901": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Maxima Drift Car Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-maxima-drift-car-die-cast-free-wheel-toy-car-black/24503901/product-detail",
     "first_seen": "2026-09-21T16:25:21",
@@ -17563,8 +17563,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-19T08:00:00",
-    "fc_api_seen_at": "2026-10-19T08:00:00",
+    "fc_listed_at": "2026-10-19T08:30:00",
+    "fc_api_seen_at": "2026-10-19T08:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -19856,7 +19856,7 @@
   "fc_24768898": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '96 Dodge Viper GTS Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹166",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-96-dodge-viper-gts-die-cast-free-wheel-toy-car-black/24768898/product-detail",
     "first_seen": "2026-10-13T13:30:00",
