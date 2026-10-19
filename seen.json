@@ -20568,7 +20568,7 @@
     "fc_gid": "24775936"
   },
   "fc_24776061": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels NISSAN SKYLINE HT 2000GT-X (244/250) Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -20583,7 +20583,7 @@
     "fc_listed_at": "2026-10-17T11:30:00",
     "fc_api_seen_at": "2026-10-19T04:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24775936"
   },
