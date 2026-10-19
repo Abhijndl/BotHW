@@ -16994,7 +16994,7 @@
     "fc_gid": "24476138"
   },
   "fc_24473498": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Armored Batmobile Die-Cast Toy Car - Black",
     "price": "₹161",
     "source": "firstcry",
@@ -17008,7 +17008,7 @@
     "fc_listed_at": "2026-10-19T11:30:00",
     "fc_api_seen_at": "2026-10-19T11:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473477"
   },
