@@ -14470,7 +14470,7 @@
     "fc_listed_at": "2026-10-19T07:00:00",
     "fc_api_seen_at": "2026-10-19T10:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473477"
   },
@@ -17514,7 +17514,7 @@
     "fc_listed_at": "2026-10-19T08:30:00",
     "fc_api_seen_at": "2026-10-19T10:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178"
   },
