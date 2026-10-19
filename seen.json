@@ -3713,7 +3713,7 @@
     "hm_verified_at": "2026-10-17T11:15:00"
   },
   "fc_23345758": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 171/250 1983 Porsche 928S - Black",
     "price": "₹161",
     "source": "firstcry",
@@ -3728,7 +3728,7 @@
     "fc_listed_at": "2026-10-19T15:00:00",
     "fc_api_seen_at": "2026-10-19T15:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345424"
   },
