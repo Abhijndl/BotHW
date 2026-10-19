@@ -15279,7 +15279,7 @@
     "fc_listed_at": "2026-10-19T10:30:00",
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746"
   },
@@ -20562,7 +20562,7 @@
     "fc_gid": "24775936"
   },
   "fc_24776064": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
     "price": "₹179",
     "source": "firstcry",
@@ -20570,13 +20570,13 @@
     "first_seen": "2026-10-16T16:30:00",
     "last_seen": "2026-10-19T10:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-17T07:40:48",
+    "last_restock_alert": "2026-10-19T10:42:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T10:30:00",
     "fc_api_seen_at": "2026-10-19T10:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24775936"
   },
