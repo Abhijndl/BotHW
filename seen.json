@@ -13474,7 +13474,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-15T17:49:41.381906+00:00",
+    "mg_wm": "2026-10-19T10:08:57.727162+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -14470,7 +14470,7 @@
     "fc_listed_at": "2026-10-19T07:00:00",
     "fc_api_seen_at": "2026-10-19T10:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24473477"
   },
@@ -21268,5 +21268,19 @@
     "fc_live": "sold out",
     "fc_lst": "cat",
     "fc_gid": "21965848"
+  },
+  "mg_8ac7fed7-35f9-4376-89f0-cb91cfe8d6bc": {
+    "stock": "in_stock",
+    "name": "MGT1054 Nissan Silvia S15 LB-Super Silhouette",
+    "price": "₹1249",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/mgt1054-nissan-silvia-s15-lb-super-silhouette",
+    "first_seen": "2026-10-19T10:00:00",
+    "last_seen": "2026-10-19T10:00:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-10-19T10:08:57.727162+00:00",
+    "stock_ver": "mg_skus_v1"
   }
 }
