@@ -21493,5 +21493,17 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_jPp9E8JpDa": {
+    "stock": "in_stock",
+    "name": "MINI GT TOYOTA SUPRA A80 TOP SECRET GT300 TOP SECRET PURPLE",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-toyota-supra-a80-top-secret-gt300-top-secret-purple?pid=jPp9E8JpDa",
+    "first_seen": "2026-10-19T12:45:00",
+    "last_seen": "2026-10-19T12:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
