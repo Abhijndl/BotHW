@@ -15270,9 +15270,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T08:30:00",
-    "fc_api_seen_at": "2026-10-19T08:30:00",
+    "fc_api_seen_at": "2026-10-19T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24503746"
   },
@@ -16326,7 +16326,7 @@
     "fc_trusted": true
   },
   "fc_23973359": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
     "price": "₹269",
     "source": "firstcry",
@@ -16334,13 +16334,13 @@
     "first_seen": "2026-09-21T06:34:27",
     "last_seen": "2026-10-19T09:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T08:02:15",
+    "last_restock_alert": "2026-10-19T09:12:24",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T09:00:00",
     "fc_api_seen_at": "2026-10-19T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23973353"
   },
@@ -20588,7 +20588,7 @@
     "fc_listed_at": "2026-10-19T09:00:00",
     "fc_api_seen_at": "2026-10-19T09:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24775936"
   },
@@ -20761,7 +20761,7 @@
     "fc_listed_at": "2026-10-19T09:00:00",
     "fc_api_seen_at": "2026-10-19T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936"
   },
