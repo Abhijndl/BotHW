@@ -2816,7 +2816,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074885": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast Track Ripper (24/250) Toy Car - Grey/Orange",
     "price": "₹161",
     "source": "firstcry",
@@ -2830,7 +2830,7 @@
     "fc_listed_at": "2026-10-19T07:30:00",
     "fc_api_seen_at": "2026-10-19T07:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178"
   },
@@ -3886,11 +3886,11 @@
     "last_restock_alert": "2026-10-19T07:10:25",
     "last_price_alert": "2026-09-22T08:55:38",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-19T07:00:00",
-    "fc_api_seen_at": "2026-10-19T07:15:00",
+    "fc_listed_at": "2026-10-19T07:30:00",
+    "fc_api_seen_at": "2026-10-19T07:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23353372"
   },
   "fc_23074891": {
@@ -14883,7 +14883,7 @@
     "fc_gid": "24473732"
   },
   "fc_24476471": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
     "price": "₹161",
     "source": "firstcry",
@@ -14897,7 +14897,7 @@
     "fc_listed_at": "2026-10-19T07:30:00",
     "fc_api_seen_at": "2026-10-19T07:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24476138"
   },
@@ -16356,11 +16356,11 @@
     "last_restock_alert": "2026-10-19T07:15:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-19T06:15:00",
+    "fc_listed_at": "2026-10-19T07:30:00",
     "fc_api_seen_at": "2026-10-19T07:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23973353"
   },
   "fc_23973354": {
@@ -16394,11 +16394,11 @@
     "last_restock_alert": "2026-10-19T06:24:21",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-19T06:45:00",
-    "fc_api_seen_at": "2026-10-19T07:15:00",
+    "fc_listed_at": "2026-10-19T07:30:00",
+    "fc_api_seen_at": "2026-10-19T07:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23973353"
   },
   "fc_23832900": {
@@ -20491,7 +20491,7 @@
     "fc_api_seen_at": "2026-10-19T07:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24776095"
   },
   "fc_24775986": {
