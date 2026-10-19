@@ -14442,7 +14442,7 @@
     "fc_listed_at": "2026-10-19T07:00:00",
     "fc_api_seen_at": "2026-10-19T07:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24473477"
   },
@@ -14822,7 +14822,7 @@
     "fc_trusted": true
   },
   "fc_24473495": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ford Galaxie Die-Cast Toy Car - Blue",
     "price": "₹171",
     "source": "firstcry",
@@ -14836,7 +14836,7 @@
     "fc_listed_at": "2026-10-19T07:00:00",
     "fc_api_seen_at": "2026-10-19T07:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24473477"
   },
