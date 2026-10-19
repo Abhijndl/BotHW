@@ -21435,15 +21435,15 @@
     "last_price_alert": ""
   },
   "kd_JPNYD83gzO": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT LAMBORGHINI COUNTACH LB-WORKS BLACK",
     "price": "₹1299",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-countach-lb-works-black%C2%A0%C2%A0-?pid=JPNYD83gzO",
     "first_seen": "2026-10-19T12:30:00",
-    "last_seen": "2026-10-19T13:00:00",
+    "last_seen": "2026-10-19T13:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-19T13:22:41",
     "last_price_alert": ""
   },
   "kd_V2gJe61pe4": {
