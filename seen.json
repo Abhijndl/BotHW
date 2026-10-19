@@ -21433,5 +21433,29 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "kd_JPNYD83gzO": {
+    "stock": "in_stock",
+    "name": "MINI GT LAMBORGHINI COUNTACH LB-WORKS BLACK",
+    "price": "₹1299",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-countach-lb-works-black%C2%A0%C2%A0-?pid=JPNYD83gzO",
+    "first_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_V2gJe61pe4": {
+    "stock": "in_stock",
+    "name": "BMW 750IL SORRENTO BLUE METALLIC",
+    "price": "₹1349",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bmw-750il-sorrento-blue-metallic?pid=V2gJe61pe4",
+    "first_seen": "2026-10-19T12:30:00",
+    "last_seen": "2026-10-19T12:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
