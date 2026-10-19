@@ -121,7 +121,7 @@
     "fc_api_seen_at": "2026-09-21T06:46:09"
   },
   "fc_23074259": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast 41 Willys (153/250) Toy Car - Purple",
     "price": "₹175",
     "source": "firstcry",
@@ -135,7 +135,7 @@
     "fc_listed_at": "2026-10-19T03:15:00",
     "fc_api_seen_at": "2026-10-19T03:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178"
   },
