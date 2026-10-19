@@ -3652,7 +3652,7 @@
     "fc_trusted": true
   },
   "fc_23076122": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
     "price": "₹175",
     "source": "firstcry",
@@ -3666,7 +3666,7 @@
     "fc_listed_at": "2026-10-19T14:00:00",
     "fc_api_seen_at": "2026-10-19T14:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23076120"
   },
@@ -3897,7 +3897,7 @@
     "fc_gid": "23353372"
   },
   "fc_23074891": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 65 Mercury Cyclone (191/250) Die Cast Toy Car - Red",
     "price": "₹161",
     "source": "firstcry",
@@ -3911,7 +3911,7 @@
     "fc_listed_at": "2026-10-19T14:00:00",
     "fc_api_seen_at": "2026-10-19T14:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074890"
   },
@@ -12961,7 +12961,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-19T10:30:00",
-    "fc_api_seen_at": "2026-10-19T13:30:00",
+    "fc_api_seen_at": "2026-10-19T14:00:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -15135,7 +15135,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-16T21:30:00",
-    "fc_api_seen_at": "2026-10-19T13:30:00",
+    "fc_api_seen_at": "2026-10-19T14:00:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -17501,7 +17501,7 @@
     "fc_trusted": true
   },
   "fc_23074265": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Kick Sauber F1 Team/Equipe (154/250) Toy Car - Black",
     "price": "₹161",
     "source": "firstcry",
@@ -17515,7 +17515,7 @@
     "fc_listed_at": "2026-10-19T14:00:00",
     "fc_api_seen_at": "2026-10-19T14:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23074178"
   },
