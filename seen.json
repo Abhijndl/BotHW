@@ -3515,12 +3515,12 @@
     "fc_listed_at": "2026-10-17T11:30:00",
     "fc_api_seen_at": "2026-10-19T08:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178"
   },
   "fc_23074258": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Raijin Express (57/250) Toy Car - Black/Gold",
     "price": "₹161",
     "source": "firstcry",
@@ -3534,7 +3534,7 @@
     "fc_listed_at": "2026-10-19T08:15:00",
     "fc_api_seen_at": "2026-10-19T08:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23074178"
   },
