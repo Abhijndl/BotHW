@@ -20741,7 +20741,7 @@
     "fc_gid": "24775936"
   },
   "fc_24776024": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250) Toy Car - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -20756,7 +20756,7 @@
     "fc_listed_at": "2026-10-19T05:45:00",
     "fc_api_seen_at": "2026-10-19T05:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24775936"
   },
@@ -21205,5 +21205,17 @@
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_gid": "23029510"
+  },
+  "kd_BwL6P9xg4q": {
+    "stock": "in_stock",
+    "name": "PREORDER LAND ROVER DEFENDER 110 ROYAL HK POLICE TAI PO DISTRICT HK EXCLUSIVE [PRE-ORDER]",
+    "price": "₹1699",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-royal-hk-police-tai-po-district-hk-exclusive?pid=BwL6P9xg4q",
+    "first_seen": "2026-10-19T05:45:00",
+    "last_seen": "2026-10-19T05:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
