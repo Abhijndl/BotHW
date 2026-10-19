@@ -10189,7 +10189,7 @@
     "fc_gid": "22597523"
   },
   "fc_22435130": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Car Case Set of 4 Connectible Storage Display Box with Free Car-Orange",
     "price": "₹279",
     "source": "firstcry",
@@ -10203,7 +10203,7 @@
     "fc_listed_at": "2026-10-19T14:30:00",
     "fc_api_seen_at": "2026-10-19T14:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22435130"
   },
