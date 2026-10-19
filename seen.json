@@ -12940,7 +12940,7 @@
     "fc_gid": "19995087"
   },
   "fc_24473724": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
     "price": "₹161",
     "source": "firstcry",
@@ -12955,7 +12955,7 @@
     "fc_listed_at": "2026-10-19T06:15:00",
     "fc_api_seen_at": "2026-10-19T06:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511"
   },
@@ -15036,7 +15036,7 @@
     "fc_gid": "24476138"
   },
   "fc_24473509": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
     "price": "₹161",
     "source": "firstcry",
@@ -15050,7 +15050,7 @@
     "fc_listed_at": "2026-10-19T06:15:00",
     "fc_api_seen_at": "2026-10-19T06:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473477"
   },
