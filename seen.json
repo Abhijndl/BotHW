@@ -21285,7 +21285,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_22128538": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Track Dwagon Toy Car (184/250) - White & Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -21299,8 +21299,8 @@
     "fc_listed_at": "2026-10-19T11:00:00",
     "fc_api_seen_at": "2026-10-19T11:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "cat",
+    "fc_live": "sold out",
+    "fc_lst": "out",
     "fc_gid": "22128538"
   }
 }
