@@ -2709,7 +2709,7 @@
     "fc_gid": "23074890"
   },
   "fc_23354597": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
     "price": "₹161",
     "source": "firstcry",
@@ -2723,7 +2723,7 @@
     "fc_listed_at": "2026-10-19T12:45:00",
     "fc_api_seen_at": "2026-10-19T12:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
@@ -3652,7 +3652,7 @@
     "fc_trusted": true
   },
   "fc_23076122": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
     "price": "₹175",
     "source": "firstcry",
@@ -3666,7 +3666,7 @@
     "fc_listed_at": "2026-10-19T12:45:00",
     "fc_api_seen_at": "2026-10-19T12:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23076120"
   },
@@ -21495,7 +21495,7 @@
     "last_price_alert": ""
   },
   "kd_jPp9E8JpDa": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT TOYOTA SUPRA A80 TOP SECRET GT300 TOP SECRET PURPLE",
     "price": "₹1299",
     "source": "karzdolls",
