@@ -17493,7 +17493,7 @@
     "fc_trusted": true
   },
   "fc_23074265": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast Kick Sauber F1 Team/Equipe (154/250) Toy Car - Black",
     "price": "₹161",
     "source": "firstcry",
@@ -17501,13 +17501,13 @@
     "first_seen": "2026-09-21T11:12:04",
     "last_seen": "2026-10-19T08:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-19T08:05:51",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T08:00:00",
     "fc_api_seen_at": "2026-10-19T08:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23074178"
   },
