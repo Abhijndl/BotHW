@@ -12813,7 +12813,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24247510": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 83 Chevy Silverado Die-Cast Free Wheel Toy Car (42/250) - Pink",
     "price": "₹161",
     "source": "firstcry",
@@ -12827,7 +12827,7 @@
     "fc_listed_at": "2026-10-19T02:45:00",
     "fc_api_seen_at": "2026-10-19T02:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "1"
   },
