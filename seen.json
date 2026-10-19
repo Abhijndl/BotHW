@@ -3935,7 +3935,7 @@
     "fc_gid": "23074178"
   },
   "fc_23353374": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car - Brown",
     "price": "₹161",
     "source": "firstcry",
@@ -3949,7 +3949,7 @@
     "fc_listed_at": "2026-10-19T16:30:00",
     "fc_api_seen_at": "2026-10-19T16:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23353372"
   },
@@ -14447,7 +14447,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T15:15:00",
-    "fc_api_seen_at": "2026-10-19T15:45:00",
+    "fc_api_seen_at": "2026-10-19T16:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -15044,7 +15044,7 @@
     "fc_gid": "24476138"
   },
   "fc_24473509": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
     "price": "₹161",
     "source": "firstcry",
@@ -15052,13 +15052,13 @@
     "first_seen": "2026-09-19T22:41:12",
     "last_seen": "2026-10-19T16:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T15:09:42",
+    "last_restock_alert": "2026-10-19T16:40:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T15:45:00",
-    "fc_api_seen_at": "2026-10-19T15:45:00",
+    "fc_api_seen_at": "2026-10-19T16:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "cat",
     "fc_gid": "24473477"
   },
@@ -17007,7 +17007,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T14:15:00",
-    "fc_api_seen_at": "2026-10-19T15:45:00",
+    "fc_api_seen_at": "2026-10-19T16:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
