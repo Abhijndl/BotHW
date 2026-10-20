@@ -1,156 +1,124 @@
-seen.json copied: 831004 bytes
+seen.json copied: 831007 bytes
 
 ================ FORCED PASS: every store once ================
-  [FC-API] quick sweep: 187 in stock from 12 page(s) in 2.7s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [FC-API] quick sweep: 196 in stock from 12 page(s) in 2.5s — fresh ✓ (searchrank, 12 page(s) computed live)
   [FC-API] stock for pincode: 248001
-  [FC-API] 408 products across 21 page(s) (212 with zero stock) in 1.5s
+  [FC-API] 408 products across 21 page(s) (212 with zero stock) in 2.0s
   [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
   [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 404, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels X-Cceleron Die-Cast Toy Car - Grey | stock=in_stock count=2 price=175 mrp=179
-  [FC-LIVE] 38 to confirm, 4 🎯 set(s) read, 0 audited → 105 car(s) seen live in 5.2s; 0 now orderable, 0 not any more, 19 unconfirmed (page not read)
-[*] FirstCry total (API): 564 tracked, 127 buyable now (in-stock list complete), 0 aged to delisted
+  [FC-API] sample: Hot Wheels Maserati Die Cast Free Wheel Toy Car  | stock=in_stock count=4 price=173 mrp=179
+  [FC-LIVE] listing ['23348665', '24505759', '24473731', '23346007', '23074267', '24108016', '23351188', '24473474'] | delivery flips ['24776024', '24761908', '24476003', '24475755', '24473510', '24390958', '24248207', '24235312', '23345758', '21728779', '19995092', '19995087'] | re-reads []
+  [FC-LIVE] 39 to confirm, 4 🎯 set(s) read, 0 audited → 114 car(s) seen live in 4.7s; 1 now orderable, 0 not any more, 19 unconfirmed (page not read)
+[*] FirstCry total (API): 564 tracked, 128 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] forced pass (FirstCry + full catalogue): FirstCry → 564 products in 9.5s (live: FirstCry)
-FirstCry stock changes in the forced pass: 0
-forced pass took 9.5s
-verdicts stored: Counter({None: 211, 'sold out': 177, 'ok': 98, 'no delivery': 55, 'unconfirmed': 32, 'arriving': 12, 'last unit': 2})
+[*] forced pass (FirstCry + full catalogue): FirstCry → 564 products in 9.3s (live: FirstCry)
+FirstCry stock changes in the forced pass: 1
+    ('fc_24473723', 'out_of_stock', 'in_stock', 'Hot Wheels X-Cceleron Die-Cast Toy Car - Grey')
+forced pass took 9.3s
+verdicts stored: Counter({None: 211, 'sold out': 176, 'ok': 131, 'no delivery': 55, 'arriving': 12, 'last unit': 2})
 stats: {'pages': 14, 'tat': 32}
+   fc_24473723 out_of_stock -> in_stock | page CS 2 delivery 1 units-for-you 2 | verdict ok | Hot Wheels X-Cceleron Die-Cast Toy Car - Grey
 
 ================ DRY RUN of main() (alerts printed, not sent) ================
-  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 28 to confirm, 4 🎯 set(s) read, 0 audited → 179 car(s) seen live in 4.8s; 0 now orderable, 0 not any more, 1 unconfirmed (page not read)
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 166 products in 5.8s (live: FirstCry)
-  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 21 to confirm, 4 🎯 set(s) read, 0 audited → 134 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 130 products in 3.3s (live: FirstCry)
-  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.4s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 20 to confirm, 4 🎯 set(s) read, 0 audited → 162 car(s) seen live in 3.0s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 125 products in 4.5s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 20 to confirm, 4 🎯 set(s) read, 0 audited → 133 car(s) seen live in 2.6s; 1 now orderable, 0 not any more
-
------ TELEGRAM (dry run, not sent) -----
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car - Brown</b> ⚠️ only 3 left  ₹161 <s>₹179</s>
-https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-brown/23353374/product-detail?fresh=477082
-----------------------------------------
-
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car - Brown</b> ⚠️ only 3 left  ₹161 <s>₹179</s>
-https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-brown/23353374/product-detail?fresh=477082
-[*] pass 4: FirstCry → 131 products in 4.0s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 40s (0s:Fi=6s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=4s)
-main() took 40.3s; 1 message(s) would have been sent
-stats: {'pages': 37, 'tat': 109}
-verdicts after run 1: Counter({None: 211, 'sold out': 174, 'ok': 91, 'no delivery': 55, 'unconfirmed': 40, 'arriving': 14, 'last unit': 2})
-
-================ SECOND RUN (steady state) ================
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [HM] listing → 12 visible products
   [MG] 1 products had no SKU row — used product_type fallback
 [*] Minifygram total: 271 of 274 (36 in stock; 1 trading cards, 62 pre-orders)
 [=] Minifygram: no alert-worthy changes (0 minor)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
   [KD] boulevard-series → 0 (empty right now)
-  [KD] pop-culture → 4
-  [KD] car-culture → 1
   [KD] mainlines → 5
-  [KD] team-transport → 5
+  [KD] car-culture → 1
   [KD] fast-and-furious → 1
+  [KD] team-transport → 5
   [KD] card-art-premiums → 8
+  [KD] pop-culture → 4
+  [HM] creds: token=yes app_id=605884f889251331fe847d80
+  [FC-API] stock for pincode: 248001
   [KD] gift-pack → 21
   [KD] disney-cars → 0 (empty right now)
   [KD] character-cars → 8
-  [KD] kaido-house → 16
+  [HM] api → HTTP 401
   [KD] hot-wheels-accessories → 8
-  [KD] pre-order-minigt → 50
   [KD] mini-gt-blister-pack → 141
   [KD] mini-gt → 101
   [KD] pre-order-special-stock → 0 (empty right now)
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 74 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
+  [KD] pre-order-minigt → 50
+  [KD] kaido-house → 16
+  [FC-API] 408 products across 21 page(s) (212 with zero stock) in 2.0s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 404, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels Maserati Die Cast Free Wheel Toy Car  | stock=in_stock count=4 price=173 mrp=179
+  [FC-LIVE] listing ['23348665', '24505759', '24473731', '23346007', '23074267', '24108016', '23351188'] | delivery flips ['24248207', '24235312', '23345758', '21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449', '24247508'] | re-reads ['24776024', '24761908', '24476003', '24475755']
   [KD] chase-car → 0 (empty right now)
   [KD] special-stocks-64-43-scale → 0 (empty right now)
+  [HM] api → HTTP 401
   [KD] home → 0 new (27 already listed elsewhere)
 [*] Karz&Dolls total: 369 (369 in stock)
 [=] Karz&Dolls: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry, Minifygram, Karz&Dolls → 772 products in 3.6s (live: FirstCry, Karz&Dolls, Minifygram)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 101 car(s) seen live in 2.7s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 140 products in 3.8s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 68 car(s) seen live in 3.7s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 129 products in 5.0s (live: FirstCry)
+  [HM] api → HTTP 401
+  [HM] Fynd API returned nothing — falling back to page checks
+  [HM] sitemap → 28 hot-wheels product slugs
+  [HM] page-checked 12 products (0 in stock / 12 sold out)
+[*] Hamleys total: 64 (32 in stock)
+[=] Hamleys: no alert-worthy changes (0 minor)
+  [FC-LIVE] 23 to confirm, 4 🎯 set(s) read, 0 audited → 170 car(s) seen live in 4.0s; 0 now orderable, 0 not any more
+[*] FirstCry total (API): 564 tracked, 128 buyable now (in-stock list complete), 0 aged to delisted
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1 (+ full FirstCry catalogue): FirstCry, Minifygram, Hamleys, Karz&Dolls → 1268 products in 7.1s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
   [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 71 car(s) seen live in 2.4s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 135 products in 3.6s (live: FirstCry)
+  [FC-LIVE] listing ['23346007', '23074267', '24473731', '24473502', '23348665', '24505759', '24108016', '23351188'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 20 to confirm, 4 🎯 set(s) read, 0 audited → 137 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 151 products in 3.5s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 70 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 134 products in 3.3s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 71 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 135 products in 4.0s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi+Mi+Ka=4s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=4s)
-run 2 took 40.0s; 0 message(s) would have been sent; pages 24, delivery checks 67
-verdicts after run 2: Counter({None: 211, 'sold out': 174, 'ok': 81, 'no delivery': 55, 'unconfirmed': 50, 'arriving': 14, 'last unit': 2})
-   fc_21497090 in_stock unconfirmed | Hot Wheels Premium Collector Display Sets, 3 Cars & 1 Transp
-   fc_23074611 in_stock unconfirmed | Hot Wheels Tooned Purple Passion (148/250) Die Cast Free Whe
+[*] run finished: 4 pass(es) in 40s (0s:Fi+Mi+Ha+Ka=7s, 12s:Fi=4s, 24s:Fi=4s, 36s:Fi=4s)
+main() took 40.3s; 0 message(s) would have been sent
+stats: {'pages': 40, 'tat': 98}
+verdicts after run 1: Counter({None: 211, 'sold out': 174, 'ok': 131, 'no delivery': 55, 'arriving': 14, 'last unit': 2})
+
+================ SECOND RUN (steady state) ================
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 67 car(s) seen live in 1.8s; 0 now orderable, 0 not any more
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry → 134 products in 2.9s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 80 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 139 products in 3.8s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 74 car(s) seen live in 3.7s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 130 products in 4.9s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['23075645', '24248192', '23351681', '23354966', '23930405', '22597418', '23346404', '23351684'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 20 to confirm, 4 🎯 set(s) read, 0 audited → 124 car(s) seen live in 3.9s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 137 products in 5.5s (live: FirstCry)
+
+[*] run finished: 4 pass(es) in 42s (0s:Fi=3s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=6s)
+run 2 took 41.8s; 0 message(s) would have been sent; pages 32, delivery checks 62
+verdicts after run 2: Counter({None: 211, 'sold out': 174, 'ok': 130, 'no delivery': 55, 'arriving': 14, 'last unit': 3})
    fc_23346007 out_of_stock arriving | Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW 
    fc_23345758 out_of_stock arriving | Hot Wheels Die Cast Free Wheel 171/250 1983 Porsche 928S - B
-   fc_23074262 in_stock unconfirmed | Hot Wheels X-Steam (30/250) Die Cast Free Wheel Toy Car - Br
-   fc_23074890 in_stock unconfirmed | Hot Wheels Quick Chat (49/250) Die Cast Toy Car - White & Bl
-   fc_23345757 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel 168/250 Mailed It Toy car - R
-   fc_23345760 in_stock unconfirmed | Hot Wheels 128/250 Datsun 620 Die Cast Free Wheel Toy Car - 
-   fc_23351684 in_stock unconfirmed | Hot Wheels 158/250 Mach Speeder Die Cat Free Wheel Toy Car- 
-   fc_23348046 in_stock unconfirmed | Hot Wheels 170/250 64 Lincoln Continental Die Cat Free Wheel
-   fc_23346403 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel 145/250 EL Segundo Rallye - B
-   fc_23346404 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel 166/250 Twin Tags - Pink
-   fc_23354966 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Ca
-   fc_23351189 in_stock unconfirmed | Hot Wheels 55/250 Dessert Drifter/ Gelee De Derapage Die Cat
-   fc_23351681 in_stock unconfirmed | Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free 
+   fc_23354966 in_stock last unit | Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Ca
    fc_24248207 out_of_stock arriving | Hot Wheels Die Cast Toy Car (175/250) Audi Avant RS2 94 with
-   fc_24248195 in_stock unconfirmed | Hot Wheels Die Cast Toy Car (215/250) LIL MAD Free Wheel Mod
    fc_24247508 out_of_stock last unit | Hot Wheels Die Cast Haulerback Toy Car (33/250) With Free Wh
-   fc_23353035 in_stock unconfirmed | Hot Wheels 35/250 Wattzup Die Cat Free Wheel Toy Car- Yellow
-   fc_23930405 in_stock unconfirmed | Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smoo
-   fc_23074619 in_stock unconfirmed | Hot Wheels Free Wheel Die Cast High-Tail Chaser (47/250) Toy
-   fc_23074883 in_stock unconfirmed | Hot Wheels Free Wheel Die Cast Tooned Volswagen golf MK1 (17
-   fc_23346006 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink
-   fc_24473712 in_stock unconfirmed | Hot Wheels Salt Streaker Die-Cast Toy Car - Blue Orange
-   fc_24473513 in_stock unconfirmed | Hot Wheels Voltage Spike Die-Cast Toy Car -Orange & Yellow
-   fc_24473512 in_stock unconfirmed | Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
-   fc_24473515 in_stock unconfirmed | Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow
    fc_24473713 out_of_stock arriving | Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown
    fc_24473511 out_of_stock arriving | Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple
-   fc_24475217 in_stock unconfirmed | Hot Wheels Polestar Die cast Toy car 84/250 -White & Black
-   fc_24473478 in_stock unconfirmed | Hot Wheels Donut Drifter Die-Cast Toy Car - Brown
-   fc_24475139 in_stock unconfirmed | Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple
-   fc_24473514 in_stock unconfirmed | Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White
-   fc_23355053 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Br
-   fc_23930428 in_stock unconfirmed | Hot Wheels Street Beasts Die Cast Free Wheel Toy Car With Sm
-   fc_24475499 in_stock unconfirmed | Hot Wheels Die-Cast Vehicle Surf and Turf Blue 240/250 - Blu
-   fc_24473503 in_stock unconfirmed | Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange
    fc_24476003 out_of_stock arriving | Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic gre
    fc_24475737 out_of_stock arriving | Hot Wheels 24/Seven Die cast car 38/250 - Blue
    fc_24475755 out_of_stock arriving | Hot Wheels Datsun 240Z Die cast car 72/250 - Green
-   fc_23074612 in_stock unconfirmed | Hot Wheels Free Wheel Die Cast VW ID Buzz Bomb (86/250) Toy 
-   fc_23835983 in_stock unconfirmed | Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derb
-   fc_23835986 in_stock unconfirmed | Hot Wheels Die Cast Free Wheel Free Style Dem Derby Monster 
-   fc_23835985 in_stock unconfirmed | Hot Wheels Mutant Tiger Shark Die Cast Free Wheel Free Style
-   fc_23835980 in_stock unconfirmed | Hot Wheels Mood Crusher Die Cast Free Wheel Free Style Dem D
-   fc_23835984 in_stock unconfirmed | Hot Wheels Wreckin Wolf Die Cast Free Wheel Free Style Dem D
    fc_24390958 out_of_stock arriving | Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT To
-   fc_24247515 in_stock unconfirmed | Hot Wheels Lil Roar Die-Cast Free Wheel Toy Car (194/250) - 
    fc_23074265 out_of_stock arriving | Hot Wheels Free Wheel Die Cast Kick Sauber F1 Team/Equipe (1
-   fc_24248194 in_stock unconfirmed | Hot Wheels Chop N Bloc Die-Cast Free Wheel Toy Car (182/250)
    fc_24473510 out_of_stock arriving | Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #6
    fc_24235312 out_of_stock last unit | Hot Wheels 98 Honda Prelude Toy Car with Color Die-Cast Mode
-   fc_24761909 in_stock unconfirmed | Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue &
-   fc_24762188 in_stock unconfirmed | Hot Wheels Gone Mad Die Cast Free Wheel Toy Car - Green
-   fc_24762186 in_stock unconfirmed | Hot Wheels Mid Mill Die Cast Free Wheel Toy Car - Black & Or
-   fc_24761947 in_stock unconfirmed | Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue
    fc_24762155 out_of_stock arriving | Hot Wheels '88 Mitsubishi Starion Die Cast Free Wheel Toy Ca
    fc_24761908 out_of_stock arriving | Hot Wheels Nissan Skyline 2000 GT-R Die Cast Free Wheel Toy 
-   fc_24776435 in_stock unconfirmed | Hot Wheels Scremliner (141/250) Die Cast Toy Car - Blue
-   fc_24775986 in_stock unconfirmed | Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon
    fc_24776024 out_of_stock arriving | Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250) Toy Car - Gr
-   fc_24776089 in_stock unconfirmed | Hot Wheels Time shifter (109/250) Toy Car - Yellow
-   fc_24776079 in_stock unconfirmed | Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & Whit
-   fc_24776078 in_stock unconfirmed | Hot Wheels Birthday Burner (82/250) Toy Car - Red
-   fc_24776077 in_stock unconfirmed | Hot Wheels Custom / Personnalise 2020 Honda e (115/250) Toy 
-   fc_24776076 in_stock unconfirmed | Hot Wheels Custom/Personnalise 72 Chevy Luv (127/250) Die-Ca
