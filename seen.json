@@ -1,6 +1,6 @@
 {
   "fc_20257824": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Multicolor",
     "price": "₹267",
     "source": "firstcry",
@@ -14,7 +14,7 @@
     "fc_listed_at": "2026-10-20T05:45:00",
     "fc_api_seen_at": "2026-10-20T05:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "20257824"
   },
