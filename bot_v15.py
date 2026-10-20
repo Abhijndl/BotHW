@@ -1407,6 +1407,7 @@ FC_LIVE_NEAR_RECHECK = max(1, int(os.getenv("FC_LIVE_NEAR_RECHECK_MIN", "1")))
 _FC_RUN_PASS = [0]          # live checks done in this run (the first one sweeps every car)
 FC_LIVE_DEBUG = os.getenv("FC_LIVE_DEBUG", "").lower() in ("1", "true", "yes")
 _FC_LIVE: dict = {}         # pid -> {"cs","svc","pn","mrp","dis","gid","members","at_page","at_svc"}
+_FC_PAGE_TRIED: dict = {}   # pid -> when its product page (or its set's) was last asked for
 _FC_LIVE_PAUSE = [0.0]      # epoch until which product pages are left alone (429/403)
 _FC_TAT_PAUSE = [0.0]       # epoch until which the delivery check is left alone
 _FC_LIVE_STATS = {"pages": 0, "tat": 0}
@@ -1617,30 +1618,44 @@ def fc_delivery_count(pids, pincode: str | None = None) -> dict:
     return out
 
 
-def fc_live_check(pids, max_pages: int | None = None) -> dict:
+def fc_live_check(pids, max_pages: int | None = None, gids: dict | None = None) -> dict:
     """Live state of these cars — {car: info with "cs" (units on its product
     page) and "svc" (delivery check)} — for every car whose page was read in the
     last minute, plus every other car of those colour sets. One page per set;
-    then one delivery check for every car with units."""
+    then one delivery check for every car with units. `gids` (car → colour set
+    stored from an earlier run) lets cars of one set share a page read before
+    this run has read any page."""
     max_pages = FC_LIVE_MAX if max_pages is None else max_pages
     now = time.time()
     deadline = now + FC_LIVE_BUDGET
     pids = [str(p) for p in dict.fromkeys(pids) if str(p).isdigit()]
     fresh = lambda p: now - (_FC_LIVE.get(p) or {}).get("at_page", 0) <= 60
-    todo, covered = [], set()
+    todo, covered, sets_ = [], set(), set()
     for p in pids:
-        if fresh(p) or p in covered:
+        g = (gids or {}).get(p)
+        if fresh(p) or p in covered or (g and g in sets_):
             continue
         todo.append(p)
         covered.add(p)
         covered.update((_FC_LIVE.get(p) or {}).get("members") or [])
+        if g:
+            sets_.add(g)
     todo = todo[:max_pages]
+
+    def tried(ps):
+        with _FC_LIVE_LOCK:
+            for p in ps:
+                for m in [p] + list((_FC_LIVE.get(p) or {}).get("members") or []):
+                    _FC_PAGE_TRIED[m] = now
+
     if todo:
+        tried(todo)
         with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
             list(ex.map(fc_page, todo))
         # set membership we remembered was wrong → that car's own page
         again = [p for p in pids if not fresh(p) and p not in todo][:max(0, max_pages - len(todo))]
         if again and time.time() < deadline:
+            tried(again)
             with ThreadPoolExecutor(max_workers=min(8, len(again))) as ex:
                 list(ex.map(fc_page, again))
     sets = set()
@@ -1774,12 +1789,15 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         # — a Babyhug RC car — turn up in the sets of Hot Wheels pages)
         return p in word or bool(_FC_HW_NAME.search(nm))
 
-    cands, held = [], {}
+    cands, held, recheck = [], {}, set()
     # (stored entries for track sets etc. from before they were excluded never
     # reach an alert, so they must not use up page reads either)
     pool = {p for p in set(by) | {p for p, v in prev_fc.items() if v.get("stock") == "in_stock"}
             if wanted(p)}
-    for p in sorted(pool, key=lambda p: (by.get(p) or {}).get("stock") != "in_stock"):
+    # cars the listing calls in stock first, 🎯 cars first, newest first: when a
+    # wave is bigger than one pass's page reads, those are read first
+    for p in sorted(pool, key=lambda p: ((by.get(p) or {}).get("stock") != "in_stock",
+                                         not _fc_target(p, by.get(p) or prev_fc.get(p) or {}), -int(p))):
         v = prev_fc.get(p) or {}
         c = claim(p)
         if c is None or (c != "out") == (v.get("stock") == "in_stock"):
@@ -1787,10 +1805,12 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         # The listing disagrees with what we hold. A disagreement we already
         # checked (same listing word as at the last page read) is re-read every
         # FC_LIVE_RECHECK minutes; anything new is read now.
-        if v.get("fc_live") and v.get("fc_lst") == c and (slot + int(p)) % FC_LIVE_RECHECK:
-            held[p] = v.get("stock") or "out_of_stock"
-        else:
-            cands.append(p)
+        if v.get("fc_live") and v.get("fc_lst") == c:
+            if (slot + int(p)) % FC_LIVE_RECHECK:
+                held[p] = v.get("stock") or "out_of_stock"
+                continue
+            recheck.add(p)                        # read before: news goes first
+        cands.append(p)
 
     # The delivery check's 0/1 is cheap (40 cars a call) and moves the moment
     # units for your pincode appear or go. Every pass it covers the cars we hold
@@ -1824,14 +1844,42 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                                     else FC_LIVE_RECHECK) == 0:
                 due.append(p)                     # known to sit at the edge: re-read now and then
     # changes first (🎯 cars first); routine re-reads only a few per pass, so
-    # they can't crowd out a real change
+    # they can't crowd out a real change — and they take turns (🎯 cars get
+    # half the slots), or the same few would take every slot while a car
+    # further down the list waits for the listing (dry run 20 Oct: 4 of 12
+    # 'arriving' cars were re-read every pass, the other 8 never)
+    n_due = FC_LIVE_AUDIT + 1
+    if len(due) > n_due:
+        rn = os.getenv("GITHUB_RUN_NUMBER", "")
+        pos = (int(rn) if rn.isdigit() else slot) * 4 + _FC_RUN_PASS[0] - 1
+        mine = [p for p in due if _fc_target(p, prev_fc.get(p) or {})]
+        rest = [p for p in due if p not in set(mine)]
+        n_m = min(len(mine), (n_due + 1) // 2 if rest else n_due)
+        n_r = min(len(rest), n_due - n_m)
+        n_m = min(len(mine), n_due - n_r)
+        pick = []
+        for pool_, n in ((mine, n_m), (rest, n_r)):
+            if pool_ and n:
+                start = (pos * n) % len(pool_)
+                pick += [pool_[(start + i) % len(pool_)] for i in range(n)]
+        due = list(dict.fromkeys(pick))
     if FC_LIVE_DEBUG:
-        print(f"  [FC-LIVE] listing {cands[:12]} | delivery flips {flips[:12]} | re-reads {due[:FC_LIVE_AUDIT + 1]}")
-    cands += flips + due[:FC_LIVE_AUDIT + 1]
+        print(f"  [FC-LIVE] listing {cands[:12]} | delivery flips {flips[:12]} | re-reads {due[:n_due]}")
+    # Reading order when there are more changes than one pass reads: a possible
+    # restock first (the listing or the delivery check turning yes for a car we
+    # hold sold out), 🎯 cars first, newest first; then cars that may have gone;
+    # then the routine re-reads. A 🎯 car the delivery check just turned yes for
+    # — how the SF90 would have been caught — must not wait behind a wave of
+    # listing changes.
+    firsts = sorted(dict.fromkeys(cands + flips),
+                    key=lambda p: ((prev_fc.get(p) or {}).get("stock") == "in_stock", p in recheck,
+                                   not _fc_target(p, by.get(p) or prev_fc.get(p) or {}), -int(p)))
+    cands = firsts + [p for p in due[:n_due] if p not in firsts]
 
     poll = _fc_poll_sets(prev_fc, FC_LIVE_POLL, _FC_RUN_PASS[0] - 1)
     order = list(dict.fromkeys(cands + poll))
-    live = fc_live_check(order) if order else {}
+    gids = {p: (prev_fc.get(p) or {}).get("fc_gid") for p in order if (prev_fc.get(p) or {}).get("fc_gid")}
+    live = fc_live_check(order, gids=gids) if order else {}
     # in-stock cars never confirmed on a page (e.g. from before v14): a few sets a pass
     audit = [p for p in sorted(hold_in, key=int, reverse=True)
              if not (prev_fc.get(p) or {}).get("fc_live") and p not in live and p not in cands]
@@ -1840,16 +1888,37 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     order += [p for p in audit if p in live]
 
     fc_max = max([int(p) for p in prev_fc if p.isdigit()] or [0])
-    out = list(recs)
-    n_up = n_down = n_new = n_fail = 0
+    n_up = n_down = n_new = n_fail = n_wait = 0
     for p, r in list(by.items()):
         if p in held:
             r["stock"] = held[p]
             if held[p] != "in_stock":
                 r["stock_count"] = None
+    later = set()
     for p in cands:
-        if p not in live:
-            n_fail += 1                            # page not read: the listing's word stands
+        if p in live:
+            continue
+        if _FC_PAGE_TRIED.get(p, 0) >= t0 or _FC_LIVE_PAUSE[0] > time.time():
+            n_fail += 1                            # its page couldn't be read: the listing's word stands
+            continue
+        # not read this pass only because other cars came first (a wave bigger
+        # than one pass's page reads): the listing's word waits for the page,
+        # next pass — a car announced unread can turn out not orderable at all
+        n_wait += 1
+        r, v = by.get(p), prev_fc.get(p)
+        if r is None:
+            continue
+        if v and v.get("stock"):
+            r["stock"] = v["stock"]
+            if v["stock"] != "in_stock":
+                r["stock_count"] = None
+        elif not v and prev_fc and int(p) > fc_max:
+            # a brand-new listing: announced once its page is read. (Older ids
+            # new to us keep the listing's word, so a coverage burst still
+            # arrives in one piece for the burst guard; the first run records
+            # everything as is.)
+            later.add(p)
+    out = [r for r in recs if r["id"][3:] not in later]
     for p, info in live.items():
         verdict = _fc_live_verdict(info, on_list=p in listed_in)
         if verdict is None:
@@ -1858,6 +1927,12 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         r = by.get(p)
         if (r is None or r.get("fc_carried")) and v is not None and not wanted(p):
             continue
+        if (verdict == "sold out" and v and v.get("fc_live") == "arriving"
+                and info.get("svc") == 1 and info.get("isv") is None):
+            # read as part of another car's set, not counted this pass: the page
+            # still sells none, and its last count (units on their way) stands —
+            # calling it 'sold out' would drop it from the re-reads
+            verdict = "arriving"
         before = (v or {}).get("stock")
         if verdict == "ok":
             st = "in_stock"
@@ -1936,13 +2011,14 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         r["fc_api_seen_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
         n_up += before != "in_stock" and st == "in_stock"
         n_down += before == "in_stock" and st != "in_stock"
-    if order or n_fail:
+    if order or n_fail or n_wait:
         print(f"  [FC-LIVE] {len(cands)} to confirm, {len(poll)} 🎯 set(s) read, "
               f"{sum(1 for p in audit if p in live)} audited → "
               f"{len(live)} car(s) seen live in {time.time() - t0:.1f}s; "
               f"{n_up} now orderable, {n_down} not any more"
               + (f", {n_new} newly tracked" if n_new else "")
-              + (f", {n_fail} unconfirmed (page not read)" if n_fail else ""))
+              + (f", {n_fail} unconfirmed (page not read)" if n_fail else "")
+              + (f", {n_wait} waiting for their page" if n_wait else ""))
     return out
 
 
