@@ -10011,7 +10011,7 @@
     "fc_gid": "22912945"
   },
   "fc_23700380": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels LGNDS Die Cast Free Wheel Toy Car Pack of 6 - Multicolor",
     "price": "₹1399",
     "source": "firstcry",
@@ -10025,7 +10025,7 @@
     "fc_listed_at": "2026-10-20T06:15:00",
     "fc_api_seen_at": "2026-10-20T06:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23700380"
   },
@@ -20912,7 +20912,7 @@
     "fc_listed_at": "2026-10-20T06:15:00",
     "fc_api_seen_at": "2026-10-20T06:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24775936"
   },
