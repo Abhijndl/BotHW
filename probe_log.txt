@@ -1,73 +1,69 @@
-seen.json copied: 790139 bytes
+============== A. full answers ==============
 
-================ FORCED PASS: every store once ================
-  [FC-API] quick sweep: 183 in stock from 12 page(s) in 2.2s — fresh ✓ (searchrank, 12 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 404 products across 21 page(s) (221 with zero stock) in 2.2s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 400, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Free Wheel Die Cast El Segundo Rallye | stock=out_of_stock count=0 price=179 mrp=None
-  [FC-LIVE] 24 to confirm, 4 🎯 set(s) read, 6 audited → 21 car(s) seen live in 4.2s; 0 now orderable, 0 not any more, 12 unconfirmed (page not read)
-[*] FirstCry total (API): 558 tracked, 119 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] forced pass (FirstCry + full catalogue): FirstCry → 558 products in 8.7s (live: FirstCry)
-FirstCry stock changes in the forced pass: 0
-forced pass took 8.7s
-verdicts stored: Counter({None: 572, 'ok': 6, 'sold out': 2, 'no delivery': 1})
-stats: {'pages': 17, 'tat': 5}
++   1s SF90 23075648: page lists 12 cars; this car: {"pn": "Hot Wheels Ferrari SF90 Stradale (41/250) Die Cast Toy Car - Black", "CS": 155, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "23074890", "mrp": 179, "Dis": 10, "ispreorder": "0"}
+   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 155, "PinC": 0, "MRP": 179, "Dis": 10, "BID": 113, "PgID": "23074890"}
+   set CS: {'23075647': 0, '23075651': 83, '23074890': 95, '23075650': 0, '23075649': 44, '23075645': 0, '23076117': 0, '23076119': 0, '23075648': 155, '23075644': 0, '23074891': 0, '23075652': 0}
+   delivery check (bot-style) 322ms: this car=1 set={'23074890': 1, '23074891': 0, '23075644': 0, '23075645': 1, '23075647': 0, '23075648': 1, '23075649': 0, '23075650': 0, '23075651': 0, '23075652': 0, '23076117': 0, '23076119': 0}
+   delivery check (page-style) 309ms: this car=1 set={'23074890': 1, '23074891': 0, '23075644': 0, '23075645': 1, '23075647': 0, '23075648': 1, '23075649': 0, '23075650': 0, '23075651': 0, '23075652': 0, '23076117': 0, '23076119': 0}
+   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "11-20", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Wednesday, 21st Oct 2026", "SDDDate": "", "NDDLeftTime": "07-39", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23075648, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
+   pincode 248002: this car=1 IsServicable=1 TAT=3-4
+   pincode 248006: this car=1 IsServicable=1 TAT=3-4
+   pincode 248007: this car=1 IsServicable=1 TAT=4-5
+   pincode 248171: this car=1 IsServicable=1 TAT=2-3
+   pincode 249201: this car=1 IsServicable=1 TAT=4-5
+   pincode 110001: this car=1 IsServicable=1 TAT=2-3
+   pincode 560001: this car=1 IsServicable=1 TAT=5-6
 
-================ DRY RUN of main() (alerts printed, not sent) ================
-  [MG] 1 products had no SKU row — used product_type fallback
-[*] Minifygram total: 270 of 273 (36 in stock; 1 trading cards, 62 pre-orders)
-[=] Minifygram: no alert-worthy changes (0 minor)
-  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [KD] card-art-premiums → 8
-  [KD] pop-culture → 4
-  [KD] car-culture → 1
-  [KD] boulevard-series → 0 (empty right now)
-  [KD] gift-pack → 22
-  [KD] mainlines → 5
-  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
-  [KD] team-transport → 5
-  [KD] character-cars → 8
-  [KD] kaido-house → 16
-  [KD] disney-cars → 0 (empty right now)
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] hot-wheels-accessories → 8
-  [KD] pre-order-minigt → 65
-  [KD] mini-gt → 107
-  [KD] mini-gt-blister-pack → 126
-  [KD] chase-car → 0 (empty right now)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-  [KD] home → 0 new (25 already listed elsewhere)
-[*] Karz&Dolls total: 375 (375 in stock)
-[=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 4 audited → 58 car(s) seen live in 4.6s; 2 now orderable, 3 not any more, 2 unconfirmed (page not read)
++   5s Impala 23074613: page lists 27 cars; this car: {"pn": "Hot Wheels Free Wheel Die Cast 59 Chevy Impala (44/250) Toy Car - White/Green", "CS": 23, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "23074178", "mrp": 179, "Dis": 8, "ispreorder": "0"}
+   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 23, "PinC": 0, "MRP": 179, "Dis": 8, "BID": 113, "PgID": "23074178"}
+   set CS: {'23074883': 117, '23074615': 35, '23074882': 59, '23074884': 57, '23074263': 0, '23074611': 86, '23074614': 13, '23074259': 25, '23074617': 0, '23074267': 2, '23074266': 17, '23074612': 305, '23074260': 0, '23074261': 0, '23074888': 0, '23074885': 1, '23074619': 189, '23074618': 0, '23074887': 0, '23074262': 38, '23074265': 0, '23074886': 6, '23074613': 23, '23074610': 4, '23074258': 0, '23074616': 0, '23074178': 27}
+   delivery check (bot-style) 322ms: this car=1 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
+   delivery check (page-style) 309ms: this car=1 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
+   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "11-21", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Wednesday, 21st Oct 2026", "SDDDate": "", "NDDLeftTime": "07-38", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23074613, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
+   pincode 248002: this car=1 IsServicable=1 TAT=3-4
+   pincode 248006: this car=1 IsServicable=1 TAT=3-4
+   pincode 248007: this car=1 IsServicable=1 TAT=4-5
+   pincode 248171: this car=1 IsServicable=1 TAT=2-3
+   pincode 249201: this car=1 IsServicable=1 TAT=4-5
+   pincode 110001: this car=1 IsServicable=1 TAT=2-3
+   pincode 560001: this car=1 IsServicable=1 TAT=5-6
 
------ TELEGRAM (dry run, not sent) -----
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor</b> 📦 289 left  ₹809
-https://www.firstcry.com/hot-wheels/hot-wheels-safari-mode-die-cast-free-wheel-toy-car-with-smooth-rolling-wheel-pack-of-5-multicolor/23930405/product-detail?fresh=328219
-  [🛒FC] <b>Hot Wheels Diecast Toy Car Trophy Case Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor</b> 📦 62 left  ₹782
-https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-trophy-case-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/24505759/product-detail?fresh=328219
-----------------------------------------
++   9s RoadRunner 24473731: page lists 12 cars; this car: {"pn": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange", "CS": 2, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "24473511", "mrp": 179, "Dis": 3, "ispreorder": "0"}
+   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 2, "PinC": 0, "MRP": 179, "Dis": 3, "BID": 113, "PgID": "24473511"}
+   set CS: {'24473510': 0, '24473511': 0, '24473713': 0, '24473723': 0, '24473724': 0, '24473731': 2, '24473516': 7, '24473512': 51, '24473514': 141, '24473515': 164, '24473513': 175, '24473712': 256}
+   delivery check (bot-style) 321ms: this car=0 set={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 1, '24473712': 1, '24473713': 0, '24473723': 1, '24473724': 0, '24473731': 0}
+   delivery check (page-style) 779ms: this car=0 set={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 1, '24473712': 1, '24473713': 0, '24473723': 1, '24473724': 0, '24473731': 0}
+   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "11-21", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473731, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
+   pincode 248002: this car=0 IsServicable=0 TAT=12-15
+   pincode 248006: this car=0 IsServicable=0 TAT=12-15
+   pincode 248007: this car=0 IsServicable=0 TAT=12-15
+   pincode 248171: this car=0 IsServicable=0 TAT=12-15
+   pincode 249201: this car=0 IsServicable=0 TAT=12-15
+   pincode 110001: this car=0 IsServicable=0 TAT=12-15
+   pincode 560001: this car=0 IsServicable=0 TAT=12-15
 
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor</b> 📦 289 left  ₹809
-https://www.firstcry.com/hot-wheels/hot-wheels-safari-mode-die-cast-free-wheel-toy-car-with-smooth-rolling-wheel-pack-of-5-multicolor/23930405/product-detail?fresh=328219
-  [🛒FC] <b>Hot Wheels Diecast Toy Car Trophy Case Free Wheel Model with Smooth Rolling Wheels Pack of 5 - Multicolor</b> 📦 62 left  ₹782
-https://www.firstcry.com/hot-wheels/hot-wheels-diecast-toy-car-trophy-case-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/24505759/product-detail?fresh=328219
-[*] pass 1: FirstCry, Minifygram, Karz&Dolls → 788 products in 5.7s (live: FirstCry, Karz&Dolls, Minifygram)
-  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 4 audited → 108 car(s) seen live in 2.8s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
-[*] pass 2: FirstCry → 140 products in 3.9s (live: FirstCry)
-  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 6 audited → 60 car(s) seen live in 1.9s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
-[*] pass 3: FirstCry → 118 products in 2.9s (live: FirstCry)
-  [FC-API] quick sweep: 183 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 3 audited → 62 car(s) seen live in 2.2s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
-[*] pass 4: FirstCry → 127 products in 3.2s (live: FirstCry)
++  14s LaLiebre 23074267: page lists 27 cars; this car: {"pn": "Hot Wheels Free Wheel Die Cast LA Liebre (31/250) Toy Car - White", "CS": 2, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "23074178", "mrp": 179, "Dis": 8, "ispreorder": "0"}
+   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 2, "PinC": 0, "MRP": 179, "Dis": 8, "BID": 113, "PgID": "23074178"}
+   set CS: {'23074883': 117, '23074615': 35, '23074882': 59, '23074884': 57, '23074263': 0, '23074611': 86, '23074614': 13, '23074259': 25, '23074617': 0, '23074267': 2, '23074266': 17, '23074612': 305, '23074260': 0, '23074261': 0, '23074888': 0, '23074885': 1, '23074619': 189, '23074618': 0, '23074887': 0, '23074262': 38, '23074265': 0, '23074886': 6, '23074613': 23, '23074610': 4, '23074258': 0, '23074616': 0, '23074178': 27}
+   delivery check (bot-style) 324ms: this car=0 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
+   delivery check (page-style) 306ms: this car=0 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
+   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "6", "IsTnB": false, "ServerTime": "11-21", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23074267, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
+   pincode 248002: this car=0 IsServicable=1 TAT=12-15
+   pincode 248006: this car=0 IsServicable=1 TAT=12-15
+   pincode 248007: this car=0 IsServicable=0 TAT=12-15
+   pincode 248171: this car=0 IsServicable=1 TAT=12-15
+   pincode 249201: this car=0 IsServicable=0 TAT=12-15
+   pincode 110001: this car=0 IsServicable=1 TAT=12-15
+   pincode 560001: this car=0 IsServicable=1 TAT=12-15
 
-[*] run finished: 4 pass(es) in 40s
-main() took 39.6s; 1 message(s) would have been sent
-stats: {'pages': 55, 'tat': 24}
+============== B. time series ==============
++  18s SF90       start {'CS': 155, 'svc_bot': 1, 'svc_page': 1, 'IsServicable': 1}
++  18s Impala     start {'CS': 23, 'svc_bot': 1, 'svc_page': 1, 'IsServicable': 1}
++  18s RoadRunner start {'CS': 2, 'svc_bot': 0, 'svc_page': 0, 'IsServicable': 0}
++  18s LaLiebre   start {'CS': 2, 'svc_bot': 0, 'svc_page': 0, 'IsServicable': 1}
++ 308s SF90       svc_bot:1->0 svc_page:1->0 IsServicable:1->0
++ 308s Impala     svc_bot:1->0 svc_page:1->0
++ 319s LaLiebre   IsServicable:1->0
+
++ 387s 37 rounds; changes: {('SF90', 'svc_bot'): 1, ('SF90', 'svc_page'): 1, ('SF90', 'IsServicable'): 1, ('Impala', 'svc_bot'): 1, ('Impala', 'svc_page'): 1, ('LaLiebre', 'IsServicable'): 1}
+done in 387s
