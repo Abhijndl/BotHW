@@ -17564,19 +17564,18 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-toyota-land-cruiser-toy-car-blue/24525284/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-20T22:30:00",
+    "last_seen": "2026-10-20T22:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-20T22:30:00",
-    "fc_api_seen_at": "2026-10-20T22:30:00",
+    "fc_api_seen_at": "2026-10-20T22:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24525283",
-    "fc_svc": "0"
+    "fc_gid": "24525283"
   },
   "fc_24525283": {
     "stock": "out_of_stock",
