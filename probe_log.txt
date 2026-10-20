@@ -1,69 +1,367 @@
-============== A. full answers ==============
 
-+   1s SF90 23075648: page lists 12 cars; this car: {"pn": "Hot Wheels Ferrari SF90 Stradale (41/250) Die Cast Toy Car - Black", "CS": 155, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "23074890", "mrp": 179, "Dis": 10, "ispreorder": "0"}
-   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 155, "PinC": 0, "MRP": 179, "Dis": 10, "BID": 113, "PgID": "23074890"}
-   set CS: {'23075647': 0, '23075651': 83, '23074890': 95, '23075650': 0, '23075649': 44, '23075645': 0, '23076117': 0, '23076119': 0, '23075648': 155, '23075644': 0, '23074891': 0, '23075652': 0}
-   delivery check (bot-style) 322ms: this car=1 set={'23074890': 1, '23074891': 0, '23075644': 0, '23075645': 1, '23075647': 0, '23075648': 1, '23075649': 0, '23075650': 0, '23075651': 0, '23075652': 0, '23076117': 0, '23076119': 0}
-   delivery check (page-style) 309ms: this car=1 set={'23074890': 1, '23074891': 0, '23075644': 0, '23075645': 1, '23075647': 0, '23075648': 1, '23075649': 0, '23075650': 0, '23075651': 0, '23075652': 0, '23076117': 0, '23076119': 0}
-   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "11-20", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Wednesday, 21st Oct 2026", "SDDDate": "", "NDDLeftTime": "07-39", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23075648, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
-   pincode 248002: this car=1 IsServicable=1 TAT=3-4
-   pincode 248006: this car=1 IsServicable=1 TAT=3-4
-   pincode 248007: this car=1 IsServicable=1 TAT=4-5
-   pincode 248171: this car=1 IsServicable=1 TAT=2-3
-   pincode 249201: this car=1 IsServicable=1 TAT=4-5
-   pincode 110001: this car=1 IsServicable=1 TAT=2-3
-   pincode 560001: this car=1 IsServicable=1 TAT=5-6
+============ round 1 +   1s ============
 
-+   5s Impala 23074613: page lists 27 cars; this car: {"pn": "Hot Wheels Free Wheel Die Cast 59 Chevy Impala (44/250) Toy Car - White/Green", "CS": 23, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "23074178", "mrp": 179, "Dis": 8, "ispreorder": "0"}
-   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 23, "PinC": 0, "MRP": 179, "Dis": 8, "BID": 113, "PgID": "23074178"}
-   set CS: {'23074883': 117, '23074615': 35, '23074882': 59, '23074884': 57, '23074263': 0, '23074611': 86, '23074614': 13, '23074259': 25, '23074617': 0, '23074267': 2, '23074266': 17, '23074612': 305, '23074260': 0, '23074261': 0, '23074888': 0, '23074885': 1, '23074619': 189, '23074618': 0, '23074887': 0, '23074262': 38, '23074265': 0, '23074886': 6, '23074613': 23, '23074610': 4, '23074258': 0, '23074616': 0, '23074178': 27}
-   delivery check (bot-style) 322ms: this car=1 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
-   delivery check (page-style) 309ms: this car=1 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
-   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "11-21", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Wednesday, 21st Oct 2026", "SDDDate": "", "NDDLeftTime": "07-38", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23074613, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
-   pincode 248002: this car=1 IsServicable=1 TAT=3-4
-   pincode 248006: this car=1 IsServicable=1 TAT=3-4
-   pincode 248007: this car=1 IsServicable=1 TAT=4-5
-   pincode 248171: this car=1 IsServicable=1 TAT=2-3
-   pincode 249201: this car=1 IsServicable=1 TAT=4-5
-   pincode 110001: this car=1 IsServicable=1 TAT=2-3
-   pincode 560001: this car=1 IsServicable=1 TAT=5-6
+ set of 23075648 (12 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23075648  Hot Wheels Ferrari SF90 Stradale (41/2  155   0    0  12-15 F Get it by Wednesday, N
+   23074890  Hot Wheels Quick Chat (49/250) Die Cas   95   1   21    5-6 F Get it by Sunday, Oct 
+   23075651  Hot Wheels Classic TV Series Batmobile   83   0    0  12-15 F Get it by Wednesday, N
+   23075649  Hot Wheels Twin Tags (166/250) Die Cas   44   0    0  12-15 F Get it by Wednesday, N
+   23075647  Hot Wheels Pagani Zonda Cinque (26/250    0   0    0  12-15 F Get it by Wednesday, N
+   23075650  Hot Wheels Dino 206 GT (150/250) Die C    0   0    0  12-15 F Get it by Wednesday, N
+   23075645  Hot Wheels 17 Audi RS 6 Avant (66/250)    0   1    5    3-4 T Get it by Tomorrow 8 P
+   23076117  Hot Wheels Lotus Sport Elise (160/250)    0   0    0  12-15 F Get it by Wednesday, N
+   23076119  Hot Wheels Dastun 620 (128/250) Die Ca    0   0    0  12-15 F Get it by Wednesday, N
+   23075644  Hot Wheels Cadillac Celestiq (163/250)    0   0    0  12-15 F Get it by Wednesday, N
+   23074891  Hot Wheels 65 Mercury Cyclone (191/250    0   0    0  12-15 F Get it by Wednesday, N
+   23075652  Hot Wheels 64 Lincoln Continental (170    0   0    0  12-15 F Get it by Wednesday, N
 
-+   9s RoadRunner 24473731: page lists 12 cars; this car: {"pn": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange", "CS": 2, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "24473511", "mrp": 179, "Dis": 3, "ispreorder": "0"}
-   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 2, "PinC": 0, "MRP": 179, "Dis": 3, "BID": 113, "PgID": "24473511"}
-   set CS: {'24473510': 0, '24473511': 0, '24473713': 0, '24473723': 0, '24473724': 0, '24473731': 2, '24473516': 7, '24473512': 51, '24473514': 141, '24473515': 164, '24473513': 175, '24473712': 256}
-   delivery check (bot-style) 321ms: this car=0 set={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 1, '24473712': 1, '24473713': 0, '24473723': 1, '24473724': 0, '24473731': 0}
-   delivery check (page-style) 779ms: this car=0 set={'24473510': 0, '24473511': 0, '24473512': 1, '24473513': 1, '24473514': 1, '24473515': 1, '24473516': 1, '24473712': 1, '24473713': 0, '24473723': 1, '24473724': 0, '24473731': 0}
-   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "11-21", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473731, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   pincode 248002: this car=0 IsServicable=0 TAT=12-15
-   pincode 248006: this car=0 IsServicable=0 TAT=12-15
-   pincode 248007: this car=0 IsServicable=0 TAT=12-15
-   pincode 248171: this car=0 IsServicable=0 TAT=12-15
-   pincode 249201: this car=0 IsServicable=0 TAT=12-15
-   pincode 110001: this car=0 IsServicable=0 TAT=12-15
-   pincode 560001: this car=0 IsServicable=0 TAT=12-15
+ set of 23074613 (27 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23074612  Hot Wheels Free Wheel Die Cast VW ID B  305   1  257    3-4 T Get it by Tomorrow 8 P
+   23074619  Hot Wheels Free Wheel Die Cast High-Ta  189   1   46    3-4 T Get it by Tomorrow 8 P
+   23074883  Hot Wheels Free Wheel Die Cast Tooned   117   1   56    3-4 T Get it by Tomorrow 8 P
+   23074611  Hot Wheels Tooned Purple Passion (148/   86   1   41    3-4 T Get it by Tomorrow 8 P
+   23074882  Hot Wheels Free Wheel Die Cast dessert   59   0    0  12-15 F Get it by Wednesday, N
+   23074884  Hot Wheels Free Wheel Die Cast Mailed    57   0    0  12-15 F Get it by Wednesday, N
+   23074262  Hot Wheels X-Steam (30/250) Die Cast F   38   1    1    5-6 F Get it by Sunday, Oct 
+   23074615  Hot Wheels Free Wheel Die Cast Monster   35   0    0  12-15 F Get it by Wednesday, N
+   23074178  Hot Wheels Free Wheel Die Cast Wattzup   27   0    0  12-15 F Get it by Wednesday, N
+   23074259  Hot Wheels Free Wheel Die Cast 41 Will   25   0    0  12-15 F Get it by Wednesday, N
+   23074613  Hot Wheels Free Wheel Die Cast 59 Chev   23   0    1  12-15 F Get it by Wednesday, N
+   23074266  Hot Wheels Free Wheel Die Cast Standar   17   0    0  12-15 F Get it by Wednesday, N
+   23074614  Hot Wheels Free Wheel Die Cast Mazda A   13   0    0  12-15 F Get it by Wednesday, N
+   23074886  Hot Wheels Free Wheel Die Cast Honda O    6   0    0  12-15 F Get it by Wednesday, N
+   23074610  Hot Wheels Free Wheel Die Cast Super t    4   0    0  12-15 F Get it by Wednesday, N
+   23074267  Hot Wheels Free Wheel Die Cast LA Lieb    2   0    0  12-15 F Get it by Wednesday, N
+   23074885  Hot Wheels Free Wheel Die Cast Track R    1   0    0  12-15 F Get it by Wednesday, N
+   23074263  Hot Wheels Free Wheel Die Cast 20 Toyo    0   0    0  12-15 F Get it by Wednesday, N
+   23074617  Hot Wheels Free Wheel Die Cast 1983 Po    0   0    0  12-15 F Get it by Wednesday, N
+   23074260  Hot Wheels Free Wheel Die Cast Classic    0   0    0  12-15 F Get it by Wednesday, N
+   23074261  Hot Wheels Free Wheel Die Cast Porsche    0   0    0  12-15 F Get it by Wednesday, N
+   23074888  Hot Wheels Free Wheel Die Cast 70 Dodg    0   0    0  12-15 F Get it by Wednesday, N
+   23074618  Hot Wheels Free Wheel Die Cast Mercede    0   0    0  12-15 F Get it by Wednesday, N
+   23074887  Hot Wheels Free Wheel Die Cast El Segu    0   0    0  12-15 F Get it by Wednesday, N
+   23074265  Hot Wheels Free Wheel Die Cast Kick Sa    0   1   15    3-4 T Get it by Tomorrow 8 P
+   23074258  Hot Wheels Free Wheel Die Cast Raijin     0   0    0  12-15 F Get it by Wednesday, N
+   23074616  Hot Wheels Free Wheel Die Cast Purple     0   0    0  12-15 F Get it by Wednesday, N
 
-+  14s LaLiebre 23074267: page lists 27 cars; this car: {"pn": "Hot Wheels Free Wheel Die Cast LA Liebre (31/250) Toy Car - White", "CS": 2, "qty": 1, "minQty": 1, "Rqty": 5, "QueCount": 0, "SCF": 0, "EC": 1, "SOID": 0, "Gid": "23074178", "mrp": 179, "Dis": 8, "ispreorder": "0"}
-   PInfo: {"SCID": 94, "PCID": 5, "StockT": "ownedstock", "CODA": true, "CurSt": 2, "PinC": 0, "MRP": 179, "Dis": 8, "BID": 113, "PgID": "23074178"}
-   set CS: {'23074883': 117, '23074615': 35, '23074882': 59, '23074884': 57, '23074263': 0, '23074611': 86, '23074614': 13, '23074259': 25, '23074617': 0, '23074267': 2, '23074266': 17, '23074612': 305, '23074260': 0, '23074261': 0, '23074888': 0, '23074885': 1, '23074619': 189, '23074618': 0, '23074887': 0, '23074262': 38, '23074265': 0, '23074886': 6, '23074613': 23, '23074610': 4, '23074258': 0, '23074616': 0, '23074178': 27}
-   delivery check (bot-style) 324ms: this car=0 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
-   delivery check (page-style) 306ms: this car=0 set={'23074178': 0, '23074258': 0, '23074259': 0, '23074260': 0, '23074261': 0, '23074262': 1, '23074263': 0, '23074265': 1, '23074266': 0, '23074267': 0, '23074610': 0, '23074611': 1, '23074612': 1, '23074613': 1, '23074614': 0, '23074615': 0, '23074616': 0, '23074617': 0, '23074618': 0, '23074619': 1, '23074882': 0, '23074883': 1, '23074884': 0, '23074885': 0, '23074886': 0, '23074887': 0, '23074888': 0}
-   full Result: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "6", "IsTnB": false, "ServerTime": "11-21", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 1, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23074267, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   pincode 248002: this car=0 IsServicable=1 TAT=12-15
-   pincode 248006: this car=0 IsServicable=1 TAT=12-15
-   pincode 248007: this car=0 IsServicable=0 TAT=12-15
-   pincode 248171: this car=0 IsServicable=1 TAT=12-15
-   pincode 249201: this car=0 IsServicable=0 TAT=12-15
-   pincode 110001: this car=0 IsServicable=1 TAT=12-15
-   pincode 560001: this car=0 IsServicable=1 TAT=12-15
+ set of 24473731 (12 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24473712  Hot Wheels Salt Streaker Die-Cast Toy   256   1  254    5-6 F Get it by Sunday, Oct 
+   24473513  Hot Wheels Voltage Spike Die-Cast Toy   175   1  174    5-6 F Get it by Sunday, Oct 
+   24473515  Hot Wheels Go Realla Fast Die-Cast Toy  164   1  162    5-6 F Get it by Sunday, Oct 
+   24473514  Hot Wheels '68 Mercury Comet Cyclone D  141   1  142    5-6 F Get it by Sunday, Oct 
+   24473512  Hot Wheels Datsun 620 Die-Cast Toy Car   51   1   51    5-6 F Get it by Sunday, Oct 
+   24473516  Hot Wheels Mini Jcw Electric Die-Cast     7   1    1    5-6 F Get it by Sunday, Oct 
+   24473731  Hot Wheels 1970 Custom Plymouth Road R    2   0    0  12-15 F Get it by Wednesday, N
+   24473510  Hot Wheels Toyota Prius Custom /Person    0   0    0  12-15 F Get it by Wednesday, N
+   24473511  Hot Wheels '68 Mercury Cougar Die-Cast    0   0    0  12-15 F Get it by Wednesday, N
+   24473713  Hot Wheels '66 Buick Riviera Die-Cast     0   0    0  12-15 F Get it by Wednesday, N
+   24473723  Hot Wheels X-Cceleron Die-Cast Toy Car    0   1    2    5-6 F Get it by Sunday, Oct 
+   24473724  Hot Wheels '85 Honda City Turbo II Die    0   0    0  12-15 F Get it by Wednesday, N
 
-============== B. time series ==============
-+  18s SF90       start {'CS': 155, 'svc_bot': 1, 'svc_page': 1, 'IsServicable': 1}
-+  18s Impala     start {'CS': 23, 'svc_bot': 1, 'svc_page': 1, 'IsServicable': 1}
-+  18s RoadRunner start {'CS': 2, 'svc_bot': 0, 'svc_page': 0, 'IsServicable': 0}
-+  18s LaLiebre   start {'CS': 2, 'svc_bot': 0, 'svc_page': 0, 'IsServicable': 1}
-+ 308s SF90       svc_bot:1->0 svc_page:1->0 IsServicable:1->0
-+ 308s Impala     svc_bot:1->0 svc_page:1->0
-+ 319s LaLiebre   IsServicable:1->0
+ set of 24776024 (10 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24775986  Hot Wheels Vairstrike Die-Cast Toy Car  476   1  474    3-4 T Get it by Tomorrow 8 P
+   24776076  Hot Wheels Custom/Personnalise 72 Chev  167   1  168    3-4 T Get it by Tomorrow 8 P
+   24776077  Hot Wheels Custom / Personnalise 2020    78   1   78    3-4 T Get it by Tomorrow 8 P
+   24775936  Hot Wheels Die-Cast Toy Car McLaren W1    0   0    0  12-15 F Get it by Wednesday, N
+   24776024  Hot Wheels 89 Mazda Savanna RX-7 FC3S     0   1    1    3-4 T Get it by Tomorrow 8 P
+   24776061  Hot Wheels NISSAN SKYLINE HT 2000GT-X     0   0    0  12-15 F Get it by Wednesday, N
+   24776064  Hot Wheels 64 Dodge 330 (126/250) Toy     0   0    0  12-15 F Get it by Wednesday, N
+   24776065  Hot Wheels Dino 206 GT (150/250) Die C    0   0    0  12-15 F Get it by Wednesday, N
+   24776070  Hot Wheels Feline Lucky (92/250) Toy C    0   1    2    3-4 T Get it by Tomorrow 8 P
+   24776075  Hot Wheels 2019 Audi R8 Spyder (130/25    0   0    0  12-15 F Get it by Wednesday, N
 
-+ 387s 37 rounds; changes: {('SF90', 'svc_bot'): 1, ('SF90', 'svc_page'): 1, ('SF90', 'IsServicable'): 1, ('Impala', 'svc_bot'): 1, ('Impala', 'svc_page'): 1, ('LaLiebre', 'IsServicable'): 1}
-done in 387s
+ set of 24503746 (10 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24503903  Hot Wheels Uncertain-T Die Cast Free W  255   1  254    5-6 F Get it by Sunday, Oct 
+   24503750  Hot Wheels '33 Ford Lo Boy Die Cast Fr   10   1    7    5-6 F Get it by Sunday, Oct 
+   24503904  Hot Wheels Ford Model A Custom '31 Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503746  Hot Wheels The Dark Knight Batmobile D    0   0    0  12-15 F Get it by Wednesday, N
+   24503747  Hot Wheels El Segundo Coupe Die Cast F    0   0    0  12-15 F Get it by Wednesday, N
+   24503751  Hot Wheels '68 Corvette Gas Monkey Gar    0   1    1    3-4 F Get it by Friday, Oct 
+   24503821  Hot Wheels Custom '62 Chevy Pickup Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503897  Hot Wheels Volvo 240 Drift Wagon Die C    0   0    0  12-15 F Get it by Wednesday, N
+   24503901  Hot Wheels Nissan Maxima Drift Car Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503819  Hot Wheels Bugatti Bolide Die Cast Fre    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 23351187 (17 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23351681  Hot Wheels 144/250 Classic TV Series B  470   1  209    3-4 T Get it by Tomorrow 8 P
+   23351684  Hot Wheels 158/250 Mach Speeder Die Ca  276   1  273    3-4 T Get it by Tomorrow 8 P
+   23348046  Hot Wheels 170/250 64 Lincoln Continen  275   1  246    3-4 T Get it by Tomorrow 8 P
+   23348665  Hot Wheels 191/250 65 Mercury Comet Cy  171   1   74    3-4 T Get it by Tomorrow 8 P
+   23351682  Hot Wheels 46/250 Purple Passion Die C  112   1   47    3-4 T Get it by Tomorrow 8 P
+   23351188  Hot Wheels 131/250 Fiat Beast of Turn   102   1   84    5-6 F Get it by Sunday, Oct 
+   23353035  Hot Wheels 35/250 Wattzup Die Cat Free   72   1   51    3-4 T Get it by Tomorrow 8 P
+   23351189  Hot Wheels 55/250 Dessert Drifter/ Gel   63   1   63    3-4 T Get it by Tomorrow 8 P
+   23353034  Hot Wheels 49/250 Quick Chat Die Cat F   33   0    0  12-15 F Get it by Wednesday, N
+   23353037  Hot Wheels 167/250 Head Gasket Die Cat   13   0    0  12-15 F Get it by Wednesday, N
+   23351187  Hot Wheels 129/250 Standard Kart Die C    5   0    0  12-15 F Get it by Wednesday, N
+   23351683  Hot Wheels 157/250 20 Toyoto Gr Supra     0   0    0  12-15 F Get it by Wednesday, N
+   23351190  Hot Wheels 160/250 Lotus Sport Elise D    0   0    0  12-15 F Get it by Wednesday, N
+   23348045  Hot Wheels 164/250 Classic/classique 5    0   0    0  12-15 F Get it by Wednesday, N
+   23348043  Hot Wheels 152/250 BMW 635 Csi Die Cat    0   0    0  12-15 F Get it by Wednesday, N
+   23348662  Hot Wheels 149/250 Honda Odyssey Die C    0   0    0  12-15 F Get it by Wednesday, N
+   23347149  Hot Wheels 151/250 Ford F-150 Lightnin    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 22597521 (6 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   22597520  Hot Wheels Color Shifters Shark Hammer  247   1  101    3-4 T Get it by Tomorrow 8 P
+   22597522  Hot Wheels Color Shifters Tooned Twin   172   1   56    3-4 T Get it by Tomorrow 8 P
+   22597417  Hot Wheels Color Shifters Blade Raider  148   1    8    3-4 T Get it by Tomorrow 8 P
+   22597474  Hot Wheels Color Shifters Zombot Toy C   77   1   61    3-4 T Get it by Tomorrow 8 P
+   22597418  Hot Wheels Color Shifters Track Manga    25   1   16    3-4 T Get it by Tomorrow 8 P
+   22597521  Hot Wheels Color Shifters Bat mobile T    3   0    0  12-15 F Get it by Wednesday, N
+
+============ round 2 + 150s ============
+
+ set of 23075648 (12 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23075648  Hot Wheels Ferrari SF90 Stradale (41/2  155   0    0  12-15 F Get it by Wednesday, N
+   23074890  Hot Wheels Quick Chat (49/250) Die Cas   95   1   21    5-6 F Get it by Sunday, Oct 
+   23075651  Hot Wheels Classic TV Series Batmobile   83   0    0  12-15 F Get it by Wednesday, N
+   23075649  Hot Wheels Twin Tags (166/250) Die Cas   44   0    0  12-15 F Get it by Wednesday, N
+   23075647  Hot Wheels Pagani Zonda Cinque (26/250    0   0    0  12-15 F Get it by Wednesday, N
+   23075650  Hot Wheels Dino 206 GT (150/250) Die C    0   0    0  12-15 F Get it by Wednesday, N
+   23075645  Hot Wheels 17 Audi RS 6 Avant (66/250)    0   1    5    3-4 T Get it by Tomorrow 8 P
+   23076117  Hot Wheels Lotus Sport Elise (160/250)    0   0    0  12-15 F Get it by Wednesday, N
+   23076119  Hot Wheels Dastun 620 (128/250) Die Ca    0   0    0  12-15 F Get it by Wednesday, N
+   23075644  Hot Wheels Cadillac Celestiq (163/250)    0   0    0  12-15 F Get it by Wednesday, N
+   23074891  Hot Wheels 65 Mercury Cyclone (191/250    0   0    0  12-15 F Get it by Wednesday, N
+   23075652  Hot Wheels 64 Lincoln Continental (170    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 23074613 (27 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23074612  Hot Wheels Free Wheel Die Cast VW ID B  305   1  257    3-4 T Get it by Tomorrow 8 P
+   23074619  Hot Wheels Free Wheel Die Cast High-Ta  189   1   46    3-4 T Get it by Tomorrow 8 P
+   23074883  Hot Wheels Free Wheel Die Cast Tooned   117   1   56    3-4 T Get it by Tomorrow 8 P
+   23074611  Hot Wheels Tooned Purple Passion (148/   86   1   41    3-4 T Get it by Tomorrow 8 P
+   23074882  Hot Wheels Free Wheel Die Cast dessert   59   0    0  12-15 F Get it by Wednesday, N
+   23074884  Hot Wheels Free Wheel Die Cast Mailed    57   0    0  12-15 F Get it by Wednesday, N
+   23074262  Hot Wheels X-Steam (30/250) Die Cast F   38   1    1    5-6 F Get it by Sunday, Oct 
+   23074615  Hot Wheels Free Wheel Die Cast Monster   35   0    0  12-15 F Get it by Wednesday, N
+   23074178  Hot Wheels Free Wheel Die Cast Wattzup   27   0    0  12-15 F Get it by Wednesday, N
+   23074259  Hot Wheels Free Wheel Die Cast 41 Will   25   0    0  12-15 F Get it by Wednesday, N
+   23074613  Hot Wheels Free Wheel Die Cast 59 Chev   23   1    1    3-4 T Get it by Tomorrow 8 P
+   23074266  Hot Wheels Free Wheel Die Cast Standar   17   0    0  12-15 F Get it by Wednesday, N
+   23074614  Hot Wheels Free Wheel Die Cast Mazda A   13   0    0  12-15 F Get it by Wednesday, N
+   23074886  Hot Wheels Free Wheel Die Cast Honda O    6   0    0  12-15 F Get it by Wednesday, N
+   23074610  Hot Wheels Free Wheel Die Cast Super t    4   0    0  12-15 F Get it by Wednesday, N
+   23074267  Hot Wheels Free Wheel Die Cast LA Lieb    2   0    0  12-15 F Get it by Wednesday, N
+   23074885  Hot Wheels Free Wheel Die Cast Track R    1   0    0  12-15 F Get it by Wednesday, N
+   23074263  Hot Wheels Free Wheel Die Cast 20 Toyo    0   0    0  12-15 F Get it by Wednesday, N
+   23074617  Hot Wheels Free Wheel Die Cast 1983 Po    0   0    0  12-15 F Get it by Wednesday, N
+   23074260  Hot Wheels Free Wheel Die Cast Classic    0   0    0  12-15 F Get it by Wednesday, N
+   23074261  Hot Wheels Free Wheel Die Cast Porsche    0   0    0  12-15 F Get it by Wednesday, N
+   23074888  Hot Wheels Free Wheel Die Cast 70 Dodg    0   0    0  12-15 F Get it by Wednesday, N
+   23074618  Hot Wheels Free Wheel Die Cast Mercede    0   0    0  12-15 F Get it by Wednesday, N
+   23074887  Hot Wheels Free Wheel Die Cast El Segu    0   0    0  12-15 F Get it by Wednesday, N
+   23074265  Hot Wheels Free Wheel Die Cast Kick Sa    0   1   15    3-4 T Get it by Tomorrow 8 P
+   23074258  Hot Wheels Free Wheel Die Cast Raijin     0   0    0  12-15 F Get it by Wednesday, N
+   23074616  Hot Wheels Free Wheel Die Cast Purple     0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 24473731 (12 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24473712  Hot Wheels Salt Streaker Die-Cast Toy   256   1  254    5-6 F Get it by Sunday, Oct 
+   24473513  Hot Wheels Voltage Spike Die-Cast Toy   175   1  174    5-6 F Get it by Sunday, Oct 
+   24473515  Hot Wheels Go Realla Fast Die-Cast Toy  164   1  162    5-6 F Get it by Sunday, Oct 
+   24473514  Hot Wheels '68 Mercury Comet Cyclone D  141   1  142    5-6 F Get it by Sunday, Oct 
+   24473512  Hot Wheels Datsun 620 Die-Cast Toy Car   51   1   51    5-6 F Get it by Sunday, Oct 
+   24473516  Hot Wheels Mini Jcw Electric Die-Cast     7   1    1    5-6 F Get it by Sunday, Oct 
+   24473731  Hot Wheels 1970 Custom Plymouth Road R    2   0    0  12-15 F Get it by Wednesday, N
+   24473510  Hot Wheels Toyota Prius Custom /Person    0   0    0  12-15 F Get it by Wednesday, N
+   24473511  Hot Wheels '68 Mercury Cougar Die-Cast    0   0    0  12-15 F Get it by Wednesday, N
+   24473713  Hot Wheels '66 Buick Riviera Die-Cast     0   0    0  12-15 F Get it by Wednesday, N
+   24473723  Hot Wheels X-Cceleron Die-Cast Toy Car    0   1    2    5-6 F Get it by Sunday, Oct 
+   24473724  Hot Wheels '85 Honda City Turbo II Die    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 24776024 (10 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24775986  Hot Wheels Vairstrike Die-Cast Toy Car  476   1  474    3-4 T Get it by Tomorrow 8 P
+   24776076  Hot Wheels Custom/Personnalise 72 Chev  167   1  168    3-4 T Get it by Tomorrow 8 P
+   24776077  Hot Wheels Custom / Personnalise 2020    78   1   78    3-4 T Get it by Tomorrow 8 P
+   24776070  Hot Wheels Feline Lucky (92/250) Toy C    1   1    2    3-4 T Get it by Tomorrow 8 P
+   24775936  Hot Wheels Die-Cast Toy Car McLaren W1    0   0    0  12-15 F Get it by Wednesday, N
+   24776024  Hot Wheels 89 Mazda Savanna RX-7 FC3S     0   1    1    3-4 T Get it by Tomorrow 8 P
+   24776061  Hot Wheels NISSAN SKYLINE HT 2000GT-X     0   0    0  12-15 F Get it by Wednesday, N
+   24776064  Hot Wheels 64 Dodge 330 (126/250) Toy     0   0    0  12-15 F Get it by Wednesday, N
+   24776065  Hot Wheels Dino 206 GT (150/250) Die C    0   0    0  12-15 F Get it by Wednesday, N
+   24776075  Hot Wheels 2019 Audi R8 Spyder (130/25    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 24503746 (10 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24503903  Hot Wheels Uncertain-T Die Cast Free W  255   1  254    5-6 F Get it by Sunday, Oct 
+   24503750  Hot Wheels '33 Ford Lo Boy Die Cast Fr   10   1    7    5-6 F Get it by Sunday, Oct 
+   24503904  Hot Wheels Ford Model A Custom '31 Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503746  Hot Wheels The Dark Knight Batmobile D    0   0    0  12-15 F Get it by Wednesday, N
+   24503747  Hot Wheels El Segundo Coupe Die Cast F    0   0    0  12-15 F Get it by Wednesday, N
+   24503751  Hot Wheels '68 Corvette Gas Monkey Gar    0   1    1    3-4 F Get it by Friday, Oct 
+   24503821  Hot Wheels Custom '62 Chevy Pickup Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503897  Hot Wheels Volvo 240 Drift Wagon Die C    0   0    0  12-15 F Get it by Wednesday, N
+   24503901  Hot Wheels Nissan Maxima Drift Car Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503819  Hot Wheels Bugatti Bolide Die Cast Fre    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 23351187 (17 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23351681  Hot Wheels 144/250 Classic TV Series B  470   1  209    3-4 T Get it by Tomorrow 8 P
+   23351684  Hot Wheels 158/250 Mach Speeder Die Ca  276   1  273    3-4 T Get it by Tomorrow 8 P
+   23348046  Hot Wheels 170/250 64 Lincoln Continen  275   1  246    3-4 T Get it by Tomorrow 8 P
+   23348665  Hot Wheels 191/250 65 Mercury Comet Cy  171   1   74    3-4 T Get it by Tomorrow 8 P
+   23351682  Hot Wheels 46/250 Purple Passion Die C  112   1   47    3-4 T Get it by Tomorrow 8 P
+   23351188  Hot Wheels 131/250 Fiat Beast of Turn   102   1   84    5-6 F Get it by Sunday, Oct 
+   23353035  Hot Wheels 35/250 Wattzup Die Cat Free   72   1   51    3-4 T Get it by Tomorrow 8 P
+   23351189  Hot Wheels 55/250 Dessert Drifter/ Gel   63   1   63    3-4 T Get it by Tomorrow 8 P
+   23353034  Hot Wheels 49/250 Quick Chat Die Cat F   33   0    0  12-15 F Get it by Wednesday, N
+   23353037  Hot Wheels 167/250 Head Gasket Die Cat   13   0    0  12-15 F Get it by Wednesday, N
+   23351187  Hot Wheels 129/250 Standard Kart Die C    5   0    0  12-15 F Get it by Wednesday, N
+   23351683  Hot Wheels 157/250 20 Toyoto Gr Supra     0   0    0  12-15 F Get it by Wednesday, N
+   23351190  Hot Wheels 160/250 Lotus Sport Elise D    0   0    0  12-15 F Get it by Wednesday, N
+   23348045  Hot Wheels 164/250 Classic/classique 5    0   0    0  12-15 F Get it by Wednesday, N
+   23348043  Hot Wheels 152/250 BMW 635 Csi Die Cat    0   0    0  12-15 F Get it by Wednesday, N
+   23348662  Hot Wheels 149/250 Honda Odyssey Die C    0   0    0  12-15 F Get it by Wednesday, N
+   23347149  Hot Wheels 151/250 Ford F-150 Lightnin    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 22597521 (6 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   22597520  Hot Wheels Color Shifters Shark Hammer  247   1  101    3-4 T Get it by Tomorrow 8 P
+   22597522  Hot Wheels Color Shifters Tooned Twin   172   1   56    3-4 T Get it by Tomorrow 8 P
+   22597417  Hot Wheels Color Shifters Blade Raider  148   1    8    3-4 T Get it by Tomorrow 8 P
+   22597474  Hot Wheels Color Shifters Zombot Toy C   77   1   61    3-4 T Get it by Tomorrow 8 P
+   22597418  Hot Wheels Color Shifters Track Manga    25   1   16    3-4 T Get it by Tomorrow 8 P
+   22597521  Hot Wheels Color Shifters Bat mobile T    3   0    0  12-15 F Get it by Wednesday, N
+
+============ round 3 + 300s ============
+
+ set of 23075648 (12 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23075648  Hot Wheels Ferrari SF90 Stradale (41/2  155   0    0  12-15 F Get it by Wednesday, N
+   23074890  Hot Wheels Quick Chat (49/250) Die Cas   95   1   21    5-6 F Get it by Sunday, Oct 
+   23075651  Hot Wheels Classic TV Series Batmobile   83   0    0  12-15 F Get it by Wednesday, N
+   23075649  Hot Wheels Twin Tags (166/250) Die Cas   44   0    0  12-15 F Get it by Wednesday, N
+   23075647  Hot Wheels Pagani Zonda Cinque (26/250    0   0    0  12-15 F Get it by Wednesday, N
+   23075650  Hot Wheels Dino 206 GT (150/250) Die C    0   0    0  12-15 F Get it by Wednesday, N
+   23075645  Hot Wheels 17 Audi RS 6 Avant (66/250)    0   1    5    3-4 T Get it by Tomorrow 8 P
+   23076117  Hot Wheels Lotus Sport Elise (160/250)    0   0    0  12-15 F Get it by Wednesday, N
+   23076119  Hot Wheels Dastun 620 (128/250) Die Ca    0   0    0  12-15 F Get it by Wednesday, N
+   23075644  Hot Wheels Cadillac Celestiq (163/250)    0   0    0  12-15 F Get it by Wednesday, N
+   23074891  Hot Wheels 65 Mercury Cyclone (191/250    0   0    0  12-15 F Get it by Wednesday, N
+   23075652  Hot Wheels 64 Lincoln Continental (170    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 23074613 (27 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23074612  Hot Wheels Free Wheel Die Cast VW ID B  305   1  257    3-4 T Get it by Tomorrow 8 P
+   23074619  Hot Wheels Free Wheel Die Cast High-Ta  189   1   46    3-4 T Get it by Tomorrow 8 P
+   23074883  Hot Wheels Free Wheel Die Cast Tooned   117   1   56    3-4 T Get it by Tomorrow 8 P
+   23074611  Hot Wheels Tooned Purple Passion (148/   86   1   41    3-4 T Get it by Tomorrow 8 P
+   23074882  Hot Wheels Free Wheel Die Cast dessert   59   0    0  12-15 F Get it by Wednesday, N
+   23074884  Hot Wheels Free Wheel Die Cast Mailed    57   0    0  12-15 F Get it by Wednesday, N
+   23074262  Hot Wheels X-Steam (30/250) Die Cast F   38   1    1    5-6 F Get it by Sunday, Oct 
+   23074615  Hot Wheels Free Wheel Die Cast Monster   35   0    0  12-15 F Get it by Wednesday, N
+   23074178  Hot Wheels Free Wheel Die Cast Wattzup   27   0    0  12-15 F Get it by Wednesday, N
+   23074259  Hot Wheels Free Wheel Die Cast 41 Will   25   0    0  12-15 F Get it by Wednesday, N
+   23074613  Hot Wheels Free Wheel Die Cast 59 Chev   23   1    1    3-4 T Get it by Tomorrow 8 P
+   23074266  Hot Wheels Free Wheel Die Cast Standar   17   0    0  12-15 F Get it by Wednesday, N
+   23074614  Hot Wheels Free Wheel Die Cast Mazda A   13   0    0  12-15 F Get it by Wednesday, N
+   23074886  Hot Wheels Free Wheel Die Cast Honda O    6   0    0  12-15 F Get it by Wednesday, N
+   23074610  Hot Wheels Free Wheel Die Cast Super t    4   0    0  12-15 F Get it by Wednesday, N
+   23074267  Hot Wheels Free Wheel Die Cast LA Lieb    2   0    0  12-15 F Get it by Wednesday, N
+   23074885  Hot Wheels Free Wheel Die Cast Track R    1   0    0  12-15 F Get it by Wednesday, N
+   23074263  Hot Wheels Free Wheel Die Cast 20 Toyo    0   0    0  12-15 F Get it by Wednesday, N
+   23074617  Hot Wheels Free Wheel Die Cast 1983 Po    0   0    0  12-15 F Get it by Wednesday, N
+   23074260  Hot Wheels Free Wheel Die Cast Classic    0   0    0  12-15 F Get it by Wednesday, N
+   23074261  Hot Wheels Free Wheel Die Cast Porsche    0   0    0  12-15 F Get it by Wednesday, N
+   23074888  Hot Wheels Free Wheel Die Cast 70 Dodg    0   0    0  12-15 F Get it by Wednesday, N
+   23074618  Hot Wheels Free Wheel Die Cast Mercede    0   0    0  12-15 F Get it by Wednesday, N
+   23074887  Hot Wheels Free Wheel Die Cast El Segu    0   0    0  12-15 F Get it by Wednesday, N
+   23074265  Hot Wheels Free Wheel Die Cast Kick Sa    0   1   15    3-4 T Get it by Tomorrow 8 P
+   23074258  Hot Wheels Free Wheel Die Cast Raijin     0   0    0  12-15 F Get it by Wednesday, N
+   23074616  Hot Wheels Free Wheel Die Cast Purple     0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 24473731 (12 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24473712  Hot Wheels Salt Streaker Die-Cast Toy   256   1  254    5-6 F Get it by Sunday, Oct 
+   24473513  Hot Wheels Voltage Spike Die-Cast Toy   175   1  174    5-6 F Get it by Sunday, Oct 
+   24473515  Hot Wheels Go Realla Fast Die-Cast Toy  164   1  162    5-6 F Get it by Sunday, Oct 
+   24473514  Hot Wheels '68 Mercury Comet Cyclone D  141   1  142    5-6 F Get it by Sunday, Oct 
+   24473512  Hot Wheels Datsun 620 Die-Cast Toy Car   51   1   51    5-6 F Get it by Sunday, Oct 
+   24473516  Hot Wheels Mini Jcw Electric Die-Cast     7   1    1    5-6 F Get it by Sunday, Oct 
+   24473731  Hot Wheels 1970 Custom Plymouth Road R    2   0    0  12-15 F Get it by Wednesday, N
+   24473510  Hot Wheels Toyota Prius Custom /Person    0   0    0  12-15 F Get it by Wednesday, N
+   24473511  Hot Wheels '68 Mercury Cougar Die-Cast    0   0    0  12-15 F Get it by Wednesday, N
+   24473713  Hot Wheels '66 Buick Riviera Die-Cast     0   0    0  12-15 F Get it by Wednesday, N
+   24473723  Hot Wheels X-Cceleron Die-Cast Toy Car    0   1    2    5-6 F Get it by Sunday, Oct 
+   24473724  Hot Wheels '85 Honda City Turbo II Die    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 24776024 (10 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24775986  Hot Wheels Vairstrike Die-Cast Toy Car  476   1  474    3-4 T Get it by Tomorrow 8 P
+   24776076  Hot Wheels Custom/Personnalise 72 Chev  167   1  168    3-4 T Get it by Tomorrow 8 P
+   24776077  Hot Wheels Custom / Personnalise 2020    78   1   78    3-4 T Get it by Tomorrow 8 P
+   24776070  Hot Wheels Feline Lucky (92/250) Toy C    1   1    2    3-4 T Get it by Tomorrow 8 P
+   24775936  Hot Wheels Die-Cast Toy Car McLaren W1    0   0    0  12-15 F Get it by Wednesday, N
+   24776024  Hot Wheels 89 Mazda Savanna RX-7 FC3S     0   1    1    3-4 T Get it by Tomorrow 8 P
+   24776061  Hot Wheels NISSAN SKYLINE HT 2000GT-X     0   0    0  12-15 F Get it by Wednesday, N
+   24776064  Hot Wheels 64 Dodge 330 (126/250) Toy     0   0    0  12-15 F Get it by Wednesday, N
+   24776065  Hot Wheels Dino 206 GT (150/250) Die C    0   0    0  12-15 F Get it by Wednesday, N
+   24776075  Hot Wheels 2019 Audi R8 Spyder (130/25    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 24503746 (10 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   24503903  Hot Wheels Uncertain-T Die Cast Free W  255   1  254    5-6 F Get it by Sunday, Oct 
+   24503750  Hot Wheels '33 Ford Lo Boy Die Cast Fr   10   1    7    5-6 F Get it by Sunday, Oct 
+   24503904  Hot Wheels Ford Model A Custom '31 Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503746  Hot Wheels The Dark Knight Batmobile D    0   0    0  12-15 F Get it by Wednesday, N
+   24503747  Hot Wheels El Segundo Coupe Die Cast F    0   0    0  12-15 F Get it by Wednesday, N
+   24503751  Hot Wheels '68 Corvette Gas Monkey Gar    0   1    1    3-4 F Get it by Friday, Oct 
+   24503821  Hot Wheels Custom '62 Chevy Pickup Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503897  Hot Wheels Volvo 240 Drift Wagon Die C    0   0    0  12-15 F Get it by Wednesday, N
+   24503901  Hot Wheels Nissan Maxima Drift Car Die    0   0    0  12-15 F Get it by Wednesday, N
+   24503819  Hot Wheels Bugatti Bolide Die Cast Fre    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 23351187 (17 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   23351681  Hot Wheels 144/250 Classic TV Series B  470   1  209    3-4 T Get it by Tomorrow 8 P
+   23351684  Hot Wheels 158/250 Mach Speeder Die Ca  276   1  273    3-4 T Get it by Tomorrow 8 P
+   23348046  Hot Wheels 170/250 64 Lincoln Continen  275   1  246    3-4 T Get it by Tomorrow 8 P
+   23348665  Hot Wheels 191/250 65 Mercury Comet Cy  171   1   74    3-4 T Get it by Tomorrow 8 P
+   23351682  Hot Wheels 46/250 Purple Passion Die C  112   1   47    3-4 T Get it by Tomorrow 8 P
+   23351188  Hot Wheels 131/250 Fiat Beast of Turn   102   1   84    5-6 F Get it by Sunday, Oct 
+   23353035  Hot Wheels 35/250 Wattzup Die Cat Free   72   1   51    3-4 T Get it by Tomorrow 8 P
+   23351189  Hot Wheels 55/250 Dessert Drifter/ Gel   63   1   63    3-4 T Get it by Tomorrow 8 P
+   23353034  Hot Wheels 49/250 Quick Chat Die Cat F   33   0    0  12-15 F Get it by Wednesday, N
+   23353037  Hot Wheels 167/250 Head Gasket Die Cat   13   0    0  12-15 F Get it by Wednesday, N
+   23351187  Hot Wheels 129/250 Standard Kart Die C    5   0    0  12-15 F Get it by Wednesday, N
+   23351683  Hot Wheels 157/250 20 Toyoto Gr Supra     0   0    0  12-15 F Get it by Wednesday, N
+   23351190  Hot Wheels 160/250 Lotus Sport Elise D    0   0    0  12-15 F Get it by Wednesday, N
+   23348045  Hot Wheels 164/250 Classic/classique 5    0   0    0  12-15 F Get it by Wednesday, N
+   23348043  Hot Wheels 152/250 BMW 635 Csi Die Cat    0   0    0  12-15 F Get it by Wednesday, N
+   23348662  Hot Wheels 149/250 Honda Odyssey Die C    0   0    0  12-15 F Get it by Wednesday, N
+   23347149  Hot Wheels 151/250 Ford F-150 Lightnin    0   0    0  12-15 F Get it by Wednesday, N
+
+ set of 22597521 (6 cars)
+   car       name                                     CS grp IsSv    TAT NDD ship
+   22597520  Hot Wheels Color Shifters Shark Hammer  247   1  101    3-4 T Get it by Tomorrow 8 P
+   22597522  Hot Wheels Color Shifters Tooned Twin   172   1   56    3-4 T Get it by Tomorrow 8 P
+   22597417  Hot Wheels Color Shifters Blade Raider  148   1    8    3-4 T Get it by Tomorrow 8 P
+   22597474  Hot Wheels Color Shifters Zombot Toy C   77   1   61    3-4 T Get it by Tomorrow 8 P
+   22597418  Hot Wheels Color Shifters Track Manga    25   1   16    3-4 T Get it by Tomorrow 8 P
+   22597521  Hot Wheels Color Shifters Bat mobile T    3   0    0  12-15 F Get it by Wednesday, N
+
+============ summary ============
+   ('CS=0', 'grp=0', 'IsSv=0', 'NDD=False') 114
+   ('CS>0', 'grp=1', 'IsSv>=2', 'NDD=True') 59
+   ('CS>0', 'grp=0', 'IsSv=0', 'NDD=False') 57
+   ('CS>0', 'grp=1', 'IsSv>=2', 'NDD=False') 27
+   ('CS=0', 'grp=1', 'IsSv>=2', 'NDD=True') 7
+   ('CS>0', 'grp=1', 'IsSv=1', 'NDD=False') 6
+   ('CS=0', 'grp=1', 'IsSv>=2', 'NDD=False') 3
+   ('CS=0', 'grp=1', 'IsSv=1', 'NDD=True') 3
+   ('CS=0', 'grp=1', 'IsSv=1', 'NDD=False') 3
+   ('CS>0', 'grp=1', 'IsSv=1', 'NDD=True') 2
+   ('CS>0', 'grp=0', 'IsSv=1', 'NDD=False') 1
+cars whose delivery answer moved across rounds: 1
+   23074613 [(23, 0, 1), (23, 1, 1), (23, 1, 1)]
+done in 312s
