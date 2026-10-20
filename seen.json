@@ -13304,7 +13304,7 @@
     "fc_gid": "24473511"
   },
   "fc_24473731": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 1970 Custom Plymouth Road Runner Die-Cast Toy Car - Orange",
     "price": "₹173",
     "source": "firstcry",
@@ -13319,10 +13319,10 @@
     "fc_listed_at": "2026-10-20T09:00:00",
     "fc_api_seen_at": "2026-10-20T09:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24342824": {
     "stock": "out_of_stock",
@@ -15121,13 +15121,13 @@
     "last_restock_alert": "2026-10-19T11:37:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-20T08:15:00",
+    "fc_listed_at": "2026-10-20T09:00:00",
     "fc_api_seen_at": "2026-10-20T09:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
-    "fc_lst": "cat",
+    "fc_live": "no delivery",
+    "fc_lst": "list",
     "fc_gid": "24476138",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24475737": {
     "stock": "out_of_stock",
@@ -15172,7 +15172,7 @@
   "fc_24476803": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -15184,7 +15184,7 @@
     "fc_listed_at": "2026-10-20T09:00:00",
     "fc_api_seen_at": "2026-10-20T09:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_svc": "1"
@@ -15233,7 +15233,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -15247,7 +15247,7 @@
     "fc_api_seen_at": "2026-10-20T09:00:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24472644"
   },
   "fc_24476435": {
@@ -15498,7 +15498,7 @@
   "fc_24503747": {
     "stock": "out_of_stock",
     "name": "Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - Green",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-die-cast-free-wheel-toy-car-green/24503747/product-detail",
     "first_seen": "2026-09-20T08:51:11",
@@ -17780,12 +17780,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T08:30:00",
-    "fc_api_seen_at": "2026-10-20T08:30:00",
+    "fc_api_seen_at": "2026-10-20T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "cat",
     "fc_gid": "23074178",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_22848390": {
     "stock": "out_of_stock",
