@@ -14710,7 +14710,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514779"
+    "fc_gid": "24514779",
+    "fc_svc": "0"
   },
   "fc_24476138": {
     "stock": "in_stock",
@@ -15520,7 +15521,7 @@
     "fc_listed_at": "2026-10-20T10:15:00",
     "fc_api_seen_at": "2026-10-20T10:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_svc": "0"
@@ -19549,7 +19550,7 @@
     "last_price_alert": ""
   },
   "kd_4lgO2xRpoQ": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "HOT WHEELS POP CULTURE 2026 SET OF 5",
     "price": "₹2745",
     "source": "karzdolls",
@@ -20178,9 +20179,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T10:00:00",
-    "fc_api_seen_at": "2026-10-20T10:00:00",
+    "fc_api_seen_at": "2026-10-20T10:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_svc": "0"
