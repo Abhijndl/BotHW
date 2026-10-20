@@ -15108,7 +15108,7 @@
     "fc_svc": "0"
   },
   "fc_24476471": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
     "price": "₹164",
     "source": "firstcry",
@@ -15122,10 +15122,10 @@
     "fc_listed_at": "2026-10-20T07:45:00",
     "fc_api_seen_at": "2026-10-20T07:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24476138",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24475737": {
     "stock": "out_of_stock",
@@ -15181,12 +15181,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T07:30:00",
-    "fc_api_seen_at": "2026-10-20T07:30:00",
+    "fc_api_seen_at": "2026-10-20T07:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24476138",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24476167": {
     "stock": "out_of_stock",
@@ -17250,7 +17250,7 @@
     "fc_listed_at": "2026-10-20T07:45:00",
     "fc_api_seen_at": "2026-10-20T07:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_svc": "0"
@@ -18134,7 +18134,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511"
+    "fc_gid": "24473511",
+    "fc_svc": "0"
   },
   "fc_24568707": {
     "stock": "out_of_stock",
