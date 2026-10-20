@@ -1,111 +1,94 @@
-seen.json copied: 831007 bytes
+seen.json copied: 830986 bytes
 
 ================ FORCED PASS: every store once ================
-  [FC-API] quick sweep: 196 in stock from 12 page(s) in 2.5s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [FC-API] quick sweep: 196 in stock from 12 page(s) in 2.3s — fresh ✓ (searchrank, 12 page(s) computed live)
   [FC-API] stock for pincode: 248001
-  [FC-API] 408 products across 21 page(s) (212 with zero stock) in 2.0s
+  [FC-API] 407 products across 21 page(s) (210 with zero stock) in 2.4s
   [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 404, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Maserati Die Cast Free Wheel Toy Car  | stock=in_stock count=4 price=173 mrp=179
-  [FC-LIVE] listing ['23348665', '24505759', '24473731', '23346007', '23074267', '24108016', '23351188', '24473474'] | delivery flips ['24776024', '24761908', '24476003', '24475755', '24473510', '24390958', '24248207', '24235312', '23345758', '21728779', '19995092', '19995087'] | re-reads []
-  [FC-LIVE] 39 to confirm, 4 🎯 set(s) read, 0 audited → 114 car(s) seen live in 4.7s; 1 now orderable, 0 not any more, 19 unconfirmed (page not read)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 403, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels Twin Dorado Die-Cast Toy Car -Red | stock=in_stock count=196 price=173 mrp=179
+  [FC-LIVE] listing ['20257824', '23835981', '23835987'] | delivery flips ['24776024', '24761908', '24476003', '24475755', '24473510', '24390958', '24248207', '23345758', '23075645', '24776080', '24762155', '24476803'] | re-reads []
+  [FC-LIVE] 25 to confirm, 4 🎯 set(s) read, 0 audited → 86 car(s) seen live in 3.9s; 0 now orderable, 1 not any more, 9 unconfirmed (page not read)
 [*] FirstCry total (API): 564 tracked, 128 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] forced pass (FirstCry + full catalogue): FirstCry → 564 products in 9.3s (live: FirstCry)
+[*] forced pass (FirstCry + full catalogue): FirstCry → 564 products in 8.8s (live: FirstCry)
 FirstCry stock changes in the forced pass: 1
-    ('fc_24473723', 'out_of_stock', 'in_stock', 'Hot Wheels X-Cceleron Die-Cast Toy Car - Grey')
-forced pass took 9.3s
-verdicts stored: Counter({None: 211, 'sold out': 176, 'ok': 131, 'no delivery': 55, 'arriving': 12, 'last unit': 2})
-stats: {'pages': 14, 'tat': 32}
-   fc_24473723 out_of_stock -> in_stock | page CS 2 delivery 1 units-for-you 2 | verdict ok | Hot Wheels X-Cceleron Die-Cast Toy Car - Grey
+    ('fc_23075645', 'in_stock', 'out_of_stock', 'Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car - Gr')
+forced pass took 8.8s
+verdicts stored: Counter({None: 211, 'sold out': 173, 'ok': 131, 'no delivery': 58, 'arriving': 12, 'last unit': 2})
+stats: {'pages': 14, 'tat': 28}
+   fc_23075645 in_stock -> out_of_stock | page CS 5 delivery 0 units-for-you None | verdict no delivery | Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car - Gr
 
 ================ DRY RUN of main() (alerts printed, not sent) ================
-  [HM] listing → 12 visible products
-  [MG] 1 products had no SKU row — used product_type fallback
-[*] Minifygram total: 271 of 274 (36 in stock; 1 trading cards, 62 pre-orders)
-[=] Minifygram: no alert-worthy changes (0 minor)
   [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [KD] boulevard-series → 0 (empty right now)
-  [KD] mainlines → 5
-  [KD] car-culture → 1
-  [KD] fast-and-furious → 1
-  [KD] team-transport → 5
-  [KD] card-art-premiums → 8
-  [KD] pop-culture → 4
-  [HM] creds: token=yes app_id=605884f889251331fe847d80
-  [FC-API] stock for pincode: 248001
-  [KD] gift-pack → 21
-  [KD] disney-cars → 0 (empty right now)
-  [KD] character-cars → 8
-  [HM] api → HTTP 401
-  [KD] hot-wheels-accessories → 8
-  [KD] mini-gt-blister-pack → 141
-  [KD] mini-gt → 101
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] pre-order-minigt → 50
-  [KD] kaido-house → 16
-  [FC-API] 408 products across 21 page(s) (212 with zero stock) in 2.0s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 404, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Maserati Die Cast Free Wheel Toy Car  | stock=in_stock count=4 price=173 mrp=179
-  [FC-LIVE] listing ['23348665', '24505759', '24473731', '23346007', '23074267', '24108016', '23351188'] | delivery flips ['24248207', '24235312', '23345758', '21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449', '24247508'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [KD] chase-car → 0 (empty right now)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-  [HM] api → HTTP 401
-  [KD] home → 0 new (27 already listed elsewhere)
-[*] Karz&Dolls total: 369 (369 in stock)
-[=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [HM] api → HTTP 401
-  [HM] Fynd API returned nothing — falling back to page checks
-  [HM] sitemap → 28 hot-wheels product slugs
-  [HM] page-checked 12 products (0 in stock / 12 sold out)
-[*] Hamleys total: 64 (32 in stock)
-[=] Hamleys: no alert-worthy changes (0 minor)
-  [FC-LIVE] 23 to confirm, 4 🎯 set(s) read, 0 audited → 170 car(s) seen live in 4.0s; 0 now orderable, 0 not any more
-[*] FirstCry total (API): 564 tracked, 128 buyable now (in-stock list complete), 0 aged to delisted
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['24247508'] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 99 car(s) seen live in 2.5s; 0 now orderable, 0 not any more
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry, Minifygram, Hamleys, Karz&Dolls → 1268 products in 7.1s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['23346007', '23074267', '24473731', '24473502', '23348665', '24505759', '24108016', '23351188'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 20 to confirm, 4 🎯 set(s) read, 0 audited → 137 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 151 products in 3.5s (live: FirstCry)
+[*] pass 1: FirstCry → 160 products in 3.6s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 68 car(s) seen live in 1.9s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 138 products in 2.9s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 62 car(s) seen live in 1.5s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 129 products in 2.4s (live: FirstCry)
   [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 70 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 134 products in 3.3s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 71 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 135 products in 4.0s (live: FirstCry)
+  [FC-LIVE] listing ['24248192', '23700380', '23075645', '23351684', '23930405', '23351681', '23346404', '22597418', '23354966'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 114 car(s) seen live in 3.3s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 164 products in 4.4s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi+Mi+Ha+Ka=7s, 12s:Fi=4s, 24s:Fi=4s, 36s:Fi=4s)
-main() took 40.3s; 0 message(s) would have been sent
-stats: {'pages': 40, 'tat': 98}
-verdicts after run 1: Counter({None: 211, 'sold out': 174, 'ok': 131, 'no delivery': 55, 'arriving': 14, 'last unit': 2})
+[*] run finished: 4 pass(es) in 41s (0s:Fi=4s, 12s:Fi=4s, 24s:Fi=3s, 36s:Fi=5s)
+main() took 41.2s; 0 message(s) would have been sent
+stats: {'pages': 35, 'tat': 82}
+verdicts after run 1: Counter({None: 211, 'sold out': 173, 'ok': 130, 'no delivery': 58, 'arriving': 12, 'last unit': 3})
 
 ================ SECOND RUN (steady state) ================
   [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 67 car(s) seen live in 1.8s; 0 now orderable, 0 not any more
+  [MG] 1 products had no SKU row — used product_type fallback
+[*] Minifygram total: 271 of 274 (36 in stock; 1 trading cards, 62 pre-orders)
+[=] Minifygram: no alert-worthy changes (0 minor)
+  [KD] mainlines → 5
+  [KD] boulevard-series → 0 (empty right now)
+  [KD] team-transport → 5
+  [KD] card-art-premiums → 8
+  [KD] pop-culture → 4
+  [KD] car-culture → 1
+  [KD] fast-and-furious → 1
+  [KD] gift-pack → 21
+  [FC-LIVE] listing ['24248192', '23700380', '23075645', '23351684', '23930405', '23351681', '23346404', '22597418', '23354966'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [KD] disney-cars → 0 (empty right now)
+  [KD] hot-wheels-accessories → 8
+  [KD] character-cars → 8
+  [KD] kaido-house → 16
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] pre-order-minigt → 50
+  [KD] mini-gt → 106
+  [KD] mini-gt-blister-pack → 136
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 98 car(s) seen live in 2.2s; 0 now orderable, 0 not any more
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 134 products in 2.9s (live: FirstCry)
+  [KD] chase-car → 0 (empty right now)
+  [KD] home → 0 new (27 already listed elsewhere)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+[*] Karz&Dolls total: 369 (369 in stock)
+[=] Karz&Dolls: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry, Minifygram, Karz&Dolls → 773 products in 3.6s (live: FirstCry, Karz&Dolls, Minifygram)
   [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 80 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 139 products in 3.8s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['20257824', '24473502', '23835981', '23835987'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 74 car(s) seen live in 3.7s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 130 products in 4.9s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['23075645', '24248192', '23351681', '23354966', '23930405', '22597418', '23346404', '23351684'] | delivery flips ['21728779', '19995092', '19995087', '19168213', '15954101', '11384335', '11384334', '10031449'] | re-reads ['24776024', '24761908', '24476003', '24475755']
-  [FC-LIVE] 20 to confirm, 4 🎯 set(s) read, 0 audited → 124 car(s) seen live in 3.9s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 137 products in 5.5s (live: FirstCry)
+  [FC-LIVE] listing ['24248192', '23700380', '23075645', '23351684', '23930405', '23351681', '23346404', '22597418', '23354966'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 96 car(s) seen live in 2.3s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 131 products in 3.3s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24248192', '23700380', '23075645', '23351684', '23930405', '23351681', '23346404', '22597418', '23354966'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 138 car(s) seen live in 3.2s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 131 products in 4.4s (live: FirstCry)
+  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.7s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24248192', '23700380', '23075645', '23351684', '23930405', '23351681', '23346404', '22597418', '23354966'] | delivery flips [] | re-reads ['24776024', '24761908', '24476003', '24475755']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 103 car(s) seen live in 2.1s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 129 products in 3.8s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 42s (0s:Fi=3s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=6s)
-run 2 took 41.8s; 0 message(s) would have been sent; pages 32, delivery checks 62
-verdicts after run 2: Counter({None: 211, 'sold out': 174, 'ok': 130, 'no delivery': 55, 'arriving': 14, 'last unit': 3})
-   fc_23346007 out_of_stock arriving | Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW 
+[*] run finished: 4 pass(es) in 41s (0s:Fi+Mi+Ka=4s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=5s)
+run 2 took 40.7s; 0 message(s) would have been sent; pages 17, delivery checks 53
+verdicts after run 2: Counter({None: 211, 'sold out': 174, 'ok': 130, 'no delivery': 58, 'arriving': 12, 'last unit': 2})
    fc_23345758 out_of_stock arriving | Hot Wheels Die Cast Free Wheel 171/250 1983 Porsche 928S - B
    fc_23354966 in_stock last unit | Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Ca
    fc_24248207 out_of_stock arriving | Hot Wheels Die Cast Toy Car (175/250) Audi Avant RS2 94 with
@@ -113,12 +96,10 @@ verdicts after run 2: Counter({None: 211, 'sold out': 174, 'ok': 130, 'no delive
    fc_24473713 out_of_stock arriving | Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown
    fc_24473511 out_of_stock arriving | Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple
    fc_24476003 out_of_stock arriving | Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic gre
-   fc_24475737 out_of_stock arriving | Hot Wheels 24/Seven Die cast car 38/250 - Blue
    fc_24475755 out_of_stock arriving | Hot Wheels Datsun 240Z Die cast car 72/250 - Green
    fc_24390958 out_of_stock arriving | Hot Wheels Road Trip Die Cast Free Wheel Subaru Legacy GT To
-   fc_23074265 out_of_stock arriving | Hot Wheels Free Wheel Die Cast Kick Sauber F1 Team/Equipe (1
    fc_24473510 out_of_stock arriving | Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #6
-   fc_24235312 out_of_stock last unit | Hot Wheels 98 Honda Prelude Toy Car with Color Die-Cast Mode
    fc_24762155 out_of_stock arriving | Hot Wheels '88 Mitsubishi Starion Die Cast Free Wheel Toy Ca
    fc_24761908 out_of_stock arriving | Hot Wheels Nissan Skyline 2000 GT-R Die Cast Free Wheel Toy 
+   fc_24776080 out_of_stock arriving | Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Ca
    fc_24776024 out_of_stock arriving | Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250) Toy Car - Gr
