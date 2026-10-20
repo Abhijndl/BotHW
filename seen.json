@@ -12996,7 +12996,7 @@
     "fc_gid": "24473511"
   },
   "fc_24473723": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹175",
     "source": "firstcry",
@@ -13010,7 +13010,7 @@
     "fc_listed_at": "2026-10-20T06:30:00",
     "fc_api_seen_at": "2026-10-20T06:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511"
   },
@@ -13126,7 +13126,7 @@
     "fc_gid": "24473511"
   },
   "fc_24473516": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
     "price": "₹173",
     "source": "firstcry",
@@ -13134,13 +13134,13 @@
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-10-20T06:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-20T04:50:09",
+    "last_restock_alert": "2026-10-20T06:43:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T06:15:00",
-    "fc_api_seen_at": "2026-10-20T06:15:00",
+    "fc_api_seen_at": "2026-10-20T06:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24473511"
   },
