@@ -3628,7 +3628,7 @@
     "fc_svc": "1"
   },
   "fc_23346007": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW Toy Car - Blue",
     "price": "₹161",
     "source": "firstcry",
@@ -3643,10 +3643,10 @@
     "fc_listed_at": "2026-10-20T14:30:00",
     "fc_api_seen_at": "2026-10-20T16:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23345759",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23348664": {
     "stock": "out_of_stock",
@@ -13281,7 +13281,7 @@
     "fc_listed_at": "2026-10-20T10:30:00",
     "fc_api_seen_at": "2026-10-20T16:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_svc": "1"
