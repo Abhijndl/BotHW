@@ -13110,7 +13110,7 @@
     "fc_gid": "19995087"
   },
   "fc_24473724": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
     "price": "₹161",
     "source": "firstcry",
@@ -13125,7 +13125,7 @@
     "fc_listed_at": "2026-10-19T10:30:00",
     "fc_api_seen_at": "2026-10-20T11:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_svc": "1"
