@@ -110,6 +110,11 @@ jobs:
           # A restock confirmed on the product page may alert again after this
           # many hours (unconfirmed ones keep 24 h).
           FC_RESTOCK_COOLDOWN_H: "1"
+          # Units that must be orderable for 248001 before FirstCry alerts: 1 for
+          # your 🎯 cars (worth a try even when it's the last one), 2 for the rest
+          # (single units of other cars came and went within minutes all day).
+          FC_MIN_ALERT_STOCK_TARGET: "1"
+          FC_MIN_ALERT_STOCK: "2"
           # Catalogue pages fetched at once. If the log ever shows HTTP 429,
           # FirstCry is objecting to the pace — set this to "5".
           FC_API_PARALLEL: "10"

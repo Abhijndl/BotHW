@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v15
-==============================================
+Hot Wheels / Diecast Collector Tracker  ·  v15.1
+================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
 Runtime : Pure HTTP (curl_cffi with a real Chrome fingerprint). No browser.
@@ -16,7 +16,8 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
     the PRODUCT PAGE decides (v14). A car only counts as orderable when its
     freshly loaded page shows units (ADD TO CART) AND FirstCry's own delivery
     check says FC_MIN_ALERT_STOCK+ units can reach your pincode (v15: its
-    IsServicable count — the SF90 showed 155 on the page and 1 for 248001).
+    IsServicable count — the SF90 showed 155 on the page and 1 for 248001;
+    v15.1: one unit is enough for your 🎯 cars, FC_MIN_ALERT_STOCK_TARGET).
     The listing lagged the page by up to ~10 min and kept showing cars nobody
     could order. Every pass, the cheap delivery check also looks at every 🎯
     car (and every tracked car once a run), so a car becoming deliverable is
@@ -808,6 +809,10 @@ _FC_PCODE_ACTIVE = [FC_PINCODE]
 # treated as sold out — and when FirstCry actually restocks it (2+ units), you
 # get the alert then. Set to 1 to be alerted even for last-unit cars.
 FC_MIN_ALERT_STOCK = max(1, int(os.getenv("FC_MIN_ALERT_STOCK", "2")))
+# v15.1: your 🎯 cars (hand-picked, marques, watchlist) alert from this many —
+# one unit that can reach you is worth a try for those (Club: no delivery fee
+# on a single order). Other cars keep FC_MIN_ALERT_STOCK.
+FC_MIN_ALERT_STOCK_TARGET = max(1, int(os.getenv("FC_MIN_ALERT_STOCK_TARGET", "1")))
 # v2: the v1 run that misread TTL wrongly flipped ~209 cars to sold out. Bumping
 # the version makes the next run treat every FirstCry reading as a silent
 # correction, so those cars reappearing can NOT fire false restock alerts.
@@ -1281,7 +1286,7 @@ def fc_api_records(products: dict, prev_fc: dict, quiet: bool = False) -> list:
             if stock is None:
                 continue
         if (stock == "in_stock" and isinstance(count, int)
-                and 0 < count < FC_MIN_ALERT_STOCK):
+                and 0 < count < _fc_min_units(pid, name)):
             stock = "out_of_stock"      # effectively gone — alert when FirstCry restocks it
         mrp = price_to_int(_ci(p, "pricing.mrp", "mrp"))
         price = price_to_int(_ci(p, "pricing.discPrice", "discprice", "dpric", "dprice",
@@ -1678,12 +1683,22 @@ def fc_live_check(pids, max_pages: int | None = None, gids: dict | None = None) 
     return res
 
 
-def _fc_live_verdict(info: dict | None, on_list: bool = False) -> str | None:
+def _fc_min_units(pid: str, name: str) -> int:
+    """Units you must be able to order before a car counts as in stock:
+    FC_MIN_ALERT_STOCK_TARGET for your 🎯 cars, FC_MIN_ALERT_STOCK for the rest."""
+    nm = name or ""
+    flagged = (str(pid) in FC_WATCH_IDS or _fc_is_marque(nm)
+               or any(w in nm.lower() for w in WATCHLIST))
+    return FC_MIN_ALERT_STOCK_TARGET if flagged else FC_MIN_ALERT_STOCK
+
+
+def _fc_live_verdict(info: dict | None, on_list: bool = False, need: int | None = None) -> str | None:
     """What FirstCry says about a car right now, from its product page (CS =
     national stock), the delivery check's 0/1 for it (svc) and the units that
     can reach your pincode (isv):
-      'ok'          FC_MIN_ALERT_STOCK+ units you can order (min of page & local)
-      'last unit'   exactly one local unit (reserved and released all day)
+      'ok'          `need` (FC_MIN_ALERT_STOCK, or the 🎯 minimum) or more
+                    units you can order (min of page & local)
+      'last unit'   fewer local units than that (reserved and released all day)
       'arriving'    local units, but the page isn't selling them yet (CS 0)
       'no delivery' stock, but none that can reach you (the SF90's 155)
       'sold out'    nothing anywhere
@@ -1691,18 +1706,19 @@ def _fc_live_verdict(info: dict | None, on_list: bool = False) -> str | None:
     None when the page wasn't read."""
     if not info or info.get("cs") is None:
         return None
+    need = FC_MIN_ALERT_STOCK if need is None else need
     cs, svc, isv = info["cs"], info.get("svc"), info.get("isv")
     if svc == 0 or isv == 0:
         return "no delivery" if cs > 0 else "sold out"
     if isv is not None and isv > 0:
         if cs <= 0:
             return "arriving"
-        return "ok" if min(cs, isv) >= FC_MIN_ALERT_STOCK else "last unit"
+        return "ok" if min(cs, isv) >= need else "last unit"
     if cs <= 0:
         return "sold out"
     # no count: only cars the delivery check never answers for (sets, bikes…)
     # can still go by the in-stock list, as before
-    if svc is None and on_list and cs >= FC_MIN_ALERT_STOCK:
+    if svc is None and on_list and cs >= need:
         return "ok"
     return "unconfirmed"
 
@@ -1922,7 +1938,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             later.add(p)
     out = [r for r in recs if r["id"][3:] not in later]
     for p, info in live.items():
-        verdict = _fc_live_verdict(info, on_list=p in listed_in)
+        verdict = _fc_live_verdict(info, on_list=p in listed_in, need=_fc_min_units(
+            p, (by.get(p) or prev_fc.get(p) or {}).get("name") or info.get("pn") or ""))
         if verdict is None:
             continue
         v = prev_fc.get(p)
