@@ -4348,7 +4348,7 @@
     "fc_gid": "23973353"
   },
   "fc_23351684": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 158/250 Mach Speeder Die Cat Free Wheel Toy Car- Red",
     "price": "₹167",
     "source": "firstcry",
@@ -4362,7 +4362,8 @@
     "fc_listed_at": "2026-09-27T04:15:00",
     "fc_api_seen_at": "2026-10-20T04:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
+    "fc_lst": "out",
     "fc_gid": "23347148"
   },
   "hm_ne-car-culture-asst-vqc7uu0bogkg": {
