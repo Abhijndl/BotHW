@@ -4178,7 +4178,7 @@
     "fc_trusted": true
   },
   "fc_23075645": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car - Grey",
     "price": "₹164",
     "source": "firstcry",
@@ -4193,7 +4193,7 @@
     "fc_listed_at": "2026-10-20T06:15:00",
     "fc_api_seen_at": "2026-10-20T06:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074890"
   },
@@ -20912,7 +20912,7 @@
     "fc_listed_at": "2026-10-20T06:15:00",
     "fc_api_seen_at": "2026-10-20T06:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24775936"
   },
