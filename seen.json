@@ -3849,7 +3849,7 @@
     "fc_listed_at": "2026-10-20T08:00:00",
     "fc_api_seen_at": "2026-10-20T08:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23347148",
     "fc_svc": "0"
@@ -3990,7 +3990,7 @@
     "fc_api_seen_at": "2026-10-20T08:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23353372",
     "fc_svc": "0"
   },
