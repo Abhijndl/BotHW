@@ -2927,7 +2927,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074613": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast 59 Chevy Impala (44/250) Toy Car - White/Green",
     "price": "₹164",
     "source": "firstcry",
@@ -2941,7 +2941,7 @@
     "fc_listed_at": "2026-10-20T04:15:00",
     "fc_api_seen_at": "2026-10-20T04:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178"
   },
@@ -17527,7 +17527,7 @@
     "fc_listed_at": "2026-10-20T04:15:00",
     "fc_api_seen_at": "2026-10-20T04:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178"
   },
