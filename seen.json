@@ -15081,10 +15081,10 @@
     "fc_listed_at": "2026-10-20T07:45:00",
     "fc_api_seen_at": "2026-10-20T07:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24476003": {
     "stock": "out_of_stock",
@@ -21713,7 +21713,7 @@
     "last_price_alert": ""
   },
   "kd_ywNWQG2pAX": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT TOYOTA SUPRA VEILSIDE COMBAT V-II COMBAT GREY",
     "price": "₹1299",
     "source": "karzdolls",
