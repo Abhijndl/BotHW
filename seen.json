@@ -17088,8 +17088,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24390971",
-    "fc_svc": "0"
+    "fc_gid": "24390971"
   },
   "fc_24390969": {
     "stock": "out_of_stock",
@@ -20216,7 +20215,7 @@
     "first_seen": "2026-10-13T13:30:00",
     "last_seen": "2026-10-20T20:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T06:30:21",
+    "last_restock_alert": "2026-10-20T20:31:30",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T20:30:00",
