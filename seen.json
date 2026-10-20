@@ -5980,7 +5980,7 @@
     "hm_verified_at": "2026-10-20T20:45:00"
   },
   "fc_24194176": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 5 Pack Toy Cars 1:64 Scale Die-Cast Free Wheel Batman Super Villains Silver Series - Multicolor",
     "price": "₹1399",
     "source": "firstcry",
@@ -5995,10 +5995,10 @@
     "fc_listed_at": "2026-10-20T20:45:00",
     "fc_api_seen_at": "2026-10-20T20:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24194176",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24194174": {
     "stock": "in_stock",
@@ -14892,8 +14892,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24390949": {
     "stock": "out_of_stock",
@@ -15194,8 +15193,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24476803": {
     "stock": "out_of_stock",
@@ -15276,8 +15274,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24476435": {
     "stock": "in_stock",
@@ -16645,7 +16642,7 @@
     "fc_listed_at": "2026-10-20T20:45:00",
     "fc_api_seen_at": "2026-10-20T20:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
@@ -16665,7 +16662,7 @@
     "fc_listed_at": "2026-10-20T20:45:00",
     "fc_api_seen_at": "2026-10-20T20:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
@@ -17067,8 +17064,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24390971": {
     "stock": "out_of_stock",
