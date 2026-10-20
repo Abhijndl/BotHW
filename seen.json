@@ -4901,7 +4901,7 @@
     "fc_trusted": true
   },
   "fc_23354966": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 86/250 VW ID Buzz Bomb Toy Car - Blue",
     "price": "₹175",
     "source": "firstcry",
@@ -5917,10 +5917,10 @@
     "fc_listed_at": "2026-10-20T07:30:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "1",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24247507": {
     "stock": "out_of_stock",
@@ -15142,10 +15142,10 @@
     "fc_listed_at": "2026-10-20T07:00:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24472665": {
     "stock": "out_of_stock",
@@ -20369,10 +20369,10 @@
     "fc_listed_at": "2026-10-20T06:15:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24761907",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24762155": {
     "stock": "out_of_stock",
