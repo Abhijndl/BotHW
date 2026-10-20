@@ -12024,10 +12024,10 @@
     "fc_listed_at": "2026-10-20T07:30:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24390961",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23353034": {
     "stock": "out_of_stock",
@@ -13240,7 +13240,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24473713": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
     "price": "₹164",
     "source": "firstcry",
@@ -13254,10 +13254,10 @@
     "fc_listed_at": "2026-10-20T07:30:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473516": {
     "stock": "out_of_stock",
@@ -19729,7 +19729,7 @@
     "fc_listed_at": "2026-10-20T07:30:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24235312",
     "fc_svc": "0"
@@ -20350,7 +20350,7 @@
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
