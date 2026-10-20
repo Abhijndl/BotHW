@@ -13303,7 +13303,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511"
+    "fc_gid": "24473511",
+    "fc_svc": "0"
   },
   "fc_24473731": {
     "stock": "out_of_stock",
@@ -13472,19 +13473,18 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-models-5-5-silver-series-vintage-club-mercedes-benz-300-sl-die-cast-car-pista/24390967/product-detail",
     "first_seen": "2026-09-17T08:31:27",
-    "last_seen": "2026-10-20T15:15:00",
+    "last_seen": "2026-10-20T15:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-30T05:17:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-20T15:15:00",
-    "fc_api_seen_at": "2026-10-20T15:15:00",
+    "fc_api_seen_at": "2026-10-20T15:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24390967",
-    "fc_svc": "0"
+    "fc_gid": "24390967"
   },
   "fc_24390968": {
     "stock": "out_of_stock",
@@ -14648,8 +14648,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473477",
-    "fc_svc": "0"
+    "fc_gid": "24473477"
   },
   "fc_24473477": {
     "stock": "out_of_stock",
@@ -14689,8 +14688,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473477",
-    "fc_svc": "0"
+    "fc_gid": "24473477"
   },
   "fc_24514779": {
     "stock": "out_of_stock",
@@ -14884,8 +14882,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24390949": {
     "stock": "out_of_stock",
@@ -15174,8 +15171,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24476803": {
     "stock": "out_of_stock",
@@ -15256,8 +15252,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_gid": "24472644"
   },
   "fc_24476435": {
     "stock": "in_stock",
