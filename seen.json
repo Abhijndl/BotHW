@@ -13505,7 +13505,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24390968"
+    "fc_gid": "24390968",
+    "fc_svc": "0"
   },
   "fc_24248198": {
     "stock": "in_stock",
@@ -17080,8 +17081,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24390969",
-    "fc_svc": "0"
+    "fc_gid": "24390969"
   },
   "fc_24390966": {
     "stock": "out_of_stock",
