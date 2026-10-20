@@ -5978,7 +5978,7 @@
     "hm_verified_at": "2026-10-20T20:00:00"
   },
   "fc_24194176": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 5 Pack Toy Cars 1:64 Scale Die-Cast Free Wheel Batman Super Villains Silver Series - Multicolor",
     "price": "₹1399",
     "source": "firstcry",
@@ -5993,9 +5993,10 @@
     "fc_listed_at": "2026-10-20T20:00:00",
     "fc_api_seen_at": "2026-10-20T20:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
-    "fc_gid": "24194176"
+    "fc_gid": "24194176",
+    "fc_svc": "0"
   },
   "fc_24194174": {
     "stock": "in_stock",
@@ -20383,7 +20384,7 @@
     "fc_svc": "1"
   },
   "fc_24761907": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
     "price": "₹173",
     "source": "firstcry",
@@ -20397,10 +20398,10 @@
     "fc_listed_at": "2026-10-20T20:00:00",
     "fc_api_seen_at": "2026-10-20T20:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24761907",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24762155": {
     "stock": "out_of_stock",
