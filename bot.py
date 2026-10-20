@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v14.1.1
+Hot Wheels / Diecast Collector Tracker  ·  v15
 ==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -14,13 +14,14 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
     pass, whole catalogue every 10 min, both read live) says where to look;
     the PRODUCT PAGE decides (v14). A car only counts as orderable when its
-    freshly loaded page shows FC_MIN_ALERT_STOCK+ units AND FirstCry's own
-    delivery check says it can be delivered to your pincode — the two things
-    the page itself uses for ADD TO CART and for switching to another car of
-    the set. The listing lagged the page by up to ~10 min and kept showing
-    cars nobody could order. Your 🎯 cars that are out of stock have their
-    product pages read directly, a few sets per pass, so their restock
-    doesn't wait for the listing.
+    freshly loaded page shows units (ADD TO CART) AND FirstCry's own delivery
+    check says FC_MIN_ALERT_STOCK+ units can reach your pincode (v15: its
+    IsServicable count — the SF90 showed 155 on the page and 1 for 248001).
+    The listing lagged the page by up to ~10 min and kept showing cars nobody
+    could order. Every pass, the cheap delivery check also looks at every 🎯
+    car (and every tracked car once a run), so a car becoming deliverable is
+    seen within seconds; the product pages of out-of-stock 🎯 sets are read in
+    a rotation that reaches every set.
   • Minifygram: full list every 2 min, plus a tiny "anything changed?" check
     every pass that pulls new listings in within seconds. Trading cards too.
   • Karz & Dolls every 2 min, read from the JSON the site embeds in its pages.
@@ -34,7 +35,8 @@ stores. Runs are chained back to back, so the watch is continuous.
 ALERTS
 ------
 🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
-🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units left
+🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units you can
+order (page stock, capped by what can be delivered to your pincode)
 FirstCry links open a freshly rendered page (…?fresh=…), not a CDN copy that
 can be 20 minutes old.
 Every product's NEW alert fires once ever. Restocks: 1 h cooldown when
@@ -259,7 +261,8 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
-                  "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid"):
+                  "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid",
+                  "fc_svc"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
                 v = _bucket(v)
@@ -1390,7 +1393,21 @@ FC_RESTOCK_COOLDOWN_H = float(os.getenv("FC_RESTOCK_COOLDOWN_H", "1"))
 _FC_HW_NAME     = re.compile(r"hot\s*-?\s*wheel", re.I)
 FC_TAT_URL      = "https://www.firstcry.com/tatapi/oam/checkdeliveryinfo"
 FC_TAT_BATCH    = 40
+# v15: asked about one car as the MAIN product, the delivery check also says how
+# many units can actually reach your pincode (Result.IsServicable). 20 Oct: the
+# SF90's page said 155 (FirstCry's national stock) while IsServicable said 1 for
+# 248001 — the "1" the app showed — and 0 six minutes later. 36 of 137 FirstCry
+# alerts in 40 h stopped being orderable within 5 minutes, nearly all cars with
+# one local unit that kept being reserved and released. So a restock now needs
+# FC_MIN_ALERT_STOCK units that can be delivered to you, and that is the count
+# the alert shows.
+# Cars that sit right at the edge (one local unit, or local units the page
+# doesn't sell yet) are re-read every FC_LIVE_NEAR_RECHECK minutes.
+FC_LIVE_NEAR_RECHECK = max(1, int(os.getenv("FC_LIVE_NEAR_RECHECK_MIN", "1")))
+_FC_RUN_PASS = [0]          # live checks done in this run (the first one sweeps every car)
+FC_LIVE_DEBUG = os.getenv("FC_LIVE_DEBUG", "").lower() in ("1", "true", "yes")
 _FC_LIVE: dict = {}         # pid -> {"cs","svc","pn","mrp","dis","gid","members","at_page","at_svc"}
+_FC_PAGE_TRIED: dict = {}   # pid -> when its product page (or its set's) was last asked for
 _FC_LIVE_PAUSE = [0.0]      # epoch until which product pages are left alone (429/403)
 _FC_TAT_PAUSE = [0.0]       # epoch until which the delivery check is left alone
 _FC_LIVE_STATS = {"pages": 0, "tat": 0}
@@ -1543,30 +1560,102 @@ def fc_delivery(pids, pincode: str | None = None) -> dict:
     return out
 
 
-def fc_live_check(pids, max_pages: int | None = None) -> dict:
+def fc_delivery_count(pids, pincode: str | None = None) -> dict:
+    """Ask the delivery check about each car as the MAIN product: how many units
+    can be delivered to your pincode (IsServicable), plus next-day / days. One
+    small call per car, in parallel. {car: units} for the cars it answered."""
+    pincode = str(pincode or FC_PINCODE)
+    pids = [str(p) for p in dict.fromkeys(pids) if str(p).isdigit()]
+    if (not pids or pincode in ("", "0") or _FC_LIVE_PAUSE[0] > time.time()
+            or _FC_TAT_PAUSE[0] > time.time()):
+        return {}
+    hdr = {**COMMON_HEADERS, "Accept": "application/json, text/javascript, */*; q=0.01",
+           "Content-Type": "application/json; charset=utf-8",
+           "X-Requested-With": "XMLHttpRequest", "Origin": "https://www.firstcry.com"}
+
+    def one(p):
+        members = ((_FC_LIVE.get(p) or {}).get("members") or [p])[:FC_TAT_BATCH]
+        if p not in members:
+            members = [p] + members[:FC_TAT_BATCH - 1]
+        body = {"ProductIDs": p, "Pincode": pincode, "ComboId": 0, "CheckTAT": True,
+                "CheckDropShipment": False, "CheckCOD": True, "subCatID": 94, "MRP": 179,
+                "AddressType": "Home", "Discount": 0, "minQty": 1, "CatID": 5, "ftk": "",
+                "groupproducts": ",".join(members)}
+        ref = f"https://www.firstcry.com/hot-wheels/x/{p}/product-detail"
+        try:
+            r = http.post(FC_TAT_URL, data=json.dumps(body), headers={**hdr, "Referer": ref},
+                          cookies=_fc_cookies(), timeout=FC_TAT_TIMEOUT, **_IMPERSONATE)
+        except Exception:
+            return p, None
+        _FC_LIVE_STATS["tat"] += 1
+        if r.status_code != 200:
+            return p, None
+        try:
+            return p, (r.json() or {}).get("Result") or None
+        except Exception:
+            return p, None
+
+    out, now, failed = {}, time.time(), 0
+    with ThreadPoolExecutor(max_workers=min(8, len(pids))) as ex:
+        for p, res in ex.map(one, pids):
+            if not isinstance(res, dict):
+                failed += 1
+                continue
+            isv = _fc_int(res.get("IsServicable"))
+            g = {str(k): _fc_int(v) for k, v in (res.get("groupserviceability") or {}).items()}
+            with _FC_LIVE_LOCK:
+                ent = _FC_LIVE.setdefault(p, {})
+                ent.update(isv=isv, at_isv=now, ndd=bool(res.get("IsNDD")),
+                           days=str(res.get("ProductTAT") or ""))
+                for k, v in g.items():
+                    if v in (0, 1):
+                        _FC_LIVE.setdefault(k, {}).update(svc=v, at_svc=now)
+            if isv is not None:
+                out[p] = isv
+    if failed == len(pids) and len(pids) >= 3:
+        _FC_TAT_PAUSE[0] = time.time() + 60
+        print("  [FC-LIVE] delivery check not answering — paused for 1 min")
+    return out
+
+
+def fc_live_check(pids, max_pages: int | None = None, gids: dict | None = None) -> dict:
     """Live state of these cars — {car: info with "cs" (units on its product
     page) and "svc" (delivery check)} — for every car whose page was read in the
     last minute, plus every other car of those colour sets. One page per set;
-    then one delivery check for every car with units."""
+    then one delivery check for every car with units. `gids` (car → colour set
+    stored from an earlier run) lets cars of one set share a page read before
+    this run has read any page."""
     max_pages = FC_LIVE_MAX if max_pages is None else max_pages
     now = time.time()
     deadline = now + FC_LIVE_BUDGET
     pids = [str(p) for p in dict.fromkeys(pids) if str(p).isdigit()]
     fresh = lambda p: now - (_FC_LIVE.get(p) or {}).get("at_page", 0) <= 60
-    todo, covered = [], set()
+    todo, covered, sets_ = [], set(), set()
     for p in pids:
-        if fresh(p) or p in covered:
+        g = (gids or {}).get(p)
+        if fresh(p) or p in covered or (g and g in sets_):
             continue
         todo.append(p)
         covered.add(p)
         covered.update((_FC_LIVE.get(p) or {}).get("members") or [])
+        if g:
+            sets_.add(g)
     todo = todo[:max_pages]
+
+    def tried(ps):
+        with _FC_LIVE_LOCK:
+            for p in ps:
+                for m in [p] + list((_FC_LIVE.get(p) or {}).get("members") or []):
+                    _FC_PAGE_TRIED[m] = now
+
     if todo:
+        tried(todo)
         with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
             list(ex.map(fc_page, todo))
         # set membership we remembered was wrong → that car's own page
         again = [p for p in pids if not fresh(p) and p not in todo][:max(0, max_pages - len(todo))]
         if again and time.time() < deadline:
+            tried(again)
             with ThreadPoolExecutor(max_workers=min(8, len(again))) as ex:
                 list(ex.map(fc_page, again))
     sets = set()
@@ -1577,61 +1666,91 @@ def fc_live_check(pids, max_pages: int | None = None) -> dict:
     ask = [p for p, v in res.items() if (v.get("cs") or 0) > 0 and now - v.get("at_svc", 0) > 30]
     if ask and time.time() < deadline:
         fc_delivery(ask)
+    # how many units can reach you — for the cars asked about that might be
+    # orderable (the delivery check didn't say no)
+    need = [p for p in pids if p in res and res[p].get("svc") != 0
+            and not ((res[p].get("cs") or 0) <= 0 and res[p].get("svc") is None)
+            and now - res[p].get("at_isv", 0) > 20]
+    if need and time.time() < deadline:
+        fc_delivery_count(need)
     return res
 
 
 def _fc_live_verdict(info: dict | None, on_list: bool = False) -> str | None:
-    """What the product page + delivery check say about a car right now:
-    'ok' (orderable to your pincode, FC_MIN_ALERT_STOCK+ units), 'last unit',
-    'no delivery', 'sold out', 'unconfirmed' (units on the page, but the
-    delivery check gave no answer and the in-stock list doesn't show it) — or
-    None when the page wasn't read.
-    On 18 Oct 41 cars had 2+ units on their page and could be delivered to no
-    pincode at all (Delhi, Mumbai, Bengaluru … all 0), so units alone are never
-    enough."""
+    """What FirstCry says about a car right now, from its product page (CS =
+    national stock), the delivery check's 0/1 for it (svc) and the units that
+    can reach your pincode (isv):
+      'ok'          FC_MIN_ALERT_STOCK+ units you can order (min of page & local)
+      'last unit'   exactly one local unit (reserved and released all day)
+      'arriving'    local units, but the page isn't selling them yet (CS 0)
+      'no delivery' stock, but none that can reach you (the SF90's 155)
+      'sold out'    nothing anywhere
+      'unconfirmed' the delivery check gave no count — nothing changes on that
+    None when the page wasn't read."""
     if not info or info.get("cs") is None:
         return None
-    cs = info["cs"]
+    cs, svc, isv = info["cs"], info.get("svc"), info.get("isv")
+    if svc == 0 or isv == 0:
+        return "no delivery" if cs > 0 else "sold out"
+    if isv is not None and isv > 0:
+        if cs <= 0:
+            return "arriving"
+        return "ok" if min(cs, isv) >= FC_MIN_ALERT_STOCK else "last unit"
     if cs <= 0:
         return "sold out"
-    svc = info.get("svc")
-    if svc == 0:
-        return "no delivery"
-    if cs < FC_MIN_ALERT_STOCK:
-        return "last unit"
-    return "ok" if (svc == 1 or on_list) else "unconfirmed"
+    # no count: only cars the delivery check never answers for (sets, bikes…)
+    # can still go by the in-stock list, as before
+    if svc is None and on_list and cs >= FC_MIN_ALERT_STOCK:
+        return "ok"
+    return "unconfirmed"
 
 
 def _fc_target(pid: str, v: dict) -> bool:
     nm = (v or {}).get("name", "")
-    return bool(nm) and not _fc_excluded(nm) and (
+    # Hot Wheels only: old records of a "Jukku Resembling Ferrari SF90" pull-back
+    # and Babyhug RC cars matched the marques and ate delivery checks every pass
+    return bool(nm) and not _fc_excluded(nm) and bool(_FC_HW_NAME.search(nm)) and (
         pid in FC_WATCH_IDS or bool((v or {}).get("auto_watch")) or _fc_is_marque(nm))
 
 
-def _fc_poll_sets(prev_fc: dict, k: int) -> list:
+def _fc_poll_sets(prev_fc: dict, k: int, pass_idx: int = 0) -> list:
     """Product pages to read this pass for 🎯 cars that are out of stock: your
-    hand-picked cars every pass, then one car per colour set — the newest 30
-    sets in a fast rotation (most restocks are recent cases), the rest in a slow
-    one. The rotation runs on the wall clock, so nothing has to be stored."""
+    hand-picked cars every pass, then one car per colour set from two
+    rotations — sets with something going on (a car restocked in the last 3
+    days, in stock now, or at the edge) and the rest.
+
+    v15: the position in each rotation comes from the run number and the pass
+    within the run, so consecutive passes read consecutive sets and every set
+    comes round. The old wall-clock position skipped the same slots every
+    minute (the gap between runs), so some sets were never read: 39 of 147 🎯
+    cars in two days, the SF90 among them."""
     if k <= 0:
         return []
     picks = [p for p in FC_WATCH_IDS if (prev_fc.get(p) or {}).get("stock") != "in_stock"][:k]
+    groups = {}
+    for pid, v in prev_fc.items():
+        if pid.isdigit():
+            groups.setdefault(v.get("fc_gid") or pid, []).append(v)
+    active = {g for g, vs in groups.items()
+              if any(v.get("stock") == "in_stock" or v.get("fc_live") in ("arriving", "last unit")
+                     or _hours_since(v.get("last_restock_alert", "")) < 72 for v in vs)}
     reps = {}
     for pid in sorted((p for p in prev_fc if p.isdigit()), key=int, reverse=True):
         v = prev_fc[pid]
         if v.get("stock") == "in_stock" or pid in picks or not _fc_target(pid, v):
             continue
-        g = v.get("fc_gid") or (_FC_LIVE.get(pid) or {}).get("gid") or pid
-        reps.setdefault(g, pid)
-    reps = list(reps.values())
-    hot, rest = reps[:30], reps[30:]
-    slot = int(time.time() // max(1.0, FC_EVERY))
-    n_rest = 1 if rest and k - len(picks) >= 2 else 0
-    n_hot = max(0, k - len(picks) - n_rest)
+        reps.setdefault(v.get("fc_gid") or (_FC_LIVE.get(pid) or {}).get("gid") or pid, pid)
+    hot = [p for g, p in reps.items() if g in active]
+    rest = [p for g, p in reps.items() if g not in active]
+    rn = os.getenv("GITHUB_RUN_NUMBER", "")
+    pos = (int(rn) if rn.isdigit() else int(time.time() // 60)) * 4 + pass_idx
+    free = max(0, k - len(picks))
+    n_hot = min(len(hot), (free + 1) // 2 if rest else free)
+    n_rest = min(len(rest), free - n_hot)
     for pool, n in ((hot, n_hot), (rest, n_rest)):
         if pool and n:
-            start = (slot * n) % len(pool)
-            picks += [pool[(start + i) % len(pool)] for i in range(min(n, len(pool)))]
+            start = (pos * n) % len(pool)
+            picks += [pool[(start + i) % len(pool)] for i in range(n)]
     return list(dict.fromkeys(picks))
 
 
@@ -1670,12 +1789,15 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         # — a Babyhug RC car — turn up in the sets of Hot Wheels pages)
         return p in word or bool(_FC_HW_NAME.search(nm))
 
-    cands, held = [], {}
+    cands, held, recheck = [], {}, set()
     # (stored entries for track sets etc. from before they were excluded never
     # reach an alert, so they must not use up page reads either)
     pool = {p for p in set(by) | {p for p, v in prev_fc.items() if v.get("stock") == "in_stock"}
             if wanted(p)}
-    for p in sorted(pool, key=lambda p: (by.get(p) or {}).get("stock") != "in_stock"):
+    # cars the listing calls in stock first, 🎯 cars first, newest first: when a
+    # wave is bigger than one pass's page reads, those are read first
+    for p in sorted(pool, key=lambda p: ((by.get(p) or {}).get("stock") != "in_stock",
+                                         not _fc_target(p, by.get(p) or prev_fc.get(p) or {}), -int(p))):
         v = prev_fc.get(p) or {}
         c = claim(p)
         if c is None or (c != "out") == (v.get("stock") == "in_stock"):
@@ -1683,27 +1805,81 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         # The listing disagrees with what we hold. A disagreement we already
         # checked (same listing word as at the last page read) is re-read every
         # FC_LIVE_RECHECK minutes; anything new is read now.
-        if v.get("fc_live") and v.get("fc_lst") == c and (slot + int(p)) % FC_LIVE_RECHECK:
-            held[p] = v.get("stock") or "out_of_stock"
-        else:
-            cands.append(p)
+        if v.get("fc_live") and v.get("fc_lst") == c:
+            if (slot + int(p)) % FC_LIVE_RECHECK:
+                held[p] = v.get("stock") or "out_of_stock"
+                continue
+            recheck.add(p)                        # read before: news goes first
+        cands.append(p)
 
-    # cars we hold in stock: delivery check every pass (cheap — 40 cars a call),
-    # plus cars held back only because they couldn't be delivered here
+    # The delivery check's 0/1 is cheap (40 cars a call) and moves the moment
+    # units for your pincode appear or go. Every pass it covers the cars we hold
+    # in stock, every 🎯 car, and every car at the edge; the first pass of a
+    # run covers every car we track.
+    first_call = _FC_RUN_PASS[0] == 0
+    _FC_RUN_PASS[0] += 1
     hold_in = [p for p in pool if (prev_fc.get(p) or {}).get("stock") == "in_stock" or p in listed_in]
-    nodel = [p for p, v in prev_fc.items() if v.get("fc_live") == "no delivery" and wanted(p)]
-    svc_now = fc_delivery(hold_in + nodel) if (hold_in or nodel) else {}
-    for p in nodel:
-        if svc_now.get(p) == 1 and p not in cands:
-            cands.append(p)                       # deliverable again → read its page
-    for p in hold_in:
-        if (svc_now.get(p) == 0 and p not in cands
-                and (prev_fc.get(p) or {}).get("stock") == "in_stock"):
-            cands.append(p)                       # can't be delivered here any more
+    edge = {p for p, v in prev_fc.items()
+            if v.get("fc_live") in ("no delivery", "last unit", "arriving", "unconfirmed") and wanted(p)}
+    tgt = {p for p, v in prev_fc.items() if p.isdigit() and v.get("stock") != "in_stock" and _fc_target(p, v)}
+    sweep = set(hold_in) | edge | tgt
+    if first_call:
+        sweep |= {p for p in prev_fc if wanted(p)}
+    svc_now = fc_delivery(sorted(sweep)) if sweep else {}
+    flips, due = [], []
+    for p in sorted(sweep, key=lambda p: (not _fc_target(p, prev_fc.get(p) or {}), -int(p))):
+        sv = svc_now.get(p)
+        if sv is None or p in cands:
+            continue
+        v = prev_fc.get(p) or {}
+        if v.get("stock") == "in_stock":
+            if sv == 0:
+                flips.append(p)                   # can't be delivered here any more
+            elif v.get("fc_live") == "last unit" and (slot + int(p)) % FC_LIVE_NEAR_RECHECK == 0:
+                due.append(p)                     # is that last unit still there?
+        elif sv == 1:
+            if str(v.get("fc_svc", "")) != "1":
+                flips.append(p)                   # deliverable here since we last looked: read now
+            elif (slot + int(p)) % (FC_LIVE_NEAR_RECHECK if v.get("fc_live") == "arriving"
+                                    else FC_LIVE_RECHECK) == 0:
+                due.append(p)                     # known to sit at the edge: re-read now and then
+    # changes first (🎯 cars first); routine re-reads only a few per pass, so
+    # they can't crowd out a real change — and they take turns (🎯 cars get
+    # half the slots), or the same few would take every slot while a car
+    # further down the list waits for the listing (dry run 20 Oct: 4 of 12
+    # 'arriving' cars were re-read every pass, the other 8 never)
+    n_due = FC_LIVE_AUDIT + 1
+    if len(due) > n_due:
+        rn = os.getenv("GITHUB_RUN_NUMBER", "")
+        pos = (int(rn) if rn.isdigit() else slot) * 4 + _FC_RUN_PASS[0] - 1
+        mine = [p for p in due if _fc_target(p, prev_fc.get(p) or {})]
+        rest = [p for p in due if p not in set(mine)]
+        n_m = min(len(mine), (n_due + 1) // 2 if rest else n_due)
+        n_r = min(len(rest), n_due - n_m)
+        n_m = min(len(mine), n_due - n_r)
+        pick = []
+        for pool_, n in ((mine, n_m), (rest, n_r)):
+            if pool_ and n:
+                start = (pos * n) % len(pool_)
+                pick += [pool_[(start + i) % len(pool_)] for i in range(n)]
+        due = list(dict.fromkeys(pick))
+    if FC_LIVE_DEBUG:
+        print(f"  [FC-LIVE] listing {cands[:12]} | delivery flips {flips[:12]} | re-reads {due[:n_due]}")
+    # Reading order when there are more changes than one pass reads: a possible
+    # restock first (the listing or the delivery check turning yes for a car we
+    # hold sold out), 🎯 cars first, newest first; then cars that may have gone;
+    # then the routine re-reads. A 🎯 car the delivery check just turned yes for
+    # — how the SF90 would have been caught — must not wait behind a wave of
+    # listing changes.
+    firsts = sorted(dict.fromkeys(cands + flips),
+                    key=lambda p: ((prev_fc.get(p) or {}).get("stock") == "in_stock", p in recheck,
+                                   not _fc_target(p, by.get(p) or prev_fc.get(p) or {}), -int(p)))
+    cands = firsts + [p for p in due[:n_due] if p not in firsts]
 
-    poll = _fc_poll_sets(prev_fc, FC_LIVE_POLL)
+    poll = _fc_poll_sets(prev_fc, FC_LIVE_POLL, _FC_RUN_PASS[0] - 1)
     order = list(dict.fromkeys(cands + poll))
-    live = fc_live_check(order) if order else {}
+    gids = {p: (prev_fc.get(p) or {}).get("fc_gid") for p in order if (prev_fc.get(p) or {}).get("fc_gid")}
+    live = fc_live_check(order, gids=gids) if order else {}
     # in-stock cars never confirmed on a page (e.g. from before v14): a few sets a pass
     audit = [p for p in sorted(hold_in, key=int, reverse=True)
              if not (prev_fc.get(p) or {}).get("fc_live") and p not in live and p not in cands]
@@ -1712,16 +1888,37 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     order += [p for p in audit if p in live]
 
     fc_max = max([int(p) for p in prev_fc if p.isdigit()] or [0])
-    out = list(recs)
-    n_up = n_down = n_new = n_fail = 0
+    n_up = n_down = n_new = n_fail = n_wait = 0
     for p, r in list(by.items()):
         if p in held:
             r["stock"] = held[p]
             if held[p] != "in_stock":
                 r["stock_count"] = None
+    later = set()
     for p in cands:
-        if p not in live:
-            n_fail += 1                            # page not read: the listing's word stands
+        if p in live:
+            continue
+        if _FC_PAGE_TRIED.get(p, 0) >= t0 or _FC_LIVE_PAUSE[0] > time.time():
+            n_fail += 1                            # its page couldn't be read: the listing's word stands
+            continue
+        # not read this pass only because other cars came first (a wave bigger
+        # than one pass's page reads): the listing's word waits for the page,
+        # next pass — a car announced unread can turn out not orderable at all
+        n_wait += 1
+        r, v = by.get(p), prev_fc.get(p)
+        if r is None:
+            continue
+        if v and v.get("stock"):
+            r["stock"] = v["stock"]
+            if v["stock"] != "in_stock":
+                r["stock_count"] = None
+        elif not v and prev_fc and int(p) > fc_max:
+            # a brand-new listing: announced once its page is read. (Older ids
+            # new to us keep the listing's word, so a coverage burst still
+            # arrives in one piece for the burst guard; the first run records
+            # everything as is.)
+            later.add(p)
+    out = [r for r in recs if r["id"][3:] not in later]
     for p, info in live.items():
         verdict = _fc_live_verdict(info, on_list=p in listed_in)
         if verdict is None:
@@ -1730,10 +1927,22 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         r = by.get(p)
         if (r is None or r.get("fc_carried")) and v is not None and not wanted(p):
             continue
-        if verdict == "unconfirmed":
-            st = (v or {}).get("stock") or "out_of_stock"   # no word on delivery: no change
+        if (verdict == "sold out" and v and v.get("fc_live") == "arriving"
+                and info.get("svc") == 1 and info.get("isv") is None):
+            # read as part of another car's set, not counted this pass: the page
+            # still sells none, and its last count (units on their way) stands —
+            # calling it 'sold out' would drop it from the re-reads
+            verdict = "arriving"
+        before = (v or {}).get("stock")
+        if verdict == "ok":
+            st = "in_stock"
+        elif verdict == "unconfirmed" or (verdict == "last unit" and before == "in_stock"):
+            # no count from the delivery check: no change. A car down to its
+            # last local unit keeps its place until it's really gone, so it
+            # can't flap in and out as that unit is reserved and released.
+            st = before or "out_of_stock"
         else:
-            st = "in_stock" if verdict == "ok" else "out_of_stock"
+            st = "out_of_stock"
         if r is None:
             if v is None:
                 nm = info.get("pn") or ""
@@ -1755,8 +1964,12 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                      "fc_absorb": int(p) <= fc_max}
                 n_new += 1
             else:
-                if (v.get("stock") == st and v.get("fc_live") == verdict
-                        and v.get("fc_gid") == (info.get("gid") or v.get("fc_gid"))):
+                sv = info.get("svc") if info.get("svc") is not None else svc_now.get(p)
+                if (v.get("stock") == st
+                        and v.get("fc_live") == (v.get("fc_live") if verdict == "unconfirmed" else verdict)
+                        and v.get("fc_gid") == (info.get("gid") or v.get("fc_gid"))
+                        and str(v.get("fc_svc", "")) == ("" if sv is None else str(sv))
+                        and v.get("fc_lst", "") == (claim(p) or v.get("fc_lst", ""))):
                     continue                       # nothing new for a car outside the listing
                 # outside the listing only Hot Wheels count (an old record for a
                 # Babyhug RC car turned up on a Hot Wheels page's set)
@@ -1772,7 +1985,6 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                      "fc_api_seen_at": v.get("fc_api_seen_at", "")}
             out.append(r)
             by[p] = r
-        before = (v or {}).get("stock")
         # The first page reading of a car tracked from before v14, which the
         # listing isn't calling in stock, is a correction, not news: cars the
         # listing was hiding (on sale for hours) must not all fire "back in
@@ -1782,9 +1994,15 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 and claim(p) not in ("list", "cat")
                 and v.get("first_seen", "") < (_FC_LIVE_SINCE[0] or "0")):
             r["fc_first_read"] = True
+        if verdict == "unconfirmed" and v and v.get("fc_live"):
+            verdict = v["fc_live"]                 # no new word on delivery: keep the last one
         r["stock"] = st
-        r["stock_count"] = info.get("cs") if st == "in_stock" else None
+        isv, cs = info.get("isv"), info.get("cs") or 0
+        # the count you can actually get: page stock, capped by what can reach you
+        r["stock_count"] = (min(cs, isv) if isv else cs) if st == "in_stock" else None
         r["fc_live"] = verdict
+        sv = info.get("svc") if info.get("svc") is not None else svc_now.get(p)
+        r["fc_svc"] = "" if sv is None else str(sv)
         r["fc_lst"] = claim(p) or (v or {}).get("fc_lst", "")
         r["fc_gid"] = info.get("gid") or (v or {}).get("fc_gid", "")
         r["fc_live_now"] = True
@@ -1793,13 +2011,14 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         r["fc_api_seen_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
         n_up += before != "in_stock" and st == "in_stock"
         n_down += before == "in_stock" and st != "in_stock"
-    if order or n_fail:
+    if order or n_fail or n_wait:
         print(f"  [FC-LIVE] {len(cands)} to confirm, {len(poll)} 🎯 set(s) read, "
               f"{sum(1 for p in audit if p in live)} audited → "
               f"{len(live)} car(s) seen live in {time.time() - t0:.1f}s; "
               f"{n_up} now orderable, {n_down} not any more"
               + (f", {n_new} newly tracked" if n_new else "")
-              + (f", {n_fail} unconfirmed (page not read)" if n_fail else ""))
+              + (f", {n_fail} unconfirmed (page not read)" if n_fail else "")
+              + (f", {n_wait} waiting for their page" if n_wait else ""))
     return out
 
 
