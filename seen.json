@@ -13247,7 +13247,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24473713": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
     "price": "₹164",
     "source": "firstcry",
@@ -13261,10 +13261,10 @@
     "fc_listed_at": "2026-10-20T09:30:00",
     "fc_api_seen_at": "2026-10-20T09:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473516": {
     "stock": "out_of_stock",
@@ -15089,7 +15089,7 @@
     "fc_svc": "0"
   },
   "fc_24476003": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic green",
     "price": "₹179",
     "source": "firstcry",
@@ -15102,12 +15102,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-20T08:30:00",
-    "fc_api_seen_at": "2026-10-20T09:15:00",
+    "fc_api_seen_at": "2026-10-20T09:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24476471": {
     "stock": "out_of_stock",
