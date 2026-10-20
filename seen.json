@@ -11393,7 +11393,7 @@
   "fc_22240218": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Kei Swap (80/250) Toy Car - White",
-    "price": "₹167",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-kei-swap-80-250-toy-car-white/22240218/product-detail",
     "first_seen": "2026-09-05T13:39:40",
@@ -11402,9 +11402,11 @@
     "last_restock_alert": "2026-09-22T10:46:42",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-15T00:15:00",
-    "fc_api_seen_at": "2026-10-15T00:15:00",
-    "fc_trusted": true
+    "fc_listed_at": "2026-10-20T03:45:00",
+    "fc_api_seen_at": "2026-10-20T03:45:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
+    "fc_lst": "list"
   },
   "kd_10gzYqjpAV": {
     "stock": "out_of_stock",
@@ -21543,7 +21545,27 @@
     "fc_listed_at": "2026-10-20T03:45:00",
     "fc_api_seen_at": "2026-10-20T03:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
-    "fc_lst": "list"
+    "fc_live": "no delivery",
+    "fc_lst": "list",
+    "fc_gid": "21953586"
+  },
+  "fc_22140907": {
+    "stock": "in_stock",
+    "name": "Hot Wheels Mid Mill Toy Car (97/250) - Green & White",
+    "price": "₹164",
+    "source": "firstcry",
+    "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mid-mill-toy-car-97-250-green-and-white/22140907/product-detail",
+    "first_seen": "2026-10-20T03:45:00",
+    "last_seen": "2026-10-20T03:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "stock_ver": "fc_api_v3_p248001_m2",
+    "fc_listed_at": "2026-10-20T03:45:00",
+    "fc_api_seen_at": "2026-10-20T03:45:00",
+    "fc_trusted": true,
+    "fc_live": "ok",
+    "fc_lst": "list",
+    "fc_gid": "22140907"
   }
 }
