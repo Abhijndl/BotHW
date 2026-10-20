@@ -14481,8 +14481,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514773",
-    "fc_svc": "0"
+    "fc_gid": "24514773"
   },
   "fc_24504533": {
     "stock": "out_of_stock",
@@ -14549,8 +14548,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514773",
-    "fc_svc": "0"
+    "fc_gid": "24514773"
   },
   "fc_24503325": {
     "stock": "out_of_stock",
@@ -14588,10 +14586,9 @@
     "fc_listed_at": "2026-10-18T06:00:00",
     "fc_api_seen_at": "2026-10-20T07:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514773",
-    "fc_svc": "1"
+    "fc_gid": "24514773"
   },
   "fc_24390951": {
     "stock": "out_of_stock",
@@ -14689,12 +14686,11 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-10-20T06:45:00",
+    "fc_api_seen_at": "2026-10-20T07:00:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514779",
-    "fc_svc": "0"
+    "fc_gid": "24514779"
   },
   "fc_24476138": {
     "stock": "in_stock",
@@ -14918,8 +14914,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514773",
-    "fc_svc": "0"
+    "fc_gid": "24514773"
   },
   "fc_24342832": {
     "stock": "out_of_stock",
@@ -15509,8 +15504,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "fc_24503821": {
     "stock": "out_of_stock",
@@ -15529,8 +15523,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "fc_24525291": {
     "stock": "out_of_stock",
@@ -15727,8 +15720,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514773",
-    "fc_svc": "0"
+    "fc_gid": "24514773"
   },
   "fc_24504538": {
     "stock": "out_of_stock",
@@ -17286,8 +17278,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "fc_24503335": {
     "stock": "out_of_stock",
@@ -17579,8 +17570,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514779",
-    "fc_svc": "0"
+    "fc_gid": "24514779"
   },
   "fc_24514778": {
     "stock": "out_of_stock",
@@ -17631,8 +17621,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "fc_24503897": {
     "stock": "out_of_stock",
@@ -17651,8 +17640,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "fc_24503819": {
     "stock": "out_of_stock",
@@ -17672,8 +17660,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "fc_24248200": {
     "stock": "out_of_stock",
@@ -17849,8 +17836,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_gid": "24503746"
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
     "stock": "in_stock",
