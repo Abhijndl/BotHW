@@ -2955,11 +2955,11 @@
     "last_restock_alert": "2026-10-20T05:40:22",
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-20T05:15:00",
+    "fc_listed_at": "2026-10-20T07:30:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_svc": "0"
   },
@@ -12012,7 +12012,7 @@
   "fc_24390961": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 64 Chevy nova station wagon/Camionnette Toy Car - Black",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-64-chevy-nova-station-wagon-camionnette-toy-car-black/24390961/product-detail",
     "first_seen": "2026-09-07T11:02:44",
@@ -13240,7 +13240,7 @@
     "fc_api_seen_at": "2026-09-21T06:30:00"
   },
   "fc_24473713": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
     "price": "₹164",
     "source": "firstcry",
@@ -13248,14 +13248,14 @@
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-10-20T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-18T07:08:47",
+    "last_restock_alert": "2026-10-20T07:33:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T07:30:00",
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
-    "fc_lst": "cat",
+    "fc_live": "ok",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -15409,8 +15409,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644",
-    "fc_svc": "1"
+    "fc_gid": "24472644"
   },
   "fc_24390952": {
     "stock": "out_of_stock",
@@ -20353,7 +20352,7 @@
     "fc_api_seen_at": "2026-10-20T07:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
