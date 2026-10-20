@@ -91,9 +91,11 @@ jobs:
           # ── Exclusions (apply to EVERY store) ────────────────────────────────
           # Monster trucks plus all big sets: track sets, playsets, garages, car
           # washes, launchers — and FirstCry's "Ultimate" line (all playsets).
+          # Also Hot Wheels-branded merchandise that isn't a car (water bottles,
+          # sunglasses, watches, T-shirts, lunch boxes… FirstCry lists them too).
           # Matched on leading word boundaries, so "monster truck" also catches
           # "Monster Trucks" while "play set" can't hit "Display Sets".
-          FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate"
+          FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate,water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle"
 
           # ── FirstCry ─────────────────────────────────────────────────────────
           # Marques/lines to AUTO-WATCH — flagged 🎯 and listed first in alerts.

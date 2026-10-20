@@ -409,7 +409,9 @@ FC_EXCLUDE = [w.strip().lower() for w in
                         "track creator,playset,play set,race off,raceway,speedway,"
                         "garage,car wash,loop dash,loop track,launch & loop,launcher,"
                         "stunt track,hot wheels city,ultimate garage,super loop,"
-                        "pit stop,action set,crash & track,ultimate")
+                        "pit stop,action set,crash & track,ultimate,"
+                        # Hot Wheels-branded merchandise that isn't a car
+                        "water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle")
               .split(",") if w.strip()]
 
 # Always-track product ids (e.g. your FirstCry Shortlist). Paste ids or full
