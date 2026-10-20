@@ -1692,7 +1692,9 @@ def _fc_live_verdict(info: dict | None, on_list: bool = False) -> str | None:
 
 def _fc_target(pid: str, v: dict) -> bool:
     nm = (v or {}).get("name", "")
-    return bool(nm) and not _fc_excluded(nm) and (
+    # Hot Wheels only: old records of a "Jukku Resembling Ferrari SF90" pull-back
+    # and Babyhug RC cars matched the marques and ate delivery checks every pass
+    return bool(nm) and not _fc_excluded(nm) and bool(_FC_HW_NAME.search(nm)) and (
         pid in FC_WATCH_IDS or bool((v or {}).get("auto_watch")) or _fc_is_marque(nm))
 
 
@@ -1888,9 +1890,11 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 n_new += 1
             else:
                 sv = info.get("svc") if info.get("svc") is not None else svc_now.get(p)
-                if (v.get("stock") == st and v.get("fc_live") == verdict
+                if (v.get("stock") == st
+                        and v.get("fc_live") == (v.get("fc_live") if verdict == "unconfirmed" else verdict)
                         and v.get("fc_gid") == (info.get("gid") or v.get("fc_gid"))
-                        and str(v.get("fc_svc", "")) == ("" if sv is None else str(sv))):
+                        and str(v.get("fc_svc", "")) == ("" if sv is None else str(sv))
+                        and v.get("fc_lst", "") == (claim(p) or v.get("fc_lst", ""))):
                     continue                       # nothing new for a car outside the listing
                 # outside the listing only Hot Wheels count (an old record for a
                 # Babyhug RC car turned up on a Hot Wheels page's set)
