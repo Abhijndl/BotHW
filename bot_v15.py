@@ -1405,6 +1405,7 @@ FC_TAT_BATCH    = 40
 # doesn't sell yet) are re-read every FC_LIVE_NEAR_RECHECK minutes.
 FC_LIVE_NEAR_RECHECK = max(1, int(os.getenv("FC_LIVE_NEAR_RECHECK_MIN", "1")))
 _FC_RUN_PASS = [0]          # live checks done in this run (the first one sweeps every car)
+FC_LIVE_DEBUG = os.getenv("FC_LIVE_DEBUG", "").lower() in ("1", "true", "yes")
 _FC_LIVE: dict = {}         # pid -> {"cs","svc","pn","mrp","dis","gid","members","at_page","at_svc"}
 _FC_LIVE_PAUSE = [0.0]      # epoch until which product pages are left alone (429/403)
 _FC_TAT_PAUSE = [0.0]       # epoch until which the delivery check is left alone
@@ -1822,6 +1823,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 due.append(p)                     # known to sit at the edge: re-read now and then
     # changes first (🎯 cars first); routine re-reads only a few per pass, so
     # they can't crowd out a real change
+    if FC_LIVE_DEBUG:
+        print(f"  [FC-LIVE] listing {cands[:12]} | delivery flips {flips[:12]} | re-reads {due[:FC_LIVE_AUDIT + 1]}")
     cands += flips + due[:FC_LIVE_AUDIT + 1]
 
     poll = _fc_poll_sets(prev_fc, FC_LIVE_POLL, _FC_RUN_PASS[0] - 1)
@@ -1912,6 +1915,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 and claim(p) not in ("list", "cat")
                 and v.get("first_seen", "") < (_FC_LIVE_SINCE[0] or "0")):
             r["fc_first_read"] = True
+        if verdict == "unconfirmed" and v and v.get("fc_live"):
+            verdict = v["fc_live"]                 # no new word on delivery: keep the last one
         r["stock"] = st
         isv, cs = info.get("isv"), info.get("cs") or 0
         # the count you can actually get: page stock, capped by what can reach you

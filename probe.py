@@ -23,7 +23,7 @@ env = {
     "FC_MARQUES": "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics",
     "FC_WATCH": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail",
     "FC_API_PARALLEL": "10", "MG_BRANDS": "hotwheels,mattel,minigt,mini gt,kaido house",
-    "MG_CATEGORIES": "trading card,tcg", "SRC_WORKERS": "6", "FC_WORKERS": "10", "HM_WORKERS": "8",
+    "MG_CATEGORIES": "trading card,tcg", "SRC_WORKERS": "6", "FC_WORKERS": "10", "HM_WORKERS": "8", "FC_LIVE_DEBUG": "1",
 }
 os.environ.update(env)
 os.chdir(DRY)
