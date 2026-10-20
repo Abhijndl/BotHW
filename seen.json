@@ -3652,7 +3652,7 @@
     "fc_trusted": true
   },
   "fc_23076122": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -3666,8 +3666,8 @@
     "fc_listed_at": "2026-10-20T04:45:00",
     "fc_api_seen_at": "2026-10-20T04:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_live": "no delivery",
+    "fc_lst": "list",
     "fc_gid": "23076120"
   },
   "hm_hot-wheels-boulevard-assorted-unisex-2y-multicolor-hzunl8d2kqv": {
@@ -17265,7 +17265,7 @@
     "fc_gid": "24525296"
   },
   "fc_24525296": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Chevy Silverado Driftcation Die Cast Toy Truck - Yellow/Red",
     "price": "₹494",
     "source": "firstcry",
@@ -17279,7 +17279,7 @@
     "fc_listed_at": "2026-10-20T04:45:00",
     "fc_api_seen_at": "2026-10-20T04:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24525296"
   },
