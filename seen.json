@@ -12996,7 +12996,7 @@
     "fc_gid": "24473511"
   },
   "fc_24473723": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels X-Cceleron Die-Cast Toy Car - Grey",
     "price": "₹175",
     "source": "firstcry",
@@ -13010,7 +13010,7 @@
     "fc_listed_at": "2026-10-20T06:15:00",
     "fc_api_seen_at": "2026-10-20T06:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24473511"
   },
