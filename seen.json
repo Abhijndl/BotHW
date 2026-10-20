@@ -20357,7 +20357,7 @@
     "fc_svc": "1"
   },
   "fc_24761907": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
     "price": "₹173",
     "source": "firstcry",
@@ -20371,7 +20371,7 @@
     "fc_listed_at": "2026-10-20T10:45:00",
     "fc_api_seen_at": "2026-10-20T10:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_svc": "1"
