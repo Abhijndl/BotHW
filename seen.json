@@ -2701,20 +2701,20 @@
   "fc_23075651": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Classic TV Series Batmobile (144/250) Die Cast Toy Car - Purple",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-classic-tv-series-batmobile-144-250-die-cast-toy-car-purple/23075651/product-detail",
     "first_seen": "2026-07-18T21:31:20",
-    "last_seen": "2026-10-20T08:00:00",
+    "last_seen": "2026-10-20T08:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-16T06:20:54",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T16:45:00",
-    "fc_api_seen_at": "2026-10-20T08:00:00",
+    "fc_listed_at": "2026-10-20T08:15:00",
+    "fc_api_seen_at": "2026-10-20T08:15:00",
     "fc_trusted": true,
     "fc_live": "last unit",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23074890",
     "fc_svc": "1"
   },
@@ -4242,9 +4242,9 @@
     "fc_svc": "0"
   },
   "fc_23075648": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari SF90 Stradale (41/250) Die Cast Toy Car - Black",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-sf90-stradale-41-250-die-cast-toy-car-black/23075648/product-detail",
     "first_seen": "2026-07-22T09:02:31",
@@ -4254,13 +4254,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-20T08:00:00",
+    "fc_listed_at": "2026-10-20T08:15:00",
     "fc_api_seen_at": "2026-10-20T08:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_live": "ok",
+    "fc_lst": "list",
     "fc_gid": "23074890",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_22240192": {
     "stock": "out_of_stock",
@@ -20169,7 +20169,7 @@
     "fc_listed_at": "2026-10-20T08:15:00",
     "fc_api_seen_at": "2026-10-20T08:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_svc": "0"
@@ -20209,7 +20209,7 @@
     "fc_listed_at": "2026-10-20T08:15:00",
     "fc_api_seen_at": "2026-10-20T08:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_svc": "0"
