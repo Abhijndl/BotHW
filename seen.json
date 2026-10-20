@@ -10655,14 +10655,14 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹597",
+    "price": "₹519",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
     "last_seen": "2026-10-20T16:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-09T10:36:50",
-    "last_price_alert": "2026-10-18T16:47:48",
+    "last_price_alert": "2026-10-20T16:32:09",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T16:30:00",
     "fc_api_seen_at": "2026-10-20T16:30:00",
@@ -13303,8 +13303,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511",
-    "fc_svc": "0"
+    "fc_gid": "24473511"
   },
   "fc_24473731": {
     "stock": "out_of_stock",
@@ -15129,7 +15128,7 @@
     "fc_api_seen_at": "2026-10-20T16:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_svc": "0"
   },
@@ -15927,7 +15926,7 @@
     "fc_api_seen_at": "2026-10-20T16:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24514779",
     "fc_svc": "1"
   },
@@ -17588,8 +17587,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514779",
-    "fc_svc": "0"
+    "fc_gid": "24514779"
   },
   "fc_24514778": {
     "stock": "out_of_stock",
