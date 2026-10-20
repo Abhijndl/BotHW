@@ -88,10 +88,10 @@
     "fc_listed_at": "2026-10-20T12:15:00",
     "fc_api_seen_at": "2026-10-20T12:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "20290029",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_21348": {
     "stock": "out_of_stock",
