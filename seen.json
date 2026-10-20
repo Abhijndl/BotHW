@@ -3682,7 +3682,7 @@
     "fc_trusted": true
   },
   "fc_23076122": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -3690,13 +3690,13 @@
     "first_seen": "2026-07-20T10:51:52",
     "last_seen": "2026-10-20T10:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-20T02:50:21",
+    "last_restock_alert": "2026-10-20T10:52:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T10:45:00",
     "fc_api_seen_at": "2026-10-20T10:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_svc": "1"
@@ -13261,10 +13261,10 @@
     "fc_listed_at": "2026-10-20T10:00:00",
     "fc_api_seen_at": "2026-10-20T10:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "24473511",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24473516": {
     "stock": "out_of_stock",
@@ -20357,7 +20357,7 @@
     "fc_svc": "1"
   },
   "fc_24761907": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
     "price": "₹173",
     "source": "firstcry",
@@ -20371,7 +20371,7 @@
     "fc_listed_at": "2026-10-20T10:45:00",
     "fc_api_seen_at": "2026-10-20T10:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_svc": "1"
@@ -20911,10 +20911,10 @@
     "fc_listed_at": "2026-10-20T10:45:00",
     "fc_api_seen_at": "2026-10-20T10:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24775936",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23030309": {
     "stock": "out_of_stock",
