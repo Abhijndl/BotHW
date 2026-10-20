@@ -14883,7 +14883,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644"
+    "fc_gid": "24472644",
+    "fc_svc": "0"
   },
   "fc_24390949": {
     "stock": "out_of_stock",
@@ -15173,7 +15174,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24472644"
+    "fc_gid": "24472644",
+    "fc_svc": "0"
   },
   "fc_24476803": {
     "stock": "out_of_stock",
@@ -21894,5 +21896,17 @@
     "fc_lst": "list",
     "fc_gid": "22140907",
     "fc_svc": "0"
+  },
+  "kd_zONvZaeNBK": {
+    "stock": "in_stock",
+    "name": "BUGATTI W16 MISTRAL BLACK",
+    "price": "₹1749",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bugatti-w16-mistral-black?pid=zONvZaeNBK",
+    "first_seen": "2026-10-20T09:45:00",
+    "last_seen": "2026-10-20T09:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
