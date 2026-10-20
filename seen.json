@@ -13303,8 +13303,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511",
-    "fc_svc": "0"
+    "fc_gid": "24473511"
   },
   "fc_24473731": {
     "stock": "out_of_stock",
@@ -14651,8 +14650,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473477",
-    "fc_svc": "0"
+    "fc_gid": "24473477"
   },
   "fc_24473477": {
     "stock": "out_of_stock",
@@ -14688,12 +14686,11 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-20T18:15:00",
-    "fc_api_seen_at": "2026-10-20T18:15:00",
+    "fc_api_seen_at": "2026-10-20T18:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473477",
-    "fc_svc": "0"
+    "fc_gid": "24473477"
   },
   "fc_24514779": {
     "stock": "out_of_stock",
@@ -18151,8 +18148,7 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511",
-    "fc_svc": "0"
+    "fc_gid": "24473511"
   },
   "fc_24568707": {
     "stock": "out_of_stock",
