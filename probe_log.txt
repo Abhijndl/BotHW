@@ -1,52 +1,28 @@
 cookies: []
 
-==================== round 1 +   0s ====================
-  +   2s www.firstcry.com → 200, 2 b
-      ""
-  +   2s csc.fcappservices.in → 200, 776 b
-      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:02:49\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
-  no answer for 248001
-  +   6s www.firstcry.com → 200, 2 b
-      ""
-  +   7s csc.fcappservices.in → 200, 776 b
-      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"110001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:02:54\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
-  no answer for 110001
-  +   7s www.firstcry.com → 200, 2 b
-      ""
-  +   8s csc.fcappservices.in → 200, 776 b
-      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"560001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:02:55\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
-  no answer for 560001
+--- count, plain: HTTP 200, 31 b
+{"GetCartProductCountResult":1}
 
-  product page CS + delivery check (248001):
-   24390957 Tacoma TRD Pro (alerted 14:5 CS=4 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
-   24390967 Mercedes 300 SL (14:50)      CS=2 {'grp': 1, 'IsSv': 2, 'TAT': '6-7', 'disp': 24}
-   23973357 Pantone Bronco (14:54)       CS=92 {'grp': 1, 'IsSv': 1, 'TAT': '6-7', 'disp': 24}
-   23345758 Porsche 928S (yesterday)     CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
-   24473712 Salt Streaker (control, 250+ CS=240 {'grp': 1, 'IsSv': 237, 'TAT': '6-7', 'disp': 24}
-   24473713 Buick Riviera                CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+--- count, url-encoded: HTTP 200, 31 b
+{"GetCartProductCountResult":1}
 
-==================== round 2 + 120s ====================
-  + 120s www.firstcry.com → 200, 2 b
-      ""
-  + 121s csc.fcappservices.in → 200, 776 b
-      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:04:48\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
-  no answer for 248001
-  + 122s www.firstcry.com → 200, 2 b
-      ""
-  + 122s csc.fcappservices.in → 200, 776 b
-      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"110001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:04:49\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
-  no answer for 110001
-  + 123s www.firstcry.com → 200, 2 b
-      ""
-  + 124s csc.fcappservices.in → 200, 776 b
-      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"560001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:04:51\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
-  no answer for 560001
+--- GetCartV1 plain: HTTP 200, 776 b
+"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:07\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
 
-  product page CS + delivery check (248001):
-   24390957 Tacoma TRD Pro (alerted 14:5 CS=4 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
-   24390967 Mercedes 300 SL (14:50)      CS=2 {'grp': 1, 'IsSv': 2, 'TAT': '6-7', 'disp': 24}
-   23973357 Pantone Bronco (14:54)       CS=92 {'grp': 1, 'IsSv': 1, 'TAT': '6-7', 'disp': 24}
-   23345758 Porsche 928S (yesterday)     CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
-   24473712 Salt Streaker (control, 250+ CS=240 {'grp': 1, 'IsSv': 237, 'TAT': '6-7', 'disp': 24}
-   24473713 Buick Riviera                CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
-done in 126s
+--- GetCartV1 url-encoded: HTTP 200, 776 b
+"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:08\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
+
+--- GetCartV1 trailing *: HTTP 200, 776 b
+"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:09\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
+
+--- GetCartV1 two cars: HTTP 200, 776 b
+"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:10\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
+
+--- GetCartV1 escaped ^: HTTP 200, 776 b
+"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:10\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
+
+--- GetCartV1 msite: HTTP 200, 776 b
+"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:11\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
+
+--- GetCart (v0): HTTP 200, 698 b
+{"GetCartResult":{"pOrderSummary":{"ShipPinCode":"248001","ServerDateTime":"21\/10\/2026 15:06:11","CartOfferMsg":null,"OfferMsgForCart":"","OfferStripMsg":null,"TotalProducts":0,"TotalQuantity":0,"TotalItems":0,"TotalCombos":0,"SubTotal":0,"MrpTotal":0,"ActualPriceTotal":0,"ShippingCharges":50,"NetPayment":50,"TotalConvCharge":0,"FirstOrderFreeShipChrge":0,"CodChargesOnMinAmt":15,"CodMaxAmount":10000,"CodMinimumAmount":699,"ShippingChargesBelowMin":50,"ShippingChargesMinNetAmount":699,"MinimumOrderAmount":99,"TotalVatAmount":0,"DiscountLimitForVat":0,"PurchaseOrderItemList":null,"IsTVCFree":false,"CouponOnCombo":false,"AssemblyServiceAbleProductIDs":"||","OnlineAssemblyProductIDs":"||"}}}
