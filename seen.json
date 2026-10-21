@@ -6094,7 +6094,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "0"
   },
   "fc_24246598": {
     "stock": "out_of_stock",
@@ -6170,7 +6171,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "0"
   },
   "fc_24246604": {
     "stock": "out_of_stock",
@@ -6209,7 +6211,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "1"
   },
   "fc_24247516": {
     "stock": "out_of_stock",
@@ -6329,7 +6332,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "1"
   },
   "hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160": {
     "stock": "out_of_stock",
@@ -11201,7 +11205,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "1"
   },
   "fc_22240239": {
     "stock": "out_of_stock",
@@ -13537,7 +13542,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "1"
   },
   "fc_24349392": {
     "stock": "out_of_stock",
@@ -14053,7 +14059,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "0"
   },
   "fc_24246597": {
     "stock": "out_of_stock",
@@ -16925,9 +16932,10 @@
     "fc_listed_at": "2026-10-21T09:00:00",
     "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "1"
   },
   "fc_24248199": {
     "stock": "out_of_stock",
@@ -16982,7 +16990,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24248198"
+    "fc_gid": "24248198",
+    "fc_svc": "1"
   },
   "fc_24390955": {
     "stock": "out_of_stock",
