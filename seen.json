@@ -3699,7 +3699,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23076120",
     "fc_svc": "1"
   },
@@ -4151,7 +4151,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
@@ -4405,7 +4405,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
@@ -5007,7 +5007,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_svc": "1"
   },
@@ -6216,7 +6216,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24248198",
     "fc_svc": "1"
   },
@@ -10211,8 +10211,9 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "22600737"
+    "fc_lst": "out",
+    "fc_gid": "22600737",
+    "fc_svc": "1"
   },
   "fc_22598018": {
     "stock": "in_stock",
@@ -10230,8 +10231,9 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "22598018"
+    "fc_lst": "out",
+    "fc_gid": "22598018",
+    "fc_svc": "1"
   },
   "fc_21627431": {
     "stock": "in_stock",
@@ -11295,8 +11297,9 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "21993918"
+    "fc_lst": "out",
+    "fc_gid": "21993918",
+    "fc_svc": "1"
   },
   "hm_hot-wheels-monster-truck-power-smashers-assortment-boys-3y-multicolour-17465906": {
     "stock": "out_of_stock",
@@ -13568,7 +13571,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24341962"
+    "fc_gid": "24341962",
+    "fc_svc": "0"
   },
   "fc_24341962": {
     "stock": "out_of_stock",
@@ -13587,7 +13591,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24341962"
+    "fc_gid": "24341962",
+    "fc_svc": "0"
   },
   "fc_18313316": {
     "stock": "in_stock",
@@ -13624,8 +13629,9 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "24341962"
+    "fc_lst": "out",
+    "fc_gid": "24341962",
+    "fc_svc": "1"
   },
   "fc_24342667": {
     "stock": "in_stock",
@@ -13643,8 +13649,9 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "24341962"
+    "fc_lst": "out",
+    "fc_gid": "24341962",
+    "fc_svc": "1"
   },
   "fc_22277227": {
     "stock": "in_stock",
@@ -13838,7 +13845,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_svc": "1"
   },
@@ -14279,7 +14286,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_svc": "1"
   },
@@ -15939,7 +15946,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23835981",
     "fc_svc": "1"
   },
@@ -15959,7 +15966,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23835981",
     "fc_svc": "1"
   },
@@ -15979,7 +15986,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24514779",
     "fc_svc": "1"
   },
@@ -16055,8 +16062,9 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "24503311"
+    "fc_lst": "out",
+    "fc_gid": "24503311",
+    "fc_svc": "1"
   },
   "fc_24514780": {
     "stock": "in_stock",
@@ -16674,7 +16682,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
@@ -16714,7 +16722,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
@@ -16939,12 +16947,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T11:15:00",
-    "fc_api_seen_at": "2026-10-21T11:15:00",
+    "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24248198",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24248199": {
     "stock": "out_of_stock",
@@ -17097,11 +17105,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T11:30:00",
-    "fc_api_seen_at": "2026-10-21T11:30:00",
+    "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24341962"
+    "fc_gid": "24341962",
+    "fc_svc": "0"
   },
   "fc_24473465": {
     "stock": "out_of_stock",
@@ -17845,7 +17854,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "1",
     "fc_svc": "1"
   },
@@ -17996,7 +18005,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24246598",
     "fc_svc": "1"
   },
@@ -20348,7 +20357,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_svc": "1"
   },
@@ -20410,7 +20419,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
@@ -20430,7 +20439,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
@@ -20450,7 +20459,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
@@ -20470,7 +20479,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
@@ -20845,7 +20854,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_svc": "1"
   },
@@ -20947,7 +20956,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_svc": "1"
   },
@@ -22058,7 +22067,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_svc": "1"
   }
