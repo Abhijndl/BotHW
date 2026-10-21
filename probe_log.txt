@@ -1,4 +1,52 @@
-200 110166 https://cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js
-200 381833 https://cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.55.min.js
-200 108892 https://cdn.fcglcdn.com/brainbees/php/js/master-common.v2.24.min.js?20261021
-200 18227 https://www.firstcry.com/cart
+cookies: []
+
+==================== round 1 +   0s ====================
+  +   2s www.firstcry.com → 200, 2 b
+      ""
+  +   2s csc.fcappservices.in → 200, 776 b
+      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:02:49\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
+  no answer for 248001
+  +   6s www.firstcry.com → 200, 2 b
+      ""
+  +   7s csc.fcappservices.in → 200, 776 b
+      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"110001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:02:54\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
+  no answer for 110001
+  +   7s www.firstcry.com → 200, 2 b
+      ""
+  +   8s csc.fcappservices.in → 200, 776 b
+      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"560001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:02:55\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
+  no answer for 560001
+
+  product page CS + delivery check (248001):
+   24390957 Tacoma TRD Pro (alerted 14:5 CS=4 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+   24390967 Mercedes 300 SL (14:50)      CS=2 {'grp': 1, 'IsSv': 2, 'TAT': '6-7', 'disp': 24}
+   23973357 Pantone Bronco (14:54)       CS=92 {'grp': 1, 'IsSv': 1, 'TAT': '6-7', 'disp': 24}
+   23345758 Porsche 928S (yesterday)     CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+   24473712 Salt Streaker (control, 250+ CS=240 {'grp': 1, 'IsSv': 237, 'TAT': '6-7', 'disp': 24}
+   24473713 Buick Riviera                CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+
+==================== round 2 + 120s ====================
+  + 120s www.firstcry.com → 200, 2 b
+      ""
+  + 121s csc.fcappservices.in → 200, 776 b
+      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:04:48\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
+  no answer for 248001
+  + 122s www.firstcry.com → 200, 2 b
+      ""
+  + 122s csc.fcappservices.in → 200, 776 b
+      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"110001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:04:49\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
+  no answer for 110001
+  + 123s www.firstcry.com → 200, 2 b
+      ""
+  + 124s csc.fcappservices.in → 200, 776 b
+      "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"560001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:04:51\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualP
+  no answer for 560001
+
+  product page CS + delivery check (248001):
+   24390957 Tacoma TRD Pro (alerted 14:5 CS=4 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+   24390967 Mercedes 300 SL (14:50)      CS=2 {'grp': 1, 'IsSv': 2, 'TAT': '6-7', 'disp': 24}
+   23973357 Pantone Bronco (14:54)       CS=92 {'grp': 1, 'IsSv': 1, 'TAT': '6-7', 'disp': 24}
+   23345758 Porsche 928S (yesterday)     CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+   24473712 Salt Streaker (control, 250+ CS=240 {'grp': 1, 'IsSv': 237, 'TAT': '6-7', 'disp': 24}
+   24473713 Buick Riviera                CS=0 {'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24}
+done in 126s
