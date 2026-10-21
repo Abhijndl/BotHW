@@ -12024,7 +12024,7 @@
     "last_price_alert": ""
   },
   "fc_24390961": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 64 Chevy nova station wagon/Camionnette Toy Car - Black",
     "price": "₹494",
     "source": "firstcry",
@@ -12032,13 +12032,13 @@
     "first_seen": "2026-09-07T11:02:44",
     "last_seen": "2026-10-21T05:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T19:40:26",
+    "last_restock_alert": "2026-10-21T05:06:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T05:00:00",
     "fc_api_seen_at": "2026-10-21T05:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24390961",
     "fc_svc": "1"
