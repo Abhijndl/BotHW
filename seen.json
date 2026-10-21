@@ -13157,11 +13157,10 @@
     "fc_listed_at": "2026-10-21T19:45:00",
     "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-21T17:58:14",
-    "fc_arr": "2026-10-21T19:53:04",
     "fc_svc": "1"
   },
   "fc_24473723": {
@@ -20916,7 +20915,7 @@
     "fc_svc": "0"
   },
   "fc_24776091": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Alfa Romeo Giulia ti super (218/250) Toy Car - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -20931,10 +20930,11 @@
     "fc_listed_at": "2026-10-21T19:45:00",
     "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24776095",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-21T19:55:48",
+    "fc_svc": "0"
   },
   "fc_24776090": {
     "stock": "out_of_stock",
@@ -22187,11 +22187,11 @@
     "fc_listed_at": "2026-10-21T19:45:00",
     "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-21T18:41:42",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
