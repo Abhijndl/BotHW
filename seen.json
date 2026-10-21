@@ -13120,7 +13120,7 @@
   "fc_24473724": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹161",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13130,11 +13130,11 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-19T10:30:00",
-    "fc_api_seen_at": "2026-10-21T01:30:00",
+    "fc_listed_at": "2026-10-21T01:45:00",
+    "fc_api_seen_at": "2026-10-21T01:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "0"
   },
@@ -13271,7 +13271,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511"
+    "fc_gid": "24473511",
+    "fc_svc": "0"
   },
   "fc_24473516": {
     "stock": "out_of_stock",
@@ -13310,7 +13311,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24473511"
+    "fc_gid": "24473511",
+    "fc_svc": "1"
   },
   "fc_24473731": {
     "stock": "out_of_stock",
@@ -13931,7 +13933,7 @@
     "fc_api_seen_at": "2026-10-21T01:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -14719,12 +14721,11 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-10-21T01:30:00",
+    "fc_api_seen_at": "2026-10-21T01:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24514779",
-    "fc_svc": "0"
+    "fc_gid": "24514779"
   },
   "fc_24476138": {
     "stock": "in_stock",
@@ -18155,7 +18156,7 @@
   "fc_24568735": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple",
-    "price": "₹549",
+    "price": "₹483",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volkswagen-drag-busm-onster-trucks-purple/24568735/product-detail",
     "first_seen": "2026-09-24T14:15:00",
@@ -18164,10 +18165,11 @@
     "last_restock_alert": "2026-09-25T05:18:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-20T00:00:00",
+    "fc_listed_at": "2026-10-21T01:45:00",
     "fc_api_seen_at": "2026-10-21T01:45:00",
     "fc_trusted": true,
     "fc_live": "arriving",
+    "fc_lst": "list",
     "fc_svc": "1"
   },
   "fc_24473510": {
@@ -18194,7 +18196,7 @@
   "fc_24568707": {
     "stock": "out_of_stock",
     "name": "Hot Wheels TRICERATOPS MONST ER TRUCKS- dark green color",
-    "price": "₹549",
+    "price": "₹483",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-triceratops-monst-er-trucks-dark-green-color/24568707/product-detail",
     "first_seen": "2026-09-24T14:30:00",
@@ -18203,10 +18205,11 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-20T00:30:00",
+    "fc_listed_at": "2026-10-21T01:45:00",
     "fc_api_seen_at": "2026-10-21T01:45:00",
     "fc_trusted": true,
     "fc_live": "arriving",
+    "fc_lst": "list",
     "fc_svc": "1"
   },
   "fc_23074615": {
