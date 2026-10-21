@@ -4191,7 +4191,7 @@
     "fc_api_seen_at": "2026-10-21T14:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_svc": "1"
   },
@@ -13976,8 +13976,9 @@
     "fc_api_seen_at": "2026-10-21T14:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "23811697"
+    "fc_lst": "out",
+    "fc_gid": "23811697",
+    "fc_svc": "1"
   },
   "fc_24342822": {
     "stock": "out_of_stock",
@@ -14869,7 +14870,7 @@
     "fc_api_seen_at": "2026-10-21T14:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_svc": "1"
   },
@@ -14910,8 +14911,9 @@
     "fc_api_seen_at": "2026-10-21T14:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
-    "fc_gid": "24503315"
+    "fc_lst": "out",
+    "fc_gid": "24503315",
+    "fc_svc": "1"
   },
   "fc_24473264": {
     "stock": "out_of_stock",
@@ -15927,7 +15929,7 @@
     "fc_api_seen_at": "2026-10-21T14:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23835981",
     "fc_svc": "1"
   },
