@@ -14939,7 +14939,7 @@
     "fc_listed_at": "2026-10-21T18:30:00",
     "fc_api_seen_at": "2026-10-21T18:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_svc": "0"
@@ -22171,7 +22171,7 @@
     "fc_svc": "0"
   },
   "fc_24783759": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Aston Martin DB5 Safari Edition/Edition Safari (243/250) Toy Car - White",
     "price": "₹179",
     "source": "firstcry",
@@ -22186,9 +22186,10 @@
     "fc_listed_at": "2026-10-21T18:30:00",
     "fc_api_seen_at": "2026-10-21T18:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "24783761",
+    "fc_phantom": "2026-10-21T18:41:42",
     "fc_svc": "1"
   },
   "fc_24783699": {
