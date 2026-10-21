@@ -3645,7 +3645,7 @@
     "fc_api_seen_at": "2026-10-21T08:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23345759",
     "fc_svc": "1"
   },
@@ -14984,7 +14984,7 @@
     "fc_svc": "1"
   },
   "fc_24342831": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Black",
     "price": "₹269",
     "source": "firstcry",
@@ -14998,10 +14998,10 @@
     "fc_listed_at": "2026-10-21T08:30:00",
     "fc_api_seen_at": "2026-10-21T08:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24342831",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24342833": {
     "stock": "in_stock",
