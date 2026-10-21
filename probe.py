@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Probe #28: dry run of v16.3 (bot_v163.py) against live FirstCry — no
+"""Probe #28b: dry run of v16.3 (updated) (bot_v163.py) against live FirstCry — no
 Telegram (alerts printed, not sent), on a COPY of the current seen.json, with
 the monitor's settings. Four runs back to back (~4 min): errors, timings, what
 it would send, and what changed — especially cars on the catalogue's word."""
