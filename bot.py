@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v15.1
-================================================
+Hot Wheels / Diecast Collector Tracker  ·  v16
+==============================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
 Runtime : Pure HTTP (curl_cffi with a real Chrome fingerprint). No browser.
@@ -38,6 +38,19 @@ ALERTS
 🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
 🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units you can
 order (page stock, capped by what can be delivered to your pincode)
+v16: every 🎯 car that's in stock gets its own message, and its first line
+says what it is — Treasure Hunts and the like first:
+  💎 SUPER TREASURE HUNT   🏆 TREASURE HUNT   ⛓️ CHASE   🔩 ZAMAC
+  ✨ STH CAR (the regular car whose Super TH is packed in the same case —
+     FirstCry doesn't sort them out)
+  ❤️ Ferrari  🖤 Porsche  💛 Lamborghini  💙 Skyline / GT-R / Nissan
+  🧡 Supra / Toyota  💜 Honda / Mazda / Subaru / Mitsubishi
+  🤍 BMW / Mercedes / Audi / McLaren / Bugatti …  💚 Mustang / Corvette / Dodge …
+  🩵 premium lines (RLC, Car Culture, Boulevard, Silver Series …)
+Every alert also says which case a mainline car is from ("📦 2026 Case M ·
+Cool Classics · #228"), from hw_cases.json — rebuilt daily by cases.py from
+the 164custom.com checklists (no extra requests to any store). TH / STH / chase
+/ ZAMAC cars are 🎯 too: checked every pass, alerted from one unit.
 FirstCry links open a freshly rendered page (…?fresh=…), not a CDN copy that
 can be 20 minutes old.
 Every product's NEW alert fires once ever. Restocks: 1 h cooldown when
@@ -52,6 +65,8 @@ import time
 import calendar
 import threading
 import traceback
+import difflib
+import functools
 from urllib.parse import quote, urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -459,6 +474,226 @@ FC_STALE_H = float(os.getenv("FC_STALE_H", "3"))
 def _fc_is_marque(name: str) -> bool:
     n = " " + re.sub(r"[^a-z0-9 ]", " ", (name or "").lower()) + " "
     return any(k in n for k in FC_MARQUES)
+
+
+# ── Hot Wheels cases, Treasure Hunts, Super Treasure Hunts (v16) ─────────────
+# hw_cases.json is rebuilt once a day by cases.py (its own workflow) from the
+# collector checklists on 164custom.com: every mainline case (A, B, C … Q) of
+# the last two years, this year and next, with each year's Treasure Hunts and
+# Super Treasure Hunts. The tracker only reads that file — not one extra
+# request to any store. A store's car is matched by its number ("229/250"),
+# name and colour; when the match isn't certain, nothing is claimed.
+HW_CASES_FILE = os.getenv("HW_CASES_FILE", "hw_cases.json")
+_HW = {"cars": None}
+# words in store names that say nothing about which car it is
+_HW_FILL = set("""hot wheels wheel hotwheels hw die cast diecast cat free toy toys car cars vehicle
+vehicles for kids kid boys girls boy girl age ages years year yrs collectible collectibles
+collector collectors collection scale model models the with and of a an mainline basic
+basics single personnalise equipe fourgonnette voiture multicolor multicolour assorted
+original authentic mattel genuine pc piece pcs 64""".split())
+_HW_COLOUR_FILL = set("""metalflake spectraflame satin matte flat pearl pearlescent met metallic candy
+translucent chrome dark light bright deep pale t""".split())
+_HW_COLOUR_SYN = {"golden": "gold", "navy": "blue", "royal": "", "sky": "", "maroon": "red",
+                  "burgundy": "red", "crimson": "red", "wine": "red", "lime": "green",
+                  "olive": "green", "pista": "green", "mint": "green", "turquoise": "teal",
+                  "aqua": "teal", "cyan": "teal", "beige": "cream", "ivory": "cream", "tan": "brown",
+                  "bronze": "brown", "magenta": "pink", "violet": "purple", "lavender": "purple",
+                  "silvery": "silver", "multicolor": "", "multicolour": ""}
+_HW_NOT_SINGLE = re.compile(
+    r"\b(premium|car culture|boulevard|team transport|rlc|red line club|silver series|pop culture|"
+    r"elite ?64|\d+[- ]?pack|pack of|set of|multi ?pack|gift ?pack|box ?set|bundle|playset|"
+    r"play set|launcher|monster)\b", re.I)
+_HW_STH_WORDS = re.compile(r"\b(sth|super\s*treasure\s*hunts?|super\s*th|\$th)\b", re.I)
+_HW_TH_WORDS = re.compile(r"\b(treasure\s*hunts?|t[\s-]?hunt|th)\b", re.I)
+_HW_CHASE_WORDS = re.compile(r"\bchase\b", re.I)          # not "High Tail Chaser"
+_HW_ZAMAC_WORDS = re.compile(r"\bzamac\b", re.I)
+
+
+def _hw_tokens(s: str) -> list:
+    s = (s or "").lower().replace("\u2019", "'").replace("\u2018", "'").replace("`", "'")
+    s = re.sub(r"\d{1,3}\s*[/-]\s*250\b", " ", s)       # the collector number
+    s = re.sub(r"\b(?:19|20)(\d\d)\b", r"\1", s)         # 1970 -> 70, 2019 -> 19
+    s = re.sub(r"'(\d\d)\b", r"\1", s)                    # '66 -> 66
+    s = s.replace("grey", "gray")
+    out = []
+    for t in re.sub(r"[^a-z0-9.]+", " ", s).split():
+        t = t.strip(".")
+        if t and t not in _HW_FILL:
+            out.append(t)
+    return out
+
+
+def _hw_colour(s: str) -> set:
+    out = set()
+    for w in _hw_tokens((s or "").replace("/", " ").replace("&", " ")):
+        w = _HW_COLOUR_SYN.get(w, w)
+        if w and w not in _HW_COLOUR_FILL and len(w) > 1 and not w.isdigit():
+            out.add(w)
+    return out
+
+
+# colours stores and checklists name differently (FirstCry's "Grey" is often
+# the checklist's "Silver"): half a match, enough to break a tie
+_HW_NEAR = {frozenset(p) for p in (("gray", "silver"), ("cream", "white"), ("champagne", "gold"),
+                                   ("champagne", "silver"), ("teal", "blue"), ("teal", "green"),
+                                   ("copper", "brown"), ("copper", "orange"), ("gold", "yellow"))}
+
+
+def _hw_colour_fit(store: set, table: set) -> float:
+    if not store:
+        return 0.0
+    exact = len(store & table)
+    near = sum(1 for a in store - table if any(frozenset((a, b)) in _HW_NEAR for b in table))
+    return (exact + 0.5 * near) / len(store)
+
+
+def _hw_load():
+    """The case table, indexed by word and by number (once per run)."""
+    if _HW["cars"] is not None:
+        return _HW
+    cars = []
+    try:
+        if os.path.exists(HW_CASES_FILE):
+            with open(HW_CASES_FILE, encoding="utf-8") as f:
+                cars = json.load(f).get("cars") or []
+    except Exception as exc:
+        print(f"[HW] case table unreadable ({exc}) — alerts go out without case info")
+        cars = []
+    by_tok, by_n, sth = {}, {}, {}
+    for i, e in enumerate(cars):
+        e["_t"] = _hw_tokens(e.get("name", ""))
+        e["_j"] = "".join(e["_t"])
+        e["_col"] = _hw_colour(e.get("col", ""))
+        for t in set(e["_t"]):
+            if len(t) >= 3 and not re.fullmatch(r"\d\d", t):
+                by_tok.setdefault(t, []).append(i)
+        if e.get("n"):
+            by_n.setdefault(e["n"], []).append(i)
+        if e.get("sth"):
+            sth[(e.get("y"), e.get("c"), e.get("n"))] = e.get("col", "")
+    _HW.update(cars=cars, by_tok=by_tok, by_n=by_n, sth=sth)
+    if cars:
+        print(f"[HW] case table: {len(cars)} cars "
+              f"({len({(e.get('y'), e.get('c')) for e in cars})} cases)")
+    return _HW
+
+
+def _hw_tok_eq(a: str, b: str) -> bool:
+    """Same word, allowing a store's typo ("Toyoto") — but never "Super" for
+    "Supra", and a word with digits (928, EB110, 2.7) only exactly."""
+    if a == b:
+        return True
+    if len(a) < 5 or len(b) < 5 or re.search(r"\d", a + b):
+        return False
+    return (a.startswith(b) or b.startswith(a)
+            or difflib.SequenceMatcher(None, a, b).ratio() >= 0.85)
+
+
+def _hw_score(S: list, T: list) -> float:
+    """How well a store name (words S) names the checklist car (words T), 0-1.
+    The table's model year is optional when the store gives none."""
+    yr = lambda t: re.fullmatch(r"\d\d", t)
+    has_year = any(yr(t) for t in S)
+    T2 = [t for t in T if has_year or not yr(t)]
+    if not T2 or not S:
+        return 0.0
+    # model numbers must agree: a Porsche 914 is not a 928, a '94 Supra not a '20
+    dT = {t for t in T2 if re.search(r"\d", t)}
+    dS = {t for t in S if re.search(r"\d", t) and not (yr(t) and not any(yr(x) for x in T2))}
+    if dT != dS and not ("".join(S) == "".join(T2)):
+        return 0.0
+    mT = sum(1 for t in T2 if any(_hw_tok_eq(t, x) for x in S))
+    mS = sum(1 for x in S if any(_hw_tok_eq(x, t) for t in T2))
+    r, p = mT / len(T2), mS / len(S)
+    f1 = 2 * p * r / (p + r) if p + r else 0.0
+    # words split or joined differently ("Road Runner" / "Roadrunner") — only
+    # when the letters are practically the same
+    joined = difflib.SequenceMatcher(None, "".join(S), "".join(T2)).ratio()
+    return max(f1, joined if joined >= 0.93 else 0.0)
+
+
+@functools.lru_cache(maxsize=16384)
+def hw_info(name: str):
+    """Which case a store's car comes from: {"y", "c", "n", "ser", "th", "sth",
+    "sth_col"} — or None when it isn't a mainline single or the match isn't
+    certain (two cases fit equally, or the number points elsewhere)."""
+    T = _hw_load()
+    if not T["cars"] or not name or _HW_NOT_SINGLE.search(name):
+        return None
+    raw = re.sub(r"\[[^\]]*\]", " ", name)               # [PRE-ORDER]
+    colour = set()
+    # FirstCry ends a name with its colour: "… Toy Car - Grey", "… Toy Car- Silver"
+    parts = re.split(r"\s+-\s*|\s*-\s+", raw)
+    if len(parts) > 1 and len(parts[-1].split()) <= 4:
+        raw = " ".join(parts[:-1])
+        colour = _hw_colour(parts[-1])
+    m = re.search(r"\b(\d{1,3})\s*[/-]\s*250\b", raw)
+    num = int(m.group(1)) if m else None
+    S = _hw_tokens(raw)
+    if not S:
+        return None
+    if num:
+        idx = set(T["by_n"].get(num, []))
+        if not idx:
+            return None                                   # a number we don't have
+        need = 0.75
+    else:
+        if not colour:
+            return None           # no number, no colour: too little to be sure
+        idx = set()
+        for t in S:
+            idx.update(T["by_tok"].get(t, []))
+        need = 0.82
+    sth_words = bool(_HW_STH_WORDS.search(name)) or "spectraflame" in name.lower()
+    scored = []
+    for i in idx:
+        e = T["cars"][i]
+        if e.get("sth") and not sth_words:
+            continue                  # stores list the regular car; a Super is never assumed
+        sc = _hw_score(S, e["_t"])
+        if sc >= need:
+            scored.append((sc, e))
+    if not scored:
+        return None
+    best = max(sc for sc, _ in scored)
+    top = [e for sc, e in scored if sc >= best - 0.04]
+    if colour:
+        cs = [(_hw_colour_fit(colour, e["_col"]), e) for e in top]
+        bc = max(c for c, _ in cs)
+        if bc > 0:
+            top = [e for c, e in cs if c >= bc - 1e-9]
+        elif not num:
+            return None           # name alone, in a colour none of them comes in
+    if sth_words and any(e.get("sth") for e in top):
+        top = [e for e in top if e.get("sth")]
+    if len({(e.get("y"), e.get("c")) for e in top}) != 1:
+        return None                                       # two cases fit: say nothing
+    e = top[0]
+    return {"y": e.get("y"), "c": e.get("c"), "n": e.get("n"), "ser": e.get("ser") or "",
+            "th": all(x.get("th") for x in top), "sth": all(x.get("sth") for x in top),
+            "sth_col": None if any(x.get("sth") for x in top) else
+            T["sth"].get((e.get("y"), e.get("c"), e.get("n")))}
+
+
+@functools.lru_cache(maxsize=16384)
+def hw_priority(name: str):
+    """'sth', 'th', 'chase', 'sth_car' (the regular car whose Super TH is in its
+    case — FirstCry doesn't sort them out) or 'zamac' — what makes this car one
+    to chase above your marques. None for an ordinary car."""
+    if not name:
+        return None
+    info = hw_info(name)
+    if _HW_STH_WORDS.search(name) or (info and info.get("sth")):
+        return "sth"
+    if (info and info.get("th")) or _HW_TH_WORDS.search(name):
+        return "th"
+    if _HW_CHASE_WORDS.search(name):
+        return "chase"
+    if info and info.get("sth_col"):
+        return "sth_car"
+    if _HW_ZAMAC_WORDS.search(name):
+        return "zamac"
+    return None
 
 
 FC_WATCH_IDS = set(re.findall(r"\d{5,}", _FC_WATCH_RAW))
@@ -1688,7 +1923,7 @@ def _fc_min_units(pid: str, name: str) -> int:
     FC_MIN_ALERT_STOCK_TARGET for your 🎯 cars, FC_MIN_ALERT_STOCK for the rest."""
     nm = name or ""
     flagged = (str(pid) in FC_WATCH_IDS or _fc_is_marque(nm)
-               or any(w in nm.lower() for w in WATCHLIST))
+               or any(w in nm.lower() for w in WATCHLIST) or bool(hw_priority(nm)))
     return FC_MIN_ALERT_STOCK_TARGET if flagged else FC_MIN_ALERT_STOCK
 
 
@@ -1728,7 +1963,8 @@ def _fc_target(pid: str, v: dict) -> bool:
     # Hot Wheels only: old records of a "Jukku Resembling Ferrari SF90" pull-back
     # and Babyhug RC cars matched the marques and ate delivery checks every pass
     return bool(nm) and not _fc_excluded(nm) and bool(_FC_HW_NAME.search(nm)) and (
-        pid in FC_WATCH_IDS or bool((v or {}).get("auto_watch")) or _fc_is_marque(nm))
+        pid in FC_WATCH_IDS or bool((v or {}).get("auto_watch")) or _fc_is_marque(nm)
+        or bool(hw_priority(nm)))
 
 
 def _fc_poll_sets(prev_fc: dict, k: int, pass_idx: int = 0) -> list:
@@ -3562,11 +3798,114 @@ def _within_budget(d) -> bool:
     return (p is None) or (p <= MAX_ALERT_PRICE)
 
 
-def _is_flagged(d) -> bool:
-    """🎯: a watched FirstCry car, a WATCHLIST keyword, or one of your marques
+def _is_marque_flagged(d) -> bool:
+    """A watched FirstCry car, a WATCHLIST keyword, or one of your marques
     (Porsche, Ferrari, Lamborghini, Supra …) — on every store."""
     return (bool(d.get("watched")) or any(w in d["name"].lower() for w in WATCHLIST)
             or _fc_is_marque(d["name"]))
+
+
+def _is_flagged(d) -> bool:
+    """🎯: your marques / watchlist, plus every Treasure Hunt, Super Treasure
+    Hunt, chase and ZAMAC (v16)."""
+    return _is_marque_flagged(d) or bool(hw_priority(d["name"]))
+
+
+# v16: what a 🎯 alert is about, at a glance — its own message, first line.
+# Specials first (a Porsche Treasure Hunt reads "🏆🖤 TREASURE HUNT · PORSCHE").
+_HW_KINDS = {
+    "sth":     ("💎", "SUPER TREASURE HUNT"),
+    "th":      ("🏆", "TREASURE HUNT"),
+    "chase":   ("⛓️", "CHASE"),
+    "sth_car": ("✨", "STH CAR"),
+    "zamac":   ("🔩", "ZAMAC"),
+}
+_HW_RANK = {"sth": 0, "th": 1, "chase": 2, "sth_car": 3, "zamac": 4}
+# A heart per family of your marques — the colour says which at a glance — and
+# the word that matched names it ("SKYLINE", "SUPRA", "McLAREN"). First fit wins.
+_HEARTS = [
+    ("❤️", [("ferrari", "FERRARI"), ("laferrari", "FERRARI"), ("testarossa", "FERRARI"),
+            ("f40", "FERRARI"), ("f50", "FERRARI"), ("enzo", "FERRARI"), ("sf90", "FERRARI"),
+            ("12cilindri", "FERRARI"), ("12cilinderi", "FERRARI"), ("purosangue", "FERRARI")]),
+    ("🖤", [("porsche", "PORSCHE"), ("911", "PORSCHE"), ("930", "PORSCHE"), ("934", "PORSCHE"),
+            ("935", "PORSCHE"), ("959", "PORSCHE"), ("964", "PORSCHE"), ("993", "PORSCHE"),
+            ("918", "PORSCHE"), ("carrera", "PORSCHE"), ("singer", "PORSCHE"), ("taycan", "PORSCHE")]),
+    ("💛", [("lamborghini", "LAMBORGHINI"), ("countach", "LAMBORGHINI"), ("aventador", "LAMBORGHINI"),
+            ("huracan", "LAMBORGHINI"), ("diablo", "LAMBORGHINI"), ("miura", "LAMBORGHINI"),
+            ("murcielago", "LAMBORGHINI"), ("revuelto", "LAMBORGHINI"), ("urus", "LAMBORGHINI"),
+            ("sian", "LAMBORGHINI"), ("veneno", "LAMBORGHINI"), ("gallardo", "LAMBORGHINI")]),
+    ("💙", [("skyline", "SKYLINE"), ("gt-r", "GT-R"), ("gtr", "GT-R"), ("silvia", "SILVIA"),
+            ("180sx", "180SX"), ("fairlady", "FAIRLADY Z"), ("datsun", "DATSUN"), ("nissan", "NISSAN")]),
+    ("🧡", [("supra", "SUPRA"), ("ae86", "AE86"), ("celica", "TOYOTA"), ("mr2", "TOYOTA"),
+            ("toyota", "TOYOTA"), ("lexus", "LEXUS")]),
+    ("💜", [("nsx", "HONDA NSX"), ("type r", "HONDA TYPE R"), ("civic", "HONDA"), ("honda", "HONDA"),
+            ("rx-7", "RX-7"), ("rx7", "RX-7"), ("mazda", "MAZDA"), ("wrx", "SUBARU"), ("impreza", "SUBARU"),
+            ("subaru", "SUBARU"), ("lancer", "MITSUBISHI"), ("evo", "MITSUBISHI"), ("mitsubishi", "MITSUBISHI")]),
+    ("🤍", [("bugatti", "BUGATTI"), ("mclaren", "McLAREN"), ("koenigsegg", "KOENIGSEGG"),
+            ("pagani", "PAGANI"), ("aston martin", "ASTON MARTIN"), ("alfa romeo", "ALFA ROMEO"),
+            ("bmw", "BMW"), ("m3", "BMW"), ("m4", "BMW"), ("amg", "MERCEDES"), ("mercedes", "MERCEDES"),
+            ("benz", "MERCEDES"), ("audi", "AUDI"), ("rs6", "AUDI"), ("rs 6", "AUDI")]),
+    ("💚", [("mustang", "MUSTANG"), ("shelby", "SHELBY"), ("corvette", "CORVETTE"), ("camaro", "CAMARO"),
+            ("challenger", "DODGE"), ("charger", "DODGE"), ("viper", "DODGE"), ("cuda", "PLYMOUTH"),
+            ("road runner", "PLYMOUTH"), ("roadrunner", "PLYMOUTH"), ("plymouth", "PLYMOUTH")]),
+    ("🩵", [("rlc", "RLC"), ("red line club", "RLC"), ("car culture", "CAR CULTURE"),
+            ("team transport", "TEAM TRANSPORT"), ("boulevard", "BOULEVARD"),
+            ("silver series", "SILVER SERIES"), ("fast furious", "FAST & FURIOUS"),
+            ("fast & furious", "FAST & FURIOUS"), ("pop culture", "POP CULTURE"),
+            ("silhouettes", "PREMIUM"), ("japan historics", "PREMIUM"), ("modern classics", "PREMIUM"),
+            ("legends", "PREMIUM"), ("exotics", "PREMIUM"), ("premium", "PREMIUM")]),
+]
+
+
+def _heart(name: str):
+    n = " " + re.sub(r"[^a-z0-9& ]", " ", (name or "").lower()) + " "
+    for emoji, keys in _HEARTS:
+        for k, label in keys:
+            if " " + re.sub(r"[^a-z0-9& ]", " ", k) + " " in n:
+                return emoji, label
+    return "🎯", "WATCHLIST"
+
+
+def _badge(d):
+    """(emoji, LABEL) for a 🎯 car's own message, or None for any other car."""
+    kind = hw_priority(d["name"])
+    marque = _heart(d["name"]) if _is_marque_flagged(d) else None
+    if kind:
+        e, label = _HW_KINDS[kind]
+        if marque and marque[0] != "🎯":
+            return e + marque[0], f"{label} · {marque[1]}"
+        return e, label
+    return marque
+
+
+def _hw_line(d) -> str:
+    """One line on what the car is: its case, series and number, Treasure Hunt
+    / Super Treasure Hunt / chase — or "" when unknown."""
+    name = d.get("name", "")
+    info = hw_info(name)
+    bits = []
+    if info:
+        where = f"{info['y']} Case {info['c']}"
+        if info.get("sth"):
+            bits.append(f"💎 Super Treasure Hunt · {where}")
+        elif info.get("th"):
+            bits.append(f"🏆 Treasure Hunt · {where}")
+        else:
+            bits.append(f"📦 {where}")
+        if info.get("ser") and info["ser"].upper() != "TBD":
+            bits.append(info["ser"])
+        if info.get("n"):
+            bits.append(f"#{info['n']}")
+        if info.get("sth_col"):
+            bits.append(f"💎 its Super TH ({info['sth_col']}) is in this case")
+    else:
+        if _HW_STH_WORDS.search(name):
+            bits.append("💎 Super Treasure Hunt")
+        elif _HW_TH_WORDS.search(name):
+            bits.append("🏆 Treasure Hunt")
+    if _HW_CHASE_WORDS.search(name):
+        bits.append("⛓️ Chase")
+    return " · ".join(bits)
 
 
 def _line(d, extra="") -> str:
@@ -3579,12 +3918,19 @@ def _line(d, extra="") -> str:
     price = d.get("price", "")
     mrp = f" <s>{d['mrp']}</s>" if d.get("mrp") else ""
     url = fc_fresh_link(d["url"]) if d.get("source") == "firstcry" else d["url"]
-    return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}\n{url}"
+    info = _hw_line(d)
+    info = f"\n{info}" if info else ""
+    return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}{info}\n{url}"
 
 
 def _flagged_first(items: list) -> list:
     """🎯 cars (your marques / watchlist) at the top of each section."""
     return sorted(items, key=lambda d: 0 if _is_flagged(d) else 1)
+
+
+def _priority_rank(d) -> int:
+    k = hw_priority(d["name"])
+    return _HW_RANK.get(k, 9)
 
 
 # 👀 "new listing — sold out" alerts tell you about a car you can't buy. Off by
@@ -3606,9 +3952,35 @@ def _dedupe(items: list, seen_keys: set) -> list:
     return out
 
 
-def build_alert(ch: dict) -> str | None:
+def build_alerts(ch: dict) -> list:
+    """The messages for one store's changes. v16: every 🎯 car that's in stock
+    (new or back) gets its own message whose first line says what it is —
+    🏆 TREASURE HUNT, 💎 SUPER TREASURE HUNT, ❤️ FERRARI, 🖤 PORSCHE … — so the
+    lock screen tells you at a glance; Treasure Hunts and the like go first.
+    Everything else follows in one message, as before."""
+    shown, solo = set(), []
+    for key, event in (("new_listings", "NEW IN STOCK"), ("restocks", "BACK IN STOCK")):
+        items = ch.get(key) or []
+        if key == "new_listings":
+            items = [d for d in items if _within_budget(d)]
+        for d in items:
+            b = _badge(d)
+            if b:
+                solo.append((_priority_rank(d), b, event, d))
+    out = []
+    for _, (emoji, label), event, d in sorted(solo, key=lambda x: x[0]):
+        if not _dedupe([d], shown):
+            continue
+        out.append(f"{emoji} <b>{label} · {event}</b>\n" + _line(d))
+    rest = build_alert(ch, shown)
+    if rest:
+        out.append(rest)
+    return out
+
+
+def build_alert(ch: dict, shown: set | None = None) -> str | None:
     parts = []
-    shown = set()
+    shown = set() if shown is None else shown
 
     # ── In-stock alerts (loud) ─────────────────────────────────────────────────
     news = _flagged_first(_dedupe([d for d in ch["new_listings"] if _within_budget(d)], shown))
@@ -3830,11 +4202,13 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
             tg(f"📈 <b>Coverage expanded:</b> {SRC.get(src_key, src_key)} +{len(burst)} newly "
                f"tracked products ({ins} in stock). Alerts on changes from here.")
 
-    alert = build_alert(changes)
-    if alert:
+    alerts = build_alerts(changes)
+    for i, alert in enumerate(alerts):
+        if i:
+            time.sleep(0.4)            # Telegram: a burst of messages to one chat
         tg(alert)
         print("\n" + alert)
-    else:
+    if not alerts:
         n = sum(len(v) for v in changes.values())
         if n or not quiet:
             print(f"[=] {store}: no alert-worthy changes ({n} minor)")

@@ -1,0 +1,63 @@
+name: Hot Wheels case lists
+run-name: Hot Wheels case lists
+
+# Rebuilds hw_cases.json — which case every mainline car is from, and which are
+# Treasure Hunts / Super Treasure Hunts — from the collector checklists on
+# 164custom.com (cases.py). Once a day, so a new case shows up within a day of
+# being published; the tracker only reads the file and never asks a store.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 21 * * *"     # 03:11 IST every day
+  push:
+    branches: [main]
+    paths: [cases.py, .github/workflows/cases.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hw-cases
+  cancel-in-progress: false
+
+jobs:
+  cases:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -q --disable-pip-version-check -r requirements.txt
+
+      - name: Rebuild the case table
+        run: python cases.py
+
+      - name: Save it
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          git add hw_cases.json
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          git commit -q -m "chore: update hw_cases.json [skip ci]"
+          # the tracker commits seen.json every minute: rebase onto it and retry
+          for attempt in 1 2 3 4 5; do
+            if git push -q; then
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — rebasing onto latest main"
+            git fetch -q origin main
+            git rebase -q origin/main || { git rebase --abort; exit 1; }
+            sleep 3
+          done
+          exit 1
