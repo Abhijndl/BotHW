@@ -17924,10 +17924,10 @@
     "fc_listed_at": "2026-10-21T08:45:00",
     "fc_api_seen_at": "2026-10-21T08:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24503746",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
     "stock": "in_stock",
@@ -20996,7 +20996,7 @@
     "fc_svc": "0"
   },
   "fc_24776061": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels NISSAN SKYLINE HT 2000GT-X (244/250) Toy Car - Black",
     "price": "₹179",
     "source": "firstcry",
@@ -21011,7 +21011,7 @@
     "fc_listed_at": "2026-10-21T08:00:00",
     "fc_api_seen_at": "2026-10-21T08:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_svc": "1"
