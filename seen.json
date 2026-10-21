@@ -3543,11 +3543,11 @@
     "fc_listed_at": "2026-10-21T19:30:00",
     "fc_api_seen_at": "2026-10-21T19:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-21T19:33:58",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23074258": {
     "stock": "out_of_stock",
@@ -11219,7 +11219,7 @@
     "fc_lst": "list",
     "fc_gid": "24248198",
     "fc_phantom": "2026-10-21T16:20:55",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_22240239": {
     "stock": "out_of_stock",
@@ -13644,7 +13644,7 @@
     "fc_svc": "1"
   },
   "fc_24342667": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Heavy Doody Dumper Wheel Car - Yellow",
     "price": "₹764",
     "source": "firstcry",
@@ -13652,13 +13652,13 @@
     "first_seen": "2026-09-17T08:31:27",
     "last_seen": "2026-10-21T19:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-14T15:21:11",
+    "last_restock_alert": "2026-10-21T19:38:12",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T19:30:00",
     "fc_api_seen_at": "2026-10-21T19:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24341962",
     "fc_svc": "1"
@@ -20912,7 +20912,7 @@
     "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24776095",
-    "fc_arr": "2026-10-21T19:05:46",
+    "fc_arr": "2026-10-21T19:38:12",
     "fc_svc": "1"
   },
   "fc_24776091": {
