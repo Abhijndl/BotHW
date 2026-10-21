@@ -13453,10 +13453,10 @@
     "fc_listed_at": "2026-10-15T04:15:00",
     "fc_api_seen_at": "2026-10-21T05:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "23345424",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24453327": {
     "stock": "in_stock",
