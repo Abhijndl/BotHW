@@ -21287,7 +21287,7 @@
     "fc_svc": "1"
   },
   "fc_24776077": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Custom / Personnalise 2020 Honda e (115/250) Toy Car Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -21302,10 +21302,11 @@
     "fc_listed_at": "2026-10-21T15:15:00",
     "fc_api_seen_at": "2026-10-21T15:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-21T15:21:17",
+    "fc_svc": "0"
   },
   "fc_24776076": {
     "stock": "in_stock",
@@ -22090,8 +22091,9 @@
     "fc_listed_at": "2026-10-21T15:15:00",
     "fc_api_seen_at": "2026-10-21T15:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
-    "fc_lst": "cat"
+    "fc_live": "arriving",
+    "fc_lst": "cat",
+    "fc_svc": "1"
   },
   "fc_24783697": {
     "stock": "out_of_stock",
@@ -22108,7 +22110,8 @@
     "fc_listed_at": "2026-10-21T15:15:00",
     "fc_api_seen_at": "2026-10-21T15:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
-    "fc_lst": "cat"
+    "fc_live": "arriving",
+    "fc_lst": "cat",
+    "fc_svc": "1"
   }
 }
