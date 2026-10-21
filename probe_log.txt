@@ -1,4 +1,121 @@
-read 52 case pages, TH lists ['2024', '2025', '2026', '2027'], STH lists ['2024', '2025', '2026', '2027']; 0 page(s) failed
-saved 1258 cars: 2024 ABCDEFGHJKLMNPQ, 2025 ABCDEFGHJKLMNPQ, 2026 ABCDEFGHJKLMNPQ, 2027 ABCDEFG; TH 48, STH 53
-cases.py exit: 0
-done in 65s
+seen.json copied: 840390 bytes
+hw_cases.json copied
+
+================ FORCED PASS: every store once ================
+  [FC-API] quick sweep: 198 in stock from 12 page(s) in 2.6s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [FC-API] stock for pincode: 248001
+  [FC-API] 387 products across 21 page(s) (193 with zero stock) in 2.8s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 384, 'Sports & Games': 3}
+[HW] case table: 1261 cars (52 cases)
+  [FC-API] sample: Hot Wheels Circle Tracker die-cast toy car #237/ | stock=in_stock count=15 price=164 mrp=179
+  [FC-LIVE] listing ['24475972', '24235312', '24505759', '23351188', '23348665', '23345503', '24476435'] | delivery flips ['24390960', '24342870', '23973357'] | re-reads ['24776075', '23346007', '24503897', '24476803']
+  [FC-LIVE] 14 to confirm, 4 🎯 set(s) read, 0 audited → 111 car(s) seen live in 4.5s; 0 now orderable, 1 not any more, 2 unconfirmed (page not read)
+[*] FirstCry total (API): 565 tracked, 136 buyable now (in-stock list complete), 2 aged to delisted
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] forced pass (FirstCry + full catalogue): FirstCry → 565 products in 10.0s (live: FirstCry)
+FirstCry stock changes in the forced pass: 1
+    ('fc_23973357', 'in_stock', 'out_of_stock', 'Hot Wheels Pantone 175 67 Ford Bronco Die-cast Free Wheel To')
+forced pass took 10.0s
+verdicts stored: Counter({None: 199, 'sold out': 176, 'ok': 139, 'no delivery': 62, 'last unit': 8, 'arriving': 4})
+stats: {'pages': 14, 'tat': 23}
+   fc_23973357 in_stock -> out_of_stock | page CS 89 delivery 0 units-for-you None | verdict no delivery | Hot Wheels Pantone 175 67 Ford Bronco Die-cast Free Wheel To
+
+================ DRY RUN of main() (alerts printed, not sent) ================
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 1.9s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['24475972', '24235312', '23345503', '24505759', '23351188', '23348665', '23345502', '23074883'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897', '24476803']
+  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 115 car(s) seen live in 2.6s; 0 now orderable, 0 not any more
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry → 131 products in 4.6s (live: FirstCry)
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 1.9s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['24475972', '24235312', '23345503', '24505759', '23351188', '23348665'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897', '24476803']
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 2.0s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 129 products in 4.0s (live: FirstCry)
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 2.1s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['24514773', '24236112', '24472644', '24473514', '24453327', '24342834', '23835987', '23835981', '23348046', '23345502'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 99 car(s) seen live in 4.3s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 130 products in 6.5s (live: FirstCry)
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 1.8s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['24514773', '24236112', '24472644', '24473514', '24453327', '24342834', '23835987', '23835981', '23348046', '23345502'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 110 car(s) seen live in 1.6s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 129 products in 3.4s (live: FirstCry)
+
+[*] run finished: 4 pass(es) in 40s (0s:Fi=5s, 12s:Fi=4s, 24s:Fi=7s, 36s:Fi=4s)
+main() took 39.8s; 0 message(s) would have been sent
+stats: {'pages': 33, 'tat': 72}
+verdicts after run 1: Counter({None: 198, 'sold out': 177, 'ok': 139, 'no delivery': 62, 'last unit': 8, 'arriving': 4})
+
+================ SECOND RUN (steady state) ================
+  [HM] listing → 12 visible products
+  [MG] 1 products had no SKU row — used product_type fallback
+[*] Minifygram total: 271 of 274 (36 in stock; 1 trading cards, 62 pre-orders)
+[=] Minifygram: no alert-worthy changes (0 minor)
+  [KD] car-culture → 1
+  [KD] boulevard-series → 0 (empty right now)
+  [KD] pop-culture → 4
+  [KD] fast-and-furious → 1
+  [KD] card-art-premiums → 8
+  [KD] gift-pack → 21
+  [KD] team-transport → 5
+  [KD] mainlines → 5
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 1.7s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-API] stock for pincode: 248001
+  [KD] disney-cars → 0 (empty right now)
+  [KD] character-cars → 8
+  [KD] hot-wheels-accessories → 8
+  [HM] creds: token=yes app_id=605884f889251331fe847d80
+  [KD] kaido-house → 16
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] pre-order-minigt → 50
+  [KD] mini-gt-blister-pack → 138
+  [KD] mini-gt → 99
+  [HM] api → HTTP 401
+  [HM] api → HTTP 401
+  [HM] api → HTTP 401
+  [HM] Fynd API returned nothing — falling back to page checks
+  [KD] chase-car → 0 (empty right now)
+  [KD] home → 0 new (27 already listed elsewhere)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+[*] Karz&Dolls total: 364 (364 in stock)
+[=] Karz&Dolls: no alert-worthy changes (0 minor)
+  [HM] sitemap → 28 hot-wheels product slugs
+  [FC-API] 387 products across 21 page(s) (193 with zero stock) in 2.2s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 384, 'Sports & Games': 3}
+  [FC-API] sample: Hot Wheels Circle Tracker die-cast toy car #237/ | stock=in_stock count=15 price=164 mrp=179
+  [FC-LIVE] listing ['24514773', '24472644', '24236112', '24473514', '24453327', '24342834', '23835987', '23835981', '23348046'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897']
+  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 94 car(s) seen live in 1.8s; 0 now orderable, 0 not any more
+[*] FirstCry total (API): 565 tracked, 136 buyable now (in-stock list complete), 2 aged to delisted
+[=] FirstCry: no alert-worthy changes (0 minor)
+  [HM] page-checked 12 products (0 in stock / 12 sold out)
+[*] Hamleys total: 64 (31 in stock)
+[=] Hamleys: no alert-worthy changes (0 minor)
+[*] pass 1 (+ full FirstCry catalogue): FirstCry, Minifygram, Hamleys, Karz&Dolls → 1264 products in 5.9s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 1.9s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['24514773', '24236112', '24472644', '24473514', '24453327', '24342834', '23835987', '23835981', '23348046', '23345502'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 92 car(s) seen live in 3.2s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 129 products in 5.1s (live: FirstCry)
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 1.8s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['24514773', '24236112', '24472644', '24473514', '24453327', '24342834', '23835987', '23835981', '23348046', '23345502'] | delivery flips [] | re-reads ['24776075', '23346007', '24503897']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 93 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 129 products in 4.6s (live: FirstCry)
+  [FC-API] quick sweep: 198 in stock from 13 page(s) in 2.2s — fresh ✓ (searchrank, 13 page(s) computed live)
+  [FC-LIVE] listing ['23074619', '24514781', '23930405', '23351681', '23346404', '23074883', '22921118', '22597418', '21627431'] | delivery flips [] | re-reads ['24776075', '23346007', '24473477', '24503897']
+  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 109 car(s) seen live in 3.9s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 130 products in 6.1s (live: FirstCry)
+
+[*] run finished: 4 pass(es) in 42s (0s:Fi+Mi+Ha+Ka=6s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=6s)
+run 2 took 42.4s; 0 message(s) would have been sent; pages 24, delivery checks 60
+verdicts after run 2: Counter({None: 198, 'sold out': 177, 'ok': 139, 'no delivery': 62, 'last unit': 8, 'arriving': 4})
+   fc_22600231 out_of_stock last unit | Hot Wheels Diecast Toy Car HW Hot Rods Free Wheel Model with
+   fc_23346007 out_of_stock arriving | Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW 
+   fc_23105077 out_of_stock last unit | Hot Wheels Free Wheel Die Cast RD-06 (6/250) Toy Car - Black
+   fc_24473723 out_of_stock last unit | Hot Wheels X-Cceleron Die-Cast Toy Car - Grey
+   fc_22601081 out_of_stock arriving | Hot Wheels Diecast Toy Car Formula Free Wheel Model with Smo
+   fc_24503750 out_of_stock last unit | Hot Wheels '33 Ford Lo Boy Die Cast Free Wheel Toy Car - Whi
+   fc_24390951 out_of_stock last unit | Hot Wheels Die Cast Free Wheel Guinevere Van/Fourgonnette To
+   fc_24473477 out_of_stock last unit | Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red
+   fc_24476803 out_of_stock last unit | Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Ligh
+   fc_24476435 out_of_stock last unit | Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght 
+   fc_24503897 out_of_stock arriving | Hot Wheels Volvo 240 Drift Wagon Die Cast Free Wheel Toy Car
+   fc_24776075 out_of_stock arriving | Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver
