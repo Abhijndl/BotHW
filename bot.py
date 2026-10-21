@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v16.1
+Hot Wheels / Diecast Collector Tracker  ·  v16.2
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -22,6 +22,8 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
     what knows "Cannot be delivered to 248001". So fewer than FC_SURE_UNITS (5)
     units alert only once FirstCry's in-stock list for 248001 shows the car
     too, and a car whose alert was gone within minutes needs 5+ for 12 h.
+    v16.2: when that list and the delivery check say yes but the product page
+    still shows 0 (new stock — the page catches up 1-15 min later), it alerts.
     The listing lagged the page by up to ~10 min and kept showing cars nobody
     could order. Every pass, the cheap delivery check also looks at every 🎯
     car (and every tracked car once a run), so a car becoming deliverable is
@@ -282,6 +284,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
+                  "fc_new_pending",
                   "fc_svc"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
@@ -2211,6 +2214,16 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             # still sells none, and its last count (units on their way) stands —
             # calling it 'sold out' would drop it from the re-reads
             verdict = "arriving"
+        listed_n = None
+        if verdict == "arriving" and claim(p) == "list" and info.get("svc") != 0:
+            # v16.2: FirstCry's in-stock list for your pincode and its delivery
+            # check both say yes while the product page still shows 0 — new
+            # stock the page hasn't caught up with. 21 Oct 22:20: a brand-new
+            # '20 Charger Hellcat could be added to the cart while its page said
+            # 0; over two days such pages caught up within 1-15 min.
+            verdict = "ok"
+            rec = by.get(p) or {}
+            listed_n = rec.get("stock_count") if isinstance(rec.get("stock_count"), int) else None
         if verdict == "ok" and (v or {}).get("stock") != "in_stock" and FC_SURE_UNITS:
             cs_, isv_ = info.get("cs") or 0, info.get("isv")
             units = min(cs_, isv_) if isv_ is not None else cs_
@@ -2286,6 +2299,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         isv, cs = info.get("isv"), info.get("cs") or 0
         # the count you can actually get: page stock, capped by what can reach you
         r["stock_count"] = (min(cs, isv) if isv else cs) if st == "in_stock" else None
+        if st == "in_stock" and not cs:
+            r["stock_count"] = listed_n or isv or None      # new stock, page not caught up
         r["fc_live"] = verdict
         sv = info.get("svc") if info.get("svc") is not None else svc_now.get(p)
         r["fc_svc"] = "" if sv is None else str(sv)
@@ -3764,6 +3779,8 @@ def compute_changes(current: dict, seen: dict) -> dict:
             # disappears from view for weeks and then comes back.
             entry = seen.setdefault(pid, {})
             entry["alerted_new"] = True
+            if stock != "in_stock" and d.get("source") == "firstcry":
+                entry["fc_new_pending"] = now   # its first in-stock moment is still NEW
             continue
 
         prev_stock = prev.get("stock")
@@ -3799,7 +3816,13 @@ def compute_changes(current: dict, seen: dict) -> dict:
         if (stock == "in_stock" and prev_stock == "out_of_stock"
                 and not is_correction
                 and _hours_since(prev.get("last_restock_alert", "")) >= cooldown):
-            restocks.append(d)
+            # a new listing first seen sold out (its NEW alert went unsent) that
+            # comes in within a day is news as NEW, not "back"
+            if prev.get("fc_new_pending") and _hours_since(prev["fc_new_pending"]) < 24:
+                new_listings.append({**d, "_known": True})
+                prev.pop("fc_new_pending", None)
+            else:
+                restocks.append(d)
             prev["last_restock_alert"] = now
 
         # PRICE DROP — guarded. The old rule fired on ANY decrease, so a
@@ -4228,7 +4251,7 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
 
     for src_key in src_keys:
         burst = [d for d in (changes["new_listings"] + changes["back_soon"])
-                 if d["source"] == src_key and not _fresh_fc(d)]
+                 if d["source"] == src_key and not _fresh_fc(d) and not d.get("_known")]
         if len(burst) > BURST_LIMIT:
             drop = {d["id"] for d in burst}
             changes["new_listings"] = [d for d in changes["new_listings"] if d["id"] not in drop]
