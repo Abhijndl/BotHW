@@ -14735,20 +14735,19 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-19-mercedes-benz-a-class-die-cast-toy-car-black/24473499/product-detail",
     "first_seen": "2026-09-18T17:46:15",
-    "last_seen": "2026-10-21T19:15:00",
+    "last_seen": "2026-10-21T19:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T20:33:10",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T10:30:00",
-    "fc_api_seen_at": "2026-10-21T19:15:00",
+    "fc_api_seen_at": "2026-10-21T19:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24473477",
-    "fc_arr": "2026-10-21T19:05:53",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24514779": {
     "stock": "out_of_stock",
@@ -20942,7 +20941,7 @@
     "fc_svc": "1"
   },
   "fc_24776090": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Lucid Air (59/250) Toy Car - Blue",
     "price": "₹179",
     "source": "firstcry",
@@ -20956,11 +20955,11 @@
     "fc_listed_at": "2026-10-21T19:30:00",
     "fc_api_seen_at": "2026-10-21T19:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24776095",
     "fc_phantom": "2026-10-21T17:54:21",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24775986": {
     "stock": "in_stock",
