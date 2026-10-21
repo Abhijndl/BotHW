@@ -1,131 +1,182 @@
-============== A. full answers ==============
-
-+   2s Porsche928S 23345758: set of 5; page entry:
-    {"Af": 3, "At": 15, "CCOI": "", "CIi": "", "CIns": "", "CMatN": "", "CS": 3, "CWt": "", "Gid": "23345424", "Img": "23345758a.jpg;23345758b.jpg;23345758c.jpg;23345758d.jpg;23345758e.jpg;23345758f.jpg;23345758bis.jpg;", "MLfb": 0, "MLft": 0, "MLttb": 0, "MSh": 0, "MW": 0, "Mc": 0, "Ms": 0, "OffTyp": "NoOffer", "PerDcost": 0, "ProductStyle": "", "QueCount": 0, "Rqty": 5, "SCF": 0, "Dis": 10, "EC": 1, "SDis": 0, "col": "000000", "isPremium": false, "mrp": 179, "pd": "3 Years+,Encourages imaginative play, storytelling, and collectible display for kids and enthusiasts.", "pid": 23345758, "pn": "Hot Wheels Die Cast Free Wheel 171/250 1983 Porsche 928S - Black", "qty": 1, "sz": "L 7 x B 3 x H 2 cm", "hashCols": ["2#Black"], "hashAgeG": ["6#2-4 Years", "7#4-6 Years", "8#6-8 Years", "9#8-10 Years", "10#10-12 Years", "18#3-4 Years", "11#12+ Years"], "ispreorder": "0", "warranty": "", "w": "", "recSize": "", "minQty": 1, "clubDisc": 12, "ClubPerDcost": 0, "cmpl": 1, "eurosizes": [], "cgroup1": "", "cgroup2": "", "SOID": 0, "cancellation": "", "unit": "", "cfabric": "", "Bestseller": "0", "cpntxt": 0, "elaunchoff": 0, "fgift": 0, "mompick": 0, "new": "0", "offendtoday": 0, "onlyonfc": 0, "superSaver": "0", "mostgifted": 0, "extrawarm": 0, "pricemightincrease": 0, "collectiontag": ["29#INTERNATIONAL"]}
-   PInfo: {"ACT": true, "AF": 3, "AT": 15, "BID": 113, "BN": "Hot Wheels", "CAp": false, "CN": "Toys & Gaming", "CODA": true, "CTC": 0, "CurSt": 3, "Desc": "3 Years+,Encourages imaginative play, storytelling, and collectible display for kids and enthusiasts.", "FDesc": "                        <div id=\"pdpproductfulldesc\"><div><span style=\"font-weight: 600;\">Key Features:</span></div><ul><li>Crafted with a sturdy die-cast metal body and fine detailing for an authentic, premium look.</li><li>Compact size makes it easy to hold, race, display, and carry anywhere for on-the-go fun.</li><li>Smooth-rolling wheels ensure effortless movement across floors and play tracks.</li><li>Encourages imaginative play, storytelling, and collectible display for kids and enthusiasts.</li></ul><div><span style=\"font-weight: 600; font-size: 1rem;\">Specifications</span><span style=\"font-size: 1rem;\">:</span></div><div>Brand - Hot Wheels</div><div>Type - Toy Car</div><div>Age- 3 years +</div><div><br></div><div><span style=\"font-weight: 600;\">Product Description:</span></div><div>Bring home the thrill of miniature motoring with this finely crafted die-cast small car. Designed with realistic detailing and a durable metal body, it offers both play value and collectible appeal. The compact design fits perfectly in small hands while the smooth wheels allow exciting racing action. Whether used for imaginative adventures or added to a growing collection, this die-cast car is a timeless addition for kids an
-   set CS: {'23345503': 34, '23345756': 0, '23345501': 0, '23345757': 132, '23345758': 3}
-   page text 'Left': 1x
-   page text 'left': 26x
-   delivery (bot) this car grp=1 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-23", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Wednesday, 21st Oct 2026", "SDDDate": "", "NDDLeftTime": "05-36", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 2, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23345758, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
-   delivery (page) this car grp=1 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-23", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Wednesday, 21st Oct 2026", "SDDDate": "", "NDDLeftTime": "05-36", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 2, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23345758, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
-   pincode 248002: grp=1 IsServicable=2 TAT=3-4 dispatch=0 ship=Get it by Tomorrow 8 PM  NDD=True
-   pincode 248006: grp=1 IsServicable=2 TAT=3-4 dispatch=0 ship=Get it by Tomorrow 8 PM  NDD=True
-   pincode 248171: grp=1 IsServicable=2 TAT=3-4 dispatch=0 ship=Get it by Tomorrow 8 PM  NDD=True
-   pincode 110001: grp=1 IsServicable=2 TAT=2-3 dispatch=0 ship=Get it by Tomorrow 8 PM  NDD=True
-   pincode 122001: grp=1 IsServicable=2 TAT=2-3 dispatch=0 ship=Get it by Tomorrow 8 PM  NDD=True
-   pincode 560001: grp=1 IsServicable=2 TAT=6-7 dispatch=24 ship=Get it by Monday, Oct 26 NDD=False
-   pincode 400001: grp=1 IsServicable=2 TAT=7-8 dispatch=24 ship=Get it by Tuesday, Oct 27 NDD=False
-
-+   6s BuickRiviera 24473713: set of 12; page entry:
-    {"Af": 3, "At": 15, "CCOI": "", "CIi": "", "CIns": "", "CMatN": "", "CS": 2, "CWt": "", "Gid": "24473511", "Img": "24473713a.jpg;24473713b.jpg;24473713c.jpg;24473713d.jpg;24473713e.jpg;24473713bis.jpg;", "MLfb": 0, "MLft": 0, "MLttb": 0, "MSh": 0, "MW": 0, "Mc": 0, "Ms": 0, "OffTyp": "NoOffer", "PerDcost": 0, "ProductStyle": "", "QueCount": 0, "Rqty": 5, "SCF": 0, "Dis": 8, "EC": 1, "SDis": 0, "col": "964b00", "isPremium": false, "mrp": 179, "pd": "3 Years+,Its compact 1:64 scale makes it suitable for imaginative play, display and collecting.", "pid": 24473713, "pn": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown", "qty": 1, "sz": "L 6.5 X B 2.5 X H 1 cm", "hashCols": ["4#Brown"], "hashAgeG": ["6#2-4 Years", "7#4-6 Years", "8#6-8 Years", "9#8-10 Years", "10#10-12 Years", "18#3-4 Years", "11#12+ Years"], "ispreorder": "0", "warranty": "", "w": "", "recSize": "", "minQty": 1, "clubDisc": 12, "ClubPerDcost": 0, "cmpl": 1, "eurosizes": [], "cgroup1": "", "cgroup2": "", "SOID": 0, "cancellation": "", "unit": "", "cfabric": "", "Bestseller": "0", "cpntxt": 0, "elaunchoff": 0, "fgift": 0, "mompick": 0, "new": "0", "offendtoday": 0, "onlyonfc": 0, "superSaver": "0", "mostgifted": 0, "extrawarm": 0, "pricemightincrease": 0, "collectiontag": []}
-   PInfo: {"ACT": true, "AF": 3, "AT": 15, "BID": 113, "BN": "Hot Wheels", "CAp": false, "CN": "Toys & Gaming", "CODA": true, "CTC": 0, "CurSt": 2, "Desc": "3 Years+,Its compact 1:64 scale makes it suitable for imaginative play, display and collecting.", "FDesc": "                        <div id=\"pdpproductfulldesc\"><div><b>Key Features</b></div><div>Detailed die-cast model inspired by a classic muscle car</div><div>Durable construction designed for long-lasting play and display</div><div>Smooth-rolling wheels for easy movement and handling</div><div>Compact 1:64 scale ideal for collectors and enthusiasts</div><div>Great addition to Hot Wheels die-cast car collections</div><div><br></div><div><b>Specifications</b></div><div>Brand: Hot Wheels</div><div>Type: Die-Cast Toy Car</div><div>Recommended Age: 3 Years+</div><div><br></div><div><b>Product Description</b></div><div>Add a classic-inspired vehicle to your Hot Wheels collection with the '68 Mercury Cougar die-cast car. Designed with detailed styling and a sturdy die-cast metal body, this collectible features smooth-rolling wheels for easy handling. Its compact 1:64 scale makes it suitable for imaginative play, display and collecting.</div><div><br></div><div><b>Items Included in Package</b></div><div>1 Hot Wheels '68 Mercury Cougar Die-Cast Car</div><br></div>                        <div id=\"pdpdynamicdesc\"><p><b>Product Dimensions</b></p><ul><li>Product Dimensions (L x B x H): - 7.5 cm X 2.5 cm X 1 cm</li><li>Package Dimensions 
-   set CS: {'24473510': 0, '24473724': 0, '24473511': 1, '24473731': 1, '24473713': 2, '24473723': 2, '24473516': 7, '24473512': 51, '24473514': 142, '24473515': 164, '24473513': 175, '24473712': 255}
-   page text 'Left': 1x
-   page text 'left': 26x
-   delivery (bot) this car grp=0 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-25", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473713, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   delivery (page) this car grp=0 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-25", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473713, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   pincode 248002: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 248006: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 248171: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 110001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 122001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 560001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 400001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-
-+   9s SaltStreaker(ctrl) 24473712: set of 12; page entry:
-    {"Af": 3, "At": 15, "CCOI": "", "CIi": "", "CIns": "", "CMatN": "", "CS": 255, "CWt": "", "Gid": "24473511", "Img": "24473712a.jpg;24473712b.jpg;24473712c.jpg;24473712d.jpg;24473712e.jpg;24473712f.jpg;24473712bis.jpg;", "MLfb": 0, "MLft": 0, "MLttb": 0, "MSh": 0, "MW": 0, "Mc": 0, "Ms": 0, "OffTyp": "NoOffer", "PerDcost": 0, "ProductStyle": "", "QueCount": 0, "Rqty": 5, "SCF": 0, "Dis": 3, "EC": 1, "SDis": 0, "col": "0000ff", "isPremium": false, "mrp": 179, "pd": "3 Years+,Its compact 1:64 scale makes it suitable for imaginative play, display and collecting.", "pid": 24473712, "pn": "Hot Wheels Salt Streaker Die-Cast Toy Car - Blue Orange", "qty": 1, "sz": "L 6.5 X B 2.5 X H 1 cm", "hashCols": ["3#Blue"], "hashAgeG": ["6#2-4 Years", "7#4-6 Years", "8#6-8 Years", "9#8-10 Years", "10#10-12 Years", "18#3-4 Years", "11#12+ Years"], "ispreorder": "0", "warranty": "", "w": "", "recSize": "", "minQty": 1, "clubDisc": 7, "ClubPerDcost": 0, "cmpl": 1, "eurosizes": [], "cgroup1": "", "cgroup2": "", "SOID": 0, "cancellation": "", "unit": "", "cfabric": "", "Bestseller": "0", "cpntxt": 0, "elaunchoff": 0, "fgift": 0, "mompick": 0, "new": "0", "offendtoday": 0, "onlyonfc": 0, "superSaver": "11", "mostgifted": 0, "extrawarm": 0, "pricemightincrease": 0, "collectiontag": []}
-   PInfo: {"ACT": true, "AF": 3, "AT": 15, "BID": 113, "BN": "Hot Wheels", "CAp": false, "CN": "Toys & Gaming", "CODA": true, "CTC": 0, "CurSt": 255, "Desc": "3 Years+,Its compact 1:64 scale makes it suitable for imaginative play, display and collecting.", "FDesc": "                        <div id=\"pdpproductfulldesc\"><div><b>Key Features</b></div><div>Detailed die-cast model inspired by a classic muscle car</div><div>Durable construction designed for long-lasting play and display</div><div>Smooth-rolling wheels for easy movement and handling</div><div>Compact 1:64 scale ideal for collectors and enthusiasts</div><div>Great addition to Hot Wheels die-cast car collections</div><div><br></div><div><b>Specifications</b></div><div>Brand: Hot Wheels</div><div>Type: Die-Cast Toy Car</div><div>Recommended Age: 3 Years+</div><div><br></div><div><b>Product Description</b></div><div>Add a classic-inspired vehicle to your Hot Wheels collection with the '68 Mercury Cougar die-cast car. Designed with detailed styling and a sturdy die-cast metal body, this collectible features smooth-rolling wheels for easy handling. Its compact 1:64 scale makes it suitable for imaginative play, display and collecting.</div><div><br></div><div><b>Items Included in Package</b></div><div>1 Hot Wheels '68 Mercury Cougar Die-Cast Car</div><br></div>                        <div id=\"pdpdynamicdesc\"><p><b>Product Dimensions</b></p><ul><li>Product Dimensions (L x B x H): - 7 cm X 2.5 cm X 1 cm</li><li>Package Dimensions 
-   set CS: {'24473510': 0, '24473724': 0, '24473511': 1, '24473731': 1, '24473713': 2, '24473723': 2, '24473516': 7, '24473512': 51, '24473514': 142, '24473515': 164, '24473513': 175, '24473712': 255}
-   page text 'Left': 1x
-   page text 'left': 26x
-   delivery (bot) this car grp=1 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "6-7", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-25", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 252, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473712, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Monday, Oct 26</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   delivery (page) this car grp=1 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "6-7", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-25", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 252, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473712, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Monday, Oct 26</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   pincode 248002: grp=1 IsServicable=252 TAT=6-7 dispatch=24 ship=Get it by Monday, Oct 26 NDD=False
-   pincode 248006: grp=1 IsServicable=252 TAT=6-7 dispatch=24 ship=Get it by Monday, Oct 26 NDD=False
-   pincode 248171: grp=1 IsServicable=252 TAT=6-7 dispatch=24 ship=Get it by Monday, Oct 26 NDD=False
-   pincode 110001: grp=1 IsServicable=252 TAT=5-6 dispatch=24 ship=Get it by Sunday, Oct 25 NDD=False
-   pincode 122001: grp=1 IsServicable=252 TAT=5-6 dispatch=24 ship=Get it by Sunday, Oct 25 NDD=False
-   pincode 560001: grp=1 IsServicable=252 TAT=4-5 dispatch=24 ship=Get it by Saturday, Oct 24 NDD=False
-   pincode 400001: grp=1 IsServicable=252 TAT=4-5 dispatch=24 ship=Get it by Saturday, Oct 24 NDD=False
-
-+  13s AudiRS6 23075645: set of 12; page entry:
-    {"Af": 3, "At": 15, "CCOI": "", "CIi": "", "CIns": "", "CMatN": "", "CS": 0, "CWt": "", "Gid": "23074890", "Img": "23075645a.jpg;23075645b.jpg;23075645c.jpg;23075645d.jpg;23075645e.jpg;23075645f.jpg;23075645bis.jpg;", "MLfb": 0, "MLft": 0, "MLttb": 0, "MSh": 0, "MW": 0, "Mc": 0, "Ms": 0, "OffTyp": "NoOffer", "PerDcost": 0, "ProductStyle": "", "QueCount": 0, "Rqty": 5, "SCF": 0, "Dis": 0, "EC": 1, "SDis": 0, "col": "808080", "isPremium": false, "mrp": 179, "pd": "3 years+, Perfect for young racers and collectors alike, this die-cast delivers realistic detailing in a compact, durable design.", "pid": 23075645, "pn": "Hot Wheels 17 Audi RS 6 Avant (66/250) Die Cast Toy Car  - Grey", "qty": 1, "sz": "L 7 x B 3 x H 2 cm", "hashCols": ["8#Grey"], "hashAgeG": ["6#2-4 Years", "7#4-6 Years", "8#6-8 Years", "9#8-10 Years", "10#10-12 Years", "18#3-4 Years", "11#12+ Years"], "ispreorder": "0", "warranty": "", "w": "", "recSize": "", "minQty": 0, "clubDisc": 0, "ClubPerDcost": 0, "cmpl": 1, "eurosizes": [], "cgroup1": "", "cgroup2": "", "SOID": 0, "cancellation": "", "unit": "", "cfabric": "", "Bestseller": "0", "cpntxt": 0, "elaunchoff": 0, "fgift": 0, "mompick": 0, "new": "0", "offendtoday": 0, "onlyonfc": 0, "superSaver": "0", "mostgifted": 0, "extrawarm": 0, "pricemightincrease": 0, "collectiontag": ["29#INTERNATIONAL"]}
-   PInfo: {"ACT": true, "AF": 3, "AT": 15, "BID": 113, "BN": "Hot Wheels", "CAp": false, "CN": "Toys & Gaming", "CODA": true, "CTC": 0, "CurSt": 0, "Desc": "3 years+, Perfect for young racers and collectors alike, this die-cast delivers realistic detailing in a compact, durable design.", "FDesc": "                        <div id=\"pdpproductfulldesc\"><div><b>Key Features:</b></div><ul><li>Crafted with a sturdy die-cast metal body and fine detailing for an authentic, premium look.</li><li>Compact size makes it easy to hold, race, display, and carry anywhere for on-the-go fun.</li><li>Smooth-rolling wheels ensure effortless movement across floors and play tracks.</li><li>Encourages imaginative play, storytelling, and collectible display for kids and enthusiasts.</li></ul><div><b style=\"font-size: 1rem;\">Specifications:</b></div><div>Brand - Hot Wheels</div><div>Type - Toy Car</div><div>Age- 3 years +</div><div><br></div><div><b>Product Description:</b></div><div>Bring home the thrill of miniature motoring with this finely crafted die-cast small car. Designed with realistic detailing and a durable metal body, it offers both play value and collectible appeal. The compact design fits perfectly in small hands while the smooth wheels allow exciting racing action. Whether used for imaginative adventures or added to a growing collection, this die-cast car is a timeless addition for kids and car lovers alike.</div><div><br></div><div><b>Items Included in the Package:</b></div><div>1 Toy Car</
-   set CS: {'23075647': 0, '23075651': 83, '23074890': 95, '23075650': 0, '23075649': 44, '23075645': 0, '23076117': 0, '23076119': 0, '23075648': 2, '23075644': 0, '23074891': 0, '23075652': 0}
-   page text 'Left': 1x
-   page text 'left': 26x
-   delivery (bot) this car grp=0 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-25", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23075645, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   delivery (page) this car grp=0 | {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-25", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 23075645, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Nov 04</b>", "PdpSampleInfo": [], "arrivingBeforeFest": 0}
-   pincode 248002: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 248006: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 248171: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 110001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 122001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 560001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-   pincode 400001: grp=0 IsServicable=0 TAT=12-15 dispatch=24 ship=Get it by Wednesday, Nov 04 NDD=False
-
-============== C. what the cart uses ==============
-  https://www.firstcry.com/cart → 200, 18227 bytes, final https://www.firstcry.com/cart
-     url: https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/
-     js https://cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js (110166 b):
-         .cartdata
-         .checkout.firstcry.com
-         .ct_filled_cart
-         .my_v_cart
-         //cdn.fcglcdn.com/brainbees/images/ng/m/pre-order-tag-cart.png
-         //stage.firstcry.com/shsercart/shoppingcart.svc/json
-         /CustomerService.svc/NotifyMe
-         /GetCartV1
-         /shsercart/shoppingcart.svc/json
-         CommonService.svc/
-         checkout.firstcry.com
-  https://www.firstcry.com/hot-wheels/x/23345758/product-detail → 200, 155771 bytes, final https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-171-250-1983-porsche-928s-black/23345758/product-detail
-     url: https://CID.fcappservices.in/UserInformation/AddressService.svc
-     url: https://CID.fcappservices.in/UserInformation/GetUserInfoService.svc
-     url: https://CLA.fcappservices.in/login/AuthService.svc
-     url: https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc
-     url: https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/
-     url: https://csc.fcappservices.in/
-     url: https://fccid.fcappservices.in/svcs/MyAccountService.svc
-     url: https://fcfs.fcappservices.in/
-     url: https://jarvis.fcappservices.in/
-     url: https://tatpdp.fcappservices.in/
-     url: https://www.firstcry.com/userservices
-     url: https://www.firstcry.com/userservices/
-     url: https://www.googleapis.com/oauth2/v3/tokeninfo
-     js https://cdn.fcglcdn.com/brainbees/php/js/master-common.v2.24.min.js?20261020 (108892 b):
-         .changepincode
-         /svcs/CommonService.svc
-         /svcs/CustomerService.svc
-         /svcs/MyAccountService.svc
-     js https://cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.55.min.js (381833 b):
-         .acartGcartBtn
-         .add_to_cart
-         .addcartyml
-         .addccart
-         .btn-add-cart
-         .btn-add-cart-active
-         .caddcart
-         .cgcart
-         .changepincode
-         .delivery-heading
-         .deliveryDetails
-         .gcart-
-         .gocartyml
-         .revamppos-rel2stat
-         .rotating-text-1
-         .rotating-text-2
-         .span-pincode
-         .toggleAddtocart
-         images/m/bst_delivery_truck.png
-         offers/getsegmentpincode
-
-============== B. time series ==============
-+  19s Porsche928S        start {'CS': 3, 'grp': 1, 'IsSv': 2, 'TAT': '3-4', 'disp': 0, 'NDD': True, 'ship': 'Get it by Tomorrow 8 PM '}
-+  19s BuickRiviera       start {'CS': 2, 'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24, 'NDD': False, 'ship': 'Get it by Wednesday, Nov 04'}
-+  19s SaltStreaker(ctrl) start {'CS': 255, 'grp': 1, 'IsSv': 252, 'TAT': '6-7', 'disp': 24, 'NDD': False, 'ship': 'Get it by Monday, Oct 26'}
-+  19s AudiRS6            start {'CS': 0, 'grp': 0, 'IsSv': 0, 'TAT': '12-15', 'disp': 24, 'NDD': False, 'ship': 'Get it by Wednesday, Nov 04'}
-+ 184s Porsche928S        IsSv:2->1
-
-+ 242s 15 rounds; last: {"23345758": {"CS": 3, "grp": 1, "IsSv": 1, "TAT": "3-4", "disp": 0, "NDD": true, "ship": "Get it by Tomorrow 8 PM "}, "24473713": {"CS": 2, "grp": 0, "IsSv": 0, "TAT": "12-15", "disp": 24, "NDD": false, "ship": "Get it by Wednesday, Nov 04"}, "24473712": {"CS": 255, "grp": 1, "IsSv": 252, "TAT": "6-7", "disp": 24, "NDD": false, "ship": "Get it by Monday, Oct 26"}, "23075645": {"CS": 0, "grp": 0, "IsSv": 0, "TAT": "12-15", "disp": 24, "NDD": false, "ship": "Get it by Wednesday, Nov 04"}}
-done in 242s
+== 164custom: year pages ==
+  200  271141 b  https://164custom.com/hot-wheels/year/2024.html
+  200  349236 b  https://164custom.com/hot-wheels/year/2025.html
+  200  422708 b  https://164custom.com/hot-wheels/year/2026.html
+  200   69333 b  https://164custom.com/hot-wheels/year/2027.html
+links of interest on year pages: 43
+    https://164custom.com/hot-wheels-case-letters_HW.html
+    https://164custom.com/hot-wheels-mainline-case-highlights_HW.html
+    https://164custom.com/hot-wheels-super-treasure-hunt_HW.html
+    https://164custom.com/hot-wheels-treasure-hunt_HW.html
+    https://164custom.com/hot-wheels/super-treasure-hunt/2026.html
+    https://164custom.com/hot-wheels/treasure-hunt/2026.html
+    https://164custom.com/hotwheels/69-dodge-coronet-superbee/JBB27/yellow.html
+    https://164custom.com/hotwheels/70-plymouth-superbird/HYX31/yellow.html
+    https://164custom.com/hotwheels/70-plymouth-superbird/HYX96/red.html
+    https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/HYW40/red.html
+    https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/JBB98/white.html
+    https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/JJK48/metalflake-green.html
+    https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/JJM30/zamac.html
+    https://164custom.com/hotwheels/chevy-super-volt/HYY99/olive-green.html
+    https://164custom.com/hotwheels/ford-f-150-lightning-supertruck/JJH52/blue.html
+    https://164custom.com/hotwheels/ford-f-150-lightning-supertruck/JJL92/white.html
+    https://164custom.com/hotwheels/ford-performance-supervan-4/HTD33/blue.html
+    https://164custom.com/hotwheels/ford-performance-supervan-4/JBC20/red.html
+    https://164custom.com/hotwheels/ford-performance-supervan4/HRY90/white.html
+    https://164custom.com/hotwheels/glory-chaser/HTB51/orange.html
+    https://164custom.com/hotwheels/glory-chaser/HTD12/gray.html
+    https://164custom.com/hotwheels/high-tail-chaser/JJH35/red.html
+    https://164custom.com/hotwheels/high-tail-chaser/JJK92/gray.html
+    https://164custom.com/hotwheels/high-tail-chaser/JPD11/blue.html
+    https://164custom.com/hotwheels/honda-super-cub-custom/HTF23/gray.html
+    https://164custom.com/hotwheels/lamborghini-huracan-lp-620-2-super-trofeo/HTC25/red.html
+    https://164custom.com/hotwheels/lamborghini-huracan-lp-620-2-super-trofeo/HTF43/spectraflame-maroon.html
+    https://164custom.com/hotwheels/morgan-super-3/HYW13/teal.html
+    https://164custom.com/hotwheels/morgan-super-3/HYX48/flat-red.html
+    https://164custom.com/hotwheels/morgan-super-3/HYY33/bronze.html
+    https://164custom.com/hotwheels/morgan-super-3/JJJ91/gray.html
+    https://164custom.com/hotwheels/morgan-super-3/JJL42/yellow.html
+    https://164custom.com/hotwheels/super-twin-mill/HYW12/white.html
+    https://164custom.com/hotwheels/super-twin-mill/JBB72/metalflake-green.html
+    https://164custom.com/hotwheels/super-twin-mill/JJH13/white.html
+    https://164custom.com/hotwheels/supercharged/HTB00/green.html
+    https://164custom.com/hotwheels/supercharged/HYX06/blue.html
+    https://164custom.com/hotwheels/supercharged/HYX64/white.html
+    https://164custom.com/hotwheels/supercharged/JJJ41/red.html
+    https://164custom.com/hotwheels/supercharged/JJL02/light-blue.html
+    https://164custom.com/hotwheels/vespa-90-ss-super-sprint-1966/HRY52/red.html
+    https://164custom.com/hotwheels/vespa-90-ss-super-sprint-1966/HTD23/blue.html
+    https://164custom.com/hotwheels/vespa-90-ss-super-sprint-1966/JBB07/white.html
+== 164custom: case pages ==
+  200   34402 b  https://164custom.com/hot-wheels/case-a/2024.html
+  200   39990 b  https://164custom.com/hot-wheels/case-b/2024.html
+  200   39320 b  https://164custom.com/hot-wheels/case-c/2024.html
+  200   42217 b  https://164custom.com/hot-wheels/case-d/2024.html
+  200   41133 b  https://164custom.com/hot-wheels/case-e/2024.html
+  200   41420 b  https://164custom.com/hot-wheels/case-f/2024.html
+  200   43527 b  https://164custom.com/hot-wheels/case-g/2024.html
+  200   40874 b  https://164custom.com/hot-wheels/case-h/2024.html
+  200   38034 b  https://164custom.com/hot-wheels/case-j/2024.html
+  200   40757 b  https://164custom.com/hot-wheels/case-k/2024.html
+  200   40060 b  https://164custom.com/hot-wheels/case-l/2024.html
+  200   41282 b  https://164custom.com/hot-wheels/case-m/2024.html
+  200   39998 b  https://164custom.com/hot-wheels/case-n/2024.html
+  200   39774 b  https://164custom.com/hot-wheels/case-p/2024.html
+  200   42575 b  https://164custom.com/hot-wheels/case-q/2024.html
+  200   22025 b  https://164custom.com/hot-wheels/case-r/2024.html
+  200   22025 b  https://164custom.com/hot-wheels/case-s/2024.html
+  200   21878 b  https://164custom.com/hot-wheels/case-t/2024.html
+  200   22386 b  https://164custom.com/hot-wheels/case-u/2024.html
+  200   22518 b  https://164custom.com/hot-wheels/case-v/2024.html
+  200   21882 b  https://164custom.com/hot-wheels/case-w/2024.html
+  200   21878 b  https://164custom.com/hot-wheels/case-x/2024.html
+  200   21882 b  https://164custom.com/hot-wheels/case-y/2024.html
+  200   21882 b  https://164custom.com/hot-wheels/case-z/2024.html
+  200   43842 b  https://164custom.com/hot-wheels/case-a/2025.html
+  200   43746 b  https://164custom.com/hot-wheels/case-b/2025.html
+  200   48112 b  https://164custom.com/hot-wheels/case-c/2025.html
+  200   43275 b  https://164custom.com/hot-wheels/case-d/2025.html
+  200   45373 b  https://164custom.com/hot-wheels/case-e/2025.html
+  200   45397 b  https://164custom.com/hot-wheels/case-f/2025.html
+  200   44216 b  https://164custom.com/hot-wheels/case-g/2025.html
+  200   43891 b  https://164custom.com/hot-wheels/case-h/2025.html
+  200   44961 b  https://164custom.com/hot-wheels/case-j/2025.html
+  200   44646 b  https://164custom.com/hot-wheels/case-k/2025.html
+  200   41855 b  https://164custom.com/hot-wheels/case-l/2025.html
+  200   46146 b  https://164custom.com/hot-wheels/case-m/2025.html
+  200   45577 b  https://164custom.com/hot-wheels/case-n/2025.html
+  200   41655 b  https://164custom.com/hot-wheels/case-p/2025.html
+  200   44090 b  https://164custom.com/hot-wheels/case-q/2025.html
+  200   22518 b  https://164custom.com/hot-wheels/case-r/2025.html
+  200   22025 b  https://164custom.com/hot-wheels/case-s/2025.html
+  200   21878 b  https://164custom.com/hot-wheels/case-t/2025.html
+  200   22025 b  https://164custom.com/hot-wheels/case-u/2025.html
+  200   22386 b  https://164custom.com/hot-wheels/case-v/2025.html
+  200   21878 b  https://164custom.com/hot-wheels/case-w/2025.html
+  200   21878 b  https://164custom.com/hot-wheels/case-x/2025.html
+  200   22386 b  https://164custom.com/hot-wheels/case-y/2025.html
+  200   21878 b  https://164custom.com/hot-wheels/case-z/2025.html
+  200   42326 b  https://164custom.com/hot-wheels/case-a/2026.html
+  200   46543 b  https://164custom.com/hot-wheels/case-b/2026.html
+  200   47609 b  https://164custom.com/hot-wheels/case-c/2026.html
+  200   46508 b  https://164custom.com/hot-wheels/case-d/2026.html
+  200   44390 b  https://164custom.com/hot-wheels/case-e/2026.html
+  200   48829 b  https://164custom.com/hot-wheels/case-f/2026.html
+  200   41497 b  https://164custom.com/hot-wheels/case-g/2026.html
+  200   49460 b  https://164custom.com/hot-wheels/case-h/2026.html
+  200   43881 b  https://164custom.com/hot-wheels/case-j/2026.html
+  200   48605 b  https://164custom.com/hot-wheels/case-k/2026.html
+  200   45305 b  https://164custom.com/hot-wheels/case-l/2026.html
+  200   50758 b  https://164custom.com/hot-wheels/case-m/2026.html
+  200   42202 b  https://164custom.com/hot-wheels/case-n/2026.html
+  200   48190 b  https://164custom.com/hot-wheels/case-p/2026.html
+  200   42462 b  https://164custom.com/hot-wheels/case-q/2026.html
+  200   22386 b  https://164custom.com/hot-wheels/case-r/2026.html
+  200   21642 b  https://164custom.com/hot-wheels/case-s/2026.html
+  200   21882 b  https://164custom.com/hot-wheels/case-t/2026.html
+  200   22386 b  https://164custom.com/hot-wheels/case-u/2026.html
+  200   21882 b  https://164custom.com/hot-wheels/case-v/2026.html
+  200   22518 b  https://164custom.com/hot-wheels/case-w/2026.html
+  200   21882 b  https://164custom.com/hot-wheels/case-x/2026.html
+  200   21882 b  https://164custom.com/hot-wheels/case-y/2026.html
+  200   22518 b  https://164custom.com/hot-wheels/case-z/2026.html
+  200   41566 b  https://164custom.com/hot-wheels/case-a/2027.html
+  200   44335 b  https://164custom.com/hot-wheels/case-b/2027.html
+  200   25986 b  https://164custom.com/hot-wheels/case-c/2027.html
+  200   23704 b  https://164custom.com/hot-wheels/case-d/2027.html
+  200   23753 b  https://164custom.com/hot-wheels/case-e/2027.html
+  200   23717 b  https://164custom.com/hot-wheels/case-f/2027.html
+  200   23751 b  https://164custom.com/hot-wheels/case-g/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-h/2027.html
+  200   22960 b  https://164custom.com/hot-wheels/case-j/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-k/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-l/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-m/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-n/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-p/2027.html
+  200   22956 b  https://164custom.com/hot-wheels/case-q/2027.html
+  200   21878 b  https://164custom.com/hot-wheels/case-r/2027.html
+  200   22386 b  https://164custom.com/hot-wheels/case-s/2027.html
+  200   22518 b  https://164custom.com/hot-wheels/case-t/2027.html
+  200   22518 b  https://164custom.com/hot-wheels/case-u/2027.html
+  200   22025 b  https://164custom.com/hot-wheels/case-v/2027.html
+  200   22386 b  https://164custom.com/hot-wheels/case-w/2027.html
+  200   21642 b  https://164custom.com/hot-wheels/case-x/2027.html
+  200   22386 b  https://164custom.com/hot-wheels/case-y/2027.html
+  200   21882 b  https://164custom.com/hot-wheels/case-z/2027.html
+== 164custom: TH / STH / chase pages ==
+  200   23874 b  https://164custom.com/hot-wheels-super-treasure-hunt_HW.html
+  200   25928 b  https://164custom.com/hot-wheels-treasure-hunt_HW.html
+  200   42939 b  https://164custom.com/hot-wheels/super-treasure-hunt/2026.html
+  200   35668 b  https://164custom.com/hot-wheels/super-treasure-hunt/2027.html
+  200   39950 b  https://164custom.com/hot-wheels/treasure-hunt/2026.html
+  200   25502 b  https://164custom.com/hotwheels/69-dodge-coronet-superbee/JBB27/yellow.html
+  200   27778 b  https://164custom.com/hotwheels/70-plymouth-superbird/HYX31/yellow.html
+  200   25896 b  https://164custom.com/hotwheels/70-plymouth-superbird/HYX96/red.html
+  200   25876 b  https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/HYW40/red.html
+  200   25785 b  https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/JBB98/white.html
+  200   25981 b  https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/JJK48/metalflake-green.html
+  200   25263 b  https://164custom.com/hotwheels/alfa-romeo-giulia-ti-super/JJM30/zamac.html
+  200   26966 b  https://164custom.com/hotwheels/chevy-super-volt/HYY99/olive-green.html
+  200   25613 b  https://164custom.com/hotwheels/ford-f-150-lightning-supertruck/JJH52/blue.html
+  200   25690 b  https://164custom.com/hotwheels/ford-f-150-lightning-supertruck/JJL92/white.html
+  200   26040 b  https://164custom.com/hotwheels/ford-performance-supervan-4/HTD33/blue.html
+  200   26014 b  https://164custom.com/hotwheels/ford-performance-supervan-4/JBC20/red.html
+  200   25060 b  https://164custom.com/hotwheels/ford-performance-supervan4/HRY90/white.html
+  200   25713 b  https://164custom.com/hotwheels/glory-chaser/HTB51/orange.html
+  200   25762 b  https://164custom.com/hotwheels/glory-chaser/HTD12/gray.html
+  200   25765 b  https://164custom.com/hotwheels/high-tail-chaser/JJH35/red.html
+  200   25763 b  https://164custom.com/hotwheels/high-tail-chaser/JJK92/gray.html
+  200   25179 b  https://164custom.com/hotwheels/high-tail-chaser/JPD11/blue.html
+  200   26016 b  https://164custom.com/hotwheels/honda-super-cub-custom/HTF23/gray.html
+  200   26244 b  https://164custom.com/hotwheels/lamborghini-huracan-lp-620-2-super-trofeo/HTC25/red.html
+  200   30165 b  https://164custom.com/hotwheels/lamborghini-huracan-lp-620-2-super-trofeo/HTF43/spectraflame-maroon.html
+  200   25731 b  https://164custom.com/hotwheels/morgan-super-3/HYW13/teal.html
+  200   25789 b  https://164custom.com/hotwheels/morgan-super-3/HYX48/flat-red.html
+  200   25801 b  https://164custom.com/hotwheels/morgan-super-3/HYY33/bronze.html
+  200   26241 b  https://164custom.com/hotwheels/morgan-super-3/JJJ91/gray.html
+  200   25727 b  https://164custom.com/hotwheels/morgan-super-3/JJL42/yellow.html
+== orangetrackdiecast: WordPress API ==
+  403    7355 b  https://orangetrackdiecast.com/wp-json/wp/v2/posts?search=case%20contents%20checklist&per_page=100&page=1&_fields=id,date,link,title,content
+posts: 0
+saved 132 files; done in 91s
