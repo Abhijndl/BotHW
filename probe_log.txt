@@ -1,28 +1,196 @@
-cookies: []
-
---- count, plain: HTTP 200, 31 b
-{"GetCartProductCountResult":1}
-
---- count, url-encoded: HTTP 200, 31 b
-{"GetCartProductCountResult":1}
-
---- GetCartV1 plain: HTTP 200, 776 b
-"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:07\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
-
---- GetCartV1 url-encoded: HTTP 200, 776 b
-"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:08\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
-
---- GetCartV1 trailing *: HTTP 200, 776 b
-"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:09\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
-
---- GetCartV1 two cars: HTTP 200, 776 b
-"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:10\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
-
---- GetCartV1 escaped ^: HTTP 200, 776 b
-"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:10\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
-
---- GetCartV1 msite: HTTP 200, 776 b
-"{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"21\\\/10\\\/2026 15:06:11\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"AssemblyServiceAbleProductIDs\":\"||\",\"OnlineAssemblyProductIDs\":\"||\"}}}"
-
---- GetCart (v0): HTTP 200, 698 b
-{"GetCartResult":{"pOrderSummary":{"ShipPinCode":"248001","ServerDateTime":"21\/10\/2026 15:06:11","CartOfferMsg":null,"OfferMsgForCart":"","OfferStripMsg":null,"TotalProducts":0,"TotalQuantity":0,"TotalItems":0,"TotalCombos":0,"SubTotal":0,"MrpTotal":0,"ActualPriceTotal":0,"ShippingCharges":50,"NetPayment":50,"TotalConvCharge":0,"FirstOrderFreeShipChrge":0,"CodChargesOnMinAmt":15,"CodMaxAmount":10000,"CodMinimumAmount":699,"ShippingChargesBelowMin":50,"ShippingChargesMinNetAmount":699,"MinimumOrderAmount":99,"TotalVatAmount":0,"DiscountLimitForVat":0,"PurchaseOrderItemList":null,"IsTVCFree":false,"CouponOnCombo":false,"AssemblyServiceAbleProductIDs":"||","OnlineAssemblyProductIDs":"||"}}}
+'Popularity'       oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Popularity'       oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'NewArrivals'      oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
+       (23930428, '366', 'Hot Wheels Street Beasts Die Cast Free')
+       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
+       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
+'NewArrivals'      oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
+       (23930428, '365', 'Hot Wheels Street Beasts Die Cast Free')
+       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
+       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
+'New Arrivals'     oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
+       (23930428, '366', 'Hot Wheels Street Beasts Die Cast Free')
+       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
+       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
+'New Arrivals'     oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
+       (23930428, '365', 'Hot Wheels Street Beasts Die Cast Free')
+       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
+       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
+'newarrivals'      oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
+       (23930428, '366', 'Hot Wheels Street Beasts Die Cast Free')
+       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
+       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
+'newarrivals'      oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
+       (23930428, '365', 'Hot Wheels Street Beasts Die Cast Free')
+       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
+       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
+       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
+'NewArrival'       oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'NewArrival'       oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'New'              oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'New'              oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Latest'           oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Latest'           oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Newest'           oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Newest'           oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'ProductID'        oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'ProductID'        oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'productid desc'   oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'productid desc'   oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Discount'         oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Discount'         oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'BestSeller'       oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24525299
+       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'BestSeller'       oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24525299
+       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
+       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
+       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
+       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
+       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+'Rating'           oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24546534
+       (24514769, '35', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24514766, '10', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24514765, '23', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24514764, '10', 'Hot Wheels Monster Trucks Mutant Chaos')
+       (24514761, '40', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24235314, '117', 'Hot Wheels Hyper Rocker Toy Car Die Ca')
+'Rating'           oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24546534
+       (24514769, '35', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24514766, '10', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24514765, '23', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24514764, '10', 'Hot Wheels Monster Trucks Mutant Chaos')
+       (24514761, '40', 'Hot Wheels Die Cast Free Wheel Monster')
+       (24235314, '117', 'Hot Wheels Hyper Rocker Toy Car Die Ca')
+'PriceLowToHigh'   oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24473514
+       (24473514, '123', "Hot Wheels '68 Mercury Comet Cyclone D")
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+       (24248202, '11', 'Hot Wheels 70 Dodge Charger Die-Cast F')
+       (24248198, '60', 'Hot Wheels Die Cast Toy Car with Click')
+       (24247511, '3', 'Hot Wheels Pt Fast Die-Cast Free Wheel')
+       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
+'PriceLowToHigh'   oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24473514
+       (24473514, '123', "Hot Wheels '68 Mercury Comet Cyclone D")
+       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
+       (24248202, '11', 'Hot Wheels 70 Dodge Charger Die-Cast F')
+       (24248198, '60', 'Hot Wheels Die Cast Toy Car with Click')
+       (24247511, '3', 'Hot Wheels Pt Fast Die-Cast Free Wheel')
+       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
