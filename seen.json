@@ -22124,7 +22124,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_svc": "1"
   },
@@ -22144,7 +22144,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_svc": "1"
   },
@@ -22164,7 +22164,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_svc": "1"
   },
