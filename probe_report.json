@@ -1,56 +1,5 @@
 {
- "A": {
-  "248001": {
-   "list": 189,
-   "cat": 391
-  },
-  "0": {
-   "list": 202,
-   "cat": 403
-  },
-  "110001": {
-   "list": 192,
-   "cat": 395
-  },
-  "560001": {
-   "list": 191,
-   "cat": 394
-  },
-  "400001": {
-   "list": 190,
-   "cat": 392
-  },
-  "781001": {
-   "list": 190,
-   "cat": 392
-  }
- },
- "C": {
-  "24776095": {
-   "cat": 1,
-   "cs": 0,
-   "svc": 0,
-   "isv": 1,
-   "on": [
-    "0",
-    "110001",
-    "560001",
-    "400001",
-    "781001"
-   ]
-  },
-  "24776090": {
-   "cat": 10,
-   "cs": 0,
-   "svc": 1,
-   "isv": 10,
-   "on": [
-    "0",
-    "110001",
-    "560001",
-    "400001",
-    "781001"
-   ]
-  }
- }
+ "sent": [
+  "💙 <b>DATSUN · BACK IN STOCK</b>\n[🛒FC] <b>Hot Wheels Datsun 240Z Die cast car 72/250 - Green</b> 🎯 ⚠️ only 1 left (all-India)  ₹173 <s>₹179</s>\n📦 2026 Case M · Then and Now · #72\nhttps://www.firstcry.com/hot-wheels/hot-wheels-datsun-240z-die-cast-car-72-250-green/24475755/product-detail?fresh=604910"
+ ]
 }
