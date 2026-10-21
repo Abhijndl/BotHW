@@ -4514,7 +4514,7 @@
     "fc_svc": "1"
   },
   "fc_23346403": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 145/250 EL Segundo Rallye - Black",
     "price": "₹164",
     "source": "firstcry",
@@ -4528,10 +4528,10 @@
     "fc_listed_at": "2026-10-21T14:00:00",
     "fc_api_seen_at": "2026-10-21T14:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345759",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24007870": {
     "stock": "out_of_stock",
