@@ -16715,7 +16715,7 @@
     "fc_svc": "1"
   },
   "fc_23973357": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 175 67 Ford Bronco Die-cast Free Wheel Toy Car - Deep Brown",
     "price": "₹269",
     "source": "firstcry",
@@ -16729,10 +16729,11 @@
     "fc_listed_at": "2026-10-21T23:00:00",
     "fc_api_seen_at": "2026-10-21T23:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-21T23:14:00",
+    "fc_svc": "0"
   },
   "fc_23973354": {
     "stock": "in_stock",
