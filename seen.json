@@ -5378,7 +5378,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24236112",
     "fc_phantom": "2026-10-21T11:20:58",
     "fc_svc": "0"
@@ -13139,7 +13139,7 @@
     "fc_gid": "19995087"
   },
   "fc_24473724": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
     "price": "₹164",
     "source": "firstcry",
@@ -13147,15 +13147,15 @@
     "first_seen": "2026-09-17T04:21:12",
     "last_seen": "2026-10-21T17:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-21T07:31:19",
+    "last_restock_alert": "2026-10-21T17:57:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T17:45:00",
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
-    "fc_lst": "cat",
+    "fc_live": "ok",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -13311,7 +13311,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "0"
   },
@@ -13961,7 +13961,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -15268,7 +15268,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_svc": "0"
   },
@@ -15390,7 +15390,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_svc": "0"
   },
@@ -15432,7 +15432,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_svc": "0"
   },
@@ -19868,7 +19868,7 @@
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24235312",
     "fc_svc": "0"
   },
@@ -20311,7 +20311,7 @@
     "fc_svc": "1"
   },
   "fc_24761909": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
     "price": "₹173",
     "source": "firstcry",
@@ -20319,14 +20319,14 @@
     "first_seen": "2026-10-13T13:30:00",
     "last_seen": "2026-10-21T17:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-20T20:31:30",
+    "last_restock_alert": "2026-10-21T17:57:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T17:45:00",
     "fc_api_seen_at": "2026-10-21T17:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
-    "fc_lst": "cat",
+    "fc_live": "ok",
+    "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_svc": "1"
   },
