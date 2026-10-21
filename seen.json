@@ -15091,13 +15091,13 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-galaxie-die-cast-toy-car-blue/24473495/product-detail",
     "first_seen": "2026-09-19T18:21:18",
-    "last_seen": "2026-10-21T01:15:00",
+    "last_seen": "2026-10-21T01:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T07:10:11",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T01:15:00",
-    "fc_api_seen_at": "2026-10-21T01:15:00",
+    "fc_api_seen_at": "2026-10-21T01:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -15316,13 +15316,13 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
-    "last_seen": "2026-10-21T01:15:00",
+    "last_seen": "2026-10-21T01:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T17:48:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T01:15:00",
-    "fc_api_seen_at": "2026-10-21T01:15:00",
+    "fc_api_seen_at": "2026-10-21T01:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -15553,7 +15553,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746"
+    "fc_gid": "24503746",
+    "fc_svc": "0"
   },
   "fc_24503821": {
     "stock": "out_of_stock",
@@ -15572,7 +15573,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746"
+    "fc_gid": "24503746",
+    "fc_svc": "0"
   },
   "fc_24525291": {
     "stock": "out_of_stock",
@@ -17308,13 +17310,13 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-armored-batmobile-die-cast-toy-car-black/24473498/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-21T01:15:00",
+    "last_seen": "2026-10-21T01:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T11:25:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T01:15:00",
-    "fc_api_seen_at": "2026-10-21T01:15:00",
+    "fc_api_seen_at": "2026-10-21T01:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -17338,7 +17340,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746"
+    "fc_gid": "24503746",
+    "fc_svc": "0"
   },
   "fc_24503335": {
     "stock": "out_of_stock",
@@ -17681,7 +17684,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746"
+    "fc_gid": "24503746",
+    "fc_svc": "0"
   },
   "fc_24503897": {
     "stock": "out_of_stock",
@@ -17700,7 +17704,8 @@
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
-    "fc_gid": "24503746"
+    "fc_gid": "24503746",
+    "fc_svc": "0"
   },
   "fc_24503819": {
     "stock": "out_of_stock",
