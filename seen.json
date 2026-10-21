@@ -13769,7 +13769,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_24390960": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Land Rover S2 Toy Car - Cream, Light Green",
     "price": "₹494",
     "source": "firstcry",
@@ -13783,10 +13783,11 @@
     "fc_listed_at": "2026-10-21T22:45:00",
     "fc_api_seen_at": "2026-10-21T22:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_live": "no delivery",
+    "fc_lst": "list",
     "fc_gid": "24390960",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-21T22:56:47",
+    "fc_svc": "0"
   },
   "fc_21181132": {
     "stock": "out_of_stock",
