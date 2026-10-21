@@ -20923,7 +20923,7 @@
     "fc_svc": "0"
   },
   "fc_24776075": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver",
     "price": "₹179",
     "source": "firstcry",
@@ -20931,14 +20931,14 @@
     "first_seen": "2026-10-16T16:30:00",
     "last_seen": "2026-10-21T02:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-17T07:40:48",
+    "last_restock_alert": "2026-10-21T02:26:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T02:00:00",
-    "fc_api_seen_at": "2026-10-21T02:00:00",
+    "fc_api_seen_at": "2026-10-21T02:15:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_svc": "1"
