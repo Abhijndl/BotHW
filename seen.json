@@ -129,7 +129,7 @@
     "fc_api_seen_at": "2026-09-21T06:46:09"
   },
   "fc_23074259": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Free Wheel Die Cast 41 Willys (153/250) Toy Car - Purple",
     "price": "₹179",
     "source": "firstcry",
@@ -143,7 +143,7 @@
     "fc_listed_at": "2026-10-21T20:45:00",
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_svc": "1"
@@ -5990,7 +5990,7 @@
     "hm_verified_at": "2026-10-21T20:45:00"
   },
   "fc_24194176": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 5 Pack Toy Cars 1:64 Scale Die-Cast Free Wheel Batman Super Villains Silver Series - Multicolor",
     "price": "₹1399",
     "source": "firstcry",
@@ -6005,10 +6005,10 @@
     "fc_listed_at": "2026-10-21T20:45:00",
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_live": "no delivery",
+    "fc_lst": "list",
     "fc_gid": "24194176",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24194174": {
     "stock": "in_stock",
@@ -12410,10 +12410,11 @@
     "fc_listed_at": "2026-10-21T20:45:00",
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24194169",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-21T20:50:53",
+    "fc_svc": "1"
   },
   "kd_ykL0eAKpRZ": {
     "stock": "in_stock",
@@ -13396,10 +13397,10 @@
     "fc_listed_at": "2026-10-21T20:45:00",
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24314338",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24390970": {
     "stock": "out_of_stock",
@@ -20960,11 +20961,11 @@
     "fc_listed_at": "2026-10-21T20:45:00",
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_phantom": "2026-10-21T17:54:21",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24775986": {
     "stock": "in_stock",
