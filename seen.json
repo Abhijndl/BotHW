@@ -13135,7 +13135,7 @@
     "fc_api_seen_at": "2026-10-21T03:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -13298,7 +13298,7 @@
   "fc_24473511": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '68 Mercury Cougar Die-Cast Toy Car - Purple",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-cougar-die-cast-toy-car-purple/24473511/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13932,11 +13932,11 @@
     "last_restock_alert": "2026-10-18T13:07:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T01:45:00",
+    "fc_listed_at": "2026-10-21T03:45:00",
     "fc_api_seen_at": "2026-10-21T03:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -15439,7 +15439,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹179",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -16668,7 +16668,7 @@
     "fc_api_seen_at": "2026-10-21T03:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
