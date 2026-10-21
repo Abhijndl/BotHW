@@ -11529,7 +11529,7 @@
     "hm_verified_at": "2026-10-14T13:00:00"
   },
   "fc_22240218": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Kei Swap (80/250) Toy Car - White",
     "price": "₹161",
     "source": "firstcry",
@@ -11543,9 +11543,10 @@
     "fc_listed_at": "2026-10-21T01:00:00",
     "fc_api_seen_at": "2026-10-21T01:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
-    "fc_gid": "22240218"
+    "fc_gid": "22240218",
+    "fc_svc": "0"
   },
   "kd_10gzYqjpAV": {
     "stock": "out_of_stock",
