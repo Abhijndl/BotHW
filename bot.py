@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v16.2
+Hot Wheels / Diecast Collector Tracker  ·  v16.3
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -12,7 +12,7 @@ HOW A RUN WORKS
 ---------------
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
-    pass, whole catalogue every 10 min, both read live) says where to look;
+    pass, whole catalogue every 2 min, both read live) says where to look;
     the PRODUCT PAGE decides (v14). A car only counts as orderable when its
     freshly loaded page shows units (ADD TO CART) AND FirstCry's own delivery
     check says FC_MIN_ALERT_STOCK+ units can reach your pincode (v15: its
@@ -24,6 +24,19 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
     too, and a car whose alert was gone within minutes needs 5+ for 12 h.
     v16.2: when that list and the delivery check say yes but the product page
     still shows 0 (new stock — the page catches up 1-15 min later), it alerts.
+    v16.3: for a car listed in the last few hours (FC_NEW_FRESH_H) the
+    catalogue counts as that list too, and a car seen for the first time gets
+    its delivery check at once — 21 Oct a brand-new '20 Charger Hellcat had
+    units in the catalogue at 22:20 (already buyable: ♡ it, then add it to the
+    cart from Favourites), reached the in-stock list at 22:27 and was gone by
+    22:33. Such alerts carry that tip. The catalogue is now read every 2 min
+    (FC_CATALOGUE_EVERY), since new cars show up there first. An alert on a
+    page that still says 0 needs that state to be new (FC_PAGE_LAG_MIN): a
+    Lucid Air sat like that for days and was alerted and gone at 23:12. Apart
+    from that brand-new case, only the in-stock list for 248001 vouches for a
+    few units — the catalogue shows cars that list leaves out for days. After a
+    phantom, a car alerts again only once two readings in a row say it can
+    reach you.
     The listing lagged the page by up to ~10 min and kept showing cars nobody
     could order. Every pass, the cheap delivery check also looks at every 🎯
     car (and every tracked car once a run), so a car becoming deliverable is
@@ -42,8 +55,9 @@ stores. Runs are chained back to back, so the watch is continuous.
 ALERTS
 ------
 🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
-🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units you can
-order (page stock, capped by what can be delivered to your pincode)
+🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units FirstCry
+has, all-India (page stock, capped by its delivery check — only your own cart
+knows how many of them can reach 248001)
 v16: every 🎯 car that's in stock gets its own message, and its first line
 says what it is — Treasure Hunts and the like first:
   💎 SUPER TREASURE HUNT   🏆 TREASURE HUNT   ⛓️ CHASE   🔩 ZAMAC
@@ -155,9 +169,11 @@ FC_EVERY      = max(8.0, float(os.getenv("FC_EVERY", "12")))
 # If GitHub can't be asked, the run ends on time as before.
 RUN_EXTEND_S  = max(0.0, float(os.getenv("RUN_EXTEND_S", "0")))
 # How often the WHOLE FirstCry catalogue (sold-out cars included) is read, in
-# seconds. Every pass reads FirstCry's in-stock list; the full catalogue only
-# keeps new sold-out listings and names/prices current, so it's needed rarely.
-FC_CATALOGUE_EVERY = float(os.getenv("FC_CATALOGUE_EVERY", "600"))
+# seconds. Every pass reads FirstCry's in-stock list; the catalogue keeps new
+# sold-out listings and names/prices current — and a brand-new car often shows
+# units there minutes before the in-stock list has it (v16.3: 2 min, was 10;
+# it's ~21 pages fetched in parallel, a couple of seconds).
+FC_CATALOGUE_EVERY = float(os.getenv("FC_CATALOGUE_EVERY", "120"))
 
 # Each store is checked when it is due, whatever triggered the run, so one
 # every-minute trigger covers everything. Seconds between checks; -1 = never.
@@ -284,7 +300,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
-                  "fc_new_pending",
+                  "fc_new_pending", "fc_pb", "fc_arr",
                   "fc_svc"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
@@ -652,14 +668,25 @@ def hw_info(name: str):
             idx.update(T["by_tok"].get(t, []))
         need = 0.82
     sth_words = bool(_HW_STH_WORDS.search(name)) or "spectraflame" in name.lower()
-    scored = []
+    scored, supers = [], []
     for i in idx:
         e = T["cars"][i]
-        if e.get("sth") and not sth_words:
-            continue                  # stores list the regular car; a Super is never assumed
         sc = _hw_score(S, e["_t"])
-        if sc >= need:
-            scored.append((sc, e))
+        if sc < need:
+            continue
+        if e.get("sth") and not sth_words:
+            supers.append((sc, e))    # stores list the regular car; a Super is never assumed
+            continue
+        scored.append((sc, e))
+    if not scored and supers and num and not sth_words:
+        # the checklist has only the Super for this number (2026 P #245 '70
+        # Plymouth AAR Cuda: Spectraflame Gold, no yellow regular row): the
+        # store's car is the regular one, and its Super is in that case
+        cases = {(e.get("y"), e.get("c")) for _, e in supers}
+        if len(cases) == 1:
+            e = max(supers, key=lambda x: x[0])[1]
+            return {"y": e.get("y"), "c": e.get("c"), "n": e.get("n"), "ser": e.get("ser") or "",
+                    "th": False, "sth": False, "sth_col": e.get("col", "")}
     if not scored:
         return None
     best = max(sc for sc, _ in scored)
@@ -1071,6 +1098,17 @@ FC_SURE_UNITS = max(0, int(os.getenv("FC_SURE_UNITS", "5")))
 # Turbo 5, Toyota Tacoma 4, Pantone Bronco 4, each gone within minutes.
 FC_PHANTOM_MIN = float(os.getenv("FC_PHANTOM_MIN", "30"))
 FC_PHANTOM_HOLD_H = float(os.getenv("FC_PHANTOM_HOLD_H", "12"))
+# v16.3: new stock the CATALOGUE shows (not yet FirstCry's in-stock list for
+# 248001) while the product page says 0 alerts only for a car listed in the last
+# this-many hours — brand-new stock whose page hasn't caught up. Older cars sit
+# in that state for days (21 Oct: a Lucid Air since the 19th, on every other
+# pincode's in-stock list but not 248001's) and wait for the list.
+FC_NEW_FRESH_H = float(os.getenv("FC_NEW_FRESH_H", "6"))
+# …and any such alert on the page's 0 only while that state is new: units for
+# 248001 appeared less than this many minutes ago. Pages of new stock catch up
+# within 1-15 min; a page that still says 0 after that isn't catching up (21 Oct
+# 23:12 the same Lucid Air, on and off 248001's list, was alerted and gone).
+FC_PAGE_LAG_MIN = float(os.getenv("FC_PAGE_LAG_MIN", "20"))
 # v2: the v1 run that misread TTL wrongly flipped ~209 cars to sold out. Bumping
 # the version makes the next run treat every FirstCry reading as a silent
 # correction, so those cars reappearing can NOT fire false restock alerts.
@@ -1928,7 +1966,11 @@ def fc_live_check(pids, max_pages: int | None = None, gids: dict | None = None) 
         if fresh(p):
             sets.update(_FC_LIVE[p].get("members") or [p])
     res = {p: _FC_LIVE[p] for p in sets if p in _FC_LIVE and fresh(p)}
-    ask = [p for p, v in res.items() if (v.get("cs") or 0) > 0 and now - v.get("at_svc", 0) > 30]
+    asked = set(pids)
+    # v16.3: also the cars asked about whose page shows 0 — a brand-new car's
+    # page often does while it can already be bought (Hellcat, 21 Oct)
+    ask = [p for p, v in res.items() if ((v.get("cs") or 0) > 0 or p in asked)
+           and now - v.get("at_svc", 0) > 30]
     if ask and time.time() < deadline:
         fc_delivery(ask)
     # how many units can reach you — for the cars asked about that might be
@@ -2058,7 +2100,17 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         if p in word:
             return word[p]
         # absent from this pass's listing: only meaningful for cars we hold in stock
-        return "out" if (prev_fc.get(p) or {}).get("stock") == "in_stock" else None
+        v = prev_fc.get(p) or {}
+        if v.get("stock") != "in_stock":
+            return None
+        # v16.3: a new car alerted on the catalogue's word (page still 0, not
+        # on the in-stock list yet) keeps that word until the catalogue is read
+        # again — or it would drop out at the next quick check and come back
+        # as a second alert once the list caught up. The delivery check still
+        # watches it every pass.
+        if not full and v.get("fc_pb") and v.get("fc_lst") == "cat":
+            return "cat"
+        return "out"
 
     def wanted(p):
         nm = ((by.get(p) or prev_fc.get(p) or {}).get("name") or "")
@@ -2117,10 +2169,12 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 flips.append(p)                   # can't be delivered here any more
             elif v.get("fc_live") == "last unit" and (slot + int(p)) % FC_LIVE_NEAR_RECHECK == 0:
                 due.append(p)                     # is that last unit still there?
+            elif v.get("fc_pb") and (slot + int(p)) % FC_LIVE_RECHECK == 0:
+                due.append(p)                     # v16.3: alerted while its page said 0 — caught up?
         elif sv == 1:
             if str(v.get("fc_svc", "")) != "1":
                 flips.append(p)                   # deliverable here since we last looked: read now
-            elif (slot + int(p)) % (FC_LIVE_NEAR_RECHECK if v.get("fc_live") == "arriving"
+            elif (slot + int(p)) % (FC_LIVE_NEAR_RECHECK if v.get("fc_live") in ("arriving", "unlisted")
                                     else FC_LIVE_RECHECK) == 0:
                 due.append(p)                     # known to sit at the edge: re-read now and then
     # changes first (🎯 cars first); routine re-reads only a few per pass, so
@@ -2215,22 +2269,55 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             # calling it 'sold out' would drop it from the re-reads
             verdict = "arriving"
         listed_n = None
-        if verdict == "arriving" and claim(p) == "list" and info.get("svc") != 0:
+        # listed in the last FC_NEW_FRESH_H hours (a brand-new id, or first seen then)
+        fresh = ((v is None and p.isdigit() and int(p) > fc_max)
+                 or (v is not None and _hours_since(v.get("first_seen", "")) < FC_NEW_FRESH_H))
+        # since when units for you exist while the page says 0 ('' = not so now)
+        arr = ""
+        if verdict == "arriving":
+            arr = (v or {}).get("fc_arr", "")
+            if not arr:
+                # just turned so — unless it already was before v16.3 kept the time
+                was = (v or {}).get("fc_live") == "arriving" or (v or {}).get("stock") == "in_stock"
+                arr = "2000-01-01T00:00:00" if was else time.strftime("%Y-%m-%dT%H:%M:%S")
+        young = bool(arr) and _hours_since(arr) * 60 < FC_PAGE_LAG_MIN
+        via_cat = False
+        if (verdict == "arriving" and info.get("svc") != 0 and young
+                and (claim(p) == "list" or (claim(p) == "cat" and fresh))):
             # v16.2: FirstCry's in-stock list for your pincode and its delivery
             # check both say yes while the product page still shows 0 — new
             # stock the page hasn't caught up with. 21 Oct 22:20: a brand-new
             # '20 Charger Hellcat could be added to the cart while its page said
             # 0; over two days such pages caught up within 1-15 min.
+            # v16.3: so does the catalogue ('cat') for a car listed in the last
+            # FC_NEW_FRESH_H hours — 21 Oct the Hellcat had units there at
+            # 22:20, on the in-stock list only at 22:27 — and the page's "Out of
+            # Stock" doesn't stop a purchase: ♡ it, then add it to the cart
+            # from your Favourites.
+            # Only while that's new (FC_PAGE_LAG_MIN): a page that stays at 0
+            # isn't catching up.
             verdict = "ok"
+            via_cat = claim(p) == "cat"
             rec = by.get(p) or {}
             listed_n = rec.get("stock_count") if isinstance(rec.get("stock_count"), int) else None
         if verdict == "ok" and (v or {}).get("stock") != "in_stock" and FC_SURE_UNITS:
             cs_, isv_ = info.get("cs") or 0, info.get("isv")
             units = min(cs_, isv_) if isv_ is not None else cs_
             phantom = _hours_since((v or {}).get("fc_phantom", "")) < FC_PHANTOM_HOLD_H
-            if units < FC_SURE_UNITS and (phantom or claim(p) not in ("list", "cat")):
+            # v16.3: only FirstCry's in-stock list for 248001 counts as agreeing
+            # — the catalogue shows cars that list leaves out for days (probe 21
+            # Oct: four cars on every other pincode's list, not on 248001's) —
+            # except for the brand-new car on the catalogue's word above
+            agree = claim(p) == "list" or via_cat
+            if units < FC_SURE_UNITS and (phantom or not agree):
                 # a few units FirstCry's in-stock list for your pincode doesn't
                 # show (or the same car just turned out a phantom): not yet
+                verdict = "unlisted"
+            elif phantom and not ((v or {}).get("fc_live") == "unlisted"
+                                  and str((v or {}).get("fc_svc", "")) == "1"):
+                # v16.3: its last alert was gone within minutes, so this time a
+                # second reading must agree first — 21 Oct 23:06 the Hellcat
+                # could reach 248001 for 22 s, with 338 units across the country
                 verdict = "unlisted"
         before = (v or {}).get("stock")
         if verdict == "ok":
@@ -2301,6 +2388,9 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
         r["stock_count"] = (min(cs, isv) if isv else cs) if st == "in_stock" else None
         if st == "in_stock" and not cs:
             r["stock_count"] = listed_n or isv or None      # new stock, page not caught up
+            r["fc_page_behind"] = True
+        r["fc_pb"] = "1" if r.get("fc_page_behind") else ""
+        r["fc_arr"] = arr
         r["fc_live"] = verdict
         sv = info.get("svc") if info.get("svc") is not None else svc_now.get(p)
         r["fc_svc"] = "" if sv is None else str(sv)
@@ -3972,13 +4062,20 @@ def _line(d, extra="") -> str:
     flag = " 🎯" if _is_flagged(d) else ""
     cnt = d.get("stock_count")
     if isinstance(cnt, int) and cnt > 0:
-        # how many FirstCry has right now — "only 3 left" means move fast
-        flag += f" ⚠️ only {cnt} left" if cnt <= FC_LOW_STOCK else f" 📦 {cnt} left"
+        # how many the store has right now — "only 3 left" means move fast.
+        # FirstCry's numbers are for the whole country: only your own cart
+        # knows how many can reach 248001 (21 Oct: an alert said plenty, the
+        # cart said 1 left, not deliverable) — so the alert says so (v16.3)
+        where = " (all-India)" if d.get("source") == "firstcry" else ""
+        flag += f" ⚠️ only {cnt} left{where}" if cnt <= FC_LOW_STOCK else f" 📦 {cnt} left{where}"
     price = d.get("price", "")
     mrp = f" <s>{d['mrp']}</s>" if d.get("mrp") else ""
     url = fc_fresh_link(d["url"]) if d.get("source") == "firstcry" else d["url"]
     info = _hw_line(d)
     info = f"\n{info}" if info else ""
+    if d.get("fc_page_behind"):
+        # FirstCry's list / catalogue says it's in, the page hasn't caught up yet
+        info += "\n💡 page may still say Out of Stock: tap ♡, then add it to the cart from your Favourites"
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}{info}\n{url}"
 
 

@@ -69,10 +69,11 @@ jobs:
           # keeps checking up to this many seconds more, until one is waiting.
           RUN_EXTEND_S: "80"
           GITHUB_TOKEN: ${{ github.token }}
-          # The full FirstCry catalogue (sold-out cars too) every 10 min; every
-          # check in between reads FirstCry's in-stock list, which is what
-          # decides whether a car is really buyable.
-          FC_CATALOGUE_EVERY: "600"
+          # The full FirstCry catalogue (sold-out cars too) every 2 min — a
+          # brand-new car often shows units there minutes before FirstCry's
+          # in-stock list has it (v16.3). Every check in between reads the
+          # in-stock list.
+          FC_CATALOGUE_EVERY: "120"
           # Seconds between checks for the other stores (-1 = off). Minifygram
           # also gets a tiny "anything changed?" check every 12 s, so its new
           # listings arrive within seconds; the full list is re-read every 2 min.
