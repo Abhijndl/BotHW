@@ -16706,7 +16706,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
@@ -16725,7 +16725,7 @@
     "fc_listed_at": "2026-10-21T21:00:00",
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_svc": "0"
@@ -16746,7 +16746,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
@@ -16765,7 +16765,7 @@
     "fc_listed_at": "2026-10-21T21:00:00",
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "cat",
     "fc_gid": "23973353",
     "fc_phantom": "2026-10-21T11:20:58",
@@ -22124,7 +22124,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_svc": "1"
   },
@@ -22144,7 +22144,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_svc": "1"
   },
@@ -22164,7 +22164,7 @@
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_svc": "1"
   },
