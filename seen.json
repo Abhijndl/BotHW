@@ -4529,7 +4529,7 @@
     "last_restock_alert": "2026-10-21T14:13:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T22:00:00",
+    "fc_listed_at": "2026-10-21T22:15:00",
     "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
     "fc_live": "sold out",
@@ -11379,8 +11379,8 @@
     "last_price_alert": "2026-09-22T09:46:46",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-21T21:00:00",
-    "fc_api_seen_at": "2026-10-21T22:00:00",
+    "fc_listed_at": "2026-10-21T22:15:00",
+    "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -13296,11 +13296,10 @@
     "fc_listed_at": "2026-10-21T22:15:00",
     "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
-    "fc_arr": "2026-10-21T22:20:57",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473516": {
     "stock": "out_of_stock",
@@ -13773,7 +13772,7 @@
   "fc_24390960": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel Land Rover S2 Toy Car - Cream, Light Green",
-    "price": "₹549",
+    "price": "₹494",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-road-trip-die-cast-free-wheel-land-rover-s2-toy-car-cream-light-green/24390960/product-detail",
     "first_seen": "2026-09-17T08:44:44",
@@ -13782,8 +13781,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-16T00:15:00",
-    "fc_api_seen_at": "2026-10-16T00:15:00",
+    "fc_listed_at": "2026-10-21T22:15:00",
+    "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true
   },
   "fc_21181132": {
@@ -15066,7 +15065,7 @@
   "fc_24342870": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Classic Tv Series The Batman Batmobile 1:64 Scale Toy Car - Dark Grey",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-classic-tv-series-the-batman-batmobile-1-64-scale-toy-car-dark-grey/24342870/product-detail",
     "first_seen": "2026-09-19T13:25:56",
@@ -15075,8 +15074,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-13T00:15:00",
-    "fc_api_seen_at": "2026-10-13T00:15:00",
+    "fc_listed_at": "2026-10-21T22:15:00",
+    "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true
   },
   "fc_22848387": {
@@ -16703,14 +16702,14 @@
     "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_svc": "1"
   },
   "fc_23973357": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 175 67 Ford Bronco Die-cast Free Wheel Toy Car - Deep Brown",
-    "price": "₹299",
+    "price": "₹269",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pantone-175-67-ford-bronco-die-cast-free-wheel-toy-car-deep-brown/23973357/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -16723,7 +16722,7 @@
     "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
     "fc_live": "arriving",
-    "fc_lst": "out",
+    "fc_lst": "cat",
     "fc_gid": "23973353",
     "fc_arr": "2026-10-21T22:13:22",
     "fc_svc": "1"
@@ -18273,7 +18272,7 @@
   "fc_24473510": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Toyota Prius Custom /Personnalise Die Cast Car #60/250 - Green",
-    "price": "₹179",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-prius-custom-personnalise-die-cast-car-60-250-green/24473510/product-detail",
     "first_seen": "2026-09-24T14:15:00",
@@ -18287,7 +18286,7 @@
     "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
     "fc_live": "arriving",
-    "fc_lst": "out",
+    "fc_lst": "cat",
     "fc_gid": "24473511",
     "fc_arr": "2026-10-21T22:09:33",
     "fc_svc": "1"
@@ -20517,7 +20516,7 @@
   "fc_24761907": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹173",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -20526,8 +20525,8 @@
     "last_restock_alert": "2026-10-21T07:57:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T21:30:00",
-    "fc_api_seen_at": "2026-10-21T22:00:00",
+    "fc_listed_at": "2026-10-21T22:15:00",
+    "fc_api_seen_at": "2026-10-21T22:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
