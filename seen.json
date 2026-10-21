@@ -4389,7 +4389,7 @@
     "fc_svc": "1"
   },
   "fc_23973356": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 2404 Rally Finale Die-cast Free Wheel Toy Car - Mint",
     "price": "₹269",
     "source": "firstcry",
@@ -4397,13 +4397,13 @@
     "first_seen": "2026-07-23T05:51:34",
     "last_seen": "2026-10-21T04:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-19T04:45:49",
+    "last_restock_alert": "2026-10-21T04:38:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T04:30:00",
     "fc_api_seen_at": "2026-10-21T04:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_svc": "1"
@@ -14707,7 +14707,7 @@
     "fc_listed_at": "2026-10-21T04:30:00",
     "fc_api_seen_at": "2026-10-21T04:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_svc": "0"
@@ -15328,10 +15328,10 @@
     "fc_listed_at": "2026-10-21T04:30:00",
     "fc_api_seen_at": "2026-10-21T04:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473477",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473474": {
     "stock": "out_of_stock",
@@ -17345,10 +17345,10 @@
     "fc_listed_at": "2026-10-20T18:00:00",
     "fc_api_seen_at": "2026-10-21T04:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24503746",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24503335": {
     "stock": "out_of_stock",
@@ -20259,10 +20259,10 @@
     "fc_listed_at": "2026-10-21T04:30:00",
     "fc_api_seen_at": "2026-10-21T04:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "cat",
     "fc_gid": "24761907",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24768903": {
     "stock": "out_of_stock",
