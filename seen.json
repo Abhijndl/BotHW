@@ -13784,6 +13784,7 @@
     "fc_api_seen_at": "2026-10-21T22:30:00",
     "fc_trusted": true,
     "fc_live": "arriving",
+    "fc_lst": "cat",
     "fc_arr": "2026-10-21T22:35:35",
     "fc_svc": "1"
   },
