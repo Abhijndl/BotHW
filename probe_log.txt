@@ -1,196 +1,137 @@
-'Popularity'       oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Popularity'       oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'NewArrivals'      oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
-       (23930428, '366', 'Hot Wheels Street Beasts Die Cast Free')
-       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
-       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
-'NewArrivals'      oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
-       (23930428, '365', 'Hot Wheels Street Beasts Die Cast Free')
-       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
-       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
-'New Arrivals'     oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
-       (23930428, '366', 'Hot Wheels Street Beasts Die Cast Free')
-       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
-       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
-'New Arrivals'     oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
-       (23930428, '365', 'Hot Wheels Street Beasts Die Cast Free')
-       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
-       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
-'newarrivals'      oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
-       (23930428, '366', 'Hot Wheels Street Beasts Die Cast Free')
-       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
-       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
-'newarrivals'      oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776435
-       (23930428, '365', 'Hot Wheels Street Beasts Die Cast Free')
-       (24514759, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514758, '22', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24514757, '19', 'Hot Wheels Die Cast Free Wheel Color S')
-       (24568741, '36', 'Hot Wheels 1985 Ford Bronco Monster Tr')
-       (24568740, '49', 'Hot Wheels Unicharge Monster Trucks - ')
-'NewArrival'       oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'NewArrival'       oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'New'              oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'New'              oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Latest'           oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Latest'           oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Newest'           oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Newest'           oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'ProductID'        oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'ProductID'        oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'productid desc'   oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'productid desc'   oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Discount'         oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Discount'         oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24776089
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (22277228, '324', 'Hot Wheels Track Creator Starter Pack ')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'BestSeller'       oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24525299
-       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'BestSeller'       oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24525299
-       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
-       (22600737, '307', 'Hot Wheels Diecast Toy Car Metro Sketc')
-       (24475499, '213', 'Hot Wheels Die-Cast Vehicle Surf and T')
-       (14933549, '597', 'Hot Wheels Color Shifters Track and 1 ')
-       (21993930, '4', 'Hot Wheels Stunt Tracks Rapid Launch C')
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-'Rating'           oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24546534
-       (24514769, '35', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24514766, '10', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24514765, '23', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24514764, '10', 'Hot Wheels Monster Trucks Mutant Chaos')
-       (24514761, '40', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24235314, '117', 'Hot Wheels Hyper Rocker Toy Car Die Ca')
-'Rating'           oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24546534
-       (24514769, '35', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24514766, '10', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24514765, '23', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24514764, '10', 'Hot Wheels Monster Trucks Mutant Chaos')
-       (24514761, '40', 'Hot Wheels Die Cast Free Wheel Monster')
-       (24235314, '117', 'Hot Wheels Hyper Rocker Toy Car Die Ca')
-'PriceLowToHigh'   oos='': HTTP 200, 20 products, ids sorted desc: False, max id 24473514
-       (24473514, '123', "Hot Wheels '68 Mercury Comet Cyclone D")
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-       (24248202, '11', 'Hot Wheels 70 Dodge Charger Die-Cast F')
-       (24248198, '60', 'Hot Wheels Die Cast Toy Car with Click')
-       (24247511, '3', 'Hot Wheels Pt Fast Die-Cast Free Wheel')
-       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
-'PriceLowToHigh'   oos='1': HTTP 200, 20 products, ids sorted desc: False, max id 24473514
-       (24473514, '123', "Hot Wheels '68 Mercury Comet Cyclone D")
-       (24473512, '120', 'Hot Wheels Datsun 620 Die-Cast Toy Car')
-       (24248202, '11', 'Hot Wheels 70 Dodge Charger Die-Cast F')
-       (24248198, '60', 'Hot Wheels Die Cast Toy Car with Click')
-       (24247511, '3', 'Hot Wheels Pt Fast Die-Cast Free Wheel')
-       (24247515, '4', 'Hot Wheels Lil Roar Die-Cast Free Whee')
+==================== A. in-stock list + catalogue per pincode ====================
++  21s pcode=248001 : in-stock list 189 cars (units>0: 189); catalogue 391 cars, 190 with units
++  43s pcode=0      : in-stock list 202 cars (units>0: 202); catalogue 403 cars, 201 with units
++  66s pcode=110001 : in-stock list 192 cars (units>0: 192); catalogue 395 cars, 192 with units
++  89s pcode=560001 : in-stock list 191 cars (units>0: 191); catalogue 394 cars, 191 with units
++ 111s pcode=400001 : in-stock list 190 cars (units>0: 190); catalogue 392 cars, 190 with units
++ 134s pcode=781001 : in-stock list 190 cars (units>0: 190); catalogue 392 cars, 190 with units
+
+  248001 list vs 0: only on 248001's 0, only on 0's 13, same cars 189, counts differ for 15
+     only 0: 23074619 units 16 Hot Wheels Free Wheel Die Cast High-Tail Chase
+     only 0: 24313540 units 1 HOT WHEELS SAFARI MODE TM Die Cast Toy Cars Pa
+     only 0: 22600231 units 3 Hot Wheels Diecast Toy Car HW Hot Rods Free Wh
+     only 0: 24473474 units 1 Hot Wheels Maserati Die Cast Free Wheel Toy Ca
+     only 0: 24314338 units 7 Hot Wheels NIGHTBURNERZ Diecast Toy Car Pack o
+     only 0: 22450088 units 66 Hot Wheels Batman Die-Cast Car Set 1:64 Scale 
+     count 248001=120 vs 0=119: 24473512 Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
+     count 248001=303 vs 0=301: 24776078 Hot Wheels Birthday Burner (82/250) Toy Car - 
+     count 248001=230 vs 0=231: 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car - Bl
+     count 248001=394 vs 0=393: 24476800 Hot Wheels Tooned Purple Passion Die Cast Toy 
+     count 248001=70 vs 0=69: 23351682 Hot Wheels 46/250 Purple Passion Die Cat Free 
+     count 248001=11 vs 0=12: 24248202 Hot Wheels 70 Dodge Charger Die-Cast Free Whee
+
+  248001 list vs 110001: only on 248001's 1, only on 110001's 4, same cars 188, counts differ for 15
+     only 248001: 21497090 units 8 Hot Wheels Premium Collector Display Sets, 3 C
+     only 110001: 24776096 units 1 Hot Wheels Lotus Cortina (67/250) Toy Car - Bl
+     only 110001: 24776095 units 1 Hot Wheels 2024 Aston Martin Vantage GT3 (125/
+     only 110001: 24776091 units 1 Hot Wheels Alfa Romeo Giulia ti super (218/250
+     only 110001: 24776090 units 10 Hot Wheels Lucid Air (59/250) Toy Car - Blue
+     count 248001=120 vs 110001=119: 24473512 Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
+     count 248001=303 vs 110001=301: 24776078 Hot Wheels Birthday Burner (82/250) Toy Car - 
+     count 248001=230 vs 110001=231: 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car - Bl
+     count 248001=394 vs 110001=393: 24476800 Hot Wheels Tooned Purple Passion Die Cast Toy 
+     count 248001=70 vs 110001=69: 23351682 Hot Wheels 46/250 Purple Passion Die Cat Free 
+     count 248001=11 vs 110001=12: 24248202 Hot Wheels 70 Dodge Charger Die-Cast Free Whee
+
+  248001 list vs 560001: only on 248001's 2, only on 560001's 4, same cars 187, counts differ for 15
+     only 248001: 21993930 units 4 Hot Wheels Stunt Tracks Rapid Launch Cyclone T
+     only 248001: 21497090 units 8 Hot Wheels Premium Collector Display Sets, 3 C
+     only 560001: 24776096 units 1 Hot Wheels Lotus Cortina (67/250) Toy Car - Bl
+     only 560001: 24776095 units 1 Hot Wheels 2024 Aston Martin Vantage GT3 (125/
+     only 560001: 24776091 units 1 Hot Wheels Alfa Romeo Giulia ti super (218/250
+     only 560001: 24776090 units 10 Hot Wheels Lucid Air (59/250) Toy Car - Blue
+     count 248001=120 vs 560001=119: 24473512 Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
+     count 248001=303 vs 560001=301: 24776078 Hot Wheels Birthday Burner (82/250) Toy Car - 
+     count 248001=230 vs 560001=231: 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car - Bl
+     count 248001=394 vs 560001=393: 24476800 Hot Wheels Tooned Purple Passion Die Cast Toy 
+     count 248001=70 vs 560001=69: 23351682 Hot Wheels 46/250 Purple Passion Die Cat Free 
+     count 248001=11 vs 560001=12: 24248202 Hot Wheels 70 Dodge Charger Die-Cast Free Whee
+
+  248001 list vs 400001: only on 248001's 3, only on 400001's 4, same cars 186, counts differ for 16
+     only 248001: 21993930 units 4 Hot Wheels Stunt Tracks Rapid Launch Cyclone T
+     only 248001: 21497090 units 8 Hot Wheels Premium Collector Display Sets, 3 C
+     only 248001: 24568740 units 49 Hot Wheels Unicharge Monster Trucks - Pink
+     only 400001: 24776096 units 1 Hot Wheels Lotus Cortina (67/250) Toy Car - Bl
+     only 400001: 24776095 units 1 Hot Wheels 2024 Aston Martin Vantage GT3 (125/
+     only 400001: 24776091 units 1 Hot Wheels Alfa Romeo Giulia ti super (218/250
+     only 400001: 24776090 units 10 Hot Wheels Lucid Air (59/250) Toy Car - Blue
+     count 248001=120 vs 400001=119: 24473512 Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
+     count 248001=303 vs 400001=301: 24776078 Hot Wheels Birthday Burner (82/250) Toy Car - 
+     count 248001=230 vs 400001=231: 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car - Bl
+     count 248001=394 vs 400001=393: 24476800 Hot Wheels Tooned Purple Passion Die Cast Toy 
+     count 248001=70 vs 400001=69: 23351682 Hot Wheels 46/250 Purple Passion Die Cat Free 
+     count 248001=11 vs 400001=12: 24248202 Hot Wheels 70 Dodge Charger Die-Cast Free Whee
+
+  248001 list vs 781001: only on 248001's 3, only on 781001's 4, same cars 186, counts differ for 15
+     only 248001: 21993930 units 4 Hot Wheels Stunt Tracks Rapid Launch Cyclone T
+     only 248001: 21497090 units 8 Hot Wheels Premium Collector Display Sets, 3 C
+     only 248001: 24236114 units 276 Hot Wheels HW Test Ride Toy Car Die-Cast Vehic
+     only 781001: 24776096 units 1 Hot Wheels Lotus Cortina (67/250) Toy Car - Bl
+     only 781001: 24776095 units 1 Hot Wheels 2024 Aston Martin Vantage GT3 (125/
+     only 781001: 24776091 units 1 Hot Wheels Alfa Romeo Giulia ti super (218/250
+     only 781001: 24776090 units 10 Hot Wheels Lucid Air (59/250) Toy Car - Blue
+     count 248001=120 vs 781001=119: 24473512 Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
+     count 248001=303 vs 781001=301: 24776078 Hot Wheels Birthday Burner (82/250) Toy Car - 
+     count 248001=230 vs 781001=231: 24473712 Hot Wheels Salt Streaker Die-Cast Toy Car - Bl
+     count 248001=394 vs 781001=393: 24476800 Hot Wheels Tooned Purple Passion Die Cast Toy 
+     count 248001=70 vs 781001=69: 23351682 Hot Wheels 46/250 Purple Passion Die Cat Free 
+     count 248001=11 vs 781001=12: 24248202 Hot Wheels 70 Dodge Charger Die-Cast Free Whee
+
+  catalogue 248001 vs nationwide: counts differ for 16 of 391
+     22600737: 248001=306 vs 0=307 Hot Wheels Diecast Toy Car Metro Sketch Free W
+     24473512: 248001=119 vs 0=120 Hot Wheels Datsun 620 Die-Cast Toy Car -Purple
+     23076122: 248001=280 vs 0=282 Hot Wheels 69 Chevelle (53/250) Die Cast Free 
+     23351682: 248001=69 vs 0=70 Hot Wheels 46/250 Purple Passion Die Cat Free 
+     24248202: 248001=12 vs 0=11 Hot Wheels 70 Dodge Charger Die-Cast Free Whee
+     24247511: 248001=2 vs 0=3 Hot Wheels Pt Fast Die-Cast Free Wheel Toy Car
+     24473513: 248001=157 vs 0=155 Hot Wheels Voltage Spike Die-Cast Toy Car -Ora
+     24473515: 248001=154 vs 0=152 Hot Wheels Go Realla Fast Die-Cast Toy Car - B
+
+==================== B. where the newest ids sit (catalogue, 248001) ====================
+   24783761 page 11/20 pos 215 units 338 Hot Wheels 20 Dodge Charger Hellcat (134/250) 
+   24783759 page 11/20 pos 216 units 671 Hot Wheels Aston Martin DB5 Safari Edition/Edi
+   24783758 page 11/20 pos 217 units 345 Hot Wheels Chop N Bloc (182/250) Toy Car - Red
+   24783699 page 11/20 pos 218 units 233 Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Ca
+   24783698 page 11/20 pos 219 units 230 Hot Wheels Duck N Roll Toy Car - PInk
+   24776435 page  9/20 pos 176 units 264 Hot Wheels Scremliner (141/250) Die Cast Toy C
+   24776096 page 19/20 pos 375 units 0 Hot Wheels Lotus Cortina (67/250) Toy Car - Bl
+   24776095 page 10/20 pos 180 units 1 Hot Wheels 2024 Aston Martin Vantage GT3 (125/
+   24776091 page 19/20 pos 376 units 0 Hot Wheels Alfa Romeo Giulia ti super (218/250
+   24776090 page 10/20 pos 181 units 10 Hot Wheels Lucid Air (59/250) Toy Car - Blue
+   24776089 page  1/20 pos  17 units 254 Hot Wheels Time shifter (109/250) Toy Car - Ye
+   24776080 page 19/20 pos 377 units 0 Hot Wheels Die Cast Free Wheel 161/250 70 Ford
+   24776079 page  1/20 pos  15 units 264 Hot Wheels Twin Tags (166/250) Die Cast Toy Ca
+   24776078 page  1/20 pos  13 units 303 Hot Wheels Birthday Burner (82/250) Toy Car - 
+   24776076 page  1/20 pos  12 units 106 Hot Wheels Custom/Personnalise 72 Chevy Luv (1
+   24776075 page 19/20 pos 378 units 0 Hot Wheels 2019 Audi R8 Spyder (130/250) Toy C
+   24776070 page 19/20 pos 379 units 0 Hot Wheels Feline Lucky (92/250) Toy Car - Gol
+   24776065 page 20/20 pos 380 units 0 Hot Wheels Dino 206 GT (150/250) Die Cast Toy 
+   24776064 page 20/20 pos 381 units 0 Hot Wheels 64 Dodge 330 (126/250) Toy Car - Re
+   24776024 page 20/20 pos 382 units 0 Hot Wheels 89 Mazda Savanna RX-7 FC3S (112/250
+   24775986 page  9/20 pos 177 units 421 Hot Wheels Vairstrike Die-Cast Toy Car (155/25
+   24775936 page 20/20 pos 383 units 0 Hot Wheels Die-Cast Toy Car McLaren W1 (74/250
+   24768903 page 20/20 pos 384 units 0 Hot Wheels '21 Ford Bronco Die Cast Free Wheel
+   24768902 page  9/20 pos 175 units 289 Hot Wheels Deora Tooned Die Cast Free Wheel To
+   24768898 page 20/20 pos 385 units 0 Hot Wheels '96 Dodge Viper GTS Die Cast Free W
+   in-stock list, newest 10:
+   24783761 page 10/10 pos 180 units 338 Hot Wheels 20 Dodge Charger Hellcat (134/250) 
+   24783759 page 10/10 pos 181 units 671 Hot Wheels Aston Martin DB5 Safari Edition/Edi
+   24783758 page 10/10 pos 182 units 345 Hot Wheels Chop N Bloc (182/250) Toy Car - Red
+   24783699 page 10/10 pos 183 units 233 Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Ca
+   24783698 page 10/10 pos 184 units 230 Hot Wheels Duck N Roll Toy Car - PInk
+   24783697 page 10/10 pos 185 units 385 Hot Wheel RIDGE CREST GT (248/250) Toy Car - G
+   24776435 page  9/10 pos 176 units 264 Hot Wheels Scremliner (141/250) Die Cast Toy C
+   24776089 page  1/10 pos  17 units 254 Hot Wheels Time shifter (109/250) Toy Car - Ye
+   24776079 page  1/10 pos  15 units 264 Hot Wheels Twin Tags (166/250) Die Cast Toy Ca
+   24776078 page  1/10 pos  13 units 303 Hot Wheels Birthday Burner (82/250) Toy Car - 
+
+==================== C. catalogue says units, 248001's in-stock list doesn't ====================
+   2 such cars
+   24776095 cat units    1 | page CS 0 | 248001 svc 0 isv 1 TAT 12-15 | on lists of: ['0', '110001', '560001', '400001', '781001'] | Hot Wheels 2024 Aston Martin Vantage GT3 (125/
+   24776090 cat units   10 | page CS 0 | 248001 svc 1 isv 10 TAT 6-7 | on lists of: ['0', '110001', '560001', '400001', '781001'] | Hot Wheels Lucid Air (59/250) Toy Car - Blue
+
+==================== D. 248001 again, twice, ~60 s apart ====================
++ 199s round 1: list 189 (+0 -0), catalogue 391 (+0 new ids), catalogue counts changed 0
++ 260s round 2: list 189 (+0 -0), catalogue 391 (+0 new ids), catalogue counts changed 0
+
+done in 260s
