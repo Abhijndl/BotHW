@@ -4407,7 +4407,7 @@
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23351684": {
     "stock": "in_stock",
@@ -15330,7 +15330,7 @@
     "fc_svc": "0"
   },
   "fc_24476435": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
     "price": "₹164",
     "source": "firstcry",
@@ -15344,10 +15344,10 @@
     "fc_listed_at": "2026-10-21T16:00:00",
     "fc_api_seen_at": "2026-10-21T16:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24476138",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473509": {
     "stock": "out_of_stock",
