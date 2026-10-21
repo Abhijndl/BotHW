@@ -11051,7 +11051,7 @@
     "fc_listed_at": "2026-10-21T06:45:00",
     "fc_api_seen_at": "2026-10-21T06:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "21348",
     "fc_svc": "1"
@@ -12024,7 +12024,7 @@
     "last_price_alert": ""
   },
   "fc_24390961": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 64 Chevy nova station wagon/Camionnette Toy Car - Black",
     "price": "₹494",
     "source": "firstcry",
@@ -12038,10 +12038,10 @@
     "fc_listed_at": "2026-10-21T06:45:00",
     "fc_api_seen_at": "2026-10-21T06:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24390961",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23353034": {
     "stock": "out_of_stock",
@@ -13500,7 +13500,7 @@
     "fc_svc": "0"
   },
   "fc_24390968": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 4/5 Silver Series Vintage Club 73 Honda Civic Custom/Personnalise Die-cast Car - Beige",
     "price": "₹269",
     "source": "firstcry",
@@ -13515,10 +13515,10 @@
     "fc_listed_at": "2026-10-21T06:45:00",
     "fc_api_seen_at": "2026-10-21T06:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24390968",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24248198": {
     "stock": "in_stock",
