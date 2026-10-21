@@ -13383,7 +13383,7 @@
     "fc_svc": "0"
   },
   "fc_24390970": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 2/5 Silver Series Vintage Club Aston Martin 1963 Db5 Die-cast Car - Blue",
     "price": "₹269",
     "source": "firstcry",
@@ -13396,12 +13396,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T07:45:00",
-    "fc_api_seen_at": "2026-10-21T08:30:00",
+    "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24390970",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24313540": {
     "stock": "out_of_stock",
@@ -14697,10 +14697,10 @@
     "fc_listed_at": "2026-10-21T07:15:00",
     "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "24473477",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24473499": {
     "stock": "out_of_stock",
@@ -15326,10 +15326,10 @@
     "fc_listed_at": "2026-10-21T09:00:00",
     "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24476138",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24473509": {
     "stock": "out_of_stock",
@@ -16683,12 +16683,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T04:00:00",
-    "fc_api_seen_at": "2026-10-21T08:30:00",
+    "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "23973353",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23973354": {
     "stock": "in_stock",
@@ -16711,7 +16711,7 @@
     "fc_svc": "1"
   },
   "fc_23973353": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
     "price": "₹269",
     "source": "firstcry",
@@ -16725,10 +16725,10 @@
     "fc_listed_at": "2026-10-21T09:00:00",
     "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23832900": {
     "stock": "out_of_stock",
@@ -17137,7 +17137,7 @@
     "fc_svc": "0"
   },
   "fc_24390969": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 3/5 Silver Series Vintage Club 69 Copo Corvette Die-cast Car - Red",
     "price": "₹269",
     "source": "firstcry",
@@ -17152,10 +17152,10 @@
     "fc_listed_at": "2026-10-21T07:15:00",
     "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24390969",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24390966": {
     "stock": "out_of_stock",
@@ -17251,7 +17251,7 @@
     "fc_svc": "0"
   },
   "fc_24390959": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Road Trip Die Cast Free Wheel 1993 Mercedes-Benz G-Class Toy Car - Blue",
     "price": "₹477",
     "source": "firstcry",
@@ -17259,17 +17259,17 @@
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-10-21T09:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-21T07:46:20",
+    "last_restock_alert": "2026-10-21T09:11:58",
     "last_price_alert": "2026-10-21T06:30:23",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T08:45:00",
-    "fc_api_seen_at": "2026-10-21T08:45:00",
+    "fc_api_seen_at": "2026-10-21T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
-    "fc_lst": "list",
+    "fc_live": "ok",
+    "fc_lst": "out",
     "fc_gid": "24390959",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24390958": {
     "stock": "out_of_stock",
