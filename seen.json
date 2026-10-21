@@ -2693,7 +2693,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-21T19:15:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -2867,7 +2867,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
     "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
@@ -3056,12 +3056,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-premium-collector-assortment-boys-3y-multicolour-17465907",
     "first_seen": "2026-07-20T07:43:29",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-23T16:51:14",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "hm_hot-wheels-loop-and-launch-trackset-5y-multicolour-9879163": {
     "stock": "out_of_stock",
@@ -3084,12 +3084,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-basic-car-fans-for-kids-assorted-3y-multicolor-deyopvnpaxx",
     "first_seen": "2026-07-20T07:43:29",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T10:18:40",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "hm_hot-wheels-ultra-hots-track-builder-loop-madness-4y-multicolour-9879174": {
     "stock": "out_of_stock",
@@ -3154,7 +3154,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-die-cast-cars-pack-of-5-nnellivvddel",
     "first_seen": "2026-07-20T07:43:29",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-06T10:14:54",
     "last_price_alert": "",
@@ -3220,7 +3220,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels--mario-kart-diecast-asst-4mgl8dpbnjr6",
     "first_seen": "2026-07-20T08:06:39",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-06T15:06:59",
     "last_price_alert": "",
@@ -3234,7 +3234,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-scale-collectible-volkswagen-kool-kombi-van-3y-premium-mattel-80th-collection-multicolour-14543240",
     "first_seen": "2026-07-20T08:06:39",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-23T22:35:50",
     "last_price_alert": "",
@@ -3248,7 +3248,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-118-street-power-motorcycle--7psvptsrcn-",
     "first_seen": "2026-07-20T08:06:39",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
@@ -3262,7 +3262,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-164-color-shifters-assorted-p3ccby2wqau0",
     "first_seen": "2026-07-20T08:06:39",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-06T15:06:59",
     "last_price_alert": "",
@@ -3276,7 +3276,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-3inch-die-cast-2-pack-assorted-boys-3y-multicolour-9653148",
     "first_seen": "2026-07-20T08:06:39",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-06T15:14:52",
     "last_price_alert": "",
@@ -3622,7 +3622,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T19:15:00",
-    "fc_api_seen_at": "2026-10-21T19:15:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -3711,7 +3711,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-boulevard-assorted-unisex-2y-multicolor-hzunl8d2kqv",
     "first_seen": "2026-07-20T12:02:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-06T12:31:24",
     "last_price_alert": "",
@@ -3725,7 +3725,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-fast-and-furious-2025-assorted-3y-multicolour-17124147",
     "first_seen": "2026-07-20T12:02:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-22T03:55:59",
     "last_price_alert": "",
@@ -3739,7 +3739,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-formula-1-assorted-3y-multicolour-17124142",
     "first_seen": "2026-07-20T15:21:46",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-28T16:41:03",
     "last_price_alert": "",
@@ -3774,7 +3774,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels--team-transport-beutaab8tjwa",
     "first_seen": "2026-07-20T16:21:54",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-19T15:36:11",
     "last_price_alert": "",
@@ -4130,7 +4130,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-vintage-2025-mix-2-assorted-3y-multicolour-17124130",
     "first_seen": "2026-07-21T15:02:14",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-27T09:21:04",
     "last_price_alert": "",
@@ -4298,7 +4298,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-fast-and-furious-assorted-3y-multicolour-9779430",
     "first_seen": "2026-07-22T10:41:48",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-21T14:09:08",
     "last_price_alert": "",
@@ -4439,7 +4439,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/ne-car-culture-asst-vqc7uu0bogkg",
     "first_seen": "2026-07-23T14:41:44",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-18T13:21:40",
     "last_price_alert": "",
@@ -4469,7 +4469,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-scale-5-pack-formula1-race-cars-for-kids-3y-96307388",
     "first_seen": "2026-07-24T18:41:49",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-17T18:46:21",
     "last_price_alert": "",
@@ -4739,7 +4739,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-pantone-assorted-boys-3y-multicolour-17627231",
     "first_seen": "2026-07-29T12:02:05",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-28T21:41:05",
     "last_price_alert": "",
@@ -5205,7 +5205,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-pearl-and-chrome-assorted-3y-multicolour-9779411",
     "first_seen": "2026-08-03T06:11:49",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-08-06T04:26:44",
     "last_price_alert": "",
@@ -5894,8 +5894,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T19:30:00",
-    "fc_api_seen_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -5983,12 +5983,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-premium-fast-furious-bundle-for-boys-age-3y-premium-die-cast-car-collection-96407425",
     "first_seen": "2026-08-11T16:34:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T11:22:49",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "fc_24194176": {
     "stock": "in_stock",
@@ -6247,7 +6247,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-5-car-pack-rosso-for-boys-age-3y-die-cast-vehicle-collection-96407472",
     "first_seen": "2026-08-14T13:12:13",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-27T12:55:51",
     "last_price_alert": "",
@@ -6261,7 +6261,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-premium-race-2-pack-for-boys-age-14y-collectible-die-cast-race-cars-96407455",
     "first_seen": "2026-08-14T13:22:11",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-19T06:07:09",
     "last_price_alert": "",
@@ -6402,7 +6402,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-color-reveal-blind-1-box-set-of-2-cars?pid=BZgkdlGNaz",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6414,7 +6414,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43?pid=10gzmv6pAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6426,7 +6426,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-set-of-5?pid=6nNVYyXgYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6438,7 +6438,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-assortment-set-of-5-cars-955k?pid=V2gJRwAge4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-18T08:28:23",
     "last_price_alert": ""
@@ -6450,7 +6450,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/kool-kombi-hot-wheels-80th-anniversary?pid=BwL6916N4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6462,7 +6462,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-mooneyes-2026-diorama-box-set-952h?pid=PzNbBorNbQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6474,7 +6474,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-premium-toyota-2026-diorama-box-set-952g?pid=ykL04a6LRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6486,7 +6486,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-pack-of-10?pid=V2gJemWpe4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6498,7 +6498,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-race-team-giftpack?pid=m8pDlvwpv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6510,7 +6510,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-gift-pack-with-mario-kart-yoshi?pid=y7gG94vLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6522,7 +6522,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-gift-pack-with-mario-kart-bowser-jr?pid=RWg8VyKLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6534,7 +6534,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-gift-pack-with-mario-kart-toad?pid=e7g58xmpmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6546,7 +6546,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-2025-premium-honda-type-r-heritage-gift-pack?pid=GvLPP2xLod",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6558,7 +6558,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/tooned-hot-wheels-gift-pack?pid=8JNqro8L4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6570,7 +6570,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/baja-blazers-hot%C2%A0wheels%C2%A0gift%C2%A0pack?pid=GoL1mX5LBA",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6582,7 +6582,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-getaways-5-pack?pid=Pqp2J8np36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6594,7 +6594,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-action-5-pack?pid=10gzoekNAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6630,7 +6630,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-performance-trucks-lineup-2026-set-of-5?pid=OdNZBvRNzk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6642,7 +6642,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-batman-themed-2026-mix-2?pid=QJgn265gl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6654,7 +6654,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot%C2%A0wheels%C2%A0silver%C2%A0series%C2%A02026%C2%A0streets%C2%A0of%C2%A0japan%C2%A0of%C2%A06%C2%A0-car%C2%A0box%C2%A0set%C2%A0jlb23?pid=10gzmz3pAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6666,7 +6666,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-2026-legends-set-of-6-car-box-set-jlb24?pid=y7gG9wMLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6678,7 +6678,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-batman-silver-series-set-of-5-car-?pid=6nNVYMagYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6690,7 +6690,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-team-transport-2026-mix-3-set-of-3?pid=BwL6Gvep4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "2026-09-30T04:55:52"
@@ -6702,7 +6702,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot%C2%A0wheels%C2%A0mario%C2%A0kart%C2%A0assortment%C2%A0of%C2%A08?pid=OyLoZXxNb2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6714,7 +6714,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-mario-kart-mario-with-bowser-jr?pid=E5N4nyqpMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6726,7 +6726,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-mario-kart-mario-with-luigi?pid=8JNqO1op4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6834,7 +6834,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-vellfire-40-kuhl-white?pid=6nNVYZ9gYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6846,7 +6846,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-gtd-race-red?pid=10gzmnYpAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6858,7 +6858,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-revuelto-verde-gea-matte?pid=y7gG989Lre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6870,7 +6870,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-er34-super-silhouette-skyline-suppaiman-okinawa?pid=4lgO2z2poQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6882,7 +6882,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-az-1-liberty-walk-lb40-lb-hinomaru?pid=m8pDlQqpv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6894,7 +6894,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mclaren-mp44-11-alain-prost-1988-japanese-grand-prix-2nd-place?pid=Pqp2nDZp36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6906,7 +6906,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-kwbbs?pid=P7pRJ6Dpjm",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6930,7 +6930,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bentley-batur-scarab-green?pid=10gzmEwpAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6942,7 +6942,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-alphard-40-kuhl-black?pid=RWg8VnnLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6954,7 +6954,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-t1-microbus-mizu-design?pid=QJgn2MOgl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6966,7 +6966,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/honda-nsx-prototype-midship-sports-1989-ayrton-senna%C2%A0-w-figure?pid=VbpAlraLrM",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6978,7 +6978,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/porsche%C2%A0911%C2%A0dakar%C2%A0718%C2%A0%C2%A0volkswagen%C2%A0id%C2%A0buzz%C2%A0porsche%C2%A0centrum%C2%A0gelderland%C2%A0roughroads%C2%A0set?pid=ywNWe8jpAX",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -6990,7 +6990,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-matsukiyo-koku-3-rotor-na-7-tas-2025?pid=4lgO2aRpoQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7014,7 +7014,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix?pid=Pqp2n7wp36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7026,7 +7026,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hyundai-kona-n-phantom-black?pid=VbpAlx2LrM",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7038,7 +7038,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-countach-25th-anniversary-red?pid=KbNEYxnNR0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7050,7 +7050,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-2025-d1gp?pid=10gzm3ApAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7062,7 +7062,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix?pid=8JNqOYqp4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7074,7 +7074,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-dark-horse-24-ford-performance-racing-school?pid=GvLPjxegod",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7098,7 +7098,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-gr86-lb-nation-advan?pid=V2gJexype4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7110,7 +7110,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner?pid=ykL04RaLRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7122,7 +7122,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lb-works-lamborghini-hurac%C3%A1n-gt-ronin?pid=4lgO2VvpoQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7134,7 +7134,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-lbsuper-silhouette-s15-silvia-555-team-mini-gt-liberty-walk-?pid=m8pDl35pv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7146,7 +7146,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-z-veilside-ffz400-seiran-blue?pid=KBg7zdepRr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7158,7 +7158,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bugatti-bolide-presentation-box?pid=ykL04QaLRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7170,7 +7170,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s15-lbsuper-silhouette-555-team-mini-gt-liberty-walk?pid=96pm2vdgVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7182,7 +7182,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toleman-tg184-19-ayrton-senna-1984-monaco-grand-prix-2nd-plac?pid=BwL6GVdp4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7206,7 +7206,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-chevrolet-corvette-z06-gt3r-road-america-test-car?pid=JPNYDV9gzO",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7218,7 +7218,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini%C2%A0gt-lancia-stratos-hf-4-1978-rally-sanremo-winner?pid=KbNEY4BNR0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7230,7 +7230,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini%C2%A0gt-bugatti-bolide-red?pid=8JNqO5ep4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7242,7 +7242,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-db10-%E2%80%9Cspectre%E2%80%9D-english-blister-packaging?pid=XqLQbkmpvD",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7254,7 +7254,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-dark-horse-2024-carbonized-gray?pid=RWg8VMyLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-08T11:12:48",
     "last_price_alert": ""
@@ -7266,7 +7266,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-1984-n%C3%BCrburgring-race-of-champions-set-limited-edition?pid=OyLoZEwNb2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-25T05:01:41",
     "last_price_alert": ""
@@ -7278,7 +7278,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-xkr-die-another-day-english-blister-packaging?pid=V2gJeODpe4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7290,7 +7290,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lotus-esprit-turbo-copper-fire-metallic-for-your-eyes-only?pid=KBg7z03pRr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7302,7 +7302,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo?pid=PzNbBwkNbQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-15T10:58:49",
     "last_price_alert": ""
@@ -7314,7 +7314,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-%C2%A0toyota-gr86-lbnation-blackgold?pid=XqLQb4MpvD",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7326,7 +7326,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-shelby-gt500-dragon-snake-concept?pid=Mbga1AVgq8",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7338,7 +7338,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version?pid=lng33yAgqy",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7350,7 +7350,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion?pid=aMNB2y0NXd",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7362,7 +7362,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-silver-metallic?pid=x7LelnlNY0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7374,7 +7374,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow%C2%A0%C2%A0-?pid=E5N4nRqpMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7386,7 +7386,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-z-veilside-ffz400-orange?pid=QJgn287gl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7410,7 +7410,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-mach1-grabber-yellow?pid=VbpAl2xLrM",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7422,7 +7422,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-puma-rally1-13-msport-ford-wrt-2024-rally-monte-carlo?pid=RWg8V8KLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7434,7 +7434,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/rb-vcarb-01-22-yuki-tsunoda-2024-f1-2024-bahrain-gp?pid=QJgn28mgl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7446,7 +7446,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-rb-vcarb-01-3-daniel-ricciardo-2024-f1-2024-bahrain?pid=BwL6GaXp4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-15T10:58:49",
     "last_price_alert": ""
@@ -7458,7 +7458,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/subaru-impreza-wrc99-23-2000-acropolis-rally?pid=x7LelKaNY0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7494,7 +7494,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-mach1-1971-race-red?pid=ykL041rLRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7506,7 +7506,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lb-works-ford-mustang-triple-yellow?pid=xeLXQlKp1W",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7518,7 +7518,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-az-1-liberty-walk-lb40-pilot?pid=zONvZzeNBK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7542,7 +7542,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/aston-martin-amr24-14-fernando-alonso-2024-f1-2024-bahrain-gp?pid=GoL1JkrpBA",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7554,7 +7554,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-lbsuper-silhouette-s15-silvia-555-v2-2024-formula-drift-japan?pid=OyLoZDWNb2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7566,7 +7566,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion%C2%A0%C2%A0-?pid=ykL0445LRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7578,7 +7578,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/abarth-595-lb-works-x-abas-works-fighters%C2%A0%C2%A0-?pid=rMNM66OL95",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7590,7 +7590,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-candy-white-energetic-orange?pid=RWg8VVeLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7602,7 +7602,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-r32-veilside-combat-ci-white?pid=m8pDl9wpv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7614,7 +7614,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-veilside-fortune-grey?pid=QJgn205gl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7638,7 +7638,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lotus-78-3-gunnar-nilsson-1977-japanese-gp?pid=Ezgl2W7LMr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7650,7 +7650,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-abarth-595-lb-works-x-abas-works-iztk?pid=GvLPjoXgod",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7674,7 +7674,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota%C2%A0gr86%C2%A0hks%C2%A0type%C2%A0r%C2%A0advan%C2%A02022%C2%A0tokyo%C2%A0auto%C2%A0salon?pid=ykL04AeLRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7686,7 +7686,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-miata-mx5-na-tuned-version-dark-blue?pid=BwL69mxN4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-16T10:26:51",
     "last_price_alert": ""
@@ -7722,7 +7722,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-with-re-amemiy?pid=aMNBW9mLXd",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T12:44:49",
     "last_price_alert": ""
@@ -7734,7 +7734,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-abarth-595-lb-works-x-abas-works-grey?pid=96pmZmygVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7746,7 +7746,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mercedes-benz-eqs-580-4matic-red-metallic?pid=GXpKABQNmx",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T12:44:49",
     "last_price_alert": ""
@@ -7782,7 +7782,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-r32-veilside-combat-ci-veilside-combat-grey?pid=m8pD9Oqgv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T12:44:49",
     "last_price_alert": ""
@@ -7806,7 +7806,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-stradale-verde-chiaro?pid=OyLoWy0Lb2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7818,7 +7818,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-hyundai-kona-n-performance-blue?pid=GvLPBOegod",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7830,7 +7830,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-stradale-rosso-arancio?pid=4lgO9nVLoQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7890,7 +7890,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s13-r-circuit-spec-v1?pid=Pqp2neYp36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7902,7 +7902,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-silverado-kaido-intimidator-v1?pid=RWg8VRwLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7926,7 +7926,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1%C2%A0%C2%A0-?pid=aPgdn5aLJq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7938,7 +7938,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-2000gtr-kpgc10-kaido-works-v2?pid=lng33P9gqy",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7950,7 +7950,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-kaido-510-wagon-4x4-kaido-islands-v1?pid=e7g58bQpmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7986,7 +7986,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-kaido-510-wagon-bre-v2?pid=e7g5eOAgmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7998,7 +7998,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-kaido-510-wagon-bre-v1?pid=GwLxxqnLXY",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8010,7 +8010,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-greddy-gun-metal-grey?pid=8JNqkyrp4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8022,7 +8022,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-greddy-pearl-white?pid=zONv0jmpBK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8034,7 +8034,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-bre-v2?pid=OdNZD6Epzk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8046,7 +8046,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-bre-v1?pid=jPp91MrpDa",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8586,7 +8586,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-gtd-america-250-usa-exclusive?pid=BZgkEzbLaz",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8598,7 +8598,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-vellfire-40-kuhl-white-blister?pid=eKLwrwxNv0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8610,7 +8610,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-gtd-race-red-blister?pid=VbpAlo7LrM",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8622,7 +8622,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-revuelto-verde-gea-matte-blister?pid=P7pRJDGpjm",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8646,7 +8646,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-az-1-liberty-walk-lb40-lb-hinomaru-blister?pid=aPgdnBlLJq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8658,7 +8658,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mclaren-mp44-11-alain-prost-1988-japanese-grand-prix-2nd-place-blister?pid=QJgn27Ygl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8670,7 +8670,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-kwbbs-blister?pid=VbpAlMzLrM",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8682,7 +8682,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bentley%C2%A0batur%C2%A0scarab%C2%A0green?pid=QJgn2lYgl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8694,7 +8694,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/aston-martin-db5-%E2%80%9Ccasino-royale%E2%80%9D?pid=VbpAlrzLrM",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8706,7 +8706,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-lb-er34-super-silhouette-skyline-sport-yellow-blister-packaging?pid=P7pRJ8Dpjm",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8718,7 +8718,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-alphard-40-kuhl-black-blister-packaging?pid=y7gG93JLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8730,7 +8730,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-t1-microbus-mizu-design-blister-packaging?pid=m8pDlmYpv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8754,7 +8754,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/honda-nsx-prototype-midship-sports-1989-ayrton-senna-w-figure-blister-packaging?pid=eKLwrGzNv0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8766,7 +8766,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-blister-protector-type-b-suv-blister-size-30-pc-set-?pid=96pm2argVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8778,7 +8778,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-blister-protector-type-b-suv-blister-size-15-pc-set?pid=x7LelrRNY0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8790,7 +8790,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-matsukiyo-koku-3-rotor-na-7-tas-2025-blister-packaging?pid=jPp9ERWpDa",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8802,7 +8802,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-lb-works-hakos-blister-packaging?pid=aPgdnOWLJq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8814,7 +8814,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix-blister-packaging?pid=QJgn2BOgl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8826,7 +8826,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-corvette-z06-gt3r-4-corvette-racing-by-pratt-miller-motors-blister-packaging?pid=BwL6GzVp4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8838,7 +8838,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-countach-25th-anniversary-red-blister-packaging?pid=P7pRJx3pjm",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8850,7 +8850,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-re-amemiya-2025-d1gp-blister-packaging?pid=6nNVYxlgYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8862,7 +8862,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-skyline-kenmeri-liberty-walk-nissan-racing-75-concept-blister-packaging?pid=y7gG9xWLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8874,7 +8874,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix-blister-packaging?pid=E5N4nBwpMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8886,7 +8886,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-dark-horse-24-ford-performance-racing-school-blister-packaging?pid=zONvZ5WNBK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8898,7 +8898,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-supra-veilside-combat-v-i-white-blister-packaging?pid=GoL1JKJpBA",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8910,7 +8910,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-gr86-lb-nation-advan-blister-packaging?pid=OyLoZ9WNb2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8922,7 +8922,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner-blister-packaging?pid=PzNbBmjNbQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8934,7 +8934,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-supra-a80-top-secret-gt300-top-secret-red-chrome-blister-packaging?pid=XqLQbRnpvD",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8946,7 +8946,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-corvette-z06-gt3r-3-corvette-racing-blister-packaging?pid=Mbga1e9gq8",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8970,7 +8970,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lb-works-lamborghini-huracan-gt-ronin-blister-packaging?pid=jPp9E9JpDa",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8982,7 +8982,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-lbsuper-silhouette-s15-silvia-555-team-mini-gt-liberty-walk-blister-packaging?pid=aPgdnjYLJq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8994,7 +8994,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan%C2%A0z%C2%A0veilside%C2%A0ffz400%C2%A0seiran%C2%A0blue?pid=GoL1JAJpBA",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9006,7 +9006,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bugatti-bolide-presentation-blister?pid=PzNbBvjNbQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9018,7 +9018,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-supra-veilside-combat-v-i-red?pid=Mbga1v9gq8",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9030,7 +9030,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s15-lbsuper-silhouette-555-team-mini-gt-liberty-walk-blister-packaging?pid=aMNB2Z9NXd",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9042,7 +9042,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toleman-tg184-19-ayrton-senna-1984-monaco-grand-prix-2nd-place-blister-packaging?pid=Pqp2nbRp36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9054,7 +9054,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version?pid=P7pRJbJpjm",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9066,7 +9066,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024?pid=aMNB2DRNXd",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9078,7 +9078,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-chevrolet-corvette-z06-gt3r-road-america-test-car-blister-pack?pid=96pm2BQgVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9102,7 +9102,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic?pid=eJNr0MnpBd",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9114,7 +9114,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-mach-1-grabber-blue?pid=ywNWeG1pAX",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9126,7 +9126,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-4-1978-rally-sanremo-winner-blister-packaging?pid=P7pRJq6pjm",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9138,7 +9138,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-bugatti-bolide-red-blister-packaging?pid=E5N4nvvpMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9150,7 +9150,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-chevrolet-corvette-z06-gt3r-13-awa-2025-imsa-daytona-24-hrs?pid=rMNM6OzL95",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9162,7 +9162,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan%C2%A0silvia%C2%A0s15%C2%A0top%C2%A0secret%C2%A0d1gp?pid=RnLjV9YLm0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9174,7 +9174,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-range-rover-1981-camel-trophy-sumatra-cswoboda-kmentel-win?pid=KbNEYw5NR0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9186,7 +9186,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-ford-mustang-dark-horse-2024-carbonized-gray-blister-packaging?pid=6nNVYjXgYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9198,7 +9198,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-lb-silhouette-works-murcielago-gt-evo-yellow?pid=ykL0402LRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9210,7 +9210,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-honda-civic-type-r-2024-pace-car-hrc-blister-pack?pid=rMNM6YbL95",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9222,7 +9222,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo-blister-packaging?pid=0mNyy10Nkj",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9234,7 +9234,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-lbnation-blackgold?pid=ykL04xKLRZ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9246,7 +9246,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-shelby-gt500-dragon-snake-concept-blackgold-blister-packaging?pid=rMNM64QL95",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9258,7 +9258,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version-blister-packaging?pid=xeLXQ4Wp1W",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9270,7 +9270,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion-blister-packaging?pid=RnLjVZDLm0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9282,7 +9282,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic?pid=96pm2W9gVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9294,7 +9294,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow-blister-packaging?pid=GwLxkYANXY",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9306,7 +9306,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-countach-25th-anniversary-white?pid=8JNqO2op4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9318,7 +9318,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-lb-super-silhouette-fd-niles-blister-packaging?pid=0mNyyk0Nkj",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9330,7 +9330,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-z-veilside-ffz400-orange-blister-packaging?pid=m8pDldjpv2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9342,7 +9342,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-mach1-grabber-yellow-blister-packaging?pid=eKLwr2yNv0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9354,7 +9354,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-puma-rally1-13-msport-ford-wrt-2024-rally-monte-carlo-blister-packaging?pid=y7gG9ZvLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9366,7 +9366,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-bmw-m5-g90-isle-of-man-green-metallic?pid=96pm2bygVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-15T11:16:58",
     "last_price_alert": ""
@@ -9378,7 +9378,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/subaru-impreza-wrc99-23-2000-acropolis-rally-blister-pack?pid=GXpKX8Qgmx",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9390,7 +9390,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place%C2%A0%C2%A0-?pid=ywNWedxpAX",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9402,7 +9402,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lotus-esprit-turbo-metallic-silver-blister-packaging?pid=GwLxkJxNXY",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9414,7 +9414,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-mach1-1971-race-red-blister-packaging?pid=E5N4n73pMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9426,7 +9426,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-i7-xdrive60-tanzanite-blue-metallic-blister-packaging?pid=GvLPjOkgod",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9438,7 +9438,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-m5-touring-marina-bay-blue-metallic?pid=0mNyy5VNkj",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9450,7 +9450,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-az-1-liberty-walk-lb40-pilot-blister-pack?pid=y7gG9E9Lre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9462,7 +9462,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-z8-alpina-alpine-blue-blister-pack?pid=RWg8VxmLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9474,7 +9474,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-garasidrift-x-l?pid=E5N4no3pMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9498,7 +9498,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-lbsuper-silhouette-s15-silvia-555-v2-2024-formula-drift-japan-823-blister-pack?pid=zONvZqWNBK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9510,7 +9510,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion-1050-blister-pack?pid=KBg7zzdpRr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9522,7 +9522,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/abarth-595-lb-works-x-abas-works-fighters-blister-pack?pid=PzNbBBdNbQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9534,7 +9534,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-volkswagen-idbuzz-candy-white-energetic-orange-blister-pack?pid=KbNEYY8NR0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9546,7 +9546,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-r32-veilside-combat-ci-white-blister-pack?pid=6nNVYYbgYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9558,7 +9558,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-black?pid=RWg8V1yLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9570,7 +9570,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-abarth-595-lb-works-x-abas-works-iztk-blister-pack?pid=e7g58PApmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9582,7 +9582,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-hks-type-r-2022-tokyo-auto-salon-blister-pack?pid=GwLxkynNXY",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9594,7 +9594,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-miata-mx5-na-tuned-version-dark-blue-blister-pack?pid=OdNZW6jLzk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "2026-10-05T13:21:14"
@@ -9606,7 +9606,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-re-amemiya-20b-na-3rotor-7-ama-san-go?pid=GXpKAz8Nmx",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9618,7 +9618,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s15-dmax-46-dmax-racing-2023-d1-grand-prix?pid=e7g512mgmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9630,7 +9630,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s15-dmax-70-dmax-racing-2023-d1-grand-prix?pid=RWg8mr7NKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9642,7 +9642,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-gtr-nismo-gt3-11-gainer-tanax-gtr-gainer-2023-?pid=e7g51Yogmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9654,7 +9654,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-with-re-amemiy?pid=0mNyqVqNkj",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9666,7 +9666,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-abarth-595-lb-works-x-abas-works-grey-blister-pack?pid=PzNb2YrNbQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9678,7 +9678,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mercedes-benz-eqs-580-4matic-red-metallic?pid=XqLQdoPNvD",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-05T13:11:04",
     "last_price_alert": ""
@@ -9690,7 +9690,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-gtr-r32-veilside-combat-ci-gem-red?pid=rMNMPbBg95",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9702,7 +9702,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-chevrolet-corvette-z06-2023-elkhart-lake-blue-?pid=Mbga6nmNq8",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9714,7 +9714,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-test-car%C2%A0%C2%A0-?pid=aPgdlVmgJq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9726,7 +9726,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-z-gt500-24-realize-corportation-advan-z-kondo-racing-2023?pid=x7Le83yNY0",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-05T13:08:54",
     "last_price_alert": ""
@@ -9738,7 +9738,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-r32-veilside-combat-ci-veilside-combat-grey?pid=GXpKAKPNmx",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9750,7 +9750,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lb-works-x-abas-works-abarth-595-red%C2%A0%C2%A0-?pid=4lgOPj2NoQ",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9762,7 +9762,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-gr86-lb-nation-baby-blue?pid=96pmZ3QgVK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -9774,7 +9774,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lb-works-x-abas-works-abarth-595-gara-white?pid=KBg7nabpRr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -10928,12 +10928,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-formula-1-race-car-10-pack-for-boys-age-3y-formula-1-die-cast-vehicle-collection-96407470",
     "first_seen": "2026-09-01T14:31:22",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-22T03:55:59",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "fc_21497092": {
     "stock": "in_stock",
@@ -11545,7 +11545,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-premium-legends-tour-vehicle-2-pack-for-boys-age-3y-premium-collectible-die-cast-cars-96407424",
     "first_seen": "2026-09-05T12:14:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-14T09:21:10",
     "last_price_alert": "",
@@ -11591,7 +11591,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-id-buzz-mizu-design?pid=RWg8ZeKLKe",
     "first_seen": "2026-09-05T13:43:43",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11627,7 +11627,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-rx-7-veilside-fortune7-green?pid=GvLPeG8pod",
     "first_seen": "2026-09-05T13:43:43",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11639,7 +11639,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-corvette-zr1-accelerate-yellow?pid=GoL19wZLBA",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11651,7 +11651,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/aston-martin-dbs-stratus-white?pid=V2gJEl1pe4",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11663,7 +11663,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mclaren-mcl38-81-oscar-piastri-2024-f1-monaco-gp-2nd-place?pid=0mNyKW0pkj",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11699,7 +11699,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-id-buzz-mizu-design-blister-packaging?pid=y7gGGmvgre",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11747,7 +11747,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-corvette-zr1-accelerate-yellow-blister-packaging?pid=EzglwrkpMr",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11759,7 +11759,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/aston-martin-dbs-stratus-white-blister-packaging?pid=OyLoyY5gb2",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11771,7 +11771,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mclaren-mcl38-81-oscar-piastri-2024-f1-monaco-gp-2nd-place-blister-packaging?pid=KBg7Z4lpRr",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11807,7 +11807,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-silverado-kaido-intimidator-v2?pid=KbNE7KWpR0",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -11892,7 +11892,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels--mask-pack-of-1-for-kids-3y-multicolor-boedi9toks",
     "first_seen": "2026-09-06T15:07:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-06T17:21:04",
     "last_price_alert": "",
@@ -11906,7 +11906,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-mask-pack-of-2-for-kids-3y-multicolor-whb4gnrnu9",
     "first_seen": "2026-09-06T15:07:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-06T17:06:44",
     "last_price_alert": "",
@@ -11940,8 +11940,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-21T19:30:00",
-    "fc_api_seen_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -12423,7 +12423,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bmw-z3-hellrot-blister-packaging?pid=ykL0eAKpRZ",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12435,7 +12435,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bmw-z3-hellrot?pid=XqLQjPMpvD",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12447,7 +12447,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-ioniq-5n-rs-01t-stealth-blister-packaging?pid=rMNMejQN95",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12459,7 +12459,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-ioniq-5n-rs-01t-stealth?pid=MbgaboVNq8",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12471,7 +12471,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-urus-performante-viola-pasifae-blister-packaging?pid=xeLXnBWg1W",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12483,7 +12483,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-urus-performante-viola-pasifae?pid=lng3obAgqy",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12495,7 +12495,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-cadillac-eldorado-biarritz-1959-black-blister-packaging?pid=96pm969pVK",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12507,7 +12507,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-cadillac-eldorado-biarritz-1959-black?pid=x7LeGRlgY0",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12519,7 +12519,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-huracan-lb-works-lime-metallic-blister-packaging?pid=GXpKRYALmx",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12531,7 +12531,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-huracan-lb-works-lime-metallic?pid=eJNrZDWNBd",
     "first_seen": "2026-09-14T08:28:36",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12660,7 +12660,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-set?pid=RWg8Z1KLKe",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12672,7 +12672,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toyota-2000gt-roadster-you-only-live-twice?pid=GwLx0yALXY",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12684,7 +12684,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-z3-goldeneye?pid=E5N413qLMq",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12696,7 +12696,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bugatti-w16-mistral-yellow?pid=zONvjyDNBK",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12708,7 +12708,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/oracle-red-bull-racing-rb19-1-max-verstappen-2023-f1-2023-las-vegas-gp-winner?pid=GoL192ZLBA",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12720,7 +12720,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mclaren-mp44-12-ayrton-senna-1988-japanese-grand-prix-winner?pid=OyLoyK5gb2",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12732,7 +12732,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-dark-horse-2024-grabber-blue?pid=KBg7ZelpRr",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12768,7 +12768,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bugatti-w16-mistral-yellow-blister-packaging?pid=8JNqyWoN4Q",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12780,7 +12780,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/oracle-red-bull-racing-rb19-1-max-verstappen-2023-f1-2023-las-vegas-gp-winner-blister-packaging?pid=GvLPeo8pod",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12792,7 +12792,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mclaren-mp44-12-ayrton-senna-1988-japanese-grand-prix-winner-blister-packaging?pid=Ezglw9kpMr",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12804,7 +12804,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-mustang-dark-horse-2024-grabber-blue-blister-packaging?pid=V2gJE21pe4",
     "first_seen": "2026-09-15T12:44:34",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -15373,11 +15373,11 @@
     "fc_listed_at": "2026-10-21T19:45:00",
     "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-21T18:38:38",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24473474": {
     "stock": "out_of_stock",
@@ -15433,8 +15433,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-21T19:30:00",
-    "fc_api_seen_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -15580,8 +15580,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T19:30:00",
-    "fc_api_seen_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -16960,7 +16960,7 @@
     "last_restock_alert": "2026-10-11T04:20:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
     "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
@@ -17804,8 +17804,8 @@
     "last_restock_alert": "2026-10-10T06:58:49",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T19:30:00",
-    "fc_api_seen_at": "2026-10-21T19:30:00",
+    "fc_listed_at": "2026-10-21T19:45:00",
+    "fc_api_seen_at": "2026-10-21T19:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -17835,7 +17835,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-ford-mustang-convertible-1964-goldfingerenglish-blister-packaging?pid=VbpAQPxprM",
     "first_seen": "2026-09-21T08:51:10",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -17847,7 +17847,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-v12-vanquish-die-another-day-english-blister-packaging?pid=KbNE7mWpR0",
     "first_seen": "2026-09-21T08:51:10",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -17952,7 +17952,7 @@
   "fc_24503901": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Maxima Drift Car Die Cast Free Wheel Toy Car - Black",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-maxima-drift-car-die-cast-free-wheel-toy-car-black/24503901/product-detail",
     "first_seen": "2026-09-21T16:25:21",
@@ -17977,7 +17977,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872",
     "first_seen": "2026-09-22T03:53:13",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-09-28T16:41:03",
     "last_price_alert": "",
@@ -18065,7 +18065,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-dodge-charger-fast-five-dominic-toretto-blister-packaging?pid=MbgabG0Nq8",
     "first_seen": "2026-09-23T05:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18077,7 +18077,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-nissan-skyline-gt-r-c-west-2-fast-2-furious-brian-oconner-blister-packaging?pid=xeLXnP6g1W",
     "first_seen": "2026-09-23T05:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18213,12 +18213,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420",
     "first_seen": "2026-09-23T16:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-21T14:20:36",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "fc_23104343": {
     "stock": "out_of_stock",
@@ -18336,7 +18336,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-lb-silhouette-works-murcielago-gt-evo-yellow?pid=XqLQbKwpvD",
     "first_seen": "2026-09-25T05:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18348,7 +18348,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-honda-civic-type-r-2024-pace-car-hrc?pid=Mbga10ngq8",
     "first_seen": "2026-09-25T05:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18360,7 +18360,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/-mini-gt-mercedesbenz-190-e-2316-11-ayrton-senna-1984-n%C3%BCrburgring?pid=0mNyy96Nkj",
     "first_seen": "2026-09-25T05:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T12:44:39",
     "last_price_alert": ""
@@ -18557,7 +18557,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-m4-gt3-evo-90-fist-team-aai-2025-china-gt?pid=8JNqykbN4Q",
     "first_seen": "2026-09-26T13:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18581,7 +18581,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hyundai-concept-n-vision-74-vp2?pid=GvLPeBxpod",
     "first_seen": "2026-09-26T13:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18655,7 +18655,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-scale-celebration-vehicle-themed-vehicles-assortment-3y-multicolour-assorted-14543264",
     "first_seen": "2026-09-28T07:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
@@ -18697,7 +18697,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-18-lance-stroll-blister-packaging-2024-f1-2024-las-vegas-gp?pid=QJgnwqwNl6",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18709,7 +18709,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-18-lance-stroll-2024-f1-2024-las-vegas-gp?pid=Pqp2mJnL36",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18721,7 +18721,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-14-fernando-alonso-blister-packaging2024-f1-2024-las-vegas-gp?pid=BwL6Pr9g4q",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18733,7 +18733,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-14-fernando-alonso-2024-f1-2024-las-vegas-gp?pid=eKLwYOOgv0",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18745,7 +18745,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bugatti-eb110-gt-azzurro-metallizzato-mondial-de-lautomobile-1992-blister-packaging?pid=VbpAQZYprM",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18757,7 +18757,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bugatti-eb110-gt-azzurro-metallizzato-mondial-de-lautomobile-1992?pid=P7pRZOVpjm",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18769,7 +18769,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-temerario-viola-pasifae-blister-packaging?pid=KbNE7eKpR0",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18781,7 +18781,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-temerario-viola-pasifae?pid=6nNVKe8LYk",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18793,7 +18793,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lotus-78-5-mario-andretti-1977-us-gp-west-winner-blister-packaging?pid=10gzY7kpAV",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18805,7 +18805,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lotus-78-5-mario-andretti-1977-us-gp-west-winner?pid=y7gGGX8gre",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18817,7 +18817,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-scania-770s-b8x4na-hooklift-flatbed-orange?pid=RWg8Z9BLKe",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18829,7 +18829,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-vellfire-40-kuhl-metallic-pink-blister-packaging?pid=e7g5We2Lmv",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18841,7 +18841,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-vellfire-40-kuhl-metallic-pink?pid=GwLx0xRLXY",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18867,7 +18867,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-casper-butter-cream-yellow-pearl?pid=4lgOmX0LoQ",
     "first_seen": "2026-09-28T11:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18879,7 +18879,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-staria-taxi?pid=aPgd8RbgJq",
     "first_seen": "2026-09-28T11:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18891,7 +18891,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-ioniq-5-police-car?pid=m8pDDqMpv2",
     "first_seen": "2026-09-28T11:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -18931,7 +18931,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-2026-neon-speeders-mix-1?pid=8JNqO4Bp4Q",
     "first_seen": "2026-09-30T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -19044,7 +19044,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-range-rover-1981-camel-trophy-sumatra-kstoppa-avalldorf?pid=GXpKRo8Lmx",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19056,7 +19056,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-bmw-m-hybrid-v8-hypercar-15-bmw-m-team-wrt-2024-le-mans-24-hrs?pid=JPNYnKrLzO",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19068,7 +19068,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-subaru-impreza-wrc98-17-2000-rally-new-zealand?pid=jPp9ZP2gDa",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19080,7 +19080,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-t1-kaido-radvanv1?pid=lng3oQkgqy",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19104,7 +19104,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-acura-arx-06-gtp-93-acura-meyer-shank-racing-2025-imsa-daytona-24-hrs?pid=aMNBYX8gXd",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19116,7 +19116,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-range-rover-1981-camel-trophy-sumatra-kstoppa-avalldorf?pid=x7LeGomgY0",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19128,7 +19128,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-bmw-m-hybrid-v8-hypercar-15-bmw-m-team-wrt-2024-le-mans-24-hrs?pid=BZgkwoGgaz",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19140,7 +19140,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-subaru-impreza-wrc98-17-2000-rally-new-zealand?pid=OdNZPb3pzk",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19180,7 +19180,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-gr86-lb-nation?pid=V2gJR33ge4",
     "first_seen": "2026-10-05T13:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19192,7 +19192,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-blue?pid=OdNZW0jLzk",
     "first_seen": "2026-10-05T13:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19252,7 +19252,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/cadillac-v-series-r-01-cadillac-racing-2024-imsa-petit-le-mans?pid=GoL1JeJpBA",
     "first_seen": "2026-10-05T13:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19276,7 +19276,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-z-veilside-fz400-gold-chrome?pid=eJNr9GogBd",
     "first_seen": "2026-10-05T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-17T12:48:39",
     "last_price_alert": ""
@@ -19312,7 +19312,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-z-lb-nation-works-lb-gold%C2%A0%C2%A0-?pid=rMNMPkOg95",
     "first_seen": "2026-10-05T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19430,7 +19430,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-honda-nsx-kaido-house-nostalgic-classics?pid=ykL0eJMpRZ",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19442,7 +19442,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-datsun-kaido-510-wagon-police?pid=XqLQjyapvD",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19454,7 +19454,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-chevrolet-silverado-dually-kaido-racing-team-v1?pid=rMNMeMkN95",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19466,7 +19466,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-subaru-impreza-wrx-sti-kaido-works-v1?pid=Mbgabz0Nq8",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19650,7 +19650,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-fast-furious-5packs-25th-anniversary?pid=KBg7zVGpRr",
     "first_seen": "2026-10-09T05:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-16T08:36:43",
     "last_price_alert": ""
@@ -19758,7 +19758,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-terra?pid=V2gJEjApe4",
     "first_seen": "2026-10-09T10:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19770,7 +19770,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-bosco?pid=KBg7ZKvpRr",
     "first_seen": "2026-10-09T10:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19782,7 +19782,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-sabbia?pid=0mNyKoGpkj",
     "first_seen": "2026-10-09T10:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19794,7 +19794,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/lamborghini-huracan-sterrato-all-terrain-neve?pid=PzNbxrOpbQ",
     "first_seen": "2026-10-09T10:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19977,7 +19977,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-mercedes-amg-eqs-53-blue-blister-packaging?pid=6nNVKb8LYk",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19989,7 +19989,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-mercedes-amg-eqs-53-blue?pid=10gzYokpAV",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20001,7 +20001,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-2000gt-pegasus-white-blister-packaging?pid=y7gGG78gre",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20013,7 +20013,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-2000gt-pegasus-white?pid=RWg8ZJBLKe",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20025,7 +20025,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-countach-lb-works-army-green-blister-packaging?pid=e7g5Wb2Lmv",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20037,7 +20037,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-countach-lb-works-army-green?pid=GwLx0rRLXY",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20049,7 +20049,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bmw-z3-titanium-silver-blister-packaging?pid=E5N414ZLMq",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20061,7 +20061,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bmw-z3-titanium-silver?pid=8JNqydbN4Q",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20073,7 +20073,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-ducati-panigale-v4-s-giallo-w-figure?pid=zONvjmbNBK",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20085,7 +20085,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-staple-x-inozetek-blister-packaging?pid=GvLPeZxpod",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20097,7 +20097,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-staple-x-inozetek?pid=GoL194ALBA",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20109,7 +20109,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lb-silhouette-works-gt-nissan-35gt-rr-ver2-inozetek-edition-blister-packaging?pid=EzglwWvpMr",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20121,7 +20121,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lb-silhouette-works-gt-nissan-35gt-rr-ver2-inozetek-edition?pid=OyLoyW3gb2",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20133,7 +20133,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-puma-rally1-55-m-sport-ford-wrt-2025-rally-monte-carlo?pid=6nNVKw3LYk",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20145,7 +20145,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/range-rover-1981-camel-trophy-sumatra-hfischer-wbays?pid=y7gGGzkgre",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20169,7 +20169,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-750il-black-sapphire?pid=Pqp2m6nL36",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20181,7 +20181,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/range-rover-1981-camel-trophy-sumatra-nsudmann-fhofmann?pid=eKLwYWOgv0",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20205,7 +20205,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s13-r-kaido-splash-v1?pid=P7pRZ5kpjm",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20217,7 +20217,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ford-puma-rally1-55-m-sport-ford-wrt-2025-rally-monte-carlo?pid=KbNE78qpR0",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20229,7 +20229,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/range-rover-1981-camel-trophy-sumatra-hfischer-wbays?pid=10gzYxepAV",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20241,7 +20241,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mercedes-benz-190e-25-16-evolution-ii-37-1995-se-asia-touring-car-championship?pid=RWg8ZmQLKe",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20253,7 +20253,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-750il-black-sapphire?pid=QJgnw0wNl6",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20265,7 +20265,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/range-rover-1981-camel-trophy-sumatra-nsudmann-fhofmann?pid=BwL6P99g4q",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20277,7 +20277,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mazda-mx-5-na-pandem-mint-green?pid=VbpAQ6YprM",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20289,7 +20289,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-total-ripper-car-for-kids-3y-18040907",
     "first_seen": "2026-10-13T09:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
@@ -20319,7 +20319,7 @@
   "fc_24761909": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
-    "price": "₹173",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-die-cast-free-wheel-toy-car-blue-and-black/24761909/product-detail",
     "first_seen": "2026-10-13T13:30:00",
@@ -20545,7 +20545,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-2026-pantone-series-mix-2-set-of-10?pid=xeLXQz8p1W",
     "first_seen": "2026-10-14T07:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20557,12 +20557,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-fiat-beast-of-turin-car-for-kids-3y-18040887",
     "first_seen": "2026-10-14T13:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "hm_hot-wheels-1-64-diecast-tooned-volkswagen-golf-mk1-car-for-kids-3y-18040872": {
     "stock": "in_stock",
@@ -20571,12 +20571,12 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-tooned-volkswagen-golf-mk1-car-for-kids-3y-18040872",
     "first_seen": "2026-10-14T13:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-21T19:30:00"
+    "hm_verified_at": "2026-10-21T19:45:00"
   },
   "hm_hot-wheels-1-64-diecast-total-chevelle-car-for-kids-3y-18040869": {
     "stock": "in_stock",
@@ -20585,7 +20585,7 @@
     "source": "hamleys",
     "url": "https://hamleys.in/product/hot-wheels-1-64-diecast-total-chevelle-car-for-kids-3y-18040869",
     "first_seen": "2026-10-14T13:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
@@ -20620,7 +20620,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version?pid=rMNM6XEL95",
     "first_seen": "2026-10-15T11:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20656,7 +20656,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-hyper-red%C2%A0%C2%A0-?pid=GvLPjZWgod",
     "first_seen": "2026-10-15T11:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T12:18:37",
     "last_price_alert": ""
@@ -20704,7 +20704,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-007-edition?pid=Ezgl6XdLMr",
     "first_seen": "2026-10-15T11:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20752,7 +20752,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw-i7-xdrive60-alpine-white-black-sapphire%C2%A0%C2%A0-?pid=x7Le8Y3NY0",
     "first_seen": "2026-10-15T11:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20776,7 +20776,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini%C2%A0gt%C2%A0ford%C2%A0mustang%C2%A0mach%C2%A01%C2%A0diamonds%C2%A0are%C2%A0forever?pid=aPgdnrlLJq",
     "first_seen": "2026-10-15T11:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20800,7 +20800,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-range-rover-1981-camel-trophy-sumatra-cswoboda-kmentel-win?pid=y7gG92bLre",
     "first_seen": "2026-10-16T06:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20812,7 +20812,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-fairlady-z-kaido-gt-police?pid=VbpAlVVLrM",
     "first_seen": "2026-10-16T06:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20824,7 +20824,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/honda-nsx-kaido-test-car-spec-v1?pid=P7pRJKypjm",
     "first_seen": "2026-10-16T06:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21087,7 +21087,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-jaguar-c-x75-black?pid=zONvZyaNBK",
     "first_seen": "2026-10-17T09:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21111,7 +21111,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-garasidrift-x-l?pid=Ezgl2PoLMr",
     "first_seen": "2026-10-17T12:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21135,7 +21135,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bmw%C2%A0i7%C2%A0xdrive60%C2%A0alpine%C2%A0white%C2%A0black%C2%A0sapphire?pid=RnLjVVmLm0",
     "first_seen": "2026-10-17T12:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-19T13:40:19",
     "last_price_alert": ""
@@ -21159,7 +21159,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-dbs-007-edition%C2%A0%C2%A0-%C2%A0-%C2%A0-?pid=PzNbBXDNbQ",
     "first_seen": "2026-10-17T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21381,7 +21381,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/kool-kombi-pantone-orange?pid=aPgdnJbLJq",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21393,7 +21393,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/73%C2%A0honda%C2%A0civic%C2%A0custom%C2%A0%C2%A0aero%C2%A0lift?pid=Pqp26OOp36",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21405,7 +21405,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/24-honda-civic-type-r-with-kousoku-camion-de-transport?pid=ykL04keLRZ",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21417,7 +21417,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/07-honda-civic-type-r-kousoku-hauler?pid=Pqp2nvKp36",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21429,7 +21429,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-corrado-vr6-with-retro-rigcamion-?pid=zONvZ89NBK",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21441,7 +21441,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/77%C2%A0packin%C2%A0pacer?pid=VbpAZqQgrM",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21453,7 +21453,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/rapid-pulse-red?pid=RWg8JbwLKe",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21465,7 +21465,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheengs?pid=8JNqdRvg4Q",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21477,7 +21477,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hw-bogzilla-green?pid=KbNEYylNR0",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21489,7 +21489,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/retro-racers-with-street-beasts?pid=zONv0GmpBK",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21501,7 +21501,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hw-fun-park-wheels-gift-pack%C2%A0%C2%A0-?pid=GwLxK5ZNXY",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21513,7 +21513,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hw-gassers-5pc-gift-pack%C2%A0with-street-beasts?pid=y7gGzQopre",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21525,7 +21525,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mario-kart-vehicle-4-pc-gift-pack?pid=10gzmPApAV",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21537,7 +21537,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ferrari-with-street-beasts-jkg19?pid=8JNqOX1p4Q",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21549,7 +21549,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ferrari-with-x-raycers?pid=e7g58G0pmv",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21561,7 +21561,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ferrari-with-hw-fun-park-jbj88?pid=P7pRJo7pjm",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21573,7 +21573,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/batman-10-collection-pack-of-10-cars?pid=Pqp2n9Op36",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21585,7 +21585,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mario-gvd30?pid=V2gJeAxpe4",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21597,7 +21597,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bowser-jr?pid=OyLoZOjNb2",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21609,7 +21609,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/yoshi-gvd30?pid=Ezgl2nXLMr",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21621,7 +21621,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toad-gvd30?pid=GoL1JD5pBA",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21633,7 +21633,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/luigi-gvd30?pid=GvLPjdVgod",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21645,7 +21645,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon?pid=aMNBWa0LXd",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21657,7 +21657,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-1998-camel-trophy-tierra-del-fuego-ct24-italy?pid=aMNBY40gXd",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21669,7 +21669,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-1998-camel-trophy-tierra-del-fuego-ct24-italy-blister-packaging?pid=RnLjdRDgm0",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21699,7 +21699,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-royal-hk-police-tai-po-district-hk-exclusive?pid=BwL6P9xg4q",
     "first_seen": "2026-10-19T05:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21784,7 +21784,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-athlete%C2%A0%C2%A0-?pid=y7gG99oLre",
     "first_seen": "2026-10-19T12:00:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21796,7 +21796,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-veilside-fortune-grey?pid=10gzmm7pAV",
     "first_seen": "2026-10-19T12:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21832,7 +21832,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow?pid=jPp9Y5GpDa",
     "first_seen": "2026-10-19T12:15:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21892,7 +21892,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-mazda-rx-7-lb-super-silhouette-imsa?pid=RnLjnQDLm0",
     "first_seen": "2026-10-19T12:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21904,7 +21904,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/rb-vcarb-01-3-daniel-ricciardo-2024-f1-2024-bahrain-gp?pid=Pqp2nBqp36",
     "first_seen": "2026-10-19T12:30:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21964,7 +21964,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-aston-martin-db5-sierra-blue%C2%A0%C2%A0-?pid=E5N4n3lpMq",
     "first_seen": "2026-10-19T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21988,7 +21988,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/rb-vcarb-01-22-yuki-tsunoda-2024-f1-2024-bahrain-gp?pid=m8pDldnpv2",
     "first_seen": "2026-10-19T12:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22039,7 +22039,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bugatti-w16-mistral-black?pid=zONvZaeNBK",
     "first_seen": "2026-10-20T09:45:00",
-    "last_seen": "2026-10-21T19:30:00",
+    "last_seen": "2026-10-21T19:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
