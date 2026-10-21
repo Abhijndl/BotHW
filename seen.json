@@ -13968,7 +13968,7 @@
     "fc_api_seen_at": "2026-10-21T21:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -15237,10 +15237,9 @@
     "fc_listed_at": "2026-10-21T21:30:00",
     "fc_api_seen_at": "2026-10-21T21:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_arr": "2026-10-21T21:39:03",
     "fc_svc": "1"
   },
   "fc_24472665": {
