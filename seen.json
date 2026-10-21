@@ -4134,7 +4134,7 @@
     "hm_verified_at": "2026-09-27T09:45:00"
   },
   "fc_23973355": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Free Wheel Toy Car - Green",
     "price": "₹269",
     "source": "firstcry",
@@ -4148,7 +4148,7 @@
     "fc_listed_at": "2026-10-21T02:00:00",
     "fc_api_seen_at": "2026-10-21T02:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
@@ -16685,7 +16685,7 @@
     "fc_svc": "1"
   },
   "fc_23973353": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
     "price": "₹269",
     "source": "firstcry",
@@ -16699,7 +16699,7 @@
     "fc_listed_at": "2026-10-21T02:00:00",
     "fc_api_seen_at": "2026-10-21T02:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
@@ -21995,7 +21995,8 @@
     "fc_listed_at": "2026-10-21T02:00:00",
     "fc_api_seen_at": "2026-10-21T02:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
-    "fc_lst": "cat"
+    "fc_live": "arriving",
+    "fc_lst": "cat",
+    "fc_svc": "1"
   }
 }
