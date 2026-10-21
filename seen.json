@@ -2701,7 +2701,7 @@
     "fc_svc": "0"
   },
   "fc_23075651": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Classic TV Series Batmobile (144/250) Die Cast Toy Car - Purple",
     "price": "₹179",
     "source": "firstcry",
@@ -2715,10 +2715,10 @@
     "fc_listed_at": "2026-10-21T21:00:00",
     "fc_api_seen_at": "2026-10-21T21:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074890",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23354597": {
     "stock": "out_of_stock",
