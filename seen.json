@@ -5007,7 +5007,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23347148",
     "fc_svc": "1"
   },
@@ -13845,7 +13845,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_svc": "1"
   },
@@ -14286,7 +14286,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_svc": "1"
   },
@@ -20854,7 +20854,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24776095",
     "fc_svc": "1"
   },
@@ -20956,7 +20956,7 @@
     "fc_api_seen_at": "2026-10-21T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_svc": "1"
   },
