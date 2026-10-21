@@ -2958,12 +2958,12 @@
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T08:00:00",
-    "fc_api_seen_at": "2026-10-21T04:00:00",
+    "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "list",
     "fc_gid": "23074178",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23354599": {
     "stock": "out_of_stock",
@@ -13270,10 +13270,10 @@
     "fc_listed_at": "2026-10-21T06:30:00",
     "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473511",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473516": {
     "stock": "out_of_stock",
@@ -13310,10 +13310,10 @@
     "fc_listed_at": "2026-10-21T06:30:00",
     "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473511",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473731": {
     "stock": "out_of_stock",
@@ -13500,7 +13500,7 @@
     "fc_svc": "0"
   },
   "fc_24390968": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 4/5 Silver Series Vintage Club 73 Honda Civic Custom/Personnalise Die-cast Car - Beige",
     "price": "₹269",
     "source": "firstcry",
@@ -13515,10 +13515,10 @@
     "fc_listed_at": "2026-10-21T06:30:00",
     "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24390968",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24248198": {
     "stock": "in_stock",
@@ -14711,10 +14711,10 @@
     "fc_listed_at": "2026-10-21T05:30:00",
     "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "list",
     "fc_gid": "24473477",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24514779": {
     "stock": "out_of_stock",
@@ -14984,7 +14984,7 @@
     "fc_svc": "1"
   },
   "fc_24342831": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -Black",
     "price": "₹269",
     "source": "firstcry",
@@ -14998,10 +14998,10 @@
     "fc_listed_at": "2026-10-21T06:30:00",
     "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24342831",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24342833": {
     "stock": "in_stock",
@@ -20985,10 +20985,10 @@
     "fc_listed_at": "2026-10-21T06:30:00",
     "fc_api_seen_at": "2026-10-21T06:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24775936",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23030309": {
     "stock": "out_of_stock",
