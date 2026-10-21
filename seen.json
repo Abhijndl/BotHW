@@ -14709,12 +14709,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T05:30:00",
-    "fc_api_seen_at": "2026-10-21T07:15:00",
+    "fc_api_seen_at": "2026-10-21T07:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24473477",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24514779": {
     "stock": "out_of_stock",
@@ -17250,7 +17250,7 @@
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24390959",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24390958": {
     "stock": "out_of_stock",
