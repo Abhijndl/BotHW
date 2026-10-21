@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v16
-==============================================
+Hot Wheels / Diecast Collector Tracker  ·  v16.1
+================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
 Runtime : Pure HTTP (curl_cffi with a real Chrome fingerprint). No browser.
@@ -18,6 +18,10 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
     check says FC_MIN_ALERT_STOCK+ units can reach your pincode (v15: its
     IsServicable count — the SF90 showed 155 on the page and 1 for 248001;
     v15.1: one unit is enough for your 🎯 cars, FC_MIN_ALERT_STOCK_TARGET).
+    v16.1: that count is national, not your pincode's — FirstCry's cart is
+    what knows "Cannot be delivered to 248001". So fewer than FC_SURE_UNITS (5)
+    units alert only once FirstCry's in-stock list for 248001 shows the car
+    too, and a car whose alert was gone within minutes needs 5+ for 12 h.
     The listing lagged the page by up to ~10 min and kept showing cars nobody
     could order. Every pass, the cheap delivery check also looks at every 🎯
     car (and every tracked car once a run), so a car becoming deliverable is
@@ -277,7 +281,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         }
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
-                  "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid",
+                  "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
                   "fc_svc"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
@@ -1048,6 +1052,22 @@ FC_MIN_ALERT_STOCK = max(1, int(os.getenv("FC_MIN_ALERT_STOCK", "2")))
 # one unit that can reach you is worth a try for those (Club: no delivery fee
 # on a single order). Other cars keep FC_MIN_ALERT_STOCK.
 FC_MIN_ALERT_STOCK_TARGET = max(1, int(os.getenv("FC_MIN_ALERT_STOCK_TARGET", "1")))
+# v16.1: FirstCry's product page and its delivery check count units for the
+# whole country — the same answer for every pincode (probe 18, 20 Oct); it's
+# FirstCry's cart that says "Cannot be delivered to 248001". The one part of
+# FirstCry that looks at your pincode is its in-stock list (asked for 248001).
+# 20-21 Oct, every alert you checked in the cart was undeliverable — Porsche
+# 928S (3 left), Toyota Tacoma (1), Mercedes 300 SL (1), Pantone Bronco (2) —
+# and each time the in-stock list said "out" while the page said "in". So
+# FC_SURE_UNITS or more units = a real restock, alerted at once; fewer are
+# alerted only once FirstCry's in-stock list for your pincode shows the car too.
+FC_SURE_UNITS = max(0, int(os.getenv("FC_SURE_UNITS", "5")))
+# A car whose alert turned out a phantom (out again within FC_PHANTOM_MIN
+# minutes) needs FC_SURE_UNITS units for FC_PHANTOM_HOLD_H hours: the same few
+# units kept coming and going — Mercedes CLA 5 alerts in a day, Honda City
+# Turbo 5, Toyota Tacoma 4, Pantone Bronco 4, each gone within minutes.
+FC_PHANTOM_MIN = float(os.getenv("FC_PHANTOM_MIN", "30"))
+FC_PHANTOM_HOLD_H = float(os.getenv("FC_PHANTOM_HOLD_H", "12"))
 # v2: the v1 run that misread TTL wrongly flipped ~209 cars to sold out. Bumping
 # the version makes the next run treat every FirstCry reading as a silent
 # correction, so those cars reappearing can NOT fire false restock alerts.
@@ -1938,6 +1958,8 @@ def _fc_live_verdict(info: dict | None, on_list: bool = False, need: int | None 
       'no delivery' stock, but none that can reach you (the SF90's 155)
       'sold out'    nothing anywhere
       'unconfirmed' the delivery check gave no count — nothing changes on that
+      ('unlisted', v16.1: fewer than FC_SURE_UNITS units that FirstCry's
+      in-stock list for your pincode doesn't show yet — set in fc_apply_live)
     None when the page wasn't read."""
     if not info or info.get("cs") is None:
         return None
@@ -1986,7 +2008,7 @@ def _fc_poll_sets(prev_fc: dict, k: int, pass_idx: int = 0) -> list:
         if pid.isdigit():
             groups.setdefault(v.get("fc_gid") or pid, []).append(v)
     active = {g for g, vs in groups.items()
-              if any(v.get("stock") == "in_stock" or v.get("fc_live") in ("arriving", "last unit")
+              if any(v.get("stock") == "in_stock" or v.get("fc_live") in ("arriving", "last unit", "unlisted")
                      or _hours_since(v.get("last_restock_alert", "")) < 72 for v in vs)}
     reps = {}
     for pid in sorted((p for p in prev_fc if p.isdigit()), key=int, reverse=True):
@@ -2074,7 +2096,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     _FC_RUN_PASS[0] += 1
     hold_in = [p for p in pool if (prev_fc.get(p) or {}).get("stock") == "in_stock" or p in listed_in]
     edge = {p for p, v in prev_fc.items()
-            if v.get("fc_live") in ("no delivery", "last unit", "arriving", "unconfirmed") and wanted(p)}
+            if v.get("fc_live") in ("no delivery", "last unit", "arriving", "unconfirmed", "unlisted")
+            and wanted(p)}
     tgt = {p for p, v in prev_fc.items() if p.isdigit() and v.get("stock") != "in_stock" and _fc_target(p, v)}
     sweep = set(hold_in) | edge | tgt
     if first_call:
@@ -2188,6 +2211,14 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             # still sells none, and its last count (units on their way) stands —
             # calling it 'sold out' would drop it from the re-reads
             verdict = "arriving"
+        if verdict == "ok" and (v or {}).get("stock") != "in_stock" and FC_SURE_UNITS:
+            cs_, isv_ = info.get("cs") or 0, info.get("isv")
+            units = min(cs_, isv_) if isv_ is not None else cs_
+            phantom = _hours_since((v or {}).get("fc_phantom", "")) < FC_PHANTOM_HOLD_H
+            if units < FC_SURE_UNITS and (phantom or claim(p) not in ("list", "cat")):
+                # a few units FirstCry's in-stock list for your pincode doesn't
+                # show (or the same car just turned out a phantom): not yet
+                verdict = "unlisted"
         before = (v or {}).get("stock")
         if verdict == "ok":
             st = "in_stock"
@@ -3737,6 +3768,11 @@ def compute_changes(current: dict, seen: dict) -> dict:
 
         prev_stock = prev.get("stock")
         prev_price = price_to_int(prev.get("price"))
+        # v16.1: an alert that was out again within minutes was a phantom —
+        # remembered, so the same few units can't alert again and again
+        if (prev_stock == "in_stock" and stock == "out_of_stock" and prev.get("last_restock_alert")
+                and _hours_since(prev["last_restock_alert"]) * 60 < FC_PHANTOM_MIN):
+            prev["fc_phantom"] = now
 
         # A source can carry a "stock_ver" tag marking which detection logic
         # produced its stock reading (e.g. Minifygram's v4.4 rewrite from

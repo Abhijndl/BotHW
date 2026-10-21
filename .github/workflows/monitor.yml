@@ -115,6 +115,11 @@ jobs:
           # (single units of other cars came and went within minutes all day).
           FC_MIN_ALERT_STOCK_TARGET: "1"
           FC_MIN_ALERT_STOCK: "2"
+          # …but fewer than this many alert only once FirstCry's in-stock list
+          # for your pincode shows the car too: the product page counts units
+          # for the whole country, and 1-3 left kept turning out "Cannot be
+          # delivered to 248001" in the cart (v16.1).
+          FC_SURE_UNITS: "5"
           # Catalogue pages fetched at once. If the log ever shows HTTP 429,
           # FirstCry is objecting to the pace — set this to "5".
           FC_API_PARALLEL: "10"
