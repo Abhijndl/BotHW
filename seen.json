@@ -16685,7 +16685,7 @@
     "fc_svc": "1"
   },
   "fc_23973353": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
     "price": "₹269",
     "source": "firstcry",
@@ -16699,7 +16699,7 @@
     "fc_listed_at": "2026-10-21T02:00:00",
     "fc_api_seen_at": "2026-10-21T02:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_svc": "1"
@@ -18156,7 +18156,7 @@
     "fc_trusted": true
   },
   "fc_24568735": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple",
     "price": "₹483",
     "source": "firstcry",
@@ -18164,14 +18164,15 @@
     "first_seen": "2026-09-24T14:15:00",
     "last_seen": "2026-10-21T02:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-25T05:18:27",
+    "last_restock_alert": "2026-10-21T02:02:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T02:00:00",
     "fc_api_seen_at": "2026-10-21T02:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "list",
+    "fc_gid": "23033504",
     "fc_svc": "1"
   },
   "fc_24473510": {
@@ -18196,7 +18197,7 @@
     "fc_svc": "0"
   },
   "fc_24568707": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels TRICERATOPS MONST ER TRUCKS- dark green color",
     "price": "₹483",
     "source": "firstcry",
@@ -18204,14 +18205,15 @@
     "first_seen": "2026-09-24T14:30:00",
     "last_seen": "2026-10-21T02:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-21T02:02:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T02:00:00",
     "fc_api_seen_at": "2026-10-21T02:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "ok",
     "fc_lst": "list",
+    "fc_gid": "23033504",
     "fc_svc": "1"
   },
   "fc_23074615": {
