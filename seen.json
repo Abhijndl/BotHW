@@ -13285,7 +13285,7 @@
   "fc_24473713": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '66 Buick Riviera Die-Cast Toy Car - Copper Brown",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-66-buick-riviera-die-cast-toy-car-copper-brown/24473713/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -14995,8 +14995,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-21T21:30:00",
-    "fc_api_seen_at": "2026-10-21T21:30:00",
+    "fc_listed_at": "2026-10-21T22:00:00",
+    "fc_api_seen_at": "2026-10-21T22:00:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -15184,7 +15184,7 @@
   "fc_24476003": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic green",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-metallic-green/24476003/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -15206,7 +15206,7 @@
   "fc_24476471": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -15215,7 +15215,7 @@
     "last_restock_alert": "2026-10-19T11:37:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T21:30:00",
+    "fc_listed_at": "2026-10-21T22:00:00",
     "fc_api_seen_at": "2026-10-21T22:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
@@ -16722,10 +16722,11 @@
     "fc_listed_at": "2026-10-21T22:00:00",
     "fc_api_seen_at": "2026-10-21T22:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "23973353",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-21T22:13:22",
+    "fc_svc": "1"
   },
   "fc_23973354": {
     "stock": "in_stock",
@@ -17357,7 +17358,7 @@
   "fc_24476798": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -metallic Purple",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-metallic-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -18211,8 +18212,8 @@
     "last_restock_alert": "2026-09-29T04:15:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-21T14:45:00",
-    "fc_api_seen_at": "2026-10-21T20:15:00",
+    "fc_listed_at": "2026-10-21T22:00:00",
+    "fc_api_seen_at": "2026-10-21T22:00:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
@@ -20334,7 +20335,7 @@
   "fc_24761909": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
-    "price": "₹173",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-die-cast-free-wheel-toy-car-blue-and-black/24761909/product-detail",
     "first_seen": "2026-10-13T13:30:00",
@@ -20548,10 +20549,10 @@
     "fc_listed_at": "2026-10-21T22:00:00",
     "fc_api_seen_at": "2026-10-21T22:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24761907",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "kd_xeLXQz8p1W": {
     "stock": "in_stock",
