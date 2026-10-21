@@ -6063,7 +6063,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23347148",
     "fc_svc": "1"
   },
@@ -11402,7 +11402,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_svc": "1"
   },
@@ -12929,7 +12929,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "22597417",
     "fc_svc": "1"
   },
@@ -13262,7 +13262,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_svc": "1"
   },
@@ -13878,7 +13878,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_svc": "1"
   },
@@ -14241,7 +14241,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23353372",
     "fc_svc": "1"
   },
@@ -14893,7 +14893,7 @@
   "fc_24323023": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium Collector Display Set, 3 Cars & 1 Transporter - Sky Blue",
-    "price": "₹2999",
+    "price": "₹2699",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-collector-display-set-3-cars-and-1-transporter-sky-blue/24323023/product-detail",
     "first_seen": "2026-09-19T05:12:16",
@@ -14907,7 +14907,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "arriving",
-    "fc_lst": "out",
+    "fc_lst": "cat",
     "fc_gid": "21497090",
     "fc_phantom": "2026-10-21T20:25:44",
     "fc_arr": "2026-10-21T20:34:18",
@@ -15244,7 +15244,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24472665": {
     "stock": "out_of_stock",
@@ -15890,7 +15890,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23835981",
     "fc_svc": "1"
   },
@@ -16106,7 +16106,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24514779",
     "fc_svc": "1"
   },
@@ -16126,7 +16126,7 @@
     "fc_api_seen_at": "2026-10-21T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24514779",
     "fc_svc": "1"
   },
