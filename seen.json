@@ -22382,7 +22382,7 @@
     "last_price_alert": ""
   },
   "kd_PzNbx2ZpbQ": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "NISSAN SKYLINE GT-R (R34) KAIDO WORKS V4",
     "price": "₹2099",
     "source": "karzdolls",
@@ -22391,7 +22391,8 @@
     "last_seen": "2026-10-22T13:30:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-22T13:40:21",
-    "last_price_alert": ""
+    "last_price_alert": "",
+    "fc_phantom": "2026-10-22T13:42:39"
   },
   "kd_0mNyKq6pkj": {
     "stock": "in_stock",
