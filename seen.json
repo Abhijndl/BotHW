@@ -17648,7 +17648,7 @@
     "fc_listed_at": "2026-10-22T05:30:00",
     "fc_api_seen_at": "2026-10-22T05:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24525296",
     "fc_phantom": "2026-10-22T04:17:42",
@@ -22263,5 +22263,17 @@
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T05:12:50",
     "fc_svc": "1"
+  },
+  "kd_rMNM6nXL95": {
+    "stock": "in_stock",
+    "name": "BUGATTI W16 MISTRAL BLACK",
+    "price": "₹1599",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/bugatti-w16-mistral-black?pid=rMNM6nXL95",
+    "first_seen": "2026-10-22T05:30:00",
+    "last_seen": "2026-10-22T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
