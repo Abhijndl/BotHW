@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T16:02:25.935471+00:00",
+    "mg_wm": "2026-10-22T16:06:07.785431+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -14538,7 +14538,7 @@
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
     "stock": "out_of_stock",
-    "name": "[Box] MiniGT961 Supra A80 TS Gold [PRE-ORDER]",
+    "name": "[Box] MiniGT961 Supra A80 TS Gold",
     "price": "₹999",
     "source": "minifygram",
     "url": "https://minifygram.com/product/box-minigt961-supra-a80-ts-gold",
@@ -14547,7 +14547,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-09-18T12:02:13",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-19T09:29:41.385064+00:00",
+    "mg_updated_at": "2026-10-22T16:06:07.785431+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_24514773": {
