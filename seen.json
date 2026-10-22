@@ -3647,10 +3647,9 @@
     "fc_listed_at": "2026-10-22T07:15:00",
     "fc_api_seen_at": "2026-10-22T07:30:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "23345759",
-    "fc_arr": "2026-10-22T07:11:11",
     "fc_svc": "1"
   },
   "fc_23348664": {
@@ -22235,7 +22234,7 @@
     "fc_listed_at": "2026-10-22T07:30:00",
     "fc_api_seen_at": "2026-10-22T07:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T06:48:49",
