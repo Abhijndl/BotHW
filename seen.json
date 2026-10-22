@@ -14956,7 +14956,7 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "cat",
     "fc_gid": "24472644",
     "fc_svc": "0"
@@ -15522,7 +15522,7 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_svc": "0"
