@@ -15254,10 +15254,10 @@
     "fc_listed_at": "2026-10-22T11:45:00",
     "fc_api_seen_at": "2026-10-22T11:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24472665": {
     "stock": "out_of_stock",
@@ -22369,5 +22369,41 @@
     "last_price_alert": "",
     "mg_updated_at": "2026-10-22T06:24:30.202897+00:00",
     "stock_ver": "mg_skus_v1"
+  },
+  "kd_ykL0em2pRZ": {
+    "stock": "in_stock",
+    "name": "VOLKSWAGEN T1 GREDDY PICKUP V1",
+    "price": "₹2099",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/volkswagen-t1-greddy-pickup-v1?pid=ykL0em2pRZ",
+    "first_seen": "2026-10-22T11:45:00",
+    "last_seen": "2026-10-22T11:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_PzNbx2ZpbQ": {
+    "stock": "in_stock",
+    "name": "NISSAN SKYLINE GT-R (R34) KAIDO WORKS V4",
+    "price": "₹2099",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/nissan-skyline-gt-r-r34-kaido-works-v4?pid=PzNbx2ZpbQ",
+    "first_seen": "2026-10-22T11:45:00",
+    "last_seen": "2026-10-22T11:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_0mNyKq6pkj": {
+    "stock": "in_stock",
+    "name": "CHEVROLET SILVERADO DUALLY KAIDO SPLASH V1",
+    "price": "₹2099",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/chevrolet-silverado-dually-kaido-splash-v1?pid=0mNyKq6pkj",
+    "first_seen": "2026-10-22T11:45:00",
+    "last_seen": "2026-10-22T11:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
   }
 }
