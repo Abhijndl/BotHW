@@ -13512,6 +13512,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24314518",
+    "fc_off": "2026-10-22T05:24:06",
     "fc_svc": "1"
   },
   "fc_24390967": {
@@ -18670,6 +18671,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23835981",
+    "fc_off": "2026-10-22T05:24:06",
     "fc_svc": "1"
   },
   "fc_24247506": {
@@ -19454,6 +19456,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23835981",
+    "fc_off": "2026-10-22T05:24:06",
     "fc_svc": "1"
   },
   "mg_cb869f68-7bfa-4fb5-9b1a-71aadb0d4adc": {
@@ -22243,11 +22246,11 @@
     "fc_listed_at": "2026-10-22T05:15:00",
     "fc_api_seen_at": "2026-10-22T05:15:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-21T18:41:42",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
@@ -22265,7 +22268,7 @@
     "fc_listed_at": "2026-10-22T04:45:00",
     "fc_api_seen_at": "2026-10-22T05:15:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T05:12:50",
