@@ -20422,7 +20422,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24768895",
-    "fc_off": "2026-10-22T18:57:51",
+    "fc_off": "2026-10-22T18:58:47",
     "fc_svc": "1"
   },
   "fc_24768896": {
@@ -20981,11 +20981,11 @@
     "fc_listed_at": "2026-10-22T18:45:00",
     "fc_api_seen_at": "2026-10-22T18:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "24776095",
     "fc_phantom": "2026-10-22T18:41:54",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24776090": {
     "stock": "out_of_stock",
