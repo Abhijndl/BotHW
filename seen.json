@@ -19899,21 +19899,20 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-98-honda-prelude-toy-car-with-color-die-cast-model-green/24235312/product-detail",
     "first_seen": "2026-10-10T04:30:00",
-    "last_seen": "2026-10-22T03:30:00",
+    "last_seen": "2026-10-22T03:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-21T22:14:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-22T03:30:00",
-    "fc_api_seen_at": "2026-10-22T03:30:00",
+    "fc_api_seen_at": "2026-10-22T03:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24235312",
     "fc_phantom": "2026-10-21T22:15:36",
-    "fc_arr": "2026-10-22T03:42:53",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24235310": {
     "stock": "in_stock",
@@ -22251,10 +22250,10 @@
     "fc_listed_at": "2026-10-21T19:00:00",
     "fc_api_seen_at": "2026-10-22T03:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "unlisted",
     "fc_lst": "cat",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-21T17:02:08",
-    "fc_svc": "0"
+    "fc_svc": "1"
   }
 }
