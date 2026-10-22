@@ -16743,12 +16743,11 @@
     "fc_listed_at": "2026-10-22T08:00:00",
     "fc_api_seen_at": "2026-10-22T08:00:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23973353",
     "fc_phantom": "2026-10-21T23:14:00",
-    "fc_arr": "2026-10-22T07:54:44",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23973354": {
     "stock": "in_stock",
