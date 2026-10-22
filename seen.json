@@ -15250,9 +15250,10 @@
     "fc_listed_at": "2026-10-22T06:30:00",
     "fc_api_seen_at": "2026-10-22T06:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24473732",
+    "fc_arr": "2026-10-22T06:33:58",
     "fc_svc": "1"
   },
   "fc_24472665": {
@@ -15443,7 +15444,7 @@
     "fc_svc": "0"
   },
   "fc_24475755": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Datsun 240Z Die cast car 72/250 - Green",
     "price": "₹173",
     "source": "firstcry",
@@ -15458,9 +15459,10 @@
     "fc_listed_at": "2026-10-22T06:30:00",
     "fc_api_seen_at": "2026-10-22T06:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24473732",
+    "fc_phantom": "2026-10-22T06:33:58",
     "fc_svc": "1"
   },
   "fc_24473732": {
