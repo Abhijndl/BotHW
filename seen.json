@@ -13162,7 +13162,7 @@
     "fc_listed_at": "2026-10-21T21:30:00",
     "fc_api_seen_at": "2026-10-22T11:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-21T17:58:14",
@@ -13299,11 +13299,10 @@
     "fc_listed_at": "2026-10-22T11:45:00",
     "fc_api_seen_at": "2026-10-22T11:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-22T06:43:39",
-    "fc_arr": "2026-10-22T10:05:04",
     "fc_svc": "1"
   },
   "fc_24473516": {
