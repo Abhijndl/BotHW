@@ -22236,11 +22236,11 @@
     "fc_listed_at": "2026-10-22T05:30:00",
     "fc_api_seen_at": "2026-10-22T05:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-21T18:41:42",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
@@ -22258,11 +22258,11 @@
     "fc_listed_at": "2026-10-22T04:45:00",
     "fc_api_seen_at": "2026-10-22T05:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T05:12:50",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "kd_rMNM6nXL95": {
     "stock": "in_stock",
@@ -22282,6 +22282,42 @@
     "price": "₹1599",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/cadillac-v-series-r-01-cadillac-racing-2024-imsa-petit-le-mans?pid=KBg7zPepRr",
+    "first_seen": "2026-10-22T05:30:00",
+    "last_seen": "2026-10-22T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_m8pDlV5pv2": {
+    "stock": "in_stock",
+    "name": "MINI GT LAMBORGHINI LB-SILHOUETTE WORKS MURCIELAGO GT EVO BLACK",
+    "price": "₹1149",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-lb-silhouette-works-murcielago-gt-evo-black?pid=m8pDlV5pv2",
+    "first_seen": "2026-10-22T05:30:00",
+    "last_seen": "2026-10-22T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_GXpKRADLmx": {
+    "stock": "in_stock",
+    "name": "PREORDER PORSCHE 911 GT3 R (992) #77 AO RACING \"SKELETON REXY\" 2026 IMSA PETIT LE MANS [PRE-ORDER]",
+    "price": "₹1799",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans?pid=GXpKRADLmx",
+    "first_seen": "2026-10-22T05:30:00",
+    "last_seen": "2026-10-22T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_x7LeG8qgY0": {
+    "stock": "in_stock",
+    "name": "PREORDER PORSCHE 911 GT3 R (992) #77 AO RACING \"SKELETON REXY\" 2026 IMSA PETIT LE MANS BLISTER PACKAGING [PRE-ORDER]",
+    "price": "₹1949",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans-blister-packaging?pid=x7LeG8qgY0",
     "first_seen": "2026-10-22T05:30:00",
     "last_seen": "2026-10-22T05:30:00",
     "alerted_new": true,
