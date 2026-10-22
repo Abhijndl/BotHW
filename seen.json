@@ -13903,12 +13903,13 @@
     "last_price_alert": "2026-09-22T06:35:15",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-22T07:30:00",
-    "fc_api_seen_at": "2026-10-22T08:30:00",
+    "fc_api_seen_at": "2026-10-22T10:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24342821",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-22T10:21:49",
+    "fc_svc": "1"
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
     "stock": "out_of_stock",
