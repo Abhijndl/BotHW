@@ -15198,7 +15198,7 @@
     "fc_svc": "0"
   },
   "fc_24476003": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic green",
     "price": "₹175",
     "source": "firstcry",
@@ -15213,11 +15213,11 @@
     "fc_listed_at": "2026-10-22T15:00:00",
     "fc_api_seen_at": "2026-10-22T15:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473732",
-    "fc_phantom": "2026-10-21T21:31:48",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-22T15:03:51",
+    "fc_svc": "0"
   },
   "fc_24476471": {
     "stock": "out_of_stock",
