@@ -13223,8 +13223,9 @@
     "fc_api_seen_at": "2026-10-22T06:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24473511",
+    "fc_off": "2026-10-22T06:24:58",
     "fc_svc": "1"
   },
   "fc_24473512": {
@@ -13703,7 +13704,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T06:12:25.942249+00:00",
+    "mg_wm": "2026-10-22T06:24:30.202897+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -14938,6 +14939,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24503315",
+    "fc_off": "2026-10-22T06:25:10",
     "fc_svc": "1"
   },
   "fc_24473264": {
@@ -22351,6 +22353,20 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "mg_updated_at": "2026-10-22T06:12:25.942249+00:00",
+    "stock_ver": "mg_skus_v1"
+  },
+  "mg_08d49c06-6bb2-458f-ab44-6368d9af8198": {
+    "stock": "in_stock",
+    "name": "[Blister] Mini GT 1436 PORSCHE 911 GT3 R (992) #77 AO RACING \"SKELETON REXY\" 2026 IMSA PETIT LE MANS [PRE-ORDER]",
+    "price": "₹1949",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/blister-mini-gt-1436-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans",
+    "first_seen": "2026-10-22T06:15:00",
+    "last_seen": "2026-10-22T06:15:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-10-22T06:24:30.202897+00:00",
     "stock_ver": "mg_skus_v1"
   }
 }
