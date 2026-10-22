@@ -3648,7 +3648,7 @@
     "fc_api_seen_at": "2026-10-22T08:15:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "cat",
+    "fc_lst": "out",
     "fc_gid": "23345759",
     "fc_phantom": "2026-10-22T07:52:20",
     "fc_svc": "0"
@@ -15462,7 +15462,7 @@
     "fc_listed_at": "2026-10-22T08:15:00",
     "fc_api_seen_at": "2026-10-22T08:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-10-22T06:33:58",
