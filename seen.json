@@ -17653,11 +17653,11 @@
     "fc_listed_at": "2026-10-22T11:15:00",
     "fc_api_seen_at": "2026-10-22T11:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24525296",
     "fc_phantom": "2026-10-22T04:17:42",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24525296": {
     "stock": "in_stock",
