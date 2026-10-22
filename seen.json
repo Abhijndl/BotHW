@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T15:44:16.85606+00:00",
+    "mg_wm": "2026-10-22T15:50:43.170743+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -15293,7 +15293,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-22T08:15:00",
-    "fc_api_seen_at": "2026-10-22T11:30:00",
+    "fc_api_seen_at": "2026-10-22T15:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -15376,7 +15376,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-22T08:15:00",
-    "fc_api_seen_at": "2026-10-22T11:30:00",
+    "fc_api_seen_at": "2026-10-22T15:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -17393,12 +17393,11 @@
     "fc_listed_at": "2026-10-22T15:45:00",
     "fc_api_seen_at": "2026-10-22T15:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-10-21T21:31:15",
-    "fc_arr": "2026-10-22T15:49:42",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473498": {
     "stock": "out_of_stock",
@@ -18722,7 +18721,7 @@
   },
   "mg_de787f42-481d-4673-9352-6c72d9781a19": {
     "stock": "out_of_stock",
-    "name": "KHMG161 Datsun 510 Pro Street Buta V1 [PRE-ORDER]",
+    "name": "KHMG161 Datsun 510 Pro Street Buta V1",
     "price": "₹1699",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg161-datsun-510-pro-street-buta-v1",
@@ -18731,7 +18730,7 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-28T08:02:09.439842+00:00",
+    "mg_updated_at": "2026-10-22T15:50:43.170743+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "kd_QJgnwqwNl6": {
