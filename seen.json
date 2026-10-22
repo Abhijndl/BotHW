@@ -22236,11 +22236,11 @@
     "fc_listed_at": "2026-10-22T10:00:00",
     "fc_api_seen_at": "2026-10-22T11:00:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T06:48:49",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
