@@ -3998,7 +3998,7 @@
     "fc_listed_at": "2026-10-22T07:15:00",
     "fc_api_seen_at": "2026-10-22T07:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23353372",
     "fc_svc": "0"
@@ -5939,7 +5939,7 @@
     "fc_listed_at": "2026-10-22T06:15:00",
     "fc_api_seen_at": "2026-10-22T07:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "1",
     "fc_svc": "0"
@@ -14955,10 +14955,11 @@
     "fc_listed_at": "2026-10-22T07:15:00",
     "fc_api_seen_at": "2026-10-22T07:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-22T07:26:17",
+    "fc_svc": "1"
   },
   "fc_24390949": {
     "stock": "out_of_stock",
@@ -15523,7 +15524,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24390952": {
     "stock": "out_of_stock",
@@ -16708,7 +16709,7 @@
     "fc_trusted": true
   },
   "fc_23973359": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 4515 Sandblaster Die-cast Free Wheel Toy Car - Light Khaki",
     "price": "₹269",
     "source": "firstcry",
@@ -16722,11 +16723,11 @@
     "fc_listed_at": "2026-10-22T07:15:00",
     "fc_api_seen_at": "2026-10-22T07:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-10-22T03:37:45",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23973357": {
     "stock": "out_of_stock",
@@ -22234,11 +22235,11 @@
     "fc_listed_at": "2026-10-22T07:15:00",
     "fc_api_seen_at": "2026-10-22T07:15:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T06:48:49",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
