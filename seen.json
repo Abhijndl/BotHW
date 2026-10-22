@@ -12980,7 +12980,7 @@
   },
   "mg_76033d4f-35da-4892-a4df-b396e1128a0b": {
     "stock": "out_of_stock",
-    "name": "MiniGT869 Nissan Skyline GTR Gunmetal Matsuda [PRE-ORDER]",
+    "name": "MiniGT869 Nissan Skyline GTR Gunmetal Matsuda",
     "price": "₹1549",
     "source": "minifygram",
     "url": "https://minifygram.com/product/minigt869-nissan-skyline-gtr-gunmetal-matsuda",
@@ -12989,7 +12989,7 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-16T09:07:23.904809+00:00",
+    "mg_updated_at": "2026-10-22T15:26:39.732168+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_140e0f5f-8ef0-4723-80cc-343d69ace16c": {
@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T06:24:30.202897+00:00",
+    "mg_wm": "2026-10-22T15:26:39.732168+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
