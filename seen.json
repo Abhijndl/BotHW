@@ -13224,7 +13224,6 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
-    "fc_off": "2026-10-22T06:24:58",
     "fc_svc": "1"
   },
   "fc_24473512": {
@@ -14207,7 +14206,7 @@
     "fc_listed_at": "2026-10-22T05:45:00",
     "fc_api_seen_at": "2026-10-22T06:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24342831",
     "fc_phantom": "2026-10-22T04:17:42",
@@ -14274,7 +14273,7 @@
     "fc_svc": "0"
   },
   "fc_23930428": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Street Beasts Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor",
     "price": "₹764",
     "source": "firstcry",
@@ -14288,10 +14287,9 @@
     "fc_listed_at": "2026-10-22T06:15:00",
     "fc_api_seen_at": "2026-10-22T06:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "21348",
-    "fc_off": "2026-10-22T06:16:59",
     "fc_svc": "1"
   },
   "fc_24473028": {
@@ -14938,7 +14936,6 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24503315",
-    "fc_off": "2026-10-22T06:25:10",
     "fc_svc": "1"
   },
   "fc_24473264": {
@@ -17650,7 +17647,7 @@
     "fc_lst": "list",
     "fc_gid": "24525296",
     "fc_phantom": "2026-10-22T04:17:42",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24525296": {
     "stock": "in_stock",
@@ -18001,11 +17998,11 @@
     "fc_listed_at": "2026-10-22T06:15:00",
     "fc_api_seen_at": "2026-10-22T06:15:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-22T05:53:03",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
     "stock": "in_stock",
@@ -22285,15 +22282,15 @@
     "last_price_alert": ""
   },
   "kd_m8pDlV5pv2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT LAMBORGHINI LB-SILHOUETTE WORKS MURCIELAGO GT EVO BLACK",
     "price": "₹1149",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-lamborghini-lb-silhouette-works-murcielago-gt-evo-black?pid=m8pDlV5pv2",
     "first_seen": "2026-10-22T05:30:00",
-    "last_seen": "2026-10-22T05:45:00",
+    "last_seen": "2026-10-22T06:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-22T06:26:36",
     "last_price_alert": ""
   },
   "kd_GXpKRADLmx": {
