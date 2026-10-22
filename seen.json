@@ -14739,7 +14739,7 @@
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-21T09:49:54",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473499": {
     "stock": "out_of_stock",
@@ -15397,12 +15397,11 @@
     "fc_listed_at": "2026-10-22T08:45:00",
     "fc_api_seen_at": "2026-10-22T08:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-21T18:38:38",
-    "fc_arr": "2026-10-22T08:29:45",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473474": {
     "stock": "out_of_stock",
@@ -16772,7 +16771,7 @@
     "fc_svc": "1"
   },
   "fc_23973353": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Pantone 7504 Land Rover Defender 90 Die-cast Free Wheel Toy Car - Brown",
     "price": "₹269",
     "source": "firstcry",
@@ -16786,11 +16785,11 @@
     "fc_listed_at": "2026-10-22T08:45:00",
     "fc_api_seen_at": "2026-10-22T08:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-10-21T11:20:58",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23832900": {
     "stock": "out_of_stock",
@@ -19916,11 +19915,12 @@
     "fc_listed_at": "2026-10-22T08:45:00",
     "fc_api_seen_at": "2026-10-22T08:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "cat",
     "fc_gid": "24235312",
     "fc_phantom": "2026-10-21T22:15:36",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-22T08:53:45",
+    "fc_svc": "1"
   },
   "fc_24235310": {
     "stock": "in_stock",
@@ -22234,11 +22234,11 @@
     "fc_listed_at": "2026-10-22T08:15:00",
     "fc_api_seen_at": "2026-10-22T08:45:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-22T06:48:49",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
