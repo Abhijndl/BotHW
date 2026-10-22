@@ -14954,7 +14954,7 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_svc": "0"
@@ -17642,14 +17642,14 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24525296",
     "fc_phantom": "2026-10-22T04:17:42",
     "fc_svc": "0"
   },
   "fc_24525296": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Chevy Silverado Driftcation Die Cast Toy Truck - Yellow/Red",
     "price": "₹494",
     "source": "firstcry",
@@ -17663,10 +17663,10 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24525296",
-    "fc_phantom": "2026-10-22T04:23:44",
+    "fc_phantom": "2026-10-22T04:26:08",
     "fc_svc": "1"
   },
   "fc_24525284": {
