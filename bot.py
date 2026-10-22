@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v16.3
+Hot Wheels / Diecast Collector Tracker  ·  v16.4
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -37,6 +37,11 @@ Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
     few units — the catalogue shows cars that list leaves out for days. After a
     phantom, a car alerts again only once two readings in a row say it can
     reach you.
+    v16.4: every car coming back must be on that in-stock list for 248001 —
+    22 Oct 10:39 the AAR Cuda alerted with 5 units (5+ used to skip the list),
+    the list never had it, and the cart said "just went out of stock". A car
+    held in stock that the list hasn't shown for 10 min (FC_OFFLIST_MIN) is out
+    for you, so its real restock can alert.
     The listing lagged the page by up to ~10 min and kept showing cars nobody
     could order. Every pass, the cheap delivery check also looks at every 🎯
     car (and every tracked car once a run), so a car becoming deliverable is
@@ -300,7 +305,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
-                  "fc_new_pending", "fc_pb", "fc_arr",
+                  "fc_new_pending", "fc_pb", "fc_arr", "fc_off",
                   "fc_svc"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
@@ -1088,10 +1093,19 @@ FC_MIN_ALERT_STOCK_TARGET = max(1, int(os.getenv("FC_MIN_ALERT_STOCK_TARGET", "1
 # FirstCry that looks at your pincode is its in-stock list (asked for 248001).
 # 20-21 Oct, every alert you checked in the cart was undeliverable — Porsche
 # 928S (3 left), Toyota Tacoma (1), Mercedes 300 SL (1), Pantone Bronco (2) —
-# and each time the in-stock list said "out" while the page said "in". So
-# FC_SURE_UNITS or more units = a real restock, alerted at once; fewer are
-# alerted only once FirstCry's in-stock list for your pincode shows the car too.
+# and each time the in-stock list said "out" while the page said "in".
+# v16.4: so EVERY car coming back must be on that list — 22 Oct 10:39 the AAR
+# Cuda alerted with 5 units and a yes from the delivery check, the list never
+# had it, and the cart said "just went out of stock" (5+ units used to skip the
+# list). Only a car listed in the last few hours may go on the catalogue's word
+# (FC_NEW_FRESH_H). FC_SURE_UNITS is now the units a car needs while it's held
+# as a phantom; 0 turns all of this off.
 FC_SURE_UNITS = max(0, int(os.getenv("FC_SURE_UNITS", "5")))
+# A car we hold in stock that FirstCry's in-stock list for 248001 hasn't shown
+# for this many minutes is out for you, whatever the page and delivery check say
+# — otherwise its real restock could never alert. (The list drops cars for a
+# few minutes when it refreshes, so not at once.)
+FC_OFFLIST_MIN = float(os.getenv("FC_OFFLIST_MIN", "10"))
 # A car whose alert turned out a phantom (out again within FC_PHANTOM_MIN
 # minutes) needs FC_SURE_UNITS units for FC_PHANTOM_HOLD_H hours: the same few
 # units kept coming and going — Mercedes CLA 5 alerts in a day, Honda City
@@ -2075,7 +2089,7 @@ def _fc_poll_sets(prev_fc: dict, k: int, pass_idx: int = 0) -> list:
     return list(dict.fromkeys(picks))
 
 
-def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
+def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool = True) -> list:
     """Make the product page + delivery check the final word on FirstCry stock.
 
     The listing (`recs`) only says where to look. A car whose listing state
@@ -2092,6 +2106,9 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
     word = {p: ("list" if r["stock"] == "in_stock" else "cat" if r.get("fc_cat_in") else "out")
             for p, r in by.items() if not r.get("fc_carried")}
     listed_in = {p for p, w in word.items() if w == "list"}
+    for p in listed_in:
+        if (prev_fc.get(p) or {}).get("fc_off"):
+            by[p]["fc_off"] = ""       # back on the in-stock list: its off-list clock stops
     slot = int(time.time() // 60)
 
     def claim(p):
@@ -2281,9 +2298,10 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                 was = (v or {}).get("fc_live") == "arriving" or (v or {}).get("stock") == "in_stock"
                 arr = "2000-01-01T00:00:00" if was else time.strftime("%Y-%m-%dT%H:%M:%S")
         young = bool(arr) and _hours_since(arr) * 60 < FC_PAGE_LAG_MIN
-        via_cat = False
-        if (verdict == "arriving" and info.get("svc") != 0 and young
-                and (claim(p) == "list" or (claim(p) == "cat" and fresh))):
+        # FirstCry's in-stock list for 248001 has it — or, for a car listed in
+        # the last few hours, its catalogue does (v16.3/16.4)
+        on_list = claim(p) == "list" or (claim(p) == "cat" and fresh)
+        if verdict == "arriving" and info.get("svc") != 0 and young and on_list:
             # v16.2: FirstCry's in-stock list for your pincode and its delivery
             # check both say yes while the product page still shows 0 — new
             # stock the page hasn't caught up with. 21 Oct 22:20: a brand-new
@@ -2297,21 +2315,21 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             # Only while that's new (FC_PAGE_LAG_MIN): a page that stays at 0
             # isn't catching up.
             verdict = "ok"
-            via_cat = claim(p) == "cat"
             rec = by.get(p) or {}
             listed_n = rec.get("stock_count") if isinstance(rec.get("stock_count"), int) else None
         if verdict == "ok" and (v or {}).get("stock") != "in_stock" and FC_SURE_UNITS:
             cs_, isv_ = info.get("cs") or 0, info.get("isv")
             units = min(cs_, isv_) if isv_ is not None else cs_
             phantom = _hours_since((v or {}).get("fc_phantom", "")) < FC_PHANTOM_HOLD_H
-            # v16.3: only FirstCry's in-stock list for 248001 counts as agreeing
-            # — the catalogue shows cars that list leaves out for days (probe 21
-            # Oct: four cars on every other pincode's list, not on 248001's) —
-            # except for the brand-new car on the catalogue's word above
-            agree = claim(p) == "list" or via_cat
-            if units < FC_SURE_UNITS and (phantom or not agree):
-                # a few units FirstCry's in-stock list for your pincode doesn't
-                # show (or the same car just turned out a phantom): not yet
+            if not on_list:
+                # v16.4: FirstCry's in-stock list for 248001 doesn't have it —
+                # not yet, however many units the page counts across the country
+                # (22 Oct: the AAR Cuda's 5). The catalogue doesn't vouch for an
+                # older car either: it shows cars that list leaves out for days
+                # (probe 21 Oct: four on every other pincode's list, not 248001's)
+                verdict = "unlisted"
+            elif phantom and units < FC_SURE_UNITS:
+                # the same few units of a car that just turned out a phantom
                 verdict = "unlisted"
             elif phantom and not ((v or {}).get("fc_live") == "unlisted"
                                   and str((v or {}).get("fc_svc", "")) == "1"):
@@ -2329,6 +2347,18 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             st = before or "out_of_stock"
         else:
             st = "out_of_stock"
+        # v16.4: held in stock, but off FirstCry's in-stock list for 248001 for
+        # FC_OFFLIST_MIN minutes → out for you, whatever the page says (22 Oct the
+        # AAR Cuda stayed "in" after the cart said it was gone, so its real
+        # restock could never have alerted). Only counted while that list was
+        # read in full.
+        off = ""
+        if FC_SURE_UNITS and before == "in_stock" and st == "in_stock" and not on_list:
+            off = (v or {}).get("fc_off") or ""
+            if list_ok:
+                off = off or time.strftime("%Y-%m-%dT%H:%M:%S")
+                if _hours_since(off) * 60 >= FC_OFFLIST_MIN:
+                    st, verdict, off = "out_of_stock", "unlisted", ""
         if r is None:
             if v is None:
                 nm = info.get("pn") or ""
@@ -2355,7 +2385,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
                         and v.get("fc_live") == (v.get("fc_live") if verdict == "unconfirmed" else verdict)
                         and v.get("fc_gid") == (info.get("gid") or v.get("fc_gid"))
                         and str(v.get("fc_svc", "")) == ("" if sv is None else str(sv))
-                        and v.get("fc_lst", "") == (claim(p) or v.get("fc_lst", ""))):
+                        and v.get("fc_lst", "") == (claim(p) or v.get("fc_lst", ""))
+                        and (v.get("fc_off") or "") == off):
                     continue                       # nothing new for a car outside the listing
                 # outside the listing only Hot Wheels count (an old record for a
                 # Babyhug RC car turned up on a Hot Wheels page's set)
@@ -2391,6 +2422,7 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False) -> list:
             r["fc_page_behind"] = True
         r["fc_pb"] = "1" if r.get("fc_page_behind") else ""
         r["fc_arr"] = arr
+        r["fc_off"] = off
         r["fc_live"] = verdict
         sv = info.get("svc") if info.get("svc") is not None else svc_now.get(p)
         r["fc_svc"] = "" if sv is None else str(sv)
@@ -2494,7 +2526,7 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
             # when the catalogue agrees it's gone, or after FC_STALE_H hours away.
             FC_LAST_MODE[0] = "api"
             try:
-                recs = fc_apply_live(recs, prev_fc, full)
+                recs = fc_apply_live(recs, prev_fc, full, list_ok=inst_ok)
             except Exception:
                 print(f"  [FC-LIVE] live check failed — listing used as is:\n{traceback.format_exc()}")
             if full:
