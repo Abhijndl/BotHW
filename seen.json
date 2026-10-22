@@ -3998,9 +3998,10 @@
     "fc_listed_at": "2026-10-22T05:00:00",
     "fc_api_seen_at": "2026-10-22T05:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "23353372",
+    "fc_arr": "2026-10-22T05:12:44",
     "fc_svc": "1"
   },
   "fc_23076126": {
@@ -22213,11 +22214,12 @@
     "fc_listed_at": "2026-10-22T05:00:00",
     "fc_api_seen_at": "2026-10-22T05:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-21T17:36:59",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-22T05:12:50",
+    "fc_svc": "1"
   },
   "fc_24783759": {
     "stock": "out_of_stock",
@@ -22242,7 +22244,7 @@
     "fc_svc": "1"
   },
   "fc_24783699": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yellow",
     "price": "₹179",
     "source": "firstcry",
@@ -22257,10 +22259,10 @@
     "fc_listed_at": "2026-10-22T04:45:00",
     "fc_api_seen_at": "2026-10-22T05:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24783761",
-    "fc_phantom": "2026-10-21T17:02:08",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-22T05:12:50",
+    "fc_svc": "0"
   }
 }
