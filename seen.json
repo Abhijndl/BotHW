@@ -7696,15 +7696,15 @@
     "last_price_alert": ""
   },
   "kd_Ezgl6GrLMr": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "MINI GT ALPHATAURI AT04 21 NYCK DE VRIES 2023 F1",
     "price": "₹1699",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-alphatauri-at04-21-nyck-de-vries-2023-f1?pid=Ezgl6GrLMr",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-10-08T18:45:00",
+    "last_seen": "2026-10-22T05:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-08T13:09:05",
+    "last_restock_alert": "2026-10-22T05:40:18",
     "last_price_alert": ""
   },
   "kd_OdNZWk3Lzk": {
@@ -22270,6 +22270,18 @@
     "price": "₹1599",
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bugatti-w16-mistral-black?pid=rMNM6nXL95",
+    "first_seen": "2026-10-22T05:30:00",
+    "last_seen": "2026-10-22T05:30:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": ""
+  },
+  "kd_KBg7zPepRr": {
+    "stock": "in_stock",
+    "name": "CADILLAC V SERIES R 01 CADILLAC RACING 2024 IMSA PETIT LE MANS",
+    "price": "₹1599",
+    "source": "karzdolls",
+    "url": "https://www.karzanddolls.com/details/cadillac-v-series-r-01-cadillac-racing-2024-imsa-petit-le-mans?pid=KBg7zPepRr",
     "first_seen": "2026-10-22T05:30:00",
     "last_seen": "2026-10-22T05:30:00",
     "alerted_new": true,
