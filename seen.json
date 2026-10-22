@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T16:06:07.785431+00:00",
+    "mg_wm": "2026-10-22T16:08:57.370811+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -19044,17 +19044,17 @@
     "last_price_alert": ""
   },
   "mg_72362b74-bf28-4200-9d46-027ec0cc830b": {
-    "stock": "out_of_stock",
-    "name": "KHMG211 Nissan Skyline 2000GT-R V2 [PRE-ORDER]",
+    "stock": "in_stock",
+    "name": "KHMG211 Nissan Skyline 2000GT-R V2",
     "price": "₹1799",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg211-nissan-skyline-2000gt-r-v2",
     "first_seen": "2026-10-01T10:15:00",
     "last_seen": "2026-10-22T16:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-22T16:08:59",
     "last_price_alert": "",
-    "mg_updated_at": "2026-10-02T07:12:30.119693+00:00",
+    "mg_updated_at": "2026-10-22T16:08:57.370811+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "kd_xeLXnb6g1W": {
