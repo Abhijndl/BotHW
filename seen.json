@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T17:23:06.20988+00:00",
+    "mg_wm": "2026-10-22T17:27:54.864729+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -13913,7 +13913,7 @@
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
     "stock": "out_of_stock",
-    "name": "KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]",
+    "name": "KHMG216 BMW M3 KAIDO GT V2",
     "price": "₹1749",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg216-bmw-m3-kaido-gt-v2",
@@ -13922,7 +13922,7 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-18T09:23:15.610065+00:00",
+    "mg_updated_at": "2026-10-22T17:27:54.864729+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "fc_24525299": {
