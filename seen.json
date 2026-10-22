@@ -13502,7 +13502,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-21T06:30:00",
-    "fc_api_seen_at": "2026-10-22T17:00:00",
+    "fc_api_seen_at": "2026-10-22T17:15:00",
     "fc_trusted": true,
     "fc_live": "unlisted",
     "fc_lst": "out",
@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T17:19:09.189368+00:00",
+    "mg_wm": "2026-10-22T17:23:06.20988+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -18710,17 +18710,17 @@
     "hm_verified_at": "2026-10-17T09:15:00"
   },
   "mg_1ff34650-6575-4be2-ad2e-0b776667176f": {
-    "stock": "out_of_stock",
-    "name": "KHMG216 BMW M3 KAIDO GT V2 [PRE-ORDER]",
+    "stock": "in_stock",
+    "name": "KHMG216 BMW M3 KAIDO GT V2",
     "price": "₹1849",
     "source": "minifygram",
     "url": "https://minifygram.com/product/khmg216-bmw-m3-kaido-gt-v2-3",
     "first_seen": "2026-09-28T07:45:00",
     "last_seen": "2026-10-22T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-22T17:23:19",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-28T07:50:46.688836+00:00",
+    "mg_updated_at": "2026-10-22T17:23:06.20988+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "mg_de787f42-481d-4673-9352-6c72d9781a19": {
