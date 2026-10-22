@@ -17205,11 +17205,10 @@
     "fc_listed_at": "2026-10-22T02:45:00",
     "fc_api_seen_at": "2026-10-22T02:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24390969",
-    "fc_arr": "2026-10-22T02:37:40",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24390966": {
     "stock": "out_of_stock",
@@ -17999,7 +17998,7 @@
     "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24503746",
-    "fc_arr": "2026-10-22T02:46:09",
+    "fc_arr": "2026-10-22T02:48:04",
     "fc_svc": "1"
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
@@ -21097,7 +21096,7 @@
     "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24775936",
-    "fc_arr": "2026-10-22T02:46:57",
+    "fc_arr": "2026-10-22T02:48:04",
     "fc_svc": "1"
   },
   "fc_23030309": {
