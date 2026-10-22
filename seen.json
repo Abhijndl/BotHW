@@ -13298,7 +13298,7 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_svc": "0"
@@ -14193,7 +14193,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_24342834": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Classic Tv Series The Batman Batmobile 1:64 Scale Toy Car -Black",
     "price": "₹269",
     "source": "firstcry",
@@ -14207,10 +14207,11 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24342831",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-22T04:17:42",
+    "fc_svc": "0"
   },
   "fc_22623489": {
     "stock": "out_of_stock",
@@ -17628,7 +17629,7 @@
     "fc_trusted": true
   },
   "fc_24525298": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ultra Magnus Die Cast Toy Truck - Blue/White",
     "price": "₹494",
     "source": "firstcry",
@@ -17642,11 +17643,11 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "24525296",
-    "fc_pb": "1",
-    "fc_arr": "2026-10-22T04:16:54",
+    "fc_phantom": "2026-10-22T04:17:42",
+    "fc_arr": "2026-10-22T04:18:04",
     "fc_svc": "1"
   },
   "fc_24525296": {
@@ -18308,7 +18309,7 @@
     "fc_listed_at": "2026-10-22T04:15:00",
     "fc_api_seen_at": "2026-10-22T04:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-21T22:50:59",
