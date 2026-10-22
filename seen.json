@@ -15071,7 +15071,7 @@
     "fc_svc": "1"
   },
   "fc_24342870": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Classic Tv Series The Batman Batmobile 1:64 Scale Toy Car - Dark Grey",
     "price": "₹269",
     "source": "firstcry",
@@ -15085,7 +15085,7 @@
     "fc_listed_at": "2026-10-22T03:45:00",
     "fc_api_seen_at": "2026-10-22T03:45:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24342831",
     "fc_phantom": "2026-10-22T03:44:40",
