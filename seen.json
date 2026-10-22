@@ -14528,10 +14528,10 @@
     "fc_listed_at": "2026-10-15T08:45:00",
     "fc_api_seen_at": "2026-10-22T09:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24342826",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
     "stock": "out_of_stock",
@@ -15251,9 +15251,10 @@
     "fc_listed_at": "2026-10-22T09:30:00",
     "fc_api_seen_at": "2026-10-22T09:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24473732",
+    "fc_arr": "2026-10-22T09:42:07",
     "fc_svc": "1"
   },
   "fc_24472665": {
@@ -15520,10 +15521,11 @@
     "fc_listed_at": "2026-10-22T09:30:00",
     "fc_api_seen_at": "2026-10-22T09:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24472644",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-22T09:42:07",
+    "fc_svc": "1"
   },
   "fc_24390952": {
     "stock": "out_of_stock",
