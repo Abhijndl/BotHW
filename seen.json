@@ -3632,7 +3632,7 @@
     "fc_svc": "0"
   },
   "fc_23346007": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 181/250 Mercedes Benz CLA HW Toy Car - Blue",
     "price": "₹161",
     "source": "firstcry",
@@ -3647,10 +3647,11 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345759",
-    "fc_svc": "1"
+    "fc_phantom": "2026-10-22T07:52:20",
+    "fc_svc": "0"
   },
   "fc_23348664": {
     "stock": "out_of_stock",
@@ -15380,7 +15381,7 @@
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24476138",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473509": {
     "stock": "out_of_stock",
@@ -20356,11 +20357,10 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24768895",
-    "fc_arr": "2026-10-22T07:15:49",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24761909": {
     "stock": "out_of_stock",
@@ -21081,10 +21081,10 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "24775936",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24776061": {
     "stock": "out_of_stock",
@@ -21238,7 +21238,7 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_svc": "0"
@@ -22211,12 +22211,11 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-22T07:45:00",
     "fc_trusted": true,
-    "fc_live": "arriving",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-21T17:36:59",
-    "fc_arr": "2026-10-22T07:15:49",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24783759": {
     "stock": "out_of_stock",
