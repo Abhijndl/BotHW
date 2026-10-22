@@ -20561,11 +20561,11 @@
     "fc_listed_at": "2026-10-22T15:45:00",
     "fc_api_seen_at": "2026-10-22T15:45:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-10-22T15:34:08",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24762155": {
     "stock": "out_of_stock",
