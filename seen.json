@@ -13490,7 +13490,7 @@
     "fc_svc": "0"
   },
   "fc_24453327": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Diecast Toy Car Trophy Case Free Wheel Model With Smooth Rolling Wheels Pack Of 5 - Multicolor",
     "price": "₹791",
     "source": "firstcry",
@@ -13504,10 +13504,9 @@
     "fc_listed_at": "2026-09-21T06:30:00",
     "fc_api_seen_at": "2026-10-22T05:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "24314518",
-    "fc_off": "2026-10-22T05:24:06",
     "fc_svc": "1"
   },
   "fc_24390967": {
@@ -18650,7 +18649,7 @@
     "fc_svc": "0"
   },
   "fc_23835987": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Blue",
     "price": "₹439",
     "source": "firstcry",
@@ -18664,10 +18663,9 @@
     "fc_listed_at": "2026-10-09T04:00:00",
     "fc_api_seen_at": "2026-10-22T05:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "23835981",
-    "fc_off": "2026-10-22T05:24:06",
     "fc_svc": "1"
   },
   "fc_24247506": {
@@ -19434,7 +19432,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23835981": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Crocovile Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Light Green",
     "price": "₹439",
     "source": "firstcry",
@@ -19448,10 +19446,9 @@
     "fc_listed_at": "2026-10-10T04:15:00",
     "fc_api_seen_at": "2026-10-22T05:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "23835981",
-    "fc_off": "2026-10-22T05:24:06",
     "fc_svc": "1"
   },
   "mg_cb869f68-7bfa-4fb5-9b1a-71aadb0d4adc": {
