@@ -13705,7 +13705,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-10-22T16:09:35.290372+00:00",
+    "mg_wm": "2026-10-22T16:11:28.665671+00:00",
     "fc_live_since": "2026-10-18T13:15:00"
   },
   "fc_24473502": {
@@ -18891,17 +18891,17 @@
     "last_price_alert": ""
   },
   "mg_af2bb81c-07a2-4216-a872-8e83359f6e48": {
-    "stock": "out_of_stock",
-    "name": "MGT855 [PRE-ORDER]",
+    "stock": "in_stock",
+    "name": "MGT855",
     "price": "₹1649",
     "source": "minifygram",
     "url": "https://minifygram.com/product/mgt855",
     "first_seen": "2026-09-28T09:30:00",
     "last_seen": "2026-10-22T16:00:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-10-22T16:11:37",
     "last_price_alert": "",
-    "mg_updated_at": "2026-09-28T09:29:18.153157+00:00",
+    "mg_updated_at": "2026-10-22T16:11:28.665671+00:00",
     "stock_ver": "mg_skus_v1"
   },
   "kd_4lgOmX0LoQ": {
