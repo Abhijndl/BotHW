@@ -19914,11 +19914,12 @@
     "fc_listed_at": "2026-10-22T06:00:00",
     "fc_api_seen_at": "2026-10-22T06:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24235312",
     "fc_phantom": "2026-10-21T22:15:36",
-    "fc_svc": "0"
+    "fc_arr": "2026-10-22T06:03:18",
+    "fc_svc": "1"
   },
   "fc_24235310": {
     "stock": "in_stock",
