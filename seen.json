@@ -32,11 +32,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-12T20:15:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_21497090": {
@@ -144,9 +145,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T21:15:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -183,6 +184,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23076120",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_22600382": {
@@ -2702,11 +2704,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074890",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23075651": {
@@ -2722,11 +2725,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T22:00:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "23074890",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23354597": {
@@ -2763,9 +2767,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T05:45:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -2786,9 +2790,10 @@
     "fc_listed_at": "2026-10-22T16:45:00",
     "fc_api_seen_at": "2026-10-23T08:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23353372",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23074886": {
@@ -2805,9 +2810,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-19T08:45:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -2826,9 +2831,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -2861,11 +2866,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T10:15:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23074260": {
@@ -2883,7 +2889,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -2972,9 +2978,9 @@
     "last_price_alert": "2026-09-22T06:31:43",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T08:30:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -3016,9 +3022,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-18T21:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -3226,9 +3232,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T02:30:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_cart": "n",
@@ -3502,7 +3508,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_cart": "n",
@@ -3524,16 +3530,16 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23351188": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹175",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -3545,9 +3551,10 @@
     "fc_listed_at": "2026-10-18T21:15:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_23074888": {
@@ -3564,9 +3571,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-21T20:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-21T19:33:58",
@@ -3586,9 +3593,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-23T08:15:00",
-    "fc_api_seen_at": "2026-10-23T08:15:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -3609,7 +3616,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -3633,6 +3640,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23076120",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23075644": {
@@ -3654,6 +3662,7 @@
     "fc_lst": "cat",
     "fc_gid": "23074890",
     "fc_phantom": "2026-10-23T05:47:41",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23346007": {
@@ -3693,7 +3702,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T00:15:00",
     "fc_api_seen_at": "2026-10-17T00:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_23347148": {
     "stock": "out_of_stock",
@@ -3793,7 +3804,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_cart": "n",
@@ -3846,9 +3857,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -3867,9 +3878,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T09:30:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -3915,6 +3926,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23348043": {
@@ -3952,11 +3964,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T10:30:00",
-    "fc_api_seen_at": "2026-10-22T15:30:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23076120",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23354596": {
@@ -3974,9 +3987,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23353372",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23074891": {
@@ -3997,6 +4011,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23074178": {
@@ -4012,9 +4027,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-22T11:30:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-22T11:13:32",
@@ -4036,10 +4051,11 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "cat",
     "fc_gid": "23353372",
     "fc_phantom": "2026-10-23T07:18:30",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23076126": {
@@ -4055,9 +4071,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T08:15:00",
-    "fc_api_seen_at": "2026-10-22T15:30:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -4102,6 +4118,7 @@
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345759",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23351187": {
@@ -4119,9 +4136,10 @@
     "fc_listed_at": "2026-10-18T08:00:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_22928007": {
@@ -4159,9 +4177,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-09T10:30:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -4261,9 +4279,10 @@
     "fc_listed_at": "2026-10-22T09:45:00",
     "fc_api_seen_at": "2026-10-22T09:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23076127",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24032061": {
@@ -4300,7 +4319,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_cart": "n",
@@ -4322,7 +4341,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_cart": "n",
@@ -4469,6 +4488,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23973353",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_23351684": {
@@ -4489,6 +4509,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23347148",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "hm_ne-car-culture-asst-vqc7uu0bogkg": {
@@ -4573,9 +4594,10 @@
     "fc_listed_at": "2026-10-21T03:00:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23346403": {
@@ -4597,6 +4619,7 @@
     "fc_lst": "out",
     "fc_gid": "23345759",
     "fc_phantom": "2026-10-21T14:15:10",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24007870": {
@@ -4763,9 +4786,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23075650": {
@@ -4786,6 +4810,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_22548064": {
@@ -4854,7 +4879,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_cart": "n",
@@ -4933,7 +4958,7 @@
     "fc_cart": "n"
   },
   "fc_23346404": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 166/250 Twin Tags - Pink",
     "price": "₹179",
     "source": "firstcry",
@@ -4947,9 +4972,11 @@
     "fc_listed_at": "2026-10-17T06:45:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23345759",
+    "fc_off": "2026-10-23T08:33:19",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_22548050": {
@@ -4971,9 +4998,9 @@
     "fc_cart": "n"
   },
   "fc_23348665": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 191/250 65 Mercury Comet Cyclone Die Cat Free Wheel Toy Car- Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-191-250-65-mercury-comet-cyclone-die-cat-free-wheel-toy-car-red/23348665/product-detail",
     "first_seen": "2026-07-31T06:11:54",
@@ -4985,9 +5012,10 @@
     "fc_listed_at": "2026-10-20T04:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_22548070": {
@@ -5023,9 +5051,10 @@
     "fc_listed_at": "2026-10-22T07:45:00",
     "fc_api_seen_at": "2026-10-23T08:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "cat",
     "fc_gid": "23353372",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23105077": {
@@ -5043,9 +5072,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "22240148",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "fc_22548052": {
@@ -5250,10 +5280,12 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-21T13:45:00",
     "fc_api_seen_at": "2026-09-21T13:45:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_22548078": {
     "stock": "out_of_stock",
@@ -5350,9 +5382,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23355051": {
@@ -5370,9 +5403,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23353372",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "mg_e57fd304-e928-4684-b17d-fe401233398d": {
@@ -5431,7 +5465,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-15T10:00:00",
     "fc_api_seen_at": "2026-10-15T10:00:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_23353037": {
     "stock": "out_of_stock",
@@ -5448,9 +5484,10 @@
     "fc_listed_at": "2026-10-10T04:00:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23351681": {
@@ -5947,9 +5984,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-19T16:15:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -6013,9 +6050,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "1",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24248195": {
@@ -6036,6 +6074,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24246598",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24247508": {
@@ -6148,7 +6187,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24194174"
+    "fc_gid": "24194174",
+    "fc_cart": "y"
   },
   "fc_24194173": {
     "stock": "out_of_stock",
@@ -6186,6 +6226,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23347148",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24246603": {
@@ -6351,6 +6392,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24248198",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24247516": {
@@ -6367,7 +6409,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-13T00:15:00",
     "fc_api_seen_at": "2026-10-13T00:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "hm_hot-wheels-5-car-pack-rosso-for-boys-age-3y-die-cast-vehicle-collection-96407472": {
     "stock": "in_stock",
@@ -6451,9 +6495,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "1",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24248202": {
@@ -10276,9 +10321,10 @@
     "fc_listed_at": "2026-10-20T07:00:00",
     "fc_api_seen_at": "2026-10-20T07:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23700380",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_21993930": {
@@ -10909,9 +10955,10 @@
     "fc_listed_at": "2026-10-22T10:15:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24248203": {
@@ -11167,9 +11214,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-19T14:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -11189,7 +11236,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_23700381": {
     "stock": "out_of_stock",
@@ -11205,7 +11254,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_23930666": {
     "stock": "out_of_stock",
@@ -11301,9 +11352,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T22:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -11340,11 +11391,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-18T13:00:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_22928010": {
@@ -11553,7 +11605,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -11608,9 +11660,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24263017",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "fc_22149914": {
@@ -12264,9 +12317,10 @@
     "fc_listed_at": "2026-10-13T22:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23347148",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23076119": {
@@ -12287,6 +12341,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074890",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23147629": {
@@ -12300,9 +12355,12 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_api_v2",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-21T06:00:00",
-    "fc_api_seen_at": "2026-09-21T06:30:00"
+    "fc_api_seen_at": "2026-09-21T06:30:00",
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_24374295": {
     "stock": "out_of_stock",
@@ -12407,6 +12465,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24409190": {
@@ -12462,7 +12521,8 @@
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
-    "fc_gid": "24235314"
+    "fc_gid": "24235314",
+    "fc_cart": "y"
   },
   "fc_23930659": {
     "stock": "in_stock",
@@ -12570,7 +12630,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-14T15:15:00",
     "fc_api_seen_at": "2026-10-14T15:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_24236114": {
     "stock": "in_stock",
@@ -12590,6 +12652,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24236114",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24194169": {
@@ -12608,7 +12671,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24194169",
     "fc_cart": "n",
@@ -12846,9 +12909,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24246598",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "kd_RWg8Z1KLKe": {
@@ -13089,7 +13153,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-02T21:45:00",
     "fc_api_seen_at": "2026-10-02T21:45:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_23074882": {
     "stock": "out_of_stock",
@@ -13104,9 +13170,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-20T04:15:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -13307,6 +13373,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "20257824",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_19995092": {
@@ -13609,10 +13676,11 @@
     "fc_listed_at": "2026-10-22T09:45:00",
     "fc_api_seen_at": "2026-10-22T09:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24314338",
     "fc_phantom": "2026-10-22T08:42:24",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24390970": {
@@ -13652,9 +13720,10 @@
     "fc_listed_at": "2026-10-22T18:00:00",
     "fc_api_seen_at": "2026-10-22T18:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24313540",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24314518": {
@@ -13691,11 +13760,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T08:30:00",
-    "fc_api_seen_at": "2026-10-22T15:30:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "23345424",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24453327": {
@@ -13780,6 +13850,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24248198",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24349392": {
@@ -13817,9 +13888,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24341962",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_18313316": {
@@ -14128,9 +14200,10 @@
     "fc_listed_at": "2026-10-22T12:30:00",
     "fc_api_seen_at": "2026-10-23T07:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24342821",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "mg_638e2929-fded-4f55-8bb6-63838140f14b": {
@@ -14211,7 +14284,7 @@
   "fc_23811697": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Free Wheel Toy Car With Mad Drip Sweet Rides (197/250) - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-toy-car-with-mad-drip-sweet-rides-197-250-pink/23811697/product-detail",
     "first_seen": "2026-09-17T11:21:23",
@@ -14226,6 +14299,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "23811697",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24342822": {
@@ -14283,9 +14357,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24246598",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24342826": {
@@ -14303,9 +14378,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24342826",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24246605": {
@@ -14474,7 +14550,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -14489,6 +14565,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23353372",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24503750": {
@@ -14529,6 +14606,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "21348",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24473028": {
@@ -15220,7 +15298,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
@@ -15546,7 +15624,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
@@ -15631,12 +15709,12 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_phantom": "2026-10-23T07:49:44",
     "fc_cart": "n",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24476435": {
     "stock": "out_of_stock",
@@ -16203,6 +16281,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23835981",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_23835986": {
@@ -16223,6 +16302,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23835981",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_22597474": {
@@ -16264,6 +16344,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23835981",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_23835980": {
@@ -16284,6 +16365,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23835981",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_23835984": {
@@ -16304,6 +16386,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23835981",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24514785": {
@@ -17110,6 +17193,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23973353",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_23973353": {
@@ -17127,7 +17211,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-10-22T10:01:10",
@@ -17186,9 +17270,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23353372",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24246593": {
@@ -17300,6 +17385,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24235309",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24032130": {
@@ -17351,9 +17437,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24248198",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24248199": {
@@ -17370,7 +17457,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-26T01:15:00",
     "fc_api_seen_at": "2026-09-26T01:15:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_24248192": {
     "stock": "out_of_stock",
@@ -17387,9 +17476,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24246598",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24247519": {
@@ -17410,6 +17500,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24248198",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24390955": {
@@ -17513,9 +17604,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24341962",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_24473465": {
@@ -17534,7 +17626,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
@@ -17848,7 +17940,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503332",
     "fc_cart": "n",
@@ -17870,7 +17962,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503328",
     "fc_cart": "n",
@@ -18238,9 +18330,10 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "1",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_22240175": {
@@ -18298,10 +18391,11 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "1",
     "fc_phantom": "2026-10-21T20:25:44",
+    "fc_cart": "n",
     "fc_svc": "0"
   },
   "fc_23030631": {
@@ -18337,7 +18431,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -18462,6 +18556,7 @@
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24246598",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24342828": {
@@ -18682,7 +18777,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
-    "fc_trusted": true
+    "fc_trusted": true,
+    "fc_live": "not in cart",
+    "fc_cart": "n"
   },
   "fc_24568735": {
     "stock": "in_stock",
@@ -18764,9 +18861,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-02T21:15:00",
-    "fc_api_seen_at": "2026-10-23T08:00:00",
+    "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -20343,7 +20440,7 @@
     "fc_listed_at": "2026-10-23T08:30:00",
     "fc_api_seen_at": "2026-10-23T08:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24235312",
     "fc_phantom": "2026-10-23T08:19:27",
@@ -20368,6 +20465,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24235310",
+    "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_22623490": {
