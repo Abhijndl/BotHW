@@ -13120,7 +13120,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -13596,6 +13596,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-22T06:43:39",
     "fc_pb": "1",
+    "fc_arr": "2000-01-01T00:00:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14315,7 +14316,7 @@
   "fc_23811697": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Free Wheel Toy Car With Mad Drip Sweet Rides (197/250) - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-toy-car-with-mad-drip-sweet-rides-197-250-pink/23811697/product-detail",
     "first_seen": "2026-09-17T11:21:23",
@@ -14582,7 +14583,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -15417,6 +15418,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24342831",
+    "fc_off": "2026-10-23T09:26:06",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -15456,7 +15458,7 @@
     "fc_listed_at": "2026-10-23T09:15:00",
     "fc_api_seen_at": "2026-10-23T09:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24342831",
     "fc_cart": "n",
@@ -15636,7 +15638,7 @@
     "fc_svc": "0"
   },
   "fc_24475737": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
     "price": "₹165",
     "source": "firstcry",
@@ -15650,12 +15652,12 @@
     "fc_listed_at": "2026-10-22T17:15:00",
     "fc_api_seen_at": "2026-10-23T09:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_phantom": "2026-10-23T09:18:14",
+    "fc_phantom": "2026-10-23T09:26:08",
     "fc_off": "2026-10-23T09:18:30",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "fc_24472665": {
@@ -16356,7 +16358,7 @@
   "fc_23835986": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Orange",
-    "price": "₹467",
+    "price": "₹466",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-free-style-dem-derby-monster-toy-truck-orange/23835986/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -18042,7 +18044,7 @@
     "fc_listed_at": "2026-10-23T09:15:00",
     "fc_api_seen_at": "2026-10-23T09:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503332",
     "fc_cart": "n",
@@ -18064,7 +18066,7 @@
     "fc_listed_at": "2026-10-23T09:15:00",
     "fc_api_seen_at": "2026-10-23T09:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503328",
     "fc_cart": "n",
@@ -18591,7 +18593,7 @@
     "fc_svc": "0"
   },
   "fc_24503901": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Nissan Maxima Drift Car Die Cast Free Wheel Toy Car - Black",
     "price": "₹165",
     "source": "firstcry",
@@ -18606,13 +18608,11 @@
     "fc_listed_at": "2026-10-23T09:15:00",
     "fc_api_seen_at": "2026-10-23T09:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-22T05:53:03",
-    "fc_pb": "1",
-    "fc_arr": "2000-01-01T00:00:00",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "hm_hot-wheels-retro-ultra-hots-vintage-die-cast-vehicle-toys-3y-11850872": {
@@ -21057,15 +21057,14 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24768895",
-    "fc_pb": "1",
-    "fc_arr": "2000-01-01T00:00:00",
+    "fc_off": "2026-10-23T09:25:53",
     "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24768902": {
     "stock": "in_stock",
     "name": "Hot Wheels Deora Tooned Die Cast Free Wheel Toy Car - Maroon",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-deora-tooned-die-cast-free-wheel-toy-car-maroon/24768902/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21131,7 +21130,7 @@
   "fc_24762190": {
     "stock": "in_stock",
     "name": "Hot Wheels Mailed It Die Cast Free Wheel Toy Car - Silver",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mailed-it-die-cast-free-wheel-toy-car-silver/24762190/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21232,7 +21231,6 @@
     "fc_gid": "24761907",
     "fc_phantom": "2026-10-22T15:34:08",
     "fc_pb": "1",
-    "fc_arr": "2000-01-01T00:00:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22818,7 +22816,7 @@
   "fc_23345502": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-48-250-monster-hi-ghoul-mobilegh-toy-car-pink/23345502/product-detail",
     "first_seen": "2026-10-21T02:00:00",
