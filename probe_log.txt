@@ -1,121 +1,332 @@
-seen.json copied: 846770 bytes
-version: Hot Wheels / Diecast Collector Tracker  ·  v16.3
+==================== A. pages ====================
+   https://m.firstcry.com/: CertificateVerifyError Failed to perform, curl: (60) SSL: no alternative certificate subject name matches target hostname 'm.firstcry.com'. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+   https://m.firstcry.com/cart: CertificateVerifyError Failed to perform, curl: (60) SSL: no alternative certificate subject name matches target hostname 'm.firstcry.com'. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
++   2s w_cart_mob: HTTP 200 → https://www.firstcry.com/cart | 18227 b | 1 scripts
+      api: //cdn.fcglcdn.com/brainbees/images/m/loader_m.gif
+      api: //cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js
+      api: //www.firstcry.com
+      api: //www.firstcry.com/
+      api: //www.firstcry.com/svcs/MyAccountService.svc
+      api: //www.firstcry.com/termsofuse
+      api: /svcs/CommonService.svc/
+      api: /svcs/LoyaltyCash.svc
+      api: /svcs/homepage.svc
+      api: https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/
+      api: https://checkout.firstcry.com/
+      key:  <div class="crs_heading lft cw">                             <div class="crs_h1 lft cbs">Product</div>                             <div class="crs_h2 lft cbs">Shipping & Availability</div>                             <div class="crs_h3 lft cbs">Price</div>                             <div class="crs_h4 lft cbs">Quantity</div>                             <div class="crs_h5 lft 
++   3s checkout: HTTP 200 → https://checkout.firstcry.com/ | 735287 b | 6 scripts
+      api: //cdn.fcglcdn.com
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubleftnet.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrenew_bnr1.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrenew_bnr2.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrenew_bnr3.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrightnet.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/easy_returns.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/encrypted.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/fallback_screen.gif
+      api: //cdn.fcglcdn.com/brainbees/checkout/favicon.ico
+      api: //cdn.fcglcdn.com/brainbees/checkout/onemonthclublogo.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/pci.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/secure_payments.svg
+      api: //cdn.fcglcdn.com/brainbees/images/ajax-loader-new.gif
+      api: //cdn.fcglcdn.com/brainbees/images/newcpncode_img.png
+      api: //cdn.fcglcdn.com/brainbees/images/ng/m/apple-icon-180x180.png
+      api: //cdn.fcglcdn.com/brainbees/images/products/219x265/
+      api: //cdn.fcglcdn.com/brainbees/images/products/219x265/48194a.webp
+      api: //cdn.fcglcdn.com/brainbees/js/v7/jquery-1.11.2.min.js
+      api: /CartService/CheckoutService.svc/json
+      api: /CommonService/CommonService.svc/json
+      api: /PGFailedLogsService/PgFailedLogsService.svc/json
+      api: /ShoppingCart/ShoppingCart.svc/json
+      api: /TrackingService/TrackingService.svc/json
+      api: /UserInformation/AddressService.svc/json
+      api: /login/AuthService.svc/json
+      api: https://cdn.fcglcdn.com
+      api: https://cdn.fcglcdn.com/brainbees/banners/PaytmLogo_13.png
+      api: https://cdn.fcglcdn.com/brainbees/banners/mobile/30x20-11791892235635.jpg
+      api: https://cdn.fcglcdn.com/brainbees/banners/mobile/image1786079349129.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/AM_mc_vs_dc_ae.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/DigitalProduct.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/alert_ms.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/are_yousure.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/arrow_lottie.json
+      api: https://cdn.fcglcdn.com/brainbees/checkout/arupee_hand.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/babyhug_loader.json
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bank-cart-banners/Cred_logo.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bank-cart-banners/JKBankLogo_v2.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bank-cart-banners/PNBlogo_v6.jpg
+      key:  "/CommonService/CommonService.svc/json";         var MeargCart = "https://www.firstcry.com/svcs/CommonService.svc/";         // var MeargCart = "https://prepodmergecartapi.fcappservices.in/svcs/CommonService.svc/";         var PgFailedLogsService = "/PGFailedLogsService/PgFailedLogsService.svc/json";         var RetrySession = "";         var LoaderCallCounter = 0;         var
++   5s checkout_cart: HTTP 200 → https://checkout.firstcry.com/pay | 735287 b | 6 scripts
+      api: //cdn.fcglcdn.com
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubleftnet.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrenew_bnr1.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrenew_bnr2.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrenew_bnr3.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubrightnet.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/easy_returns.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/encrypted.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/fallback_screen.gif
+      api: //cdn.fcglcdn.com/brainbees/checkout/favicon.ico
+      api: //cdn.fcglcdn.com/brainbees/checkout/onemonthclublogo.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/pci.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/secure_payments.svg
+      api: //cdn.fcglcdn.com/brainbees/images/ajax-loader-new.gif
+      api: //cdn.fcglcdn.com/brainbees/images/newcpncode_img.png
+      api: //cdn.fcglcdn.com/brainbees/images/ng/m/apple-icon-180x180.png
+      api: //cdn.fcglcdn.com/brainbees/images/products/219x265/
+      api: //cdn.fcglcdn.com/brainbees/images/products/219x265/48194a.webp
+      api: //cdn.fcglcdn.com/brainbees/js/v7/jquery-1.11.2.min.js
+      api: /CartService/CheckoutService.svc/json
+      api: /CommonService/CommonService.svc/json
+      api: /PGFailedLogsService/PgFailedLogsService.svc/json
+      api: /ShoppingCart/ShoppingCart.svc/json
+      api: /TrackingService/TrackingService.svc/json
+      api: /UserInformation/AddressService.svc/json
+      api: /login/AuthService.svc/json
+      api: https://cdn.fcglcdn.com
+      api: https://cdn.fcglcdn.com/brainbees/banners/PaytmLogo_13.png
+      api: https://cdn.fcglcdn.com/brainbees/banners/mobile/30x20-11791892235635.jpg
+      api: https://cdn.fcglcdn.com/brainbees/banners/mobile/image1786079349129.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/AM_mc_vs_dc_ae.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/DigitalProduct.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/alert_ms.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/are_yousure.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/arrow_lottie.json
+      api: https://cdn.fcglcdn.com/brainbees/checkout/arupee_hand.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/babyhug_loader.json
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bank-cart-banners/Cred_logo.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bank-cart-banners/JKBankLogo_v2.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bank-cart-banners/PNBlogo_v6.jpg
+      key:  "/CommonService/CommonService.svc/json";         var MeargCart = "https://www.firstcry.com/svcs/CommonService.svc/";         // var MeargCart = "https://prepodmergecartapi.fcappservices.in/svcs/CommonService.svc/";         var PgFailedLogsService = "/PGFailedLogsService/PgFailedLogsService.svc/json";         var RetrySession = "";         var LoaderCallCounter = 0;         var
+   https://m.firstcry.com/hot-wheels/x/24783699/product-detail: CertificateVerifyError Failed to perform, curl: (60) SSL: no alternative certificate subject name matches target hostname 'm.firstcry.com'. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
++   7s w_pdp_mob: HTTP 200 → https://www.firstcry.com/hot-wheels/hot-wheels-70-plymouth-aar-cuda-245-250-toy-car-yellow | 162684 b | 12 scripts
+      api: //cdn.fcglcdn.com/brainbees/
+      api: //cdn.fcglcdn.com/brainbees/community/jarvissdk/jssdk-jarviscoreindia.js
+      api: //cdn.fcglcdn.com/brainbees/css/v6/swiper.min.css
+      api: //cdn.fcglcdn.com/brainbees/images/FC_favicon_01.ico
+      api: //cdn.fcglcdn.com/brainbees/images/LodingCart.gif
+      api: //cdn.fcglcdn.com/brainbees/images/disney_marvel.gif
+      api: //cdn.fcglcdn.com/brainbees/images/fcintellitots_franchise_footer_banner.jpg
+      api: //cdn.fcglcdn.com/brainbees/images/m/loader_m.gif
+      api: //cdn.fcglcdn.com/brainbees/images/n/ajax-loader.gif
+      api: //cdn.fcglcdn.com/brainbees/images/n/club_logo.png
+      api: //cdn.fcglcdn.com/brainbees/images/n/fc_logo.png
+      api: //cdn.fcglcdn.com/brainbees/images/n/ic_to_arrow.png
+      api: //cdn.fcglcdn.com/brainbees/js/v7/menu-1.14-mg-head.min.js
+      api: //cdn.fcglcdn.com/brainbees/js/v7/swiper.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/css/fc-ricon.css
+      api: //cdn.fcglcdn.com/brainbees/php/css/font-typography-woff2.min.css
+      api: //cdn.fcglcdn.com/brainbees/php/css/headermenu-woff2-1.4.min.css
+      api: //cdn.fcglcdn.com/brainbees/php/css/master-woff2-1.9.min.css
+      api: //cdn.fcglcdn.com/brainbees/php/css/pdp-productdetailrevmp1.25.min.css
+      api: //cdn.fcglcdn.com/brainbees/php/css/video-js.css
+      api: //cdn.fcglcdn.com/brainbees/php/css/xd-typography.css
+      api: //cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/js/footer_menuext.1.1.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/js/footerstrip3.0.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/js/internalwebengage.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/js/jquery.2.0.0.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/js/master-common.v2.24.min.js
+      api: //cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.56.min.js
+      api: //parenting.firstcry.com/
+      api: //www.firstcry.com
+      api: //www.firstcry.com/
+      api: //www.firstcry.com/accountdetails
+      api: //www.firstcry.com/accountdetails/
+      api: //www.firstcry.com/allbrands
+      api: //www.firstcry.com/alltrackorder
+      api: //www.firstcry.com/art-craft-and-hobby-kits/5/50
+      api: //www.firstcry.com/baby-gear/7/0/0
+      api: //www.firstcry.com/baby-rattles/5/99
+      api: //www.firstcry.com/bath-and-skincare/3/0/0
+      api: //www.firstcry.com/bath-toys/5/51
+      key:  Aar Cuda 245/250 Toy Car -Yellow for (3-15 Years) online in India at best price from FirstCry.com. Shop trains, automobiles toys for babies & kids with ✓ Free Shipping ✓ COD options available." />     <meta name="keywords" id="keywords" content="Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yellow, buy Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yellow online in india,
 
-================ RUN 1 ================
-  [FC-API] quick sweep: 205 in stock from 12 page(s) in 2.5s — fresh ✓ (searchrank, 12 page(s) computed live)
-[HW] case table: 1261 cars (52 cases)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24505759', '23351188', '23348665'] | delivery flips ['24503901', '24390960', '24342870'] | re-reads ['23074610', '24768898', '24473509', '24473498']
-  [FC-LIVE] 14 to confirm, 4 🎯 set(s) read, 0 audited → 109 car(s) seen live in 4.8s; 0 now orderable, 0 not any more, 2 unconfirmed (page not read)
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 135 products in 7.4s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.6s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24505759', '23351188', '23348665'] | delivery flips [] | re-reads ['24503901', '24473509', '24473498', '24263017']
-  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 84 car(s) seen live in 2.3s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 134 products in 3.9s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.0s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24505759', '23351188', '23348665'] | delivery flips [] | re-reads ['24503901', '23074610', '24768898', '24473509']
-  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 114 car(s) seen live in 1.8s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 134 products in 2.8s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.0s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24505759', '23351188', '23348665'] | delivery flips [] | re-reads ['24503901', '24473498', '24263017', '23074610']
-  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 105 car(s) seen live in 2.7s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 134 products in 3.8s (live: FirstCry)
+==================== B. 16 scripts ====================
++   7s https://cdn.fcglcdn.com/brainbees/php/js/cart-deployment-v2.16.min.js | 110166 b | keys ["can't be delivered", "can\\'t be delivered", 'generatecart', 'getcart', 'mergecart', 'shippin', 'undeliver']
+      api: //cdn.fcglcdn.com/brainbees/images/ng/m/pre-order-tag-cart.png
+      api: //stage.firstcry.com/shsercart/shoppingcart.svc/json
+      api: /CustomerService.svc/NotifyMe
+      api: /shsercart/shoppingcart.svc/json
+      api: https://checkout.firstcry.com/pay
+      api: https://csc.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/GetCartProductCount
+      api: https://www.firstcry.com/capinet/pdp/SaveProductCart
+      api: https://www.firstcry.com/userservices/getUserInfo
++   7s https://cdn.fcglcdn.com/brainbees/js/v7/jquery-1.11.2.min.js | 96295 b | keys []
++   7s https://cdn.fcglcdn.com/brainbees/checkout/jquery_v3.6.1.min.js | 89664 b | keys []
++   7s https://cdn.fcglcdn.com/brainbees/checkout/jquery_v1.4.1.cookie.min.js | 1300 b | keys []
++   7s https://cdn.fcglcdn.com/brainbees/checkout/lottie_light.min.js | 168540 b | keys []
++   7s https://cdn.fcglcdn.com/brainbees/checkout/rpay_cartdetails_mobile_v15102026.min.js?ver=202610160448 | 1217298 b | keys ['cannot be delivered', 'generatecart', 'getcart', 'isservicable', 'mergecart', 'serviceab', 'shippin', 'undeliver']
+      api: //cdn.fcglcdn.com/brainbees/checkout/club-logo.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/clubnewlogo.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/locationpin.png
+      api: //cdn.fcglcdn.com/brainbees/checkout/newclub.svg
+      api: //cdn.fcglcdn.com/brainbees/checkout/onemonthclublogo.svg
+      api: /CartService/CheckoutService.svc/json
+      api: /CommonService.svc/GetPDFBTList
+      api: /CommonService/CommonService.svc/json
+      api: /PGFailedLogsService/PgFailedLogsService.svc/json
+      api: /TrackingService/TrackingService.svc/json
+      api: /UserInformation/AddressService.svc/json
+      api: /api/ownlabeloncart
+      api: /login/AuthService.svc/json
+      api: /svc/CommonService.svc/SaveShortlistData
+      api: https://CLA.fcappservices.in/CommonService/CommonService.svc/json
+      api: https://CLA.fcappservices.in/PGFailedLogsService/PgFailedLogsService.svc/json
+      api: https://CLA.fcappservices.in/TrackingService/TrackingService.svc/json
+      api: https://CLA.fcappservices.in/UserInformation/AddressService.svc/json
+      api: https://CLA.fcappservices.in/login/AuthService.svc/json
+      api: https://CSC.fcappservices.in/CartService/CheckoutService.svc/json
+      api: https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json
+      api: https://betacheckout.fcappservices.in/CartService/CheckoutService.svc/json
+      api: https://betacheckout.fcappservices.in/CommonService/CommonService.svc/json
+      api: https://betacheckout.fcappservices.in/PGFailedLogsService/PgFailedLogsService.svc/json
+      api: https://betacheckout.fcappservices.in/ShoppingCart/ShoppingCart.svc/json
+      api: https://betacheckout.fcappservices.in/TrackingService/TrackingService.svc/json
+      api: https://betacheckout.fcappservices.in/UserInformation/AddressService.svc/json
+      api: https://betacheckout.fcappservices.in/login/AuthService.svc/json
+      api: https://cdn.fcglcdn.com/brainbees/checkout/
+      api: https://cdn.fcglcdn.com/brainbees/checkout/DigitalProduct.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/assembly1.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/assembly2.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/assembly_unavailable.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/assemblyservice.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/bottom_bnr.gif
+      api: https://cdn.fcglcdn.com/brainbees/checkout/card.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/club-logo.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/coupon_appi2.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/deliverpro_rd.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/enableCardDetails.html
+      api: https://cdn.fcglcdn.com/brainbees/checkout/free_shippingbanner.gif
+      api: https://cdn.fcglcdn.com/brainbees/checkout/green_tick_with_confetti.json
+      api: https://cdn.fcglcdn.com/brainbees/checkout/ic-sprite-checkout-up6.png
+      api: https://cdn.fcglcdn.com/brainbees/checkout/location_filled.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/locationfilledicon.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newlock_fillicon.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newpay_amex.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newpay_diners.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newpay_maestro.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newpay_mastercard.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newpay_rupay.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/newpay_visa.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/nextdaydel.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/onemonthclublogo.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/other-upi.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/qr_scan.gif
+      api: https://cdn.fcglcdn.com/brainbees/checkout/retry_pmntqr.jpg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/samedaydel.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/thnku_add.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/tick_rd.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/unlockicon.svg
+      api: https://cdn.fcglcdn.com/brainbees/checkout/upi_
+      api: https://cdn.fcglcdn.com/brainbees/checkout/upico_ruppe.gif
+      api: https://cdn.fcglcdn.com/brainbees/checkout/watchlogo.svg
+      api: https://cid.fcappservices.in
+      api: https://cla.fcappservices.in
+      api: https://col.fcappservices.in/CartService/CheckoutService.svc/json
+      api: https://col.fcappservices.in/CommonService/CommonService.svc/json
+      api: https://col.fcappservices.in/PGFailedLogsService/PgFailedLogsService.svc/json
+      api: https://col.fcappservices.in/ShoppingCart/ShoppingCart.svc/json
+      api: https://col.fcappservices.in/TrackingService/TrackingService.svc/json
+      api: https://col.fcappservices.in/UserInformation/AddressService.svc/json
+      api: https://col.fcappservices.in/login/AuthService.svc/json
+      api: https://csc.fcappservices.in
+      api: https://jarvis.fcappservices.in/api/getCartPincodeSegmentRealtime
+      api: https://www.firstcry.com/api/listing/getcartofferproducts
+      api: https://www.firstcry.com/fcfuserqrapi/hp/reorder/checkout/products
+      api: https://www.firstcry.com/svcs/CommonService.svc
+      api: https://www.firstcry.com/svcs/CommonService.svc/GetPDFBTList
+      api: https://www.firstcry.com/svcs/CommonService.svc/GetPDYMLList
+      api: https://www.firstcry.com/svcs/CustomerService.svc/CouponProduct
+      api: https://www.firstcry.com/tatapi/club/getstatecitybypincode
++   8s https://cdn.fcglcdn.com/brainbees/js/m/swiper.min.js | 184755 b | keys []
++   8s https://cdn.fcglcdn.com/brainbees/php/js/jquery.2.0.0.min.js | 83095 b | keys []
++   8s https://cdn.fcglcdn.com/brainbees/php/js/master-common.v2.24.min.js?20261023 | 108892 b | keys []
+      api: /svcs/CommonService.svc
+      api: /svcs/CustomerService.svc
+      api: /svcs/MyAccountService.svc
+      api: https://checkout.firstcry.com/login/AuthService.svc/json/LogoutUser
+      api: https://jarvis.fcappservices.in/api/getAuthToken
+      api: https://tatpdp.fcappservices.in/tatapi/club/getstatecitybypincode
+      api: https://www.firstcry.com/capinet/pdp/AutoSearchClickCount
+      api: https://www.firstcry.com/userservices/getUserInfo
++   8s https://cdn.fcglcdn.com/brainbees/php/js/footer_menuext.1.1.min.js | 5368 b | keys []
++   8s https://cdn.fcglcdn.com/brainbees/js/v7/swiper.min.js | 124633 b | keys []
++   8s https://cdn.fcglcdn.com/brainbees/php/js/pdprevamp.1.56.min.js | 382458 b | keys ["can't be delivered", 'isservicable', 'serviceab', 'shippin']
+      api: /CommonService.svc/GetPDFBTList
+      api: /CommonService.svc/GetPDYMLList
+      api: /CommonService.svc/getComboModelList/pid
+      api: /CommonService.svc/getPdSizesQueReviewdata/pid
+      api: /CommonService.svc/getPdSizesdata/pid
+      api: /CommonService.svc/getProduct/pid
+      api: /CustomerService.svc/CouponProduct
+      api: /CustomerService.svc/ShareAndCartProductCount
+      api: /customerservice.svc/recommendedproducts
+      api: https://tatpdp.fcappservices.in/tatapi/club/getstatecitybypincode
+      api: https://www.firstcry.com/svcs/CustomerService.svc/NotifyMe
+      api: https://www.firstcry.com/tatapi/oam/checkdeliveryinfo
++   8s https://cdn.fcglcdn.com/brainbees/community/jarvissdk/jssdk-jarviscoreindia.js?v=23102026 | 117542 b | keys []
+      api: https://jarvis.fcappservices.in/api/getAuthToken
+      api: https://jarvis.fcappservices.in/api/getConditionalBranch
+      api: https://jarvis.fcappservices.in/api/getHTMLTemplateByUrl
+      api: https://jarvis.fcappservices.in/api/getwebpushsettings
+      api: https://jarvis.fcappservices.in/api/receiveusersubscription
+      api: https://jarvis.fcappservices.in/api/registereventmodel
+      api: https://jarvis.fcappservices.in/api/saveUserSubmissions
+      api: https://jarvis.fcappservices.in/api/updateEmailId
+      api: https://www.firstcry.com/service-worker.js
++   8s https://cdn.fcglcdn.com/brainbees/js/v7/menu-1.14-mg-head.min.js?20261023 | 50404 b | keys []
++   8s https://cdn.fcglcdn.com/brainbees/php/js/footerstrip3.0.min.js | 165756 b | keys ['shippin']
+      api: /svcs/CommonService.svc
+      api: /svcs/CustomerService.svc
+      api: /svcs/MyAccountService.svc
+      api: https://www.firstcry.com/capinet/pdp/SaveShortlistData
+      api: https://www.firstcry.com/capinet/pdp/json/CouponProduct
+      api: https://www.firstcry.com/userservices/getUserInfo
+      api: https://www.firstcry.com/userservices/getorderHistory_appnew
++   8s https://cdn.fcglcdn.com/brainbees/php/js/internalwebengage.min.js | 13278 b | keys []
+      api: https://jarvis.fcappservices.in/api/getAuthToken
+      api: https://jarvis.fcappservices.in/api/getmasterprofileinfo
+      api: https://jarvis.fcappservices.in/api/registereventmodel
+      api: https://jarvis.fcappservices.in/api/updateCustomAttributes
+      api: https://www.firstcry.com/tatapi/club/getstatecitybypincode
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi=7s, 12s:Fi=4s, 24s:Fi=3s, 36s:Fi=4s)
+==================== C. delivery check, full answer for 248001 ====================
+   AAR Cuda (cart: NOT deliverable 13 248001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "3-4", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-38", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Saturday, 24th Oct 2026", "SDDDate": "", "NDDLeftTime": "05-21", "SDDLeftTime": "0-0", "NDDCutOffTime": "19:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 2, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24783699, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
+        PdpSampleInfo: []
+        groupserviceability: {"24783699": 1}
+   AAR Cuda (cart: NOT deliverable 13 110001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "2-3", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-38", "IsNDD": true, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "Saturday, 24th Oct 2026", "SDDDate": "", "NDDLeftTime": "10-21", "SDDLeftTime": "0-0", "NDDCutOffTime": "23:59:59", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": true, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 2, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24783699, "DispatchHrs": 0, "DispatchTAT": "", "ShippingDate": "Get it by <b>Tomorrow 8 PM </b>", "arrivingBeforeFest": 0, "qwikShippingDate": "0 Mins"}
+        PdpSampleInfo: []
+        groupserviceability: {"24783699": 1}
+   Salt Streaker (common)             248001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "6-7", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 201, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473712, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Thursday, Oct 29</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24473712": 1}
+   Salt Streaker (common)             110001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "5-6", "ConvCharge": "6", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 201, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24473712, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Wednesday, Oct 28</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24473712": 1}
+   Silverado Driftcation              248001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24525296, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Saturday, Nov 07</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24525296": 0}
+   Silverado Driftcation              110001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24525296, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Saturday, Nov 07</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24525296": 0}
+   DB5 Safari                         248001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24783759, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Saturday, Nov 07</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24783759": 0}
+   DB5 Safari                         110001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24783759, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Saturday, Nov 07</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24783759": 0}
+   Audi TT Safari                     248001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24472644, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Saturday, Nov 07</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24472644": 0}
+   Audi TT Safari                     110001: {"CODAvailable": true, "DropShipmentAvailable": false, "ProductTAT": "12-15", "ConvCharge": "0", "IsTnB": false, "ServerTime": "13-38", "IsNDD": false, "IsSDD": false, "IsQwik": false, "qwikstores": "", "NDDDate": "", "SDDDate": "", "NDDLeftTime": "0-0", "SDDLeftTime": "0-0", "NDDCutOffTime": "00:00:00", "SDDCutOffTime": "00:00:00", "IsSameDayDeliveryWOPincode": false, "IsNextDayDeliveryWOPincode": false, "IsAssemblyServiceAvailable": "NA", "IsOnlineAssemblyServiceAvailable": "NA", "isGiftwrapExctype": 0, "IsServicable": 0, "SddCharges": 99, "ActualSddCharges": 0, "NddCharges": 49, "ActualNddCharges": 0, "ExpiryDate": "", "ExpiryDate2": "", "GSTAmt": 0, "ActualPrice": 179, "feedAmount": 179, "ProductID": 24472644, "DispatchHrs": 24, "DispatchTAT": "24 Hours", "ShippingDate": "Get it by <b>Saturday, Nov 07</b>", "arrivingBeforeFest": 0}
+        PdpSampleInfo: []
+        groupserviceability: {"24472644": 0}
 
-run 1: 40s, 0 message(s) so far, 0 stock change(s)
-   page-behind cars held in stock: 0 []
-   verdicts: {'no delivery': 80, 'ok': 130, None: 190, 'sold out': 179, 'last unit': 8, 'unlisted': 1, 'arriving': 6}
-   live stats: {'pages': 25, 'tat': 59}
+==================== D. GetCartV1 like a browser ====================
+   24783699 csc.fcappservices.in: "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"23\\\/10\\\/2026 13:38:27\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"As
+   24783699 www.firstcry.com: ""
+   24473712 csc.fcappservices.in: "{\"GetCartResult\":{\"pOrderSummary\":{\"ShipPinCode\":\"248001\",\"ServerDateTime\":\"23\\\/10\\\/2026 13:38:29\",\"CartOfferMsg\":null,\"OfferMsgForCart\":\"\",\"OfferStripMsg\":null,\"TotalProducts\":0,\"TotalQuantity\":0,\"TotalItems\":0,\"TotalCombos\":0,\"SubTotal\":0,\"MrpTotal\":0,\"ActualPriceTotal\":0,\"ShippingCharges\":50,\"NetPayment\":50,\"TotalConvCharge\":0,\"FirstOrderFreeShipChrge\":0,\"CodChargesOnMinAmt\":15,\"CodMaxAmount\":10000,\"CodMinimumAmount\":699,\"ShippingChargesBelowMin\":50,\"ShippingChargesMinNetAmount\":699,\"MinimumOrderAmount\":99,\"TotalVatAmount\":0,\"DiscountLimitForVat\":0,\"PurchaseOrderItemList\":null,\"IsTVCFree\":false,\"CouponOnCombo\":false,\"As
+   24473712 www.firstcry.com: ""
 
-================ RUN 2 ================
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.4s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 399 products across 20 page(s) (194 with zero stock) in 1.5s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 395, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Free Wheel Die Cast Raijin Express (5 | stock=out_of_stock count=0 price=179 mrp=None
-  [FC-LIVE] listing ['24783699', '24776091', '24475755', '24473724', '24236112', '24473514', '24453327', '24247515', '23835987', '23835981', '23074611', '2232876'] | delivery flips [] | re-reads ['24503901', '24768898', '24546534', '24473509']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 165 car(s) seen live in 4.1s; 0 now orderable, 0 not any more
-[*] FirstCry total (API): 564 tracked, 125 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 564 products in 7.1s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 0.9s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24776091', '24475755', '24473724', '24236112', '24247515', '2232876', '24473514', '24453327', '23835987', '23835981', '23074611'] | delivery flips [] | re-reads ['24503901', '24473498', '23074610', '24768898']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 156 car(s) seen live in 2.3s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 134 products in 3.2s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.0s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24776091', '24475755', '24473724', '24236112', '24247515', '2232876', '24473514', '24453327', '23835987', '23835981', '23074611'] | delivery flips [] | re-reads ['24503901', '24546534', '24473509', '24473498']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 160 car(s) seen live in 2.1s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 134 products in 3.1s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 0.9s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24776091', '24475755', '24473724', '24236112', '24247515', '2232876', '24473514', '24453327', '23835987', '23835981', '23074611'] | delivery flips [] | re-reads ['24503901', '23074610', '24768898', '24546534']
-  [FC-LIVE] 16 to confirm, 4 🎯 set(s) read, 0 audited → 158 car(s) seen live in 3.4s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 134 products in 4.3s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 40s (0s:Fi=7s, 12s:Fi=3s, 24s:Fi=3s, 36s:Fi=4s)
-
-run 2: 40s, 0 message(s) so far, 0 stock change(s)
-   page-behind cars held in stock: 0 []
-   verdicts: {'no delivery': 80, 'ok': 130, None: 190, 'sold out': 178, 'last unit': 8, 'unlisted': 2, 'arriving': 6}
-   live stats: {'pages': 50, 'tat': 121}
-
-================ RUN 3 ================
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.3s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783761', '24473516', '24473474', '24247511', '23930405', '23351681', '23346404', '22597418'] | delivery flips [] | re-reads ['24503901', '24473724', '23354966', '23074610']
-  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 129 car(s) seen live in 3.3s; 0 now orderable, 0 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 134 products in 4.7s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.0s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783761', '24473516', '24473474', '24247511', '23930405', '23351681', '23346404', '22597418'] | delivery flips [] | re-reads ['24503901', '24473724', '24768898', '24473509']
-  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 101 car(s) seen live in 2.4s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 134 products in 3.4s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 1.2s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783761', '24473516', '24473474', '24247511', '23930405', '23351681', '23346404', '22597418'] | delivery flips [] | re-reads ['24503901', '24473724', '24473498', '23354966']
-  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 104 car(s) seen live in 2.5s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 134 products in 3.8s (live: FirstCry)
-  [FC-API] quick sweep: 205 in stock from 11 page(s) in 0.9s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24783761', '24473516', '24473474', '24247511', '23930405', '23351681', '23346404', '22597418'] | delivery flips [] | re-reads ['24503901', '24473724', '23074610', '24768898']
-  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 119 car(s) seen live in 2.3s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 134 products in 3.3s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 39s (0s:Fi=5s, 12s:Fi=3s, 24s:Fi=4s, 36s:Fi=3s)
-
-run 3: 39s, 0 message(s) so far, 0 stock change(s)
-   page-behind cars held in stock: 0 []
-   verdicts: {'no delivery': 80, 'ok': 130, None: 190, 'sold out': 178, 'last unit': 8, 'unlisted': 2, 'arriving': 6}
-   live stats: {'pages': 76, 'tat': 180}
-
-================ RUN 4 ================
-  [FC-API] quick sweep: 204 in stock from 11 page(s) in 1.5s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 399 products across 20 page(s) (194 with zero stock) in 1.5s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 395, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Free Wheel Die Cast Raijin Express (5 | stock=out_of_stock count=0 price=179 mrp=None
-  [FC-LIVE] listing ['24776095', '24235312', '24505759', '24476803', '23973355', '23351188', '23348665'] | delivery flips [] | re-reads ['24503901', '24473724', '24473509', '24473498']
-  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 86 car(s) seen live in 4.3s; 0 now orderable, 0 not any more
-[*] FirstCry total (API): 564 tracked, 125 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 564 products in 7.4s (live: FirstCry)
-  [FC-API] quick sweep: 204 in stock from 11 page(s) in 1.2s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24783698', '24505759', '23351188', '23348665'] | delivery flips ['24476471'] | re-reads ['24503901', '24473724', '24263017', '23074610']
-  [FC-LIVE] 13 to confirm, 4 🎯 set(s) read, 0 audited → 157 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 134 products in 4.9s (live: FirstCry)
-  [FC-API] quick sweep: 204 in stock from 11 page(s) in 1.0s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24505759', '23351188', '23348665'] | delivery flips [] | re-reads ['24503901', '24473724', '24768898', '24473509']
-  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 89 car(s) seen live in 2.5s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 133 products in 3.6s (live: FirstCry)
-  [FC-API] quick sweep: 204 in stock from 11 page(s) in 1.2s — fresh ✓ (searchrank, 11 page(s) computed live)
-  [FC-LIVE] listing ['24776095', '24235312', '24476803', '23973355', '24505759', '23351188', '23348665'] | delivery flips [] | re-reads ['24503901', '24473724', '24473498', '24263017']
-  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 84 car(s) seen live in 3.0s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 133 products in 4.2s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 40s (0s:Fi=7s, 12s:Fi=5s, 24s:Fi=4s, 36s:Fi=4s)
-
-run 4: 40s, 0 message(s) so far, 0 stock change(s)
-   page-behind cars held in stock: 0 []
-   verdicts: {'no delivery': 80, 'ok': 130, None: 190, 'sold out': 177, 'last unit': 9, 'unlisted': 2, 'arriving': 6}
-   live stats: {'pages': 101, 'tat': 238}
-
-0 message(s) would have been sent in all
+done in 20s
