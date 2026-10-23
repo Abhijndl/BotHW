@@ -20577,10 +20577,11 @@
     "fc_listed_at": "2026-10-23T04:45:00",
     "fc_api_seen_at": "2026-10-23T04:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "arriving",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-10-22T15:34:08",
+    "fc_arr": "2026-10-23T04:51:43",
     "fc_svc": "1"
   },
   "fc_24762155": {
