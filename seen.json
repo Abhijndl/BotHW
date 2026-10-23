@@ -14031,7 +14031,7 @@
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14734,7 +14734,7 @@
   "fc_24473494": {
     "stock": "in_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15460,7 +15460,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24342831",
     "fc_off": "2026-10-23T09:07:34",
@@ -15655,7 +15655,7 @@
     "fc_listed_at": "2026-10-22T17:15:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24473732",
     "fc_off": "2026-10-23T09:08:07",
@@ -15703,7 +15703,7 @@
     "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24476167": {
     "stock": "out_of_stock",
@@ -15766,7 +15766,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "cat",
     "fc_gid": "24472644",
     "fc_phantom": "2026-10-23T08:55:57",
@@ -15791,9 +15791,8 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24476138",
-    "fc_off": "2026-10-23T09:07:43",
     "fc_cart": "y",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24473509": {
     "stock": "out_of_stock",
@@ -15924,7 +15923,7 @@
     "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24473475": {
     "stock": "out_of_stock",
@@ -18091,7 +18090,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503324",
     "fc_cart": "n",
@@ -18113,7 +18112,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503323",
     "fc_cart": "n",
@@ -18322,7 +18321,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24514779",
     "fc_cart": "n",
@@ -18936,7 +18935,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-21T22:50:59",
@@ -21039,7 +21038,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_cart": "n",
@@ -21064,13 +21063,14 @@
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_pb": "1",
+    "fc_arr": "2000-01-01T00:00:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
   "fc_24768902": {
     "stock": "in_stock",
     "name": "Hot Wheels Deora Tooned Die Cast Free Wheel Toy Car - Maroon",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-deora-tooned-die-cast-free-wheel-toy-car-maroon/24768902/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21136,7 +21136,7 @@
   "fc_24762190": {
     "stock": "in_stock",
     "name": "Hot Wheels Mailed It Die Cast Free Wheel Toy Car - Silver",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mailed-it-die-cast-free-wheel-toy-car-silver/24762190/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21157,7 +21157,7 @@
   "fc_24762188": {
     "stock": "in_stock",
     "name": "Hot Wheels Gone Mad Die Cast Free Wheel Toy Car - Green",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-gone-mad-die-cast-free-wheel-toy-car-green/24762188/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21178,7 +21178,7 @@
   "fc_24762186": {
     "stock": "in_stock",
     "name": "Hot Wheels Mid Mill Die Cast Free Wheel Toy Car - Black & Orange",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mid-mill-die-cast-free-wheel-toy-car-black-and-orange/24762186/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21199,7 +21199,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21256,7 +21256,7 @@
     "fc_listed_at": "2026-10-23T04:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_cart": "n",
@@ -22967,7 +22967,7 @@
     "fc_listed_at": "2026-10-23T09:00:00",
     "fc_api_seen_at": "2026-10-23T09:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "cat",
     "fc_gid": "24783761",
     "fc_phantom": "2026-10-23T08:35:50",
