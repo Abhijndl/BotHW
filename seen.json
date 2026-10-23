@@ -4064,7 +4064,7 @@
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345759",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23351187": {
     "stock": "out_of_stock",
@@ -13330,7 +13330,6 @@
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-23T06:22:50",
-    "fc_arr": "2026-10-23T06:22:58",
     "fc_svc": "1"
   },
   "fc_24473511": {
