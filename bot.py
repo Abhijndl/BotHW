@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v16.4
+Hot Wheels / Diecast Collector Tracker  ·  v17
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -10,6 +10,15 @@ Host    : GitHub Actions, triggered every minute by cron-job.org; state lives in
 
 HOW A RUN WORKS
 ---------------
+FirstCry, v17: its own CHECKOUT CART has the final word. Asked as a guest about
+a cart for 248001 (a cookie string — nothing is stored or ordered), it answers
+per car what your app's cart shows: the units it can send to your pincode and
+the delivery date — or nothing / 0 where your cart says "Cannot be delivered to
+248001". Every FirstCry stock change is decided by it; the listing, product
+pages and delivery check described below only point at cars to ask about, and
+every Hot Wheels car is asked in turn (🎯 cars about every half minute). The
+signals below are the fallback when the cart can't be asked.
+
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
     pass, whole catalogue every 2 min, both read live) says where to look;
@@ -60,9 +69,9 @@ stores. Runs are chained back to back, so the watch is continuous.
 ALERTS
 ------
 🆕 new listing (in stock) · 🔥 back in stock · 💸 price drop
-🎯 = one of your marques / watchlist (listed first) · 📦/⚠️ = units FirstCry
-has, all-India (page stock, capped by its delivery check — only your own cart
-knows how many of them can reach 248001)
+🎯 = one of your marques / watchlist (listed first) · ✅/⚠️ N left for 248001 =
+what FirstCry's cart can send you (v17), with its delivery date (🚚). 📦 … (all-India)
+= FirstCry's national count, shown only when the cart couldn't be asked.
 v16: every 🎯 car that's in stock gets its own message, and its first line
 says what it is — Treasure Hunts and the like first:
   💎 SUPER TREASURE HUNT   🏆 TREASURE HUNT   ⛓️ CHASE   🔩 ZAMAC
@@ -305,7 +314,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         # per-source bookkeeping (e.g. Minifygram's stock-detection version tag)
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
-                  "fc_new_pending", "fc_pb", "fc_arr", "fc_off",
+                  "fc_new_pending", "fc_pb", "fc_arr", "fc_off", "fc_cart",
                   "fc_svc"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
@@ -1732,6 +1741,128 @@ _FC_LIVE_SINCE = [""]       # when v14 first ran (seen.json _meta), 15-min bucke
 _FC_LIVE_LOCK = threading.Lock()
 
 
+# ── v17: FirstCry's own checkout cart is the final word ─────────────────────────
+# Every other FirstCry signal turned out to be national or out of date: the
+# product page and the delivery check count the whole country, and even the
+# in-stock list for 248001 had the '70 AAR Cuda on 23 Oct 13:30 while your cart
+# said "Cannot be delivered to 248001". FirstCry's checkout page asks
+# CSC.fcappservices.in/…/ShoppingCart.svc/json/LoadCart about a guest cart — a
+# cookie string, "NO^<id>^1^0" per car; nothing is stored or ordered — and gets,
+# per car, the units it can send to your pincode (CurrentStock), the warehouse
+# that would ship it ("0" = none), pincode limits and the delivery date. A car
+# you can buy is in that answer with units from a real warehouse; the AAR Cuda
+# wasn't in it at all. One call answers ~100 cars in ~1.5 s (probes 23 Oct).
+# Every FirstCry stock change, in or out, is decided by it. Cars the listing,
+# page or delivery check point at are asked every pass; cars held in stock, 🎯
+# cars and the rest are asked in turn, so a car turning buyable is seen within
+# about half a minute (🎯) to a few minutes even when the page and the lists
+# lag. If the cart can't be asked, the signals decide as before and the alert
+# says the cart wasn't checked.
+FC_CART = os.getenv("FC_CART", "true").lower() == "true"
+FC_CART_URL = "https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/LoadCart"
+FC_CART_BATCH = max(1, int(os.getenv("FC_CART_BATCH", "75")))      # cars per call
+FC_CART_MAX = max(0, int(os.getenv("FC_CART_MAX", "150")))         # cars asked in turn per pass
+FC_CART_TIMEOUT = float(os.getenv("FC_CART_TIMEOUT", "10"))
+# a comeback the cart confirmed may alert again after this many minutes (units
+# that really came back after a sell-out are worth knowing about)
+FC_CART_COOLDOWN_MIN = float(os.getenv("FC_CART_COOLDOWN_MIN", "20"))
+_FC_CART_PAUSE = [0.0]      # epoch until which the cart is left alone (429/403)
+_FC_CART_DEV = {}           # this run's guest device id + fingerprint headers
+_FC_CART_STATS = {"calls": 0, "cars": 0, "fail": 0}
+
+
+def fc_cart_check(pids, pincode: str | None = None):
+    """FirstCry's checkout cart, asked as a guest about these cars for your
+    pincode → {car: {"ok", "n", "eta", "price", "mrp", "name"}} — or None if the
+    cart couldn't be asked at all. A car the cart leaves out isn't buyable for
+    you right now ("ok": False, "gone": True)."""
+    pincode = str(pincode or FC_PINCODE)
+    pids = [str(p) for p in dict.fromkeys(pids) if str(p).isdigit()]
+    if not pids:
+        return {}
+    if pincode in ("", "0") or _FC_CART_PAUSE[0] > time.time():
+        return None
+    if not _FC_CART_DEV:
+        import uuid
+        _FC_CART_DEV.update(fcdid=str(uuid.uuid4()), fingerprint=uuid.uuid4().hex)
+    hdr = {**COMMON_HEADERS, "Accept": "application/json, text/javascript, */*; q=0.01",
+           "Content-Type": "application/json; charset=utf-8", "Origin": "https://checkout.firstcry.com",
+           "Referer": "https://checkout.firstcry.com/pay", **_FC_CART_DEV}
+
+    def one(chunk):
+        body = {"pro": "*".join(f"NO^{p}^1^0" for p in chunk), "shipPin": pincode, "SiteType": 0,
+                "LC": 0, "CR": 0, "Coupons": "", "FC_AUTH": "", "ShipMobile": "", "ShipPhone": "",
+                "PayBack": "", "State": "", "PaymentType": "", "LPO": False, "LSD": False, "CCA": "",
+                "LT": "N", "UA": hdr.get("User-Agent", ""), "AddressType": "Home", "AssemblyMap": "",
+                "ptype": "", "pvalue": "", "FitKidChildIdMap": "", "CouponCodeToCheck": "",
+                "GiftCodeToCheck": "", "BuyerType": "", "CardPar": "", "RemoveFreeErr": "",
+                "redesign": True, "caller": "", "Ageid": "", "bmsm": "", "SegmentIDs": "", "latlong": "",
+                "segmentcookie": "", "cardref": "", "savedCardBankCode": "", "savedCardIssuingBank": "",
+                "cardtoken": ""}
+        try:
+            r = http.post(FC_CART_URL, data=json.dumps(body), headers=hdr, timeout=FC_CART_TIMEOUT,
+                          **_IMPERSONATE)
+        except Exception:
+            return chunk, None
+        _FC_CART_STATS["calls"] += 1
+        if r.status_code in (403, 429):
+            _FC_CART_PAUSE[0] = time.time() + 300
+            print(f"  [FC-CART] FirstCry answered {r.status_code} — cart checks paused for 5 min")
+            return chunk, None
+        if r.status_code != 200:
+            return chunk, None
+        try:
+            x = r.json()
+            x = x.get("LoadCartResult") if isinstance(x, dict) else None
+            while isinstance(x, str):
+                x = json.loads(x)
+            summ = (x or {}).get("pOrderSummary")
+        except Exception:
+            return chunk, None
+        if not isinstance(summ, dict) or str(summ.get("ShipPinCode") or "") != pincode:
+            return chunk, None
+        items = summ.get("PurchaseOrderItemList") or []
+        if len(chunk) >= 10 and len(items) < len(chunk) / 2:
+            return chunk, None          # most of a big cart missing: a hiccup, not a sell-out
+        got = {}
+        for it in items:
+            if not isinstance(it, dict):
+                continue
+            p = str(it.get("ProductID") or "")
+            n = _fc_int(it.get("CurrentStock")) or 0
+            isv = _fc_int(it.get("IsServicable"))
+            wh = str(it.get("warehouseid") or "0")
+            limited = ((_fc_int(it.get("NoOfPinCodeToCheck")) or 0) > 0
+                       and not (it.get("isValidPincodeForDropShipment") or it.get("IsValidPincodeForDropShipProduct")))
+            ok = n > 0 and (isv is None or isv > 0) and wh not in ("", "0") and not limited
+            got[p] = {"ok": ok, "n": (min(n, isv) if isv else n) if ok else 0,
+                      "eta": str(it.get("EstimatedDeliveryDate") or ""), "price": it.get("ActualPrice"),
+                      "mrp": it.get("MRP"), "name": str(it.get("ProductName") or "")}
+        return chunk, got
+
+    chunks = [pids[i:i + FC_CART_BATCH] for i in range(0, len(pids), FC_CART_BATCH)]
+    out, failed = {}, 0
+    with ThreadPoolExecutor(max_workers=min(4, len(chunks))) as ex:
+        for chunk, got in ex.map(one, chunks):
+            if got is None:
+                failed += 1
+                continue
+            for p in chunk:
+                out[p] = got.get(p) or {"ok": False, "n": 0, "gone": True, "eta": "", "price": None,
+                                        "mrp": None, "name": ""}
+    _FC_CART_STATS["cars"] += len(out)
+    _FC_CART_STATS["fail"] += failed
+    return None if failed == len(chunks) else out
+
+
+def _fc_eta(s: str) -> str:
+    """'2026-10-24 00:00:00' → 'Sat 24 Oct'."""
+    try:
+        return time.strftime("%a %d %b", time.strptime(str(s)[:10], "%Y-%m-%d"))
+    except Exception:
+        return ""
+
+
 def _fc_json_after(txt: str, pat: str):
     """The JSON object that starts right after `pat` (balanced braces, aware of
     strings), or None."""
@@ -2434,6 +2565,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
         r["fc_api_seen_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
         n_up += before != "in_stock" and st == "in_stock"
         n_down += before == "in_stock" and st != "in_stock"
+    if FC_CART:
+        out = _fc_cart_apply(out, prev_fc, word)
     if order or n_fail or n_wait:
         print(f"  [FC-LIVE] {len(cands)} to confirm, {len(poll)} 🎯 set(s) read, "
               f"{sum(1 for p in audit if p in live)} audited → "
@@ -2442,6 +2575,122 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
               + (f", {n_new} newly tracked" if n_new else "")
               + (f", {n_fail} unconfirmed (page not read)" if n_fail else "")
               + (f", {n_wait} waiting for their page" if n_wait else ""))
+    return out
+
+
+def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
+    """v17: FirstCry's checkout cart decides every FirstCry stock change (see
+    FC_CART). Asks about the cars the signals point at plus a turn of the rest,
+    and makes the records say what the cart says."""
+    t0 = time.time()
+    recs = {r["id"][3:]: r for r in out if r.get("source") == "firstcry" and str(r.get("id", "")).startswith("fc_")}
+
+    def hw(v):
+        nm = (v or {}).get("name") or ""
+        return bool(nm) and not _fc_excluded(nm) and bool(_FC_HW_NAME.search(nm))
+
+    # every stock change the signals propose (either way), and every car they
+    # half point at: a few units off the list, a page still at 0, a last unit,
+    # FirstCry's lists showing a car we hold sold out
+    must = []
+    proposed = {}
+    for p, r in recs.items():
+        if not p.isdigit() or r.get("fc_carried") or not hw(r):
+            continue
+        before = (prev_fc.get(p) or {}).get("stock")
+        if r.get("stock") != before or (r.get("stock") != "in_stock" and (
+                r.get("fc_live") in ("unlisted", "arriving", "last unit") or word.get(p) in ("list", "cat"))):
+            must.append(p)
+            proposed[p] = r.get("stock")
+    # in turn: cars held in stock (still buyable for you?), 🎯 cars, the rest
+    pool = {p: v for p, v in prev_fc.items() if p.isdigit() and hw(v) and p not in proposed}
+    held = sorted((p for p, v in pool.items() if v.get("stock") == "in_stock"), key=int)
+    tgt = sorted((p for p, v in pool.items() if v.get("stock") != "in_stock" and _fc_target(p, v)), key=int)
+    rest = sorted((p for p, v in pool.items() if v.get("stock") != "in_stock" and not _fc_target(p, v)), key=int)
+    free = max(0, FC_CART_MAX - len(must))
+    want = [min(len(held), free // 4), min(len(tgt), free // 2), 0]
+    want[2] = min(len(rest), free - want[0] - want[1])
+    spare = free - sum(want)
+    for i, pl in ((1, tgt), (0, held)):            # nothing left over unused
+        extra = min(spare, len(pl) - want[i])
+        want[i] += extra
+        spare -= extra
+    rn = os.getenv("GITHUB_RUN_NUMBER", "")
+    pos = (int(rn) if rn.isdigit() else int(time.time() // 60)) * 4 + _FC_RUN_PASS[0]
+    picks = []
+    for pl, n in zip((held, tgt, rest), want):
+        if pl and n:
+            start = (pos * n) % len(pl)
+            picks += [pl[(start + i) % len(pl)] for i in range(n)]
+    ask = list(dict.fromkeys(must + picks))
+    if not ask:
+        return out
+    res = fc_cart_check(ask)
+    if res is None:
+        res = {}
+        print(f"  [FC-CART] the cart couldn't be asked ({len(ask)} cars) — the listing / page signals decide")
+    n_yes = n_in = n_out = n_fix = 0
+    for p in must:
+        if p not in res:                           # not answered: the signals' word stands, flagged
+            r = recs.get(p)
+            if r is not None and r.get("stock") == "in_stock" and (prev_fc.get(p) or {}).get("stock") != "in_stock":
+                r["fc_cart_unchecked"] = True
+    for p, a in res.items():
+        v = prev_fc.get(p) or {}
+        st = "in_stock" if a.get("ok") else "out_of_stock"
+        cart = "y" if a.get("ok") else "n"
+        n_yes += a.get("ok", False)
+        r = recs.get(p)
+        if r is None:
+            if v.get("stock") == st and v.get("fc_cart") == cart:
+                continue                           # nothing new
+            if not hw(v):
+                continue
+            nm = v.get("name", "")
+            r = {"id": f"fc_{p}", "source": "firstcry", "name": nm,
+                 "url": v.get("url") or f"https://www.firstcry.com/hot-wheels/{_fc_slug(nm)}/{p}/product-detail",
+                 "price": v.get("price", ""), "mrp": "", "badge_new": False,
+                 "watched": p in FC_WATCH_IDS or _fc_is_marque(nm), "auto_watch": _fc_is_marque(nm),
+                 "stock_ver": FC_API_STOCK_VER, "fc_trusted": True, "fc_listed_at": v.get("fc_listed_at", ""),
+                 "fc_api_seen_at": v.get("fc_api_seen_at", "")}
+            out.append(r)
+            recs[p] = r
+        r.pop("fc_carried", None)
+        before = v.get("stock")
+        if v and before != st and not v.get("fc_cart") and proposed.get(p) != st and not r.get("fc_first_read"):
+            # its first cart answer, and nothing else said so: a correction, not news
+            r["fc_first_read"] = True
+            n_fix += 1
+        r["stock"] = st
+        r["fc_cart"] = cart
+        r.pop("fc_cart_unchecked", None)
+        if a.get("ok"):
+            r["stock_count"] = a.get("n") or None
+            r["fc_cart_eta"] = _fc_eta(a.get("eta", ""))
+            r["fc_live"] = "ok"
+            r["fc_live_now"] = True
+            try:
+                price = float(a.get("price") or 0)
+                mrp = float(a.get("mrp") or 0)
+            except (TypeError, ValueError):
+                price = mrp = 0
+            if price > 0:
+                r["price"] = f"₹{int(round(price))}"
+                r["mrp"] = f"₹{int(round(mrp))}" if mrp > price + 0.5 else ""
+            if (_FC_LIVE.get(p) or {}).get("cs") == 0 and time.time() - (_FC_LIVE.get(p) or {}).get("at_page", 0) < 120:
+                r["fc_page_behind"] = True          # the cart sells it, the page still says 0
+                r["fc_pb"] = "1"
+            n_in += before != "in_stock"
+        else:
+            r["stock_count"] = None
+            r.pop("fc_page_behind", None)
+            r["fc_pb"] = ""
+            if r.get("fc_live") in ("ok", None, ""):
+                r["fc_live"] = "not in cart"
+            n_out += before == "in_stock"
+    print(f"  [FC-CART] {len(ask)} car(s) asked ({len(must)} pointed at, {len(ask) - len(must)} in turn) "
+          f"in {time.time() - t0:.1f}s: {n_yes} buyable for {FC_PINCODE}; {n_in} now in, {n_out} now out"
+          + (f", {n_fix} first answers applied quietly" if n_fix else ""))
     return out
 
 
@@ -3935,6 +4184,8 @@ def compute_changes(current: dict, seen: dict) -> dict:
         # flicker, so it may alert again after FC_RESTOCK_COOLDOWN_H hours
         cooldown = (FC_RESTOCK_COOLDOWN_H if d.get("fc_live_now") and d.get("fc_live") == "ok"
                     else RESTOCK_COOLDOWN_H)
+        if d.get("fc_cart") == "y":
+            cooldown = FC_CART_COOLDOWN_MIN / 60.0     # v17: the cart confirmed it — real units again
         if (stock == "in_stock" and prev_stock == "out_of_stock"
                 and not is_correction
                 and _hours_since(prev.get("last_restock_alert", "")) >= cooldown):
@@ -4098,16 +4349,25 @@ def _line(d, extra="") -> str:
         # FirstCry's numbers are for the whole country: only your own cart
         # knows how many can reach 248001 (21 Oct: an alert said plenty, the
         # cart said 1 left, not deliverable) — so the alert says so (v16.3)
-        where = " (all-India)" if d.get("source") == "firstcry" else ""
-        flag += f" ⚠️ only {cnt} left{where}" if cnt <= FC_LOW_STOCK else f" 📦 {cnt} left{where}"
+        if d.get("fc_cart") == "y":
+            # v17: what FirstCry's cart can send to your pincode
+            where = f" for {FC_PINCODE}"
+            flag += f" ⚠️ only {cnt} left{where}" if cnt <= FC_LOW_STOCK else f" ✅ {cnt} left{where}"
+        else:
+            where = " (all-India)" if d.get("source") == "firstcry" else ""
+            flag += f" ⚠️ only {cnt} left{where}" if cnt <= FC_LOW_STOCK else f" 📦 {cnt} left{where}"
     price = d.get("price", "")
     mrp = f" <s>{d['mrp']}</s>" if d.get("mrp") else ""
     url = fc_fresh_link(d["url"]) if d.get("source") == "firstcry" else d["url"]
     info = _hw_line(d)
     info = f"\n{info}" if info else ""
+    if d.get("fc_cart") == "y" and d.get("fc_cart_eta"):
+        info += f"\n🚚 cart says: delivery by {d['fc_cart_eta']}"
     if d.get("fc_page_behind"):
         # FirstCry's list / catalogue says it's in, the page hasn't caught up yet
         info += "\n💡 page may still say Out of Stock: tap ♡, then add it to the cart from your Favourites"
+    if d.get("fc_cart_unchecked"):
+        info += "\n⚠️ FirstCry's cart couldn't be checked this time — check delivery before paying"
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}{info}\n{url}"
 
 
