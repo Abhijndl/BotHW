@@ -1,209 +1,178 @@
-seen.json copied: 858256 bytes
-version: Hot Wheels / Diecast Collector Tracker  ·  v16.4
+seen.json copied: 874864 bytes
+version: Hot Wheels / Diecast Collector Tracker  ·  v17.1
 
 ================ RUN 1 ================
-  [FC-API] quick sweep: 188 in stock from 12 page(s) in 2.5s — fresh ✓ (searchrank, 12 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 403 products across 21 page(s) (216 with zero stock) in 2.0s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 399, 'Sports & Games': 4}
+  [FC-API] quick sweep: 187 in stock from 12 page(s) in 2.1s — fresh ✓ (searchrank, 12 page(s) computed live)
 [HW] case table: 1284 cars (52 cases)
-  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
-  [FC-LIVE] listing ['24235312', '22597417'] | delivery flips [] | re-reads ['24472644', '24236112', '23973355', '23930405']
-  [FC-CART] 150 car(s) asked (8 pointed at, 142 in turn) in 1.2s: 41 buyable for 248001; 6 now in, 0 now out, 6 first answers applied quietly
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 34 car(s) seen live in 5.0s; 0 now orderable, 0 not any more
-[*] FirstCry total (API): 565 tracked, 115 buyable now (in-stock list complete), 0 aged to delisted
+  [FC-LIVE] listing ['24476003', '24473510', '24525296', '24476804', '24473498', '24473477', '23930405', '23346404', '22597418'] | delivery flips [] | re-reads ['24473509', '23354598']
+  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 3 now out, 3 in the cart but not on sale on their page
+  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 77 car(s) seen live in 5.2s; 0 now orderable, 4 not any more
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 565 products in 9.6s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '23973355'] | delivery flips [] | re-reads ['24473510', '22597418', '24505759', '24476887']
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.1s: 39 buyable for 248001; 2 now in, 0 now out, 2 first answers applied quietly
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 54 car(s) seen live in 3.3s; 0 now orderable, 1 not any more
-[*] pass 2: FirstCry → 231 products in 4.3s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '23973355'] | delivery flips [] | re-reads ['24476803', '23346404', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.0s: 40 buyable for 248001; 3 now in, 0 now out, 3 first answers applied quietly
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 64 car(s) seen live in 3.0s; 0 now orderable, 1 not any more
-[*] pass 3: FirstCry → 160 products in 4.0s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '24476887', '24476804', '24476803', '23973355'] | delivery flips [] | re-reads ['24505759', '23346404', '22597418']
-  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 55 car(s) seen live in 3.1s; 0 now orderable, 2 not any more
-[*] pass 4: FirstCry → 133 products in 4.0s (live: FirstCry)
+[*] pass 1: FirstCry → 120 products in 7.4s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '23075647', '24505759', '24476887', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['24476003', '24473510', '24525296', '24473498']
+  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 3 now out, 4 in the cart but not on sale on their page
+  [FC-LIVE] 12 to confirm, 4 🎯 set(s) read, 0 audited → 97 car(s) seen live in 3.6s; 0 now orderable, 4 not any more
+[*] pass 2: FirstCry → 124 products in 4.5s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '24505759', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['24473510', '23075647', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 89 car(s) seen live in 3.1s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 118 products in 4.1s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '24505759', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['24476003', '24473510', '24525296', '24476887']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 123 car(s) seen live in 3.8s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 116 products in 5.2s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi=10s, 12s:Fi=4s, 24s:Fi=4s, 36s:Fi=4s)
+[*] run finished: 4 pass(es) in 41s (0s:Fi=7s, 12s:Fi=4s, 24s:Fi=4s, 36s:Fi=5s)
 
-run 1: 40s, 0 message(s) so far, 11 stock change(s)
-    ('fc_23973355', 'out_of_stock', 'in_stock', 'ok', 'out', '1', 'Hot Wheels Pantone 574 20 Royota Tacoma Die-cast Fre')
-    ('fc_24236112', 'out_of_stock', 'in_stock', 'ok', 'out', '1', 'Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cast ')
-    ('fc_23930405', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Safari Mode Die Cast Free Wheel Toy Car W')
-    ('fc_22597417', 'out_of_stock', 'in_stock', 'last unit', 'list', '', 'Hot Wheels Color Shifters Blade Raider Toy Car Color')
-    ('fc_24453327', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Diecast Toy Car Trophy Case Free Wheel Mo')
-    ('fc_24342833', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels The Batman Batmobile 1:64 Scale Toy Car -')
-    ('fc_24476803', 'out_of_stock', 'in_stock', 'ok', 'out', '', "Hot Wheels '76 Chevy Chevette Die cast toy car #76/2")
-    ('fc_24472644', 'out_of_stock', 'in_stock', 'ok', 'list', '', 'Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Ca')
-    ('fc_24476804', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - ')
-    ('fc_24476887', 'out_of_stock', 'in_stock', 'ok', 'out', '1', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy v')
-    ('fc_24473510', 'out_of_stock', 'in_stock', 'ok', 'out', '1', 'Hot Wheels Toyota Prius Custom /Personnalise Die Cas')
-   cart answers stored: 335 | cart stats: {'calls': 8, 'cars': 600, 'fail': 0}
-   page-behind cars held in stock: 4 [('fc_23973355', 'ok', 'out', 'Hot Wheels Pantone 574 20 Royota Tacoma Die-cast F'), ('fc_24236112', 'ok', 'out', 'Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cas'), ('fc_24476887', 'ok', 'out', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy'), ('fc_24473510', 'ok', 'out', 'Hot Wheels Toyota Prius Custom /Personnalise Die C')]
-   verdicts: {'no delivery': 50, 'ok': 124, None: 118, 'sold out': 72, 'not in cart': 219, 'unlisted': 7, 'last unit': 4, 'arriving': 1}
-   live stats: {'pages': 25, 'tat': 58}
+run 1: 41s, 0 message(s) so far, 6 stock change(s)
+    ('fc_23075647', 'in_stock', 'out_of_stock', 'arriving', 'out', '', 'Hot Wheels Pagani Zonda Cinque (26/250) Die Cast Toy')
+    ('fc_24476003', 'in_stock', 'out_of_stock', 'arriving', 'out', '', 'Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Meta')
+    ('fc_24473498', 'in_stock', 'out_of_stock', 'arriving', 'out', '', 'Hot Wheels Armored Batmobile Die-Cast Toy Car - Blac')
+    ('fc_24476887', 'in_stock', 'out_of_stock', 'arriving', 'out', '', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy v')
+    ('fc_24473510', 'in_stock', 'out_of_stock', 'arriving', 'out', '', 'Hot Wheels Toyota Prius Custom /Personnalise Die Cas')
+    ('fc_24761907', 'in_stock', 'out_of_stock', 'sold out', 'out', '', 'Hot Wheels Hako Type D Die Cast Free Wheel Toy Car -')
+   cart answers stored: 537 | cart stats: {'calls': 8, 'cars': 600, 'fail': 0}
+   page-behind cars held in stock: 0 []
+   verdicts: {'not in cart': 250, 'no delivery': 33, 'ok': 129, None: 52, 'sold out': 125, 'arriving': 5, 'last unit': 1}
+   live stats: {'pages': 30, 'tat': 65}
 
 ================ RUN 2 ================
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24194169', '24236112', '24453327'] | delivery flips [] | re-reads ['24505759', '23346404', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.2s: 37 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 44 car(s) seen live in 7.4s; 0 now orderable, 1 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 164 products in 8.6s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24194169', '24236112', '24453327'] | delivery flips [] | re-reads ['23348665', '23346404', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.2s: 42 buyable for 248001; 5 now in, 0 now out, 5 first answers applied quietly
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 55 car(s) seen live in 3.4s; 0 now orderable, 1 not any more
-[*] pass 2: FirstCry → 154 products in 4.6s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.4s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24194169', '24236112', '24453327', '23835987', '23835981'] | delivery flips [] | re-reads ['24505759', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.2s: 37 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 50 car(s) seen live in 4.4s; 0 now orderable, 1 not any more
-[*] pass 3: FirstCry → 168 products in 5.9s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24783699', '24194169', '24236112', '24453327', '23835987', '23835981'] | delivery flips [] | re-reads ['24476804', '24476803', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 54 car(s) seen live in 3.8s; 0 now orderable, 2 not any more
-[*] pass 4: FirstCry → 132 products in 4.7s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 41s (0s:Fi=9s, 12s:Fi=5s, 24s:Fi=6s, 36s:Fi=5s)
-
-run 2: 41s, 0 message(s) so far, 5 stock change(s)
-    ('fc_23351188', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free W')
-    ('fc_23346404', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Die Cast Free Wheel 166/250 Twin Tags - P')
-    ('fc_23348665', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels 191/250 65 Mercury Comet Cyclone Die Cat ')
-    ('fc_23835987', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style ')
-    ('fc_23835981', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Crocovile Die Cast Free Wheel Free Style ')
-   cart answers stored: 464 | cart stats: {'calls': 16, 'cars': 1200, 'fail': 0}
-   page-behind cars held in stock: 4 [('fc_23973355', 'ok', 'out', 'Hot Wheels Pantone 574 20 Royota Tacoma Die-cast F'), ('fc_24236112', 'ok', 'out', 'Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cas'), ('fc_24476887', 'ok', 'out', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy'), ('fc_24473510', 'ok', 'out', 'Hot Wheels Toyota Prius Custom /Personnalise Die C')]
-   verdicts: {'not in cart': 281, 'ok': 128, None: 83, 'no delivery': 22, 'sold out': 75, 'unlisted': 2, 'arriving': 1, 'last unit': 3}
-   live stats: {'pages': 48, 'tat': 108}
-
-================ RUN 3 ================
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
   [FC-API] stock for pincode: 248001
-  [FC-API] 403 products across 21 page(s) (216 with zero stock) in 1.8s
+  [FC-API] 400 products across 21 page(s) (212 with zero stock) in 1.4s
   [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 399, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
-  [FC-LIVE] listing ['24476804', '23973353', '23930405', '23346404', '24473510', '24342833'] | delivery flips [] | re-reads ['24505759', '24476803', '22597418']
-  [FC-CART] 150 car(s) asked (7 pointed at, 143 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 74 car(s) seen live in 3.9s; 0 now orderable, 3 not any more
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 396, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels 1/5 Silver Series Vintage Club Lambor | stock=in_stock count=2 price=269 mrp=299
+  [FC-LIVE] listing ['24761908', '24505759', '24503746', '23351188', '23348665', '24473509'] | delivery flips [] | re-reads ['23075647', '24476003', '24473498', '24525296']
+  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 36 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 82 car(s) seen live in 3.0s; 0 now orderable, 0 not any more
 [*] FirstCry total (API): 565 tracked, 125 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 565 products in 6.9s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['23973353', '24473510', '24476804', '24342833', '23930405', '23346404'] | delivery flips [] | re-reads ['24505759', '24476803', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (7 pointed at, 143 in turn) in 1.2s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 56 car(s) seen live in 3.9s; 0 now orderable, 3 not any more
-[*] pass 2: FirstCry → 123 products in 5.1s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['23973353', '24473510', '24476804', '24342833', '23930405', '23346404'] | delivery flips [] | re-reads ['24505759', '24476803', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (7 pointed at, 143 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 55 car(s) seen live in 3.3s; 0 now orderable, 3 not any more
-[*] pass 3: FirstCry → 122 products in 4.9s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['23973353', '24473510', '24476804', '24342833', '23930405', '23346404'] | delivery flips [] | re-reads ['24505759', '24476803', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (7 pointed at, 143 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 55 car(s) seen live in 3.1s; 0 now orderable, 3 not any more
-[*] pass 4: FirstCry → 122 products in 4.6s (live: FirstCry)
+[*] pass 1 (+ full FirstCry catalogue): FirstCry → 565 products in 5.3s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['24473510', '23075647', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.2s: 39 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 70 car(s) seen live in 3.6s; 0 now orderable, 3 not any more
+[*] pass 2: FirstCry → 122 products in 4.6s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['24476003', '24473510', '24525296', '24476887']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.3s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 58 car(s) seen live in 3.5s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 125 products in 4.5s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['23075647', '24476003', '24473509', '24473498']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 56 car(s) seen live in 3.3s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 120 products in 4.2s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 41s (0s:Fi=7s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=5s)
+[*] run finished: 4 pass(es) in 40s (0s:Fi=5s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=4s)
 
-run 3: 41s, 0 message(s) so far, 0 stock change(s)
-   cart answers stored: 471 | cart stats: {'calls': 24, 'cars': 1800, 'fail': 0}
-   page-behind cars held in stock: 5 [('fc_23973355', 'ok', 'out', 'Hot Wheels Pantone 574 20 Royota Tacoma Die-cast F'), ('fc_24236112', 'ok', 'out', 'Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cas'), ('fc_24342833', 'ok', 'out', 'Hot Wheels The Batman Batmobile 1:64 Scale Toy Car'), ('fc_24476887', 'ok', 'out', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy'), ('fc_24473510', 'ok', 'out', 'Hot Wheels Toyota Prius Custom /Personnalise Die C')]
-   verdicts: {'not in cart': 278, 'ok': 128, None: 83, 'no delivery': 21, 'sold out': 79, 'unlisted': 2, 'arriving': 1, 'last unit': 3}
-   live stats: {'pages': 69, 'tat': 159}
+run 2: 40s, 0 message(s) so far, 0 stock change(s)
+   cart answers stored: 537 | cart stats: {'calls': 16, 'cars': 1200, 'fail': 0}
+   page-behind cars held in stock: 0 []
+   verdicts: {'not in cart': 280, 'no delivery': 31, 'ok': 128, None: 52, 'sold out': 97, 'last unit': 2, 'arriving': 5}
+   live stats: {'pages': 53, 'tat': 122}
+
+================ RUN 3 ================
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['24473510', '23075647', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (4 pointed at, 146 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 3.4s; 0 now orderable, 2 not any more
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry → 137 products in 4.3s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24525296', '24476804', '24473477', '23930405', '23346404', '22597418'] | delivery flips [] | re-reads ['24476003', '24473510', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 2.0s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 88 car(s) seen live in 4.0s; 0 now orderable, 1 not any more
+[*] pass 2: FirstCry → 126 products in 4.9s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24525296', '24476804', '24473477', '23930405', '23346404', '22597418'] | delivery flips [] | re-reads ['23075647', '24476003', '24476887', '24473509']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 85 car(s) seen live in 3.2s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 124 products in 4.2s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24525296', '24476804', '24473477', '23930405', '23346404', '22597418'] | delivery flips [] | re-reads ['24473510', '23075647', '24473498', '23354598']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 94 car(s) seen live in 3.3s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 117 products in 4.2s (live: FirstCry)
+
+[*] run finished: 4 pass(es) in 40s (0s:Fi=4s, 12s:Fi=5s, 24s:Fi=4s, 36s:Fi=4s)
+
+run 3: 40s, 0 message(s) so far, 0 stock change(s)
+   cart answers stored: 537 | cart stats: {'calls': 24, 'cars': 1800, 'fail': 0}
+   page-behind cars held in stock: 0 []
+   verdicts: {'not in cart': 243, 'no delivery': 41, 'ok': 127, None: 52, 'sold out': 124, 'last unit': 3, 'arriving': 5}
+   live stats: {'pages': 76, 'tat': 182}
 
 ================ RUN 4 ================
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '24476887', '24476803', '23973355', '23351188', '23348665'] | delivery flips [] | re-reads ['24505759', '24476804', '22597418']
-  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 58 car(s) seen live in 4.9s; 0 now orderable, 2 not any more
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-API] stock for pincode: 248001
+  [FC-API] 400 products across 21 page(s) (212 with zero stock) in 1.3s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 396, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels 1/5 Silver Series Vintage Club Lambor | stock=in_stock count=2 price=269 mrp=299
+  [FC-LIVE] listing ['24525296', '24476804', '24473477', '23930405', '23346404', '22597418', '24390971'] | delivery flips [] | re-reads ['24476003', '24473510', '24476887', '24473509']
+  [FC-CART] 150 car(s) asked (7 pointed at, 143 in turn) in 1.1s: 35 buyable for 248001; 0 now in, 0 now out, 5 in the cart but not on sale on their page
+  [FC-LIVE] 11 to confirm, 4 🎯 set(s) read, 0 audited → 80 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
+[*] FirstCry total (API): 565 tracked, 125 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 153 products in 6.0s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.6s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '24476887', '24476803', '23973355', '23351188', '23348665'] | delivery flips [] | re-reads ['24505759', '24476804', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 90 car(s) seen live in 3.8s; 0 now orderable, 2 not any more
-[*] pass 2: FirstCry → 141 products in 5.4s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '24476887', '24476803', '23973355', '23351188', '23348665'] | delivery flips [] | re-reads ['24505759', '24476804', '22597418', '22597417']
-  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 50 car(s) seen live in 3.4s; 0 now orderable, 2 not any more
-[*] pass 3: FirstCry → 120 products in 4.4s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24235312', '24476887', '24476803', '23973355', '23351188', '23348665'] | delivery flips [] | re-reads ['24505759', '24476804', '22597418']
-  [FC-CART] 150 car(s) asked (6 pointed at, 144 in turn) in 1.0s: 38 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 60 car(s) seen live in 3.1s; 0 now orderable, 2 not any more
-[*] pass 4: FirstCry → 123 products in 4.1s (live: FirstCry)
+[*] pass 1 (+ full FirstCry catalogue): FirstCry → 565 products in 6.1s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.8s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '24505759', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['23075647', '24476003', '24473498', '24525296']
+  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 1.1s: 36 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 92 car(s) seen live in 3.0s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 128 products in 3.9s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '24505759', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['24473510', '23075647', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 89 car(s) seen live in 3.7s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 120 products in 4.7s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '24505759', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['24476003', '24473510', '24525296', '24476887']
+  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 1.3s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 83 car(s) seen live in 3.2s; 0 now orderable, 1 not any more
+[*] pass 4: FirstCry → 118 products in 4.2s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi=6s, 12s:Fi=5s, 24s:Fi=4s, 36s:Fi=4s)
+[*] run finished: 4 pass(es) in 40s (0s:Fi=6s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=4s)
 
 run 4: 40s, 0 message(s) so far, 0 stock change(s)
-   cart answers stored: 486 | cart stats: {'calls': 32, 'cars': 2400, 'fail': 0}
-   page-behind cars held in stock: 5 [('fc_23973355', 'ok', 'out', 'Hot Wheels Pantone 574 20 Royota Tacoma Die-cast F'), ('fc_24236112', 'ok', 'out', 'Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cas'), ('fc_24342833', 'ok', 'out', 'Hot Wheels The Batman Batmobile 1:64 Scale Toy Car'), ('fc_24476887', 'ok', 'out', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy'), ('fc_24473510', 'ok', 'out', 'Hot Wheels Toyota Prius Custom /Personnalise Die C')]
-   verdicts: {'not in cart': 248, 'ok': 127, None: 77, 'no delivery': 22, 'sold out': 115, 'last unit': 4, 'unlisted': 2}
-   live stats: {'pages': 89, 'tat': 210}
+   cart answers stored: 537 | cart stats: {'calls': 32, 'cars': 2400, 'fail': 0}
+   page-behind cars held in stock: 0 []
+   verdicts: {'not in cart': 268, 'no delivery': 42, 'ok': 129, None: 52, 'sold out': 98, 'arriving': 5, 'last unit': 1}
+   live stats: {'pages': 95, 'tat': 238}
 
 ================ RUN 5 ================
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 403 products across 21 page(s) (216 with zero stock) in 1.6s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 399, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
-  [FC-LIVE] listing ['24783699', '24194169', '24453327', '23835987', '23835981', '24236112'] | delivery flips [] | re-reads ['24476803', '22597418', '22597417', '24505759']
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.1s: 38 buyable for 248001; 1 now in, 0 now out
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 56 car(s) seen live in 5.3s; 0 now orderable, 1 not any more
-[*] FirstCry total (API): 565 tracked, 126 buyable now (in-stock list complete), 0 aged to delisted
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24761908', '24503746', '24505759', '24473509', '23351188', '23348665'] | delivery flips [] | re-reads ['23075647', '24476003', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 79 car(s) seen live in 3.0s; 0 now orderable, 0 not any more
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry → 118 products in 4.0s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.8s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['24473510', '23075647', '24473509', '24473498']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 53 car(s) seen live in 3.8s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 119 products in 4.6s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.8s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['24476003', '24473510', '24476887', '24473498']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 54 car(s) seen live in 3.1s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 119 products in 4.0s (live: FirstCry)
+  [FC-API] quick sweep: 187 in stock from 10 page(s) in 0.8s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-LIVE] listing ['24453327', '23835987', '23835981', '23354598'] | delivery flips [] | re-reads ['23075647', '24476003', '24473498', '24476887']
+  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 100 car(s) seen live in 3.5s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 124 products in 4.4s (live: FirstCry)
 
------ TELEGRAM (dry run, not sent) -----
-✨💚 <b>STH CAR · PLYMOUTH · BACK IN STOCK</b>
-[🛒FC] <b>Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yellow</b> 🎯 ⚠️ only 2 left for 248001  ₹179
-📦 2026 Case P · HW Torque · #245 · 💎 its Super TH (Spectraflame Gold) is in this case
-🚚 cart says: delivery by Sat 24 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-70-plymouth-aar-cuda-245-250-toy-car-yellow/24783699/product-detail?fresh=744213
-----------------------------------------
+[*] run finished: 4 pass(es) in 40s (0s:Fi=4s, 12s:Fi=5s, 24s:Fi=4s, 36s:Fi=4s)
 
-✨💚 <b>STH CAR · PLYMOUTH · BACK IN STOCK</b>
-[🛒FC] <b>Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yellow</b> 🎯 ⚠️ only 2 left for 248001  ₹179
-📦 2026 Case P · HW Torque · #245 · 💎 its Super TH (Spectraflame Gold) is in this case
-🚚 cart says: delivery by Sat 24 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-70-plymouth-aar-cuda-245-250-toy-car-yellow/24783699/product-detail?fresh=744213
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 565 products in 8.1s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24194169', '24236112', '24453327', '23835987', '23835981'] | delivery flips [] | re-reads ['24505759', '24476804', '24476803', '22597418']
-  [FC-CART] 150 car(s) asked (4 pointed at, 146 in turn) in 1.0s: 37 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 73 car(s) seen live in 3.6s; 0 now orderable, 1 not any more
-[*] pass 2: FirstCry → 153 products in 5.0s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24194169', '24236112', '24453327', '23835987', '23835981'] | delivery flips [] | re-reads ['24505759', '24476804', '24476803', '22597418']
-  [FC-CART] 150 car(s) asked (4 pointed at, 146 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 39 car(s) seen live in 2.5s; 0 now orderable, 1 not any more
-[*] pass 3: FirstCry → 118 products in 4.0s (live: FirstCry)
-  [FC-API] quick sweep: 188 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-LIVE] listing ['24194169', '24236112', '24453327', '23835987', '23835981'] | delivery flips [] | re-reads ['22597417', '24505759', '24476804', '24476803']
-  [FC-CART] 150 car(s) asked (4 pointed at, 146 in turn) in 1.2s: 38 buyable for 248001; 1 now in, 0 now out, 1 first answers applied quietly
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 52 car(s) seen live in 3.6s; 0 now orderable, 1 not any more
-[*] pass 4: FirstCry → 156 products in 5.1s (live: FirstCry)
+run 5: 40s, 0 message(s) so far, 0 stock change(s)
+   cart answers stored: 537 | cart stats: {'calls': 40, 'cars': 3000, 'fail': 0}
+   page-behind cars held in stock: 0 []
+   verdicts: {'not in cart': 257, 'no delivery': 38, 'ok': 128, None: 52, 'sold out': 113, 'last unit': 2, 'arriving': 5}
+   live stats: {'pages': 118, 'tat': 292}
 
-[*] run finished: 4 pass(es) in 41s (0s:Fi=8s, 12s:Fi=5s, 24s:Fi=4s, 36s:Fi=5s)
-
-run 5: 41s, 1 message(s) so far, 2 stock change(s)
-    ('fc_24505759', 'out_of_stock', 'in_stock', 'ok', 'out', '', 'Hot Wheels Diecast Toy Car Trophy Case Free Wheel Mo')
-    ('fc_24783699', 'out_of_stock', 'in_stock', 'ok', 'list', '', 'Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yel')
-   cart answers stored: 517 | cart stats: {'calls': 40, 'cars': 3000, 'fail': 0}
-   page-behind cars held in stock: 5 [('fc_23973355', 'ok', 'out', 'Hot Wheels Pantone 574 20 Royota Tacoma Die-cast F'), ('fc_24236112', 'ok', 'out', 'Hot Wheels Datsun Sunny Coupe 1972 Toy Car Die Cas'), ('fc_24342833', 'ok', 'out', 'Hot Wheels The Batman Batmobile 1:64 Scale Toy Car'), ('fc_24476887', 'ok', 'out', 'Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy'), ('fc_24473510', 'ok', 'out', 'Hot Wheels Toyota Prius Custom /Personnalise Die C')]
-   verdicts: {'not in cart': 245, 'no delivery': 34, 'ok': 129, None: 68, 'sold out': 115, 'last unit': 3, 'unlisted': 1}
-   live stats: {'pages': 110, 'tat': 262}
-
-1 message(s) would have been sent in all
+0 message(s) would have been sent in all
