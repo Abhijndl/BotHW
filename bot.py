@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.1
+Hot Wheels / Diecast Collector Tracker  ·  v17.2
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -21,6 +21,10 @@ signals below are the fallback when the cart can't be asked.
 v17.1: and the car's product page must sell it too ("Add to cart", not "Notify
 me") — the cart counts units the page has already sold (the Armored Batmobile,
 23 Oct 16:20). No alert ever goes out while the page says 0.
+v17.2: a 🎯 car the cart already has while its page says 0 is about to go on
+sale (the Custom Otto: 25 min like that, then its one unit sold 37 s after it
+did), so its page is read every pass. A 🎯 car may alert again 30 min after its
+last alert; any other car at most every 6 h.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -1768,7 +1772,12 @@ FC_CART_MAX = max(0, int(os.getenv("FC_CART_MAX", "150")))         # cars asked 
 FC_CART_TIMEOUT = float(os.getenv("FC_CART_TIMEOUT", "10"))
 # a comeback the cart confirmed may alert again after this many minutes (units
 # that really came back after a sell-out are worth knowing about)
-FC_CART_COOLDOWN_MIN = float(os.getenv("FC_CART_COOLDOWN_MIN", "20"))
+FC_CART_COOLDOWN_MIN = float(os.getenv("FC_CART_COOLDOWN_MIN", "30"))
+# v17.2: …that's for your 🎯 cars (another real chance). Any other car alerts at
+# most once in this many hours: 23-24 Oct, 70 alerts in 14 h, about half of them
+# the same few cars over and over (Trophy Case 7×, Twin Tags 6×, Safari Mode 6×)
+# as single units were reserved and released.
+FC_CART_COOLDOWN_OTHER_H = float(os.getenv("FC_CART_COOLDOWN_OTHER_H", "6"))
 # v17.1: …and only while its product page sells it too — "Add to cart" on the
 # page, not "Notify me". The cart counts units the page has already sold: 23 Oct
 # 16:20 it had 1 Armored Batmobile for 248001 while the page and your Favourites
@@ -2594,7 +2603,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             continue
         before = (prev_fc.get(p) or {}).get("stock")
         if r.get("stock") != before or (r.get("stock") != "in_stock" and (
-                r.get("fc_live") in ("unlisted", "arriving", "last unit") or word.get(p) in ("list", "cat"))):
+                r.get("fc_live") in ("unlisted", "arriving", "last unit", "page 0") or word.get(p) in ("list", "cat"))):
             must.append(p)
             proposed[p] = r.get("stock")
     # in turn: cars held in stock (still buyable for you?), 🎯 cars, the rest
@@ -2637,7 +2646,11 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
     # FC_LIVE_RECHECK minutes, not every time the cart is asked)
     want = [p for p, a in res.items() if a.get("ok") and page_cs(p) is None
             and (prev_fc.get(p) or {}).get("stock") != "in_stock"
-            and ((prev_fc.get(p) or {}).get("fc_live") != "page 0" or (slot + int(p)) % FC_LIVE_RECHECK == 0)]
+            and ((prev_fc.get(p) or {}).get("fc_live") != "page 0" or (slot + int(p)) % FC_LIVE_RECHECK == 0
+                 or _fc_target(p, prev_fc.get(p) or {}))]
+    # v17.2: 🎯 cars first — 23 Oct the Custom Otto sat in the cart with its page
+    # at 0 for 25 min, then sold its one unit 37 s after it went on sale
+    want.sort(key=lambda p: not _fc_target(p, prev_fc.get(p) or {}))
     if want and _FC_LIVE_PAUSE[0] <= now:
         todo, covered = [], set()
         for p in want:
@@ -2722,8 +2735,10 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         else:
             r["stock_count"] = None
             r["fc_pb"] = ""
-            if r.get("fc_live") in ("ok", None, ""):
-                r["fc_live"] = "page 0" if cart_ok else "not in cart"
+            if cart_ok:
+                r["fc_live"] = "page 0"             # the cart has it, its page doesn't sell it (yet)
+            elif r.get("fc_live") in ("ok", "page 0", None, ""):
+                r["fc_live"] = "not in cart"
             n_out += before == "in_stock"
     print(f"  [FC-CART] {len(ask)} car(s) asked ({len(must)} pointed at, {len(ask) - len(must)} in turn) "
           f"in {time.time() - t0:.1f}s: {n_yes} buyable for {FC_PINCODE}; {n_in} now in, {n_out} now out"
@@ -4224,7 +4239,9 @@ def compute_changes(current: dict, seen: dict) -> dict:
         cooldown = (FC_RESTOCK_COOLDOWN_H if d.get("fc_live_now") and d.get("fc_live") == "ok"
                     else RESTOCK_COOLDOWN_H)
         if d.get("fc_cart") == "y":
-            cooldown = FC_CART_COOLDOWN_MIN / 60.0     # v17: the cart confirmed it — real units again
+            # v17: the cart confirmed it — real units again; v17.2: 🎯 cars after
+            # FC_CART_COOLDOWN_MIN, the rest at most every FC_CART_COOLDOWN_OTHER_H
+            cooldown = (FC_CART_COOLDOWN_MIN / 60.0 if _is_flagged(d) else FC_CART_COOLDOWN_OTHER_H)
         if (stock == "in_stock" and prev_stock == "out_of_stock"
                 and not is_correction
                 and _hours_since(prev.get("last_restock_alert", "")) >= cooldown):
