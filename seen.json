@@ -3539,8 +3539,9 @@
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_pb": "1",
+    "fc_arr": "2000-01-01T00:00:00",
     "fc_cart": "y",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23351188": {
     "stock": "out_of_stock",
@@ -4080,7 +4081,7 @@
     "fc_listed_at": "2026-10-19T08:15:00",
     "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -4163,9 +4164,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-14T07:15:00",
-    "fc_api_seen_at": "2026-10-23T10:15:00",
+    "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_gid": "22928006",
     "fc_cart": "n",
     "fc_svc": "0"
@@ -4579,9 +4580,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-09T10:30:00",
-    "fc_api_seen_at": "2026-10-23T10:15:00",
+    "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_gid": "22928006",
     "fc_cart": "n",
     "fc_svc": "0"
@@ -5120,7 +5121,7 @@
     "fc_listed_at": "2026-10-23T10:30:00",
     "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22928006",
     "fc_cart": "n",
@@ -6511,7 +6512,7 @@
   "fc_24248202": {
     "stock": "in_stock",
     "name": "Hot Wheels 70 Dodge Charger Die-Cast Free Wheel Toy Car (188/250) - White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-70-dodge-charger-die-cast-free-wheel-toy-car-188-250-white/24248202/product-detail",
     "first_seen": "2026-08-16T03:52:16",
@@ -10845,7 +10846,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -10879,7 +10880,7 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -10943,9 +10944,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-02T05:15:00",
-    "fc_api_seen_at": "2026-10-23T10:15:00",
+    "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_gid": "22928006",
     "fc_cart": "n",
     "fc_svc": "0"
@@ -13143,7 +13144,7 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -13380,7 +13381,7 @@
   "fc_24108016": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Red",
-    "price": "₹301",
+    "price": "₹300",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-in-1-64-scale-pack-of-2-red/24108016/product-detail",
     "first_seen": "2026-09-17T03:01:39",
@@ -13523,7 +13524,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13863,7 +13864,7 @@
   "fc_24248198": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Toy Car with Click Shift Feature (178/250) - Silver Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-with-click-shift-feature-178-250-silver-orange/24248198/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14002,7 +14003,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14028,7 +14029,7 @@
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14136,7 +14137,7 @@
   "fc_24473388": {
     "stock": "in_stock",
     "name": "Hot Wheels Hoto Roto Die Cast Free Wheel Toy Car - Golden",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hoto-roto-die-cast-free-wheel-toy-car-golden/24473388/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14178,7 +14179,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14647,7 +14648,7 @@
   "fc_24473028": {
     "stock": "in_stock",
     "name": "Hot wheels EI Segundo Rallye Die cast Car (145/250) - Yellow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ei-segundo-rallye-die-cast-car-145-250-yellow/24473028/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -14690,7 +14691,7 @@
   "fc_24473476": {
     "stock": "in_stock",
     "name": "Hot Wheels Bone Shaker Die Cast Free Wheel Toy Car - Dark Yellow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bone-shaker-die-cast-free-wheel-toy-car-dark-yellow/24473476/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -14732,7 +14733,7 @@
   "fc_24473494": {
     "stock": "in_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -14774,7 +14775,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15183,7 +15184,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -15264,7 +15265,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -15615,8 +15616,9 @@
     "fc_gid": "24473732",
     "fc_phantom": "2026-10-22T15:03:51",
     "fc_pb": "1",
+    "fc_arr": "2000-01-01T00:00:00",
     "fc_cart": "y",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24476471": {
     "stock": "out_of_stock",
@@ -15798,7 +15800,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -15810,7 +15812,7 @@
     "fc_listed_at": "2026-10-23T10:30:00",
     "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-21T18:38:38",
@@ -16261,7 +16263,7 @@
   "fc_23074612": {
     "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast VW ID Buzz Bomb (86/250) Toy Car - Blue/White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-vw-id-buzz-bomb-86-250-toy-car-blue-white/23074612/product-detail",
     "first_seen": "2026-09-21T04:11:10",
@@ -16364,7 +16366,7 @@
   "fc_23835986": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Orange",
-    "price": "₹467",
+    "price": "₹466",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-free-style-dem-derby-monster-toy-truck-orange/23835986/product-detail",
     "first_seen": "2026-09-21T06:34:27",
@@ -17075,7 +17077,7 @@
     "fc_listed_at": "2026-10-23T10:30:00",
     "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22108192",
     "fc_cart": "n",
@@ -18661,8 +18663,9 @@
     "fc_lst": "out",
     "fc_gid": "22548051",
     "fc_pb": "1",
+    "fc_arr": "2000-01-01T00:00:00",
     "fc_cart": "y",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24248194": {
     "stock": "in_stock",
@@ -21339,7 +21342,7 @@
     "fc_listed_at": "2026-10-23T10:30:00",
     "fc_api_seen_at": "2026-10-23T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_cart": "n",
