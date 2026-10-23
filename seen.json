@@ -2735,7 +2735,7 @@
     "fc_svc": "0"
   },
   "fc_23354597": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 156/250 Custom Otto Die Cast Free Wheel Toy Car - Blue",
     "price": "₹164",
     "source": "firstcry",
@@ -2749,10 +2749,11 @@
     "fc_listed_at": "2026-10-23T12:30:00",
     "fc_api_seen_at": "2026-10-23T12:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "23353372",
-    "fc_cart": "y",
+    "fc_phantom": "2026-10-23T12:31:26",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "fc_23074616": {
@@ -15596,9 +15597,9 @@
     "fc_svc": "0"
   },
   "fc_24476003": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 12 Cilindri Die-Cast Toy Car-Metallic green",
-    "price": "₹179",
+    "price": "₹175",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-12-cilindri-die-cast-toy-car-metallic-green/24476003/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -15611,10 +15612,11 @@
     "fc_listed_at": "2026-10-23T12:30:00",
     "fc_api_seen_at": "2026-10-23T12:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473732",
     "fc_phantom": "2026-10-23T12:30:20",
+    "fc_off": "2026-10-23T12:31:25",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -18259,7 +18261,7 @@
     "fc_listed_at": "2026-10-23T12:30:00",
     "fc_api_seen_at": "2026-10-23T12:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24525296",
     "fc_phantom": "2026-10-22T04:26:08",
