@@ -2693,7 +2693,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-10T07:45:00",
-    "fc_api_seen_at": "2026-10-23T04:15:00",
+    "fc_api_seen_at": "2026-10-23T04:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -2713,7 +2713,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-21T22:00:00",
-    "fc_api_seen_at": "2026-10-23T04:15:00",
+    "fc_api_seen_at": "2026-10-23T04:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -15205,7 +15205,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473732",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24476003": {
     "stock": "out_of_stock",
@@ -20671,7 +20671,7 @@
     "fc_listed_at": "2026-10-23T04:30:00",
     "fc_api_seen_at": "2026-10-23T04:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_svc": "0"
