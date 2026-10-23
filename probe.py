@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Probe #30: FirstCry's checkout cart call (ShoppingCart.svc/json/LoadCart — what
-checkout.firstcry.com sends for a guest; a guest cart is only a cookie string,
-nothing is stored or ordered). Does it say "can't be delivered to 248001" per
-car, and can one call check many cars?"""
-import json, time, uuid
+"""Probe #31: FirstCry's checkout cart (LoadCart, guest cookie cart — nothing is
+stored or ordered) as the bot's final word on "can 248001 buy it right now?".
+  A. Batch size: 10 / 25 / 50 / 100 cars in one call — time, bytes, cars back.
+  B. Every car the bot currently holds "in stock": does the cart agree?
+  C. Twice more, 60 s apart: how often does the cart's answer change?
+"""
+import collections, json, time, urllib.request, uuid
 from curl_cffi import requests as http
 
 T0 = time.time()
@@ -11,72 +13,91 @@ IMP = {"impersonate": "chrome124"}
 UA = ("Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36")
 URL = "https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/LoadCart"
-REPORT = {}
-CARS = {"24783699": "AAR Cuda (cart said: Cannot be delivered to 248001, 13:32)",
-        "24473712": "Salt Streaker (common)", "24783759": "DB5 Safari (sold out?)",
-        "24776090": "Lucid Air (stuck page 0)", "24473731": "Road Runner"}
-KEYF = ("ProductID", "ProductName", "Quantity", "CurrentStock", "IsServicable", "NoOfPinCodeToCheck",
-        "isValidPincodeForDropShipment", "NextDayDelivery", "SameDayDelivery", "StockType", "DispatchTAT",
-        "derived_pincode", "ServiceableProductIds", "ShipBy", "qwikstores", "status", "stock", "TATObj",
-        "RestrictedQty", "IsCODAllowed", "OfferType", "ActualPrice")
+H = {"User-Agent": UA, "Accept": "application/json, text/javascript, */*; q=0.01",
+     "Content-Type": "application/json; charset=utf-8", "Origin": "https://checkout.firstcry.com",
+     "Referer": "https://checkout.firstcry.com/pay", "fcdid": str(uuid.uuid4()), "fingerprint": uuid.uuid4().hex}
+with urllib.request.urlopen("https://raw.githubusercontent.com/Abhijndl/BotHW/main/seen.json", timeout=30) as r:
+    seen = json.load(r)
+fc = {k[3:]: v for k, v in seen.items() if k.startswith("fc_") and isinstance(v, dict) and k[3:].isdigit()}
+held = [p for p, v in fc.items() if v.get("stock") == "in_stock"]
+outs = [p for p, v in fc.items() if v.get("stock") != "in_stock"]
+print(f"seen.json: {len(fc)} FirstCry cars, {len(held)} held in stock")
 
 
-def body(pro, pin, lt="N"):
-    return {"pro": pro, "shipPin": pin, "SiteType": 0, "LC": 0, "CR": 0, "Coupons": "", "FC_AUTH": "",
+def body(pro):
+    return {"pro": pro, "shipPin": "248001", "SiteType": 0, "LC": 0, "CR": 0, "Coupons": "", "FC_AUTH": "",
             "ShipMobile": "", "ShipPhone": "", "PayBack": "", "State": "", "PaymentType": "", "LPO": False,
-            "LSD": False, "CCA": "", "LT": lt, "UA": UA + " Mobile", "AddressType": "Home", "AssemblyMap": "",
+            "LSD": False, "CCA": "", "LT": "N", "UA": UA + " Mobile", "AddressType": "Home", "AssemblyMap": "",
             "ptype": "", "pvalue": "", "FitKidChildIdMap": "", "CouponCodeToCheck": "", "GiftCodeToCheck": "",
             "BuyerType": "", "CardPar": "", "RemoveFreeErr": "", "redesign": True, "caller": "", "Ageid": "",
             "bmsm": "", "SegmentIDs": "", "latlong": "", "segmentcookie": "", "cardref": "",
             "savedCardBankCode": "", "savedCardIssuingBank": "", "cardtoken": ""}
 
 
-H = {"User-Agent": UA, "Accept": "application/json, text/javascript, */*; q=0.01",
-     "Content-Type": "application/json; charset=utf-8", "Origin": "https://checkout.firstcry.com",
-     "Referer": "https://checkout.firstcry.com/pay", "fcdid": str(uuid.uuid4()), "fingerprint": uuid.uuid4().hex}
-
-
-def call(pro, pin, label):
+def cart(pids):
+    pro = "*".join(f"NO^{p}^1^0" for p in pids)
+    t = time.time()
     try:
-        r = http.post(URL, data=json.dumps(body(pro, pin)), headers=H, timeout=25, **IMP)
+        r = http.post(URL, data=json.dumps(body(pro)), headers=H, timeout=30, **IMP)
     except Exception as e:
-        print(f"{label}: ERR {e}")
-        return None
-    t = r.text
-    try:
-        d = json.loads(t)
-        while isinstance(d, str):
-            d = json.loads(d)
-    except Exception:
-        d = None
-    print(f"\n--- {label}: HTTP {r.status_code}, {len(t)} b")
-    if not isinstance(d, dict):
-        print("   ", t[:1500])
-        return None
-    REPORT[label] = d
-    res = d.get("LoadCartResult") or d.get("GetCartResult") or d
-    if isinstance(res, str):
-        try:
-            res = json.loads(res)
-        except Exception:
-            pass
-    summ = (res or {}).get("pOrderSummary") if isinstance(res, dict) else None
-    print("    top keys:", list((res or {}).keys())[:20] if isinstance(res, dict) else type(res))
-    if isinstance(summ, dict):
-        print("    summary:", {k: summ.get(k) for k in ("ShipPinCode", "TotalProducts", "TotalItems", "NetPayment")})
-        for it in summ.get("PurchaseOrderItemList") or []:
-            print("    item:", json.dumps({k: it.get(k) for k in KEYF if k in it})[:1200])
-            other = {k: v for k, v in it.items() if k not in KEYF and v not in (None, "", 0, False, [], {})}
-            print("       other:", json.dumps(other)[:1500])
-    else:
-        print("   ", json.dumps(d)[:2000])
-    return d
+        return None, f"ERR {type(e).__name__}", time.time() - t, 0
+    secs, size = time.time() - t, len(r.content)
+    if r.status_code != 200:
+        return None, f"HTTP {r.status_code}", secs, size
+    d = r.json()
+    x = d.get("LoadCartResult")
+    while isinstance(x, str):
+        x = json.loads(x)
+    items = ((x or {}).get("pOrderSummary") or {}).get("PurchaseOrderItemList") or []
+    out = {}
+    for it in items:
+        ok = ((it.get("CurrentStock") or 0) > 0 and (it.get("IsServicable") or 0) > 0
+              and str(it.get("warehouseid") or "0") != "0"
+              and not ((it.get("NoOfPinCodeToCheck") or 0) > 0 and not it.get("isValidPincodeForDropShipment")))
+        out[str(it.get("ProductID"))] = {"ok": ok, "cs": it.get("CurrentStock"), "isv": it.get("IsServicable"),
+                                         "wh": it.get("warehouseid"), "np": it.get("NoOfPinCodeToCheck"),
+                                         "vd": it.get("isValidPincodeForDropShipment"), "st": it.get("StockType"),
+                                         "ls": it.get("likelysoldout"), "q": it.get("isQwik"),
+                                         "eta": it.get("EstimatedDeliveryDate"), "nm": (it.get("ProductName") or "")[:44]}
+    return out, "ok", secs, size
 
 
-for pid, nm in CARS.items():
-    call(f"NO^{pid}^1^0", "248001", f"{pid} {nm} @248001")
-    time.sleep(0.4)
-call("NO^24783699^1^0", "110001", "AAR Cuda @110001 (Delhi)")
-call("*".join(f"NO^{p}^1^0" for p in CARS), "248001", "all five in one cart @248001")
-json.dump(REPORT, open("probe_report.json", "w"))
-print(f"\ndone in {time.time() - T0:.0f}s")
+print("\n" + "=" * 20, "A. batch sizes", "=" * 20)
+pool = held + outs
+for n in (10, 25, 50, 100):
+    ps = pool[:n]
+    res, err, secs, size = cart(ps)
+    print(f"  {n:3} cars: {err}, {secs:.1f}s, {size/1024:.0f} KB, {len(res or {})} back")
+    time.sleep(1)
+
+print("\n" + "=" * 20, "B. cars the bot holds in stock vs the cart", "=" * 20)
+B = 40
+rounds = []
+for rnd in range(3):
+    ans = {}
+    for i in range(0, len(held), B):
+        res, err, secs, size = cart(held[i:i + B])
+        if res is None:
+            print(f"  round {rnd} batch {i}: {err}")
+            continue
+        for p in held[i:i + B]:
+            ans[p] = res.get(p, {"ok": False, "gone": True})
+        time.sleep(0.5)
+    rounds.append(ans)
+    c = collections.Counter("yes" if a.get("ok") else ("not in cart" if a.get("gone") else "no") for a in ans.values())
+    print(f"{time.time()-T0:5.0f}s round {rnd}: {dict(c)}")
+    if rnd == 0:
+        for p, a in sorted(ans.items(), key=lambda x: x[1].get("ok")):
+            if not a.get("ok"):
+                v = fc[p]
+                print(f"     NO  {p} {v.get('fc_live')}/{v.get('fc_lst')} {json.dumps({k: a.get(k) for k in ('cs','isv','wh','np','vd','st','ls','q','gone')})} {v.get('name','')[:46]}")
+        yes = [p for p, a in ans.items() if a.get("ok")]
+        for p in yes[:8]:
+            a = ans[p]
+            print(f"     yes {p} cs {a['cs']} wh {a['wh']} eta {a['eta']} {a['nm']}")
+    if rnd < 2:
+        time.sleep(max(0, 60 - (time.time() - T0) % 60))
+flips = [p for p in held if len({bool(r.get(p, {}).get("ok")) for r in rounds if p in r}) > 1]
+print(f"\nanswers that changed across the 3 rounds: {len(flips)}", flips[:20])
+json.dump({"rounds": rounds}, open("probe_report.json", "w"))
+print(f"done in {time.time()-T0:.0f}s")
