@@ -1,103 +1,75 @@
 #!/usr/bin/env python3
-"""Probe #31: FirstCry's checkout cart (LoadCart, guest cookie cart — nothing is
-stored or ordered) as the bot's final word on "can 248001 buy it right now?".
-  A. Batch size: 10 / 25 / 50 / 100 cars in one call — time, bytes, cars back.
-  B. Every car the bot currently holds "in stock": does the cart agree?
-  C. Twice more, 60 s apart: how often does the cart's answer change?
-"""
-import collections, json, time, urllib.request, uuid
-from curl_cffi import requests as http
+"""Probe #32: dry run of v17 (bot_v17.py) — FirstCry's cart decides — against live FirstCry — no
+Telegram (alerts printed, not sent), on a COPY of the current seen.json, with
+the monitor's settings. Four runs back to back (~4 min): errors, timings, what
+it would send, and what changed — especially cars on the catalogue's word."""
+import collections, importlib.util, json, os, shutil, time, urllib.request
 
-T0 = time.time()
-IMP = {"impersonate": "chrome124"}
-UA = ("Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36")
-URL = "https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/LoadCart"
-H = {"User-Agent": UA, "Accept": "application/json, text/javascript, */*; q=0.01",
-     "Content-Type": "application/json; charset=utf-8", "Origin": "https://checkout.firstcry.com",
-     "Referer": "https://checkout.firstcry.com/pay", "fcdid": str(uuid.uuid4()), "fingerprint": uuid.uuid4().hex}
+ROOT = os.path.dirname(os.path.abspath(__file__))
+DRY = os.path.join(ROOT, "dry")
+os.makedirs(DRY, exist_ok=True)
 with urllib.request.urlopen("https://raw.githubusercontent.com/Abhijndl/BotHW/main/seen.json", timeout=30) as r:
-    seen = json.load(r)
-fc = {k[3:]: v for k, v in seen.items() if k.startswith("fc_") and isinstance(v, dict) and k[3:].isdigit()}
-held = [p for p, v in fc.items() if v.get("stock") == "in_stock"]
-outs = [p for p, v in fc.items() if v.get("stock") != "in_stock"]
-print(f"seen.json: {len(fc)} FirstCry cars, {len(held)} held in stock")
+    open(os.path.join(DRY, "seen.json"), "wb").write(r.read())
+print("seen.json copied:", os.path.getsize(os.path.join(DRY, "seen.json")), "bytes")
+shutil.copy(os.path.join(ROOT, "hw_cases.json"), os.path.join(DRY, "hw_cases.json"))
+
+env = {
+    "TELEGRAM_BOT_TOKEN": "", "TELEGRAM_CHAT_ID": "", "ONLY_SOURCES": "fc",
+    "RUN_SECONDS": "40", "FC_EVERY": "12", "RUN_EXTEND_S": "0", "FC_CATALOGUE_EVERY": "120",
+    "SILENT": "true", "FIRST_RUN_SILENT": "true", "MAX_ALERT_PRICE": "0", "DEBUG": "false",
+    "WATCHLIST": "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk",
+    "FC_EXCLUDE": "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate,water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle",
+    "FC_MARQUES": "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics",
+    "FC_WATCH": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail",
+    "FC_LIVE_POLL": "4", "FC_RESTOCK_COOLDOWN_H": "1", "FC_MIN_ALERT_STOCK_TARGET": "1",
+    "FC_MIN_ALERT_STOCK": "2", "FC_SURE_UNITS": "5", "FC_API_PARALLEL": "10",
+    "SRC_WORKERS": "6", "FC_WORKERS": "10", "FC_LIVE_DEBUG": "1", "FC_CART": "true",
+}
+os.environ.update(env)
+os.chdir(DRY)
+spec = importlib.util.spec_from_file_location("bot_v17", os.path.join(ROOT, "bot_v17.py"))
+bot = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(bot)
+print("version:", (bot.__doc__ or "").strip().splitlines()[0])
+sent = []
 
 
-def body(pro):
-    return {"pro": pro, "shipPin": "248001", "SiteType": 0, "LC": 0, "CR": 0, "Coupons": "", "FC_AUTH": "",
-            "ShipMobile": "", "ShipPhone": "", "PayBack": "", "State": "", "PaymentType": "", "LPO": False,
-            "LSD": False, "CCA": "", "LT": "N", "UA": UA + " Mobile", "AddressType": "Home", "AssemblyMap": "",
-            "ptype": "", "pvalue": "", "FitKidChildIdMap": "", "CouponCodeToCheck": "", "GiftCodeToCheck": "",
-            "BuyerType": "", "CardPar": "", "RemoveFreeErr": "", "redesign": True, "caller": "", "Ageid": "",
-            "bmsm": "", "SegmentIDs": "", "latlong": "", "segmentcookie": "", "cardref": "",
-            "savedCardBankCode": "", "savedCardIssuingBank": "", "cardtoken": ""}
+def fake_tg(msg, *a, **k):
+    sent.append(msg)
+    print("\n----- TELEGRAM (dry run, not sent) -----\n" + msg + "\n----------------------------------------")
+    return True
 
 
-def cart(pids):
-    pro = "*".join(f"NO^{p}^1^0" for p in pids)
-    t = time.time()
+bot.tg = fake_tg
+bot._successor_waiting = lambda: True
+
+
+def fc_state():
+    return {k: v for k, v in json.load(open("seen.json")).items() if k.startswith("fc_") and isinstance(v, dict)}
+
+
+s0 = fc_state()
+for n in range(1, 6):
+    print(f"\n================ RUN {n} ================")
+    before = fc_state()
+    t0 = time.time()
     try:
-        r = http.post(URL, data=json.dumps(body(pro)), headers=H, timeout=30, **IMP)
-    except Exception as e:
-        return None, f"ERR {type(e).__name__}", time.time() - t, 0
-    secs, size = time.time() - t, len(r.content)
-    if r.status_code != 200:
-        return None, f"HTTP {r.status_code}", secs, size
-    d = r.json()
-    x = d.get("LoadCartResult")
-    while isinstance(x, str):
-        x = json.loads(x)
-    items = ((x or {}).get("pOrderSummary") or {}).get("PurchaseOrderItemList") or []
-    out = {}
-    for it in items:
-        ok = ((it.get("CurrentStock") or 0) > 0 and (it.get("IsServicable") or 0) > 0
-              and str(it.get("warehouseid") or "0") != "0"
-              and not ((it.get("NoOfPinCodeToCheck") or 0) > 0 and not it.get("isValidPincodeForDropShipment")))
-        out[str(it.get("ProductID"))] = {"ok": ok, "cs": it.get("CurrentStock"), "isv": it.get("IsServicable"),
-                                         "wh": it.get("warehouseid"), "np": it.get("NoOfPinCodeToCheck"),
-                                         "vd": it.get("isValidPincodeForDropShipment"), "st": it.get("StockType"),
-                                         "ls": it.get("likelysoldout"), "q": it.get("isQwik"),
-                                         "eta": it.get("EstimatedDeliveryDate"), "nm": (it.get("ProductName") or "")[:44]}
-    return out, "ok", secs, size
-
-
-print("\n" + "=" * 20, "A. batch sizes", "=" * 20)
-pool = held + outs
-for n in (10, 25, 50, 100):
-    ps = pool[:n]
-    res, err, secs, size = cart(ps)
-    print(f"  {n:3} cars: {err}, {secs:.1f}s, {size/1024:.0f} KB, {len(res or {})} back")
-    time.sleep(1)
-
-print("\n" + "=" * 20, "B. cars the bot holds in stock vs the cart", "=" * 20)
-B = 40
-rounds = []
-for rnd in range(3):
-    ans = {}
-    for i in range(0, len(held), B):
-        res, err, secs, size = cart(held[i:i + B])
-        if res is None:
-            print(f"  round {rnd} batch {i}: {err}")
-            continue
-        for p in held[i:i + B]:
-            ans[p] = res.get(p, {"ok": False, "gone": True})
-        time.sleep(0.5)
-    rounds.append(ans)
-    c = collections.Counter("yes" if a.get("ok") else ("not in cart" if a.get("gone") else "no") for a in ans.values())
-    print(f"{time.time()-T0:5.0f}s round {rnd}: {dict(c)}")
-    if rnd == 0:
-        for p, a in sorted(ans.items(), key=lambda x: x[1].get("ok")):
-            if not a.get("ok"):
-                v = fc[p]
-                print(f"     NO  {p} {v.get('fc_live')}/{v.get('fc_lst')} {json.dumps({k: a.get(k) for k in ('cs','isv','wh','np','vd','st','ls','q','gone')})} {v.get('name','')[:46]}")
-        yes = [p for p, a in ans.items() if a.get("ok")]
-        for p in yes[:8]:
-            a = ans[p]
-            print(f"     yes {p} cs {a['cs']} wh {a['wh']} eta {a['eta']} {a['nm']}")
-    if rnd < 2:
-        time.sleep(max(0, 60 - (time.time() - T0) % 60))
-flips = [p for p in held if len({bool(r.get(p, {}).get("ok")) for r in rounds if p in r}) > 1]
-print(f"\nanswers that changed across the 3 rounds: {len(flips)}", flips[:20])
-json.dump({"rounds": rounds}, open("probe_report.json", "w"))
-print(f"done in {time.time()-T0:.0f}s")
+        bot.main()
+    except Exception:
+        import traceback
+        traceback.print_exc()
+    after = fc_state()
+    flips = [(k, (before.get(k) or {}).get("stock"), v.get("stock"), v.get("fc_live"), v.get("fc_lst"),
+              v.get("fc_pb", ""), v.get("name", "")[:52])
+             for k, v in after.items() if (before.get(k) or {}).get("stock") != v.get("stock")]
+    print(f"\nrun {n}: {time.time() - t0:.0f}s, {len(sent)} message(s) so far, {len(flips)} stock change(s)")
+    for f in flips[:30]:
+        print("   ", f)
+    pb = [(k, v.get("fc_live"), v.get("fc_lst"), v.get("name", "")[:50]) for k, v in after.items() if v.get("fc_pb")]
+    print("   cart answers stored:", sum(1 for v in after.values() if v.get("fc_cart")), "| cart stats:", bot._FC_CART_STATS)
+    print(f"   page-behind cars held in stock: {len(pb)}", pb[:10])
+    print("   verdicts:", dict(collections.Counter(v.get("fc_live") for v in after.values())))
+    print("   live stats:", bot._FC_LIVE_STATS)
+    time.sleep(max(0, 60 - (time.time() - t0)))
+print(f"\n{len(sent)} message(s) would have been sent in all")
+json.dump({"sent": sent}, open(os.path.join(ROOT, "probe_report.json"), "w"), indent=1, ensure_ascii=False)
