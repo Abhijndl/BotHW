@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17
+Hot Wheels / Diecast Collector Tracker  ·  v17.1
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -18,6 +18,9 @@ the delivery date — or nothing / 0 where your cart says "Cannot be delivered t
 pages and delivery check described below only point at cars to ask about, and
 every Hot Wheels car is asked in turn (🎯 cars about every half minute). The
 signals below are the fallback when the cart can't be asked.
+v17.1: and the car's product page must sell it too ("Add to cart", not "Notify
+me") — the cart counts units the page has already sold (the Armored Batmobile,
+23 Oct 16:20). No alert ever goes out while the page says 0.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -1766,6 +1769,11 @@ FC_CART_TIMEOUT = float(os.getenv("FC_CART_TIMEOUT", "10"))
 # a comeback the cart confirmed may alert again after this many minutes (units
 # that really came back after a sell-out are worth knowing about)
 FC_CART_COOLDOWN_MIN = float(os.getenv("FC_CART_COOLDOWN_MIN", "20"))
+# v17.1: …and only while its product page sells it too — "Add to cart" on the
+# page, not "Notify me". The cart counts units the page has already sold: 23 Oct
+# 16:20 it had 1 Armored Batmobile for 248001 while the page and your Favourites
+# said Out of Stock. A page reading counts as current for this many seconds.
+FC_CART_PAGE_S = float(os.getenv("FC_CART_PAGE_S", "90"))
 _FC_CART_PAUSE = [0.0]      # epoch until which the cart is left alone (429/403)
 _FC_CART_DEV = {}           # this run's guest device id + fingerprint headers
 _FC_CART_STATS = {"calls": 0, "cars": 0, "fail": 0}
@@ -2432,22 +2440,10 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
         # FirstCry's in-stock list for 248001 has it — or, for a car listed in
         # the last few hours, its catalogue does (v16.3/16.4)
         on_list = claim(p) == "list" or (claim(p) == "cat" and fresh)
-        if verdict == "arriving" and info.get("svc") != 0 and young and on_list:
-            # v16.2: FirstCry's in-stock list for your pincode and its delivery
-            # check both say yes while the product page still shows 0 — new
-            # stock the page hasn't caught up with. 21 Oct 22:20: a brand-new
-            # '20 Charger Hellcat could be added to the cart while its page said
-            # 0; over two days such pages caught up within 1-15 min.
-            # v16.3: so does the catalogue ('cat') for a car listed in the last
-            # FC_NEW_FRESH_H hours — 21 Oct the Hellcat had units there at
-            # 22:20, on the in-stock list only at 22:27 — and the page's "Out of
-            # Stock" doesn't stop a purchase: ♡ it, then add it to the cart
-            # from your Favourites.
-            # Only while that's new (FC_PAGE_LAG_MIN): a page that stays at 0
-            # isn't catching up.
-            verdict = "ok"
-            rec = by.get(p) or {}
-            listed_n = rec.get("stock_count") if isinstance(rec.get("stock_count"), int) else None
+        # (v16.2-16.3 alerted while the product page still said 0, on the word
+        # of FirstCry's lists or catalogue. v17.1: never — a page at 0 shows
+        # "Notify me" instead of "Add to cart", and your Favourites say Out of
+        # Stock too; 23 Oct 16:20 the Armored Batmobile alerted like that.)
         if verdict == "ok" and (v or {}).get("stock") != "in_stock" and FC_SURE_UNITS:
             cs_, isv_ = info.get("cs") or 0, info.get("isv")
             units = min(cs_, isv_) if isv_ is not None else cs_
@@ -2549,9 +2545,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
         # the count you can actually get: page stock, capped by what can reach you
         r["stock_count"] = (min(cs, isv) if isv else cs) if st == "in_stock" else None
         if st == "in_stock" and not cs:
-            r["stock_count"] = listed_n or isv or None      # new stock, page not caught up
-            r["fc_page_behind"] = True
-        r["fc_pb"] = "1" if r.get("fc_page_behind") else ""
+            r["stock_count"] = listed_n or isv or None      # no fresh count from the page
+        r["fc_pb"] = ""
         r["fc_arr"] = arr
         r["fc_off"] = off
         r["fc_live"] = verdict
@@ -2629,7 +2624,30 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
     if res is None:
         res = {}
         print(f"  [FC-CART] the cart couldn't be asked ({len(ask)} cars) — the listing / page signals decide")
-    n_yes = n_in = n_out = n_fix = 0
+    # buyable = the cart can send it to you AND its product page sells it; a car
+    # the cart would take but whose page wasn't read just now is read first
+    now = time.time()
+
+    def page_cs(p):
+        e = _FC_LIVE.get(p) or {}
+        return e.get("cs") if now - e.get("at_page", 0) <= FC_CART_PAGE_S else None
+
+    slot = int(now // 60)
+    # (a car already known to sit in the cart with its page at 0 is re-read every
+    # FC_LIVE_RECHECK minutes, not every time the cart is asked)
+    want = [p for p, a in res.items() if a.get("ok") and page_cs(p) is None
+            and (prev_fc.get(p) or {}).get("stock") != "in_stock"
+            and ((prev_fc.get(p) or {}).get("fc_live") != "page 0" or (slot + int(p)) % FC_LIVE_RECHECK == 0)]
+    if want and _FC_LIVE_PAUSE[0] <= now:
+        todo, covered = [], set()
+        for p in want:
+            if p not in covered:
+                todo.append(p)
+                covered.update((_FC_LIVE.get(p) or {}).get("members") or [p])
+        todo = todo[:FC_LIVE_MAX]
+        with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
+            list(ex.map(fc_page, todo))
+    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = 0
     for p in must:
         if p not in res:                           # not answered: the signals' word stands, flagged
             r = recs.get(p)
@@ -2637,9 +2655,29 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
                 r["fc_cart_unchecked"] = True
     for p, a in res.items():
         v = prev_fc.get(p) or {}
-        st = "in_stock" if a.get("ok") else "out_of_stock"
-        cart = "y" if a.get("ok") else "n"
-        n_yes += a.get("ok", False)
+        before = v.get("stock")
+        cart_ok = bool(a.get("ok"))
+        cs_ = page_cs(p)
+        if cart_ok and before != "in_stock":
+            if cs_ is None and prev_fc:
+                # the cart would take it, its page wasn't read just now: decided
+                # when it is (the listing's word doesn't stand in for it)
+                r = recs.get(p)
+                if r is not None and r.get("stock") == "in_stock":
+                    r["stock"] = before or "out_of_stock"
+                    r["stock_count"] = None
+                n_wait += 1
+                continue
+            # coming in: the page must sell it (very first run: the listing's word)
+            buy = bool(cs_ and cs_ > 0) if cs_ is not None else (recs.get(p) or {}).get("stock") == "in_stock"
+        elif cart_ok:
+            buy = cs_ is None or cs_ > 0        # held: out once a page reading says 0
+        else:
+            buy = False
+        n_page0 += cart_ok and not buy
+        st = "in_stock" if buy else "out_of_stock"
+        cart = "y" if cart_ok else "n"
+        n_yes += buy
         r = recs.get(p)
         if r is None:
             if v.get("stock") == st and v.get("fc_cart") == cart:
@@ -2656,7 +2694,6 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             out.append(r)
             recs[p] = r
         r.pop("fc_carried", None)
-        before = v.get("stock")
         if v and before != st and not v.get("fc_cart") and proposed.get(p) != st and not r.get("fc_first_read"):
             # its first cart answer, and nothing else said so: a correction, not news
             r["fc_first_read"] = True
@@ -2664,8 +2701,11 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         r["stock"] = st
         r["fc_cart"] = cart
         r.pop("fc_cart_unchecked", None)
-        if a.get("ok"):
-            r["stock_count"] = a.get("n") or None
+        if buy:
+            n = a.get("n") or 0
+            if cs_:
+                n = min(n, cs_) if n else cs_
+            r["stock_count"] = n or None
             r["fc_cart_eta"] = _fc_eta(a.get("eta", ""))
             r["fc_live"] = "ok"
             r["fc_live_now"] = True
@@ -2677,19 +2717,18 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             if price > 0:
                 r["price"] = f"₹{int(round(price))}"
                 r["mrp"] = f"₹{int(round(mrp))}" if mrp > price + 0.5 else ""
-            if (_FC_LIVE.get(p) or {}).get("cs") == 0 and time.time() - (_FC_LIVE.get(p) or {}).get("at_page", 0) < 120:
-                r["fc_page_behind"] = True          # the cart sells it, the page still says 0
-                r["fc_pb"] = "1"
+            r["fc_pb"] = ""
             n_in += before != "in_stock"
         else:
             r["stock_count"] = None
-            r.pop("fc_page_behind", None)
             r["fc_pb"] = ""
             if r.get("fc_live") in ("ok", None, ""):
-                r["fc_live"] = "not in cart"
+                r["fc_live"] = "page 0" if cart_ok else "not in cart"
             n_out += before == "in_stock"
     print(f"  [FC-CART] {len(ask)} car(s) asked ({len(must)} pointed at, {len(ask) - len(must)} in turn) "
           f"in {time.time() - t0:.1f}s: {n_yes} buyable for {FC_PINCODE}; {n_in} now in, {n_out} now out"
+          + (f", {n_page0} in the cart but not on sale on their page" if n_page0 else "")
+          + (f", {n_wait} waiting for their page" if n_wait else "")
           + (f", {n_fix} first answers applied quietly" if n_fix else ""))
     return out
 
@@ -4363,9 +4402,6 @@ def _line(d, extra="") -> str:
     info = f"\n{info}" if info else ""
     if d.get("fc_cart") == "y" and d.get("fc_cart_eta"):
         info += f"\n🚚 cart says: delivery by {d['fc_cart_eta']}"
-    if d.get("fc_page_behind"):
-        # FirstCry's list / catalogue says it's in, the page hasn't caught up yet
-        info += "\n💡 page may still say Out of Stock: tap ♡, then add it to the cart from your Favourites"
     if d.get("fc_cart_unchecked"):
         info += "\n⚠️ FirstCry's cart couldn't be checked this time — check delivery before paying"
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}{info}\n{url}"
