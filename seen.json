@@ -2773,7 +2773,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-22T16:45:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -3988,7 +3988,7 @@
   "fc_23353374": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car - Brown",
-    "price": "₹179",
+    "price": "₹161",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-brown/23353374/product-detail",
     "first_seen": "2026-07-21T04:56:46",
@@ -4001,7 +4001,7 @@
     "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "arriving",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "23353372",
     "fc_arr": "2026-10-23T05:34:43",
     "fc_svc": "1"
@@ -4064,7 +4064,7 @@
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23345759",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23351187": {
     "stock": "out_of_stock",
@@ -4533,7 +4533,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-23T06:30:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -4864,7 +4864,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-17T06:45:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "unlisted",
     "fc_lst": "out",
@@ -4936,7 +4936,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-22T07:45:00",
-    "fc_api_seen_at": "2026-10-23T06:30:00",
+    "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -13554,7 +13554,7 @@
     "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24390968",
     "fc_svc": "0"
   },
@@ -15387,7 +15387,7 @@
     "fc_api_seen_at": "2026-10-23T06:45:00",
     "fc_trusted": true,
     "fc_live": "last unit",
-    "fc_lst": "cat",
+    "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_svc": "1"
   },
