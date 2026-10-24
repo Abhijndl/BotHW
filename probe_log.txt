@@ -1,453 +1,316 @@
 
-==================== FirstCry: find Matchbox / Majorette brand ids ====================
+==================== FirstCry: brand filter ids on the search pages ====================
 
-search:matchbox: HTTP 200, 734649 bytes, final https://www.firstcry.com/search?searchstring=matchbox&_=1792825663162
-   brand-style links: []
-   [\"']?brandid[\"']?\s*[:=]\s*[\"']?(\d+): [('0', 2)]
-   ctx[matchbox]: …   </script>         <script type="text/javascript">         var DynImgExtn='.jpg';var redirectretrnurl='https://www.firstcry.com/search?searchstring=matchbox&_=1792825663162';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/search?searchstring=matchbox&_=1792825663162';var A…
-   ctx[matchbox]: …om/search?searchstring=matchbox&_=1792825663162';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/search?searchstring=matchbox&_=1792825663162';var Addressservice='https://CID.fcappservices.in/UserInformation/AddressService.svc';var Authservice='https://CLA.fcappservices.in/l…
-   ctx[majorette]: …a-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(106)</span></div>                                                                         </a></li> …
-   ctx[majorette]: …                       <div class="list_img wifi">                                         <a role="checkbox" tabindex="-1" aria-hidden="true" href="/majorette/majorette-free-wheel-ford-wagon-trailer-with-2-die-cast-cars-multicolour/19991414/product-detail?sterm=&spos=6&sstock=1" target="_blank">            …
-   20 product cards; first: [('24382808', 'Match Box Mbx Field Car Convertible / Decapotable - Yellow'), ('24382804', 'Match Box 1993 Ford Ranger Prerunner / Hors-Route Car-L - Green'), ('24382810', 'Match Box Mbx Excavator / Excavatrice - Yellow - Black'), ('24382821', 'Match Box Bucket Tipper Benne Basculante - Multicolor'), ('24476803', "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green"), ('19991414', 'Majorette Free Wheel Ford Wagon Trailer with 2 Die Cast Cars - Multicolour'), ('23973354', 'Hot Wheels Pantone 2304 Custom Personnalise 69 Volkswahen Squareback Die-cast Free Wheel Toy Car - Light ,green'), ('24477198', 'ADKD Alloy Die Cast Car Set with Storage Box, Mini Metal Toy Cars Collection with Carry Case, Kids Racing Cars Toy Set for Boys Girls 48 Pieces - Multicolor'), ('24525299', 'Hot Wheels Volvo 240 Drift Camper/Roulotte De Derapage Die Cast Toy Truck - Green'), ('24476471', 'Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green'), ('24776070', 'Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black'), ('24475737', 'Hot Wheels 24/Seven Die cast car 38/250 - Blue')]
+search 'matchbox': HTTP 200, 76 filter entries
+   brand-like: [('Hot Wheels', '113', 165), ('Majorette', '1335', 106), ('Hot Wheels', '113', 165), ('Majorette', '1335', 106)]
+   all: [('Babyhug', '621', 780), ('Fab N Funky', '8', 372), ('Pine Kids', '1006125', 204), ('Mark & Mia', '1005273', 185), ('Hot Wheels', '113', 165), ('Majorette', '1335', 106), ('Intelliskills', '1006995', 100), ('Centy', '1000041', 95), ('Fiddlerz', '1005949', 90), ('Babyoye', '1004078', 85), ('LEGO', '354', 62), ('OLLINGTON ST.', '1007141', 61), ('ATTRO', '1008502', 61), ('ToffyHouse', '361', 60), ('Babyhug Disney', '1009182', 59), ('Play Nation', '1472', 59), ('Cute Walk by Babyhug', '376', 58), ('Ratnas', '1002779', 54), ('CUCUMBER', '2175', 52), ('Tango', '1249', 51), ('Rikidoos', '1004552', 47), ('United Agencies', '1006554', 46), ('Monsto', '1006859', 46), ('Intellibaby', '1007186', 45), ('Giggles', '1003491', 43), ('KIDS FUN Toys', '1009191', 43), ('Kiddopanti', '1004028', 42), ('RMZ', '1003236', 40), ('R for Rabbit', '1002500', 36), ('MINI KLUB', '1004094', 36), ('4-6 Years', '7', 2603), ('6-8 Years', '8', 2221), ('3-4 Years', '18', 2186), ('8-10 Years', '9', 1863), ('10-12 Years', '10', 1569), ('12+ Years', '11', 1277), ('18-24 Months', '5', 1078), ('12-18 Months', '4', 1078), ('2-3 Years', '17', 1020), ('9-12 Months', '3', 1013), ('6-9 Months', '2', 974), ('3-6 Months', '1', 859), ('0-3 Months', '0', 722), ('New born', '27', 78), ('Preemie', '15', 18), ('Show Premium Products', '1', 8), ('Babyhug', '621', 780), ('Fab N Funky', '8', 372), ('Pine Kids', '1006125', 204), ('Mark & Mia', '1005273', 185), ('Hot Wheels', '113', 165), ('Majorette', '1335', 106), ('Intelliskills', '1006995', 100), ('Centy', '1000041', 95), ('Fiddlerz', '1005949', 90), ('Babyoye', '1004078', 85), ('LEGO', '354', 62), ('OLLINGTON ST.', '1007141', 61), ('ATTRO', '1008502', 61), ('ToffyHouse', '361', 60), ('Babyhug Disney', '1009182', 59), ('Play Nation', '1472', 59), ('Cute Walk by Babyhug', '376', 58), ('Ratnas', '1002779', 54), ('CUCUMBER', '2175', 52), ('Tango', '1249', 51), ('Rikidoos', '1004552', 47), ('United Agencies', '1006554', 46), ('Monsto', '1006859', 46), ('Intellibaby', '1007186', 45), ('Giggles', '1003491', 43), ('KIDS FUN Toys', '1009191', 43), ('Kiddopanti', '1004028', 42), ('RMZ', '1003236', 40), ('R for Rabbit', '1002500', 36), ('MINI KLUB', '1004094', 36)]
+   ctx 1335: …                                                                          <div><span class="txt edittext L14_42">Hot Wheels</span><span class="cnt  L14_9e" data-val="113">(165)</span></div>                                                                         </a></li>                                                                                                                                                                                                                                                                                                                  <li><a role="link" tabindex="0" href="javascript:void(0);"><span aria-hidden="true" class="sprite_list sprt" data-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(10…
 
-search:majorette: HTTP 200, 670622 bytes, final https://www.firstcry.com/search?searchstring=majorette&_=1792825664503
-   brand-style links: []
-   [\"']?brandid[\"']?\s*[:=]\s*[\"']?(\d+): [('0', 2)]
-   ctx[majorette]: …   </script>         <script type="text/javascript">         var DynImgExtn='.jpg';var redirectretrnurl='https://www.firstcry.com/search?searchstring=majorette&_=1792825664503';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/search?searchstring=majorette&_=1792825664503';var …
-   ctx[majorette]: …m/search?searchstring=majorette&_=1792825664503';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/search?searchstring=majorette&_=1792825664503';var Addressservice='https://CID.fcappservices.in/UserInformation/AddressService.svc';var Authservice='https://CLA.fcappservices.in/l…
-   20 product cards; first: [('24178932', 'Majorette Suzuki Swift Sport Die Cast Car with Free Wheel Moving Feature Red White Racing Toy'), ('23970503', 'Majorette Vintage Premium Die Cast Car Trabant P 601 -Sky Blue'), ('23934548', 'Majorette Honda Civic Type R EK9 Premium Die Cast Free Wheel Car - Black'), ('12617539', 'Majorette A 350 900 Airport License Die Cast Free Wheel Toy Airplane - White'), ('22005530', 'Majorette Die Cast City Transporter'), ('12278325', 'Majorette Airport License Die Cast Free Wheel Model Airplane Toy - White'), ('23966965', 'Majorette Showroom Jeep Wrangler 4XE Premium Die Cast Free Wheel Toy Jeep -Green'), ('22065170', 'Majorette Man TGX XXl Die Cast Free Wheel Moving City Transporter - Blue & White'), ('23934550', 'Majorette Suzuki Carry Die Cast Free Wheel Car - Green'), ('22065171', 'Majorette Mercedes Benz Actros Die Cast Free Wheel Moving City Transporter - Green'), ('22145380', 'Majorette: Farm Premium Die Cast Free Wheel Toy Mack Granite - Red'), ('22065175', 'Majorette Mercedes-Benz Actros Die Cast Free Wheel Moving City Transporter - White & Orange')]
+search 'match box': HTTP 200, 76 filter entries
+   brand-like: [('Hot Wheels', '113', 169), ('Majorette', '1335', 106), ('Hot Wheels', '113', 169), ('Majorette', '1335', 106)]
+   all: [('Babyhug', '621', 738), ('Fab N Funky', '8', 358), ('Hot Wheels', '113', 169), ('Pine Kids', '1006125', 152), ('Mark & Mia', '1005273', 123), ('Majorette', '1335', 106), ('Centy', '1000041', 95), ('Fiddlerz', '1005949', 85), ('Babyoye', '1004078', 84), ('Intelliskills', '1006995', 63), ('ATTRO', '1008502', 61), ('LEGO', '354', 61), ('Babyhug Disney', '1009182', 60), ('OLLINGTON ST.', '1007141', 58), ('Ratnas', '1002779', 51), ('Kiddopanti', '1004028', 50), ('ToffyHouse', '361', 49), ('United Agencies', '1006554', 48), ('Play Nation', '1472', 48), ('CUCUMBER', '2175', 48), ('Monsto', '1006859', 46), ('Giggles', '1003491', 45), ('ZOE', '1005535', 44), ('KIDS FUN Toys', '1009191', 43), ('Tango', '1249', 42), ('RMZ', '1003236', 40), ('Rikidoos', '1004552', 38), ('Pantaloons Junior', '1009154', 38), ('Echo Boomers', '1009241', 38), ('Cute Walk by Babyhug', '376', 37), ('4-6 Years', '7', 2489), ('6-8 Years', '8', 2134), ('3-4 Years', '18', 2097), ('8-10 Years', '9', 1786), ('10-12 Years', '10', 1503), ('12+ Years', '11', 1242), ('18-24 Months', '5', 996), ('2-3 Years', '17', 973), ('12-18 Months', '4', 988), ('9-12 Months', '3', 985), ('6-9 Months', '2', 958), ('3-6 Months', '1', 881), ('0-3 Months', '0', 756), ('New born', '27', 72), ('Preemie', '15', 19), ('Show Premium Products', '1', 11), ('Babyhug', '621', 738), ('Fab N Funky', '8', 358), ('Hot Wheels', '113', 169), ('Pine Kids', '1006125', 152), ('Mark & Mia', '1005273', 123), ('Majorette', '1335', 106), ('Centy', '1000041', 95), ('Fiddlerz', '1005949', 85), ('Babyoye', '1004078', 84), ('Intelliskills', '1006995', 63), ('ATTRO', '1008502', 61), ('LEGO', '354', 61), ('Babyhug Disney', '1009182', 60), ('OLLINGTON ST.', '1007141', 58), ('Ratnas', '1002779', 51), ('Kiddopanti', '1004028', 50), ('ToffyHouse', '361', 49), ('United Agencies', '1006554', 48), ('Play Nation', '1472', 48), ('CUCUMBER', '2175', 48), ('Monsto', '1006859', 46), ('Giggles', '1003491', 45), ('ZOE', '1005535', 44), ('KIDS FUN Toys', '1009191', 43), ('Tango', '1249', 42), ('RMZ', '1003236', 40), ('Rikidoos', '1004552', 38), ('Pantaloons Junior', '1009154', 38), ('Echo Boomers', '1009241', 38), ('Cute Walk by Babyhug', '376', 37)]
+   ctx 1335: …                                                                      <div><span class="txt edittext L14_42">Mark & Mia</span><span class="cnt  L14_9e" data-val="1005273">(123)</span></div>                                                                         </a></li>                                                                                                                                                                                                                                                                                                                  <li><a role="link" tabindex="0" href="javascript:void(0);"><span aria-hidden="true" class="sprite_list sprt" data-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(10…
 
-search:hot wheels monster trucks: HTTP 200, 797384 bytes, final https://www.firstcry.com/search?searchstring=hot%20wheels%20monster%20trucks&_=1792825666295
-   brand-style links: []
-   [\"']?brandid[\"']?\s*[:=]\s*[\"']?(\d+): [('0', 2)]
-   ctx[majorette]: …a-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(66)</span></div>                                                                         </a></li>  …
-   ctx[majorette]: …st sprt" data-icon="V" data-val="1335"></span>                                                                 <div><span class="txt edittext L14_42">Majorette </span><span class="cnt  L14_9e"  data-val="1335"> (66)</span></div>                                                             </a></li>  <li class…
-   20 product cards; first: [('23835983', 'Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Green'), ('24568707', 'Hot Wheels TRICERATOPS MONST ER TRUCKS- dark green color'), ('23974124', 'Hot Wheels Die Cast Free Wheel Monster Trucks Mega Wrex - Dark Green'), ('22790329', 'Hot Wheel Die Cast Free Wheel Monster Trucks HW 5 Alarm Toy Pack Of 2 - White & Red'), ('24568735', 'Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple'), ('24568741', 'Hot Wheels 1985 Ford Bronco Monster Trucks -Red'), ('22790348', 'Hot Wheel Die Cast Free Wheel Monster Trucks Mood Crusher Toy Pack Of 2 - Blue & Yellow'), ('22759874', 'Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Podium Crasher - Navy'), ('23973376', 'Hot Wheel Bigfoot / Bigfoot Bite Die Cast Free Wheel Monster Trucks-Teal Blue/Light Blue'), ('23973372', "Hot Wheel Haul Y'All / Too s'Cool Die Cast Free Wheel Monster Trucks-Blue/Yellow"), ('23973373', 'Hot Wheel The 909 / Pure Muscle Die Cast Free Wheel Monster Trucks-Light Blue/Yellow'), ('22759875', "Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Haul Y'all - Green")]
+search 'majorette': HTTP 200, 75 filter entries
+   brand-like: [('Majorette', '1335', 35), ('Majorette', '1335', 35)]
+   all: [('Mark & Mia', '1005273', 1237), ('Babyhug', '621', 328), ('Tango', '1249', 284), ('Hola Bonita', '1006492', 192), ('Pantaloons Junior', '1009154', 166), ('OLLINGTON ST.', '1007141', 96), ('Twetoons', '1005937', 94), ('Cute Walk by Babyhug', '376', 92), ('Babyoye', '1004078', 90), ('Enfance', '1003939', 86), ('ToffyHouse', '361', 72), ('DoreMe', '344', 69), ('Bluebell', '848', 69), ('Pine Kids', '1006125', 64), ('The Magic Wand', '1006237', 55), ('DECATHLON', '1000147', 53), ('Kiddopanti', '1004028', 52), ('Arias by Lara Dutta', '1006807', 44), ('Fashion Dream', '1009113', 39), ('MINI KLUB', '1004094', 37), ('Kookie Kids', '1005206', 35), ('Majorette', '1335', 35), ('Little Kangaroos', '147', 33), ('Pine Active', '1007363', 32), ('Bonfino', '1007256', 30), ('CUCUMBER', '2175', 29), ('CrayonFlakes', '1003656', 28), ('Doodle Poodle', '1007304', 28), ('Yellow Chimes', '1008049', 28), ('Blabber', '1010730', 27), ('4-6 Years', '7', 1690), ('2-3 Years', '17', 1437), ('3-4 Years', '18', 1357), ('8-10 Years', '9', 975), ('6-8 Years', '8', 968), ('18-24 Months', '5', 1162), ('12-18 Months', '4', 1020), ('10-12 Years', '10', 600), ('9-12 Months', '3', 574), ('12+ Years', '11', 423), ('6-9 Months', '2', 398), ('3-6 Months', '1', 308), ('0-3 Months', '0', 115), ('New born', '27', 35), ('Preemie', '15', 11), ('Mark & Mia', '1005273', 1237), ('Babyhug', '621', 328), ('Tango', '1249', 284), ('Hola Bonita', '1006492', 192), ('Pantaloons Junior', '1009154', 166), ('OLLINGTON ST.', '1007141', 96), ('Twetoons', '1005937', 94), ('Cute Walk by Babyhug', '376', 92), ('Babyoye', '1004078', 90), ('Enfance', '1003939', 86), ('ToffyHouse', '361', 72), ('DoreMe', '344', 69), ('Bluebell', '848', 69), ('Pine Kids', '1006125', 64), ('The Magic Wand', '1006237', 55), ('DECATHLON', '1000147', 53), ('Kiddopanti', '1004028', 52), ('Arias by Lara Dutta', '1006807', 44), ('Fashion Dream', '1009113', 39), ('MINI KLUB', '1004094', 37), ('Kookie Kids', '1005206', 35), ('Majorette', '1335', 35), ('Little Kangaroos', '147', 33), ('Pine Active', '1007363', 32), ('Bonfino', '1007256', 30), ('CUCUMBER', '2175', 29), ('CrayonFlakes', '1003656', 28), ('Doodle Poodle', '1007304', 28), ('Yellow Chimes', '1008049', 28), ('Blabber', '1010730', 27)]
+   ctx 1335: …                                                                      <div><span class="txt edittext L14_42">Kookie Kids</span><span class="cnt  L14_9e" data-val="1005206">(35)</span></div>                                                                         </a></li>                                                                                                                                                                                                                                                                                                                  <li><a role="link" tabindex="0" href="javascript:void(0);"><span aria-hidden="true" class="sprite_list sprt" data-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(35…
 
-search:monster trucks: HTTP 200, 873823 bytes, final https://www.firstcry.com/search?searchstring=monster%20trucks&_=1792825667025
-   brand-style links: []
-   [\"']?brandid[\"']?\s*[:=]\s*[\"']?(\d+): [('0', 2)]
-   ctx[majorette]: …a-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(98)</span></div>                                                                         </a></li>  …
-   ctx[majorette]: …st sprt" data-icon="V" data-val="1335"></span>                                                                 <div><span class="txt edittext L14_42">Majorette </span><span class="cnt  L14_9e"  data-val="1335"> (98)</span></div>                                                             </a></li>  <li class…
-   20 product cards; first: [('9457822', 'Monsto Friction Monster Truck - Green'), ('9457820', 'Monsto Friction Powered Monster Toy Truck Green - Height 9.5 cm'), ('23835983', 'Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Green'), ('8264603', 'Fiddlerz Friction Powered Unbreakable Monster Plastic Truck Pack of 4 (Color May Vary)'), ('9457818', 'Monsto Friction Monster Truck - Green'), ('13306603', 'Monsto Friction Monster Truck Toy - Red'), ('13306602', 'Monsto Friction Monster Truck Toy -Blue (Print May Vary)'), ('9457819', 'Monsto Friction Powered Monster Truck Toy - Black'), ('24568735', 'Hot Wheels Volkswagen Drag Busm -Onster Trucks - Purple'), ('9457825', 'Monsto Friction Monster Truck - Yellow'), ('9457814', 'Monsto Friction Powered Monster Toy Truck Red - Height 9.5 cm'), ('9457817', 'Monsto Friction Monster Truck - Orange')]
+search 'hot wheels monster trucks': HTTP 200, 76 filter entries
+   brand-like: [('Hot Wheels', '113', 191), ('Majorette', '1335', 66), ('Hot Wheels', '113', 191), ('Majorette', '1335', 66)]
+   all: [('Babyhug', '621', 934), ('Fab N Funky', '8', 284), ('Hot Wheels', '113', 191), ('Pine Kids', '1006125', 162), ('Babyhug Disney', '1009182', 142), ('Mark & Mia', '1005273', 104), ('Tango', '1249', 94), ('Babyoye', '1004078', 80), ('Pantaloons Junior', '1009154', 79), ('Centy', '1000041', 78), ('Doodle Poodle', '1007304', 76), ('OLLINGTON ST.', '1007141', 68), ('Taeko', '1000476', 67), ('CUCUMBER', '2175', 67), ('Majorette', '1335', 66), ('Cute Walk by Babyhug', '376', 65), ('Kiddopanti', '1004028', 64), ('Play Nation', '1472', 55), ('Zero', '342', 54), ('Fiddlerz', '1005949', 52), ('R for Rabbit', '1002500', 51), ('Monsto', '1006859', 50), ('BUMZEE', '1005483', 49), ('Mini Donuts', '1005151', 48), ('Pine Kids Marvel', '1009185', 47), ('DoreMe', '344', 47), ('LEGO', '354', 45), ('ToffyHouse', '361', 44), ('Honeyhap', '1006524', 43), ('OHMS', '1975', 42), ('4-6 Years', '7', 2631), ('3-4 Years', '18', 2140), ('6-8 Years', '8', 1733), ('8-10 Years', '9', 1494), ('2-3 Years', '17', 1334), ('10-12 Years', '10', 1237), ('12-18 Months', '4', 1257), ('9-12 Months', '3', 1206), ('18-24 Months', '5', 1182), ('6-9 Months', '2', 1100), ('12+ Years', '11', 933), ('3-6 Months', '1', 848), ('0-3 Months', '0', 616), ('New born', '27', 90), ('Preemie', '15', 40), ('Show Premium Products', '1', 5), ('Babyhug', '621', 934), ('Fab N Funky', '8', 284), ('Hot Wheels', '113', 191), ('Pine Kids', '1006125', 162), ('Babyhug Disney', '1009182', 142), ('Mark & Mia', '1005273', 104), ('Tango', '1249', 94), ('Babyoye', '1004078', 80), ('Pantaloons Junior', '1009154', 79), ('Centy', '1000041', 78), ('Doodle Poodle', '1007304', 76), ('OLLINGTON ST.', '1007141', 68), ('Taeko', '1000476', 67), ('CUCUMBER', '2175', 67), ('Majorette', '1335', 66), ('Cute Walk by Babyhug', '376', 65), ('Kiddopanti', '1004028', 64), ('Play Nation', '1472', 55), ('Zero', '342', 54), ('Fiddlerz', '1005949', 52), ('R for Rabbit', '1002500', 51), ('Monsto', '1006859', 50), ('BUMZEE', '1005483', 49), ('Mini Donuts', '1005151', 48), ('Pine Kids Marvel', '1009185', 47), ('DoreMe', '344', 47), ('LEGO', '354', 45), ('ToffyHouse', '361', 44), ('Honeyhap', '1006524', 43), ('OHMS', '1975', 42)]
+   ctx 1335: …                                                                            <div><span class="txt edittext L14_42">CUCUMBER</span><span class="cnt  L14_9e" data-val="2175">(67)</span></div>                                                                         </a></li>                                                                                                                                                                                                                                                                                                                  <li><a role="link" tabindex="0" href="javascript:void(0);"><span aria-hidden="true" class="sprite_list sprt" data-icon="V" data-val="1335"></span>                                                                             <div><span class="txt edittext L14_42">Majorette</span><span class="cnt  L14_9e" data-val="1335">(66…
+--- FirstCry: brand filter ids on the search pages: 5.0s
 
-brand:matchbox: HTTP 404, 111229 bytes, final https://www.firstcry.com/matchbox?_=1792825668385
-   brand-style links: []
-   [\"']?brandid[\"']?\s*[:=]\s*[\"']?(\d+): [('0', 2)]
-   ctx[matchbox]: …('url','A/B');         </script>         <script type="text/javascript">         var DynImgExtn='.jpg';var redirectretrnurl='https://www.firstcry.com/matchbox?_=1792825668385';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/matchbox?_=1792825668385';var Addressservice='https…
-   ctx[matchbox]: …redirectretrnurl='https://www.firstcry.com/matchbox?_=1792825668385';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/matchbox?_=1792825668385';var Addressservice='https://CID.fcappservices.in/UserInformation/AddressService.svc';var Authservice='https://CLA.fcappservices.in/l…
-   ctx[matchbox]: …="0" aria-haspopup="true" role="menuitem" class="anch poplogin_main poplogin R12_61" passpoplink="//www.firstcry.com/m/login?https://www.firstcry.com/matchbox?_=1792825668385" aria-label="Login">Login /</span><span aria-haspopup="true" role="menuitem" tabindex="0" class="anch Register_popup Register R12_61"…
-   0 product cards; first: []
+==================== FirstCry: Match Box / Majorette catalogues ====================
+[FC-API majorette 1335] {'MasterBrand': '1335'} → 179 products over 9 page(s), 144 with stock, errors []
+   brands: [(('Majorette', '1335'), 179)]
+   subcategories: [('Toy Cars, Trains & Vehicles', 179)]
+   179 of 179 are majorette
+   ⛓ 19931384 25 ₹1699 pre=0 new=0 Majorette Volvo Edition Gift Pack Free Wheel Movable Parts Pack of 4 - Yellow & Black
+   ⛓ 19931381 337 ₹1699 pre=0 new=0 Majorette Porsche Edition Gift Pack Free Wheel Die Cast With 2 Exclusive Models Pack of 5 - Multicolor
+   ⛓ 12278345 21 ₹1699 pre=0 new=0 Majorette Freewheel Die-Cast Black Edition Toy Car Set Pack of 5 - Black
+   ⛓ 19991407 1 ₹399 pre=0 new=0 Majorette Hauler Volvo Edition Die Cast Free Wheel Model Toy Car A60H - Yellow
+   ⛓ 24387511 0 ₹899 pre=0 new=0 Majorette 2005 BUGATTI VEYRON 16.4 SUPER SPORT Metal Die Cast Model Car with Display Case and Rubber Tire
+   ⛓ 24387510 0 ₹899 pre=0 new=0 Majorette 1995 TOYOTA SUPRA JZA80 Metal Die Cast Model Car with Display Case and Rubber Tires - Yellow
+   ⛓ 24387509 0 ₹899 pre=0 new=0 Majorette 1986 BMW M3 Metal Die Cast Model Car with Display Case and Rubber Tires - Red
+   ⛓ 24387508 0 ₹899 pre=0 new=0 Majorette 1976 CHEVROLET CORVETTE C3 Metal Die Cast Model Car with Display Case and Rubber Tires - Navy B
+   ⛓ 24387507 0 ₹899 pre=0 new=0 Majorette 1965 FORD GT40 MK1 Metal Die Cast Model Car with Display Case and Rubber Tires, Scale 1:64, Wav
+   ⛓ 24387506 0 ₹899 pre=0 new=0 Majorette 1955 Porshe Spyder 550 Metal Die Cast Model Car With Display Case and Rubber Tires, Scale 1:64,
+   · 22132879 874 ₹179 Toy Cars, Trains & V Majorette Renault Master Free Wheel Moving Die Cast Car -Blue
+   · 22123320 814 ₹179 Toy Cars, Trains & V Majorette RIDE NOW Die-Cast Car Purple-Black
+   · 22176033 708 ₹179 Toy Cars, Trains & V Majorette Die-Cast Chevrolet C10 - Blue
+   · 22124409 656 ₹179 Toy Cars, Trains & V Majorette Ford Puma ST Die-Cast Car Green
+   · 23934551 512 ₹399 Toy Cars, Trains & V Majorette Peugeot 205 GTI 1.9 Die Cast Free Wheel Car - Red
+   · 22618399 504 ₹179 Toy Cars, Trains & V Majorette Iveco Eurocargo Metal street Truck - Red
+   · 23969883 449 ₹399 Toy Cars, Trains & V Majorette Vintage Premium Die Cast Car Chevrolet Corvette 1990 ZR 1 - Yellow
+   · 24178931 359 ₹399 Toy Cars, Trains & V Majorette Ford Escort MK II RS 1800 Die Cast Racing Car with Free Wheel Moving Feature Grey
+   · 22124949 358 ₹179 Toy Cars, Trains & V Majorette Iveco Eurocargo Die-Cast Truck Green
+   · 24178929 341 ₹399 Toy Cars, Trains & V Majorette Datsun 260Z Die Cast Racing Car with Free Wheel Moving Feature - Yellow
+   · 19931381 337 ₹1699 Toy Cars, Trains & V Majorette Porsche Edition Gift Pack Free Wheel Die Cast With 2 Exclusive Models Pack of 5 - Mul
+   · 19991403 337 ₹399 Toy Cars, Trains & V Majorette Free Wheel Die-cast Porsche Premium Car - White
+--- FirstCry: Match Box / Majorette catalogues: 5.7s
 
-brand:majorette: HTTP 404, 111236 bytes, final https://www.firstcry.com/majorette?_=1792825668723
-   brand-style links: []
-   [\"']?brandid[\"']?\s*[:=]\s*[\"']?(\d+): [('0', 2)]
-   ctx[majorette]: …('url','A/B');         </script>         <script type="text/javascript">         var DynImgExtn='.jpg';var redirectretrnurl='https://www.firstcry.com/majorette?_=1792825668723';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/majorette?_=1792825668723';var Addressservice='http…
-   ctx[majorette]: …edirectretrnurl='https://www.firstcry.com/majorette?_=1792825668723';var base_urllogin='https://www.firstcry.com/m/login?URL=https://www.firstcry.com/majorette?_=1792825668723';var Addressservice='https://CID.fcappservices.in/UserInformation/AddressService.svc';var Authservice='https://CLA.fcappservices.in/l…
-   ctx[majorette]: …="0" aria-haspopup="true" role="menuitem" class="anch poplogin_main poplogin R12_61" passpoplink="//www.firstcry.com/m/login?https://www.firstcry.com/majorette?_=1792825668723" aria-label="Login">Login /</span><span aria-haspopup="true" role="menuitem" tabindex="0" class="anch Register_popup Register R12_61"…
-   0 product cards; first: []
+==================== Hamleys sitemap: Matchbox / Majorette / monster / chase slugs ====================
+23 sitemaps, 5736 product slugs
 
-brand ids found: {}
---- FirstCry: find Matchbox / Majorette brand ids: 5.9s
+hot-wheels: 53
 
-==================== FirstCry: listing API per brand + keyword search ====================
-[FC-API search matchbox] {'SearchString': 'matchbox', 'MasterBrand': ''} → 60 products, 60 with stock, errors []
-   record keys: ['AgeF', 'AgeT', 'BId', 'BNm', 'Bestseller', 'CNm', 'ClrCnt', 'CrntStock', 'Disc', 'Excl', 'Images', 'IsPremium', 'MRP', 'PDsc', 'PId', 'PInfId', 'PNm', 'PUCost', 'PUPad', 'PUWipe', 'P_Grp_ID', 'PcId', 'SCNm', 'ScId', 'SplOfrID', 'SzCnt', 'TTData', 'clubPUCost', 'clubPUPad', 'clubPUWipe', 'clubdisc', 'clubprice', 'collectiontag', 'color', 'cpntxt', 'discprice', 'elaunchoff', 'ercash', 'extrawarm', 'fgift', 'isfestival', 'ispreorder', 'mompick', 'mostgifted', 'newdays', 'newsort', 'offendtoday', 'ofrTp', 'onlyonfc', 'perclubcost', 'percost', 'rating', 'ratings', 'review', 'shippingdate', 'size', 'stockType', 'unit']
-   brand names: [('Babyhug', 18), ('Play Nation', 6), ('ADKD', 5), ('Intelliskills', 5), ('Fiddlerz', 4), ('Intellibaby', 3), ('Nerf', 2), ('Azhari', 1)]
-   categories: [('Toys & Gaming / Magnetic Toys', 3), ('Toys & Gaming / Toy Guns & Weapons', 3), ('Toys & Gaming / Baby Rattles', 3), ('Toys & Gaming / Kids Puzzles', 3), ('Toys & Gaming / Board Games', 3), ('Toys & Gaming / Musical Toys', 3), ('Toys & Gaming / Push & Pull Along Toys', 3), ('Toys & Gaming / Indoor & Outdoor Play Equipment', 3)]
-   brand fields of #1: {'BId': '1008976', 'BNm': 'Azhari', 'clubPUCost': '0', 'clubPUWipe': '0', 'clubPUPad': '0', 'Bestseller': '1', 'clubprice': '593.38', 'clubdisc': '56', 'perclubcost': '0'}
-   · 21921780 290 Azhari Azhari Magnetic Balls New Trending 216 Pcs Ball with Metal Storage Tin For kids Multicolor
-   · 21501050 21994 Play Nation Play Nation 3 Pcs Spinner with Suction Cup Toys for Baby Animal Theme - Multicolor| Playti
-   · 21110942 571 ADKD ADKD Hanging Table Tennis Trainer Ping Pong Ball Self Training & Workout Indoor Gaming Set
-   · 21082756 112 Aditi Toys Aditi Toys Space Explorer Pneumatic Gun Include 12 Orange & 12 Yellow Soft Foam Ball, for 
-   · 21077598 9906 ADKD ADKD Spider Superhero Skateboard Sliding Plate Toy with Auto-Turning Action and LED Light 
-   · 20842647 964 Fiddlerz Fiddlerz Remote Control Stunt Car Double Sided Driving RC Stunt Drift Car Toy for Kids 4 W
-   · 20615936 2154 Babyhug Babyhug BPA-Free Rattle & Teether 10 Pieces Set for Newborns & Infants| Safe & Food Grade|
-   · 20455175 1957 ADKD ADKD Kitchen Set Toy with Realistic Lights & Sounds with 42 Accessories Set- Multicolor
-   · 20178804 1720 Intelliskills Intelliskills 3-in-1 Wooden Puzzle Tray Set for Kids | Alphabet, Numbers & Shapes | Montes
-   · 20093754 242 Babyhug Babyhug Cloth Book Jungle Animals|Premium Soft Fabric for Infants | Safe,Non-Toxic,Colorfu
-[FC-API search matchbox] {'SearchString': 'matchbox', 'MasterBrand': '', 'searchwithincat': 'matchbox'} → 60 products, 60 with stock, errors []
-   record keys: ['AgeF', 'AgeT', 'BId', 'BNm', 'Bestseller', 'CNm', 'ClrCnt', 'CrntStock', 'Disc', 'Excl', 'Images', 'IsPremium', 'MRP', 'PDsc', 'PId', 'PInfId', 'PNm', 'PUCost', 'PUPad', 'PUWipe', 'P_Grp_ID', 'PcId', 'SCNm', 'ScId', 'SplOfrID', 'SzCnt', 'TTData', 'clubPUCost', 'clubPUPad', 'clubPUWipe', 'clubdisc', 'clubprice', 'collectiontag', 'color', 'cpntxt', 'discprice', 'elaunchoff', 'ercash', 'extrawarm', 'fgift', 'isfestival', 'ispreorder', 'mompick', 'mostgifted', 'newdays', 'newsort', 'offendtoday', 'ofrTp', 'onlyonfc', 'perclubcost', 'percost', 'rating', 'ratings', 'review', 'shippingdate', 'size', 'stockType', 'unit']
-   brand names: [('Babyhug', 18), ('Play Nation', 6), ('ADKD', 5), ('Intelliskills', 5), ('Fiddlerz', 4), ('Intellibaby', 3), ('Nerf', 2), ('Azhari', 1)]
-   categories: [('Toys & Gaming / Magnetic Toys', 3), ('Toys & Gaming / Toy Guns & Weapons', 3), ('Toys & Gaming / Baby Rattles', 3), ('Toys & Gaming / Kids Puzzles', 3), ('Toys & Gaming / Board Games', 3), ('Toys & Gaming / Musical Toys', 3), ('Toys & Gaming / Push & Pull Along Toys', 3), ('Toys & Gaming / Indoor & Outdoor Play Equipment', 3)]
-   brand fields of #1: {'BId': '1008976', 'BNm': 'Azhari', 'clubPUCost': '0', 'clubPUWipe': '0', 'clubPUPad': '0', 'Bestseller': '1', 'clubprice': '593.38', 'clubdisc': '56', 'perclubcost': '0'}
-   · 21921780 290 Azhari Azhari Magnetic Balls New Trending 216 Pcs Ball with Metal Storage Tin For kids Multicolor
-   · 21501050 21994 Play Nation Play Nation 3 Pcs Spinner with Suction Cup Toys for Baby Animal Theme - Multicolor| Playti
-   · 21110942 571 ADKD ADKD Hanging Table Tennis Trainer Ping Pong Ball Self Training & Workout Indoor Gaming Set
-   · 21082756 112 Aditi Toys Aditi Toys Space Explorer Pneumatic Gun Include 12 Orange & 12 Yellow Soft Foam Ball, for 
-   · 21077598 9906 ADKD ADKD Spider Superhero Skateboard Sliding Plate Toy with Auto-Turning Action and LED Light 
-   · 20842647 964 Fiddlerz Fiddlerz Remote Control Stunt Car Double Sided Driving RC Stunt Drift Car Toy for Kids 4 W
-   · 20615936 2154 Babyhug Babyhug BPA-Free Rattle & Teether 10 Pieces Set for Newborns & Infants| Safe & Food Grade|
-   · 20455175 1957 ADKD ADKD Kitchen Set Toy with Realistic Lights & Sounds with 42 Accessories Set- Multicolor
-   · 20178804 1720 Intelliskills Intelliskills 3-in-1 Wooden Puzzle Tray Set for Kids | Alphabet, Numbers & Shapes | Montes
-   · 20093754 242 Babyhug Babyhug Cloth Book Jungle Animals|Premium Soft Fabric for Infants | Safe,Non-Toxic,Colorfu
-[FC-API search majorette] {'SearchString': 'majorette', 'MasterBrand': ''} → 60 products, 60 with stock, errors []
-   record keys: ['AgeF', 'AgeT', 'BId', 'BNm', 'Bestseller', 'CNm', 'ClrCnt', 'CrntStock', 'Disc', 'Excl', 'Images', 'IsPremium', 'MRP', 'PDsc', 'PId', 'PInfId', 'PNm', 'PUCost', 'PUPad', 'PUWipe', 'P_Grp_ID', 'PcId', 'SCNm', 'ScId', 'SplOfrID', 'SzCnt', 'TTData', 'clubPUCost', 'clubPUPad', 'clubPUWipe', 'clubdisc', 'clubprice', 'collectiontag', 'color', 'cpntxt', 'discprice', 'elaunchoff', 'ercash', 'extrawarm', 'fgift', 'isfestival', 'ispreorder', 'mompick', 'mostgifted', 'newdays', 'newsort', 'offendtoday', 'ofrTp', 'onlyonfc', 'perclubcost', 'percost', 'rating', 'ratings', 'review', 'shippingdate', 'size', 'stockType', 'unit']
-   brand names: [('Babyhug', 18), ('Play Nation', 6), ('ADKD', 5), ('Intelliskills', 5), ('Fiddlerz', 4), ('Intellibaby', 3), ('Nerf', 2), ('Azhari', 1)]
-   categories: [('Toys & Gaming / Magnetic Toys', 3), ('Toys & Gaming / Toy Guns & Weapons', 3), ('Toys & Gaming / Baby Rattles', 3), ('Toys & Gaming / Kids Puzzles', 3), ('Toys & Gaming / Board Games', 3), ('Toys & Gaming / Musical Toys', 3), ('Toys & Gaming / Push & Pull Along Toys', 3), ('Toys & Gaming / Indoor & Outdoor Play Equipment', 3)]
-   brand fields of #1: {'BId': '1008976', 'BNm': 'Azhari', 'clubPUCost': '0', 'clubPUWipe': '0', 'clubPUPad': '0', 'Bestseller': '1', 'clubprice': '593.38', 'clubdisc': '56', 'perclubcost': '0'}
-   · 21921780 290 Azhari Azhari Magnetic Balls New Trending 216 Pcs Ball with Metal Storage Tin For kids Multicolor
-   · 21501050 21994 Play Nation Play Nation 3 Pcs Spinner with Suction Cup Toys for Baby Animal Theme - Multicolor| Playti
-   · 21110942 571 ADKD ADKD Hanging Table Tennis Trainer Ping Pong Ball Self Training & Workout Indoor Gaming Set
-   · 21082756 112 Aditi Toys Aditi Toys Space Explorer Pneumatic Gun Include 12 Orange & 12 Yellow Soft Foam Ball, for 
-   · 21077598 9906 ADKD ADKD Spider Superhero Skateboard Sliding Plate Toy with Auto-Turning Action and LED Light 
-   · 20842647 964 Fiddlerz Fiddlerz Remote Control Stunt Car Double Sided Driving RC Stunt Drift Car Toy for Kids 4 W
-   · 20615936 2154 Babyhug Babyhug BPA-Free Rattle & Teether 10 Pieces Set for Newborns & Infants| Safe & Food Grade|
-   · 20455175 1957 ADKD ADKD Kitchen Set Toy with Realistic Lights & Sounds with 42 Accessories Set- Multicolor
-   · 20178804 1720 Intelliskills Intelliskills 3-in-1 Wooden Puzzle Tray Set for Kids | Alphabet, Numbers & Shapes | Montes
-   · 20093754 242 Babyhug Babyhug Cloth Book Jungle Animals|Premium Soft Fabric for Infants | Safe,Non-Toxic,Colorfu
-[FC-API search majorette] {'SearchString': 'majorette', 'MasterBrand': '', 'searchwithincat': 'majorette'} → 60 products, 60 with stock, errors []
-   record keys: ['AgeF', 'AgeT', 'BId', 'BNm', 'Bestseller', 'CNm', 'ClrCnt', 'CrntStock', 'Disc', 'Excl', 'Images', 'IsPremium', 'MRP', 'PDsc', 'PId', 'PInfId', 'PNm', 'PUCost', 'PUPad', 'PUWipe', 'P_Grp_ID', 'PcId', 'SCNm', 'ScId', 'SplOfrID', 'SzCnt', 'TTData', 'clubPUCost', 'clubPUPad', 'clubPUWipe', 'clubdisc', 'clubprice', 'collectiontag', 'color', 'cpntxt', 'discprice', 'elaunchoff', 'ercash', 'extrawarm', 'fgift', 'isfestival', 'ispreorder', 'mompick', 'mostgifted', 'newdays', 'newsort', 'offendtoday', 'ofrTp', 'onlyonfc', 'perclubcost', 'percost', 'rating', 'ratings', 'review', 'shippingdate', 'size', 'stockType', 'unit']
-   brand names: [('Babyhug', 18), ('Play Nation', 6), ('ADKD', 5), ('Intelliskills', 5), ('Fiddlerz', 4), ('Intellibaby', 3), ('Nerf', 2), ('Azhari', 1)]
-   categories: [('Toys & Gaming / Magnetic Toys', 3), ('Toys & Gaming / Toy Guns & Weapons', 3), ('Toys & Gaming / Baby Rattles', 3), ('Toys & Gaming / Kids Puzzles', 3), ('Toys & Gaming / Board Games', 3), ('Toys & Gaming / Musical Toys', 3), ('Toys & Gaming / Push & Pull Along Toys', 3), ('Toys & Gaming / Indoor & Outdoor Play Equipment', 3)]
-   brand fields of #1: {'BId': '1008976', 'BNm': 'Azhari', 'clubPUCost': '0', 'clubPUWipe': '0', 'clubPUPad': '0', 'Bestseller': '1', 'clubprice': '593.38', 'clubdisc': '56', 'perclubcost': '0'}
-   · 21921780 290 Azhari Azhari Magnetic Balls New Trending 216 Pcs Ball with Metal Storage Tin For kids Multicolor
-   · 21501050 21994 Play Nation Play Nation 3 Pcs Spinner with Suction Cup Toys for Baby Animal Theme - Multicolor| Playti
-   · 21110942 571 ADKD ADKD Hanging Table Tennis Trainer Ping Pong Ball Self Training & Workout Indoor Gaming Set
-   · 21082756 112 Aditi Toys Aditi Toys Space Explorer Pneumatic Gun Include 12 Orange & 12 Yellow Soft Foam Ball, for 
-   · 21077598 9906 ADKD ADKD Spider Superhero Skateboard Sliding Plate Toy with Auto-Turning Action and LED Light 
-   · 20842647 964 Fiddlerz Fiddlerz Remote Control Stunt Car Double Sided Driving RC Stunt Drift Car Toy for Kids 4 W
-   · 20615936 2154 Babyhug Babyhug BPA-Free Rattle & Teether 10 Pieces Set for Newborns & Infants| Safe & Food Grade|
-   · 20455175 1957 ADKD ADKD Kitchen Set Toy with Realistic Lights & Sounds with 42 Accessories Set- Multicolor
-   · 20178804 1720 Intelliskills Intelliskills 3-in-1 Wooden Puzzle Tray Set for Kids | Alphabet, Numbers & Shapes | Montes
-   · 20093754 242 Babyhug Babyhug Cloth Book Jungle Animals|Premium Soft Fabric for Infants | Safe,Non-Toxic,Colorfu
---- FirstCry: listing API per brand + keyword search: 7.1s
+matchbox: 9
+   matchbox--basic-car-collection-asst-urzznvhd7alu
+   matchbox-5-car-pcs-assorted-boys-2y-multicolor-a1v5skk3jou
+   matchbox-skybusters-2025-mix-3y-multicolour-17124143
+   matchbox-transportation-center-playset-boys-3y-multicolour-17465873
+   matchbox-hitch-n-haul-3y-multicolour-17124113
+   matchbox-basic-car-assorted-boys-2y-multicolor-vnp8lrrnmeo
+   matchbox-swing-build-construction-yard-playset-boys-3y-multicolour-17465854
+   matchbox-jurassic-world-mosasaurus-rescue-boat-3y-multicolour-17124128
+   matchbox-working-rigs-2026-vehicle-assortment-for-boys-age-3y-construction-utility-die-cast-trucks-96407512
 
-==================== FirstCry: Hot Wheels (113) monster trucks and chase words ====================
-[FC-API hot wheels 113] {} → 400 products, 198 with stock, errors []
-   record keys: ['AgeF', 'AgeT', 'BId', 'BNm', 'Bestseller', 'CNm', 'ClrCnt', 'CrntStock', 'Disc', 'Excl', 'Images', 'IsPremium', 'MRP', 'PDsc', 'PId', 'PInfId', 'PNm', 'PUCost', 'PUPad', 'PUWipe', 'P_Grp_ID', 'PcId', 'SCNm', 'ScId', 'SplOfrID', 'SzCnt', 'TTData', 'clubPUCost', 'clubPUPad', 'clubPUWipe', 'clubdisc', 'clubprice', 'collectiontag', 'color', 'cpntxt', 'discprice', 'elaunchoff', 'ercash', 'extrawarm', 'fgift', 'isfestival', 'ispreorder', 'mompick', 'mostgifted', 'newdays', 'newsort', 'offendtoday', 'ofrTp', 'onlyonfc', 'perclubcost', 'percost', 'rating', 'ratings', 'review', 'shippingdate', 'size', 'stockType', 'unit']
-   brand names: [('Hot Wheels', 400)]
-   categories: [('Toys & Gaming / Toy Cars, Trains & Vehicles', 396), ('Toys & Gaming / Sports & Games', 4)]
-   brand fields of #1: {'BId': '113', 'BNm': 'Hot Wheels', 'clubPUCost': '0', 'clubPUWipe': '0', 'clubPUPad': '0', 'Bestseller': '', 'clubprice': '399.6', 'clubdisc': '60', 'perclubcost': '0'}
-monster names: 69 (66 with stock)
-   categories: [('Toys & Gaming / Toy Cars, Trains & Vehicles', 69)]
-   🚚 22789194 312 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck - Carbonator XXL
-   🚚 23016092 301 ₹549 excl=True Hot Wheels Free Wheel Die Cast Monster Truck Glow In The Dark 'Rodger Dodger' - Multicolor
-   🚚 22759875 298 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Haul Y'all - Green
-   🚚 22759874 255 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Podium Crasher - Navy
-   🚚 22789191 244 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Tri To Crush Me - Multi colour
-   🚚 22790348 234 ₹1030 excl=True Hot Wheel Die Cast Free Wheel Monster Trucks Mood Crusher Toy Pack Of 2 - Blue & Yellow
-   🚚 22790329 218 ₹1030 excl=True Hot Wheel Die Cast Free Wheel Monster Trucks HW 5 Alarm Toy Pack Of 2 - White & Red
-   🚚 23973375 218 ₹1099 excl=True Hot Wheel Poo Poo Platter / Fruit Smasher Die Cast Free Wheel Monster Trucks-Blue/Light Blue
-   🚚 22789192 216 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Bigfoot -Multi colour
-   🚚 23835985 154 ₹549 excl=False Hot Wheels Mutant Tiger Shark Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Neon Pink
-   🚚 23835987 147 ₹549 excl=False Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Blue
-   🚚 23835984 141 ₹549 excl=False Hot Wheels Wreckin Wolf Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Light Green
-   🚚 24568737 124 ₹549 excl=True Hot Wheels Crush Delivery Monster Trucks - Yellow
-   🚚 24568743 123 ₹549 excl=True Hot Wheels Mutant Bone Shaker Monster Trucks Mutant Chaos -Green
-   🚚 24568740 120 ₹549 excl=True Hot Wheels Unicharge Monster Trucks - Pink
-   🚚 22759873 117 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Tri To Crush Me - Off White
-   🚚 24299521 115 ₹549 excl=True Hot Wheels Monster Trucks Neon Smashers Podium Crasher 1:64 Scale Toy Vehicle - Pink, Green & Blue
-   🚚 22759871 106 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Bigfoot Scale - Blue
-   🚚 22790317 102 ₹1030 excl=True Hot Wheel Die Cast Free Wheel Monster Trucks Shark Werak Toy Pack Of 2 - Green & Pink
-   🚚 22877518 100 ₹549 excl=True Hot Wheel Monster Trucks Glow in the Dark Rodger Dodger Die Cast Free Wheel - Pink
-   🚚 24299520 95 ₹549 excl=True Hot Wheels Monster Trucks Neon Smashers Podium Crasher 1:64 Scale Toy Vehicle - Pink
-   🚚 24299519 91 ₹549 excl=True Hot Wheels Monster Neon Smasher Monster Truck Toy- Green
-   🚚 24299518 90 ₹549 excl=True Hot Wheels Monster Trucks Neon Smashers Podium Crasher 1:64 Scale Toy Vehicle - Blue
-   🚚 22789193 90 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Haul Y'all - Multi colour
-   🚚 24194175 88 ₹549 excl=True Hot Wheels Monster Trucks Die-Cast Free Wheel Neon Smashers Podium Crasher 1:64 Scale Toy Vehicle - Yello
-   🚚 23345502 85 ₹179 excl=False Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink
-   🚚 22759872 84 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Carbonator XXL - White
-   🚚 24568741 83 ₹549 excl=True Hot Wheels 1985 Ford Bronco Monster Trucks -Red
-   🚚 24299522 78 ₹549 excl=True Hot Wheels Monster Trucks Neon Smashers Podium Crasher 1:64 Scale Toy Vehicle - Pink & Orange
-   🚚 22789195 75 ₹549 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck
-   🚚 24568742 72 ₹549 excl=True Hot Wheels Sand Blazer Monster Trucks - Blue
-   🚚 24179004 60 ₹1099 excl=True Hot Wheels BigFoot Bite Die-Cast Free Wheel Monster Truck - Blue/Blue
-   🚚 23973376 54 ₹1099 excl=True Hot Wheel Bigfoot / Bigfoot Bite Die Cast Free Wheel Monster Trucks-Teal Blue/Light Blue
-   🚚 13900220 49 ₹3499 excl=True Hot Wheels Monster Trucks Glow In Dark Multipack With 10 Free Wheels Toy Vehicles 5 Monster Trucks & 5 Ca
-   🚚 23974120 46 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Mood Crusher - Blue & Yellow
-   🚚 23835983 45 ₹549 excl=False Hot Wheels Mega-Wrex Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Green
-   🚚 23974119 44 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Bigfoot - Blue & Orange
-   🚚 23973372 42 ₹1099 excl=True Hot Wheel Haul Y'All / Too s'Cool Die Cast Free Wheel Monster Trucks-Blue/Yellow
-   🚚 23974118 42 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Crocovile - Neon Green
-   🚚 23974117 38 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Wreckin Wolf Toy Car - Light Green
-   🚚 24514761 38 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Crocovile -Green
-   🚚 21993918 37 ₹549 excl=False Hot Wheels Glows in the Dark Die-Cast Monster Toy Truck Scale 1:64 - Multicolor
-   🚚 23974123 36 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Mutant Tiger Shark - Orange & Green
-   🚚 24514769 34 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Loco Punk - Multi Color
-   🚚 23973371 33 ₹1099 excl=True Hot Wheel Steer Clear / Piran-Ahhh Die Cast Free Wheel Monster Trucks-Orange/Blue
-   🚚 23835986 32 ₹549 excl=False Hot Wheels Die Cast Free Wheel Free Style Dem Derby Monster Toy Truck - Orange
-   🚚 23974124 25 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Mega Wrex - Dark Green
-   🚚 23973373 25 ₹1099 excl=True Hot Wheel The 909 / Pure Muscle Die Cast Free Wheel Monster Trucks-Light Blue/Yellow
-   🚚 24179005 22 ₹1099 excl=True Hot Wheels Steer Clear Piran Ahhh Die Cast Free Wheel Monster Truck - Orange & White
-   🚚 24514765 21 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Bigfoot - Black
-   🚚 24514758 21 ₹649 excl=True Hot Wheels Die Cast Free Wheel Color Shifters Pure Muscle Monster Truck Vehicle - Orange
-   🚚 24514770 19 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Snake Bite 35 - Dark Green
-   🚚 23973374 18 ₹1099 excl=True Hot Wheel Helichopper / Rescue Rampager Die Cast Free Wheel Monster Trucks-Yellow/White
-   🚚 24514759 18 ₹649 excl=True Hot Wheels Die Cast Free Wheel Color Shifters Steer Clear Monster Truck Vehicle - Sea Green
-   🚚 24514757 18 ₹649 excl=True Hot Wheels Die Cast Free Wheel Color Shifters Motosaurus Monster Truck Vehicle - Red
-   🚚 24179007 17 ₹1099 excl=True Hot Wheels Helichopper Rescue Rampager Die Cast Free Wheel Monster Truck with Rescue Style Design Yellow 
-   🚚 24514771 16 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Concrete Crusher - Sea Green
-   🚚 22759868 15 ₹1030 excl=True Hot Wheels Glow In Dark Free Wheel Die Cast Monster Truck Pack Of Two - Blue & Yellow
-   🚚 24179006 11 ₹1099 excl=True Hot Wheels 909 Pure Muscle Die Cast Monster Truck with Free Wheel Feature- Blue & Yellow
-   🚚 24514764 10 ₹549 excl=True Hot Wheels Monster Trucks Mutant Chaos Wreckin Wolf -light Green
-   🚚 24514766 8 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Mega-wrex -x-raycers Xl - Red
-   🚚 23033007 7 ₹549 excl=True Hot Wheels Die Cast Monster Trucks Mutant Chaos 4/7 Rhinomite - Green & Orange
-   🚚 23033005 5 ₹549 excl=True Hot Wheels Die Cast Monster Trucks Mutant Chaos 2/7 Mega Wrex - Green & Purple
-   🚚 23082353 3 ₹549 excl=True Hot Wheel Die Cast Free Wheel Monster Truck Mutant - Multi Color
-   🚚 23974121 1 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks Mega-Wrex - Green
-   🚚 23033249 1 ₹549 excl=True Hot Wheels Die Cast Monster Trucks 3/11 Jeep FC - Yellow, Black & Purple
-   🚚 22790520 0 ₹1030 excl=True Hot Wheel Die Cast Free Wheel Monster Trucks Skelesaurus Toy Pack Of 2 - Lime Green & Teal Blue
-   🚚 23974122 0 ₹549 excl=True Hot Wheels Die Cast Free Wheel Monster Trucks VW Drag Bus - Pink
-   🚚 24514760 0 ₹649 excl=True Hot Wheels Die Cast Free Wheel Color Shifters Night Shifter Monster Truck Vehicle - Yellow
+majorette: 41
+   majorette-porsche-premium-car-high-detail-licensed-diecast-assorted-3-years-14543238
+   majorette-deluxe-6-diecast-vehicle-collectible-model-for-kids-3y-e3vu6zx-x1cr
+   majorette-street-cars-18-diecast-vehicle-collectible-model-for-kids-3y-sgfzwuriyuuw
+   majorette-porsche-premium-cars-6-assorted-multicolour-3y-8908934
+   majorette-volvo-4-pieces-gift-pack-multicolour-3y-8908984
+   majorette-airport-license-4-13-cm-diecast-vehicle-collectible-model-for-kids-3y-bkhxmczfu_hi
+   majorette-volvo-edition-6-diecast-vehicle-collectible-model-for-kids-3y-fots8kkmgdzs
+   majorette-volvo-3-pieces-set-2-assorted-multicolour-3y-8908983
+   majorette-limited-edition-6-5-assorted-multicolour-3y-8908992
+   majorette-car-trailer-assortment-multicolour-3y-17032811
+   majorette-racing-cars-18-assorted-multicolour-3y-8908882
+   majorette-man-city-bus-6-diecast-vehicle-collectible-model-for-kids-3y-6tjiikyfh-23
+   majorette-porsche-deluxe-6-diecast-vehicle-collectible-model-for-kids-3y-sx7mlp6yayfa
+   majorette-vintage-6-assorted-multicolour-3y-8908872
+   majorette-premium-cars-18-assorted-multicolour-3y-8908871
+   majorette-transporter-6-diecast-vehicle-collectible-model-for-kids-3y---7mjx3eh0z0
+   majorette-dream-cars-italy-5-pieces-gift-pack-multicolour-3y-8908998
+   majorette-giftpack-94-limited-edition-9-diecast-vehicle-collectible-model-for-kids-3y-pneiua_dgvrp
+   majorette-sos-6-diecast-vehicle-collectible-model-for-kids-3y-5_5elhb4uya6
+   majorette-wow-5-pieces-set-4-diecast-vehicle-collectible-model-for-kids-3y-mj90pxljr0gj
+   majorette-police-force-4-pieces-gift-pack-multicolour-for-kids-ages-3y-10493425
+   majorette-man-city-bus-siemens-avenio-tram-6-assorted-multicolour-3y-8908948
+   majorette-youngster-5-piece-gift-pack-licensed-diecast-cars-3-years-14543236
+   majorette-create-rescue-station-1-vehicle-multicolour-5y-8908997
+   majorette-porsche-race-trailer-licensed-diecast-transporter-assorted-3-years-14543196
+   majorette-vw-the-originals-premium-cars-6-multicolour-3y-8909002
+   majorette-vw-the-originals-2-pieces-set-3-assorted-multicolour-3y-8908987
+   majorette-light-racer-5-pieces-gift-pack-multicolour-3y-8908994
+   majorette-city-vehicle-for-kids-assorted-3y-multicolor-sbmknyian1e
+   majorette-urban-garage-1-car-multicolour-5y-8908952
+   majorette-farm-6-diecast-vehicle-collectible-model-for-kids-3y-cxhlmc2qh3lf
+   majorette-vw-the-originals-5-pieces-pack-multicolour-3y-8908920
+   majorette-trailer-6-assorted-multicolour-3y-8908886
+   majorette-sos-3-pieces-set-2-diecast-vehicle-collectible-model-for-kids-3y-v1nv_uxoa8je
+   majorette-limited-edition-9-gold-rockerz-3-assorted-multicolour-3y-17032900
+   majorette--monster-rockerz-assortment-5-for-boys-age-3y-assorted-dbb-lvolseop
+   majorette-vw-the-originals-trailer-asst-4-assorted-multicolour-3y-8908951
+   majorette-monster-rockerz-color-changers-5-assorted-multicolour-3y-8909004
+   majorette-creatix-logistic-playset-1-vehicle-licensed-interactive-playset-3-years-14543239
+   majorette-creatix-farm-station-1-vehicle-diecast-vehicle-collectible-model-for-kids-5y-qfwptft7zu1d
 
-chase/TH words in 113 names: 1
-   ⛓ 22912948 0 Hot Wheels Silver Series Zamac Die Cast Free Wheel Toy Car - Silver
---- FirstCry: Hot Wheels (113) monster trucks and chase words: 8.5s
+monster: 50
+   hot-wheels-164-monster-trucks-demolition-doubles-pack-of-2-olnbu8cg5u2
+   hot-wheels-monster-trucks-dragon-demolition-boys-4y-multicolour-17465893
+   ralleyz-high-speed-off-roader-stunt-racer-rc-rock-crawler-vehicle-scale-1-18-high-speed-remote-control-monster-off-roader-kids-for-6y-grey-9860055
+   monster-baja-truck-remote-controlled-car-by-sharper-image-for-kids-6-years-and-above-red-shpwpxzouot
+   ralleyz-high-speed-undcad-off-roader-stunt-racer-rc-rock-crawler-vehicle-scale-1-18-high-speed-remote-control-monster-off-roader-kids-for-6y-grey-9859995
+   hot-wheels-monster-truck-glow-in-the-dark-1-64-die-cast-vehicle-collection-3y-multicolour-9653081
+   karma-ralleys-120-24g-4wd-monster-off-roader-6x6-rech-multicolour-7y-acttiform7s
+   electrobotic-1-16-rc-2-4ghz-high-speed-remote-control-monster-truck-red-5y-12961229
+   ralleyz-pull-back-monster-cars-toys-truck-monster-360-degree-stunt-car-four-wheel-car-for-kids-3yrs-green-9556189
+   ralleys-pull-back-monster-car-blue-3y-8908999
+   ralleyz-pull-back-monster-friction-cars-toys-truck-monster-360-degree-stunt-car-four-wheel-car-for-kids-3yrs-orange-9556242
+   ralleyz-pull-back-diecast-monster-car-for-kids-multicolour-3y-8908942
+   ralleyz-rc-bigfoot-monster-stunt-car-hobby-grade-1-10-scale-with-remote-control-high-speed-racing-for-boys-and-girls-toys-gifts-kids-for-8y-green-9859993
+   hamleys-retro-race-car-model-with-wind-up-key-collectible-toys-gifts-robots-monsters-space-toys-kids-for-3yrs-multicolour-9556205
+   electrobotic-1-16-rc-2-4ghz-high-speed-remote-control-monster-truck-yellow-5y-12961230
+   fire-force-monster-rotary-xl-electric-blaster-with-30-soft-darts-8y-13599396
+   ralleyz-rc-remote-control-maserati-car-four-wheeler-remote-control-rock-climber-high-speed-monster-racing-car-kids-for-6y-multicolour-9859957
+   fire-force-monster-electric-foam-blaster-with-24-soft-darts-8y-13599326
+   fire-force-monster-rotary-electric-blaster-with-24-soft-darts-8y-13599327
+   ralleyz-remote-control-monster-truck-rc-car-big-size-off-road-rock-crawler-high-speed-racing-toy-kids-for-3y-red-9556226
+   ralleyz-monster-stunt-remote-control-car-3y-multicolour-11054675
+   jeannie-magic-monster-26-cm-soft-toy-purple-0m-14062445
+   hasbro-avengers-mech-strike-monster-hunters-thor-toy-6-inch-scale-action-figure-with-accessory-multicolour-for-kids-ages-4y-10493402
+   ralleyz-pull-back-monster-car-for-kids-3y-yellow-8908969
+   jeannie-magic-monster-25-cm-soft-toy-green-0m-14062420
+   jeannie-magic-monster-25-cm-soft-toy-yellow-0m-14062435
+   ralleyz-pull-back-monster-car-for-kids-3y-red-8908905
+   crashems-monster-pull-back-car-for-kids-3y-multicolour-vepkqtksinu
+   ralleyz-monster-the-friction-stunt-truck-vehicle-toys-for-kids-1-36-scale-3y-multicolour-10980487
+   fire-force-monster-soft-blaster-with-12-soft-darts-8y-13599343
+   cry-babies-tiny-cuddles-monster-doll-fuzz-with-real-tears-multicolour-pajamas-3y-17435197
+   majorette--monster-rockerz-assortment-5-for-boys-age-3y-assorted-dbb-lvolseop
+   hot-wheels-124-monster-trucks-7y7oypfyof_
+   pepplay-doodle-placemats-superheroes-monsters-for-kids-of-age-3y-multicolour-10124137
+   kalakaram-monster-puppets-making-kit-5y-12520816
+   majorette-monster-rockerz-color-changers-5-assorted-multicolour-3y-8909004
+   ooly-mini-monster-scented-highlighter-markers-with-chiseled-tip-neon-colors-6y-1uorrypykif
+   hasbro-avengers-mech-strike-monster-hunters-monster-punch-thanos-toy-9-inch-scale-deluxe-action-figure-multicolour-for-kids-ages-4y-10493409
+   kalakaram-make-your-own-monster-puppet-diy-kits-5y-multicolour-14543255
+   monster-baja-truck-remote-controlled-car-by-sharper-image-for-kids-6-years-and-above-red-p1ujsmugrdx
 
-==================== Minifygram: brands, badges, Matchbox / Majorette / monster / chase ====================
-products&is_active=eq.true: HTTP 200
-531 rows
-brands: [('Hotwheels', 191), ('MiniGT', 70), ('None', 54), ('Poprace', 44), ('Tarmac', 24), ('Trends Hobby', 23), ('Non-Mint Funko', 14), ('Bburago', 13), ('Almost Real (AR) Box', 13), ('Kaido House', 12), ('Onepiece', 10), ('TimeMicro', 10), ('Mint Funko', 9), ('Cool Car', 9), ('Inno64', 7), ('MoreArt', 5), ('Majorette', 4), ('Logo Display Stand', 4), ('Shinchan', 3), ('Transformers', 2), ('Matchbox', 2), ('Dragon Ball Z', 2), ('DC', 1), ('Hotwheels Stand', 1), ('M2', 1), ('Spark/AO', 1), ('BBR', 1), ('Marvel', 1)]
-categories: [('Diecast', 274), ('Pre-orders', 158), ('Building Bricks', 40), ('Funko Pops', 23), ('Action Figures', 18), ('3D Prints', 8), ('Keychains', 8), ('Trading Cards (TCG)', 1), ('None', 1)]
-badges: [('Pre-order', 135), ('US Import', 114), ('None', 73), ('Shortcard', 35), ('New', 28), ('Blister', 17), ('Factory Sealed', 13), ('Bestseller', 11), ('3D Print', 8), ('Box', 7), ('MRP Combo', 6), ('Bounty', 6), ('Box PO', 6), ('Below MRP', 4), ('Event Exclusive', 4), ('Chance of Chase', 4), ('Store Exclusive', 4), ('Trending', 3), ('3D Prints', 3), ('Elite64', 3), ('Blister PO', 3), ('Treasure Hunt', 2), ('Target Exclusive', 2), ('RLC', 2), ('Entertainment Earth Exclusive', 2), ('Walmart Exclusive', 2), ('Exclusive', 2), ('Pre-Order', 2), ('Premium', 1), ('Us Import', 1)]
-types: [('in-stock', 368), ('preorder', 163)]
+chase: 21
+   paw-patrol-the-mighty-movie-chase-s-mighty-transforming-cruiser-vehicle-toys-3y-11850930
+   paw-patrol-basic-vehicle-chase-ryder-blue-3y-guv9i1qdsdp
+   paw-patrol-basic-vehicle-rubble-chase-yellow-3y-fveq-p5cx52
+   lego-city-police-motorcycle-chase-toy-motorbike-set-for-ages-4-and-up-60455-4y-16485993
+   ne-paw-patrol-face-playtoy-chase-ostnxbrkav6t
+   paw-patrol-basic-vehicle-marshall-chase-red-3y-0fjdk_-chxl
+   paw-patrol-aqua-pups-whale-patroller-team-vehicle-with-chase-action-figure-toy-car-and-vehicle-launcher-kids-toys-for-ages-3-and-up-9689257
+   fuzzbuzz-paw-patrol-chase-bag-multicolour-3y-y5fk039pc_
+   barbie-mysteries-the-great-horse-chase-doll-multicolour-3y-13812517
+   winmagic-playmagic-hover-ball-paw-patrol-chase-for-kids-of-age-3y-multicolour-10124203
+   paw-patrol-the-mighty-movie-pup-squad-racers-collectible-chase-mighty-pups-toy-cars-kids-toys-for-ages-3-and-up-9689597
+   centy-innovo-police-chase-multicolor-3y-h1j1d9351kuv
+   ne-hp-chaser-house-pin-set-ftmpgtgjzoc
+   paw-patrol-theme-vehicle-dino-marshall-chase-red-3y-cvbnujjp8x
+   paw-patrol-vhc-deluxe-chase-movie-vehicle-multicolour-3y-zl3h1p9gd2m
+   lego-marvel-spidey-and-his-amazing-friends-spin-and-electro-dinosaur-vehicle-chase-11198-building-blocks-toys-for-4y-13468921
+   paw-patrol-rescue-wheels-chase-s-cruiser-toy-truck-with-projectile-launcher-and-collectible-action-figure-kids-toys-for-3y-17775029
+   paw-patrol-sea-patroller-vehicle-with-chase-and-shark-figure-2-patrol-modes-kids-toys-for-3y-17775036
+   paw-patrol-chase-police-silicon-band-rakhi-cartoon-character-rakhi-for-kids-soft-comfortable-reusable-festival-rakhi-96307414
+   paw-patrol-chase-acrylic-thread-rakhi-cartoon-character-rakhi-for-kids-soft-comfortable-reusable-festival-rakhi-96307422
+   wembley-paw-patrol-chase-projector-watch-for-kids-3y-24-fun-images-time-date-month-display-silicone-strap-96881376
 
-matchbox: 2 rows (1 available)
-   Matchbox       | Diecast      | Matchbox   | in-stock | 0 | ₹299 | Volkswagen Beetle
-   Matchbox       | Diecast      | US Import  | in-stock | 1 | ₹249 | Dodge D200
+treasure: 4
+   frank-pirate-treasure-floor-puzzles-multicolor-5y-s752aqra_ow
+   trunk-works-museum-of-treasures-a-family-dice-game-roll-6-dice-and-strategizse-to-win-8y-11213952
+   trunk-works-museum-of-treasures-card-game-for-kids-8y-multicolour-0yonzg5r7xo
+   lego-creator-fierce-shark-with-a-treasure-chest-toy-rebuilds-into-anglerfish-or-manta-ray-31381-building-blocks-for-kids-8y
 
-majorette: 4 rows (0 available)
-   Majorette      | Diecast      | None       | in-stock | 0 | ₹849 | 2005 Bugatti Veyron 16.4 Super Sport
-   Majorette      | Diecast      | None       | in-stock | 0 | ₹849 | 1995 Toyota Supra
-   Majorette      | Diecast      | Below MRP  | in-stock | 0 | ₹890 | Porsche 930 Turbo
-   Majorette      | Diecast      | None       | in-stock | 0 | ₹890 | 1975 Porsche 930 Turbo
+super-treasure: 0
 
-monster: 1 rows (0 available)
-   Hotwheels      | Diecast      | Shortcard  | in-stock | 0 | ₹247 | Monster High Ghoul Mobile
+zamac: 0
+--- Hamleys sitemap: Matchbox / Majorette / monster / chase slugs: 0.8s
 
-chase-ish names/badges, all brands: 13
-   Hotwheels      | Treasure Hunt | 0 | 2 Jet Z
-   Tarmac         | Chance of Chase | 3 | Koenigsegg Regera
-   Tarmac         | Chance of Chase | 0 | Mercedes Benz Senna 1984
-   Tarmac         | Chance of Chase | 0 | Pagani Utopia Rinascimento
-   Trends Hobby   | Bestseller | 0 | TH Porsche 911 GTI LM 1998
-   Hotwheels      | Bounty     | 0 | High Tail Chaser
-   Hotwheels      | Walmart Exclusive | 0 | Mazda MX-5 Miata ZAMAC
-   Hotwheels      | Bounty     | 0 | Punk Rod ZAMAC
-   Hotwheels      | US Import  | 0 | ZAMAC McLaren 720S
-   Hotwheels      | Treasure Hunt | 0 | 2016 Ford GT Race
-   Tarmac         | Chance of Chase | 4 | Tarmac Works Mercedes Benz 55 AMG
-   MiniGT         | Pre-order  | 0 | [Box] MGT1087 Lambo Aventador Limited Edition Mattel Black
-   Cool Car       | Numbered   | 0 | Cool Car RWB GDO Limited Edition 592 of 999
---- Minifygram: brands, badges, Matchbox / Majorette / monster / chase: 0.7s
+==================== Karz & Dolls: chase naming across shelves ====================
 
-==================== Karz & Dolls: menu, chase shelf, Matchbox / Majorette / monster pages ====================
-home: HTTP 200, 461151 bytes, 148 category links
-    ['/action-figures/52-toys', '/action-figures/bendables', '/action-figures/dc-figures', '/action-figures/disney-pixar', '/action-figures/dolls', '/action-figures/game-of-thrones', '/action-figures/imaginext', '/action-figures/jurassic-world', '/action-figures/marvel-legends', '/action-figures/masterverse', '/action-figures/transformers', '/action-figures/wwe-collectibles', '/american-diorama/american-diorama', '/autoworld-johnny-lightning/autoworld', '/autoworld-johnny-lightning/johnny-lightning', '/bbr-models/bbr-18-scale', '/bbr-models/bbr-models-43-scale', '/bbr-models/bbr-models-64-scale', '/bburago-maisto/bburago-18-scale', '/bburago-maisto/bburago-24-scale', '/bburago-maisto/bburago-43-scale', '/bburago-maisto/bburago-64-scale', '/bburago-maisto/maisto-18-scale', '/bburago-maisto/maisto-24-scale', '/bburago-maisto/maisto-bikes', '/books/books', '/era-cars/era-cars', '/greenlight/classics', '/greenlight/hollywood-series', '/greenlight/trucks-haulers', '/hot-wheels/boulevard-series', '/hot-wheels/car-culture', '/hot-wheels/card-art-premiums', '/hot-wheels/character-cars', '/hot-wheels/disney-cars', '/hot-wheels/fast-and-furious', '/hot-wheels/gift-pack', '/hot-wheels/hot-wheels-accessories', '/hot-wheels/mainlines', '/hot-wheels/monster-trucks', '/hot-wheels/pop-culture', '/hot-wheels/team-transport', '/hot-wheels/thomas-freinds', '/inno64/inno64-model-cars', '/lcd-models/lcd-models-18-scale', '/lcd-models/lcd-models-64-scale', '/legends-of-the-ramayan/legends-of-the-ramayan', '/lego/lego-18', '/lego/lego-architecture', '/lego/lego-city', '/lego/lego-classic', '/lego/lego-creator', '/lego/lego-dc', '/lego/lego-disney', '/lego/lego-duplo', '/lego/lego-friends', '/lego/lego-harry-potter', '/lego/lego-icons', '/lego/lego-jurassic-world', '/lego/lego-marvel', '/lego/lego-minecraft', '/lego/lego-ninjago', '/lego/lego-speed-champions', '/lego/lego-star-wars', '/lego/lego-technic', '/majorette/basic-cars', '/majorette/giftset', '/majorette/majorette', '/majorette/majorette-construction', '/majorette/playsets', '/majorette/premium-cars', '/majorette/transport', '/marvel-go-collection/marvel-go-collection', '/matchbox/matchbox-basic-cars', '/matchbox/matchbox-convoys', '/matchbox/matchbox-moving-parts', '/matchbox/matchbox-sky-busters', '/matchbox/matchbox-superfast', '/matchbox/matchbox-working-rigs', '/metal-speed-zone/msz-12-scale-bikes', '/metal-speed-zone/msz-18-scale-bikes', '/metal-speed-zone/msz-24-scale-cars', '/metal-speed-zone/msz-32-scale-cars', '/mini-gt/kaido-house', '/mini-gt/mini-gt', '/mini-gt/mini-gt-blister-pack', '/mini-gt/mini-gt-merchandise', '/mini-gt/qubecarz', '/mini-gt/top-speed', '/mini-gt/tsm-model', '/para64/para64', '/para64/paragon', '/pop-race/pop-race', '/poster-cars/164-poster-cars', '/pre-orders/pre-order-bbr-models', '/pre-orders/pre-order-minigt', '/pre-orders/pre-order-special-stock', '/pre-orders/pre-orders-pop-race', '/rc-cars/legend-of-toys', '/rmz-city-collection-series/rmz-city-collection-series', '/shop/action-figures', '/shop/american-diorama', '/shop/autoworld-johnny-lightning', '/shop/bbr-models', '/shop/bburago-maisto', '/shop/books', '/shop/collectibles-magnets', '/shop/era-cars', '/shop/greenlight', '/shop/hot-wheels', '/shop/inno64', '/shop/lcd-models', '/shop/legends-of-the-ramayan', '/shop/lego', '/shop/majorette', '/shop/marvel-go-collection', '/shop/matchbox', '/shop/metal-speed-zone', '/shop/mini-gt', '/shop/para64', '/shop/pop-race', '/shop/poster-cars', '/shop/pre-orders', '/shop/rc-cars', '/shop/rmz-city-collection-series', '/shop/solido', '/shop/spark-model', '/shop/specials', '/shop/tarmac-works', '/shop/tomica', '/shop/trends-hobby', '/solido/jada-18-scale', '/solido/solido-18-scale', '/solido/solido-24-scale', '/solido/solido-43-scale', '/spark-model/schuco-64-scale', '/spark-model/schuco-87-43-scale', '/spark-model/spark-64-scale', '/spark-model/spark-model-18-scale', '/specials/chase-car', '/specials/collectible-magnets', '/specials/lapel-pins', '/specials/playing-cards', '/specials/special-stocks-18-scale', '/specials/special-stocks-64-43-scale', '/tarmac-works/tarmac-works', '/tomica/tomica-diecast-cars', '/trends-hobby/trends-hobby']
-   json ctx[matchbox]: …T05:33:11.000000Z","updated_at":"2026-10-19T05:33:11.000000Z"}]}],"bestdata":[],"trendingdata":[{"id":11167,"pro_name":"MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX ","slug":"matchbox basic cars assortment of 24 pieces box ","product_sname":"REA…
-   json ctx[matchbox]: …0Z"}]}],"bestdata":[],"trendingdata":[{"id":11167,"pro_name":"MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX ","slug":"matchbox basic cars assortment of 24 pieces box ","product_sname":"READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES B…
-   json ctx[matchbox]: …SSORTMENT OF 24 PIECES BOX ","slug":"matchbox basic cars assortment of 24 pieces box ","product_sname":"READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX 95Fl","sku":"READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX 95F…
-   json ctx[matchbox]: …ces box ","product_sname":"READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX 95Fl","sku":"READ DISCLAIMER MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX 95Fl","act_price":4296,"dis_price":4296,"in_stock":1,"is_preorder":0,"preorder_p…
-   json ctx[matchbox]: …reated_at":"2026-08-14T07:23:36.000000Z","updated_at":"2026-08-14T07:28:17.000000Z"}]},{"id":10,"cat_id":12,"cat_name":"Matchbox","slug":"matchbox","cat_order":12,"cat_desc":"\u003cp\u003eMatchbox Cars, Trucks, Convoys,Sky Busters\u003c/p\u003e","c…
-   json ctx[matchbox]: …8-14T07:23:36.000000Z","updated_at":"2026-08-14T07:28:17.000000Z"}]},{"id":10,"cat_id":12,"cat_name":"Matchbox","slug":"matchbox","cat_order":12,"cat_desc":"\u003cp\u003eMatchbox Cars, Trucks, Convoys,Sky Busters\u003c/p\u003e","cat_sta":1,"cat_tit…
-   json ctx[majorette]: …s.com/details/autoworld/autoworld/MTI0\"\u003eAutoworld\u003c/a\u003e, \u003ca href=\"https://www.karzanddolls.com/shop/majorette/MTM=\"\u003eMajorette\u003c/a\u003e, \u003ca href=\"\"\u003eAction figures\u003c/a\u003e, \u003ca href=\"https://www.ka…
-   json ctx[majorette]: …d/autoworld/MTI0\"\u003eAutoworld\u003c/a\u003e, \u003ca href=\"https://www.karzanddolls.com/shop/majorette/MTM=\"\u003eMajorette\u003c/a\u003e, \u003ca href=\"\"\u003eAction figures\u003c/a\u003e, \u003ca href=\"https://www.karzanddolls.com/details…
-   json ctx[majorette]: …reated_at":"2025-11-12T05:42:36.000000Z","updated_at":"2026-08-14T07:51:46.000000Z"}]},{"id":13,"cat_id":12,"cat_name":"Majorette","slug":"majorette","cat_order":17,"cat_desc":"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e","cat_sta":1,"cat_title":"Majo…
-   json ctx[majorette]: …-12T05:42:36.000000Z","updated_at":"2026-08-14T07:51:46.000000Z"}]},{"id":13,"cat_id":12,"cat_name":"Majorette","slug":"majorette","cat_order":17,"cat_desc":"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e","cat_sta":1,"cat_title":"Majorette Toy Cars for …
-   json ctx[majorette]: …ette","slug":"majorette","cat_order":17,"cat_desc":"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e","cat_sta":1,"cat_title":"Majorette Toy Cars for Sale | Vintage Diecast Cars India","cat_meta_desc":"Looking for Majorette Toy Cars for Sale, Vintage Dieca…
-   json ctx[majorette]: …\u003e","cat_sta":1,"cat_title":"Majorette Toy Cars for Sale | Vintage Diecast Cars India","cat_meta_desc":"Looking for Majorette Toy Cars for Sale, Vintage Diecast Cars India? Stop Searching. We at Karzanddools offers best diecast model cars in rea…
-   json ctx[monster]: …\"https://www.karzanddolls.com/details/hotwheels/disney-cars/MTE3\"\u003eHotWheels Disney Cars\u003c/a\u003e, HotWheels Monster Trucks, Hot Wheels Pop Culture, Hot Wheels Boulevard Series, Hot Wheels Team Transport, Hot Wheels Straight Track and F…
-   json ctx[monster]: …t Wheels Fast and Furious, Hot Wheels Car Art Premium, Hot Wheels a total gift pack, Hot Wheels Disney Cars, Hot Wheels Monster Trucks, Hot Wheels Pop Culture, Hot Wheels Boulevard Series, Hot Wheels Team Transport, \u003ca href=\"https://www.karz…
-   json ctx[monster]: …"created_at":"2025-11-12T05:42:36.000000Z","updated_at":"2026-08-14T06:36:26.000000Z"},{"id":118,"subcid":5,"sub_name":"Monster Trucks","slug":"monster-trucks","sub_order":5,"sub_desc":"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e","sub_img":"1786689…
-   json ctx[monster]: …T05:42:36.000000Z","updated_at":"2026-08-14T06:36:26.000000Z"},{"id":118,"subcid":5,"sub_name":"Monster Trucks","slug":"monster-trucks","sub_order":5,"sub_desc":"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e","sub_img":"1786689359_subpg_6a7eb74ff2379.…
-   json ctx[monster]: …mg":"1786689359_subpg_6a7eb74ff2379.png","cat_sub_img":"1786689359_catpg_6a7eb74fc37c9.png","sub_title":"Buy Hot Wheels Monster Trucks at Cheapest Price, Save 60%","sub_meta_desc":"Buy Hot Wheels monster truck online at cheapest price from the bes…
-   json ctx[monster]: …eb74fc37c9.png","sub_title":"Buy Hot Wheels Monster Trucks at Cheapest Price, Save 60%","sub_meta_desc":"Buy Hot Wheels monster truck online at cheapest price from the best diecast model cars manufacturers \u0026 suppliers in India. Order online a…
-   json ctx[chase]: … toys. Visit the best store where you can find interesting toys and playing items. Also, get heavy discounts on bulk purchases of the hot wheel Diecast cars, Tracks, Gift Sets, and many more exciting offers. These unique quality products are ava…
-   json ctx[chase]: …hop/tsm-model-cars/MTc=\"\u003eTSM Model Cars\u003c/a\u003e at a very affordable price. Also, get a discount on bulk purchases on the upcoming sale season on both Mini GT and TSM models. Explore the Mini GT world like Mini GT Lamborghini, Porsch…
-   json ctx[chase]: …2,"cat_id":7,"cat_name":"Specials","slug":"specials","cat_order":16,"cat_desc":"\u003cp\u003eSpecial Diecast Collection-Chase Cars, Maisto \u0026amp; Lapel Pins\u003c/p\u003e","cat_sta":1,"cat_title":"Buy Special Scale Model Cars, Maisto, Chase …
-   json ctx[chase]: …-Chase Cars, Maisto \u0026amp; Lapel Pins\u003c/p\u003e","cat_sta":1,"cat_title":"Buy Special Scale Model Cars, Maisto, Chase Cars Online","cat_meta_desc":"Special diecast model cars, maisto, chase cars, Lapel Pins for sale in India. Buy Scaled …
-   json ctx[chase]: …t_title":"Buy Special Scale Model Cars, Maisto, Chase Cars Online","cat_meta_desc":"Special diecast model cars, maisto, chase cars, Lapel Pins for sale in India. Buy Scaled Model Toys Online at the best price from Karzanddolls.com and save money…
-   json ctx[chase]: …Online at the best price from Karzanddolls.com and save money.","cat_keywords":"Special Diecast Model Toy Cars, Maisto, Chase Cars For Sale, Model Car online, Buy model  cars, Diecast model cars","content_description":"\u003ch1\u003eSpecial Coll…
-   slugs in __NEXT_DATA__: ['164-poster-cars', '1970-dodge-challenger-rt-convertible-plum-crazy-purple', '1972-condor-ii-', '2018-chevy-camaro-zl1-in-hyper-blue', '2019-mail-delivery-vehicle', '24-honda-civic-type-r-with-kousoku-camion-de-transport\xa0', '52-toys', 'action-figures', 'action-figures-and-dolls', 'american-diorama', 'autoworld', 'autoworld-johnny-lightning', 'babysitters-doll', 'barbie-stacie-chelsea-tennis-playset-with-2-dolls', 'barbie-team-stacie™-doll-and-gymnastics-playset-', 'barbiebabysitting-skipper-doll', 'basic-cars', 'bbr-18-scale', 'bbr-models', 'bbr-models-43-scale', 'bbr-models-64-scale', 'bburago-18-scale', 'bburago-24-scale', 'bburago-43-scale', 'bburago-64-scale', 'bburago-maisto', 'bendables', 'bmw-i8-protonic-red', 'books', 'boulevard-series', 'bugatti-blue-prescott-and-the-spirit-of-bugatti-hardcover', 'car-culture', 'card-art-premiums', 'cars', 'character-cars', 'chase-car', 'chevrolet-silverado-dually-kaido-splash-v1', 'classics', 'collectible-magnets', 'collectibles-magnets', 'dc-figures', 'disney-cars', 'disney-pixar', 'dolls', 'era-cars', 'fast-and-furious', 'fist-job-doll', 'game-of-thrones', 'gift-pack', 'giftset', 'greenlight', 'hollywood-series', 'hot-wheels', 'hot-wheels-2025-premium-honda-type-r-heritage-gift-pack\xa0', 'hot-wheels-accessories', 'hot-wheels-fast-furious-5packs-25th-anniversary', 'hot-wheels-ferrari-gift-pack-5-car', 'hot-wheels-formula-1-race-team-giftpack', 'hot-wheels-mario-kart-mario-with-luigi', 'hot-wheels-premium-2026-le-mans-race-gulf-box-set-jhw43', 'hot-wheels-premium-mooneyes-2026-diorama-box-set-952h', 'hot-wheels-premium-toyota-2026-diorama-box-set-952g', 'hot\xa0wheels\xa0silver\xa0series\xa02026\xa0streets\xa0of\xa0japan\xa0of\xa06\xa0-car\xa0box\xa0set\xa0jlb23', 'imaginext', 'inno64', 'inno64-model-cars', 'island-adventure-moana', 'jada-18-scale', 'johnny-lightning', 'jurassic-world', 'kaido-house', 'land-rover-emergency-vehicles-hard-cover', 'lapel-pins', 'lcd-models', 'lcd-models-18-scale', 'lcd-models-64-scale', 'legend-of-toys', 'legends-of-the-ramayan', 'lego', 'lego-10967-duplo-police-motorcycle-toy\xa0with-police-figurine', 'lego-18', 'lego-architecture', 'lego-city', 'lego-city-construction-steamroller-toy-60401\xa0', 'lego-city-ski-and-climbing-center-building-toy-set-1054-pieces', 'lego-city-spinning-stunt-challenge-building-toy-set-117-pieces', 'lego-classic', 'lego-creator', 'lego-dc', 'lego-disney', 'lego-duplo', 'lego-friends', 'lego-harry-potter', 'lego-icons', 'lego-icons-corvette-building-kit\xa0', 'lego-jurassic-world', 'lego-marvel', 'lego-marvel-spider-man-2024-advent-calendar-', 'lego-minecraft', 'lego-ninjago', 'lego-speed-champions', 'lego-star-wars', 'lego-technic', 'mainlines', 'maisto-18-scale', 'maisto-24-scale', 'maisto-bikes', 'majorette', 'majorette-construction', 'marvel-avengers-infinity-war-iron-spider-action-figure', 'marvel-go-collection', 'marvel-legends', 'masterverse', 'matchbox', 'matchbox-basic-cars', 'matchbox-convoys', 'matchbox-moving-parts', 'matchbox-sky-busters', 'matchbox-superfast', 'matchbox-working-rigs', 'matchbox\xa0basic\xa0cars\xa0assortment\xa0of\xa024\xa0pieces\xa0box\xa0', 'mazda-rx7-fd3rs-streetfighters-yellow-1999-s1810603', 'metal-speed-zone', 'mini-gt', 'mini-gt-blister-pack', 'mini-gt-merchandise', 'monster-trucks', 'msz-12-scale-bikes', 'msz-18-scale-bikes', 'msz-24-scale-cars', 'msz-32-scale-cars', 'para64', 'para64-mitsubishi-motors-galant-vr-4-monte-carlo-rally-1991-lhd', 'paragon', 'playing-cards', 'playsets', 'pop-culture', 'pop-race', 'pop-race-x-fat-five-racing-carmeet-2025-box-set', 'porsche-911-964-rs-blue-1992-s4312901', 'porsche-911-gt3-r-992-77-ao-racing-2025-imsa-detroit-grand-prix', 'poster-cars', 'pre-order-bbr-models', 'pre-order-minigt', 'pre-order-special-stock', 'pre-orders', 'pre-orders-pop-race', 'premium-cars', 'preorder-lamborghini-countach-500s-black', 'preorder-land-rover-defender-110-royal-hk-police-tai-po-district-hk-exclusive', 'preorder-nissan-gt-r-r35-lbworks-type-1-rear-wing-ver-2-velocity-blue', 'preorder-nissan-skyline-gt-r-bnr32-gra-spec-1991-bathurst-1000-winner', 'preorder-porsche-911-carrera-rs-27-whiteblue', 'preorder-porsche-911-gt3-rs-acid-green', 'preorder-porsche-gt3-r-no8-ao-racing-winner-suzuka-1000km-2026', 'preorder-toyota-trd-3000gt-silver', 'qubecarz', 'rc-cars', 'rmz-city-collection-series', 'schuco-64-scale', 'schuco-87-43-scale', 'solido', 'solido-18-scale', 'solido-24-scale', 'solido-43-scale', 'spark-64-scale', 'spark-model', 'spark-model-18-scale', 'special-collection', 'special-stocks-18-scale', 'special-stocks-64-43-scale', 'specials', 'tarmac-works', 'team-transport', 'the-ultimate-history-of-bmw-hardcover-hardcover\xa0', 'the-ultimate-history-of-fast-bikes-hard-cover', 'the-ultimate-history-of-ferrari-hard-cover', 'the-ultimate-history-of-porsche-hard-cover', 'thomas-freinds', 'tomica', 'tomica-diecast-cars', 'top-speed', 'transformers', 'transport', 'trends-hobby', 'trucks-haulers', 'tsm-model', 'volkswagen-panel-van', 'volkswagen-t1-greddy-pickup-v1', 'wwe-collectibles']
+/hot-wheels/mainlines: 7 products, 1 chase-ish
+   1 | HOTWHEELS ULTIMATE COLLECTOR CASE 4 PCS  | HOTWHEELS ULTIMATE COLLECTOR CASE WITH MUSCLE AND BLOWN
 
-https://www.karzanddolls.com/specials/chase-car: HTTP 200, 188758 bytes, products 2
-   1 | ₹1579/1699 | GREENLIGHT COLLECTIBLES ROUT | 2018 RAM PROMASTER MOPAR CUSTOM SHOP GREENLIGHT CHASE 
-   1 | ₹1489/1599 | 1:64 GREENLIGHT COLLECTIBLES | BRONCO WHEELS AND TIRES PACK CHASE 
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/pop-culture: 6 products, 0 chase-ish
 
-https://www.karzanddolls.com/hot-wheels/monster-trucks: HTTP 200, 175801 bytes, products 0
+/hot-wheels/card-art-premiums: 10 products, 1 chase-ish
+   1 | ZAMAC THEMED MULTIPACK (2026) JLB26      | ZAMAC THEMED MULTIPACK 2026
 
-https://www.karzanddolls.com/majorette/basic-cars: HTTP 200, 192098 bytes, products 4
-   1 | ₹185/199 | MAJORETTE BASIC CAR 21205305 | HONDA E YELLOW
-   1 | ₹185/199 | MAJORETTE BASIC CAR 21205305 | ISUZU D MAX BLUE
-   1 | ₹185/199 | MAJORETTE BASIC CAR 21205305 | FIAT 500 ICON YELLOW
-   1 | ₹185/199 | MAJORETTE BASIC CAR 21205305 | DS 4 GREEN
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/gift-pack: 25 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette/giftset: HTTP 200, 216216 bytes, products 12
-   1 | ₹1529/1699 | MAJORETTE 5PCS GIFTPACK 2120 | POLICE FORCE 5PCS GIFTPACK
-   1 | ₹1529/1699 | MAJORETTE YOUNGEST 90S GIFT  | YOUNGEST 90S GIFT PACK
-   1 | ₹1019/1099 | MAJORETTE 5 CARS GIFT PACK 2 | STREET CARS 5 CARS GIFT PACK WITH LAMBORGHINI
-   1 | ₹1019/1099 | MAJORETTE 5 CARS GIFT PACK 2 | STREET CARS 5 CARS GIFT PACK WITH POLICE JEEP
-   1 | ₹1529/1699 | MAJORETTE VOLVO CONSTRUCTION | VOLVO CONSTRUCTION 4 PIECES GIFTPACK
-   1 | ₹1529/1699 | MAJORETTE LIGHT RACER GIFTPA | MAJORETTE LIGHT RACER GIFTPACK 
-   1 | ₹1699/1699 | MAJORETTE 5 PCS GIFTPACK 850 | MAJORETTE LAMBORGHINI 5 PCS GIFTPACK
-   1 | ₹1699/1699 | MAJORETTE 5 PCS GIFTPACK 850 | MAJORETTE MERCEDES AMG 5 PCS GIFTPACK
-   1 | ₹1699/1699 | MAJORETTE 5 PCS GIFTPACK 850 | MAJORETTE FARM 5 PCS GIFTPACK
-   1 | ₹1699/1699 | MAJORETTE 5 PCS GIFTPACK 850 | MAJORETTE JAPAN RACER 5 PCS GIFTPACK
-   1 | ₹1699/1699 | MAJORETTE 5 PCS GIFTPACK 850 | MAJORETTE JDM LEGENDS 5 PCS GIFTPACK
-   1 | ₹1699/1699 | MAJORETTE 5 PCS GIFTPACK 850 | MAJORETTE BLACK EDITION 5 PCS GIFTPACK
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/car-culture: 1 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette/majorette: HTTP 200, 174342 bytes, products 0
+/hot-wheels/fast-and-furious: 1 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette/majorette-construction: HTTP 200, 187583 bytes, products 2
-   1 | ₹1019/1099 | MAJORETTE VOLVO CONSTRUCTION | VOLVO CONSTRUCTION 3PCS PACK WITH EXCAVATOR
-   1 | ₹1019/1099 | MAJORETTE VOLVO CONSTRUCTION | VOLVO CONSTRUCTION 3PCS PACK WITH VOLVO CEMENT TRUCK
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/boulevard-series: 0 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette/playsets: HTTP 200, 184192 bytes, products 1
-   1 | ₹2319/2499 | MAJORETTE RESCUE STATION 212 | CREATIX RESCUE STATION WITH 1 VEHICLE
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/team-transport: 5 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette/premium-cars: HTTP 200, 330805 bytes, products 53
-   1 | ₹324/349 | MAJORETTE CITY CARS 21205750 | FIAT 500 ICON
-   1 | ₹371/399 | MAJORETTE VW THE ORIGINALS P | VOLKSWAGEN T1 FLAME 243F-1
-   1 | ₹324/349 | MAJORETTE S. O. S. CARS 2120 | MERCEDES-BENZ SPRINTER AMBULANCE WHITE
-   1 | ₹324/349 | MAJORETTE S. O. S. CARS 2120 | VOLKSWAGEN CRAFTER FIRE BRIGADE RED
-   1 | ₹3719/3999 | MAJORETTE JAPAN SERIES BONUS | MAJORETTE JAPAN SERIES BONUS PACK MIX 3
-   1 | ₹359/399 | 1:64 MAJORETTE PORSCHE PREMI | PORSCHE PANAMERA TURBO WHITE
-   1 | ₹359/399 | 1:64 MAJORETTE PORSCHE PREMI | PORSCHE CAYENNE TURBO SE HYBRID
-   1 | ₹464/499 | 1:64 MAJORETTE DELUXE CAR PO | PORSCHE TAYCAN TURBO S POLICE
-   1 | ₹324/349 | MAJORETTE CITY CARS 21205750 | VOLVO FMX ORANGE
-   1 | ₹839/899 | MAJORETTE VW THE ORIGINALS 2 | VOLKSWAGEN T1 I MK1 SET RACING 2PACK 
-   1 | ₹839/899 | MAJORETTE VW THE ORIGINALS 2 | VOLKSWAGEN T1 I T3 SET ADVENTURE 2PACK
-   1 | ₹359/399 | 1:64 MAJORETTE VINTAGE CARS  | CITROEN 2CV WEISS GRUN 253A4 VINTAGE
-   1 | ₹359/399 | 1:64 MAJORETTE PREMIUM CARS  | AUDI Q4 E-TRON WHITE
-   1 | ₹359/399 | 1:64 MAJORETTE PREMIUM CARS  | VW ID BUZZ YELLOW
-   1 | ₹359/399 | 1:64 MAJORETTE VINTAGE CARS  | RENAULT CLIO 16S BLACK 221K2 
-   1 | ₹359/399 | 1:64 MAJORETTE PREMIUM CARS  | NISSAN Z BLUE
-   1 | ₹369/399 | 1:64 MAJORETTE PREMIUM CARS  | ALPINE A110 R 221N1 BLUE
-   1 | ₹369/399 | 1:64 MAJORETTE PREMIUM CARS  | TOYOTA GRMN YARIS  216E1
-   1 | ₹359/399 | 1:64 MAJORETTE PREMIUM CARS  | CHEVROLET CAMARO 279B4 WHITE
-   1 | ₹369/399 | 1:64 MAJORETTE PREMIUM CARS  | JEEP WRANGLER 4XE YELLOW
-   1 | ₹369/399 | 1:64 MAJORETTE PREMIUM CARS  | TOYOTA TACOMA TRD PRO 276B1 WHITE
-   1 | ₹359/399 | 1:64 MAJORETTE PREMIUM CARS  | MERCEDESAMG A 35 4MATIC 232H3 RED
-   1 | ₹371/399 | 1:64 MAJORETTE RACING CARS 2 | JEEP VRANGLER 4XE 224E-2
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | ALPINE A110R 221N-2
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | VOLKSWAGEN ID BUZZ CARGO
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | RENAULT MEGANE RS WHITE 222F5
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | ISUZU D MAX SPARK WHITE
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | CHEVROLET CORVETTE 1990 ZR-1 2790-1
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | ALFA ROMEO TONALE 271E-3
-   1 | ₹359/399 | 1:64 MAJORETTE RACING CARS 2 | NISSAN Z 2141-3
-   1 | ₹324/349 | MAJORETTE FARM 212057400     | CLAAS XERION 5000
-   1 | ₹324/349 | MAJORETTE FARM 212057400     | DEUTZ FAHR 9340 TTV 
-   1 | ₹324/349 | MAJORETTE FARM 212057400     | FENDT 939  MAJORETTE 
-   1 | ₹839/899 | 1:64 MAJORETTE PREMIUM AUTO  | 1985 CHEVORLET CAMARO BLUE
-   1 | ₹839/899 | 1:64 MAJORETTE PREMIUM AUTO  | 2005 CHEVROLET CORVETTE C6R YELLOW
-   1 | ₹899/899 | 1:64 MAJORETTE PREMIUM CARS  | 1955 PORSCHE 550 SPYDER
-   1 | ₹899/899 | 1:64 MAJORETTE PREMIUM CARS  | 1985 CHEVROLET CAMARO RED
-   1 | ₹899/899 |  1:64 MAJORETTE PREMIUM CARS | 1995 HONDA NSX R GT YELLOW
-   1 | ₹899/899 |  1:64 MAJORETTE PREMIUM CARS | 2005 CHEVROLET CORVETTE C6R WHITE
-   1 | ₹599/599 | MAJORETTE PORSCHE DELUXE CAR | PORSCHE TAYCAN TURBO S
-   1 | ₹599/599 | MAJORETTE PORSCHE DELUXE CAR | PORSCHE VISION GRAN TURISMO BLUE
-   1 | ₹399/399 | MAJORETTE CASTHEADS PREMIUM  | CHEVROLET CORVETTE ZR1 BLUE
-   1 | ₹399/399 | MAJORETTE CASTHEADS PREMIUM  | RENAULT CLIO 16S GREEN
-   1 | ₹399/399 | MAJORETTE SHOWROOM PREMIUM C | NISSAN Z RED
-   1 | ₹399/399 | MAJORETTE SHOWROOM PREMIUM C | JEEP WRANGLER 4XE YELLOW
-   1 | ₹899/899 | MAJORETTE COLLECTION MAJORET | 1955 CHEVROLET BEL AIR RED
-   1 | ₹599/599 | MAJORETTE AIRPORT VEHICLES 8 | LUFTHANSA AIRBUS A350-900
-   1 | ₹599/599 | MAJORETTE AIRPORT VEHICLES 8 | AIRBUS A380-800
-   1 | ₹599/599 | MAJORETTE AIRPORT VEHICLES 8 | BOEING 787-9
-   1 | ₹899/899 | MAJORETTE COLLECTION MAJORET | CHEVROLET CORVETTE C3 BLUE
-   1 | ₹899/899 | MAJORETTE COLLECTION MAJORET | 1995 TOYOTA SUPRA YELLOW
-   1 | ₹899/899 | MAJORETTE COLLECTION MAJORET | 1965 FORD GT40 MK1 GREEN
-   1 | ₹899/899 | MAJORETTE COLLECTION MAJORET | 1955 PORSCHE 550 SPYDER OFF WHITE
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/character-cars: 8 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette/transport: HTTP 200, 252875 bytes, products 25
-   1 | ₹464/499 | VOLKSWAGEN BEETLE ORANGE MON | VOLKSWAGEN BEETLE ORANGE 
-   1 | ₹464/499 | JEEP RUBICON MONSTER ROCKERZ | JEEP RUBICON 
-   1 | ₹699/749 | MAJORETTE TRANSPORTER        | SIEMENS AVENIO TRAM ORANGE
-   1 | ₹696/749 | MAJORETTE TRANSPORTER        | SIEMENS AVENIO TRAM BLUE
-   1 | ₹699/749 | MAJORETTE TRANSPORTER        | SIEMENS AVENIO TRAM GREEN
-   1 | ₹509/549 | MAJORETTE MONSTER ROCKERZ CO | FORD F150 POLICE
-   1 | ₹509/549 | MAJORETTE MONSTER ROCKERZ CO | VW BEETAL 456
-   1 | ₹509/549 | MAJORETTE MONSTER ROCKERZ CO | TOYOTA FJ CRUISER ROCKERZ
-   1 | ₹509/549 | MAJORETTE MONSTER ROCKERZ CO | JEEP WRANGLER
-   1 | ₹509/549 | MAJORETTE MONSTER ROCKERZ CO | VOLKSWAGEN T1
-   1 | ₹559/599 | MAJORETTE THE TRAILER 212053 | FLIEGL POLYLINE WITH DEUTZ FAHR
-   1 | ₹559/599 | MAJORETTE THE TRAILER 212053 | MERCEDES AMG 663
-   1 | ₹559/599 | MAJORETTE THE TRAILER 212053 | JEEP WRANGLER
-   1 | ₹699/749 | MAJORETTE VOLVO FMX SHOW TRA | VOLVO FMX SHOW TRACK CONSTRUCTION EQUIPMENT
-   1 | ₹509/549 | MAJORETTE CITY BUS 212053159 | MAN LION'S CITY C GREEN
-   1 | ₹509/549 | MAJORETTE CITY BUS 212053159 | MAN LION'S CITY C BLUE
-   1 | ₹699/749 | MAJORETTE TRANSPORTER 212023 | MAN LION'S CITY G BLUE
-   1 | ₹699/749 | MAJORETTE TRANSPORTER 212023 | SIEMENS AVENIO TRAM BLUE
-   1 | ₹699/749 | MAJORETTE TRANSPORTER 212023 | SIEMENS AVENIO TRAM ORANGE
-   1 | ₹699/749 | MAJORETTE TRANSPORTER 212023 | MAN LION'S CITY G SILVER
-   1 | ₹699/749 | MAJORETTE TRANSPORTER 212023 | SIEMENS AVENIO TRAM GREEN
-   1 | ₹699/749 | MAJORETTE CITY TRANSPORTER 2 | MERCEDES BENZ ACTROS XPLORER ONE SPACEFLEET
-   1 | ₹929/999 | MAJORETTE S.O.S 3 PIECES SET | MAJORETTE SOS 3 PIECES SET WITH BLUE JEEP
-   1 | ₹1019/1099 | PORSCHE RACE TRAILER 2120531 | PORSCHE PANAMERA TURBO 935 K3 WHITE AND BLUE
-   1 | ₹1199/1199 | MAJORETTE AMG DELUXE TRAILER | MERCEDES-AMG G 63 S WITH MERCEDES-AMG GT A35
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/hot-wheels/monster-trucks: 0 products, 0 chase-ish
 
-https://www.karzanddolls.com/matchbox/matchbox-basic-cars: HTTP 200, 194336 bytes, products 4
-   1 | ₹4296/4296 | MATCHBOX POWER GRABS DNK70 P | MATCHBOX POWER GRABS DNK70 PACK OF 24
-   1 | ₹1432/1432 | MATCHBOX POWER GRABS DNK70 P | MATCHBOX POWER GRABS SET A
-   1 | ₹1432/1432 | MATCHBOX POWER GRABS DNK70 P | MATCHBOX POWER GRABS SET B
-   1 | ₹4296/4296 | READ DISCLAIMER MATCHBOX BAS | MATCHBOX BASIC CARS ASSORTMENT OF 24 PIECES BOX 
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/mini-gt/mini-gt: 107 products, 11 chase-ish
+   1 | MINI GT 823                              | NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 V2 2024 FORMULA DRIFT JAPAN
+   1 | MINI GT 1008                             | MINI GT ASTON MARTIN DBS 007 EDITION        
+   1 | MINI GT 1022                             | MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA GARASIDRIFT X L
+   1 | MINI GT 1149                             | MINI GT  TOYOTA GR86 LBNATION BLACKGOLD 
+   1 | MINI GT S0016                            | MINI GT 1984 NÜRBURGRING RACE OF CHAMPIONS SET LIMITED EDITION 
+   1 | MINI GT 1157                             | NISSAN SILVIA S15 LBSUPER SILHOUETTE 555 TEAM MINI GT LIBERTY WALK
+   1 | MINI GT 1185                             | NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 TEAM MINI GT LIBERTY WALK 
+   1 | MINI GT 1204                             | MINI GT NISSAN LB-ER34 SUPER SILHOUETTE SKYLINE SUPPAIMAN OKINAWA
+   1 | MINI GT 914-007E ENGLISH BLISTER PACKAGI | BMW Z3 “GOLDENEYE”
+   1 | MINI GT 1147                             | MINI GT HONDA CIVIC TYPE R ULTIMATE EDITION
+   1 | MINI GT 1231                             | MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE POLICE
 
-https://www.karzanddolls.com/matchbox/matchbox-convoys: HTTP 200, 175753 bytes, products 0
+/mini-gt/mini-gt-blister-pack: 141 products, 18 chase-ish
+   1 | MINI GT 782 BLISTER PACK                 | MINI GT NISSAN Z LB NATION WORKS LB GOLD    
+   1 | MINI GT 1008 BLISTER PACK                | MINI GT ASTON MARTIN DBS 007 EDITION
+   1 | MINI GT 1011 BLISTER PACK                | MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE IMSA
+   1 | MINI GT 985 BLISTER PACK                 | MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHROME
+   1 | MINI GT 1054 BLISTER PACK                | MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA ATHLETE    
+   1 | MINI GT 823 BLISTER PACK                 | NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 V2 2024 FORMULA DRIFT JAPAN 823 BLISTER
+   1 | MINI GT 1022 BLISTER PACK                | MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA GARASIDRIFT X L
+   1 | MINI GT 1101 BLISTER PACKAGING           | MAZDA RX-7 LB-SUPER SILHOUETTE FD-NILES BLISTER PACKAGING
+   1 | MINI GT 1130 BLISTER PACKAGING           | MINI GT SHELBY GT500 DRAGON SNAKE CONCEPT BLACKGOLD BLISTER PACKAGING
+   1 | MINI GT 1149 BLISTER PACKAGING           | MINI GT TOYOTA GR86 LBNATION BLACKGOLD 
+   1 | MINI GT 1157 BLISTER PACKAGING           | NISSAN SILVIA S15 LBSUPER SILHOUETTE 555 TEAM MINI GT LIBERTY WALK BLISTER PACKA
+   1 | MINI GT 1185 BLISTER PACKAGING           | NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 TEAM MINI GT LIBERTY WALK BLISTER PACKA
+   1 | MINI GT 1132 BLISTER PACKAGING           | TOYOTA SUPRA A80 TOP SECRET GT300 TOP SECRET RED CHROME BLISTER PACKAGING
+   1 | MINI GT 1182 BLISTER PACKAGING           | NISSAN LB-ER34 SUPER SILHOUETTE SKYLINE SPORT YELLOW BLISTER PACKAGING
+   1 | MINI GT 1301 BLISTER PACKAGING           | MINI GT FORD MUSTANG GTD AMERICA 250 USA EXCLUSIVE
+   1 | MINI GT 914-007E ENGLISH BLISTER PACKAGI | BMW Z3 “GOLDENEYE”
+   1 | MINI GT 1147 BLISTER PACKAGING           | MINI GT HONDA CIVIC TYPE R ULTIMATE EDITION
+   1 | MINI GT 1231 BLISTER PACKAGING           | MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE POLICE
 
-https://www.karzanddolls.com/matchbox/matchbox-moving-parts: HTTP 200, 175641 bytes, products 0
+/mini-gt/kaido-house: 18 products, 0 chase-ish
 
-https://www.karzanddolls.com/matchbox/matchbox-sky-busters: HTTP 200, 191125 bytes, products 3
-   1 | ₹419/449 | MATCHBOX SKY BUSTERS         | MBX EHELI MATCHBOX 
-   1 | ₹419/449 | MATCHBOX SKY BUSTERS         | MBX HYPERSONIC JET
-   1 | ₹419/449 | MATCHBOX SKY BUSTERS         | MBX CROP DUSTER
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/pre-orders/pre-order-minigt: 58 products, 4 chase-ish
+   1 | PREORDER MINI GT MGT00928-007E BLISTER P | PREORDER FORD MUSTANG CONVERTIBLE 1964 “GOLDFINGER”ENGLISH BLISTER PACKAGING
+   1 | PREORDER MINI GT 1352 ETA JUNE 2027      | PREORDER LB-SILHOUETTE WORKS GT NISSAN 35GT-RR VER.2 INOZETEK EDITION
+   1 | PREORDER MINI GT 1352 BLISTER PACKAGING  | PREORDER LB-SILHOUETTE WORKS GT NISSAN 35GT-RR VER.2 INOZETEK EDITION BLISTER PA
+   1 | PREORDER MINI GT 1313 BLISTER PACKAGING  | PREORDER LAND ROVER DEFENDER 110 ROYAL HK POLICE TAI PO DISTRICT HK EXCLUSIVE
 
-https://www.karzanddolls.com/matchbox/matchbox-superfast: HTTP 200, 185810 bytes, products 1
-   1 | ₹3894/3894 | MATCHBOX COLLECTORS MIX FOR  | MATCHBOX COLLECTORS MIX FOR 2026 PACK OF 6 
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/pre-orders/pre-order-special-stock: 1 products, 0 chase-ish
 
-https://www.karzanddolls.com/matchbox/matchbox-working-rigs: HTTP 200, 191784 bytes, products 3
-   1 | ₹557/599 | MATCHBOX ADVENTURE PACK      | DIRTSTROYER MBX FARM TRAILER MBX FARM LIFE
-   1 | ₹557/599 | MATCHBOX ADVENTURE PACK      | SWAMP RAIDER MBX RAFT BOAT
-   1 | ₹557/599 | MATCHBOX ADVENTURE PACK      | 61 FORD RANCHERO MBX TRAVEL TRAILER II MBX SURFING II
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/specials/chase-car: 2 products, 2 chase-ish
+   1 | GREENLIGHT COLLECTIBLES ROUTE RUNNERS SE | 2018 RAM PROMASTER MOPAR CUSTOM SHOP GREENLIGHT CHASE 
+   1 | 1:64 GREENLIGHT COLLECTIBLES WHEEL & TIR | BRONCO WHEELS AND TIRES PACK CHASE 
 
-https://www.karzanddolls.com/shop/majorette: HTTP 200, 178708 bytes, products 0
+/specials/special-stocks-64-43-scale: 126 products, 14 chase-ish
+   1 | 1:110 TINY HK                            | BATMAN BUS GOLD CHROME VERSION HONG KONG03
+   1 | 1:64 GCD                                 | LINCOLN TOWN CAR 2003 MK3 FN145 LIMOUSINE EXTENDED EDITION SILVER
+   1 | 1:64 HOBBY JAPAN                         | TOYOTA SUPRA RZ YELLOW JZA80 WITH ACTIVE SPOILER PARTS SUPER BRIGHT YELLOW
+   1 | 1:64 GCD                                 | LINCOLN TOWN CAR 2003 LIMOUSINE EXTENDED EDITION WHITE
+   1 | 1:64 DEMON KING AUTO Q005                | VOLKSWAGEN T1 VAN BIG WHEEL MM LIVERY GOLDEN
+   1 | 1:64 DEMON KING AUTO Q006                | VOLKSWAGEN T1 VAN LOW WHEEL MM LIVERY GOLDEN
+   1 | 1:64 XCARTOYS                            | TANK 500 SUV RED GOLD CHINESE VERSION
+   1 | 1:64 MOTORHELIX M63515                   | NISSAN GTR R35 TRACK EDITION ENGINEERED BY NISMO 2020
+   1 | 1:64 AR BOX ALMOST REAL 610301001        | LAND ROVER DEFENDER 110 ADVENTURE EDITION - 2015
+   1 | 1:64 POP RACE X ENIGMA EXCLUSIVE EDITION | MAZDA RX7 RE-AMEMIYA WHITE / BLUE
+   1 | 1:64 MOTORHELIX                          | PORSCHE RWB 964 PURPLE CHROME
+   1 | 1:64 MOTORHELIX                          | PORSCHE RWB 993 BLUE CHROME
+   1 | 1:64 MOTORHELIX M63522                   | NISSAN GT-R NISMO (R35) SPECIAL EDITION 2022 VIBRANT RED
+   1 | 1:64 MOTORHELIX M63521                   | NISSAN GT-R NISMO (R35) SPECIAL EDITION 2022 STEALTH GRAY
 
-https://www.karzanddolls.com/shop/matchbox: HTTP 200, 180622 bytes, products 0
+/majorette/premium-cars: 53 products, 1 chase-ish
+   1 | MAJORETTE JAPAN SERIES BONUS PACK MIX 3  | MAJORETTE JAPAN SERIES BONUS PACK MIX 3
 
-https://www.karzanddolls.com/specials/chase-car: HTTP 200, 188758 bytes, products 2
-   1 | ₹1579/1699 | GREENLIGHT COLLECTIBLES ROUT | 2018 RAM PROMASTER MOPAR CUSTOM SHOP GREENLIGHT CHASE 
-   1 | ₹1489/1599 | 1:64 GREENLIGHT COLLECTIBLES | BRONCO WHEELS AND TIRES PACK CHASE 
-   keys of #1: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+/majorette/basic-cars: 4 products, 0 chase-ish
 
-https://www.karzanddolls.com/matchbox: HTTP 404, 170617 bytes, products None
+/matchbox/matchbox-basic-cars: 4 products, 0 chase-ish
 
-https://www.karzanddolls.com/majorette: HTTP 404, 170617 bytes, products None
+/matchbox/matchbox-moving-parts: 0 products, 0 chase-ish
 
-https://www.karzanddolls.com/matchbox/matchbox: HTTP 404, 170660 bytes, products None
---- Karz & Dolls: menu, chase shelf, Matchbox / Majorette / monster pages: 23.4s
+/matchbox/matchbox-superfast: 1 products, 1 chase-ish
+   1 | MATCHBOX COLLECTORS MIX FOR 2026 PACK OF | MATCHBOX COLLECTORS MIX FOR 2026 PACK OF 6 
 
-==================== Hamleys: Matchbox / Majorette / monster trucks / chase ====================
-  [HM] creds: token=yes app_id=605884f889251331fe847d80
-brand matchbox: HTTP 401
+/tarmac-works/tarmac-works: 44 products, 3 chase-ish
+   1 | 1:64 TARMAC WORKS HOBBY64 T64-042-PU     | TARMAC WORKS MITSUBISHI LANCER EVOLUTION WAGON SUPER TAIKYU 2000 24HRS
+   1 | 1:64 TARMAC WORKS GLOBAL64 T64G-026-ME2  | DATSUN BLUEBIRD 510 WAGON MOONEYES EXCLUSIVE
+   1 | 1:64 TARMAC WORKS X IXO MODELS HOBBY64 T | PORSCHE 911 GT3 CUP 992 PORSCHE MOBIL 1 SUPERCUP 2024 01 
 
-brand matchbox: 0 items (0 sellable); brands []
-brand majorette: HTTP 401
+/pop-race/pop-race: 48 products, 8 chase-ish
+   1 | 1:64 POP RACE PR640329                   | PANDEM GR YARIS IN RAW METAL HONG KONG TOYCAR SALON 
+   1 | 1:64 XCARTOYS                            | TANK 500 SUV RED GOLD CHINESE VERSION
+   1 | 1:64 POP RACE PRDC003                    | R33 GT-R DARK CHROME
+   1 | 1:64 POP RACE PRDC004                    | SHELBY MUSTANG GT500 DARK CHROME
+   1 | 1:64 POP RACE PRDC002                    | R32 GT-R DARK CHROME
+   1 | 1:64 POP RACE PR640398                   | DARWIN PRO 66G WBK SUPRA A90 CARBON EDITION
+   1 | 1:64 POP RACE PR640353                   | ASTON MARTIN VALKYRIE CARBON EDITION
+   1 | 1:64 POP RACE X ENIGMA EXCLUSIVE EDITION | MAZDA RX7 RE-AMEMIYA WHITE / BLUE
 
-brand majorette: 0 items (0 sellable); brands []
-q matchbox: HTTP 401
+/greenlight/classics: 24 products, 5 chase-ish
+   1 | GREENLIGHT COLLECTIBLES BARRETT JACKSON  | 1970 DODGE CHALLENGER R/T CONVERTIBLE PLUM CRAZY PURPLE
+   1 | GREENLIGHT COLLECTIBLES HOBBY EXCLUSIVE  | VOLKSWAGEN PANEL VAN
+   1 | GREENLIGHT HOBBY EXCLUSIVE               | 1967 JEEP JEEPSTER COMMANDO - CHATTANOOGA RURAL FIRE DEPT NO 3
+   1 | GREENLIGHT HOBBY EXCLUSIVE               | 2021 JEEP GLADIATOR SUPER JEEP TRIBUTE
+   1 | 1:64 GREENLIGHT COLLECTIBLES BATTALION 6 | 1946 FORD FORDOR SUPER DELUXE  US NAVY STAFF CAR
 
-q matchbox: 0 items (0 sellable); brands []
-q majorette: HTTP 401
-
-q majorette: 0 items (0 sellable); brands []
-q monster truck: HTTP 401
-
-q monster truck: 0 items (0 sellable); brands []
-q chase: HTTP 401
-
-q chase: 0 items (0 sellable); brands []
---- Hamleys: Matchbox / Majorette / monster trucks / chase: 9.0s
+/: 61 products, 4 chase-ish
+   1 | GREENLIGHT COLLECTIBLES HOBBY EXCLUSIVE  | VOLKSWAGEN PANEL VAN
+   1 | GREENLIGHT COLLECTIBLES BARRETT JACKSON  | 1970 DODGE CHALLENGER R/T CONVERTIBLE PLUM CRAZY PURPLE
+   1 | GREENLIGHT HOBBY EXCLUSIVE               | 2019 MAIL DELIVERY VEHICLE
+   1 | PREORDER MINI GT 1313 BLISTER PACKAGING  | PREORDER LAND ROVER DEFENDER 110 ROYAL HK POLICE TAI PO DISTRICT HK EXCLUSIVE
+--- Karz & Dolls: chase naming across shelves: 32.3s
 
 report saved
