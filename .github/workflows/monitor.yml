@@ -96,6 +96,12 @@ jobs:
           # sunglasses, watches, T-shirts, lunch boxes… FirstCry lists them too).
           # Matched on leading word boundaries, so "monster truck" also catches
           # "Monster Trucks" while "play set" can't hit "Display Sets".
+          # v17.3: monster trucks are kept out however a store spells them
+          # ("Monster Toy Truck", "MONST ER TRUCKS"), except their chase pieces —
+          # a Treasure Hunt / chase the store names as such alerts as 🏆 / ⛓️.
+          # Matchbox and Majorette are tracked the same way: chase pieces only
+          # (Super Chase, chase cars, Treasure Hunts). CHASE_ONLY_LINES: "false"
+          # turns that off.
           FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate,water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle,car case,storage case,carry case,storage box"
 
           # ── FirstCry ─────────────────────────────────────────────────────────
@@ -144,6 +150,7 @@ jobs:
           # ── Minifygram ───────────────────────────────────────────────────────
           # Optional: only needed if Minifygram ever rotates its public anon key.
           MINIFYGRAM_ANON_KEY: ${{ secrets.MINIFYGRAM_ANON_KEY }}
+          # (Matchbox / Majorette chase pieces come in on their own, v17.3.)
           MG_BRANDS: "hotwheels,mattel,minigt,mini gt,kaido house"
           # Categories tracked whatever the brand — trading cards.
           MG_CATEGORIES: "trading card,tcg"
@@ -151,7 +158,8 @@ jobs:
           # ── Karz & Dolls ─────────────────────────────────────────────────────
           # KD_URLS is deliberately NOT set: the built-in list covers every Hot
           # Wheels + MiniGT category, chase cars, special stocks and the home
-          # page's New Arrivals. Setting it overrides that list.
+          # page's New Arrivals — and (v17.3) the Matchbox, Majorette and monster
+          # truck shelves, for their chase pieces. Setting it overrides that list.
 
           # ── Concurrency ──────────────────────────────────────────────────────
           SRC_WORKERS: "6"

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.2
+Hot Wheels / Diecast Collector Tracker  ·  v17.3
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -25,6 +25,13 @@ v17.2: a 🎯 car the cart already has while its page says 0 is about to go on
 sale (the Custom Otto: 25 min like that, then its one unit sold 37 s after it
 did), so its page is read every pass. A 🎯 car may alert again 30 min after its
 last alert; any other car at most every 6 h.
+v17.3: chase pieces of Matchbox, Majorette and Hot Wheels Monster Trucks are
+tracked too — a Super Chase, a chase car, a Treasure Hunt — wherever a store
+says so: Karz & Dolls' chase shelf, names and SKU lines (its Matchbox, Majorette
+and monster-truck shelves are read now), Minifygram's badges and names. Every
+other Matchbox / Majorette / monster truck stays out, however the store spells
+it ("Monster Toy Truck", "MONST ER TRUCKS" used to slip through). Minifygram's
+"Treasure Hunt" badge now marks a Hot Wheels car whose name doesn't say so.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -81,7 +88,9 @@ what FirstCry's cart can send you (v17), with its delivery date (🚚). 📦 …
 = FirstCry's national count, shown only when the cart couldn't be asked.
 v16: every 🎯 car that's in stock gets its own message, and its first line
 says what it is — Treasure Hunts and the like first:
-  💎 SUPER TREASURE HUNT   🏆 TREASURE HUNT   ⛓️ CHASE   🔩 ZAMAC
+  💎 SUPER TREASURE HUNT   💎 SUPER CHASE   🏆 TREASURE HUNT   ⛓️ CHASE   🔩 ZAMAC
+  (a chase piece of another line says which: "⛓️ CHASE · MAJORETTE",
+   "💎 SUPER CHASE · MATCHBOX", "🏆 TREASURE HUNT · MONSTER TRUCKS")
   ✨ STH CAR (the regular car whose Super TH is packed in the same case —
      FirstCry doesn't sort them out)
   ❤️ Ferrari  🖤 Porsche  💛 Lamborghini  💙 Skyline / GT-R / Nissan
@@ -473,6 +482,16 @@ FC_EXCLUDE = [w.strip().lower() for w in
                         # Hot Wheels-branded merchandise that isn't a car
                         "water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle")
               .split(",") if w.strip()]
+# v17.3: the monster-truck words in FC_EXCLUDE make monster trucks a chase-only
+# line (chase_line): a monster-truck Treasure Hunt / chase gets through, any
+# other monster truck stays out — however the store spells it ("Monster Toy
+# Truck", "MONST ER TRUCKS" and "-Onster Trucks" all slipped past the words:
+# 4 regular monster trucks alerted on 24 Oct alone). CHASE_ONLY_LINES=false
+# puts everything back as it was in v17.2.
+CHASE_ONLY_LINES = os.getenv("CHASE_ONLY_LINES", "true").lower() == "true"
+_FC_MT_EXCLUDED = any(re.search(r"monst", k) for k in FC_EXCLUDE)
+_FC_EXCLUDE_HARD = ([k for k in FC_EXCLUDE if not re.search(r"monst", k)] if CHASE_ONLY_LINES
+                    else list(FC_EXCLUDE))
 
 # Always-track product ids (e.g. your FirstCry Shortlist). Paste ids or full
 # product URLs, comma separated — these stay in the catalog permanently and are
@@ -546,11 +565,95 @@ _HW_COLOUR_SYN = {"golden": "gold", "navy": "blue", "royal": "", "sky": "", "mar
 _HW_NOT_SINGLE = re.compile(
     r"\b(premium|car culture|boulevard|team transport|rlc|red line club|silver series|pop culture|"
     r"elite ?64|\d+[- ]?pack|pack of|set of|multi ?pack|gift ?pack|box ?set|bundle|playset|"
-    r"play set|launcher|monster)\b", re.I)
+    r"play set|launcher|monster|matchbox|match box|mbx|majorette|mini ?gt|kaido)\b", re.I)
 _HW_STH_WORDS = re.compile(r"\b(sth|super\s*treasure\s*hunts?|super\s*th|\$th)\b", re.I)
 _HW_TH_WORDS = re.compile(r"\b(treasure\s*hunts?|t[\s-]?hunt|th)\b", re.I)
 _HW_CHASE_WORDS = re.compile(r"\bchase\b", re.I)          # not "High Tail Chaser"
+# v17.3: Matchbox's rarest pieces are "Super Chases"
+_HW_SCHASE_WORDS = re.compile(r"\bsuper\s*-?\s*chase\b", re.I)
+# …but "chase" in a toy's TITLE isn't a chase piece: Hot Wheels Monster Trucks
+# "Charge & Chase Challenge", a "Police Chase" set — nor is a "Chance of Chase"
+# (Minifygram's badge for a box that might hold one)
+_CHASE_TITLE = re.compile(
+    r"\bchances?\s+(?:of|for|at)\s+(?:an?\s+)?chase\b"
+    r"|\bcharge\s*(?:&|and|n)\s*chase\b"
+    r"|\b(?:police|cop|dino|raptor|rescue)\s+chase\b|\bhigh[\s-]*speed\s+chase\b"
+    r"|\bchase\s*(?:challenge|playset|play\s*set|set|track|game|launcher|down|pack\s+of)\b"
+    r"|\bchase\s*(?:&|and)\s+\w", re.I)
 _HW_ZAMAC_WORDS = re.compile(r"\bzamac\b", re.I)
+
+# ── v17.3: chase pieces of lines you don't otherwise track ──────────────────
+# Matchbox and Majorette (and Hot Wheels Monster Trucks, which FC_EXCLUDE keeps
+# out) are tracked for their chase pieces only — a Super Chase, a chase car, a
+# Treasure Hunt — wherever a store names it so: Karz & Dolls' chase shelf and
+# names ("… CHASE"), Minifygram's badges ("Treasure Hunt") and names. Every
+# other Matchbox / Majorette / monster truck stays out, as before. (FirstCry and
+# Hamleys sell them as ordinary cars or assortments: nothing there says which
+# one is the chase — no name, no model number — so they can't be told apart.)
+_LINE_RES = (
+    ("MATCHBOX", re.compile(r"\bmatch\s*-?\s*box\b|\bmbx\b", re.I)),
+    ("MAJORETTE", re.compile(r"\bmajorette\b", re.I)),
+    # FirstCry writes these every which way: "Monster Trucks", "Monster Toy
+    # Truck", "MONST ER TRUCKS", "Drag Busm -Onster Trucks"; Hamleys "monster-truck"
+    ("MONSTER TRUCKS", re.compile(r"onst[\s\-_]*er[\s\-_]*(?:toy[\s\-_]*)?trucks?|\bmonster[\s\-_]*jam\b|"
+                                  r"\bmonstred\b", re.I)),
+)
+# A chase-only line's piece must say it plainly: "Super Chase", "Chase Car",
+# "(Chase)", a name ending in "CHASE", our own "[CHASE]" tag, "Treasure Hunt",
+# "STH", "(TH)" or a name ending in "TH" — never a "TH" elsewhere (Trends
+# Hobby's "TH Porsche 911", model codes).
+_CHASE_STRICT = re.compile(
+    r"\bsuper\s*-?\s*chase\b|\bchase\s*(?:car|edition|version|variant|piece|model|unit)s?\b|"
+    r"[\[(]\s*chase\s*[\])]|\bchase\s*[\]).!*]*\s*$|^\W*chase\b|"
+    r"\b(?:matchbox|mbx|majorette|hot\s*wheels|mini\s*gt|kaido(?:\s*house)?)\s+chase\b", re.I)
+_TH_STRICT = re.compile(r"\b(?:super\s*)?treasure\s*hunts?\b|\bt-hunt\b|\bsth\b|\$th\b|\bsuper\s*th\b|"
+                        r"[\[(]\s*th\s*[\])]|\bth\s*[\]).!*]*\s*$", re.I)
+_CHASE_RANK = {"sth": 4, "schase": 3, "th": 2, "chase": 1}
+
+
+def chase_line(name: str):
+    """'MATCHBOX', 'MAJORETTE' or 'MONSTER TRUCKS' — a line tracked for its
+    chase pieces only — or None. Monster trucks count only while FC_EXCLUDE
+    keeps them out (remove "monster truck" there to track all of them)."""
+    if not name:
+        return None
+    for label, rx in _LINE_RES:
+        if rx.search(name):
+            if label == "MONSTER TRUCKS" and not _FC_MT_EXCLUDED:
+                return None
+            return label
+    return None
+
+
+def chase_kind(text: str):
+    """'sth', 'schase', 'th' or 'chase' when the words plainly name a chase
+    piece (strict — see _CHASE_STRICT), else None."""
+    t = text or ""
+    if not t or _CHASE_TITLE.search(t):
+        return None
+    if _HW_STH_WORDS.search(t):
+        return "sth"
+    if _HW_SCHASE_WORDS.search(t):
+        return "schase"
+    if _TH_STRICT.search(t):
+        return "th"
+    if _CHASE_STRICT.search(t):
+        return "chase"
+    return None
+
+
+def chase_tag(text: str, name: str) -> str:
+    """The marker to add to a product's name when the store says it's a chase
+    somewhere else (its SKU line, a badge, its shelf): " [SUPER CHASE]" … — or
+    "" when the name already says as much. The name is what every check reads."""
+    k = chase_kind(text)
+    if not k or _CHASE_RANK.get(chase_kind(name), 0) >= _CHASE_RANK[k]:
+        return ""
+    return " " + _CHASE_TAGS[k]
+
+
+_CHASE_TAGS = {"sth": "[SUPER TREASURE HUNT]", "schase": "[SUPER CHASE]",
+               "th": "[TREASURE HUNT]", "chase": "[CHASE]"}
 
 
 def _hw_tokens(s: str) -> list:
@@ -732,17 +835,20 @@ def hw_info(name: str):
 
 @functools.lru_cache(maxsize=16384)
 def hw_priority(name: str):
-    """'sth', 'th', 'chase', 'sth_car' (the regular car whose Super TH is in its
-    case — FirstCry doesn't sort them out) or 'zamac' — what makes this car one
-    to chase above your marques. None for an ordinary car."""
+    """'sth', 'schase' (a Super Chase, v17.3), 'th', 'chase', 'sth_car' (the
+    regular car whose Super TH is in its case — FirstCry doesn't sort them out)
+    or 'zamac' — what makes this car one to chase above your marques. None for
+    an ordinary car."""
     if not name:
         return None
     info = hw_info(name)
     if _HW_STH_WORDS.search(name) or (info and info.get("sth")):
         return "sth"
+    if _HW_SCHASE_WORDS.search(name) and not _CHASE_TITLE.search(name):
+        return "schase"
     if (info and info.get("th")) or _HW_TH_WORDS.search(name):
         return "th"
-    if _HW_CHASE_WORDS.search(name):
+    if _HW_CHASE_WORDS.search(name) and not _CHASE_TITLE.search(name):
         return "chase"
     if info and info.get("sth_col"):
         return "sth_car"
@@ -783,8 +889,8 @@ def _clean(s: str) -> str:
 # ("monster truck" must still match "Monster Trucks"), while the leading \b is
 # what stops "play set" matching "dis-play set-s".
 _FC_EXCL_RE = re.compile(
-    "|".join(r"\b" + re.escape(k) for k in FC_EXCLUDE), re.I
-) if FC_EXCLUDE else None
+    "|".join(r"\b" + re.escape(k) for k in _FC_EXCLUDE_HARD), re.I
+) if _FC_EXCLUDE_HARD else None
 
 
 
@@ -803,9 +909,12 @@ def _fc_bust(url: str) -> str:
 
 
 def _fc_excluded(name: str) -> bool:
-    if not _FC_EXCL_RE:
-        return False
-    return bool(_FC_EXCL_RE.search(name or ""))
+    """Out of tracking on every store: a big set or merchandise (FC_EXCLUDE), or
+    a Matchbox / Majorette / monster truck that isn't a chase piece (v17.3)."""
+    n = name or ""
+    if _FC_EXCL_RE and _FC_EXCL_RE.search(n):
+        return True
+    return bool(CHASE_ONLY_LINES and chase_line(n) and not chase_kind(n))
 
 
 def _fc_name(raw: str) -> str:
@@ -3129,10 +3238,28 @@ def _mg_wanted(row: dict) -> str | None:
         return "card"
     brand = str(row.get("brand") or "").lower().replace(" ", "").replace("-", "")
     name = str(row.get("name") or "").lower().replace(" ", "").replace("-", "")
+    car_cat = not cat or not MG_CAR_CATEGORIES or any(t in cat for t in MG_CAR_CATEGORIES)
     if any(tok in brand or tok in name for tok in MG_BRANDS):
-        if not cat or not MG_CAR_CATEGORIES or any(t in cat for t in MG_CAR_CATEGORIES):
+        if car_cat:
             return "car"
+    # v17.3: a Matchbox / Majorette chase piece — its badge or name says so
+    if CHASE_ONLY_LINES and car_cat and _mg_line(row) and _mg_chase(row):
+        return "car"
     return None
+
+
+def _mg_line(row: dict):
+    """'MATCHBOX' / 'MAJORETTE' for a Minifygram row of a chase-only brand."""
+    cl = chase_line(f"{row.get('brand') or ''} {row.get('name') or ''}")
+    return cl if cl in ("MATCHBOX", "MAJORETTE") else None
+
+
+def _mg_chase(row: dict):
+    """The chase kind Minifygram gives a row — by its badge ("Treasure Hunt",
+    "Chase", "Super Chase"; not "Chance of Chase") or its name — else None."""
+    kinds = [chase_kind(str(row.get(k) or "")) for k in ("badge", "name")]
+    kinds = [k for k in kinds if k]
+    return max(kinds, key=lambda k: _CHASE_RANK[k]) if kinds else None
 
 
 def _mg_preorder_open(row: dict) -> bool:
@@ -3156,6 +3283,8 @@ def _mg_or_filter() -> str:
     we might track — half the payload. The exact rules are still applied in
     _mg_wanted(); this only has to be a superset of them."""
     pats = {"*hot*wheel*", "*mini*gt*", "*kaido*", "*mattel*"}
+    if CHASE_ONLY_LINES:
+        pats |= {"*matchbox*", "*majorette*"}       # v17.3: for their chase pieces
     for raw in os.getenv("MG_BRANDS", "").split(","):
         t = re.sub(r"[^a-z0-9 ]", "", raw.strip().lower())
         if t:
@@ -3265,6 +3394,12 @@ def scrape_minifygram() -> list[dict]:
             in_stock = str(row.get("product_type") or "").lower() == "in-stock"
 
         label = str(name)[:170]
+        if _mg_line(row) and not _mg_line({"name": label}):
+            # "Volkswagen Beetle" by Matchbox → "Matchbox Volkswagen Beetle"
+            label = f"{str(row.get('brand') or '').strip()} {label}"[:170]
+        # v17.3: Minifygram's badge says Treasure Hunt / Chase where the name
+        # doesn't ("2 Jet Z", badge "Treasure Hunt") — the name carries it now
+        label += chase_tag(str(row.get("badge") or ""), label)
         is_pre = str(row.get("product_type") or "").lower() == "preorder"
         if is_pre:
             pre += 1
@@ -3671,8 +3806,20 @@ _KD_DEFAULT_URLS = [
     f"{_KD}/specials/special-stocks-64-43-scale",
     f"{_KD}/",
 ]
+# v17.3: shelves of the chase-only lines — only their chase pieces are kept
+_KD_CHASE_LINE_URLS = [
+    f"{_KD}/hot-wheels/monster-trucks",
+    f"{_KD}/matchbox/matchbox-basic-cars",
+    f"{_KD}/matchbox/matchbox-moving-parts",
+    f"{_KD}/matchbox/matchbox-superfast",
+    f"{_KD}/majorette/premium-cars",
+    f"{_KD}/majorette/basic-cars",
+    f"{_KD}/majorette/majorette",
+]
 KD_URLS = ([u.strip() for u in os.getenv("KD_URLS", "").split("|") if u.strip()]
-           or _KD_DEFAULT_URLS)
+           or _KD_DEFAULT_URLS + (_KD_CHASE_LINE_URLS if CHASE_ONLY_LINES else []))
+# Every car on these shelves is a chase car, whatever its name says.
+_KD_CHASE_SHELVES = ("/specials/chase-car",)
 # False when any KND page failed this pass: products on that page would look
 # "missing", so the absence = sold-out check must not run (it would mark them
 # sold out and then fire false restock alerts when the page loads again).
@@ -3694,9 +3841,52 @@ _KD_PID = re.compile(r'[?&]pid=([A-Za-z0-9]+)')
 
 _KD_NEXT = re.compile(r'<script id="__NEXT_DATA__" type="application/json"[^>]*>(.*?)</script>', re.S)
 _KD_BRAND_TOKENS = ("HOTWHEELS", "MINIGT", "KAIDO")
+# a chase piece of a chase-only line may be Matchbox / Majorette
+_KD_DENY_CHASE = tuple(k for k in _KD_DENY if k not in ("MATCHBOX", "MAJORETTE", "MBX"))
 
 
-def _kd_from_next_data(page: str, cat: str):
+def _kd_line(path: str, text: str):
+    """The chase-only line of a KND product: its shelf says it (/matchbox/…,
+    /majorette/…, /hot-wheels/monster-trucks), or its own words do."""
+    if not CHASE_ONLY_LINES:
+        return None
+    p = (path or "").lower()
+    if p.startswith("/matchbox/"):
+        return "MATCHBOX"
+    if p.startswith("/majorette/"):
+        return "MAJORETTE"
+    if "monster-truck" in p and _FC_MT_EXCLUDED:
+        return "MONSTER TRUCKS"
+    return chase_line(text)
+
+
+_KD_LINE_PREFIX = {"MATCHBOX": "MATCHBOX", "MAJORETTE": "MAJORETTE", "MONSTER TRUCKS": "HOT WHEELS MONSTER TRUCKS"}
+_KD_LEFT_OUT: dict = {}     # page path -> products left out this pass as not chase pieces (for the log)
+
+
+def _kd_named(name: str, cl) -> str:
+    """KND names often leave the brand to the SKU line ("NISSAN Z BLUE" on its
+    Majorette shelf): a chase-only line's name gets it up front, so the alert
+    says which line it is."""
+    if not cl or any(lab == cl and rx.search(name) for lab, rx in _LINE_RES):
+        return name
+    return f"{_KD_LINE_PREFIX.get(cl, cl)} {name}"
+
+
+def _kd_chase_tag(path: str, name: str, *fields) -> str | None:
+    """None to drop the product; else the marker its name needs (often "").
+    A product on the chase shelf is a chase; a Matchbox / Majorette / monster
+    truck must be one (its name, SKU line or shelf says so), or it's dropped."""
+    shelf = (path or "").rstrip("/") in _KD_CHASE_SHELVES
+    fields = [str(f or "") for f in fields]
+    kinds = [k for k in (chase_kind(t) for t in [name, *fields] + (["[CHASE]"] if shelf else [])) if k]
+    best = max(kinds, key=lambda k: _CHASE_RANK[k]) if kinds else None
+    if not best and _kd_line(path, " ".join([name, *fields])):
+        return None
+    return chase_tag(_CHASE_TAGS[best], name) if best else ""
+
+
+def _kd_from_next_data(page: str, cat: str, path: str = ""):
     """Products from the page's __NEXT_DATA__ JSON (probe, 18 Oct 2026):
     category pages carry props.pageProps.products, the home page carries
     newarrivalsdata / productdata / ispreorderdata / carsdata …, each product
@@ -3730,6 +3920,14 @@ def _kd_from_next_data(page: str, cat: str):
         if not pid or len(name) < 4 or str(p.get("is_approved", 1)) == "0":
             continue
         line = str(p.get("product_sname") or p.get("sku") or "")
+        sku = str(p.get("sku") or "")
+        # v17.3: the chase shelf's cars are chases; a Matchbox / Majorette /
+        # monster truck is kept only when it's a chase piece
+        tag = _kd_chase_tag(path, name, line, sku)
+        if tag is None:
+            _KD_LEFT_OUT[path] = _KD_LEFT_OUT.get(path, 0) + 1
+            continue
+        cl = _kd_line(path, f"{name} {line} {sku}")
         blob = (name + " " + line).upper()
         flat = blob.replace(" ", "").replace("-", "")
         if not cat_ok:
@@ -3737,11 +3935,13 @@ def _kd_from_next_data(page: str, cat: str):
             # only, and never another brand. On the brand's own category pages
             # every product is that brand — Hot Wheels Marvel or Jurassic
             # character cars are still Hot Wheels — so the deny-list isn't
-            # applied there.
-            if any(k in flat for k in _KD_DENY):
+            # applied there. (v17.3: plus Matchbox / Majorette chase pieces.)
+            if any(k in flat for k in (_KD_DENY_CHASE if cl else _KD_DENY)):
                 continue
             is_hw_line = blob.startswith("HW ") or " HW " in f" {line.upper()} "
-            if not (is_hw_line or any(k in flat for k in _KD_BRAND_TOKENS)):
+            if not (is_hw_line or any(k in flat for k in _KD_BRAND_TOKENS)
+                    or cl in ("MATCHBOX", "MAJORETTE")
+                    or (cl and path.lower().startswith("/hot-wheels/"))):
                 continue
         is_pre = str(p.get("is_preorder") or "0") not in ("0", "", "None", "False")
         if is_pre and not KD_INCLUDE_PREORDER:
@@ -3753,11 +3953,78 @@ def _kd_from_next_data(page: str, cat: str):
         slug = str(p.get("slug") or "").strip()
         out.append({
             "id": f"kd_{pid}", "source": "karzdolls",
-            "name": (name + (" [PRE-ORDER]" if is_pre else ""))[:180],
+            "name": (_kd_named(name, cl) + tag + (" [PRE-ORDER]" if is_pre else ""))[:180],
             "url": f"{_KD}/details/{quote(slug, safe='-_.~')}?pid={quote(pid, safe='')}",
             "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp and mrp > price else "",
             "stock": "in_stock" if str(p.get("in_stock")) in ("1", "True", "true") else "out_of_stock",
             "badge_new": False,
+        })
+    return out
+
+
+def _kd_from_html(page: str, cat: str, path: str = "") -> list:
+    """The fallback: the page's HTML product cards."""
+    out = []
+    for part in re.split(r'(?=<a[^>]+href="/details/)', page):
+        lm = _KD_LINK.search(part or "")
+        if not lm:
+            continue
+        link = html.unescape(lm.group(1))
+        pm = _KD_PID.search(link)
+        if not pm:
+            continue
+        uid = f"kd_{pm.group(1)}"
+        txt = _clean(part[:3000])
+        nm = re.search(r'([A-Z0-9][A-Z0-9 ()\'"“”\.\,/&#\-\+\[\]]{8,150}?)\s*₹', txt)
+        if not nm:
+            continue
+        name = re.sub(r"\s+", " ", nm.group(1)).strip(" -–|,")[:180]
+        if len(name) < 6:
+            continue
+        up = part.upper()
+        is_pre = "PRE-ORDER" in up or "PRE ORDER" in up or name.startswith("PREORDER")
+        if is_pre and not KD_INCLUDE_PREORDER:
+            continue
+        tag = _kd_chase_tag(path, name, txt[:250])
+        if tag is None:
+            _KD_LEFT_OUT[path] = _KD_LEFT_OUT.get(path, 0) + 1
+            continue
+        cl = _kd_line(path, txt[:250])
+        # deny-list is matched against the card's opening text (badge +
+        # SKU line + name) because the brand often appears ONLY in the
+        # SKU line, e.g. "1:43 SOLIDO 421438273".
+        deny_scope = txt[:250].upper().replace(" ", "").replace("-", "")
+        if any(k in deny_scope for k in (_KD_DENY_CHASE if cl else _KD_DENY)):
+            continue
+        sku = ""
+        sm = re.search(r'((?:MINI\s*GT|HOT\s*WHEELS|HOTWHEELS|KAIDO)[A-Z0-9 \-]{0,30})',
+                       txt, re.I)
+        if sm:
+            sku = sm.group(1).strip()
+        blob = (name + " " + sku).upper().replace(" ", "")
+        if not any(k in blob for k in ("MINIGT", "HOTWHEELS", "KAIDO")):
+            if not (any(k in cat for k in ("hot-wheels", "mini-gt", "kaido", "minigt"))
+                    or cl in ("MATCHBOX", "MAJORETTE")
+                    or (cl and path.lower().startswith("/hot-wheels/"))):
+                continue
+        pnums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+)", txt)]
+        pnums = [p for p in pnums if p and 50 <= p <= 200000]
+        if not pnums:
+            continue
+        price = pnums[0]
+        mrp = pnums[1] if len(pnums) > 1 and pnums[1] > price else None
+        if "ADD TO CART" in up:
+            stock = "in_stock"
+        elif "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up:
+            stock = "out_of_stock"
+        else:
+            continue
+        out.append({
+            "id": uid, "source": "karzdolls",
+            "name": (_kd_named(name, cl) + tag + (" [PRE-ORDER]" if is_pre else ""))[:180],
+            "url": _KD + quote(link, safe="/:?=&"),
+            "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp else "",
+            "stock": stock, "badge_new": "NEW ARRIVAL" in up,
         })
     return out
 
@@ -3786,99 +4053,46 @@ def scrape_karzanddolls() -> list[dict]:
         return None
 
     with ThreadPoolExecutor(max_workers=8) as ex:
-        pages = {ex.submit(fetch, u): u for u in KD_URLS}
-        for fut in as_completed(pages):
-            u = pages[fut]
-            cat = u.rstrip("/").rsplit("/", 1)[-1] if u.rstrip("/") != _KD else ""
+        futs = {ex.submit(fetch, u): u for u in KD_URLS}
+        pages = {}
+        for fut in as_completed(futs):
             try:
-                page = fut.result()
+                pages[futs[fut]] = fut.result()
             except Exception:
-                page = None
+                pages[futs[fut]] = None
                 KD_HEALTHY[0] = False
-            if not page:
-                continue
-            # Preferred: the product list Next.js embeds in the page as JSON
-            # (exact names, prices, in_stock and pre-order flags). The HTML card
-            # parser below is the fallback if that ever disappears.
-            recs = _kd_from_next_data(page, cat)
-            if recs is not None:
-                found = 0
-                for d in recs:
-                    if d["id"] not in seen_ids:
-                        seen_ids.add(d["id"])
-                        out.append(d)
-                        found += 1
-                if found:
-                    print(f"  [KD] {cat or 'home'} → {found}")
-                elif recs:
-                    print(f"  [KD] {cat or 'home'} → 0 new ({len(recs)} already listed elsewhere)")
-                else:
-                    print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
-                continue
-            found = 0
-            for part in re.split(r'(?=<a[^>]+href="/details/)', page):
-                lm = _KD_LINK.search(part or "")
-                if not lm:
-                    continue
-                path = html.unescape(lm.group(1))
-                pm = _KD_PID.search(path)
-                if not pm:
-                    continue
-                pid = pm.group(1)
-                uid = f"kd_{pid}"
-                if uid in seen_ids:
-                    continue
-                txt = _clean(part[:3000])
-                nm = re.search(r'([A-Z0-9][A-Z0-9 ()\'"“”\.\,/&#\-\+]{8,150}?)\s*₹', txt)
-                if not nm:
-                    continue
-                name = re.sub(r"\s+", " ", nm.group(1)).strip(" -–|,")[:180]
-                if len(name) < 6:
-                    continue
-                up = part.upper()
-                is_pre = "PRE-ORDER" in up or "PRE ORDER" in up or name.startswith("PREORDER")
-                if is_pre and not KD_INCLUDE_PREORDER:
-                    continue
-                # deny-list is matched against the card's opening text (badge +
-                # SKU line + name) because the brand often appears ONLY in the
-                # SKU line, e.g. "1:43 SOLIDO 421438273".
-                deny_scope = txt[:250].upper().replace(" ", "").replace("-", "")
-                if any(k in deny_scope for k in _KD_DENY):
-                    continue
-                sku = ""
-                sm = re.search(r'((?:MINI\s*GT|HOT\s*WHEELS|HOTWHEELS|KAIDO)[A-Z0-9 \-]{0,30})',
-                               txt, re.I)
-                if sm:
-                    sku = sm.group(1).strip()
-                blob = (name + " " + sku).upper().replace(" ", "")
-                if not any(k in blob for k in ("MINIGT", "HOTWHEELS", "KAIDO")):
-                    if not any(k in cat for k in ("hot-wheels", "mini-gt", "kaido", "minigt")):
-                        continue
-                pnums = [price_to_int(x) for x in re.findall(r"₹\s*([\d,]+)", txt)]
-                pnums = [p for p in pnums if p and 50 <= p <= 200000]
-                if not pnums:
-                    continue
-                price = pnums[0]
-                mrp = pnums[1] if len(pnums) > 1 and pnums[1] > price else None
-                if "ADD TO CART" in up:
-                    stock = "in_stock"
-                elif "OUT OF STOCK" in up or "SOLD OUT" in up or "NOTIFY" in up:
-                    stock = "out_of_stock"
-                else:
-                    continue
-                seen_ids.add(uid)
-                out.append({
-                    "id": uid, "source": "karzdolls",
-                    "name": (name + (" [PRE-ORDER]" if is_pre else ""))[:180],
-                    "url": _KD + quote(path, safe="/:?=&"),
-                    "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp else "",
-                    "stock": stock, "badge_new": "NEW ARRIVAL" in up,
-                })
+    # v17.3: pages are read in a fixed order — the chase shelf first — so a car
+    # listed on two shelves always comes out the same way (with its chase tag)
+    order = sorted(KD_URLS, key=lambda u: 0 if u[len(_KD):].rstrip("/") in _KD_CHASE_SHELVES else 1)
+    _KD_LEFT_OUT.clear()
+    for u in order:
+        page = pages.get(u)
+        if not page:
+            continue
+        cat = u.rstrip("/").rsplit("/", 1)[-1] if u.rstrip("/") != _KD else ""
+        path = u[len(_KD):] if u.startswith(_KD) else u
+        # Preferred: the product list Next.js embeds in the page as JSON
+        # (exact names, prices, in_stock and pre-order flags). The HTML card
+        # parser is the fallback if that ever disappears.
+        recs = _kd_from_next_data(page, cat, path)
+        if recs is None:
+            recs = _kd_from_html(page, cat, path)
+        found = 0
+        for d in recs:
+            if d["id"] not in seen_ids:
+                seen_ids.add(d["id"])
+                out.append(d)
                 found += 1
-            if found:
-                print(f"  [KD] {cat or 'home'} → {found}")
-            else:
-                print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
+        left = _KD_LEFT_OUT.get(path, 0)
+        note = f" ({left} not chase pieces, left out)" if left else ""
+        if found:
+            print(f"  [KD] {cat or 'home'} → {found}{note}")
+        elif recs:
+            print(f"  [KD] {cat or 'home'} → 0 new ({len(recs)} already listed elsewhere){note}")
+        elif left:
+            print(f"  [KD] {cat or 'home'} → no chase pieces right now ({left} others left out)")
+        else:
+            print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
     ins = sum(1 for d in out if d["stock"] == "in_stock")
     print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)"
           + ("" if KD_HEALTHY[0] else " — some pages failed, sold-out check skipped"))
@@ -4303,12 +4517,13 @@ def _is_flagged(d) -> bool:
 # Specials first (a Porsche Treasure Hunt reads "🏆🖤 TREASURE HUNT · PORSCHE").
 _HW_KINDS = {
     "sth":     ("💎", "SUPER TREASURE HUNT"),
+    "schase":  ("💎", "SUPER CHASE"),
     "th":      ("🏆", "TREASURE HUNT"),
     "chase":   ("⛓️", "CHASE"),
     "sth_car": ("✨", "STH CAR"),
     "zamac":   ("🔩", "ZAMAC"),
 }
-_HW_RANK = {"sth": 0, "th": 1, "chase": 2, "sth_car": 3, "zamac": 4}
+_HW_RANK = {"sth": 0, "schase": 0, "th": 1, "chase": 2, "sth_car": 3, "zamac": 4}
 # A heart per family of your marques — the colour says which at a glance — and
 # the word that matched names it ("SKYLINE", "SUPRA", "McLAREN"). First fit wins.
 _HEARTS = [
@@ -4360,10 +4575,24 @@ def _badge(d):
     marque = _heart(d["name"]) if _is_marque_flagged(d) else None
     if kind:
         e, label = _HW_KINDS[kind]
+        # v17.3: which line it's from, when it isn't Hot Wheels mainline
+        line = _line_label(d["name"])
+        if line:
+            label = f"{label} · {line}"
         if marque and marque[0] != "🎯":
             return e + marque[0], f"{label} · {marque[1]}"
         return e, label
     return marque
+
+
+def _line_label(name: str):
+    """'MATCHBOX', 'MAJORETTE', 'MONSTER TRUCKS', 'MINI GT' or None (Hot Wheels)."""
+    for label, rx in _LINE_RES:
+        if rx.search(name or ""):
+            return label
+    if re.search(r"\bmini\s*-?\s*gt\b|\bkaido\b", name or "", re.I):
+        return "MINI GT"
+    return None
 
 
 def _hw_line(d) -> str:
@@ -4391,7 +4620,10 @@ def _hw_line(d) -> str:
             bits.append("💎 Super Treasure Hunt")
         elif _HW_TH_WORDS.search(name):
             bits.append("🏆 Treasure Hunt")
-    if _HW_CHASE_WORDS.search(name):
+    kind = hw_priority(name)
+    if kind == "schase":
+        bits.append("💎 Super Chase")
+    elif kind == "chase" or (_HW_CHASE_WORDS.search(name) and not _CHASE_TITLE.search(name)):
         bits.append("⛓️ Chase")
     return " · ".join(bits)
 
