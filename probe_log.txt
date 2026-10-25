@@ -1,160 +1,120 @@
 version: Hot Wheels / Diecast Collector Tracker  ·  v17.4
 
 ================ RUN 1 ================
-  [FC-API] quick sweep: 195 in stock from 12 page(s) in 2.6s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [FC-API] quick sweep: 193 in stock from 12 page(s) in 2.7s — fresh ✓ (searchrank, 12 page(s) computed live)
+  [FC-API] stock for pincode: 248001
+  [FC-API] 391 products across 20 page(s) (198 with zero stock) in 1.4s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 387, 'Sports & Games': 4}
 [HW] case table: 1284 cars (52 cases)
-  [FC-CART] 148 car(s) asked (16 pointed at, 132 in turn) in 2.3s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 125 car(s) seen live in 6.5s; 0 now orderable, 0 not any more
+  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
+  [FC-CART] 149 car(s) asked (13 pointed at, 136 in turn) in 2.3s: 34 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 4 waiting for their page
+  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 98 car(s) seen live in 6.3s; 0 now orderable, 0 not any more
+[*] FirstCry total (API): 554 tracked, 116 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 125 products in 9.2s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.7s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 146 car(s) asked (17 pointed at, 129 in turn) in 1.1s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 80 car(s) seen live in 3.5s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 118 products in 5.3s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 148 car(s) asked (17 pointed at, 131 in turn) in 1.2s: 34 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 78 car(s) seen live in 2.5s; 0 now orderable, 1 not any more
+[*] pass 1 (+ full FirstCry catalogue): FirstCry → 554 products in 10.8s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.0s: 34 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 4 waiting for their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 90 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 115 products in 3.9s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 149 car(s) asked (11 pointed at, 138 in turn) in 1.0s: 34 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 4 waiting for their page
+  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 100 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
 [*] pass 3: FirstCry → 118 products in 3.9s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (16 pointed at, 134 in turn) in 1.1s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 85 car(s) seen live in 3.9s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 121 products in 4.9s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 2.2s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 86 car(s) seen live in 4.5s; 0 now orderable, 0 not any more
+[*] pass 4: FirstCry → 129 products in 5.5s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 41s (0s:Fi=9s, 12s:Fi=5s, 24s:Fi=4s, 36s:Fi=5s)
+[*] run finished: 4 pass(es) in 41s (0s:Fi=11s, 12s:Fi=4s, 24s:Fi=4s, 36s:Fi=5s)
 
 run 1: 41s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_24503315', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Jester - Green'), ('fc_24503311', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Futurismo - Pink'), ('fc_24235309', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Renault Espace F1 Die-Cast Toy Car'), ('fc_24235310', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Project Twin Mill Toy Car - White '), ('fc_21133791', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 8, 'cars': 592, 'fail': 0} | live stats: {'pages': 27, 'tat': 49}
-   verdicts: {'not in cart': 257, 'no delivery': 40, 'ok': 127, None: 52, 'sold out': 113, 'last unit': 1, 'page 0': 4, 'arriving': 1}
+   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
+   cart stats: {'calls': 8, 'cars': 598, 'fail': 0} | live stats: {'pages': 28, 'tat': 54}
+   verdicts: {'not in cart': 295, 'no delivery': 34, 'ok': 129, None: 52, 'sold out': 75, 'last unit': 2, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
 
 ================ RUN 2 ================
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 387 products across 20 page(s) (195 with zero stock) in 1.9s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 383, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Street Shrieker Die-Cast Toy Car (203 | stock=out_of_stock count=0 price=179 mrp=None
-  [FC-CART] 150 car(s) asked (17 pointed at, 133 in turn) in 1.2s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 72 car(s) seen live in 3.9s; 0 now orderable, 1 not any more
-[*] FirstCry total (API): 554 tracked, 112 buyable now (in-stock list complete), 0 aged to delisted
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 147 car(s) asked (11 pointed at, 136 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 4.0s; 0 now orderable, 0 not any more
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 554 products in 7.0s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (17 pointed at, 133 in turn) in 1.3s: 34 buyable for 248001; 1 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 71 car(s) seen live in 4.0s; 1 now orderable, 0 not any more
-[*] pass 2: FirstCry → 122 products in 5.2s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (17 pointed at, 132 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 64 car(s) seen live in 3.3s; 0 now orderable, 1 not any more
-[*] pass 3: FirstCry → 124 products in 4.5s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (16 pointed at, 134 in turn) in 2.5s: 33 buyable for 248001; 0 now in, 0 now out, 5 in the cart but not on sale on their page, 3 waiting for their page
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 69 car(s) seen live in 4.7s; 1 now orderable, 0 not any more
-[*] pass 4: FirstCry → 123 products in 5.7s (live: FirstCry)
+[*] pass 1: FirstCry → 118 products in 5.6s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 149 car(s) asked (11 pointed at, 138 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 87 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 120 products in 4.8s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.4s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 4.1s; 1 now orderable, 0 not any more
+[*] pass 3: FirstCry → 120 products in 5.6s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (12 pointed at, 138 in turn) in 2.4s: 35 buyable for 248001; 0 now in, 0 now out, 5 in the cart but not on sale on their page
+  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 101 car(s) seen live in 5.8s; 1 now orderable, 1 not any more
+[*] pass 4: FirstCry → 117 products in 6.9s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 42s (0s:Fi=7s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=6s)
+[*] run finished: 4 pass(es) in 43s (0s:Fi=6s, 12s:Fi=5s, 24s:Fi=6s, 36s:Fi=7s)
 
-run 2: 42s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_24503315', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Jester - Green'), ('fc_24503311', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Futurismo - Pink'), ('fc_24235309', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Renault Espace F1 Die-Cast Toy Car'), ('fc_24235310', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Project Twin Mill Toy Car - White '), ('fc_21133791', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 16, 'cars': 1191, 'fail': 0} | live stats: {'pages': 48, 'tat': 95}
-   verdicts: {'not in cart': 264, 'no delivery': 37, 'ok': 127, None: 52, 'sold out': 106, 'last unit': 1, 'page 0': 8}
+run 2: 43s, 0 message(s) so far, 0 stock change(s)
+   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
+   cart stats: {'calls': 16, 'cars': 1194, 'fail': 0} | live stats: {'pages': 50, 'tat': 107}
+   verdicts: {'not in cart': 283, 'no delivery': 35, 'ok': 129, None: 52, 'sold out': 86, 'last unit': 2, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
 
 ================ RUN 3 ================
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 147 car(s) asked (17 pointed at, 130 in turn) in 2.2s: 34 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 83 car(s) seen live in 4.9s; 1 now orderable, 1 not any more
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.6s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-API] stock for pincode: 248001
+  [FC-API] 391 products across 20 page(s) (198 with zero stock) in 2.8s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 387, 'Sports & Games': 4}
+  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
+  [FC-CART] 148 car(s) asked (12 pointed at, 136 in turn) in 1.2s: 34 buyable for 248001; 0 now in, 0 now out, 5 in the cart but not on sale on their page
+  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 81 car(s) seen live in 5.3s; 1 now orderable, 0 not any more
+[*] FirstCry total (API): 554 tracked, 116 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 122 products in 6.1s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (16 pointed at, 134 in turn) in 1.4s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 3.6s; 1 now orderable, 0 not any more
-[*] pass 2: FirstCry → 125 products in 4.7s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (17 pointed at, 133 in turn) in 1.2s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 85 car(s) seen live in 3.7s; 1 now orderable, 0 not any more
-[*] pass 3: FirstCry → 119 products in 4.9s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (16 pointed at, 134 in turn) in 1.1s: 33 buyable for 248001; 0 now in, 0 now out, 8 in the cart but not on sale on their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 107 car(s) seen live in 3.4s; 1 now orderable, 0 not any more
-[*] pass 4: FirstCry → 124 products in 4.5s (live: FirstCry)
+[*] pass 1 (+ full FirstCry catalogue): FirstCry → 554 products in 9.7s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.6s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.2s: 34 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
+  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 68 car(s) seen live in 4.6s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry → 126 products in 6.2s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.3s: 34 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
+  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 75 car(s) seen live in 5.0s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 123 products in 6.5s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.7s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 148 car(s) asked (12 pointed at, 136 in turn) in 1.2s: 35 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
+  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 120 car(s) seen live in 5.2s; 0 now orderable, 1 not any more
+[*] pass 4: FirstCry → 154 products in 6.9s (live: FirstCry)
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi=6s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=4s)
+[*] run finished: 4 pass(es) in 43s (0s:Fi=10s, 12s:Fi=6s, 24s:Fi=7s, 36s:Fi=7s)
 
-run 3: 41s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_24503315', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Jester - Green'), ('fc_24503311', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Futurismo - Pink'), ('fc_24235309', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Renault Espace F1 Die-Cast Toy Car'), ('fc_24235310', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Project Twin Mill Toy Car - White '), ('fc_21133791', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 24, 'cars': 1788, 'fail': 0} | live stats: {'pages': 71, 'tat': 141}
-   verdicts: {'not in cart': 245, 'no delivery': 42, 'ok': 127, None: 52, 'sold out': 119, 'last unit': 1, 'page 0': 8, 'arriving': 1}
+run 3: 43s, 0 message(s) so far, 0 stock change(s)
+   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
+   cart stats: {'calls': 24, 'cars': 1790, 'fail': 0} | live stats: {'pages': 69, 'tat': 153}
+   verdicts: {'not in cart': 258, 'no delivery': 39, 'ok': 131, None: 52, 'sold out': 107, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
 
 ================ RUN 4 ================
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 387 products across 20 page(s) (195 with zero stock) in 1.4s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 383, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Street Shrieker Die-Cast Toy Car (203 | stock=out_of_stock count=0 price=179 mrp=None
-  [FC-CART] 149 car(s) asked (18 pointed at, 131 in turn) in 2.1s: 35 buyable for 248001; 2 now in, 0 now out, 8 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 112 car(s) seen live in 5.2s; 0 now orderable, 1 not any more
-[*] FirstCry total (API): 554 tracked, 114 buyable now (in-stock list complete), 0 aged to delisted
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.7s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 149 car(s) asked (11 pointed at, 138 in turn) in 2.4s: 34 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
+  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 5.2s; 1 now orderable, 0 not any more
+[=] FirstCry: no alert-worthy changes (0 minor)
+[*] pass 1: FirstCry → 118 products in 6.9s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 149 car(s) asked (12 pointed at, 137 in turn) in 1.0s: 35 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 3 waiting for their page
+  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 84 car(s) seen live in 2.9s; 0 now orderable, 1 not any more
+[*] pass 2: FirstCry → 121 products in 4.2s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 3 waiting for their page
+  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 80 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
+[*] pass 3: FirstCry → 117 products in 4.9s (live: FirstCry)
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
+  [FC-CART] 150 car(s) asked (12 pointed at, 138 in turn) in 2.2s: 35 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
+  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 85 car(s) seen live in 5.1s; 0 now orderable, 1 not any more
+[*] pass 4: FirstCry → 128 products in 6.2s (live: FirstCry)
 
------ TELEGRAM (dry run, not sent) -----
-🤍 <b>ASTON MARTIN · BACK IN STOCK</b>
-[🛒FC] <b>Hot Wheels Aston Martin DB5 Safari Edition/Edition Safari (243/250) Toy Car - White</b> 🎯 ⚠️ only 1 left for 248001  ₹179
-📦 2026 Case P · HW Dirt · #243
-🚚 cart says: delivery by Fri 30 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-aston-martin-db5-safari-edition-edition-safari-243-250-toy-car-white/24783759/product-detail?fresh=905260
------
+[*] run finished: 4 pass(es) in 42s (0s:Fi=7s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=6s)
 
-🤍 <b>ASTON MARTIN · BACK IN STOCK</b>
-[🛒FC] <b>Hot Wheels Aston Martin DB5 Safari Edition/Edition Safari (243/250) Toy Car - White</b> 🎯 ⚠️ only 1 left for 248001  ₹179
-📦 2026 Case P · HW Dirt · #243
-🚚 cart says: delivery by Fri 30 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-aston-martin-db5-safari-edition-edition-safari-243-250-toy-car-white/24783759/product-detail?fresh=905260
+run 4: 42s, 0 message(s) so far, 0 stock change(s)
+   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
+   cart stats: {'calls': 32, 'cars': 2388, 'fail': 0} | live stats: {'pages': 95, 'tat': 199}
+   verdicts: {'not in cart': 243, 'no delivery': 38, 'ok': 129, None: 52, 'sold out': 123, 'last unit': 2, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
 
------ TELEGRAM (dry run, not sent) -----
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey</b> ⚠️ only 4 left for 248001  ₹179
-🚚 cart says: delivery by Fri 30 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail?fresh=905260
------
-
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey</b> ⚠️ only 4 left for 248001  ₹179
-🚚 cart says: delivery by Fri 30 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail?fresh=905260
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 554 products in 8.4s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (18 pointed at, 131 in turn) in 1.1s: 35 buyable for 248001; 1 now in, 1 now out, 4 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for, 3 waiting for their page
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 98 car(s) seen live in 2.9s; 0 now orderable, 2 not any more
-
------ TELEGRAM (dry run, not sent) -----
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red</b> ✅ 355 left for 248001  ₹179
-📦 2026 Case G · Drop Tops · #131
-🚚 cart says: delivery by Mon 26 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail?fresh=905268
------
-
-🔥 <b>BACK IN STOCK — grab it now</b>
-  [🛒FC] <b>Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red</b> ✅ 355 left for 248001  ₹179
-📦 2026 Case G · Drop Tops · #131
-🚚 cart says: delivery by Mon 26 Oct
-https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail?fresh=905268
-[*] pass 2: FirstCry → 122 products in 3.8s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 148 car(s) asked (16 pointed at, 132 in turn) in 1.2s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for, 3 waiting for their page
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 100 car(s) seen live in 3.7s; 0 now orderable, 1 not any more
-[*] pass 3: FirstCry → 124 products in 4.9s (live: FirstCry)
-  [FC-API] quick sweep: 195 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (15 pointed at, 134 in turn) in 1.1s: 33 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for, 4 waiting for their page
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 136 car(s) seen live in 3.9s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 120 products in 5.0s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 41s (0s:Fi=8s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=5s)
-
-run 4: 41s, 3 message(s) so far, 1 stock change(s)
-    ('fc_24776080', 'out_of_stock', 'in_stock', 'ok', 'list', 'Hot Wheels Die Cast Free Wheel 161/250 70 Ford Esc')
-   cars with a list onset stored: 113; latest: [('fc_24503315', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Jester - Green'), ('fc_24503311', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Color Shifters Futurismo - Pink'), ('fc_24235309', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Renault Espace F1 Die-Cast Toy Car'), ('fc_24235310', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Project Twin Mill Toy Car - White '), ('fc_21133791', '2026-10-25T05:11:25', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 32, 'cars': 2383, 'fail': 0} | live stats: {'pages': 95, 'tat': 188}
-   verdicts: {'not in cart': 255, 'no delivery': 42, 'ok': 128, None: 52, 'sold out': 106, 'last unit': 2, 'page 0': 7, 'unlisted': 2, 'arriving': 1}
-
-3 message(s) would have been sent in all
+0 message(s) would have been sent in all
