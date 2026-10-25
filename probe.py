@@ -1,94 +1,47 @@
 #!/usr/bin/env python3
-"""Probe #36: dry run of v17.3 (bot_v173.py) — chase pieces of Matchbox,
-Majorette and Hot Wheels Monster Trucks — against every live store, with no
-Telegram (alerts printed, not sent), on a COPY of the current seen.json, with
-the monitor's settings. Three runs back to back: errors, timings, what it would
-send, what it now keeps out, and which names changed."""
-import collections, importlib.util, json, os, shutil, time, urllib.request
+"""Probe #37: cars the cart would take while their product page says 0 — how
+many units does the cart have for 248001, and is the car on FirstCry's in-stock
+list for 248001? (25 Oct 10:00 the Dino 206 GT was buyable from Favourites
+while its page still said Out of Stock.) Four looks, a minute apart. Read-only:
+no Telegram, nothing saved, nothing ordered."""
+import importlib.util, json, os, time, urllib.request
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-DRY = os.path.join(ROOT, "dry")
-os.makedirs(DRY, exist_ok=True)
-with urllib.request.urlopen("https://raw.githubusercontent.com/Abhijndl/BotHW/main/seen.json", timeout=30) as r:
-    open(os.path.join(DRY, "seen.json"), "wb").write(r.read())
-print("seen.json copied:", os.path.getsize(os.path.join(DRY, "seen.json")), "bytes")
-shutil.copy(os.path.join(ROOT, "hw_cases.json"), os.path.join(DRY, "hw_cases.json"))
-
-env = {
-    "TELEGRAM_BOT_TOKEN": "", "TELEGRAM_CHAT_ID": "", "ONLY_SOURCES": "fc,mg,kd,hm",
-    "RUN_SECONDS": "40", "FC_EVERY": "12", "RUN_EXTEND_S": "0", "FC_CATALOGUE_EVERY": "120",
-    "SILENT": "true", "FIRST_RUN_SILENT": "true", "MAX_ALERT_PRICE": "0", "DEBUG": "false",
-    "WATCHLIST": "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk",
-    "FC_EXCLUDE": "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate,water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle,car case,storage case,carry case,storage box",
-    "FC_MARQUES": "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics",
-    "FC_WATCH": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail",
-    "FC_LIVE_POLL": "4", "FC_RESTOCK_COOLDOWN_H": "1", "FC_MIN_ALERT_STOCK_TARGET": "1",
-    "FC_MIN_ALERT_STOCK": "2", "FC_SURE_UNITS": "5", "FC_API_PARALLEL": "10",
-    "SRC_WORKERS": "6", "FC_WORKERS": "10", "HM_WORKERS": "8", "FC_CART": "true", "FC_CART_MAX": "150",
-    "FC_CART_COOLDOWN_MIN": "30", "FC_CART_COOLDOWN_OTHER_H": "6",
-    "MG_BRANDS": "hotwheels,mattel,minigt,mini gt,kaido house", "MG_CATEGORIES": "trading card,tcg",
-}
-os.environ.update(env)
-os.chdir(DRY)
+os.environ.update({"TELEGRAM_BOT_TOKEN": "", "TELEGRAM_CHAT_ID": "", "FC_CART": "true", "FC_LIVE_DEBUG": ""})
 spec = importlib.util.spec_from_file_location("bot_v173", os.path.join(ROOT, "bot_v173.py"))
 bot = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bot)
-print("version:", (bot.__doc__ or "").strip().splitlines()[0])
-sent = []
-
-
-def fake_tg(msg, *a, **k):
-    sent.append(msg)
-    print("\n----- TELEGRAM (dry run, not sent) -----\n" + msg + "\n----------------------------------------")
-    return True
-
-
-bot.tg = fake_tg
-bot._successor_waiting = lambda: True
-
-
-def rows():
-    return {k: v for k, v in json.load(open("seen.json")).items() if isinstance(v, dict) and k != "_meta"}
-
-
-s0 = rows()
-for n in range(1, 4):
-    print(f"\n================ RUN {n} ================")
-    before = rows()
+with urllib.request.urlopen("https://raw.githubusercontent.com/Abhijndl/BotHW/main/seen.json", timeout=30) as r:
+    seen = json.loads(r.read())
+fc = {k[3:]: v for k, v in seen.items() if k.startswith("fc_") and isinstance(v, dict)}
+watch = [p for p, v in fc.items() if v.get("stock") != "in_stock"
+         and (v.get("fc_cart") == "y" or v.get("fc_live") in ("page 0", "arriving"))]
+held = [p for p, v in fc.items() if v.get("stock") == "in_stock"]
+print(f"{len(watch)} cars the cart said yes to while held sold out; {len(held)} held in stock")
+report = []
+for look in range(4):
     t0 = time.time()
-    try:
-        bot.main()
-    except Exception:
-        import traceback
-        traceback.print_exc()
-    after = rows()
-    flips = [(k, (before.get(k) or {}).get("stock"), v.get("stock"), v.get("name", "")[:60])
-             for k, v in after.items() if (before.get(k) or {}).get("stock") != v.get("stock")]
-    renamed = [(k, (before.get(k) or {}).get("name", "")[:50], v.get("name", "")[:70])
-               for k, v in after.items() if k in before and before[k].get("name") != v.get("name")]
-    added = [(k, v.get("stock"), v.get("name", "")[:70]) for k, v in after.items() if k not in before]
-    print(f"\nrun {n}: {time.time() - t0:.0f}s, {len(sent)} message(s) so far, {len(flips)} stock change(s), "
-          f"{len(added)} new, {len(renamed)} renamed")
-    for f in flips[:30]:
-        print("   flip", f)
-    for a in added[:30]:
-        print("   new ", a)
-    for r in renamed[:30]:
-        print("   name", r)
-    print("   by source:", dict(collections.Counter(v.get("source") for v in after.values())))
-    print("   cart stats:", bot._FC_CART_STATS, "| live stats:", bot._FC_LIVE_STATS)
+    inst = bot.fc_api_catalogue(hot=True) or {}
+    listed = {str(k) for k in inst}
+    cart = bot.fc_cart_check(watch + held) or {}
+    live = bot.fc_live_check(watch, max_pages=20) if watch else {}
+    rows = []
+    for p in watch:
+        a = cart.get(p) or {}
+        e = live.get(p) or bot._FC_LIVE.get(p) or {}
+        rows.append({"pid": p, "name": fc[p].get("name", "")[:58], "cart_ok": a.get("ok"), "cart_n": a.get("n"),
+                     "page_cs": e.get("cs"), "isv": e.get("isv"), "on_list": p in listed,
+                     "list_units": bot._fc_api_stock(inst[p])[1] if p in inst else None})
+    print(f"\n== look {look + 1} ({time.strftime('%H:%M:%S')} UTC, {time.time() - t0:.0f}s): "
+          f"{len(listed)} on the in-stock list")
+    for r in sorted(rows, key=lambda r: -(r["cart_n"] or 0)):
+        print(f"   cart {str(r['cart_ok']):5} n={str(r['cart_n']):4} page={str(r['page_cs']):4} "
+              f"list={'yes' if r['on_list'] else 'no ':3} ({str(r['list_units']):4}) {r['name']}")
+    # held cars: the cart's counts, for comparison
+    ns = sorted(((cart.get(p) or {}).get("n") or 0) for p in held if (cart.get(p) or {}).get("ok"))
+    if ns:
+        print(f"   held in stock & cart ok: {len(ns)} cars, cart units median {ns[len(ns) // 2]}, "
+              f"min {ns[0]}, ≤2 units: {sum(1 for n in ns if n <= 2)}")
+    report.append(rows)
     time.sleep(max(0, 60 - (time.time() - t0)))
-
-final = rows()
-chase = [(k, v.get("stock"), v.get("name", "")[:80]) for k, v in final.items()
-         if bot.hw_priority(v.get("name", "")) in ("sth", "schase", "th", "chase")]
-print(f"\ntracked chase pieces (any store): {len(chase)}")
-for c in chase:
-    print("  ", c)
-out_now = [(k, v.get("stock"), v.get("name", "")[:80]) for k, v in final.items() if bot._fc_excluded(v.get("name", ""))]
-print(f"\nstored items v17.3 now keeps out: {len(out_now)}")
-for o in out_now[:30]:
-    print("  ", o)
-print(f"\n{len(sent)} message(s) would have been sent in all")
-json.dump({"sent": sent, "chase": chase, "out": out_now}, open(os.path.join(ROOT, "probe_report.json"), "w"),
-          indent=1, ensure_ascii=False)
+json.dump(report, open(os.path.join(ROOT, "probe_report.json"), "w"), indent=1, ensure_ascii=False)

@@ -3861,6 +3861,7 @@ def _kd_line(path: str, text: str):
 
 
 _KD_LINE_PREFIX = {"MATCHBOX": "MATCHBOX", "MAJORETTE": "MAJORETTE", "MONSTER TRUCKS": "HOT WHEELS MONSTER TRUCKS"}
+_KD_LEFT_OUT: dict = {}     # page path -> products left out this pass as not chase pieces (for the log)
 
 
 def _kd_named(name: str, cl) -> str:
@@ -3924,6 +3925,7 @@ def _kd_from_next_data(page: str, cat: str, path: str = ""):
         # monster truck is kept only when it's a chase piece
         tag = _kd_chase_tag(path, name, line, sku)
         if tag is None:
+            _KD_LEFT_OUT[path] = _KD_LEFT_OUT.get(path, 0) + 1
             continue
         cl = _kd_line(path, f"{name} {line} {sku}")
         blob = (name + " " + line).upper()
@@ -3985,6 +3987,7 @@ def _kd_from_html(page: str, cat: str, path: str = "") -> list:
             continue
         tag = _kd_chase_tag(path, name, txt[:250])
         if tag is None:
+            _KD_LEFT_OUT[path] = _KD_LEFT_OUT.get(path, 0) + 1
             continue
         cl = _kd_line(path, txt[:250])
         # deny-list is matched against the card's opening text (badge +
@@ -4061,6 +4064,7 @@ def scrape_karzanddolls() -> list[dict]:
     # v17.3: pages are read in a fixed order — the chase shelf first — so a car
     # listed on two shelves always comes out the same way (with its chase tag)
     order = sorted(KD_URLS, key=lambda u: 0 if u[len(_KD):].rstrip("/") in _KD_CHASE_SHELVES else 1)
+    _KD_LEFT_OUT.clear()
     for u in order:
         page = pages.get(u)
         if not page:
@@ -4079,10 +4083,14 @@ def scrape_karzanddolls() -> list[dict]:
                 seen_ids.add(d["id"])
                 out.append(d)
                 found += 1
+        left = _KD_LEFT_OUT.get(path, 0)
+        note = f" ({left} not chase pieces, left out)" if left else ""
         if found:
-            print(f"  [KD] {cat or 'home'} → {found}")
+            print(f"  [KD] {cat or 'home'} → {found}{note}")
         elif recs:
-            print(f"  [KD] {cat or 'home'} → 0 new ({len(recs)} already listed elsewhere)")
+            print(f"  [KD] {cat or 'home'} → 0 new ({len(recs)} already listed elsewhere){note}")
+        elif left:
+            print(f"  [KD] {cat or 'home'} → no chase pieces right now ({left} others left out)")
         else:
             print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
     ins = sum(1 for d in out if d["stock"] == "in_stock")
