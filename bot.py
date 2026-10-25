@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.3
+Hot Wheels / Diecast Collector Tracker  ·  v17.4
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -32,6 +32,17 @@ and monster-truck shelves are read now), Minifygram's badges and names. Every
 other Matchbox / Majorette / monster truck stays out, however the store spells
 it ("Monster Toy Truck", "MONST ER TRUCKS" used to slip through). Minifygram's
 "Treasure Hunt" badge now marks a Hot Wheels car whose name doesn't say so.
+v17.4: a fresh release alerts before its page catches up. 25 Oct 10:00 the
+Dino 206 GT came onto FirstCry's in-stock list for 248001 with a batch in the
+cart while its page said "Out of Stock" for 3 more minutes — buyable from your
+Profile all along (a deals channel posted it then; we waited for the page and
+alerted at 10:04, as it sold out). A car that came onto that list in the last
+10 min with 5+ units in the cart now alerts at once, saying how to buy it
+(♡ it, add it from Favourites). Your marques also count by the case
+checklist's series: the Dino 206 GT is a 2026 "Ferrari" → ❤️ FERRARI, 🎯.
+And a car coming back needs FC_MIN_ALERT_STOCK units again (2; one for 🎯
+cars), as your settings say — since v17 the cart let single units of any car
+through ("only 1 left" Track Ripper, 25 Oct).
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -331,9 +342,9 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
                   "fc_new_pending", "fc_pb", "fc_arr", "fc_off", "fc_cart",
-                  "fc_svc"):
+                  "fc_svc", "fc_lst_on", "fc_lst_seen"):
             v = d.get(k, prev.get(k, ""))
-            if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
+            if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at", "fc_lst_seen") and isinstance(v, str):
                 v = _bucket(v)
             if v:
                 entry[k] = v
@@ -536,7 +547,22 @@ FC_STALE_H = float(os.getenv("FC_STALE_H", "3"))
 
 def _fc_is_marque(name: str) -> bool:
     n = " " + re.sub(r"[^a-z0-9 ]", " ", (name or "").lower()) + " "
-    return any(k in n for k in FC_MARQUES)
+    if any(k in n for k in FC_MARQUES):
+        return True
+    # v17.4: …or its series in the case checklist is one of them — the Dino
+    # 206 GT is in the 2026 "Ferrari" series, though its name never says Ferrari
+    # (25 Oct it went out as a plain alert, 4 min after a deals channel had it)
+    s = _hw_series_text(name)
+    return bool(s) and any(k in s for k in FC_MARQUES)
+
+
+def _hw_series_text(name: str) -> str:
+    """The car's series from the case checklist (" ferrari "), or ""."""
+    info = hw_info(name) if name else None
+    ser = (info or {}).get("ser") or ""
+    if not ser or ser.upper() == "TBD":
+        return ""
+    return " " + re.sub(r"[^a-z0-9 ]", " ", ser.lower()) + " "
 
 
 # ── Hot Wheels cases, Treasure Hunts, Super Treasure Hunts (v16) ─────────────
@@ -1892,6 +1918,22 @@ FC_CART_COOLDOWN_OTHER_H = float(os.getenv("FC_CART_COOLDOWN_OTHER_H", "6"))
 # 16:20 it had 1 Armored Batmobile for 248001 while the page and your Favourites
 # said Out of Stock. A page reading counts as current for this many seconds.
 FC_CART_PAGE_S = float(os.getenv("FC_CART_PAGE_S", "90"))
+# v17.4: …except a fresh release. 25 Oct 10:00 FirstCry put the Dino 206 GT on
+# sale: its in-stock list for 248001 picked it up and the cart had a batch for
+# you, while its product page said "Out of Stock" for 3 more minutes — and it
+# could be bought all along from your Profile (Favourites / Recently viewed →
+# add to cart). A deals channel posted it then; we alerted when the page caught
+# up, 4 min later, and it sold out as you paid. So a car that came onto that
+# list in the last FC_FRESH_MIN minutes, with FC_FRESH_UNITS+ units in the cart,
+# alerts at once — with that tip — whatever its page says. (The Batmobile, 23
+# Oct, was in the cart but never on that list: the page AND your Favourites
+# said Out of Stock. Cars the cart would take while that list leaves them out —
+# up to 7 units each, probe 37 — still wait for their page.) 0 = off.
+FC_FRESH_UNITS = max(0, int(os.getenv("FC_FRESH_UNITS", "5")))
+FC_FRESH_MIN = float(os.getenv("FC_FRESH_MIN", "10"))
+# "came onto the list" = on it again after at least this many minutes off it —
+# the list drops cars for a few minutes whenever it refreshes
+FC_FRESH_GAP_MIN = float(os.getenv("FC_FRESH_GAP_MIN", "30"))
 _FC_CART_PAUSE = [0.0]      # epoch until which the cart is left alone (429/403)
 _FC_CART_DEV = {}           # this run's guest device id + fingerprint headers
 _FC_CART_STATS = {"calls": 0, "cars": 0, "fail": 0}
@@ -2305,6 +2347,19 @@ def _fc_target(pid: str, v: dict) -> bool:
         or bool(hw_priority(nm)))
 
 
+def _fc_on_list(w, p: str, v, fc_max: int) -> bool:
+    """The listing's word `w` ('list' / 'cat' / 'out') says the car is on sale
+    for 248001: on FirstCry's in-stock list — or, for a car listed in the last
+    FC_NEW_FRESH_H hours, in its catalogue with units (v16.3)."""
+    if w == "list":
+        return True
+    if w != "cat":
+        return False
+    if not v:
+        return str(p).isdigit() and int(p) > fc_max
+    return _hours_since(v.get("first_seen", "")) < FC_NEW_FRESH_H
+
+
 def _fc_poll_sets(prev_fc: dict, k: int, pass_idx: int = 0) -> list:
     """Product pages to read this pass for 🎯 cars that are out of stock: your
     hand-picked cars every pass, then one car per colour set from two
@@ -2367,6 +2422,25 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
         if (prev_fc.get(p) or {}).get("fc_off"):
             by[p]["fc_off"] = ""       # back on the in-stock list: its off-list clock stops
     slot = int(time.time() // 60)
+    # v17.4: when each car came onto FirstCry's in-stock list for 248001 (a car
+    # listed in the last few hours: its catalogue) — a fresh release's alert
+    # needn't wait for its product page (FC_FRESH_UNITS)
+    now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
+    fc_max0 = max([int(p) for p in prev_fc if p.isdigit()] or [0])
+    # (the first run that keeps these times can't tell which cars only just
+    # came on, so every car on the list then counts as "long since")
+    tracking = any(v.get("fc_lst_seen") for v in prev_fc.values())
+    for p, r in by.items():
+        if r.get("fc_carried") or not _fc_on_list(word.get(p), p, prev_fc.get(p), fc_max0):
+            continue
+        v = prev_fc.get(p) or {}
+        on, seen_at = v.get("fc_lst_on", ""), v.get("fc_lst_seen", "")
+        if not tracking:
+            on = on or "2000-01-01T00:00:00"
+        elif not seen_at or _hours_since(seen_at) * 60 >= FC_FRESH_GAP_MIN:
+            on = now_iso                   # on the list again after FC_FRESH_GAP_MIN off it (or ever)
+        r["fc_lst_on"] = on
+        r["fc_lst_seen"] = now_iso         # (kept to 15 min when saved)
 
     def claim(p):
         """What the listing says this pass: 'list' (on the in-stock list),
@@ -2720,6 +2794,10 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
     held = sorted((p for p, v in pool.items() if v.get("stock") == "in_stock"), key=int)
     tgt = sorted((p for p, v in pool.items() if v.get("stock") != "in_stock" and _fc_target(p, v)), key=int)
     rest = sorted((p for p, v in pool.items() if v.get("stock") != "in_stock" and not _fc_target(p, v)), key=int)
+    # v17.4: and every pass, the cars the cart said yes to while we hold them
+    # sold out (their page or FirstCry's list is about to catch up)
+    yes_before = [p for p, v in pool.items() if v.get("stock") != "in_stock" and v.get("fc_cart") == "y"]
+    must += [p for p in yes_before if p not in must]
     free = max(0, FC_CART_MAX - len(must))
     want = [min(len(held), free // 4), min(len(tgt), free // 2), 0]
     want[2] = min(len(rest), free - want[0] - want[1])
@@ -2751,12 +2829,30 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         return e.get("cs") if now - e.get("at_page", 0) <= FC_CART_PAGE_S else None
 
     slot = int(now // 60)
+    fc_max = max([int(p) for p in prev_fc if p.isdigit()] or [0])
+
+    def on_list(p):
+        return _fc_on_list(word.get(p), p, prev_fc.get(p), fc_max)
+
+    def batch(p, a):
+        """v17.4: on FirstCry's in-stock list for 248001 with FC_FRESH_UNITS+
+        units in the cart — buyable from your Profile even while its page says 0"""
+        return bool(FC_FRESH_UNITS and a.get("ok") and (a.get("n") or 0) >= FC_FRESH_UNITS and on_list(p))
+
+    def list_fresh(p):
+        """…and it came onto that list in the last FC_FRESH_MIN minutes"""
+        on = (recs.get(p) or {}).get("fc_lst_on") or (prev_fc.get(p) or {}).get("fc_lst_on", "")
+        return bool(on) and _hours_since(on) * 60 < FC_FRESH_MIN
+
     # (a car already known to sit in the cart with its page at 0 is re-read every
-    # FC_LIVE_RECHECK minutes, not every time the cart is asked)
+    # FC_LIVE_RECHECK minutes, not every time the cart is asked — but every
+    # time when it's a 🎯 car, on FirstCry's in-stock list, or has a batch in
+    # the cart: those are about to go on sale)
     want = [p for p, a in res.items() if a.get("ok") and page_cs(p) is None
             and (prev_fc.get(p) or {}).get("stock") != "in_stock"
             and ((prev_fc.get(p) or {}).get("fc_live") != "page 0" or (slot + int(p)) % FC_LIVE_RECHECK == 0
-                 or _fc_target(p, prev_fc.get(p) or {}))]
+                 or _fc_target(p, prev_fc.get(p) or {}) or on_list(p)
+                 or (FC_FRESH_UNITS and (a.get("n") or 0) >= FC_FRESH_UNITS))]
     # v17.2: 🎯 cars first — 23 Oct the Custom Otto sat in the cart with its page
     # at 0 for 25 min, then sold its one unit 37 s after it went on sale
     want.sort(key=lambda p: not _fc_target(p, prev_fc.get(p) or {}))
@@ -2769,7 +2865,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         todo = todo[:FC_LIVE_MAX]
         with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
             list(ex.map(fc_page, todo))
-    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = 0
+    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = n_fast = n_short = 0
     for p in must:
         if p not in res:                           # not answered: the signals' word stands, flagged
             r = recs.get(p)
@@ -2780,8 +2876,13 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         before = v.get("stock")
         cart_ok = bool(a.get("ok"))
         cs_ = page_cs(p)
+        fast = short = False
         if cart_ok and before != "in_stock":
-            if cs_ is None and prev_fc:
+            if batch(p, a) and list_fresh(p) and not (cs_ and cs_ > 0) and prev_fc:
+                # v17.4: a fresh release — on sale for you before its page says so
+                buy = fast = True
+                n_fast += 1
+            elif cs_ is None and prev_fc:
                 # the cart would take it, its page wasn't read just now: decided
                 # when it is (the listing's word doesn't stand in for it)
                 r = recs.get(p)
@@ -2790,13 +2891,25 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
                     r["stock_count"] = None
                 n_wait += 1
                 continue
-            # coming in: the page must sell it (very first run: the listing's word)
-            buy = bool(cs_ and cs_ > 0) if cs_ is not None else (recs.get(p) or {}).get("stock") == "in_stock"
+            else:
+                # coming in: the page must sell it (very first run: the listing's word)
+                buy = bool(cs_ and cs_ > 0) if cs_ is not None else (recs.get(p) or {}).get("stock") == "in_stock"
+                # v17.4: …with the units your settings ask for — FC_MIN_ALERT_STOCK
+                # (2), one for your 🎯 cars. Since v17 the cart's say let single
+                # units of any car through (25 Oct: a Track Ripper, "only 1 left").
+                n_cart = a.get("n") or 0
+                units = min(n_cart, cs_) if (n_cart and cs_) else (n_cart or cs_ or 0)
+                nm_ = (recs.get(p) or v).get("name") or a.get("name") or ""
+                if buy and prev_fc and units < _fc_min_units(p, nm_):
+                    buy, short = False, True
         elif cart_ok:
-            buy = cs_ is None or cs_ > 0        # held: out once a page reading says 0
+            # held: out once a page reading says 0 — unless FirstCry's list still
+            # has it with a batch in the cart (a fresh release whose page lags)
+            buy = cs_ is None or cs_ > 0 or batch(p, a)
         else:
             buy = False
-        n_page0 += cart_ok and not buy
+        n_page0 += cart_ok and not buy and not short
+        n_short += short
         st = "in_stock" if buy else "out_of_stock"
         cart = "y" if cart_ok else "n"
         n_yes += buy
@@ -2839,12 +2952,21 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             if price > 0:
                 r["price"] = f"₹{int(round(price))}"
                 r["mrp"] = f"₹{int(round(mrp))}" if mrp > price + 0.5 else ""
-            r["fc_pb"] = ""
+            # "cart": in on the cart's and FirstCry's list's word while its page
+            # still says 0 — the alert says how to buy it anyway
+            if fast:
+                r["fc_fast"] = True
+            if cs_ is not None:
+                r["fc_pb"] = "cart" if (fast or not cs_ or cs_ <= 0) else ""
+            else:
+                r["fc_pb"] = "cart" if (fast or v.get("fc_pb") == "cart") else ""
             n_in += before != "in_stock"
         else:
             r["stock_count"] = None
             r["fc_pb"] = ""
-            if cart_ok:
+            if short:
+                r["fc_live"] = "last unit"          # on sale, but fewer units than you asked for
+            elif cart_ok:
                 r["fc_live"] = "page 0"             # the cart has it, its page doesn't sell it (yet)
             elif r.get("fc_live") in ("ok", "page 0", None, ""):
                 r["fc_live"] = "not in cart"
@@ -2852,6 +2974,8 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
     print(f"  [FC-CART] {len(ask)} car(s) asked ({len(must)} pointed at, {len(ask) - len(must)} in turn) "
           f"in {time.time() - t0:.1f}s: {n_yes} buyable for {FC_PINCODE}; {n_in} now in, {n_out} now out"
           + (f", {n_page0} in the cart but not on sale on their page" if n_page0 else "")
+          + (f", {n_fast} fresh release(s) in ahead of their page" if n_fast else "")
+          + (f", {n_short} on sale with fewer units than you asked for" if n_short else "")
           + (f", {n_wait} waiting for their page" if n_wait else "")
           + (f", {n_fix} first answers applied quietly" if n_fix else ""))
     return out
@@ -4561,7 +4685,8 @@ _HEARTS = [
 
 
 def _heart(name: str):
-    n = " " + re.sub(r"[^a-z0-9& ]", " ", (name or "").lower()) + " "
+    # (v17.4: the checklist's series counts too — "Dino 206 GT" → ❤️ FERRARI)
+    n = " " + re.sub(r"[^a-z0-9& ]", " ", (name or "").lower()) + " " + _hw_series_text(name)
     for emoji, keys in _HEARTS:
         for k, label in keys:
             if " " + re.sub(r"[^a-z0-9& ]", " ", k) + " " in n:
@@ -4651,6 +4776,10 @@ def _line(d, extra="") -> str:
     info = f"\n{info}" if info else ""
     if d.get("fc_cart") == "y" and d.get("fc_cart_eta"):
         info += f"\n🚚 cart says: delivery by {d['fc_cart_eta']}"
+    if d.get("fc_fast"):
+        # v17.4: a fresh release ahead of its product page
+        info += ("\n📄 just released — its page may still say Out of Stock: tap ♡, then add it "
+                 "to the cart from Favourites in your Profile")
     if d.get("fc_cart_unchecked"):
         info += "\n⚠️ FirstCry's cart couldn't be checked this time — check delivery before paying"
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}{info}\n{url}"
