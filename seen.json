@@ -56,8 +56,8 @@
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -65,7 +65,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_21940394": {
     "stock": "in_stock",
@@ -2651,8 +2651,8 @@
     "last_restock_alert": "2026-10-25T05:19:07",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -2660,7 +2660,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T06:47:43",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23347147": {
     "stock": "out_of_stock",
@@ -2738,8 +2738,8 @@
     "last_restock_alert": "2026-10-25T05:28:07",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -2748,7 +2748,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T06:26:39",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23354597": {
     "stock": "out_of_stock",
@@ -3232,8 +3232,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -3241,7 +3241,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23075643": {
     "stock": "out_of_stock",
@@ -3576,8 +3576,8 @@
     "last_restock_alert": "2026-10-24T17:33:27",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -3586,7 +3586,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T05:47:06",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23074888": {
     "stock": "out_of_stock",
@@ -3772,8 +3772,8 @@
     "last_restock_alert": "2026-10-20T10:52:38",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -3781,7 +3781,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "hm_hot-wheels-boulevard-assorted-unisex-2y-multicolor-hzunl8d2kqv": {
     "stock": "in_stock",
@@ -3917,8 +3917,8 @@
     "last_restock_alert": "2026-10-25T05:28:07",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -3927,7 +3927,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T05:54:04",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23351683": {
     "stock": "out_of_stock",
@@ -4136,8 +4136,8 @@
     "last_restock_alert": "2026-10-15T04:46:53",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -4145,7 +4145,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23345761": {
     "stock": "out_of_stock",
@@ -4286,8 +4286,8 @@
     "last_restock_alert": "2026-10-15T17:42:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -4295,7 +4295,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23074890": {
     "stock": "in_stock",
@@ -4309,8 +4309,8 @@
     "last_restock_alert": "2026-10-12T07:40:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -4318,7 +4318,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23076127": {
     "stock": "out_of_stock",
@@ -4448,8 +4448,8 @@
     "last_restock_alert": "2026-10-14T18:29:29",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -4457,7 +4457,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24031998": {
     "stock": "out_of_stock",
@@ -4522,8 +4522,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -4531,7 +4531,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23973356": {
     "stock": "out_of_stock",
@@ -5203,8 +5203,8 @@
     "last_restock_alert": "2026-10-17T10:01:37",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -5212,7 +5212,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_22548065": {
     "stock": "out_of_stock",
@@ -5393,8 +5393,8 @@
     "last_restock_alert": "2026-10-05T08:25:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -5402,7 +5402,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "mg_3b21cfa5-7c16-4621-8594-53946771f11c": {
     "stock": "out_of_stock",
@@ -5581,8 +5581,8 @@
     "last_restock_alert": "2026-10-22T10:20:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -5590,7 +5590,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24236112": {
     "stock": "out_of_stock",
@@ -6150,8 +6150,8 @@
     "last_restock_alert": "2026-10-18T04:18:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -6159,7 +6159,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24247508": {
     "stock": "out_of_stock",
@@ -6246,8 +6246,8 @@
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -6256,7 +6256,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T10:05:19",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24194174": {
     "stock": "in_stock",
@@ -6271,15 +6271,15 @@
     "last_price_alert": "2026-09-22T13:08:48",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24194174",
     "fc_cart": "y",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24194173": {
     "stock": "out_of_stock",
@@ -6483,8 +6483,8 @@
     "last_restock_alert": "2026-10-18T21:52:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -6492,7 +6492,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24247516": {
     "stock": "out_of_stock",
@@ -10398,15 +10398,15 @@
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "22912945",
     "fc_cart": "y",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23700380": {
     "stock": "out_of_stock",
@@ -10498,8 +10498,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -10507,7 +10507,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_22598018": {
     "stock": "in_stock",
@@ -10521,8 +10521,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -10530,7 +10530,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_21627431": {
     "stock": "in_stock",
@@ -10620,8 +10620,8 @@
     "last_restock_alert": "2026-10-18T09:17:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "list",
@@ -10629,7 +10629,7 @@
     "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-10-25T14:15:18",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_22435130": {
     "stock": "out_of_stock",
@@ -10956,8 +10956,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-25T10:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -10965,7 +10965,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_20363367": {
     "stock": "in_stock",
@@ -10992,8 +10992,8 @@
     "last_restock_alert": "2026-10-09T10:36:50",
     "last_price_alert": "2026-10-25T10:23:23",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -11001,7 +11001,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_20052944": {
     "stock": "in_stock",
@@ -11263,15 +11263,15 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21497092",
     "fc_cart": "y",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "hm_hot-wheels-city-stunt-garage-playset-for-boys-age-4y-multi-level-garage-with-stunt-racing-action-96407467": {
     "stock": "out_of_stock",
@@ -11458,8 +11458,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -11467,7 +11467,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23074619": {
     "stock": "out_of_stock",
@@ -11756,8 +11756,8 @@
     "last_restock_alert": "2026-10-18T13:10:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -11765,7 +11765,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_16244226": {
     "stock": "in_stock",
@@ -12624,8 +12624,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T14:01:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -12633,7 +12633,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_21161061": {
     "stock": "out_of_stock",
@@ -12662,8 +12662,8 @@
     "last_restock_alert": "2026-10-11T06:04:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -12671,7 +12671,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23930659": {
     "stock": "in_stock",
@@ -12736,8 +12736,8 @@
     "last_restock_alert": "2026-10-23T04:13:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -12745,7 +12745,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24246594": {
     "stock": "out_of_stock",
@@ -12799,8 +12799,8 @@
     "last_restock_alert": "2026-10-09T17:14:45",
     "last_price_alert": "2026-09-21T17:49:05",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -12808,7 +12808,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24194169": {
     "stock": "out_of_stock",
@@ -13255,7 +13255,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -13264,8 +13264,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -13273,7 +13273,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_2232875": {
     "stock": "in_stock",
@@ -13287,8 +13287,8 @@
     "last_restock_alert": "2026-10-05T11:22:58",
     "last_price_alert": "2026-10-25T10:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -13296,7 +13296,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23206927": {
     "stock": "out_of_stock",
@@ -13351,8 +13351,8 @@
     "last_restock_alert": "2026-10-06T13:46:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -13360,7 +13360,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "mg_cfbd3caf-fa6b-437a-a751-bfcd7e01f210": {
     "stock": "out_of_stock",
@@ -13471,7 +13471,7 @@
   "fc_24476800": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Purple Passion Die Cast Toy #148/250 -Green",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-purple-passion-die-cast-toy-148-250-green/24476800/product-detail",
     "first_seen": "2026-09-16T17:44:34",
@@ -13480,8 +13480,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -13489,7 +13489,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_20886794": {
     "stock": "out_of_stock",
@@ -13524,7 +13524,7 @@
   "fc_24108016": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Red",
-    "price": "₹300",
+    "price": "₹301",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-in-1-64-scale-pack-of-2-red/24108016/product-detail",
     "first_seen": "2026-09-17T03:01:39",
@@ -13533,8 +13533,8 @@
     "last_restock_alert": "2026-10-25T07:24:41",
     "last_price_alert": "2026-09-21T15:27:01",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -13542,7 +13542,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T11:32:48",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_19995092": {
     "stock": "out_of_stock",
@@ -13641,7 +13641,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -13650,7 +13650,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473513": {
     "stock": "in_stock",
@@ -13664,7 +13664,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -13673,7 +13673,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473512": {
     "stock": "in_stock",
@@ -13688,7 +13688,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -13698,7 +13698,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T06:26:39",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473515": {
     "stock": "in_stock",
@@ -13712,7 +13712,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -13721,7 +13721,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24453129": {
     "stock": "out_of_stock",
@@ -13930,8 +13930,8 @@
     "last_restock_alert": "2026-09-21T06:46:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -13939,7 +13939,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23345503": {
     "stock": "out_of_stock",
@@ -13969,19 +13969,19 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels-by-mattel/hot-wheels-diecast-toy-car-trophy-case-free-wheel-model-with-smooth-rolling-wheels-pack-of-5-multicolor/24453327/product-detail",
     "first_seen": "2026-09-17T08:31:27",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-25T13:33:14",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-21T06:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24314518",
     "fc_phantom": "2026-10-23T13:18:17",
-    "fc_off": "2026-10-25T18:33:23",
+    "fc_off": "2026-10-25T18:45:33",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14032,7 +14032,7 @@
   "fc_24248198": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Toy Car with Click Shift Feature (178/250) - Silver Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-with-click-shift-feature-178-250-silver-orange/24248198/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14041,8 +14041,8 @@
     "last_restock_alert": "2026-10-18T08:12:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14050,7 +14050,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24349392": {
     "stock": "out_of_stock",
@@ -14106,8 +14106,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -14115,7 +14115,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24342684": {
     "stock": "in_stock",
@@ -14129,8 +14129,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -14138,7 +14138,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24342667": {
     "stock": "in_stock",
@@ -14152,8 +14152,8 @@
     "last_restock_alert": "2026-10-24T02:44:14",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14161,7 +14161,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_22277227": {
     "stock": "in_stock",
@@ -14188,8 +14188,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-25T10:21:22",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14197,7 +14197,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "_meta": {
     "fc_offset": 0,
@@ -14207,7 +14207,7 @@
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14216,8 +14216,8 @@
     "last_restock_alert": "2026-10-08T16:22:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14225,7 +14225,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_21993932": {
     "stock": "in_stock",
@@ -14243,7 +14243,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14252,8 +14252,8 @@
     "last_restock_alert": "2026-10-08T16:22:57",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14261,7 +14261,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_21993931": {
     "stock": "in_stock",
@@ -14288,17 +14288,17 @@
     "last_restock_alert": "2026-10-21T22:39:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24390960",
     "fc_phantom": "2026-10-21T22:56:47",
     "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-10-25T18:18:12",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_21181132": {
     "stock": "out_of_stock",
@@ -14321,7 +14321,7 @@
   "fc_24473388": {
     "stock": "in_stock",
     "name": "Hot Wheels Hoto Roto Die Cast Free Wheel Toy Car - Golden",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hoto-roto-die-cast-free-wheel-toy-car-golden/24473388/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14330,8 +14330,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14339,7 +14339,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24475217": {
     "stock": "in_stock",
@@ -14353,8 +14353,8 @@
     "last_restock_alert": "2026-10-13T19:36:47",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14362,12 +14362,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14376,8 +14376,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14385,7 +14385,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24475139": {
     "stock": "in_stock",
@@ -14399,8 +14399,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14408,7 +14408,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24342825": {
     "stock": "out_of_stock",
@@ -14457,8 +14457,8 @@
     "last_restock_alert": "2026-10-18T12:10:05",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14466,7 +14466,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24503333": {
     "stock": "out_of_stock",
@@ -14499,7 +14499,7 @@
     "last_restock_alert": "2026-10-24T11:01:03",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -14508,12 +14508,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T10:12:38",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23811697": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Free Wheel Toy Car With Mad Drip Sweet Rides (197/250) - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-toy-car-with-mad-drip-sweet-rides-197-250-pink/23811697/product-detail",
     "first_seen": "2026-09-17T11:21:23",
@@ -14522,8 +14522,8 @@
     "last_restock_alert": "2026-10-07T11:07:41",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -14531,7 +14531,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24342822": {
     "stock": "out_of_stock",
@@ -14673,7 +14673,7 @@
     "last_restock_alert": "2026-10-18T09:08:02",
     "last_price_alert": "2026-09-21T15:44:46",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "last unit",
@@ -14682,7 +14682,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T11:23:49",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_22601081": {
     "stock": "out_of_stock",
@@ -14709,7 +14709,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -14718,8 +14718,8 @@
     "last_restock_alert": "2026-10-09T16:58:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14727,7 +14727,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "mg_fdca91f7-dfa5-4e2d-ae69-a65b0140adc1": {
     "stock": "out_of_stock",
@@ -14789,7 +14789,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -14798,8 +14798,8 @@
     "last_restock_alert": "2026-10-17T18:34:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -14807,7 +14807,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24503750": {
     "stock": "out_of_stock",
@@ -14816,15 +14816,15 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-33-ford-lo-boy-die-cast-free-wheel-toy-car-white/24503750/product-detail",
     "first_seen": "2026-09-17T21:56:03",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-23T11:35:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-23T11:48:44",
@@ -14843,7 +14843,7 @@
     "last_restock_alert": "2026-10-24T14:22:20",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -14852,12 +14852,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473028": {
     "stock": "in_stock",
     "name": "Hot wheels EI Segundo Rallye Die cast Car (145/250) - Yellow",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ei-segundo-rallye-die-cast-car-145-250-yellow/24473028/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -14866,8 +14866,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14875,7 +14875,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24247514": {
     "stock": "out_of_stock",
@@ -14902,7 +14902,7 @@
   "fc_24473476": {
     "stock": "in_stock",
     "name": "Hot Wheels Bone Shaker Die Cast Free Wheel Toy Car - Dark Yellow",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bone-shaker-die-cast-free-wheel-toy-car-dark-yellow/24473476/product-detail",
     "first_seen": "2026-09-18T03:56:00",
@@ -14911,8 +14911,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14920,7 +14920,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24475499": {
     "stock": "in_stock",
@@ -14934,8 +14934,8 @@
     "last_restock_alert": "2026-10-16T21:44:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14943,12 +14943,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473494": {
     "stock": "in_stock",
     "name": "Hot Wheels Slide-Burn Die-Cast Toy Car - Teal Blue",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-slide-burn-die-cast-toy-car-teal-blue/24473494/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -14957,8 +14957,8 @@
     "last_restock_alert": "2026-10-09T17:14:45",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14966,7 +14966,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24476257": {
     "stock": "in_stock",
@@ -14980,8 +14980,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -14989,12 +14989,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15003,8 +15003,8 @@
     "last_restock_alert": "2026-10-18T09:32:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15012,7 +15012,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24342829": {
     "stock": "out_of_stock",
@@ -15139,16 +15139,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bmw-m3-wagon-die-cast-free-wheel-toy-car-blue-and-gold/24514773/product-detail",
     "first_seen": "2026-09-18T13:41:32",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-06T11:46:54",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24514773",
     "fc_cart": "n",
@@ -15328,7 +15328,7 @@
   "fc_24473477": {
     "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -15337,8 +15337,8 @@
     "last_restock_alert": "2026-10-24T19:40:01",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15347,7 +15347,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473499": {
     "stock": "out_of_stock",
@@ -15431,8 +15431,8 @@
     "last_restock_alert": "2026-09-30T15:31:50",
     "last_price_alert": "2026-10-03T01:42:52",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15440,7 +15440,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24525301": {
     "stock": "in_stock",
@@ -15454,8 +15454,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:21:37",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15463,7 +15463,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24525300": {
     "stock": "in_stock",
@@ -15477,8 +15477,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-09-21T15:21:37",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15486,7 +15486,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24504534": {
     "stock": "out_of_stock",
@@ -15521,8 +15521,8 @@
     "last_restock_alert": "2026-09-21T06:51:23",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15530,7 +15530,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24323023": {
     "stock": "out_of_stock",
@@ -15567,8 +15567,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -15576,7 +15576,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473264": {
     "stock": "out_of_stock",
@@ -15639,16 +15639,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-toyota-land-cruiser-80-die-cast-free-wheel-toy-car-blue-and-gold/24514774/product-detail",
     "first_seen": "2026-09-19T10:57:04",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-03T12:04:48",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24514773",
     "fc_cart": "n",
@@ -15877,7 +15877,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -15886,8 +15886,8 @@
     "last_restock_alert": "2026-10-24T04:15:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15895,7 +15895,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24475737": {
     "stock": "in_stock",
@@ -15909,8 +15909,8 @@
     "last_restock_alert": "2026-10-24T17:14:15",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15919,7 +15919,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24472665": {
     "stock": "out_of_stock",
@@ -15948,7 +15948,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -15957,8 +15957,8 @@
     "last_restock_alert": "2026-10-24T04:59:16",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -15967,7 +15967,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24476167": {
     "stock": "out_of_stock",
@@ -16050,8 +16050,8 @@
     "last_restock_alert": "2026-10-24T23:04:15",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -16060,7 +16060,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473509": {
     "stock": "in_stock",
@@ -16074,8 +16074,8 @@
     "last_restock_alert": "2026-10-23T10:41:09",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -16084,7 +16084,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473474": {
     "stock": "out_of_stock",
@@ -16180,7 +16180,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -16189,8 +16189,8 @@
     "last_restock_alert": "2026-10-23T10:38:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -16198,7 +16198,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24473475": {
     "stock": "out_of_stock",
@@ -16322,15 +16322,15 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-el-segundo-coupe-die-cast-free-wheel-toy-car-green/24503747/product-detail",
     "first_seen": "2026-09-20T08:51:11",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-24T13:46:44",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-24T13:48:57",
@@ -16344,15 +16344,15 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-62-chevy-pickup-die-cast-free-wheel-toy-car-black-red/24503821/product-detail",
     "first_seen": "2026-09-20T08:51:11",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-23T10:14:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-23T11:15:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-23T10:38:04",
@@ -16545,8 +16545,8 @@
     "last_restock_alert": "2026-10-19T13:35:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -16554,7 +16554,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24514775": {
     "stock": "out_of_stock",
@@ -16675,8 +16675,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -16684,7 +16684,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23835985": {
     "stock": "in_stock",
@@ -16763,7 +16763,7 @@
     "last_restock_alert": "2026-10-18T09:22:59",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -16772,7 +16772,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24514786": {
     "stock": "in_stock",
@@ -16786,7 +16786,7 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T14:01:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -16795,7 +16795,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24503307": {
     "stock": "out_of_stock",
@@ -16851,8 +16851,8 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -16860,7 +16860,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24514780": {
     "stock": "in_stock",
@@ -16874,7 +16874,7 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T14:01:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -16883,7 +16883,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24514781": {
     "stock": "in_stock",
@@ -16897,7 +16897,7 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -16906,7 +16906,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24514782": {
     "stock": "in_stock",
@@ -16920,7 +16920,7 @@
     "last_restock_alert": "",
     "last_price_alert": "2026-10-06T13:46:45",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -16929,7 +16929,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_591683": {
     "stock": "out_of_stock",
@@ -17587,8 +17587,8 @@
     "last_restock_alert": "2026-10-20T21:50:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -17596,7 +17596,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_23973353": {
     "stock": "out_of_stock",
@@ -17785,8 +17785,8 @@
     "last_restock_alert": "2026-10-17T08:28:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -17794,7 +17794,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24032130": {
     "stock": "out_of_stock",
@@ -17902,8 +17902,8 @@
     "last_restock_alert": "2026-10-15T12:22:46",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -17911,7 +17911,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24390955": {
     "stock": "out_of_stock",
@@ -18317,15 +18317,15 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-the-dark-knight-batmobile-die-cast-free-wheel-toy-car-black/24503746/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-24T18:13:16",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-24T18:15:04",
@@ -18473,7 +18473,7 @@
     "last_restock_alert": "2026-09-21T16:28:50",
     "last_price_alert": "2026-10-06T14:01:51",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "last unit",
@@ -18696,15 +18696,15 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ford-model-a-custom-31-die-cast-free-wheel-toy-car-light-blue/24503904/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_cart": "n",
@@ -18717,15 +18717,15 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-volvo-240-drift-wagon-die-cast-free-wheel-toy-car-yellow/24503897/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-24T18:02:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-24T18:14:12",
@@ -18739,16 +18739,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-bugatti-bolide-die-cast-free-wheel-toy-car-white-red/24503819/product-detail",
     "first_seen": "2026-09-21T06:42:53",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-15T09:28:43",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_cart": "n",
@@ -18829,8 +18829,8 @@
     "last_restock_alert": "2026-10-21T20:24:50",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "out",
@@ -18930,16 +18930,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-maxima-drift-car-die-cast-free-wheel-toy-car-black/24503901/product-detail",
     "first_seen": "2026-09-21T16:25:21",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-24T19:50:58",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:15:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-24T19:54:55",
@@ -20922,8 +20922,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -20931,7 +20931,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_22623490": {
     "stock": "out_of_stock",
@@ -21363,7 +21363,7 @@
   "fc_24761909": {
     "stock": "in_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-die-cast-free-wheel-toy-car-blue-and-black/24761909/product-detail",
     "first_seen": "2026-10-13T13:30:00",
@@ -21372,8 +21372,8 @@
     "last_restock_alert": "2026-10-24T20:22:16",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -21382,7 +21382,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24768903": {
     "stock": "out_of_stock",
@@ -21409,7 +21409,7 @@
   "fc_24768902": {
     "stock": "in_stock",
     "name": "Hot Wheels Deora Tooned Die Cast Free Wheel Toy Car - Maroon",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-deora-tooned-die-cast-free-wheel-toy-car-maroon/24768902/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21418,8 +21418,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -21427,7 +21427,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24768896": {
     "stock": "out_of_stock",
@@ -21436,16 +21436,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mazda-rx-7-die-cast-free-wheel-toy-car-beige/24768896/product-detail",
     "first_seen": "2026-10-13T13:45:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_cart": "n",
@@ -21458,16 +21458,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-71-lamborghini-miura-sv-die-cast-free-wheel-toy-car-purple/24768895/product-detail",
     "first_seen": "2026-10-13T13:45:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-22T09:24:04",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_phantom": "2026-10-22T09:24:35",
@@ -21477,7 +21477,7 @@
   "fc_24762190": {
     "stock": "in_stock",
     "name": "Hot Wheels Mailed It Die Cast Free Wheel Toy Car - Silver",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mailed-it-die-cast-free-wheel-toy-car-silver/24762190/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21486,8 +21486,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -21495,12 +21495,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24762188": {
     "stock": "in_stock",
     "name": "Hot Wheels Gone Mad Die Cast Free Wheel Toy Car - Green",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-gone-mad-die-cast-free-wheel-toy-car-green/24762188/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21509,8 +21509,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -21518,12 +21518,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24762186": {
     "stock": "in_stock",
     "name": "Hot Wheels Mid Mill Die Cast Free Wheel Toy Car - Black & Orange",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mid-mill-die-cast-free-wheel-toy-car-black-and-orange/24762186/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21532,8 +21532,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -21541,12 +21541,12 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21555,8 +21555,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -21564,7 +21564,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24761907": {
     "stock": "out_of_stock",
@@ -21573,20 +21573,20 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-24T04:42:17",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-25T17:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-10-24T04:45:57",
     "fc_cart": "n",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_24762155": {
     "stock": "out_of_stock",
@@ -21941,7 +21941,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -21950,7 +21950,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24776096": {
     "stock": "out_of_stock",
@@ -22055,8 +22055,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -22064,7 +22064,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24775936": {
     "stock": "out_of_stock",
@@ -22073,16 +22073,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-mclaren-w1-74-250-green/24775936/product-detail",
     "first_seen": "2026-10-16T16:30:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-25T04:19:34",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-10-25T04:20:17",
@@ -22096,16 +22096,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-audi-r8-spyder-130-250-toy-car-silver/24776075/product-detail",
     "first_seen": "2026-10-16T16:30:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-25T13:55:12",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-10-25T13:55:23",
@@ -22143,16 +22143,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-nissan-skyline-ht-2000gt-x-244-250-toy-car-black/24776061/product-detail",
     "first_seen": "2026-10-16T16:30:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-21T08:50:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_cart": "n",
@@ -22306,16 +22306,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-dino-206-gt-150-250-die-cast-toy-car-yellow/24776065/product-detail",
     "first_seen": "2026-10-17T17:15:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-25T04:34:13",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T14:00:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24775936",
     "fc_phantom": "2026-10-25T04:49:38",
@@ -22331,16 +22331,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-89-mazda-savanna-rx-7-fc3s-112-250-toy-car-green/24776024/product-detail",
     "first_seen": "2026-10-17T17:15:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-21T10:33:55",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-10-21T10:34:43",
@@ -22361,7 +22361,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -22370,7 +22370,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24776079": {
     "stock": "in_stock",
@@ -22384,7 +22384,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -22393,7 +22393,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24776078": {
     "stock": "in_stock",
@@ -22407,7 +22407,7 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -22416,7 +22416,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24776077": {
     "stock": "in_stock",
@@ -22431,8 +22431,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -22441,7 +22441,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24776076": {
     "stock": "in_stock",
@@ -22455,8 +22455,8 @@
     "last_restock_alert": "2026-10-24T21:25:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -22465,7 +22465,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24776070": {
     "stock": "in_stock",
@@ -22479,8 +22479,8 @@
     "last_restock_alert": "2026-10-24T04:44:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -22488,7 +22488,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "mg_9dc55db8-837e-4280-b1d8-5fc5810cc8ec": {
     "stock": "out_of_stock",
@@ -22862,16 +22862,16 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mercedes-amg-petronas-formula-1-team-toy-car-die-cast-model-59-250-black/21965848/product-detail",
     "first_seen": "2026-10-19T07:30:00",
-    "last_seen": "2026-10-25T18:30:00",
+    "last_seen": "2026-10-25T18:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "21965848",
     "fc_cart": "n",
@@ -23216,8 +23216,8 @@
     "last_restock_alert": "2026-10-21T02:15:52",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "list",
@@ -23225,7 +23225,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24783698": {
     "stock": "in_stock",
@@ -23239,7 +23239,7 @@
     "last_restock_alert": "2026-10-21T15:31:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -23248,7 +23248,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24783697": {
     "stock": "in_stock",
@@ -23262,7 +23262,7 @@
     "last_restock_alert": "2026-10-21T15:31:25",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -23271,7 +23271,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24783758": {
     "stock": "in_stock",
@@ -23285,7 +23285,7 @@
     "last_restock_alert": "2026-10-21T15:31:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
     "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
@@ -23294,7 +23294,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "fc_24783761": {
     "stock": "out_of_stock",
@@ -23444,8 +23444,8 @@
     "last_restock_alert": "",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-10-25T18:30:00",
-    "fc_api_seen_at": "2026-10-25T18:30:00",
+    "fc_listed_at": "2026-10-25T18:45:00",
+    "fc_api_seen_at": "2026-10-25T18:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -23453,7 +23453,7 @@
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2000-01-01T00:00:00",
-    "fc_lst_seen": "2026-10-25T18:30:00"
+    "fc_lst_seen": "2026-10-25T18:45:00"
   },
   "mg_0eabde61-2497-4eb4-8b87-9e576eb66abb": {
     "stock": "out_of_stock",
