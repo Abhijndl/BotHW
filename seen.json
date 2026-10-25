@@ -13364,7 +13364,7 @@
   "fc_24476800": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Purple Passion Die Cast Toy #148/250 -Green",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-purple-passion-die-cast-toy-148-250-green/24476800/product-detail",
     "first_seen": "2026-09-16T17:44:34",
@@ -13415,7 +13415,7 @@
   "fc_24108016": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Red",
-    "price": "₹300",
+    "price": "₹301",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-in-1-64-scale-pack-of-2-red/24108016/product-detail",
     "first_seen": "2026-09-17T03:01:39",
@@ -13850,7 +13850,7 @@
     "fc_lst": "out",
     "fc_gid": "24314518",
     "fc_phantom": "2026-10-23T13:18:17",
-    "fc_off": "2026-10-24T23:54:18",
+    "fc_off": "2026-10-25T00:06:24",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14100,7 +14100,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14791,7 +14791,7 @@
   "fc_24476257": {
     "stock": "in_stock",
     "name": "Hot Wheels Morgan Super 3 Die Cast Car #138/250- Light Yellow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-morgan-super-3-die-cast-car-138-250-light-yellow/24476257/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15672,7 +15672,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -15737,7 +15737,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -15842,6 +15842,7 @@
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-10-24T23:06:53",
+    "fc_off": "2026-10-25T00:05:51",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -15959,7 +15960,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -17816,7 +17817,7 @@
     "fc_listed_at": "2026-10-24T19:00:00",
     "fc_api_seen_at": "2026-10-25T00:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24390971",
     "fc_cart": "n",
@@ -18015,7 +18016,7 @@
   "fc_24476798": {
     "stock": "in_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -metallic Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-metallic-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -18201,7 +18202,7 @@
     "fc_listed_at": "2026-10-25T00:00:00",
     "fc_api_seen_at": "2026-10-25T00:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503322",
     "fc_cart": "n",
@@ -22024,9 +22025,10 @@
     "fc_listed_at": "2026-10-25T00:00:00",
     "fc_api_seen_at": "2026-10-25T00:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24775936",
+    "fc_arr": "2026-10-25T00:05:51",
     "fc_cart": "y",
     "fc_svc": "1"
   },
