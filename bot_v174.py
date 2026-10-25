@@ -342,9 +342,9 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
                   "fc_new_pending", "fc_pb", "fc_arr", "fc_off", "fc_cart",
-                  "fc_svc", "fc_lst_on"):
+                  "fc_svc", "fc_lst_on", "fc_lst_seen"):
             v = d.get(k, prev.get(k, ""))
-            if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at") and isinstance(v, str):
+            if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at", "fc_lst_seen") and isinstance(v, str):
                 v = _bucket(v)
             if v:
                 entry[k] = v
@@ -1931,6 +1931,9 @@ FC_CART_PAGE_S = float(os.getenv("FC_CART_PAGE_S", "90"))
 # up to 7 units each, probe 37 — still wait for their page.) 0 = off.
 FC_FRESH_UNITS = max(0, int(os.getenv("FC_FRESH_UNITS", "5")))
 FC_FRESH_MIN = float(os.getenv("FC_FRESH_MIN", "10"))
+# "came onto the list" = on it again after at least this many minutes off it —
+# the list drops cars for a few minutes whenever it refreshes
+FC_FRESH_GAP_MIN = float(os.getenv("FC_FRESH_GAP_MIN", "30"))
 _FC_CART_PAUSE = [0.0]      # epoch until which the cart is left alone (429/403)
 _FC_CART_DEV = {}           # this run's guest device id + fingerprint headers
 _FC_CART_STATS = {"calls": 0, "cars": 0, "fail": 0}
@@ -2425,19 +2428,19 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
     now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
     fc_max0 = max([int(p) for p in prev_fc if p.isdigit()] or [0])
     # (the first run that keeps these times can't tell which cars only just
-    # came on, so it records every car on the list as "long since")
-    tracking = any(v.get("fc_lst_on") for v in prev_fc.values())
+    # came on, so every car on the list then counts as "long since")
+    tracking = any(v.get("fc_lst_seen") for v in prev_fc.values())
     for p, r in by.items():
         if r.get("fc_carried") or not _fc_on_list(word.get(p), p, prev_fc.get(p), fc_max0):
             continue
         v = prev_fc.get(p) or {}
-        on = v.get("fc_lst_on", "")
-        if (not _fc_on_list(v.get("fc_lst"), p, v, fc_max0)
-                and (not on or _hours_since(on) * 60 >= FC_FRESH_MIN)):
-            on = now_iso                   # wasn't on it at the last reading: just came on
-        if not tracking and prev_fc:
-            on = "2000-01-01T00:00:00"
+        on, seen_at = v.get("fc_lst_on", ""), v.get("fc_lst_seen", "")
+        if not tracking:
+            on = on or "2000-01-01T00:00:00"
+        elif not seen_at or _hours_since(seen_at) * 60 >= FC_FRESH_GAP_MIN:
+            on = now_iso                   # on the list again after FC_FRESH_GAP_MIN off it (or ever)
         r["fc_lst_on"] = on
+        r["fc_lst_seen"] = now_iso         # (kept to 15 min when saved)
 
     def claim(p):
         """What the listing says this pass: 'list' (on the in-stock list),

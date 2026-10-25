@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Probe #39: final dry run of v17.4 (bot_v174.py; + deploy guard, 2-unit minimum) — fresh releases alert before
+"""Probe #40: final dry run of v17.4 (bot_v174.py; list-gap onsets, deploy guard, 2-unit minimum) — fresh releases alert before
 their page catches up; marques by the case checklist's series — against live
 FirstCry, no Telegram (alerts printed, not sent), on a COPY of the current
 seen.json, with the monitor's settings. Four runs back to back."""
@@ -54,7 +54,7 @@ for n in range(1, 5):
     print(f"\nrun {n}: {time.time() - t0:.0f}s, {len(sent)} message(s) so far, {len(flips)} stock change(s)")
     for f in flips[:30]:
         print("   ", f)
-    on = [(k, v.get("fc_lst_on"), v.get("stock"), v.get("fc_cart"), v.get("name", "")[:45]) for k, v in after.items()
+    on = [(k, v.get("fc_lst_on"), v.get("fc_lst_seen"), v.get("stock"), v.get("fc_cart"), v.get("name", "")[:45]) for k, v in after.items()
           if v.get("fc_lst_on")]
     print(f"   cars with a list onset stored: {len(on)}; latest: {sorted(on, key=lambda x: x[1])[-5:]}")
     print("   cart stats:", bot._FC_CART_STATS, "| live stats:", bot._FC_LIVE_STATS)
