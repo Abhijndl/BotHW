@@ -1,255 +1,57 @@
-seen.json copied: 879408 bytes
-version: Hot Wheels / Diecast Collector Tracker  ·  v17.3
+10 cars the cart said yes to while held sold out; 151 held in stock
+  [FC-API] quick sweep: 193 in stock from 12 page(s) in 2.2s — plain request
 
-================ RUN 1 ================
-  [MG] 1 products had no SKU row — used product_type fallback
-[*] Minifygram total: 273 of 282 (42 in stock; 1 trading cards, 64 pre-orders)
-[=] Minifygram: no alert-worthy changes (0 minor)
-  [HM] listing → 12 visible products
-  [HM] creds: token=yes app_id=605884f889251331fe847d80
-  [FC-API] quick sweep: 196 in stock from 12 page(s) in 2.9s — fresh ✓ (searchrank, 12 page(s) computed live)
-[HW] case table: 1284 cars (52 cases)
-  [HM] api → HTTP 401
-  [HM] api → HTTP 401
-  [KD] chase-car → 0 (empty right now)
-  [KD] mainlines → 5
-  [KD] pop-culture → 4
-  [KD] card-art-premiums → 8
-  [KD] gift-pack → 24
-  [KD] car-culture → 0 new (1 already listed elsewhere)
-  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
-  [KD] boulevard-series → 0 (empty right now)
-  [KD] team-transport → 5
-  [KD] character-cars → 8
-  [KD] disney-cars → 0 (empty right now)
-  [KD] hot-wheels-accessories → 8
-  [KD] mini-gt → 107
-  [KD] mini-gt-blister-pack → 136
-  [KD] kaido-house → 18
-  [KD] pre-order-minigt → 58
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-  [KD] home → 0 new (15 already listed elsewhere)
-  [KD] monster-trucks → 0 (empty right now)
-  [KD] matchbox-basic-cars → 0 (empty right now)
-  [KD] matchbox-moving-parts → 0 (empty right now)
-  [KD] matchbox-superfast → 0 (empty right now)
-  [KD] premium-cars → 0 (empty right now)
-  [KD] basic-cars → 0 (empty right now)
-  [KD] majorette → 0 (empty right now)
-[*] Karz&Dolls total: 381 (381 in stock)
-[=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [HM] api → HTTP 401
-  [HM] Fynd API returned nothing — falling back to page checks
-  [HM] sitemap → 29 hot-wheels product slugs
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 1.9s: 36 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page
-  [FC-LIVE] 5 to confirm, 4 🎯 set(s) read, 0 audited → 68 car(s) seen live in 5.0s; 0 now orderable, 0 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
-  [HM] page-checked 12 products (0 in stock / 12 sold out)
-[*] Hamleys total: 64 (32 in stock)
-[=] Hamleys: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry, Minifygram, Hamleys, Karz&Dolls → 835 products in 8.4s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 2.0s: 36 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 33 car(s) seen live in 3.7s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 117 products in 4.6s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (5 pointed at, 145 in turn) in 1.1s: 38 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 5 to confirm, 4 🎯 set(s) read, 0 audited → 67 car(s) seen live in 3.9s; 0 now orderable, 2 not any more
-[*] pass 3: FirstCry → 124 products in 5.2s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.4s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 5 to confirm, 4 🎯 set(s) read, 0 audited → 49 car(s) seen live in 3.0s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 120 products in 4.3s (live: FirstCry)
+== look 1 (04:48:16 UTC, 6s): 193 on the in-stock list
+   cart True  n=7    page=0    list=no  (None) Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver
+   cart True  n=4    page=0    list=no  (None) Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy 
+   cart True  n=3    page=0    list=no  (None) Hot Wheels Armored Batmobile Die-Cast Toy Car - Black
+   cart True  n=2    page=0    list=no  (None) Hot Wheels 20 Dodge Charger Hellcat (134/250) Toy Car - Or
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 24/250 Track Ripper Die Cast Free Wheel Toy Car
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car - 
+   cart True  n=1    page=0    list=no  (None) Hot Wheels Datsun 240Z Die cast car 72/250 - Green
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - 
+   cart False n=0    page=0    list=no  (None) Hot Wheels 170/250 64 Lincoln Continental Die Cat Free Whe
+   cart False n=0    page=0    list=yes (1   ) Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - 
+   held in stock & cart ok: 140 cars, cart units median 144, min 1, ≤2 units: 7
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 0.9s — plain request (cached; data up to 59s old)
 
-[*] run finished: 4 pass(es) in 40s (0s:Fi+Mi+Ha+Ka=8s, 12s:Fi=5s, 24s:Fi=5s, 36s:Fi=4s)
+== look 2 (04:49:13 UTC, 3s): 193 on the in-stock list
+   cart True  n=4    page=0    list=no  (None) Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy 
+   cart True  n=3    page=0    list=no  (None) Hot Wheels Armored Batmobile Die-Cast Toy Car - Black
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 24/250 Track Ripper Die Cast Free Wheel Toy Car
+   cart True  n=1    page=0    list=no  (None) Hot Wheels Datsun 240Z Die cast car 72/250 - Green
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - 
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 20 Dodge Charger Hellcat (134/250) Toy Car - Or
+   cart False n=0    page=0    list=no  (None) Hot Wheels 170/250 64 Lincoln Continental Die Cat Free Whe
+   cart False n=0    page=0    list=no  (None) Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car - 
+   cart False n=0    page=0    list=yes (1   ) Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - 
+   cart False n=0    page=0    list=no  (None) Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver
+   held in stock & cart ok: 140 cars, cart units median 144, min 1, ≤2 units: 7
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — plain request (cached; data up to 119s old)
 
-run 1: 40s, 0 message(s) so far, 0 stock change(s), 0 new, 2 renamed
-   name ('mg_e123aadb-d3c1-4d7e-9236-49093c722b6f', '2016 Ford GT Race', '2016 Ford GT Race [TREASURE HUNT]')
-   name ('mg_c4559baf-210b-4d56-a933-ea8bec4c040e', '2 Jet Z', '2 Jet Z [TREASURE HUNT]')
-   by source: {'firstcry': 595, 'minifygram': 276, 'hamleys': 63, 'bigbasket': 2, 'karzdolls': 548, 'blinkit': 1}
-   cart stats: {'calls': 8, 'cars': 600, 'fail': 0} | live stats: {'pages': 23, 'tat': 48}
+== look 3 (04:50:15 UTC, 5s): 193 on the in-stock list
+   cart True  n=4    page=0    list=no  (None) Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy 
+   cart True  n=3    page=0    list=no  (None) Hot Wheels Armored Batmobile Die-Cast Toy Car - Black
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 24/250 Track Ripper Die Cast Free Wheel Toy Car
+   cart True  n=1    page=0    list=no  (None) Hot Wheels Datsun 240Z Die cast car 72/250 - Green
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - 
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 20 Dodge Charger Hellcat (134/250) Toy Car - Or
+   cart False n=0    page=0    list=no  (None) Hot Wheels 170/250 64 Lincoln Continental Die Cat Free Whe
+   cart False n=0    page=0    list=no  (None) Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car - 
+   cart False n=0    page=0    list=yes (1   ) Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - 
+   cart False n=0    page=0    list=no  (None) Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver
+   held in stock & cart ok: 139 cars, cart units median 144, min 1, ≤2 units: 6
+  [FC-API] quick sweep: 193 in stock from 10 page(s) in 0.9s — plain request (cached; data up to 179s old)
 
-================ RUN 2 ================
-  [HM] listing → 12 visible products
-  [MG] 1 products had no SKU row — used product_type fallback
-[*] Minifygram total: 273 of 282 (42 in stock; 1 trading cards, 64 pre-orders)
-[=] Minifygram: no alert-worthy changes (0 minor)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [HM] api → HTTP 401
-  [FC-API] stock for pincode: 248001
-  [HM] api → HTTP 401
-  [HM] api → HTTP 401
-  [HM] Fynd API returned nothing — falling back to page checks
-  [HM] sitemap → 29 hot-wheels product slugs
-  [FC-API] 399 products across 20 page(s) (203 with zero stock) in 2.2s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 395, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels The Dark Knight Batmobile Die Cast Fr | stock=out_of_stock count=1 price=164 mrp=179
-  [HM] page-checked 12 products (0 in stock / 12 sold out)
-[*] Hamleys total: 64 (32 in stock)
-[=] Hamleys: no alert-worthy changes (0 minor)
-  [KD] chase-car → 0 (empty right now)
-  [KD] mainlines → 5
-  [KD] pop-culture → 4
-  [KD] card-art-premiums → 8
-  [KD] gift-pack → 24
-  [KD] car-culture → 0 new (1 already listed elsewhere)
-  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
-  [KD] boulevard-series → 0 (empty right now)
-  [KD] team-transport → 5
-  [KD] character-cars → 8
-  [KD] disney-cars → 0 (empty right now)
-  [KD] hot-wheels-accessories → 8
-  [KD] mini-gt → 107
-  [KD] mini-gt-blister-pack → 136
-  [KD] kaido-house → 18
-  [KD] pre-order-minigt → 58
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-  [KD] home → 0 new (15 already listed elsewhere)
-  [KD] monster-trucks → 0 (empty right now)
-  [KD] matchbox-basic-cars → 0 (empty right now)
-  [KD] matchbox-moving-parts → 0 (empty right now)
-  [KD] matchbox-superfast → 0 (empty right now)
-  [KD] premium-cars → 0 (empty right now)
-  [KD] basic-cars → 0 (empty right now)
-  [KD] majorette → 0 (empty right now)
-[*] Karz&Dolls total: 381 (381 in stock)
-[=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 36 buyable for 248001; 0 now in, 1 now out, 1 in the cart but not on sale on their page
-  [FC-LIVE] 5 to confirm, 4 🎯 set(s) read, 0 audited → 49 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
-[*] FirstCry total (API): 554 tracked, 115 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry, Minifygram, Hamleys, Karz&Dolls → 1272 products in 7.1s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (2 pointed at, 148 in turn) in 1.1s: 37 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 5 to confirm, 4 🎯 set(s) read, 0 audited → 49 car(s) seen live in 2.9s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 119 products in 4.5s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.4s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 1.0s: 36 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 29 car(s) seen live in 3.1s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 126 products in 4.6s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.8s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 2.0s: 36 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 74 car(s) seen live in 4.7s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 118 products in 6.5s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 43s (0s:Fi+Mi+Ha+Ka=7s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=7s)
-
-run 2: 43s, 0 message(s) so far, 1 stock change(s), 0 new, 0 renamed
-   flip ('fc_24247507', 'in_stock', 'out_of_stock', 'Hot Wheels Die Cast Toy Car (4/250) BATMOBILE Free Wheel Des')
-   by source: {'firstcry': 595, 'minifygram': 276, 'hamleys': 63, 'bigbasket': 2, 'karzdolls': 548, 'blinkit': 1}
-   cart stats: {'calls': 16, 'cars': 1200, 'fail': 0} | live stats: {'pages': 44, 'tat': 89}
-
-================ RUN 3 ================
-  [HM] listing → 12 visible products
-  [HM] api → HTTP 401
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [MG] 1 products had no SKU row — used product_type fallback
-[*] Minifygram total: 273 of 282 (42 in stock; 1 trading cards, 64 pre-orders)
-[=] Minifygram: no alert-worthy changes (0 minor)
-  [HM] api → HTTP 401
-  [HM] api → HTTP 401
-  [HM] Fynd API returned nothing — falling back to page checks
-  [HM] sitemap → 29 hot-wheels product slugs
-  [HM] page-checked 12 products (0 in stock / 12 sold out)
-[*] Hamleys total: 64 (32 in stock)
-[=] Hamleys: no alert-worthy changes (0 minor)
-  [KD] chase-car → 0 (empty right now)
-  [KD] mainlines → 5
-  [KD] pop-culture → 4
-  [KD] card-art-premiums → 8
-  [KD] gift-pack → 24
-  [KD] car-culture → 0 new (1 already listed elsewhere)
-  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
-  [KD] boulevard-series → 0 (empty right now)
-  [KD] team-transport → 5
-  [KD] character-cars → 8
-  [KD] disney-cars → 0 (empty right now)
-  [KD] hot-wheels-accessories → 8
-  [KD] mini-gt → 107
-  [KD] mini-gt-blister-pack → 136
-  [KD] kaido-house → 18
-  [KD] pre-order-minigt → 58
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-  [KD] home → 0 new (15 already listed elsewhere)
-  [KD] monster-trucks → 0 (empty right now)
-  [KD] matchbox-basic-cars → 0 (empty right now)
-  [KD] matchbox-moving-parts → 0 (empty right now)
-  [KD] matchbox-superfast → 0 (empty right now)
-  [KD] premium-cars → 0 (empty right now)
-  [KD] basic-cars → 0 (empty right now)
-  [KD] majorette → 0 (empty right now)
-[*] Karz&Dolls total: 381 (381 in stock)
-[=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 1.1s: 36 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 26 car(s) seen live in 3.4s; 0 now orderable, 0 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry, Minifygram, Hamleys, Karz&Dolls → 835 products in 4.3s (live: FirstCry, Hamleys, Karz&Dolls, Minifygram)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 2.2s: 36 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 27 car(s) seen live in 3.9s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 118 products in 4.8s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.4s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 2.0s: 36 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 45 car(s) seen live in 4.7s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 124 products in 6.1s (live: FirstCry)
-  [FC-API] quick sweep: 196 in stock from 10 page(s) in 1.0s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (3 pointed at, 147 in turn) in 1.0s: 36 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page
-  [FC-LIVE] 3 to confirm, 4 🎯 set(s) read, 0 audited → 34 car(s) seen live in 3.1s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 122 products in 4.1s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 40s (0s:Fi+Mi+Ha+Ka=4s, 12s:Fi=5s, 24s:Fi=6s, 36s:Fi=4s)
-
-run 3: 40s, 0 message(s) so far, 0 stock change(s), 0 new, 0 renamed
-   by source: {'firstcry': 595, 'minifygram': 276, 'hamleys': 63, 'bigbasket': 2, 'karzdolls': 548, 'blinkit': 1}
-   cart stats: {'calls': 24, 'cars': 1800, 'fail': 0} | live stats: {'pages': 62, 'tat': 128}
-
-tracked chase pieces (any store): 11
-   ('mg_e123aadb-d3c1-4d7e-9236-49093c722b6f', 'out_of_stock', '2016 Ford GT Race [TREASURE HUNT]')
-   ('mg_c4559baf-210b-4d56-a933-ea8bec4c040e', 'out_of_stock', '2 Jet Z [TREASURE HUNT]')
-   ('fc_23076126', 'out_of_stock', 'Hot Wheels Total Disposal (162/250) Die Cast Free Wheel Toy Car - Orange')
-   ('fc_23353036', 'out_of_stock', 'Hot Wheels 162/250 Total Disposal Die Cat Free Wheel Toy Car- Orange')
-   ('fc_24374295', 'out_of_stock', 'Hot Wheels Amaru Gtc (186/250) Toy Car - Blue')
-   ('fc_24476167', 'out_of_stock', 'Hot Wheels Team Wheels - Fast Fish Die Cast Toy Car #238/250 - Royal Blue')
-   ('fc_24247501', 'out_of_stock', 'Hot Wheels Die Cast Free Wheel Sweet Driver Toy Car (196/250) - White & Pink')
-   ('fc_22555818', 'out_of_stock', 'Hot Wheels 2016 Ford GT Race / Course (124/250) Die-Cast Year - Yellow')
-   ('fc_24498234', 'out_of_stock', 'Hot Wheels 2 Jet Z Free Wheel Die Cast Toy Car - Golden/Red')
-   ('fc_24503904', 'out_of_stock', "Hot Wheels Ford Model A Custom '31 Die Cast Free Wheel Toy Car - Light Blue")
-   ('fc_24776061', 'out_of_stock', 'Hot Wheels NISSAN SKYLINE HT 2000GT-X (244/250) Toy Car - Black')
-
-stored items v17.3 now keeps out: 82
-   ('fc_21940394', 'in_stock', 'Hot Wheels Rapid Launch & Loop Playset with 1:64 Scale Die-Cast Toy Car, Crash &')
-   ('fc_21940376', 'in_stock', 'Hot Wheels Ultimate Dual Dragon Transporter & Two 1:64 Scale Toy Cars - Multicol')
-   ('fc_22277228', 'in_stock', 'Hot Wheels Track Creator Starter Pack With 1:64 Scale Die-Cast Toy Vehicle - Ora')
-   ('hm_hot-wheels-double-loop-dash-trackset-with-2-vehicles-8xs1cwbrskcg', 'out_of_stock', 'Hot Wheels Double Loop Dash Track Set with 2 Vehicles')
-   ('hm_hot-wheels-track-set-city-shark-car-wash-station-with-1-64-scale-colour-reveal-car-colour-changing-car-3y-multicolour-14543233', 'in_stock', 'Hot Wheels Let’s Race City Shark Car Wash Track Set with 1:64 Scale Colour Chang')
-   ('hm_hot-wheels-display-hauler-4y-city-transporter-with-extendable-downhill-ramp-loading-area-for-20-vehicles-and-special-wheels-multicolour-14543250', 'in_stock', 'Hot Wheels City Speed Drop Transport Hauler with Extendable Ramp and Storage for')
-   ('hm_hot-wheels-loop-and-launch-trackset-5y-multicolour-9879163', 'out_of_stock', 'Hot Wheels Loop And Launch Trackset, 5Y+, Multicolour')
-   ('hm_hot-wheels-ultra-hots-track-builder-loop-madness-4y-multicolour-9879174', 'out_of_stock', 'Hot Wheels Ultra Hots Loop Madness Track Set, 4Y+, Multicolour')
-   ('hm_hot-wheels-track-creator-deluxe-track-pack-3y-multicolour-17124132', 'out_of_stock', 'Hot Wheels Track Creator Deluxe Track Pack, 3Y+, Multicolour')
-   ('hm_hot-wheels-champion-stunt-track-assorted-boys-4y-multicolour-17627250', 'in_stock', 'Hot Wheels Champion Stunt Track Assorted, Boys, 4Y+, Multicolour')
-   ('hm_hot-wheels-double-twist-stunt-4y-multicolour-9879177', 'out_of_stock', 'Hot Wheels Neon Speeders Laser Stunt Slamway Track Set, \u200b4Y+, Multicolour')
-   ('hm_ne-championship-trackset-asst-wgtxsbsysnlw', 'in_stock', 'Hot Wheels Dragstrip Champion Playset with 1:64 Scale Car, Launcher, Start Gate ')
-   ('hm_hot-wheels-action-cyclone-challenge-stunt-track-set-4y-multicolour-14543260', 'in_stock', 'Hot Wheels Action Cyclone Challenge Stunt Track Set, 4Y+, Multicolour')
-   ('hm_hot-wheels-city-nemesis-assortment-2024-mix-3-boys-4y-multicolour-11270626', 'out_of_stock', 'Hot Wheels City Nemesis Assortment 2024 Mix 3, 4Y+, Multicolour')
-   ('hm_hot-wheels-city-super-loop-fire-stunt-station-boys-7y-multicolour-11270631', 'out_of_stock', 'Hot Wheels City Super Loop Fire Station Playset, 7Y+, Multicolour')
-   ('hm_hot-wheels-city-super-twist-tire-shop-boys-4y-multicolour-11270621', 'out_of_stock', 'Hot Wheels City Super Twist Tire Shop Playset, 4Y+, Multicolour')
-   ('hm_hot-wheels-energy-track-set-5y-multicolour-14543214', 'in_stock', 'Hot Wheels Energy Track Set with Double Loop & Ring of Fire, 5Y+, Multicolour')
-   ('hm_hot-wheels-speed-track-transporter-for-kids-3y-17297065', 'out_of_stock', 'Hot Wheels City Speed Track Transporter, 3Y+')
-   ('hm_hot-wheels-spinwheel-challenge-playset-unisex-4y-multicolor-fcn0qmumpdu', 'out_of_stock', 'Hot Wheels Spinwheel Challenge Playset, 4Y+')
-   ('hm_hot-wheels-the-hot-ones-crash-speedway-frenzy-boys-3y-multicolour-17465889', 'out_of_stock', 'Hot Wheels The Hot Ones Crash Speedway Frenzy, Boys, 3Y+, Multicolour')
-   ('hm_hot-wheels-tornado-trackset-multicolour-5y-xu6cmpnauj', 'out_of_stock', 'Hot Wheels Tornado Track Set, Multicolour, 5Y+')
-   ('hm_hot-wheels-track-creator-track-pack-3y-multicolour-17124141', 'out_of_stock', 'Hot Wheels Track Creator Straight Track Pack, 3Y+, Multicolour')
-   ('hm_hot-wheels-track-creator-triple-loop-speed-kit-boys-4y-multicolour-17465903', 'out_of_stock', 'Hot Wheels Track Creator Triple Loop Speed Kit , Boys, 4Y+, Multicolour')
-   ('hm_hot-wheels-ultimate-dual-dragon-transporter-boys-4y-multicolour-17465882', 'out_of_stock', 'Hot Wheels Ultimate Dual Dragon Transporter, Boys, 4Y+, Multicolour')
-   ('hm_hot-wheels-super-mario-brothers-kong-island-track-set-5y-multicolour-14543177', 'out_of_stock', 'Hot Wheels Super Mario Bros. Kong Island Track Set, 5Y+, Multicolour')
-   ('hm_hot-wheels-track-builder-fire-stunt-pack-4y-multicolour-9879160', 'out_of_stock', 'Hot Wheels Track Builder Fire Stunt Pack Track Set, 4Y+, Multicolour')
-   ('kd_PzNbBO7NbQ', 'in_stock', 'HOTWHEELS ULTIMATE COLLECTOR CASE WITH MUSCLE AND BLOWN')
-   ('kd_MbgaGkDLq8', 'in_stock', 'HOT WHEELS TRACK BUILDER 5PC GIFT PACK [PRE-ORDER]')
-   ('kd_0mNyqbVNkj', 'in_stock', 'HOT WHEELS CITY SUPER TWIST TIRE SHOP PLAYSET HDP02')
-   ('kd_PzNb26DNbQ', 'in_stock', 'HOT WHEELS DINE AND DASH PLAYSET FJN39')
-
-0 message(s) would have been sent in all
+== look 4 (04:51:13 UTC, 3s): 193 on the in-stock list
+   cart True  n=4    page=0    list=no  (None) Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy 
+   cart True  n=3    page=0    list=no  (None) Hot Wheels Armored Batmobile Die-Cast Toy Car - Black
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 24/250 Track Ripper Die Cast Free Wheel Toy Car
+   cart True  n=1    page=0    list=no  (None) Hot Wheels Datsun 240Z Die cast car 72/250 - Green
+   cart True  n=1    page=0    list=no  (None) Hot Wheels 5 Alarm Die-Cast Free Wheel Toy Car (32/250) - 
+   cart False n=0    page=0    list=no  (None) Hot Wheels 170/250 64 Lincoln Continental Die Cat Free Whe
+   cart False n=0    page=0    list=no  (None) Hot Wheels 19 Mercedes - Benz A -Class Die-Cast Toy Car - 
+   cart False n=0    page=0    list=yes (1   ) Hot Wheels El Segundo Coupe Die Cast Free Wheel Toy Car - 
+   cart False n=0    page=0    list=no  (None) Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver
+   cart False n=0    page=0    list=no  (None) Hot Wheels 20 Dodge Charger Hellcat (134/250) Toy Car - Or
+   held in stock & cart ok: 139 cars, cart units median 144, min 1, ≤2 units: 6
