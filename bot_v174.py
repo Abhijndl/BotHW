@@ -40,6 +40,9 @@ alerted at 10:04, as it sold out). A car that came onto that list in the last
 10 min with 5+ units in the cart now alerts at once, saying how to buy it
 (♡ it, add it from Favourites). Your marques also count by the case
 checklist's series: the Dino 206 GT is a 2026 "Ferrari" → ❤️ FERRARI, 🎯.
+And a car coming back needs FC_MIN_ALERT_STOCK units again (2; one for 🎯
+cars), as your settings say — since v17 the cart let single units of any car
+through ("only 1 left" Track Ripper, 25 Oct).
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -2421,6 +2424,9 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
     # needn't wait for its product page (FC_FRESH_UNITS)
     now_iso = time.strftime("%Y-%m-%dT%H:%M:%S")
     fc_max0 = max([int(p) for p in prev_fc if p.isdigit()] or [0])
+    # (the first run that keeps these times can't tell which cars only just
+    # came on, so it records every car on the list as "long since")
+    tracking = any(v.get("fc_lst_on") for v in prev_fc.values())
     for p, r in by.items():
         if r.get("fc_carried") or not _fc_on_list(word.get(p), p, prev_fc.get(p), fc_max0):
             continue
@@ -2429,6 +2435,8 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
         if (not _fc_on_list(v.get("fc_lst"), p, v, fc_max0)
                 and (not on or _hours_since(on) * 60 >= FC_FRESH_MIN)):
             on = now_iso                   # wasn't on it at the last reading: just came on
+        if not tracking and prev_fc:
+            on = "2000-01-01T00:00:00"
         r["fc_lst_on"] = on
 
     def claim(p):
@@ -2854,7 +2862,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         todo = todo[:FC_LIVE_MAX]
         with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
             list(ex.map(fc_page, todo))
-    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = n_fast = 0
+    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = n_fast = n_short = 0
     for p in must:
         if p not in res:                           # not answered: the signals' word stands, flagged
             r = recs.get(p)
@@ -2865,7 +2873,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         before = v.get("stock")
         cart_ok = bool(a.get("ok"))
         cs_ = page_cs(p)
-        fast = False
+        fast = short = False
         if cart_ok and before != "in_stock":
             if batch(p, a) and list_fresh(p) and not (cs_ and cs_ > 0) and prev_fc:
                 # v17.4: a fresh release — on sale for you before its page says so
@@ -2883,13 +2891,22 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             else:
                 # coming in: the page must sell it (very first run: the listing's word)
                 buy = bool(cs_ and cs_ > 0) if cs_ is not None else (recs.get(p) or {}).get("stock") == "in_stock"
+                # v17.4: …with the units your settings ask for — FC_MIN_ALERT_STOCK
+                # (2), one for your 🎯 cars. Since v17 the cart's say let single
+                # units of any car through (25 Oct: a Track Ripper, "only 1 left").
+                n_cart = a.get("n") or 0
+                units = min(n_cart, cs_) if (n_cart and cs_) else (n_cart or cs_ or 0)
+                nm_ = (recs.get(p) or v).get("name") or a.get("name") or ""
+                if buy and prev_fc and units < _fc_min_units(p, nm_):
+                    buy, short = False, True
         elif cart_ok:
             # held: out once a page reading says 0 — unless FirstCry's list still
             # has it with a batch in the cart (a fresh release whose page lags)
             buy = cs_ is None or cs_ > 0 or batch(p, a)
         else:
             buy = False
-        n_page0 += cart_ok and not buy
+        n_page0 += cart_ok and not buy and not short
+        n_short += short
         st = "in_stock" if buy else "out_of_stock"
         cart = "y" if cart_ok else "n"
         n_yes += buy
@@ -2944,7 +2961,9 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         else:
             r["stock_count"] = None
             r["fc_pb"] = ""
-            if cart_ok:
+            if short:
+                r["fc_live"] = "last unit"          # on sale, but fewer units than you asked for
+            elif cart_ok:
                 r["fc_live"] = "page 0"             # the cart has it, its page doesn't sell it (yet)
             elif r.get("fc_live") in ("ok", "page 0", None, ""):
                 r["fc_live"] = "not in cart"
@@ -2953,6 +2972,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
           f"in {time.time() - t0:.1f}s: {n_yes} buyable for {FC_PINCODE}; {n_in} now in, {n_out} now out"
           + (f", {n_page0} in the cart but not on sale on their page" if n_page0 else "")
           + (f", {n_fast} fresh release(s) in ahead of their page" if n_fast else "")
+          + (f", {n_short} on sale with fewer units than you asked for" if n_short else "")
           + (f", {n_wait} waiting for their page" if n_wait else "")
           + (f", {n_fix} first answers applied quietly" if n_fix else ""))
     return out

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Probe #38: dry run of v17.4 (bot_v174.py) — fresh releases alert before
+"""Probe #39: final dry run of v17.4 (bot_v174.py; + deploy guard, 2-unit minimum) — fresh releases alert before
 their page catches up; marques by the case checklist's series — against live
 FirstCry, no Telegram (alerts printed, not sent), on a COPY of the current
 seen.json, with the monitor's settings. Four runs back to back."""
