@@ -3583,7 +3583,6 @@
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-23T10:38:28",
-    "fc_off": "2026-10-26T11:27:49",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T22:36:22",
@@ -4666,12 +4665,12 @@
     "fc_listed_at": "2026-10-25T22:30:00",
     "fc_api_seen_at": "2026-10-26T11:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-26T11:31:21",
     "fc_cart": "n",
-    "fc_svc": "1"
+    "fc_svc": "0"
   },
   "fc_23346403": {
     "stock": "out_of_stock",
@@ -5096,7 +5095,7 @@
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-24T15:08:25",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "fc_22548070": {
@@ -16241,7 +16240,6 @@
     "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24472644",
-    "fc_arr": "2026-10-26T11:36:36",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T15:31:15",
@@ -18970,7 +18968,6 @@
     "fc_lst": "out",
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-26T07:50:11",
-    "fc_arr": "2026-10-26T11:27:08",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-26T07:32:05",
@@ -22006,6 +22003,7 @@
     "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_phantom": "2026-10-25T02:46:42",
+    "fc_arr": "2026-10-26T11:37:39",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22029,14 +22027,14 @@
     "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_phantom": "2026-10-26T05:06:04",
-    "fc_arr": "2026-10-26T11:36:43",
+    "fc_arr": "2026-10-26T11:38:12",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-26T05:15:25",
     "fc_lst_seen": "2026-10-26T05:45:00"
   },
   "fc_24776091": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Alfa Romeo Giulia ti super (218/250) Toy Car - Green",
     "price": "₹179",
     "source": "firstcry",
@@ -22051,11 +22049,11 @@
     "fc_listed_at": "2026-10-26T11:30:00",
     "fc_api_seen_at": "2026-10-26T11:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24776095",
-    "fc_phantom": "2026-10-26T11:28:14",
-    "fc_cart": "y",
+    "fc_phantom": "2026-10-26T11:37:41",
+    "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-10-26T11:04:11",
     "fc_lst_seen": "2026-10-26T11:30:00"
