@@ -4118,7 +4118,7 @@
     "fc_listed_at": "2026-10-24T18:15:00",
     "fc_api_seen_at": "2026-10-26T09:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "cat",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -5051,7 +5051,6 @@
     "fc_lst": "out",
     "fc_gid": "23345759",
     "fc_phantom": "2026-10-25T18:58:16",
-    "fc_off": "2026-10-26T09:10:10",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -6541,7 +6540,7 @@
     "last_restock_alert": "2026-09-19T06:07:09",
     "last_price_alert": "",
     "stock_ver": "hm_pages_v1",
-    "hm_verified_at": "2026-10-23T19:15:00"
+    "hm_verified_at": "2026-10-26T09:15:00"
   },
   "fc_24247503": {
     "stock": "out_of_stock",
@@ -13261,7 +13260,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -13530,7 +13529,7 @@
   "fc_24108016": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Red",
-    "price": "₹300",
+    "price": "₹301",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-in-1-64-scale-pack-of-2-red/24108016/product-detail",
     "first_seen": "2026-09-17T03:01:39",
@@ -18278,12 +18277,11 @@
     "fc_listed_at": "2026-10-26T09:15:00",
     "fc_api_seen_at": "2026-10-26T09:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24390957",
-    "fc_arr": "2026-10-26T08:33:13",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-26T09:17:53",
     "fc_lst_seen": "2026-10-26T09:15:00"
   },
@@ -19225,7 +19223,7 @@
     "fc_svc": "0"
   },
   "hm_hot-wheels-silver-series-batman-5-pack-for-boys-age-3y-batman-themed-die-cast-vehicle-collection-96407420": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Silver Series Batman 5-Pack for Boys Age 3Y+ | Batman Themed Die-Cast Vehicle Collection",
     "price": "₹1999",
     "source": "hamleys",
@@ -23242,7 +23240,7 @@
   "fc_23345502": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-48-250-monster-hi-ghoul-mobilegh-toy-car-pink/23345502/product-detail",
     "first_seen": "2026-10-21T02:00:00",
