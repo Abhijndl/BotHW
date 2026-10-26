@@ -5057,6 +5057,7 @@
     "fc_lst": "out",
     "fc_gid": "23345759",
     "fc_phantom": "2026-10-25T18:58:16",
+    "fc_off": "2026-10-26T13:46:03",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -13266,7 +13267,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -15128,7 +15129,7 @@
     "fc_listed_at": "2026-10-26T13:45:00",
     "fc_api_seen_at": "2026-10-26T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24342826",
     "fc_phantom": "2026-10-24T19:34:49",
@@ -23246,7 +23247,7 @@
   "fc_23345502": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-48-250-monster-hi-ghoul-mobilegh-toy-car-pink/23345502/product-detail",
     "first_seen": "2026-10-21T02:00:00",
