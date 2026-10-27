@@ -54,10 +54,11 @@ Treasure Hunts. Bentley and the Ford GT are 🎯 marques now too.
 v17.5.2: a unit there and gone in seconds doesn't alert twice. 27 Oct the
 Skyline HT 2000GT-X Treasure Hunt alerted at 12:20, 14:36 and 15:30 — each
 time one unit for 248001 that was gone 12 s later, while your app said
-"Cannot be delivered to 248001" (its "7 left" was all-India). A car whose last
-alert was gone within 2 min now needs the cart's yes on two checks in a row
-when it has fewer than 5 units (FC_FLICKER_S, FC_CONFIRM_*): a real one alerts
-one check (~12 s) later, 5+ units at once.
+"Cannot be delivered to 248001" (its "7 left" was all-India); at 17:30 the
+cart said 6 for 248001 — gone 26 s later, your app never had it. A car whose
+last alert was gone within 2 min now alerts only once the cart has said yes
+for 30 s on every check (FC_FLICKER_S, FC_CONFIRM_*), however many units it
+counts. Every other car alerts at once, as before.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -1283,17 +1284,19 @@ FC_OFFLIST_MIN = float(os.getenv("FC_OFFLIST_MIN", "10"))
 # Turbo 5, Toyota Tacoma 4, Pantone Bronco 4, each gone within minutes.
 FC_PHANTOM_MIN = float(os.getenv("FC_PHANTOM_MIN", "30"))
 FC_PHANTOM_HOLD_H = float(os.getenv("FC_PHANTOM_HOLD_H", "12"))
-# v17.5.2: a car whose last alert was gone within FC_FLICKER_S seconds — one
-# unit there and gone: 27 Oct the Skyline HT 2000GT-X Treasure Hunt alerted at
-# 12:20, 14:36 and 15:30, each time 1 unit for 248001 that was gone 12 s later
-# ("Cannot be delivered to 248001" in the app) — alerts with fewer than
-# FC_SURE_UNITS units only once FirstCry's cart says yes on two checks in a row
-# (FC_CONFIRM_MIN_S to FC_CONFIRM_MAX_S apart), for FC_PHANTOM_HOLD_H hours. A
-# real restock then alerts one check (~12 s) later; 5+ units alert at once.
-# (Not after every phantom: after a quick one, the next alert still lasted over
-# 3 minutes half the time — 23-27 Oct, the Ferrari 12 Cilindri once 28 hours.)
+# v17.5.2: a car whose last alert was gone within FC_FLICKER_S seconds — there
+# and gone: 27 Oct the Skyline HT 2000GT-X Treasure Hunt alerted at 12:20,
+# 14:36, 15:30 and 17:30, each time FirstCry's cart said yes for 248001 (1 unit,
+# then 6) and no again 12-26 s later, while your app said "Cannot be delivered
+# to 248001" — alerts only once the cart has said yes on every check for
+# FC_CONFIRM_MIN_S seconds (the first yes and one at least that much later, at
+# most FC_CONFIRM_MAX_S apart), for FC_PHANTOM_HOLD_H hours; any "no" starts it
+# over. However many units it counts: 6 were as gone as 1. (Not after every
+# phantom: after a quick one, the next alert still lasted over 3 minutes half
+# the time — 23-27 Oct, the Ferrari 12 Cilindri once 28 hours. And of 317
+# phantoms, only 13 were gone within 30 s — the Skyline's own: 12, 12, 13, 26.)
 FC_FLICKER_S = float(os.getenv("FC_FLICKER_S", "120"))
-FC_CONFIRM_MIN_S = float(os.getenv("FC_CONFIRM_MIN_S", "8"))
+FC_CONFIRM_MIN_S = float(os.getenv("FC_CONFIRM_MIN_S", "30"))
 FC_CONFIRM_MAX_S = float(os.getenv("FC_CONFIRM_MAX_S", "150"))
 
 
@@ -2949,9 +2952,9 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
                 nm_ = (recs.get(p) or v).get("name") or a.get("name") or ""
                 if buy and prev_fc and units < _fc_min_units(p, nm_):
                     buy, short = False, True
-                elif buy and prev_fc and FC_SURE_UNITS and units < FC_SURE_UNITS and _fc_flickered(v):
-                    # v17.5.2: its last alert was a unit there and gone in seconds —
-                    # the cart must say yes on a second check before this one alerts
+                elif buy and prev_fc and FC_CONFIRM_MIN_S > 0 and _fc_flickered(v):
+                    # v17.5.2: its last alert was there and gone in seconds — the
+                    # cart must keep saying yes for FC_CONFIRM_MIN_S before this one alerts
                     first = v.get("fc_hold") or ""
                     age = _hours_since(first) * 3600 if first else 1e9
                     if not (FC_CONFIRM_MIN_S <= age <= FC_CONFIRM_MAX_S):
