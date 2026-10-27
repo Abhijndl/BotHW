@@ -186,10 +186,12 @@ jobs:
 
       - name: Save state
         run: |
-          if ! git diff --quiet -- seen.json; then
+          # (fc_cartlog.jsonl: the flip recorder's log of FirstCry's cart answers, v17.5.5)
+          if [ -n "$(git status --porcelain -- seen.json fc_cartlog.jsonl)" ]; then
             git config user.name  "github-actions"
             git config user.email "actions@github.com"
             git add seen.json
+            [ -f fc_cartlog.jsonl ] && git add fc_cartlog.jsonl
             git commit -q -m "chore: update seen.json [skip ci]"
             # If main moved meanwhile, rebase onto it (keeping THIS run's
             # seen.json, which already includes everything it started from).

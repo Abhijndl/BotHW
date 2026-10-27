@@ -62,6 +62,14 @@ counts. Every other car alerts at once, as before.
 v17.5.4: only Porsche, Skyline and Ferrari ring your phone now (their
 Treasure Hunts too, even at night) — CallMeBot's free calls come about a
 minute after the alert, worth it only for these three.
+v17.5.5: a FLIP RECORDER (fc_cartlog.jsonl). 27 Oct, Probe #42: FirstCry's
+cart answers a one-car cart (like yours), a two-car cart, the tracker's
+75-car cart, a cart with Dehradun's location and a fresh device exactly
+alike; the cars that flickered sit in warehouses that don't serve 248001
+("NoOfPinCodeToCheck" 10, no warehouse, 12-15 days) — the yes comes when one
+that does shows a unit for seconds. The recorder keeps what the cart said at
+every flip, and asks again 1.5 s later, so the next ones can be read in full.
+It changes no alert.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -1989,6 +1997,21 @@ FC_FRESH_GAP_MIN = float(os.getenv("FC_FRESH_GAP_MIN", "30"))
 _FC_CART_PAUSE = [0.0]      # epoch until which the cart is left alone (429/403)
 _FC_CART_DEV = {}           # this run's guest device id + fingerprint headers
 _FC_CART_STATS = {"calls": 0, "cars": 0, "fail": 0}
+# v17.5.5: the FLIP RECORDER. Every time FirstCry's cart changes its answer
+# about a car (yes ↔ no), and every yes for a car held sold out, what it said
+# (stock, units for 248001, warehouse, restricted-pincode flag, delivery days),
+# the product page and delivery check at that moment, and — 1.5 s later, in the
+# background — the cart's answer again for that car alone. Kept in
+# FC_CARTLOG (the last FC_CARTLOG_MAX), committed with seen.json. Observation
+# only: no alert depends on it. (27 Oct, Probe #42: the one-car, two-car,
+# 75-car, located and fresh-device carts all answered alike, and the cars
+# that flickered all sat in warehouses that don't serve 248001 — a recorder
+# catches what changes in the seconds they appear.)
+FC_CARTLOG = os.getenv("FC_CARTLOG", "fc_cartlog.jsonl")
+FC_CARTLOG_MAX = max(0, int(os.getenv("FC_CARTLOG_MAX", "5000")))
+FC_CARTLOG_AGAIN_S = float(os.getenv("FC_CARTLOG_AGAIN_S", "1.5"))
+_FC_CARTLOG: list = []
+_FC_CARTLOG_THREADS: list = []
 
 
 def fc_cart_check(pids, pincode: str | None = None):
@@ -2057,7 +2080,14 @@ def fc_cart_check(pids, pincode: str | None = None):
             ok = n > 0 and (isv is None or isv > 0) and wh not in ("", "0") and not limited
             got[p] = {"ok": ok, "n": (min(n, isv) if isv else n) if ok else 0,
                       "eta": str(it.get("EstimatedDeliveryDate") or ""), "price": it.get("ActualPrice"),
-                      "mrp": it.get("MRP"), "name": str(it.get("ProductName") or "")}
+                      "mrp": it.get("MRP"), "name": str(it.get("ProductName") or ""),
+                      # v17.5.5: what the cart said, for the flip recorder
+                      "f": {"n": n, "isv": isv, "wh": wh, "npc": _fc_int(it.get("NoOfPinCodeToCheck")),
+                            "dsv": bool(it.get("isValidPincodeForDropShipment")
+                                        or it.get("IsValidPincodeForDropShipProduct")),
+                            "tat": str(it.get("TAT") or ""), "edd": str(it.get("EDDate") or "")[:10],
+                            "jit": _fc_int(it.get("isjitdrop") or it.get("IsJitDropProduct")),
+                            "qwik": _fc_int(it.get("isQwik")), "st": str(it.get("StockType") or "")}}
         return chunk, got
 
     chunks = [pids[i:i + FC_CART_BATCH] for i in range(0, len(pids), FC_CART_BATCH)]
@@ -2073,6 +2103,46 @@ def fc_cart_check(pids, pincode: str | None = None):
     _FC_CART_STATS["cars"] += len(out)
     _FC_CART_STATS["fail"] += failed
     return None if failed == len(chunks) else out
+
+
+def _fc_cartlog_again(evs: list) -> None:
+    """v17.5.5 (recorder): FC_CARTLOG_AGAIN_S after a yes, ask the cart about
+    each of those cars alone and keep its answer with the event."""
+    time.sleep(FC_CARTLOG_AGAIN_S)
+    for ev in evs:
+        try:
+            res = fc_cart_check([ev["p"]]) or {}
+        except Exception:
+            res = {}
+        a = res.get(ev["p"])
+        ev["again"] = (None if a is None else
+                       {"after_s": FC_CARTLOG_AGAIN_S, "ok": bool(a.get("ok")), "gone": bool(a.get("gone")),
+                        "f": a.get("f")})
+
+
+def _fc_cartlog_save() -> None:
+    """v17.5.5 (recorder): this run's flip events, appended to FC_CARTLOG
+    (the last FC_CARTLOG_MAX kept)."""
+    if not _FC_CARTLOG or not FC_CARTLOG_MAX:
+        return
+    end = time.time() + 8
+    for t in _FC_CARTLOG_THREADS:
+        t.join(max(0.0, end - time.time()))
+    try:
+        old = open(FC_CARTLOG, encoding="utf-8").read().splitlines() if os.path.exists(FC_CARTLOG) else []
+    except Exception:
+        old = []
+    new = [json.dumps(ev, ensure_ascii=False, separators=(",", ":")) for ev in _FC_CARTLOG]
+    keep = (old + new)[-FC_CARTLOG_MAX:]
+    try:
+        with open(FC_CARTLOG + ".tmp", "w", encoding="utf-8") as f:
+            f.write("\n".join(keep) + "\n")
+        os.replace(FC_CARTLOG + ".tmp", FC_CARTLOG)
+        print(f"[*] flip recorder: {len(new)} event(s) kept ({len(keep)} in {FC_CARTLOG})")
+    except Exception as e:
+        print(f"[!] flip recorder: couldn't save ({type(e).__name__})")
+    _FC_CARTLOG.clear()
+    _FC_CARTLOG_THREADS.clear()
 
 
 def _fc_eta(s: str) -> str:
@@ -2918,6 +2988,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
             list(ex.map(fc_page, todo))
     n_yes = n_in = n_out = n_fix = n_page0 = n_wait = n_fast = n_short = n_hold = 0
+    _cartlog_again = []
     for p in must:
         if p not in res:                           # not answered: the signals' word stands, flagged
             r = recs.get(p)
@@ -2998,6 +3069,17 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         r["stock"] = st
         r["fc_cart"] = cart
         r["fc_hold"] = hold_at                     # (cleared by any answer but a held yes)
+        if FC_CARTLOG_MAX and ((v.get("fc_cart") in ("y", "n") and cart != v.get("fc_cart"))
+                               or (cart_ok and before != "in_stock")):
+            # v17.5.5: the flip recorder
+            ev = {"t": time.strftime("%Y-%m-%dT%H:%M:%S"), "p": p, "nm": (r.get("name") or "")[:70],
+                  "was": v.get("fc_cart") or "-", "now": "gone" if a.get("gone") else cart,
+                  "held": before or "-", "dec": ("in" if buy else "hold" if hold else "short" if short
+                                                 else "page0" if cart_ok else "out"),
+                  "f": a.get("f"), "page": cs_, "svc": v.get("fc_svc"), "lst": word.get(p, "-")}
+            _FC_CARTLOG.append(ev)
+            if cart_ok and before != "in_stock":
+                _cartlog_again.append(ev)
         r.pop("fc_cart_unchecked", None)
         if buy:
             n = a.get("n") or 0
@@ -3036,6 +3118,12 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             elif r.get("fc_live") in ("ok", "page 0", None, ""):
                 r["fc_live"] = "not in cart"
             n_out += before == "in_stock"
+    if _cartlog_again:
+        # 1.5 s later, the same question for each such car alone (background:
+        # the alert doesn't wait for it)
+        t = threading.Thread(target=_fc_cartlog_again, args=(list(_cartlog_again[:6]),), daemon=True)
+        t.start()
+        _FC_CARTLOG_THREADS.append(t)
     print(f"  [FC-CART] {len(ask)} car(s) asked ({len(must)} pointed at, {len(ask) - len(must)} in turn) "
           f"in {time.time() - t0:.1f}s: {n_yes} buyable for {FC_PINCODE}; {n_in} now in, {n_out} now out"
           + (f", {n_page0} in the cart but not on sale on their page" if n_page0 else "")
@@ -5701,6 +5789,10 @@ def main():
         _ring_finish(seen)            # v17.5: calls / WhatsApp messages still on their way
     except Exception:
         print(f"[RING] finish failed:\n{traceback.format_exc()}")
+    try:
+        _fc_cartlog_save()            # v17.5.5: the flip recorder's events
+    except Exception:
+        print(f"[!] flip recorder failed:\n{traceback.format_exc()}")
 
 
 if __name__ == "__main__":
