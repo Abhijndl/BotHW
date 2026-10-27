@@ -51,6 +51,13 @@ McLaren … (RING_ON) now also comes as a WhatsApp message and a Telegram call
 that rings until you pick up (CallMeBot — see RINGING ALERTS, above MAIN).
 The same car rings at most every 12 h; no calls 00:00-07:00 except for
 Treasure Hunts. Bentley and the Ford GT are 🎯 marques now too.
+v17.5.2: a unit there and gone in seconds doesn't alert twice. 27 Oct the
+Skyline HT 2000GT-X Treasure Hunt alerted at 12:20, 14:36 and 15:30 — each
+time one unit for 248001 that was gone 12 s later, while your app said
+"Cannot be delivered to 248001" (its "7 left" was all-India). A car whose last
+alert was gone within 2 min now needs the cart's yes on two checks in a row
+when it has fewer than 5 units (FC_FLICKER_S, FC_CONFIRM_*): a real one alerts
+one check (~12 s) later, 5+ units at once.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -353,7 +360,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
                   "fc_new_pending", "fc_pb", "fc_arr", "fc_off", "fc_cart",
-                  "fc_svc", "fc_lst_on", "fc_lst_seen", "last_ring"):
+                  "fc_svc", "fc_lst_on", "fc_lst_seen", "last_ring", "fc_hold"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at", "fc_lst_seen") and isinstance(v, str):
                 v = _bucket(v)
@@ -1276,6 +1283,32 @@ FC_OFFLIST_MIN = float(os.getenv("FC_OFFLIST_MIN", "10"))
 # Turbo 5, Toyota Tacoma 4, Pantone Bronco 4, each gone within minutes.
 FC_PHANTOM_MIN = float(os.getenv("FC_PHANTOM_MIN", "30"))
 FC_PHANTOM_HOLD_H = float(os.getenv("FC_PHANTOM_HOLD_H", "12"))
+# v17.5.2: a car whose last alert was gone within FC_FLICKER_S seconds — one
+# unit there and gone: 27 Oct the Skyline HT 2000GT-X Treasure Hunt alerted at
+# 12:20, 14:36 and 15:30, each time 1 unit for 248001 that was gone 12 s later
+# ("Cannot be delivered to 248001" in the app) — alerts with fewer than
+# FC_SURE_UNITS units only once FirstCry's cart says yes on two checks in a row
+# (FC_CONFIRM_MIN_S to FC_CONFIRM_MAX_S apart), for FC_PHANTOM_HOLD_H hours. A
+# real restock then alerts one check (~12 s) later; 5+ units alert at once.
+# (Not after every phantom: after a quick one, the next alert still lasted over
+# 3 minutes half the time — 23-27 Oct, the Ferrari 12 Cilindri once 28 hours.)
+FC_FLICKER_S = float(os.getenv("FC_FLICKER_S", "120"))
+FC_CONFIRM_MIN_S = float(os.getenv("FC_CONFIRM_MIN_S", "8"))
+FC_CONFIRM_MAX_S = float(os.getenv("FC_CONFIRM_MAX_S", "150"))
+
+
+def _fc_flickered(v: dict) -> bool:
+    """Was this car's last alert gone within FC_FLICKER_S seconds, in the last
+    FC_PHANTOM_HOLD_H hours?"""
+    ph, la = (v or {}).get("fc_phantom") or "", (v or {}).get("last_restock_alert") or ""
+    if not (ph and la) or _hours_since(ph) >= FC_PHANTOM_HOLD_H:
+        return False
+    try:
+        gone = (time.mktime(time.strptime(ph, "%Y-%m-%dT%H:%M:%S"))
+                - time.mktime(time.strptime(la, "%Y-%m-%dT%H:%M:%S")))
+    except ValueError:
+        return False
+    return 0 <= gone <= FC_FLICKER_S
 # v16.3: new stock the CATALOGUE shows (not yet FirstCry's in-stock list for
 # 248001) while the product page says 0 alerts only for a car listed in the last
 # this-many hours — brand-new stock whose page hasn't caught up. Older cars sit
@@ -2878,7 +2911,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         todo = todo[:FC_LIVE_MAX]
         with ThreadPoolExecutor(max_workers=min(8, len(todo))) as ex:
             list(ex.map(fc_page, todo))
-    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = n_fast = n_short = 0
+    n_yes = n_in = n_out = n_fix = n_page0 = n_wait = n_fast = n_short = n_hold = 0
     for p in must:
         if p not in res:                           # not answered: the signals' word stands, flagged
             r = recs.get(p)
@@ -2889,7 +2922,8 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         before = v.get("stock")
         cart_ok = bool(a.get("ok"))
         cs_ = page_cs(p)
-        fast = short = False
+        fast = short = hold = False
+        hold_at = ""
         if cart_ok and before != "in_stock":
             if batch(p, a) and list_fresh(p) and not (cs_ and cs_ > 0) and prev_fc:
                 # v17.4: a fresh release — on sale for you before its page says so
@@ -2915,14 +2949,23 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
                 nm_ = (recs.get(p) or v).get("name") or a.get("name") or ""
                 if buy and prev_fc and units < _fc_min_units(p, nm_):
                     buy, short = False, True
+                elif buy and prev_fc and FC_SURE_UNITS and units < FC_SURE_UNITS and _fc_flickered(v):
+                    # v17.5.2: its last alert was a unit there and gone in seconds —
+                    # the cart must say yes on a second check before this one alerts
+                    first = v.get("fc_hold") or ""
+                    age = _hours_since(first) * 3600 if first else 1e9
+                    if not (FC_CONFIRM_MIN_S <= age <= FC_CONFIRM_MAX_S):
+                        buy, hold = False, True
+                        hold_at = first if age < FC_CONFIRM_MIN_S else time.strftime("%Y-%m-%dT%H:%M:%S")
         elif cart_ok:
             # held: out once a page reading says 0 — unless FirstCry's list still
             # has it with a batch in the cart (a fresh release whose page lags)
             buy = cs_ is None or cs_ > 0 or batch(p, a)
         else:
             buy = False
-        n_page0 += cart_ok and not buy and not short
+        n_page0 += cart_ok and not buy and not short and not hold
         n_short += short
+        n_hold += hold
         st = "in_stock" if buy else "out_of_stock"
         cart = "y" if cart_ok else "n"
         n_yes += buy
@@ -2948,6 +2991,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             n_fix += 1
         r["stock"] = st
         r["fc_cart"] = cart
+        r["fc_hold"] = hold_at                     # (cleared by any answer but a held yes)
         r.pop("fc_cart_unchecked", None)
         if buy:
             n = a.get("n") or 0
@@ -2979,6 +3023,8 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
             r["fc_pb"] = ""
             if short:
                 r["fc_live"] = "last unit"          # on sale, but fewer units than you asked for
+            elif hold:
+                r["fc_live"] = "unlisted"           # a second check first (it flickered before)
             elif cart_ok:
                 r["fc_live"] = "page 0"             # the cart has it, its page doesn't sell it (yet)
             elif r.get("fc_live") in ("ok", "page 0", None, ""):
@@ -2989,6 +3035,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
           + (f", {n_page0} in the cart but not on sale on their page" if n_page0 else "")
           + (f", {n_fast} fresh release(s) in ahead of their page" if n_fast else "")
           + (f", {n_short} on sale with fewer units than you asked for" if n_short else "")
+          + (f", {n_hold} held for a second check (their last alert was gone in seconds)" if n_hold else "")
           + (f", {n_wait} waiting for their page" if n_wait else "")
           + (f", {n_fix} first answers applied quietly" if n_fix else ""))
     return out
