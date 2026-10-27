@@ -59,6 +59,9 @@ cart said 6 for 248001 — gone 26 s later, your app never had it. A car whose
 last alert was gone within 2 min now alerts only once the cart has said yes
 for 30 s on every check (FC_FLICKER_S, FC_CONFIRM_*), however many units it
 counts. Every other car alerts at once, as before.
+v17.5.4: only Porsche, Skyline and Ferrari ring your phone now (their
+Treasure Hunts too, even at night) — CallMeBot's free calls come about a
+minute after the alert, worth it only for these three.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -5007,20 +5010,21 @@ RING_WA_KEY = re.sub(r"\s+", "", os.getenv("CALLMEBOT_WA_APIKEY", ""))
 RING_TG_USER = _ring_user(os.getenv("CALLMEBOT_TG_USER", ""))
 RING_WA = bool(RING_WA_PHONE and RING_WA_KEY)
 RING_CALL = bool(RING_TG_USER)
-# what rings: these specials (hw_priority) …
-RING_KINDS = {k.strip().lower() for k in os.getenv("RING_KINDS", "sth,schase,th,chase").split(",") if k.strip()}
+# what rings: these specials of any car (hw_priority; v17.5.4: none — only
+# your three marques ring, their Treasure Hunts included) …
+RING_KINDS = {k.strip().lower() for k in os.getenv("RING_KINDS", "").split(",") if k.strip()}
 # … and these names — matched as whole words in the car's name or its case
-# checklist series ("Dino 206 GT" is a 2026 Ferrari)
+# checklist series ("Dino 206 GT" is a 2026 Ferrari). v17.5.4 (27 Oct): only
+# Porsche, Skyline and Ferrari — CallMeBot's free calls come about a minute
+# after the alert, worth it only for these.
 RING_ON = [w.strip().lower() for w in os.getenv("RING_ON", ",".join([
-    # the ones you named
-    "skyline", "gt-r", "gtr", "porsche", "911", "930", "934", "935", "959", "964", "993", "918",
-    "carrera", "singer", "taycan", "ferrari", "laferrari", "testarossa", "f40", "f50", "enzo", "sf90",
-    "bentley", "ford gt", "gt40", "mustang",
-    # other famous castings
-    "lamborghini", "lambo", "countach", "aventador", "huracan", "diablo", "miura", "murcielago",
-    "revuelto", "urus", "sian", "veneno", "gallardo", "supra", "mclaren", "bugatti", "pagani",
-    "koenigsegg", "aston martin", "rx-7", "rx7", "nsx", "ae86", "silvia",
+    "porsche", "911", "930", "934", "935", "959", "964", "993", "918", "carrera", "singer", "taycan",
+    "skyline",
+    "ferrari", "laferrari", "testarossa", "f40", "f50", "enzo", "sf90",
 ])).split(",") if w.strip()]
+# a Treasure Hunt / Super TH / chase on the list rings even at night and right
+# after another call
+_RING_SPECIAL = {"sth", "schase", "th", "chase"}
 RING_CAR_H = float(os.getenv("RING_CAR_H", "12"))          # the same car rings at most this often
 RING_GAP_MIN = float(os.getenv("RING_GAP_MIN", "3"))       # minutes between two calls
 RING_QUIET = os.getenv("RING_QUIET", "00:00-07:00")         # no calls then (IST); "" = any hour
@@ -5055,6 +5059,23 @@ def ring_reason(d) -> str | None:
             label = _heart(nm)[1]
             return label if label != "WATCHLIST" else word.upper()
     return None
+
+
+def _ring_list_text() -> str:
+    """'Porsche, Skyline or Ferrari' — what rings, in words (from RING_ON / RING_KINDS)."""
+    words = []
+    for k in RING_ON:
+        label = _heart(k)[1]
+        label = label if label != "WATCHLIST" else k.upper()
+        w = " ".join(x if (len(x) <= 3 or "-" in x or any(c.isdigit() for c in x)) else x.capitalize()
+                     for x in label.split()).replace("Mclaren", "McLaren")
+        if w not in words:
+            words.append(w)
+    if RING_KINDS:
+        words.append("Treasure Hunt or chase of any car")
+    if not words:
+        return "car on your ring list"
+    return (", ".join(words[:-1]) + " or " + words[-1]) if len(words) > 1 else words[0]
 
 
 def _ring_quiet(now: float | None = None) -> bool:
@@ -5231,7 +5252,7 @@ def ring_for(seen: dict, ch: dict) -> int:
         d["last_ring"] = stamp
         if isinstance(seen.get(d["id"]), dict):
             seen[d["id"]]["last_ring"] = stamp
-    special = any(hw_priority(d["name"]) in RING_KINDS for d, _, _ in picked)
+    special = any(hw_priority(d["name"]) in (_RING_SPECIAL | RING_KINDS) for d, _, _ in picked)
     meta = seen.setdefault("_meta", {})
     since = _hours_since(meta.get("ring_call", "")) * 60
     # (CallMeBot turns a second call away if it comes within seconds of the last)
@@ -5295,9 +5316,8 @@ def ring_setup(seen: dict) -> None:
         res = {}
         if need_wa:
             res["wa"] = _ring_wa_send(
-                "✅ *Hot Wheels Tracker*\nWhatsApp alerts are on. Every car on your ring list — Treasure "
-                "Hunts, Porsche, Ferrari, Skyline, Bentley, Ford GT, Mustang … — will come here too, "
-                "with a Telegram call.")
+                f"✅ *Hot Wheels Tracker*\nWhatsApp alerts are on. Every {_ring_list_text()} that comes "
+                f"in stock will come here too, with a Telegram call.")
         if need_call:
             res["call"] = _ring_call_send(
                 "Hello! This is your Hot Wheels tracker. Calls are working. When a car on your list "
@@ -5311,9 +5331,8 @@ def ring_setup(seen: dict) -> None:
             lines.append("Telegram call: " + (_ring_explain(*res["call"], "call") if "call" in res else "✅ working"))
         else:
             lines.append("Telegram call: off (needs CALLMEBOT_TG_USER)")
-        lines.append(f"\nFrom now on every car on your ring list (Treasure Hunts, Super THs, chases, Porsche, "
-                     f"Ferrari, Skyline / GT-R, Bentley, Ford GT, Mustang, Lamborghini, Supra, McLaren …) "
-                     f"also comes this way — the same car at most every {RING_CAR_H:g} h"
+        lines.append(f"\nFrom now on every {_ring_list_text()} also comes this way — the same car at most "
+                     f"every {RING_CAR_H:g} h"
                      + (f"; no calls {RING_QUIET.replace('-', '–')} except Treasure Hunts" if RING_QUIET else "")
                      + ".")
         tg("\n".join(lines))

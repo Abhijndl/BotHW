@@ -97,9 +97,11 @@ jobs:
           CALLMEBOT_WA_PHONE:  ${{ secrets.CALLMEBOT_WA_PHONE }}    # +91 and your number
           CALLMEBOT_WA_APIKEY: ${{ secrets.CALLMEBOT_WA_APIKEY }}   # the key CallMeBot sent you
           CALLMEBOT_TG_USER:   ${{ secrets.CALLMEBOT_TG_USER }}     # @yourname (or +91 and your number)
-          # What rings: every Treasure Hunt, Super TH and chase piece, and these
-          # names (whole words, in the car's name or its case-checklist series).
-          RING_ON: "skyline,gt-r,gtr,porsche,911,930,934,935,959,964,993,918,carrera,singer,taycan,ferrari,laferrari,testarossa,f40,f50,enzo,sf90,bentley,ford gt,gt40,mustang,lamborghini,lambo,countach,aventador,huracan,diablo,miura,murcielago,revuelto,urus,sian,veneno,gallardo,supra,mclaren,bugatti,pagani,koenigsegg,aston martin,rx-7,rx7,nsx,ae86,silvia"
+          # What rings (27 Oct): Porsche, Skyline and Ferrari only — their
+          # Treasure Hunts too, even at night. Whole words, in the car's name or
+          # its case-checklist series. (CallMeBot's free calls come ~1 min late.)
+          RING_ON: "porsche,911,930,934,935,959,964,993,918,carrera,singer,taycan,skyline,ferrari,laferrari,testarossa,f40,f50,enzo,sf90"
+          RING_KINDS: ""              # Treasure Hunts of other cars don't ring (of these three they do)
           RING_CAR_H: "12"            # the same car rings at most every 12 h
           RING_GAP_MIN: "3"           # minutes between two calls (WhatsApp still goes)
           RING_QUIET: "00:00-07:00"   # no calls then (India time), except Treasure Hunts; "" = any hour
