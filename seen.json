@@ -4672,11 +4672,11 @@
     "fc_listed_at": "2026-10-27T15:15:00",
     "fc_api_seen_at": "2026-10-27T16:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-27T11:01:52",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-10-27T14:31:43",
     "fc_lst_seen": "2026-10-27T15:15:00"
@@ -6638,7 +6638,7 @@
     "fc_listed_at": "2026-10-27T05:45:00",
     "fc_api_seen_at": "2026-10-27T16:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24248198",
     "fc_cart": "n",
@@ -13611,7 +13611,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14384,7 +14384,7 @@
   "fc_24475217": {
     "stock": "in_stock",
     "name": "Hot Wheels Polestar Die cast Toy car 84/250 -White & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-polestar-die-cast-toy-car-84-250-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14430,7 +14430,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14970,7 +14970,7 @@
   "fc_24475499": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Vehicle Surf and Turf Blue 240/250 - Blue",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-vehicle-surf-and-turf-blue-240-250-blue/24475499/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15016,7 +15016,7 @@
   "fc_24476257": {
     "stock": "in_stock",
     "name": "Hot Wheels Morgan Super 3 Die Cast Car #138/250- Light Yellow",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-morgan-super-3-die-cast-car-138-250-light-yellow/24476257/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15595,7 +15595,7 @@
     "fc_listed_at": "2026-10-27T16:15:00",
     "fc_api_seen_at": "2026-10-27T16:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "21497090",
     "fc_phantom": "2026-10-26T07:32:29",
@@ -15936,7 +15936,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16100,7 +16100,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -22014,7 +22014,7 @@
   "fc_24776435": {
     "stock": "in_stock",
     "name": "Hot Wheels Scremliner (141/250) Die Cast Toy Car - Blue",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-scremliner-141-250-die-cast-toy-car-blue/24776435/product-detail",
     "first_seen": "2026-10-16T12:30:00",
@@ -22445,7 +22445,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22468,7 +22468,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -23327,7 +23327,7 @@
   "fc_24783698": {
     "stock": "in_stock",
     "name": "Hot Wheels Duck N Roll Toy Car - PInk",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-duck-n-roll-toy-car-pink/24783698/product-detail",
     "first_seen": "2026-10-21T15:15:00",
@@ -23350,7 +23350,7 @@
   "fc_24783697": {
     "stock": "in_stock",
     "name": "Hot Wheel RIDGE CREST GT (248/250) Toy Car - GREEN",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheel-ridge-crest-gt-248-250-toy-car-green/24783697/product-detail",
     "first_seen": "2026-10-21T15:15:00",
@@ -23373,7 +23373,7 @@
   "fc_24783758": {
     "stock": "in_stock",
     "name": "Hot Wheels Chop N Bloc (182/250) Toy Car - Red/White",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chop-n-bloc-182-250-toy-car-red-white/24783758/product-detail",
     "first_seen": "2026-10-21T15:30:00",
