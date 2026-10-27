@@ -1,120 +1,45 @@
-version: Hot Wheels / Diecast Collector Tracker  ·  v17.4
-
-================ RUN 1 ================
-  [FC-API] quick sweep: 193 in stock from 12 page(s) in 2.7s — fresh ✓ (searchrank, 12 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 391 products across 20 page(s) (198 with zero stock) in 1.4s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 387, 'Sports & Games': 4}
-[HW] case table: 1284 cars (52 cases)
-  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
-  [FC-CART] 149 car(s) asked (13 pointed at, 136 in turn) in 2.3s: 34 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 4 waiting for their page
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 98 car(s) seen live in 6.3s; 0 now orderable, 0 not any more
-[*] FirstCry total (API): 554 tracked, 116 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 554 products in 10.8s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.0s: 34 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 4 waiting for their page
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 90 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 115 products in 3.9s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (11 pointed at, 138 in turn) in 1.0s: 34 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 4 waiting for their page
-  [FC-LIVE] 10 to confirm, 4 🎯 set(s) read, 0 audited → 100 car(s) seen live in 2.8s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 118 products in 3.9s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 0.9s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 2.2s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 86 car(s) seen live in 4.5s; 0 now orderable, 0 not any more
-[*] pass 4: FirstCry → 129 products in 5.5s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 41s (0s:Fi=11s, 12s:Fi=4s, 24s:Fi=4s, 36s:Fi=5s)
-
-run 1: 41s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 8, 'cars': 598, 'fail': 0} | live stats: {'pages': 28, 'tat': 54}
-   verdicts: {'not in cart': 295, 'no delivery': 34, 'ok': 129, None: 52, 'sold out': 75, 'last unit': 2, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
-
-================ RUN 2 ================
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 147 car(s) asked (11 pointed at, 136 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 4.0s; 0 now orderable, 0 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 118 products in 5.6s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.2s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (11 pointed at, 138 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 87 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 120 products in 4.8s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.4s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 4.1s; 1 now orderable, 0 not any more
-[*] pass 3: FirstCry → 120 products in 5.6s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (12 pointed at, 138 in turn) in 2.4s: 35 buyable for 248001; 0 now in, 0 now out, 5 in the cart but not on sale on their page
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 101 car(s) seen live in 5.8s; 1 now orderable, 1 not any more
-[*] pass 4: FirstCry → 117 products in 6.9s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 43s (0s:Fi=6s, 12s:Fi=5s, 24s:Fi=6s, 36s:Fi=7s)
-
-run 2: 43s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 16, 'cars': 1194, 'fail': 0} | live stats: {'pages': 50, 'tat': 107}
-   verdicts: {'not in cart': 283, 'no delivery': 35, 'ok': 129, None: 52, 'sold out': 86, 'last unit': 2, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
-
-================ RUN 3 ================
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.6s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-API] stock for pincode: 248001
-  [FC-API] 391 products across 20 page(s) (198 with zero stock) in 2.8s
-  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
-  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 387, 'Sports & Games': 4}
-  [FC-API] sample: Hot Wheels Lamborghini Veneno Die-cast Model Car | stock=out_of_stock count=0 price=299 mrp=None
-  [FC-CART] 148 car(s) asked (12 pointed at, 136 in turn) in 1.2s: 34 buyable for 248001; 0 now in, 0 now out, 5 in the cart but not on sale on their page
-  [FC-LIVE] 9 to confirm, 4 🎯 set(s) read, 0 audited → 81 car(s) seen live in 5.3s; 1 now orderable, 0 not any more
-[*] FirstCry total (API): 554 tracked, 116 buyable now (in-stock list complete), 0 aged to delisted
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1 (+ full FirstCry catalogue): FirstCry → 554 products in 9.7s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.6s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.2s: 34 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 68 car(s) seen live in 4.6s; 0 now orderable, 0 not any more
-[*] pass 2: FirstCry → 126 products in 6.2s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.5s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.3s: 34 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 75 car(s) seen live in 5.0s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 123 products in 6.5s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.7s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 148 car(s) asked (12 pointed at, 136 in turn) in 1.2s: 35 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
-  [FC-LIVE] 6 to confirm, 4 🎯 set(s) read, 0 audited → 120 car(s) seen live in 5.2s; 0 now orderable, 1 not any more
-[*] pass 4: FirstCry → 154 products in 6.9s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 43s (0s:Fi=10s, 12s:Fi=6s, 24s:Fi=7s, 36s:Fi=7s)
-
-run 3: 43s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 24, 'cars': 1790, 'fail': 0} | live stats: {'pages': 69, 'tat': 153}
-   verdicts: {'not in cart': 258, 'no delivery': 39, 'ok': 131, None: 52, 'sold out': 107, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
-
-================ RUN 4 ================
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.7s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (11 pointed at, 138 in turn) in 2.4s: 34 buyable for 248001; 0 now in, 0 now out, 3 in the cart but not on sale on their page, 2 waiting for their page
-  [FC-LIVE] 8 to confirm, 4 🎯 set(s) read, 0 audited → 91 car(s) seen live in 5.2s; 1 now orderable, 0 not any more
-[=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry → 118 products in 6.9s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 149 car(s) asked (12 pointed at, 137 in turn) in 1.0s: 35 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 3 waiting for their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 84 car(s) seen live in 2.9s; 0 now orderable, 1 not any more
-[*] pass 2: FirstCry → 121 products in 4.2s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.3s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (11 pointed at, 139 in turn) in 1.1s: 34 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 3 waiting for their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 80 car(s) seen live in 3.6s; 0 now orderable, 0 not any more
-[*] pass 3: FirstCry → 117 products in 4.9s (live: FirstCry)
-  [FC-API] quick sweep: 193 in stock from 10 page(s) in 1.1s — fresh ✓ (searchrank, 10 page(s) computed live)
-  [FC-CART] 150 car(s) asked (12 pointed at, 138 in turn) in 2.2s: 35 buyable for 248001; 0 now in, 0 now out, 4 in the cart but not on sale on their page, 1 waiting for their page
-  [FC-LIVE] 7 to confirm, 4 🎯 set(s) read, 0 audited → 85 car(s) seen live in 5.1s; 0 now orderable, 1 not any more
-[*] pass 4: FirstCry → 128 products in 6.2s (live: FirstCry)
-
-[*] run finished: 4 pass(es) in 42s (0s:Fi=7s, 12s:Fi=4s, 24s:Fi=5s, 36s:Fi=6s)
-
-run 4: 42s, 0 message(s) so far, 0 stock change(s)
-   cars with a list onset stored: 113; latest: [('fc_23345502', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Die Cast Free Wheel 48/250 Monster'), ('fc_24783698', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Duck N Roll Toy Car - PInk'), ('fc_24783697', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheel RIDGE CREST GT (248/250) Toy Car - '), ('fc_24783758', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Chop N Bloc (182/250) Toy Car - Re'), ('fc_21133791', '2000-01-01T00:00:00', '2026-10-25T05:15:00', 'in_stock', 'y', 'Hot Wheels Straight Freightin Free Wheel Car ')]
-   cart stats: {'calls': 32, 'cars': 2388, 'fail': 0} | live stats: {'pages': 95, 'tat': 199}
-   verdicts: {'not in cart': 243, 'no delivery': 38, 'ok': 129, None: 52, 'sold out': 123, 'last unit': 2, 'page 0': 5, 'unlisted': 2, 'arriving': 1}
-
-0 message(s) would have been sent in all
+{
+ "test": "tg_call_unknown_user_http",
+ "url": "http://api.callmebot.com/start.php",
+ "status": 200,
+ "ctype": "text/html; charset=UTF-8",
+ "secs": 2.92,
+ "text": "Checking Authorization for @hwtracker_probe_no_such_user_7731... Using bot: @CallMeBot_API Authorization for user @hwtracker_probe_no_such_user_7731 is not received. Warning! User not authorized. Click here to authorize CallMeBot to contact you.",
+ "raw": "<head><!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149177385-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\"js\", new Date());\n\n  gtag(\"config\", \"UA-149177385-1\");\n</script>\n<font face=\"Courier New,Digital, Arial, Helvetica, sans-serif\"><script data-ad-client=\"ca-pub-2604115859432824\" async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script></head><p>Checking Authorization for @hwtracker_probe_no_such_user_7731...<br>Using bot: @CallMeBot_API<p>Authorization for user @hwtracker_probe_no_such_user_7731 is not received.<p><font color=\"red\">Warning! User not authorized. Click <a href=\"https://api2.callmebot.com/txt/auth.php\">here</a> to authorize CallMeBot to contact you.</font>"
+}
+{
+ "test": "tg_call_unknown_user_https",
+ "url": "https://api.callmebot.com/start.php",
+ "status": 503,
+ "ctype": "text/html",
+ "secs": 0.5,
+ "text": "Oops! Too many requests... You have called to the API to often. Please review your script/code/app.",
+ "raw": "<h1>Oops! Too many requests...</h1>\n<p>You have called to the API to often. Please review your script/code/app.</p>\n"
+}
+{
+ "test": "tg_call_bad_phone",
+ "url": "https://api.callmebot.com/start.php",
+ "status": 200,
+ "ctype": "text/html; charset=UTF-8",
+ "secs": 0.47,
+ "text": "ERROR: User %2B910000000000 has wrong format. How to use CallMeBot API: http://api.callmebot.com/?user= userID &file= audo_file_url     (to play a mp3/raw audio file) or http://api.callmebot.com/?user= userID &text= Text to speech       (to play the Text to Speech) UserID = User Alias (@niceuser) or Phone number (Examle: +34 694329888) For more information visit http://www.callmebot.com .",
+ "raw": "<head><!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149177385-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\"js\", new Date());\n\n  gtag(\"config\", \"UA-149177385-1\");\n</script>\n<font face=\"Courier New,Digital, Arial, Helvetica, sans-serif\"><script data-ad-client=\"ca-pub-2604115859432824\" async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script></head><p>ERROR: User %2B910000000000 has wrong format. \n<font face=\"Digital, Arial, Helvetica, sans-serif\">\n<p><br><br><u>How to use CallMeBot API:</u>\n<p>http://api.callmebot.com/?user=<b>userID</b>&file=<b>audo_file_url</b><i>&nbsp;&nbsp;&nbsp;&nbsp;(to play a mp3/raw audio file)</i>\n<br>or\n<br>http://api.callmebot.com/?user=<b>userID</b>&text=<b>Text to speech</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(to play the Text to Speech)</i>\n<p>\n<p><b>UserID</b> = User Alias (@niceuser) or Phone number (Examle: +34 694329888)\n<p>For more information visit <a href=\"http://www.callmebot.com\">http://www.callmebot.com</a>.\n</font>\n\n"
+}
+{
+ "test": "wa_bad_key",
+ "url": "https://api.callmebot.com/whatsapp.php",
+ "status": 203,
+ "ctype": "text/html; charset=UTF-8",
+ "secs": 0.53,
+ "text": "Message to: +910000000000 Text to send: probe APIKey is invalid. Please create a new one or contact support if you lost it.",
+ "raw": "<p>Message to: +910000000000<p>Text to send: probe<p style=\"color:red\"><b>APIKey is invalid.</b> Please create a new one or contact support if you lost it."
+}
+{
+ "test": "tg_text_unknown_user",
+ "url": "https://api.callmebot.com/text.php",
+ "status": 200,
+ "ctype": "text/html; charset=UTF-8",
+ "secs": 0.56,
+ "text": "User: hwtracker_probe_no_such_user_7731 Text: probe HTML format: no Preview Links: no Error: Permission denied for hwtracker_probe_no_such_user_7731. You need to authorize CallMeBot to contact this user (hwtracker_probe_no_such_user_7731). Click here to Authenticate hwtracker_probe_no_such_user_7731 and then try again. Telegram Error Code: 400",
+ "raw": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149177385-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\"js\", new Date());\n\n  gtag(\"config\", \"UA-149177385-1\");\n</script>\n<font face=\"Courier New,Digital, Arial, Helvetica, sans-serif\">User: hwtracker_probe_no_such_user_7731<br>Text: probe<br>HTML format: no<br>Preview Links: no<br><br><b>Error: Permission denied for hwtracker_probe_no_such_user_7731. You need to authorize CallMeBot to contact this user (hwtracker_probe_no_such_user_7731).\r\n\t\t<br>Click <a href=\"https://api2.callmebot.com/txt/login.php\">here</a> to Authenticate hwtracker_probe_no_such_user_7731 and then try again.</b>\r\n\t\t<br><br>Telegram Error Code: 400"
+}

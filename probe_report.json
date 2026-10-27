@@ -1,3 +1,47 @@
-{
- "sent": []
-}
+[
+ {
+  "test": "tg_call_unknown_user_http",
+  "url": "http://api.callmebot.com/start.php",
+  "status": 200,
+  "ctype": "text/html; charset=UTF-8",
+  "secs": 2.92,
+  "text": "Checking Authorization for @hwtracker_probe_no_such_user_7731... Using bot: @CallMeBot_API Authorization for user @hwtracker_probe_no_such_user_7731 is not received. Warning! User not authorized. Click here to authorize CallMeBot to contact you.",
+  "raw": "<head><!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149177385-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\"js\", new Date());\n\n  gtag(\"config\", \"UA-149177385-1\");\n</script>\n<font face=\"Courier New,Digital, Arial, Helvetica, sans-serif\"><script data-ad-client=\"ca-pub-2604115859432824\" async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script></head><p>Checking Authorization for @hwtracker_probe_no_such_user_7731...<br>Using bot: @CallMeBot_API<p>Authorization for user @hwtracker_probe_no_such_user_7731 is not received.<p><font color=\"red\">Warning! User not authorized. Click <a href=\"https://api2.callmebot.com/txt/auth.php\">here</a> to authorize CallMeBot to contact you.</font>"
+ },
+ {
+  "test": "tg_call_unknown_user_https",
+  "url": "https://api.callmebot.com/start.php",
+  "status": 503,
+  "ctype": "text/html",
+  "secs": 0.5,
+  "text": "Oops! Too many requests... You have called to the API to often. Please review your script/code/app.",
+  "raw": "<h1>Oops! Too many requests...</h1>\n<p>You have called to the API to often. Please review your script/code/app.</p>\n"
+ },
+ {
+  "test": "tg_call_bad_phone",
+  "url": "https://api.callmebot.com/start.php",
+  "status": 200,
+  "ctype": "text/html; charset=UTF-8",
+  "secs": 0.47,
+  "text": "ERROR: User %2B910000000000 has wrong format. How to use CallMeBot API: http://api.callmebot.com/?user= userID &file= audo_file_url     (to play a mp3/raw audio file) or http://api.callmebot.com/?user= userID &text= Text to speech       (to play the Text to Speech) UserID = User Alias (@niceuser) or Phone number (Examle: +34 694329888) For more information visit http://www.callmebot.com .",
+  "raw": "<head><!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149177385-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\"js\", new Date());\n\n  gtag(\"config\", \"UA-149177385-1\");\n</script>\n<font face=\"Courier New,Digital, Arial, Helvetica, sans-serif\"><script data-ad-client=\"ca-pub-2604115859432824\" async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script></head><p>ERROR: User %2B910000000000 has wrong format. \n<font face=\"Digital, Arial, Helvetica, sans-serif\">\n<p><br><br><u>How to use CallMeBot API:</u>\n<p>http://api.callmebot.com/?user=<b>userID</b>&file=<b>audo_file_url</b><i>&nbsp;&nbsp;&nbsp;&nbsp;(to play a mp3/raw audio file)</i>\n<br>or\n<br>http://api.callmebot.com/?user=<b>userID</b>&text=<b>Text to speech</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(to play the Text to Speech)</i>\n<p>\n<p><b>UserID</b> = User Alias (@niceuser) or Phone number (Examle: +34 694329888)\n<p>For more information visit <a href=\"http://www.callmebot.com\">http://www.callmebot.com</a>.\n</font>\n\n"
+ },
+ {
+  "test": "wa_bad_key",
+  "url": "https://api.callmebot.com/whatsapp.php",
+  "status": 203,
+  "ctype": "text/html; charset=UTF-8",
+  "secs": 0.53,
+  "text": "Message to: +910000000000 Text to send: probe APIKey is invalid. Please create a new one or contact support if you lost it.",
+  "raw": "<p>Message to: +910000000000<p>Text to send: probe<p style=\"color:red\"><b>APIKey is invalid.</b> Please create a new one or contact support if you lost it."
+ },
+ {
+  "test": "tg_text_unknown_user",
+  "url": "https://api.callmebot.com/text.php",
+  "status": 200,
+  "ctype": "text/html; charset=UTF-8",
+  "secs": 0.56,
+  "text": "User: hwtracker_probe_no_such_user_7731 Text: probe HTML format: no Preview Links: no Error: Permission denied for hwtracker_probe_no_such_user_7731. You need to authorize CallMeBot to contact this user (hwtracker_probe_no_such_user_7731). Click here to Authenticate hwtracker_probe_no_such_user_7731 and then try again. Telegram Error Code: 400",
+  "raw": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149177385-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\"js\", new Date());\n\n  gtag(\"config\", \"UA-149177385-1\");\n</script>\n<font face=\"Courier New,Digital, Arial, Helvetica, sans-serif\">User: hwtracker_probe_no_such_user_7731<br>Text: probe<br>HTML format: no<br>Preview Links: no<br><br><b>Error: Permission denied for hwtracker_probe_no_such_user_7731. You need to authorize CallMeBot to contact this user (hwtracker_probe_no_such_user_7731).\r\n\t\t<br>Click <a href=\"https://api2.callmebot.com/txt/login.php\">here</a> to Authenticate hwtracker_probe_no_such_user_7731 and then try again.</b>\r\n\t\t<br><br>Telegram Error Code: 400"
+ }
+]
