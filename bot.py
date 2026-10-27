@@ -3069,8 +3069,9 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         r["stock"] = st
         r["fc_cart"] = cart
         r["fc_hold"] = hold_at                     # (cleared by any answer but a held yes)
-        if FC_CARTLOG_MAX and ((v.get("fc_cart") in ("y", "n") and cart != v.get("fc_cart"))
-                               or (cart_ok and before != "in_stock")):
+        flip = v.get("fc_cart") in ("y", "n") and cart != v.get("fc_cart")
+        news = cart_ok and before != "in_stock" and (buy or hold)       # would alert / held for it
+        if FC_CARTLOG_MAX and (flip or news):
             # v17.5.5: the flip recorder
             ev = {"t": time.strftime("%Y-%m-%dT%H:%M:%S"), "p": p, "nm": (r.get("name") or "")[:70],
                   "was": v.get("fc_cart") or "-", "now": "gone" if a.get("gone") else cart,
@@ -3079,7 +3080,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
                   "f": a.get("f"), "page": cs_, "svc": v.get("fc_svc"), "lst": word.get(p, "-")}
             _FC_CARTLOG.append(ev)
             if cart_ok and before != "in_stock":
-                _cartlog_again.append(ev)
+                _cartlog_again.append(ev)            # (a flip to yes, or would alert / held)
         r.pop("fc_cart_unchecked", None)
         if buy:
             n = a.get("n") or 0
