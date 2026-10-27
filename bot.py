@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.4
+Hot Wheels / Diecast Collector Tracker  ·  v17.5
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -43,6 +43,14 @@ checklist's series: the Dino 206 GT is a 2026 "Ferrari" → ❤️ FERRARI, 🎯
 And a car coming back needs FC_MIN_ALERT_STOCK units again (2; one for 🎯
 cars), as your settings say — since v17 the cart let single units of any car
 through ("only 1 left" Track Ripper, 25 Oct).
+v17.5: the cars you can't miss ring your phone. 26 Oct 21:40 the Car Culture
+Team Transport #97 Porsche 911 GT3 R was buyable for six minutes and its alert
+went unseen. Every Treasure Hunt, Super TH and chase piece, and every Porsche,
+Ferrari, Skyline / GT-R, Bentley, Ford GT, Mustang, Lamborghini, Supra,
+McLaren … (RING_ON) now also comes as a WhatsApp message and a Telegram call
+that rings until you pick up (CallMeBot — see RINGING ALERTS, above MAIN).
+The same car rings at most every 12 h; no calls 00:00-07:00 except for
+Treasure Hunts. Bentley and the Ford GT are 🎯 marques now too.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -106,7 +114,8 @@ says what it is — Treasure Hunts and the like first:
      FirstCry doesn't sort them out)
   ❤️ Ferrari  🖤 Porsche  💛 Lamborghini  💙 Skyline / GT-R / Nissan
   🧡 Supra / Toyota  💜 Honda / Mazda / Subaru / Mitsubishi
-  🤍 BMW / Mercedes / Audi / McLaren / Bugatti …  💚 Mustang / Corvette / Dodge …
+  🤍 Bentley / BMW / Mercedes / Audi / McLaren / Bugatti …
+  💚 Ford GT / Mustang / Corvette / Dodge …
   🩵 premium lines (RLC, Car Culture, Boulevard, Silver Series …)
 Every alert also says which case a mainline car is from ("📦 2026 Case M ·
 Cool Classics · #228"), from hw_cases.json — rebuilt daily by cases.py from
@@ -128,7 +137,9 @@ import threading
 import traceback
 import difflib
 import functools
-from urllib.parse import quote, urljoin
+import hashlib
+import unicodedata
+from urllib.parse import quote, urlencode, urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ── HTTP client ────────────────────────────────────────────────────────────────
@@ -342,7 +353,7 @@ def merge_and_save_seen(seen: dict, current: dict) -> None:
         for k in ("mg_updated_at", "stock_ver", "hm_verified_at", "auto_watch",
                   "fc_listed_at", "fc_api_seen_at", "fc_trusted", "fc_live", "fc_lst", "fc_gid", "fc_phantom",
                   "fc_new_pending", "fc_pb", "fc_arr", "fc_off", "fc_cart",
-                  "fc_svc", "fc_lst_on", "fc_lst_seen"):
+                  "fc_svc", "fc_lst_on", "fc_lst_seen", "last_ring"):
             v = d.get(k, prev.get(k, ""))
             if k in ("hm_verified_at", "fc_listed_at", "fc_api_seen_at", "fc_lst_seen") and isinstance(v, str):
                 v = _bucket(v)
@@ -529,6 +540,8 @@ FC_MARQUES = [w.strip().lower() for w in os.getenv("FC_MARQUES", ",".join([
     "911", "930", "934", "935", "993", "959", "carrera", "singer",
     # american muscle
     "mustang", "corvette", "camaro", "challenger", "charger", "plymouth",
+    # v17.5: and two more you named
+    "bentley", "ford gt",
     # collector lines worth guarding regardless of marque
     "premium", "car culture", "team transport", "boulevard", "rlc",
     "treasure hunt", "silver series", "fast furious", "fast & furious",
@@ -4668,11 +4681,12 @@ _HEARTS = [
     ("💜", [("nsx", "HONDA NSX"), ("type r", "HONDA TYPE R"), ("civic", "HONDA"), ("honda", "HONDA"),
             ("rx-7", "RX-7"), ("rx7", "RX-7"), ("mazda", "MAZDA"), ("wrx", "SUBARU"), ("impreza", "SUBARU"),
             ("subaru", "SUBARU"), ("lancer", "MITSUBISHI"), ("evo", "MITSUBISHI"), ("mitsubishi", "MITSUBISHI")]),
-    ("🤍", [("bugatti", "BUGATTI"), ("mclaren", "McLAREN"), ("koenigsegg", "KOENIGSEGG"),
+    ("🤍", [("bentley", "BENTLEY"), ("bugatti", "BUGATTI"), ("mclaren", "McLAREN"), ("koenigsegg", "KOENIGSEGG"),
             ("pagani", "PAGANI"), ("aston martin", "ASTON MARTIN"), ("alfa romeo", "ALFA ROMEO"),
             ("bmw", "BMW"), ("m3", "BMW"), ("m4", "BMW"), ("amg", "MERCEDES"), ("mercedes", "MERCEDES"),
             ("benz", "MERCEDES"), ("audi", "AUDI"), ("rs6", "AUDI"), ("rs 6", "AUDI")]),
-    ("💚", [("mustang", "MUSTANG"), ("shelby", "SHELBY"), ("corvette", "CORVETTE"), ("camaro", "CAMARO"),
+    ("💚", [("ford gt", "FORD GT"), ("gt40", "FORD GT"), ("gt 40", "FORD GT"),
+            ("mustang", "MUSTANG"), ("shelby", "SHELBY"), ("corvette", "CORVETTE"), ("camaro", "CAMARO"),
             ("challenger", "DODGE"), ("charger", "DODGE"), ("viper", "DODGE"), ("cuda", "PLYMOUTH"),
             ("road runner", "PLYMOUTH"), ("roadrunner", "PLYMOUTH"), ("plymouth", "PLYMOUTH")]),
     ("🩵", [("rlc", "RLC"), ("red line club", "RLC"), ("car culture", "CAR CULTURE"),
@@ -4899,6 +4913,379 @@ def heartbeat(current: dict, ch: dict) -> str:
 
 
 # ══════════════════════════════════════════════════════════════════════════════════
+# v17.5: RINGING ALERTS — a WhatsApp message and a Telegram call
+# ══════════════════════════════════════════════════════════════════════════════════
+# For the cars you can't afford to miss, a Telegram message isn't enough: 26 Oct
+# 21:40 the Car Culture Team Transport #97 Porsche 911 GT3 R was buyable for six
+# minutes and its alert went unseen. Those cars — every Treasure Hunt, Super
+# Treasure Hunt and chase piece (RING_KINDS) and the marques in RING_ON — also go
+# to your phone as a WhatsApp message and a Telegram call that rings until you
+# pick up, through CallMeBot (https://www.callmebot.com, free for personal use).
+# Each half is off until its GitHub secrets are set:
+#   CALLMEBOT_WA_PHONE + CALLMEBOT_WA_APIKEY   → the WhatsApp message
+#   CALLMEBOT_TG_USER (@username or +91…)       → the Telegram call
+# The same car rings at most every RING_CAR_H hours (its Telegram alerts go on as
+# before). Calls are RING_GAP_MIN minutes apart, and none during RING_QUIET
+# (India time) — except for a Treasure Hunt, Super TH or chase, which always
+# rings. The first run with the secrets set sends a test of each and says in
+# Telegram how it went. Nothing about you (number, key, username) is ever
+# printed: the run logs are public.
+
+def _ring_phone(s: str) -> str:
+    """'+91 98765 43210' / '0091…' / '919876543210' / '09876543210' / '9876543210'
+    → '+919876543210'."""
+    d = re.sub(r"^00", "", re.sub(r"\D", "", s or ""))
+    if len(d) == 11 and d.startswith("0"):
+        d = d[1:]
+    if len(d) == 10:
+        d = "91" + d                    # an Indian mobile number without its +91
+    return "+" + d if len(d) >= 8 else ""
+
+
+def _ring_user(s: str) -> str:
+    """A Telegram username ('@name' or 'name') or a phone number, as CallMeBot wants it."""
+    s = (s or "").strip()
+    if not s:
+        return ""
+    if re.fullmatch(r"[+\d\s().-]+", s):
+        return _ring_phone(s)
+    return "@" + s.lstrip("@").strip()
+
+
+RING_WA_PHONE = _ring_phone(os.getenv("CALLMEBOT_WA_PHONE", ""))
+RING_WA_KEY = re.sub(r"\s+", "", os.getenv("CALLMEBOT_WA_APIKEY", ""))
+RING_TG_USER = _ring_user(os.getenv("CALLMEBOT_TG_USER", ""))
+RING_WA = bool(RING_WA_PHONE and RING_WA_KEY)
+RING_CALL = bool(RING_TG_USER)
+# what rings: these specials (hw_priority) …
+RING_KINDS = {k.strip().lower() for k in os.getenv("RING_KINDS", "sth,schase,th,chase").split(",") if k.strip()}
+# … and these names — matched as whole words in the car's name or its case
+# checklist series ("Dino 206 GT" is a 2026 Ferrari)
+RING_ON = [w.strip().lower() for w in os.getenv("RING_ON", ",".join([
+    # the ones you named
+    "skyline", "gt-r", "gtr", "porsche", "911", "930", "934", "935", "959", "964", "993", "918",
+    "carrera", "singer", "taycan", "ferrari", "laferrari", "testarossa", "f40", "f50", "enzo", "sf90",
+    "bentley", "ford gt", "gt40", "mustang",
+    # other famous castings
+    "lamborghini", "lambo", "countach", "aventador", "huracan", "diablo", "miura", "murcielago",
+    "revuelto", "urus", "sian", "veneno", "gallardo", "supra", "mclaren", "bugatti", "pagani",
+    "koenigsegg", "aston martin", "rx-7", "rx7", "nsx", "ae86", "silvia",
+])).split(",") if w.strip()]
+RING_CAR_H = float(os.getenv("RING_CAR_H", "12"))          # the same car rings at most this often
+RING_GAP_MIN = float(os.getenv("RING_GAP_MIN", "3"))       # minutes between two calls
+RING_QUIET = os.getenv("RING_QUIET", "00:00-07:00")         # no calls then (IST); "" = any hour
+RING_TTS_LANG = os.getenv("RING_TTS_LANG", "en-GB-Standard-B")
+RING_RPT = os.getenv("RING_RPT", "2")                       # times the call repeats its message
+_RING_API = "https://api.callmebot.com"
+_RING_AUTH_URL = "https://api2.callmebot.com/txt/auth.php"
+_RING_THREADS: list = []
+_RING_TEST = {"result": None}          # the setup test's outcome, applied by the main thread
+_RING_STORES = {"firstcry": "FirstCry", "minifygram": "Minifygram", "karzdolls": "Karz and Dolls",
+                "hamleys": "Hamleys", "bigbasket": "BigBasket", "blinkit": "Blinkit"}
+
+
+def _ring_norm(s: str) -> str:
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
+    return " " + re.sub(r"[^a-z0-9& ]", " ", s.lower()) + " "
+
+
+_RING_KEYS = [(re.sub(r"\s+", " ", _ring_norm(k)), k) for k in RING_ON if _ring_norm(k).strip()]
+
+
+def ring_reason(d) -> str | None:
+    """Why this car rings your phone — 'TREASURE HUNT', 'PORSCHE', 'BENTLEY' … —
+    or None. (What the alert's first line says, at a glance.)"""
+    nm = d.get("name") or ""
+    k = hw_priority(nm)
+    if k in RING_KINDS and k in _HW_KINDS:
+        return _HW_KINDS[k][1]
+    n = re.sub(r"\s+", " ", _ring_norm(nm) + _hw_series_text(nm) + " ")
+    for key, word in _RING_KEYS:
+        if key in n:
+            label = _heart(nm)[1]
+            return label if label != "WATCHLIST" else word.upper()
+    return None
+
+
+def _ring_quiet(now: float | None = None) -> bool:
+    """Is it RING_QUIET time in India?"""
+    m = re.fullmatch(r"\s*(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})\s*", RING_QUIET or "")
+    if not m:
+        return False
+    a, b = int(m[1]) * 60 + int(m[2]), int(m[3]) * 60 + int(m[4])
+    t = time.gmtime((time.time() if now is None else now) + 19800)
+    x = t.tm_hour * 60 + t.tm_min
+    return (a <= x < b) if a <= b else (x >= a or x < b)
+
+
+def _ring_mask(text: str) -> str:
+    """CallMeBot's answer with your number, key and username taken out."""
+    secrets = {RING_WA_KEY, RING_WA_PHONE, RING_WA_PHONE.lstrip("+"), RING_WA_PHONE[3:],
+               RING_TG_USER, RING_TG_USER.lstrip("@+")}
+    for s in sorted((s for s in secrets if s and len(s) >= 4), key=len, reverse=True):
+        text = re.sub(re.escape(s), "…", text, flags=re.I)        # longest first: no pieces left
+    return re.sub(r"\+?\d[\d\s-]{5,}\d", "…", text)
+
+
+def _ring_get(url: str, timeout: float):
+    """GET one CallMeBot URL → (worked, its answer as plain text, masked)."""
+    try:
+        r = http.get(url, timeout=timeout)
+        code, body = r.status_code, r.text or ""
+    except Exception as e:
+        return False, f"no answer ({type(e).__name__})"
+    body = re.sub(r"(?is)<(script|style)\b.*?</\1\s*>", " ", body)
+    text = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body))).strip()
+    bad = re.search(r"invalid|not\s+authori[sz]ed|permission\s+denied|wrong\s+format|too\s+many\s+requests|"
+                    r"\berror\b|warning|not\s+(?:sent|allowed|found)", text, re.I)
+    return (code == 200 and not bad), _ring_mask(text)[:300]
+
+
+def _ring_wa_url(text: str) -> str:
+    return f"{_RING_API}/whatsapp.php?" + urlencode({"phone": RING_WA_PHONE, "text": text, "apikey": RING_WA_KEY})
+
+
+def _ring_call_url(text: str) -> str:
+    # a phone number goes with a plain "+" (CallMeBot reads %2B as part of it)
+    u = RING_TG_USER if RING_TG_USER.startswith("+") else quote(RING_TG_USER, safe="@")
+    return (f"{_RING_API}/start.php?user={u}&"
+            + urlencode({"text": text[:256], "lang": RING_TTS_LANG, "rpt": RING_RPT, "cc": "no"}))
+
+
+def _ring_bg(fn, *args) -> None:
+    t = threading.Thread(target=fn, args=args, daemon=True)
+    t.start()
+    _RING_THREADS.append(t)
+
+
+RING_RETRY_S = float(os.getenv("RING_RETRY_S", "25"))
+
+
+def _ring_ask(url: str, timeout: float):
+    """One CallMeBot request — asked once more RING_RETRY_S later when it was
+    turned away for coming too soon after the last one."""
+    ok, ans = _ring_get(url, timeout)
+    if not ok and re.search(r"too\s+many\s+requests|too\s+often", ans, re.I):
+        time.sleep(RING_RETRY_S)
+        ok, ans = _ring_get(url, timeout)
+    return ok, ans
+
+
+def _ring_wa_send(text: str):
+    ok, ans = _ring_ask(_ring_wa_url(text), 30)
+    print(f"[RING] WhatsApp {'sent' if ok else 'NOT sent'} — CallMeBot: {ans[:160]}")
+    return ok, ans
+
+
+def _ring_call_send(text: str):
+    ok, ans = _ring_ask(_ring_call_url(text), 75)
+    print(f"[RING] Telegram call {'placed' if ok else 'NOT placed'} — CallMeBot: {ans[:160]}")
+    return ok, ans
+
+
+def _ring_wait(limit: float = 60.0) -> None:
+    """Let calls and messages still on their way finish (at most `limit` s)."""
+    end = time.time() + limit
+    for t in list(_RING_THREADS):
+        t.join(max(0.0, end - time.time()))
+    _RING_THREADS[:] = [t for t in _RING_THREADS if t.is_alive()]
+
+
+def _ring_say(name: str) -> str:
+    """A car's name as the call reads it: no store filler, codes or colour."""
+    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode()
+    s = re.sub(r"\[[^\]]*\]|\([^)]*\)", " ", s)
+    s = re.sub(r"(?i)\b(?:hot\s*wheels|die[\s-]*cast|free\s*wheel|toy\s*car|toy|vehicle|for\s+kids|"
+               r"pre-?order|\d+\s*/\s*\d+)\b", " ", s)
+    s = re.sub(r"\s+-\s*[A-Za-z][A-Za-z /]*$", " ", s)          # a trailing " - Silver Orange"
+    words = [w.capitalize() if len(w) > 3 and w.isalpha() and w.isupper() else w for w in s.split()]
+    s = " ".join(words).strip(" -,/")
+    return s[:70].rsplit(" ", 1)[0] if len(s) > 70 else s
+
+
+def _ring_what(d, why: str) -> str:
+    """'Treasure Hunt, Porsche' — the alert's headline, said aloud."""
+    b = _badge(d)
+    label = b[1] if b and b[1] != "WATCHLIST" else why
+    return ", ".join(p.strip().title().replace("Mclaren", "McLaren") for p in label.split("·") if p.strip())
+
+
+def _ring_tts(picked: list) -> str:
+    """What the call says (CallMeBot reads up to 256 characters)."""
+    if len(picked) == 1:
+        d, event, why = picked[0]
+        price = re.sub(r"[^\d]", "", d.get("price") or "")
+        s = (f"Hot Wheels alert! {_ring_what(d, why)}. {_ring_say(d['name'])}, "
+             f"{'just listed' if event.startswith('NEW') else 'back in stock'} on "
+             f"{_RING_STORES.get(d.get('source'), d.get('source', ''))}"
+             + (f", {price} rupees" if price else "") + ". Open Telegram now.")
+    else:
+        bits = [f"{_ring_what(d, why)} on {_RING_STORES.get(d.get('source'), '')}" for d, _, why in picked[:3]]
+        more = len(picked) - len(bits)
+        s = (f"Hot Wheels alert! {len(picked)} cars on your list: " + ", ".join(bits)
+             + (f", and {more} more" if more else "") + ". Open Telegram now.")
+    return s[:256]
+
+
+def _ring_wa_text(picked: list) -> str:
+    """The WhatsApp message: what each car is, price, units, and its link."""
+    out = ["🚨 *Hot Wheels alert*"]
+    for d, event, why in picked[:5]:
+        b = _badge(d)
+        emoji, label = (b if b and b[1] != "WATCHLIST" else ("🎯", why))
+        out += ["", f"{emoji} *{label} · {event}*", d.get("name", "")]
+        bits = [d.get("price") or "", _RING_STORES.get(d.get("source"), d.get("source", ""))]
+        cnt = d.get("stock_count")
+        if isinstance(cnt, int) and cnt > 0:
+            where = f" for {FC_PINCODE}" if d.get("fc_cart") == "y" else ""
+            bits.append(f"⚠️ only {cnt} left{where}" if cnt <= FC_LOW_STOCK else f"✅ {cnt} left{where}")
+        out.append(" · ".join(x for x in bits if x))
+        if d.get("fc_fast"):
+            out.append("📄 just released: if its page says Out of Stock, tap ♡ and add it to the cart "
+                       "from Favourites in your Profile")
+        out.append(fc_fresh_link(d["url"]) if d.get("source") == "firstcry" else d.get("url", ""))
+    if len(picked) > 5:
+        out += ["", f"+{len(picked) - 5} more — see Telegram"]
+    return "\n".join(out)
+
+
+def ring_for(seen: dict, ch: dict) -> int:
+    """The cars of this alert that ring your phone: a WhatsApp message and —
+    unless a call just went out, or it's night (Treasure Hunts excepted) — a
+    Telegram call. Returns how many cars rang."""
+    if not (RING_WA or RING_CALL):
+        return 0
+    picked, ids = [], set()
+    for key, event in (("new_listings", "NEW IN STOCK"), ("restocks", "BACK IN STOCK")):
+        items = ch.get(key) or []
+        if key == "new_listings":
+            items = [d for d in items if _within_budget(d)]
+        for d in items:
+            if d.get("stock") != "in_stock" or d["id"] in ids:
+                continue
+            why = ring_reason(d)
+            if not why:
+                continue
+            prev = seen.get(d["id"]) if isinstance(seen.get(d["id"]), dict) else {}
+            if _hours_since(d.get("last_ring") or prev.get("last_ring", "")) < RING_CAR_H:
+                continue                    # rang for this car not long ago
+            ids.add(d["id"])
+            picked.append((d, event, why))
+    if not picked:
+        return 0
+    picked.sort(key=lambda x: _priority_rank(x[0]))       # Treasure Hunts and the like first
+    stamp = time.strftime("%Y-%m-%dT%H:%M:%S")
+    for d, _, _ in picked:
+        d["last_ring"] = stamp
+        if isinstance(seen.get(d["id"]), dict):
+            seen[d["id"]]["last_ring"] = stamp
+    special = any(hw_priority(d["name"]) in RING_KINDS for d, _, _ in picked)
+    meta = seen.setdefault("_meta", {})
+    since = _hours_since(meta.get("ring_call", "")) * 60
+    # (CallMeBot turns a second call away if it comes within seconds of the last)
+    call = RING_CALL and since >= 1.0 and (special or (since >= RING_GAP_MIN and not _ring_quiet()))
+    if RING_WA:
+        _ring_bg(_ring_wa_send, _ring_wa_text(picked))
+    if call:
+        meta["ring_call"] = stamp
+        _ring_bg(_ring_call_send, _ring_tts(picked))
+    why_not = "" if call or not RING_CALL else (
+        " (no call: one just went out)" if since < RING_GAP_MIN else " (no call: quiet hours)")
+    print(f"[RING] {len(picked)} car(s) on your ring list ({', '.join(w for _, _, w in picked)}) → "
+          + " + ".join(x for x, on in (("WhatsApp", RING_WA), ("call", call)) if on) + why_not)
+    return len(picked)
+
+
+def _ring_explain(ok: bool, ans: str, what: str) -> str:
+    """One line for the Telegram setup message: worked, or what to fix."""
+    if ok:
+        return "✅ " + ("test message sent — check WhatsApp" if what == "wa" else "calling you now — pick up to hear it")
+    a = ans.lower()
+    if what == "wa" and "apikey" in a:
+        return "❌ CallMeBot says the API key is wrong — check the CALLMEBOT_WA_APIKEY secret"
+    if what == "call" and ("authori" in a or "permission denied" in a):
+        return (f"❌ not allowed yet — on your phone open {_RING_AUTH_URL} and allow CallMeBot to call "
+                "you, and in Telegram set Settings → Privacy and Security → Calls to Everybody")
+    if "wrong format" in a:
+        return ("❌ CallMeBot can't read the " + ("phone number (CALLMEBOT_WA_PHONE: +91 and your number)"
+                if what == "wa" else "username (CALLMEBOT_TG_USER: @yourname or +91 and your number)"))
+    if "too many" in a:
+        return "❌ CallMeBot was busy — trying again in an hour"
+    return "❌ CallMeBot said: " + html.escape(ans[:180], quote=False)
+
+
+def ring_setup(seen: dict) -> None:
+    """The first run with the ringing alerts' secrets set (or changed) sends a
+    test WhatsApp message and a test call, then says in Telegram how each went.
+    A part that didn't work is tried again an hour later (4 tries)."""
+    if not (RING_WA or RING_CALL):
+        return
+    meta = seen.setdefault("_meta", {})
+    sig = hashlib.sha256(f"{RING_WA_PHONE}|{RING_WA_KEY}|{RING_TG_USER}".encode()).hexdigest()[:12]
+    st = meta.get("ring_test") if isinstance(meta.get("ring_test"), dict) else {}
+    same = st.get("sig") == sig
+    need_wa = RING_WA and not (same and st.get("wa_ok"))
+    need_call = RING_CALL and not (same and st.get("call_ok"))
+    if not (need_wa or need_call):
+        return
+    if same and (st.get("tries", 0) >= 4 or _hours_since(st.get("at", "")) < 1):
+        return
+    tries = (st.get("tries", 0) if same else 0) + 1
+    st = {"sig": sig, "at": time.strftime("%Y-%m-%dT%H:%M:%S"), "tries": tries,
+          "wa_ok": bool(same and st.get("wa_ok")), "call_ok": bool(same and st.get("call_ok"))}
+    meta["ring_test"] = st
+    _save_seen_file(seen)            # saved before anything is sent: a crash can't repeat it every run
+    meta["ring_call"] = st["at"] if need_call else meta.get("ring_call", "")
+
+    def go():
+        res = {}
+        if need_wa:
+            res["wa"] = _ring_wa_send(
+                "✅ *Hot Wheels Tracker*\nWhatsApp alerts are on. Every car on your ring list — Treasure "
+                "Hunts, Porsche, Ferrari, Skyline, Bentley, Ford GT, Mustang … — will come here too, "
+                "with a Telegram call.")
+        if need_call:
+            res["call"] = _ring_call_send(
+                "Hello! This is your Hot Wheels tracker. Calls are working. When a car on your list "
+                "comes in stock, your phone will ring like this, and the alert is in Telegram.")
+        lines = ["📞 <b>Ringing alerts</b>" + (f" (try {tries} of 4)" if tries > 1 else "")]
+        if RING_WA:
+            lines.append("WhatsApp: " + (_ring_explain(*res["wa"], "wa") if "wa" in res else "✅ working"))
+        else:
+            lines.append("WhatsApp: off (needs CALLMEBOT_WA_PHONE and CALLMEBOT_WA_APIKEY)")
+        if RING_CALL:
+            lines.append("Telegram call: " + (_ring_explain(*res["call"], "call") if "call" in res else "✅ working"))
+        else:
+            lines.append("Telegram call: off (needs CALLMEBOT_TG_USER)")
+        lines.append(f"\nFrom now on every car on your ring list (Treasure Hunts, Super THs, chases, Porsche, "
+                     f"Ferrari, Skyline / GT-R, Bentley, Ford GT, Mustang, Lamborghini, Supra, McLaren …) "
+                     f"also comes this way — the same car at most every {RING_CAR_H:g} h"
+                     + (f"; no calls {RING_QUIET.replace('-', '–')} except Treasure Hunts" if RING_QUIET else "")
+                     + ".")
+        tg("\n".join(lines))
+        _RING_TEST["result"] = {"wa_ok": bool(res["wa"][0]) if "wa" in res else st["wa_ok"],
+                                "call_ok": bool(res["call"][0]) if "call" in res else st["call_ok"],
+                                "wa": res["wa"][1][:120] if "wa" in res else st.get("wa", ""),
+                                "call": res["call"][1][:120] if "call" in res else st.get("call", "")}
+
+    _ring_bg(go)
+
+
+def _ring_finish(seen: dict) -> None:
+    """End of a run: wait for calls/messages still going out, keep the test's result."""
+    if not _RING_THREADS and not _RING_TEST["result"]:
+        return
+    _ring_wait(60.0)
+    res, _RING_TEST["result"] = _RING_TEST["result"], None
+    if res:
+        meta = seen.setdefault("_meta", {})
+        st = meta.get("ring_test") if isinstance(meta.get("ring_test"), dict) else {}
+        st.update(res)
+        meta["ring_test"] = st
+        _save_seen_file(seen)
+
+
+# ══════════════════════════════════════════════════════════════════════════════════
 # MAIN
 # ══════════════════════════════════════════════════════════════════════════════════
 def _source_table(snap: dict, fc_full: bool):
@@ -5070,6 +5457,11 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
             time.sleep(0.4)            # Telegram: a burst of messages to one chat
         tg(alert)
         print("\n" + alert)
+    # v17.5: the cars you can't miss also ring your phone (WhatsApp + a call)
+    try:
+        ring_for(seen, changes)
+    except Exception:
+        print(f"[RING] skipped:\n{traceback.format_exc()}")
     if not alerts:
         n = sum(len(v) for v in changes.values())
         if n or not quiet:
@@ -5165,6 +5557,12 @@ def main():
                 v["alerted_new"] = True
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
+    if not first_run:
+        try:
+            ring_setup(seen)          # v17.5: a test of the ringing alerts once they're set up
+        except Exception:
+            print(f"[RING] setup test skipped:\n{traceback.format_exc()}")
+
     all_names = [n for n, _ in _source_table(seen, False)]
     # Runs are chained back to back about a minute apart. The slower stores
     # are only checked in each run's FIRST pass, looking back over the last
@@ -5226,6 +5624,10 @@ def main():
     if _ON_GITHUB and took > RUN_SECONDS + RUN_EXTEND_S + 25:
         # visible in the run's summary and through the API, without the logs
         print(f"::notice title=Long run ({took:.0f}s)::{', '.join(timings)[:900]}")
+    try:
+        _ring_finish(seen)            # v17.5: calls / WhatsApp messages still on their way
+    except Exception:
+        print(f"[RING] finish failed:\n{traceback.format_exc()}")
 
 
 if __name__ == "__main__":

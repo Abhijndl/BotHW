@@ -89,6 +89,21 @@ jobs:
           # Keywords that get an extra 🎯 flag in alerts.
           WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
 
+          # ── Ringing alerts (v17.5) ───────────────────────────────────────────
+          # The cars you can't miss also come to your phone as a WhatsApp message
+          # and a Telegram call that rings until you pick up (CallMeBot, free for
+          # personal use). Off until these secrets are set (Settings → Secrets
+          # and variables → Actions); each half works on its own:
+          CALLMEBOT_WA_PHONE:  ${{ secrets.CALLMEBOT_WA_PHONE }}    # +91 and your number
+          CALLMEBOT_WA_APIKEY: ${{ secrets.CALLMEBOT_WA_APIKEY }}   # the key CallMeBot sent you
+          CALLMEBOT_TG_USER:   ${{ secrets.CALLMEBOT_TG_USER }}     # @yourname (or +91 and your number)
+          # What rings: every Treasure Hunt, Super TH and chase piece, and these
+          # names (whole words, in the car's name or its case-checklist series).
+          RING_ON: "skyline,gt-r,gtr,porsche,911,930,934,935,959,964,993,918,carrera,singer,taycan,ferrari,laferrari,testarossa,f40,f50,enzo,sf90,bentley,ford gt,gt40,mustang,lamborghini,lambo,countach,aventador,huracan,diablo,miura,murcielago,revuelto,urus,sian,veneno,gallardo,supra,mclaren,bugatti,pagani,koenigsegg,aston martin,rx-7,rx7,nsx,ae86,silvia"
+          RING_CAR_H: "12"            # the same car rings at most every 12 h
+          RING_GAP_MIN: "3"           # minutes between two calls (WhatsApp still goes)
+          RING_QUIET: "00:00-07:00"   # no calls then (India time), except Treasure Hunts; "" = any hour
+
           # ── Exclusions (apply to EVERY store) ────────────────────────────────
           # Monster trucks plus all big sets: track sets, playsets, garages, car
           # washes, launchers — and FirstCry's "Ultimate" line (all playsets).
@@ -106,7 +121,7 @@ jobs:
 
           # ── FirstCry ─────────────────────────────────────────────────────────
           # Marques/lines to AUTO-WATCH — flagged 🎯 and listed first in alerts.
-          FC_MARQUES: "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics"
+          FC_MARQUES: "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,bentley,ford gt,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics"
           # Hand-picked products (your FirstCry Shortlist). URLs or IDs, comma separated.
           FC_WATCH: "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail"
           # v17: FirstCry's own checkout cart (a guest cart for 248001 — nothing
