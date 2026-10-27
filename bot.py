@@ -5038,7 +5038,9 @@ def _ring_get(url: str, timeout: float):
     text = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body))).strip()
     bad = re.search(r"invalid|not\s+authori[sz]ed|permission\s+denied|wrong\s+format|too\s+many\s+requests|"
                     r"\berror\b|warning|not\s+(?:sent|allowed|found)", text, re.I)
-    return (code == 200 and not bad), _ring_mask(text)[:300]
+    # (the HTTP status leads the answer when it isn't 200 — the setup test keeps
+    # the whole answer, masked, so what CallMeBot said can be read back)
+    return (code == 200 and not bad), (f"[HTTP {code}] " if code != 200 else "") + _ring_mask(text)[:700]
 
 
 def _ring_wa_url(text: str) -> str:
@@ -5203,7 +5205,9 @@ def _ring_explain(ok: bool, ans: str, what: str) -> str:
     a = ans.lower()
     if what == "wa" and "apikey" in a:
         return "❌ CallMeBot says the API key is wrong — check the CALLMEBOT_WA_APIKEY secret"
-    if what == "call" and ("authori" in a or "permission denied" in a):
+    # (every answer starts "Checking Authorization for …" — only a refusal counts)
+    if what == "call" and re.search(r"not\s+authori[sz]ed|authori[sz]ation\b[^.]{0,40}\bnot\s+received|"
+                                    r"permission\s+denied", a):
         return (f"❌ not allowed yet — on your phone open {_RING_AUTH_URL} and allow CallMeBot to call "
                 "you, and in Telegram set Settings → Privacy and Security → Calls to Everybody")
     if "wrong format" in a:
@@ -5211,7 +5215,7 @@ def _ring_explain(ok: bool, ans: str, what: str) -> str:
                 if what == "wa" else "username (CALLMEBOT_TG_USER: @yourname or +91 and your number)"))
     if "too many" in a:
         return "❌ CallMeBot was busy — trying again in an hour"
-    return "❌ CallMeBot said: " + html.escape(ans[:180], quote=False)
+    return "❌ CallMeBot said: " + html.escape(ans[:400], quote=False)
 
 
 def ring_setup(seen: dict) -> None:
@@ -5265,8 +5269,8 @@ def ring_setup(seen: dict) -> None:
         tg("\n".join(lines))
         _RING_TEST["result"] = {"wa_ok": bool(res["wa"][0]) if "wa" in res else st["wa_ok"],
                                 "call_ok": bool(res["call"][0]) if "call" in res else st["call_ok"],
-                                "wa": res["wa"][1][:120] if "wa" in res else st.get("wa", ""),
-                                "call": res["call"][1][:120] if "call" in res else st.get("call", "")}
+                                "wa": res["wa"][1][:700] if "wa" in res else st.get("wa", ""),
+                                "call": res["call"][1][:700] if "call" in res else st.get("call", "")}
 
     _ring_bg(go)
 
