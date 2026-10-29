@@ -1,189 +1,189 @@
 {
- "updated": "2026-10-29T11:10:33.352Z",
+ "updated": "2026-10-29T11:30:33.563Z",
  "fast_s": 15.0,
  "slow_s": 45.0,
  "pages": {
   "/mini-gt/mini-gt": {
-   "ok": 720,
+   "ok": 801,
    "fail": 0,
    "n": 121,
-   "avg_s": 1.73,
-   "p90_s": 2.29
+   "avg_s": 1.72,
+   "p90_s": 2.26
   },
   "/mini-gt/mini-gt-blister-pack": {
-   "ok": 720,
+   "ok": 800,
    "fail": 0,
-   "n": 144,
-   "avg_s": 1.73,
-   "p90_s": 2.19
+   "n": 143,
+   "avg_s": 1.72,
+   "p90_s": 2.15
   },
   "/specials/special-stocks-64-43-scale": {
-   "ok": 720,
+   "ok": 800,
    "fail": 0,
    "n": 126,
-   "avg_s": 1.62,
+   "avg_s": 1.61,
    "p90_s": 1.97
   },
   "/": {
-   "ok": 720,
+   "ok": 800,
    "fail": 0,
    "n": 50,
-   "avg_s": 1.62,
+   "avg_s": 1.61,
    "p90_s": 1.86
   },
   "/specials/chase-car": {
-   "ok": 720,
+   "ok": 800,
    "fail": 0,
    "n": 2,
-   "avg_s": 1.33,
-   "p90_s": 1.57
-  },
-  "/mini-gt/kaido-house": {
-   "ok": 720,
-   "fail": 0,
-   "n": 21,
-   "avg_s": 1.37,
-   "p90_s": 1.63
-  },
-  "/hot-wheels/mainlines": {
-   "ok": 241,
-   "fail": 0,
-   "n": 6,
-   "avg_s": 1.55,
-   "p90_s": 2.2
-  },
-  "/hot-wheels/pop-culture": {
-   "ok": 240,
-   "fail": 0,
-   "n": 6,
-   "avg_s": 1.51,
-   "p90_s": 1.91
-  },
-  "/hot-wheels/card-art-premiums": {
-   "ok": 240,
-   "fail": 0,
-   "n": 10,
-   "avg_s": 1.48,
-   "p90_s": 1.94
-  },
-  "/hot-wheels/gift-pack": {
-   "ok": 240,
-   "fail": 0,
-   "n": 25,
-   "avg_s": 1.43,
-   "p90_s": 1.76
-  },
-  "/hot-wheels/car-culture": {
-   "ok": 240,
-   "fail": 0,
-   "n": 1,
-   "avg_s": 1.34,
-   "p90_s": 1.57
-  },
-  "/hot-wheels/fast-and-furious": {
-   "ok": 240,
-   "fail": 0,
-   "n": 1,
    "avg_s": 1.32,
    "p90_s": 1.56
   },
+  "/mini-gt/kaido-house": {
+   "ok": 800,
+   "fail": 0,
+   "n": 21,
+   "avg_s": 1.35,
+   "p90_s": 1.62
+  },
+  "/hot-wheels/mainlines": {
+   "ok": 267,
+   "fail": 0,
+   "n": 6,
+   "avg_s": 1.54,
+   "p90_s": 2.2
+  },
+  "/hot-wheels/pop-culture": {
+   "ok": 267,
+   "fail": 0,
+   "n": 6,
+   "avg_s": 1.5,
+   "p90_s": 1.9
+  },
+  "/hot-wheels/card-art-premiums": {
+   "ok": 267,
+   "fail": 0,
+   "n": 10,
+   "avg_s": 1.48,
+   "p90_s": 1.93
+  },
+  "/hot-wheels/gift-pack": {
+   "ok": 267,
+   "fail": 0,
+   "n": 25,
+   "avg_s": 1.43,
+   "p90_s": 1.74
+  },
+  "/hot-wheels/car-culture": {
+   "ok": 267,
+   "fail": 0,
+   "n": 1,
+   "avg_s": 1.33,
+   "p90_s": 1.56
+  },
+  "/hot-wheels/fast-and-furious": {
+   "ok": 267,
+   "fail": 0,
+   "n": 1,
+   "avg_s": 1.31,
+   "p90_s": 1.55
+  },
   "/hot-wheels/boulevard-series": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.39,
-   "p90_s": 1.65
+   "avg_s": 1.38,
+   "p90_s": 1.61
   },
   "/hot-wheels/team-transport": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 5,
-   "avg_s": 1.45,
+   "avg_s": 1.44,
    "p90_s": 1.84
   },
   "/hot-wheels/character-cars": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 8,
-   "avg_s": 1.46,
-   "p90_s": 1.83
+   "avg_s": 1.45,
+   "p90_s": 1.79
   },
   "/hot-wheels/disney-cars": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.37,
-   "p90_s": 1.59
+   "avg_s": 1.36,
+   "p90_s": 1.57
   },
   "/hot-wheels/hot-wheels-accessories": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 9,
    "avg_s": 1.41,
-   "p90_s": 1.69
+   "p90_s": 1.68
   },
   "/pre-orders/pre-order-minigt": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 71,
-   "avg_s": 1.53,
-   "p90_s": 1.74
+   "avg_s": 1.52,
+   "p90_s": 1.73
   },
   "/pre-orders/pre-order-special-stock": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 1,
-   "avg_s": 1.34,
-   "p90_s": 1.55
+   "avg_s": 1.33,
+   "p90_s": 1.54
   },
   "/hot-wheels/monster-trucks": {
-   "ok": 240,
+   "ok": 267,
    "fail": 0,
    "n": 0,
    "avg_s": 1.51,
-   "p90_s": 2.16
+   "p90_s": 2.09
   },
   "/matchbox/matchbox-basic-cars": {
-   "ok": 240,
+   "ok": 266,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.49,
-   "p90_s": 1.9
+   "avg_s": 1.48,
+   "p90_s": 1.89
   },
   "/matchbox/matchbox-moving-parts": {
-   "ok": 240,
+   "ok": 266,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.41,
+   "avg_s": 1.4,
    "p90_s": 1.68
   },
   "/matchbox/matchbox-superfast": {
-   "ok": 240,
+   "ok": 266,
    "fail": 0,
    "n": 1,
    "avg_s": 1.35,
    "p90_s": 1.57
   },
   "/majorette/premium-cars": {
-   "ok": 240,
+   "ok": 266,
    "fail": 0,
    "n": 53,
-   "avg_s": 1.39,
-   "p90_s": 1.68
+   "avg_s": 1.38,
+   "p90_s": 1.66
   },
   "/majorette/basic-cars": {
-   "ok": 240,
+   "ok": 266,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.32,
-   "p90_s": 1.56
+   "avg_s": 1.31,
+   "p90_s": 1.55
   },
   "/majorette/majorette": {
-   "ok": 240,
+   "ok": 266,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.37,
-   "p90_s": 1.65
+   "avg_s": 1.35,
+   "p90_s": 1.62
   }
  }
 }
