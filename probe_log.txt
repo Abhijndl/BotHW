@@ -1,66 +1,84 @@
-=== 4. what a details record holds ===
-  pageProps keys: ['breadcrumb', 'productdetails', 'relatedproducts']
-  productdetails: {'id': 4213, 'pro_name': 'MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO', 'slug': 'mini-gt-lancia-stratos-hf-stradale-rosso-arancio', 'product_sname': 'MINI GT 365 ', 'sku': 'MINI GT 365 ', 'act_price': 1099, 'dis_price': 1019, 'in_stock': 1, 'is_preorder': 0, 'preorder_price': None, 'is_approved': 1, 'add_limit': 6, 'type': 0, 'pro_desc': '<str 868 chars>', 'short_desc': '', 'brand_name': '', 'size_chart': '', 'product_attr': '{"response":[{"attribute":[{"Size":"Single"}],"qty":"30","changedPrice":0}]}', 'tags': None, 'iselite': 0, 'elite_price': 0, 'pid': '4lgO9nVLoQ', 'prd_images': '<list 989 chars>'}
+=== 1. opening a car whose slug has a '?' ===
+  Pqp262Op36 in_stock=1 slug='?barbie-made-to-move-fashion-doll-with-black-hair-'  shop's own hrefs: ['/details/?barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36']
+    tracker's (%3F)   HTTP 404 opens it: False  '/details/%3Fbarbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
+    double %253F      HTTP 200 opens it: True  '/details/%253Fbarbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
+    '?' dropped       HTTP 404 opens it: False  '/details/barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
+    '?'→'-'           HTTP 404 opens it: False  '/details/-barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
+    before '?' only   HTTP 404 opens it: False  '/details/?pid=Pqp262Op36'
+    after '?' only    HTTP 404 opens it: False  '/details/barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
+    pid as slug       HTTP 404 opens it: False  '/details/Pqp262Op36?pid=Pqp262Op36'
+    shop's own        HTTP 404 opens it: False  '/details/?barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
+  KBg7nKepRr in_stock=1 slug='lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie'  shop's own hrefs: ['/details/lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKepRr']
+    tracker's (%3F)   HTTP 404 opens it: False  '/details/lego-duplo-%3F-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nK'
+    double %253F      HTTP 200 opens it: True  '/details/lego-duplo-%253F-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7'
+    '?' dropped       HTTP 404 opens it: False  '/details/lego-duplo--disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKepR'
+    '?'→'-'           HTTP 404 opens it: False  '/details/lego-duplo---disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKep'
+    before '?' only   HTTP 404 opens it: False  '/details/lego-duplo-?pid=KBg7nKepRr'
+    after '?' only    HTTP 404 opens it: False  '/details/-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKepRr'
+    pid as slug       HTTP 404 opens it: False  '/details/KBg7nKepRr?pid=KBg7nKepRr'
+    shop's own        HTTP 404 opens it: False  '/details/lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKep'
 
-=== 1. two products with one slug ===
-  406 products on 9 shelves; 27 slugs shared by 2+ products
-  'mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-w'   pid=aMNBW9mLXd ₹1299 'MINI GT 996'               → HTTP 200 shows pid=aMNBW9mLXd ₹1299 'MINI GT 996' SAME
-  'mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-w'   pid=0mNyqVqNkj ₹1489 'MINI GT 996 BLISTER PACK'  → HTTP 200 shows pid=0mNyqVqNkj ₹1489 'MINI GT 996 BLISTER PACK' SAME
-  'mini-gt-nissan-z-veilside-fz400-gold-chrome'    pid=jPp9Yj2pDa ₹1489 'MINI GT 985'               → HTTP 200 shows pid=jPp9Yj2pDa ₹1489 'MINI GT 985' SAME
-  'mini-gt-nissan-z-veilside-fz400-gold-chrome'    pid=eJNr9GogBd ₹1669 'MINI GT 985 BLISTER PACK'  → HTTP 200 shows pid=eJNr9GogBd ₹1669 'MINI GT 985 BLISTER PACK' SAME
-  'mini-gt-jaguar-c-x75-black'                     pid=zONvZyaNBK ₹1149 'MINI GT 1070'              → HTTP 200 shows pid=zONvZyaNBK ₹1149 'MINI GT 1070' SAME
-  'mini-gt-jaguar-c-x75-black'                     pid=RWg8V1yLKe ₹1349 'MINI GT 1070 BLISTER PAC'  → HTTP 200 shows pid=RWg8V1yLKe ₹1349 'MINI GT 1070 BLISTER PAC' SAME
-  'mini-gt-lotus-78-3-gunnar-nilsson-1977-japan'   pid=Ezgl2W7LMr ₹1299 'MINI GT 808'               → HTTP 200 shows pid=Ezgl2W7LMr ₹1299 'MINI GT 808' SAME
-  'mini-gt-lotus-78-3-gunnar-nilsson-1977-japan'   pid=E5N4n4vpMq ₹1399 'MINI GT 808 BLISTER PACK'  → HTTP 200 shows pid=E5N4n4vpMq ₹1399 'MINI GT 808 BLISTER PACK' SAME
-  'mini-gt-mazda-rx-7-veilside-fortune-grey'       pid=QJgn205gl6 ₹1149 'MINI GT 1057'              → HTTP 200 shows pid=QJgn205gl6 ₹1149 'MINI GT 1057' SAME
-  'mini-gt-mazda-rx-7-veilside-fortune-grey'       pid=10gzmm7pAV ₹1299 'MINI GT 1057 BLISTER PAC'  → HTTP 200 shows pid=10gzmm7pAV ₹1299 'MINI GT 1057 BLISTER PAC' SAME
-  'cadillac-v-series-r-01-cadillac-racing-2024-'   pid=KBg7zPepRr ₹1599 'MINI GT 1010'              → HTTP 200 shows pid=KBg7zPepRr ₹1599 'MINI GT 1010' SAME
-  'cadillac-v-series-r-01-cadillac-racing-2024-'   pid=GoL1JeJpBA ₹1749 'MINI GT 1010 BLISTER PAC'  → HTTP 200 shows pid=GoL1JeJpBA ₹1749 'MINI GT 1010 BLISTER PAC' SAME
-  'mini-gt-nissan-lb-super-silhouette-s15-silvi'   pid=Ezgl2PoLMr ₹1399 'MINI GT 1022'              → HTTP 200 shows pid=Ezgl2PoLMr ₹1399 'MINI GT 1022' SAME
-  'mini-gt-nissan-lb-super-silhouette-s15-silvi'   pid=E5N4no3pMq ₹1499 'MINI GT 1022 BLISTER PAC'  → HTTP 200 shows pid=E5N4no3pMq ₹1499 'MINI GT 1022 BLISTER PAC' SAME
-  'bmw-m5-touring-marina-bay-blue-metallic'        pid=x7LelByNY0 ₹1149 'MINI GT 1080'              → HTTP 200 shows pid=x7LelByNY0 ₹1149 'MINI GT 1080' SAME
-  'bmw-m5-touring-marina-bay-blue-metallic'        pid=0mNyy5VNkj ₹1349 'MINI GT 1080 BLISTER\xa0PAC' → HTTP 200 shows pid=0mNyy5VNkj ₹1349 'MINI GT 1080 BLISTER\xa0PAC' SAME
-  'lb-works-ford-mustang-triple-yellow'            pid=xeLXQlKp1W ₹1199 'MINI GT 1077'              → HTTP 200 shows pid=xeLXQlKp1W ₹1199 'MINI GT 1077' SAME
-  'lb-works-ford-mustang-triple-yellow'            pid=GoL1J1rpBA ₹1349 'MINI GT 1077 BLISTER\xa0PAC' → HTTP 200 shows pid=GoL1J1rpBA ₹1349 'MINI GT 1077 BLISTER\xa0PAC' SAME
-  'bugatti-w16-mistral-black'                      pid=rMNM6nXL95 ₹1599 'MINI GT 1058'              → HTTP 200 shows pid=rMNM6nXL95 ₹1599 'MINI GT 1058' SAME
-  'bugatti-w16-mistral-black'                      pid=zONvZaeNBK ₹1749 'MINI GT 1058\xa0BLISTER\xa0PAC' → HTTP 200 shows pid=zONvZaeNBK ₹1749 'MINI GT 1058\xa0BLISTER\xa0PAC' SAME
-  'mini-gt-bmw-m5-g90-isle-of-man-green-metalli'   pid=aMNB2wmNXd ₹1149 'MINI GT 1086'              → HTTP 200 shows pid=aMNB2wmNXd ₹1149 'MINI GT 1086' SAME
-  'mini-gt-bmw-m5-g90-isle-of-man-green-metalli'   pid=96pm2bygVK ₹1299 'MINI GT 1086 BLISTER PAC'  → HTTP 200 shows pid=96pm2bygVK ₹1299 'MINI GT 1086 BLISTER PAC' SAME
-  'rb-vcarb-01-22-yuki-tsunoda-2024-f1-2024-bah'   pid=QJgn28mgl6 ₹1649 'MINI\xa0GT 1007'           → HTTP 200 shows pid=QJgn28mgl6 ₹1649 'MINI\xa0GT 1007' SAME
-  'rb-vcarb-01-22-yuki-tsunoda-2024-f1-2024-bah'   pid=m8pDldnpv2 ₹1799 'MINI\xa0GT 1007\xa0BLISTER PAC' → HTTP 200 shows pid=m8pDldnpv2 ₹1799 'MINI\xa0GT 1007\xa0BLISTER PAC' SAME
-  same: 24 of 24
+=== 2. a search page? ===
+  search-ish strings in the scripts: [('(key) search', 7), ('(key) searchParams', 4), ('(key) searchParamsToUrlQuery', 1)]
+  forms on the home page: []
+  search inputs: ['<input type="search" placeholder="Search for products" aria-label="Search for products" value=""/>', '<input type="search" placeholder="Search for products" value=""/>']
+  /search?q=mclaren                        HTTP 200 page='/search' products=0 mclaren=0 → /search?q=mclaren
+  /search?keyword=mclaren                  HTTP 200 page='/search' products=0 mclaren=0 → /search?keyword=mclaren
+  /search?search=mclaren                   HTTP 200 page='/search' products=0 mclaren=0 → /search?search=mclaren
+  /search/mclaren                          HTTP 404 page='/404' products=0 mclaren=0 → /search/mclaren
+  /searchresult?search=mclaren             HTTP 404 page='/404' products=0 mclaren=0 → /searchresult?search=mclaren
+  /search-result?search=mclaren            HTTP 404 page='/404' products=0 mclaren=0 → /search-result?search=mclaren
+  /products?search=mclaren                 HTTP 404 page='/404' products=0 mclaren=0 → /products?search=mclaren
+  /search?query=mclaren                    HTTP 200 page='/search' products=0 mclaren=0 → /search?query=mclaren
+  /search?term=mclaren                     HTTP 200 page='/search' products=39 mclaren=39 → /search?term=mclaren
+  /search?s=mclaren                        HTTP 200 page='/search' products=0 mclaren=0 → /search?s=mclaren
 
-=== 2. does a '?' cut the slug short? (in-stock cars) ===
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   as is     → HTTP 200 shows pid=4lgO9nVLoQ (it)
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%3F      → HTTP 200 shows pid=4lgO9nVLoQ (it)
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%3Fzzz   → HTTP 200 shows pid=4lgO9nVLoQ (it)
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +zzz      → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%23zzz   → HTTP 200 shows pid=4lgO9nVLoQ (it)
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%26zzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%2Fzzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%25zzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-rosso'   +%2Bzzz   → HTTP 404 shows pid=None 
-  'mini-gt-hyundai-kona-n-performance-blue'    as is     → HTTP 200 shows pid=GvLPBOegod (it)
-  'mini-gt-hyundai-kona-n-performance-blue'    +%3F      → HTTP 200 shows pid=GvLPBOegod (it)
-  'mini-gt-hyundai-kona-n-performance-blue'    +%3Fzzz   → HTTP 200 shows pid=GvLPBOegod (it)
-  'mini-gt-hyundai-kona-n-performance-blue'    +zzz      → HTTP 404 shows pid=None 
-  'mini-gt-hyundai-kona-n-performance-blue'    +%23zzz   → HTTP 200 shows pid=GvLPBOegod (it)
-  'mini-gt-hyundai-kona-n-performance-blue'    +%26zzz   → HTTP 404 shows pid=None 
-  'mini-gt-hyundai-kona-n-performance-blue'    +%2Fzzz   → HTTP 404 shows pid=None 
-  'mini-gt-hyundai-kona-n-performance-blue'    +%25zzz   → HTTP 404 shows pid=None 
-  'mini-gt-hyundai-kona-n-performance-blue'    +%2Bzzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-verde'   as is     → HTTP 200 shows pid=OyLoWy0Lb2 (it)
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%3F      → HTTP 200 shows pid=OyLoWy0Lb2 (it)
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%3Fzzz   → HTTP 200 shows pid=OyLoWy0Lb2 (it)
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +zzz      → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%23zzz   → HTTP 200 shows pid=OyLoWy0Lb2 (it)
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%26zzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%2Fzzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%25zzz   → HTTP 404 shows pid=None 
-  'mini-gt-lancia-stratos-hf-stradale-verde'   +%2Bzzz   → HTTP 404 shows pid=None 
+=== 3. add to cart from the shelf? ===
+  around the first 'Add to': 280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path></svg>Add to Cart</button></div></div></div></div><div class="col-lg-4 col-md-6 col-6 col-xl-3"><div class="main-item"><a href
 
-=== 3. any in-stock car with '?', '#', '&', '/', '%' or '+' in its slug? ===
-  148 category links on the home page
-  1362 products in all; 2 with those characters:
-  /action-figures/dolls            in_stock=1 slug='?barbie-made-to-move-fashion-doll-with-black-hair-' → HTTP 404 shows=None 
-  /lego/lego-duplo                 in_stock=1 slug='lego-duplo-?-disney-mickey-minnie-birthday-train-building-to' → HTTP 404 shows=None 
+=== 4. box / blister on every Mini GT shelf ===
+  /mini-gt/mini-gt                 123 products; BLISTER in sku/name: 6; BOX: 1
+      sku='MINI GT 365' sname='MINI GT 365' name='MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO' ₹1019
+      sku='MINI GT 450' sname='MINI GT 450' name='MINI GT HYUNDAI KONA N PERFORMANCE BLUE' ₹1019
+      sku='MINI GT 625' sname='MINI GT 625' name='MINI GT LANCIA STRATOS HF STRADALE VERDE CHIARO' ₹1119
+      sku='MINI GT 826' sname='MINI GT 826' name='MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW' ₹1119
+      BLISTER here: sku='MINI GT 906 ENGLISH BLISTER PACKAG' name='MINI GT BMW Z8 THE WORLD IS NOT ENOUGH' also on blister shelf: True
+      BLISTER here: sku='MINI GT 912 BLISTER PACK' name='MINI GT LOTUS ESPRIT TURBO COPPER FIRE METALLIC FOR YOUR EYE' also on blister shelf: True
+      BLISTER here: sku='MINI GT 908 BLISTER PACK' name='MINI GT JAGUAR XKR DIE ANOTHER DAY ENGLISH BLISTER PACKAGING' also on blister shelf: True
+      BLISTER here: sku='MINI GT 910 ENGLISH BLISTER PACKAG' name='MINI GT ASTON MARTIN DB10 “SPECTRE” ENGLISH BLISTER PACKAGIN' also on blister shelf: True
+      BLISTER here: sku='MINI GT 914-007E ENGLISH BLISTER P' name='BMW Z3 “GOLDENEYE”' also on blister shelf: True
+      BLISTER here: sku='MINI GT 915-007E -ENGLISH BLISTER ' name='TOYOTA 2000GT ROADSTER “YOU ONLY LIVE TWICE”' also on blister shelf: True
+      BOX here: sku='MINI GT 1063' name='BUGATTI BOLIDE PRESENTATION BOX'
+  /mini-gt/mini-gt-blister-pack    147 products; BLISTER in sku/name: 147; BOX: 0
+      sku='MINI GT 884 BLISTER PACK' sname='MINI GT 884 BLISTER PACK' name='MINI GT JAGUAR C-X75 BLUE' ₹1299
+      sku='MINI GT 809 BLISTER PACK' sname='MINI GT 809 BLISTER PACK' name='MINI GT LB-WORKS X ABAS WORKS ABARTH 595 GARA WHITE' ₹1299
+      sku='MINI GT 885 BLISTER PACK' sname='MINI GT 885 BLISTER PACK' name='MINI GT TOYOTA GR86 LB NATION' ₹1299
+      sku='MINI GT 873 BLISTER PACK' sname='MINI GT 873 BLISTER PACK' name='TOYOTA GR86 LB NATION BABY BLUE' ₹1299
+  /mini-gt/kaido-house             18 products; BLISTER in sku/name: 0; BOX: 0
+      sku='KAIDOHOUSE X MINI GT 005' sname='KAIDOHOUSE X MINI GT 005' name='MINI GT DATSUN 510 PRO STREET BRE V1' ₹1859
+      sku='KAIDOHOUSE X MINI GT 006' sname='KAIDOHOUSE X MINI GT 006' name='MINI GT DATSUN 510 PRO STREET BRE V2' ₹1859
+      sku='KAIDOHOUSE X MINI GT 016' sname='KAIDOHOUSE X MINI GT 016' name='MINI GT DATSUN 510 PRO STREET GREDDY PEARL WHITE' ₹1859
+      sku='KAIDOHOUSE X MINI GT 017' sname='KAIDOHOUSE X MINI GT 017' name='MINI GT DATSUN 510 PRO STREET GREDDY GUN METAL GREY' ₹1859
+  /pre-orders/pre-order-minigt     71 products; BLISTER in sku/name: 30; BOX: 0
+      sku='MINI GT 1377 ETA JUNE 2027' sname='MINI GT 1377 ETA JUNE 2027' name='PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC' ₹1399
+      sku='MINI GT 1377 BLISTER PACKAGING' sname='MINI GT 1377 BLISTER PACKAGING' name='PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC BLISTER' ₹1549
+      sku='MINI GT 1379 ETA JUNE 2027' sname='MINI GT 1379 ETA JUNE 2027' name='PREORDER CADILLAC ELDORADO BIARRITZ 1959 BLACK' ₹1249
+      sku='MINI GT 1379 BLISTER PACKAGING' sname='MINI GT 1379 BLISTER PACKAGING' name='PREORDER CADILLAC ELDORADO BIARRITZ 1959 BLACK BLISTER PACKA' ₹1399
+      BLISTER: sku='MINI GT 1377 BLISTER PACKAGING ETA' name='PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC BLISTER PACKAGING'
+      BLISTER: sku='MINI GT 1379 BLISTER PACKAGING ETA' name='PREORDER CADILLAC ELDORADO BIARRITZ 1959 BLACK BLISTER PACKAGING'
+      BLISTER: sku='MINI GT 1380 BLISTER PACKAGING ETA' name='PREORDER LAND ROVER DEFENDER 110 1998 CAMEL TROPHY TIERRA DEL FUEGO CT'
+      BLISTER: sku='MINI GT 1381 BLISTER PACKAGING ETA' name='PREORDER LAMBORGHINI URUS PERFORMANTE VIOLA PASIFAE BLISTER PACKAGING'
+      BLISTER: sku='MINI GT 1382 BLISTER PACKAGING ETA' name='PREORDER HYUNDAI IONIQ 5N RS-01T STEALTH BLISTER PACKAGING'
+      BLISTER: sku='MINI GT 1386 BLISTER PACKAGING ETA' name='PREORDER BMW Z3 HELLROT BLISTER PACKAGING'
+
+=== 5. the unit count on product pages (product_attr qty) ===
+  'MINI GT JAGUAR C-X75 BLUE'                            add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "0", "changedPrice": 0}]}
+  'MINI GT LB-WORKS X ABAS WORKS ABARTH 595 GARA WHIT'   add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "14", "changedPrice": 0}]}
+  'MINI GT TOYOTA GR86 LB NATION'                        add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "2", "changedPrice": 0}]}
+  'TOYOTA GR86 LB NATION BABY BLUE'                      add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "7", "changedPrice": 0}]}
+  'MINI GT NISSAN Z LB NATION WORKS LB GOLD\xa0\xa0 \xa0' add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "0", "changedPrice": 0}]}
+  'BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE\xa0\xa0 \xa0' add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "0", "changedPrice": 0}]}
+  'LB-WORKS X ABAS WORKS ABARTH 595 RED\xa0\xa0 \xa0'    add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "19", "changedPrice": 0}]}
+  'NISSAN SKYLINE GTR R32 VEILSIDE COMBAT CI VEILSIDE'   add_limit=3 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "28", "changedPrice": 0}]}
+  'MINI GT JAGUAR C-X75 TEST CAR\xa0\xa0 \xa0'           add_limit=12 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "22", "changedPrice": 0}]}
+  'MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW'     add_limit=24 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "2", "changedPrice": 0}]}
