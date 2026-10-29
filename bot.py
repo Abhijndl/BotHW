@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.5
+Hot Wheels / Diecast Collector Tracker  ·  v17.6
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -70,6 +70,14 @@ alike; the cars that flickered sit in warehouses that don't serve 248001
 that does shows a unit for seconds. The recorder keeps what the cart said at
 every flip, and asks again 1.5 s later, so the next ones can be read in full.
 It changes no alert.
+v17.6: Karz & Dolls. 29 Oct 12:40 the McLaren 720S LB★WORKS alert opened on
+"Page not found": KND wrote its ★ as "?" in the page's address, and its site
+cuts an address at a "?" — the page can't open from KND's own link either,
+in stock or not. Such links are now written so they open (_kd_url). And a
+Mini GT car on KND says whether it's the [Box] or the [Blister] pack — KND
+lists many under one name twice, and the two no longer merge into one line.
+(A KND page that says "Page not found" otherwise means sold out: KND takes a
+car's page down the moment it sells out — 30 of 30 sold-out cars, 29 Oct.)
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -4152,6 +4160,39 @@ def _kd_named(name: str, cl) -> str:
     return f"{_KD_LINE_PREFIX.get(cl, cl)} {name}"
 
 
+def _kd_url(slug: str, pid: str) -> str:
+    """The car's page. v17.6: KND reads a link twice — the site decodes it,
+    then its own lookup decodes the result again and stops at a '?' or '#' —
+    so those (and '%') are written encoded twice. 29 Oct (probe #48): the
+    McLaren 720S LB?WORKS (KND wrote its ★ as '?') and two other in-stock
+    products with a '?' in their slug said "Page not found" from KND's own
+    link and from ours; only the twice-encoded link opened them. Every other
+    character opens as it is (non-breaking spaces, ü, “ ”, –: 103 of 103 in
+    stock, probe #45; all 412 links the tracker held, probe #49)."""
+    path = "".join(quote(quote(c, safe=""), safe="") if c in "?#%" else quote(c, safe="-_.~")
+                   for c in slug)
+    return f"{_KD}/details/{path}?pid={quote(pid, safe='')}"
+
+
+def _kd_pack(path: str, name: str, *fields) -> str:
+    """v17.6: " [Blister]" or " [Box]" for a Mini GT car. KND lists many Mini GT
+    models twice under one name — the box and the blister pack (₹100-200
+    dearer) — and its SKU line tells them apart: "MINI GT 1070 BLISTER PACK" /
+    "MINI GT 1070" (29 Oct: all 147 on its blister shelf say BLISTER, as do 30
+    of its 71 Mini GT pre-orders; on the box shelf only the six James Bond
+    blister packs that are listed on both). "" for other cars, Kaido House,
+    and when the name already says which."""
+    text = re.sub(r"\s+", " ", " ".join([name, *(str(f or "") for f in fields)])).upper()
+    p = (path or "").lower().rstrip("/")
+    up = (name or "").upper()
+    if "BLISTER" in text or p.endswith("/mini-gt-blister-pack"):
+        return "" if "BLISTER" in up else " [Blister]"
+    if "KAIDO" in text or not (re.search(r"\bMINI\s*-?\s*GT\b", text)
+                               or p in ("/mini-gt/mini-gt", "/pre-orders/pre-order-minigt")):
+        return ""
+    return "" if re.search(r"\bBOX\b", up) else " [Box]"
+
+
 def _kd_chase_tag(path: str, name: str, *fields) -> str | None:
     """None to drop the product; else the marker its name needs (often "").
     A product on the chase shelf is a chase; a Matchbox / Majorette / monster
@@ -4230,10 +4271,11 @@ def _kd_from_next_data(page: str, cat: str, path: str = ""):
         if not price:
             continue
         slug = str(p.get("slug") or "").strip()
+        pack = _kd_pack(path, name, line, sku)          # v17.6: [Box] / [Blister]
         out.append({
             "id": f"kd_{pid}", "source": "karzdolls",
-            "name": (_kd_named(name, cl) + tag + (" [PRE-ORDER]" if is_pre else ""))[:180],
-            "url": f"{_KD}/details/{quote(slug, safe='-_.~')}?pid={quote(pid, safe='')}",
+            "name": (_kd_named(name, cl) + tag + pack + (" [PRE-ORDER]" if is_pre else ""))[:180],
+            "url": _kd_url(slug, pid),
             "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp and mrp > price else "",
             "stock": "in_stock" if str(p.get("in_stock")) in ("1", "True", "true") else "out_of_stock",
             "badge_new": False,
@@ -4298,10 +4340,15 @@ def _kd_from_html(page: str, cat: str, path: str = "") -> list:
             stock = "out_of_stock"
         else:
             continue
+        # v17.6: the link rebuilt from its slug (a '?' in it must be encoded
+        # twice — see _kd_url), and [Box] / [Blister] from the card's SKU line
+        lp = re.match(r"/details/(.+)\?pid=([A-Za-z0-9]+)$", link)
+        url = _kd_url(lp.group(1).strip(), lp.group(2)) if lp else _KD + quote(link, safe="/:?=&")
+        pack = _kd_pack(path, name, txt[:250])
         out.append({
             "id": uid, "source": "karzdolls",
-            "name": (_kd_named(name, cl) + tag + (" [PRE-ORDER]" if is_pre else ""))[:180],
-            "url": _KD + quote(link, safe="/:?=&"),
+            "name": (_kd_named(name, cl) + tag + pack + (" [PRE-ORDER]" if is_pre else ""))[:180],
+            "url": url,
             "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp else "",
             "stock": stock, "badge_new": "NEW ARRIVAL" in up,
         })
