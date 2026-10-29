@@ -1,189 +1,189 @@
 {
- "updated": "2026-10-29T10:10:32.698Z",
+ "updated": "2026-10-29T10:30:32.902Z",
  "fast_s": 15.0,
  "slow_s": 45.0,
  "pages": {
   "/mini-gt/mini-gt": {
-   "ok": 480,
+   "ok": 560,
    "fail": 0,
    "n": 122,
-   "avg_s": 1.69,
-   "p90_s": 2.19
+   "avg_s": 1.71,
+   "p90_s": 2.24
   },
   "/mini-gt/mini-gt-blister-pack": {
-   "ok": 480,
+   "ok": 560,
    "fail": 0,
    "n": 144,
-   "avg_s": 1.71,
-   "p90_s": 2.08
+   "avg_s": 1.72,
+   "p90_s": 2.15
   },
   "/specials/special-stocks-64-43-scale": {
-   "ok": 480,
+   "ok": 560,
    "fail": 0,
    "n": 126,
-   "avg_s": 1.61,
-   "p90_s": 1.95
+   "avg_s": 1.62,
+   "p90_s": 1.97
   },
   "/": {
-   "ok": 480,
+   "ok": 560,
    "fail": 0,
    "n": 50,
-   "avg_s": 1.59,
-   "p90_s": 1.81
+   "avg_s": 1.61,
+   "p90_s": 1.85
   },
   "/specials/chase-car": {
-   "ok": 480,
+   "ok": 560,
    "fail": 0,
    "n": 2,
    "avg_s": 1.34,
-   "p90_s": 1.57
+   "p90_s": 1.58
   },
   "/mini-gt/kaido-house": {
-   "ok": 480,
+   "ok": 560,
    "fail": 0,
    "n": 21,
-   "avg_s": 1.36,
-   "p90_s": 1.61
+   "avg_s": 1.37,
+   "p90_s": 1.65
   },
   "/hot-wheels/mainlines": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 6,
-   "avg_s": 1.52,
-   "p90_s": 2.15
+   "avg_s": 1.54,
+   "p90_s": 2.22
   },
   "/hot-wheels/pop-culture": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 6,
-   "avg_s": 1.47,
-   "p90_s": 1.89
+   "avg_s": 1.5,
+   "p90_s": 1.91
   },
   "/hot-wheels/card-art-premiums": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 10,
-   "avg_s": 1.47,
+   "avg_s": 1.49,
    "p90_s": 1.93
   },
   "/hot-wheels/gift-pack": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 25,
-   "avg_s": 1.4,
+   "avg_s": 1.41,
    "p90_s": 1.74
   },
   "/hot-wheels/car-culture": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 1,
    "avg_s": 1.34,
-   "p90_s": 1.56
+   "p90_s": 1.57
   },
   "/hot-wheels/fast-and-furious": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 1,
-   "avg_s": 1.28,
-   "p90_s": 1.53
+   "avg_s": 1.3,
+   "p90_s": 1.55
   },
   "/hot-wheels/boulevard-series": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 0,
    "avg_s": 1.37,
    "p90_s": 1.61
   },
   "/hot-wheels/team-transport": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 5,
-   "avg_s": 1.43,
-   "p90_s": 1.75
+   "avg_s": 1.44,
+   "p90_s": 1.84
   },
   "/hot-wheels/character-cars": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 8,
-   "avg_s": 1.46,
-   "p90_s": 1.83
+   "avg_s": 1.45,
+   "p90_s": 1.81
   },
   "/hot-wheels/disney-cars": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 0,
    "avg_s": 1.36,
    "p90_s": 1.56
   },
   "/hot-wheels/hot-wheels-accessories": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 9,
-   "avg_s": 1.39,
-   "p90_s": 1.64
+   "avg_s": 1.41,
+   "p90_s": 1.69
   },
   "/pre-orders/pre-order-minigt": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 71,
    "avg_s": 1.54,
-   "p90_s": 1.74
+   "p90_s": 1.75
   },
   "/pre-orders/pre-order-special-stock": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 1,
    "avg_s": 1.35,
-   "p90_s": 1.54
+   "p90_s": 1.55
   },
   "/hot-wheels/monster-trucks": {
-   "ok": 160,
+   "ok": 187,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.48,
-   "p90_s": 1.97
+   "avg_s": 1.49,
+   "p90_s": 2.07
   },
   "/matchbox/matchbox-basic-cars": {
-   "ok": 160,
+   "ok": 186,
    "fail": 0,
    "n": 4,
    "avg_s": 1.48,
-   "p90_s": 1.88
+   "p90_s": 1.89
   },
   "/matchbox/matchbox-moving-parts": {
-   "ok": 160,
+   "ok": 186,
    "fail": 0,
    "n": 0,
    "avg_s": 1.41,
-   "p90_s": 1.72
+   "p90_s": 1.73
   },
   "/matchbox/matchbox-superfast": {
-   "ok": 160,
+   "ok": 186,
    "fail": 0,
    "n": 1,
    "avg_s": 1.36,
-   "p90_s": 1.57
+   "p90_s": 1.59
   },
   "/majorette/premium-cars": {
-   "ok": 160,
+   "ok": 186,
    "fail": 0,
    "n": 53,
-   "avg_s": 1.38,
-   "p90_s": 1.7
+   "avg_s": 1.39,
+   "p90_s": 1.72
   },
   "/majorette/basic-cars": {
-   "ok": 160,
+   "ok": 186,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.31,
+   "avg_s": 1.32,
    "p90_s": 1.56
   },
   "/majorette/majorette": {
-   "ok": 160,
+   "ok": 186,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.34,
-   "p90_s": 1.62
+   "avg_s": 1.35,
+   "p90_s": 1.64
   }
  }
 }
