@@ -1,6 +1,44 @@
-1 car(s): add 0.72s, read 0.64s, remove 0.65s  → counts {4213: 19}  adds [200]  cart after: []
-3 car(s): add 0.64s, read 0.29s, remove 0.61s  → counts {6079: 3, 4213: 19, 4538: 28}  adds [200, 200, 200]  cart after: []
-1 car(s): add 0.63s, read 0.21s, remove 0.62s  → counts {4538: 28}  adds [200]  cart after: []
-3 car(s): add 0.65s, read 0.21s, remove 0.63s  → counts {4213: 19, 6079: 3, 4538: 28}  adds [200, 200, 200]  cart after: []
-
-stock fields of one car: {'id': 4213, 'pro_name': 'MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO', 'pro_stock': 19, 'initial_stock': 132, 'in_stock': 1, 'add_limit': 6, 'isstock_blocked': 0, 'block_order_time': None, 'block_type': None, 'blocked_user': None, 'add_to_bag': 1, 'pro_sta': 1, 'creation_time': ''}
+  [KD-fast] 5 shelves → 277 (277 in stock) in 1.5s
+fast check 1: 277 cars in 1.5s
+  [KD-fast] 5 shelves → 277 (277 in stock) in 1.7s
+fast check 2: 277 cars in 1.7s
+  [KD-fast] 5 shelves → 277 (277 in stock) in 1.7s
+fast check 3: 277 cars in 1.7s
+  [KD] chase-car → 0 (empty right now)
+  [KD] mainlines → 4
+  [KD] pop-culture → 4
+  [KD] card-art-premiums → 8
+  [KD] gift-pack → 24
+  [KD] car-culture → 0 new (1 already listed elsewhere)
+  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
+  [KD] boulevard-series → 0 (empty right now)
+  [KD] team-transport → 5
+  [KD] character-cars → 8
+  [KD] disney-cars → 0 (empty right now)
+  [KD] hot-wheels-accessories → 8
+  [KD] mini-gt → 121
+  [KD] mini-gt-blister-pack → 139
+  [KD] kaido-house → 21
+  [KD] pre-order-minigt → 71
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+  [KD] home → 0 new (24 already listed elsewhere) (1 not chase pieces, left out)
+  [KD] monster-trucks → 0 (empty right now)
+  [KD] matchbox-basic-cars → no chase pieces right now (4 others left out)
+  [KD] matchbox-moving-parts → 0 (empty right now)
+  [KD] matchbox-superfast → no chase pieces right now (1 others left out)
+  [KD] premium-cars → no chase pieces right now (53 others left out)
+  [KD] basic-cars → no chase pieces right now (4 others left out)
+  [KD] majorette → 0 (empty right now)
+[*] Karz&Dolls total: 413 (413 in stock)
+full check: 413 cars in 4.8s, healthy=True
+fast shelves: ['/mini-gt/mini-gt', '/mini-gt/mini-gt-blister-pack', '/specials/chase-car', '/specials/special-stocks-64-43-scale', '/']
+  [KD] KND's cart counts (1.7s): MINI GT LANCIA STRATOS HF STRA=3, MINI GT HYUNDAI KONA N PERFORM=28, MINI GT LANCIA STRATOS HF STRA=19
+count read in 1.7s: [('MINI GT LANCIA STRATOS HF STRADALE ROSSO', 19, None), ('MINI GT HYUNDAI KONA N PERFORMANCE BLUE ', 28, None), ('MINI GT LANCIA STRATOS HF STRADALE VERDE', 3, None)]
+cart emptied in 2.4s
+guest cart afterwards: 200 []
+alert lines:
+[HW] case table: 1284 cars (52 cases)
+   [🏁KD] <b>MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO [Box]</b> 📦 19 left  ₹1019 <s>₹1099</s>
+   [🏁KD] <b>MINI GT HYUNDAI KONA N PERFORMANCE BLUE [Box]</b> 📦 28 left  ₹1019 <s>₹1099</s>
+   [🏁KD] <b>MINI GT LANCIA STRATOS HF STRADALE VERDE CHIARO [Box]</b> ⚠️ only 3 left  ₹1119 <s>₹1199</s>
