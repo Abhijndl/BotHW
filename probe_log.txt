@@ -1,93 +1,96 @@
-26 scripts; buildId PbojY_ZvFjxbJFiUILgal
-57 scripts incl. the build manifest's
-30 distinct hits
-
-### "AddToCart"   [_app-0d3d6782cfdaa13e.js]
-    >2&&void 0!==arguments[2]?arguments[2]:1,n=null;try{F()&&(n=z.current||await V(null))&&(z.current=n)}catch(e){n=null}let o=Number(t)||0,a=Number(r)||1;(0,w.nf)("AddToCart",{content_type:"product",content_ids:[String(e)],contents:[{id:String(e),quantity:a,item_price:o}],num_items:a,value:Math.round(o*a*100)/100,currency:"INR"},(0,w.am)(U.current,n))},[F,V]),G
-
-### "Cart"   [3973-0622385c06942127.js]
-    :"discount",children:"₹322200"}),(0,t.jsx)("span",{className:"offer",children:"30% off"})]}),(0,t.jsx)("div",{className:"add-btn",children:(0,t.jsxs)("a",{href:"Cart",children:[(0,t.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",height:"24px",viewBox:"0 -960 960 960",width:"24px",fill:"#000000",children:(0,t.jsx)("path",{d:"M286.15-97.69q-29.15 0-49.57-20.43
-
-### "add_cart_number"   [viewcart-4ac37531e8c6bceb.js]
-    >S(e.id),disabled:p})})})]}),(0,i.jsx)("p",{children:"Sold by: Karz & Dolls"}),(0,i.jsxs)("div",{className:"prizing_cart",children:[(0,i.jsxs)("div",{className:"add_cart_number",children:[(0,i.jsx)("span",{className:"qty-btn",onClick:p?void 0:()=>E(e.id,"dec"),style:{cursor:p?"not-allowed":"pointer",opacity:p?.5:1},children:"−"}),(0,i.jsx)("input",{type:"num
-
-### "cart-add"   [3973-0622385c06942127.js]
-    .39h457.69v60H286.15q-40 0-60.11-34.5-20.12-34.5-1.42-68.89l57.07-102.61L136.16-810H60v-60h113.85l38 80ZM342-517.69h280-280Z"})}),(0,t.jsx)("button",{className:"cart-add",children:"Add to Cart"})]})})]})]})}),(0,t.jsx)("div",{className:"col-lg-3",children:(0,t.jsxs)("div",{className:"recomm-item",children:[(0,t.jsxs)("div",{className:"recomm-item-box",childr
-
-### "cart-head"   [Profile-5e86f6948c617d5b.js]
-    ,{className:"col-lg-10",children:(0,l.jsxs)("div",{className:"cart_inn",children:[(0,l.jsxs)("div",{className:"cart-info",children:[(0,l.jsxs)("div",{className:"cart-head",children:[(0,l.jsxs)("p",{children:["Order #",e.id,(()=>{let a=ex(e);return 0===a.length?null:1===a.length?(0,l.jsxs)("span",{style:{color:"#10b981",marginLeft:6,fontSize:"13px"},children:
-
-### "cart-img"   [Profile-5e86f6948c617d5b.js]
-    jsxs)("div",{className:"row",children:[(0,l.jsx)("div",{className:"col-lg-2",children:(0,l.jsx)("div",{className:"cart-sec",children:(0,l.jsx)("div",{className:"cart-img",style:{background:"linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)",backgroundSize:"200% 100%",animation:"shimmer 1.4s infinite",borderRadius:"8px",height:"100px"}})})}),(0,l.
-
-### "cart-info"   [Profile-5e86f6948c617d5b.js]
-    lorders.length-1," more"]})})]})}),(0,l.jsx)("div",{className:"col-lg-10",children:(0,l.jsxs)("div",{className:"cart_inn",children:[(0,l.jsxs)("div",{className:"cart-info",children:[(0,l.jsxs)("div",{className:"cart-head",children:[(0,l.jsxs)("p",{children:["Order #",e.id,(()=>{let a=ex(e);return 0===a.length?null:1===a.length?(0,l.jsxs)("span",{style:{color
-
-### "cart-right"   [Profile-5e86f6948c617d5b.js]
-    {color:"#10b981"},children:[" - Discount: ₹",j.toFixed(2)]})," | ",(0,l.jsxs)("strong",{children:["Total: ₹",b.toFixed(2)]})]})})]}),(0,l.jsx)("div",{className:"cart-right",children:(0,l.jsx)(o.wXW,{size:22,color:"#fff"})})]}),(0,l.jsxs)("div",{className:"order-list",children:[(0,l.jsxs)("div",{className:"order-head",children:[(0,l.jsxs)("div",{className:"li
-
-### "cart-sec"   [Profile-5e86f6948c617d5b.js]
-    deer-cart-sec",style:{opacity:1},children:(0,l.jsxs)("div",{className:"row",children:[(0,l.jsx)("div",{className:"col-lg-2",children:(0,l.jsx)("div",{className:"cart-sec",children:(0,l.jsx)("div",{className:"cart-img",style:{background:"linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)",backgroundSize:"200% 100%",animation:"shimmer 1.4s infinite"
-
-### "cart_footer"   [Address-6ff1167e0bf3c006.js]
-    _E||[]).push([[5712,6682],{947:(e,t,a)=>{"use strict";a.d(t,{A:()=>n});var s=a(7876);a(4232);let n=()=>(0,s.jsx)("div",{children:(0,s.jsx)("section",{className:"cart_footer",children:(0,s.jsx)("div",{className:"container",children:(0,s.jsxs)("div",{className:"row d-flex align-items-center",children:[(0,s.jsx)("div",{className:"col-lg-8",children:(0,s.jsxs)("
-
-### "cart_inn"   [Profile-5e86f6948c617d5b.js]
-    00% 100%",animation:"shimmer 1.4s infinite",borderRadius:"8px",height:"100px"}})})}),(0,l.jsx)("div",{className:"col-lg-10",children:(0,l.jsx)("div",{className:"cart_inn",children:(0,l.jsx)("div",{style:{padding:"12px 0"},children:[80,50,65].map((e,a)=>(0,l.jsx)("div",{style:{height:"14px",width:"".concat(e,"%"),marginBottom:"10px",borderRadius:"6px",backgro
-
-### "cart_sec"   [viewcart-4ac37531e8c6bceb.js]
-    .target,i=200;("recipientName"===t||"senderName"===t)&&(i=60),_(e=>({...e,[t]:s.slice(0,i)}))};return(0,i.jsxs)("div",{children:[(0,i.jsx)("section",{className:"cart_sec",children:(0,i.jsxs)("div",{className:"container",children:[(0,i.jsxs)("div",{className:"row",children:[(0,i.jsxs)("div",{className:"col-lg-8",children:[(0,i.jsxs)("div",{className:"item-inn
-
-### "empty-cart"   [viewcart-4ac37531e8c6bceb.js]
-    .84 3.85-8.46V-720ZM376.16-280h59.99v-360h-59.99v360Zm147.69 0h59.99v-360h-59.99v360ZM280-720v520-520Z"})})]})]}),0===(d||[]).length?(0,i.jsx)("div",{className:"empty-cart",children:(0,i.jsxs)("p",{children:["Your cart is empty. ",(0,i.jsx)("a",{href:"/",children:"Continue Shopping"})]})}):(d||[]).map((e,t)=>{var s,r,a,n,o,c;if(!e||!e.id)return null;let l=e.
-
-### "item-cart"   [Review-a772e977155a4052.js]
-    ..."}),(0,r.jsxs)("div",{className:"row",children:[(0,r.jsxs)("div",{className:"col-lg-7",children:[_.map(e=>{var t,a,i,o,s,n;return(0,r.jsxs)("div",{className:"item-cart",children:[(0,r.jsx)("div",{className:"item-img",children:(0,r.jsx)("img",{src:"".concat("https://www.karzanddolls.com/karzOffice/public/assets","/productimages/").concat((null==(i=e.produc
-
-### "ordeer-cart-sec"   [Profile-5e86f6948c617d5b.js]
-    120h-80Zm0-280v-360h80v360h-80Z"})})})]})]}),es?(0,l.jsx)("div",{style:{padding:"40px 0",textAlign:"center"},children:[1,2,3].map(e=>(0,l.jsx)("div",{className:"ordeer-cart-sec",style:{opacity:1},children:(0,l.jsxs)("div",{className:"row",children:[(0,l.jsx)("div",{className:"col-lg-2",children:(0,l.jsx)("div",{className:"cart-sec",children:(0,l.jsx)("div",{
-
-### "our-cart"   [Address-6ff1167e0bf3c006.js]
-    coupon_code",s),n&&r.set("gift_wrap",n),i&&r.set("address_id",i);let l=r.toString();return l?"".concat(t,"?").concat(l):t};return(0,s.jsx)("section",{className:"our-cart",children:(0,s.jsx)("div",{className:"container-fluid",children:(0,s.jsxs)("div",{className:"row gx-2 align-items-center justify-content-between",children:[(0,s.jsx)("div",{className:"col-lg
-
-### "prizing_cart"   [Review-a772e977155a4052.js]
-    ldren:"Sold by: Karz & Dolls"}),(0,r.jsxs)("div",{className:"quantity-box",children:[(0,r.jsxs)("p",{children:["Quantity: ",e.qty]}),(0,r.jsx)("div",{className:"prizing_cart",children:(0,r.jsxs)("div",{className:"add_price",children:["₹",G(e)*(e.qty||1)]})})]})]})]},e.id)}),(0,r.jsx)("a",{href:"/Wishlist",children:(0,r.jsxs)("div",{className:"add-more",child
-
-### "qty-btn"   [viewcart-4ac37531e8c6bceb.js]
-    ld by: Karz & Dolls"}),(0,i.jsxs)("div",{className:"prizing_cart",children:[(0,i.jsxs)("div",{className:"add_cart_number",children:[(0,i.jsx)("span",{className:"qty-btn",onClick:p?void 0:()=>E(e.id,"dec"),style:{cursor:p?"not-allowed":"pointer",opacity:p?.5:1},children:"−"}),(0,i.jsx)("input",{type:"number",className:"qty-value",value:null!=(c=null!=(o=T[e.i
-
-### "qty-value"   [viewcart-4ac37531e8c6bceb.js]
-    :"qty-btn",onClick:p?void 0:()=>E(e.id,"dec"),style:{cursor:p?"not-allowed":"pointer",opacity:p?.5:1},children:"−"}),(0,i.jsx)("input",{type:"number",className:"qty-value",value:null!=(c=null!=(o=T[e.id])?o:e.qty)?c:1,min:1,onChange:t=>A(e.id,t.target.value),disabled:p}),(0,i.jsx)("span",{className:"qty-btn",onClick:p?void 0:()=>E(e.id,"inc"),style:{cursor:p
-
-### "quantity-box"   [Review-a772e977155a4052.js]
-    sx)("h2",{children:(null==(n=e.product)?void 0:n.pro_name)||"Product Name"})]})}),(0,r.jsx)("p",{children:"Sold by: Karz & Dolls"}),(0,r.jsxs)("div",{className:"quantity-box",children:[(0,r.jsxs)("p",{children:["Quantity: ",e.qty]}),(0,r.jsx)("div",{className:"prizing_cart",children:(0,r.jsxs)("div",{className:"add_price",children:["₹",G(e)*(e.qty||1)]})})]}
-
-### "stock_status"   [6048-cbf4acc68ee0407b.js]
-    lassName:"wish_img",children:[(0,i.jsx)(t(),{src:m(s),alt:s.pro_name,width:220,height:220,className:"product-img"}),0===s.pro_stock&&(0,i.jsx)("div",{className:"stock_status",children:"OUT OF STOCK"})]})}),(0,i.jsx)("div",{className:"wish_content",children:(0,i.jsxs)("div",{className:"content_box",children:[(0,i.jsx)("a",{href:"/details/".concat(s.slug,"?pid
-
-### /api/auth   [_app-0d3d6782cfdaa13e.js]
-    sh([[636],{143:()=>{},316:(e,t)=>{"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t;let r=new URL("http://localhost:3000/api/auth");e&&!e.startsWith("http")&&(e=`https://${e}`);let n=new URL(null!=(t=e)?t:r),o=("/"===n.pathname?r.pathname:n.pathname).replace(/\/$/,""),a=`${n.origin}${o}`;return{origin:n.origin,host:n.h
-
-### /api/auth/signin   [_app-0d3d6782cfdaa13e.js]
-    mponents");var t=m.useContext(T),r=null!=e?e:{},n=r.required,o=r.onUnauthenticated,a=n&&"unauthenticated"===t.status;return(m.useEffect(function(){if(a){var e="/api/auth/signin?".concat(new URLSearchParams({error:"SessionRequired",callbackUrl:window.location.href}));o?o():window.location.href=e}},[a,o]),a)?{data:t.data,update:t.update,status:"loading"}:t};va
-
-### /api/login   [login-20cb55fbae3b89a4.js]
-    eState)(""),[u,f]=(0,r.useState)(!1),p=(0,o.useRouter)(),{data:x,status:j}=(0,m.useSession)(),w=async n=>{n.preventDefault(),h(""),f(!0);try{let n=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e,password:i})}),t=await n.json();if(n.ok&&t.success){let e=t.token,n=t.user;if(!e){h("Invalid respons
-
-### /api/meta/event   [_app-0d3d6782cfdaa13e.js]
-    =arguments.length>3&&void 0!==arguments[3]?arguments[3]:{},a=o.eventId||i(e.toLowerCase()),l={content_type:"product",currency:"INR",...t};!1!==o.server&&fetch("/api/meta/event",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({eventName:e,eventId:a,custom:l,user:r,eventSourceUrl:window.location.href}),keepalive:!0}).then(e=>e.te
-
-### /api/meta/purchase   [thankyou-67d05fce0e5026ba.js]
-    y;if(!e||"failed"===t||_.current.capi)return;let r="meta_capi_".concat(p.id);sessionStorage.getItem(r)||(_.current.capi=!0,sessionStorage.setItem(r,"1"),fetch("/api/meta/purchase",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({token:e,eventSourceUrl:window.location.href,user:(0,u.me)((0,u.Nv)(p),(0,u.O1)(i))})}).then(e=>e.jso
-
-### /api/register   [Register-48a1e1a93cd92caa.js]
-    racters long"),q(!1);return}if(h!==m){f("Passwords do not match"),q(!1);return}if(!w){f("Please accept Terms & Conditions"),q(!1);return}try{let t=await fetch("/api/register",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:s,email:e,contact:i,password:h,password_confirmation:m,terms_accepted:+!!w})}),r=await t.json();if(c
-
-### /api/v2/video/   [6670-c7c2c646281c8ac1.js]
-    ength)return c(r.attr(a)),r.remove(),!1;"youtube"===i.type?c("//img.youtube.com/vi/"+i.id+"/hqdefault.jpg"):"vimeo"===i.type?t.ajax({type:"GET",url:"//vimeo.com/api/v2/video/"+i.id+".json",jsonp:"callback",dataType:"jsonp",success:function(t){c(t[0].thumbnail_large)}}):"vzaar"===i.type&&t.ajax({type:"GET",url:"//vzaar.com/api/videos/"+i.id+".json",jsonp:"cal
-
-### /api/videos/   [6670-c7c2c646281c8ac1.js]
-    i/v2/video/"+i.id+".json",jsonp:"callback",dataType:"jsonp",success:function(t){c(t[0].thumbnail_large)}}):"vzaar"===i.type&&t.ajax({type:"GET",url:"//vzaar.com/api/videos/"+i.id+".json",jsonp:"callback",dataType:"jsonp",success:function(t){c(t.framegrab_url)}})},n.prototype.stop=function(){this._core.trigger("stop",null,"video"),this._playing.find(".owl-vid
-
-### karzOffice/api   [_app-0d3d6782cfdaa13e.js]
-    ),t.message),{success:!1,data:[]}}},[]),V=(0,a.useCallback)(async e=>{try{let t=F();if(!t)return null;let r=await fetch("".concat("https://www.karzanddolls.com/karzOffice/api","/addresses"),{headers:{"Content-Type":"application/json",Authorization:"Bearer ".concat(t)}}),n=await H(r),o=Array.isArray(n.data)?n.data:[];if(e)return o.find(t=>String(t.id)===Strin
+39 API paths in the shop's scripts:
+  /addresses                                    [('GET', True, 'Address-6ff1167e0bf3c006.js'), ('GET', True, 'Profile-5e86f6948c617d5b.js'), ('GET', True, '_app-0d3d6782cfdaa13e.js')]
+  /addresses/                                   [('DELETE', True, 'Address-6ff1167e0bf3c006.js'), ('DELETE', True, 'Profile-5e86f6948c617d5b.js'), ('GET', True, 'Address-6ff1167e0bf3c006.js'), ('GET', True, 'Profile-5e86f6948c617d5b.js'), ('GET', True, 'Review-a772e977155a4052.js')]
+  /all-product-list?                            [('GET', False, 'hotdeals-ee86bbac290d5f90.js')]
+  /bag/orders                                   [('POST', True, 'Review-a772e977155a4052.js')]
+  /bag/verify/                                  [('POST', True, 'Review-a772e977155a4052.js')]
+  /cart/apply-coupon                            [('POST', True, 'Review-a772e977155a4052.js')]
+  /cart/coupons?total_amount=                   [('GET', True, 'Review-a772e977155a4052.js')]
+  /cart/merge                                   [('POST', True, '8262-5c7e12d312ba61d9.js'), ('POST', True, '_app-0d3d6782cfdaa13e.js')]
+  /cart/remove-pending-usage                    [('POST', True, 'Address-6ff1167e0bf3c006.js'), ('POST', True, 'Review-a772e977155a4052.js')]
+  /cart/user/add                                [('POST', True, 'viewcart-4ac37531e8c6bceb.js')]
+  /cart/visitor/add                             [('POST', False, 'viewcart-4ac37531e8c6bceb.js')]
+  /cartrecommended_products                     [('GET', False, 'viewcart-4ac37531e8c6bceb.js')]
+  /category                                     [('GET', False, '_app-0d3d6782cfdaa13e.js')]
+  /cities?state_id=                             [('GET', True, 'Address-6ff1167e0bf3c006.js'), ('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /cod/orders                                   [('POST', True, 'Review-a772e977155a4052.js')]
+  /contact                                      [('POST', False, 'contact-420ec8f129320098.js')]
+  /countries                                    [('GET', True, 'Address-6ff1167e0bf3c006.js'), ('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /default-categories                           [('GET', False, '8262-5c7e12d312ba61d9.js')]
+  /elite-membership/join                        [('POST', True, 'Profile-5e86f6948c617d5b.js')]
+  /elite-membership/renew                       [('POST', True, 'Profile-5e86f6948c617d5b.js')]
+  /elite-membership/upgrade                     [('POST', True, 'Profile-5e86f6948c617d5b.js')]
+  /elite-membership/user                        [('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /eliteplans-list                              [('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /forgot-password                              [('POST', False, 'forgotpassword-16dbdc722407024')]
+  /invoice/                                     [('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /me                                           [('GET', True, 'Review-a772e977155a4052.js')]
+  /oauth-login                                  [('POST', False, 'login-20cb55fbae3b89a4.js')]
+  /online/orders                                [('POST', True, 'Review-a772e977155a4052.js')]
+  /online/paytm/initiate                        [('POST', True, 'Review-a772e977155a4052.js')]
+  /order/token/                                 [('GET', False, 'thankyou-67d05fce0e5026ba.js')]
+  /orders                                       [('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /products?search=                             [('GET', False, '8262-5c7e12d312ba61d9.js')]
+  /reset-password                               [('POST', False, 'resetpassword-5a0b3e1884d35f98')]
+  /reviews                                      [('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /reviews/                                     [('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /similar-products/                            [('GET', False, '_app-0d3d6782cfdaa13e.js')]
+  /states?country_id=                           [('GET', True, 'Address-6ff1167e0bf3c006.js'), ('GET', True, 'Profile-5e86f6948c617d5b.js')]
+  /user                                         [('GET', True, 'Profile-5e86f6948c617d5b.js'), ('POST', True, 'Profile-5e86f6948c617d5b.js')]
+  /wishlist/merge                               [('POST', True, '_app-0d3d6782cfdaa13e.js')]
+  GET /karzOffice/api/all-product-list?                                                  HTTP 401 len=26 stock fields: [] '{"message":"Unauthorized"}'
+  GET /karzOffice/api/all-product-list??term=mclaren                                     HTTP 401 len=26 stock fields: [] '{"message":"Unauthorized"}'
+  GET /karzOffice/api/all-product-list?/mini-gt-lancia-stratos-hf-stradale-rosso-aranc   HTTP 401 len=26 stock fields: [] '{"message":"Unauthorized"}'
+  GET /karzOffice/api/bag/verify/                                                        HTTP 404 len=65 stock fields: [] '{\n    "message": "The route api/bag/verify could not be found."\n}'
+  GET /karzOffice/api/bag/verify?term=mclaren                                            HTTP 404 len=65 stock fields: [] '{\n    "message": "The route api/bag/verify could not be found."\n}'
+  GET /karzOffice/api/bag/verify/mini-gt-lancia-stratos-hf-stradale-rosso-arancio        HTTP 405 len=152 stock fields: [] '{\n    "message": "The GET method is not supported for route api/bag/verify/mini-gt-lancia-stratos-hf-stradale-rosso-arancio. Supported methods: POST."\n}'
+  GET /karzOffice/api/category                                                           HTTP 200 len=125703 stock fields: [] '{"status":1,"msg":"Data Fetched Successfully","data":[{"id":12,"title":"Cars","slug":"cars","status":1,"created_at":"2025-08-01T11:32:51.000000Z","updated_at":"'
+  GET /karzOffice/api/category?term=mclaren                                              HTTP 200 len=125703 stock fields: [] '{"status":1,"msg":"Data Fetched Successfully","data":[{"id":12,"title":"Cars","slug":"cars","status":1,"created_at":"2025-08-01T11:32:51.000000Z","updated_at":"'
+  GET /karzOffice/api/category/mini-gt-lancia-stratos-hf-stradale-rosso-arancio          HTTP 404 len=112 stock fields: [] '{\n    "message": "The route api/category/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/cities?state_id=                                                   HTTP 500 len=33 stock fields: [] '{\n    "message": "Server Error"\n}'
+  GET /karzOffice/api/cities?state_id=?term=mclaren                                      HTTP 500 len=33 stock fields: [] '{\n    "message": "Server Error"\n}'
+  GET /karzOffice/api/cities?state_id=/mini-gt-lancia-stratos-hf-stradale-rosso-aranci   HTTP 500 len=33 stock fields: [] '{\n    "message": "Server Error"\n}'
+  GET /karzOffice/api/contact                                                            HTTP 405 len=100 stock fields: [] '{\n    "message": "The GET method is not supported for route api/contact. Supported methods: POST."\n}'
+  GET /karzOffice/api/contact?term=mclaren                                               HTTP 405 len=100 stock fields: [] '{\n    "message": "The GET method is not supported for route api/contact. Supported methods: POST."\n}'
+  GET /karzOffice/api/contact/mini-gt-lancia-stratos-hf-stradale-rosso-arancio           HTTP 404 len=111 stock fields: [] '{\n    "message": "The route api/contact/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/countries                                                          HTTP 200 len=83 stock fields: [] '{"success":true,"data":[{"id":101,"name":"India","shortname":"IN","phonecode":91}]}'
+  GET /karzOffice/api/countries?term=mclaren                                             HTTP 200 len=83 stock fields: [] '{"success":true,"data":[{"id":101,"name":"India","shortname":"IN","phonecode":91}]}'
+  GET /karzOffice/api/countries/mini-gt-lancia-stratos-hf-stradale-rosso-arancio         HTTP 404 len=113 stock fields: [] '{\n    "message": "The route api/countries/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/default-categories                                                 HTTP 200 len=864 stock fields: [] '[{"type":"default_category","id":243,"name":"Legends Of The Ramayan","top_slug":"legends-of-the-ramayan","child_slug":"legends-of-the-ramayan","image_url":"1792'
+  GET /karzOffice/api/default-categories?term=mclaren                                    HTTP 200 len=864 stock fields: [] '[{"type":"default_category","id":243,"name":"Legends Of The Ramayan","top_slug":"legends-of-the-ramayan","child_slug":"legends-of-the-ramayan","image_url":"1792'
+  GET /karzOffice/api/default-categories/mini-gt-lancia-stratos-hf-stradale-rosso-aran   HTTP 404 len=122 stock fields: [] '{\n    "message": "The route api/default-categories/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/elite-membership/join                                              HTTP 405 len=114 stock fields: [] '{\n    "message": "The GET method is not supported for route api/elite-membership/join. Supported methods: POST."\n}'
+  GET /karzOffice/api/elite-membership/join?term=mclaren                                 HTTP 405 len=114 stock fields: [] '{\n    "message": "The GET method is not supported for route api/elite-membership/join. Supported methods: POST."\n}'
+  GET /karzOffice/api/elite-membership/join/mini-gt-lancia-stratos-hf-stradale-rosso-a   HTTP 404 len=125 stock fields: [] '{\n    "message": "The route api/elite-membership/join/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/elite-membership/renew                                             HTTP 405 len=115 stock fields: [] '{\n    "message": "The GET method is not supported for route api/elite-membership/renew. Supported methods: POST."\n}'
+  GET /karzOffice/api/elite-membership/renew?term=mclaren                                HTTP 405 len=115 stock fields: [] '{\n    "message": "The GET method is not supported for route api/elite-membership/renew. Supported methods: POST."\n}'
+  GET /karzOffice/api/elite-membership/renew/mini-gt-lancia-stratos-hf-stradale-rosso-   HTTP 404 len=126 stock fields: [] '{\n    "message": "The route api/elite-membership/renew/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/elite-membership/upgrade                                           HTTP 405 len=117 stock fields: [] '{\n    "message": "The GET method is not supported for route api/elite-membership/upgrade. Supported methods: POST."\n}'
+  GET /karzOffice/api/elite-membership/upgrade?term=mclaren                              HTTP 405 len=117 stock fields: [] '{\n    "message": "The GET method is not supported for route api/elite-membership/upgrade. Supported methods: POST."\n}'
+  GET /karzOffice/api/elite-membership/upgrade/mini-gt-lancia-stratos-hf-stradale-ross   HTTP 404 len=128 stock fields: [] '{\n    "message": "The route api/elite-membership/upgrade/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/eliteplans-list                                                    HTTP 401 len=30 stock fields: [] '{"message":"Unauthenticated."}'
+  GET /karzOffice/api/eliteplans-list?term=mclaren                                       HTTP 401 len=30 stock fields: [] '{"message":"Unauthenticated."}'
+  GET /karzOffice/api/eliteplans-list/mini-gt-lancia-stratos-hf-stradale-rosso-arancio   HTTP 404 len=119 stock fields: [] '{\n    "message": "The route api/eliteplans-list/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/invoice/                                                           HTTP 404 len=62 stock fields: [] '{\n    "message": "The route api/invoice could not be found."\n}'
+  GET /karzOffice/api/invoice?term=mclaren                                               HTTP 404 len=62 stock fields: [] '{\n    "message": "The route api/invoice could not be found."\n}'
+  GET /karzOffice/api/invoice/mini-gt-lancia-stratos-hf-stradale-rosso-arancio           HTTP 404 len=27 stock fields: [] '{"error":"Order not found"}'
+  GET /karzOffice/api/me                                                                 HTTP 401 len=48 stock fields: [] '{"success":false,"message":"Token not provided"}'
+  GET /karzOffice/api/me?term=mclaren                                                    HTTP 401 len=48 stock fields: [] '{"success":false,"message":"Token not provided"}'
+  GET /karzOffice/api/me/mini-gt-lancia-stratos-hf-stradale-rosso-arancio                HTTP 404 len=106 stock fields: [] '{\n    "message": "The route api/me/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET /karzOffice/api/products?search=                                                   HTTP 401 len=26 stock fields: [] '{"message":"Unauthorized"}'
+  GET /karzOffice/api/products?search=?term=mclaren                                      HTTP 401 len=26 stock fields: [] '{"message":"Unauthorized"}'
+  GET /karzOffice/api/products?search=/mini-gt-lancia-stratos-hf-stradale-rosso-aranci   HTTP 401 len=26 stock fields: [] '{"message":"Unauthorized"}'
+  GET /karzOffice/api/similar-products/                                                  HTTP 404 len=71 stock fields: [] '{\n    "message": "The route api/similar-products could not be found."\n}'
+  GET /karzOffice/api/similar-products?term=mclaren                                      HTTP 404 len=71 stock fields: [] '{\n    "message": "The route api/similar-products could not be found."\n}'
+  GET /karzOffice/api/similar-products/mini-gt-lancia-stratos-hf-stradale-rosso-aranci   HTTP 404 len=119 stock fields: [] '{\n    "message": "No query results for model [App\\\\Models\\\\Product] mini-gt-lancia-stratos-hf-stradale-rosso-arancio"\n}'
+  GET /karzOffice/api/states?country_id=                                                 HTTP 500 len=33 stock fields: [] '{\n    "message": "Server Error"\n}'
+  GET /karzOffice/api/states?country_id=?term=mclaren                                    HTTP 500 len=33 stock fields: [] '{\n    "message": "Server Error"\n}'
+  GET /karzOffice/api/states?country_id=/mini-gt-lancia-stratos-hf-stradale-rosso-aran   HTTP 500 len=33 stock fields: [] '{\n    "message": "Server Error"\n}'
+  GET (guess) /products                                                              HTTP 401 len=26 [] '{"message":"Unauthorized"}'
+  GET (guess) /product/mini-gt-lancia-stratos-hf-stradale-rosso-arancio              HTTP 404 len=111 [] '{\n    "message": "The route api/product/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET (guess) /productdetails/mini-gt-lancia-stratos-hf-stradale-rosso-arancio       HTTP 404 len=118 [] '{\n    "message": "The route api/productdetails/mini-gt-lancia-stratos-hf-stradale-rosso-arancio could not be found."\n}'
+  GET (guess) /search?term=mclaren                                                   HTTP 404 len=61 [] '{\n    "message": "The route api/search could not be found."\n}'
+  GET (guess) /search/mclaren                                                        HTTP 404 len=69 [] '{\n    "message": "The route api/search/mclaren could not be found."\n}'
+  GET (guess) /getproducts                                                           HTTP 404 len=66 [] '{\n    "message": "The route api/getproducts could not be found."\n}'
+  GET (guess) /category/mini-gt                                                      HTTP 404 len=71 [] '{\n    "message": "The route api/category/mini-gt could not be found."\n}'
+  GET (guess) /home                                                                  HTTP 404 len=59 [] '{\n    "message": "The route api/home could not be found."\n}'
