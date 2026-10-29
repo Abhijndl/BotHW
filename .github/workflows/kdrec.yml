@@ -1,0 +1,30 @@
+name: KND recorder (temporary research)
+# Temporary research workflow on the claude/probe branch only. Polls Karz &
+# Dolls' public shelf pages and records stock changes; never touches main or
+# the running tracker. Safe to delete with the branch.
+on:
+  push:
+    branches: [claude/probe]
+    paths: [kdrec_trigger.txt, kdrec.py, .github/workflows/kdrec.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kd-recorder
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/probe
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "curl_cffi>=0.7.0"
+      - name: Record
+        run: python kdrec.py
