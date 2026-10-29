@@ -1,22 +1,50 @@
-=== 1. shelves: where are the two McLarens, and what does KND say about them ===
-/mini-gt/mini-gt: HTTP 200, 124 products, 1.55s; McLaren LB?WORKS here: []
-/mini-gt/mini-gt-blister-pack: HTTP 200, 148 products, 2.21s; McLaren LB?WORKS here: []
-/pre-orders/pre-order-minigt: HTTP 200, 71 products, 1.39s; McLaren LB?WORKS here: []
-/: HTTP 200, 62 products, 1.54s; McLaren LB?WORKS here: []
+=== /mini-gt/mini-gt: HTTP 200, 124 products
+  fields of a product: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+    {'pid': '4lgO9nVLoQ', 'pro_name': 'MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO', 'slug': 'mini-gt-lancia-stratos-hf-stradale-rosso-arancio', 'product_sname': 'MINI GT 365 ', 'sku': 'MINI GT 365 ', 'in_stock': 1, 'act_price': 1099, 'dis_price': 1019, 'type': 0}
+    {'pid': 'GvLPBOegod', 'pro_name': 'MINI GT HYUNDAI KONA N PERFORMANCE BLUE', 'slug': 'mini-gt-hyundai-kona-n-performance-blue', 'product_sname': 'MINI GT 450 ', 'sku': 'MINI GT 450 ', 'in_stock': 1, 'act_price': 1099, 'dis_price': 1019, 'type': 0}
+    {'pid': 'OyLoWy0Lb2', 'pro_name': 'MINI GT LANCIA STRATOS HF STRADALE VERDE CHIARO', 'slug': 'mini-gt-lancia-stratos-hf-stradale-verde-chiaro', 'product_sname': 'MINI GT 625 ', 'sku': 'MINI GT 625 ', 'in_stock': 1, 'act_price': 1199, 'dis_price': 1119, 'type': 0}
+    {'pid': 'QJgn0OXLl6', 'pro_name': 'MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW\xa0\xa0 \xa0', 'slug': 'mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow\xa0\xa0-\xa0', 'product_sname': 'MINI GT 826\xa0\xa0 \xa0', 'sku': 'MINI GT 826\xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1199, 'dis_price': 1119, 'type': 4}
+    {'pid': '96pmZmygVK', 'pro_name': 'MINI GT ABARTH 595 LB-WORKS X ABAS WORKS GREY', 'slug': 'mini-gt-abarth-595-lb-works-x-abas-works-grey', 'product_sname': 'MINI GT 995 \xa0\xa0 \xa0', 'sku': 'MINI GT 995 \xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1199, 'dis_price': 1119, 'type': 0}
+    {'pid': 'aMNBW9mLXd', 'pro_name': 'MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOUKI WITH RE AMEMIY', 'slug': 'mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-with-re-amemiy', 'product_sname': 'MINI GT 996 \xa0\xa0 \xa0', 'sku': 'MINI GT 996 \xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 4}
+  KND's own product links on this page: 248; e.g. ['/details/mini-gt-bugatti-bolide-yellow?pid=rMNMePbN95', '/details/mini-gt-bugatti-bolide-yellow?pid=rMNMePbN95', '/details/mini-gt-aston-martin-db5-fiesta-red?pid=xeLXnYxg1W']
+=== /mini-gt/mini-gt-blister-pack: HTTP 200, 148 products
+  fields of a product: ['act_price', 'add_limit', 'dis_price', 'id', 'in_stock', 'is_approved', 'is_preorder', 'pid', 'prd_images', 'preorder_price', 'pro_name', 'product_sname', 'sku', 'slug', 'type']
+    {'pid': 'OdNZW0jLzk', 'pro_name': 'MINI GT JAGUAR C-X75 BLUE', 'slug': 'mini-gt-jaguar-c-x75-blue', 'product_sname': 'MINI GT 884 BLISTER PACK\xa0\xa0 \xa0', 'sku': 'MINI GT 884 BLISTER PACK\xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 0}
+    {'pid': 'KBg7nabpRr', 'pro_name': 'MINI GT LB-WORKS X ABAS WORKS ABARTH 595 GARA WHITE', 'slug': 'mini-gt-lb-works-x-abas-works-abarth-595-gara-white', 'product_sname': 'MINI GT 809 BLISTER PACK\xa0\xa0 \xa0', 'sku': 'MINI GT 809 BLISTER PACK\xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 0}
+    {'pid': 'V2gJR33ge4', 'pro_name': 'MINI GT TOYOTA GR86 LB NATION', 'slug': 'mini-gt-toyota-gr86-lb-nation', 'product_sname': 'MINI GT 885 BLISTER PACK\xa0\xa0 \xa0', 'sku': 'MINI GT 885 BLISTER PACK\xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 0}
+    {'pid': '96pmZ3QgVK', 'pro_name': 'TOYOTA GR86 LB NATION BABY BLUE', 'slug': 'toyota-gr86-lb-nation-baby-blue', 'product_sname': 'MINI GT 873 BLISTER PACK\xa0\xa0 \xa0', 'sku': 'MINI GT 873 BLISTER PACK\xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 0}
+    {'pid': 'rMNMPkOg95', 'pro_name': 'MINI GT NISSAN Z LB NATION WORKS LB GOLD\xa0\xa0 \xa0', 'slug': 'mini-gt-nissan-z-lb-nation-works-lb-gold\xa0\xa0-\xa0', 'product_sname': 'MINI GT 782 BLISTER PACK\xa0\xa0 \xa0', 'sku': 'MINI GT 782 BLISTER PACK\xa0\xa0 \xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 4}
+    {'pid': 'x7Le8Y3NY0', 'pro_name': 'BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE\xa0\xa0 \xa0', 'slug': 'bmw-i7-xdrive60-alpine-white-black-sapphire\xa0\xa0-\xa0', 'product_sname': 'MINI GT 959 BLISTER PACK\xa0', 'sku': 'MINI GT 959 BLISTER PACK\xa0', 'in_stock': 1, 'act_price': 1399, 'dis_price': 1299, 'type': 0}
+  KND's own product links on this page: 296; e.g. ['/details/mini-gt-bugatti-bolide-yellow?pid=XqLQjdwpvD', '/details/mini-gt-bugatti-bolide-yellow?pid=XqLQjdwpvD', '/details/mini-gt-aston-martin-db5-fiesta-red?pid=Mbgab6nNq8']
 
-=== 2. which link opens the product ===
-  bot's link (%3F)       HTTP 404 1.17s  shows product: True  404 page: True  title: '-'  final: https://www.karzanddolls.com/details/mclaren-720s-lb%3Fworks-the-boring-concept?pid=OyLoZkMNb2
-  raw '?' in slug        HTTP 404 1.29s  shows product: True  404 page: True  title: '-'  final: https://www.karzanddolls.com/details/mclaren-720s-lb?works-the-boring-concept?pid=OyLoZkMNb2
-  '?' removed            HTTP 404 1.49s  shows product: True  404 page: True  title: '-'  final: https://www.karzanddolls.com/details/mclaren-720s-lbworks-the-boring-concept?pid=OyLoZkMNb2
-  '?' → '-'              HTTP 404 1.45s  shows product: True  404 page: True  title: '-'  final: https://www.karzanddolls.com/details/mclaren-720s-lb-works-the-boring-concept?pid=OyLoZkMNb2
-  '?' → '★' encoded      HTTP 404 1.19s  shows product: True  404 page: True  title: '-'  final: https://www.karzanddolls.com/details/mclaren-720s-lb%E2%98%85works-the-boring-concept?pid=OyLoZkMNb2
-  any slug 'x'           HTTP 404 1.18s  shows product: False  404 page: True  title: '-'  final: https://www.karzanddolls.com/details/x?pid=OyLoZkMNb2
-  no slug                HTTP 404 1.27s  shows product: False  404 page: True  title: '-'  final: https://www.karzanddolls.com/details?pid=OyLoZkMNb2
-  control (a normal product, wrong slug 'x'):
-  its own slug           HTTP 404  shows product: True  404 page: True  title: '-'
-  slug 'x'               HTTP 404  shows product: True  404 page: True  title: '-'
+=== models listed on BOTH shelves: 41
+   /mini-gt/mini-gt                 pid=QJgn0OXLl6 ₹1119 in_stock=1 sku='MINI GT 826\xa0\xa0 \xa0' sname='MINI GT 826\xa0\xa0 \xa0' name='MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW\xa0\xa0 \xa0'
+   /mini-gt/mini-gt-blister-pack    pid=jPp9Y5GpDa ₹1299 in_stock=1 sku='MINI GT 826 \xa0BLISTER PACK\xa0' sname='MINI GT 826 \xa0BLISTER PACK\xa0' name='MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW'
+   /mini-gt/mini-gt                 pid=aMNBW9mLXd ₹1299 in_stock=1 sku='MINI GT 996 \xa0\xa0 \xa0' sname='MINI GT 996 \xa0\xa0 \xa0' name='MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOUKI WITH RE AMEMIY'
+   /mini-gt/mini-gt-blister-pack    pid=0mNyqVqNkj ₹1489 in_stock=1 sku='MINI GT 996 BLISTER PACK' sname='MINI GT 996 BLISTER PACK' name='MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOUKI WITH RE AMEMIY'
+   /mini-gt/mini-gt                 pid=jPp9Yj2pDa ₹1489 in_stock=1 sku='MINI GT 985\xa0' sname='MINI GT 985\xa0' name='MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHROME'
+   /mini-gt/mini-gt-blister-pack    pid=eJNr9GogBd ₹1669 in_stock=1 sku='MINI GT 985 BLISTER PACK\xa0\xa0 \xa0' sname='MINI GT 985 BLISTER PACK\xa0\xa0 \xa0' name='MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHROME'
+   /mini-gt/mini-gt                 pid=8JNqrDrL4Q ₹1149 in_stock=1 sku='MINI GT 953' sname='MINI GT 953' name='MINI GT MAZDA AZ-1 LIBERTY WALK LB40 WHITE 2024 TOKYO AUTO SALON'
+   /mini-gt/mini-gt-blister-pack    pid=aMNBWa0LXd ₹1299 in_stock=1 sku='MINI GT 953 BLISTER PACK' sname='MINI GT 953 BLISTER PACK' name='MINI GT MAZDA AZ-1 LIBERTY WALK LB40 WHITE 2024 TOKYO AUTO Salon\xa0'
+   /mini-gt/mini-gt                 pid=zONvZyaNBK ₹1149 in_stock=1 sku='MINI GT 1070\xa0' sname='MINI GT 1070\xa0' name='MINI GT JAGUAR C-X75 BLACK'
+   /mini-gt/mini-gt-blister-pack    pid=RWg8V1yLKe ₹1349 in_stock=1 sku='MINI GT 1070 BLISTER PACK\xa0' sname='MINI GT 1070 BLISTER PACK\xa0' name='MINI GT JAGUAR C-X75 BLACK'
+   /mini-gt/mini-gt                 pid=Ezgl2W7LMr ₹1299 in_stock=1 sku='MINI GT 808' sname='MINI GT 808' name='MINI GT LOTUS 78 3 GUNNAR NILSSON 1977 JAPANESE GP'
+   /mini-gt/mini-gt-blister-pack    pid=E5N4n4vpMq ₹1399 in_stock=1 sku='MINI GT 808 BLISTER PACK' sname='MINI GT 808 BLISTER PACK' name='MINI GT LOTUS 78 3 GUNNAR NILSSON 1977 JAPANESE GP'
+   /mini-gt/mini-gt                 pid=QJgn205gl6 ₹1149 in_stock=1 sku='MINI GT 1057 \xa0\xa0 \xa0' sname='MINI GT 1057 \xa0\xa0 \xa0' name='MINI GT MAZDA RX-7 VEILSIDE FORTUNE GREY'
+   /mini-gt/mini-gt-blister-pack    pid=10gzmm7pAV ₹1299 in_stock=1 sku='MINI GT 1057 BLISTER PACK \xa0\xa0 \xa0' sname='MINI GT 1057 BLISTER PACK \xa0\xa0 \xa0' name='MINI GT MAZDA RX-7 VEILSIDE FORTUNE GREY'
+   /mini-gt/mini-gt                 pid=KBg7zPepRr ₹1599 in_stock=1 sku='MINI GT 1010' sname='MINI GT 1010' name='CADILLAC V SERIES R 01 CADILLAC RACING 2024 IMSA PETIT LE MANS'
+   /mini-gt/mini-gt-blister-pack    pid=GoL1JeJpBA ₹1749 in_stock=1 sku='MINI GT 1010 BLISTER PACK\xa0' sname='MINI GT 1010 BLISTER PACK\xa0' name='CADILLAC V SERIES R 01 CADILLAC RACING 2024 IMSA PETIT LE MANS'
+=== same name twice on one shelf: 0
+  words on /mini-gt/mini-gt: {'BL': 20, 'BLISTER': 7, 'PACK': 7, 'BOX': 1}  (of 124)
+  words on /mini-gt/mini-gt-blister-pack: {'BLISTER': 148, 'PACK': 146, 'BL': 148, '-B': 2}  (of 148)
 
-=== 3. the product page's own data: anything about box / blister? ===
---- OyLoZkMNb2 via /details/x?pid=OyLoZkMNb2: pageProps keys []
---- RnLjVk9Lm0 via /details/x?pid=RnLjVk9Lm0: pageProps keys []
---- XqLQbJRpvD via /details/x?pid=XqLQbJRpvD: pageProps keys []
+=== does the tracker's link format open an in-stock car? ===
+  tracker's link  HTTP 200  page shows 'MINI GT LANCIA STRATOS HF STRA': True  404: False  /details/mini-gt-lancia-stratos-hf-stradale-rosso-arancio?pid=4lgO9nVLoQ
+  slug 'x'        HTTP 404  page shows 'MINI GT LANCIA STRATOS HF STRA': False  404: True  /details/x?pid=4lgO9nVLoQ
+  no ?pid         HTTP 200  page shows 'MINI GT LANCIA STRATOS HF STRA': True  404: False  /details/mini-gt-lancia-stratos-hf-stradale-rosso-arancio
+  tracker's link  HTTP 200  page shows 'MINI GT HYUNDAI KONA N PERFORM': True  404: False  /details/mini-gt-hyundai-kona-n-performance-blue?pid=GvLPBOegod
+  slug 'x'        HTTP 404  page shows 'MINI GT HYUNDAI KONA N PERFORM': False  404: True  /details/x?pid=GvLPBOegod
+  no ?pid         HTTP 200  page shows 'MINI GT HYUNDAI KONA N PERFORM': True  404: False  /details/mini-gt-hyundai-kona-n-performance-blue
+  tracker's link  HTTP 200  page shows 'MINI GT LANCIA STRATOS HF STRA': True  404: False  /details/mini-gt-lancia-stratos-hf-stradale-verde-chiaro?pid=OyLoWy0Lb2
+  slug 'x'        HTTP 404  page shows 'MINI GT LANCIA STRATOS HF STRA': False  404: True  /details/x?pid=OyLoWy0Lb2
+  no ?pid         HTTP 200  page shows 'MINI GT LANCIA STRATOS HF STRA': True  404: False  /details/mini-gt-lancia-stratos-hf-stradale-verde-chiaro
