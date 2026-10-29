@@ -1,189 +1,189 @@
 {
- "updated": "2026-10-29T13:10:34.530Z",
+ "updated": "2026-10-29T13:30:34.730Z",
  "fast_s": 15.0,
  "slow_s": 45.0,
  "pages": {
   "/mini-gt/mini-gt": {
-   "ok": 1201,
+   "ok": 1281,
    "fail": 0,
-   "n": 121,
-   "avg_s": 1.68,
-   "p90_s": 2.17
+   "n": 122,
+   "avg_s": 1.67,
+   "p90_s": 2.16
   },
   "/mini-gt/mini-gt-blister-pack": {
-   "ok": 1200,
+   "ok": 1280,
    "fail": 0,
-   "n": 145,
-   "avg_s": 1.69,
-   "p90_s": 2.08
+   "n": 146,
+   "avg_s": 1.68,
+   "p90_s": 2.07
   },
   "/specials/special-stocks-64-43-scale": {
-   "ok": 1200,
+   "ok": 1280,
    "fail": 0,
    "n": 126,
-   "avg_s": 1.58,
+   "avg_s": 1.57,
    "p90_s": 1.91
   },
   "/": {
-   "ok": 1200,
+   "ok": 1280,
    "fail": 0,
    "n": 50,
    "avg_s": 1.61,
    "p90_s": 1.85
   },
   "/specials/chase-car": {
-   "ok": 1200,
+   "ok": 1280,
    "fail": 0,
    "n": 2,
    "avg_s": 1.28,
-   "p90_s": 1.53
+   "p90_s": 1.52
   },
   "/mini-gt/kaido-house": {
-   "ok": 1200,
+   "ok": 1280,
    "fail": 0,
    "n": 21,
    "avg_s": 1.31,
-   "p90_s": 1.57
+   "p90_s": 1.56
   },
   "/hot-wheels/mainlines": {
-   "ok": 401,
+   "ok": 427,
    "fail": 0,
    "n": 6,
-   "avg_s": 1.5,
+   "avg_s": 1.49,
    "p90_s": 2.14
   },
   "/hot-wheels/pop-culture": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 6,
    "avg_s": 1.47,
-   "p90_s": 1.86
+   "p90_s": 1.85
   },
   "/hot-wheels/card-art-premiums": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 10,
    "avg_s": 1.46,
    "p90_s": 1.88
   },
   "/hot-wheels/gift-pack": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 25,
    "avg_s": 1.41,
-   "p90_s": 1.75
+   "p90_s": 1.74
   },
   "/hot-wheels/car-culture": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 1,
    "avg_s": 1.29,
    "p90_s": 1.54
   },
   "/hot-wheels/fast-and-furious": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 1,
    "avg_s": 1.27,
    "p90_s": 1.52
   },
   "/hot-wheels/boulevard-series": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 0,
    "avg_s": 1.33,
    "p90_s": 1.58
   },
   "/hot-wheels/team-transport": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 5,
    "avg_s": 1.4,
-   "p90_s": 1.74
-  },
-  "/hot-wheels/character-cars": {
-   "ok": 400,
-   "fail": 0,
-   "n": 8,
-   "avg_s": 1.41,
    "p90_s": 1.73
   },
+  "/hot-wheels/character-cars": {
+   "ok": 427,
+   "fail": 0,
+   "n": 8,
+   "avg_s": 1.4,
+   "p90_s": 1.72
+  },
   "/hot-wheels/disney-cars": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.33,
-   "p90_s": 1.56
+   "avg_s": 1.32,
+   "p90_s": 1.55
   },
   "/hot-wheels/hot-wheels-accessories": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 9,
    "avg_s": 1.41,
-   "p90_s": 1.7
+   "p90_s": 1.69
   },
   "/pre-orders/pre-order-minigt": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 71,
-   "avg_s": 1.47,
-   "p90_s": 1.7
+   "avg_s": 1.46,
+   "p90_s": 1.69
   },
   "/pre-orders/pre-order-special-stock": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 1,
    "avg_s": 1.28,
-   "p90_s": 1.52
+   "p90_s": 1.51
   },
   "/hot-wheels/monster-trucks": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 0,
    "avg_s": 1.45,
-   "p90_s": 2.0
+   "p90_s": 1.97
   },
   "/matchbox/matchbox-basic-cars": {
-   "ok": 400,
+   "ok": 427,
    "fail": 0,
    "n": 4,
    "avg_s": 1.44,
    "p90_s": 1.84
   },
   "/matchbox/matchbox-moving-parts": {
-   "ok": 400,
+   "ok": 426,
    "fail": 0,
    "n": 0,
    "avg_s": 1.37,
    "p90_s": 1.65
   },
   "/matchbox/matchbox-superfast": {
-   "ok": 400,
+   "ok": 426,
    "fail": 0,
    "n": 1,
    "avg_s": 1.32,
-   "p90_s": 1.56
+   "p90_s": 1.55
   },
   "/majorette/premium-cars": {
-   "ok": 400,
+   "ok": 426,
    "fail": 0,
    "n": 53,
    "avg_s": 1.37,
    "p90_s": 1.69
   },
   "/majorette/basic-cars": {
-   "ok": 400,
+   "ok": 426,
    "fail": 0,
    "n": 4,
    "avg_s": 1.27,
-   "p90_s": 1.53
+   "p90_s": 1.52
   },
   "/majorette/majorette": {
-   "ok": 400,
+   "ok": 426,
    "fail": 0,
    "n": 0,
    "avg_s": 1.31,
-   "p90_s": 1.59
+   "p90_s": 1.58
   }
  }
 }
