@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""Probe #47: Karz & Dolls — (1) when two products share one slug, which one
-does the page show (read pageProps.productdetails this time)? (2) Does a '?'
-inside a slug cut it short in the shop's own lookup (so a car like the
-McLaren LB?WORKS can't open even while in stock)? (3) Any in-stock car with
-'?', '#', '&', '/', '%' or '+' in its slug on any category? (4) What does a
-product's details record hold (any unit count)? Read-only."""
+"""Probe #48: Karz & Dolls — (1) can a car whose slug has a '?' be opened at
+all (double-encoded, '?' dropped, the shop's own link)? (2) Is there a search
+page to link to instead? (3) Can a car be added to the cart from the shelf?
+(4) How do box and blister show in sku/name on every Mini GT shelf? Read-only."""
 import json, re, html, collections, time
-from urllib.parse import quote, unquote
+from urllib.parse import quote
 from curl_cffi import requests as http
 IMP = {"impersonate": "chrome124"}
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -18,9 +16,9 @@ NEXT = re.compile(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</sc
 def get(url, **kw):
     try:
         r = http.get(url, headers={**H, **kw.pop("h", {})}, timeout=25, allow_redirects=True, **IMP, **kw)
-        return r.status_code, r.text
+        return r.status_code, r.text, str(r.url)
     except Exception as e:
-        return None, ""
+        return None, "", ""
 
 
 def nd(page):
@@ -30,7 +28,7 @@ def nd(page):
 
 def detail(page):
     pp = (nd(page).get("props") or {}).get("pageProps") or {}
-    return pp.get("productdetails") or {}, sorted(pp.keys())
+    return pp.get("productdetails") or {}
 
 
 def shelf_products(page):
@@ -47,79 +45,110 @@ def shelf_products(page):
     return found
 
 
-def link(slug, pid):
-    return f"{KD}/details/{quote(slug, safe='-_.~')}?pid={quote(pid, safe='')}"
-
-
 rep = {}
-SHELVES = ["/mini-gt/mini-gt", "/mini-gt/mini-gt-blister-pack", "/mini-gt/kaido-house", "/pre-orders/pre-order-minigt", "/",
-           "/hot-wheels/mainlines", "/hot-wheels/car-culture", "/hot-wheels/pop-culture", "/specials/chase-car"]
-allp, cats = {}, set()
-for s in SHELVES:
-    code, page = get(KD + s)
-    for p in shelf_products(page):
-        allp[str(p["pid"])] = p
-    if s == "/":
-        for m in re.findall(r'href="(/[a-z0-9\-]+/[a-z0-9\-]+(?:/[A-Za-z0-9=]+)?)"', page or ""):
-            cats.add(html.unescape(m))
-        for m in re.findall(r'href="(/details/[a-z0-9\-]+/[a-z0-9\-]+/[A-Za-z0-9=]{2,8})"', page or ""):
-            cats.add(html.unescape(m))
+print("=== 1. opening a car whose slug has a '?' ===")
+Q = [("/action-figures/dolls", "Pqp262Op36", "?barbie-made-to-move-fashion-doll-with-black-hair-"),
+     ("/lego/lego-duplo", "KBg7nKepRr", "lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie")]
+R1 = []
+for shelf, pid, slug_hint in Q:
+    code, page, _ = get(KD + shelf)
+    ps = [p for p in shelf_products(page) if str(p["pid"]) == pid]
+    if not ps:
+        print(f"  {pid}: not on {shelf} any more")
+        continue
+    p = ps[0]
+    slug = str(p["slug"])
+    own = sorted(set(html.unescape(m) for m in re.findall(r'href="([^"]*' + re.escape(pid) + r'[^"]*)"', page or "")))
+    print(f"  {pid} in_stock={p.get('in_stock')} slug={slug!r}  shop's own hrefs: {own[:3]}")
+    tries = [("tracker's (%3F)", f"/details/{quote(slug, safe='-_.~')}?pid={pid}"),
+             ("double %253F", "/details/" + quote(slug, safe='-_.~').replace("%3F", "%253F") + f"?pid={pid}"),
+             ("'?' dropped", "/details/" + quote(slug.replace("?", ""), safe='-_.~') + f"?pid={pid}"),
+             ("'?'→'-'", "/details/" + quote(slug.replace("?", "-"), safe='-_.~') + f"?pid={pid}"),
+             ("before '?' only", "/details/" + quote(slug.split("?")[0], safe='-_.~') + f"?pid={pid}"),
+             ("after '?' only", "/details/" + quote(slug.split("?", 1)[1], safe='-_.~') + f"?pid={pid}"),
+             ("pid as slug", f"/details/{pid}?pid={pid}")] + [("shop's own", h) for h in own[:2]]
+    for label, path in tries:
+        code, page2, final = get(KD + path if path.startswith("/") else path)
+        d = detail(page2)
+        ok = str(d.get("pid")) == pid
+        R1.append({"pid": pid, "label": label, "path": path, "http": code, "opens": ok})
+        print(f"    {label:17} HTTP {code} opens it: {ok}  {path[:90]!r}")
+rep["q"] = R1
 
-print("=== 4. what a details record holds ===")
-inst = [p for p in allp.values() if str(p.get("in_stock")) == "1" and re.fullmatch(r"[a-z0-9\-]+", str(p.get("slug")))]
-code, page = get(link(inst[0]["slug"], inst[0]["pid"]))
-d, keys = detail(page)
-print("  pageProps keys:", keys)
-print("  productdetails:", {k: (v if len(json.dumps(v, default=str)) < 120 else f"<{type(v).__name__} {len(json.dumps(v, default=str))} chars>") for k, v in d.items()})
-rep["detail_keys"] = sorted(d.keys())
+print("\n=== 2. a search page? ===")
+code, home, _ = get(KD + "/")
+js = re.findall(r'<script[^>]+src="([^"]+\.js)"', home or "")
+hits = collections.Counter()
+for src in js[:14]:
+    c2, body, _ = get(src if src.startswith("http") else KD + src, h={"Accept": "*/*"})
+    for m in re.findall(r'["\'`](/[a-zA-Z\-_/]*search[a-zA-Z\-_/]*(?:\?[a-zA-Z_]+=)?)', body or "", re.I):
+        hits[m] += 1
+    for m in re.findall(r'(search[A-Za-z]*)\s*[:=]', body or ""):
+        hits["(key) " + m] += 1
+print("  search-ish strings in the scripts:", hits.most_common(25))
+forms = re.findall(r'<form[^>]*>', home or "")
+print("  forms on the home page:", forms[:4])
+inputs = re.findall(r'<input[^>]*(?:search|Search)[^>]*>', home or "")
+print("  search inputs:", inputs[:3])
+cands = ["/search?q=mclaren", "/search?keyword=mclaren", "/search?search=mclaren", "/search/mclaren", "/searchresult?search=mclaren",
+         "/search-result?search=mclaren", "/products?search=mclaren", "/search?query=mclaren", "/search?term=mclaren", "/search?s=mclaren"]
+for m, _ in hits.most_common(8):
+    if m.startswith("/") and "?" in m:
+        cands.append(m + "mclaren")
+    elif m.startswith("/"):
+        cands.append(m.rstrip("/") + "/mclaren")
+R2 = []
+for c in dict.fromkeys(cands):
+    code, page, final = get(KD + c)
+    ps = shelf_products(page)
+    mc = [p for p in ps if "MCLAREN" in str(p.get("pro_name")).upper()]
+    R2.append({"url": c, "http": code, "n": len(ps), "mclaren": len(mc), "page": nd(page).get("page"), "final": final})
+    print(f"  {c:40} HTTP {code} page={nd(page).get('page')!r} products={len(ps)} mclaren={len(mc)} → {final[len(KD):][:60]}")
+rep["search"] = R2
 
-print("\n=== 1. two products with one slug ===")
-byslug = collections.defaultdict(list)
-for p in allp.values():
-    byslug[str(p["slug"])].append(p)
-dups = {k: v for k, v in byslug.items() if len({str(x["pid"]) for x in v}) > 1}
-print(f"  {len(allp)} products on {len(SHELVES)} shelves; {len(dups)} slugs shared by 2+ products")
-C = []
-for slug, ps in list(dups.items())[:12]:
-    for p in ps:
-        code, page = get(link(slug, str(p["pid"])))
-        d, _ = detail(page)
-        same = str(d.get("pid")) == str(p["pid"])
-        C.append({"slug": slug, "pid": p["pid"], "sku": p.get("sku"), "price": p.get("dis_price"), "http": code,
-                  "shows_pid": d.get("pid"), "shows_sku": d.get("sku"), "shows_price": d.get("dis_price"), "same": same})
-        print(f"  {slug[:44]!r:48} pid={p['pid']} ₹{p.get('dis_price')} {str(p.get('sku')).strip()[:24]!r:27} → HTTP {code} shows pid={d.get('pid')} ₹{d.get('dis_price')} {str(d.get('sku')).strip()[:24]!r} {'SAME' if same else 'OTHER'}")
-rep["shared"] = C
-print("  same:", sum(c["same"] for c in C), "of", len(C))
+print("\n=== 3. add to cart from the shelf? ===")
+code, page, _ = get(KD + "/mini-gt/mini-gt-blister-pack")
+for w in ("Add to cart", "ADD TO CART", "Add To Cart", "Buy Now", "BUY NOW", "Notify", "Quick", "addtocart", "addToCart"):
+    n = (page or "").count(w)
+    if n:
+        print(f"  {w!r}: {n} times")
+i = (page or "").find("Add to")
+print("  around the first 'Add to':", re.sub(r"\s+", " ", (page or "")[max(0, i - 400):i + 120])[:600] if i >= 0 else "(none)")
 
-print("\n=== 2. does a '?' cut the slug short? (in-stock cars) ===")
-F = []
-for p in inst[:3]:
-    slug, pid = str(p["slug"]), str(p["pid"])
-    for label, path in [("as is", quote(slug)), ("+%3F", quote(slug) + "%3F"), ("+%3Fzzz", quote(slug) + "%3Fzzz"),
-                        ("+zzz", quote(slug) + "zzz"), ("+%23zzz", quote(slug) + "%23zzz"), ("+%26zzz", quote(slug) + "%26zzz"),
-                        ("+%2Fzzz", quote(slug) + "%2Fzzz"), ("+%25zzz", quote(slug) + "%25zzz"), ("+%2Bzzz", quote(slug) + "%2Bzzz")]:
-        code, page = get(f"{KD}/details/{path}?pid={pid}")
-        d, _ = detail(page)
-        F.append({"slug": slug, "label": label, "http": code, "shows": d.get("pid")})
-        print(f"  {slug[:40]!r:44} {label:9} → HTTP {code} shows pid={d.get('pid')} {'(it)' if str(d.get('pid')) == pid else ''}")
-rep["cut"] = F
+print("\n=== 4. box / blister on every Mini GT shelf ===")
+shelves = {}
+for s in ["/mini-gt/mini-gt", "/mini-gt/mini-gt-blister-pack", "/mini-gt/kaido-house", "/pre-orders/pre-order-minigt"]:
+    code, page, _ = get(KD + s)
+    shelves[s] = {str(p["pid"]): p for p in shelf_products(page)}
+blister_pids = set(shelves["/mini-gt/mini-gt-blister-pack"])
+for s, ps in shelves.items():
+    def has(p, w):
+        return w in re.sub(r"\s+", " ", (str(p.get("sku")) + " " + str(p.get("product_sname")) + " " + str(p.get("pro_name"))).upper())
+    nb = [p for p in ps.values() if has(p, "BLISTER")]
+    nbox = [p for p in ps.values() if re.search(r"\bBOX\b", (str(p.get("pro_name")) + " " + str(p.get("sku"))).upper())]
+    print(f"  {s:32} {len(ps)} products; BLISTER in sku/name: {len(nb)}; BOX: {len(nbox)}")
+    for p in list(ps.values())[:4]:
+        print(f"      sku={str(p.get('sku')).strip()[:30]!r} sname={str(p.get('product_sname')).strip()[:30]!r} name={str(p.get('pro_name')).strip()[:60]!r} ₹{p.get('dis_price')}")
+    if s == "/mini-gt/mini-gt":
+        for p in nb:
+            print(f"      BLISTER here: sku={str(p.get('sku')).strip()[:34]!r} name={str(p.get('pro_name')).strip()[:60]!r} also on blister shelf: {str(p['pid']) in blister_pids}")
+        for p in nbox:
+            print(f"      BOX here: sku={str(p.get('sku')).strip()[:34]!r} name={str(p.get('pro_name')).strip()[:60]!r}")
+    if s in ("/mini-gt/kaido-house", "/pre-orders/pre-order-minigt"):
+        for p in nb[:6]:
+            print(f"      BLISTER: sku={str(p.get('sku')).strip()[:34]!r} name={str(p.get('pro_name')).strip()[:70]!r}")
+rep["shelves"] = {s: [{k: p.get(k) for k in ("pid", "sku", "product_sname", "pro_name", "dis_price")} for p in ps.values()] for s, ps in shelves.items()}
 
-print("\n=== 3. any in-stock car with '?', '#', '&', '/', '%' or '+' in its slug? ===")
-cats = sorted(c for c in cats if not c.startswith(("/_next", "/api", "/static")))
-print(f"  {len(cats)} category links on the home page")
-odd = {}
-for c in cats[:110]:
-    code, page = get(KD + c)
-    for p in shelf_products(page):
-        allp[str(p["pid"])] = p
-        if re.search(r"[?#&/%+]", str(p.get("slug"))):
-            odd[str(p["pid"])] = (c, p)
-print(f"  {len(allp)} products in all; {len(odd)} with those characters:")
-G = []
-for pid, (c, p) in list(odd.items())[:12]:
-    code, page = get(link(str(p["slug"]), pid))
-    d, _ = detail(page)
-    G.append({"cat": c, "pid": pid, "slug": p["slug"], "in_stock": p.get("in_stock"), "http": code, "shows": d.get("pid")})
-    print(f"  {c[:30]:32} in_stock={p.get('in_stock')} slug={str(p['slug'])[:60]!r} → HTTP {code} shows={d.get('pid')} {'(it)' if str(d.get('pid')) == pid else ''}")
-rep["odd"] = G
+print("\n=== 5. the unit count on product pages (product_attr qty) ===")
+Q5 = []
+for p in list(shelves["/mini-gt/mini-gt-blister-pack"].values())[:10]:
+    code, page, _ = get(f"{KD}/details/{quote(str(p['slug']), safe='-_.~')}?pid={p['pid']}")
+    d = detail(page)
+    try:
+        attr = json.loads(d.get("product_attr") or "{}")
+    except Exception:
+        attr = d.get("product_attr")
+    Q5.append({"pid": p["pid"], "attr": attr, "add_limit": d.get("add_limit")})
+    print(f"  {str(p['pro_name'])[:50]!r:54} add_limit={d.get('add_limit')} product_attr={json.dumps(attr)[:140]}")
+rep["qty"] = Q5
 json.dump(rep, open("probe_report.json", "w"), indent=1, default=str)
