@@ -1,189 +1,189 @@
 {
- "updated": "2026-10-29T11:50:33.773Z",
+ "updated": "2026-10-29T12:10:33.960Z",
  "fast_s": 15.0,
  "slow_s": 45.0,
  "pages": {
   "/mini-gt/mini-gt": {
-   "ok": 881,
+   "ok": 961,
    "fail": 0,
-   "n": 121,
-   "avg_s": 1.71,
-   "p90_s": 2.25
+   "n": 122,
+   "avg_s": 1.7,
+   "p90_s": 2.23
   },
   "/mini-gt/mini-gt-blister-pack": {
-   "ok": 880,
+   "ok": 960,
    "fail": 0,
-   "n": 147,
-   "avg_s": 1.71,
-   "p90_s": 2.12
+   "n": 146,
+   "avg_s": 1.7,
+   "p90_s": 2.11
   },
   "/specials/special-stocks-64-43-scale": {
-   "ok": 880,
+   "ok": 960,
    "fail": 0,
    "n": 126,
-   "avg_s": 1.6,
-   "p90_s": 1.94
+   "avg_s": 1.59,
+   "p90_s": 1.93
   },
   "/": {
-   "ok": 880,
+   "ok": 960,
    "fail": 0,
    "n": 50,
-   "avg_s": 1.61,
+   "avg_s": 1.6,
    "p90_s": 1.85
   },
   "/specials/chase-car": {
-   "ok": 880,
+   "ok": 960,
    "fail": 0,
    "n": 2,
-   "avg_s": 1.31,
+   "avg_s": 1.3,
    "p90_s": 1.55
   },
   "/mini-gt/kaido-house": {
-   "ok": 880,
+   "ok": 960,
    "fail": 0,
    "n": 21,
-   "avg_s": 1.34,
-   "p90_s": 1.6
+   "avg_s": 1.33,
+   "p90_s": 1.59
   },
   "/hot-wheels/mainlines": {
-   "ok": 294,
+   "ok": 321,
    "fail": 0,
    "n": 6,
    "avg_s": 1.52,
    "p90_s": 2.15
   },
   "/hot-wheels/pop-culture": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 6,
    "avg_s": 1.49,
-   "p90_s": 1.87
+   "p90_s": 1.86
   },
   "/hot-wheels/card-art-premiums": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 10,
    "avg_s": 1.47,
    "p90_s": 1.91
   },
   "/hot-wheels/gift-pack": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 25,
-   "avg_s": 1.42,
-   "p90_s": 1.73
+   "avg_s": 1.43,
+   "p90_s": 1.75
   },
   "/hot-wheels/car-culture": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 1,
    "avg_s": 1.32,
    "p90_s": 1.56
   },
   "/hot-wheels/fast-and-furious": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 1,
-   "avg_s": 1.3,
-   "p90_s": 1.54
+   "avg_s": 1.29,
+   "p90_s": 1.53
   },
   "/hot-wheels/boulevard-series": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 0,
    "avg_s": 1.36,
-   "p90_s": 1.6
+   "p90_s": 1.59
   },
   "/hot-wheels/team-transport": {
-   "ok": 294,
+   "ok": 320,
    "fail": 0,
    "n": 5,
-   "avg_s": 1.43,
+   "avg_s": 1.42,
    "p90_s": 1.83
   },
   "/hot-wheels/character-cars": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 8,
-   "avg_s": 1.44,
+   "avg_s": 1.43,
    "p90_s": 1.76
   },
   "/hot-wheels/disney-cars": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 0,
    "avg_s": 1.35,
    "p90_s": 1.56
   },
   "/hot-wheels/hot-wheels-accessories": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 9,
    "avg_s": 1.4,
-   "p90_s": 1.66
+   "p90_s": 1.67
   },
   "/pre-orders/pre-order-minigt": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 71,
-   "avg_s": 1.51,
-   "p90_s": 1.73
+   "avg_s": 1.5,
+   "p90_s": 1.72
   },
   "/pre-orders/pre-order-special-stock": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 1,
-   "avg_s": 1.32,
+   "avg_s": 1.31,
    "p90_s": 1.54
   },
   "/hot-wheels/monster-trucks": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.5,
-   "p90_s": 2.07
+   "avg_s": 1.48,
+   "p90_s": 2.02
   },
   "/matchbox/matchbox-basic-cars": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.47,
-   "p90_s": 1.87
+   "avg_s": 1.46,
+   "p90_s": 1.88
   },
   "/matchbox/matchbox-moving-parts": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.4,
+   "avg_s": 1.39,
    "p90_s": 1.68
   },
   "/matchbox/matchbox-superfast": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 1,
    "avg_s": 1.34,
    "p90_s": 1.57
   },
   "/majorette/premium-cars": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 53,
    "avg_s": 1.37,
    "p90_s": 1.66
   },
   "/majorette/basic-cars": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.3,
-   "p90_s": 1.55
+   "avg_s": 1.29,
+   "p90_s": 1.54
   },
   "/majorette/majorette": {
-   "ok": 293,
+   "ok": 320,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.34,
-   "p90_s": 1.6
+   "avg_s": 1.33,
+   "p90_s": 1.61
   }
  }
 }
