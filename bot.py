@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.6
+Hot Wheels / Diecast Collector Tracker  ·  v17.7
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -78,6 +78,15 @@ Mini GT car on KND says whether it's the [Box] or the [Blister] pack — KND
 lists many under one name twice, and the two no longer merge into one line.
 (A KND page that says "Page not found" otherwise means sold out: KND takes a
 car's page down the moment it sells out — 30 of 30 sold-out cars, 29 Oct.)
+v17.7: KND's hyped cars come and go within a minute. 29 Oct a recorder read
+KND every 15 s: the Mini GT Porsche 911 GT3 R #77 came back 10 times between
+14:54 and 17:38 (mostly 20 min apart, each time gone in 15-75 s; the 2-minute
+check saw it 3 times), a Lamborghini Huracán GT3 was in for 30 s and never
+seen. KND's Mini GT, blister, home, special-stock and chase shelves are now
+read every 15 s (KD_FAST_URLS, KD_FAST_EVERY_S); the full set every 2 min as
+before, which alone marks cars sold out. And a KND alert says how many units
+KND has — its cart's own count (kd_stock_counts), not the product page's
+"qty", which said 0 for 64 cars in stock.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -166,6 +175,7 @@ import difflib
 import functools
 import hashlib
 import unicodedata
+import uuid
 from urllib.parse import quote, urlencode, urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -258,12 +268,16 @@ FC_CATALOGUE_EVERY = float(os.getenv("FC_CATALOGUE_EVERY", "120"))
 # every-minute trigger covers everything. Seconds between checks; -1 = never.
 _ON_GITHUB = os.getenv("GITHUB_ACTIONS", "").lower() == "true"
 MG_WATCH = os.getenv("MG_WATCH", "true").lower() == "true"
+# v17.7: Karz & Dolls' busiest shelves (KD_FAST_URLS) are read this often, in
+# every pass; the full set of shelves stays at KD_EVERY_S. 0 = off.
+KD_FAST_EVERY_S = float(os.getenv("KD_FAST_EVERY_S", "15"))
 SOURCE_EVERY = {
     "FirstCry":   0,
     # full Minifygram list every 2 min; in between, a tiny "anything changed?"
     # check every pass (MG_WATCH) pulls it in early when something moves
     "Minifygram": float(os.getenv("MG_EVERY_S", "120")),
     "Karz&Dolls": float(os.getenv("KD_EVERY_S", "120")),
+    "KND fast":   KD_FAST_EVERY_S if KD_FAST_EVERY_S > 0 else -1,
     "Hamleys":    float(os.getenv("HM_EVERY_S", "600")),
     # Both geo-block GitHub's US runners (HTTP 403 on every call), so on GitHub
     # they're skipped unless explicitly re-enabled. The phone watcher covers them.
@@ -4107,6 +4121,24 @@ KD_URLS = ([u.strip() for u in os.getenv("KD_URLS", "").split("|") if u.strip()]
            or _KD_DEFAULT_URLS + (_KD_CHASE_LINE_URLS if CHASE_ONLY_LINES else []))
 # Every car on these shelves is a chase car, whatever its name says.
 _KD_CHASE_SHELVES = ("/specials/chase-car",)
+# v17.7: the shelves where KND's hyped cars come and go within a minute. 29 Oct
+# (recorder, every 15 s): the Mini GT Porsche 911 GT3 R #77 came back 10 times
+# between 14:54 and 17:38, mostly 20 min apart, each time gone within 15-75 s
+# — the 2-minute check saw it 3 times; a Lamborghini Huracán GT3 was in for
+# 30 s and never seen. These are read every KD_FAST_EVERY_S, in every pass
+# (the chase shelf rides along — two cars — so chase cars keep their tag).
+# A fast check only brings cars in: a car is marked sold out by the full check
+# of every shelf alone (KD_EVERY_S), so a shelf not read can't empty anything.
+KD_FAST_PATHS = [p.strip().rstrip("/") or "/" for p in os.getenv(
+    "KD_FAST_URLS", "/mini-gt/mini-gt,/mini-gt/mini-gt-blister-pack,/,/specials/special-stocks-64-43-scale,"
+                    "/specials/chase-car").split(",") if p.strip()]
+
+
+def _kd_path(u: str) -> str:
+    return (u[len(_KD):] if u.startswith(_KD) else u).rstrip("/") or "/"
+
+
+KD_FAST_URLS = [u for u in KD_URLS if _kd_path(u) in KD_FAST_PATHS]
 # False when any KND page failed this pass: products on that page would look
 # "missing", so the absence = sold-out check must not run (it would mark them
 # sold out and then fire false restock alerts when the page loads again).
@@ -4279,6 +4311,7 @@ def _kd_from_next_data(page: str, cat: str, path: str = ""):
             "price": f"₹{price}", "mrp": f"₹{mrp}" if mrp and mrp > price else "",
             "stock": "in_stock" if str(p.get("in_stock")) in ("1", "True", "true") else "out_of_stock",
             "badge_new": False,
+            "kd_num": p.get("id"),            # v17.7: KND's own number for the car (its cart wants it)
         })
     return out
 
@@ -4355,41 +4388,123 @@ def _kd_from_html(page: str, cat: str, path: str = "") -> list:
     return out
 
 
-def scrape_karzanddolls() -> list[dict]:
+KD_STOCK_COUNT = os.getenv("KD_STOCK_COUNT", "true").lower() == "true"
+KD_COUNT_TIMEOUT_S = float(os.getenv("KD_COUNT_TIMEOUT_S", "3"))
+_KD_API = f"{_KD}/karzOffice/api"
+_KD_API_HEADERS = {**COMMON_HEADERS, "Accept": "application/json", "Content-Type": "application/json",
+                   "Origin": _KD, "Referer": _KD + "/"}
+
+
+def kd_stock_counts(items: list):
+    """v17.7: how many units Karz & Dolls has of each car about to be alerted —
+    KND's own count (pro_stock: what its cart allows, "Only N items allowed"),
+    read from a guest cart. The cars go into a fresh visitor cart (a random id,
+    no account), the cart is read, and the returned function takes them out
+    again — call it once the alert is sent. Nothing is ordered, and a cart
+    doesn't hold stock (29 Oct: a second cart saw the same count meanwhile).
+    The product page's "qty" is not the count (64 of 410 in-stock cars said 0;
+    their carts said 1, 1, 4, 1). Sets d["stock_count"], or d["kd_cart0"] when
+    the cart says none are left. ~1.5 s (live, 29 Oct); a slow or failed cart
+    just leaves no count (KD_COUNT_TIMEOUT_S per call)."""
+    want = {}
+    for d in items:
+        if d.get("source") == "karzdolls" and d.get("stock") == "in_stock" and str(d.get("kd_num") or "").isdigit():
+            want.setdefault(int(d["kd_num"]), []).append(d)
+    if not want:
+        return lambda: None
+    vid = str(uuid.uuid4())
+    tmo = KD_COUNT_TIMEOUT_S
+
+    def post(path, body):
+        r = http.post(f"{_KD_API}{path}", headers=_KD_API_HEADERS, data=json.dumps(body), timeout=tmo, **_IMPERSONATE)
+        return r.status_code, (r.json() if "json" in r.headers.get("content-type", "") else {})
+
+    t0 = time.time()
+    try:
+        with ThreadPoolExecutor(max_workers=min(6, len(want))) as ex:
+            list(ex.map(lambda n: post("/cart/visitor/add", {"visitor_id": vid, "product_id": n, "quantity": 1}), want))
+        r = http.get(f"{_KD_API}/cart/visitor?visitor_id={vid}", headers=_KD_API_HEADERS, timeout=tmo, **_IMPERSONATE)
+        cart = (r.json() or {}).get("data") or [] if r.status_code == 200 else []
+    except Exception as e:
+        print(f"  [KD] unit count skipped: {type(e).__name__}")
+        cart = []
+    got = []
+    for it in cart:
+        pr = it.get("product") or {}
+        n = pr.get("pro_stock")
+        for d in want.get(pr.get("id"), []):
+            if isinstance(n, int) and n > 0:
+                d["stock_count"] = n
+            elif n == 0:
+                d["kd_cart0"] = True
+        got.append(f"{str(pr.get('pro_name') or '')[:30]}={n}")
+    print(f"  [KD] KND's cart counts ({time.time() - t0:.1f}s): {', '.join(got) or 'none read'}")
+
+    def cleanup():
+        items_in = cart
+        if not items_in:                     # the read failed: look once more, to empty it
+            try:
+                r2 = http.get(f"{_KD_API}/cart/visitor?visitor_id={vid}", headers=_KD_API_HEADERS, timeout=6, **_IMPERSONATE)
+                items_in = (r2.json() or {}).get("data") or [] if r2.status_code == 200 else []
+            except Exception:
+                items_in = []
+        def rm(it):
+            try:
+                post("/cart/visitor/remove", {"visitor_id": vid, "cart_item_id": it.get("id")})
+            except Exception:
+                pass
+        if items_in:
+            with ThreadPoolExecutor(max_workers=min(6, len(items_in))) as ex:
+                list(ex.map(rm, items_in))
+    return cleanup
+
+
+def scrape_karzanddolls(fast: bool = False) -> list[dict]:
+    """Every KND shelf (KD_URLS) — or, fast=True (v17.7), only KD_FAST_URLS:
+    those cars come back marked kd_partial, so their absence elsewhere is never
+    read as sold out (see _absence_check)."""
     out, seen_ids = [], set()
-    KD_HEALTHY[0] = True
+    urls = KD_FAST_URLS if fast else KD_URLS
+    healthy, failed = [True], []
+    t0 = time.time()
 
     def fetch(u):
         label = u.rstrip("/").rsplit("/", 1)[-1] if u.rstrip("/") != _KD else "home"
-        for attempt in range(2):
+        for attempt in range(1 if fast else 2):
             try:
-                r = http.get(u, headers=COMMON_HEADERS, timeout=TIMEOUT, **_IMPERSONATE)
+                r = http.get(u, headers=COMMON_HEADERS, timeout=10 if fast else TIMEOUT, **_IMPERSONATE)
                 if r.status_code == 200 and len(r.text) > 4000:
                     return r.text
                 if r.status_code == 404:
                     # a removed/renamed category is not a failed fetch
-                    print(f"  [KD] {label} → HTTP 404 (category gone)")
+                    if not fast:
+                        print(f"  [KD] {label} → HTTP 404 (category gone)")
                     return None
                 err = f"HTTP {r.status_code}"
             except Exception as e:
                 err = type(e).__name__
-            time.sleep(1.5)
-        print(f"  [KD] {label} → {err}")
-        KD_HEALTHY[0] = False
+            if not fast:
+                time.sleep(1.5)
+        if not fast:
+            print(f"  [KD] {label} → {err}")
+        failed.append(f"{label} {err}")
+        healthy[0] = False
         return None
 
     with ThreadPoolExecutor(max_workers=8) as ex:
-        futs = {ex.submit(fetch, u): u for u in KD_URLS}
+        futs = {ex.submit(fetch, u): u for u in urls}
         pages = {}
         for fut in as_completed(futs):
             try:
                 pages[futs[fut]] = fut.result()
             except Exception:
                 pages[futs[fut]] = None
-                KD_HEALTHY[0] = False
+                healthy[0] = False
+    if not fast:
+        KD_HEALTHY[0] = healthy[0]
     # v17.3: pages are read in a fixed order — the chase shelf first — so a car
     # listed on two shelves always comes out the same way (with its chase tag)
-    order = sorted(KD_URLS, key=lambda u: 0 if u[len(_KD):].rstrip("/") in _KD_CHASE_SHELVES else 1)
+    order = sorted(urls, key=lambda u: 0 if u[len(_KD):].rstrip("/") in _KD_CHASE_SHELVES else 1)
     _KD_LEFT_OUT.clear()
     for u in order:
         page = pages.get(u)
@@ -4407,8 +4522,12 @@ def scrape_karzanddolls() -> list[dict]:
         for d in recs:
             if d["id"] not in seen_ids:
                 seen_ids.add(d["id"])
+                if fast:
+                    d["kd_partial"] = True
                 out.append(d)
                 found += 1
+        if fast:
+            continue
         left = _KD_LEFT_OUT.get(path, 0)
         note = f" ({left} not chase pieces, left out)" if left else ""
         if found:
@@ -4420,6 +4539,10 @@ def scrape_karzanddolls() -> list[dict]:
         else:
             print(f"  [KD] {cat or 'home'} → 0 (empty right now)")
     ins = sum(1 for d in out if d["stock"] == "in_stock")
+    if fast:
+        print(f"  [KD-fast] {len(urls)} shelves → {len(out)} ({ins} in stock) in {time.time() - t0:.1f}s"
+              + (f" — failed: {', '.join(failed)}" if failed else ""))
+        return out
     print(f"[*] Karz&Dolls total: {len(out)} ({ins} in stock)"
           + ("" if KD_HEALTHY[0] else " — some pages failed, sold-out check skipped"))
     return out
@@ -4985,6 +5108,9 @@ def _line(d, extra="") -> str:
                  "to the cart from Favourites in your Profile")
     if d.get("fc_cart_unchecked"):
         info += "\n⚠️ FirstCry's cart couldn't be checked this time — check delivery before paying"
+    if d.get("kd_cart0"):
+        # v17.7: the shelf still lists it, KND's cart has none
+        info += "\n⚠️ KND's cart says none left right now — it may have just sold out"
     return f"[{tag}] <b>{html.escape(d['name'], quote=False)}</b>{flag}  {price}{mrp}{extra}{info}\n{url}"
 
 
@@ -5502,6 +5628,7 @@ def _source_table(snap: dict, fc_full: bool):
             ("Minifygram", scrape_minifygram),
             ("Hamleys",    scrape_hamleys),
             ("Karz&Dolls", scrape_karzanddolls),
+            ("KND fast",   lambda: scrape_karzanddolls(fast=True)),
             ("BigBasket",  scrape_bigbasket),
             ("Blinkit",    scrape_blinkit))
 
@@ -5558,6 +5685,8 @@ def _absence_check(seen: dict, products: list, src_key: str) -> list:
     got = {p["id"] for p in products if p["source"] == src_key}
     if not got:
         return []
+    if any(p.get("kd_partial") for p in products if p["source"] == src_key):
+        return []          # v17.7: a fast check reads a few shelves — it never empties the rest
     if src_key == "karzdolls" and not KD_HEALTHY[0]:
         print("[!] karzdolls: a category page failed — skipping absence check")
         return []
@@ -5660,6 +5789,14 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
             tg(f"📈 <b>Coverage expanded:</b> {SRC.get(src_key, src_key)} +{len(burst)} newly "
                f"tracked products ({ins} in stock). Alerts on changes from here.")
 
+    # v17.7: how many units KND has of the cars about to be alerted (its own cart's count)
+    kd_done = None
+    if KD_STOCK_COUNT and "karzdolls" in src_keys:
+        try:
+            kd_done = kd_stock_counts([d for d in changes["new_listings"] + changes["restocks"]
+                                       if d.get("source") == "karzdolls"])
+        except Exception:
+            print(f"[KD] unit count skipped:\n{traceback.format_exc()}")
     alerts = build_alerts(changes)
     for i, alert in enumerate(alerts):
         if i:
@@ -5671,6 +5808,11 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
         ring_for(seen, changes)
     except Exception:
         print(f"[RING] skipped:\n{traceback.format_exc()}")
+    if kd_done:
+        try:
+            kd_done()                  # empty the guest cart again
+        except Exception:
+            pass
     if not alerts:
         n = sum(len(v) for v in changes.values())
         if n or not quiet:
@@ -5781,6 +5923,7 @@ def main():
     pass_no = 0
     extended, ext_since = False, None
     timings = []
+    t_prev = look_back
     while True:
         t = time.time()
         pass_no += 1
@@ -5800,6 +5943,12 @@ def main():
                 fc_full = ("FirstCry" in names and
                            int(t // FC_CATALOGUE_EVERY) != int(ext_since // FC_CATALOGUE_EVERY))
                 ext_since = t
+            # v17.7: KND's busiest shelves in every pass that's due, not only the first
+            if "KND fast" in all_names and "KND fast" not in names and _due("KND fast", t, t_prev):
+                names.append("KND fast")
+        if "Karz&Dolls" in names and "KND fast" in names:
+            names.remove("KND fast")          # the full check reads those shelves too
+        t_prev = t
         if ("Minifygram" not in names and MG_WATCH and ACTIVE_SOURCES is None
                 and SOURCE_EVERY.get("Minifygram", 0) >= 0 and not first_run):
             wm = mg_watermark()

@@ -79,6 +79,11 @@ jobs:
           # listings arrive within seconds; the full list is re-read every 2 min.
           MG_EVERY_S: "120"
           KD_EVERY_S: "120"
+          # v17.7: Karz & Dolls' busiest shelves — Mini GT, blister, home page,
+          # special stocks (and the 2-car chase shelf) — every 15 s: their hyped
+          # cars come back for under a minute (29 Oct recorder). Only the full
+          # 2-minute check above marks a car sold out.
+          KD_FAST_EVERY_S: "15"
           HM_EVERY_S: "600"
 
           # ── Alerts ───────────────────────────────────────────────────────────
@@ -177,6 +182,10 @@ jobs:
           # Wheels + MiniGT category, chase cars, special stocks and the home
           # page's New Arrivals — and (v17.3) the Matchbox, Majorette and monster
           # truck shelves, for their chase pieces. Setting it overrides that list.
+          # v17.7: KND alerts say how many units KND has — its own cart's count,
+          # read from a guest cart (put in, read, taken out again; nothing is
+          # ordered). The product page's "qty" isn't that count.
+          KD_STOCK_COUNT: "true"
 
           # ── Concurrency ──────────────────────────────────────────────────────
           SRC_WORKERS: "6"
