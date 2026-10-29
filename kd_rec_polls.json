@@ -1,185 +1,185 @@
 {
- "updated": "2026-10-29T09:10:32.083Z",
+ "updated": "2026-10-29T09:30:32.278Z",
  "fast_s": 15.0,
  "slow_s": 45.0,
  "pages": {
   "/mini-gt/mini-gt": {
-   "ok": 240,
+   "ok": 320,
    "fail": 0,
-   "n": 121,
+   "n": 122,
    "avg_s": 1.68,
    "p90_s": 2.23
   },
   "/mini-gt/mini-gt-blister-pack": {
-   "ok": 240,
+   "ok": 320,
    "fail": 0,
-   "n": 147,
+   "n": 145,
    "avg_s": 1.68,
    "p90_s": 2.08
   },
   "/specials/special-stocks-64-43-scale": {
-   "ok": 240,
+   "ok": 320,
    "fail": 0,
    "n": 126,
    "avg_s": 1.58,
    "p90_s": 1.98
   },
   "/": {
-   "ok": 240,
+   "ok": 320,
    "fail": 0,
    "n": 50,
    "avg_s": 1.57,
-   "p90_s": 1.8
+   "p90_s": 1.79
   },
   "/specials/chase-car": {
-   "ok": 240,
+   "ok": 320,
    "fail": 0,
    "n": 2,
-   "avg_s": 1.31,
-   "p90_s": 1.6
-  },
-  "/mini-gt/kaido-house": {
-   "ok": 240,
-   "fail": 0,
-   "n": 18,
    "avg_s": 1.3,
    "p90_s": 1.54
   },
+  "/mini-gt/kaido-house": {
+   "ok": 320,
+   "fail": 0,
+   "n": 21,
+   "avg_s": 1.3,
+   "p90_s": 1.51
+  },
   "/hot-wheels/mainlines": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 6,
    "avg_s": 1.51,
-   "p90_s": 2.15
+   "p90_s": 2.21
   },
   "/hot-wheels/pop-culture": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 6,
-   "avg_s": 1.45,
-   "p90_s": 1.9
+   "avg_s": 1.46,
+   "p90_s": 1.89
   },
   "/hot-wheels/card-art-premiums": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 10,
-   "avg_s": 1.45,
-   "p90_s": 1.86
+   "avg_s": 1.44,
+   "p90_s": 1.85
   },
   "/hot-wheels/gift-pack": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 25,
-   "avg_s": 1.39,
+   "avg_s": 1.38,
    "p90_s": 1.76
   },
   "/hot-wheels/car-culture": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 1,
    "avg_s": 1.33,
-   "p90_s": 1.6
+   "p90_s": 1.58
   },
   "/hot-wheels/fast-and-furious": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 1,
    "avg_s": 1.24,
-   "p90_s": 1.29
+   "p90_s": 1.28
   },
   "/hot-wheels/boulevard-series": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 0,
    "avg_s": 1.3,
    "p90_s": 1.47
   },
   "/hot-wheels/team-transport": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 5,
-   "avg_s": 1.4,
-   "p90_s": 1.75
+   "avg_s": 1.39,
+   "p90_s": 1.72
   },
   "/hot-wheels/character-cars": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 8,
-   "avg_s": 1.43,
-   "p90_s": 1.87
+   "avg_s": 1.41,
+   "p90_s": 1.79
   },
   "/hot-wheels/disney-cars": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 0,
    "avg_s": 1.33,
    "p90_s": 1.56
   },
   "/hot-wheels/hot-wheels-accessories": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 9,
-   "avg_s": 1.41,
-   "p90_s": 1.69
+   "avg_s": 1.38,
+   "p90_s": 1.66
   },
   "/pre-orders/pre-order-minigt": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 71,
    "avg_s": 1.54,
    "p90_s": 1.75
   },
   "/pre-orders/pre-order-special-stock": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 1,
-   "avg_s": 1.26,
-   "p90_s": 1.3
+   "avg_s": 1.29,
+   "p90_s": 1.35
   },
   "/hot-wheels/monster-trucks": {
-   "ok": 80,
+   "ok": 107,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.44,
-   "p90_s": 2.09
+   "avg_s": 1.45,
+   "p90_s": 2.07
   },
   "/matchbox/matchbox-basic-cars": {
-   "ok": 80,
+   "ok": 106,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.43,
-   "p90_s": 1.84
+   "avg_s": 1.45,
+   "p90_s": 1.85
   },
   "/matchbox/matchbox-moving-parts": {
-   "ok": 80,
+   "ok": 106,
    "fail": 0,
    "n": 0,
-   "avg_s": 1.38,
+   "avg_s": 1.4,
    "p90_s": 1.81
   },
   "/matchbox/matchbox-superfast": {
-   "ok": 80,
+   "ok": 106,
    "fail": 0,
    "n": 1,
    "avg_s": 1.31,
    "p90_s": 1.57
   },
   "/majorette/premium-cars": {
-   "ok": 80,
+   "ok": 106,
    "fail": 0,
    "n": 53,
    "avg_s": 1.33,
-   "p90_s": 1.7
+   "p90_s": 1.66
   },
   "/majorette/basic-cars": {
-   "ok": 80,
+   "ok": 106,
    "fail": 0,
    "n": 4,
-   "avg_s": 1.26,
-   "p90_s": 1.42
+   "avg_s": 1.27,
+   "p90_s": 1.4
   },
   "/majorette/majorette": {
-   "ok": 80,
+   "ok": 106,
    "fail": 0,
    "n": 0,
    "avg_s": 1.3,
