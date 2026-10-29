@@ -1,37 +1,6 @@
-121 on the Mini GT shelf, 54 ordinary ones in stock to choose from
-picked: [(4213, 'MINI GT LANCIA STRATOS HF STRADALE ROSSO', '30'), (4538, 'MINI GT HYUNDAI KONA N PERFORMANCE BLUE', '32'), (9254, 'MINI GT NISSAN Z LB NATION WORKS IKAZUCH', '0'), (9323, 'MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOU', '0'), (9514, 'MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHR', '0'), (9737, 'MINI GT TOYOTA GR86 HKS TYPE R 2022 TOKY', '0'), (6079, 'MINI GT LANCIA STRATOS HF STRADALE VERDE', '4'), (10727, 'MINI GT HONDA CIVIC TYPE R 2024 PACE CAR', '2')]
-add to A: 4213 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 4538 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 9254 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 9323 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 9514 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 9737 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 6079 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to A: 10727 (200, {'success': True, 'message': 'Item added to visitor cart'})
+1 car(s): add 0.72s, read 0.64s, remove 0.65s  → counts {4213: 19}  adds [200]  cart after: []
+3 car(s): add 0.64s, read 0.29s, remove 0.61s  → counts {6079: 3, 4213: 19, 4538: 28}  adds [200, 200, 200]  cart after: []
+1 car(s): add 0.63s, read 0.21s, remove 0.62s  → counts {4538: 28}  adds [200]  cart after: []
+3 car(s): add 0.65s, read 0.21s, remove 0.63s  → counts {4213: 19, 6079: 3, 4538: 28}  adds [200, 200, 200]  cart after: []
 
-cart A: HTTP 200, 8 items
-  item keys: ['id', 'product', 'product_id', 'qty']
-  product keys: ['act_price', 'add_limit', 'add_to_bag', 'block_order_time', 'block_type', 'blocked_user', 'brand_name', 'created_at', 'creation_time', 'dis_price', 'elite_price', 'gst', 'hsn_code', 'id', 'imei', 'in_stock', 'initial_stock', 'isBranded', 'is_approved', 'is_preorder', 'iselite', 'isstock_blocked', 'meta_desc', 'meta_key', 'pid', 'prd_images', 'preorder_price', 'prime_offer_price', 'pro_desc', 'pro_name', 'pro_sta', 'pro_stock', 'product_attr', 'product_sname', 'reject_reason', 'reject_time', 'ret_policy', 'short_desc', 'size_chart', 'sku', 'slug', 'specification', 'sub_desc_p', 'tags', 'title', 'txt_msg', 'type', 'update_time', 'updated_at', 'vendor_id', 'visible_from_date']
-  id=4213 pro_stock=19 add_limit=6 in_stock=1 page qty=30  'MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO'
-  id=4538 pro_stock=28 add_limit=6 in_stock=1 page qty=32  'MINI GT HYUNDAI KONA N PERFORMANCE BLUE'
-  id=9254 pro_stock=1 add_limit=24 in_stock=1 page qty=0  'MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW\xa0\xa0'
-  id=9323 pro_stock=1 add_limit=12 in_stock=1 page qty=0  'MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOUKI WITH RE'
-  id=9514 pro_stock=4 add_limit=24 in_stock=1 page qty=0  'MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHROME'
-  id=9737 pro_stock=1 add_limit=3 in_stock=1 page qty=0  'MINI GT TOYOTA GR86 HKS TYPE R 2022 TOKYO AUTO SAL'
-  id=6079 pro_stock=3 add_limit=6 in_stock=1 page qty=4  'MINI GT LANCIA STRATOS HF STRADALE VERDE CHIARO'
-  id=10727 pro_stock=8 add_limit=3 in_stock=1 page qty=2  'MINI GT HONDA CIVIC TYPE R 2024 PACE CAR HRC'
-add to B: 4213 (200, {'success': True, 'message': 'Item added to visitor cart'})
-add to B: 4538 (200, {'success': True, 'message': 'Item added to visitor cart'})
-  B: id=4213 pro_stock=19 (A saw 19)
-  B: id=4538 pro_stock=28 (A saw 28)
-remove 583c4dbd 3191474 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191478 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191496 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191549 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191598 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191697 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191863 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 583c4dbd 3191974 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 1bc6d9fb 3192071 (200, '{"success":true,"message":"Item removed from cart"}')
-remove 1bc6d9fb 3192072 (200, '{"success":true,"message":"Item removed from cart"}')
-after cleanup: A []  B []
+stock fields of one car: {'id': 4213, 'pro_name': 'MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO', 'pro_stock': 19, 'initial_stock': 132, 'in_stock': 1, 'add_limit': 6, 'isstock_blocked': 0, 'block_order_time': None, 'block_type': None, 'blocked_user': None, 'add_to_bag': 1, 'pro_sta': 1, 'creation_time': ''}
