@@ -1,84 +1,11 @@
-=== 1. opening a car whose slug has a '?' ===
-  Pqp262Op36 in_stock=1 slug='?barbie-made-to-move-fashion-doll-with-black-hair-'  shop's own hrefs: ['/details/?barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36']
-    tracker's (%3F)   HTTP 404 opens it: False  '/details/%3Fbarbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
-    double %253F      HTTP 200 opens it: True  '/details/%253Fbarbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
-    '?' dropped       HTTP 404 opens it: False  '/details/barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
-    '?'→'-'           HTTP 404 opens it: False  '/details/-barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
-    before '?' only   HTTP 404 opens it: False  '/details/?pid=Pqp262Op36'
-    after '?' only    HTTP 404 opens it: False  '/details/barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
-    pid as slug       HTTP 404 opens it: False  '/details/Pqp262Op36?pid=Pqp262Op36'
-    shop's own        HTTP 404 opens it: False  '/details/?barbie-made-to-move-fashion-doll-with-black-hair-?pid=Pqp262Op36'
-  KBg7nKepRr in_stock=1 slug='lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie'  shop's own hrefs: ['/details/lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKepRr']
-    tracker's (%3F)   HTTP 404 opens it: False  '/details/lego-duplo-%3F-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nK'
-    double %253F      HTTP 200 opens it: True  '/details/lego-duplo-%253F-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7'
-    '?' dropped       HTTP 404 opens it: False  '/details/lego-duplo--disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKepR'
-    '?'→'-'           HTTP 404 opens it: False  '/details/lego-duplo---disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKep'
-    before '?' only   HTTP 404 opens it: False  '/details/lego-duplo-?pid=KBg7nKepRr'
-    after '?' only    HTTP 404 opens it: False  '/details/-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKepRr'
-    pid as slug       HTTP 404 opens it: False  '/details/KBg7nKepRr?pid=KBg7nKepRr'
-    shop's own        HTTP 404 opens it: False  '/details/lego-duplo-?-disney-mickey-minnie-birthday-train-building-toy-22-pie?pid=KBg7nKep'
+412 in-stock cars in seen.json; 641 products on the shelves now
+the tracker's stored link opens the car: 412; doesn't: 0
+why the failures: {}
 
-=== 2. a search page? ===
-  search-ish strings in the scripts: [('(key) search', 7), ('(key) searchParams', 4), ('(key) searchParamsToUrlQuery', 1)]
-  forms on the home page: []
-  search inputs: ['<input type="search" placeholder="Search for products" aria-label="Search for products" value=""/>', '<input type="search" placeholder="Search for products" value=""/>']
-  /search?q=mclaren                        HTTP 200 page='/search' products=0 mclaren=0 → /search?q=mclaren
-  /search?keyword=mclaren                  HTTP 200 page='/search' products=0 mclaren=0 → /search?keyword=mclaren
-  /search?search=mclaren                   HTTP 200 page='/search' products=0 mclaren=0 → /search?search=mclaren
-  /search/mclaren                          HTTP 404 page='/404' products=0 mclaren=0 → /search/mclaren
-  /searchresult?search=mclaren             HTTP 404 page='/404' products=0 mclaren=0 → /searchresult?search=mclaren
-  /search-result?search=mclaren            HTTP 404 page='/404' products=0 mclaren=0 → /search-result?search=mclaren
-  /products?search=mclaren                 HTTP 404 page='/404' products=0 mclaren=0 → /products?search=mclaren
-  /search?query=mclaren                    HTTP 200 page='/search' products=0 mclaren=0 → /search?query=mclaren
-  /search?term=mclaren                     HTTP 200 page='/search' products=39 mclaren=39 → /search?term=mclaren
-  /search?s=mclaren                        HTTP 200 page='/search' products=0 mclaren=0 → /search?s=mclaren
+71 in-stock shelf cars have a slug ending in (non-breaking) space; trimmed vs raw vs new:
+  (trimmed opens, new opens): {(True, True): 40}
 
-=== 3. add to cart from the shelf? ===
-  around the first 'Add to': 280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path></svg>Add to Cart</button></div></div></div></div><div class="col-lg-4 col-md-6 col-6 col-xl-3"><div class="main-item"><a href
-
-=== 4. box / blister on every Mini GT shelf ===
-  /mini-gt/mini-gt                 123 products; BLISTER in sku/name: 6; BOX: 1
-      sku='MINI GT 365' sname='MINI GT 365' name='MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO' ₹1019
-      sku='MINI GT 450' sname='MINI GT 450' name='MINI GT HYUNDAI KONA N PERFORMANCE BLUE' ₹1019
-      sku='MINI GT 625' sname='MINI GT 625' name='MINI GT LANCIA STRATOS HF STRADALE VERDE CHIARO' ₹1119
-      sku='MINI GT 826' sname='MINI GT 826' name='MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW' ₹1119
-      BLISTER here: sku='MINI GT 906 ENGLISH BLISTER PACKAG' name='MINI GT BMW Z8 THE WORLD IS NOT ENOUGH' also on blister shelf: True
-      BLISTER here: sku='MINI GT 912 BLISTER PACK' name='MINI GT LOTUS ESPRIT TURBO COPPER FIRE METALLIC FOR YOUR EYE' also on blister shelf: True
-      BLISTER here: sku='MINI GT 908 BLISTER PACK' name='MINI GT JAGUAR XKR DIE ANOTHER DAY ENGLISH BLISTER PACKAGING' also on blister shelf: True
-      BLISTER here: sku='MINI GT 910 ENGLISH BLISTER PACKAG' name='MINI GT ASTON MARTIN DB10 “SPECTRE” ENGLISH BLISTER PACKAGIN' also on blister shelf: True
-      BLISTER here: sku='MINI GT 914-007E ENGLISH BLISTER P' name='BMW Z3 “GOLDENEYE”' also on blister shelf: True
-      BLISTER here: sku='MINI GT 915-007E -ENGLISH BLISTER ' name='TOYOTA 2000GT ROADSTER “YOU ONLY LIVE TWICE”' also on blister shelf: True
-      BOX here: sku='MINI GT 1063' name='BUGATTI BOLIDE PRESENTATION BOX'
-  /mini-gt/mini-gt-blister-pack    147 products; BLISTER in sku/name: 147; BOX: 0
-      sku='MINI GT 884 BLISTER PACK' sname='MINI GT 884 BLISTER PACK' name='MINI GT JAGUAR C-X75 BLUE' ₹1299
-      sku='MINI GT 809 BLISTER PACK' sname='MINI GT 809 BLISTER PACK' name='MINI GT LB-WORKS X ABAS WORKS ABARTH 595 GARA WHITE' ₹1299
-      sku='MINI GT 885 BLISTER PACK' sname='MINI GT 885 BLISTER PACK' name='MINI GT TOYOTA GR86 LB NATION' ₹1299
-      sku='MINI GT 873 BLISTER PACK' sname='MINI GT 873 BLISTER PACK' name='TOYOTA GR86 LB NATION BABY BLUE' ₹1299
-  /mini-gt/kaido-house             18 products; BLISTER in sku/name: 0; BOX: 0
-      sku='KAIDOHOUSE X MINI GT 005' sname='KAIDOHOUSE X MINI GT 005' name='MINI GT DATSUN 510 PRO STREET BRE V1' ₹1859
-      sku='KAIDOHOUSE X MINI GT 006' sname='KAIDOHOUSE X MINI GT 006' name='MINI GT DATSUN 510 PRO STREET BRE V2' ₹1859
-      sku='KAIDOHOUSE X MINI GT 016' sname='KAIDOHOUSE X MINI GT 016' name='MINI GT DATSUN 510 PRO STREET GREDDY PEARL WHITE' ₹1859
-      sku='KAIDOHOUSE X MINI GT 017' sname='KAIDOHOUSE X MINI GT 017' name='MINI GT DATSUN 510 PRO STREET GREDDY GUN METAL GREY' ₹1859
-  /pre-orders/pre-order-minigt     71 products; BLISTER in sku/name: 30; BOX: 0
-      sku='MINI GT 1377 ETA JUNE 2027' sname='MINI GT 1377 ETA JUNE 2027' name='PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC' ₹1399
-      sku='MINI GT 1377 BLISTER PACKAGING' sname='MINI GT 1377 BLISTER PACKAGING' name='PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC BLISTER' ₹1549
-      sku='MINI GT 1379 ETA JUNE 2027' sname='MINI GT 1379 ETA JUNE 2027' name='PREORDER CADILLAC ELDORADO BIARRITZ 1959 BLACK' ₹1249
-      sku='MINI GT 1379 BLISTER PACKAGING' sname='MINI GT 1379 BLISTER PACKAGING' name='PREORDER CADILLAC ELDORADO BIARRITZ 1959 BLACK BLISTER PACKA' ₹1399
-      BLISTER: sku='MINI GT 1377 BLISTER PACKAGING ETA' name='PREORDER LAMBORGHINI HURACÁN LB* WORKS LIME METALLIC BLISTER PACKAGING'
-      BLISTER: sku='MINI GT 1379 BLISTER PACKAGING ETA' name='PREORDER CADILLAC ELDORADO BIARRITZ 1959 BLACK BLISTER PACKAGING'
-      BLISTER: sku='MINI GT 1380 BLISTER PACKAGING ETA' name='PREORDER LAND ROVER DEFENDER 110 1998 CAMEL TROPHY TIERRA DEL FUEGO CT'
-      BLISTER: sku='MINI GT 1381 BLISTER PACKAGING ETA' name='PREORDER LAMBORGHINI URUS PERFORMANTE VIOLA PASIFAE BLISTER PACKAGING'
-      BLISTER: sku='MINI GT 1382 BLISTER PACKAGING ETA' name='PREORDER HYUNDAI IONIQ 5N RS-01T STEALTH BLISTER PACKAGING'
-      BLISTER: sku='MINI GT 1386 BLISTER PACKAGING ETA' name='PREORDER BMW Z3 HELLROT BLISTER PACKAGING'
-
-=== 5. the unit count on product pages (product_attr qty) ===
-  'MINI GT JAGUAR C-X75 BLUE'                            add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "0", "changedPrice": 0}]}
-  'MINI GT LB-WORKS X ABAS WORKS ABARTH 595 GARA WHIT'   add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "14", "changedPrice": 0}]}
-  'MINI GT TOYOTA GR86 LB NATION'                        add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "2", "changedPrice": 0}]}
-  'TOYOTA GR86 LB NATION BABY BLUE'                      add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "7", "changedPrice": 0}]}
-  'MINI GT NISSAN Z LB NATION WORKS LB GOLD\xa0\xa0 \xa0' add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "0", "changedPrice": 0}]}
-  'BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE\xa0\xa0 \xa0' add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "0", "changedPrice": 0}]}
-  'LB-WORKS X ABAS WORKS ABARTH 595 RED\xa0\xa0 \xa0'    add_limit=6 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "19", "changedPrice": 0}]}
-  'NISSAN SKYLINE GTR R32 VEILSIDE COMBAT CI VEILSIDE'   add_limit=3 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "28", "changedPrice": 0}]}
-  'MINI GT JAGUAR C-X75 TEST CAR\xa0\xa0 \xa0'           add_limit=12 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "22", "changedPrice": 0}]}
-  'MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW'     add_limit=24 product_attr={"response": [{"attribute": [{"Size": "Single"}], "qty": "2", "changedPrice": 0}]}
+=== the McLaren in KND's search ===
+  '720s': pid=GXpKXnzgmx in_stock=1 ₹1999 sku='1:64\xa0SPARKY\xa0Y395' name='MCLAREN 720S GT3 EVO NO95 UNITED AUTOSPORTS LE MANS 24H 2024' slug='mclaren-720s-gt3-evo-no95-united-autosports-le-mans-24h-2024'
+  '720s': pid=x7LelD5NY0 in_stock=1 ₹1999 sku='1:64\xa0SPARKY Y396' name='MCLAREN 720S GT3 EVO NO70 INCEPTION RACING LE MANS 24H 2024' slug='mclaren-720s-gt3-evo-no70-inception-racing-le-mans-24h-2024'
+  '720s': pid=96pm2AEgVK in_stock=1 ₹1999 sku='1:64\xa0SPARKY Y397' name='MCLAREN 720S GT3 EVO NO59 UNITED AUTOSPORTS LE MANS 24H 2024' slug='mclaren-720s-gt3-evo-no59-united-autosports-le-mans-24h-2024'
