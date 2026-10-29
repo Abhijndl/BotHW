@@ -1,519 +1,100 @@
-546 products on 13 shelves
-109 have a slug with other characters: {'\xa0': 103, 'ü': 3, '“': 2, '”': 2, 'á': 1, '–': 2, '™': 1}
-…109 of them in stock now
+=== A. sold-out cars (as the tracker last saw them) ===
+  404  2026-10-29T07:15  words=['Page not found']  main={}  'MINI GT LOTUS ESPRIT TURBO WHITE FOR YOUR EYES ONL'
+  404  2026-10-29T06:45  words=['Page not found']  main={}  'LBSILHOUETTE WORKS GT NISSAN 35GTRR VER2 BLUE'
+  404  2026-10-29T03:45  words=['Page not found']  main={}  'MINI GT CHEVROLET CORVETTE Z06 GT3R ROAD AMERICA T'
+  404  2026-10-28T16:30  words=['Page not found']  main={}  'NISSAN SKYLINE GTR R32 VEILSIDE COMBAT CI VEILSIDE'
+  404  2026-10-28T16:00  words=['Page not found']  main={}  'BMW 750IL SORRENTO BLUE METALLIC'
+  404  2026-10-28T16:00  words=['Page not found']  main={}  'BENTLEY FLYING SPUR WHITE SAND VERDANT'
+  404  2026-10-28T16:00  words=['Page not found']  main={}  'MINI GT MERCEDES-BENZ EQS 580 4MATIC RED METALLIC'
+  404  2026-10-28T16:00  words=['Page not found']  main={}  'BMW 750IL ASPEN SILVER METALLIC'
+  404  2026-10-28T12:15  words=['Page not found']  main={}  'MERCEDESBENZ 190E 2516 EVOLUTION II ASTRAL SILVER'
+  404  2026-10-28T12:15  words=['Page not found']  main={}  'MINI GT PORSCHE 911 DAKAR MR UNCLE RALLY'
+  404  2026-10-28T11:30  words=['Page not found']  main={}  'MINI GT LAMBORGHINI LB-SILHOUETTE WORKS MURCIELAGO'
+  404  2026-10-28T11:30  words=['Page not found']  main={}  'MINI GT MCLAREN 750S SAROS GREY'
+  404  2026-10-28T11:30  words=['Page not found']  main={}  'MINI GT BMW M3 KAIDO KW V1'
+  404  2026-10-28T11:30  words=['Page not found']  main={}  'LAMBORGHINI REVUELTO VIOLA 30TH MATTE'
+  404  2026-10-28T09:30  words=['Page not found']  main={}  'PORSCHE 911 GT3 R 77 AO RACING 2025 IMSA PETIT LE '
+  404  2026-10-28T09:00  words=['Page not found']  main={}  'BMW M3 COMPETITION TOURING BROOKLYN GREY'
+  404  2026-10-28T09:00  words=['Page not found']  main={}  'MINI GT EUNOS ROADSTER CLASSIC RED'
+  404  2026-10-28T08:45  words=['Page not found']  main={}  'MINI GT BUGATTI EB110 SUPER SPORT GRIGIO SCURO'
+  404  2026-10-28T08:30  words=['Page not found']  main={}  'MINI GT LB WORKS LAMBORGHINI AVENTADOR LIMITED EDI'
+  404  2026-10-28T05:15  words=['Page not found']  main={}  'MINI GT LAMBORGHINI LB-SILHOUETTE WORKS MURCIELAGO'
+  404  2026-10-21T19:15  words=['Page not found']  main={}  'MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE ADVAN'
+  404  2026-10-21T01:30  words=['Page not found']  main={}  'MINI GT BUGATTI EB110 SUPER SPORT BLU BUGATTI'
+  404  2026-10-20T10:15  words=['Page not found']  main={}  'MINI GT NISSAN GT-R NISMO 2024 BRILLIANT WHITE PEA'
+  404  2026-10-20T10:15  words=['Page not found']  main={}  'PORSCHE 934 TURBO RSR'
+  404  2026-10-20T10:15  words=['Page not found']  main={}  'MAZDA RX 7'
+  404  2026-09-21T06:01  words=['Page not found']  main={}  'PREORDER MAZDA AZ-1 LIBERTY WALK LB40 LB-HINOMARU '
+  404  2026-09-21T06:01  words=['Page not found']  main={}  'PREORDER PORSCHE 911 CARRERA RS 2.7 GULF BLUE WITH'
+  404  2026-09-21T06:01  words=['Page not found']  main={}  'PREORDER PORSCHE 911 CARRERA RS 2.7 GULF BLUE WITH'
+  404  2026-09-21T06:01  words=['Page not found']  main={}  'WORKS LAMBORGHINI AVENTADOR LIMITED EDITION ORANGE'
+  404  2026-09-21T06:01  words=['Page not found']  main={}  'NISSAN SILVIA (S15) LB-SUPER SILHOUETTE AMOCULTURE'
+=== A2. in-stock cars (controls) ===
+  200  words=[]  main={'pid': 'eKLwWBMLv0', 'pro_name': 'MINI GT NISSAN SKYLINE GTR R34 VSPEC II NÜR MILLENIUM JAD\xa0\xa0 \xa0', 'in_stock': 1, 'is_approved': 1, 'add_limit': 1, 'is_preorder': 0}  'BUGATTI W16 MISTRAL YELLOW'
+  200  words=[]  main={'pid': 'rMNMejQN95', 'pro_name': 'PREORDER HYUNDAI IONIQ 5N RS-01T STEALTH BLISTER PACKAGING', 'in_stock': 1, 'is_approved': 1, 'add_limit': 24, 'is_preorder': 1}  'PREORDER DUCATI PANIGALE V4 S GIALLO W/ FIGURE [PR'
+  200  words=[]  main={'pid': 'rMNMejQN95', 'pro_name': 'PREORDER HYUNDAI IONIQ 5N RS-01T STEALTH BLISTER PACKAGING', 'in_stock': 1, 'is_approved': 1, 'add_limit': 24, 'is_preorder': 1}  'PREORDER LAMBORGHINI COUNTACH 500S BLACK [PRE-ORDE'
+  200  words=[]  main={'pid': 'eKLwWBMLv0', 'pro_name': 'MINI GT NISSAN SKYLINE GTR R34 VSPEC II NÜR MILLENIUM JAD\xa0\xa0 \xa0', 'in_stock': 1, 'is_approved': 1, 'add_limit': 1, 'is_preorder': 0}  'MINI GT MAZDA AZ-1 LIBERTY WALK LB40 PILOT'
+  200  words=[]  main={'pid': 'eKLwWBMLv0', 'pro_name': 'MINI GT NISSAN SKYLINE GTR R34 VSPEC II NÜR MILLENIUM JAD\xa0\xa0 \xa0', 'in_stock': 1, 'is_approved': 1, 'add_limit': 1, 'is_preorder': 0}  'MINI GT JAGUAR C-X75 BLACK'
+  counts (control?, http): {(False, 404): 30, (True, 200): 5}
 
---- 'MUTT\xa0CUTTS\xa0VAN' slug='mutt\xa0cutts\xa0van' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mutt%C2%A0cutts%C2%A0van?pid=KbNEe18NR0'
-    raw slug                   HTTP 200  opens it: True   '/details/mutt\xa0cutts\xa0van?pid=KbNEe18NR0'
-    KND's own href             HTTP 200  opens it: True   '/details/mutt\xa0cutts\xa0van?pid=KbNEe18NR0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mutt-cutts-van?pid=KbNEe18NR0'
---- 'DAIRY\xa0DELIVERY\xa0MTV' slug='dairy\xa0delivery\xa0mtv' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/dairy%C2%A0delivery%C2%A0mtv?pid=P7pRO4Jgjm'
-    raw slug                   HTTP 200  opens it: True   '/details/dairy\xa0delivery\xa0mtv?pid=P7pRO4Jgjm'
-    KND's own href             HTTP 200  opens it: True   '/details/dairy\xa0delivery\xa0mtv?pid=P7pRO4Jgjm'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/dairy-delivery-mtv?pid=P7pRO4Jgjm'
---- '77\xa0PACKIN\xa0PACER' slug='77\xa0packin\xa0pacer' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/77%C2%A0packin%C2%A0pacer?pid=VbpAZqQgrM'
-    raw slug                   HTTP 200  opens it: True   '/details/77\xa0packin\xa0pacer?pid=VbpAZqQgrM'
-    KND's own href             HTTP 200  opens it: True   '/details/77\xa0packin\xa0pacer?pid=VbpAZqQgrM'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/77-packin-pacer?pid=VbpAZqQgrM'
---- 'HOT\xa0WHEELS\xa0SILVER\xa0SERIES\xa02026\xa0STREETS\xa0OF\xa0JAPAN\xa0OF\xa06\xa0-CAR\xa0BOX' slug='hot\xa0wheels\xa0silver\xa0series\xa02026\xa0streets\xa0of\xa0japan\xa0of\xa06\xa0-car\xa0box\xa0set\xa0jlb23' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/hot%C2%A0wheels%C2%A0silver%C2%A0series%C2%A02026%C2%A0streets%C2%A0of%C2%A0japan%C2%A0of%C'
-    raw slug                   HTTP 200  opens it: True   '/details/hot\xa0wheels\xa0silver\xa0series\xa02026\xa0streets\xa0of\xa0japan\xa0of\xa06\xa0-car\xa0box\xa0set\xa0jlb23?pid=10gzmz3pAV'
-    KND's own href             HTTP 200  opens it: True   '/details/hot\xa0wheels\xa0silver\xa0series\xa02026\xa0streets\xa0of\xa0japan\xa0of\xa06\xa0-car\xa0box\xa0set\xa0jlb23?pid=10gzmz3pAV'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/hot-wheels-silver-series-2026-streets-of-japan-of-6-car-box-set-jlb23?pid=10gzmz3pAV'
---- 'HOT WHEELS PERFORMANCE TRUCKS LINEUP 2026 SET OF 5\xa0' slug='hot-wheels-performance-trucks-lineup-2026-set-of-5\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/hot-wheels-performance-trucks-lineup-2026-set-of-5%C2%A0?pid=OdNZBvRNzk'
-    raw slug                   HTTP 200  opens it: True   '/details/hot-wheels-performance-trucks-lineup-2026-set-of-5\xa0?pid=OdNZBvRNzk'
-    KND's own href             HTTP 200  opens it: True   '/details/hot-wheels-performance-trucks-lineup-2026-set-of-5\xa0?pid=OdNZBvRNzk'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/hot-wheels-performance-trucks-lineup-2026-set-of-5?pid=OdNZBvRNzk'
---- '73\xa0HONDA\xa0CIVIC\xa0CUSTOM\xa0\xa0AERO\xa0LIFT' slug='73\xa0honda\xa0civic\xa0custom\xa0\xa0aero\xa0lift' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/73%C2%A0honda%C2%A0civic%C2%A0custom%C2%A0%C2%A0aero%C2%A0lift?pid=Pqp26OOp36'
-    raw slug                   HTTP 200  opens it: True   '/details/73\xa0honda\xa0civic\xa0custom\xa0\xa0aero\xa0lift?pid=Pqp26OOp36'
-    KND's own href             HTTP 200  opens it: True   '/details/73\xa0honda\xa0civic\xa0custom\xa0\xa0aero\xa0lift?pid=Pqp26OOp36'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/73-honda-civic-custom-aero-lift?pid=Pqp26OOp36'
---- '24 HONDA CIVIC TYPE R WITH KOUSOKU CAMION DE TRANSPORT\xa0' slug='24-honda-civic-type-r-with-kousoku-camion-de-transport\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/24-honda-civic-type-r-with-kousoku-camion-de-transport%C2%A0?pid=ykL04keLRZ'
-    raw slug                   HTTP 200  opens it: True   '/details/24-honda-civic-type-r-with-kousoku-camion-de-transport\xa0?pid=ykL04keLRZ'
-    KND's own href             HTTP 200  opens it: True   '/details/24-honda-civic-type-r-with-kousoku-camion-de-transport\xa0?pid=ykL04keLRZ'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/24-honda-civic-type-r-with-kousoku-camion-de-transport?pid=ykL04keLRZ'
---- 'MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW\xa0\xa0 \xa0' slug='mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow%C2%A0%C2%A0-%C2%A0?pid=QJgn0OXLl6'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow\xa0\xa0-\xa0?pid=QJgn0OXLl6'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow\xa0\xa0-\xa0?pid=QJgn0OXLl6'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-nissan-z-lb-nation-works-ikazuchi-yellow?pid=QJgn0OXLl6'
---- 'MINI GT NISSAN SKYLINE GTR R34 VSPEC II NÜR MILLENIUM JAD\xa0\xa0 ' slug='mini-gt-nissan-skyline-gtr-r34-vspec-ii-nür-millenium-jad\xa0\xa0-\xa0' chars=['\xa0', 'ü']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-r34-vspec-ii-n%C3%BCr-millenium-jad%C2%A0%C2%A0-%C2%A0?pid=eKLwW'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-r34-vspec-ii-nür-millenium-jad\xa0\xa0-\xa0?pid=eKLwWBMLv0'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-r34-vspec-ii-nür-millenium-jad\xa0\xa0-\xa0?pid=eKLwWBMLv0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-nissan-skyline-gtr-r34-vspec-ii-n-r-millenium-jad?pid=eKLwWBMLv0'
---- 'TOYOTA\xa0GR86\xa0HKS\xa0TYPE\xa0R\xa0ADVAN\xa02022\xa0TOKYO\xa0AUTO\xa0SALON' slug='toyota\xa0gr86\xa0hks\xa0type\xa0r\xa0advan\xa02022\xa0tokyo\xa0auto\xa0salon' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota%C2%A0gr86%C2%A0hks%C2%A0type%C2%A0r%C2%A0advan%C2%A02022%C2%A0tokyo%C2%A0auto%C2%A0s'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota\xa0gr86\xa0hks\xa0type\xa0r\xa0advan\xa02022\xa0tokyo\xa0auto\xa0salon?pid=ykL04AeLRZ'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota\xa0gr86\xa0hks\xa0type\xa0r\xa0advan\xa02022\xa0tokyo\xa0auto\xa0salon?pid=ykL04AeLRZ'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/toyota-gr86-hks-type-r-advan-2022-tokyo-auto-salon?pid=ykL04AeLRZ'
---- 'MINI GT TOYOTA GR86 HKS TYPE R 2022 TOKYO AUTO SALON\xa0\xa0 \xa0' slug='mini-gt-toyota-gr86-hks-type-r-2022-tokyo-auto-salon\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-hks-type-r-2022-tokyo-auto-salon%C2%A0%C2%A0-%C2%A0?pid=GoL1J26pBA'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-hks-type-r-2022-tokyo-auto-salon\xa0\xa0-\xa0?pid=GoL1J26pBA'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-hks-type-r-2022-tokyo-auto-salon\xa0\xa0-\xa0?pid=GoL1J26pBA'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-toyota-gr86-hks-type-r-2022-tokyo-auto-salon?pid=GoL1J26pBA'
---- 'ABARTH 595 LB-WORKS X ABAS WORKS FIGHTERS\xa0\xa0 \xa0' slug='abarth-595-lb-works-x-abas-works-fighters\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/abarth-595-lb-works-x-abas-works-fighters%C2%A0%C2%A0-%C2%A0?pid=rMNM66OL95'
-    raw slug                   HTTP 200  opens it: True   '/details/abarth-595-lb-works-x-abas-works-fighters\xa0\xa0-\xa0?pid=rMNM66OL95'
-    KND's own href             HTTP 200  opens it: True   '/details/abarth-595-lb-works-x-abas-works-fighters\xa0\xa0-\xa0?pid=rMNM66OL95'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/abarth-595-lb-works-x-abas-works-fighters?pid=rMNM66OL95'
---- 'MINI GT LANCIA STRATOS HF 4 1979 SPANISH RALLY CHAMPION\xa0\xa0 \xa0' slug='mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion%C2%A0%C2%A0-%C2%A0?pid=ykL0445LRZ'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion\xa0\xa0-\xa0?pid=ykL0445LRZ'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion\xa0\xa0-\xa0?pid=ykL0445LRZ'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-lancia-stratos-hf-4-1979-spanish-rally-champion?pid=ykL0445LRZ'
---- 'MINI GT ASTON MARTIN DBS 007 EDITION\xa0\xa0 \xa0 \xa0 \xa0' slug='mini-gt-aston-martin-dbs-007-edition\xa0\xa0-\xa0-\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-dbs-007-edition%C2%A0%C2%A0-%C2%A0-%C2%A0-%C2%A0?pid=PzNbBXDNbQ'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-aston-martin-dbs-007-edition\xa0\xa0-\xa0-\xa0-\xa0?pid=PzNbBXDNbQ'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-dbs-007-edition\xa0\xa0-\xa0-\xa0-\xa0?pid=PzNbBXDNbQ'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-aston-martin-dbs-007-edition?pid=PzNbBXDNbQ'
---- 'MINI\xa0GT\xa0NISSAN\xa0LB-SUPER\xa0SILHOUETTE\xa0S15\xa0SILVIA\xa0LBWK\xa02024\xa0FAUS' slug='mini\xa0gt\xa0nissan\xa0lb-super\xa0silhouette\xa0s15\xa0silvia\xa0lbwk\xa02024\xa0faust' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini%C2%A0gt%C2%A0nissan%C2%A0lb-super%C2%A0silhouette%C2%A0s15%C2%A0silvia%C2%A0lbwk%C2%A0'
-    raw slug                   HTTP 200  opens it: True   '/details/mini\xa0gt\xa0nissan\xa0lb-super\xa0silhouette\xa0s15\xa0silvia\xa0lbwk\xa02024\xa0faust?pid=OyLoZmMNb2'
-    KND's own href             HTTP 200  opens it: True   '/details/mini\xa0gt\xa0nissan\xa0lb-super\xa0silhouette\xa0s15\xa0silvia\xa0lbwk\xa02024\xa0faust?pid=OyLoZmMNb2'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-lbwk-2024-faust?pid=OyLoZmMNb2'
---- 'BMW Z8 ALPINA \xa0ALPINE BLUE' slug='bmw-z8-alpina-\xa0alpine-blue' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/bmw-z8-alpina-%C2%A0alpine-blue?pid=GvLPjXkgod'
-    raw slug                   HTTP 200  opens it: True   '/details/bmw-z8-alpina-\xa0alpine-blue?pid=GvLPjXkgod'
-    KND's own href             HTTP 200  opens it: True   '/details/bmw-z8-alpina-\xa0alpine-blue?pid=GvLPjXkgod'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/bmw-z8-alpina-alpine-blue?pid=GvLPjXkgod'
---- 'MINI\xa0GT\xa0CHEVROLET\xa0CORVETTE\xa0Z06\xa02023\xa0ELKHART\xa0LAKE\xa0BLUE\xa0' slug='mini\xa0gt\xa0chevrolet\xa0corvette\xa0z06\xa02023\xa0elkhart\xa0lake\xa0blue\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini%C2%A0gt%C2%A0chevrolet%C2%A0corvette%C2%A0z06%C2%A02023%C2%A0elkhart%C2%A0lake%C2%A0bl'
-    raw slug                   HTTP 200  opens it: True   '/details/mini\xa0gt\xa0chevrolet\xa0corvette\xa0z06\xa02023\xa0elkhart\xa0lake\xa0blue\xa0?pid=BZgkEVXLaz'
-    KND's own href             HTTP 200  opens it: True   '/details/mini\xa0gt\xa0chevrolet\xa0corvette\xa0z06\xa02023\xa0elkhart\xa0lake\xa0blue\xa0?pid=BZgkEVXLaz'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-chevrolet-corvette-z06-2023-elkhart-lake-blue?pid=BZgkEVXLaz'
---- 'MINI GT VOLKSWAGEN IDBUZZ CANDY WHITE POMELO YELLOW\xa0\xa0 \xa0' slug='mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow%C2%A0%C2%A0-%C2%A0?pid=E5N4nRqpMq'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow\xa0\xa0-\xa0?pid=E5N4nRqpMq'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow\xa0\xa0-\xa0?pid=E5N4nRqpMq'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-volkswagen-idbuzz-candy-white-pomelo-yellow?pid=E5N4nRqpMq'
---- 'MAZDA RX-7 RE-AMEMIYA SILVER METALLIC\xa0' slug='mazda-rx-7-re-amemiya-silver-metallic\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-silver-metallic%C2%A0?pid=x7LelnlNY0'
-    raw slug                   HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-silver-metallic\xa0?pid=x7LelnlNY0'
-    KND's own href             HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-silver-metallic\xa0?pid=x7LelnlNY0'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-silver-metallic?pid=x7LelnlNY0'
---- 'MINI GT SUBARU IMPREZA WRC97 1 1999 DRM CHAMPION\xa0' slug='mini-gt-subaru-impreza-wrc97-1-1999-drm-champion\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion%C2%A0?pid=aMNB2y0NXd'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion\xa0?pid=aMNB2y0NXd'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion\xa0?pid=aMNB2y0NXd'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-subaru-impreza-wrc97-1-1999-drm-champion?pid=aMNB2y0NXd'
---- 'MINI GT NISSAN GTR 2013 DARK METAL GRAYNISMO R35 CRS VERSION' slug='mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version%C2%A0?pid=lng33yAgqy'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version\xa0?pid=lng33yAgqy'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version\xa0?pid=lng33yAgqy'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-nissan-gtr-2013-dark-metal-graynismo-r35-crs-version?pid=lng33yAgqy'
---- 'MINI GT \xa0TOYOTA GR86 LBNATION BLACKGOLD\xa0' slug='mini-gt-\xa0toyota-gr86-lbnation-blackgold\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-%C2%A0toyota-gr86-lbnation-blackgold%C2%A0?pid=XqLQb4MpvD'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-\xa0toyota-gr86-lbnation-blackgold\xa0?pid=XqLQb4MpvD'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-\xa0toyota-gr86-lbnation-blackgold\xa0?pid=XqLQb4MpvD'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-toyota-gr86-lbnation-blackgold?pid=XqLQb4MpvD'
---- 'LANCIA DELTA HF INTEGRALE EVOLUZIONE 1 1993 RALLYE MONTECARL' slug='lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo%C2%A0?pid=PzNbBwkNbQ'
-    raw slug                   HTTP 200  opens it: True   '/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo\xa0?pid=PzNbBwkNbQ'
-    KND's own href             HTTP 200  opens it: True   '/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo\xa0?pid=PzNbBwkNbQ'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/lancia-delta-hf-integrale-evoluzione-1-1993-rallye-montecarlo?pid=PzNbBwkNbQ'
---- 'MINI GT 1984 NÜRBURGRING RACE OF CHAMPIONS SET LIMITED EDITI' slug='mini-gt-1984-nürburgring-race-of-champions-set-limited-edition\xa0' chars=['\xa0', 'ü']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-1984-n%C3%BCrburgring-race-of-champions-set-limited-edition%C2%A0?pid=OyLoZEwNb2'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-1984-nürburgring-race-of-champions-set-limited-edition\xa0?pid=OyLoZEwNb2'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-1984-nürburgring-race-of-champions-set-limited-edition\xa0?pid=OyLoZEwNb2'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-1984-n-rburgring-race-of-champions-set-limited-edition?pid=OyLoZEwNb2'
---- 'MINI GT ASTON MARTIN DB10 “SPECTRE” ENGLISH BLISTER PACKAGIN' slug='mini-gt-aston-martin-db10-“spectre”-english-blister-packaging' chars=['“', '”']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-db10-%E2%80%9Cspectre%E2%80%9D-english-blister-packaging?pid=XqLQbkmpv'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-aston-martin-db10-“spectre”-english-blister-packaging?pid=XqLQbkmpvD'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-db10-“spectre”-english-blister-packaging?pid=XqLQbkmpvD'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-aston-martin-db10-spectre-english-blister-packaging?pid=XqLQbkmpvD'
---- 'MINI\xa0GT BUGATTI BOLIDE RED' slug='mini\xa0gt-bugatti-bolide-red' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini%C2%A0gt-bugatti-bolide-red?pid=8JNqO5ep4Q'
-    raw slug                   HTTP 200  opens it: True   '/details/mini\xa0gt-bugatti-bolide-red?pid=8JNqO5ep4Q'
-    KND's own href             HTTP 200  opens it: True   '/details/mini\xa0gt-bugatti-bolide-red?pid=8JNqO5ep4Q'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-bugatti-bolide-red?pid=8JNqO5ep4Q'
---- 'MINI\xa0GT LANCIA STRATOS HF 4 1978 RALLY SANREMO WINNER' slug='mini\xa0gt-lancia-stratos-hf-4-1978-rally-sanremo-winner' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini%C2%A0gt-lancia-stratos-hf-4-1978-rally-sanremo-winner?pid=KbNEY4BNR0'
-    raw slug                   HTTP 200  opens it: True   '/details/mini\xa0gt-lancia-stratos-hf-4-1978-rally-sanremo-winner?pid=KbNEY4BNR0'
-    KND's own href             HTTP 200  opens it: True   '/details/mini\xa0gt-lancia-stratos-hf-4-1978-rally-sanremo-winner?pid=KbNEY4BNR0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-lancia-stratos-hf-4-1978-rally-sanremo-winner?pid=KbNEY4BNR0'
---- 'MINI GT BMW M5 ALPINE WHITE\xa0' slug='mini-gt-bmw-m5-alpine-white\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-bmw-m5-alpine-white%C2%A0?pid=VbpAl9QLrM'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-bmw-m5-alpine-white\xa0?pid=VbpAl9QLrM'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-bmw-m5-alpine-white\xa0?pid=VbpAl9QLrM'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-bmw-m5-alpine-white?pid=VbpAl9QLrM'
---- 'NISSAN SKYLINE GTR DARK METAL GRAY NISMO BCNR33 CRS VERSION\xa0' slug='nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version%C2%A0?pid=rMNM6XEL95'
-    raw slug                   HTTP 200  opens it: True   '/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version\xa0?pid=rMNM6XEL95'
-    KND's own href             HTTP 200  opens it: True   '/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version\xa0?pid=rMNM6XEL95'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/nissan-skyline-gtr-dark-metal-gray-nismo-bcnr33-crs-version?pid=rMNM6XEL95'
---- 'LB WORKS LAMBORGHINI HURACÁN GT RONIN\xa0' slug='lb-works-lamborghini-huracán-gt-ronin\xa0' chars=['\xa0', 'á']
-    tracker's link             HTTP 200  opens it: True   '/details/lb-works-lamborghini-hurac%C3%A1n-gt-ronin%C2%A0?pid=4lgO2VvpoQ'
-    raw slug                   HTTP 200  opens it: True   '/details/lb-works-lamborghini-huracán-gt-ronin\xa0?pid=4lgO2VvpoQ'
-    KND's own href             HTTP 200  opens it: True   '/details/lb-works-lamborghini-huracán-gt-ronin\xa0?pid=4lgO2VvpoQ'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/lb-works-lamborghini-hurac-n-gt-ronin?pid=4lgO2VvpoQ'
---- 'LOTUS 99T 12 AYRTON SENNA 1987 MONACO GRAND PRIX WINNER\xa0' slug='lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner%C2%A0?pid=ykL04RaLRZ'
-    raw slug                   HTTP 200  opens it: True   '/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner\xa0?pid=ykL04RaLRZ'
-    KND's own href             HTTP 200  opens it: True   '/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner\xa0?pid=ykL04RaLRZ'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/lotus-99t-12-ayrton-senna-1987-monaco-grand-prix-winner?pid=ykL04RaLRZ'
---- 'BENTLEY BATUR BONNEVILLE PEARL\xa0' slug='bentley-batur-bonneville-pearl\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/bentley-batur-bonneville-pearl%C2%A0?pid=0mNyyjWNkj'
-    raw slug                   HTTP 200  opens it: True   '/details/bentley-batur-bonneville-pearl\xa0?pid=0mNyyjWNkj'
-    KND's own href             HTTP 200  opens it: True   '/details/bentley-batur-bonneville-pearl\xa0?pid=0mNyyjWNkj'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/bentley-batur-bonneville-pearl?pid=0mNyyjWNkj'
---- 'TOYOTA GR86 LB NATION ADVAN\xa0' slug='toyota-gr86-lb-nation-advan\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota-gr86-lb-nation-advan%C2%A0?pid=V2gJexype4'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota-gr86-lb-nation-advan\xa0?pid=V2gJexype4'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota-gr86-lb-nation-advan\xa0?pid=V2gJexype4'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/toyota-gr86-lb-nation-advan?pid=V2gJexype4'
---- 'FORD MUSTANG DARK HORSE 24 FORD PERFORMANCE RACING SCHOOL\xa0' slug='ford-mustang-dark-horse-24-ford-performance-racing-school\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/ford-mustang-dark-horse-24-ford-performance-racing-school%C2%A0?pid=GvLPjxegod'
-    raw slug                   HTTP 200  opens it: True   '/details/ford-mustang-dark-horse-24-ford-performance-racing-school\xa0?pid=GvLPjxegod'
-    KND's own href             HTTP 200  opens it: True   '/details/ford-mustang-dark-horse-24-ford-performance-racing-school\xa0?pid=GvLPjxegod'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/ford-mustang-dark-horse-24-ford-performance-racing-school?pid=GvLPjxegod'
---- 'TOLEMAN TG184 20 JOHNNY CECOTTO 1984 MONACO GRAND PRIX\xa0' slug='toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix%C2%A0?pid=8JNqOYqp4Q'
-    raw slug                   HTTP 200  opens it: True   '/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix\xa0?pid=8JNqOYqp4Q'
-    KND's own href             HTTP 200  opens it: True   '/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix\xa0?pid=8JNqOYqp4Q'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/toleman-tg184-20-johnny-cecotto-1984-monaco-grand-prix?pid=8JNqOYqp4Q'
---- 'MAZDA RX-7 RE-AMEMIYA 2025 D1GP\xa0' slug='mazda-rx-7-re-amemiya-2025-d1gp\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-2025-d1gp%C2%A0?pid=10gzm3ApAV'
-    raw slug                   HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-2025-d1gp\xa0?pid=10gzm3ApAV'
-    KND's own href             HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-2025-d1gp\xa0?pid=10gzm3ApAV'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mazda-rx-7-re-amemiya-2025-d1gp?pid=10gzm3ApAV'
---- 'LAMBORGHINI COUNTACH 25TH ANNIVERSARY RED\xa0' slug='lamborghini-countach-25th-anniversary-red\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/lamborghini-countach-25th-anniversary-red%C2%A0?pid=KbNEYxnNR0'
-    raw slug                   HTTP 200  opens it: True   '/details/lamborghini-countach-25th-anniversary-red\xa0?pid=KbNEYxnNR0'
-    KND's own href             HTTP 200  opens it: True   '/details/lamborghini-countach-25th-anniversary-red\xa0?pid=KbNEYxnNR0'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/lamborghini-countach-25th-anniversary-red?pid=KbNEYxnNR0'
---- 'HYUNDAI KONA N PHANTOM BLACK\xa0' slug='hyundai-kona-n-phantom-black\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/hyundai-kona-n-phantom-black%C2%A0?pid=VbpAlx2LrM'
-    raw slug                   HTTP 200  opens it: True   '/details/hyundai-kona-n-phantom-black\xa0?pid=VbpAlx2LrM'
-    KND's own href             HTTP 200  opens it: True   '/details/hyundai-kona-n-phantom-black\xa0?pid=VbpAlx2LrM'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/hyundai-kona-n-phantom-black?pid=VbpAlx2LrM'
---- 'LOTUS 99T 11 SATORU NAKAJIMA 1987 MONACO GRAND PRIX\xa0' slug='lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix%C2%A0?pid=Pqp2n7wp36'
-    raw slug                   HTTP 200  opens it: True   '/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix\xa0?pid=Pqp2n7wp36'
-    KND's own href             HTTP 200  opens it: True   '/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix\xa0?pid=Pqp2n7wp36'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/lotus-99t-11-satoru-nakajima-1987-monaco-grand-prix?pid=Pqp2n7wp36'
---- 'PORSCHE\xa0911\xa0DAKAR\xa0718\xa0\xa0VOLKSWAGEN\xa0ID\xa0BUZZ\xa0PORSCHE\xa0CENTRUM\xa0GE' slug='porsche\xa0911\xa0dakar\xa0718\xa0\xa0volkswagen\xa0id\xa0buzz\xa0porsche\xa0centrum\xa0gelderland\xa0roughroads\xa0set' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/porsche%C2%A0911%C2%A0dakar%C2%A0718%C2%A0%C2%A0volkswagen%C2%A0id%C2%A0buzz%C2%A0porsche%C'
-    raw slug                   HTTP 200  opens it: True   '/details/porsche\xa0911\xa0dakar\xa0718\xa0\xa0volkswagen\xa0id\xa0buzz\xa0porsche\xa0centrum\xa0gelderland\xa0roughroads\xa0set?pid=ywN'
-    KND's own href             HTTP 200  opens it: True   '/details/porsche\xa0911\xa0dakar\xa0718\xa0\xa0volkswagen\xa0id\xa0buzz\xa0porsche\xa0centrum\xa0gelderland\xa0roughroads\xa0set?pid=ywN'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/porsche-911-dakar-718-volkswagen-id-buzz-porsche-centrum-gelderland-roughroads-set?pid=ywNW'
---- 'HONDA NSX PROTOTYPE MIDSHIP SPORTS 1989 AYRTON SENNA\xa0 W FIGU' slug='honda-nsx-prototype-midship-sports-1989-ayrton-senna\xa0-w-figure' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/honda-nsx-prototype-midship-sports-1989-ayrton-senna%C2%A0-w-figure?pid=VbpAlraLrM'
-    raw slug                   HTTP 200  opens it: True   '/details/honda-nsx-prototype-midship-sports-1989-ayrton-senna\xa0-w-figure?pid=VbpAlraLrM'
-    KND's own href             HTTP 200  opens it: True   '/details/honda-nsx-prototype-midship-sports-1989-ayrton-senna\xa0-w-figure?pid=VbpAlraLrM'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/honda-nsx-prototype-midship-sports-1989-ayrton-senna-w-figure?pid=VbpAlraLrM'
---- 'MINI GT NISSAN Z LB NATION WORKS LB GOLD\xa0\xa0 \xa0' slug='mini-gt-nissan-z-lb-nation-works-lb-gold\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-nissan-z-lb-nation-works-lb-gold%C2%A0%C2%A0-%C2%A0?pid=rMNMPkOg95'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-nissan-z-lb-nation-works-lb-gold\xa0\xa0-\xa0?pid=rMNMPkOg95'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-nissan-z-lb-nation-works-lb-gold\xa0\xa0-\xa0?pid=rMNMPkOg95'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-nissan-z-lb-nation-works-lb-gold?pid=rMNMPkOg95'
---- 'BMW I7 XDRIVE60 ALPINE WHITE BLACK SAPPHIRE\xa0\xa0 \xa0' slug='bmw-i7-xdrive60-alpine-white-black-sapphire\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/bmw-i7-xdrive60-alpine-white-black-sapphire%C2%A0%C2%A0-%C2%A0?pid=x7Le8Y3NY0'
-    raw slug                   HTTP 200  opens it: True   '/details/bmw-i7-xdrive60-alpine-white-black-sapphire\xa0\xa0-\xa0?pid=x7Le8Y3NY0'
-    KND's own href             HTTP 200  opens it: True   '/details/bmw-i7-xdrive60-alpine-white-black-sapphire\xa0\xa0-\xa0?pid=x7Le8Y3NY0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/bmw-i7-xdrive60-alpine-white-black-sapphire?pid=x7Le8Y3NY0'
---- 'LB-WORKS X ABAS WORKS ABARTH 595 RED\xa0\xa0 \xa0' slug='lb-works-x-abas-works-abarth-595-red\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/lb-works-x-abas-works-abarth-595-red%C2%A0%C2%A0-%C2%A0?pid=4lgOPj2NoQ'
-    raw slug                   HTTP 200  opens it: True   '/details/lb-works-x-abas-works-abarth-595-red\xa0\xa0-\xa0?pid=4lgOPj2NoQ'
-    KND's own href             HTTP 200  opens it: True   '/details/lb-works-x-abas-works-abarth-595-red\xa0\xa0-\xa0?pid=4lgOPj2NoQ'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/lb-works-x-abas-works-abarth-595-red?pid=4lgOPj2NoQ'
---- 'MINI GT JAGUAR C-X75 TEST CAR\xa0\xa0 \xa0' slug='mini-gt-jaguar-c-x75-test-car\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-jaguar-c-x75-test-car%C2%A0%C2%A0-%C2%A0?pid=aPgdlVmgJq'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-jaguar-c-x75-test-car\xa0\xa0-\xa0?pid=aPgdlVmgJq'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-jaguar-c-x75-test-car\xa0\xa0-\xa0?pid=aPgdlVmgJq'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-jaguar-c-x75-test-car?pid=aPgdlVmgJq'
---- 'MINI GT MAZDA AZ-1 LIBERTY WALK LB40 WHITE 2024 TOKYO AUTO S' slug='mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon%C2%A0?pid=aMNBWa0LXd'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon\xa0?pid=aMNBWa0LXd'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon\xa0?pid=aMNBWa0LXd'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-mazda-az-1-liberty-walk-lb40-white-2024-tokyo-auto-salon?pid=aMNBWa0LXd'
---- 'MINI GT ASTON MARTIN DB5 SIERRA BLUE\xa0\xa0 \xa0' slug='mini-gt-aston-martin-db5-sierra-blue\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-db5-sierra-blue%C2%A0%C2%A0-%C2%A0?pid=E5N4n3lpMq'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-aston-martin-db5-sierra-blue\xa0\xa0-\xa0?pid=E5N4n3lpMq'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-db5-sierra-blue\xa0\xa0-\xa0?pid=E5N4n3lpMq'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-aston-martin-db5-sierra-blue?pid=E5N4n3lpMq'
---- 'MINI GT ASTON MARTIN DBS HYPER RED\xa0\xa0 \xa0' slug='mini-gt-aston-martin-dbs-hyper-red\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-dbs-hyper-red%C2%A0%C2%A0-%C2%A0?pid=GvLPjZWgod'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-aston-martin-dbs-hyper-red\xa0\xa0-\xa0?pid=GvLPjZWgod'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-dbs-hyper-red\xa0\xa0-\xa0?pid=GvLPjZWgod'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-aston-martin-dbs-hyper-red?pid=GvLPjZWgod'
---- 'MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA ATHLETE\xa0\xa0 \xa0' slug='mini-gt-nissan-lb-super-silhouette-s15-silvia-athlete\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-athlete%C2%A0%C2%A0-%C2%A0?pid=y7gG99oLre'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-athlete\xa0\xa0-\xa0?pid=y7gG99oLre'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-athlete\xa0\xa0-\xa0?pid=y7gG99oLre'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-nissan-lb-super-silhouette-s15-silvia-athlete?pid=y7gG99oLre'
---- 'MINI\xa0GT\xa0FORD\xa0MUSTANG\xa0MACH\xa01\xa0DIAMONDS\xa0ARE\xa0FOREVER' slug='mini\xa0gt\xa0ford\xa0mustang\xa0mach\xa01\xa0diamonds\xa0are\xa0forever' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini%C2%A0gt%C2%A0ford%C2%A0mustang%C2%A0mach%C2%A01%C2%A0diamonds%C2%A0are%C2%A0forever?pi'
-    raw slug                   HTTP 200  opens it: True   '/details/mini\xa0gt\xa0ford\xa0mustang\xa0mach\xa01\xa0diamonds\xa0are\xa0forever?pid=aPgdnrlLJq'
-    KND's own href             HTTP 200  opens it: True   '/details/mini\xa0gt\xa0ford\xa0mustang\xa0mach\xa01\xa0diamonds\xa0are\xa0forever?pid=aPgdnrlLJq'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-ford-mustang-mach-1-diamonds-are-forever?pid=aPgdnrlLJq'
---- 'FORD PUMA RALLY1 16 MSPORT FORD WRT 2024 RALLY FINLAND 3RD P' slug='ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place%C2%A0%C2%A0-%C2%A0?pid=ywN'
-    raw slug                   HTTP 200  opens it: True   '/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place\xa0\xa0-\xa0?pid=ywNWedxpAX'
-    KND's own href             HTTP 200  opens it: True   '/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place\xa0\xa0-\xa0?pid=ywNWedxpAX'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/ford-puma-rally1-16-msport-ford-wrt-2024-rally-finland-3rd-place?pid=ywNWedxpAX'
---- 'MINI GT MAZDA RX-7 RE-AMEMIYA SILVER METALLIC\xa0' slug='mini-gt-mazda-rx-7-re-amemiya-silver-metallic\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic%C2%A0?pid=96pm2W9gVK'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic\xa0?pid=96pm2W9gVK'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic\xa0?pid=96pm2W9gVK'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-mazda-rx-7-re-amemiya-silver-metallic?pid=96pm2W9gVK'
---- 'MINI GT TOYOTA GR86 LBNATION BLACKGOLD\xa0' slug='mini-gt-toyota-gr86-lbnation-blackgold\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-lbnation-blackgold%C2%A0?pid=ykL04xKLRZ'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-lbnation-blackgold\xa0?pid=ykL04xKLRZ'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-lbnation-blackgold\xa0?pid=ykL04xKLRZ'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-toyota-gr86-lbnation-blackgold?pid=ykL04xKLRZ'
---- ' MINI GT MERCEDESBENZ 190 E 2316 11 AYRTON SENNA 1984 NÜRBUR' slug='-mini-gt-mercedesbenz-190-e-2316-11-ayrton-senna-1984-nürburgring' chars=['ü']
-    tracker's link             HTTP 200  opens it: True   '/details/-mini-gt-mercedesbenz-190-e-2316-11-ayrton-senna-1984-n%C3%BCrburgring?pid=0mNyy96Nkj'
-    raw slug                   HTTP 200  opens it: True   '/details/-mini-gt-mercedesbenz-190-e-2316-11-ayrton-senna-1984-nürburgring?pid=0mNyy96Nkj'
-    KND's own href             HTTP 200  opens it: True   '/details/-mini-gt-mercedesbenz-190-e-2316-11-ayrton-senna-1984-nürburgring?pid=0mNyy96Nkj'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-mercedesbenz-190-e-2316-11-ayrton-senna-1984-n-rburgring?pid=0mNyy96Nkj'
---- 'NISSAN\xa0SILVIA\xa0S15\xa0TOP\xa0SECRET\xa0D1GP' slug='nissan\xa0silvia\xa0s15\xa0top\xa0secret\xa0d1gp' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/nissan%C2%A0silvia%C2%A0s15%C2%A0top%C2%A0secret%C2%A0d1gp?pid=RnLjV9YLm0'
-    raw slug                   HTTP 200  opens it: True   '/details/nissan\xa0silvia\xa0s15\xa0top\xa0secret\xa0d1gp?pid=RnLjV9YLm0'
-    KND's own href             HTTP 200  opens it: True   '/details/nissan\xa0silvia\xa0s15\xa0top\xa0secret\xa0d1gp?pid=RnLjV9YLm0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/nissan-silvia-s15-top-secret-d1gp?pid=RnLjV9YLm0'
---- 'MINI GT FORD MUSTANG MACH 1 GRABBER BLUE\xa0' slug='mini-gt-ford-mustang-mach-1-grabber-blue\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-ford-mustang-mach-1-grabber-blue%C2%A0?pid=ywNWeG1pAX'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-ford-mustang-mach-1-grabber-blue\xa0?pid=ywNWeG1pAX'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-ford-mustang-mach-1-grabber-blue\xa0?pid=ywNWeG1pAX'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-ford-mustang-mach-1-grabber-blue?pid=ywNWeG1pAX'
---- 'MINI GT BMW M3 COMPETITION TOURING PORTIMAO BLUE METALLIC\xa0' slug='mini-gt-bmw-m3-competition-touring-portimao-blue-metallic\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic%C2%A0?pid=eJNr0MnpBd'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic\xa0?pid=eJNr0MnpBd'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic\xa0?pid=eJNr0MnpBd'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-bmw-m3-competition-touring-portimao-blue-metallic?pid=eJNr0MnpBd'
---- 'MINI GT ASTON MARTIN AMR24 18 LANCE STROLL 2024 F1 2024\xa0' slug='mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024%C2%A0?pid=aMNB2DRNXd'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024\xa0?pid=aMNB2DRNXd'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024\xa0?pid=aMNB2DRNXd'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-aston-martin-amr24-18-lance-stroll-2024-f1-2024?pid=aMNB2DRNXd'
---- 'MINI GT NISSAN SKYLINE GTR DARK METAL GRAY NISMO BNR34 CRS V' slug='mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version%C2%A0?pid=P7pRJbJpjm'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version\xa0?pid=P7pRJbJpjm'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version\xa0?pid=P7pRJbJpjm'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/mini-gt-nissan-skyline-gtr-dark-metal-gray-nismo-bnr34-crs-version?pid=P7pRJbJpjm'
---- 'TOYOTA SUPRA VEILSIDE COMBAT V-I RED\xa0' slug='toyota-supra-veilside-combat-v-i-red\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota-supra-veilside-combat-v-i-red%C2%A0?pid=Mbga1v9gq8'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota-supra-veilside-combat-v-i-red\xa0?pid=Mbga1v9gq8'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota-supra-veilside-combat-v-i-red\xa0?pid=Mbga1v9gq8'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/toyota-supra-veilside-combat-v-i-red?pid=Mbga1v9gq8'
---- 'NISSAN\xa0Z\xa0VEILSIDE\xa0FFZ400\xa0SEIRAN\xa0BLUE' slug='nissan\xa0z\xa0veilside\xa0ffz400\xa0seiran\xa0blue' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/nissan%C2%A0z%C2%A0veilside%C2%A0ffz400%C2%A0seiran%C2%A0blue?pid=GoL1JAJpBA'
-    raw slug                   HTTP 200  opens it: True   '/details/nissan\xa0z\xa0veilside\xa0ffz400\xa0seiran\xa0blue?pid=GoL1JAJpBA'
-    KND's own href             HTTP 200  opens it: True   '/details/nissan\xa0z\xa0veilside\xa0ffz400\xa0seiran\xa0blue?pid=GoL1JAJpBA'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/nissan-z-veilside-ffz400-seiran-blue?pid=GoL1JAJpBA'
---- 'ASTON MARTIN DB5 “CASINO ROYALE”' slug='aston-martin-db5-“casino-royale”' chars=['“', '”']
-    tracker's link             HTTP 200  opens it: True   '/details/aston-martin-db5-%E2%80%9Ccasino-royale%E2%80%9D?pid=VbpAlrzLrM'
-    raw slug                   HTTP 200  opens it: True   '/details/aston-martin-db5-“casino-royale”?pid=VbpAlrzLrM'
-    KND's own href             HTTP 200  opens it: True   '/details/aston-martin-db5-“casino-royale”?pid=VbpAlrzLrM'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/aston-martin-db5-casino-royale?pid=VbpAlrzLrM'
---- 'BENTLEY\xa0BATUR\xa0SCARAB\xa0GREEN' slug='bentley\xa0batur\xa0scarab\xa0green' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/bentley%C2%A0batur%C2%A0scarab%C2%A0green?pid=QJgn2lYgl6'
-    raw slug                   HTTP 200  opens it: True   '/details/bentley\xa0batur\xa0scarab\xa0green?pid=QJgn2lYgl6'
-    KND's own href             HTTP 200  opens it: True   '/details/bentley\xa0batur\xa0scarab\xa0green?pid=QJgn2lYgl6'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/bentley-batur-scarab-green?pid=QJgn2lYgl6'
---- 'MINI GT TOYOTA AE86 SPRINTER TRUENO KAIDO RACING V1\xa0\xa0 \xa0' slug='mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1\xa0\xa0-\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1%C2%A0%C2%A0-%C2%A0?pid=aPgdn5aLJq'
-    raw slug                   HTTP 200  opens it: True   '/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1\xa0\xa0-\xa0?pid=aPgdn5aLJq'
-    KND's own href             HTTP 200  opens it: True   '/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1\xa0\xa0-\xa0?pid=aPgdn5aLJq'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1?pid=aPgdn5aLJq'
---- 'CHEVROLET SILVERADO KAIDO INTIMIDATOR V1\xa0' slug='chevrolet-silverado-kaido-intimidator-v1\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/chevrolet-silverado-kaido-intimidator-v1%C2%A0?pid=RWg8VRwLKe'
-    raw slug                   HTTP 200  opens it: True   '/details/chevrolet-silverado-kaido-intimidator-v1\xa0?pid=RWg8VRwLKe'
-    KND's own href             HTTP 200  opens it: True   '/details/chevrolet-silverado-kaido-intimidator-v1\xa0?pid=RWg8VRwLKe'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/chevrolet-silverado-kaido-intimidator-v1?pid=RWg8VRwLKe'
---- 'NISSAN SILVIA S13-R CIRCUIT SPEC V1\xa0' slug='nissan-silvia-s13-r-circuit-spec-v1\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/nissan-silvia-s13-r-circuit-spec-v1%C2%A0?pid=Pqp2neYp36'
-    raw slug                   HTTP 200  opens it: True   '/details/nissan-silvia-s13-r-circuit-spec-v1\xa0?pid=Pqp2neYp36'
-    KND's own href             HTTP 200  opens it: True   '/details/nissan-silvia-s13-r-circuit-spec-v1\xa0?pid=Pqp2neYp36'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/nissan-silvia-s13-r-circuit-spec-v1?pid=Pqp2neYp36'
---- 'BRONCO\xa0WHEELS\xa0AND\xa0TIRES\xa0PACK CHASE\xa0' slug='bronco\xa0wheels\xa0and\xa0tires\xa0pack-chase\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/bronco%C2%A0wheels%C2%A0and%C2%A0tires%C2%A0pack-chase%C2%A0?pid=JPNYbY4LzO'
-    raw slug                   HTTP 200  opens it: True   '/details/bronco\xa0wheels\xa0and\xa0tires\xa0pack-chase\xa0?pid=JPNYbY4LzO'
-    KND's own href             HTTP 200  opens it: True   '/details/bronco\xa0wheels\xa0and\xa0tires\xa0pack-chase\xa0?pid=JPNYbY4LzO'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/bronco-wheels-and-tires-pack-chase?pid=JPNYbY4LzO'
---- 'TOYOTA\xa0FJ\xa0CRUISER\xa0XJ10\xa0BLACK' slug='toyota\xa0fj\xa0cruiser\xa0xj10\xa0black' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota%C2%A0fj%C2%A0cruiser%C2%A0xj10%C2%A0black?pid=m8pDrmYNv2'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota\xa0fj\xa0cruiser\xa0xj10\xa0black?pid=m8pDrmYNv2'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota\xa0fj\xa0cruiser\xa0xj10\xa0black?pid=m8pDrmYNv2'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/toyota-fj-cruiser-xj10-black?pid=m8pDrmYNv2'
---- 'TOYOTA\xa0FJ\xa0CRUISER\xa0XJ 10\xa0ORANGE' slug='toyota\xa0fj\xa0cruiser\xa0xj-10\xa0orange' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota%C2%A0fj%C2%A0cruiser%C2%A0xj-10%C2%A0orange?pid=GvLPoldNod'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota\xa0fj\xa0cruiser\xa0xj-10\xa0orange?pid=GvLPoldNod'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota\xa0fj\xa0cruiser\xa0xj-10\xa0orange?pid=GvLPoldNod'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/toyota-fj-cruiser-xj-10-orange?pid=GvLPoldNod'
---- 'TOYOTA\xa0FJ\xa0CRUISER\xa0YELLOW RHD WITH ACCESSORIES' slug='toyota\xa0fj\xa0cruiser\xa0yellow-rhd-with-accessories' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota%C2%A0fj%C2%A0cruiser%C2%A0yellow-rhd-with-accessories?pid=E5N4362gMq'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota\xa0fj\xa0cruiser\xa0yellow-rhd-with-accessories?pid=E5N4362gMq'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota\xa0fj\xa0cruiser\xa0yellow-rhd-with-accessories?pid=E5N4362gMq'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/toyota-fj-cruiser-yellow-rhd-with-accessories?pid=E5N4362gMq'
---- 'TOYOTA\xa02015\xa0HIACE\xa0KDH200V\xa0RHD BLACK' slug='toyota\xa02015\xa0hiace\xa0kdh200v\xa0rhd-black' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota%C2%A02015%C2%A0hiace%C2%A0kdh200v%C2%A0rhd-black?pid=GwLxy1BpXY'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota\xa02015\xa0hiace\xa0kdh200v\xa0rhd-black?pid=GwLxy1BpXY'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota\xa02015\xa0hiace\xa0kdh200v\xa0rhd-black?pid=GwLxy1BpXY'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/toyota-2015-hiace-kdh200v-rhd-black?pid=GwLxy1BpXY'
---- 'FERRARI 308GTB PLASTIC MODEL\xa0' slug='ferrari-308gtb-plastic-model\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/ferrari-308gtb-plastic-model%C2%A0?pid=V2gJ2Voge4'
-    raw slug                   HTTP 200  opens it: True   '/details/ferrari-308gtb-plastic-model\xa0?pid=V2gJ2Voge4'
-    KND's own href             HTTP 200  opens it: True   '/details/ferrari-308gtb-plastic-model\xa0?pid=V2gJ2Voge4'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/ferrari-308gtb-plastic-model?pid=V2gJ2Voge4'
---- 'SUBARU LEGACY TOURING WAGON GT-B \xa0SILVER RHD WITH ACCESSORIE' slug='subaru-legacy-touring-wagon-gt-b-\xa0silver-rhd-with-accessories' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/subaru-legacy-touring-wagon-gt-b-%C2%A0silver-rhd-with-accessories?pid=jPp91lrpDa'
-    raw slug                   HTTP 200  opens it: True   '/details/subaru-legacy-touring-wagon-gt-b-\xa0silver-rhd-with-accessories?pid=jPp91lrpDa'
-    KND's own href             HTTP 200  opens it: True   '/details/subaru-legacy-touring-wagon-gt-b-\xa0silver-rhd-with-accessories?pid=jPp91lrpDa'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/subaru-legacy-touring-wagon-gt-b-silver-rhd-with-accessories?pid=jPp91lrpDa'
---- 'LIEBHERR R 900 C LITRONIC -\xa007702' slug='liebherr-r-900-c-litronic-\xa007702' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/liebherr-r-900-c-litronic-%C2%A007702?pid=GXpKrKDLmx'
-    raw slug                   HTTP 200  opens it: True   '/details/liebherr-r-900-c-litronic-\xa007702?pid=GXpKrKDLmx'
-    KND's own href             HTTP 200  opens it: True   '/details/liebherr-r-900-c-litronic-\xa007702?pid=GXpKrKDLmx'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/liebherr-r-900-c-litronic-07702?pid=GXpKrKDLmx'
---- 'RENAULT R23\xa0- 07237' slug='renault-r23\xa0-07237' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/renault-r23%C2%A0-07237?pid=aMNBrDDNXd'
-    raw slug                   HTTP 200  opens it: True   '/details/renault-r23\xa0-07237?pid=aMNBrDDNXd'
-    KND's own href             HTTP 200  opens it: True   '/details/renault-r23\xa0-07237?pid=aMNBrDDNXd'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/renault-r23-07237?pid=aMNBrDDNXd'
---- 'FERRARI 599 GTB FIORANO\xa0- 07310' slug='ferrari-599-gtb-fiorano\xa0-07310' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/ferrari-599-gtb-fiorano%C2%A0-07310?pid=xeLXPzxL1W'
-    raw slug                   HTTP 200  opens it: True   '/details/ferrari-599-gtb-fiorano\xa0-07310?pid=xeLXPzxL1W'
-    KND's own href             HTTP 200  opens it: True   '/details/ferrari-599-gtb-fiorano\xa0-07310?pid=xeLXPzxL1W'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/ferrari-599-gtb-fiorano-07310?pid=xeLXPzxL1W'
---- 'BMW SAUBER F1 TEAM - 07245\xa0' slug='bmw-sauber-f1-team--07245\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/bmw-sauber-f1-team--07245%C2%A0?pid=V2gJy5Dpe4'
-    raw slug                   HTTP 200  opens it: True   '/details/bmw-sauber-f1-team--07245\xa0?pid=V2gJy5Dpe4'
-    KND's own href             HTTP 200  opens it: True   '/details/bmw-sauber-f1-team--07245\xa0?pid=V2gJy5Dpe4'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/bmw-sauber-f1-team-07245?pid=V2gJy5Dpe4'
---- 'EUROCOPTER EC 135 HELICOPTER – 06622' slug='eurocopter-ec-135-helicopter-–-06622' chars=['–']
-    tracker's link             HTTP 200  opens it: True   '/details/eurocopter-ec-135-helicopter-%E2%80%93-06622?pid=6nNVev3gYk'
-    raw slug                   HTTP 200  opens it: True   '/details/eurocopter-ec-135-helicopter-–-06622?pid=6nNVev3gYk'
-    KND's own href             HTTP 200  opens it: True   '/details/eurocopter-ec-135-helicopter-–-06622?pid=6nNVev3gYk'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/eurocopter-ec-135-helicopter-06622?pid=6nNVev3gYk'
---- '360 CHALLENGE NORBERT WALCHHOFER 2003 - 07139\xa0' slug='360-challenge-norbert-walchhofer-2003--07139\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/360-challenge-norbert-walchhofer-2003--07139%C2%A0?pid=QJgnY48pl6'
-    raw slug                   HTTP 200  opens it: True   '/details/360-challenge-norbert-walchhofer-2003--07139\xa0?pid=QJgnY48pl6'
-    KND's own href             HTTP 200  opens it: True   '/details/360-challenge-norbert-walchhofer-2003--07139\xa0?pid=QJgnY48pl6'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/360-challenge-norbert-walchhofer-2003-07139?pid=QJgnY48pl6'
---- 'ZEPPELIN NT - 04820\xa0' slug='zeppelin-nt--04820\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/zeppelin-nt--04820%C2%A0?pid=10gz7P5NAV'
-    raw slug                   HTTP 200  opens it: True   '/details/zeppelin-nt--04820\xa0?pid=10gz7P5NAV'
-    KND's own href             HTTP 200  opens it: True   '/details/zeppelin-nt--04820\xa0?pid=10gz7P5NAV'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/zeppelin-nt-04820?pid=10gz7P5NAV'
---- 'HUMMER\xa0H1\xa0DESERT YELLOW' slug='hummer\xa0h1\xa0desert-yellow' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/hummer%C2%A0h1%C2%A0desert-yellow?pid=x7LeArzLY0'
-    raw slug                   HTTP 200  opens it: True   '/details/hummer\xa0h1\xa0desert-yellow?pid=x7LeArzLY0'
-    KND's own href             HTTP 200  opens it: True   '/details/hummer\xa0h1\xa0desert-yellow?pid=x7LeArzLY0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/hummer-h1-desert-yellow?pid=x7LeArzLY0'
---- 'ISUZU 1998 2002 TROOPER  BIG HORN – BLUE RHD' slug='isuzu-1998-2002-trooper-big-horn-–-blue-rhd' chars=['–']
-    tracker's link             HTTP 200  opens it: True   '/details/isuzu-1998-2002-trooper-big-horn-%E2%80%93-blue-rhd?pid=rMNMw7Ep95'
-    raw slug                   HTTP 200  opens it: True   '/details/isuzu-1998-2002-trooper-big-horn-–-blue-rhd?pid=rMNMw7Ep95'
-    KND's own href             HTTP 200  opens it: True   '/details/isuzu-1998-2002-trooper-big-horn-–-blue-rhd?pid=rMNMw7Ep95'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/isuzu-1998-2002-trooper-big-horn-blue-rhd?pid=rMNMw7Ep95'
---- 'BATMAN\xa0BUS\xa0GOLD CHROME VERSION HONG\xa0KONG03' slug='batman\xa0bus\xa0gold-chrome-version-hong\xa0kong03' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/batman%C2%A0bus%C2%A0gold-chrome-version-hong%C2%A0kong03?pid=QJgnq9Ypl6'
-    raw slug                   HTTP 200  opens it: True   '/details/batman\xa0bus\xa0gold-chrome-version-hong\xa0kong03?pid=QJgnq9Ypl6'
-    KND's own href             HTTP 200  opens it: True   '/details/batman\xa0bus\xa0gold-chrome-version-hong\xa0kong03?pid=QJgnq9Ypl6'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/batman-bus-gold-chrome-version-hong-kong03?pid=QJgnq9Ypl6'
---- 'WILLIAMS RACING LOGAN SARGEANT HELMET 2023\xa0' slug='williams-racing-logan-sargeant-helmet-2023\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/williams-racing-logan-sargeant-helmet-2023%C2%A0?pid=GoL143ENBA'
-    raw slug                   HTTP 200  opens it: True   '/details/williams-racing-logan-sargeant-helmet-2023\xa0?pid=GoL143ENBA'
-    KND's own href             HTTP 200  opens it: True   '/details/williams-racing-logan-sargeant-helmet-2023\xa0?pid=GoL143ENBA'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/williams-racing-logan-sargeant-helmet-2023?pid=GoL143ENBA'
---- 'COGNIZANT FORMULA ONE TEAM ARAMCO LANCE STROLL 2023 HELMET\xa0' slug='cognizant-formula-one-team-aramco-lance-stroll-2023-helmet\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/cognizant-formula-one-team-aramco-lance-stroll-2023-helmet%C2%A0?pid=GvLPZ3zgod'
-    raw slug                   HTTP 200  opens it: True   '/details/cognizant-formula-one-team-aramco-lance-stroll-2023-helmet\xa0?pid=GvLPZ3zgod'
-    KND's own href             HTTP 200  opens it: True   '/details/cognizant-formula-one-team-aramco-lance-stroll-2023-helmet\xa0?pid=GvLPZ3zgod'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/cognizant-formula-one-team-aramco-lance-stroll-2023-helmet?pid=GvLPZ3zgod'
---- 'FORD\xa0GT40\xa0MK1\xa0GULF\xa0NO 9' slug='ford\xa0gt40\xa0mk1\xa0gulf\xa0no-9' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/ford%C2%A0gt40%C2%A0mk1%C2%A0gulf%C2%A0no-9?pid=y7gG7Y1gre'
-    raw slug                   HTTP 200  opens it: True   '/details/ford\xa0gt40\xa0mk1\xa0gulf\xa0no-9?pid=y7gG7Y1gre'
-    KND's own href             HTTP 200  opens it: True   '/details/ford\xa0gt40\xa0mk1\xa0gulf\xa0no-9?pid=y7gG7Y1gre'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/ford-gt40-mk1-gulf-no-9?pid=y7gG7Y1gre'
---- 'LINCOLN\xa0TOWN\xa0CAR\xa02003\xa0LIMOUSINE\xa0EXTENDED\xa0EDITION\xa0WHITE' slug='lincoln\xa0town\xa0car\xa02003\xa0limousine\xa0extended\xa0edition\xa0white' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/lincoln%C2%A0town%C2%A0car%C2%A02003%C2%A0limousine%C2%A0extended%C2%A0edition%C2%A0white?p'
-    raw slug                   HTTP 200  opens it: True   '/details/lincoln\xa0town\xa0car\xa02003\xa0limousine\xa0extended\xa0edition\xa0white?pid=RWg8JnQLKe'
-    KND's own href             HTTP 200  opens it: True   '/details/lincoln\xa0town\xa0car\xa02003\xa0limousine\xa0extended\xa0edition\xa0white?pid=RWg8JnQLKe'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/lincoln-town-car-2003-limousine-extended-edition-white?pid=RWg8JnQLKe'
---- 'LAND\xa0ROVER\xa0DISCOVERY\xa04 SILVER' slug='land\xa0rover\xa0discovery\xa04-silver' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/land%C2%A0rover%C2%A0discovery%C2%A04-silver?pid=y7gG73kgre'
-    raw slug                   HTTP 200  opens it: True   '/details/land\xa0rover\xa0discovery\xa04-silver?pid=y7gG73kgre'
-    KND's own href             HTTP 200  opens it: True   '/details/land\xa0rover\xa0discovery\xa04-silver?pid=y7gG73kgre'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/land-rover-discovery-4-silver?pid=y7gG73kgre'
---- 'VOLKSWAGEN\xa0T1\xa0VAN LOW WHEEL\xa0MM\xa0LIVERY\xa0PINK' slug='volkswagen\xa0t1\xa0van-low-wheel\xa0mm\xa0livery\xa0pink' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/volkswagen%C2%A0t1%C2%A0van-low-wheel%C2%A0mm%C2%A0livery%C2%A0pink?pid=8JNqdzrg4Q'
-    raw slug                   HTTP 200  opens it: True   '/details/volkswagen\xa0t1\xa0van-low-wheel\xa0mm\xa0livery\xa0pink?pid=8JNqdzrg4Q'
-    KND's own href             HTTP 200  opens it: True   '/details/volkswagen\xa0t1\xa0van-low-wheel\xa0mm\xa0livery\xa0pink?pid=8JNqdzrg4Q'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/volkswagen-t1-van-low-wheel-mm-livery-pink?pid=8JNqdzrg4Q'
---- 'VOLKSWAGEN\xa0T1\xa0VAN BIG WHEEL MM\xa0LIVERY\xa0GOLDEN' slug='volkswagen\xa0t1\xa0van-big-wheel-mm\xa0livery\xa0golden' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/volkswagen%C2%A0t1%C2%A0van-big-wheel-mm%C2%A0livery%C2%A0golden?pid=XqLQyWmLvD'
-    raw slug                   HTTP 200  opens it: True   '/details/volkswagen\xa0t1\xa0van-big-wheel-mm\xa0livery\xa0golden?pid=XqLQyWmLvD'
-    KND's own href             HTTP 200  opens it: True   '/details/volkswagen\xa0t1\xa0van-big-wheel-mm\xa0livery\xa0golden?pid=XqLQyWmLvD'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/volkswagen-t1-van-big-wheel-mm-livery-golden?pid=XqLQyWmLvD'
---- 'VOLKSWAGEN\xa0T1\xa0VAN LOW WHEEL MM\xa0LIVERY\xa0GOLDEN' slug='volkswagen\xa0t1\xa0van-low-wheel-mm\xa0livery\xa0golden' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/volkswagen%C2%A0t1%C2%A0van-low-wheel-mm%C2%A0livery%C2%A0golden?pid=GoL1m7ALBA'
-    raw slug                   HTTP 200  opens it: True   '/details/volkswagen\xa0t1\xa0van-low-wheel-mm\xa0livery\xa0golden?pid=GoL1m7ALBA'
-    KND's own href             HTTP 200  opens it: True   '/details/volkswagen\xa0t1\xa0van-low-wheel-mm\xa0livery\xa0golden?pid=GoL1m7ALBA'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/volkswagen-t1-van-low-wheel-mm-livery-golden?pid=GoL1m7ALBA'
---- 'TANK 500 SUV RED GOLD\xa0CHINESE VERSION' slug='tank-500-suv-red-gold\xa0chinese-version' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/tank-500-suv-red-gold%C2%A0chinese-version?pid=BwL69e9N4q'
-    raw slug                   HTTP 200  opens it: True   '/details/tank-500-suv-red-gold\xa0chinese-version?pid=BwL69e9N4q'
-    KND's own href             HTTP 200  opens it: True   '/details/tank-500-suv-red-gold\xa0chinese-version?pid=BwL69e9N4q'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/tank-500-suv-red-gold-chinese-version?pid=BwL69e9N4q'
---- 'MERCEDES\xa0190E\xa0W201\xa0EVO\xa0II WHITE' slug='mercedes\xa0190e\xa0w201\xa0evo\xa0ii-white' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mercedes%C2%A0190e%C2%A0w201%C2%A0evo%C2%A0ii-white?pid=KbNEY78NR0'
-    raw slug                   HTTP 200  opens it: True   '/details/mercedes\xa0190e\xa0w201\xa0evo\xa0ii-white?pid=KbNEY78NR0'
-    KND's own href             HTTP 200  opens it: True   '/details/mercedes\xa0190e\xa0w201\xa0evo\xa0ii-white?pid=KbNEY78NR0'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mercedes-190e-w201-evo-ii-white?pid=KbNEY78NR0'
---- 'MERCEDES\xa0190E\xa0W201\xa0EVO\xa0II\xa0SILVER' slug='mercedes\xa0190e\xa0w201\xa0evo\xa0ii\xa0silver' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/mercedes%C2%A0190e%C2%A0w201%C2%A0evo%C2%A0ii%C2%A0silver?pid=PzNbB7jNbQ'
-    raw slug                   HTTP 200  opens it: True   '/details/mercedes\xa0190e\xa0w201\xa0evo\xa0ii\xa0silver?pid=PzNbB7jNbQ'
-    KND's own href             HTTP 200  opens it: True   '/details/mercedes\xa0190e\xa0w201\xa0evo\xa0ii\xa0silver?pid=PzNbB7jNbQ'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/mercedes-190e-w201-evo-ii-silver?pid=PzNbB7jNbQ'
---- 'TOYOTA SEQUOIA SILVER\xa0' slug='toyota-sequoia-silver\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/toyota-sequoia-silver%C2%A0?pid=0mNyy7WNkj'
-    raw slug                   HTTP 200  opens it: True   '/details/toyota-sequoia-silver\xa0?pid=0mNyy7WNkj'
-    KND's own href             HTTP 200  opens it: True   '/details/toyota-sequoia-silver\xa0?pid=0mNyy7WNkj'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/toyota-sequoia-silver?pid=0mNyy7WNkj'
---- 'TOMYTEC MITSUBISHI LANCER GSR EVO IX MR RALLIART SILVER IDE ' slug='tomytec-mitsubishi-lancer-gsr-evo-ix-mr-ralliart-silver-ide-2025\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/tomytec-mitsubishi-lancer-gsr-evo-ix-mr-ralliart-silver-ide-2025%C2%A0?pid=KbNEYqlNR0'
-    raw slug                   HTTP 200  opens it: True   '/details/tomytec-mitsubishi-lancer-gsr-evo-ix-mr-ralliart-silver-ide-2025\xa0?pid=KbNEYqlNR0'
-    KND's own href             HTTP 200  opens it: True   '/details/tomytec-mitsubishi-lancer-gsr-evo-ix-mr-ralliart-silver-ide-2025\xa0?pid=KbNEYqlNR0'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/tomytec-mitsubishi-lancer-gsr-evo-ix-mr-ralliart-silver-ide-2025?pid=KbNEYqlNR0'
---- 'ASTON\xa0MARTIN\xa0VULCAN BLUE' slug='aston\xa0martin\xa0vulcan-blue' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/aston%C2%A0martin%C2%A0vulcan-blue?pid=10gzm1jpAV'
-    raw slug                   HTTP 200  opens it: True   '/details/aston\xa0martin\xa0vulcan-blue?pid=10gzm1jpAV'
-    KND's own href             HTTP 200  opens it: True   '/details/aston\xa0martin\xa0vulcan-blue?pid=10gzm1jpAV'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/aston-martin-vulcan-blue?pid=10gzm1jpAV'
---- 'NISSAN\xa0SILHOUETTE\xa0WORKS\xa0GT\xa035GT\xa0RR' slug='nissan\xa0silhouette\xa0works\xa0gt\xa035gt\xa0rr' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/nissan%C2%A0silhouette%C2%A0works%C2%A0gt%C2%A035gt%C2%A0rr?pid=P7pRJ4Apjm'
-    raw slug                   HTTP 200  opens it: True   '/details/nissan\xa0silhouette\xa0works\xa0gt\xa035gt\xa0rr?pid=P7pRJ4Apjm'
-    KND's own href             HTTP 200  opens it: True   '/details/nissan\xa0silhouette\xa0works\xa0gt\xa035gt\xa0rr?pid=P7pRJ4Apjm'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/nissan-silhouette-works-gt-35gt-rr?pid=P7pRJ4Apjm'
---- 'KOENIGSEGG\xa0AGERA\xa0MONTEREY BLUE' slug='koenigsegg\xa0agera\xa0monterey-blue' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/koenigsegg%C2%A0agera%C2%A0monterey-blue?pid=RWg8VqQLKe'
-    raw slug                   HTTP 200  opens it: True   '/details/koenigsegg\xa0agera\xa0monterey-blue?pid=RWg8VqQLKe'
-    KND's own href             HTTP 200  opens it: True   '/details/koenigsegg\xa0agera\xa0monterey-blue?pid=RWg8VqQLKe'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/koenigsegg-agera-monterey-blue?pid=RWg8VqQLKe'
---- 'PANDEM BMW E30\xa0' slug='pandem-bmw-e30\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/pandem-bmw-e30%C2%A0?pid=XqLQbXqpvD'
-    raw slug                   HTTP 200  opens it: True   '/details/pandem-bmw-e30\xa0?pid=XqLQbXqpvD'
-    KND's own href             HTTP 200  opens it: True   '/details/pandem-bmw-e30\xa0?pid=XqLQbXqpvD'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/pandem-bmw-e30?pid=XqLQbXqpvD'
---- 'FERRARI 499P NO51 FERRARI AF CORSE 3RD LE MANS 24H 2024\xa0' slug='ferrari-499p-no51-ferrari-af-corse-3rd-le-mans-24h-2024\xa0' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/ferrari-499p-no51-ferrari-af-corse-3rd-le-mans-24h-2024%C2%A0?pid=jPp9EKZpDa'
-    raw slug                   HTTP 200  opens it: True   '/details/ferrari-499p-no51-ferrari-af-corse-3rd-le-mans-24h-2024\xa0?pid=jPp9EKZpDa'
-    KND's own href             HTTP 200  opens it: True   '/details/ferrari-499p-no51-ferrari-af-corse-3rd-le-mans-24h-2024\xa0?pid=jPp9EKZpDa'
-    slug trimmed+NBSP→space→-  HTTP 200  opens it: True   '/details/ferrari-499p-no51-ferrari-af-corse-3rd-le-mans-24h-2024?pid=jPp9EKZpDa'
---- 'STARBUCKS\xa0STORE\xa0MINIATURE\xa0SCENE' slug='starbucks\xa0store\xa0miniature\xa0scene' chars=['\xa0']
-    tracker's link             HTTP 200  opens it: True   '/details/starbucks%C2%A0store%C2%A0miniature%C2%A0scene?pid=BZgkE76Laz'
-    raw slug                   HTTP 200  opens it: True   '/details/starbucks\xa0store\xa0miniature\xa0scene?pid=BZgkE76Laz'
-    KND's own href             HTTP 200  opens it: True   '/details/starbucks\xa0store\xa0miniature\xa0scene?pid=BZgkE76Laz'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/starbucks-store-miniature-scene?pid=BZgkE76Laz'
---- 'BARBIE TEAM STACIE™ DOLL AND GYMNASTICS PLAYSET ' slug='barbie-team-stacie™-doll-and-gymnastics-playset-' chars=['™']
-    tracker's link             HTTP 200  opens it: True   '/details/barbie-team-stacie%E2%84%A2-doll-and-gymnastics-playset-?pid=Mbga6EVNq8'
-    raw slug                   HTTP 200  opens it: True   '/details/barbie-team-stacie™-doll-and-gymnastics-playset-?pid=Mbga6EVNq8'
-    KND's own href             HTTP 200  opens it: True   '/details/barbie-team-stacie™-doll-and-gymnastics-playset-?pid=Mbga6EVNq8'
-    slug trimmed+NBSP→space→-  HTTP 404  opens it: False   '/details/barbie-team-stacie-doll-and-gymnastics-playset?pid=Mbga6EVNq8'
+=== B. shelf pages: cached? sold-out cars listed? ===
+  /mini-gt/mini-gt                 try 1: HTTP 200 1.35s n=123 in_stock={'1': 123} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"p8bjrq7dp5bf5s"', 'date': 'Thu, 29 Oct 2026 07:31:33 GMT'}
+  /mini-gt/mini-gt                 try 2: HTTP 200 1.16s n=123 in_stock={'1': 123} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"p8bjrq7dp5bf5s"', 'date': 'Thu, 29 Oct 2026 07:31:36 GMT'}
+  /mini-gt/mini-gt-blister-pack    try 1: HTTP 200 1.21s n=147 in_stock={'1': 147} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"diwialsbzcdf6h"', 'date': 'Thu, 29 Oct 2026 07:31:39 GMT'}
+  /mini-gt/mini-gt-blister-pack    try 2: HTTP 200 1.34s n=147 in_stock={'1': 147} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"diwialsbzcdf6h"', 'date': 'Thu, 29 Oct 2026 07:31:43 GMT'}
+  /hot-wheels/mainlines            try 1: HTTP 200 1.2s n=6 in_stock={'1': 6} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"szfsnbdc9r4ah7"', 'date': 'Thu, 29 Oct 2026 07:31:46 GMT'}
+  /hot-wheels/mainlines            try 2: HTTP 200 1.58s n=6 in_stock={'1': 6} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"szfsnbdc9r4ah7"', 'date': 'Thu, 29 Oct 2026 07:31:50 GMT'}
+  /                                try 1: HTTP 200 1.62s n=62 in_stock={'1': 62} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"14i17nojdzaabpp"', 'date': 'Thu, 29 Oct 2026 07:31:53 GMT'}
+  /                                try 2: HTTP 200 1.43s n=62 in_stock={'1': 62} headers={'cache-control': 'private, no-cache, no-store, max-age=0, must-revalidate', 'server': 'nginx/1.24.0 (Ubuntu)', 'x-powered-by': 'Next.js', 'etag': '"14i17nojdzaabpp"', 'date': 'Thu, 29 Oct 2026 07:31:56 GMT'}
+  buildId: PbojY_ZvFjxbJFiUILgal
+
+=== C. two products with one slug: which one does the page show? ===
+  392 products, 27 slugs shared by 2+ products
+  slug='mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-with-re' pid=aMNBW9mLXd ₹1299 sku='MINI GT 996 \xa0\xa0 \xa0' → HTTP 200, page shows pid=BwL69mxN4q (ANOTHER ONE)
+  slug='mini-gt-mazda-rx7-fd3s-itosyoukai-reigouki-with-re' pid=0mNyqVqNkj ₹1489 sku='MINI GT 996 BLISTER PACK' → HTTP 200, page shows pid=jPp9Y5GpDa (ANOTHER ONE)
+  slug='mini-gt-nissan-z-veilside-fz400-gold-chrome' pid=jPp9Yj2pDa ₹1489 sku='MINI GT 985\xa0' → HTTP 200, page shows pid=BwL69mxN4q (ANOTHER ONE)
+  slug='mini-gt-nissan-z-veilside-fz400-gold-chrome' pid=eJNr9GogBd ₹1669 sku='MINI GT 985 BLISTER PACK\xa0\xa0' → HTTP 200, page shows pid=jPp9Y5GpDa (ANOTHER ONE)
+  slug='mini-gt-jaguar-c-x75-black' pid=zONvZyaNBK ₹1149 sku='MINI GT 1070\xa0' → HTTP 200, page shows pid=eKLwWBMLv0 (ANOTHER ONE)
+  slug='mini-gt-jaguar-c-x75-black' pid=RWg8V1yLKe ₹1349 sku='MINI GT 1070 BLISTER PACK\xa0' → HTTP 200, page shows pid=jPp9Y5GpDa (ANOTHER ONE)
+  slug='mini-gt-lotus-78-3-gunnar-nilsson-1977-japanese-gp' pid=Ezgl2W7LMr ₹1299 sku='MINI GT 808' → HTTP 200, page shows pid=eKLwWBMLv0 (ANOTHER ONE)
+  slug='mini-gt-lotus-78-3-gunnar-nilsson-1977-japanese-gp' pid=E5N4n4vpMq ₹1399 sku='MINI GT 808 BLISTER PACK' → HTTP 200, page shows pid=jPp9Y5GpDa (ANOTHER ONE)
+  slug='mini-gt-mazda-rx-7-veilside-fortune-grey' pid=QJgn205gl6 ₹1149 sku='MINI GT 1057 \xa0\xa0 \xa0' → HTTP 200, page shows pid=eKLwWBMLv0 (ANOTHER ONE)
+  slug='mini-gt-mazda-rx-7-veilside-fortune-grey' pid=10gzmm7pAV ₹1299 sku='MINI GT 1057 BLISTER PACK ' → HTTP 200, page shows pid=jPp9Y5GpDa (ANOTHER ONE)
+  slug='cadillac-v-series-r-01-cadillac-racing-2024-imsa-p' pid=KBg7zPepRr ₹1599 sku='MINI GT 1010' → HTTP 200, page shows pid=eKLwWBMLv0 (ANOTHER ONE)
+  slug='cadillac-v-series-r-01-cadillac-racing-2024-imsa-p' pid=GoL1JeJpBA ₹1749 sku='MINI GT 1010 BLISTER PACK\xa0' → HTTP 200, page shows pid=jPp9Y5GpDa (ANOTHER ONE)
+
+=== D. the McLaren LB?WORKS (both pids) ===
+  OyLoZkMNb2 tracker's link  HTTP 404 words=['Page not found'] main={}
+  OyLoZkMNb2 cut at '?'      HTTP 404 words=['Page not found'] main={}
+  OyLoZkMNb2 %253F           HTTP 404 words=['Page not found'] main={}
+  OyLoZkMNb2 data route      HTTP 404 '{"notFound":true}'
+  RnLjVk9Lm0 tracker's link  HTTP 404 words=['Page not found'] main={}
+  RnLjVk9Lm0 cut at '?'      HTTP 404 words=['Page not found'] main={}
+  RnLjVk9Lm0 %253F           HTTP 404 words=['Page not found'] main={}
+  RnLjVk9Lm0 data route      HTTP 404 '{"notFound":true}'
+  (a sold-out car's data route) HTTP 404 '{"notFound":true}'
+  (an in-stock car's data route) HTTP 200 '{"pageProps":{"productdetails":{"id":11683,"pro_name":"BUGATTI W16 MISTRAL YELLOW","slug":"bugatti-w16-mistral-yellow","product_sname":"MINI GT 1137","sku":"MINI GT 1137","act_price":1649,"dis_price":1649,"in_stock":1,"is_preorder":0,"preorder_price":null,"is_approved":1,"add_limit":1,"type":0,"pro_'
+
+=== E. where the shop's own search/API lives ===
+   https://www.karzanddolls.com
+   https://www.karzanddolls.com/
+   https://www.karzanddolls.com/details/action
+   https://www.karzanddolls.com/details/autoworld/autoworld/MTI0
+   https://www.karzanddolls.com/details/barbie-diwali-doll-by-anita-dongre
+   https://www.karzanddolls.com/details/era
+   https://www.karzanddolls.com/details/greenlight/classics/MTIy
+   https://www.karzanddolls.com/details/greenlight/hollywood-series-/MTIx
+   https://www.karzanddolls.com/details/greenlight/trucks-haulers/MTIz
+   https://www.karzanddolls.com/details/hotwheels/accessories/MTYy
+   https://www.karzanddolls.com/details/hotwheels/car-culture/MTEx
+   https://www.karzanddolls.com/details/hotwheels/car-culture/a4dac55e3fa2b978b0c695d59da3fc8121eb6fc2c2f2c7ea50fbb62bcd3addec95d8df7885d74dbe69cc98d9f6ea82bdd38f72e500d298d5dd084c048eb59f3cobWAqN
+   https://www.karzanddolls.com/details/hotwheels/character-cars/MTE1
+   https://www.karzanddolls.com/details/hotwheels/disney-cars/MTE3
+   https://www.karzanddolls.com/details/hotwheels/fast-and-furious/MTEz
+   https://www.karzanddolls.com/details/hotwheels/mainlines/MTEw
+   https://www.karzanddolls.com/details/hotwheels/mainlines/df54f07662416c2f4f69e13b2732695a4a6f6ed03afb380965fc1061513c9b1d1fea9da3819afc3e28052ea67cbc22e8182d724cdc2475836baf33ee881ece4f8OgsvaTKa433nux19DE9cLsVMQZltNqsquvAtgs9Axw-
+   https://www.karzanddolls.com/details/hotwheels/retro-entertainment/MTEy
+   https://www.karzanddolls.com/details/jada/jada-hollywood-rides-/MTM2
+   https://www.karzanddolls.com/details/matchbox/matchbox-convoys/MTUw
+  app scripts: ['/_next/static/chunks/pages/_app-0d3d6782cfdaa13e.js']
+  API-ish strings: ['/api/auth/signin?', '/api/me', '/api/meta/event', 'http://localhost:3000/api/auth', 'https://www.karzanddolls.com/karzOffice/api']
