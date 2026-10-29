@@ -1,48 +1,53 @@
-  [KD] chase-car → 0 (empty right now)
-  [KD] mainlines → 4
-  [KD] pop-culture → 4
-  [KD] card-art-premiums → 8
-  [KD] gift-pack → 24
-  [KD] car-culture → 0 new (1 already listed elsewhere)
-  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
-  [KD] boulevard-series → 0 (empty right now)
-  [KD] team-transport → 5
-  [KD] character-cars → 8
-  [KD] disney-cars → 0 (empty right now)
-  [KD] hot-wheels-accessories → 8
-  [KD] mini-gt → 123
-  [KD] mini-gt-blister-pack → 141
-  [KD] kaido-house → 18
-  [KD] pre-order-minigt → 71
-  [KD] pre-order-special-stock → 0 (empty right now)
-  [KD] special-stocks-64-43-scale → 0 (empty right now)
-  [KD] home → 0 new (24 already listed elsewhere) (1 not chase pieces, left out)
-  [KD] monster-trucks → 0 (empty right now)
-  [KD] matchbox-basic-cars → no chase pieces right now (4 others left out)
-  [KD] matchbox-moving-parts → 0 (empty right now)
-  [KD] matchbox-superfast → no chase pieces right now (1 others left out)
-  [KD] premium-cars → no chase pieces right now (53 others left out)
-  [KD] basic-cars → no chase pieces right now (4 others left out)
-  [KD] majorette → 0 (empty right now)
-[*] Karz&Dolls total: 414 (414 in stock)
+578 in-stock products on 15 shelves
+pages read: 578 of 578
+qty on the product page of in-stock cars: {'21-100': 81, '2-5': 72, '0': 64, '6-20': 98, '>100': 53, 'none': 168, '1': 42}
+product_attr shapes: [((1, ('attribute', 'changedPrice', 'qty')), 410), ((0, ()), 168)]
+page words (qty>0): [(('Add to Cart',), 346)]
+page words (qty=0): [(('Add to Cart',), 64)]
+number inputs seen: [((), 578)]
+by shelf: {'/mini-gt/mini-gt': {'>0': 53, '0': 32, 'none': 36}, '/mini-gt/mini-gt-blister-pack': {'0': 19, '>0': 90, 'none': 30}, '/specials/special-stocks-64-43-scale': {'>0': 105, '0': 2, 'none': 19}, '/': {'>0': 33, 'none': 15, '0': 2}, '/specials/chase-car': {'>0': 2}, '/mini-gt/kaido-house': {'>0': 12, '0': 4, 'none': 5}, '/pre-orders/pre-order-minigt': {'none': 60}, '/hot-wheels/mainlines': {'>0': 6}, '/hot-wheels/pop-culture': {'>0': 6}, '/hot-wheels/card-art-premiums': {'>0': 7, '0': 2}, '/hot-wheels/gift-pack': {'>0': 13, '0': 3, 'none': 3}, '/hot-wheels/team-transport': {'>0': 4}, '/hot-wheels/character-cars': {'>0': 7}, '/hot-wheels/hot-wheels-accessories': {'>0': 8}}
+by pre-order flag: {('0', '>0'): 443, ('0', '0'): 64, ('1', '>0'): 71}
 
-414 KND products the tracker keeps; healthy=True
-labels: {'none': 84, '[Box]': 153, '[Blister]': 77, 'BLISTER in name': 100}
-Mini GT (not Kaido) products: 136; saying neither box nor blister: 4 ['MINI GT DATSUN 510 PRO STREET BRE V1', 'MINI GT DATSUN 510 PRO STREET BRE V2', 'MINI GT DATSUN 510 PRO STREET GREDDY PEARL WHITE', 'MINI GT DATSUN 510 PRO STREET GREDDY GUN METAL GREY']
-names still shared by two listings (would merge in one alert): 0 []
+qty = 0 while in stock (first 25):
+  /mini-gt/mini-gt               ₹1209  lim=2   pre=0 type=4 id=9108 'BMW 30 CSL WHITE' 'MINI GT 863'
+  /mini-gt/mini-gt               ₹1119  lim=24  pre=0 type=4 id=9254 'MINI GT NISSAN Z LB NATION WORKS IKAZUCHI YELLOW' 'MINI GT 826'
+  /mini-gt/mini-gt               ₹1299  lim=12  pre=0 type=4 id=9323 'MINI GT MAZDA RX7 FD3S ITOSYOUKAI REIGOUKI WITH RE A' 'MINI GT 996'
+  /mini-gt/mini-gt               ₹1489  lim=24  pre=0 type=0 id=9514 'MINI GT NISSAN Z VEILSIDE FZ400 GOLD CHROME' 'MINI GT 985'
+  /mini-gt/mini-gt               ₹1149  lim=6   pre=0 type=0 id=9640 'MINI GT MAZDA AZ-1 LIBERTY WALK LB40 WHITE 2024 TOKY' 'MINI GT 953'
+  /mini-gt/mini-gt               ₹1349  lim=1   pre=0 type=0 id=9649 'MINI GT BMW Z8 SILVER' 'MINI GT 998'
+  /mini-gt/mini-gt               ₹1149  lim=1   pre=0 type=0 id=9651 'MINI GT NISSAN SKYLINE GTR R34 VSPEC II NÜR MILLENIU' 'MINI GT 1003'
+  /mini-gt/mini-gt               ₹1349  lim=3   pre=0 type=0 id=9737 'MINI GT TOYOTA GR86 HKS TYPE R 2022 TOKYO AUTO SALON' 'MINI GT 1005'
+  /mini-gt/mini-gt               ₹1149  lim=12  pre=0 type=0 id=9739 'MINI GT JAGUAR C-X75 BLACK' 'MINI GT 1070'
+  /mini-gt/mini-gt               ₹1149  lim=12  pre=0 type=0 id=9898 'MINI GT MAZDA RX-7 VEILSIDE FORTUNE GREY' 'MINI GT 1057'
+  /mini-gt/mini-gt               ₹1599  lim=12  pre=0 type=0 id=10062 'MINI GT BMW Z8 THE WORLD IS NOT ENOUGH' 'MINI GT 906 ENGLISH BLISTER PACKAGING'
+  /mini-gt/mini-gt               ₹1399  lim=6   pre=0 type=4 id=10336 'MINI GT NISSAN LB-SUPER SILHOUETTE S15 SILVIA GARASI' 'MINI GT 1022'
+  /mini-gt/mini-gt               ₹1749  lim=1   pre=0 type=4 id=10337 'ASTON MARTIN AMR24 14 FERNANDO ALONSO 2024 F1 2024 B' 'MINI GT 999'
+  /mini-gt/mini-gt               ₹1399  lim=1   pre=0 type=4 id=10338 'BMW Z8 ALPINA \xa0ALPINE BLUE' 'MINI GT 1082'
+  /mini-gt/mini-gt               ₹1149  lim=3   pre=0 type=4 id=10365 'BMW M5 TOURING MARINA BAY BLUE METALLIC' 'MINI GT 1080'
+  /mini-gt/mini-gt               ₹1149  lim=1   pre=0 type=4 id=10367 'NISSAN SKYLINE GTR NISMO BNR32 CRS VERSION DARK META' 'MINI GT 1024'
+  /mini-gt/mini-gt               ₹1199  lim=3   pre=0 type=4 id=10370 'LB-WORKS FORD MUSTANG TRIPLE YELLOW' 'MINI GT 1077'
+  /mini-gt/mini-gt               ₹1149  lim=3   pre=0 type=0 id=10371 'BMW I7 XDRIVE60 TANZANITE BLUE METALLIC' 'MINI GT 1111'
+  /mini-gt/mini-gt               ₹1599  lim=12  pre=0 type=4 id=10372 'BUGATTI W16 MISTRAL BLACK' 'MINI GT 1058'
+  /mini-gt/mini-gt               ₹1149  lim=6   pre=0 type=0 id=10375 'LOTUS ESPRIT TURBO METALLIC SILVER' 'MINI GT 1109'
+  /mini-gt/mini-gt               ₹1149  lim=6   pre=0 type=0 id=10423 'MINI GT BMW M5 G90 ISLE OF MAN GREEN METALLIC' 'MINI GT 1086'
+  /mini-gt/mini-gt               ₹1649  lim=1   pre=0 type=4 id=10498 'RB VCARB 01 22 YUKI TSUNODA 2024 F1 2024 BAHRAIN GP' 'MINI GT 1007'
+  /mini-gt/mini-gt               ₹1199  lim=1   pre=0 type=4 id=10502 'LAMBORGHINI COUNTACH LB-WORKS RED' 'MINI GT 1100'
+  /mini-gt/mini-gt               ₹1199  lim=6   pre=0 type=4 id=10517 'MINI\xa0GT\xa0CHEVROLET\xa0CORVETTE\xa0Z06\xa02023\xa0ELKHART\xa0LAKE\xa0BLU' 'MINI GT 892'
+  /mini-gt/mini-gt               ₹1399  lim=12  pre=0 type=4 id=10531 'MAZDA RX-7 LB-SUPER SILHOUETTE FD-NILES' 'MINI GT 1101'
 
-samples:
-  in_stock       ₹1199  'MINI GT FORD MUSTANG DARK HORSE 2024 CARBONIZED GRAY [Box]'
-  in_stock       ₹1699  'MCLAREN MCL38 #81 OSCAR PIASTRI 2024 F1 MONACO GP 2ND PLACE [Box]'
-  in_stock        ₹799  'LUIGI GVD30'
-  in_stock       ₹1949  'PREORDER ASTON MARTIN AMR24 #14 FERNANDO ALONSO BLISTER PACKAGING2024 F1 2024 LAS VE'
-  in_stock       ₹1489  'MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE IMSA [Blister]'
-  in_stock       ₹1549  'LB WORKS TOYOTA GR SUPRA RED [Blister]'
-  in_stock       ₹1149  'MINI GT VOLKSWAGEN IDBUZZ CANDY WHITE ENERGETIC ORANGE [Box]'
-  in_stock       ₹1598  'HOT WHEELS MARIO KART MARIO WITH BOWSER JR'
-  in_stock       ₹2699  'HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43'
-  in_stock       ₹2990  'HOT WHEELS 2026 NEON SPEEDERS - MIX 1'
-  in_stock       ₹1489  'MINI GT MAZDA RX-7 RE-AMEMIYA 20B NA 3ROTOR-7 AMA-SAN GO [Blister]'
-  in_stock       ₹1849  'MAZDA RX-7 RE-AMEMIYA 2025 D1GP BLISTER PACKAGING'
-
-links checked: 80 in-stock (0 with a twice-encoded character) — open the right car: 80
+qty > 0 (sample of 15):
+  /mini-gt/mini-gt               ₹1019  lim=6   qty=['30'] id=4213 'MINI GT LANCIA STRATOS HF STRADALE ROSSO ARANCIO'
+  /mini-gt/mini-gt               ₹1019  lim=6   qty=['32'] id=4538 'MINI GT HYUNDAI KONA N PERFORMANCE BLUE'
+  /mini-gt/mini-gt               ₹1119  lim=6   qty=['4'] id=6079 'MINI GT LANCIA STRATOS HF STRADALE VERDE CHIARO'
+  /mini-gt/mini-gt               ₹1119  lim=6   qty=['14'] id=9322 'MINI GT ABARTH 595 LB-WORKS X ABAS WORKS GREY'
+  /mini-gt/mini-gt               ₹1149  lim=6   qty=['9'] id=9652 'MINI GT MAZDA MIATA MX5 NA TUNED VERSION DARK BLUE'
+  /mini-gt/mini-gt               ₹1349  lim=6   qty=['8'] id=9730 'TOYOTA\xa0GR86\xa0HKS\xa0TYPE\xa0R\xa0ADVAN\xa02022\xa0TOKYO\xa0AUTO\xa0SALON'
+  /mini-gt/mini-gt               ₹1149  lim=3   qty=['16'] id=9738 'MINI GT ABARTH 595 LB-WORKS X ABAS WORKS IZTK'
+  /mini-gt/mini-gt               ₹1299  lim=24  qty=['115'] id=9836 'MINI GT LOTUS 78 3 GUNNAR NILSSON 1977 JAPANESE GP'
+  /mini-gt/mini-gt               ₹1149  lim=12  qty=['69'] id=9899 'MINI GT NISSAN SKYLINE GTR R32 VEILSIDE COMBAT CI WH'
+  /mini-gt/mini-gt               ₹1149  lim=6   qty=['73'] id=9900 'MINI GT VOLKSWAGEN IDBUZZ CANDY WHITE ENERGETIC ORAN'
+  /mini-gt/mini-gt               ₹1149  lim=12  qty=['63'] id=9928 'ABARTH 595 LB-WORKS X ABAS WORKS FIGHTERS'
+  /mini-gt/mini-gt               ₹1149  lim=6   qty=['21'] id=9930 'MINI GT LANCIA STRATOS HF 4 1979 SPANISH RALLY CHAMP'
+  /mini-gt/mini-gt               ₹1749  lim=12  qty=['173'] id=10035 'NISSAN LBSUPER SILHOUETTE S15 SILVIA 555 V2 2024 FOR'
+  /mini-gt/mini-gt               ₹1149  lim=3   qty=['4'] id=10339 'MINI GT MAZDA AZ-1 LIBERTY WALK LB40 PILOT'
+  /mini-gt/mini-gt               ₹1149  lim=12  qty=['134'] id=10374 'FORD MUSTANG MACH1 1971 RACE RED'
