@@ -1,11 +1,48 @@
-412 in-stock cars in seen.json; 641 products on the shelves now
-the tracker's stored link opens the car: 412; doesn't: 0
-why the failures: {}
+  [KD] chase-car → 0 (empty right now)
+  [KD] mainlines → 4
+  [KD] pop-culture → 4
+  [KD] card-art-premiums → 8
+  [KD] gift-pack → 24
+  [KD] car-culture → 0 new (1 already listed elsewhere)
+  [KD] fast-and-furious → 0 new (1 already listed elsewhere)
+  [KD] boulevard-series → 0 (empty right now)
+  [KD] team-transport → 5
+  [KD] character-cars → 8
+  [KD] disney-cars → 0 (empty right now)
+  [KD] hot-wheels-accessories → 8
+  [KD] mini-gt → 123
+  [KD] mini-gt-blister-pack → 141
+  [KD] kaido-house → 18
+  [KD] pre-order-minigt → 71
+  [KD] pre-order-special-stock → 0 (empty right now)
+  [KD] special-stocks-64-43-scale → 0 (empty right now)
+  [KD] home → 0 new (24 already listed elsewhere) (1 not chase pieces, left out)
+  [KD] monster-trucks → 0 (empty right now)
+  [KD] matchbox-basic-cars → no chase pieces right now (4 others left out)
+  [KD] matchbox-moving-parts → 0 (empty right now)
+  [KD] matchbox-superfast → no chase pieces right now (1 others left out)
+  [KD] premium-cars → no chase pieces right now (53 others left out)
+  [KD] basic-cars → no chase pieces right now (4 others left out)
+  [KD] majorette → 0 (empty right now)
+[*] Karz&Dolls total: 414 (414 in stock)
 
-71 in-stock shelf cars have a slug ending in (non-breaking) space; trimmed vs raw vs new:
-  (trimmed opens, new opens): {(True, True): 40}
+414 KND products the tracker keeps; healthy=True
+labels: {'none': 84, '[Box]': 153, '[Blister]': 77, 'BLISTER in name': 100}
+Mini GT (not Kaido) products: 136; saying neither box nor blister: 4 ['MINI GT DATSUN 510 PRO STREET BRE V1', 'MINI GT DATSUN 510 PRO STREET BRE V2', 'MINI GT DATSUN 510 PRO STREET GREDDY PEARL WHITE', 'MINI GT DATSUN 510 PRO STREET GREDDY GUN METAL GREY']
+names still shared by two listings (would merge in one alert): 0 []
 
-=== the McLaren in KND's search ===
-  '720s': pid=GXpKXnzgmx in_stock=1 ₹1999 sku='1:64\xa0SPARKY\xa0Y395' name='MCLAREN 720S GT3 EVO NO95 UNITED AUTOSPORTS LE MANS 24H 2024' slug='mclaren-720s-gt3-evo-no95-united-autosports-le-mans-24h-2024'
-  '720s': pid=x7LelD5NY0 in_stock=1 ₹1999 sku='1:64\xa0SPARKY Y396' name='MCLAREN 720S GT3 EVO NO70 INCEPTION RACING LE MANS 24H 2024' slug='mclaren-720s-gt3-evo-no70-inception-racing-le-mans-24h-2024'
-  '720s': pid=96pm2AEgVK in_stock=1 ₹1999 sku='1:64\xa0SPARKY Y397' name='MCLAREN 720S GT3 EVO NO59 UNITED AUTOSPORTS LE MANS 24H 2024' slug='mclaren-720s-gt3-evo-no59-united-autosports-le-mans-24h-2024'
+samples:
+  in_stock       ₹1199  'MINI GT FORD MUSTANG DARK HORSE 2024 CARBONIZED GRAY [Box]'
+  in_stock       ₹1699  'MCLAREN MCL38 #81 OSCAR PIASTRI 2024 F1 MONACO GP 2ND PLACE [Box]'
+  in_stock        ₹799  'LUIGI GVD30'
+  in_stock       ₹1949  'PREORDER ASTON MARTIN AMR24 #14 FERNANDO ALONSO BLISTER PACKAGING2024 F1 2024 LAS VE'
+  in_stock       ₹1489  'MINI GT MAZDA RX-7 LB-SUPER SILHOUETTE IMSA [Blister]'
+  in_stock       ₹1549  'LB WORKS TOYOTA GR SUPRA RED [Blister]'
+  in_stock       ₹1149  'MINI GT VOLKSWAGEN IDBUZZ CANDY WHITE ENERGETIC ORANGE [Box]'
+  in_stock       ₹1598  'HOT WHEELS MARIO KART MARIO WITH BOWSER JR'
+  in_stock       ₹2699  'HOT WHEELS PREMIUM 2026 LE MANS RACE GULF BOX SET JHW43'
+  in_stock       ₹2990  'HOT WHEELS 2026 NEON SPEEDERS - MIX 1'
+  in_stock       ₹1489  'MINI GT MAZDA RX-7 RE-AMEMIYA 20B NA 3ROTOR-7 AMA-SAN GO [Blister]'
+  in_stock       ₹1849  'MAZDA RX-7 RE-AMEMIYA 2025 D1GP BLISTER PACKAGING'
+
+links checked: 80 in-stock (0 with a twice-encoded character) — open the right car: 80
