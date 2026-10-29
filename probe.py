@@ -1,111 +1,51 @@
 #!/usr/bin/env python3
-"""Probe #49: Karz & Dolls — do the links the tracker actually sends open?
-Every in-stock car's link as stored in seen.json (the tracker trims the slug's
-trailing spaces, non-breaking ones too), against the page; for any that don't,
-the slug exactly as the shelf gives it, and that slug written the new way
-('?', '#', '%' encoded twice). Plus: the McLaren LB?WORKS in KND's search.
-Read-only."""
-import json, re, collections, time
-from urllib.parse import quote
+"""Probe #50: the v17.6 tracker's own Karz & Dolls reader against the live
+shop — what names (with [Box] / [Blister]) and links it produces, and do those
+links open the right car? Read-only (no Telegram, no state)."""
+import json, os, re, sys, collections, importlib.util, random
 from concurrent.futures import ThreadPoolExecutor
-from curl_cffi import requests as http
-IMP = {"impersonate": "chrome124"}
-H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-     "Accept-Language": "en-IN,en;q=0.9", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
-KD = "https://www.karzanddolls.com"
+os.environ.update({"TELEGRAM_BOT_TOKEN": "", "TELEGRAM_CHAT_ID": "", "GITHUB_ACTIONS": "true"})
+spec = importlib.util.spec_from_file_location("b176", "bot_v176.py")
+b = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(b)
 NEXT = re.compile(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', re.S)
-SHELVES = ["/hot-wheels/mainlines", "/hot-wheels/pop-culture", "/hot-wheels/card-art-premiums", "/hot-wheels/gift-pack",
-           "/hot-wheels/car-culture", "/hot-wheels/fast-and-furious", "/hot-wheels/boulevard-series", "/hot-wheels/team-transport",
-           "/hot-wheels/character-cars", "/hot-wheels/disney-cars", "/hot-wheels/hot-wheels-accessories", "/mini-gt/mini-gt",
-           "/mini-gt/mini-gt-blister-pack", "/mini-gt/kaido-house", "/pre-orders/pre-order-minigt", "/pre-orders/pre-order-special-stock",
-           "/specials/chase-car", "/specials/special-stocks-64-43-scale", "/", "/hot-wheels/monster-trucks", "/matchbox/matchbox-basic-cars",
-           "/matchbox/matchbox-moving-parts", "/matchbox/matchbox-superfast", "/majorette/premium-cars", "/majorette/basic-cars", "/majorette/majorette"]
 
+items = b.scrape_karzanddolls()
+print(f"\n{len(items)} KND products the tracker keeps; healthy={b.KD_HEALTHY[0]}")
+lab = collections.Counter("[Blister]" if n.endswith("[Blister]") or "[Blister] [" in n else
+                          "[Box]" if "[Box]" in n else ("BLISTER in name" if "BLISTER" in n.upper() else "none")
+                          for n in (d["name"] for d in items))
+print("labels:", dict(lab))
+mg = [d for d in items if re.search(r"\bMINI\s*GT\b", d["name"], re.I) and "KAIDO" not in d["name"].upper()]
+unl = [d["name"] for d in mg if "[Box]" not in d["name"] and "[Blister]" not in d["name"] and not re.search(r"BLISTER|\bBOX\b", d["name"].upper())]
+print(f"Mini GT (not Kaido) products: {len(mg)}; saying neither box nor blister: {len(unl)} {unl[:6]}")
+names = collections.Counter(re.sub(r"[^a-z0-9]", "", d["name"].lower()) for d in items)
+dup = [n for n, c in names.items() if c > 1]
+print(f"names still shared by two listings (would merge in one alert): {len(dup)} {dup[:6]}")
+print("\nsamples:")
+for d in random.Random(4).sample(items, 12):
+    print(f"  {d['stock']:12} {d['price']:>7}  {d['name'][:84]!r}")
 
-def get(url):
-    for i in range(2):
-        try:
-            r = http.get(url, headers=H, timeout=25, allow_redirects=True, **IMP)
-            return r.status_code, r.text
-        except Exception:
-            time.sleep(1)
-    return None, ""
+def opens(d):
+    pid = d["id"][3:]
+    try:
+        r = b.http.get(d["url"], headers=b.COMMON_HEADERS, timeout=25, **b._IMPERSONATE)
+        m = NEXT.search(r.text or "")
+        pd = ((json.loads(m.group(1)).get("props") or {}).get("pageProps") or {}).get("productdetails") or {} if m else {}
+        return r.status_code, str(pd.get("pid")) == pid
+    except Exception as e:
+        return type(e).__name__, False
 
-
-def nd(page):
-    m = NEXT.search(page or "")
-    return json.loads(m.group(1)) if m else {}
-
-
-def prods(page):
-    pp = (nd(page).get("props") or {}).get("pageProps") or {}
-    found, stack = [], [pp]
-    while stack:
-        n = stack.pop()
-        if isinstance(n, list):
-            stack.extend(n)
-        elif isinstance(n, dict):
-            if "pid" in n and "pro_name" in n and "slug" in n:
-                found.append(n)
-            stack.extend(v for v in n.values() if isinstance(v, (dict, list)))
-    return found
-
-
-def opens(url, pid):
-    code, page = get(url)
-    d = ((nd(page).get("props") or {}).get("pageProps") or {}).get("productdetails") or {}
-    return code, str(d.get("pid")) == pid, d
-
-
-def new_url(slug, pid):
-    path = "".join(quote(quote(c, safe=""), safe="") if c in "?#%" else quote(c, safe="-_.~") for c in slug)
-    return f"{KD}/details/{path}?pid={quote(pid, safe='')}"
-
-
-raw = {}
+ins = [d for d in items if d["stock"] == "in_stock"]
+odd = [d for d in ins if "%25" in d["url"]]
+pick = odd + random.Random(7).sample([d for d in ins if d not in odd], min(80, len(ins) - len(odd)))
 with ThreadPoolExecutor(8) as ex:
-    for s, (code, page) in zip(SHELVES, ex.map(lambda s: get(KD + s), SHELVES)):
-        for p in prods(page):
-            raw.setdefault(str(p["pid"]), p)
-cars = json.load(open("kd_ins.json"))
-print(f"{len(cars)} in-stock cars in seen.json; {len(raw)} products on the shelves now")
-with ThreadPoolExecutor(8) as ex:
-    res = list(ex.map(lambda c: (c, *opens(c["url"], c["pid"])), cars))
-ok = [r for r in res if r[2]]
-bad = [r for r in res if not r[2]]
-print(f"the tracker's stored link opens the car: {len(ok)}; doesn't: {len(bad)}")
-kinds = collections.Counter()
-rows = []
-for c, code, good, d in bad:
-    p = raw.get(c["pid"])
-    if not p:
-        kinds["no longer on any shelf"] += 1
-        rows.append({**c, "http": code, "why": "gone"})
-        continue
-    slug = str(p["slug"])
-    tail = "trailing nbsp" if slug != slug.rstrip() else ("has ?#%" if re.search(r"[?#%]", slug) else "other")
-    kinds[tail] += 1
-    u2 = new_url(slug, c["pid"])
-    code2, good2, _ = opens(u2, c["pid"])
-    rows.append({**c, "http": code, "raw_slug": slug, "in_stock_now": p.get("in_stock"), "new_url": u2, "new_http": code2, "new_opens": good2})
-    print(f"  ✗ {code} {c['url'][len(KD):][:90]!r}\n      raw slug {slug!r} in_stock={p.get('in_stock')} → new link HTTP {code2} opens: {good2}")
-print("why the failures:", dict(kinds))
-# the trimmed-vs-raw question for every in-stock car on the shelves whose slug ends in whitespace
-trail = [p for p in raw.values() if str(p["slug"]) != str(p["slug"]).rstrip() and str(p.get("in_stock")) == "1"]
-print(f"\n{len(trail)} in-stock shelf cars have a slug ending in (non-breaking) space; trimmed vs raw vs new:")
-T = collections.Counter()
-for p in trail[:40]:
-    slug, pid = str(p["slug"]), str(p["pid"])
-    a = opens(f"{KD}/details/{quote(slug.strip(), safe='-_.~')}?pid={pid}", pid)[1]
-    b = opens(new_url(slug, pid), pid)[1]
-    T[(a, b)] += 1
-    if not (a and b):
-        print(f"  trimmed opens: {a}  new opens: {b}  {slug!r}")
-print("  (trimmed opens, new opens):", dict(T))
-print("\n=== the McLaren in KND's search ===")
-for term in ("boring concept", "720s", "lb works mclaren"):
-    code, page = get(f"{KD}/search?term={quote(term)}")
-    for p in prods(page):
-        if "720" in str(p.get("pro_name")) or "BORING" in str(p.get("pro_name")).upper():
-            print(f"  {term!r}: pid={p['pid']} in_stock={p.get('in_stock')} ₹{p.get('dis_price')} sku={str(p.get('sku')).strip()!r} name={str(p.get('pro_name')).strip()!r} slug={str(p.get('slug'))!r}")
-json.dump({"bad": rows, "ok": len(ok), "trail": dict((str(k), v) for k, v in T.items())}, open("probe_report.json", "w"), indent=1, default=str)
+    res = list(ex.map(lambda d: (d, *opens(d)), pick))
+good = sum(1 for _, _, ok in res if ok)
+print(f"\nlinks checked: {len(res)} in-stock ({len(odd)} with a twice-encoded character) — open the right car: {good}")
+for d, code, ok in res:
+    if not ok or d in odd:
+        print(f"  {'OK ' if ok else 'BAD'} HTTP {code} {d['name'][:60]!r} {d['url'][len(b._KD):][:90]!r}")
+json.dump({"labels": dict(lab), "unlabelled": unl, "dup": dup, "checked": len(res), "open": good,
+           "items": [{k: d[k] for k in ("id", "name", "url", "stock", "price")} for d in items]},
+          open("probe_report.json", "w"), indent=1, ensure_ascii=False)
