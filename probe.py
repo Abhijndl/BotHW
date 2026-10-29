@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Probe #44: Karz & Dolls — does the tracker's link format open a product that
-IS in stock (so a 404 means "sold out / taken down")? What do KND's own links
-look like? And how do the box and blister-pack shelves tell their cars apart?"""
-import json, re, time, html, collections
+"""Probe #45: Karz & Dolls — do links open for IN-STOCK cars whose own slug has
+unusual characters (non-breaking spaces, '?', '#', '%', '&', '+', '/', '*',
+accents)? Tries the tracker's link and a few other ways for each, across every
+shelf the tracker reads. Read-only."""
+import json, re, html, collections
 from urllib.parse import quote
 from curl_cffi import requests as http
 IMP = {"impersonate": "chrome124"}
@@ -10,14 +11,17 @@ H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
      "Accept-Language": "en-IN,en;q=0.9", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
 KD = "https://www.karzanddolls.com"
 NEXT = re.compile(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', re.S)
+SHELVES = ["/hot-wheels/mainlines", "/hot-wheels/pop-culture", "/hot-wheels/card-art-premiums", "/hot-wheels/car-culture",
+           "/hot-wheels/fast-and-furious", "/hot-wheels/team-transport", "/mini-gt/mini-gt", "/mini-gt/mini-gt-blister-pack",
+           "/mini-gt/kaido-house", "/pre-orders/pre-order-minigt", "/specials/chase-car", "/specials/special-stocks-64-43-scale", "/"]
 
 
 def get(url):
     try:
         r = http.get(url, headers=H, timeout=25, allow_redirects=True, **IMP)
-        return r.status_code, r.text, str(r.url)
+        return r.status_code, r.text
     except Exception as e:
-        return None, "", type(e).__name__
+        return None, ""
 
 
 def products(page):
@@ -38,61 +42,39 @@ def products(page):
     return found
 
 
-shelf = {}
-for path in ["/mini-gt/mini-gt", "/mini-gt/mini-gt-blister-pack"]:
-    code, page, _ = get(KD + path)
-    ps = products(page)
-    shelf[path] = ps
-    print(f"=== {path}: HTTP {code}, {len(ps)} products")
-    if ps:
-        print("  fields of a product:", sorted(ps[0].keys()))
-        for p in ps[:6]:
-            print("   ", {k: p.get(k) for k in ("pid", "pro_name", "slug", "product_sname", "sku", "in_stock", "act_price", "dis_price",
-                                                  "cat_name", "subcat_name", "category", "sub_category", "pack", "packaging", "type")
-                       if k in p})
-    links = re.findall(r'href="(/details/[^"]+)"', page or "")
-    print(f"  KND's own product links on this page: {len(links)}; e.g. {[html.unescape(x) for x in links[:3]]}")
-
-# the same car on both shelves? (box and blister of one model)
-names = collections.defaultdict(list)
-for path, ps in shelf.items():
-    for p in ps:
-        names[re.sub(r"[^A-Z0-9]", "", str(p.get("pro_name", "")).upper())].append((path, p))
-both = {k: v for k, v in names.items() if len({x[0] for x in v}) > 1}
-print(f"\n=== models listed on BOTH shelves: {len(both)}")
-for k, v in list(both.items())[:8]:
-    for path, p in v:
-        print(f"   {path:32} pid={p.get('pid')} ₹{p.get('dis_price') or p.get('act_price')} in_stock={p.get('in_stock')} sku={p.get('sku')!r} sname={p.get('product_sname')!r} name={p.get('pro_name')!r}")
-dup_same_shelf = {k: v for k, v in names.items() if len(v) > 1 and len({x[0] for x in v}) == 1}
-print(f"=== same name twice on one shelf: {len(dup_same_shelf)}")
-for k, v in list(dup_same_shelf.items())[:5]:
-    for path, p in v:
-        print(f"   {path:32} pid={p.get('pid')} ₹{p.get('dis_price') or p.get('act_price')} sku={p.get('sku')!r} sname={p.get('product_sname')!r} name={p.get('pro_name')!r}")
-# words in blister-shelf names / skus vs box-shelf ones
-for path, ps in shelf.items():
-    c = collections.Counter()
-    for p in ps:
-        t = (str(p.get("pro_name")) + " " + str(p.get("sku")) + " " + str(p.get("product_sname"))).upper()
-        for w in ("BLISTER", "BOX", "CARD", "PACK", "BL", "-B"):
-            if w in t:
-                c[w] += 1
-    print(f"  words on {path}: {dict(c)}  (of {len(ps)})")
-
-print("\n=== does the tracker's link format open an in-stock car? ===")
-tested = 0
-for path, ps in shelf.items():
-    for p in ps:
-        if str(p.get("in_stock")) not in ("1", "True", "true"):
+allp, own_links = {}, {}
+for s in SHELVES:
+    code, page = get(KD + s)
+    for p in products(page):
+        allp[str(p["pid"])] = p
+    for mm in re.finditer(r'href="(/details/[^"]*?pid=([^"&]+))"', page or ""):
+        own_links[mm.group(2)] = html.unescape(mm.group(1))
+print(f"{len(allp)} products on {len(SHELVES)} shelves")
+odd = [p for p in allp.values() if re.search(r"[^a-z0-9\-]", str(p.get("slug") or ""))]
+c = collections.Counter(ch for p in odd for ch in set(re.sub(r"[a-z0-9\-]", "", str(p.get("slug")))))
+print(f"{len(odd)} have a slug with other characters: {dict(c)}")
+inst = [p for p in odd if str(p.get("in_stock")) in ("1", "True", "true")]
+print(f"…{len(inst)} of them in stock now\n")
+seen_chars = set()
+for p in inst:
+    chars = frozenset(re.sub(r"[a-z0-9\-]", "", str(p.get("slug"))))
+    if chars in seen_chars and len(seen_chars) > 6:
+        continue
+    seen_chars.add(chars)
+    slug, pid, nm = str(p["slug"]), str(p["pid"]), str(p["pro_name"])
+    probe_word = re.sub(r"[^A-Z0-9 ]", " ", nm.upper()).split()[2:4] or nm.upper().split()[:1]
+    def shows(page):
+        return all(w in (page or "").upper() for w in probe_word) and "Page not found" not in (page or "")
+    tries = [("tracker's link", f"{KD}/details/{quote(slug, safe='-_.~')}?pid={quote(pid, safe='')}"),
+             ("raw slug", f"{KD}/details/{slug}?pid={pid}"),
+             ("KND's own href", KD + own_links[pid] if pid in own_links else None),
+             ("slug trimmed+NBSP→space→-", f"{KD}/details/{quote(re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', slug.lower())).strip('-'))}?pid={pid}")]
+    print(f"--- {nm[:60]!r} slug={slug!r} chars={sorted(chars)}")
+    for label, url in tries:
+        if not url:
+            print(f"    {label:26} (none on the shelf page)")
             continue
-        slug, pid = str(p.get("slug") or ""), str(p.get("pid"))
-        for label, url in (("tracker's link", f"{KD}/details/{quote(slug, safe='-_.~')}?pid={quote(pid, safe='')}"),
-                           ("slug 'x'", f"{KD}/details/x?pid={pid}"),
-                           ("no ?pid", f"{KD}/details/{quote(slug, safe='-_.~')}")):
-            code, page, final = get(url)
-            nm = str(p.get("pro_name"))[:30]
-            print(f"  {label:15} HTTP {code}  page shows '{nm}': {nm.upper()[:20] in (page or '').upper()}  404: {'Page not found' in (page or '')}  {url[len(KD):][:90]}")
-        tested += 1
-        if tested >= 3:
-            break
-    if tested >= 3:
+        code, page = get(url)
+        print(f"    {label:26} HTTP {code}  opens it: {shows(page)}   {url[len(KD):][:100]!r}")
+    if len(seen_chars) > 8:
         break
