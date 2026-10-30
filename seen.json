@@ -4602,7 +4602,6 @@
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-24T13:28:14",
-    "fc_arr": "2026-10-30T21:02:39",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11174,7 +11173,7 @@
     "fc_listed_at": "2026-10-30T21:00:00",
     "fc_api_seen_at": "2026-10-30T21:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22912948",
     "fc_cart": "n",
@@ -13713,7 +13712,7 @@
   "fc_24473513": {
     "stock": "in_stock",
     "name": "Hot Wheels Voltage Spike Die-Cast Toy Car -Orange & Yellow",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-voltage-spike-die-cast-toy-car-orange-and-yellow/24473513/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13736,7 +13735,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -16168,7 +16167,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -16645,7 +16644,7 @@
   "fc_23074612": {
     "stock": "in_stock",
     "name": "Hot Wheels Free Wheel Die Cast VW ID Buzz Bomb (86/250) Toy Car - Blue/White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-free-wheel-die-cast-vw-id-buzz-bomb-86-250-toy-car-blue-white/23074612/product-detail",
     "first_seen": "2026-09-21T04:11:10",
