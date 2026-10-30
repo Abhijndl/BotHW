@@ -10641,7 +10641,7 @@
     "fc_listed_at": "2026-10-30T15:00:00",
     "fc_api_seen_at": "2026-10-30T15:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "22597417",
     "fc_phantom": "2026-10-24T17:20:27",
@@ -13308,7 +13308,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -14044,7 +14044,7 @@
     "fc_lst": "out",
     "fc_gid": "24314518",
     "fc_phantom": "2026-10-23T13:18:17",
-    "fc_off": "2026-10-30T14:54:20",
+    "fc_off": "2026-10-30T15:06:22",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14581,7 +14581,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-30T10:40:26",
-    "fc_off": "2026-10-30T14:54:09",
+    "fc_off": "2026-10-30T15:06:22",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -22282,8 +22282,9 @@
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-10-24T04:58:35",
+    "fc_arr": "2026-10-30T15:05:49",
     "fc_cart": "y",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-10-27T12:28:42",
     "fc_lst_seen": "2026-10-27T13:00:00"
   },
@@ -23369,7 +23370,7 @@
   "fc_23345502": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-48-250-monster-hi-ghoul-mobilegh-toy-car-pink/23345502/product-detail",
     "first_seen": "2026-10-21T02:00:00",
@@ -23392,7 +23393,7 @@
   "fc_24783698": {
     "stock": "in_stock",
     "name": "Hot Wheels Duck N Roll Toy Car - PInk",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-duck-n-roll-toy-car-pink/24783698/product-detail",
     "first_seen": "2026-10-21T15:15:00",
@@ -23415,7 +23416,7 @@
   "fc_24783697": {
     "stock": "in_stock",
     "name": "Hot Wheel RIDGE CREST GT (248/250) Toy Car - GREEN",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheel-ridge-crest-gt-248-250-toy-car-green/24783697/product-detail",
     "first_seen": "2026-10-21T15:15:00",
@@ -23438,7 +23439,7 @@
   "fc_24783758": {
     "stock": "in_stock",
     "name": "Hot Wheels Chop N Bloc (182/250) Toy Car - Red/White",
-    "price": "₹173",
+    "price": "₹174",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chop-n-bloc-182-250-toy-car-red-white/24783758/product-detail",
     "first_seen": "2026-10-21T15:30:00",
