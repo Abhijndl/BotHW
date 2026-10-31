@@ -3730,7 +3730,6 @@
     "fc_lst": "out",
     "fc_gid": "23345759",
     "fc_phantom": "2026-10-31T04:44:43",
-    "fc_arr": "2026-10-31T10:26:08",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-31T04:27:05",
@@ -10393,7 +10392,7 @@
     "fc_listed_at": "2026-10-04T19:30:00",
     "fc_api_seen_at": "2026-10-31T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22597417",
     "fc_cart": "n",
@@ -10651,7 +10650,7 @@
     "fc_listed_at": "2026-10-31T04:15:00",
     "fc_api_seen_at": "2026-10-31T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22597417",
     "fc_phantom": "2026-10-24T17:20:27",
@@ -10999,7 +10998,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -11035,7 +11034,7 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -11666,7 +11665,7 @@
     "fc_lst": "out",
     "fc_gid": "22597417",
     "fc_phantom": "2026-10-29T21:28:17",
-    "fc_off": "2026-10-31T10:16:18",
+    "fc_off": "2026-10-31T10:28:19",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -13322,7 +13321,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -13345,7 +13344,7 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -14256,7 +14255,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹519",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14920,7 +14919,7 @@
     "fc_gid": "24503746",
     "fc_phantom": "2026-10-23T11:48:44",
     "fc_cart": "y",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_23930428": {
     "stock": "in_stock",
@@ -15413,7 +15412,7 @@
     "fc_listed_at": "2026-10-31T10:15:00",
     "fc_api_seen_at": "2026-10-31T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-23T20:10:12",
@@ -15460,7 +15459,7 @@
     "fc_listed_at": "2026-10-30T13:15:00",
     "fc_api_seen_at": "2026-10-31T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-27T08:36:55",
@@ -15517,7 +15516,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹584",
+    "price": "₹597",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -22243,7 +22242,7 @@
     "fc_listed_at": "2026-10-31T10:15:00",
     "fc_api_seen_at": "2026-10-31T10:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-10-29T02:26:47",
@@ -23384,7 +23383,7 @@
   "fc_23345502": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-48-250-monster-hi-ghoul-mobilegh-toy-car-pink/23345502/product-detail",
     "first_seen": "2026-10-21T02:00:00",
