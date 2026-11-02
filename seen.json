@@ -6285,7 +6285,7 @@
     "hm_verified_at": "2026-11-02T07:00:00"
   },
   "fc_24194176": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 5 Pack Toy Cars 1:64 Scale Die-Cast Free Wheel Batman Super Villains Silver Series - Multicolor",
     "price": "₹1399",
     "source": "firstcry",
@@ -6300,15 +6300,14 @@
     "fc_listed_at": "2026-10-26T04:15:00",
     "fc_api_seen_at": "2026-11-02T08:00:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24194176",
     "fc_phantom": "2026-11-02T08:00:28",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T10:05:19",
-    "fc_lst_seen": "2026-10-26T04:15:00",
-    "fc_hold": "2026-11-02T08:02:38"
+    "fc_lst_seen": "2026-10-26T04:15:00"
   },
   "fc_24194174": {
     "stock": "in_stock",
@@ -13607,7 +13606,7 @@
   "fc_24108016": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Vehicle Toys in 1:64 Scale Pack of 2 - Red",
-    "price": "₹301",
+    "price": "₹300",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-vehicle-toys-in-1-64-scale-pack-of-2-red/24108016/product-detail",
     "first_seen": "2026-09-17T03:01:39",
@@ -16125,7 +16124,7 @@
     "fc_listed_at": "2026-11-02T08:00:00",
     "fc_api_seen_at": "2026-11-02T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_cart": "n",
@@ -16361,6 +16360,7 @@
     "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24472644",
+    "fc_arr": "2026-11-02T08:03:27",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-25T15:31:15",
@@ -18447,7 +18447,7 @@
     "fc_listed_at": "2026-11-02T08:00:00",
     "fc_api_seen_at": "2026-11-02T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-02T04:19:38",
