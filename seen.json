@@ -2639,7 +2639,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "fc_23074611": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Tooned Purple Passion (148/250) Die Cast Free Wheel Toy Car - Purple",
     "price": "₹179",
     "source": "firstcry",
@@ -2647,16 +2647,16 @@
     "first_seen": "2026-07-18T05:30:14",
     "last_seen": "2026-11-03T03:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-28T14:27:07",
+    "last_restock_alert": "2026-11-03T03:04:05",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-03T03:00:00",
     "fc_api_seen_at": "2026-11-03T03:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "23074178",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-01T15:38:33",
     "fc_lst_seen": "2026-11-03T03:00:00"
@@ -13336,7 +13336,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -14899,7 +14899,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -16054,7 +16054,7 @@
     "fc_listed_at": "2026-11-03T03:00:00",
     "fc_api_seen_at": "2026-11-03T03:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-10-31T07:05:24",
@@ -18375,7 +18375,7 @@
     "fc_listed_at": "2026-11-03T03:00:00",
     "fc_api_seen_at": "2026-11-03T03:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24390959",
     "fc_cart": "n",
@@ -18424,7 +18424,7 @@
     "fc_listed_at": "2026-11-03T03:00:00",
     "fc_api_seen_at": "2026-11-03T03:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24390957",
     "fc_cart": "n",
@@ -21598,7 +21598,7 @@
   "fc_24768902": {
     "stock": "in_stock",
     "name": "Hot Wheels Deora Tooned Die Cast Free Wheel Toy Car - Maroon",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-deora-tooned-die-cast-free-wheel-toy-car-maroon/24768902/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22130,7 +22130,7 @@
   "fc_24776435": {
     "stock": "in_stock",
     "name": "Hot Wheels Scremliner (141/250) Die Cast Toy Car - Blue",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-scremliner-141-250-die-cast-toy-car-blue/24776435/product-detail",
     "first_seen": "2026-10-16T12:30:00",
@@ -22251,7 +22251,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22567,7 +22567,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22590,7 +22590,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22613,7 +22613,7 @@
   "fc_24776078": {
     "stock": "in_stock",
     "name": "Hot Wheels Birthday Burner (82/250) Toy Car - Red",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-birthday-burner-82-250-toy-car-red/24776078/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -23428,7 +23428,7 @@
   "fc_23345502": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 48/250 Monster Hi Ghoul Mobilegh Toy Car - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-48-250-monster-hi-ghoul-mobilegh-toy-car-pink/23345502/product-detail",
     "first_seen": "2026-10-21T02:00:00",
@@ -23451,7 +23451,7 @@
   "fc_24783698": {
     "stock": "in_stock",
     "name": "Hot Wheels Duck N Roll Toy Car - PInk",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-duck-n-roll-toy-car-pink/24783698/product-detail",
     "first_seen": "2026-10-21T15:15:00",
@@ -23474,7 +23474,7 @@
   "fc_24783697": {
     "stock": "in_stock",
     "name": "Hot Wheel RIDGE CREST GT (248/250) Toy Car - GREEN",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheel-ridge-crest-gt-248-250-toy-car-green/24783697/product-detail",
     "first_seen": "2026-10-21T15:15:00",
@@ -23497,7 +23497,7 @@
   "fc_24783758": {
     "stock": "in_stock",
     "name": "Hot Wheels Chop N Bloc (182/250) Toy Car - Red/White",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chop-n-bloc-182-250-toy-car-red-white/24783758/product-detail",
     "first_seen": "2026-10-21T15:30:00",
