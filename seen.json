@@ -3712,7 +3712,7 @@
     "fc_lst": "out",
     "fc_gid": "23074890",
     "fc_phantom": "2026-10-24T15:39:36",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-01T11:58:15",
     "fc_lst_seen": "2026-11-01T13:15:00"
@@ -4702,7 +4702,6 @@
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-27T11:01:52",
-    "fc_arr": "2026-11-04T09:03:37",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T14:31:43",
@@ -12923,7 +12922,7 @@
     "fc_listed_at": "2026-11-04T09:00:00",
     "fc_api_seen_at": "2026-11-04T09:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-02T16:31:58",
@@ -13356,7 +13355,7 @@
   "fc_23346006": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 39/250 Roler Toasetr - Pink",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-39-250-roler-toasetr-pink/23346006/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -23519,7 +23518,7 @@
   "fc_24783758": {
     "stock": "in_stock",
     "name": "Hot Wheels Chop N Bloc (182/250) Toy Car - Red/White",
-    "price": "₹174",
+    "price": "₹173",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-chop-n-bloc-182-250-toy-car-red-white/24783758/product-detail",
     "first_seen": "2026-10-21T15:30:00",
