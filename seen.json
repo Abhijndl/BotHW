@@ -3737,6 +3737,7 @@
     "fc_lst": "out",
     "fc_gid": "23345759",
     "fc_phantom": "2026-11-04T12:11:52",
+    "fc_arr": "2026-11-05T04:14:03",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-04T12:28:00",
@@ -6428,10 +6429,10 @@
     "fc_listed_at": "2026-10-24T13:00:00",
     "fc_api_seen_at": "2026-11-05T03:45:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24248198",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1"
   },
   "fc_24246598": {
@@ -10451,7 +10452,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-03T03:32:14",
-    "fc_off": "2026-11-05T04:04:15",
+    "fc_off": "2026-11-05T04:14:27",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14769,8 +14770,7 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24248198",
-    "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_cart": "n"
   },
   "fc_24246597": {
     "stock": "out_of_stock",
@@ -14987,7 +14987,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-03T08:34:21",
-    "fc_off": "2026-11-05T04:04:15",
+    "fc_off": "2026-11-05T04:14:27",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -19771,7 +19771,6 @@
     "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "1",
-    "fc_arr": "2026-11-05T04:13:01",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -21596,7 +21595,7 @@
     "fc_listed_at": "2026-11-05T04:00:00",
     "fc_api_seen_at": "2026-11-05T04:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-04T11:30:37",
@@ -21811,7 +21810,6 @@
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-03T10:09:09",
-    "fc_arr": "2026-11-05T04:13:01",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-03T09:50:26",
@@ -22357,7 +22355,7 @@
     "fc_lst_seen": "2026-11-03T13:45:00"
   },
   "fc_24776064": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
     "price": "₹165",
     "source": "firstcry",
@@ -22371,11 +22369,11 @@
     "fc_listed_at": "2026-11-05T04:00:00",
     "fc_api_seen_at": "2026-11-05T04:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
-    "fc_phantom": "2026-11-04T20:10:27",
-    "fc_cart": "y",
+    "fc_phantom": "2026-11-05T04:14:05",
+    "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-04T20:26:42",
     "fc_lst_seen": "2026-11-05T04:00:00"
@@ -23594,15 +23592,14 @@
     "fc_listed_at": "2026-11-05T04:00:00",
     "fc_api_seen_at": "2026-11-05T04:00:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-05T04:13:03",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-04T20:49:32",
-    "fc_lst_seen": "2026-11-05T04:00:00",
-    "fc_hold": "2026-11-05T04:13:09"
+    "fc_lst_seen": "2026-11-05T04:00:00"
   },
   "fc_24783699": {
     "stock": "out_of_stock",
