@@ -4895,7 +4895,8 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23075650": {
     "stock": "out_of_stock",
@@ -5521,7 +5522,8 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23355051": {
     "stock": "out_of_stock",
@@ -12932,7 +12934,7 @@
     "fc_listed_at": "2026-11-06T20:45:00",
     "fc_api_seen_at": "2026-11-06T20:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-06T06:30:24",
@@ -13745,7 +13747,7 @@
   "fc_24473712": {
     "stock": "in_stock",
     "name": "Hot Wheels Salt Streaker Die-Cast Toy Car - Blue Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-salt-streaker-die-cast-toy-car-blue-orange/24473712/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -21135,7 +21137,7 @@
     "fc_listed_at": "2026-11-05T07:30:00",
     "fc_api_seen_at": "2026-11-06T20:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24235312",
     "fc_phantom": "2026-11-06T09:12:49",
@@ -24322,7 +24324,7 @@
     "fc_listed_at": "2026-11-06T20:45:00",
     "fc_api_seen_at": "2026-11-06T20:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24776132",
     "fc_new_pending": "2026-10-26T15:18:42",
@@ -25439,7 +25441,7 @@
     "fc_listed_at": "2026-11-06T20:45:00",
     "fc_api_seen_at": "2026-11-06T20:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892560",
     "fc_new_pending": "2026-11-05T14:00:27",
