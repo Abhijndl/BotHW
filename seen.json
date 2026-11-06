@@ -3859,7 +3859,7 @@
     "fc_listed_at": "2026-11-06T17:30:00",
     "fc_api_seen_at": "2026-11-06T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_phantom": "2026-11-06T10:45:14",
@@ -4141,7 +4141,7 @@
     "fc_listed_at": "2026-11-06T06:15:00",
     "fc_api_seen_at": "2026-11-06T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -4290,7 +4290,7 @@
     "fc_listed_at": "2026-11-06T17:30:00",
     "fc_api_seen_at": "2026-11-06T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-11-04T14:32:01",
@@ -4895,7 +4895,8 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23075650": {
     "stock": "out_of_stock",
@@ -4991,7 +4992,7 @@
     "fc_listed_at": "2026-11-06T17:30:00",
     "fc_api_seen_at": "2026-11-06T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_phantom": "2026-10-26T13:05:51",
@@ -5521,7 +5522,8 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23355051": {
     "stock": "out_of_stock",
@@ -16044,7 +16046,7 @@
     "fc_listed_at": "2026-11-06T17:30:00",
     "fc_api_seen_at": "2026-11-06T17:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-05T13:57:49",
@@ -16081,7 +16083,7 @@
   "fc_24475737": {
     "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16225,7 +16227,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -24241,7 +24243,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
