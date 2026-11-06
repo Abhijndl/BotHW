@@ -3859,7 +3859,7 @@
     "fc_listed_at": "2026-11-06T21:15:00",
     "fc_api_seen_at": "2026-11-06T21:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_phantom": "2026-11-06T10:45:14",
@@ -4141,7 +4141,7 @@
     "fc_listed_at": "2026-11-06T06:15:00",
     "fc_api_seen_at": "2026-11-06T21:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -4895,7 +4895,8 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23075650": {
     "stock": "out_of_stock",
@@ -4991,7 +4992,7 @@
     "fc_listed_at": "2026-11-06T21:15:00",
     "fc_api_seen_at": "2026-11-06T21:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_phantom": "2026-10-26T13:05:51",
@@ -5521,7 +5522,8 @@
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23355051": {
     "stock": "out_of_stock",
@@ -16057,7 +16059,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -24286,7 +24288,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
