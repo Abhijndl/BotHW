@@ -13879,7 +13879,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-27T18:33:33",
     "fc_lst_seen": "2026-10-27T19:30:00"
   },
@@ -13927,7 +13926,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-29T06:31:14",
     "fc_lst_seen": "2026-10-29T07:45:00"
   },
@@ -14350,7 +14348,7 @@
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14464,7 +14462,7 @@
   "fc_24473388": {
     "stock": "in_stock",
     "name": "Hot Wheels Hoto Roto Die Cast Free Wheel Toy Car - Golden",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hoto-roto-die-cast-free-wheel-toy-car-golden/24473388/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14510,7 +14508,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -15154,7 +15152,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15483,7 +15481,7 @@
     "fc_listed_at": "2026-11-07T19:15:00",
     "fc_api_seen_at": "2026-11-07T19:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-23T20:10:12",
@@ -15530,7 +15528,7 @@
     "fc_listed_at": "2026-11-07T04:00:00",
     "fc_api_seen_at": "2026-11-07T19:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-04T19:25:03",
@@ -15678,7 +15676,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -16222,7 +16220,6 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-06T17:43:38",
-    "fc_arr": "2026-11-07T19:27:39",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-06T17:32:30",
@@ -16295,8 +16292,7 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-10-24T14:40:52",
-    "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_cart": "n"
   },
   "fc_24475206": {
     "stock": "out_of_stock",
@@ -16409,7 +16405,6 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-25T15:31:15",
     "fc_lst_seen": "2026-10-25T16:00:00"
   },
@@ -21603,7 +21598,7 @@
   "fc_24761909": {
     "stock": "in_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-die-cast-free-wheel-toy-car-blue-and-black/24761909/product-detail",
     "first_seen": "2026-10-13T13:30:00",
@@ -21791,7 +21786,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21814,7 +21809,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
