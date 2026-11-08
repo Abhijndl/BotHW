@@ -6388,7 +6388,7 @@
     "fc_listed_at": "2026-11-08T02:45:00",
     "fc_api_seen_at": "2026-11-08T02:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23347148",
     "fc_cart": "n",
@@ -13704,7 +13704,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13753,7 +13753,7 @@
   "fc_24473712": {
     "stock": "in_stock",
     "name": "Hot Wheels Salt Streaker Die-Cast Toy Car - Blue Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-salt-streaker-die-cast-toy-car-blue-orange/24473712/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14288,7 +14288,7 @@
     "fc_listed_at": "2026-11-08T02:45:00",
     "fc_api_seen_at": "2026-11-08T02:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24341962",
     "fc_cart": "n",
@@ -16007,7 +16007,8 @@
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-25T03:04:41",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_24474449": {
     "stock": "out_of_stock",
@@ -18423,7 +18424,7 @@
     "fc_listed_at": "2026-11-08T02:45:00",
     "fc_api_seen_at": "2026-11-08T02:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24390959",
     "fc_cart": "n",
@@ -18472,7 +18473,7 @@
     "fc_listed_at": "2026-11-08T02:45:00",
     "fc_api_seen_at": "2026-11-08T02:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24390957",
     "fc_cart": "n",
@@ -18524,6 +18525,7 @@
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-06T06:36:55",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-06T13:45:11",
     "fc_lst_seen": "2026-11-06T14:00:00"
   },
@@ -22644,7 +22646,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
