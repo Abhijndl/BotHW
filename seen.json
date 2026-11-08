@@ -13879,7 +13879,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-27T18:33:33",
     "fc_lst_seen": "2026-10-27T19:30:00"
   },
@@ -13927,7 +13926,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-29T06:31:14",
     "fc_lst_seen": "2026-10-29T07:45:00"
   },
@@ -14288,7 +14286,7 @@
     "fc_listed_at": "2026-11-08T02:45:00",
     "fc_api_seen_at": "2026-11-08T02:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24341962",
     "fc_cart": "n",
@@ -14350,7 +14348,7 @@
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -15678,7 +15676,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
