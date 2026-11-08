@@ -4676,7 +4676,7 @@
     "fc_listed_at": "2026-11-08T07:00:00",
     "fc_api_seen_at": "2026-11-08T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22928006",
     "fc_cart": "n",
@@ -6688,9 +6688,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-05T09:15:00",
-    "fc_api_seen_at": "2026-11-08T06:45:00",
+    "fc_api_seen_at": "2026-11-08T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24248198",
     "fc_phantom": "2026-10-30T19:26:45",
@@ -13766,7 +13766,7 @@
     "fc_listed_at": "2026-11-08T07:00:00",
     "fc_api_seen_at": "2026-11-08T07:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_cart": "n",
@@ -14166,7 +14166,7 @@
   "fc_24248198": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Toy Car with Click Shift Feature (178/250) - Silver Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-with-click-shift-feature-178-250-silver-orange/24248198/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14652,7 +14652,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-06T20:21:08",
-    "fc_off": "2026-11-08T06:54:03",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15488,8 +15487,7 @@
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-23T20:10:12",
-    "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_cart": "n"
   },
   "fc_24473477": {
     "stock": "out_of_stock",
@@ -15612,7 +15610,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15635,7 +15633,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -15768,7 +15766,6 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-02T16:29:36",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-31T07:01:27",
     "fc_lst_seen": "2026-10-31T07:30:00",
     "last_ring": "2026-11-02T16:28:43"
@@ -16129,7 +16126,6 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-25T05:47:06",
     "fc_lst_seen": "2026-10-25T06:30:00"
   },
@@ -16224,7 +16220,6 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-07T21:29:52",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-07T21:04:53",
     "fc_lst_seen": "2026-11-07T22:00:00"
   },
@@ -18103,7 +18098,7 @@
   "fc_24247519": {
     "stock": "in_stock",
     "name": "Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (118/250) - Red & Gold",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pedal-driver-die-cast-free-wheel-toy-car-118-250-red-and-gold/24247519/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -21137,7 +21132,7 @@
     "fc_listed_at": "2026-11-08T07:00:00",
     "fc_api_seen_at": "2026-11-08T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24235312",
     "fc_phantom": "2026-11-06T09:12:49",
@@ -21812,7 +21807,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
