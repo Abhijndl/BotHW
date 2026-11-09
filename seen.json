@@ -2836,9 +2836,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-03T04:00:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-24T14:38:15",
@@ -3581,7 +3581,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -3616,9 +3616,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-30T09:15:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-21T19:33:58",
@@ -4255,9 +4255,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-23T18:15:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-23T16:33:09",
@@ -4291,7 +4291,7 @@
     "last_price_alert": "2026-10-23T08:37:07",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-08T07:30:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "list",
@@ -4557,7 +4557,7 @@
     "fc_listed_at": "2026-11-08T06:30:00",
     "fc_api_seen_at": "2026-11-09T04:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23345759",
     "fc_phantom": "2026-11-07T00:04:39",
@@ -5635,7 +5635,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -5672,7 +5672,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24236112",
     "fc_phantom": "2026-11-04T04:33:04",
@@ -6129,9 +6129,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-03T10:30:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -6318,7 +6318,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-06T22:30:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -6757,7 +6757,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-color-reveal-blind-1-box-set-of-2-cars?pid=BZgkdlGNaz",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6781,7 +6781,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-set-of-5?pid=6nNVYyXgYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6793,7 +6793,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-pop-culture-assortment-set-of-5-cars-955k?pid=V2gJRwAge4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-03T02:50:21",
     "last_price_alert": ""
@@ -6805,7 +6805,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/kool-kombi-hot-wheels-80th-anniversary?pid=BwL6916N4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6841,7 +6841,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-pack-of-10?pid=V2gJemWpe4",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6865,7 +6865,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-gift-pack-with-mario-kart-yoshi?pid=y7gG94vLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6877,7 +6877,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-gift-pack-with-mario-kart-bowser-jr?pid=RWg8VyKLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6889,7 +6889,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-formula-1-gift-pack-with-mario-kart-toad?pid=e7g58xmpmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6913,7 +6913,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/tooned-hot-wheels-gift-pack?pid=8JNqro8L4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6925,7 +6925,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/baja-blazers-hot%C2%A0wheels%C2%A0gift%C2%A0pack?pid=GoL1mX5LBA",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-01T12:00:25",
     "last_price_alert": ""
@@ -6937,7 +6937,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-getaways-5-pack?pid=Pqp2J8np36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6949,7 +6949,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-action-5-pack?pid=10gzoekNAV",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6985,7 +6985,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-performance-trucks-lineup-2026-set-of-5?pid=OdNZBvRNzk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -6997,7 +6997,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-batman-themed-2026-mix-2?pid=QJgn265gl6",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -7021,7 +7021,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-silver-series-2026-legends-set-of-6-car-box-set-jlb24?pid=y7gG9wMLre",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -7033,7 +7033,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-batman-silver-series-set-of-5-car-?pid=6nNVYMagYk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -7045,7 +7045,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-team-transport-2026-mix-3-set-of-3?pid=BwL6Gvep4q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "2026-09-30T04:55:52"
@@ -7057,7 +7057,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot%C2%A0wheels%C2%A0mario%C2%A0kart%C2%A0assortment%C2%A0of%C2%A08?pid=OyLoZXxNb2",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -7069,7 +7069,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-mario-kart-mario-with-bowser-jr?pid=E5N4nyqpMq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8246,7 +8246,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s13-r-circuit-spec-v1?pid=Pqp2neYp36",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8258,7 +8258,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-silverado-kaido-intimidator-v1?pid=RWg8VRwLKe",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8282,7 +8282,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1%C2%A0%C2%A0-?pid=aPgdn5aLJq",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8294,7 +8294,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-nissan-skyline-2000gtr-kpgc10-kaido-works-v2?pid=lng33P9gqy",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8306,7 +8306,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-kaido-510-wagon-4x4-kaido-islands-v1?pid=e7g58bQpmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8342,7 +8342,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-kaido-510-wagon-bre-v2?pid=e7g5eOAgmv",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8354,7 +8354,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-kaido-510-wagon-bre-v1?pid=GwLxxqnLXY",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8366,7 +8366,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-greddy-gun-metal-grey?pid=8JNqkyrp4Q",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8378,7 +8378,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-greddy-pearl-white?pid=zONv0jmpBK",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8390,7 +8390,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-bre-v2?pid=OdNZD6Epzk",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -8402,7 +8402,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-datsun-510-pro-street-bre-v1?pid=jPp91MrpDa",
     "first_seen": "2026-09-01T13:58:45",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -10460,6 +10460,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-06T15:42:49",
+    "fc_off": "2026-11-09T04:52:22",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11231,7 +11232,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23345095",
     "fc_phantom": "2026-11-01T07:30:49",
@@ -11495,6 +11496,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-04T14:44:40",
+    "fc_off": "2026-11-09T04:52:22",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-03T07:59:07",
@@ -11844,7 +11846,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -12287,7 +12289,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-silverado-kaido-intimidator-v2?pid=KbNE7KWpR0",
     "first_seen": "2026-09-05T13:49:24",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -12825,7 +12827,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-10-24T05:30:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -13704,7 +13706,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14165,7 +14167,7 @@
   "fc_24248198": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Toy Car with Click Shift Feature (178/250) - Silver Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-with-click-shift-feature-178-250-silver-orange/24248198/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14350,7 +14352,7 @@
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14386,7 +14388,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14464,7 +14466,7 @@
   "fc_24473388": {
     "stock": "in_stock",
     "name": "Hot Wheels Hoto Roto Die Cast Free Wheel Toy Car - Golden",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hoto-roto-die-cast-free-wheel-toy-car-golden/24473388/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14487,7 +14489,7 @@
   "fc_24475217": {
     "stock": "in_stock",
     "name": "Hot Wheels Polestar Die cast Toy car 84/250 -White & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-polestar-die-cast-toy-car-84-250-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14510,7 +14512,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14533,7 +14535,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14861,7 +14863,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -14943,7 +14945,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -15006,6 +15008,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-06T15:42:49",
+    "fc_off": "2026-11-09T04:52:22",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15084,7 +15087,7 @@
   "fc_24475499": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Vehicle Surf and Turf Blue 240/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-vehicle-surf-and-turf-blue-240-250-blue/24475499/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15153,7 +15156,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15529,7 +15532,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-04T19:25:03",
@@ -15610,7 +15613,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15633,7 +15636,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -15677,7 +15680,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -16063,7 +16066,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16087,7 +16090,7 @@
   "fc_24475737": {
     "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16135,7 +16138,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16231,7 +16234,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -16255,7 +16258,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -16370,7 +16373,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -17749,7 +17752,7 @@
     "last_price_alert": "2026-10-23T18:33:31",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-08T22:30:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -17820,7 +17823,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-07T14:30:00",
-    "fc_api_seen_at": "2026-11-09T04:30:00",
+    "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -17864,7 +17867,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "23420412",
     "fc_cart": "n",
@@ -18105,7 +18108,7 @@
   "fc_24247519": {
     "stock": "in_stock",
     "name": "Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (118/250) - Red & Gold",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pedal-driver-die-cast-free-wheel-toy-car-118-250-red-and-gold/24247519/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -19024,7 +19027,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-ford-mustang-convertible-1964-goldfingerenglish-blister-packaging?pid=VbpAQPxprM",
     "first_seen": "2026-09-21T08:51:10",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19036,7 +19039,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-v12-vanquish-die-another-day-english-blister-packaging?pid=KbNE7mWpR0",
     "first_seen": "2026-09-21T08:51:10",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19165,7 +19168,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24503746",
     "fc_phantom": "2026-11-06T07:16:04",
@@ -19281,7 +19284,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-dodge-charger-fast-five-dominic-toretto-blister-packaging?pid=MbgabG0Nq8",
     "first_seen": "2026-09-23T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19947,7 +19950,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-18-lance-stroll-blister-packaging-2024-f1-2024-las-vegas-gp?pid=QJgnwqwNl6",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19959,7 +19962,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-18-lance-stroll-2024-f1-2024-las-vegas-gp?pid=Pqp2mJnL36",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19971,7 +19974,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-14-fernando-alonso-blister-packaging2024-f1-2024-las-vegas-gp?pid=BwL6Pr9g4q",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19983,7 +19986,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-amr24-14-fernando-alonso-2024-f1-2024-las-vegas-gp?pid=eKLwYOOgv0",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -19995,7 +19998,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bugatti-eb110-gt-azzurro-metallizzato-mondial-de-lautomobile-1992-blister-packaging?pid=VbpAQZYprM",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20007,7 +20010,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bugatti-eb110-gt-azzurro-metallizzato-mondial-de-lautomobile-1992?pid=P7pRZOVpjm",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20019,7 +20022,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-temerario-viola-pasifae-blister-packaging?pid=KbNE7eKpR0",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20031,7 +20034,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-temerario-viola-pasifae?pid=6nNVKe8LYk",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20043,7 +20046,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lotus-78-5-mario-andretti-1977-us-gp-west-winner-blister-packaging?pid=10gzY7kpAV",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20055,7 +20058,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lotus-78-5-mario-andretti-1977-us-gp-west-winner?pid=y7gGGX8gre",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20067,7 +20070,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-scania-770s-b8x4na-hooklift-flatbed-orange?pid=RWg8Z9BLKe",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20079,7 +20082,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-vellfire-40-kuhl-metallic-pink-blister-packaging?pid=e7g5We2Lmv",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20091,7 +20094,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-vellfire-40-kuhl-metallic-pink?pid=GwLx0xRLXY",
     "first_seen": "2026-09-28T08:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20117,7 +20120,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-casper-butter-cream-yellow-pearl?pid=4lgOmX0LoQ",
     "first_seen": "2026-09-28T11:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20129,7 +20132,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-staria-taxi?pid=aPgd8RbgJq",
     "first_seen": "2026-09-28T11:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20141,7 +20144,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-hyundai-ioniq-5-police-car?pid=m8pDDqMpv2",
     "first_seen": "2026-09-28T11:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20183,7 +20186,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-2026-neon-speeders-mix-1?pid=8JNqO4Bp4Q",
     "first_seen": "2026-09-30T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-12T13:18:55",
     "last_price_alert": ""
@@ -20337,7 +20340,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-t1-kaido-radvanv1?pid=lng3oQkgqy",
     "first_seen": "2026-10-01T12:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20619,6 +20622,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-05T22:50:18",
+    "fc_off": "2026-11-09T04:52:22",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -20696,7 +20700,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-honda-nsx-kaido-house-nostalgic-classics?pid=ykL0eJMpRZ",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20708,7 +20712,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-datsun-kaido-510-wagon-police?pid=XqLQjyapvD",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20720,7 +20724,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-chevrolet-silverado-dually-kaido-racing-team-v1?pid=rMNMeMkN95",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -20732,7 +20736,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-subaru-impreza-wrx-sti-kaido-works-v1?pid=Mbgabz0Nq8",
     "first_seen": "2026-10-07T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21261,7 +21265,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-mercedes-amg-eqs-53-blue-blister-packaging?pid=6nNVKb8LYk",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21273,7 +21277,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-mercedes-amg-eqs-53-blue?pid=10gzYokpAV",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21285,7 +21289,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-2000gt-pegasus-white-blister-packaging?pid=y7gGG78gre",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21297,7 +21301,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-2000gt-pegasus-white?pid=RWg8ZJBLKe",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21309,7 +21313,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-countach-lb-works-army-green-blister-packaging?pid=e7g5Wb2Lmv",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21321,7 +21325,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-countach-lb-works-army-green?pid=GwLx0rRLXY",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21333,7 +21337,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bmw-z3-titanium-silver-blister-packaging?pid=E5N414ZLMq",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21345,7 +21349,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-bmw-z3-titanium-silver?pid=8JNqydbN4Q",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21357,7 +21361,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-ducati-panigale-v4-s-giallo-w-figure?pid=zONvjmbNBK",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21369,7 +21373,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-staple-x-inozetek-blister-packaging?pid=GvLPeZxpod",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21381,7 +21385,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-staple-x-inozetek?pid=GoL194ALBA",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21393,7 +21397,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lb-silhouette-works-gt-nissan-35gt-rr-ver2-inozetek-edition-blister-packaging?pid=EzglwWvpMr",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21405,7 +21409,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lb-silhouette-works-gt-nissan-35gt-rr-ver2-inozetek-edition?pid=OyLoyW3gb2",
     "first_seen": "2026-10-12T09:00:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21489,7 +21493,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-silvia-s13-r-kaido-splash-v1?pid=P7pRZ5kpjm",
     "first_seen": "2026-10-12T13:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -21607,7 +21611,7 @@
   "fc_24761909": {
     "stock": "in_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mach-speeder-die-cast-free-wheel-toy-car-blue-and-black/24761909/product-detail",
     "first_seen": "2026-10-13T13:30:00",
@@ -21795,7 +21799,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21818,7 +21822,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22142,7 +22146,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/nissan-fairlady-z-kaido-gt-police?pid=VbpAlVVLrM",
     "first_seen": "2026-10-16T06:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22154,7 +22158,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/honda-nsx-kaido-test-car-spec-v1?pid=P7pRJKypjm",
     "first_seen": "2026-10-16T06:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22786,7 +22790,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/kool-kombi-pantone-orange?pid=aPgdnJbLJq",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22798,7 +22802,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/73%C2%A0honda%C2%A0civic%C2%A0custom%C2%A0%C2%A0aero%C2%A0lift?pid=Pqp26OOp36",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22822,7 +22826,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/07-honda-civic-type-r-kousoku-hauler?pid=Pqp2nvKp36",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22834,7 +22838,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-corrado-vr6-with-retro-rigcamion-?pid=zONvZ89NBK",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22846,7 +22850,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/77%C2%A0packin%C2%A0pacer?pid=VbpAZqQgrM",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22858,7 +22862,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/rapid-pulse-red?pid=RWg8JbwLKe",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22870,7 +22874,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheengs?pid=8JNqdRvg4Q",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22894,7 +22898,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/retro-racers-with-street-beasts?pid=zONv0GmpBK",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22906,7 +22910,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hw-fun-park-wheels-gift-pack%C2%A0%C2%A0-?pid=GwLxK5ZNXY",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22918,7 +22922,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hw-gassers-5pc-gift-pack%C2%A0with-street-beasts?pid=y7gGzQopre",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22930,7 +22934,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mario-kart-vehicle-4-pc-gift-pack?pid=10gzmPApAV",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22942,7 +22946,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ferrari-with-street-beasts-jkg19?pid=8JNqOX1p4Q",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22954,7 +22958,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ferrari-with-x-raycers?pid=e7g58G0pmv",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22966,7 +22970,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/ferrari-with-hw-fun-park-jbj88?pid=P7pRJo7pjm",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22978,7 +22982,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/batman-10-collection-pack-of-10-cars?pid=Pqp2n9Op36",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -22990,7 +22994,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mario-gvd30?pid=V2gJeAxpe4",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23002,7 +23006,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/bowser-jr?pid=OyLoZOjNb2",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23014,7 +23018,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/yoshi-gvd30?pid=Ezgl2nXLMr",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23026,7 +23030,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/toad-gvd30?pid=GoL1JD5pBA",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23038,7 +23042,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/luigi-gvd30?pid=GvLPjdVgod",
     "first_seen": "2026-10-18T08:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23105,7 +23109,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-land-rover-defender-110-royal-hk-police-tai-po-district-hk-exclusive?pid=BwL6P9xg4q",
     "first_seen": "2026-10-19T05:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23648,7 +23652,6 @@
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-07T16:12:55",
-    "fc_arr": "2026-11-09T04:51:45",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-08T04:51:50",
@@ -23698,7 +23701,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans?pid=GXpKRADLmx",
     "first_seen": "2026-10-22T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23710,7 +23713,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans-blister-packaging?pid=x7LeG8qgY0",
     "first_seen": "2026-10-22T05:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23775,7 +23778,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/volkswagen-t1-greddy-pickup-v1?pid=ykL0em2pRZ",
     "first_seen": "2026-10-22T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23800,7 +23803,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/chevrolet-silverado-dually-kaido-splash-v1?pid=0mNyKq6pkj",
     "first_seen": "2026-10-22T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23908,7 +23911,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/hot-wheels-ferrari-gift-pack-5-car?pid=V2gJERDpe4",
     "first_seen": "2026-10-23T08:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23920,7 +23923,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-nissan-gt-r-r35-lbworks-type-1-rear-wing-ver-2-velocity-blue?pid=OyLoydwgb2",
     "first_seen": "2026-10-23T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23932,7 +23935,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-toyota-trd-3000gt-silver?pid=Ezglw2rpMr",
     "first_seen": "2026-10-23T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23944,7 +23947,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-carrera-rs-27-whiteblue?pid=GoL19J2LBA",
     "first_seen": "2026-10-23T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23956,7 +23959,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-porsche-911-gt3-rs-acid-green?pid=GvLPejBpod",
     "first_seen": "2026-10-23T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23968,7 +23971,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-lamborghini-countach-500s-black?pid=zONvjZmNBK",
     "first_seen": "2026-10-23T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -23980,7 +23983,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-nissan-skyline-gt-r-bnr32-gra-spec-1991-bathurst-1000-winner?pid=8JNqyOrN4Q",
     "first_seen": "2026-10-23T11:45:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24028,7 +24031,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-valkyrie-escaping-white?pid=e7g5W8DLmv",
     "first_seen": "2026-10-26T06:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24040,7 +24043,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-aston-martin-valkyrie-escaping-white-blister-packaging?pid=RWg8ZVQLKe",
     "first_seen": "2026-10-26T06:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24052,7 +24055,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-chevrolet-corvette-zr1-torch-red?pid=y7gGG9kgre",
     "first_seen": "2026-10-26T06:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24064,7 +24067,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-chevrolet-corvette-zr1-torch-red-blister-packaging?pid=10gzYmepAV",
     "first_seen": "2026-10-26T06:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24088,7 +24091,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-mazda-mx-5-na-pandem-classic-red-blister-packaging?pid=KbNE7YqpR0",
     "first_seen": "2026-10-26T06:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24100,7 +24103,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-honda-prelude-moonlit-white-pearl?pid=P7pRZJkpjm",
     "first_seen": "2026-10-26T06:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -24996,7 +24999,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-inozetek-x-liberty-walk-r32-set-2026-show-edition?pid=QJgnw28Nl6",
     "first_seen": "2026-10-29T06:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -25008,7 +25011,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/preorder-inozetek-x-tbc-set-2026-show-edition?pid=m8pDDlzpv2",
     "first_seen": "2026-10-29T06:30:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
@@ -25105,7 +25108,7 @@
     "source": "karzdolls",
     "url": "https://www.karzanddolls.com/details/mini-gt-toyota-ae86-sprinter-trueno-kaido-street-v1?pid=lng337egqy",
     "first_seen": "2026-10-29T09:15:00",
-    "last_seen": "2026-11-09T04:30:00",
+    "last_seen": "2026-11-09T04:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-08T21:34:42",
     "last_price_alert": ""
@@ -25179,7 +25182,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892748",
     "fc_new_pending": "2026-10-31T12:16:58",
@@ -25203,7 +25206,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892748",
     "fc_new_pending": "2026-10-31T12:16:58",
@@ -25227,7 +25230,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892748",
     "fc_new_pending": "2026-10-31T12:16:58",
@@ -25251,7 +25254,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892748",
     "fc_new_pending": "2026-10-31T12:19:17",
@@ -25275,7 +25278,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892748",
     "fc_new_pending": "2026-10-31T12:19:17",
@@ -25450,7 +25453,7 @@
     "fc_listed_at": "2026-11-09T04:45:00",
     "fc_api_seen_at": "2026-11-09T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24892560",
     "fc_new_pending": "2026-11-05T14:00:27",
