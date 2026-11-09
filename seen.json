@@ -13746,7 +13746,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-03T08:18:55",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-07T16:47:13",
     "fc_lst_seen": "2026-11-07T17:30:00"
   },
@@ -13879,7 +13878,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-27T18:33:33",
     "fc_lst_seen": "2026-10-27T19:30:00"
   },
@@ -13927,7 +13925,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-29T06:31:14",
     "fc_lst_seen": "2026-10-29T07:45:00"
   },
@@ -16007,8 +16004,7 @@
     "fc_lst": "out",
     "fc_gid": "24473477",
     "fc_phantom": "2026-10-25T03:04:41",
-    "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_cart": "n"
   },
   "fc_24474449": {
     "stock": "out_of_stock",
@@ -18523,7 +18519,6 @@
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-06T06:36:55",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-06T13:45:11",
     "fc_lst_seen": "2026-11-06T14:00:00"
   },
@@ -24387,7 +24382,7 @@
     "fc_lst_seen": "2026-11-08T06:15:00"
   },
   "fc_24854851": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Car Culture Team Transport #95 '89 Porsche 944 Turbo and 2008 Porsche Cayenne in Orange",
     "price": "₹1259",
     "source": "firstcry",
@@ -24402,11 +24397,11 @@
     "fc_listed_at": "2026-11-09T12:30:00",
     "fc_api_seen_at": "2026-11-09T12:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24854849",
-    "fc_phantom": "2026-11-09T07:15:03",
-    "fc_cart": "y",
+    "fc_phantom": "2026-11-09T12:31:17",
+    "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-09T12:22:54",
     "fc_lst_seen": "2026-11-09T12:30:00",
