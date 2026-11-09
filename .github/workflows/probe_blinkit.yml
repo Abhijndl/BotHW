@@ -1,0 +1,32 @@
+name: Research probe (Blinkit, temporary)
+on:
+  push:
+    branches: [claude/probe]
+    paths: [probe_blinkit.py, .github/workflows/probe_blinkit.yml]
+permissions:
+  contents: write
+concurrency:
+  group: research-probe-blinkit
+  cancel-in-progress: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/probe
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "curl_cffi>=0.7.0"
+      - name: Run probe
+        run: python probe_blinkit.py 2>&1 | tee probe_blinkit_log.txt
+      - name: Save report to the probe branch
+        if: always()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          git add -f probe_blinkit_report.json probe_blinkit_log.txt || true
+          git commit -m "blinkit probe report [skip ci]" || exit 0
+          git push origin HEAD:claude/probe
