@@ -74,6 +74,14 @@ jobs:
           # in-stock list has it (v16.3). Every check in between reads the
           # in-stock list.
           FC_CATALOGUE_EVERY: "120"
+          # v17.8: Majorette on FirstCry (brand 1335): its in-stock list every
+          # 36 s, its whole list with each full sweep. Alerts for Majorette cars
+          # named DTM / Motorsport / GT3 or one of your marques ("dtm,marques";
+          # "dtm" = DTM only, "all" = every Majorette car). FC_EXTRA_BRANDS ""
+          # turns it off.
+          FC_EXTRA_BRANDS: "1335"
+          FC_EXTRA_EVERY: "36"
+          MAJORETTE_TRACK: "dtm,marques"
           # Seconds between checks for the other stores (-1 = off). Minifygram
           # also gets a tiny "anything changed?" check every 12 s, so its new
           # listings arrive within seconds; the full list is re-read every 2 min.

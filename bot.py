@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hot Wheels / Diecast Collector Tracker  ·  v17.7
+Hot Wheels / Diecast Collector Tracker  ·  v17.8
 ================================================
 Stores  : FirstCry · Minifygram · Karz & Dolls · Hamleys  (Dehradun 248001)
           (Blinkit / BigBasket block GitHub's servers — phone watcher covers them)
@@ -87,6 +87,20 @@ read every 15 s (KD_FAST_URLS, KD_FAST_EVERY_S); the full set every 2 min as
 before, which alone marks cars sold out. And a KND alert says how many units
 KND has — its cart's own count (kd_stock_counts), not the product page's
 "qty", which said 0 for 64 cars in stock.
+v17.8: Majorette on FirstCry. 10 Nov a deals channel announced Majorette's
+DTM series for India (Porsche 911 GT3 R, Mustang GT3, BMW M4 GT3 Evo). The
+tracker only read FirstCry's Hot Wheels list (brand 113) and dropped every
+Majorette that wasn't a chase piece, so it would have missed them. FirstCry
+lists Majorette as brand 1335 (169 products, 134 in stock for 248001 that
+day). Its in-stock list is now read every FC_EXTRA_EVERY seconds (36 s) and
+its whole list with each full sweep (FC_EXTRA_BRANDS); between reads the
+last one stands in, so no Majorette car looks "off the list". A Majorette
+car alerts when its name says DTM / Motorsport / GT3 or names one of your
+marques (MAJORETTE_TRACK) — tractors, planes, trucks, trailers and gift
+packs stay out; elsewhere (KND, Minifygram, Hamleys) Majorette is still
+chase pieces only. The cars FirstCry lists already are learnt silently; a
+new listing alerts as NEW. A Majorette Porsche / Ferrari / Skyline rings
+like a Hot Wheels one.
 
 Each run stays alive RUN_SECONDS (40 s on GitHub) and checks in passes:
   • FirstCry every FC_EVERY seconds (12 s). Its listing (in-stock list every
@@ -988,13 +1002,47 @@ def _fc_bust(url: str) -> str:
     return f"{url}{sep}_={int(time.time() * 1000)}"
 
 
-def _fc_excluded(name: str) -> bool:
-    """Out of tracking on every store: a big set or merchandise (FC_EXCLUDE), or
-    a Matchbox / Majorette / monster truck that isn't a chase piece (v17.3)."""
+# v17.8: which Majorette cars FirstCry alerts on: "dtm" (DTM / Motorsport /
+# GT3 in the name), "marques" (one of your marques), "all" (every car)
+MAJORETTE_TRACK = {w.strip() for w in os.getenv("MAJORETTE_TRACK", "dtm,marques").lower().split(",")
+                   if w.strip()}
+_MJ_DTM = re.compile(r"\bdtm\b|\bmotor\s*-?\s*sports?\b|\bgt\s*-?\s*3\b", re.I)
+_MJ_NOT_CAR = re.compile(
+    r"tractor|\bfarm\b|air\s*plane|aeroplane|\bairport\b|aircraft|helicopter|\bbus\b|\btram\b|"
+    r"truck|trailer|transporter|caravan|gift\s*-?\s*pack|\bpack\s+of\b|\bset\s+of\b|\bplay\s*-?\s*set\b|"
+    r"\bcalendar\b|assortment|\bgarage\b|\btrack\b|launcher|\bboat\b|\btrain\b|excavator|crane|"
+    r"bulldozer|\bdump\b|\bpack\b|\bset\b|ambulance|sprinter|\barocs\b", re.I)
+_MJ_SERIES_WORDS = {"premium", "car culture", "team transport", "boulevard", "rlc", "treasure hunt",
+                    "silver series", "fast furious", "fast & furious", "exotics", "legends",
+                    "silhouettes", "japan historics", "modern classics"}
+
+
+def _mj_marque(name: str) -> bool:
+    n = " " + re.sub(r"[^a-z0-9 ]", " ", (name or "").lower()) + " "
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(k) + r"(?![a-z0-9])", n)
+               for k in FC_MARQUES if k not in _MJ_SERIES_WORDS)
+
+
+def majorette_ok(name: str) -> bool:
+    """v17.8: a Majorette car FirstCry should alert on (MAJORETTE_TRACK)."""
+    n = name or ""
+    if _MJ_NOT_CAR.search(n):
+        return False
+    return ("all" in MAJORETTE_TRACK or ("dtm" in MAJORETTE_TRACK and bool(_MJ_DTM.search(n)))
+            or ("marques" in MAJORETTE_TRACK and _mj_marque(n)))
+
+
+def _fc_excluded(name: str, source: str = "") -> bool:
+    """Out of tracking: a big set or merchandise (FC_EXCLUDE, every store), or
+    a Matchbox / Majorette / monster truck that isn't a chase piece (v17.3) —
+    except, on FirstCry, a Majorette car of MAJORETTE_TRACK (v17.8)."""
     n = name or ""
     if _FC_EXCL_RE and _FC_EXCL_RE.search(n):
         return True
-    return bool(CHASE_ONLY_LINES and chase_line(n) and not chase_kind(n))
+    line = CHASE_ONLY_LINES and chase_line(n)
+    if not line or chase_kind(n):
+        return False
+    return not (line == "MAJORETTE" and source == "firstcry" and majorette_ok(n))
 
 
 def _fc_name(raw: str) -> str:
@@ -1269,6 +1317,11 @@ def fc_confirm_restocks(changes: dict, current: dict) -> int:
 FC_USE_API      = os.getenv("FC_USE_API", "true").lower() == "true"
 FC_API_URL      = "https://www.firstcry.com/svcs/SearchResult.svc/GetSearchResultProductsPaging"
 FC_API_BRAND    = os.getenv("FC_API_BRAND", "113")          # Hot Wheels master brand
+# v17.8: other FirstCry brands read alongside (1335 = Majorette), and how often
+# their in-stock list is read (the last read stands in between)
+FC_EXTRA_BRANDS = [b.strip() for b in os.getenv("FC_EXTRA_BRANDS", "1335").split(",")
+                   if b.strip().isdigit() and b.strip() != FC_API_BRAND]
+FC_EXTRA_EVERY  = float(os.getenv("FC_EXTRA_EVERY", "36"))
 FC_API_PAGESIZE = int(os.getenv("FC_API_PAGESIZE", "20"))   # FirstCry caps pages at 20 anyway
 FC_API_TIMEOUT  = int(os.getenv("FC_API_TIMEOUT", "15"))   # per JSON request; retried on timeout
 FC_API_PARALLEL = max(1, int(os.getenv("FC_API_PARALLEL", "5")))  # pages fetched at once
@@ -1647,6 +1700,94 @@ def _fc_cookies() -> dict:
     return cookies
 
 
+_FC_XB = {}   # v17.8: brand -> {"hot": products, "at": epoch, "pages": n}
+
+
+def _fc_brand_path(name: str) -> str:
+    """v17.8: the brand part of a FirstCry product link."""
+    return "majorette" if re.match(r"\W*majorette\b", name or "", re.I) else "hot-wheels"
+
+
+def fc_api_brand_sweep(brand: str, hot: bool):
+    """v17.8: one more brand's FirstCry list (Majorette) — its in-stock list
+    (hot) or all of it. (products, complete). No retries or fallbacks: the
+    Hot Wheels sweep owns those, and the last good read stands in."""
+    t0 = time.time()
+    headers = {**COMMON_HEADERS, **_FC_NOCACHE,
+               "Accept": "application/json, text/javascript, */*; q=0.01",
+               "Content-Type": "application/json; charset=utf-8",
+               "X-Requested-With": "XMLHttpRequest",
+               "Referer": _FC_API_REFERER}
+    cookies = _fc_cookies()
+    size = FC_API_PAGESIZE
+    extra = {"MasterBrand": brand, **({"OutOfStock": "1"} if hot else {}), **_fc_fresh_params()}
+    st = _FC_XB.setdefault(brand, {"hot": {}, "at": 0.0, "pages": {True: 7, False: 9}})
+
+    def fetch(page):
+        try:
+            r = http.get(_fc_bust(_fc_api_query(page, size, extra)), headers=headers,
+                         cookies=cookies, timeout=FC_API_TIMEOUT, **_IMPERSONATE)
+        except Exception as e:
+            return None, type(e).__name__
+        if r.status_code != 200:
+            if r.status_code in (429, 403):
+                FC_THROTTLED[0] = time.time() + 300
+            return None, f"HTTP {r.status_code}"
+        try:
+            return _fc_unwrap(r.json()), None
+        except Exception:
+            return None, "not JSON"
+
+    products, failed, page, end = {}, [], 0, False
+    while not end and not failed and page < FC_API_MAXPAGES:
+        span = st["pages"][hot] + 1 if page == 0 else 3
+        batch = list(range(page + 1, min(page + span, FC_API_MAXPAGES) + 1))
+        with ThreadPoolExecutor(max_workers=min(len(batch), FC_API_PARALLEL + 3)) as ex:
+            res = list(ex.map(fetch, batch))
+        for pg, (data, err) in zip(batch, res):
+            page = pg
+            if data is None:
+                failed.append(f"{pg}({err})")
+                break
+            its = _fc_api_products(data)
+            for p in its:
+                pid = str(_ci(p, *_ID_KEYS) or "").strip()
+                if pid.isdigit():
+                    products.setdefault(pid, p)
+            if len(its) < min(size, 20):
+                end = True
+                break
+    complete = end and not failed
+    if complete:
+        st["pages"][hot] = max(1, -(-(len(products) + 1) // 20))
+    n_in = sum(1 for p in products.values() if (_fc_api_stock(p)[1] or 0) > 0)
+    print(f"  [FC-API] brand {brand} {'in-stock list' if hot else 'whole list'}: {len(products)} "
+          f"({n_in} in stock) in {time.time() - t0:.1f}s"
+          + ("" if complete else f" — incomplete ({', '.join(failed) or 'no end'})"))
+    return products, complete
+
+
+def fc_extra_products(hot: bool) -> dict:
+    """v17.8: the other brands' products for this sweep. In-stock lists are read
+    every FC_EXTRA_EVERY s and the last complete read stands in between (and
+    when a read fails), so their cars never look off the list."""
+    out = {}
+    for brand in FC_EXTRA_BRANDS:
+        st = _FC_XB.setdefault(brand, {"hot": {}, "at": 0.0, "pages": {True: 7, False: 9}})
+        if hot:
+            if time.time() - st["at"] >= FC_EXTRA_EVERY:
+                prods, ok = fc_api_brand_sweep(brand, True)
+                st["at"] = time.time()
+                if ok or not st["hot"]:
+                    st["hot"] = prods
+            out.update(st["hot"])
+        else:
+            prods, ok = fc_api_brand_sweep(brand, False)
+            if ok:
+                out.update(prods)
+    return out
+
+
 def fc_api_catalogue(hot: bool = False):
     """Hot Wheels catalogue via FirstCry's own paging API, or None.
 
@@ -1815,12 +1956,12 @@ def fc_api_records(products: dict, prev_fc: dict, quiet: bool = False) -> list:
     out, sample_done = [], quiet
     for pid, p in products.items():
         name = _fc_name(str(_ci(p, *_NAME_KEYS) or ""))
-        if not name or _fc_excluded(name):
+        if not name or _fc_excluded(name, "firstcry"):
             continue
         # FirstCry's own category labels (CNm / SCNm) catch big sets whose NAME
         # doesn't say "track set" (e.g. "Ultimate Dual Dragon Transporter").
         cat = " ".join(str(_ci(p, k) or "") for k in ("CNm", "SCNm"))
-        if cat.strip() and _fc_excluded(cat):
+        if cat.strip() and _fc_excluded(cat, "firstcry"):
             continue
         premium = _truthy(_ci(p, "IsPremium") or 0)
         stock, count = _fc_api_stock(p)
@@ -1856,7 +1997,7 @@ def fc_api_records(products: dict, prev_fc: dict, quiet: bool = False) -> list:
         if url and str(url).startswith("/"):
             url = "https://www.firstcry.com" + str(url)
         if not (url and str(url).startswith("http")):
-            url = f"https://www.firstcry.com/hot-wheels/{_fc_slug(name)}/{pid}/product-detail"
+            url = f"https://www.firstcry.com/{_fc_brand_path(name)}/{_fc_slug(name)}/{pid}/product-detail"
         pre = _ci(p, "tags.ispreorder", "ispreorder", "preorder")
         if pre is not None and _truthy(pre):
             name = name + " [PRE-ORDER]"
@@ -1940,7 +2081,7 @@ FC_LIVE_BUDGET  = float(os.getenv("FC_LIVE_BUDGET_S", "15"))   # live-check seco
 # silenced 39 genuine FirstCry comebacks in 3 days — Ferrari 12 Cilindri twice,
 # Skyline 2000 GT-R, McLaren W1, Audi R8 … — all 2.3 h or more apart.
 FC_RESTOCK_COOLDOWN_H = float(os.getenv("FC_RESTOCK_COOLDOWN_H", "1"))
-_FC_HW_NAME     = re.compile(r"hot\s*-?\s*wheel", re.I)
+_FC_HW_NAME     = re.compile(r"hot\s*-?\s*wheel|\bmajorette\b", re.I)   # v17.8: + Majorette
 FC_TAT_URL      = "https://www.firstcry.com/tatapi/oam/checkdeliveryinfo"
 FC_TAT_BATCH    = 40
 # v15: asked about one car as the MAIN product, the delivery check also says how
@@ -2486,7 +2627,7 @@ def _fc_target(pid: str, v: dict) -> bool:
     nm = (v or {}).get("name", "")
     # Hot Wheels only: old records of a "Jukku Resembling Ferrari SF90" pull-back
     # and Babyhug RC cars matched the marques and ate delivery checks every pass
-    return bool(nm) and not _fc_excluded(nm) and bool(_FC_HW_NAME.search(nm)) and (
+    return bool(nm) and not _fc_excluded(nm, "firstcry") and bool(_FC_HW_NAME.search(nm)) and (
         pid in FC_WATCH_IDS or bool((v or {}).get("auto_watch")) or _fc_is_marque(nm)
         or bool(hw_priority(nm)))
 
@@ -2606,7 +2747,7 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
 
     def wanted(p):
         nm = ((by.get(p) or prev_fc.get(p) or {}).get("name") or "")
-        if not (p.isdigit() and nm) or _fc_excluded(nm):
+        if not (p.isdigit() and nm) or _fc_excluded(nm, "firstcry"):
             return False
         # outside the listing only Hot Wheels count (old records of other things
         # — a Babyhug RC car — turn up in the sets of Hot Wheels pages)
@@ -2827,13 +2968,13 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
                 nm = info.get("pn") or ""
                 # a product page's set can include things that aren't Hot Wheels
                 # at all (18 Oct: feeding bottles, steriliser parts)
-                if not nm or _fc_excluded(nm) or not _FC_HW_NAME.search(nm):
+                if not nm or _fc_excluded(nm, "firstcry") or not _FC_HW_NAME.search(nm):
                     continue
                 mrp = info.get("mrp")
                 dis = _fc_int(info.get("dis")) or 0
                 price = int(round(mrp * (1 - dis / 100.0))) if mrp and 0 <= dis < 100 else mrp
                 r = {"id": f"fc_{p}", "source": "firstcry", "name": nm + (" [PRE-ORDER]" if info.get("pre") else ""),
-                     "url": f"https://www.firstcry.com/hot-wheels/{_fc_slug(nm)}/{p}/product-detail",
+                     "url": f"https://www.firstcry.com/{_fc_brand_path(nm)}/{_fc_slug(nm)}/{p}/product-detail",
                      "price": f"₹{price}" if price else "", "mrp": f"₹{mrp}" if mrp and price and price < mrp else "",
                      "badge_new": False, "watched": p in FC_WATCH_IDS or _fc_is_marque(nm),
                      "auto_watch": _fc_is_marque(nm), "stock_ver": FC_API_STOCK_VER, "fc_trusted": True,
@@ -2853,7 +2994,7 @@ def fc_apply_live(recs: list, prev_fc: dict, full: bool = False, list_ok: bool =
                     continue                       # nothing new for a car outside the listing
                 # outside the listing only Hot Wheels count (an old record for a
                 # Babyhug RC car turned up on a Hot Wheels page's set)
-                if (not v.get("name") or _fc_excluded(v.get("name", ""))
+                if (not v.get("name") or _fc_excluded(v.get("name", ""), "firstcry")
                         or not _FC_HW_NAME.search(v.get("name", ""))):
                     continue
                 r = {"id": f"fc_{p}", "source": "firstcry", "name": v.get("name", ""),
@@ -2918,7 +3059,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
 
     def hw(v):
         nm = (v or {}).get("name") or ""
-        return bool(nm) and not _fc_excluded(nm) and bool(_FC_HW_NAME.search(nm))
+        return bool(nm) and not _fc_excluded(nm, "firstcry") and bool(_FC_HW_NAME.search(nm))
 
     # every stock change the signals propose (either way), and every car they
     # half point at: a few units off the list, a page still at 0, a last unit,
@@ -3076,7 +3217,7 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
                 continue
             nm = v.get("name", "")
             r = {"id": f"fc_{p}", "source": "firstcry", "name": nm,
-                 "url": v.get("url") or f"https://www.firstcry.com/hot-wheels/{_fc_slug(nm)}/{p}/product-detail",
+                 "url": v.get("url") or f"https://www.firstcry.com/{_fc_brand_path(nm)}/{_fc_slug(nm)}/{p}/product-detail",
                  "price": v.get("price", ""), "mrp": "", "badge_new": False,
                  "watched": p in FC_WATCH_IDS or _fc_is_marque(nm), "auto_watch": _fc_is_marque(nm),
                  "stock_ver": FC_API_STOCK_VER, "fc_trusted": True, "fc_listed_at": v.get("fc_listed_at", ""),
@@ -3183,8 +3324,25 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
             return []
         inst = fc_api_catalogue(hot=True)            # what you can actually buy
         inst_ok = inst is not None and FC_LAST_SWEEP["complete"]
+        xb_ids = set()
+        if inst is not None and FC_EXTRA_BRANDS:     # v17.8: Majorette's in-stock list too
+            try:
+                xb = fc_extra_products(hot=True)
+            except Exception:
+                xb = {}
+                print(f"  [FC-API] other brands skipped:\n{traceback.format_exc()}")
+            xb_ids |= {str(k) for k in xb}
+            inst = {**xb, **inst}
         listed = {str(k) for k in (inst or {})}
         cat = fc_api_catalogue() if full else None   # everything, sold-out too
+        if cat and FC_EXTRA_BRANDS:
+            try:
+                xc = fc_extra_products(hot=False)
+            except Exception:
+                xc = {}
+                print(f"  [FC-API] other brands skipped:\n{traceback.format_exc()}")
+            xb_ids |= {str(k) for k in xc}
+            cat = {**xc, **cat}
         if inst is not None or cat:
             recs = fc_api_records(inst or {}, prev_fc, quiet=True)
             got = {r["id"][3:] for r in recs}
@@ -3211,7 +3369,7 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
                     if pid in got or not pid.isdigit():
                         continue
                     nm = v.get("name", "")
-                    if not nm or _fc_excluded(nm) or v.get("stock") is None:
+                    if not nm or _fc_excluded(nm, "firstcry") or v.get("stock") is None:
                         continue
                     st = v.get("stock")
                     seen_at = v.get("fc_api_seen_at") or now_iso
@@ -3232,6 +3390,15 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
                         "fc_carried": True,          # not in the listing this time
                     })
                     got.add(pid)
+            # v17.8: another brand's cars FirstCry listed before we read that
+            # brand are learnt silently (absorbed); a genuinely new id still
+            # alerts as NEW (FirstCry ids only grow)
+            if xb_ids:
+                fc_max = max([int(p) for p in prev_fc if p.isdigit()] or [0])
+                for r in recs:
+                    p = r["id"][3:]
+                    if p in xb_ids and p not in prev_fc and p.isdigit() and int(p) <= fc_max:
+                        r["fc_absorb"] = True
             # v13.1.1: a car missing from the in-stock list is NOT marked sold
             # out on that alone (18 Oct: Street Wiener, 222 units, vanished from
             # the list for 5 minutes and came back as a false "back in stock").
@@ -3300,7 +3467,7 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
 
             added = 0
             for i, (pos, pid, nm) in enumerate(marks):
-                if not nm or _fc_excluded(nm):
+                if not nm or _fc_excluded(nm, "firstcry"):
                     continue
                 # searches can return other brands — keep Hot Wheels only
                 if "searchstring=" in url and "hot wheel" not in nm.lower():
@@ -3319,7 +3486,7 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
 
             for m in _FC_FOOTER_LINK.finditer(page):
                 pid, nm = m.group(1), _fc_name(m.group(2))
-                if nm and not _fc_excluded(nm) and pid not in seen_now:
+                if nm and not _fc_excluded(nm, "firstcry") and pid not in seen_now:
                     seen_now[pid] = {"name": nm, "price": None, "mrp": None,
                                      "stock": None, "url": None}
                     added += 1
@@ -3372,7 +3539,7 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
     for pid, v in prev_fc.items():
         if pid.isdigit() and pid not in seen_now:
             nm = v.get("name", "")
-            if nm and not _fc_excluded(nm) and "'+'" not in nm:
+            if nm and not _fc_excluded(nm, "firstcry") and "'+'" not in nm:
                 seen_now[pid] = {"name": nm, "price": price_to_int(v.get("price")),
                                  "mrp": None, "stock": None, "url": v.get("url")}
 
@@ -5722,7 +5889,7 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
 
     # Global keyword exclusion — every store, not just FirstCry.
     if FC_EXCLUDE:
-        products = [p for p in products if not _fc_excluded(p["name"])]
+        products = [p for p in products if not _fc_excluded(p["name"], p.get("source", ""))]
     if not products:
         return 0
     current = {p["id"]: p for p in products}
@@ -5859,7 +6026,7 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_full: bool, label: str
 
     if first_run and FIRST_RUN_SILENT and first_products:
         # First run only learns the baseline — no flood of "new" alerts.
-        current = {p["id"]: p for p in first_products if not _fc_excluded(p["name"])}
+        current = {p["id"]: p for p in first_products if not _fc_excluded(p["name"], p.get("source", ""))}
         for pid in current:
             seen.setdefault(pid, {})["alerted_new"] = True
         by_src = {}
