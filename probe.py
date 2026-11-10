@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Probe #59: Majorette on FirstCry, with the v17.7 tracker's own FirstCry code:
+"""Probe #60: Majorette on FirstCry, with the v17.7 tracker's own FirstCry code:
 its brand id, every product it lists (names, stock for 248001), what a search
 for the DTM series returns, and whether the cart / page / delivery checks work
 for a Majorette car. Read-only (the cart is a guest cart; nothing is ordered)."""
@@ -48,60 +48,8 @@ def s1():
         R["hw_sample"] = hw[0]
 
 
-def s2():
-    r = b.http.get("https://www.firstcry.com/search?searchstring=majorette", headers={**b.COMMON_HEADERS},
-                   cookies=b._fc_cookies(), timeout=20, **b._IMPERSONATE)
-    t = r.text
-    print("search page:", r.status_code, len(t), "bytes; final url", r.url)
-    links = sorted(set(re.findall(r'firstcry\.com/(majorette[^"\'<> ]{0,80})', t)))[:25]
-    print("majorette links:", links)
-    ids = sorted(set(re.findall(r'/majorette/(?:[a-z0-9\-,]+/)?(\d+)/(\d+)/(\d+)', t)))
-    print("brand-url id triples:", ids[:10])
-    pd = sorted(set(re.findall(r'/([a-z0-9\-]+)/([a-z0-9\-]+)/(\d{5,})/product-detail', t)))
-    print("product links:", len(pd), pd[:5])
-    R["search_page"] = {"status": r.status_code, "links": links, "ids": ids, "product_links": pd[:60]}
-    for u in ("https://www.firstcry.com/majorette", "https://www.firstcry.com/majorette/0/0/0"):
-        try:
-            q = b.http.get(u, headers={**b.COMMON_HEADERS}, timeout=20, **b._IMPERSONATE)
-            print(u, "->", q.status_code, q.url, sorted(set(re.findall(r'/majorette/(?:[a-z0-9\-,]+/)?(\d+)/(\d+)/(\d+)', q.text)))[:6],
-                  re.findall(r'MasterBrand["\']?\s*[:=]\s*["\']?(\d+)', q.text)[:3])
-        except Exception as e:
-            print(u, "error", repr(e)[:120])
-
-
-def s3():
-    out = {}
-    for q in ("majorette", "majorette dtm", "dtm", "majorette motorsport", "majorette porsche", "majorette premium"):
-        for mb in ("", ):
-            code, d = api({"SearchString": q, "MasterBrand": mb})
-            ps = b._fc_api_products(d) if d is not None else []
-            rows = [brief(p) for p in ps]
-            out[q] = rows
-            keys = list(d.keys())[:12] if isinstance(d, dict) else None
-            print(f"search '{q}': HTTP {code}, {len(rows)} products; top keys {keys}")
-            for x in rows[:20]:
-                print("   ", x["pid"], "|", x["name"][:90], "|", x["stock"], x["n"], "|", x["brand"], "|", x["sub"])
-            if ps and q == "majorette":
-                print("  full record:", json.dumps(ps[0], ensure_ascii=False)[:1200])
-                R["mj_sample"] = ps[0]
-    R["searches"] = out
-
-
 def s4():
-    smp = R.get("mj_sample") or {}
-    cands = {k: v for k, v in smp.items() if re.search(r"^(b|mb|brand|mbid|bid|masterbrand)", k, re.I)}
-    print("brand fields on a Majorette record:", cands)
-    bid = None
-    for k in ("MBId", "MBID", "MasterBrandId", "BId", "BID", "BrandId"):
-        v = b._ci(smp, k)
-        if v and str(v).isdigit():
-            bid = str(v)
-            print("brand id from field", k, "=", bid)
-            break
-    ids = (R.get("search_page") or {}).get("ids") or []
-    if not bid and ids:
-        bid = ids[0][-1]
-        print("brand id from brand url =", bid)
+    bid = "1335"      # https://www.firstcry.com/majorette/5/0/1335
     R["brand_id"] = bid
     if not bid:
         print("no brand id found")
@@ -119,9 +67,7 @@ def s4():
             page += 1
         brands = sorted({str(b._ci(p, "BNm")) for p in got.values()})
         print(f"sweep by {label}={bid}: {len(got)} products over {page} page(s); brands {brands[:6]}")
-        if len(got) > len(allp) and all("majorette" in x.lower() for x in brands if x != "None"):
-            allp = got
-        elif not allp and got:
+        if len(got) > len(allp):
             allp = got
     rows = sorted((brief(p) for p in allp.values()), key=lambda x: x["name"])
     R["majorette_all"] = rows
@@ -164,7 +110,6 @@ def s5():
     R["checks"] = {"pick": pick, "cart": cart}
 
 
-for nm, fn in (("1 hot wheels record", s1), ("2 search page", s2), ("3 api searches", s3),
-               ("4 majorette brand sweep", s4), ("5 cart / page / delivery for majorette", s5)):
+for nm, fn in (("4 majorette brand sweep", s4), ("5 cart / page / delivery for majorette", s5)):
     step(nm, fn)
 json.dump(R, open("probe_report.json", "w"), ensure_ascii=False, indent=1, default=str)
