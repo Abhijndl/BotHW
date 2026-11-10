@@ -1,185 +1,100 @@
+  [FC-API] brand 1335 in-stock list: 133 (133 in stock) in 1.5s
 
-=== 4 majorette brand sweep
-sweep by MasterBrand=1335: 169 products over 9 page(s); brands ['Majorette']
-sweep by BrandId=1335: 133 products over 7 page(s); brands ['Majorette']
-Majorette on FirstCry: 169 products, 134 in stock for 248001
-    24387506 | Majorette 1955 Porshe Spyder 550 Metal Die Cast Model Car With Display Case and Rubber Tires, Scale  | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    24387507 | Majorette 1965 FORD GT40 MK1 Metal Die Cast Model Car with Display Case and Rubber Tires, Scale 1:64 | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    24387508 | Majorette 1976 CHEVROLET CORVETTE C3 Metal Die Cast Model Car with Display Case and Rubber Tires - N | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    24387509 | Majorette 1986 BMW M3 Metal Die Cast Model Car with Display Case and Rubber Tires - Red | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    24387510 | Majorette 1995 TOYOTA SUPRA JZA80 Metal Die Cast Model Car with Display Case and Rubber Tires - Yell | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    24387511 | Majorette 2005 BUGATTI VEYRON 16.4 SUPER SPORT Metal Die Cast Model Car with Display Case and Rubber | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    12617539 | Majorette A 350 900 Airport License Die Cast Free Wheel Toy Airplane - White | in_stock 64 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22005544 | Majorette Advent Calendar Holiday Playset with 8 Die Cast Cars - Multicolor | in_stock 4 | ₹ 2299 | Toy Cars, Trains & Vehicles
-    12325471 | Majorette Airport License 13 Cm Boeing 787 9 Die Cast Free Wheel Model Airplane Toy-Grey | in_stock 52 | ₹ 599 | Toy Cars, Trains & Vehicles
-    12278325 | Majorette Airport License Die Cast Free Wheel Model Airplane Toy - White | in_stock 27 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22063901 | Majorette Alfa Romeo Giulia Quadrifoglio Color Changers Premium Die Cast Toy Car - Brown | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065459 | Majorette Alpine A110 R Die Cast Free Wheel Moving Premium Racing Car - White & Yellow | in_stock 24 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065563 | Majorette Alpine A110S Rescue World Premium Die Cast Car - Blue | in_stock 199 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22618398 | Majorette Audi RS 6 Avant Metal street Cars - Black | in_stock 94 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22063899 | Majorette Audi RS E Tron GT Color Changers Premium Die Cast Toy Car | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934552 | Majorette BMW 2002 Turbo Premium Die Cast Free Wheel Car - Grey | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22125600 | Majorette BMW M3 Touring Safari Die-Cast Car White | in_stock 29 | ₹ 179 | Toy Cars, Trains & Vehicles
-    23934598 | Majorette BMW Xsm Competition Showroom Premium Die Cast Free Wheel Car - Purple | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    19991399 | Majorette Cayenne Turbo S 918 Spyder Die Cast Free Wheel Model Toy Car - Light Blue | in_stock 16 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    22618400 | Majorette Chevrolet C10 Metal Street Cars - Black | in_stock 242 | ₹ 179 | Toy Cars, Trains & Vehicles
-    23934549 | Majorette Chevrolet Corvette 1990 ZR 1 Premium Die Cast Free Wheel Car - Yellow | in_stock 14 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23942358 | Majorette Chevrolet Covette 1990 ZR 1 Vintage Premium Die Cast Free Wheel Moving Car - Yellow | in_stock 79 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22133864 | Majorette Citroen Type H Die Cast Free Wheel Moster Truck - Red & Yellow | in_stock 11 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22005534 | Majorette Claas Farm Die Cast Cars Gift Pack Set of 5 - Multicolor | in_stock 3 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    23959312 | Majorette Color Changers Premium Fiat 500 Icon Car - Green | in_stock 47 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063898 | Majorette DS7 E Tense Color Changers Premium Die Cast Toy Car - Green | in_stock 24 | ₹ 399 | Toy Cars, Trains & Vehicles
-    24178929 | Majorette Datsun 260Z Die Cast Racing Car with Free Wheel Moving Feature - Yellow | in_stock 311 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063612 | Majorette Deutz Fahr 9340 TTV Die Cast City Trailer Toy Tractor - Green & Yellow | in_stock 8 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22005530 | Majorette Die Cast City Transporter | in_stock 62 | ₹ 899 | Toy Cars, Trains & Vehicles
-    22005531 | Majorette Die Cast Farm Toys Set of 5 Pieces - Multicolor | in_stock 3 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    12530678 | Majorette Die Cast Free Weel Man City Bus Siemens Avenio Tram Man Lions City - Grey | out_of_stock 0 | ₹ 799 | Toy Cars, Trains & Vehicles
-    12602182 | Majorette Die Cast Free Wheel SOS Assortment Man TGS Toy Truck - Red | in_stock 3 | ₹ 399 | Toy Cars, Trains & Vehicles
-    13228923 | Majorette Die Cast Free Wheel Trailer Assortment Toy Car - Black & Yellow | in_stock 11 | ₹ 609 | Toy Cars, Trains & Vehicles
-    22005535 | Majorette Die Cast Racing Premium Cars - Red | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22176033 | Majorette Die-Cast Chevrolet C10 - Blue | in_stock 669 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22176036 | Majorette Die-Cast Deutz - Fahr 6150.4 - Green | in_stock 124 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22005514 | Majorette Discovery Die-Cast Vehicle Set Pack of 10 Assorted Cars (Scale Models) | in_stock 4 | ₹ 3499 | Toy Cars, Trains & Vehicles
-    22065564 | Majorette Dodge Challenger SRT Hellacat Rescue World Premium Die Cast Car - Grey | in_stock 11 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22064423 | Majorette Dodge Charger Vintage Premium Die Cast Car - Yellow | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22176021 | Majorette Farm premium metal Tractor -Green | in_stock 50 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22176022 | Majorette Farm premium metal Tractor Claas Arion 660 -Green | in_stock 21 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22176026 | Majorette Farm premium metal Tractor New Holland T7 300 -Blue | in_stock 27 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22176024 | Majorette Farm premium metal Tractor VALTRA T4 -White & Black | in_stock 46 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065465 | Majorette Fiat Soo Icon Die Cast Racing Premium Toy Car - Red & Silver | in_stock 177 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063615 | Majorette Ford Bronco Die Cast City Trailer - Blue | in_stock 15 | ₹ 599 | Toy Cars, Trains & Vehicles
-    24178931 | Majorette Ford Escort MK II RS 1800 Die Cast Racing Car with Free Wheel Moving Feature Grey | in_stock 338 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063900 | Majorette Ford F 150 Raptor Color Changers Premium Die Cast Toy Car - Blue | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22133863 | Majorette Ford F-150 Raptor Free Wheel Moving Monster Truck - Green | in_stock 2 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22065561 | Majorette Ford F-150 Raptor Rescue World Premium Die Cast Car - Red | in_stock 30 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065460 | Majorette Ford Mustang Dark Horse Die Cast Free Wheel Moving Premium Racing Car - Maroon | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    24178928 | Majorette Ford Mustang Dark Horse Die Cast Racing Car with Free Wheel Movement - White | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22124409 | Majorette Ford Puma ST Die-Cast Car Green | in_stock 623 | ₹ 179 | Toy Cars, Trains & Vehicles
-    19931379 | Majorette Free Wheel Die Cast Cars With Openable Parts - Multicolour | in_stock 22 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    19991403 | Majorette Free Wheel Die-cast Porsche Premium Car - White | in_stock 272 | ₹ 399 | Toy Cars, Trains & Vehicles
-    19991413 | Majorette Free Wheel Ford Wagon Trailer with 2 Die Cast Cars - Multicolour | in_stock 22 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    19991412 | Majorette Free Wheel Ford Wagon Trailer with 2 Die Cast Cars - Multicolour | in_stock 35 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    24178924 | Majorette HONDA S2000 JDM Legends Premium Die Cast Car Yellow | in_stock 180 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063310 | Majorette Honda Civic Type R EK9 JDM Legends Deluxe Die-Cast Car Yellow | out_of_stock 0 | ₹ 599 | Toy Cars, Trains & Vehicles
-    23934548 | Majorette Honda Civic Type R EK9 Premium Die Cast Free Wheel Car - Black | in_stock 273 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23942357 | Majorette Honda Civic Typer EK9 Premium Die Cast Free Wheel Toy Car - Black | in_stock 23 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23963170 | Majorette Honda Civic Typer Ek9 Vintage Premium Die Cast Toy Car - Black | in_stock 148 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063897 | Majorette Honda E Color Changers Premium Die Cast Toy Car - Purple | in_stock 42 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934600 | Majorette Honda S2000 Showroom Premium Die Cast Free Wheel Car - Grey | in_stock 70 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22064091 | Majorette Isuzu NPR Honda S2000 JDM Legends Tuning Transporter - Blue & Black | in_stock 54 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934616 | Majorette Isuzu NPR Mazda RS 7 FD3S JDM Legends Tuning Transporter Die Cast Free Wheel Car - Purple  | in_stock 39 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934590 | Majorette Isuzu NPR Mazda Rx-7 FD3S - Blue & Black | in_stock 1 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934615 | Majorette Isuzu NPR Mitsubishi Lancer Evolution 9 JDM Legends Tuning Transporter Die Cast Free Wheel | in_stock 51 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934589 | Majorette Isuzu NPR Mitsubishil lancer Evolution 9 - Blue & Black | in_stock 13 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934591 | Majorette Isuzu NPR Toyota Sprinter Trueno AE86 - Blue & Black | in_stock 10 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934614 | Majorette Isuzu NPR Toyota Sprinter Trueno AE86 JDM Legends Tuning Transporter Die Cast Free Wheel C | in_stock 38 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    22064090 | Majorette Isuzu NPR Toyota Supra Uza80 JDM Legends Tuning Transporter - Golden & Red | out_of_stock 0 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    22124949 | Majorette Iveco Eurocargo Die-Cast Truck Green | in_stock 290 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22618399 | Majorette Iveco Eurocargo Metal street Truck - Red | in_stock 436 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22005540 | Majorette JDM Legends Anime Die Cast Cars Pack of 5 - Multicolor | in_stock 107 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    24178930 | Majorette Jaguar E-Type Die Cast Racing Car with Free Wheel Moving Feature Green & White | in_stock 66 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934595 | Majorette Jeep Wrangler 4XE Showroom Premium Die Cast Free Wheel Car - Green | in_stock 88 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22063616 | Majorette Jeep Wrangler Die Cast City Trailer - Black & Yellow | in_stock 35 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22133862 | Majorette Jeep Wrangler Free Wheel Moving Monster Truck - Blue & Black | in_stock 7 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22005525 | Majorette Lamborghini Die Cast Cars Pack of 5 - Multicolor | in_stock 83 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    23934596 | Majorette Lamborghini Sian FKP 37 Showroom Premium Die Cast Free Wheel Car - Green | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    13239330 | Majorette Man City Bus Die Cast Free Wheel Model Toy Vehicle -Green | in_stock 55 | ₹ 599 | Toy Cars, Trains & Vehicles
-    13239313 | Majorette Man City Bus Die Cast Free Wheel Model Toy Vehicle -White | in_stock 29 | ₹ 599 | Toy Cars, Trains & Vehicles
-    12530680 | Majorette Man City Bus Siemens Avenio Die Cast Free Wheel Model Toy Tram - Blue | out_of_stock 0 | ₹ 799 | Toy Cars, Trains & Vehicles
-    13241314 | Majorette Man City Lion's Coach L Die Cast Free Wheel Model Toy Bus - maroon | out_of_stock 0 | ₹ 599 | Toy Cars, Trains & Vehicles
-    12582777 | Majorette Man City Police Die Cast Free Wheel Bus - White | in_stock 54 | ₹ 599 | Toy Cars, Trains & Vehicles
-    13241919 | Majorette Man Lion's City C Die Cast Free Wheel Bus -Navy Blue | in_stock 64 | ₹ 599 | Toy Cars, Trains & Vehicles
-    23934637 | Majorette Man TGE City Premium Die Cast Free Wheel Vehicles - Green | in_stock 17 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065170 | Majorette Man TGX XXl Die Cast Free Wheel Moving City Transporter - Blue & White | in_stock 17 | ₹ 899 | Toy Cars, Trains & Vehicles
-    22065457 | Majorette Man Tgx Die Cast Racing Premium Truck - Green | in_stock 20 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065174 | Majorette Man Tgx Xxl Die Cast Free Wheel Moving City Transporter - Red & Grey | in_stock 59 | ₹ 899 | Toy Cars, Trains & Vehicles
-    22065172 | Majorette ManTgx xxl Die Cast Free Wheel Moving City Transporter - White & Grey | in_stock 14 | ₹ 899 | Toy Cars, Trains & Vehicles
-    22005522 | Majorette Mercedes - AMG GLC 63 S Die Cast Car - Royal Blue | in_stock 252 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22063530 | Majorette Mercedes AMG A35 Deluxe Die Cast Toy Car - Dark Green | in_stock 233 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22063528 | Majorette Mercedes AMG CLE53 Deluxe Die Cast Toy Car - Brown | in_stock 184 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22063531 | Majorette Mercedes AMG G63 Deluxe Die Cast Toy Car - Black | in_stock 21 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22064534 | Majorette Mercedes AMG GLC 63 S Deluxe Die Cast Free Wheel Moving Trailer - Grey | in_stock 52 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    22064533 | Majorette Mercedes AMG GT 63 Deluxe Die Cast Free Wheel Moving Trailer - Green | in_stock 42 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    22063529 | Majorette Mercedes AMG GT63 Deluxe Die Cast Toy Car - Grey | in_stock 25 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22063527 | Majorette Mercedes AMG SL63 Deluxe Die Cast Toy Car - White & Red | in_stock 28 | ₹ 599 | Toy Cars, Trains & Vehicles
-    23934638 | Majorette Mercedes Banz Arocs City Premium Die cast Vehicles - Royal Blue & Red | in_stock 20 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065171 | Majorette Mercedes Benz Actros Die Cast Free Wheel Moving City Transporter - Green | in_stock 30 | ₹ 899 | Toy Cars, Trains & Vehicles
-    23934639 | Majorette Mercedes Benz E class All Terrain City Premium Die cast Vehicles - Beige | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934635 | Majorette Mercedes Benz Sprinter City Premium Die Cast Free Wheel Vehicle - Orange | in_stock 29 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22005524 | Majorette Mercedes-AMG Die Cast Cars Pack of 5 - Multicolor | in_stock 68 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    22065175 | Majorette Mercedes-Benz Actros Die Cast Free Wheel Moving City Transporter - White & Orange | in_stock 67 | ₹ 899 | Toy Cars, Trains & Vehicles
-    22005523 | Majorette Mercedes-amg Deluxe Die Cast Trailer - White | in_stock 98 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    23934594 | Majorette Mini Aceman SE Showroom Premium Die Cast Free Wheel Car - Red | in_stock 66 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22064143 | Majorette New Holland T7300 Die Cast Free Wheel Moving Farm Trailer - Blue & Yellow | in_stock 35 | ₹ 699 | Toy Cars, Trains & Vehicles
-    24178925 | Majorette Nissan Skyline GT R R34 JDM Legends Premium Die Cast Car Blue | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22005518 | Majorette Petrol Station ARAL Playset with 1 Die Cast Vehicle - Multicolor | in_stock 24 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    22005519 | Majorette Petrol Station BP Playset with 1 Die Cast Vehicle - Multicolor | in_stock 103 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    23934551 | Majorette Peugeot 205 GTI 1.9 Die Cast Free Wheel Car - Red | in_stock 485 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934601 | Majorette Peugeot S08 SW Showroom Premium Die Cast Free Wheel Car - Royal Blue | in_stock 232 | ₹ 399 | Toy Cars, Trains & Vehicles
-    19991391 | Majorette Porche Gran Turismo Die Cast Free Wheel Model Toy Car - Blue | in_stock 98 | ₹ 599 | Toy Cars, Trains & Vehicles
-    19991392 | Majorette Porsche Deluxe Free Wheel Safty Car Porche 911 Carrera RS 2.7 - Yellow | in_stock 29 | ₹ 599 | Toy Cars, Trains & Vehicles
-    19991393 | Majorette Porsche Deluxe Free Wheel Safty Car Porche Vision Gran Turisma - White | in_stock 47 | ₹ 599 | Toy Cars, Trains & Vehicles
-    19991394 | Majorette Porsche Deluxe Free Wheel Safty Car Porsche 935 K3 - Green | in_stock 44 | ₹ 599 | Toy Cars, Trains & Vehicles
-    19931381 | Majorette Porsche Edition Gift Pack Free Wheel Die Cast With 2 Exclusive Models Pack of 5 - Multicol | in_stock 297 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    19931380 | Majorette Porsche Free Wheel Race Trailer with Two Die Cast Cars -White | in_stock 41 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    19991398 | Majorette Porsche Race Trailer TAYCAN TURBO S & 917 Die Cast Car Free Wheel with Moving Parts Pack o | out_of_stock 0 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    19991390 | Majorette Porsche Taycan Turbo Die Cast Free Wheel Model Toy Car - White | in_stock 108 | ₹ 599 | Toy Cars, Trains & Vehicles
-    22123320 | Majorette RIDE NOW Die-Cast Car Purple-Black | in_stock 804 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22132879 | Majorette Renault Master Free Wheel Moving Die Cast Car -Blue | in_stock 862 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22065462 | Majorette Renault Megane R S Die Cast Free Wheel Moving Premium Racing Car - White & Black | in_stock 143 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22005533 | Majorette Rescue World Premium Die Cast Car - Multicolor | in_stock 151 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22069184 | Majorette Ride Now Street Die Cast Free Wheel Moving Cars Pack of 5 - Multicolour | out_of_stock 0 | ₹ 799 | Toy Cars, Trains & Vehicles
-    23964115 | Majorette Ride Now Street Die Cast Free Wheel Moving air Med Pack of 5 - Multicolour | in_stock 15 | ₹ 799 | Toy Cars, Trains & Vehicles
-    23964114 | Majorette Ride Now Street Die Cast Free Wheel Moving cars Pack of 5 - Multicolour | in_stock 4 | ₹ 799 | Toy Cars, Trains & Vehicles
-    13080042 | Majorette S O S Die Cast Free Wheel Toy Vehicles Pack Of 3 - Red Blue & White | in_stock 8 | ₹ 999 | Toy Cars, Trains & Vehicles
-    12602178 | Majorette S O S Mercedes Benz Sprinter Toy Car Ambulance - White | in_stock 15 | ₹ 399 | Toy Cars, Trains & Vehicles
-    13079023 | Majorette SOS Assortment Die Cast Free Wheel Volkswagen Crafter Toy Car - Red | in_stock 27 | ₹ 399 | Toy Cars, Trains & Vehicles
-    12278319 | Majorette SOS Die Cast Free Wheel Model Toy Car - Silver | in_stock 6 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23967085 | Majorette Showroom BMW XSM Competition Premium Die Cast Toy Car -Purple | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23967039 | Majorette Showroom Ford F-150 Raptor Premium Die Cast Toy Car - Cream | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23967052 | Majorette Showroom Honda S2000 Premium Die Cast Toy Car -Silver | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23966965 | Majorette Showroom Jeep Wrangler 4XE Premium Die Cast Free Wheel Toy Jeep -Green | in_stock 120 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23967065 | Majorette Showroom Peugeot S08 SW Premium Die Cast Free Wheel Toy Car - Blue | in_stock 41 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23966985 | Majorette Showroom Toyota Grmanyaris Premium Die Cast Free Wheel Toy Car -White | in_stock 170 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934623 | Majorette Street Die Cast Cars Pack of 5 - Multicolor | in_stock 2 | ₹ 799 | Toy Cars, Trains & Vehicles
-    22005513 | Majorette Street Die Cast Cars Pack of 5 - Multicolor | in_stock 25 | ₹ 799 | Toy Cars, Trains & Vehicles
-    23934624 | Majorette Street Die Cast Free Wheel Car Pack of 5 - Multicolor | in_stock 15 | ₹ 799 | Toy Cars, Trains & Vehicles
-    23934622 | Majorette Street Die Cast Free Wheel Car Pack of 5 - Multicolor | in_stock 24 | ₹ 799 | Toy Cars, Trains & Vehicles
-    23934550 | Majorette Suzuki Carry Die Cast Free Wheel Car - Green | in_stock 149 | ₹ 399 | Toy Cars, Trains & Vehicles
-    13229371 | Majorette Suzuki Jimny Police Car Die Cast Free Wheel Model Toy Car - Blue & Black | in_stock 9 | ₹ 399 | Toy Cars, Trains & Vehicles
-    24178932 | Majorette Suzuki Swift Sport Die Cast Car with Free Wheel Moving Feature Red White Racing Toy | in_stock 24 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22065562 | Majorette Toyota 86 GT Rescue World Premium Die Cast Car - White | in_stock 146 | ₹ 399 | Toy Cars, Trains & Vehicles
-    24178920 | Majorette Toyota AE86 GT Apex JDM Legends Premium Die Cast Model Car with Detailed Design - White | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934602 | Majorette Toyota GRMN Yaris Showroom Premium Die Cast Free Wheel Car - White | in_stock 40 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23934597 | Majorette Toyota Hiace Showroom Premium Die Cast Free Wheel Car - Black | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22005526 | Majorette Toyota Racing Die-Cast Cars Gift Pack Set of 5 | in_stock 4 | ₹ 1699 | Toy Cars, Trains & Vehicles
-    24178921 | Majorette Toyota Supra JZA80 JDM Legends Premium Die Cast Car - Silver | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22123860 | Majorette Toyota Yaris Die-Cast Car Black | in_stock 46 | ₹ 179 | Toy Cars, Trains & Vehicles
-    23934547 | Majorette Trabant P 601 Premium Die Cast Free Wheel Car - Blue | in_stock 78 | ₹ 399 | Toy Cars, Trains & Vehicles
-    12530679 | Majorette Transporter Die Cast Free Wheel Model Toy Tram - Green | in_stock 22 | ₹ 799 | Toy Cars, Trains & Vehicles
-    12530681 | Majorette Transporter Die Cast Free Wheel Model Toy Tram - Red | in_stock 6 | ₹ 799 | Toy Cars, Trains & Vehicles
-    22133861 | Majorette Unimog u530 DieCast Free Wheel Moving Truck -Dark Olive | in_stock 18 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23987709 | Majorette Vintage Premium Die Cast Car BMW 2022 Turbo - Silver | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23969883 | Majorette Vintage Premium Die Cast Car Chevrolet Corvette 1990 ZR 1 - Yellow | in_stock 408 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23970503 | Majorette Vintage Premium Die Cast Car Trabant P 601 -Sky Blue | in_stock 222 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23956449 | Majorette Vintage Premium Die Cast CarPeugeot 20sgtI 1.9 - Red | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23970482 | Majorette Vintage Premium Die Cast Free Wheel Car Peugeot 20S GT 1.9 - Red | in_stock 32 | ₹ 399 | Toy Cars, Trains & Vehicles
-    23956634 | Majorette Vintage Premium Die Cast Free Wheel Car Suzuki Carry-Green | out_of_stock 0 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22133867 | Majorette Volkswagen Beetle Die Cast Free Wheel Monster Truck -Yellow & Purple | in_stock 9 | ₹ 599 | Toy Cars, Trains & Vehicles
-    23934593 | Majorette Volkswagen ID Buzz Showroom Premium Die Cast Free Wheel Car - Red | in_stock 19 | ₹ 399 | Toy Cars, Trains & Vehicles
-    19931383 | Majorette Volvo Construction Toy with Movable Parts Free Wheel Pack of 3 - Yellow | in_stock 107 | ₹ 1199 | Toy Cars, Trains & Vehicles
-    19991410 | Majorette Volvo Edition Die-Cast Free Whee Construction Vehicle Toy Truck - Yellow and Black | in_stock 15 | ₹ 399 | Toy Cars, Trains & Vehicles
-    22124762 | Majorette Volvo SD1608 Die-Cast Car Yellow & Black | in_stock 173 | ₹ 179 | Toy Cars, Trains & Vehicles
-    22065173 | Majorette Volvo Truck Die Cast Free Wheel Moving City Transporter - Grey & Yellow | out_of_stock 0 | ₹ 899 | Toy Cars, Trains & Vehicles
-    22145380 | Majorette: Farm Premium Die Cast Free Wheel Toy Mack Granite - Red | in_stock 2 | ₹ 399 | Toy Cars, Trains & Vehicles
-in-stock-only filter page 1: HTTP 200, 20 products, all with stock>0: True
+=== in-stock list: 133 products, complete=True, 8 requests, 1.5s; tracked after the filter: 33
+   in_stock        92  Majorette Audi RS 6 Avant Metal street Cars - Black
+   in_stock        29  Majorette BMW M3 Touring Safari Die-Cast Car White
+   in_stock        14  Majorette Chevrolet Corvette 1990 ZR 1 Premium Die Cast Free Wheel Car - Yellow
+   in_stock       311  Majorette Datsun 260Z Die Cast Racing Car with Free Wheel Moving Feature - Yellow
+   in_stock        11  Majorette Dodge Challenger SRT Hellacat Rescue World Premium Die Cast Car - Grey
+   in_stock       270  Majorette Free Wheel Die-cast Porsche Premium Car - White
+   in_stock       178  Majorette HONDA S2000 JDM Legends Premium Die Cast Car Yellow
+   in_stock       272  Majorette Honda Civic Type R EK9 Premium Die Cast Free Wheel Car - Black
+   in_stock        23  Majorette Honda Civic Typer EK9 Premium Die Cast Free Wheel Toy Car - Black
+   in_stock       146  Majorette Honda Civic Typer Ek9 Vintage Premium Die Cast Toy Car - Black
+   in_stock        42  Majorette Honda E Color Changers Premium Die Cast Toy Car - Purple
+   in_stock        69  Majorette Honda S2000 Showroom Premium Die Cast Free Wheel Car - Grey
+   in_stock         1  Majorette Isuzu NPR Mazda Rx-7 FD3S - Blue & Black
+   in_stock        13  Majorette Isuzu NPR Mitsubishil lancer Evolution 9 - Blue & Black
+   in_stock        10  Majorette Isuzu NPR Toyota Sprinter Trueno AE86 - Blue & Black
+   in_stock       252  Majorette Mercedes - AMG GLC 63 S Die Cast Car - Royal Blue
+   in_stock       233  Majorette Mercedes AMG A35 Deluxe Die Cast Toy Car - Dark Green
+   in_stock       183  Majorette Mercedes AMG CLE53 Deluxe Die Cast Toy Car - Brown
+   in_stock        21  Majorette Mercedes AMG G63 Deluxe Die Cast Toy Car - Black
+   in_stock        25  Majorette Mercedes AMG GT63 Deluxe Die Cast Toy Car - Grey
+   in_stock        28  Majorette Mercedes AMG SL63 Deluxe Die Cast Toy Car - White & Red
+   in_stock        20  Majorette Mercedes Banz Arocs City Premium Die cast Vehicles - Royal Blue & Red
+   in_stock        29  Majorette Mercedes Benz Sprinter City Premium Die Cast Free Wheel Vehicle - Orange
+   in_stock        29  Majorette Porsche Deluxe Free Wheel Safty Car Porche 911 Carrera RS 2.7 - Yellow
+   in_stock        47  Majorette Porsche Deluxe Free Wheel Safty Car Porche Vision Gran Turisma - White
+   in_stock        44  Majorette Porsche Deluxe Free Wheel Safty Car Porsche 935 K3 - Green
+   in_stock       108  Majorette Porsche Taycan Turbo Die Cast Free Wheel Model Toy Car - White
+   in_stock        15  Majorette S O S Mercedes Benz Sprinter Toy Car Ambulance - White
+   in_stock       169  Majorette Showroom Toyota Grmanyaris Premium Die Cast Free Wheel Toy Car -White
+   in_stock       146  Majorette Toyota 86 GT Rescue World Premium Die Cast Car - White
+   in_stock        40  Majorette Toyota GRMN Yaris Showroom Premium Die Cast Free Wheel Car - White
+   in_stock        43  Majorette Toyota Yaris Die-Cast Car Black
+   in_stock       406  Majorette Vintage Premium Die Cast Car Chevrolet Corvette 1990 ZR 1 - Yellow
+  [FC-API] brand 1335 whole list: 167 (133 in stock) in 0.9s
 
-=== 5 cart / page / delivery for majorette
-checking ['12617539', '22005544', '12325471', '24387506', '24387507']
-page 12617539 -> {'12278325': {'cs': 27, 'pn': 'Majorette Airport License Die Cast Free Wheel Model Airplane Toy - White', 'mrp': 599, 'gid': '12325471', 'gone': None}, '12325471': {'cs': 52, 'pn': 'Majorette Airport License 13 Cm Boeing 787 9 Die Cast Free Wheel Model Airplane Toy-Grey', 'mrp': 599, 'gid': '12325471', 'gone': None}, '12617539': {'cs': 64, 'pn': 'Majorette A 350 900 Airport License Die Cast Free Wheel Toy Airplane - White', 'mrp': 599, 'gid': '12325471', 'gone': None}}
-page 22005544 -> {'22005544': {'cs': 4, 'pn': 'Majorette Advent Calendar Holiday Playset with 8 Die Cast Cars - Multicolor', 'mrp': 2299, 'gid': '22005544', 'gone': None}}
-page 12325471 -> {'12278325': {'cs': 27, 'pn': 'Majorette Airport License Die Cast Free Wheel Model Airplane Toy - White', 'mrp': 599, 'gid': '12325471', 'gone': None}, '12325471': {'cs': 52, 'pn': 'Majorette Airport License 13 Cm Boeing 787 9 Die Cast Free Wheel Model Airplane Toy-Grey', 'mrp': 599, 'gid': '12325471', 'gone': None}, '12617539': {'cs': 64, 'pn': 'Majorette A 350 900 Airport License Die Cast Free Wheel Toy Airplane - White', 'mrp': 599, 'gid': '12325471', 'gone': None}}
-cart -> {"12617539": {"ok": true, "n": 63, "eta": "2026-11-11 00:00:00", "price": 443.26, "mrp": 599, "name": "Majorette A 350 900 Airport License Die Cast Free Wheel Toy Airplane - White", "f": {"n": 63, "isv": 63, "wh": "20", "npc": 0, "dsv": false, "tat": "3-4", "edd": "2026-11-11", "jit": 0, "qwik": 0, "st": "OwnedStock"}}, "22005544": {"ok": true, "n": 4, "eta": "2026-11-11 00:00:00", "price": 1701.26, "mrp": 2299, "name": "Majorette Advent Calendar Holiday Playset with 8 Die Cast Cars - Multicolor", "f": {"n": 4, "isv": 4, "wh": "20", "npc": 0, "dsv": false, "tat": "3-4", "edd": "2026-11-11", "jit": 0, "qwik": 0, "st": "OwnedStock"}}, "12325471": {"ok": true, "n": 49, "eta": "2026-11-11 00:00:00", "price": 443.26, "mrp": 599, "name": "Majorette Airport License 13 Cm Boeing 787 9 Die Cast Free Wheel Model Airplane Toy-Grey", "f": {"n": 49, "isv": 49, "wh": "20", "npc": 0, "dsv": false, "tat
-delivery -> {"12325471": 1, "12617539": 1, "22005544": 1, "24387506": 0, "24387507": 0}
-link https://www.firstcry.com/hot-wheels/majorette-a-350-900-airport-licens -> 200 https://www.firstcry.com/majorette/majorette-a-350-900-airport-license-die-cast-free-wheel-toy-airplane-white/ | canonical: https://www.firstcry.com/majorette/majorette-a-350-900-airport-license-die-cast-free-wheel-toy-airplane-white/12617539/product-detail
-link https://www.firstcry.com/majorette/majorette-a-350-900-airport-license -> 200 https://www.firstcry.com/majorette/majorette-a-350-900-airport-license-die-cast-free-wheel-toy-airplane-white/ | canonical: https://www.firstcry.com/majorette/majorette-a-350-900-airport-license-die-cast-free-wheel-toy-airplane-white/12617539/product-detail
+=== whole list: 167 products, complete=True, 10 requests, 1.0s; tracked after the filter: 54
+   out_of_stock     0  Majorette 1976 CHEVROLET CORVETTE C3 Metal Die Cast Model Car with Display Case and Rubber Tire
+   out_of_stock     0  Majorette 1986 BMW M3 Metal Die Cast Model Car with Display Case and Rubber Tires - Red
+   out_of_stock     0  Majorette 1995 TOYOTA SUPRA JZA80 Metal Die Cast Model Car with Display Case and Rubber Tires -
+   out_of_stock     0  Majorette 2005 BUGATTI VEYRON 16.4 SUPER SPORT Metal Die Cast Model Car with Display Case and R
+   out_of_stock     0  Majorette Alfa Romeo Giulia Quadrifoglio Color Changers Premium Die Cast Toy Car - Brown
+   in_stock        92  Majorette Audi RS 6 Avant Metal street Cars - Black
+   out_of_stock     0  Majorette Audi RS E Tron GT Color Changers Premium Die Cast Toy Car
+   out_of_stock     0  Majorette BMW 2002 Turbo Premium Die Cast Free Wheel Car - Grey
+   in_stock        29  Majorette BMW M3 Touring Safari Die-Cast Car White
+   out_of_stock     0  Majorette BMW Xsm Competition Showroom Premium Die Cast Free Wheel Car - Purple
+   in_stock        14  Majorette Chevrolet Corvette 1990 ZR 1 Premium Die Cast Free Wheel Car - Yellow
+   in_stock       311  Majorette Datsun 260Z Die Cast Racing Car with Free Wheel Moving Feature - Yellow
+   in_stock        11  Majorette Dodge Challenger SRT Hellacat Rescue World Premium Die Cast Car - Grey
+   out_of_stock     0  Majorette Dodge Charger Vintage Premium Die Cast Car - Yellow
+   out_of_stock     0  Majorette Ford Mustang Dark Horse Die Cast Free Wheel Moving Premium Racing Car - Maroon
+   out_of_stock     0  Majorette Ford Mustang Dark Horse Die Cast Racing Car with Free Wheel Movement - White
+   in_stock       270  Majorette Free Wheel Die-cast Porsche Premium Car - White
+   in_stock       178  Majorette HONDA S2000 JDM Legends Premium Die Cast Car Yellow
+   out_of_stock     0  Majorette Honda Civic Type R EK9 JDM Legends Deluxe Die-Cast Car Yellow
+   in_stock       272  Majorette Honda Civic Type R EK9 Premium Die Cast Free Wheel Car - Black
+   in_stock        23  Majorette Honda Civic Typer EK9 Premium Die Cast Free Wheel Toy Car - Black
+   in_stock       146  Majorette Honda Civic Typer Ek9 Vintage Premium Die Cast Toy Car - Black
+   in_stock        42  Majorette Honda E Color Changers Premium Die Cast Toy Car - Purple
+   in_stock        69  Majorette Honda S2000 Showroom Premium Die Cast Free Wheel Car - Grey
+   in_stock         1  Majorette Isuzu NPR Mazda Rx-7 FD3S - Blue & Black
+   in_stock        13  Majorette Isuzu NPR Mitsubishil lancer Evolution 9 - Blue & Black
+   in_stock        10  Majorette Isuzu NPR Toyota Sprinter Trueno AE86 - Blue & Black
+   out_of_stock     0  Majorette Lamborghini Sian FKP 37 Showroom Premium Die Cast Free Wheel Car - Green
+   in_stock       252  Majorette Mercedes - AMG GLC 63 S Die Cast Car - Royal Blue
+   in_stock       233  Majorette Mercedes AMG A35 Deluxe Die Cast Toy Car - Dark Green
+   in_stock       183  Majorette Mercedes AMG CLE53 Deluxe Die Cast Toy Car - Brown
+   in_stock        21  Majorette Mercedes AMG G63 Deluxe Die Cast Toy Car - Black
+   in_stock        25  Majorette Mercedes AMG GT63 Deluxe Die Cast Toy Car - Grey
+   in_stock        28  Majorette Mercedes AMG SL63 Deluxe Die Cast Toy Car - White & Red
+   in_stock        20  Majorette Mercedes Banz Arocs City Premium Die cast Vehicles - Royal Blue & Red
+   out_of_stock     0  Majorette Mercedes Benz E class All Terrain City Premium Die cast Vehicles - Beige
+   in_stock        29  Majorette Mercedes Benz Sprinter City Premium Die Cast Free Wheel Vehicle - Orange
+   out_of_stock     0  Majorette Nissan Skyline GT R R34 JDM Legends Premium Die Cast Car Blue
+   in_stock        29  Majorette Porsche Deluxe Free Wheel Safty Car Porche 911 Carrera RS 2.7 - Yellow
+   in_stock        47  Majorette Porsche Deluxe Free Wheel Safty Car Porche Vision Gran Turisma - White
+   in_stock        44  Majorette Porsche Deluxe Free Wheel Safty Car Porsche 935 K3 - Green
+   in_stock       108  Majorette Porsche Taycan Turbo Die Cast Free Wheel Model Toy Car - White
+   in_stock        15  Majorette S O S Mercedes Benz Sprinter Toy Car Ambulance - White
+   out_of_stock     0  Majorette Showroom BMW XSM Competition Premium Die Cast Toy Car -Purple
+   out_of_stock     0  Majorette Showroom Honda S2000 Premium Die Cast Toy Car -Silver
+   in_stock       169  Majorette Showroom Toyota Grmanyaris Premium Die Cast Free Wheel Toy Car -White
+   in_stock       146  Majorette Toyota 86 GT Rescue World Premium Die Cast Car - White
+   out_of_stock     0  Majorette Toyota AE86 GT Apex JDM Legends Premium Die Cast Model Car with Detailed Design - Whi
+   in_stock        40  Majorette Toyota GRMN Yaris Showroom Premium Die Cast Free Wheel Car - White
+   out_of_stock     0  Majorette Toyota Hiace Showroom Premium Die Cast Free Wheel Car - Black
+   out_of_stock     0  Majorette Toyota Supra JZA80 JDM Legends Premium Die Cast Car - Silver
+   in_stock        43  Majorette Toyota Yaris Die-Cast Car Black
+   out_of_stock     0  Majorette Vintage Premium Die Cast Car BMW 2022 Turbo - Silver
+   in_stock       406  Majorette Vintage Premium Die Cast Car Chevrolet Corvette 1990 ZR 1 - Yellow
+  [FC-API] brand 1335 in-stock list: 133 (133 in stock) in 0.5s
+
+stand-in: two calls → 8 requests, 133 = 133 cars
+  [FC-API] quick sweep: 177 in stock from 9 page(s) in 1.2s — plain request
+Hot Wheels in-stock list for comparison: 177 cars, 9 requests, 1.2s
+
+link check: https://www.firstcry.com/majorette/majorette-vintage-premium-die-cast-car-chevrolet-corvette-1990-zr-1-yellow/23969883/product-detail -> 200 135123
