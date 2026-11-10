@@ -13880,7 +13880,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-27T18:33:33",
     "fc_lst_seen": "2026-10-27T19:30:00"
   },
@@ -13928,7 +13927,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-29T06:31:14",
     "fc_lst_seen": "2026-10-29T07:45:00"
   },
@@ -14387,7 +14385,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14652,7 +14650,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-10T09:35:02",
-    "fc_off": "2026-11-10T15:03:08",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15075,7 +15072,7 @@
     "fc_listed_at": "2026-11-10T15:00:00",
     "fc_api_seen_at": "2026-11-10T15:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_cart": "n",
@@ -16065,7 +16062,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16089,7 +16086,7 @@
   "fc_24475737": {
     "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16232,7 +16229,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -19164,6 +19161,7 @@
     "fc_gid": "24503746",
     "fc_phantom": "2026-11-06T07:16:04",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-09T04:46:12",
     "fc_lst_seen": "2026-11-09T05:00:00"
   },
@@ -21825,7 +21823,7 @@
     "fc_listed_at": "2026-11-10T15:00:00",
     "fc_api_seen_at": "2026-11-10T15:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-06T03:57:35",
@@ -22344,6 +22342,7 @@
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-10T09:56:44",
+    "fc_arr": "2026-11-10T15:14:04",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-10T09:47:52",
@@ -24197,7 +24196,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24220,7 +24219,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24243,7 +24242,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24266,7 +24265,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24289,7 +24288,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
