@@ -1,32 +1,41 @@
 #!/usr/bin/env python3
-"""Probe: can GitHub's runner load the Blinkit product page, and what does it
-show for the 'Coming soon' item (prid 1454828)? Read-only, one request per try."""
+"""Blinkit probe #2: which Blinkit addresses does GitHub get blocked on, by whom
+(response headers), and does any route give product data. Read-only."""
 import json, re, time
 from curl_cffi import requests
 
-URL = "https://blinkit.com/prn/x/prid/1454828"
-HDR = {"Accept-Language": "en-IN,en;q=0.9", "Accept": "text/html,application/xhtml+xml"}
-report = {"url": URL, "tries": []}
-for i, imp in enumerate(["chrome", "safari", "chrome124"], 1):
+PRID = "1454828"
+LAT, LON = "30.3165", "78.0322"
+R = []
+
+def hit(label, url, imp="chrome", headers=None, sess=None):
     t = time.time()
     try:
-        r = requests.get(URL, headers=HDR, impersonate=imp, timeout=20, allow_redirects=True)
-        body = r.text
-        row = {"try": i, "impersonate": imp, "status": r.status_code, "final_url": str(r.url),
-               "bytes": len(body), "secs": round(time.time() - t, 1),
-               "title": (re.search(r"<title>(.*?)</title>", body, re.S) or [None, None])[1],
-               "has_next_data": "__NEXT_DATA__" in body,
-               "has_json_ld": "application/ld+json" in body,
-               "words": {w: bool(re.search(w, body, re.I)) for w in
-                         ["coming soon", "notify", "out of stock", "sold out", "add to cart", "1454828", "Supra", "549", "Dehradun", "248001"]}}
-        m = re.search(r'"(?:inStock|in_stock|availability)"\s*:\s*("?[^,}]{1,40})', body)
-        row["stock_field"] = m.group(1) if m else None
-        row["snippet"] = re.sub(r"\s+", " ", re.sub(r"<script.*?</script>|<style.*?</style>|<[^>]+>", " ", body, flags=re.S))[:600]
+        g = (sess or requests).get(url, headers=headers or {}, impersonate=imp, timeout=20, allow_redirects=True)
+        b = g.text
+        row = {"label": label, "url": url, "status": g.status_code, "bytes": len(b), "secs": round(time.time() - t, 2),
+               "server": g.headers.get("server"), "cf_ray": g.headers.get("cf-ray"), "akamai": g.headers.get("x-akamai-transformed") or g.headers.get("akamai-grn"),
+               "via": g.headers.get("via"), "set_cookie_names": re.findall(r"(?:^|,\s*)([A-Za-z0-9_\-]+)=", g.headers.get("set-cookie", ""))[:8],
+               "title": (re.search(r"<title>(.*?)</title>", b, re.S) or [None, None])[1],
+               "blocked": bool(re.search(r"you have been blocked|access denied", b, re.I)),
+               "words": {w: bool(re.search(w, b, re.I)) for w in ["coming soon", "notify", "out of stock", "add to cart", "Supra", PRID, "inventory", "unavailable"]},
+               "head": re.sub(r"\s+", " ", b[:300])}
     except Exception as e:
-        row = {"try": i, "impersonate": imp, "error": repr(e)[:300], "secs": round(time.time() - t, 1)}
-    report["tries"].append(row)
-    print(json.dumps(row, ensure_ascii=False)[:1200])
-    if row.get("status") == 200 and row.get("bytes", 0) > 20000:
-        break
-with open("probe_blinkit_report.json", "w") as f:
-    json.dump(report, f, ensure_ascii=False, indent=1)
+        row = {"label": label, "url": url, "error": repr(e)[:200]}
+    R.append(row); print(json.dumps(row, ensure_ascii=False)[:900], flush=True)
+    return row
+
+api_h = {"Accept": "application/json", "app_client": "consumer_web", "platform": "desktop_web", "lat": LAT, "lon": LON,
+         "Origin": "https://blinkit.com", "Referer": f"https://blinkit.com/prn/x/prid/{PRID}"}
+ip = requests.get("https://ipinfo.io/json", timeout=10).json()
+print("runner ip:", {k: ip.get(k) for k in ("ip", "city", "country", "org")})
+hit("home", "https://blinkit.com/")
+hit("robots", "https://blinkit.com/robots.txt")
+hit("page", f"https://blinkit.com/prn/x/prid/{PRID}")
+hit("page_mobile_ua", f"https://blinkit.com/prn/x/prid/{PRID}", imp="safari_ios")
+hit("api_v1_products", f"https://blinkit.com/v1/products/{PRID}", headers=api_h)
+hit("api_layout_pdp", f"https://blinkit.com/v1/layout/product/{PRID}", headers=api_h)
+hit("api_host_v2", f"https://api2.grofers.com/v1/products/{PRID}", headers=api_h)
+hit("cdn_image_host", "https://cdn.grofers.com/")
+hit("sitemap", "https://blinkit.com/sitemap.xml")
+json.dump({"ip": {k: ip.get(k) for k in ("ip", "city", "country", "org")}, "rows": R}, open("probe_blinkit_report.json", "w"), indent=1, ensure_ascii=False)
