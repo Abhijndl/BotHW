@@ -5671,7 +5671,7 @@
     "fc_listed_at": "2026-11-10T14:30:00",
     "fc_api_seen_at": "2026-11-10T14:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24236112",
     "fc_phantom": "2026-11-04T04:33:04",
@@ -13880,6 +13880,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-27T18:33:33",
     "fc_lst_seen": "2026-10-27T19:30:00"
   },
@@ -13927,6 +13928,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-29T06:31:14",
     "fc_lst_seen": "2026-10-29T07:45:00"
   },
@@ -14229,7 +14231,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14860,7 +14862,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -19494,6 +19496,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-03T19:04:31",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-06T06:34:06",
     "fc_lst_seen": "2026-11-06T07:00:00"
   },
@@ -20609,6 +20612,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-09T21:02:21",
+    "fc_off": "2026-11-10T14:35:58",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -21133,7 +21137,7 @@
     "fc_listed_at": "2026-11-10T14:30:00",
     "fc_api_seen_at": "2026-11-10T14:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24235312",
     "fc_phantom": "2026-11-06T09:12:49",
