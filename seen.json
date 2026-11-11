@@ -3965,7 +3965,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_cart": "n",
@@ -6690,7 +6690,7 @@
     "fc_listed_at": "2026-11-05T09:15:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24248198",
     "fc_phantom": "2026-10-30T19:26:45",
@@ -11342,7 +11342,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -11707,7 +11707,7 @@
     "fc_lst": "out",
     "fc_gid": "22597417",
     "fc_phantom": "2026-11-02T19:04:57",
-    "fc_off": "2026-11-11T11:43:33",
+    "fc_off": "2026-11-11T11:55:21",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-03T19:04:13",
@@ -12828,7 +12828,7 @@
     "fc_listed_at": "2026-10-24T05:30:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-23T15:02:22",
@@ -12838,7 +12838,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -12941,7 +12941,7 @@
     "fc_listed_at": "2026-11-11T11:30:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-11T11:03:56",
@@ -14166,7 +14166,7 @@
   "fc_24248198": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Toy Car with Click Shift Feature (178/250) - Silver Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-toy-car-with-click-shift-feature-178-250-silver-orange/24248198/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -15714,7 +15714,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "21497090",
     "fc_phantom": "2026-10-26T07:32:29",
@@ -15767,7 +15767,6 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-02T16:29:36",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-31T07:01:27",
     "fc_lst_seen": "2026-10-31T07:30:00",
     "last_ring": "2026-11-02T16:28:43"
@@ -16128,7 +16127,6 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-25T05:47:06",
     "fc_lst_seen": "2026-10-25T06:30:00"
   },
@@ -16223,7 +16221,6 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-09T06:33:17",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-10T06:01:02",
     "fc_lst_seen": "2026-11-10T06:30:00"
   },
@@ -16294,8 +16291,7 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-10-24T14:40:52",
-    "fc_cart": "n",
-    "fc_svc": "0"
+    "fc_cart": "n"
   },
   "fc_24475206": {
     "stock": "out_of_stock",
@@ -16408,7 +16404,6 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-10-25T15:31:15",
     "fc_lst_seen": "2026-10-25T16:00:00"
   },
@@ -18055,7 +18050,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24248198",
     "fc_cart": "n"
@@ -18104,7 +18099,7 @@
   "fc_24247519": {
     "stock": "in_stock",
     "name": "Hot Wheels Pedal Driver Die Cast Free Wheel Toy Car (118/250) - Red & Gold",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-pedal-driver-die-cast-free-wheel-toy-car-118-250-red-and-gold/24247519/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -18448,7 +18443,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24390958",
     "fc_phantom": "2026-11-11T11:23:49",
@@ -25943,7 +25938,7 @@
   "fc_22123860": {
     "stock": "in_stock",
     "name": "Majorette Toyota Yaris Die-Cast Car Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-toyota-yaris-die-cast-car-black/22123860/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -26054,7 +26049,7 @@
   "fc_22125600": {
     "stock": "in_stock",
     "name": "Majorette BMW M3 Touring Safari Die-Cast Car White",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-bmw-m3-touring-safari-die-cast-car-white/22125600/product-detail",
     "first_seen": "2026-11-10T17:15:00",
