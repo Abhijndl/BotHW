@@ -3860,7 +3860,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_phantom": "2026-11-09T06:36:22",
@@ -4143,7 +4143,7 @@
     "fc_listed_at": "2026-11-07T18:30:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "cat",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -4994,7 +4994,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345424",
     "fc_phantom": "2026-10-26T13:05:51",
@@ -11342,7 +11342,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -12838,7 +12838,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -15767,6 +15767,7 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-02T16:29:36",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-31T07:01:27",
     "fc_lst_seen": "2026-10-31T07:30:00",
     "last_ring": "2026-11-02T16:28:43"
@@ -16127,6 +16128,7 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-25T05:47:06",
     "fc_lst_seen": "2026-10-25T06:30:00"
   },
@@ -16221,6 +16223,7 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-09T06:33:17",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-10T06:01:02",
     "fc_lst_seen": "2026-11-10T06:30:00"
   },
@@ -16291,7 +16294,8 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-10-24T14:40:52",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_24475206": {
     "stock": "out_of_stock",
@@ -16404,6 +16408,7 @@
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-25T15:31:15",
     "fc_lst_seen": "2026-10-25T16:00:00"
   },
@@ -18443,7 +18448,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24390958",
     "fc_phantom": "2026-11-11T11:23:49",
@@ -24399,7 +24404,7 @@
     "fc_listed_at": "2026-11-11T11:45:00",
     "fc_api_seen_at": "2026-11-11T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-11T11:51:16",
@@ -25938,7 +25943,7 @@
   "fc_22123860": {
     "stock": "in_stock",
     "name": "Majorette Toyota Yaris Die-Cast Car Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-toyota-yaris-die-cast-car-black/22123860/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -26049,7 +26054,7 @@
   "fc_22125600": {
     "stock": "in_stock",
     "name": "Majorette BMW M3 Touring Safari Die-Cast Car White",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-bmw-m3-touring-safari-die-cast-car-white/22125600/product-detail",
     "first_seen": "2026-11-10T17:15:00",
