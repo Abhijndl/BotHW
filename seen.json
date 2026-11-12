@@ -11232,7 +11232,7 @@
     "fc_listed_at": "2026-11-12T07:15:00",
     "fc_api_seen_at": "2026-11-12T07:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23345095",
     "fc_phantom": "2026-11-01T07:30:49",
@@ -12839,7 +12839,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -12943,7 +12943,7 @@
     "fc_listed_at": "2026-11-12T07:15:00",
     "fc_api_seen_at": "2026-11-12T07:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-12T03:51:15",
@@ -21724,7 +21724,8 @@
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_phantom": "2026-10-22T09:24:35",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_24762190": {
     "stock": "in_stock",
@@ -22563,7 +22564,7 @@
     "fc_listed_at": "2026-11-12T07:15:00",
     "fc_api_seen_at": "2026-11-12T07:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24776095",
     "fc_phantom": "2026-11-06T11:19:40",
@@ -25947,7 +25948,7 @@
   "fc_22123860": {
     "stock": "in_stock",
     "name": "Majorette Toyota Yaris Die-Cast Car Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-toyota-yaris-die-cast-car-black/22123860/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -26058,7 +26059,7 @@
   "fc_22125600": {
     "stock": "in_stock",
     "name": "Majorette BMW M3 Touring Safari Die-Cast Car White",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-bmw-m3-touring-safari-die-cast-car-white/22125600/product-detail",
     "first_seen": "2026-11-10T17:15:00",
