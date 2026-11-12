@@ -11343,7 +11343,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -12839,7 +12839,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -12927,7 +12927,7 @@
     "fc_lst_seen": "2026-11-12T09:45:00"
   },
   "fc_24194169": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
     "price": "₹809",
     "source": "firstcry",
@@ -12942,12 +12942,12 @@
     "fc_listed_at": "2026-11-12T07:30:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-12T09:51:07",
     "fc_cart": "y",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-12T07:01:34",
     "fc_lst_seen": "2026-11-12T07:30:00",
     "last_ring": "2026-11-12T03:44:44"
@@ -15080,7 +15080,7 @@
     "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_cart": "y",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-12T06:46:24",
     "fc_lst_seen": "2026-11-12T09:45:00"
   },
@@ -18658,7 +18658,7 @@
     "fc_listed_at": "2026-11-12T09:45:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24503323",
     "fc_cart": "n",
@@ -21721,7 +21721,8 @@
     "fc_lst": "out",
     "fc_gid": "24768895",
     "fc_phantom": "2026-10-22T09:24:35",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_24762190": {
     "stock": "in_stock",
@@ -24403,7 +24404,7 @@
     "fc_listed_at": "2026-11-12T09:45:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-11T11:51:16",
@@ -25568,7 +25569,7 @@
     "fc_lst_seen": "2026-11-12T09:45:00"
   },
   "fc_22591626": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium BWT Alpine Formula One Team F1 Team Car - Multicolor",
     "price": "₹719",
     "source": "firstcry",
@@ -25583,11 +25584,11 @@
     "fc_listed_at": "2026-11-12T09:45:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "22591626",
-    "fc_phantom": "2026-11-12T09:48:23",
-    "fc_cart": "y",
+    "fc_phantom": "2026-11-12T09:52:31",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-12T07:01:34",
     "fc_lst_seen": "2026-11-12T09:45:00"
@@ -25942,7 +25943,7 @@
   "fc_22123860": {
     "stock": "in_stock",
     "name": "Majorette Toyota Yaris Die-Cast Car Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-toyota-yaris-die-cast-car-black/22123860/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -26053,7 +26054,7 @@
   "fc_22125600": {
     "stock": "in_stock",
     "name": "Majorette BMW M3 Touring Safari Die-Cast Car White",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-bmw-m3-touring-safari-die-cast-car-white/22125600/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -26567,7 +26568,7 @@
     "fc_listed_at": "2026-11-12T09:45:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22063897",
     "fc_cart": "n",
@@ -26897,7 +26898,7 @@
     "fc_listed_at": "2026-11-12T09:45:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22063897",
     "fc_cart": "n",
@@ -27117,7 +27118,7 @@
     "fc_listed_at": "2026-11-12T09:45:00",
     "fc_api_seen_at": "2026-11-12T09:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24178923",
     "fc_cart": "n",
