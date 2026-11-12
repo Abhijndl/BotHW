@@ -3581,7 +3581,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -3783,7 +3783,7 @@
   "fc_23076122": {
     "stock": "in_stock",
     "name": "Hot Wheels 69 Chevelle (53/250) Die Cast Free Wheel Toy Car - Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-69-chevelle-53-250-die-cast-free-wheel-toy-car-green/23076122/product-detail",
     "first_seen": "2026-07-20T10:51:52",
@@ -4155,7 +4155,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -10460,7 +10460,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-06T15:42:49",
-    "fc_off": "2026-11-12T06:07:40",
+    "fc_off": "2026-11-12T06:18:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11496,7 +11496,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-04T14:44:40",
-    "fc_off": "2026-11-12T06:07:40",
+    "fc_off": "2026-11-12T06:18:00",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-03T07:59:07",
@@ -13748,7 +13748,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-03T08:18:55",
-    "fc_arr": "2026-11-12T06:16:59",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-07T16:47:13",
@@ -14234,7 +14233,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14292,7 +14291,7 @@
     "fc_listed_at": "2026-11-12T06:15:00",
     "fc_api_seen_at": "2026-11-12T06:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24341962",
     "fc_cart": "n",
@@ -15010,7 +15009,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-06T15:42:49",
-    "fc_off": "2026-11-12T06:07:40",
+    "fc_off": "2026-11-12T06:18:00",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -26032,7 +26031,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -26922,7 +26921,7 @@
     "fc_listed_at": "2026-11-12T06:15:00",
     "fc_api_seen_at": "2026-11-12T06:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24387506",
     "fc_cart": "n",
@@ -26947,8 +26946,9 @@
     "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24387506",
+    "fc_arr": "2026-11-12T06:17:52",
     "fc_cart": "y",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24387509": {
     "stock": "out_of_stock",
@@ -26966,7 +26966,7 @@
     "fc_listed_at": "2026-11-12T06:15:00",
     "fc_api_seen_at": "2026-11-12T06:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24387506",
     "fc_cart": "n",
@@ -26991,8 +26991,9 @@
     "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24387506",
+    "fc_arr": "2026-11-12T06:17:52",
     "fc_cart": "y",
-    "fc_svc": "0"
+    "fc_svc": "1"
   },
   "fc_24178928": {
     "stock": "out_of_stock",
