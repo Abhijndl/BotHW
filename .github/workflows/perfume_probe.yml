@@ -1,0 +1,47 @@
+name: Perfume probe (temporary)
+on:
+  push:
+    branches: [claude/probe]
+    paths: [perfume.py, .github/workflows/perfume_probe.yml]
+permissions:
+  contents: write
+concurrency:
+  group: perfume-probe
+  cancel-in-progress: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/probe
+      - name: Start perfume watcher
+        continue-on-error: true
+        env:
+          PERFUME_EVERY_S: "10"
+        run: nohup python3 perfume.py > perfume.log 2>&1 &
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q "curl_cffi>=0.7.0"
+      - name: Stand-in for the tracker (45 s)
+        run: sleep 45
+      - name: Stop perfume watcher
+        if: always()
+        continue-on-error: true
+        run: |
+          touch .perfume_stop
+          for i in $(seq 1 60); do [ -f .perfume_done ] && break; sleep 0.25; done
+          ls -la .perfume_done perfume.json || true
+          tail -n 40 perfume.log || true
+      - name: Save report
+        if: always()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          cp perfume.log perfume_probe_log.txt || true
+          cp perfume.json perfume_probe_state.json || true
+          git add -f perfume_probe_log.txt perfume_probe_state.json || true
+          git commit -m "perfume probe report [skip ci]" || exit 0
+          git push origin HEAD:claude/probe
