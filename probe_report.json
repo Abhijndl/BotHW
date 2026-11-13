@@ -1,15 +1,6 @@
 {
- "whiffculture.com": {
-  "site": "whiffculture.com",
-  "products_json": 200,
-  "ms": 323,
-  "server": "cloudflare",
-  "n_products": 1788,
-  "n_available": 1235,
-  "partials_in_titles": 189,
-  "discounted_15pct_in_stock": 9,
-  "collections": 100,
-  "deal_collections": [
+ "collections": {
+  "whiff": [
    [
     "decant-sets",
     "Decant Sets",
@@ -46,308 +37,7 @@
     192
    ]
   ],
-  "deal_detail": [
-   {
-    "handle": "decant-sets",
-    "title": "Decant Sets",
-    "listed": 70,
-    "in_stock": 66,
-    "sample": [
-     [
-      "Essence of Gissah Decant Set",
-      1939.0,
-      true
-     ],
-     [
-      "Al Majed Oud Royal Aura Decant Set",
-      1269.0,
-      true
-     ],
-     [
-      "Al Majed Oud Signature Decant Set",
-      1249.0,
-      true
-     ],
-     [
-      "Royal Blend Trio Decant Set",
-      719.0,
-      true
-     ],
-     [
-      "Ibraq Classics Decant Set",
-      1199.0,
-      true
-     ],
-     [
-      "Laverne Prestige Decant Set",
-      969.0,
-      true
-     ],
-     [
-      "Assaf Signature Decant Set",
-      1299.0,
-      true
-     ],
-     [
-      "Royal Aura Decant Set",
-      1149.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "diwali-sale",
-    "title": "DIWALI SALE",
-    "listed": 250,
-    "in_stock": 250,
-    "sample": [
-     [
-      "Afnan SUPREMACY COLLECTOR’S EDITION",
-      319.0,
-      true
-     ],
-     [
-      "Rasasi HAWAS ICE",
-      249.0,
-      true
-     ],
-     [
-      "Mykonos INCEPTION",
-      269.0,
-      true
-     ],
-     [
-      "Lattafa KHAMRAH QAHWA",
-      279.0,
-      true
-     ],
-     [
-      "Lattafa TERIAQ INTENSE",
-      279.0,
-      true
-     ],
-     [
-      "Mykonos REFLECTION",
-      269.0,
-      true
-     ],
-     [
-      "Rayhaan VANTAGE",
-      229.0,
-      true
-     ],
-     [
-      "Rasasi HAWAS",
-      229.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "pre-diwali-sale",
-    "title": "FESTIVE SALE",
-    "listed": 28,
-    "in_stock": 28,
-    "sample": [
-     [
-      "Arabiyat Prestige OUD AL LAYL MIDNIGHT EDITION",
-      139.0,
-      true
-     ],
-     [
-      "Afnan HISTORIC SAHARA",
-      259.0,
-      true
-     ],
-     [
-      "Lattafa RAMZ SILVER",
-      179.0,
-      true
-     ],
-     [
-      "French Avenue ATLANTIS EXTRAIT",
-      289.0,
-      true
-     ],
-     [
-      "Ahmed IGHR'A",
-      219.0,
-      true
-     ],
-     [
-      "Ard Al Zaafaran AL DIRGHAM",
-      149.0,
-      true
-     ],
-     [
-      "Mykonos CALIFORNIA BLUE",
-      269.0,
-      true
-     ],
-     [
-      "Maison Alhambra LEONIE INTENSE",
-      169.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "flash-sale",
-    "title": "Flash Sale",
-    "listed": 68,
-    "in_stock": 58,
-    "sample": [
-     [
-      "Ajmal SILVER SHADE Flash Sale",
-      1199.0,
-      true
-     ],
-     [
-      "Khadlaj MUSK PURE MUSK BLEND Flash Sale",
-      4179.0,
-      true
-     ],
-     [
-      "Ibraheem Al Qurashi MUSK AL-SHAMS Flash Sale",
-      2449.0,
-      true
-     ],
-     [
-      "Ibraheem Al Qurashi SUGAR MUSK Flash Sale",
-      2449.0,
-      true
-     ],
-     [
-      "Ibraheem Al Qurashi LUBAN MUSK Flash Sale",
-      2449.0,
-      true
-     ],
-     [
-      "Ibraheem Al Qurashi MUSK AL QAMAR Flash Sale",
-      2449.0,
-      true
-     ],
-     [
-      "Ibraheem Al Qurashi RASPBERRY MUSK Flash Sale",
-      2449.0,
-      true
-     ],
-     [
-      "Ibraheem Al Qurashi ABAQ POMEGRANATE MUSK Flash Sale",
-      2449.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "independence-day-sale",
-    "title": "INDEPENDENCE DAY SALE",
-    "listed": 102,
-    "in_stock": 93,
-    "sample": [
-     [
-      "Afnan 9PM ELIXIR",
-      249.0,
-      true
-     ],
-     [
-      "Afnan RARE CARBON",
-      239.0,
-      true
-     ],
-     [
-      "Afnan RARE REEF",
-      239.0,
-      true
-     ],
-     [
-      "Afnan STARDUST",
-      319.0,
-      true
-     ],
-     [
-      "Afnan SUPREMACY COLLECTOR’S EDITION",
-      319.0,
-      true
-     ],
-     [
-      "Afnan TURATHI ELECTRIC",
-      219.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi BLUE by AHMED",
-      229.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi GHAF",
-      279.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "partial-sale",
-    "title": "Partials",
-    "listed": 170,
-    "in_stock": 11,
-    "sample": [
-     [
-      "Lattafa ANGHAM SECOND SONG Partial",
-      989.0,
-      true
-     ],
-     [
-      "Rasasi HAWAS Partial",
-      1069.0,
-      true
-     ],
-     [
-      "Ahmed IGHR'A Partial",
-      1039.0,
-      true
-     ],
-     [
-      "Paris Corner KHAIR PEACH DELULU Partial",
-      829.0,
-      true
-     ],
-     [
-      "Khadlaj ICON Partial",
-      1119.0,
-      true
-     ],
-     [
-      "Lattafa YARA ELIXIR Partial",
-      909.0,
-      true
-     ],
-     [
-      "Riiffs TAHIRA EXTRAIT DE PARFUM Partial",
-      1009.0,
-      true
-     ],
-     [
-      "Khadlaj CLOUD CANDY Partial",
-      909.0,
-      true
-     ]
-    ]
-   }
-  ]
- },
- "scentoria.co.in": {
-  "site": "scentoria.co.in",
-  "products_json": 200,
-  "ms": 443,
-  "server": "cloudflare",
-  "n_products": 2000,
-  "n_available": 971,
-  "partials_in_titles": 505,
-  "discounted_15pct_in_stock": 31,
-  "collections": 250,
-  "deal_collections": [
+  "scentoria": [
    [
     "christmas-sale",
     "Christmas Sale",
@@ -372,160 +62,19 @@
     "deals-of-the-week",
     "HOT DEALS !!",
     7
+   ],
+   [
+    "partials",
+    "Partials",
+    152
+   ],
+   [
+    "testers",
+    "Testers",
+    5460
    ]
   ],
-  "deal_detail": [
-   {
-    "handle": "christmas-sale",
-    "title": "Christmas Sale",
-    "listed": 0,
-    "in_stock": 0,
-    "sample": []
-   },
-   {
-    "handle": "decants",
-    "title": "Decants",
-    "listed": 250,
-    "in_stock": 199,
-    "sample": [
-     [
-      "1 Million EDT",
-      300.0,
-      true
-     ],
-     [
-      "1 Million Elixir Parfum Intense",
-      250.0,
-      true
-     ],
-     [
-      "1 Million Lucky EDT (2018 Release)",
-      1250.0,
-      true
-     ],
-     [
-      "1 Million Lucky EDT (2025 Release)",
-      1050.0,
-      true
-     ],
-     [
-      "1 Million Parfum",
-      1050.0,
-      true
-     ],
-     [
-      "1000 EDP",
-      250.0,
-      true
-     ],
-     [
-      "1000 EDT",
-      1100.0,
-      true
-     ],
-     [
-      "1270 Extreme EDP",
-      250.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "diwali-sale",
-    "title": "Diwali Sale",
-    "listed": 0,
-    "in_stock": 0,
-    "sample": []
-   },
-   {
-    "handle": "festive-sale",
-    "title": "Festive Sale",
-    "listed": 33,
-    "in_stock": 20,
-    "sample": [
-     [
-      "A-Men EDT Partial",
-      2250.0,
-      true
-     ],
-     [
-      "Acqua Di Gio EDP (2024 Version)",
-      275.0,
-      true
-     ],
-     [
-      "Acqua Di Gio EDT (New 2024 Formulation)",
-      250.0,
-      true
-     ],
-     [
-      "Acqua Di Gio EDT Partial",
-      2250.0,
-      true
-     ],
-     [
-      "Acqua Di Gio Parfum (New 2024)",
-      300.0,
-      true
-     ],
-     [
-      "Acqua Di Gio Parfum (Old Version)",
-      4950.0,
-      true
-     ],
-     [
-      "Alien EDP",
-      300.0,
-      true
-     ],
-     [
-      "Alien Goddess EDP",
-      300.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "deals-of-the-week",
-    "title": "HOT DEALS !!",
-    "listed": 7,
-    "in_stock": 4,
-    "sample": [
-     [
-      "Cedrat Boise EDP",
-      300.0,
-      true
-     ],
-     [
-      "Alien EDP",
-      300.0,
-      true
-     ],
-     [
-      "Patchouli Intense EDP",
-      400.0,
-      true
-     ],
-     [
-      "Oud For Greatness Neo EDP",
-      400.0,
-      true
-     ]
-    ]
-   }
-  ]
- },
- "scentira.in": {
-  "site": "scentira.in",
-  "products_json": 200,
-  "ms": 237,
-  "server": "cloudflare",
-  "n_products": 1561,
-  "n_available": 922,
-  "partials_in_titles": 0,
-  "discounted_15pct_in_stock": 715,
-  "collections": 250,
-  "deal_collections": [
+  "scentira": [
    [
     "all-partials",
     "All Partials (full catalogue)",
@@ -608,7 +157,7 @@
    ],
    [
     "diwali-under-299",
-    "Decants under ₹299",
+    "Decants under \u20b9299",
     150
    ],
    [
@@ -620,267 +169,89 @@
     "diwali-sale",
     "Diwali Sale",
     324
-   ]
-  ],
-  "deal_detail": [
-   {
-    "handle": "all-partials",
-    "title": "All Partials (full catalogue)",
-    "listed": 250,
-    "in_stock": 178,
-    "sample": [
-     [
-      "Armaf Club De Nuit Intense Man Pure Parfum",
-      0.0,
-      true
-     ],
-     [
-      "Rasasi Hawas Ice Eau De Parfum",
-      0.0,
-      true
-     ],
-     [
-      "Lattafa Khamrah Eau De Parfum",
-      0.0,
-      true
-     ],
-     [
-      "Afnan Turathi Blue Eau De Parfum",
-      0.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige Marwa Eau de Parfum",
-      199.0,
-      true
-     ],
-     [
-      "Afnan Supremacy Not Only Intense Eau De Parfum",
-      0.0,
-      true
-     ],
-     [
-      "Riiffs Goodness Oud Purple Wave Eau de Parfum",
-      0.0,
-      true
-     ],
-     [
-      "French Avenue Vulcan Feu Eau de Parfum",
-      0.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "body-mist-sale",
-    "title": "Body Mist Sale",
-    "listed": 14,
-    "in_stock": 0,
-    "sample": [
-     [
-      "Victoria's Secret Pure Seduction Shimmer Fragrance Mist",
-      0.0,
-      false
-     ],
-     [
-      "Bath & Body Works Gingham Fine Fragrance Mist",
-      0.0,
-      false
-     ],
-     [
-      "Victoria's Secret Love Spell Shimmer Body Mist",
-      0.0,
-      false
-     ],
-     [
-      "Bath & Body Works In the Stars Fine Fragrance Mist",
-      0.0,
-      false
-     ],
-     [
-      "Bath & Body Works At The Beach Fine Fragrance Mist",
-      0.0,
-      false
-     ],
-     [
-      "Bath & Body Works A Thousand Wishes Fine Fragrance Mist",
-      0.0,
-      false
-     ],
-     [
-      "Victoria's Secret Sliver Of Sun Body Mist",
-      0.0,
-      false
-     ],
-     [
-      "Bath & Body Works Warm Vanilla Sugar Fine Fragrance Mist",
-      0.0,
-      false
-     ]
-    ]
-   },
-   {
-    "handle": "carnival-sale",
-    "title": "Carnival Sale",
-    "listed": 0,
-    "in_stock": 0,
-    "sample": []
-   },
-   {
-    "handle": "carnival-sale-10",
-    "title": "Carnival Sale 10%",
-    "listed": 0,
-    "in_stock": 0,
-    "sample": []
-   },
-   {
-    "handle": "carnival-sale-15",
-    "title": "Carnival Sale 15%",
-    "listed": 0,
-    "in_stock": 0,
-    "sample": []
-   },
-   {
-    "handle": "carnival-sale-20",
-    "title": "Carnival Sale 20%",
-    "listed": 0,
-    "in_stock": 0,
-    "sample": []
-   }
-  ]
- },
- "sniff.co.in": {
-  "site": "sniff.co.in",
-  "products_json": 200,
-  "ms": 381,
-  "server": "cloudflare",
-  "n_products": 2000,
-  "n_available": 712,
-  "partials_in_titles": 1,
-  "discounted_15pct_in_stock": 577,
-  "collections": 18,
-  "deal_collections": [
-   [
-    "50ml-sale",
-    "50ML SALE",
-    46
    ],
    [
-    "luxe-testers",
-    "Shop Perfumes",
-    2105
+    "long-lasting-perfumes-for-men-under-1000",
+    "Long Lasting Perfumes for Men Under 1000",
+    26
+   ],
+   [
+    "long-lasting-perfumes-for-men-under-500",
+    "Long Lasting Perfumes for Men Under 500",
+    11
+   ],
+   [
+    "long-lasting-perfumes-for-women-under-500",
+    "Long Lasting Perfumes for Women Under 500",
+    26
+   ],
+   [
+    "long-lasting-perfumes-under-1000",
+    "Long Lasting Perfumes Under 1000",
+    49
+   ],
+   [
+    "long-lasting-perfumes-under-2000",
+    "Long Lasting Perfumes Under 2000",
+    118
+   ],
+   [
+    "long-lasting-perfumes-under-500",
+    "Long Lasting Perfumes Under 500",
+    13
+   ],
+   [
+    "pay-day-sale",
+    "NEW ARRIVALS",
+    406
+   ],
+   [
+    "new-offers",
+    "New Offers",
+    15
+   ],
+   [
+    "givenchy-gentleman-reserve-privee-eau-de-parfum",
+    "Partial Excluded",
+    24
+   ],
+   [
+    "partials",
+    "Partials",
+    905
+   ],
+   [
+    "diwali-partials",
+    "Partials",
+    40
+   ],
+   [
+    "perfume-decants",
+    "Perfume Decants",
+    1366
+   ],
+   [
+    "sale",
+    "Sale",
+    2
+   ],
+   [
+    "sale-25off",
+    "sale-25off",
+    0
+   ],
+   [
+    "sale-30off",
+    "sale-30off",
+    0
+   ],
+   [
+    "sale-40",
+    "sale-40%",
+    0
    ]
   ],
-  "deal_detail": [
-   {
-    "handle": "50ml-sale",
-    "title": "50ML SALE",
-    "listed": 46,
-    "in_stock": 46,
-    "sample": [
-     [
-      "YVES SAINT LAURENT MYSLF Eau De Parfum",
-      1999.0,
-      true
-     ],
-     [
-      "BVLGARI Man In Black Eau De Parfum",
-      2750.0,
-      true
-     ],
-     [
-      "PACO RABANNE 1 Million Elixir Eau De Parfum",
-      2618.0,
-      true
-     ],
-     [
-      "Versace Bright Crystal Eau De Toilette",
-      1999.0,
-      true
-     ],
-     [
-      "Bleu De Chanel Parfum",
-      3840.0,
-      true
-     ],
-     [
-      "Givenchy Gentleman Society Eau De Parfum",
-      3150.0,
-      true
-     ],
-     [
-      "Versace Crystal Noir EDT/EDP",
-      1999.0,
-      true
-     ],
-     [
-      "LANCOME La Vie est Belle Eau de Parfum",
-      2999.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "luxe-testers",
-    "title": "Shop Perfumes",
-    "listed": 250,
-    "in_stock": 157,
-    "sample": [
-     [
-      "Chanel Bleu De Chanel Eau De Parfum Pour Homme",
-      3650.0,
-      true
-     ],
-     [
-      "Dior Sauvage Parfum",
-      3720.0,
-      true
-     ],
-     [
-      "DIOR Sauvage Eau De Parfum",
-      3499.0,
-      true
-     ],
-     [
-      "YVES SAINT LAURENT MYSLF Eau De Parfum",
-      1999.0,
-      true
-     ],
-     [
-      "BVLGARI Man In Black Eau De Parfum",
-      2750.0,
-      true
-     ],
-     [
-      "Chanel Coco Mademoiselle Eau De Parfum",
-      3499.0,
-      true
-     ],
-     [
-      "BVLGARI Man Wood Essence Eau De Parfum",
-      2199.0,
-      true
-     ],
-     [
-      "MontBlanc Explorer EDP Men",
-      2299.0,
-      true
-     ]
-    ]
-   }
-  ]
- },
- "sillageperfumes.in": {
-  "site": "sillageperfumes.in",
-  "products_json": 200,
-  "ms": 466,
-  "server": "cloudflare",
-  "n_products": 1077,
-  "n_available": 854,
-  "partials_in_titles": 3,
-  "discounted_15pct_in_stock": 159,
-  "collections": 67,
-  "deal_collections": [
+  "sillage": [
    [
     "afnan-decants",
     "Afnan Perfume Decants",
@@ -1042,296 +413,864 @@
     15
    ]
   ],
-  "deal_detail": [
-   {
-    "handle": "afnan-decants",
-    "title": "Afnan Perfume Decants",
-    "listed": 24,
-    "in_stock": 23,
-    "sample": [
-     [
-      "Afnan Supremacy Collector’s Edition EDP For Men Decant",
-      365.0,
-      true
-     ],
-     [
-      "Afnan 9PM EDP for Men Decant",
-      269.0,
-      true
-     ],
-     [
-      "Afnan Rare Reef EDP for Men and Women Decant",
-      295.0,
-      true
-     ],
-     [
-      "Afnan Turathi Blue For Men & Women Decant",
-      315.0,
-      true
-     ],
-     [
-      "Afnan 9pm Night Out EDP Decant For Men & Women",
-      345.0,
-      true
-     ],
-     [
-      "Afnan Supremacy Not Only Intense EDP for Men Decant",
-      285.0,
-      true
-     ],
-     [
-      "Afnan 9PM Rebel for Men Decant",
-      299.0,
-      true
-     ],
-     [
-      "Afnan Turathi Electric EDP For Men and Women Decant",
-      295.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "ahmed-al-maghribi-decants",
-    "title": "Ahmed Al Maghribi Perfume Decants",
-    "listed": 31,
-    "in_stock": 29,
-    "sample": [
-     [
-      "Ahmed Al Maghribi Kaaf Extrait De Parfum for Men & Women Decant",
-      199.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Blue By Ahmed EDP for Men Decant",
-      225.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Bin Shaikh EDP for Men and Women Decant",
-      645.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Oud & Rose EDP for Men & Women Decant",
-      599.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Marj EDP for Women & Men Decant",
-      599.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Blu Oud Perfume EDP for Men and Women Decant",
-      245.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Ignite Oud EDP for Men & Women Decant",
-      449.0,
-      true
-     ],
-     [
-      "Ahmed Al Maghribi Aqua Oud EDP for Men Decant",
-      255.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "al-haramain-decants",
-    "title": "Al Haramain Perfume Decants",
-    "listed": 6,
-    "in_stock": 6,
-    "sample": [
-     [
-      "Al Haramain Amber Oud Aqua Dubai Extrait De Parfum for Men & Women Decant",
-      589.0,
-      true
-     ],
-     [
-      "Al Haramain Detour Noir EDP for Men & Women Decant",
-      259.0,
-      true
-     ],
-     [
-      "Al Haramain L'Aventure EDP For Men Decant",
-      359.0,
-      true
-     ],
-     [
-      "Al Haramain Amber Oud Gold Edition EDP For Women and Men Decant",
-      630.0,
-      true
-     ],
-     [
-      "Al Haramain Amber Oud Tobacco Edition EDP For Men Decant",
-      599.0,
-      true
-     ],
-     [
-      "Al Haramain Amber Oud Dubai Night Extrait De Parfum For Men & Women Decant",
-      475.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "arabiyat-decants",
-    "title": "Arabiyat Perfume Decants",
-    "listed": 17,
-    "in_stock": 16,
-    "sample": [
-     [
-      "Arabiyat Prestige Marwa EDP for Men Decant",
-      299.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige La Di Da For Him EDP Decant",
-      315.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige Mahd Al Dhahab EDP Decant for Men & Women",
-      325.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige Safa EDP For Women Decant",
-      279.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige Kohl Opulence EDP For Men and Women Decant",
-      315.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige AL noor EDP for Men & Women Decant",
-      249.0,
-      true
-     ],
-     [
-      "Arabiyat Prestige Uhud EDP For Women Decant",
-      246.0,
-      true
-     ],
-     [
-      "Arabiyat Oud Al Layl Midnight Edition Decant",
-      189.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "armaf-decants",
-    "title": "Armaf Perfume Decants",
-    "listed": 37,
-    "in_stock": 33,
-    "sample": [
-     [
-      "Armaf Club De Nuit Intense Man Pure Parfum for Men Decant",
-      299.0,
-      true
-     ],
-     [
-      "Armaf Club de Nuit Iconic EDP for Men Decant",
-      369.0,
-      true
-     ],
-     [
-      "Armaf Club de Nuit EDP for Women Decant",
-      295.0,
-      true
-     ],
-     [
-      "Armaf Club De Nuit Intense Man Parfum Limited Edition A Collectors Pride Decant",
-      559.0,
-      true
-     ],
-     [
-      "Armaf Club De Nuit Urban Elixir EDP for Men Decant",
-      205.0,
-      true
-     ],
-     [
-      "Armaf Club de Nuit Untold EDP For Men and Women Decant",
-      340.0,
-      true
-     ],
-     [
-      "Armaf Odyssey Mega EDP For Men Decant",
-      229.0,
-      true
-     ],
-     [
-      "Armaf Club de Nuit Sillage EDP for Men & Women Decant",
-      355.0,
-      true
-     ]
-    ]
-   },
-   {
-    "handle": "aromatrix-x-french-avenue-decants",
-    "title": "Aromatrix X French Avenue Perfume Decants",
-    "listed": 6,
-    "in_stock": 6,
-    "sample": [
-     [
-      "Aromatix X French Avenue Frostbite Extrait De Parfum For Man Decant",
-      359.0,
-      true
-     ],
-     [
-      "Aromatix X French Avenue Sun Kissed Extrait de Parfum For Men and Women Decant",
-      435.0,
-      true
-     ],
-     [
-      "Aromatix X French Avenue Magnetiq Extrait de Parfum For Men Decant",
-      399.0,
-      true
-     ],
-     [
-      "Aromatix X French Avenue Forbidden Fruit Extrait de Parfum For Women and Men Decant",
-      435.0,
-      true
-     ],
-     [
-      "Aromatix X French Avenue Teas Me Extrait de Parfum For Men and Women Decant",
-      399.0,
-      true
-     ],
-     [
-      "French Avenue Aromatix Platine Blanc Extrait de Parfum for Men Decant",
-      399.0,
-      true
-     ]
-    ]
-   }
+  "sniff": [
+   [
+    "50ml-sale",
+    "50ML SALE",
+    46
+   ],
+   [
+    "luxe-testers",
+    "Shop Perfumes",
+    2105
+   ]
   ]
  },
- "perfumenetwork.in": {
-  "site": "perfumenetwork.in",
-  "products_json": 200,
-  "ms": 535,
-  "server": "cloudflare",
-  "n_products": 1708,
-  "n_available": 758,
-  "partials_in_titles": 0,
-  "discounted_15pct_in_stock": 359,
-  "collections": 186,
-  "deal_collections": []
+ "scan": {
+  "scentoria": {
+   "products": 4000,
+   "pages": 16,
+   "partials": 1128,
+   "partials_in": 107,
+   "tags": [
+    [
+     "Unisex",
+     689
+    ],
+    [
+     "EDP",
+     676
+    ],
+    [
+     "His",
+     234
+    ],
+    [
+     "Her",
+     199
+    ],
+    [
+     "Extrait De Parfum",
+     129
+    ],
+    [
+     "EDT",
+     124
+    ],
+    [
+     "Parfum",
+     106
+    ],
+    [
+     "Floral",
+     84
+    ],
+    [
+     "Amber Woody",
+     71
+    ],
+    [
+     "Amber Floral",
+     68
+    ],
+    [
+     "Woody Aromatic",
+     67
+    ],
+    [
+     "Woody Spicy",
+     48
+    ],
+    [
+     "Oriental Woody",
+     43
+    ],
+    [
+     "Oriental Floral",
+     42
+    ],
+    [
+     "Woody",
+     40
+    ]
+   ],
+   "types": [
+    [
+     "Fragrance",
+     1091
+    ],
+    [
+     "-",
+     36
+    ],
+    [
+     "Lipstick",
+     1
+    ]
+   ],
+   "variant_titles": [
+    [
+     "30 ML TESTER",
+     300
+    ],
+    [
+     "20 ML TESTER",
+     148
+    ],
+    [
+     "30 ML RETAIL",
+     136
+    ],
+    [
+     "25 ML TESTER",
+     65
+    ],
+    [
+     "20 ML RETAIL",
+     61
+    ],
+    [
+     "40 ML TESTER",
+     61
+    ],
+    [
+     "15 ML TESTER",
+     47
+    ],
+    [
+     "10 ML TESTER",
+     38
+    ]
+   ],
+   "newest": [
+    [
+     "2026-11-03T18:38",
+     "Spirito Parfum Partial",
+     false
+    ],
+    [
+     "2026-11-03T18:40",
+     "Eau De Monsieur EDT Partial",
+     false
+    ],
+    [
+     "2026-11-03T18:43",
+     "Petite Cherie EDT Partial",
+     false
+    ],
+    [
+     "2026-11-03T18:46",
+     "Gold Rose Oudh Extrait De Parfum Partial",
+     false
+    ],
+    [
+     "2026-11-03T18:50",
+     "The One For Men Gold Edition EDP Intense Partial",
+     true
+    ],
+    [
+     "2026-11-04T13:29",
+     "Mirto Di Panarea La Riserva EDP Partial",
+     false
+    ],
+    [
+     "2026-11-04T13:48",
+     "A-Men EDT Partial",
+     true
+    ],
+    [
+     "2026-11-04T14:07",
+     "Micodelirio Extrait de Parfum Partial",
+     false
+    ]
+   ]
+  }
  },
- "thescentstories.com": {
-  "site": "thescentstories.com",
-  "products_json": 404,
-  "ms": 712,
-  "server": "nginx/1.18.0 (Ubuntu)",
-  "base": "https://thescentstories.com",
-  "collections": 0,
-  "deal_collections": []
+ "watches": {
+  "whiff-partials": {
+   "codes": {
+    "ok": 46
+   },
+   "pages": {
+    "1": 46
+   },
+   "ms": [
+    124,
+    124,
+    127,
+    129,
+    129,
+    130,
+    130,
+    130,
+    130,
+    130,
+    130,
+    132,
+    132,
+    133,
+    136,
+    139,
+    139,
+    140,
+    140,
+    142,
+    142,
+    143,
+    152,
+    166,
+    166,
+    172,
+    175,
+    176,
+    180,
+    192,
+    199,
+    209,
+    212,
+    216,
+    217,
+    218,
+    220,
+    223,
+    224,
+    230,
+    237,
+    241,
+    243,
+    248,
+    316,
+    468
+   ],
+   "n": [
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170,
+    170
+   ],
+   "tracked": 170,
+   "in": 11,
+   "events": [],
+   "sample_in": [
+    "Ahmed IGHR'A Partial",
+    "Ajmal KURO Partial",
+    "Ajmal SHIRO Partial",
+    "Khadlaj CLOUD CANDY Partial",
+    "Khadlaj ICON Partial",
+    "Lattafa ANGHAM SECOND SONG Partial",
+    "Lattafa YARA ELIXIR Partial",
+    "Lattafa YARA Partial",
+    "Paris Corner KHAIR PEACH DELULU Partial",
+    "Rasasi HAWAS Partial",
+    "Riiffs TAHIRA EXTRAIT DE PARFUM Partial"
+   ]
+  },
+  "whiff-flash": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    119,
+    119,
+    127,
+    131,
+    155,
+    164,
+    166,
+    168,
+    169,
+    177,
+    183,
+    191,
+    195,
+    202,
+    204,
+    474
+   ],
+   "n": [
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68,
+    68
+   ],
+   "tracked": 68,
+   "in": 58,
+   "events": [],
+   "sample_in": [
+    "Ahmed Al Maghribi IGNITE ROSE Flash Sale",
+    "Ajmal CYAN OUD Flash Sale",
+    "Ajmal KURO Flash Sale",
+    "Ajmal SHIRO Flash Sale",
+    "Ajmal SILVER SHADE Flash Sale",
+    "Arabiyat Prestige LUTFAH THE SEVENTH HEAVEN Flash Sale",
+    "Arabiyat Prestige RAMAD ORIENTAL Flash Sale",
+    "Arabiyat Prestige SWAR D'AMOUR Flash Sale",
+    "Armaf BEACH PARTY Flash Sale",
+    "Armaf CLUB DE NUIT ICONIC EXTRAIT DE PARFUM Flash Sale",
+    "Armaf SOUL Flash Sale",
+    "Assaf ALLURE WHISPER ROUGE Flash Sale",
+    "Assaf DANGEROUS ARROGATE Flash Sale",
+    "Assaf OUD Flash Sale",
+    "Assaf REBEL ENABLE Flash Sale"
+   ]
+  },
+  "whiff-testers": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    134,
+    134,
+    135,
+    136,
+    140,
+    142,
+    148,
+    202,
+    206,
+    211,
+    212,
+    215,
+    220,
+    220,
+    223,
+    225
+   ],
+   "n": [
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187,
+    187
+   ],
+   "tracked": 187,
+   "in": 38,
+   "events": [],
+   "sample_in": [
+    "Arabiyat Prestige KOHL LUMINOUS EXTRAIT Tester",
+    "Arabiyat Prestige KOHL OPULENCE EXTRAIT Tester",
+    "Arabiyat Prestige RAMAD ORIENTAL Tester (Open Box 100ML)",
+    "Chan*l ALLURE HOMME SPORT EAU EXTREME Tester",
+    "Chan*l BDC EDT Tester",
+    "Chan*l BDC L'EXCLUSIF Tester",
+    "Chan*l BDC PARFUM Tester",
+    "Chan*l COCO MADEMOISELLE EDP INTENSE Tester",
+    "Chan*l COCO MADEMOISELLE EDP Tester",
+    "Chan*l GABRIELLE EDP Tester",
+    "Chan*l GABRIELLE ESSENCE EDP Tester",
+    "Chan*l GABRIELLE ESSENCE Tester",
+    "Chan*l NO 5 EDP Tester",
+    "Cre*d SILVER MOUNTAIN WATER EDP Tester",
+    "Dolce & Gabbana K EDP Tester"
+   ]
+  },
+  "scentoria-deals": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    115,
+    117,
+    122,
+    122,
+    125,
+    130,
+    135,
+    136,
+    148,
+    151,
+    163,
+    164,
+    175,
+    178,
+    181,
+    190
+   ],
+   "n": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "tracked": 7,
+   "in": 4,
+   "events": [],
+   "sample_in": [
+    "Alien EDP",
+    "Cedrat Boise EDP",
+    "Oud For Greatness Neo EDP",
+    "Patchouli Intense EDP"
+   ]
+  },
+  "scentoria-festive": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    118,
+    123,
+    130,
+    136,
+    136,
+    140,
+    142,
+    161,
+    162,
+    172,
+    174,
+    175,
+    184,
+    190,
+    204,
+    264
+   ],
+   "n": [
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33
+   ],
+   "tracked": 33,
+   "in": 20,
+   "events": [],
+   "sample_in": [
+    "A-Men EDT Partial",
+    "Acqua Di Gio EDP (2024 Version)",
+    "Acqua Di Gio EDT (New 2024 Formulation)",
+    "Acqua Di Gio EDT Partial",
+    "Acqua Di Gio Parfum (New 2024)",
+    "Acqua Di Gio Parfum (Old Version)",
+    "Alien EDP",
+    "Alien Goddess EDP",
+    "Alien Goddess EDP Intense",
+    "Alien Goddess EDP Intense Partial",
+    "Alien Goddess EDP Partial",
+    "Angel Muse EDP",
+    "Angel Muse EDT",
+    "Black Luna Rossa EDP",
+    "Code EDP Pour Homme"
+   ]
+  },
+  "scentira-partials": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "3": 16
+   },
+   "ms": [
+    580,
+    608,
+    621,
+    627,
+    640,
+    641,
+    651,
+    658,
+    658,
+    660,
+    679,
+    682,
+    694,
+    738,
+    870,
+    1394
+   ],
+   "n": [
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692,
+    692
+   ],
+   "tracked": 870,
+   "in": 56,
+   "events": [],
+   "sample_in": [
+    "Afnan Highness X Eau de Parfum / Partial (40mL) with Box",
+    "Afnan Mystique Bouquet Eau de Parfum / Partial (40mL) with Box",
+    "Afnan Supremacy Not Only Intense Eau De Parfum / Partial (50mL) with Box",
+    "Afnan Supremacy Tapis Rouge Eau de Parfum / Partial (40mL) with Box",
+    "Afnan Turathi Blue Eau De Parfum / Partial (40mL) with Box",
+    "Ahmed Al Maghribi Laathani Eau de Parfum / Partial (65mL) with Box",
+    "Ahmed Al Maghribi Oulil Amr Eau de Parfum / Partial (25mL) with Box",
+    "Ahmed Al Maghribi Oulil Amr Eau de Parfum / Partial (45mL) with Box",
+    "Ajmal Aristocrat Eau de Parfum / Partial (35mL) with Box",
+    "Ajmal Blue Homme Eau De Parfum / Partial (40mL) with Box",
+    "Ajmal Musk Silk Supreme Eau de Parfum / Partial (30mL) with Box",
+    "Ajmal Shiro Eau De Parfum / Partial (30mL) with Box",
+    "Ajmal Silver Shade Eau De Parfum / Partial (40mL) with Box",
+    "Ajmal Wisal Eau De Parfum / Partial (35mL) with Box",
+    "Al Haramain Amber Oud Aqua Dubai Eau de Parfum / Partial (40mL) with Box"
+   ]
+  },
+  "scentira-clearance": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    131,
+    134,
+    135,
+    136,
+    136,
+    141,
+    143,
+    145,
+    145,
+    153,
+    168,
+    168,
+    171,
+    176,
+    195,
+    279
+   ],
+   "n": [
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32
+   ],
+   "tracked": 32,
+   "in": 26,
+   "events": [],
+   "sample_in": [
+    "Anfar 1950 Discover Extrait de Parfum",
+    "Arabiyat Prestige Kohl Luminous Eau de Parfum",
+    "Creed Royal Princes Oud Eau de Parfum (2024)",
+    "Ex Nihilo Viper Green Eau de Parfum",
+    "Flora\u00efku Rise and Fall Eau De Parfum",
+    "Flora\u00efku Young At Heart Eau de Parfum",
+    "Franck Olivier Pure Addiction Eau de Parfum",
+    "French Avenue Divini Aoud Eau de Parfum",
+    "French Avenue Essence de Noir Eau de Parfum",
+    "French Avenue Giovanni Lorenzi Tesoro Eau de Parfum",
+    "French Avenue Paradox Tribute Eau de Parfum",
+    "French Avenue Royal Blend Vintage Extrait de Parfum",
+    "French Avenue Sultan the Founder Eau de Parfum",
+    "Hugo Boss The Collection Confident Oud Eau de Parfum Intense",
+    "My Perfumes Leather of Men Eau de Parfum"
+   ]
+  },
+  "sillage-decants": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "3": 16
+   },
+   "ms": [
+    497,
+    509,
+    519,
+    531,
+    534,
+    544,
+    544,
+    545,
+    554,
+    616,
+    768,
+    988,
+    1174,
+    1177,
+    1347,
+    1492
+   ],
+   "n": [
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583,
+    583
+   ],
+   "tracked": 583,
+   "in": 507,
+   "events": [],
+   "sample_in": [
+    "Afnan 9AM Dive EDP for Men Decant",
+    "Afnan 9PM EDP for Men Decant",
+    "Afnan 9PM Rebel for Men Decant",
+    "Afnan 9pm Elixir Extrait De Parfum For Man Decant",
+    "Afnan 9pm Night Out EDP Decant For Men & Women",
+    "Afnan Cherry Bouquet EDP for Women Decant",
+    "Afnan Delicious Bouquet EDP For Women Decant",
+    "Afnan Historic Doria EDP For Men & Women Decant",
+    "Afnan Historic Olmeda Decant for women and men",
+    "Afnan Historic Sahara EDP for Men and Women Decant",
+    "Afnan Kianna Vibes Pour Femme EDP For Woman Decant",
+    "Afnan Lynked Forever EDP For Woman Decant",
+    "Afnan Lynked Freedom EDP for Men Decant",
+    "Afnan Modest Pour Homme Une EDP for Men Decant",
+    "Afnan Mystique Bouquet EDP For Women Decant"
+   ]
+  },
+  "sniff-50ml": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    142,
+    150,
+    151,
+    153,
+    153,
+    157,
+    159,
+    160,
+    165,
+    166,
+    167,
+    169,
+    173,
+    175,
+    186,
+    194
+   ],
+   "n": [
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46
+   ],
+   "tracked": 46,
+   "in": 46,
+   "events": [],
+   "sample_in": [
+    "AZZARO Wanted By Night Eau De Parfum",
+    "BVLGARI Man In Black Eau De Parfum",
+    "BVLGARI Man Wood Neroli Eau De Parfum",
+    "Bleu De Chanel Parfum",
+    "Burberry Body EDP for Women",
+    "Burberry Her Blossom Eau De Toilette",
+    "Bvlgari Man Terrae Essence Eau de Parfum",
+    "CAROLINA HERRERA Bad Boy Le Parfum",
+    "Chanel Allure Homme EDT",
+    "Creed Millesime Imperial Eau de Parfum",
+    "DUNHILL Icon Elite Eau De Parfum",
+    "Dior Hypnotic Poison Eau De Toilette",
+    "Dolce & Gabbana The One EDT For Men",
+    "Elie Saab Rose Couture Eau De Toilette",
+    "Elie Saab Women Le Parfum Essentiel Long Lasting Eau De Parfum"
+   ]
+  },
+  "scentoria-partials": {
+   "codes": {
+    "ok": 16
+   },
+   "pages": {
+    "1": 16
+   },
+   "ms": [
+    117,
+    122,
+    123,
+    124,
+    139,
+    140,
+    157,
+    164,
+    165,
+    179,
+    197,
+    215,
+    217,
+    217,
+    224,
+    224
+   ],
+   "n": [
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133,
+    133
+   ],
+   "tracked": 133,
+   "in": 133,
+   "events": [],
+   "sample_in": [
+    "A-Men EDT Partial",
+    "Acqua Di Gio EDT Partial",
+    "Acqua Di Gioia EDP Partial",
+    "Alien EDP Partial",
+    "Alien Goddess EDP Intense Partial",
+    "Alien Goddess EDP Partial",
+    "Aliya' E Parfum Partial",
+    "Allende Parfum Partial",
+    "Allure Homme Edition Blanche EDP Partial",
+    "Allure Homme Sport EDT Partial",
+    "Ambre Nue Partial",
+    "Ambre Royal EDP Partial",
+    "Angel EDP Partial",
+    "Arancia Di Capri EDT Partial",
+    "Black III Parfum Partial"
+   ]
+  }
  }
 }
