@@ -43,19 +43,6 @@ jobs:
         with:
           ref: main
 
-      # Whiff Culture partials (perfume.py): checks every 10 s in the background
-      # for the whole run. Alerts go to the perfume bot, or to this bot until
-      # the PERFUME_BOT_TOKEN secret is added.
-      - name: Start perfume watcher
-        continue-on-error: true
-        env:
-          PERFUME_BOT_TOKEN: ${{ secrets.PERFUME_BOT_TOKEN }}
-          PERFUME_CHAT_ID: ${{ secrets.PERFUME_CHAT_ID }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          PERFUME_EVERY_S: "10"
-        run: nohup python3 perfume.py > perfume.log 2>&1 &
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -214,23 +201,14 @@ jobs:
           HM_WORKERS: "8"
         run: python bot.py
 
-      - name: Stop perfume watcher
-        if: always()
-        continue-on-error: true
-        run: |
-          touch .perfume_stop
-          for i in $(seq 1 60); do [ -f .perfume_done ] && break; sleep 0.25; done
-          tail -n 20 perfume.log || true
-
       - name: Save state
         run: |
           # (fc_cartlog.jsonl: the flip recorder's log of FirstCry's cart answers, v17.5.5)
-          if [ -n "$(git status --porcelain -- seen.json fc_cartlog.jsonl perfume.json)" ]; then
+          if [ -n "$(git status --porcelain -- seen.json fc_cartlog.jsonl)" ]; then
             git config user.name  "github-actions"
             git config user.email "actions@github.com"
             git add seen.json
             [ -f fc_cartlog.jsonl ] && git add fc_cartlog.jsonl
-            [ -f perfume.json ] && git add perfume.json
             git commit -q -m "chore: update seen.json [skip ci]"
             # If main moved meanwhile, rebase onto it (keeping THIS run's
             # seen.json, which already includes everything it started from).
