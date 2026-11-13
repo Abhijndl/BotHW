@@ -1,0 +1,51 @@
+name: Perfume watcher
+# Perfume deal alerts (perfume.py): partials, sales, testers and decants from
+# Whiff Culture, Scentoria, Scentira, Sillage and Sniff, plus a note when one of
+# them starts a new sale.
+#
+# Kept apart from the Hot Wheels Monitor on purpose: its own runs and its own
+# concurrency group, and its memory lives on the perfume-state branch. It only
+# reads perfume.py from main and never commits to main, so the Hot Wheels runs,
+# seen.json and their pushes are untouched.
+#
+# Each run watches for 20 minutes and queues the next one as it starts, so it
+# runs around the clock. The schedule only restarts that chain if a run ever
+# fails to queue the next one.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [perfume.py, .github/workflows/perfume.yml]
+  schedule:
+    - cron: "23,53 * * * *"
+
+permissions:
+  contents: write     # save perfume.json to the perfume-state branch
+  actions: write      # queue its own next run
+
+concurrency:
+  group: perfume-watcher
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: perfume.py
+          sparse-checkout-cone-mode: false
+
+      - name: Watch the perfume stores
+        env:
+          PERFUME_BOT_TOKEN: ${{ secrets.PERFUME_BOT_TOKEN }}
+          PERFUME_CHAT_ID: ${{ secrets.PERFUME_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+          PERFUME_STATE: perfume-state.json
+          PERFUME_STATE_BRANCH: perfume-state
+          PERFUME_MAX_RUN_S: "1200"
+        run: python3 perfume.py
