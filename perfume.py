@@ -1,42 +1,101 @@
 #!/usr/bin/env python3
-"""Whiff Culture partials watcher, run beside bot.py in each GitHub run.
+"""Perfume deal alerts from five Indian perfume stores.
 
-Reads the partial-sale collection every PERFUME_EVERY_S seconds and sends a
-Telegram message the moment a partial is listed or comes back in stock. Runs
-until .perfume_stop appears, then saves perfume.json and writes .perfume_done.
+Watches partials, sales, testers and decants (Shopify collections) and sends a
+Telegram message the moment something is listed or comes back in stock, plus a
+note when one of the stores starts a new sale.
+
+It runs in its own GitHub workflow (.github/workflows/perfume.yml), apart from
+the Hot Wheels tracker: each run watches for PERFUME_MAX_RUN_S seconds, makes
+sure the next run is queued, and keeps its memory (perfume.json) on the
+perfume-state branch, so it never writes to main.
 """
 import gzip
 import hashlib
 import json
 import os
 import re
+import signal
+import subprocess
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 
-SITE = os.getenv("PERFUME_SITE", "https://www.whiffculture.com").rstrip("/")
-COLL = os.getenv("PERFUME_COLLECTION", "partial-sale")
+WHIFF = "https://www.whiffculture.com"
+SCENTORIA = "https://www.scentoria.co.in"
+SCENTIRA = "https://www.scentira.in"
+SILLAGE = "https://www.sillageperfumes.in"
+SNIFF = "https://sniff.co.in"
+
+
+def W(wid, store, site, coll, label, new, every, variants=None, gone=False, notes=False):
+    """One watched list. new: alert heading for a new item. variants: watch only the
+    variants whose title matches (Scentira sells partials as a variant). gone: the
+    list drops what sells out, so an in-stock item missing from it counts as sold out.
+    notes: the store writes 'A floral, sweet ... fragrance' in its descriptions."""
+    return {"id": wid, "store": store, "site": site, "coll": coll, "label": label, "new": new,
+            "every": every, "variants": variants, "gone": gone, "notes": notes}
+
+
+WATCHES = [
+    W("whiff-partials", "Whiff Culture", WHIFF, "partial-sale", "partials", "NEW PARTIAL", 10, notes=True),
+    W("scentoria-partials", "Scentoria", SCENTORIA, "partials", "partials", "NEW PARTIAL", 15, gone=True),
+    W("scentira-partials", "Scentira", SCENTIRA, "partials", "partials", "NEW PARTIAL", 20, variants=r"\bpartial\b"),
+    W("whiff-flash", "Whiff Culture", WHIFF, "flash-sale", "flash sale", "NEW IN FLASH SALE", 30, notes=True),
+    W("whiff-testers", "Whiff Culture", WHIFF, "testers", "testers", "NEW TESTER", 30, notes=True),
+    W("scentoria-deals", "Scentoria", SCENTORIA, "deals-of-the-week", "hot deals", "NEW HOT DEAL", 30),
+    W("scentoria-festive", "Scentoria", SCENTORIA, "festive-sale", "festive sale", "NEW IN FESTIVE SALE", 30),
+    W("scentira-clearance", "Scentira", SCENTIRA, "clearance", "clearance", "NEW IN CLEARANCE", 30),
+    W("scentira-offers", "Scentira", SCENTIRA, "new-offers", "offers", "NEW OFFER", 30),
+    W("sillage-steals", "Sillage", SILLAGE, "clearance-sale", "steals", "NEW STEAL", 30),
+    W("sillage-sale", "Sillage", SILLAGE, "sale", "sale", "NEW IN SALE", 30),
+    W("sniff-50ml", "Sniff", SNIFF, "50ml-sale", "50ml sale", "NEW IN 50ML SALE", 30, gone=True),
+    W("sillage-decants", "Sillage", SILLAGE, "decants", "decants", "NEW DECANT", 60),
+]
+if os.getenv("PERFUME_WATCHES"):          # tests point the watcher at fake stores
+    WATCHES = [W(**w) for w in json.loads(os.environ["PERFUME_WATCHES"])]
+
 TG = os.getenv("TG_BASE", "https://api.telegram.org").rstrip("/")
-EVERY = float(os.getenv("PERFUME_EVERY_S", "10"))
-MAX_RUN = float(os.getenv("PERFUME_MAX_RUN_S", "420"))
+GH_API = os.getenv("GH_API", "https://api.github.com").rstrip("/")
+MAX_RUN = float(os.getenv("PERFUME_MAX_RUN_S", "1200"))
 GUARD = float(os.getenv("PERFUME_GUARD_S", "120"))
+XGUARD = float(os.getenv("PERFUME_XGUARD_S", "21600"))
 FAIL_WARN = float(os.getenv("PERFUME_FAIL_WARN_S", "900"))
 NUDGE_EVERY = float(os.getenv("PERFUME_NUDGE_S", "43200"))
 BACKOFF = float(os.getenv("PERFUME_BACKOFF_S", "60"))
+SALES_EVERY = float(os.getenv("PERFUME_SALES_EVERY_S", "900"))
+SALES_FIRST = float(os.getenv("PERFUME_SALES_FIRST_S", "45"))
+PUSH_EVERY = float(os.getenv("PERFUME_PUSH_EVERY_S", "300"))
+PULL_RETRY = float(os.getenv("PERFUME_PULL_RETRY_S", "60"))
+PULL_TRIES = int(os.getenv("PERFUME_PULL_TRIES", "4"))
+SEND_GAP = float(os.getenv("PERFUME_SEND_GAP_S", "1.1"))
 STATE = os.getenv("PERFUME_STATE", "perfume.json")
+BRANCH = os.getenv("PERFUME_STATE_BRANCH", "").strip()
 STOP = os.getenv("PERFUME_STOP", ".perfume_stop")
 DONE = os.getenv("PERFUME_DONE", ".perfume_done")
 TOKEN = os.getenv("PERFUME_BOT_TOKEN", "").strip()
 CHAT = os.getenv("PERFUME_CHAT_ID", "").strip()
 HW_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 HW_CHAT = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+REPO = os.getenv("GITHUB_REPOSITORY", "")
+RUN_ID = os.getenv("GITHUB_RUN_ID", "")
+WF = os.getenv("GITHUB_WORKFLOW_REF", "").split("@")[0].rsplit("/", 1)[-1] or "perfume.yml"
+CHAIN = os.getenv("PERFUME_CHAIN", "1" if os.getenv("GITHUB_ACTIONS") == "true" else "0") == "1"
 SOLD_CONFIRM = 2
 BULK = 5
+BULK_ROWS = 25
 PAGE = 250
+MAX_PAGES = 8
+KEEP_DAYS = 30
+SALE_RE = re.compile(r"\b(sales?|clearance|deals?|flash|offers?|steals?)\b", re.I)
+SALE_SKIP = re.compile(r"^cs-|exclud|eligible", re.I)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
 _dest = []
+_last_send = [0.0]
+_pushed = [None]
+_can_push = [True]
 
 
 def log(msg):
@@ -47,7 +106,12 @@ def hm(ts):
     return time.strftime("%H:%M", time.gmtime(ts + 19800))
 
 
-def get(url, timeout=15):
+def host(site):
+    return urllib.parse.urlparse(site).netloc
+
+
+# ── reading the stores ───────────────────────────────────────────────────────
+def get(url, timeout=10):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
                                                "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"})
     try:
@@ -60,10 +124,11 @@ def get(url, timeout=15):
     return code, data.decode("utf-8", "replace")
 
 
-def fetch():
+def fetch(w):
     out = []
-    for page in range(1, 5):
-        url = f"{SITE}/collections/{COLL}/products.json?limit={PAGE}&page={page}&_={int(time.time() * 1000)}"
+    for page in range(1, MAX_PAGES + 1):
+        url = (f"{w['site']}/collections/{w['coll']}/products.json"
+               f"?limit={PAGE}&page={page}&_={int(time.time() * 1000)}")
         try:
             code, body = get(url)
         except Exception as e:
@@ -75,22 +140,41 @@ def fetch():
             assert isinstance(prods, list)
         except Exception:
             return None, "not the usual product list"
-        out += [p for p in prods if isinstance(p, dict) and p.get("id") and p.get("title")]
+        out += [p for p in prods if isinstance(p, dict) and p.get("id") and isinstance(p.get("title"), str)]
         if len(prods) < PAGE:
-            return out, ""
+            break
     return out, ""
 
 
-def available(p):
-    return any(v.get("available") for v in p.get("variants") or [])
+def rows_of(w, prods):
+    """{key: (product, variants)} — one row per product, or per matching variant."""
+    out = {}
+    for p in prods:
+        vs = [v for v in p.get("variants") or [] if isinstance(v, dict)]
+        if w.get("variants"):
+            for v in vs:
+                if v.get("id") and re.search(w["variants"], str(v.get("title") or ""), re.I):
+                    out[f"{p['id']}:{v['id']}"] = (p, [v])
+        else:
+            out[str(p["id"])] = (p, vs)
+    return out
 
 
-def price_of(p):
-    vs = [v for v in p.get("variants") or [] if v.get("available")] or p.get("variants") or []
+def available(vs):
+    return any(v.get("available") for v in vs)
+
+
+def num(x):
     try:
-        return min(float(v["price"]) for v in vs)
-    except (KeyError, TypeError, ValueError):
+        return float(x)
+    except (TypeError, ValueError):
         return None
+
+
+def low_price(vs):
+    prices = [num(v.get("price")) for v in ([v for v in vs if v.get("available")] or vs)]
+    prices = [p for p in prices if p is not None]
+    return min(prices) if prices else None
 
 
 def rupees(v):
@@ -99,44 +183,253 @@ def rupees(v):
     return f"₹{v:,.0f}" if float(v).is_integer() else f"₹{v:,.2f}"
 
 
+def vname(v):
+    t = str(v.get("title") or "").strip()
+    return "" if t.lower() == "default title" else t
+
+
+def offer_text(vs):
+    """'20 ML · ₹989', '₹2,950 (was ₹4,200, −30%)', or up to three sizes with prices."""
+    pool = [v for v in vs if v.get("available")] or vs
+
+    def price(v, single):
+        pr, was = num(v.get("price")), num(v.get("compare_at_price"))
+        if pr is None:
+            return ""
+        s = rupees(pr)
+        if was and was > pr * 1.02:
+            off = round(100 * (1 - pr / was))
+            s += f" (was {rupees(float(round(was)))}, −{off}%)" if single else f" (−{off}%)"
+        return s
+    if len(pool) == 1:
+        return " · ".join(x for x in (vname(pool[0]), price(pool[0], True)) if x)
+    parts = [" ".join(x for x in (vname(v), price(v, False)) if x) for v in pool[:3]]
+    if len(pool) > 3:
+        parts.append(f"+{len(pool) - 3} more")
+    return " · ".join(x for x in parts if x)
+
+
 def accords(p):
     text = re.sub(r"<[^>]+>", " ", p.get("body_html") or "")
     m = re.search(r"\bAn?\s+([a-z][a-z ,&-]{2,60}?)\s+fragrance\b", text)
     return m.group(1).strip() if m else ""
 
 
-def size_of(p):
-    vs = [v for v in p.get("variants") or [] if v.get("available")] or p.get("variants") or []
-    names = [str(v.get("title") or "").strip() for v in vs]
-    names = [n for n in dict.fromkeys(names) if n and n.lower() != "default title"]
-    return ", ".join(names[:3])
+def link(w, p, vs):
+    url = f"{w['site']}/products/{p.get('handle')}"
+    return f"{url}?variant={vs[0]['id']}" if w.get("variants") and vs else url
 
 
-def link(p):
-    return f"{SITE}/products/{p.get('handle')}"
+def name(w, p, vs):
+    t = p["title"].strip()
+    return f"{t} ({vname(vs[0])})" if w.get("variants") and vs and vname(vs[0]) else t
 
 
-def alert_text(kind, p):
-    head = "🧴 NEW PARTIAL · Whiff Culture" if kind == "new" else "🧴 BACK IN STOCK · Whiff Culture"
-    info = " · ".join(x for x in (size_of(p), rupees(price_of(p)), accords(p)) if x)
-    return "\n".join(x for x in (head, p["title"].strip(), info, link(p)) if x)
+def alert_text(w, kind, p, vs):
+    head = (f"🧴 {w['new']} · {w['store']}" if kind == "new"
+            else f"🧴 BACK IN STOCK · {w['store']} {w['label']}")
+    info = " · ".join(x for x in (offer_text(vs), accords(p) if w.get("notes") else "") if x)
+    return "\n".join(x for x in (head, p["title"].strip(), info, link(w, p, vs)) if x)
 
 
-def bulk_text(ev):
-    rows = [f"• {p['title'].strip()} — {rupees(price_of(p))}" + (" (back)" if k == "back" else "") + f"\n  {link(p)}"
-            for k, p in ev]
-    return f"🧴 {len(ev)} partials just listed on Whiff Culture:\n" + "\n".join(rows)
+def bulk_text(w, ev):
+    fresh = all(k == "new" for k, _, _, _ in ev)
+    head = (f"🧴 {len(ev)} new in {w['store']} {w['label']}:" if fresh
+            else f"🧴 {len(ev)} listed or back in stock · {w['store']} {w['label']}:")
+    rows = [f"• {name(w, p, vs)} — {rupees(low_price(vs))}" + ("" if fresh or k == "new" else " (back)")
+            + f"\n  {link(w, p, vs)}" for k, _, p, vs in ev[:BULK_ROWS]]
+    if len(ev) > BULK_ROWS:
+        rows.append(f"…and {len(ev) - BULK_ROWS} more: {w['site']}/collections/{w['coll']}")
+    return head + "\n" + "\n".join(rows)
 
 
-def instock_lines(st, limit=25):
-    rows = [(it.get("t", ""), it.get("p")) for it in st["items"].values() if it.get("a")]
-    rows.sort()
-    out = [f"• {t} — {rupees(p)}" for t, p in rows[:limit]]
-    if len(rows) > limit:
-        out.append(f"…and {len(rows) - limit} more")
-    return out
+# ── memory ───────────────────────────────────────────────────────────────────
+def wstate(st, w):
+    return st["w"].setdefault(w["id"], {"items": {}})
 
 
+def check(st, w, now):
+    """Read one list; returns (events, '') or (None, why it failed)."""
+    prods, why = fetch(w)
+    if prods is None:
+        return None, why
+    ws = wstate(st, w)
+    rs = rows_of(w, prods)
+    items = ws["items"]
+    first = not ws.get("learnt")
+    if not first and ws.get("n", 0) >= 10 and len(rs) < 0.5 * ws["n"]:
+        ws["low"] = ws.get("low", 0) + 1
+        if ws["low"] < 3:          # a short read now and then is ignored; three in a row is the new normal
+            log(f"{w['id']}: only {len(rs)} in this read (was {ws['n']}); ignored")
+            return [], ""
+    ws["low"] = 0
+    ws["n"] = len(rs)
+    today = int(now // 86400)
+    was_in = {k for k, it in items.items() if it.get("a")}
+    ev = []
+    for key, (p, vs) in rs.items():
+        av, pr = available(vs), low_price(vs)
+        it = items.get(key)
+        if it is None:
+            items[key] = {"t": p["title"].strip()[:60], "a": av, "in": first or av, "p": pr, "s": today}
+            if av and not first:
+                items[key]["al"] = now
+                ev.append(("new", key, p, vs))
+            continue
+        it["t"], it["p"], it["s"] = p["title"].strip()[:60], pr, today
+        if av:
+            it.pop("so", None)
+            if not it["a"]:
+                kind = "back" if it.get("in") else "new"
+                it["a"] = it["in"] = True
+                if now - it.get("al", 0) >= GUARD:
+                    it["al"] = now
+                    ev.append((kind, key, p, vs))
+        elif it["a"]:
+            it["so"] = it.get("so", 0) + 1
+            if it["so"] >= SOLD_CONFIRM:
+                it["a"] = False
+                it.pop("so", None)
+    if w.get("gone") and not first and was_in and len(rs) >= 0.6 * len(was_in):
+        for key in was_in - set(rs):          # dropped from a list that drops what sells out
+            it = items[key]
+            it["so"] = it.get("so", 0) + 1
+            if it["so"] >= SOLD_CONFIRM:
+                it["a"] = False
+                it.pop("so", None)
+    for key in [k for k, it in items.items() if today - it.get("s", today) > KEEP_DAYS]:
+        del items[key]
+    if first:
+        ws["learnt"] = True
+        log(f"{w['id']}: learnt {len(rs)} ({sum(1 for _, vs in rs.values() if available(vs))} in stock)")
+    return ev, ""
+
+
+def load():
+    try:
+        with open(STATE, encoding="utf-8") as f:
+            st = json.load(f)
+        assert isinstance(st, dict)
+    except (OSError, ValueError, AssertionError):
+        st = {}
+    if "items" in st and "w" not in st:      # memory from the first version: Whiff Culture partials only
+        items = st.pop("items") or {}
+        st["w"] = {"whiff-partials": {"items": items, "n": st.pop("n", len(items)), "learnt": bool(items),
+                                      "fail_since": st.pop("fail_since", None),
+                                      "fail_warned": st.pop("fail_warned", False)}}
+        if st.get("hello"):
+            st["cover"] = ["whiff-partials"]
+    st.setdefault("w", {})
+    st["v"] = 2
+    return st
+
+
+def dump(st):
+    return json.dumps(st, ensure_ascii=False, separators=(",", ":"), sort_keys=True).encode("utf-8")
+
+
+def save(st):
+    tmp = STATE + ".tmp"
+    with open(tmp, "wb") as f:
+        f.write(dump(st))
+    os.replace(tmp, STATE)
+
+
+def git(args, data=None, env=None):
+    try:
+        r = subprocess.run(["git", *args], input=data, capture_output=True, timeout=60,
+                           env={**os.environ, **(env or {})})
+        return r.returncode, r.stdout, r.stderr.decode("utf-8", "replace").strip()
+    except Exception as e:
+        return 1, b"", repr(e)
+
+
+def pull(tries=PULL_TRIES):
+    """Copy perfume.json from the state branch. False: couldn't read it — then this run
+    neither saves nor greets, so a passing GitHub hiccup can't wipe the memory."""
+    if not BRANCH:
+        return True
+    err = ""
+    for attempt in range(tries):
+        if attempt:
+            time.sleep(5)
+        rc, _, err = git(["fetch", "-q", "--depth=1", "origin", f"+refs/heads/{BRANCH}:refs/perfume/state"])
+        if rc == 0:
+            rc, data, err = git(["show", "refs/perfume/state:perfume.json"])
+            if rc == 0:
+                with open(STATE, "wb") as f:
+                    f.write(data)
+                _pushed[0] = data
+            else:
+                log(f"the {BRANCH} branch has no perfume.json: starting fresh")
+            return True
+        if "couldn't find remote ref" in err:
+            log(f"no {BRANCH} branch yet: starting fresh")
+            return True
+    log(f"couldn't read the {BRANCH} branch ({err[:160]})")
+    return False
+
+
+def push(st, why):
+    if not BRANCH or not _can_push[0]:
+        return
+    data = dump(st)
+    if data == _pushed[0]:
+        return
+    rc, blob, err = git(["hash-object", "-w", "--stdin"], data)
+    if rc == 0:
+        rc, tree, err = git(["mktree"], b"100644 blob " + blob.strip() + b"\tperfume.json\n")
+    if rc == 0:
+        ident = {"GIT_AUTHOR_NAME": "github-actions", "GIT_AUTHOR_EMAIL": "actions@github.com",
+                 "GIT_COMMITTER_NAME": "github-actions", "GIT_COMMITTER_EMAIL": "actions@github.com"}
+        rc, commit, err = git(["commit-tree", tree.decode().strip(), "-m", "perfume state [skip ci]"], env=ident)
+    if rc == 0:
+        rc, _, err = git(["push", "-q", "-f", "origin", f"{commit.decode().strip()}:refs/heads/{BRANCH}"])
+    if rc == 0:
+        _pushed[0] = data
+        log(f"saved ({why})")
+    else:
+        log(f"couldn't save to {BRANCH}: {err[:160]}")
+
+
+# ── keeping the runs going ───────────────────────────────────────────────────
+def gh(method, path, body=None):
+    hdr = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28",
+           "User-Agent": "perfume-watcher"}
+    tok = os.getenv("GITHUB_TOKEN", "")
+    if tok:
+        hdr["Authorization"] = f"Bearer {tok}"
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(f"{GH_API}{path}", data=data, method=method, headers=hdr)
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            return r.status, r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.code, ""
+    except Exception as e:
+        return 0, type(e).__name__
+
+
+def queue_next():
+    """Make sure another run of this workflow is waiting to start when this one ends."""
+    if not (CHAIN and REPO):
+        return None
+    code, body = gh("GET", f"/repos/{REPO}/actions/workflows/{WF}/runs?per_page=10")
+    if code == 200:
+        try:
+            runs = json.loads(body).get("workflow_runs") or []
+        except ValueError:
+            runs = []
+        if any(str(r.get("id")) != RUN_ID and r.get("status") in ("queued", "pending", "waiting", "requested")
+               for r in runs):
+            log("the next run is already waiting")
+            return True
+    code, _ = gh("POST", f"/repos/{REPO}/actions/workflows/{WF}/dispatches", {"ref": "main"})
+    log("queued the next run" if code == 204 else f"couldn't queue the next run (HTTP {code})")
+    return code == 204
+
+
+# ── Telegram ─────────────────────────────────────────────────────────────────
 def _key():
     return hashlib.sha256(("perfume-chat:" + TOKEN).encode()).digest()
 
@@ -171,6 +464,7 @@ def tg(token, method, params):
 
 
 def linked_chat(st):
+    """Your chat with the perfume bot, from your /start (only ever the perfume bot's updates)."""
     res = tg(TOKEN, "getUpdates", {"timeout": 0, "allowed_updates": '["message"]'})
     if not res.get("ok"):
         return None, res.get("error_code")
@@ -211,8 +505,17 @@ def raw_send(token, chat, text, preview):
     if not token or not chat:
         log("no Telegram bot to send with: " + text.replace("\n", " | ")[:200])
         return False
-    r = tg(token, "sendMessage", {"chat_id": chat, "text": text[:4000],
-                                  "disable_web_page_preview": "false" if preview else "true"})
+    for attempt in range(2):
+        wait = _last_send[0] + SEND_GAP - time.time()
+        if wait > 0:
+            time.sleep(wait)
+        r = tg(token, "sendMessage", {"chat_id": chat, "text": text[:4000],
+                                      "disable_web_page_preview": "false" if preview else "true"})
+        _last_send[0] = time.time()
+        retry = (r.get("parameters") or {}).get("retry_after")
+        if r.get("ok") or r.get("error_code") != 429 or not isinstance(retry, int) or retry > 30:
+            break
+        time.sleep(retry)
     if not r.get("ok"):
         log(f"Telegram refused a message ({r.get('error_code')}: {r.get('description', '')[:80]})")
     return bool(r.get("ok"))
@@ -221,7 +524,6 @@ def raw_send(token, chat, text, preview):
 def ensure_dest(st):
     if not _dest:
         _dest.append(resolve(st))
-        greet(st)
     return _dest[0]
 
 
@@ -235,17 +537,39 @@ def send(st, text, preview=False):
     return False
 
 
+def summary(st, ids):
+    by = {}
+    for w in WATCHES:
+        if w["id"] in ids:
+            by.setdefault(w["store"], []).append(w)
+    out = []
+    for store, ws in by.items():
+        parts = []
+        for w in ws:
+            s = wstate(st, w)
+            n_in = sum(1 for it in s["items"].values() if it.get("a"))
+            n = (f"{n_in} in stock" if not parts else str(n_in)) if s.get("learnt") else "can't read it yet"
+            parts.append(f"{w['label']} ({n})")
+        out.append(f"• {store}: " + ", ".join(parts))
+    return out
+
+
 def greet(st):
-    token, chat, mine = _dest[0]
-    if not st["items"]:
-        return
+    """The first message, a 'Connected' when the perfume bot starts working, a note when
+    more stores are added — and a reminder now and then if the perfume bot can't reach you."""
+    token, chat, mine = ensure_dest(st)
+    ids = [w["id"] for w in WATCHES]
     hello = tag() if mine else "hw"
+    tail = ("I'll message you the moment something new is listed or comes back in stock, "
+            "and when one of these stores starts a new sale.")
+    later = [] if mine or TOKEN else ["(Alerts come here until your perfume bot is set up.)"]
+    added = [i for i in ids if i not in (st.get("cover") or ["whiff-partials"])]
     if mine and st.get("hello") != hello:
-        head = "✅ Connected. Whiff Culture partial alerts will come here."
+        text = ["✅ Connected. Perfume alerts will come here."] + summary(st, ids) + [tail]
     elif not mine and not st.get("hello"):
-        head = "🧴 Perfume watcher is on for Whiff Culture partials."
-        if not TOKEN:
-            head += " Alerts come here until your perfume bot is set up."
+        text = ["🧴 Perfume watcher is on."] + summary(st, ids) + [tail] + later
+    elif added:
+        text = ["🧴 Perfume watcher now also covers:"] + summary(st, added) + [tail] + later
     else:
         if not mine and TOKEN and time.time() - st.get("nudge", 0) >= NUDGE_EVERY:
             st["nudge"] = time.time()
@@ -254,122 +578,175 @@ def greet(st):
             raw_send(token, chat, f"🧴 Your perfume bot can't message you yet. {why} "
                                   "(perfume alerts come here until then).", False)
         return
-    st["hello"] = hello
-    n_in = sum(1 for it in st["items"].values() if it.get("a"))
-    body = [head, f"{len(st['items'])} partials listed, {n_in} in stock right now. "
-                  "I'll message you the moment one is listed or comes back."]
-    if n_in:
-        body += ["In stock now:"] + instock_lines(st)
-    raw_send(token, chat, "\n".join(body), False)
+    if raw_send(token, chat, "\n".join(text), False):
+        st["hello"], st["cover"] = hello, ids
 
 
-def failed(st, now, why):
-    if not st.get("fail_since"):
-        st["fail_since"] = now
-    if not st.get("fail_warned") and now - st["fail_since"] >= FAIL_WARN:
-        st["fail_warned"] = True
-        send(st, f"⚠️ I can't read Whiff Culture's partials since {hm(st['fail_since'])} ({why}). I'll keep trying.")
+def failed(st, w, now, why):
+    ws = wstate(st, w)
+    if not ws.get("fail_since"):
+        ws["fail_since"] = now
+    if ws.get("fail_warned") or now - ws["fail_since"] < FAIL_WARN:
+        return
+    group = [x for x in WATCHES if x["store"] == w["store"] and wstate(st, x).get("fail_since")
+             and not wstate(st, x).get("fail_warned") and now - wstate(st, x)["fail_since"] >= FAIL_WARN - 60]
+    for x in group:
+        wstate(st, x)["fail_warned"] = True
+    since = min(wstate(st, x)["fail_since"] for x in group)
+    what = ", ".join(x["label"] for x in group)
+    if why == "HTTP 404":
+        send(st, f"⚠️ {w['store']}'s {what} page has gone (404) since {hm(since)}. I'll keep checking in case it comes back.")
+    else:
+        send(st, f"⚠️ I can't read {w['store']}'s {what} since {hm(since)} ({why}). I'll keep trying.")
 
 
-def recovered(st):
-    if st.get("fail_warned"):
-        send(st, "✅ Whiff Culture's partials can be read again.")
-    st["fail_since"], st["fail_warned"] = None, False
+def recovered(st, w):
+    if not wstate(st, w).get("fail_warned"):
+        wstate(st, w)["fail_since"] = None
+        return
+    for x in WATCHES:
+        if x["store"] == w["store"]:
+            wstate(st, x)["fail_since"], wstate(st, x)["fail_warned"] = None, False
+    send(st, f"✅ {w['store']} can be read again.")
 
 
-def check(st, now):
-    prods, why = fetch()
-    if prods is None:
-        log(f"read failed: {why}")
-        failed(st, now, why)
-        return why
-    recovered(st)
-    items = st["items"]
-    first = not items
-    if not first and len(prods) < 0.5 * st.get("n", 0):
-        log(f"only {len(prods)} partials in this read (was {st['n']}); ignored")
-        return ""
-    st["n"] = len(prods)
-    ev = []
-    for p in prods:
-        pid, av, pr = str(p["id"]), available(p), price_of(p)
-        it = items.get(pid)
-        if it is None:
-            items[pid] = {"t": p["title"].strip()[:90], "a": av, "in": first or av, "p": pr}
-            if av and not first:
-                items[pid]["al"] = now
-                ev.append(("new", p))
+def deliver(st, w, ev, now):
+    """Send one watch's news: one message each, or one list when there are many. An item
+    another list already announced in the last few hours isn't announced twice."""
+    sent = st.setdefault("sent", {})
+    keep = []
+    for e in ev:
+        dk = f"{host(w['site'])}|{e[1]}"
+        prev = sent.get(dk)
+        if prev and prev[1] != w["id"] and now - prev[0] < XGUARD:
+            log(f"{w['id']}: {e[2]['title']} — already announced via {prev[1]}")
             continue
-        it["t"], it["p"] = p["title"].strip()[:90], pr
-        if av:
-            it.pop("so", None)
-            if not it["a"]:
-                kind = "back" if it.get("in") else "new"
-                it["a"] = it["in"] = True
-                if now - it.get("al", 0) >= GUARD:
-                    it["al"] = now
-                    ev.append((kind, p))
-        elif it["a"]:
-            it["so"] = it.get("so", 0) + 1
-            if it["so"] >= SOLD_CONFIRM:
-                it["a"] = False
-                it.pop("so", None)
-    if first:
-        log(f"learnt {len(prods)} partials ({sum(1 for p in prods if available(p))} in stock)")
-        return ""
-    if len(ev) > BULK:
-        send(st, bulk_text(ev))
-    for kind, p in ev if len(ev) <= BULK else []:
-        log(f"{kind}: {p['title']}")
-        send(st, alert_text(kind, p), preview=True)
-    return ""
+        sent[dk] = [now, w["id"]]
+        keep.append(e)
+    for kind, _, p, _ in keep:
+        log(f"{w['id']}: {kind}: {p['title']}")
+    if len(keep) > BULK:
+        send(st, bulk_text(w, keep))
+    else:
+        for kind, _, p, vs in keep:
+            send(st, alert_text(w, kind, p, vs), preview=True)
+    for k in [k for k, (t, _) in sent.items() if now - t > max(XGUARD, 86400)]:
+        del sent[k]
+    return bool(keep)
 
 
-def load():
-    try:
-        with open(STATE, encoding="utf-8") as f:
-            st = json.load(f)
-    except (OSError, ValueError):
-        st = {}
-    st.setdefault("items", {})
-    return st
+def check_sales(st, site, store, now):
+    """A note when the store starts a sale: a sale-like collection that's new or no longer empty."""
+    cs = []
+    for page in range(1, 4):
+        try:
+            code, body = get(f"{site}/collections.json?limit=250&page={page}&_={int(time.time() * 1000)}")
+            got = json.loads(body).get("collections") if code == 200 else None
+        except Exception:
+            got = None
+        if not isinstance(got, list):
+            return False
+        cs += [c for c in got if isinstance(c, dict)]
+        if len(got) < 250:
+            break
+    watched = {w["coll"] for w in WATCHES if w["site"] == site}
+    cur = {}
+    for c in cs:
+        h, t, n = c.get("handle"), str(c.get("title") or ""), c.get("products_count")
+        if (isinstance(h, str) and isinstance(n, int) and h not in watched and not SALE_SKIP.search(h)
+                and SALE_RE.search(h.replace("-", " ") + " " + t)):
+            cur[h] = (n, t.strip() or h)
+    sales = st.setdefault("sales", {})
+    known = sales.get(host(site))
+    sales[host(site)] = {h: n for h, (n, _) in cur.items()}
+    if known is None:
+        return False
+    new = [(h, n, t) for h, (n, t) in cur.items() if n > 0 and known.get(h, 0) == 0]
+    if not new:
+        return False
+    log(f"{store}: new sale {[h for h, _, _ in new]}")
+    rows = [f"• {t} — {n} item{'s' if n != 1 else ''}\n  {site}/collections/{h}" for h, n, t in new[:8]]
+    send(st, f"🏷️ NEW SALE{'S' if len(new) > 1 else ''} · {store}\n" + "\n".join(rows))
+    return True
 
 
-def save(st):
-    tmp = STATE + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(st, f, ensure_ascii=False, indent=0, sort_keys=True)
-    os.replace(tmp, STATE)
+# ── the run ──────────────────────────────────────────────────────────────────
+def _bye(*_):
+    raise SystemExit(0)
 
 
 def main():
+    signal.signal(signal.SIGTERM, _bye)
     for f in (STOP, DONE):
         if os.path.exists(f):
             os.remove(f)
+    _can_push[0] = pull()
     st = load()
+    queue_next()
     t0 = time.time()
     run = {"no": os.getenv("GITHUB_RUN_NUMBER", ""), "checks": 0, "from": int(t0)}
-    nxt = t0
+    due = {w["id"]: t0 for w in WATCHES}
+    sites = list(dict.fromkeys((w["site"], w["store"]) for w in WATCHES))
+    sales_due = {s: t0 + SALES_FIRST for s, _ in sites}
+    pause, tried = {}, set()
+    greeted = queued = False
+    last_push = next_pull = t0
     try:
         while not os.path.exists(STOP) and time.time() - t0 < MAX_RUN:
-            if time.time() >= nxt:
+            now = time.time()
+            if not _can_push[0] and now >= next_pull:
+                next_pull = now + PULL_RETRY
+                if pull(tries=1):              # memory readable again: carry on from it
+                    _can_push[0] = True
+                    st = load()
+                    tried.clear()
+            w = next((w for w in WATCHES if now >= due[w["id"]] and now >= pause.get(w["site"], 0)), None)
+            sale = next((s for s in sites if now >= sales_due[s[0]] and now >= pause.get(s[0], 0)), None)
+            if w is None and sale is None:
+                time.sleep(0.2)
+                continue
+            urgent = False
+            if w is not None:
                 try:
-                    why = check(st, time.time())
-                    run["checks"] += 1
+                    ev, why = check(st, w, now)
                 except Exception as e:
-                    why = ""
-                    log(f"error: {e!r}")
-                wait = max(EVERY, BACKOFF) if why in ("HTTP 429", "HTTP 403") else EVERY
-                nxt = time.time() + wait
-                run["to"] = int(time.time())
-                st["run"] = run
-                if st["items"] and not _dest and (not st.get("hello") or (TOKEN and st.get("hello") != tag())):
-                    ensure_dest(st)
-                save(st)
-            time.sleep(0.2)
+                    ev, why = None, "unexpected data"
+                    log(f"{w['id']}: error {e!r}")
+                if ev is None:
+                    log(f"{w['id']}: read failed: {why}")
+                    failed(st, w, now, why)
+                    if why in ("HTTP 429", "HTTP 403"):
+                        pause[w["site"]] = time.time() + BACKOFF
+                else:
+                    recovered(st, w)
+                    urgent = deliver(st, w, ev, now) if ev else False
+                due[w["id"]] = time.time() + w["every"]
+                tried.add(w["id"])
+                run["checks"] += 1
+            else:
+                try:
+                    urgent = check_sales(st, sale[0], sale[1], now)
+                except Exception as e:
+                    log(f"{sale[1]}: sales check error {e!r}")
+                sales_due[sale[0]] = time.time() + SALES_EVERY
+            run["to"] = int(time.time())
+            st["run"] = run
+            if not greeted and len(tried) == len(WATCHES) and _can_push[0]:
+                greeted = True
+                before = (st.get("hello"), st.get("cover"))
+                greet(st)
+                urgent = urgent or (st.get("hello"), st.get("cover")) != before
+            save(st)
+            if urgent or time.time() - last_push >= PUSH_EVERY:
+                push(st, "news" if urgent else "regular")
+                last_push = time.time()
+            if not queued and time.time() - t0 >= MAX_RUN - 120:
+                queued = True
+                queue_next()
     finally:
         st["run"] = run
         save(st)
+        push(st, "end of run")
         log(f"stopped after {run['checks']} checks")
         open(DONE, "w").close()
 
