@@ -14114,7 +14114,7 @@
     "fc_lst": "out",
     "fc_gid": "24314518",
     "fc_phantom": "2026-11-11T21:21:08",
-    "fc_off": "2026-11-13T00:00:25",
+    "fc_off": "2026-11-13T00:12:21",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -16041,7 +16041,7 @@
   "fc_24476003": {
     "stock": "in_stock",
     "name": "Hot Wheels 96 Chevrolet Impala SS Die Cast Toy car 242/250 - Metallic green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-96-chevrolet-impala-ss-die-cast-toy-car-242-250-metallic-green/24476003/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -16066,7 +16066,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16233,7 +16233,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -20621,7 +20621,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-09T21:02:21",
-    "fc_off": "2026-11-13T00:02:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
