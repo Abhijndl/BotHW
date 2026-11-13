@@ -1,0 +1,3 @@
+17:50:18 [perfume] learnt 170 partials (11 in stock)
+17:50:18 [perfume] no Telegram bot to send with: 🧴 Perfume watcher is on for Whiff Culture partials. Alerts come here until your perfume bot is set up. | 170 partials listed, 11 in stock right now. I'll message you the moment one is listed or comes 
+17:51:04 [perfume] stopped after 5 checks
