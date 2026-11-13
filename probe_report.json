@@ -1,895 +1,1337 @@
 {
- "rows": [
-  {
-   "label": "products.json",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 390,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "b7206916-a3de-4880-b110-8d54fa9c400e-1794591529",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:49 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=250, db;dur=318, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"kthd\", requestID;desc=\"b7206916-a3de-4880-b110-8d54fa9c400e-",
-    "cf-ray": "a59f8d638bed96cf-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_ZpQAAEA9OvwZw_RthpB14lvS3c4P-I2KaZFCdid7XfHHzCXi4hvjfto7FgyM83oLalYZ8FMIGXFrf3TdEsFcE0:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
+ "whiffculture.com": {
+  "site": "whiffculture.com",
+  "products_json": 200,
+  "ms": 323,
+  "server": "cloudflare",
+  "n_products": 1788,
+  "n_available": 1235,
+  "partials_in_titles": 189,
+  "discounted_15pct_in_stock": 9,
+  "collections": 100,
+  "deal_collections": [
+   [
+    "decant-sets",
+    "Decant Sets",
+    71
+   ],
+   [
+    "diwali-sale",
+    "DIWALI SALE",
+    402
+   ],
+   [
+    "pre-diwali-sale",
+    "FESTIVE SALE",
+    28
+   ],
+   [
+    "flash-sale",
+    "Flash Sale",
+    68
+   ],
+   [
+    "independence-day-sale",
+    "INDEPENDENCE DAY SALE",
+    102
+   ],
+   [
+    "partial-sale",
+    "Partials",
+    170
+   ],
+   [
+    "testers",
+    "Testers",
+    192
+   ]
+  ],
+  "deal_detail": [
+   {
+    "handle": "decant-sets",
+    "title": "Decant Sets",
+    "listed": 70,
+    "in_stock": 66,
+    "sample": [
+     [
+      "Essence of Gissah Decant Set",
+      1939.0,
+      true
+     ],
+     [
+      "Al Majed Oud Royal Aura Decant Set",
+      1269.0,
+      true
+     ],
+     [
+      "Al Majed Oud Signature Decant Set",
+      1249.0,
+      true
+     ],
+     [
+      "Royal Blend Trio Decant Set",
+      719.0,
+      true
+     ],
+     [
+      "Ibraq Classics Decant Set",
+      1199.0,
+      true
+     ],
+     [
+      "Laverne Prestige Decant Set",
+      969.0,
+      true
+     ],
+     [
+      "Assaf Signature Decant Set",
+      1299.0,
+      true
+     ],
+     [
+      "Royal Aura Decant Set",
+      1149.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "diwali-sale",
+    "title": "DIWALI SALE",
+    "listed": 250,
+    "in_stock": 250,
+    "sample": [
+     [
+      "Afnan SUPREMACY COLLECTOR’S EDITION",
+      319.0,
+      true
+     ],
+     [
+      "Rasasi HAWAS ICE",
+      249.0,
+      true
+     ],
+     [
+      "Mykonos INCEPTION",
+      269.0,
+      true
+     ],
+     [
+      "Lattafa KHAMRAH QAHWA",
+      279.0,
+      true
+     ],
+     [
+      "Lattafa TERIAQ INTENSE",
+      279.0,
+      true
+     ],
+     [
+      "Mykonos REFLECTION",
+      269.0,
+      true
+     ],
+     [
+      "Rayhaan VANTAGE",
+      229.0,
+      true
+     ],
+     [
+      "Rasasi HAWAS",
+      229.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "pre-diwali-sale",
+    "title": "FESTIVE SALE",
+    "listed": 28,
+    "in_stock": 28,
+    "sample": [
+     [
+      "Arabiyat Prestige OUD AL LAYL MIDNIGHT EDITION",
+      139.0,
+      true
+     ],
+     [
+      "Afnan HISTORIC SAHARA",
+      259.0,
+      true
+     ],
+     [
+      "Lattafa RAMZ SILVER",
+      179.0,
+      true
+     ],
+     [
+      "French Avenue ATLANTIS EXTRAIT",
+      289.0,
+      true
+     ],
+     [
+      "Ahmed IGHR'A",
+      219.0,
+      true
+     ],
+     [
+      "Ard Al Zaafaran AL DIRGHAM",
+      149.0,
+      true
+     ],
+     [
+      "Mykonos CALIFORNIA BLUE",
+      269.0,
+      true
+     ],
+     [
+      "Maison Alhambra LEONIE INTENSE",
+      169.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "flash-sale",
+    "title": "Flash Sale",
+    "listed": 68,
+    "in_stock": 58,
+    "sample": [
+     [
+      "Ajmal SILVER SHADE Flash Sale",
+      1199.0,
+      true
+     ],
+     [
+      "Khadlaj MUSK PURE MUSK BLEND Flash Sale",
+      4179.0,
+      true
+     ],
+     [
+      "Ibraheem Al Qurashi MUSK AL-SHAMS Flash Sale",
+      2449.0,
+      true
+     ],
+     [
+      "Ibraheem Al Qurashi SUGAR MUSK Flash Sale",
+      2449.0,
+      true
+     ],
+     [
+      "Ibraheem Al Qurashi LUBAN MUSK Flash Sale",
+      2449.0,
+      true
+     ],
+     [
+      "Ibraheem Al Qurashi MUSK AL QAMAR Flash Sale",
+      2449.0,
+      true
+     ],
+     [
+      "Ibraheem Al Qurashi RASPBERRY MUSK Flash Sale",
+      2449.0,
+      true
+     ],
+     [
+      "Ibraheem Al Qurashi ABAQ POMEGRANATE MUSK Flash Sale",
+      2449.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "independence-day-sale",
+    "title": "INDEPENDENCE DAY SALE",
+    "listed": 102,
+    "in_stock": 93,
+    "sample": [
+     [
+      "Afnan 9PM ELIXIR",
+      249.0,
+      true
+     ],
+     [
+      "Afnan RARE CARBON",
+      239.0,
+      true
+     ],
+     [
+      "Afnan RARE REEF",
+      239.0,
+      true
+     ],
+     [
+      "Afnan STARDUST",
+      319.0,
+      true
+     ],
+     [
+      "Afnan SUPREMACY COLLECTOR’S EDITION",
+      319.0,
+      true
+     ],
+     [
+      "Afnan TURATHI ELECTRIC",
+      219.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi BLUE by AHMED",
+      229.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi GHAF",
+      279.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "partial-sale",
+    "title": "Partials",
+    "listed": 170,
+    "in_stock": 11,
+    "sample": [
+     [
+      "Lattafa ANGHAM SECOND SONG Partial",
+      989.0,
+      true
+     ],
+     [
+      "Rasasi HAWAS Partial",
+      1069.0,
+      true
+     ],
+     [
+      "Ahmed IGHR'A Partial",
+      1039.0,
+      true
+     ],
+     [
+      "Paris Corner KHAIR PEACH DELULU Partial",
+      829.0,
+      true
+     ],
+     [
+      "Khadlaj ICON Partial",
+      1119.0,
+      true
+     ],
+     [
+      "Lattafa YARA ELIXIR Partial",
+      909.0,
+      true
+     ],
+     [
+      "Riiffs TAHIRA EXTRAIT DE PARFUM Partial",
+      1009.0,
+      true
+     ],
+     [
+      "Khadlaj CLOUD CANDY Partial",
+      909.0,
+      true
+     ]
+    ]
    }
-  },
-  {
-   "label": "products.json page 2",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&page=2",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 15,
-   "ms": 150,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "dfa06d60-fb50-49b4-84b3-574da943f1ed-1794591529",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:49 GMT",
-    "etag": "\"sfr:computation:v2:7749ef9a06a3ea0479982c53ed98b89a24854105c77d17ce2cfbcb85f0fc1443\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=39, db;dur=26, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"qdsw\", requestID;desc=\"dfa06d60-fb50-49b4-84b3-574da943f1ed-17",
-    "cf-ray": "a59f8d65bf18c948-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_Zu2AAEAhL_qLlt8MwmusF60qJItrvXMW-r8yO1uEoZzfynl52Y4jzaHGVekWu16kXo2G_OGRNHlnfqv1ju8Ttw:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "products.json urllib",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "urllib",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 377,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "71469c87-43f3-4b28-b8ea-1f653f9177b7-1794591530",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:50 GMT",
-    "etag": "W/\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "accept-encoding",
-    "server-timing": "processing;dur=246, db;dur=277, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"clcz\", requestID;desc=\"71469c87-43f3-4b28-b8ea-1f653f9177b7-",
-    "cf-ray": "a59f8d669bcb9c18-IAD",
-    "set-cookie": "_shopify_marketing=:AaHV_Z1FAAEACdSj3oNouhBW2bhMcbLbeJUkDlhjDbrSZG2wROcNnNsTk94MS9C35ik_BZnZjHUAnLzPaATAVlW9B-Q:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "collection html",
-   "url": "https://www.whiffculture.com/collections/partial-sale",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 344013,
-   "ms": 252,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "cache-control": "private, max-age=0, must-revalidate",
-    "x-request-id": "b35d6689-3a03-45e2-8fca-566684b7cf9e-1794591530",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:50 GMT",
-    "vary": "Accept-Encoding, Accept",
-    "server-timing": "processing;dur=74;desc=\"gc:1\", streaming;dur=0, db;dur=25, db_async;dur=19.348, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", theme;desc=\"195815178608\", ",
-    "cf-ray": "a59f8d68ea43fcc0-IAD",
-    "set-cookie": "localization=IN; path=/; expires=Sat, 13 Nov 2027 17:38:50 GMT; SameSite=Lax, _shopify_cmp=3.AMPS_USVA_f_f_nmzqgB1yTfSituF4bSOJYQ%23b35d6689-3a03-45e2-8fca-5666"
-   }
-  },
-  {
-   "label": "collection atom",
-   "url": "https://www.whiffculture.com/collections/partial-sale.atom",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 34198,
-   "ms": 186,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "b1480404-a8c8-4b54-af2a-937ef4e82d95-1794591530",
-    "content-type": "application/atom+xml; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:50 GMT",
-    "etag": "\"page_cache:89010733424:CollectionDetailsController:96898c8c6795cd16a4c54542eb85efec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=82;desc=\"gc:5\", db;dur=8, db_async;dur=28.046, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"j67z\", requestID;desc=\"b148040",
-    "cf-ray": "a59f8d6a8c939d98-IAD",
-    "set-cookie": "localization=IN; path=/; expires=Sat, 13 Nov 2027 17:38:50 GMT; SameSite=Lax, _shopify_essential=:AaHV_Z7IAAEA69Q8rst1H-96cLOJ-byPpLrKLnh5AsMyhnY7b2YbfnmbtROcwf"
-   }
-  },
-  {
-   "label": "sorted json",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&sort_by=created-descending",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 144,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "9577f807-bec0-4bd2-9aa4-f071c30d2748-1794591530",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:50 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=51, db;dur=29, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"qj9k\", requestID;desc=\"9577f807-bec0-4bd2-9aa4-f071c30d2748-17",
-    "cf-ray": "a59f8d6baa0f5764-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_Z9wAAEAeR4StlsZVDTfxVLGYEoSZ_wmsiFoCzreZavnVMf1OeerKMGCED0bgGn5k8winj6_521IXjRVtNfXuDA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "product .js",
-   "url": "https://www.whiffculture.com/products/lattafa-angham-second-song-partial.js",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 3033,
-   "ms": 156,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "616ca59a-62bf-4a42-ba86-27f2ded0baa8-1794591530",
-    "content-type": "text/javascript; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:51 GMT",
-    "etag": "\"page_cache:89010733424:ProductDetailsController:a9c9465c2dfb19ca9f21a2e2319c3de6\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=50;desc=\"gc:2\", db;dur=15, db_async;dur=9.798, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"jw7p\", requestID;desc=\"616ca59",
-    "cf-ray": "a59f8d6c9b2de621-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_aAUAAEAlhnUqaFXPAlF38hyKGhwWj2Z0fJ6z4TJyVltviI4BDoVBGkVjQQ0D2lXkQnW5wU4z2pzoTp8ptoIAd8:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "product .json",
-   "url": "https://www.whiffculture.com/products/lattafa-angham-second-song-partial.json",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 2614,
-   "ms": 171,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "ef40bf7f-7da3-4cf7-a02b-4f77b01cc420-1794591531",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:51 GMT",
-    "etag": "\"page_cache:89010733424:ProductDetailsController:a5c5c93758b896f5bd680dd079a3f52a\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=36;desc=\"gc:1\", db;dur=8, db_async;dur=4.456, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"4bhh\", requestID;desc=\"ef40bf7f",
-    "cf-ray": "a59f8d6d89345cff-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_aCyAAEARMrJn_zfa5-EcexoH6mK1PaCYYChnMrbqWCptsw4uq0lBtOQ3VxowLdjJ2uw16bhmok50RhExZ_Xzms:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "product page",
-   "url": "https://www.whiffculture.com/products/lattafa-angham-second-song-partial",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 277970,
-   "ms": 269,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "cache-control": "private, max-age=0, must-revalidate",
-    "x-request-id": "48ac9942-fccb-4990-8fca-691aa03df2eb-1794591531",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:51 GMT",
-    "vary": "Accept-Encoding, Accept",
-    "server-timing": "processing;dur=95;desc=\"gc:1\", streaming;dur=0, db;dur=41, db_async;dur=41.577, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", theme;desc=\"195815178608\", ",
-    "cf-ray": "a59f8d6ea93f056b-IAD",
-    "set-cookie": "localization=IN; path=/; expires=Sat, 13 Nov 2027 17:38:51 GMT; SameSite=Lax, _shopify_cmp=3.AMPS_USVA_f_f_zBEW9WEWSKaA1z36XEMo1A%2348ac9942-fccb-4990-8fca-691a"
-   }
-  },
-  {
-   "label": "poll 0 plain",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 138,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "16335f9f-1099-4b68-8c49-da5ba01f7738-1794591531",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:51 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=38, db;dur=14, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"4c4p\", requestID;desc=\"16335f9f-1099-4b68-8c49-da5ba01f7738-17",
-    "cf-ray": "a59f8d704c882060-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_aJaAAEAQs1CdodLhfwJEktqOceIP_23sO3KsVdYcDEQEEwjKS8iQZnWeG3kcSCHjANRSNu64wkO9wu6qP7bv1o:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 1 bust",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591536684",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 101,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "c370b94f-91f1-47bc-a114-de70e3a28a5f-1794591536",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:38:56 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=13, db;dur=5, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"v4zn\", requestID;desc=\"c370b94f-91f1-47bc-a114-de70e3a28a5f-179",
-    "cf-ray": "a59f8d90792896cf-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_bZmAAEASk1AZfzkAzZlp2i7cErq21tyHtQfKvIxgpMsVJrso_fyX1P1dITslt0Mx8kuDqCwUSy_EuQGW7hLj8Y:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 2 plain",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 173,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "9c63705a-9853-41e4-9c42-efd3c7b69635-1794591541",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:01 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=14, db;dur=5, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"5t6m\", requestID;desc=\"9c63705a-9853-41e4-9c42-efd3c7b69635-179",
-    "cf-ray": "a59f8db04e619c18-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_cp1AAEABgZRp9Liay_4uuHmio3FeESawHRA3ArqrzZ4vg5zz7Dbu-Emd6JkfsijYT-O3wWEuaEZh9fN0pH883M:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 3 bust",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591546965",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 116,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "e4c5e3c2-2325-4b4f-bea2-00aba7821906-1794591547",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:07 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=14, db;dur=6, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"bz72\", requestID;desc=\"e4c5e3c2-2325-4b4f-bea2-00aba7821906-179",
-    "cf-ray": "a59f8dd0bd4bfcc0-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_d6fAAEAnfJYiYwzc9yv2dqW1AK5r1PRqiUkrWcxFL_FtYpz08cOzZPBwBtGBzVmwsrP8bWdIalNywajyiFwNYI:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 4 plain",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 109,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "80417acd-bbbf-4c9e-8e1d-3c4b1c126174-1794591552",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:12 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=16, db;dur=9, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"9szn\", requestID;desc=\"80417acd-bbbf-4c9e-8e1d-3c4b1c126174-179",
-    "cf-ray": "a59f8df0ba829c18-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_fKQAAEApvTUttVD19D07YnQRQeWYAxmmFy9pEg-hTu-7NW2hQxmtpKr8tSwsTcO9QMa-N4JQoCx72vGfLJz8rQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 5 bust",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591557196",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 114,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "6b15f56b-8544-4948-84a8-52c3e2095d55-1794591557",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:17 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=15, db;dur=8, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"k6jm\", requestID;desc=\"6b15f56b-8544-4948-84a8-52c3e2095d55-179",
-    "cf-ray": "a59f8e1098c6fcc0-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_gaFAAEA6NHXNOYMx16KYQkTHD7zDFsuLTG03QNPqk66Pyx_TFXSXpnYVtz9xdTH9UmxlOb4m4D75Nh7eSJTe-Q:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 6 plain",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 107,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "33ce405e-4d73-43b9-b27c-e5bcfa2c81d5-1794591562",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:22 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=8, db;dur=1, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"bz72\", requestID;desc=\"33ce405e-4d73-43b9-b27c-e5bcfa2c81d5-1794",
-    "cf-ray": "a59f8e309bdd9d98-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_hqKAAEAvyN9qtpFFStjspKsLrEOU1C437N6FRrQdsB5bCEdk2mFbkDAYB9bStQLoFlIrG4HcB4HBx3791cFNRg:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 7 bust",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591567423",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 174,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "f855ccfe-fc19-45a3-afd2-92bb2edf17e7-1794591567",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:27 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=87, db;dur=75, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"6bb2\", requestID;desc=\"f855ccfe-fc19-45a3-afd2-92bb2edf17e7-17",
-    "cf-ray": "a59f8e5089d5fcc0-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_i54AAEArwCEEUNeBJXTXQV_Re7YYoM5X7Y7qCHIuD-jL336KXPOwSfyQGzaUxTIcK_fZsf8G3kIFaFdywmubwg:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 8 plain",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 90,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "8d780e2e-4152-4438-8803-308b2b462c4c-1794591572",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:32 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=12, db;dur=6, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"tkls\", requestID;desc=\"8d780e2e-4152-4438-8803-308b2b462c4c-179",
-    "cf-ray": "a59f8e70dcc39d98-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_kKsAAEAbAFuFIpIaf9rxbdaxRFvq3jdB4l9DA49syod9vBe8-f-hQ3euqWsgi9oP1dTL2SOQgkGDakK_XC13iQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 9 bust",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591577693",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 110,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "2091477c-5863-4c24-98b3-d10db77a1613-1794591577",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:37 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=13, db;dur=5, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"ff5m\", requestID;desc=\"2091477c-5863-4c24-98b3-d10db77a1613-179",
-    "cf-ray": "a59f8e90bd07e621-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_laUAAEAXF8hqacljZhbErgzvkCpNfUcAauBJ_96oRF5mQhg-mlKGBZqUUTmagrLTO4pJPaCEvlIm36EoCGwIfo:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 10 plain",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 107,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "67fc1899-0a53-4dbd-a547-9d8c1e6e838c-1794591582",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:42 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=12, db;dur=5, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"shpr\", requestID;desc=\"67fc1899-0a53-4dbd-a547-9d8c1e6e838c-179",
-    "cf-ray": "a59f8eb0aeb09d98-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_mqZAAEAARfRiS0S9g_drVInIMuh8UohTldvnJrZJ0S15tIQ5GKVS5cqjd8VCf4KIuY6SK_UnzPm9e-03ed3kxs:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "poll 11 bust",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591587915",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 144,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "5f891dda-ce5f-4977-8b13-eb8c85b0f597-1794591587",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:48 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=50, db;dur=36, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"6sg8\", requestID;desc=\"5f891dda-ce5f-4977-8b13-eb8c85b0f597-17",
-    "cf-ray": "a59f8ed0a8275cff-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_n6MAAEAwe2GHzD5_dbmRls96KUCb-nlV93q0djzrLO0lW04rOLI_IT5xE9mLBu6tov6rDGnEl2yrlOdeVDcXGM:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 0",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.0622072",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 149,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "fbce79f7-1af4-4c2a-9e6d-9789b60034c8-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=13, db;dur=5, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"v658\", requestID;desc=\"fbce79f7-1af4-4c2a-9e6d-9789b60034c8-179",
-    "cf-ray": "a59f8ef1292a9d98-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pLSAAEAbPJlVCkJKsJou6tdF80cOkvtY3SJ0hl9UqPPnsbMgAsF8D0Z9cKhcOnWzYYXBb4otYwTu5k2fFGHp1U:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 1",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.2116897",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 123,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "7f0e4bcf-af88-45ee-beaa-da9e087a0672-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=14, db;dur=6, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"6846\", requestID;desc=\"7f0e4bcf-af88-45ee-beaa-da9e087a0672-179",
-    "cf-ray": "a59f8ef1ca782060-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pNLAAEAByz0oY4OdHhhBF6OclgelSI7TwdxuWCZwkM9Ar-PGTQlSxKwvbAMxXL68YkhxjJYxPD8HOMVRwJ19_w:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 2",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.3353772",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 113,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "f04e4d58-9615-4f47-b0d1-ee7359eb4c06-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=15, db;dur=6, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"67rv\", requestID;desc=\"f04e4d58-9615-4f47-b0d1-ee7359eb4c06-179",
-    "cf-ray": "a59f8ef28cc126bd-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pO8AAEANQ2w7F7OY8XefA88J1_7pP07Z_TqZTK5jfCN9Uy_LjWkTP4K9a5fQaC-c9WmmCh_DSCuIt36aUTzAXM:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 3",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.4493937",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 106,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "5cc2fac6-0b05-422d-a409-4e6628791e11-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=8, db;dur=3, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"lb6r\", requestID;desc=\"5cc2fac6-0b05-422d-a409-4e6628791e11-1794",
-    "cf-ray": "a59f8ef33eaa5cff-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pQkAAEAUKyMom9q61gpIfvXAp6FtMSHH0BbdPmzTtiKkNOkVCT71V5RKh2iAj1MT79P-cFVL6UbU5x_ScPFtZA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 4",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.555799",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 140,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "f47066f6-27fa-4552-a086-1d11071b47f6-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=6, db;dur=1, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"kthd\", requestID;desc=\"f47066f6-27fa-4552-a086-1d11071b47f6-1794",
-    "cf-ray": "a59f8ef3dd02d6bb-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pSeAAEAn8RTP-uisqgvVEc6sF4dbPiL4DauM4BBHbwN2S9iXf9gPw25XBiDTW0OOZZJZmeJjU_CAo1ye4zf6wM:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 5",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.6961858",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 95,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "78ab8cbf-f0eb-4403-be44-503974839ad7-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=9, db;dur=3, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"bz72\", requestID;desc=\"78ab8cbf-f0eb-4403-be44-503974839ad7-1794",
-    "cf-ray": "a59f8ef4bdbac990-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pUVAAEAHBXzcP-S1-NCATwN4gfKKGf6oERnXDOLJGApu58aHzE5sQbpe5U1Lpr_w0LV5tYMcpaNC0RM_yse9ws:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 6",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.7913506",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 99,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "6bb0f504-026a-4b4f-bb06-6897229a646a-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:53 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=13, db;dur=5, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"9wn2\", requestID;desc=\"6bb0f504-026a-4b4f-bb06-6897229a646a-179",
-    "cf-ray": "a59f8ef55d4e5ca1-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pV4AAEAsQLF5PoriW1DxnFjJJZUTXM1DC6rnx1KKEiz82Z5NkbsMrBE77xfl2auSNk6csvPjpIaV_xWb91ki2I:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  },
-  {
-   "label": "burst 7",
-   "url": "https://www.whiffculture.com/collections/partial-sale/products.json?limit=250&_=1794591593.8908062",
-   "how": "cffi",
-   "status": 200,
-   "bytes": 323179,
-   "ms": 133,
-   "headers": {
-    "server": "cloudflare",
-    "cf-cache-status": "DYNAMIC",
-    "x-request-id": "a284488f-3496-4dc2-bdb0-81a974a6c827-1794591593",
-    "content-type": "application/json; charset=utf-8",
-    "date": "Fri, 13 Nov 2026 17:39:54 GMT",
-    "etag": "\"sfr:computation:v2:ffb71d6a12d1d478f43602adb9006472ed36446f86faefa646c19ddb2ffd72ec\"",
-    "vary": "Accept, accept-encoding",
-    "server-timing": "processing;dur=16, db;dur=9, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", servedBy;desc=\"6tzt\", requestID;desc=\"a284488f-3496-4dc2-bdb0-81a974a6c827-179",
-    "cf-ray": "a59f8ef60e5405c7-IAD",
-    "set-cookie": "_shopify_essential=:AaHV_pXoAAEAMJdQD5Ujqj-Lgtd2OVU5qN64arQgFCILBkOt9o9fGTouPVxJZqyMEuf3gow-isOzHwr4J_oi9MyYu58:; Max-Age=31536000; Path=/; HttpOnly; Secure; Pr"
-   }
-  }
- ],
- "ip": {
-  "ip": "172.206.30.82",
-  "city": "Boydton",
-  "country": "US",
-  "org": "AS8075 Microsoft Corporation"
+  ]
  },
- "n_products": 170,
- "n_available": 11,
- "sample": [
-  {
-   "id": 15143940850032,
-   "title": "Lattafa ANGHAM SECOND SONG Partial",
-   "handle": "lattafa-angham-second-song-partial",
-   "product_type": "Perfume",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-07-21T10:51:13+05:30",
-   "created_at": "2026-06-20T16:04:10+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 53928540733808,
-     "title": "20 ML",
-     "price": "989.00",
-     "compare_at_price": null,
-     "available": true,
-     "sku": "LAT-ANGHAMSS-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2026-06-20T16:04:11+05:30"
-    }
+ "scentoria.co.in": {
+  "site": "scentoria.co.in",
+  "products_json": 200,
+  "ms": 443,
+  "server": "cloudflare",
+  "n_products": 2000,
+  "n_available": 971,
+  "partials_in_titles": 505,
+  "discounted_15pct_in_stock": 31,
+  "collections": 250,
+  "deal_collections": [
+   [
+    "christmas-sale",
+    "Christmas Sale",
+    0
    ],
-   "n_images": 2,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/ChatGPTImageApr12_2026_05_47_47PM_83ef80c1-d96c-4819-a26f-aecdaa0ecfcc.png?v=1781951674",
-   "body_text": " Lattafa ANGHAM SECOND SONG Partial — A floral, sweet and vanilla fragrance. It opens with a bright lift of pear blossom and bergamot, settles into a heart of peony, praline and orange blossom, and dries down to a lasting base of vanilla, musk and tonka. Overall it smells of blooming flowers, wrappe",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
-   ]
-  },
-  {
-   "id": 14995038994800,
-   "title": "Lattafa ASAD ELIXIR Partial",
-   "handle": "lattafa-asad-elixir-partial",
-   "product_type": "Perfume",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-07-21T10:51:31+05:30",
-   "created_at": "2026-01-09T17:56:59+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 52886515908976,
-     "title": "20 ML",
-     "price": "1039.00",
-     "compare_at_price": null,
-     "available": false,
-     "sku": "LAT-ASADE-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2026-01-09T17:56:59+05:30"
-    }
+   [
+    "decants",
+    "Decants",
+    3181
    ],
-   "n_images": 2,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/QWERT-2026-06-09T010657.722.jpg?v=1780947424",
-   "body_text": " Lattafa ASAD ELIXIR Partial — An amber, woody and tobacco fragrance. It opens with a bright lift of pink pepper, saffron and grapefruit, settles into a heart of tobacco, vanilla and cedar, and dries down to a lasting base of light amber, frankincense and patchouli. Overall it smells of glowing ambe",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
-   ]
-  },
-  {
-   "id": 14942928601456,
-   "title": "Rasasi HAWAS Partial",
-   "handle": "rasasi-hawas-partial",
-   "product_type": "Perfume",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-07-21T10:51:55+05:30",
-   "created_at": "2025-11-09T17:24:46+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 52673390936432,
-     "title": "20 ML",
-     "price": "1069.00",
-     "compare_at_price": null,
-     "available": true,
-     "sku": "RAS-HAWAS-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2025-11-09T17:24:46+05:30"
-    }
+   [
+    "diwali-sale",
+    "Diwali Sale",
+    0
    ],
-   "n_images": 2,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/QWERT-2026-06-09T005923.954.jpg?v=1780946971",
-   "body_text": " Rasasi HAWAS Partial — A woody, sweet and fruity fragrance. It opens with a bright lift of pomegranate, apple and grapefruit, settles into a heart of iris, jasmine sambac and citruses, and dries down to a lasting base of praline, patchouli and vetiver. Overall it smells of warm, dry woods, wrapped ",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
-   ]
-  },
-  {
-   "id": 15143940850032,
-   "title": "Lattafa ANGHAM SECOND SONG Partial",
-   "handle": "lattafa-angham-second-song-partial",
-   "product_type": "Perfume",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-07-21T10:51:13+05:30",
-   "created_at": "2026-06-20T16:04:10+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 53928540733808,
-     "title": "20 ML",
-     "price": "989.00",
-     "compare_at_price": null,
-     "available": true,
-     "sku": "LAT-ANGHAMSS-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2026-06-20T16:04:11+05:30"
-    }
+   [
+    "festive-sale",
+    "Festive Sale",
+    34
    ],
-   "n_images": 2,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/ChatGPTImageApr12_2026_05_47_47PM_83ef80c1-d96c-4819-a26f-aecdaa0ecfcc.png?v=1781951674",
-   "body_text": " Lattafa ANGHAM SECOND SONG Partial — A floral, sweet and vanilla fragrance. It opens with a bright lift of pear blossom and bergamot, settles into a heart of peony, praline and orange blossom, and dries down to a lasting base of vanilla, musk and tonka. Overall it smells of blooming flowers, wrappe",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
+   [
+    "deals-of-the-week",
+    "HOT DEALS !!",
+    7
    ]
-  },
-  {
-   "id": 14942928601456,
-   "title": "Rasasi HAWAS Partial",
-   "handle": "rasasi-hawas-partial",
-   "product_type": "Perfume",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-07-21T10:51:55+05:30",
-   "created_at": "2025-11-09T17:24:46+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 52673390936432,
-     "title": "20 ML",
-     "price": "1069.00",
-     "compare_at_price": null,
-     "available": true,
-     "sku": "RAS-HAWAS-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2025-11-09T17:24:46+05:30"
-    }
+  ],
+  "deal_detail": [
+   {
+    "handle": "christmas-sale",
+    "title": "Christmas Sale",
+    "listed": 0,
+    "in_stock": 0,
+    "sample": []
+   },
+   {
+    "handle": "decants",
+    "title": "Decants",
+    "listed": 250,
+    "in_stock": 199,
+    "sample": [
+     [
+      "1 Million EDT",
+      300.0,
+      true
+     ],
+     [
+      "1 Million Elixir Parfum Intense",
+      250.0,
+      true
+     ],
+     [
+      "1 Million Lucky EDT (2018 Release)",
+      1250.0,
+      true
+     ],
+     [
+      "1 Million Lucky EDT (2025 Release)",
+      1050.0,
+      true
+     ],
+     [
+      "1 Million Parfum",
+      1050.0,
+      true
+     ],
+     [
+      "1000 EDP",
+      250.0,
+      true
+     ],
+     [
+      "1000 EDT",
+      1100.0,
+      true
+     ],
+     [
+      "1270 Extreme EDP",
+      250.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "diwali-sale",
+    "title": "Diwali Sale",
+    "listed": 0,
+    "in_stock": 0,
+    "sample": []
+   },
+   {
+    "handle": "festive-sale",
+    "title": "Festive Sale",
+    "listed": 33,
+    "in_stock": 20,
+    "sample": [
+     [
+      "A-Men EDT Partial",
+      2250.0,
+      true
+     ],
+     [
+      "Acqua Di Gio EDP (2024 Version)",
+      275.0,
+      true
+     ],
+     [
+      "Acqua Di Gio EDT (New 2024 Formulation)",
+      250.0,
+      true
+     ],
+     [
+      "Acqua Di Gio EDT Partial",
+      2250.0,
+      true
+     ],
+     [
+      "Acqua Di Gio Parfum (New 2024)",
+      300.0,
+      true
+     ],
+     [
+      "Acqua Di Gio Parfum (Old Version)",
+      4950.0,
+      true
+     ],
+     [
+      "Alien EDP",
+      300.0,
+      true
+     ],
+     [
+      "Alien Goddess EDP",
+      300.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "deals-of-the-week",
+    "title": "HOT DEALS !!",
+    "listed": 7,
+    "in_stock": 4,
+    "sample": [
+     [
+      "Cedrat Boise EDP",
+      300.0,
+      true
+     ],
+     [
+      "Alien EDP",
+      300.0,
+      true
+     ],
+     [
+      "Patchouli Intense EDP",
+      400.0,
+      true
+     ],
+     [
+      "Oud For Greatness Neo EDP",
+      400.0,
+      true
+     ]
+    ]
+   }
+  ]
+ },
+ "scentira.in": {
+  "site": "scentira.in",
+  "products_json": 200,
+  "ms": 237,
+  "server": "cloudflare",
+  "n_products": 1561,
+  "n_available": 922,
+  "partials_in_titles": 0,
+  "discounted_15pct_in_stock": 715,
+  "collections": 250,
+  "deal_collections": [
+   [
+    "all-partials",
+    "All Partials (full catalogue)",
+    694
    ],
-   "n_images": 2,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/QWERT-2026-06-09T005923.954.jpg?v=1780946971",
-   "body_text": " Rasasi HAWAS Partial — A woody, sweet and fruity fragrance. It opens with a bright lift of pomegranate, apple and grapefruit, settles into a heart of iris, jasmine sambac and citruses, and dries down to a lasting base of praline, patchouli and vetiver. Overall it smells of warm, dry woods, wrapped ",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
-   ]
-  },
-  {
-   "id": 15393764016496,
-   "title": "Ahmed IGHR'A Partial",
-   "handle": "ahmed-ighra-partial",
-   "product_type": "",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-09-26T18:23:54+05:30",
-   "created_at": "2026-09-26T18:16:11+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 67579354546544,
-     "title": "20 ML",
-     "price": "1039.00",
-     "compare_at_price": null,
-     "available": true,
-     "sku": "AAM-IGHRA-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2026-09-26T18:16:11+05:30"
-    }
+   [
+    "body-mist-sale",
+    "Body Mist Sale",
+    14
    ],
-   "n_images": 3,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/rn-image_picker_lib_temp_1c5e859e-c1fa-4118-af53-760e3708420c.jpg?v=1790426789",
-   "body_text": "",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
-   ]
-  },
-  {
-   "id": 15288536990064,
-   "title": "Paris Corner KHAIR PEACH DELULU Partial",
-   "handle": "paris-corner-khair-peach-delulu-partial",
-   "product_type": "Perfume",
-   "vendor": "WHIFF CULTURE",
-   "published_at": "2026-09-23T11:28:27+05:30",
-   "created_at": "2026-09-23T01:02:41+05:30",
-   "updated_at": "2026-11-13T23:08:49+05:30",
-   "tags": [],
-   "variants": [
-    {
-     "id": 54355760021872,
-     "title": "20 ML",
-     "price": "829.00",
-     "compare_at_price": null,
-     "available": true,
-     "sku": "PCR-KHAIRPD-20ML-PT",
-     "option1": "20 ML",
-     "option2": null,
-     "updated_at": "2026-11-13T23:08:49+05:30",
-     "created_at": "2026-09-23T01:02:42+05:30"
-    }
+   [
+    "carnival-sale",
+    "Carnival Sale",
+    0
    ],
-   "n_images": 2,
-   "image0": "https://cdn.shopify.com/s/files/1/0890/1073/3424/files/rn-image_picker_lib_temp_30fae722-722c-4211-a7ec-3240ed132606.jpg?v=1790105578",
-   "body_text": " Paris Corner KHAIR PEACH DELULU Partial — A fruity, sweet and fresh fragrance. It opens with a bright lift of peach, guava and nectarine, settles into a heart of ginger and cardamom, and dries down to a lasting base of caramel, musk and dry wood. Overall it smells of juicy fruit, wrapped in a soft ",
-   "keys": [
-    "body_html",
-    "created_at",
-    "handle",
-    "id",
-    "images",
-    "options",
-    "product_type",
-    "published_at",
-    "tags",
-    "title",
-    "updated_at",
-    "variants",
-    "vendor"
+   [
+    "carnival-sale-10",
+    "Carnival Sale 10%",
+    0
+   ],
+   [
+    "carnival-sale-15",
+    "Carnival Sale 15%",
+    0
+   ],
+   [
+    "carnival-sale-20",
+    "Carnival Sale 20%",
+    0
+   ],
+   [
+    "carnival-sale-25",
+    "Carnival Sale 25%",
+    0
+   ],
+   [
+    "carnival-sale-30",
+    "Carnival Sale 30%",
+    0
+   ],
+   [
+    "carnival-sale-40-off",
+    "Carnival Sale 40% Off",
+    0
+   ],
+   [
+    "carnival-sale-50",
+    "Carnival Sale 50%",
+    0
+   ],
+   [
+    "carnival-sale-bundle",
+    "Carnival Sale Bundle",
+    3
+   ],
+   [
+    "clearance",
+    "Clearance",
+    32
+   ],
+   [
+    "cs-excluded-from-cart-discount",
+    "cs-excluded-from-cart-discount",
+    168
+   ],
+   [
+    "cs-niche-decant-discount",
+    "cs-niche-decant-discount",
+    13
+   ],
+   [
+    "cs-niche-retail-discount",
+    "cs-niche-retail-discount",
+    9
+   ],
+   [
+    "decant-case",
+    "Decant Case",
+    1
+   ],
+   [
+    "diwali-under-299",
+    "Decants under ₹299",
+    150
+   ],
+   [
+    "deo-sale",
+    "Deo Sale",
+    10
+   ],
+   [
+    "diwali-sale",
+    "Diwali Sale",
+    324
    ]
-  }
- ]
+  ],
+  "deal_detail": [
+   {
+    "handle": "all-partials",
+    "title": "All Partials (full catalogue)",
+    "listed": 250,
+    "in_stock": 178,
+    "sample": [
+     [
+      "Armaf Club De Nuit Intense Man Pure Parfum",
+      0.0,
+      true
+     ],
+     [
+      "Rasasi Hawas Ice Eau De Parfum",
+      0.0,
+      true
+     ],
+     [
+      "Lattafa Khamrah Eau De Parfum",
+      0.0,
+      true
+     ],
+     [
+      "Afnan Turathi Blue Eau De Parfum",
+      0.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige Marwa Eau de Parfum",
+      199.0,
+      true
+     ],
+     [
+      "Afnan Supremacy Not Only Intense Eau De Parfum",
+      0.0,
+      true
+     ],
+     [
+      "Riiffs Goodness Oud Purple Wave Eau de Parfum",
+      0.0,
+      true
+     ],
+     [
+      "French Avenue Vulcan Feu Eau de Parfum",
+      0.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "body-mist-sale",
+    "title": "Body Mist Sale",
+    "listed": 14,
+    "in_stock": 0,
+    "sample": [
+     [
+      "Victoria's Secret Pure Seduction Shimmer Fragrance Mist",
+      0.0,
+      false
+     ],
+     [
+      "Bath & Body Works Gingham Fine Fragrance Mist",
+      0.0,
+      false
+     ],
+     [
+      "Victoria's Secret Love Spell Shimmer Body Mist",
+      0.0,
+      false
+     ],
+     [
+      "Bath & Body Works In the Stars Fine Fragrance Mist",
+      0.0,
+      false
+     ],
+     [
+      "Bath & Body Works At The Beach Fine Fragrance Mist",
+      0.0,
+      false
+     ],
+     [
+      "Bath & Body Works A Thousand Wishes Fine Fragrance Mist",
+      0.0,
+      false
+     ],
+     [
+      "Victoria's Secret Sliver Of Sun Body Mist",
+      0.0,
+      false
+     ],
+     [
+      "Bath & Body Works Warm Vanilla Sugar Fine Fragrance Mist",
+      0.0,
+      false
+     ]
+    ]
+   },
+   {
+    "handle": "carnival-sale",
+    "title": "Carnival Sale",
+    "listed": 0,
+    "in_stock": 0,
+    "sample": []
+   },
+   {
+    "handle": "carnival-sale-10",
+    "title": "Carnival Sale 10%",
+    "listed": 0,
+    "in_stock": 0,
+    "sample": []
+   },
+   {
+    "handle": "carnival-sale-15",
+    "title": "Carnival Sale 15%",
+    "listed": 0,
+    "in_stock": 0,
+    "sample": []
+   },
+   {
+    "handle": "carnival-sale-20",
+    "title": "Carnival Sale 20%",
+    "listed": 0,
+    "in_stock": 0,
+    "sample": []
+   }
+  ]
+ },
+ "sniff.co.in": {
+  "site": "sniff.co.in",
+  "products_json": 200,
+  "ms": 381,
+  "server": "cloudflare",
+  "n_products": 2000,
+  "n_available": 712,
+  "partials_in_titles": 1,
+  "discounted_15pct_in_stock": 577,
+  "collections": 18,
+  "deal_collections": [
+   [
+    "50ml-sale",
+    "50ML SALE",
+    46
+   ],
+   [
+    "luxe-testers",
+    "Shop Perfumes",
+    2105
+   ]
+  ],
+  "deal_detail": [
+   {
+    "handle": "50ml-sale",
+    "title": "50ML SALE",
+    "listed": 46,
+    "in_stock": 46,
+    "sample": [
+     [
+      "YVES SAINT LAURENT MYSLF Eau De Parfum",
+      1999.0,
+      true
+     ],
+     [
+      "BVLGARI Man In Black Eau De Parfum",
+      2750.0,
+      true
+     ],
+     [
+      "PACO RABANNE 1 Million Elixir Eau De Parfum",
+      2618.0,
+      true
+     ],
+     [
+      "Versace Bright Crystal Eau De Toilette",
+      1999.0,
+      true
+     ],
+     [
+      "Bleu De Chanel Parfum",
+      3840.0,
+      true
+     ],
+     [
+      "Givenchy Gentleman Society Eau De Parfum",
+      3150.0,
+      true
+     ],
+     [
+      "Versace Crystal Noir EDT/EDP",
+      1999.0,
+      true
+     ],
+     [
+      "LANCOME La Vie est Belle Eau de Parfum",
+      2999.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "luxe-testers",
+    "title": "Shop Perfumes",
+    "listed": 250,
+    "in_stock": 157,
+    "sample": [
+     [
+      "Chanel Bleu De Chanel Eau De Parfum Pour Homme",
+      3650.0,
+      true
+     ],
+     [
+      "Dior Sauvage Parfum",
+      3720.0,
+      true
+     ],
+     [
+      "DIOR Sauvage Eau De Parfum",
+      3499.0,
+      true
+     ],
+     [
+      "YVES SAINT LAURENT MYSLF Eau De Parfum",
+      1999.0,
+      true
+     ],
+     [
+      "BVLGARI Man In Black Eau De Parfum",
+      2750.0,
+      true
+     ],
+     [
+      "Chanel Coco Mademoiselle Eau De Parfum",
+      3499.0,
+      true
+     ],
+     [
+      "BVLGARI Man Wood Essence Eau De Parfum",
+      2199.0,
+      true
+     ],
+     [
+      "MontBlanc Explorer EDP Men",
+      2299.0,
+      true
+     ]
+    ]
+   }
+  ]
+ },
+ "sillageperfumes.in": {
+  "site": "sillageperfumes.in",
+  "products_json": 200,
+  "ms": 466,
+  "server": "cloudflare",
+  "n_products": 1077,
+  "n_available": 854,
+  "partials_in_titles": 3,
+  "discounted_15pct_in_stock": 159,
+  "collections": 67,
+  "deal_collections": [
+   [
+    "afnan-decants",
+    "Afnan Perfume Decants",
+    24
+   ],
+   [
+    "ahmed-al-maghribi-decants",
+    "Ahmed Al Maghribi Perfume Decants",
+    31
+   ],
+   [
+    "al-haramain-decants",
+    "Al Haramain Perfume Decants",
+    7
+   ],
+   [
+    "arabiyat-decants",
+    "Arabiyat Perfume Decants",
+    17
+   ],
+   [
+    "armaf-decants",
+    "Armaf Perfume Decants",
+    37
+   ],
+   [
+    "aromatrix-x-french-avenue-decants",
+    "Aromatrix X French Avenue Perfume Decants",
+    6
+   ],
+   [
+    "best-sellers-decants",
+    "Best Sellers Decants",
+    593
+   ],
+   [
+    "decants",
+    "Decants",
+    593
+   ],
+   [
+    "designer-decants",
+    "Designer Perfume Decants",
+    84
+   ],
+   [
+    "dumont-decants",
+    "Dumont Perfume Decants",
+    4
+   ],
+   [
+    "fragrance-world-decants",
+    "Fragrance World Perfume Decants",
+    27
+   ],
+   [
+    "french-avenue-decants",
+    "French Avenue Perfume Decants",
+    31
+   ],
+   [
+    "ibraheem-al-qurashi-decants",
+    "Ibraheem Al Qurashi Perfume Decants",
+    9
+   ],
+   [
+    "khadlaj-decant",
+    "Khadlaj Decant",
+    22
+   ],
+   [
+    "khadlaj-decants",
+    "Khadlaj Decants",
+    22
+   ],
+   [
+    "lattafa-decants",
+    "Lattafa Perfume Decants",
+    98
+   ],
+   [
+    "maison-alhambra-decants",
+    "Maison Alhambra Perfume Decants",
+    35
+   ],
+   [
+    "mykonos-decants",
+    "Mykonos Perfume Decants",
+    18
+   ],
+   [
+    "paris-corner-decants",
+    "Paris Corner Perfume Decants",
+    12
+   ],
+   [
+    "pendora-scents-decants",
+    "Pendora Scents Decants",
+    2
+   ],
+   [
+    "rakshabandhan-sale",
+    "Rakhi Sale",
+    128
+   ],
+   [
+    "rakhi-sale-15-off",
+    "Rakhi Sale 15% off",
+    2
+   ],
+   [
+    "rakhi-sale-5-off",
+    "Rakhi Sale 5% off",
+    0
+   ],
+   [
+    "rasasi-decants",
+    "Rasasi Perfume Decant",
+    27
+   ],
+   [
+    "rayhaan-decants",
+    "Rayhaan Decants",
+    23
+   ],
+   [
+    "rayhaan-decants-1",
+    "Rayhaan Decants",
+    23
+   ],
+   [
+    "retail-sale-eligible",
+    "Retail Sale Eligible",
+    527
+   ],
+   [
+    "riiffs-decants",
+    "Riiffs Perfume Decants",
+    21
+   ],
+   [
+    "rue-broca-decants",
+    "Rue Broca Perfume Decants",
+    5
+   ],
+   [
+    "sale",
+    "Sale",
+    45
+   ],
+   [
+    "clearance-sale",
+    "Sillage Steals",
+    72
+   ],
+   [
+    "zimaya-decants",
+    "Zimaya Perfume Decants",
+    15
+   ]
+  ],
+  "deal_detail": [
+   {
+    "handle": "afnan-decants",
+    "title": "Afnan Perfume Decants",
+    "listed": 24,
+    "in_stock": 23,
+    "sample": [
+     [
+      "Afnan Supremacy Collector’s Edition EDP For Men Decant",
+      365.0,
+      true
+     ],
+     [
+      "Afnan 9PM EDP for Men Decant",
+      269.0,
+      true
+     ],
+     [
+      "Afnan Rare Reef EDP for Men and Women Decant",
+      295.0,
+      true
+     ],
+     [
+      "Afnan Turathi Blue For Men & Women Decant",
+      315.0,
+      true
+     ],
+     [
+      "Afnan 9pm Night Out EDP Decant For Men & Women",
+      345.0,
+      true
+     ],
+     [
+      "Afnan Supremacy Not Only Intense EDP for Men Decant",
+      285.0,
+      true
+     ],
+     [
+      "Afnan 9PM Rebel for Men Decant",
+      299.0,
+      true
+     ],
+     [
+      "Afnan Turathi Electric EDP For Men and Women Decant",
+      295.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "ahmed-al-maghribi-decants",
+    "title": "Ahmed Al Maghribi Perfume Decants",
+    "listed": 31,
+    "in_stock": 29,
+    "sample": [
+     [
+      "Ahmed Al Maghribi Kaaf Extrait De Parfum for Men & Women Decant",
+      199.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Blue By Ahmed EDP for Men Decant",
+      225.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Bin Shaikh EDP for Men and Women Decant",
+      645.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Oud & Rose EDP for Men & Women Decant",
+      599.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Marj EDP for Women & Men Decant",
+      599.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Blu Oud Perfume EDP for Men and Women Decant",
+      245.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Ignite Oud EDP for Men & Women Decant",
+      449.0,
+      true
+     ],
+     [
+      "Ahmed Al Maghribi Aqua Oud EDP for Men Decant",
+      255.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "al-haramain-decants",
+    "title": "Al Haramain Perfume Decants",
+    "listed": 6,
+    "in_stock": 6,
+    "sample": [
+     [
+      "Al Haramain Amber Oud Aqua Dubai Extrait De Parfum for Men & Women Decant",
+      589.0,
+      true
+     ],
+     [
+      "Al Haramain Detour Noir EDP for Men & Women Decant",
+      259.0,
+      true
+     ],
+     [
+      "Al Haramain L'Aventure EDP For Men Decant",
+      359.0,
+      true
+     ],
+     [
+      "Al Haramain Amber Oud Gold Edition EDP For Women and Men Decant",
+      630.0,
+      true
+     ],
+     [
+      "Al Haramain Amber Oud Tobacco Edition EDP For Men Decant",
+      599.0,
+      true
+     ],
+     [
+      "Al Haramain Amber Oud Dubai Night Extrait De Parfum For Men & Women Decant",
+      475.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "arabiyat-decants",
+    "title": "Arabiyat Perfume Decants",
+    "listed": 17,
+    "in_stock": 16,
+    "sample": [
+     [
+      "Arabiyat Prestige Marwa EDP for Men Decant",
+      299.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige La Di Da For Him EDP Decant",
+      315.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige Mahd Al Dhahab EDP Decant for Men & Women",
+      325.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige Safa EDP For Women Decant",
+      279.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige Kohl Opulence EDP For Men and Women Decant",
+      315.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige AL noor EDP for Men & Women Decant",
+      249.0,
+      true
+     ],
+     [
+      "Arabiyat Prestige Uhud EDP For Women Decant",
+      246.0,
+      true
+     ],
+     [
+      "Arabiyat Oud Al Layl Midnight Edition Decant",
+      189.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "armaf-decants",
+    "title": "Armaf Perfume Decants",
+    "listed": 37,
+    "in_stock": 33,
+    "sample": [
+     [
+      "Armaf Club De Nuit Intense Man Pure Parfum for Men Decant",
+      299.0,
+      true
+     ],
+     [
+      "Armaf Club de Nuit Iconic EDP for Men Decant",
+      369.0,
+      true
+     ],
+     [
+      "Armaf Club de Nuit EDP for Women Decant",
+      295.0,
+      true
+     ],
+     [
+      "Armaf Club De Nuit Intense Man Parfum Limited Edition A Collectors Pride Decant",
+      559.0,
+      true
+     ],
+     [
+      "Armaf Club De Nuit Urban Elixir EDP for Men Decant",
+      205.0,
+      true
+     ],
+     [
+      "Armaf Club de Nuit Untold EDP For Men and Women Decant",
+      340.0,
+      true
+     ],
+     [
+      "Armaf Odyssey Mega EDP For Men Decant",
+      229.0,
+      true
+     ],
+     [
+      "Armaf Club de Nuit Sillage EDP for Men & Women Decant",
+      355.0,
+      true
+     ]
+    ]
+   },
+   {
+    "handle": "aromatrix-x-french-avenue-decants",
+    "title": "Aromatrix X French Avenue Perfume Decants",
+    "listed": 6,
+    "in_stock": 6,
+    "sample": [
+     [
+      "Aromatix X French Avenue Frostbite Extrait De Parfum For Man Decant",
+      359.0,
+      true
+     ],
+     [
+      "Aromatix X French Avenue Sun Kissed Extrait de Parfum For Men and Women Decant",
+      435.0,
+      true
+     ],
+     [
+      "Aromatix X French Avenue Magnetiq Extrait de Parfum For Men Decant",
+      399.0,
+      true
+     ],
+     [
+      "Aromatix X French Avenue Forbidden Fruit Extrait de Parfum For Women and Men Decant",
+      435.0,
+      true
+     ],
+     [
+      "Aromatix X French Avenue Teas Me Extrait de Parfum For Men and Women Decant",
+      399.0,
+      true
+     ],
+     [
+      "French Avenue Aromatix Platine Blanc Extrait de Parfum for Men Decant",
+      399.0,
+      true
+     ]
+    ]
+   }
+  ]
+ },
+ "perfumenetwork.in": {
+  "site": "perfumenetwork.in",
+  "products_json": 200,
+  "ms": 535,
+  "server": "cloudflare",
+  "n_products": 1708,
+  "n_available": 758,
+  "partials_in_titles": 0,
+  "discounted_15pct_in_stock": 359,
+  "collections": 186,
+  "deal_collections": []
+ },
+ "thescentstories.com": {
+  "site": "thescentstories.com",
+  "products_json": 404,
+  "ms": 712,
+  "server": "nginx/1.18.0 (Ubuntu)",
+  "base": "https://thescentstories.com",
+  "collections": 0,
+  "deal_collections": []
+ }
 }
