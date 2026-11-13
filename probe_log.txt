@@ -1,134 +1,33 @@
-
-== whiff: 100 collections; partial/deal-like (7):
-    ('decant-sets', 'Decant Sets', 71)
-    ('diwali-sale', 'DIWALI SALE', 402)
-    ('pre-diwali-sale', 'FESTIVE SALE', 28)
-    ('flash-sale', 'Flash Sale', 68)
-    ('independence-day-sale', 'INDEPENDENCE DAY SALE', 102)
-    ('partial-sale', 'Partials', 170)
-    ('testers', 'Testers', 192)
-
-== scentoria: 415 collections; partial/deal-like (7):
-    ('christmas-sale', 'Christmas Sale', 0)
-    ('decants', 'Decants', 3181)
-    ('diwali-sale', 'Diwali Sale', 0)
-    ('festive-sale', 'Festive Sale', 34)
-    ('deals-of-the-week', 'HOT DEALS !!', 7)
-    ('partials', 'Partials', 152)
-    ('testers', 'Testers', 5460)
-
-== scentira: 435 collections; partial/deal-like (35):
-    ('all-partials', 'All Partials (full catalogue)', 694)
-    ('body-mist-sale', 'Body Mist Sale', 14)
-    ('carnival-sale', 'Carnival Sale', 0)
-    ('carnival-sale-10', 'Carnival Sale 10%', 0)
-    ('carnival-sale-15', 'Carnival Sale 15%', 0)
-    ('carnival-sale-20', 'Carnival Sale 20%', 0)
-    ('carnival-sale-25', 'Carnival Sale 25%', 0)
-    ('carnival-sale-30', 'Carnival Sale 30%', 0)
-    ('carnival-sale-40-off', 'Carnival Sale 40% Off', 0)
-    ('carnival-sale-50', 'Carnival Sale 50%', 0)
-    ('carnival-sale-bundle', 'Carnival Sale Bundle', 3)
-    ('clearance', 'Clearance', 32)
-    ('cs-excluded-from-cart-discount', 'cs-excluded-from-cart-discount', 168)
-    ('cs-niche-decant-discount', 'cs-niche-decant-discount', 13)
-    ('cs-niche-retail-discount', 'cs-niche-retail-discount', 9)
-    ('decant-case', 'Decant Case', 1)
-    ('diwali-under-299', 'Decants under ₹299', 150)
-    ('deo-sale', 'Deo Sale', 10)
-    ('diwali-sale', 'Diwali Sale', 324)
-    ('long-lasting-perfumes-for-men-under-1000', 'Long Lasting Perfumes for Men Under 1000', 26)
-    ('long-lasting-perfumes-for-men-under-500', 'Long Lasting Perfumes for Men Under 500', 11)
-    ('long-lasting-perfumes-for-women-under-500', 'Long Lasting Perfumes for Women Under 500', 26)
-    ('long-lasting-perfumes-under-1000', 'Long Lasting Perfumes Under 1000', 49)
-    ('long-lasting-perfumes-under-2000', 'Long Lasting Perfumes Under 2000', 118)
-    ('long-lasting-perfumes-under-500', 'Long Lasting Perfumes Under 500', 13)
-    ('pay-day-sale', 'NEW ARRIVALS', 406)
-    ('new-offers', 'New Offers', 15)
-    ('givenchy-gentleman-reserve-privee-eau-de-parfum', 'Partial Excluded', 24)
-    ('partials', 'Partials', 905)
-    ('diwali-partials', 'Partials', 40)
-    ('perfume-decants', 'Perfume Decants', 1366)
-    ('sale', 'Sale', 2)
-    ('sale-25off', 'sale-25off', 0)
-    ('sale-30off', 'sale-30off', 0)
-    ('sale-40', 'sale-40%', 0)
-
-== sillage: 67 collections; partial/deal-like (32):
-    ('afnan-decants', 'Afnan Perfume Decants', 24)
-    ('ahmed-al-maghribi-decants', 'Ahmed Al Maghribi Perfume Decants', 31)
-    ('al-haramain-decants', 'Al Haramain Perfume Decants', 7)
-    ('arabiyat-decants', 'Arabiyat Perfume Decants', 17)
-    ('armaf-decants', 'Armaf Perfume Decants', 37)
-    ('aromatrix-x-french-avenue-decants', 'Aromatrix X French Avenue Perfume Decants', 6)
-    ('best-sellers-decants', 'Best Sellers Decants', 593)
-    ('decants', 'Decants', 593)
-    ('designer-decants', 'Designer Perfume Decants', 84)
-    ('dumont-decants', 'Dumont Perfume Decants', 4)
-    ('fragrance-world-decants', 'Fragrance World Perfume Decants', 27)
-    ('french-avenue-decants', 'French Avenue Perfume Decants', 31)
-    ('ibraheem-al-qurashi-decants', 'Ibraheem Al Qurashi Perfume Decants', 9)
-    ('khadlaj-decant', 'Khadlaj Decant', 22)
-    ('khadlaj-decants', 'Khadlaj Decants', 22)
-    ('lattafa-decants', 'Lattafa Perfume Decants', 98)
-    ('maison-alhambra-decants', 'Maison Alhambra Perfume Decants', 35)
-    ('mykonos-decants', 'Mykonos Perfume Decants', 18)
-    ('paris-corner-decants', 'Paris Corner Perfume Decants', 12)
-    ('pendora-scents-decants', 'Pendora Scents Decants', 2)
-    ('rakshabandhan-sale', 'Rakhi Sale', 128)
-    ('rakhi-sale-15-off', 'Rakhi Sale 15% off', 2)
-    ('rakhi-sale-5-off', 'Rakhi Sale 5% off', 0)
-    ('rasasi-decants', 'Rasasi Perfume Decant', 27)
-    ('rayhaan-decants', 'Rayhaan Decants', 23)
-    ('rayhaan-decants-1', 'Rayhaan Decants', 23)
-    ('retail-sale-eligible', 'Retail Sale Eligible', 527)
-    ('riiffs-decants', 'Riiffs Perfume Decants', 21)
-    ('rue-broca-decants', 'Rue Broca Perfume Decants', 5)
-    ('sale', 'Sale', 45)
-    ('clearance-sale', 'Sillage Steals', 72)
-    ('zimaya-decants', 'Zimaya Perfume Decants', 15)
-
-== sniff: 18 collections; partial/deal-like (2):
-    ('50ml-sale', '50ML SALE', 46)
-    ('luxe-testers', 'Shop Perfumes', 2105)
-
-== scentoria /products.json: 4000 products in 16 pages; 1128 titled Partial, 107 in stock
-   tags: [('Unisex', 689), ('EDP', 676), ('His', 234), ('Her', 199), ('Extrait De Parfum', 129), ('EDT', 124), ('Parfum', 106), ('Floral', 84), ('Amber Woody', 71), ('Amber Floral', 68), ('Woody Aromatic', 67), ('Woody Spicy', 48), ('Oriental Woody', 43), ('Oriental Floral', 42), ('Woody', 40)]
-   types: [('Fragrance', 1091), ('-', 36), ('Lipstick', 1)] | variant titles: [('30 ML TESTER', 300), ('20 ML TESTER', 148), ('30 ML RETAIL', 136), ('25 ML TESTER', 65), ('20 ML RETAIL', 61), ('40 ML TESTER', 61), ('15 ML TESTER', 47), ('10 ML TESTER', 38)]
-   newest partials: [('2026-11-03T18:38', 'Spirito Parfum Partial', False), ('2026-11-03T18:40', 'Eau De Monsieur EDT Partial', False), ('2026-11-03T18:43', 'Petite Cherie EDT Partial', False), ('2026-11-03T18:46', 'Gold Rose Oudh Extrait De Parfum Partial', False), ('2026-11-03T18:50', 'The One For Men Gold Edition EDP Intense Partial', True), ('2026-11-04T13:29', 'Mirto Di Panarea La Riserva EDP Partial', False), ('2026-11-04T13:48', 'A-Men EDT Partial', True), ('2026-11-04T14:07', 'Micodelirio Extrait de Parfum Partial', False)]
-   in-stock partials e.g.: [('The Most Wanted Intense EDP Partial', '2000.00', '1950.00'), ('Angel EDP Partial', '2650.00', '0.00'), ('A-Men EDT Partial', '2250.00', '0.00'), ('The One For Men Gold Edition EDP Intense Partial', '3000.00', '0.00'), ('Blanche EDP Partial', '5950.00', '5950.00'), ('Divine Le Parfum EDP Intense Partial', '3750.00', '0.00')]
-
-(adding Scentoria collection to the recording: partials )
-
-
-== recording 480 s since start (IST 00:06)
-
--- whiff-partials (https://www.whiffculture.com/collections/partial-sale, every 10s): reads {'ok': 46}, pages {1: 46}, ms median 166 max 468, items 170-170, tracked 170, in stock 11
-     in stock e.g.: ["Ahmed IGHR'A Partial", 'Ajmal KURO Partial', 'Ajmal SHIRO Partial', 'Khadlaj CLOUD CANDY Partial', 'Khadlaj ICON Partial', 'Lattafa ANGHAM SECOND SONG Partial']
-
--- whiff-flash (https://www.whiffculture.com/collections/flash-sale, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 169 max 474, items 68-68, tracked 68, in stock 58
-     in stock e.g.: ['Ahmed Al Maghribi IGNITE ROSE Flash Sale', 'Ajmal CYAN OUD Flash Sale', 'Ajmal KURO Flash Sale', 'Ajmal SHIRO Flash Sale', 'Ajmal SILVER SHADE Flash Sale', 'Arabiyat Prestige LUTFAH THE SEVENTH HEAVEN Flash Sale']
-
--- whiff-testers (https://www.whiffculture.com/collections/testers, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 206 max 225, items 187-187, tracked 187, in stock 38
-     in stock e.g.: ['Arabiyat Prestige KOHL LUMINOUS EXTRAIT Tester', 'Arabiyat Prestige KOHL OPULENCE EXTRAIT Tester', 'Arabiyat Prestige RAMAD ORIENTAL Tester (Open Box 100ML)', 'Chan*l ALLURE HOMME SPORT EAU EXTREME Tester', 'Chan*l BDC EDT Tester', "Chan*l BDC L'EXCLUSIF Tester"]
-
--- scentoria-deals (https://www.scentoria.co.in/collections/deals-of-the-week, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 148 max 190, items 7-7, tracked 7, in stock 4
-     in stock e.g.: ['Alien EDP', 'Cedrat Boise EDP', 'Oud For Greatness Neo EDP', 'Patchouli Intense EDP']
-
--- scentoria-festive (https://www.scentoria.co.in/collections/festive-sale, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 162 max 264, items 33-33, tracked 33, in stock 20
-     in stock e.g.: ['A-Men EDT Partial', 'Acqua Di Gio EDP (2024 Version)', 'Acqua Di Gio EDT (New 2024 Formulation)', 'Acqua Di Gio EDT Partial', 'Acqua Di Gio Parfum (New 2024)', 'Acqua Di Gio Parfum (Old Version)']
-
--- scentira-partials (https://www.scentira.in/collections/all-partials, every 30s): reads {'ok': 16}, pages {3: 16}, ms median 658 max 1394, items 692-692, tracked 870, in stock 56
-     in stock e.g.: ['Afnan Highness X Eau de Parfum / Partial (40mL) with Box', 'Afnan Mystique Bouquet Eau de Parfum / Partial (40mL) with Box', 'Afnan Supremacy Not Only Intense Eau De Parfum / Partial (50mL) with Box', 'Afnan Supremacy Tapis Rouge Eau de Parfum / Partial (40mL) with Box', 'Afnan Turathi Blue Eau De Parfum / Partial (40mL) with Box', 'Ahmed Al Maghribi Laathani Eau de Parfum / Partial (65mL) with Box']
-
--- scentira-clearance (https://www.scentira.in/collections/clearance, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 145 max 279, items 32-32, tracked 32, in stock 26
-     in stock e.g.: ['Anfar 1950 Discover Extrait de Parfum', 'Arabiyat Prestige Kohl Luminous Eau de Parfum', 'Creed Royal Princes Oud Eau de Parfum (2024)', 'Ex Nihilo Viper Green Eau de Parfum', 'Floraïku Rise and Fall Eau De Parfum', 'Floraïku Young At Heart Eau de Parfum']
-
--- sillage-decants (https://www.sillageperfumes.in/collections/decants, every 30s): reads {'ok': 16}, pages {3: 16}, ms median 554 max 1492, items 583-583, tracked 583, in stock 507
-     in stock e.g.: ['Afnan 9AM Dive EDP for Men Decant', 'Afnan 9PM EDP for Men Decant', 'Afnan 9PM Rebel for Men Decant', 'Afnan 9pm Elixir Extrait De Parfum For Man Decant', 'Afnan 9pm Night Out EDP Decant For Men & Women', 'Afnan Cherry Bouquet EDP for Women Decant']
-
--- sniff-50ml (https://sniff.co.in/collections/50ml-sale, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 165 max 194, items 46-46, tracked 46, in stock 46
-     in stock e.g.: ['AZZARO Wanted By Night Eau De Parfum', 'BVLGARI Man In Black Eau De Parfum', 'BVLGARI Man Wood Neroli Eau De Parfum', 'Bleu De Chanel Parfum', 'Burberry Body EDP for Women', 'Burberry Her Blossom Eau De Toilette']
-
--- scentoria-partials (https://www.scentoria.co.in/collections/partials, every 30s): reads {'ok': 16}, pages {1: 16}, ms median 165 max 224, items 133-133, tracked 133, in stock 133
-     in stock e.g.: ['A-Men EDT Partial', 'Acqua Di Gio EDT Partial', 'Acqua Di Gioia EDP Partial', 'Alien EDP Partial', 'Alien Goddess EDP Intense Partial', 'Alien Goddess EDP Partial']
+scentira products.json: 1561 products, 1118 partial variants, 102 in stock
+scentira partials: 899 products, 1118 partial variants, 102 in stock
+scentira all-partials: 692 products, 870 partial variants, 56 in stock
+scentira diwali-partials: 40 products, 48 partial variants, 40 in stock
+  in-stock partial variants in products.json but NOT in 'partials': 0 []
+  ... NOT in 'all-partials': 46 ['Caneza Oud Essence Eau de Parfum / Partial (60mL) with Box', 'French Avenue Ravine Ice Extrait de Parfum / Partial (60mL) with Box', 'Caneza Mortal Eau de Parfum / Partial (60mL) with Box', 'Bvlgari Aqva Pour Homme Eau De Toilette / Partial (40mL) with Box', 'Riiffs La Matière Extrait de Parfum / Partial (60mL) with Box']
+  products in 'partials' without any partial variant: 0
+  partial variant titles: [('Partial (40mL) with Box', 597), ('Partial (60mL) with Box', 111), ('Partial (30mL) with Box', 75), ('Partial (80mL) with Box', 52), ('Partial (70mL) with Box', 50), ('Partial (50mL) with Box', 50), ('Partial (35mL) with Box', 47), ('Partial (40ml) with Box', 22), ('Partial (25mL) with Box', 21), ('Partial (20mL) with Box', 20), ('Partial (45mL) with Box', 19), ('Partial (55mL) with Box', 14)]
+  e.g. Riiffs Momento Liquid Gold Extrait de Parfum | [('Retail Bottle (100 mL)', '4589.00', '5399.00', True), ('5mL Decant', '345.00', None, True), ('10mL Decant', '575.00', None, True), ('20mL Decant', '1035.00', None, True), ('Partial (60mL) with Box', '3150.00', None, True), ('Tester Sample (1.5mL)', '0.00', None, False)] | updated 2026-11-14T00:16:28+05:30
+  e.g. Mykonos Penthouse Extrait de Parfum | [('Retail Bottle (100 mL)', '3759.00', '5799.00', True), ('5mL Decant', '299.00', '345.00', True), ('10mL Decant', '479.00', '595.00', True), ('20mL Decant', '929.00', '1085.00', True), ('Partial (60mL) with Box', '2559.00', '3199.00', True), ('Tester Sample (1.5mL)', '0.00', None, False)] | updated 2026-11-14T00:16:28+05:30
+  e.g. Mykonos Monaco Royale Extrait de Parfum | [('Retail Bottle (100 mL)', '3759.00', '5799.00', True), ('5mL Decant', '299.00', '345.00', True), ('10mL Decant', '479.00', '595.00', True), ('20mL Decant', '929.00', '1085.00', True), ('Partial (60mL) with Box', '2559.00', '3199.00', True), ('Tester Sample (1.5mL)', '0.00', None, False)] | updated 2026-11-14T00:16:28+05:30
+https://www.scentira.in partials: sizes [899, 899, 899], ids missing between reads: [0, 0]
+https://www.sillageperfumes.in decants: sizes [583, 583, 583], ids missing between reads: [0, 0]
+https://www.sillageperfumes.in/collections/clearance-sale: 70 listed, 60 in stock; discounted variants 50 (median 40% off); newest [('2026-08-15', 'Riiffs Desert De Sahara EDP 100ml For Me'), ('2026-08-31', 'Riiffs Prive Blue EDP 100ml For Man'), ('2026-09-02', 'Arabiyat Prestige Hamdan The Sheikh EDP ')]
+    e.g. [('Ahmed Al Maghribi Blue By Ahmed 100ml EDP for', [('Default Title', '2399.00', '3700.00')]), ('Rasasi Hawas Black 100ml EDP for Men', [('Default Title', '3199.00', '6000.00')]), ('Maison Alhambra Salvo elixir 60ml EDP for Men', [('Default Title', '1599.00', '0.00')])]
+https://www.sillageperfumes.in/collections/sale: 45 listed, 23 in stock; discounted variants 17 (median 41% off); newest [('2025-06-20', 'French Avenue Lumiere Garcon 100ml EDP F'), ('2025-07-06', 'Armaf Odyssey Aqua 100ml EDP for Men'), ('2025-07-09', 'Lattafa Ramz Gold 100ml EDP For Men And ')]
+    e.g. [('Maison Alhambra Salvo elixir 60ml EDP for Men', [('Default Title', '1599.00', '0.00')]), ('Fragrance World Proud of You Absolute EDP For', [('Default Title', '1699.00', '2500.00')]), ('Maison Alhambra Dark Door Intense 100ml EDP f', [('Default Title', '1199.00', '3000.00')])]
+https://www.scentira.in/collections/new-offers: 15 listed, 12 in stock; discounted variants 14 (median 18% off); newest [('2026-02-17', 'Riiffs Fareed Eau de Parfum'), ('2026-02-17', 'Riiffs Freeze Extrait De Parfum'), ('2026-02-28', 'Afnan 9PM Night Out Extrait de Parfum')]
+    e.g. [('Armaf Club De Nuit Intense Man Pure Parfum', [('Retail Bottle (150 M', '4759.00', '7000.00'), ('5mL Decant', '379.00', '465.00')]), ('Rasasi Hawas Ice Eau De Parfum', [('Retail Bottle (100 M', '3300.00', '5500.00'), ('5mL Decant', '385.00', '895.00')]), ('Afnan 9pm Eau De Parfum', [('Retail Bottle (100 M', '3349.00', None), ('5mL Decant', '355.00', None)])]
+https://www.scentira.in/collections/sale: 2 listed, 2 in stock; discounted variants 1 (median 15% off); newest [('2024-07-27', 'Burberry Goddess Eau De Parfum'), ('2025-03-02', 'Burberry Goddess Eau de Parfum Intense')]
+    e.g. [('Burberry Goddess Eau De Parfum', [('Retail Bottle (100 M', '9180.00', '10800.00'), ('5mL Decant', '855.00', None)]), ('Burberry Goddess Eau de Parfum Intense', [('Retail Bottle (100 m', '11600.00', '13650.00'), ('Retail Bottle (30mL)', '4250.00', '5000.00')])]
+https://www.scentira.in/collections/diwali-sale: 324 listed, 321 in stock; discounted variants 1124 (median 20% off); newest [('2026-10-23', 'Narciso Rodriguez Musc Santal Eau de Par'), ('2026-10-23', 'Xerjoff Torino 22 Eau de Parfum'), ('2026-10-24', 'Xerjoff Shooting Stars Uden Eau de Parfu')]
+    e.g. [('Armaf Club De Nuit Intense Man Pure Parfum', [('Retail Bottle (150 M', '4759.00', '7000.00'), ('5mL Decant', '379.00', '465.00')]), ('Riiffs Desert de Sahara Extrait de Parfum', [('Retail Bottle (100 m', '2449.00', '3399.00'), ('5mL Decant', '179.00', '215.00')]), ('Khadlaj Karus Blu Spice Eau de Parfum', [('Retail Bottle (100 m', '2519.00', '3150.00'), ('5mL Decant', '239.00', '290.00')])]
+https://www.whiffculture.com/collections/diwali-sale: 402 listed, 392 in stock; discounted variants 0 (median -% off); newest [('2026-10-27', 'Kenzo Homme EDP'), ('2026-10-27', 'Lattafa BEYOND PRECIOUS'), ('2026-10-29', 'Dior SAUVAGE EAU FORTE PARFUM')]
+    e.g. [('Afnan SUPREMACY COLLECTOR’S EDITION', [('5ML - Plastic Atomis', '319.00', None), ('8ML - Plastic Atomis', '469.00', None)]), ('Rasasi HAWAS ICE', [('5ML - Plastic Atomis', '249.00', None), ('8ML - Plastic Atomis', '349.00', None)]), ('Mykonos INCEPTION', [('5ML - Plastic Atomis', '269.00', None), ('8ML - Plastic Atomis', '389.00', None)])]
+https://www.whiffculture.com/collections/pre-diwali-sale: 28 listed, 28 in stock; discounted variants 0 (median -% off); newest [('2026-10-15', 'Mykonos IMPERIUM'), ('2026-10-15', 'Mykonos INFERNO'), ('2026-10-15', 'Mykonos UNTAMED')]
+    e.g. [('Arabiyat Prestige OUD AL LAYL MIDNIGHT EDITIO', [('5ML - Plastic Atomis', '139.00', None), ('8ML - Plastic Atomis', '189.00', None)]), ('Afnan HISTORIC SAHARA', [('5ML - Plastic Atomis', '259.00', None), ('8ML - Plastic Atomis', '369.00', None)]), ('Lattafa RAMZ SILVER', [('5ML - Plastic Atomis', '179.00', None), ('8ML - Plastic Atomis', '249.00', None)])]
+https://www.whiffculture.com/collections/independence-day-sale: 102 listed, 93 in stock; discounted variants 1 (median 33% off); newest [('2026-10-30', 'Afnan STARDUST'), ('2026-10-30', 'Surrati KISWAH'), ('2026-10-30', 'Surrati RAWDHA')]
+    e.g. [('Afnan 9PM ELIXIR', [('5ML - Plastic Atomis', '249.00', None), ('8ML - Plastic Atomis', '359.00', None)]), ('Afnan LYNKED FREEDOM', [('5ML - Plastic Atomis', '299.00', None), ('8ML - Plastic Atomis', '429.00', None)]), ('Afnan RARE CARBON', [('5ML - Plastic Atomis', '239.00', None), ('8ML - Plastic Atomis', '349.00', None)])]
+https://www.scentoria.co.in/collections/partials: 133 listed, 133 in stock; discounted variants 27 (median 27% off); newest [('2026-11-04', 'A-Men EDT Partial'), ('2026-11-04', 'Angel EDP Partial'), ('2026-11-04', 'The Most Wanted Intense EDP Partial')]
+    e.g. [('A-Men EDT Partial', [('30 ML RETAIL', '2250.00', '0.00')]), ('The One For Men Gold Edition EDP Intense Part', [('30 ML RETAIL', '3000.00', '0.00'), ('30 ML TESTER(w/o box', '2750.00', '200.00')]), ('Divine Le Parfum EDP Intense Partial', [('30 ML TESTER', '3750.00', '0.00')])]
+https://sniff.co.in/collections/50ml-sale: 46 listed, 46 in stock; discounted variants 64 (median 50% off); newest [('2026-07-10', 'Xerjoff Uden Eau De Parfum For Men'), ('2026-08-03', 'Tom Ford Cafe Rose Eau de Parfum'), ('2026-10-09', 'MONTBLANC Explorer Extreme Parfum')]
+    e.g. [('YVES SAINT LAURENT MYSLF Eau De Parfum', [('100ml Tester', '3799.00', None), ('40ml Tester', '1999.00', None)]), ('BVLGARI Man In Black Eau De Parfum', [('100ml', '3999.00', '7933.33'), ('60ml', '2750.00', '5999.00')]), ('PACO RABANNE 1 Million Elixir Eau De Parfum', [('50ml', '2618.00', '4363.33'), ('100ml', '3499.00', '6028.33')])]
