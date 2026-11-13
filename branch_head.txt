@@ -1,0 +1,13 @@
+2613a546ce4fbe0053184e662b8b25fbe708279e  perfume state [skip ci]
+Python 3.14.4
+total 624
+drwxr-xr-x 3 runner runner   4096 Nov 13 19:01 .
+drwxr-xr-x 3 runner runner   4096 Nov 13 18:59 ..
+drwxr-xr-x 7 runner runner   4096 Nov 13 19:01 .git
+-rw-r--r-- 1 runner runner      0 Nov 13 19:01 .perfume_done
+-rw-r--r-- 1 runner runner     80 Nov 13 19:01 branch_head.txt
+-rw-r--r-- 1 runner runner 281277 Nov 13 19:01 perfume-state.json
+-rw-r--r-- 1 runner runner  30804 Nov 13 18:59 perfume.py
+-rw-r--r-- 1 runner runner   1282 Nov 13 19:01 perfume_probe_log.txt
+-rw-r--r-- 1 runner runner  16715 Nov 13 18:59 seed.json
+-rw-r--r-- 1 runner runner 281277 Nov 13 19:01 state.json
