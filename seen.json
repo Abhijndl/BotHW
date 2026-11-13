@@ -2843,6 +2843,7 @@
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-24T14:38:15",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-03T03:57:11",
     "fc_lst_seen": "2026-11-03T04:00:00"
   },
@@ -3015,6 +3016,7 @@
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-07T17:02:23",
     "fc_lst_seen": "2026-11-07T18:15:00"
   },
@@ -3621,6 +3623,7 @@
     "fc_gid": "23074178",
     "fc_phantom": "2026-10-21T19:33:58",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-30T08:55:32",
     "fc_lst_seen": "2026-10-30T09:15:00"
   },
@@ -6134,6 +6137,7 @@
     "fc_lst": "out",
     "fc_gid": "23074178",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-03T09:50:26",
     "fc_lst_seen": "2026-11-03T10:30:00"
   },
@@ -11346,7 +11350,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -15618,7 +15622,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15641,7 +15645,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -15722,7 +15726,7 @@
     "fc_listed_at": "2026-11-13T20:00:00",
     "fc_api_seen_at": "2026-11-13T20:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "21497090",
     "fc_phantom": "2026-10-26T07:32:29",
@@ -21808,7 +21812,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22626,7 +22630,7 @@
     "fc_listed_at": "2026-11-13T20:00:00",
     "fc_api_seen_at": "2026-11-13T20:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-13T16:43:01",
