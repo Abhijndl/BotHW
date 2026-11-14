@@ -17,6 +17,7 @@ jobs:
           T: ${{ secrets.PERFUME_BOT_TOKEN }}
           PC: ${{ secrets.PERFUME_CHAT_ID }}
           HC: ${{ secrets.TELEGRAM_CHAT_ID }}
+          HWT: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
           python3 - <<'PY'
           import json, os, re, urllib.request, urllib.parse
@@ -32,10 +33,21 @@ jobs:
                   return json.loads(e.read() or b"{}")
           if t:
               me = call("getMe")
-              print("getMe ok:", me.get("ok"), "| bot:", "@" + str((me.get("result") or {}).get("username")), "| error:", me.get("error_code"), me.get("description"))
+              print("getMe ok:", me.get("ok"), "| bot:", "@" + str((me.get("result") or {}).get("username")))
+              wh = call("getWebhookInfo").get("result") or {}
+              print("webhook set:", bool(wh.get("url")), "| pending updates:", wh.get("pending_update_count"), "| last webhook error:", bool(wh.get("last_error_date")))
               up = call("getUpdates", timeout=0)
               res = up.get("result") or []
-              starts = [u for u in res if ((u.get("message") or {}).get("chat") or {}).get("type") == "private"]
-              print("getUpdates ok:", up.get("ok"), "| updates:", len(res), "| private messages:", len(starts),
-                    "| texts:", sorted({(u["message"].get("text") or "")[:10] for u in starts}), "| error:", up.get("error_code"), up.get("description"))
+              print("getUpdates ok:", up.get("ok"), "| waiting updates:", len(res), "| kinds:", sorted({k for u in res for k in u if k != "update_id"}))
+          ids = [c for c in re.split(r"[\s,;]+", os.environ.get("HC", "")) if c]
+          hw = os.environ.get("HWT", "")
+          for i, c in enumerate(ids, 1):
+              kind = "positive number" if re.fullmatch(r"\d+", c) else "negative number" if re.fullmatch(r"-\d+", c) else "@name" if c.startswith("@") else "other"
+              def gc(tok):
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request(f"https://api.telegram.org/bot{tok}/getChat", data=urllib.parse.urlencode({"chat_id": c}).encode()), timeout=15) as r:
+                          return (json.loads(r.read()).get("result") or {}).get("type")
+                  except urllib.error.HTTPError as e:
+                      return f"error {e.code}"
+              print(f"TELEGRAM_CHAT_ID entry {i} of {len(ids)}: {kind} | Hot Wheels bot sees it as: {gc(hw)} | perfume bot can reach it: {gc(t.strip()) if t else '-'}")
           PY
