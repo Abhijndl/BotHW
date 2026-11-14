@@ -1,0 +1,41 @@
+name: Perfume bot check (temporary)
+# Temporary, claude/probe only: checks the PERFUME_BOT_TOKEN secret reaches
+# Actions and works. Prints only yes/no facts and counts, never the token or ids.
+on:
+  push:
+    branches: [claude/probe]
+    paths: [.github/workflows/perfume_botcheck.yml]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check the perfume bot secret
+        env:
+          T: ${{ secrets.PERFUME_BOT_TOKEN }}
+          PC: ${{ secrets.PERFUME_CHAT_ID }}
+          HC: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request, urllib.parse
+          t = os.environ.get("T", "")
+          print("PERFUME_BOT_TOKEN set:", bool(t), "| length:", len(t), "| spaces/newlines around it:", t != t.strip())
+          print("looks like a bot token:", bool(re.fullmatch(r"\d{6,}:[A-Za-z0-9_-]{30,}", t.strip())))
+          print("PERFUME_CHAT_ID set:", bool(os.environ.get("PC")), "| Hot Wheels chat is a group:", os.environ.get("HC", "").startswith("-"))
+          def call(m, **p):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(f"https://api.telegram.org/bot{t.strip()}/{m}", data=urllib.parse.urlencode(p).encode()), timeout=15) as r:
+                      return json.loads(r.read())
+              except urllib.error.HTTPError as e:
+                  return json.loads(e.read() or b"{}")
+          if t:
+              me = call("getMe")
+              print("getMe ok:", me.get("ok"), "| bot:", "@" + str((me.get("result") or {}).get("username")), "| error:", me.get("error_code"), me.get("description"))
+              up = call("getUpdates", timeout=0)
+              res = up.get("result") or []
+              starts = [u for u in res if ((u.get("message") or {}).get("chat") or {}).get("type") == "private"]
+              print("getUpdates ok:", up.get("ok"), "| updates:", len(res), "| private messages:", len(starts),
+                    "| texts:", sorted({(u["message"].get("text") or "")[:10] for u in starts}), "| error:", up.get("error_code"), up.get("description"))
+          PY
