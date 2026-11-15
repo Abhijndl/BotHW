@@ -1,45 +1,30 @@
-==================== Sovereign Scents
-page 1 200 1000 {'currentPage': 1, 'totalPages': 2, 'totalCount': 1439, 'limit': 1000, 'hasMore': True}
-page 2 200 439 {'currentPage': 2, 'totalPages': 2, 'totalCount': 1439, 'limit': 1000, 'hasMore': False}
-products: 1439 unique ids: 1439
-in stock: Counter({True: 1210, False: 229}) | disabled: Counter({None: 1380, False: 59})
-type: [('Middle Eastern', 869), ('Designers', 570)]
-category: [('Unisex', 1204), ('Women', 235)]
-size labels: [('5ml', 1436), ('8ml', 1410), ('10ml', 1407), ('3ml', 1332), ('20ml', 424), ('30ml', 333)]
-products with an unusual size label: 0
-products offering a size above 20 ml: 333
-    Proud of You Intensely | [('5ml', 130), ('8ml', 190), ('10ml', 240), ('20ml', 420), ('30ml', 550)] | totalMl 0 | in stock False
-    L'Eau d'Issey Pour Homme EDT | [('3ml', 160), ('5ml', 240), ('8ml', 350), ('10ml', 440), ('20ml', 800), ('30ml', 1140)] | totalMl 62 | in stock True
-    Sugarcane Vanilla | [('3ml', 160), ('5ml', 220), ('8ml', 330), ('10ml', 410), ('20ml', 760), ('30ml', 1040)] | totalMl 92 | in stock True
-    Apex | [('3ml', 140), ('5ml', 190), ('8ml', 270), ('10ml', 350), ('20ml', 610), ('30ml', 850)] | totalMl 89 | in stock True
-    Swar Serpentine | [('3ml', 160), ('5ml', 220), ('8ml', 320), ('10ml', 400), ('20ml', 720), ('30ml', 980)] | totalMl 75 | in stock True
-    Freeze In Flames | [('3ml', 150), ('5ml', 220), ('8ml', 320), ('10ml', 400), ('20ml', 720), ('30ml', 980)] | totalMl 57 | in stock True
-    Amaze | [('3ml', 130), ('5ml', 180), ('8ml', 260), ('10ml', 330), ('20ml', 580), ('30ml', 770)] | totalMl 90 | in stock True
-    Panache Angel Dust | [('3ml', 150), ('5ml', 210), ('8ml', 310), ('10ml', 390), ('20ml', 700), ('30ml', 950)] | totalMl 58 | in stock True
-totalMl: [(0, 236), (100, 82), (99, 54), (96, 39), (89, 35), (90, 34), (94, 31), (97, 30), (86, 29), (85, 29), (93, 28), (91, 26), (76, 24), (75, 24), (87, 23)]
-newest: [('2026-11-08T05:27', 'Stardust', True), ('2026-11-08T05:28', 'Celestial Whispers', True), ('2026-11-08T05:28', 'Jean Lowe Noir', True), ('2026-11-08T05:28', 'Soul Of Forest', True), ('2026-11-08T05:28', "Untitled L'Eau", True), ('2026-11-13T13:47', 'Saffron Lazuli', True), ('2026-11-13T13:48', 'Jasmine Musk EDP Intense', True), ('2026-11-13T13:48', 'Peut-Etre EDP 2020', True)]
-all keys: [('_id', 1439), ('name', 1439), ('brand', 1439), ('__v', 1439), ('category', 1439), ('cloneOf', 1439), ('createdAt', 1439), ('description', 1439), ('details', 1439), ('discountEligible', 1439), ('featured', 1439), ('images', 1439), ('inStock', 1439), ('notes', 1439), ('rating', 1439), ('reviews', 1439), ('sizes', 1439), ('totalMl', 1439), ('type', 1439), ('updatedAt', 1439), ('driveFileId', 984), ('archivedImages', 828), ('accords', 298), ('manuallyDisabled', 59)]
-shop page chunks: 16
-api endpoints in the site's code: ['/api/announcement', '/api/brands', '/api/products', '/api/products/search', '/api/user/wishlist']
-'partial' in the site's code: [('partials', 4), ('ime,e.flightDatas,e.buildId,e.isResponsePartial,e.headVaryParams,e.staleAt,e.nav', 2), ('Partials', 2), ('urceMapURL,debugChannel:n,unstable_allowPartialStream:!0})).then(async e=>(0,E.c', 1), (',tree:t,seedData:r,head:n,isHeadPartial:a,isRootRender:4===e.length}}function c', 1), ('eak;case i.EntryStatus.Fulfilled:if(o.isPartial&&(0,i.canNewFetchStrategyProvide', 1), ('ull===t.parent?null:e(t.parent,r)}}},getPartialLayoutVaryPath:function(){return ', 1), ('tCacheEntry:function(){return B},stripIsPartialByte:function(){return eN},upgrad', 1), ('tchStrategy,!(a<r.fetchStrategy))||!n.isPartial&&r.isPartial)return r.status=3,r', 1), ('Strategy:P.FetchStrategy.PPR,rsc:null,isPartial:!0,promise:null,ref:null,size:0,', 1), ('rategy=t,t===P.FetchStrategy.Full&&(e.isPartial=!1),e.version=D,e}function ee(e,', 1), ('turn e.status=2,e.rsc=t,e.staleAt=r,e.isPartial=n,null!==e.promise&&(e.promise.r', 1), ('on ef(e,t,r,n,a){let l=e.isPage?(0,s.getPartialPageVaryPath)(e.varyPath):(0,s.ge', 1), ('createFromNextReadableStream)(i,l,{allowPartialStream:!0});if((t.headers.get(O.N', 1), ('createFromNextReadableStream)(n,l,{allowPartialStream:!0});if((t.headers.get(O.N', 1)]
-   /api/announcement -> 200: '{"success":true,"announcement":{"enabled":true,"text":"3% off on 3+ decants above ₹1,200 · 5% off on 6+ decants above ₹2,000","link":"/shop"}}'
-   /api/brands -> 200: '{"success":true,"brands":["Afnan","Ahmed Al Maghribi","Ajmal","Al Haramain","Al Majed Oud","Al Rehab","Al Wataniah","Albait Aldimashqi","Albait Niche","Alezz Ou'
-   /api/products/search -> 200: '{"success":true,"brands":[],"products":[]}'
-   /api/user/wishlist -> 401: ''
+[1_s2huxn8c563.js] …]);let C=[{name:"Shop",href:"/shop"},{name:"Men",href:"/shop?category=Men"},{name:"Women",href:"/shop?category=Women"},{name:"Unisex",href:"/shop?category=Unisex"},{name:"New Arrivals",href:"/shop?featured=true"},{name:"Partials",href:"/shop?collection=partials"}];return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(a.motion.nav,{initial:{y:-100},animate:{y:0},transition:{duration:.6,ease:"easeOut"},className:"fixed top-0 left-0 right-0 z-50 bg-bl…
 
-==================== Acordell
-attribute 7 'Brand': [('Afnan', 20), ('Ahmed Al Maghribi', 9), ('Ajmal', 2), ('Al Haramain', 3), ('Arabiyat Prestige', 7), ('Ard Al Zaafaran', 2), ('Armaf', 22), ('Armani', 6), ('Azzaro', 4), ('Burberry', 4), ('Bvlgari Man', 3), ('Creed', 1), ('Davidoff', 2), ('Dior', 8), ('Dolce &amp; Gabbana', 3), ('Dumont', 1), ('Fragrance World', 12), ('French Avenue', 19), ('Gisada', 1), ('Givenchy', 2), ('Guerlain', 4), ('Hermes', 2), ('Hugo Boss', 2), ('Ibraheem AlQurashi', 5), ('Jean Paul Gaultier', 8), ('Jimmy Choo', 1), ('Khadlaj', 10), ('Killian', 1), ('Lalique', 4), ('Lattafa', 46), ('Maison Margiela', 2), ('Mancera', 8), ('Mercedes Benz', 3), ('Montale', 3), ('Montblanc', 2), ('Narciso Rodriguez', 2), ('Nishane', 1), ('Paris Corner', 2), ('Rabanne', 2), ('Ralph Lauren', 2), ('Rasasi', 17), ('Rayhaan', 3), ('Riffs', 4), ('Rue Broca', 2), ('Sospiro', 4), ('Swiss Arabian', 1), ('Tom Ford', 3), ('Unique’e Luxury', 1), ('Valentino', 3), ('Versace', 4), ('Yves Saint Laurent', 4)]
-attribute 8 'Product Type': [('100 ML Retail Without Cellophane', 3), ('100ML Retail', 101), ('100ML Tester', 90), ('105ML Retail', 2), ('110ML Retail', 1), ('110ML Tester', 1), ('120ML Retail', 10), ('120ML Tester', 9), ('125ML Retail', 10), ('125ML Tester', 11), ('150ML Refill', 3), ('150ML Retail', 41), ('200ML Retail', 15), ('250ML Carafe', 1), ('250ML Tester', 1), ('30ML Retail', 6), ('50ML Retail', 61), ('60ML Retail', 11), ('60ML Tester', 2), ('70ML Retail', 1), ('75ML Retail', 12), ('75ML Tester', 4), ('80ML Retail', 2), ('80ML Tester', 2), ('90ML Retail', 3), ('90ML Tester', 3)]
-attribute 9 'Size': [('100 ML', 2), ('50 ML', 1), ('75 ML', 1)]
-products: 343
-variation types: [('100ml-retail', 101), ('100ml-tester', 88), ('50ml-retail', 45), ('200ml-retail', 15), ('75ml-retail', 12), ('125ml-tester', 11), ('125ml-retail', 10), ('120ml-retail', 10), ('150ml-retail', 9), ('120ml-tester', 9), ('60ml-retail', 7), ('30ml-retail', 5), ('90ml-retail', 3), ('90ml-tester', 3), ('75ml-tester', 3), (None, 3), ('80ml-retail', 2), ('100-ml-retail-without-cellophane', 2), ('60ml-tester', 2), ('150ml-refill', 2), ('105ml-retail', 2), ('80ml-tester', 1), ('110ml-tester', 1), ('110ml-retail', 1), ('250ml-carafe', 1), ('250ml-tester', 1), ('70ml-retail', 1), ('75-ml', 1), ('100-ml', 1)]
-on sale: 343 in stock 304
-tester category: 118 in stock 103
-stock texts: [('', 122), ('1 in stock', 73), ('2 in stock', 60), ('Out of stock', 39), ('3 in stock', 22), ('4 in stock', 15), ('6 in stock', 6), ('5 in stock', 4), ('10 in stock', 1), ('8 in stock', 1)]
-   sale e.g. Lattafa Musamam Black Intense EDP 100ml 3850 5900 {} True
-   sale e.g. Rasasi Hawas Boa EDP 100 ML 4450 6400 {} True
-   sale e.g. Lancôme Idôle EDP 5750 10500 {'min_amount': '5750', 'max_amount': '6699'} True
-   sale e.g. Burberry Her EDP 7499 11995 {'min_amount': '7499', 'max_amount': '8499'} True
-   sale e.g. Parfums de Marly Althair EDP 11900 26600 {'min_amount': '11900', 'max_amount': '19750'} True
-variation listing -> 200 [{"id":17011,"name":"Lanc\u00f4me La Vie Est Belle EDP","slug":"lancome-la-vie-est-belle-edp-50ml-retail","parent":16716,"type":"variation","variation":"Product Type: 50ML Retail","permalink":"https:\/\/acordell.com\/product\/lancome-la-vie-est-belle-edp\/?attribute_pa_product-type=50ml-retail","sku
-one variation -> 200 {'id': 17001, 'name': 'Lancôme Idôle EDP', 'type': 'variation', 'is_in_stock': True, 'permalink': 'https://acordell.com/product/lancome-idole-edp/?attribute_pa_product-type=100ml-retail'} 6699
+[1_s2huxn8c563.js] …p"},{name:"Men",href:"/shop?category=Men"},{name:"Women",href:"/shop?category=Women"},{name:"Unisex",href:"/shop?category=Unisex"},{name:"New Arrivals",href:"/shop?featured=true"},{name:"Partials",href:"/shop?collection=partials"}];return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(a.motion.nav,{initial:{y:-100},animate:{y:0},transition:{duration:.6,ease:"easeOut"},className:"fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-xl border-b …
+
+[1a6heicj8ndfm.js] …rn t&&["Men","Women","Unisex"].includes(t)?t:"All"}),[U,D]=(0,s.useState)(()=>{let t=e.get("type");return t&&$.includes(t)?t:"All Types"}),[H,O]=(0,s.useState)(()=>e.get("brand")||"All Brands"),[_,F]=(0,s.useState)(()=>"partials"===e.get("collection")),[W,K]=(0,s.useState)(5e4),[X,Y]=(0,s.useState)("newest"),[J,V]=(0,s.useState)(!1),[Z,G]=(0,s.useState)([]),Q=(0,s.useRef)(null),ee=(0,s.useRef)(1),et=(0,s.useRef)(null);(0,s.useEffect)(()=>{ee.cu…
+
+[1a6heicj8ndfm.js] …emoveEventListener("scroll",t)},[]),(0,s.useEffect)(()=>{let t=e.get("category"),s=e.get("search"),a=e.get("brand"),l=e.get("type");t&&["Men","Women","Unisex"].includes(t)&&q(t),s&&N(s),a&&O(a),l&&$.includes(l)&&D(l),F("partials"===e.get("collection"))},[e]),(0,s.useEffect)(()=>{fetch("/api/brands").then(e=>e.json()).then(e=>{e.success&&G(e.brands)}).catch(()=>{})},[]);let es=(0,s.useCallback)(async(e=1,t=!1,s=1)=>{t?p(!0):m(!0);let a=new URLSe…
+
+[1a6heicj8ndfm.js] …e",String(e)),a.set("limit",String(24*s)),a.set("sort",X),"All"!==E&&a.set("category",E),"All Types"!==U&&a.set("type",U),"All Brands"!==H&&a.set("brand",H),M&&a.set("search",M),W<5e4&&a.set("maxPrice",String(W)),a.set("partials",_?"only":"exclude");try{let l=await fetch(`/api/products?${a}`),r=await l.json();r.success&&(t?d(e=>{let t=new Set(e.map(e=>e._id)),s=r.products.filter(e=>!e._id||!t.has(e._id));return[...e,...s]}):d(r.products),g(r.pa…
+
+[1a6heicj8ndfm.js] …;return t.observe(e),()=>t.unobserve(e)},[x]);let en=e=>q(e),ei=e=>D(e),eo=e=>O(e),ec=e=>N(e),ed=(0,s.useRef)(!0);(0,s.useEffect)(()=>{if(ed.current){ed.current=!1;return}let e=new URLSearchParams;_&&e.set("collection","partials"),"All"!==E&&e.set("category",E),M&&e.set("search",M),"All Types"!==U&&e.set("type",U),"All Brands"!==H&&e.set("brand",H);let t=e.toString()?`/shop?${e}`:"/shop";window.history.replaceState(null,"",t)},[E,M,U,H,_]);let …
+
+[1a6heicj8ndfm.js] …gap-4",children:[(0,t.jsxs)("div",{className:"flex items-baseline gap-2 sm:gap-3 min-w-0",children:[(0,t.jsx)("h1",{className:"font-serif text-white text-base sm:text-lg font-semibold tracking-wide truncate",children:_?"Partials":"All Brands"!==H?H:"All"!==E?E:"All Types"!==U?U:"The Collection"}),!x&&(0,t.jsx)("span",{className:"text-elegant-600 text-[11px] sm:text-xs shrink-0",children:j>0?`${j} products`:`${c.length} products`})]}),(0,t.jsxs)…
+
+[/ page text] …Scents - Authentic Luxury Perfumes Shop Men Women Unisex New Arrivals Partials Authentic · Curated · Decanted with Care Fragrance, without compromise. From rare…
+[3-sh8h6_eof9o.js] …e)([]),[v,j]=(0,s.useState)([]),[w,y]=(0,s.useState)([]),[N,k]=(0,s.useState)([]),[C,S]=(0,s.useState)(void 0),[z,M]=(0,s.useState)([]);return(0,s.useEffect)(()=>{Promise.all([fetch("/api/products?featured=true&limit=12&partials=exclude").then(e=>e.json()),fetch("/api/products?sort=newest&limit=12&partials=exclude").then(e=>e.json()),fetch("/api/brands/highlights?limit=10").then(e=>e.json()),fetch("/api/home-content").then(e=>e.json())]).then((…
+
+[3-sh8h6_eof9o.js] …]),[C,S]=(0,s.useState)(void 0),[z,M]=(0,s.useState)([]);return(0,s.useEffect)(()=>{Promise.all([fetch("/api/products?featured=true&limit=12&partials=exclude").then(e=>e.json()),fetch("/api/products?sort=newest&limit=12&partials=exclude").then(e=>e.json()),fetch("/api/brands/highlights?limit=10").then(e=>e.json()),fetch("/api/home-content").then(e=>e.json())]).then(([e,t,s,a])=>{e.success&&m(e.products),t.success&&j(t.products),s.success&&y(s.b…
+
+[/about page text] … About Us — Sovereign Scents Shop Men Women Unisex New Arrivals Partials Back to store About Us Curating excellence in luxury fragrances. Who We Are Sovereign Sc…
+[/authenticity page text] …nticity Promise — Sovereign Scents Shop Men Women Unisex New Arrivals Partials Back to store Authenticity Promise Every fragrance we sell is real. Here&#x27;s how we make sure…
+[/shipping page text] …Shipping Policy — Sovereign Scents Shop Men Women Unisex New Arrivals Partials Back to store Shipping Policy Pan-India delivery with careful packaging to protect your fragranc…
+[/returns page text] …p; Replacements — Sovereign Scents Shop Men Women Unisex New Arrivals Partials Back to store Returns &amp; Replacements We want you to love every fragrance. Here&#x27;s how we…
+[/terms page text] …erms of Service — Sovereign Scents Shop Men Women Unisex New Arrivals Partials Back to store Terms of Service By using our site or placing an order, you agree to these terms. …
+?type=Partials -> 200 0 0
+?type=Partial -> 200 0 0
+?category=Partial -> 200 0 0
+?partial=true -> 200 5 1439
+?isPartial=true -> 200 5 1439
+?collection=partials -> 200 5 1439
