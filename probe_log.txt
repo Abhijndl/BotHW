@@ -1,11 +1,74 @@
-link code: 00 overflow-hidden",children:[(0,t.jsxs)("div",{className:"relative aspect-[3/4]",children:[(0,t.jsxs)(d.default,{href:`/product/${$}`,prefetch:!1,className:`absolute inset-0 block overflow-hidden ${P?"bg-white":"bg-elegant-800"}`,children:
-link code: p-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200",children:(0,t.jsx)(d.default,{href:`/product/${$}`,prefetch:!1,tabIndex:-1,children:(0,t.jsx)("button",{className:"bg-white/10 backdrop-blur-md border borde
-link code: "div",{className:"flex items-start justify-between gap-1.5 mb-1 sm:mb-1.5 md:mb-3",children:[(0,t.jsx)(d.default,{href:`/product/${$}`,prefetch:!1,className:"min-w-0 flex-1",children:(0,t.jsx)("h3",{title:e.name,className:"font-serif text-w
-newest: 6af7151460958a6dcfdbb22a Jasmine Musk EDP Intense Narciso Rodriguez
-/product/6af7151460958a6dcfdbb22a -> 200; shows the name: True; 38582 bytes
-/api/products/6af7151460958a6dcfdbb22a -> 200; shows the name: True; 787 bytes; '{"success":true,"product":{"notes":{"top":[],"middle":[],"base":[]},"details":{"concentration":"Eau de Parfum"},"isPartial":false,"_id":"6af7151460958a6dcfdbb22a","name":"Jasmine Musk EDP Intense","br'
-Acordell search=partial -> 200: 0 []
-Acordell search=decant -> 200: 0 []
-Acordell search=sample -> 200: 0 []
-Acordell search=partials -> 200: 0 []
-Acordell search=decants -> 200: 0 []
+==================== The Scent Stories
+https://thescentstories.com/ -> 200 in 731 ms, final https://thescentstories.com/, server nginx/1.18.0 (Ubuntu), marks ['odoo', 'web.assets', '/shop/category']
+  shop categories: ['/shop/category/fragrance-family-315', '/shop/category/miniatures-58', '/shop/category/miniatures-for-men-55', '/shop/category/miniatures-for-women-57', '/shop/category/occasion-season-317', '/shop/category/others-44', '/shop/category/others-clearance-50', '/shop/category/others-discovery-sets-45', '/shop/category/others-extra-51', '/shop/category/others-gift-sets-52', '/shop/category/others-skin-care-53', '/shop/category/perfume-concentration-318', '/shop/category/perfumers-316', '/shop/category/pocket-perfumes-27', '/shop/category/pocket-perfumes-pocket-perfumes-for-her-24', '/shop/category/pocket-perfumes-pocket-perfumes-for-him-25', '/shop/category/retail-pack-40', '/shop/category/retail-pack-men-retail-pack-30-50-mls-39', '/shop/category/retail-pack-men-retail-pack-75-200-mls-31', '/shop/category/retail-pack-women-retail-pack-30-50-mls-38', '/shop/category/retail-pack-women-retail-pack-75-200-mls-43', '/shop/category/tester-26', '/shop/category/tester-men-s-perfume-testers-14', '/shop/category/tester-women-s-perfume-testers-9', '/shop/category/vials-sample-mens-18', '/shop/category/vials-sample-womens-21', '/shop/category/vials-samples-28']
+  /shop -> 200 in 2321 ms, final https://thescentstories.com/shop, 209949 bytes, product names found 32 e.g. ['Maison Asrar Muharib EDP 100 ml', '\n    ', 'Ibraq Turquoise Vetiver EDP 75 ml', '\n    ']
+    categories: ['/shop/category/miniatures-58', '/shop/category/miniatures-for-men-55', '/shop/category/miniatures-for-women-57', '/shop/category/pocket-perfumes-27', '/shop/category/pocket-perfumes-pocket-perfumes-for-her-24', '/shop/category/pocket-perfumes-pocket-perfumes-for-him-25', '/shop/category/travel-atomizer-59'] of 29
+  /shop/category/miniatures -> 404 in 648 ms, final https://thescentstories.com/shop/category/miniatures, 0 bytes, product names found 0 e.g. []
+  /shop?search=miniature -> 200 in 1515 ms, final https://thescentstories.com/shop?search=miniature, 192998 bytes, product names found 32 e.g. ['Estee Lauder Modern Muse Le Rouge EDP 2.9 ml Miniature', '\n    ', 'Yves Saint Laurent Y L&#39;Elixir Parfum Concentre 7.5 ml Miniature', '\n    ']
+    categories: ['/shop/category/miniatures-58', '/shop/category/miniatures-for-men-55', '/shop/category/miniatures-for-women-57', '/shop/category/pocket-perfumes-pocket-perfumes-for-her-24', '/shop/category/pocket-perfumes-pocket-perfumes-for-him-25'] of 23
+  POST /shop/products/autocomplete -> 404
+  POST /website/snippet/filters -> 200: b'{"jsonrpc": "2.0", "id": null, "error": {"code": 200, "message": "Odoo Server Error", "data": {"name": "builtins.TypeError", "debug": "Traceback (most recent call last):\\n  File \\"/opt/odoo18/odoo18/odoo/http.py\\", line 2167, in _transactioning\\n    return service_model.retrying(func, env=self.env)\\'
+
+==================== The Fragrance Heaven
+https://fragranceheaven.in/ -> 200 in 770 ms, final https://www.fragranceheaven.in/, shopify True
+  mini-like collections: [('miniatures', 'Miniatures', 66)]
+  /collections/miniatures/products.json: 66 listed, 44 in stock (200)
+    e.g. 2026-09-06 Armaf Wheel Of Odyssey 3x30ml Perfume Gift Set for Men & Wom [('Default Title', '3749.00', '5000.00', True)]
+    e.g. 2026-09-06 Armaf Wheel Of Odyssey Mandarin Sky 3x30ml Gift Set – For Me [('Default Title', '3749.00', '5000.00', True)]
+    e.g. 2026-09-14 Cepora Oud Eau De Parfum Gift Set 20ml – Unisex Perfume for  [('Default Title', '999.00', '1899.00', True)]
+    e.g. 2026-09-14 Cepora Discovery Set – 12 x 5ml Perfume Miniatures for Men & [('Default Title', '749.00', '899.00', True)]
+    e.g. 2026-09-18 Cepora Perfume Gift Set 4 x 20ml Eau De Parfum for Men & Wom [('Default Title', '999.00', '1899.00', True)]
+    e.g. 2026-09-18 Cepora Eau De Parfum Gift Set 4 x 20ml for Men & Women [('Default Title', '999.00', '1899.00', True)]
+  4 quick reads: [200, 200, 200, 200]
+
+==================== Friday Charm
+https://www.fridaycharm.com/ -> 200 in 818 ms, final https://www.fridaycharm.com/, shopify True
+  mini-like collections: [('designer-perfume-miniatures', 'Designer Perfume Miniatures', 450), ('miniature', 'Miniature', 1085), ('niche-perfume-miniature', 'Niche Perfume Miniatures', 93), ('travel-set', 'Travel Set', 103)]
+  /collections/miniature/products.json: 1051 listed, 187 in stock (200)
+    e.g. 2026-09-19 Maison Francis Kurkdjian Baccarat Rouge 540 Extrait De Parfu [('10ml(Non Spray)', '4900.00', '5100.00', True)]
+    e.g. 2026-09-23 Burberry Goddess Parfum For Women [('50ml', '5600.00', '7495.00', False)]
+    e.g. 2026-09-30 Roja Aoud Collection Set 5 x 10 ml [('Default Title', '24000.00', '29500.00', True)]
+    e.g. 2026-10-09 Rabanne 1 Million Black Eau De Parfum For Men Miniature 10ml [('10ml', '1890.00', '2150.00', False)]
+    e.g. 2026-10-22 Christian Dior Homme Intense Eau De Parfum For Men Miniature [('Default Title', '1990.00', '3250.00', False)]
+    e.g. 2026-10-22 Hermes Parfums 2 x 2ml Vial Set [('Default Title', '499.00', '600.00', True)]
+  4 quick reads: [200, 200, 200, 200]
+
+==================== Splash Fragrance
+https://splashfragrance.in/ -> 200 in 83 ms, final https://splashfragrance.in/, server cloudflare, woo True
+categories -> 200 in 929 ms: 12; mini-like: [(1922, 'official-miniatures', 'Official Miniatures', 930), (88, 'buy-niche-perfume-samples-and-miniatures-online-in-india', 'Samples / Miniatures', 2262), (11298, 'travel-spray-online-india', 'Travel Spray', 47)]
+  category official-miniatures: 500 read, in stock 234, types Counter({'simple': 492, 'variable': 8})
+    e.g. PENHALIGON&#8217;S Halfeti Miniature Perfume Trio – 3×5ml |  | 470000 470000 2 | True | https://splashfragrance.in/penhaligons-halfeti-miniature-perfume-trio-3x5ml-trade-routes-collection-decant-online-india/
+    e.g. Good Girl Jasmine Absolute By Carolina Herrera 7ml EDP Perfu | 205000 210000 2 | True | https://splashfragrance.in/good-girl-jasmine-absolute-by-carolina-herrera-7ml-edp-perfume-miniature-non-spray-decant-online-india/
+    e.g. Musk Aoud Parfum By Roja Parfums 7.5ml Perfume Travel Spray  | 895000 895000 2 | True | https://splashfragrance.in/musk-aoud-parfum-by-roja-parfums-7-5ml-perfume-travel-spray-discontinued-decant-online-india/
+    e.g. H The Exclusive Black Tier By Roja Parfums 7.5ml Perfume Tra | 885000 895000 2 | True | https://splashfragrance.in/h-the-exclusive-black-tier-by-roja-parfums-7-5ml-perfume-travel-spray-india/
+    e.g. Idole EDP By Lancome 25ml Women Perfume Miniature Spray | 345000 470000 2 | True | https://splashfragrance.in/idole-edp-by-lancome-25ml-women-perfume-miniature-spray-decant-online-india/
+  category buy-niche-perfume-samples-and-miniatures-online-in-india: 500 read, in stock 373, types Counter({'simple': 491, 'variable': 9})
+    e.g. The Voice Of The Snake By Gucci 1.5ml EDP Sample Spray | 60000 90000 2 | True | https://splashfragrance.in/the-voice-of-the-snake-gucci-15ml-edp-sample-spray-decant-online-india/
+    e.g. Goddess Parfum By Burberry 1.5ml Women Perfume Sample Spray | 40000 40000 2 | True | https://splashfragrance.in/goddess-parfum-by-burberry-1-5ml-women-perfume-sample-spray-decant-online-india/
+    e.g. Tabac Rose EDP By BDK Parfums 2ml Sample Spray Vial | 55000 65000 2 | True | https://splashfragrance.in/tabac-rose-edp-by-bdk-parfums-2ml-sample-spray-vial-decant-online-india/
+    e.g. Velvet Tonka EDP By BDK Parfums 2ml Sample Spray Vial | 50000 65000 2 | True | https://splashfragrance.in/velvet-tonka-edp-by-bdk-parfums-2ml-sample-spray-vial-decant-online-india/
+    e.g. Villa Neroli EDP By BDK Parfums 2ml Sample Spray Vial | 50000 65000 2 | True | https://splashfragrance.in/villa-neroli-edp-by-bdk-parfums-2ml-sample-spray-vial-decant-online-india/
+  category travel-spray-online-india: 47 read, in stock 39, types Counter({'simple': 46, 'variable': 1})
+    e.g. Neroli Amara By Van Cleef &#038; Arpels EDP 15ml Perfume Tra | 255000 255000 2 | True | https://splashfragrance.in/neroli-amara-by-van-cleef-arpels-edp-15ml-perfume-travel-spray-no-box-decant-online-india/
+    e.g. Oud Satin Mood by Maison Francis Kurkdjian 11ml EDP Travel S | 410000 410000 2 | True | https://splashfragrance.in/oud-satin-mood-by-maison-francis-kurkdjian-11ml-edp-travel-spray-decant-online-india/
+    e.g. Layton By Parfums de Marly Perfume 10ml Travel Spray | 375000 375000 2 | True | https://splashfragrance.in/layton-by-parfums-de-marly-perfume-10ml-travel-spray-decant-online-india/
+    e.g. Santal Blanc By Van Cleef &#038; Arpels EDP 15ml Perfume Tra | 285000 285000 2 | True | https://splashfragrance.in/santal-blanc-by-van-cleef-arpels-edp-15ml-perfume-travel-spray-no-box-decant-online-india/
+    e.g. Scandal Absolu By Paco Rabanne EDP 10ml Perfume Travel Spray | 190000 190000 2 | True | https://splashfragrance.in/scandal-absolu-by-paco-rabanne-edp-10ml-perfume-travel-spray-decant-online-india/
+  4 quick reads: [200, 200, 200, 200]
+
+==================== the seven watched stores
+Whiff Culture: 100 collections; mini-like: []
+   whole store: 1792 products, 4 titled mini/miniature (1 in stock) e.g. ['Gucci FLORA MINI SET', 'Ibraq Mini Diamond Collection', 'Ibraq MINI SUMMER COLLECTION']
+Scentoria: 415 collections; mini-like: [('minis', 'Minis', 1028), ('travel-sets', 'Travel Sets', 74)]
+   minis: 976 listed, 746 in stock; e.g. ['Layton EDP', 'The Most Wanted Parfum', 'Ganymede EDP']
+   travel-sets: 68 listed, 25 in stock; e.g. ["Terre D'Hermes - Les Essentials Travel S", 'Deja Vu White Flower 57 & Invite Only Am', "Terre D'Hermes Eau Givree Travel Set"]
+   whole store: 2000 products, 4 titled mini/miniature (2 in stock) e.g. ['Versace Miniature Set (5 x 5 ML)', 'Bvlgari Omnia Jewel Charms Miniatures Collect', "Creed Men's Mini Set"]
+Scentira: 435 collections; mini-like: []
+   whole store: 1561 products, 3 titled mini/miniature (0 in stock) e.g. ['Coach Love Eau De Parfum For Women Miniature ', 'Coach Eau De Parfum For Women Miniature 7.5mL', "Terre d'Hermes Pure Parfum 12.5mL Miniature"]
+Sillage: 67 collections; mini-like: []
+   whole store: 1077 products, 0 titled mini/miniature (0 in stock) e.g. []
+Sniff: 18 collections; mini-like: []
+   whole store: 2000 products, 0 titled mini/miniature (0 in stock) e.g. []
+Sovereign Scents search=mini: 200 1
+Acordell search=mini: 200 0 []
+Acordell search=miniature: 200 0 []
