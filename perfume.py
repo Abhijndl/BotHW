@@ -12,6 +12,7 @@ perfume-state branch, so it never writes to main.
 """
 import gzip
 import hashlib
+import html
 import json
 import os
 import re
@@ -27,21 +28,32 @@ SCENTORIA = "https://www.scentoria.co.in"
 SCENTIRA = "https://www.scentira.in"
 SILLAGE = "https://www.sillageperfumes.in"
 SNIFF = "https://sniff.co.in"
+SOVEREIGN = "https://www.sovereignscents.in"
+ACORDELL = "https://acordell.com"
 
 
-def W(wid, store, site, coll, label, new, every, variants=None, gone=False, notes=False):
+def W(wid, store, site, coll, label, new, every, variants=None, gone=False, notes=False,
+      kind="shopify", query="", search=None, match=None, page=None):
     """One watched list. new: alert heading for a new item. variants: watch only the
     variants whose title matches (Scentira sells partials as a variant). gone: the
     list drops what sells out, so an in-stock item missing from it counts as sold out.
-    notes: the store writes 'A floral, sweet ... fragrance' in its descriptions."""
+    notes: the store writes 'A floral, sweet ... fragrance' in its descriptions.
+    kind: shopify, sovereign (its own /api/products) or woo (WooCommerce Store API,
+    read through searches, kept to names matching match). page: the list for people."""
     return {"id": wid, "store": store, "site": site, "coll": coll, "label": label, "new": new,
-            "every": every, "variants": variants, "gone": gone, "notes": notes}
+            "every": every, "variants": variants, "gone": gone, "notes": notes, "kind": kind,
+            "query": query, "search": search, "match": match,
+            "page": page or f"{site}/collections/{coll}"}
 
 
 WATCHES = [
     W("whiff-partials", "Whiff Culture", WHIFF, "partial-sale", "partials", "NEW PARTIAL", 10, notes=True),
     W("scentoria-partials", "Scentoria", SCENTORIA, "partials", "partials", "NEW PARTIAL", 15, gone=True),
     W("scentira-partials", "Scentira", SCENTIRA, "partials", "partials", "NEW PARTIAL", 20, variants=r"\bpartial\b"),
+    W("sovereign-partials", "Sovereign Scents", SOVEREIGN, "", "partials", "NEW PARTIAL", 15, kind="sovereign",
+      query="partials=only", page=f"{SOVEREIGN}/shop?collection=partials"),
+    W("acordell-partials", "Acordell", ACORDELL, "", "partials & decants", "NEW PARTIAL / DECANT", 60, kind="woo",
+      search=["partial", "decant", "sample"], match=r"\b(partials?|decants?|samples?)\b", page=f"{ACORDELL}/shop/"),
     W("whiff-flash", "Whiff Culture", WHIFF, "flash-sale", "flash sale", "NEW IN FLASH SALE", 30, notes=True),
     W("whiff-testers", "Whiff Culture", WHIFF, "testers", "testers", "NEW TESTER", 30, notes=True),
     W("scentoria-deals", "Scentoria", SCENTORIA, "deals-of-the-week", "hot deals", "NEW HOT DEAL", 30),
@@ -132,7 +144,79 @@ def get(url, timeout=10):
     return code, data.decode("utf-8", "replace")
 
 
+def read_json(url):
+    try:
+        code, body = get(url)
+    except Exception as e:
+        return None, type(e).__name__
+    if code != 200:
+        return None, f"HTTP {code}"
+    try:
+        return json.loads(body), ""
+    except ValueError:
+        return None, "not the usual product list"
+
+
+def fetch_sovereign(w):
+    out = []
+    for page in range(1, MAX_PAGES + 1):
+        d, why = read_json(f"{w['site']}/api/products?{w['query']}&limit=1000&page={page}&_={int(time.time() * 1000)}")
+        if d is None:
+            return None, why
+        ps = d.get("products") if isinstance(d, dict) and d.get("success") is not False else None
+        if not isinstance(ps, list):
+            return None, "not the usual product list"
+        for p in ps:
+            if not isinstance(p, dict) or not p.get("_id") or not isinstance(p.get("name"), str):
+                continue
+            av = bool(p.get("inStock")) and not p.get("manuallyDisabled")
+            title, brand = p["name"].strip(), str(p.get("brand") or "").strip()
+            if brand and not title.lower().startswith(brand.lower()):
+                title = f"{brand} {title}"
+            sizes = [x for x in p.get("sizes") or [] if isinstance(x, dict)]
+            vs = [{"id": f"{p['_id']}-{i}", "title": str(x.get("size") or ""), "price": x.get("price"), "available": av}
+                  for i, x in enumerate(sizes)] or [{"id": p["_id"], "title": "", "price": None, "available": av}]
+            out.append({"id": p["_id"], "title": title, "url": f"{w['site']}/product/{p['_id']}", "variants": vs})
+        if not (d.get("pagination") or {}).get("hasMore"):
+            break
+    return out, ""
+
+
+def fetch_woo(w):
+    out, seen = [], set()
+    for term in w.get("search") or [""]:
+        for page in range(1, MAX_PAGES + 1):
+            d, why = read_json(f"{w['site']}/wp-json/wc/store/v1/products?per_page=100&page={page}"
+                               f"&search={urllib.parse.quote(term)}&_={int(time.time() * 1000)}")
+            if d is None:
+                return None, why
+            if not isinstance(d, list):
+                return None, "not the usual product list"
+            for p in d:
+                if not isinstance(p, dict) or not p.get("id") or p["id"] in seen:
+                    continue
+                title = html.unescape(str(p.get("name") or "")).strip()
+                if not title or (w.get("match") and not re.search(w["match"], title, re.I)):
+                    continue
+                seen.add(p["id"])
+                pr = p.get("prices") or {}
+                unit = 10 ** int(num(pr.get("currency_minor_unit")) or 0)
+                price, was = num(pr.get("price")), num(pr.get("regular_price"))
+                v = {"id": p["id"], "title": "", "available": bool(p.get("is_in_stock")),
+                     "price": price / unit if price is not None else None,
+                     "compare_at_price": was / unit if was is not None else None}
+                out.append({"id": p["id"], "title": title, "url": p.get("permalink") or f"{w['site']}/?p={p['id']}",
+                            "variants": [v]})
+            if len(d) < 100:
+                break
+    return out, ""
+
+
 def fetch(w):
+    if w.get("kind") == "sovereign":
+        return fetch_sovereign(w)
+    if w.get("kind") == "woo":
+        return fetch_woo(w)
     out = []
     for page in range(1, MAX_PAGES + 1):
         url = (f"{w['site']}/collections/{w['coll']}/products.json"
@@ -224,6 +308,8 @@ def accords(p):
 
 
 def link(w, p, vs):
+    if p.get("url"):
+        return p["url"]
     url = f"{w['site']}/products/{p.get('handle')}"
     return f"{url}?variant={vs[0]['id']}" if w.get("variants") and vs else url
 
@@ -247,7 +333,7 @@ def bulk_text(w, ev):
     rows = [f"• {name(w, p, vs)} — {rupees(low_price(vs))}" + ("" if fresh or k == "new" else " (back)")
             + f"\n  {link(w, p, vs)}" for k, _, p, vs in ev[:BULK_ROWS]]
     if len(ev) > BULK_ROWS:
-        rows.append(f"…and {len(ev) - BULK_ROWS} more: {w['site']}/collections/{w['coll']}")
+        rows.append(f"…and {len(ev) - BULK_ROWS} more: {w['page']}")
     return head + "\n" + "\n".join(rows)
 
 
@@ -559,7 +645,8 @@ def summary(st, ids):
         for w in ws:
             s = wstate(st, w)
             n_in = sum(1 for it in s["items"].values() if it.get("a"))
-            n = (f"{n_in} in stock" if not parts else str(n_in)) if s.get("learnt") else "can't read it yet"
+            n = (f"{n_in} in stock" if not parts else str(n_in)) if n_in else "none right now"
+            n = n if s.get("learnt") else "can't read it yet"
             parts.append(f"{w['label']} ({n})")
         out.append(f"• {store}: " + ", ".join(parts))
     return out
@@ -608,13 +695,14 @@ def failed(st, w, now, why):
         wstate(st, x)["fail_warned"] = True
     since = hm(min(wstate(st, x)["fail_since"] for x in group))
     what = ", ".join(x["label"] for x in group)
+    whose = w["store"] + ("'" if w["store"].endswith("s") else "'s")
     if why == "HTTP 404":
-        note("warn", f"{w['store']}'s {what} page has gone (404) since {since}")
+        note("warn", f"{whose} {what} page has gone (404) since {since}")
     elif why in REFUSED:
         note("warn", f"{w['store']} has been refusing the watcher since {since} ({why}, too many requests), "
                      f"so its {what} alerts are paused")
     else:
-        note("warn", f"I can't read {w['store']}'s {what} since {since} ({why})")
+        note("warn", f"I can't read {whose} {what} since {since} ({why})")
 
 
 def recovered(st, w):
@@ -740,7 +828,7 @@ def main():
     t0 = time.time()
     run = {"no": os.getenv("GITHUB_RUN_NUMBER", ""), "checks": 0, "from": int(t0)}
     due = {w["id"]: t0 for w in WATCHES}
-    sites = list(dict.fromkeys((w["site"], w["store"]) for w in WATCHES))
+    sites = list(dict.fromkeys((w["site"], w["store"]) for w in WATCHES if w.get("kind", "shopify") == "shopify"))
     sales_due = {s: t0 + SALES_FIRST for s, _ in sites}
     pause, tried, refused = {}, set(), {}
     greeted = queued = handed = False
@@ -789,7 +877,8 @@ def main():
                 except Exception as e:
                     log(f"{sale[1]}: sales check error {e!r}")
                 sales_due[sale[0]] = time.time() + SALES_EVERY
-            if not handed and len(refused) == len(sites) and min(refused.values()) >= 2 and handoff_ok(st, now):
+            if (not handed and sites and all(refused.get(s, 0) >= 2 for s, _ in sites)
+                    and handoff_ok(st, now)):
                 handed = True
                 if queue_next():
                     st["handoffs"].append(int(now))
