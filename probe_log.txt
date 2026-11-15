@@ -1,61 +1,43 @@
-==================== Scentoria minis
-products 976 | variant titles: [('10 ML DECANT', 604), ('20 ML DECANT', 483), ('30 ML DECANT', 444), ('100 ML TESTER', 378), ('100 ML RETAIL', 281), ('10 ML MINIATURE', 255), ('2 ML SAMPLE', 255), ('5 ML MINIATURE', 210), ('1.5 ML SAMPLE', 190), ('7.5 ML MINIATURE', 186), ('50 ML RETAIL', 115), ('1.2 ML SAMPLE', 111), ('50 ML TESTER', 107), ('7 ML MINIATURE', 76), ('15 ML MINIATURE', 60)]
-product types: [('Fragrance', 965), ('', 11)]
-tags: [('EDP', 673), ('Unisex', 526), ('Her', 256), ('His', 190), ('EDT', 110), ('Amber Floral', 93), ('Floral', 91), ('Amber Woody', 73), ('Parfum', 72), ('Woody Aromatic', 52), ('Amber', 47), ('Extrait De Parfum', 47), ('Floral Woody Musk', 44), ('Floral Fruity', 42), ('Woody Spicy', 40)]
-  e.g. Layton EDP [('1.5 ML SAMPLE', '400.00', True), ('5 ML MINIATURE', '1550.00', False), ('10 ML DECANT', '1650.00', False), ('20 ML DECANT', '2900.00', False)]
-  e.g. The Most Wanted Parfum [('1.2 ML SAMPLE', '350.00', True), ('10 ML MINIATURE', '1350.00', False), ('10 ML DECANT', '1000.00', False), ('20 ML DECANT', '1800.00', False)]
-  e.g. Ganymede EDP [('2.5 ML SAMPLE', '450.00', False), ('10 ML MINIATURE', '2350.00', False), ('10 ML DECANT', '2000.00', True), ('20 ML DECANT', '3750.00', True)]
-  e.g. Ombre Leather EDP [('1.5 ML SAMPLE', '450.00', False), ('4 ML MINIATURE', '1550.00', False), ('10 ML MINIATURE', '2500.00', False), ('10 ML DECANT', '1550.00', True)]
-  e.g. Blue Talisman EDP [('2 ML SAMPLE', '550.00', True), ('7.5 ML MINIATURE', '2500.00', False), ('10 ML DECANT', '2800.00', True), ('20 ML DECANT', '5450.00', True)]
-titles or sizes that look like official minis: 976 ['Layton EDP', 'The Most Wanted Parfum', 'Ganymede EDP', 'Ombre Leather EDP', 'Blue Talisman EDP', 'Side Effect EDP']
-
-==================== The Scent Stories
-  (default) -> 200 in 979 ms, 192694 bytes, cards 16, product links 1, pages [3, 4, 5]
-  ?order=create_date+desc -> 200 in 918 ms, 193798 bytes, cards 16, product links 1, pages [3, 4, 5]
-  ?order=create_date+desc&ppg=60 -> 200 in 1196 ms, 435177 bytes, cards 60, product links 1, pages [2, 3, 4]
-  ?ppg=100 -> 200 in 1350 ms, 642998 bytes, cards 100, product links 1, pages [2, 3]
---- one product card (raw) ---
-<form action="/shop/cart/update" method="post" class="oe_product_cart h-100 d-flex" itemscope="itemscope" itemtype="http://schema.org/Product" data-publish="on">
-
-            <div class="oe_product_image position-relative flex-grow-0 overflow-hidden">
-                <input type="hidden" name="csrf_token" value="8aabb25bb5ad69528d5a3948205e68d68401d762o1826270871"/>
-                <a class="oe_product_image_link d-block position-relative" itemprop="url" contenteditable="false" href="/shop/lancome-idole-peach-n-roses-leau-de-parfum-fruitee-5-ml-35450?category=58&amp;order=create_date+desc">
-                    <span class="oe_product_image_img_wrapper d-flex h-100 justify-content-center align-items-center position-absolute"><img src="/web/image/product.template/35450/image_512/%5B3614274509731%5D%20Lancome%20Idole%20Peach%20N%20Roses%20L%27Eau%20De%20Parfum%20Fruitee%205%20ml?unique=9cfd92a" itemprop="image" class="img img-fluid h-100 w-100 position-absolute object-fit-contain" alt="[3614274509731] Lancome Idole Peach N Roses L&#39;Eau De Parfum Fruitee 5 ml" data-no-post-process="True"/></span>
-
-                    <span class="o_ribbon o_not_editable d-none" style=" "></span>
-                </a>
-            </div>
-            <div class="o_wsale_product_information position-relative d-flex flex-column flex-grow-1 flex-shrink-1">
-                <div class="o_wsale_product_information_text">
-                    <h6 class="o_wsale_products_item_title mb-2 text-break">
-                        <a class="text-primary text-decoration-none text-primary-emphasis" itemprop="name" href="/shop/lancome-idole-peach-n-roses-leau-de-parfum-fruitee-5-ml-35450?category=58&amp;order=create_date+desc" content="Lancome Idole Peach N Roses L&#39;Eau De Parfum Fruitee 5 ml">Lancome Idole Peach N Roses L&#39;Eau De Parfum Fruitee 5 ml</a>
-                    </h6>
-                </div>
-                <div class="o_wsale_product_sub d-flex justify-content-between align-items-end gap-2 flex-wrap">
-                    <div class="o_wsale_product_btn d-flex gap-2">
-            <input name="product_id" type="hidden" value="33817"/>
-            <input name="product_template_id" type="hidden" value="35450"/>
-                <a href="#" role="button" class="btn btn-light a-submit" aria-label="Shopping cart" title="Shopping cart">
-                    <span class="fa fa-shopping-cart"></span>
-                </a>
-            <button type="button" role="button" class="btn btn-light o_add_wishlist" data-action="o_wishlist" title="Add to Wishlist" data-product-template-id="35450" data-product-product-id="33817">
-                <span class="fa fa-heart o_not-animable" role="img" aria-label="Add to wishlist"></span>
-            </button></div>
-                    <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
-                        <span class="h6 mb-0" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;
---- stock/ribbon words --- [('', 16)]
-first names (newest first): [('/shop/lancome-idole-peach-n-roses-leau-de-parfum-fruitee-5-ml-35450?category=58&amp;order=create_date+desc', 'Lancome Idole Peach N Roses L&#39;Eau De Parfum Fruitee 5 ml'), ('/shop/gucci-flora-gorgeous-orchid-edp-intense-5-ml-35449?category=58&amp;order=create_date+desc', 'Gucci Flora Gorgeous Orchid EDP Intense 5 ml'), ('/shop/yves-saint-laurent-libre-berry-crush-edp-7-5-ml-35448?category=58&amp;order=create_date+desc', 'Yves Saint Laurent Libre Berry Crush EDP 7.5 ml'), ('/shop/giorgio-armani-acqua-di-gio-edp-intense-5-ml-35447?category=58&amp;order=create_date+desc', 'Giorgio Armani Acqua Di Gio EDP Intense 5 ml'), ('/shop/chanel-bleu-de-chanel-lexclusif-parfum-5-ml-35445?category=58&amp;order=create_date+desc', 'Chanel Bleu De Chanel L&#39;Exclusif Parfum 5 ml'), ('/shop/maison-francis-kurkdjian-kurky-edp-10-ml-35444?category=58&amp;order=create_date+desc', 'Maison Francis Kurkdjian Kurky EDP 10 ml'), ('/shop/marc-antoine-barrois-tilia-edp-10-ml-35443?category=58&amp;order=create_date+desc', 'Marc Antoine Barrois Tilia EDP 10 ml'), ('/shop/amouage-love-delight-edp-7-5-ml-35442?category=58&amp;order=create_date+desc', 'Amouage Love Delight EDP 7.5 ml')]
-prices seen: ['1,600.00', '2,400.00', '1,650.00', '2,475.00', '2,000.00', '3,000.00', '1,650.00', '2,475.00', '3,000.00', '4,500.00', '4,000.00', '6,000.00']
-product page /shop/lancome-idole-peach-n-roses-leau-de-parfum-fruitee-5-ml-35450?category=58&amp;order=create_date+desc -> 200 in 701 ms; stock words: [('add to cart', 3)]
-template id: 35450
-
-==================== Splash official miniatures, newest first
--> 200 in 1795 ms; total 930, pages 10, read 100, in stock 77
-   241019 PENHALIGON&#8217;S Halfeti Miniature Perfume Trio – 3×5ml | Trade Rout 470000 True
-   274372 Good Girl Jasmine Absolute By Carolina Herrera 7ml EDP Perfume Miniatu 205000 True
-   172510 Musk Aoud Parfum By Roja Parfums 7.5ml Perfume Travel Spray (Discontin 895000 True
-   50908 H The Exclusive Black Tier By Roja Parfums 7.5ml Perfume Travel Spray 885000 True
-   260088 Idole EDP By Lancome 25ml Women Perfume Miniature Spray 345000 True
-   172513 Musk Aoud Absolue Précieux By Roja Parfums 7.5ml Perfume Travel Spray  1650000 True
-  full read: 930 in 16.2 s, in stock 271
-  sizes in names: [('10', 205), ('5', 177), ('7.5', 130), ('15', 88), ('4', 50), ('8', 41), ('4.5', 31), ('7', 27), ('11', 26), ('12.5', 21), ('20', 19), ('3.5', 18)]
+cards 40
+--- price part of card 1 ---
+ </button></div> <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer"> <span class="h6 mb-0" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;price_reduce&#39;]">₹ <span class="oe_currency_value">1,600.00</span></span> <del style="white-space: nowrap;" class="text-muted me-1 h6 mb-0"> <em class="small" data-oe-type="monetary" data-oe-expression="template_price_vals[&#39;base_price&#39;]">₹ <span class="oe_currency_value">2,400.00</span></em> </del> <span itemprop="price" style="display:none;">1600.0</span> <span itemprop="priceCurrency" style="display:none;">INR</span> <link itemprop="availability" href="http://schema.org/InStock"/> <meta itemprop="itemCondition" content="https://schema.org/NewCondition"/> <meta itemprop="priceValidUntil" content="2026-11-21"/> <div itemprop="shippingDetails" itemscope="itemscope" itemtype="http://schema.org/OfferShippingDetails"> <div itemprop="shippingRate" itemscope="itemscope" itemtype="http://schema.org/MonetaryAmount"> <meta itemprop="value" content="0"/> <meta itemprop="currency" content="INR"/> </div> <div itemprop="shippingDestination" itemscope="itemscope" itemtype="http://schema.org/DefinedRegion"> <meta itemprop="addressCountry" content="IN"/> </div> </div> </div> </div> </div> <meta itemprop="description" content=
+35450 | Lancome Idole Peach N Roses L'Eau De Parfum Fruitee 5 ml | 1600.0 | was 2400.0 | /shop/lancome-idole-peach-n-roses-leau-de-parfum-fruitee-5-ml-35450 | []
+35449 | Gucci Flora Gorgeous Orchid EDP Intense 5 ml | 1650.0 | was 2475.0 | /shop/gucci-flora-gorgeous-orchid-edp-intense-5-ml-35449 | []
+35448 | Yves Saint Laurent Libre Berry Crush EDP 7.5 ml | 2000.0 | was 3000.0 | /shop/yves-saint-laurent-libre-berry-crush-edp-7-5-ml-35448 | []
+35447 | Giorgio Armani Acqua Di Gio EDP Intense 5 ml | 1650.0 | was 2475.0 | /shop/giorgio-armani-acqua-di-gio-edp-intense-5-ml-35447 | []
+35445 | Chanel Bleu De Chanel L'Exclusif Parfum 5 ml | 3000.0 | was 4500.0 | /shop/chanel-bleu-de-chanel-lexclusif-parfum-5-ml-35445 | []
+35444 | Maison Francis Kurkdjian Kurky EDP 10 ml | 4000.0 | was 6000.0 | /shop/maison-francis-kurkdjian-kurky-edp-10-ml-35444 | []
+35443 | Marc Antoine Barrois Tilia EDP 10 ml | 3500.0 | was 5250.0 | /shop/marc-antoine-barrois-tilia-edp-10-ml-35443 | []
+35442 | Amouage Love Delight EDP 7.5 ml | 3500.0 | was 5250.0 | /shop/amouage-love-delight-edp-7-5-ml-35442 | []
+35441 | Dior J'adore Intense Parfum 5 ml | 2000.0 | was 3000.0 | /shop/dior-jadore-intense-parfum-5-ml-35441 | []
+35440 | Billie Eilish Eilish EDP 7.5 ml | 3250.0 | was 4875.0 | /shop/billie-eilish-eilish-edp-7-5-ml-35440 | []
+35439 | Marc Antoine Barrois Ganymede EDP 10 ml | 3500.0 | was 5250.0 | /shop/marc-antoine-barrois-ganymede-edp-10-ml-35439 | []
+35438 | Les Liquides Imaginaires Abyssis EDP 7.5 ml | 1600.0 | was 2400.0 | /shop/les-liquides-imaginaires-abyssis-edp-7-5-ml-35438 | []
+35437 | Christian Dior Oud Ispahan EDP 10 ml | 3000.0 | was 4500.0 | /shop/christian-dior-oud-ispahan-edp-10-ml-35437 | []
+35436 | Christian Dior Oud Rosewood EDP 10 ml | 3000.0 | was 4500.0 | /shop/christian-dior-oud-rosewood-edp-10-ml-35436 | []
+35429 | Gucci Guilty Pour Femme EDP Intense 10 ml | 2000.0 | was 3000.0 | /shop/gucci-guilty-pour-femme-edp-intense-10-ml-35429 | []
+35428 | Gucci Guilty Absolu De Parfum Pour Femme 5 ml | 1650.0 | was 2475.0 | /shop/gucci-guilty-absolu-de-parfum-pour-femme-5-ml-35428 | []
+35427 | Christian Dior Ambre Nuit EDP 10 ml | 3000.0 | was 4500.0 | /shop/christian-dior-ambre-nuit-edp-10-ml-35427 | []
+35426 | Atelier Cologne Iris Rebelle Cologne Absolue 10 ml | 1500.0 | was 2250.0 | /shop/atelier-cologne-iris-rebelle-cologne-absolue-10-ml-35426 | []
+35410 | Salvatore Ferragamo Signorina Unica EDP 5 ml | 900.0 | was 1499.0 | /shop/salvatore-ferragamo-signorina-unica-edp-5-ml-35410 | []
+35406 | Coach For Men EDP 4.5 ml | 850.0 | was 1299.0 | /shop/coach-for-men-edp-4-5-ml-35406 | []
+35346 | Giorgio Armani Si EDP Intense Passione 7 ml | 1600.0 | was 2400.0 | /shop/giorgio-armani-si-edp-intense-passione-7-ml-35346 | []
+35327 | Dolce & Gabbana Q EDP Intense 5 ml | 1500.0 | was 2250.0 | /shop/dolce-gabbana-q-edp-intense-5-ml-35327 | []
+35326 | Serge Lutens Chergui EDP 5 ml | 1250.0 | was 1875.0 | /shop/serge-lutens-chergui-edp-5-ml-35326 | []
+35325 | Chloe Nomade Lumiere D'Egypte EDP 5 ml | 1250.0 | was 1875.0 | /shop/chloe-nomade-lumiere-degypte-edp-5-ml-35325 | []
+35324 | Chloe Nomade Jardin D'Egypte EDP 5 ml | 1250.0 | was 1875.0 | /shop/chloe-nomade-jardin-degypte-edp-5-ml-35324 | []
+35323 | Maison Margiela Replica Afternoon Delight EDT 7 ml | 1850.0 | was 2775.0 | /shop/maison-margiela-replica-afternoon-delight-edt-7-ml-35323 | []
+35234 | Jean Paul Gaultier Scandal Intense EDP 7 ml | 1500.0 | was 2250.0 | /shop/jean-paul-gaultier-scandal-intense-edp-intense-7-ml-35234 | []
+35227 | Atkinsons Oud Save The King EDP 5 ml | 1500.0 | was 2250.0 | /shop/atkinsons-oud-save-the-king-edp-5-ml-35227 | []
+35226 | Atkinsons Shine Despite Everything Parfum Intense 5 ml | 1500.0 | was 2250.0 | /shop/atkinsons-shine-despite-everything-parfum-intense-5-ml-35226 | []
+35225 | Atkinsons 24 Old Bond Street Eau De Cologne 5 ml | 1500.0 | was 2250.0 | /shop/atkinsons-24-old-bond-street-eau-de-cologne-5-ml-35225 | []
+35224 | Atkinsons Born For Eternity Parfum Intense 5 ml | 1500.0 | was 2250.0 | /shop/atkinsons-born-for-eternity-parfum-intense-5-ml-35224 | []
+35223 | Atkinsons 44 Gerrard Street Eau De Cologne 5 ml | 1500.0 | was 2250.0 | /shop/atkinsons-44-gerrard-street-eau-de-cologne-5-ml-35223 | []
+35192 | Loewe El Cielo Sobre La Plaza De Oriente EDP 7 ml | 999.0 | was 1798.2 | /shop/loewe-el-cielo-sobre-la-plaza-de-oriente-edp-7-ml-35192 | []
+35191 | Loewe Tras La Tormenta En El Jardin Botanico EDP 7 ml | 999.0 | was 1798.2 | /shop/loewe-tras-la-tormenta-en-el-jardin-botanico-edp-7-ml-35191 | []
+35190 | Loewe Un Balcon Sobre El Paseo Del Prado EDP 7 ml | 999.0 | was 1798.2 | /shop/loewe-un-balcon-sobre-el-paseo-del-prado-edp-7-ml-35190 | []
+35189 | Loewe Atardecer En Los Jardines Del Buen Retiro EDP 7 ml | 999.0 | was 1798.2 | /shop/loewe-atardecer-en-los-jardines-del-buen-retiro-edp-7-ml-35189 | []
+35188 | Carolina Herrera Very Good Girl Elixir EDP 7 ml | 1900.0 | was 3420.0 | /shop/carolina-herrera-very-good-girl-elixir-edp-7-ml-35188 | []
+35149 | Giorgio Armani Power Of You EDP 5 ml | 1850.0 | was 3330.0 | /shop/emporio-armani-power-of-you-edp-5-ml-35149 | []
+35147 | Viktor & Rolf Flowerbomb L'Eau De Parfum 7 ml | 1800.0 | was 3240.0 | /shop/viktor-rolf-flowerbomb-leau-de-parfum-7-ml-35147 | []
+35146 | Giorgio Armani My Way Floral EDP 7 ml | 1850.0 | was 3330.0 | /shop/giorgio-armani-my-way-floral-edp-7-ml-35146 | []
