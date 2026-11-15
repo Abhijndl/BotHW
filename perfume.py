@@ -30,19 +30,23 @@ SILLAGE = "https://www.sillageperfumes.in"
 SNIFF = "https://sniff.co.in"
 SOVEREIGN = "https://www.sovereignscents.in"
 ACORDELL = "https://acordell.com"
+FHEAVEN = "https://www.fragranceheaven.in"
+SPLASH = "https://splashfragrance.in"
+TSS = "https://thescentstories.com"
 
 
 def W(wid, store, site, coll, label, new, every, variants=None, gone=False, notes=False,
-      kind="shopify", query="", search=None, match=None, page=None):
+      kind="shopify", query="", search=None, match=None, page=None, pages=None, about=None):
     """One watched list. new: alert heading for a new item. variants: watch only the
     variants whose title matches (Scentira sells partials as a variant). gone: the
     list drops what sells out, so an in-stock item missing from it counts as sold out.
     notes: the store writes 'A floral, sweet ... fragrance' in its descriptions.
-    kind: shopify, sovereign (its own /api/products) or woo (WooCommerce Store API,
-    read through searches, kept to names matching match). page: the list for people."""
+    kind: shopify, sovereign (its own /api/products), woo (WooCommerce Store API, through
+    searches kept to names matching match, or a query) or odoo (a shop page, query = its path).
+    page: the list for people. pages: read at most this many pages. about: summary text."""
     return {"id": wid, "store": store, "site": site, "coll": coll, "label": label, "new": new,
             "every": every, "variants": variants, "gone": gone, "notes": notes, "kind": kind,
-            "query": query, "search": search, "match": match,
+            "query": query, "search": search, "match": match, "pages": pages, "about": about,
             "page": page or f"{site}/collections/{coll}"}
 
 
@@ -64,6 +68,14 @@ WATCHES = [
     W("sillage-sale", "Sillage", SILLAGE, "sale", "sale", "NEW IN SALE", 30),
     W("sniff-50ml", "Sniff", SNIFF, "50ml-sale", "50ml sale", "NEW IN 50ML SALE", 30, gone=True),
     W("sillage-decants", "Sillage", SILLAGE, "decants", "decants", "NEW DECANT", 60),
+    W("scentoria-minis", "Scentoria", SCENTORIA, "minis", "miniatures", "NEW MINIATURE", 60, variants=r"\bminiature\b"),
+    W("fheaven-minis", "The Fragrance Heaven", FHEAVEN, "miniatures", "miniatures", "NEW MINIATURE", 60),
+    W("splash-minis", "Splash Fragrance", SPLASH, "", "miniatures", "NEW MINIATURE", 120, kind="woo",
+      query="category=1922&orderby=date&order=desc", pages=1, about="newest 100 watched",
+      page=f"{SPLASH}/product-category/official-miniatures/"),
+    W("tss-minis", "The Scent Stories", TSS, "", "miniatures", "NEW MINIATURE", 120, kind="odoo",
+      query="/shop/category/miniatures-58?order=create_date+desc&ppg=40", about="newest 40 watched",
+      page=f"{TSS}/shop/category/miniatures-58"),
 ]
 if os.getenv("PERFUME_WATCHES"):          # tests point the watcher at fake stores
     WATCHES = [W(**w) for w in json.loads(os.environ["PERFUME_WATCHES"])]
@@ -131,8 +143,8 @@ def host(site):
 
 
 # ── reading the stores ───────────────────────────────────────────────────────
-def get(url, timeout=10):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
+def get(url, timeout=10, accept="application/json"):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept,
                                                "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -184,10 +196,11 @@ def fetch_sovereign(w):
 
 def fetch_woo(w):
     out, seen = [], set()
-    for term in w.get("search") or [""]:
-        for page in range(1, MAX_PAGES + 1):
+    asks = [f"search={urllib.parse.quote(t)}" for t in w.get("search") or []] or [w.get("query") or ""]
+    for ask in asks:
+        for page in range(1, (w.get("pages") or MAX_PAGES) + 1):
             d, why = read_json(f"{w['site']}/wp-json/wc/store/v1/products?per_page=100&page={page}"
-                               f"&search={urllib.parse.quote(term)}&_={int(time.time() * 1000)}")
+                               f"&{ask}&_={int(time.time() * 1000)}")
             if d is None:
                 return None, why
             if not isinstance(d, list):
@@ -212,7 +225,40 @@ def fetch_woo(w):
     return out, ""
 
 
+def money(s):
+    return num(s.replace(",", "")) if s else None
+
+
+def fetch_odoo(w):
+    try:
+        code, body = get(f"{w['site']}{w['query']}", timeout=20, accept="text/html")
+    except Exception as e:
+        return None, type(e).__name__
+    if code != 200:
+        return None, f"HTTP {code}"
+    cards = re.split(r'<form[^>]+class="[^"]*oe_product_cart', body)[1:]
+    if not cards:
+        return None, "not the usual product list"
+    out = []
+    for c in cards:
+        tid = re.search(r'name="product_template_id"[^>]*value="(\d+)"', c)
+        href = re.search(r'itemprop="url"[^>]*href="([^"?#]+)', c)
+        title = re.search(r'itemprop="name"[^>]*content="([^"]*)"', c)
+        if not (tid and href and title):
+            continue
+        price = re.search(r'oe_currency_value">([\d,.]+)<', c)
+        was = re.search(r'<del[^>]*>(?:(?!</del>).)*?oe_currency_value">([\d,.]+)<', c, re.S)
+        stock = re.search(r'itemprop="availability"[^>]*href="[^"]*/(\w+)"', c)
+        v = {"id": tid.group(1), "title": "", "available": not stock or stock.group(1) == "InStock",
+             "price": money(price and price.group(1)), "compare_at_price": money(was and was.group(1))}
+        out.append({"id": tid.group(1), "title": html.unescape(title.group(1)).strip(),
+                    "url": w["site"] + href.group(1), "variants": [v]})
+    return out, ""
+
+
 def fetch(w):
+    if w.get("kind") == "odoo":
+        return fetch_odoo(w)
     if w.get("kind") == "sovereign":
         return fetch_sovereign(w)
     if w.get("kind") == "woo":
@@ -646,7 +692,7 @@ def summary(st, ids):
             s = wstate(st, w)
             n_in = sum(1 for it in s["items"].values() if it.get("a"))
             n = (f"{n_in} in stock" if not parts else str(n_in)) if n_in else "none right now"
-            n = n if s.get("learnt") else "can't read it yet"
+            n = (w.get("about") or n) if s.get("learnt") else "can't read it yet"
             parts.append(f"{w['label']} ({n})")
         out.append(f"• {store}: " + ", ".join(parts))
     return out
