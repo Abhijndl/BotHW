@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Probe #67: inside the two feeds — Sovereign Scents' /api/products and Acordell's
-WooCommerce Store API: where partials live, stock, prices, links, paging, pace."""
+"""Probe #68: are there partials under another name? Sovereign Scents: every size label,
+types, the shop page's own code; Acordell: every 'Product Type' term, sale/tester stock."""
 import gzip, json, re, time, urllib.error, urllib.request
 from collections import Counter
 
@@ -8,109 +8,102 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
 
 
-def get(url, timeout=20, accept="application/json"):
+def get(url, timeout=25, accept="application/json"):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept,
                                                "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"})
-    t = time.time()
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             code, data, hdr = r.status, r.read(), dict(r.headers)
     except urllib.error.HTTPError as e:
-        return e.code, "", dict(e.headers or {}), int((time.time() - t) * 1000)
+        return e.code, "", {}
     except Exception as e:
-        return type(e).__name__, "", {}, int((time.time() - t) * 1000)
+        return type(e).__name__, "", {}
     if "gzip" in (hdr.get("Content-Encoding") or "").lower():
         data = gzip.decompress(data)
-    return code, data.decode("utf-8", "replace"), hdr, int((time.time() - t) * 1000)
-
-
-def short(x, n=160):
-    s = json.dumps(x, ensure_ascii=False)
-    return s if len(s) <= n else s[:n] + "…"
+    return code, data.decode("utf-8", "replace"), hdr
 
 
 print("==================== Sovereign Scents")
 S = "https://www.sovereignscents.in"
-code, body, hdr, ms = get(f"{S}/api/products")
-print(f"/api/products -> {code} in {ms} ms, {len(body)} bytes, cache {hdr.get('Cache-Control')}, age {hdr.get('Age')}")
-d = json.loads(body)
-print("top-level keys:", list(d))
-ps = d.get("products") or []
-print("products:", len(ps), "| other top-level:", {k: short(v, 80) for k, v in d.items() if k != "products"})
-keys = Counter(k for p in ps for k in p)
-print("product keys:", keys.most_common())
-if ps:
-    p0 = ps[0]
-    for k, v in p0.items():
-        print(f"   {k}: {short(v, 220)}")
-for k in keys:
-    vals = Counter(json.dumps(p.get(k), ensure_ascii=False)[:40] for p in ps)
-    if 1 < len(vals) <= 25:
-        print(f"  values of {k}: {vals.most_common(12)}")
-hit = [p for p in ps if "partial" in json.dumps(p, ensure_ascii=False).lower()]
-print("products mentioning 'partial' anywhere:", len(hit))
-for p in hit[:5]:
-    print("   e.g.", short({k: v for k, v in p.items() if k not in ("description", "images", "archivedImages")}, 600))
-code, html, hdr, ms = get(f"{S}/", accept="text/html")
-paths = sorted(set(re.findall(r'href="(/[^"#?]*)', html)))
-print("homepage links:", paths[:80])
-for path in [p for p in paths if re.search(r"partial|decant|shop|collection|categor|product", p, re.I)][:8]:
-    c2, h2, _, ms2 = get(S + path, accept="text/html")
-    apis = sorted(set(re.findall(r'"(/api/[^"]+)"', h2)))
-    print(f"  {path} -> {c2} in {ms2} ms; api refs {apis[:10]}; mentions partial {h2.lower().count('partial')}")
-for q in ("?category=Partials", "?type=partial", "?search=partial", "?page=2", "?limit=1000"):
-    c2, b2, _, ms2 = get(f"{S}/api/products{q}")
-    try:
-        n = len(json.loads(b2).get("products") or [])
-    except Exception:
-        n = "?"
-    print(f"  /api/products{q} -> {c2} in {ms2} ms, {n} products")
-codes = []
-t0 = time.time()
-for i in range(6):
-    codes.append(get(f"{S}/api/products")[0])
-    time.sleep(1)
-print(f"  6 reads in {time.time()-t0:.0f} s: {codes}")
+ps = []
+for page in (1, 2, 3):
+    code, body, _ = get(f"{S}/api/products?limit=1000&page={page}")
+    d = json.loads(body)
+    ps += d["products"]
+    print("page", page, code, len(d["products"]), d.get("pagination"))
+    if not d.get("pagination", {}).get("hasMore"):
+        break
+print("products:", len(ps), "unique ids:", len({p["_id"] for p in ps}))
+print("in stock:", Counter(p.get("inStock") for p in ps), "| disabled:", Counter(p.get("manuallyDisabled") for p in ps))
+print("type:", Counter(p.get("type") for p in ps).most_common())
+print("category:", Counter(p.get("category") for p in ps).most_common())
+sizes = Counter(s.get("size") for p in ps for s in p.get("sizes") or [])
+print("size labels:", sizes.most_common(40))
+odd = [p for p in ps if any(not re.fullmatch(r"\d+(\.\d+)?\s?ml", str(s.get("size") or ""), re.I) for s in p.get("sizes") or [])]
+print("products with an unusual size label:", len(odd))
+for p in odd[:10]:
+    print("   ", p["name"][:50], "|", p.get("brand"), "|", [(s.get("size"), s.get("price")) for s in p["sizes"]], "| totalMl", p.get("totalMl"), "| in stock", p.get("inStock"))
+big = [p for p in ps if any(re.fullmatch(r"(\d+)\s?ml", str(s.get("size") or ""), re.I) and int(re.match(r"\d+", s["size"]).group()) > 20 for s in p.get("sizes") or [])]
+print("products offering a size above 20 ml:", len(big))
+for p in big[:8]:
+    print("   ", p["name"][:50], "|", [(s.get("size"), s.get("price")) for s in p["sizes"]], "| totalMl", p.get("totalMl"), "| in stock", p.get("inStock"))
+print("totalMl:", Counter(p.get("totalMl") for p in ps).most_common(15))
+print("newest:", sorted((p.get("createdAt", "")[:16], p["name"][:40], p.get("inStock")) for p in ps)[-8:])
+other = Counter(k for p in ps for k in p) 
+print("all keys:", other.most_common())
+code, html, _ = get(f"{S}/shop", accept="text/html")
+chunks = sorted(set(re.findall(r'(/_next/static/chunks/[^"\']+\.js)', html)))
+print("shop page chunks:", len(chunks))
+found = Counter()
+apis = set()
+for c in chunks:
+    c2, js, _ = get(S + c, accept="*/*")
+    apis |= set(re.findall(r'["\'`](/api/[a-zA-Z0-9_/\-]+)', js))
+    for w in re.findall(r'(?i)[^"\'`]{0,40}partial[^"\'`]{0,40}', js):
+        found[w.strip()[:80]] += 1
+print("api endpoints in the site's code:", sorted(apis))
+print("'partial' in the site's code:", found.most_common(15))
+for path in sorted(apis):
+    if "{" in path or path in ("/api/products",):
+        continue
+    c2, b2, _ = get(S + path)
+    print(f"   {path} -> {c2}: {b2[:160]!r}")
 
 print("\n==================== Acordell")
 A = "https://acordell.com"
-code, body, hdr, ms = get(f"{A}/wp-json/wc/store/v1/products/categories?per_page=100")
-cats = json.loads(body) if code == 200 else []
-print(f"categories -> {code} in {ms} ms: {len(cats)}")
-for c in cats:
-    print(f"   {c.get('id')} {c.get('slug')!r} {c.get('name')!r} count {c.get('count')}")
-code, body, hdr, ms = get(f"{A}/wp-json/wc/store/v1/products?per_page=100&page=1")
-print(f"products page 1 -> {code} in {ms} ms; total {hdr.get('X-WP-Total') or hdr.get('x-wp-total')}, pages {hdr.get('X-WP-TotalPages') or hdr.get('x-wp-totalpages')}")
-allp = json.loads(body) if code == 200 else []
-pages = int(hdr.get('X-WP-TotalPages') or hdr.get('x-wp-totalpages') or 1)
-for page in range(2, min(pages, 30) + 1):
-    c2, b2, _, _ = get(f"{A}/wp-json/wc/store/v1/products?per_page=100&page={page}")
+code, body, _ = get(f"{A}/wp-json/wc/store/v1/products/attributes")
+attrs = json.loads(body) if code == 200 else []
+for a in attrs:
+    c2, b2, _ = get(f"{A}/wp-json/wc/store/v1/products/attributes/{a['id']}/terms?per_page=100")
+    terms = json.loads(b2) if c2 == 200 else []
+    print(f"attribute {a['id']} {a.get('name')!r}: {[(t.get('name'), t.get('count')) for t in terms]}")
+allp = []
+for page in range(1, 6):
+    c2, b2, h2 = get(f"{A}/wp-json/wc/store/v1/products?per_page=100&page={page}")
     if c2 != 200:
-        print("  page", page, "->", c2)
         break
-    allp += json.loads(b2)
-    time.sleep(0.3)
-print("all products read:", len(allp))
-if allp:
-    p0 = allp[0]
-    for k, v in p0.items():
-        print(f"   {k}: {short(v, 200)}")
-print("types:", Counter(p.get("type") for p in allp), "| in stock:", Counter(p.get("is_in_stock") for p in allp),
-      "| stock_availability:", Counter((p.get("stock_availability") or {}).get("class") for p in allp))
-part = [p for p in allp if re.search(r"partial", p.get("name", "") + " " + " ".join(c.get("slug", "") for c in p.get("categories") or []), re.I)]
-print("partials (name or category):", len(part), "in stock:", sum(1 for p in part if p.get("is_in_stock")))
-for p in part[:8]:
-    pr = p.get("prices") or {}
-    print("   e.g.", p.get("name")[:60], "|", p.get("type"), "| in stock", p.get("is_in_stock"), "| price", pr.get("price"), "reg", pr.get("regular_price"),
-          "sale", pr.get("sale_price"), "minor", pr.get("currency_minor_unit"), "|", [c.get("slug") for c in p.get("categories") or []], "|", p.get("permalink"))
-var = [p for p in allp if p.get("type") == "variable"][:2]
-for p in var:
-    print("   variable e.g.", p.get("name")[:50], "| variations", short(p.get("variations"), 300), "| attributes", short(p.get("attributes"), 300))
-c2, b2, h2, ms2 = get(f"{A}/wp-json/wc/store/v1/products?per_page=100&search=partial")
-print(f"search=partial -> {c2} in {ms2} ms: {len(json.loads(b2)) if c2 == 200 else '-'} (total {h2.get('X-WP-Total') or h2.get('x-wp-total')})")
-codes = []
-t0 = time.time()
-for i in range(6):
-    codes.append(get(f"{A}/wp-json/wc/store/v1/products?per_page=100&page=1&_={int(time.time()*1000)}")[0])
-    time.sleep(1)
-print(f"  6 reads in {time.time()-t0:.0f} s: {codes}")
+    got = json.loads(b2)
+    allp += got
+    if len(got) < 100:
+        break
+print("products:", len(allp))
+vt = Counter(at.get("value") for p in allp for v in p.get("variations") or [] for at in v.get("attributes") or [])
+print("variation types:", vt.most_common(30))
+sale = [p for p in allp if p.get("on_sale")]
+print("on sale:", len(sale), "in stock", sum(1 for p in sale if p.get("is_in_stock")))
+tester = [p for p in allp if any(c.get("slug") == "tester" for c in p.get("categories") or [])]
+print("tester category:", len(tester), "in stock", sum(1 for p in tester if p.get("is_in_stock")))
+print("stock texts:", Counter((p.get("stock_availability") or {}).get("text") for p in allp).most_common(12))
+for p in sale[:5]:
+    pr = p["prices"]
+    print("   sale e.g.", p["name"][:55], pr.get("price"), pr.get("regular_price"), (pr.get("price_range") or {}), p.get("is_in_stock"))
+c2, b2, h2 = get(f"{A}/wp-json/wc/store/v1/products?per_page=5&type=variation")
+print("variation listing ->", c2, (b2[:300] if c2 == 200 else ""))
+vid = next((v["id"] for p in allp for v in p.get("variations") or []), None)
+if vid:
+    c2, b2, _ = get(f"{A}/wp-json/wc/store/v1/products/{vid}")
+    try:
+        v = json.loads(b2)
+        print("one variation ->", c2, {k: v.get(k) for k in ("id", "name", "type", "is_in_stock", "permalink")}, (v.get("prices") or {}).get("price"))
+    except Exception:
+        print("one variation ->", c2, b2[:200])
