@@ -86,7 +86,7 @@ GH_API = os.getenv("GH_API", "https://api.github.com").rstrip("/")
 MAX_RUN = float(os.getenv("PERFUME_MAX_RUN_S", "1200"))
 GUARD = float(os.getenv("PERFUME_GUARD_S", "120"))
 XGUARD = float(os.getenv("PERFUME_XGUARD_S", "21600"))
-FAIL_WARN = float(os.getenv("PERFUME_FAIL_WARN_S", "900"))
+FAIL_WARN = float(os.getenv("PERFUME_FAIL_WARN_S", "7200"))
 NUDGE_EVERY = float(os.getenv("PERFUME_NUDGE_S", "43200"))
 BACKOFF = float(os.getenv("PERFUME_BACKOFF_S", "60"))
 BACKOFF_FIRST = float(os.getenv("PERFUME_BACKOFF_FIRST_S", "15"))
@@ -727,8 +727,8 @@ def greet(st):
 
 
 def failed(st, w, now, why):
-    """A warning once a list has failed for a while: 15 minutes, or 3 hours when the store
-    is only saying 'too many requests' (that passes by itself, usually with the next run)."""
+    """A warning once a list has failed for a while: 2 hours, or 3 hours when the store is
+    only saying 'too many requests'. Shorter outages pass by themselves and aren't worth one."""
     ws = wstate(st, w)
     if not ws.get("fail_since"):
         ws["fail_since"] = now
@@ -742,6 +742,13 @@ def failed(st, w, now, why):
     since = hm(min(wstate(st, x)["fail_since"] for x in group))
     what = ", ".join(x["label"] for x in group)
     whose = w["store"] + ("'" if w["store"].endswith("s") else "'s")
+    if why in ("URLError", "TimeoutError", "timeout", "ConnectionResetError", "RemoteDisconnected",
+               "IncompleteRead", "ConnectionRefusedError", "SSLError"):
+        why = "its site isn't responding"
+    elif why.startswith("HTTP 5"):
+        why = f"its site is having trouble, {why}"
+    elif why in ("not the usual product list", "unexpected data"):
+        why = "its pages look different, so the watcher may need an update"
     if why == "HTTP 404":
         note("warn", f"{whose} {what} page has gone (404) since {since}")
     elif why in REFUSED:
@@ -915,6 +922,8 @@ def main():
                     recovered(st, w)
                     urgent = deliver(st, w, ev, now) if ev else False
                 due[w["id"]] = time.time() + w["every"]
+                if w["site"] in pause and pause[w["site"]] > time.time():
+                    due[w["id"]] = min(due[w["id"]], pause[w["site"]])
                 tried.add(w["id"])
                 run["checks"] += 1
             else:
