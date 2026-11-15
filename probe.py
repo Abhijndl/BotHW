@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Probe #65: Scentira's three partials lists compared (which one is complete?),
-pagination steadiness of the multi-page lists, and the extra deal collections
-(Sillage Steals / Sale, Scentira New Offers / Sale, Whiff's seasonal sales)."""
+"""Probe #66: Sovereign Scents and Acordell — platform, partials/decant/sale lists,
+how partials and sold-out items appear, and whether GitHub runners can read them."""
 import gzip, json, re, time, urllib.error, urllib.request
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -9,93 +8,109 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 R = {}
 
 
-def get(url, timeout=15):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
+def get(url, timeout=15, accept="application/json"):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept,
                                                "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"})
+    t = time.time()
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            code, data, enc = r.status, r.read(), r.headers.get("Content-Encoding", "")
+            code, data, hdr, final = r.status, r.read(), dict(r.headers), r.geturl()
     except urllib.error.HTTPError as e:
-        return e.code, ""
-    if "gzip" in enc.lower():
+        return e.code, "", dict(e.headers or {}), url, int((time.time() - t) * 1000)
+    except Exception as e:
+        return type(e).__name__, "", {}, url, int((time.time() - t) * 1000)
+    if "gzip" in (hdr.get("Content-Encoding") or "").lower():
         data = gzip.decompress(data)
-    return code, data.decode("utf-8", "replace")
+    return code, data.decode("utf-8", "replace"), hdr, final, int((time.time() - t) * 1000)
 
 
-def products(base, path, max_pages=12):
+def products(base, path, max_pages=20):
     out = []
     for page in range(1, max_pages + 1):
-        code, body = get(f"{base}{path}?limit=250&page={page}&_={int(time.time()*1000)}")
+        code, body, _, _, _ = get(f"{base}{path}?limit=250&page={page}&_={int(time.time()*1000)}")
         if code != 200:
-            return None
-        ps = json.loads(body)["products"]
+            return out or None, code
+        try:
+            ps = json.loads(body)["products"]
+        except Exception:
+            return out or None, "not json"
         out += ps
         if len(ps) < 250:
             break
         time.sleep(0.3)
-    return out
+    return out, 200
 
 
-def pv(ps):
-    """partial variants: {(pid, vid): (available, title)}"""
-    return {(p["id"], v["id"]): (bool(v.get("available")), f"{p['title']} / {v['title']}")
-            for p in ps for v in p["variants"] if re.search(r"\bpartial\b", v.get("title") or "", re.I)}
+def avail(p):
+    return any(v.get("available") for v in p.get("variants") or [])
 
 
-S = "https://www.scentira.in"
-allp = products(S, "/products.json", 10)
-part = products(S, "/collections/partials/products.json")
-allpart = products(S, "/collections/all-partials/products.json")
-dpart = products(S, "/collections/diwali-partials/products.json")
-for name, ps in (("products.json", allp), ("partials", part), ("all-partials", allpart), ("diwali-partials", dpart)):
-    v = pv(ps or [])
-    print(f"scentira {name}: {len(ps or [])} products, {len(v)} partial variants, {sum(a for a, _ in v.values())} in stock")
-va, vp, vap = pv(allp), pv(part), pv(allpart)
-inn = lambda d: {k for k, (a, _) in d.items() if a}
-print("  in-stock partial variants in products.json but NOT in 'partials':", len(inn(va) - set(vp)),
-      [va[k][1] for k in list(inn(va) - set(vp))[:5]])
-print("  ... NOT in 'all-partials':", len(inn(va) - set(vap)), [va[k][1] for k in list(inn(va) - set(vap))[:5]])
-print("  products in 'partials' without any partial variant:", sum(1 for p in part or [] if not any(re.search(r'\bpartial\b', v.get('title') or '', re.I) for v in p['variants'])))
-vt = {}
-for k, (a, t) in va.items():
-    s = t.split(" / ", 1)[1]
-    vt[s] = vt.get(s, 0) + 1
-print("  partial variant titles:", sorted(vt.items(), key=lambda x: -x[1])[:12])
-ex = [p for p in allp if any(re.search(r"\bpartial\b", v.get("title") or "", re.I) and v.get("available") for v in p["variants"])][:3]
-for p in ex:
-    print("  e.g.", p["title"], "|", [(v["title"], v["price"], v.get("compare_at_price"), v["available"]) for v in p["variants"]], "| updated", p.get("updated_at"))
-
-# pagination steadiness: read the multi-page lists 3 times back to back
-for base, coll in ((S, "partials"), ("https://www.sillageperfumes.in", "decants")):
-    sets = []
-    for i in range(3):
-        ps = products(base, f"/collections/{coll}/products.json")
-        sets.append({p["id"] for p in ps or []})
-        time.sleep(2)
-    print(f"{base} {coll}: sizes {[len(s) for s in sets]}, ids missing between reads: "
-          f"{[len(sets[0] ^ s) for s in sets[1:]]}")
-
-# extra deal collections
-for base, coll in (("https://www.sillageperfumes.in", "clearance-sale"), ("https://www.sillageperfumes.in", "sale"),
-                   (S, "new-offers"), (S, "sale"), (S, "diwali-sale"),
-                   ("https://www.whiffculture.com", "diwali-sale"), ("https://www.whiffculture.com", "pre-diwali-sale"),
-                   ("https://www.whiffculture.com", "independence-day-sale"),
-                   ("https://www.scentoria.co.in", "partials"), ("https://sniff.co.in", "50ml-sale")):
-    ps = products(base, f"/collections/{coll}/products.json")
-    if ps is None:
-        print(base, coll, "failed")
+for host in ("sovereignscents.in", "acordell.com"):
+    print(f"\n==================== {host}")
+    base = None
+    for b in (f"https://{host}", f"https://www.{host}"):
+        code, body, hdr, final, ms = get(b + "/", accept="text/html")
+        marks = [m for m in ("cdn.shopify.com", "Shopify.theme", "myshopify", "woocommerce", "wp-content", "wix.com",
+                             "dukaan", "_next/static", "zohocommerce", "bigcommerce", "magento", "squarespace", "webflow")
+                 if m in body]
+        print(f"{b}/ -> {code} in {ms} ms, final {final}, server {hdr.get('Server') or hdr.get('server')}, "
+              f"shopify headers {[k for k in hdr if k.lower().startswith(('x-shopid', 'x-shopify', 'powered-by'))]}, marks {marks}")
+        if code == 200 and base is None:
+            base = final.rstrip("/").split("?")[0]
+            base = re.match(r"https?://[^/]+", base).group(0)
+    if not base:
+        print("homepage unreachable")
         continue
-    n_in = sum(1 for p in ps if any(v.get("available") for v in p["variants"]))
-    disc = []
-    for p in ps:
-        for v in p["variants"]:
-            try:
-                pr, c = float(v["price"]), float(v.get("compare_at_price") or 0)
-            except (TypeError, ValueError):
-                continue
-            if v.get("available") and c > pr:
-                disc.append(round(100 * (1 - pr / c)))
-    newest = sorted(((p.get("published_at") or "")[:10], p["title"][:40]) for p in ps)[-3:]
-    print(f"{base}/collections/{coll}: {len(ps)} listed, {n_in} in stock; discounted variants {len(disc)}"
-          f" (median {sorted(disc)[len(disc)//2] if disc else '-'}% off); newest {newest}")
-    print("    e.g.", [(p["title"][:45], [(v["title"][:20], v["price"], v.get("compare_at_price")) for v in p["variants"][:2]]) for p in ps[:3]])
+    R[host] = {"base": base}
+    code, body, hdr, _, ms = get(f"{base}/products.json?limit=5")
+    print(f"/products.json -> {code} in {ms} ms ({len(body)} bytes)")
+    if code == 200:
+        ps, why = products(base, "/products.json")
+        print(f"  all products: {len(ps or [])} ({why})")
+        part = [p for p in ps or [] if re.search(r"\bpartial", p["title"], re.I)]
+        pvar = [(p, v) for p in ps or [] for v in p.get("variants") or [] if re.search(r"\bpartial", v.get("title") or "", re.I)]
+        print(f"  titled partial: {len(part)} ({sum(avail(p) for p in part)} in stock); partial variants: {len(pvar)} ({sum(1 for _, v in pvar if v.get('available'))} in stock)")
+        for p in sorted(part, key=lambda p: p.get("created_at") or "")[-6:]:
+            print("    e.g.", p["title"][:60], "|", p.get("product_type"), "|", (p.get("created_at") or "")[:10],
+                  [(v.get("title")[:25], v.get("price"), v.get("compare_at_price"), v.get("available")) for v in p["variants"][:3]])
+        for p, v in pvar[:4]:
+            print("    variant e.g.", p["title"][:50], "/", v.get("title"), v.get("price"), v.get("available"))
+        tags = {}
+        for p in part:
+            for t in p.get("tags") or []:
+                tags[t] = tags.get(t, 0) + 1
+        print("  partial tags:", sorted(tags.items(), key=lambda x: -x[1])[:12])
+        cs = []
+        for page in range(1, 5):
+            c2, b2, _, _, _ = get(f"{base}/collections.json?limit=250&page={page}")
+            if c2 != 200:
+                print("  collections.json ->", c2)
+                break
+            got = json.loads(b2).get("collections") or []
+            cs += got
+            if len(got) < 250:
+                break
+        print(f"  collections: {len(cs)}")
+        for c in cs:
+            if re.search(r"partial|decant|sale|tester|deal|offer|clearance|flash|steal|discount|new", c["handle"] + " " + c["title"], re.I):
+                print(f"    {c['handle']!r} {c['title']!r} {c.get('products_count')}")
+        for c in cs:
+            if re.search(r"partial", c["handle"] + " " + c["title"], re.I):
+                cp, why = products(base, f"/collections/{c['handle']}/products.json")
+                n_in = sum(avail(p) for p in cp or [])
+                print(f"  collection {c['handle']}: {len(cp or [])} listed, {n_in} in stock ({why}); count says {c.get('products_count')}")
+                ids_all = {p['id'] for p in part}
+                ids_c = {p['id'] for p in cp or []}
+                print(f"    partial-titled products not in it: {len(ids_all - ids_c)} (in stock: {sum(1 for p in part if p['id'] not in ids_c and avail(p))})")
+        # pace: 6 quick reads of the biggest partial list
+        t0 = time.time(); codes = []
+        for i in range(6):
+            codes.append(get(f"{base}/products.json?limit=250&_={int(time.time()*1000)}")[0])
+            time.sleep(1)
+        print(f"  6 reads in {time.time()-t0:.0f} s: {codes}")
+    else:
+        for path in ("/wp-json/wc/store/v1/products?per_page=5", "/wp-json/", "/api/products", "/sitemap.xml", "/robots.txt"):
+            c2, b2, h2, _, ms = get(base + path, accept="*/*")
+            print(f"  {path} -> {c2} in {ms} ms: {b2[:200]!r}")
+
+json.dump(R, open("probe_report.json", "w"), indent=1)
