@@ -57,6 +57,7 @@ if os.getenv("PERFUME_WATCHES"):          # tests point the watcher at fake stor
     WATCHES = [W(**w) for w in json.loads(os.environ["PERFUME_WATCHES"])]
 
 TG = os.getenv("TG_BASE", "https://api.telegram.org").rstrip("/")
+IP_URL = os.getenv("PERFUME_IP_URL", "https://api.ipify.org")
 GH_API = os.getenv("GH_API", "https://api.github.com").rstrip("/")
 MAX_RUN = float(os.getenv("PERFUME_MAX_RUN_S", "1200"))
 GUARD = float(os.getenv("PERFUME_GUARD_S", "120"))
@@ -64,6 +65,9 @@ XGUARD = float(os.getenv("PERFUME_XGUARD_S", "21600"))
 FAIL_WARN = float(os.getenv("PERFUME_FAIL_WARN_S", "900"))
 NUDGE_EVERY = float(os.getenv("PERFUME_NUDGE_S", "43200"))
 BACKOFF = float(os.getenv("PERFUME_BACKOFF_S", "60"))
+BACKOFF_FIRST = float(os.getenv("PERFUME_BACKOFF_FIRST_S", "15"))
+REFUSED_WARN = float(os.getenv("PERFUME_REFUSED_WARN_S", "10800"))
+NOTE_WAIT = float(os.getenv("PERFUME_NOTE_WAIT_S", "5"))
 SALES_EVERY = float(os.getenv("PERFUME_SALES_EVERY_S", "900"))
 SALES_FIRST = float(os.getenv("PERFUME_SALES_FIRST_S", "45"))
 PUSH_EVERY = float(os.getenv("PERFUME_PUSH_EVERY_S", "300"))
@@ -83,6 +87,8 @@ REPO = os.getenv("GITHUB_REPOSITORY", "")
 RUN_ID = os.getenv("GITHUB_RUN_ID", "")
 WF = os.getenv("GITHUB_WORKFLOW_REF", "").split("@")[0].rsplit("/", 1)[-1] or "perfume.yml"
 CHAIN = os.getenv("PERFUME_CHAIN", "1" if os.getenv("GITHUB_ACTIONS") == "true" else "0") == "1"
+REFUSED = ("HTTP 429", "HTTP 403")
+HANDOFF_WINDOW, HANDOFF_MAX = 1800, 3
 SOLD_CONFIRM = 2
 BULK = 5
 BULK_ROWS = 25
@@ -96,6 +102,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 _dest = []
 _last_send = [0.0]
 _pushed = [None]
+_outbox = []
 _can_push = [True]
 
 
@@ -587,21 +594,27 @@ def greet(st):
 
 
 def failed(st, w, now, why):
+    """A warning once a list has failed for a while: 15 minutes, or 3 hours when the store
+    is only saying 'too many requests' (that passes by itself, usually with the next run)."""
     ws = wstate(st, w)
     if not ws.get("fail_since"):
         ws["fail_since"] = now
-    if ws.get("fail_warned") or now - ws["fail_since"] < FAIL_WARN:
+    limit = REFUSED_WARN if why in REFUSED else FAIL_WARN
+    if ws.get("fail_warned") or now - ws["fail_since"] < limit:
         return
     group = [x for x in WATCHES if x["store"] == w["store"] and wstate(st, x).get("fail_since")
-             and not wstate(st, x).get("fail_warned") and now - wstate(st, x)["fail_since"] >= FAIL_WARN - 60]
+             and not wstate(st, x).get("fail_warned") and now - wstate(st, x)["fail_since"] >= limit - 60]
     for x in group:
         wstate(st, x)["fail_warned"] = True
-    since = min(wstate(st, x)["fail_since"] for x in group)
+    since = hm(min(wstate(st, x)["fail_since"] for x in group))
     what = ", ".join(x["label"] for x in group)
     if why == "HTTP 404":
-        send(st, f"⚠️ {w['store']}'s {what} page has gone (404) since {hm(since)}. I'll keep checking in case it comes back.")
+        note("warn", f"{w['store']}'s {what} page has gone (404) since {since}")
+    elif why in REFUSED:
+        note("warn", f"{w['store']} has been refusing the watcher since {since} ({why}, too many requests), "
+                     f"so its {what} alerts are paused")
     else:
-        send(st, f"⚠️ I can't read {w['store']}'s {what} since {hm(since)} ({why}). I'll keep trying.")
+        note("warn", f"I can't read {w['store']}'s {what} since {since} ({why})")
 
 
 def recovered(st, w):
@@ -611,7 +624,33 @@ def recovered(st, w):
     for x in WATCHES:
         if x["store"] == w["store"]:
             wstate(st, x)["fail_since"], wstate(st, x)["fail_warned"] = None, False
-    send(st, f"✅ {w['store']} can be read again.")
+    note("ok", w["store"])
+
+
+def note(kind, text):
+    _outbox.append((time.time(), kind, text))
+
+
+def flush(st, force=False):
+    """Warnings and all-clears go out a few seconds late, gathered into one message each."""
+    if not _outbox or (not force and time.time() - _outbox[0][0] < NOTE_WAIT):
+        return
+    warns = [t for _, k, t in _outbox if k == "warn"]
+    oks = list(dict.fromkeys(t for _, k, t in _outbox if k == "ok"))
+    _outbox.clear()
+    if len(warns) == 1:
+        send(st, f"⚠️ {warns[0]}. I'll keep trying.")
+    elif warns:
+        send(st, "⚠️ I'll keep trying, but for now:\n• " + "\n• ".join(warns))
+    if oks:
+        names = oks[0] if len(oks) == 1 else ", ".join(oks[:-1]) + " and " + oks[-1]
+        send(st, f"✅ {names} can be read again.")
+
+
+def handoff_ok(st, now):
+    """At most three early hand-overs in half an hour, so a wider block can't make runs churn."""
+    st["handoffs"] = [t for t in st.get("handoffs", []) if now - t < HANDOFF_WINDOW]
+    return len(st["handoffs"]) < HANDOFF_MAX
 
 
 def deliver(st, w, ev, now):
@@ -675,6 +714,16 @@ def check_sales(st, site, store, now):
 
 
 # ── the run ──────────────────────────────────────────────────────────────────
+def runner_address():
+    if not IP_URL:
+        return
+    try:
+        with urllib.request.urlopen(IP_URL, timeout=5) as r:
+            log(f"runner address {r.read().decode('ascii', 'replace').strip()[:45]}")
+    except Exception as e:
+        log(f"runner address unknown ({type(e).__name__})")
+
+
 def _bye(*_):
     raise SystemExit(0)
 
@@ -686,14 +735,15 @@ def main():
             os.remove(f)
     _can_push[0] = pull()
     st = load()
+    runner_address()
     queue_next()
     t0 = time.time()
     run = {"no": os.getenv("GITHUB_RUN_NUMBER", ""), "checks": 0, "from": int(t0)}
     due = {w["id"]: t0 for w in WATCHES}
     sites = list(dict.fromkeys((w["site"], w["store"]) for w in WATCHES))
     sales_due = {s: t0 + SALES_FIRST for s, _ in sites}
-    pause, tried = {}, set()
-    greeted = queued = False
+    pause, tried, refused = {}, set(), {}
+    greeted = queued = handed = False
     last_push = next_pull = t0
     try:
         while not os.path.exists(STOP) and time.time() - t0 < MAX_RUN:
@@ -723,9 +773,11 @@ def main():
                 if ev is None:
                     log(f"{w['id']}: read failed: {why}")
                     failed(st, w, now, why)
-                    if why in ("HTTP 429", "HTTP 403"):
-                        pause[w["site"]] = time.time() + BACKOFF
+                    if why in REFUSED:
+                        refused[w["site"]] = refused.get(w["site"], 0) + 1
+                        pause[w["site"]] = time.time() + (BACKOFF_FIRST if refused[w["site"]] == 1 else BACKOFF)
                 else:
+                    refused.pop(w["site"], None)
                     recovered(st, w)
                     urgent = deliver(st, w, ev, now) if ev else False
                 due[w["id"]] = time.time() + w["every"]
@@ -737,6 +789,13 @@ def main():
                 except Exception as e:
                     log(f"{sale[1]}: sales check error {e!r}")
                 sales_due[sale[0]] = time.time() + SALES_EVERY
+            if not handed and len(refused) == len(sites) and min(refused.values()) >= 2 and handoff_ok(st, now):
+                handed = True
+                if queue_next():
+                    st["handoffs"].append(int(now))
+                    log("every store is refusing this runner (too many requests); handing over to a fresh run")
+                    break
+            flush(st)
             run["to"] = int(time.time())
             st["run"] = run
             if not greeted and len(tried) == len(WATCHES):
@@ -752,6 +811,7 @@ def main():
                 queued = True
                 queue_next()
     finally:
+        flush(st, force=True)
         st["run"] = run
         save(st)
         push(st, "end of run")
