@@ -22,20 +22,20 @@ jobs:
           ref: claude/probe
           sparse-checkout: perfume.py
           sparse-checkout-cone-mode: false
-      - name: Seed a test memory branch with main's perfume.json (first version)
+      - name: Seed a test memory branch with the live memory
         run: |
-          ls -la
-          git fetch -q --depth=1 origin main
+          git fetch -q --depth=1 origin perfume-state
           git show FETCH_HEAD:perfume.json > seed.json
           blob=$(git hash-object -w seed.json)
           tree=$(printf '100644 blob %s\tperfume.json\n' "$blob" | git mktree)
           commit=$(git -c user.name=github-actions -c user.email=actions@github.com commit-tree "$tree" -m "seed")
           git push -q -f origin "$commit:refs/heads/perfume-state-probe"
-      - name: Watch (2.5 minutes, no Telegram)
+      - name: Watch (90 seconds, no Telegram)
         env:
           PERFUME_STATE: perfume-state.json
           PERFUME_STATE_BRANCH: perfume-state-probe
-          PERFUME_MAX_RUN_S: "150"
+          PERFUME_MAX_RUN_S: "90"
+          PERFUME_CHAIN: "0"
           PERFUME_SALES_FIRST_S: "20"
           PERFUME_SALES_EVERY_S: "60"
           PERFUME_PUSH_EVERY_S: "45"
