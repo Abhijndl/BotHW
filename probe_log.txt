@@ -1,20 +1,115 @@
+==================== Sovereign Scents
+/api/products -> 200 in 479 ms, 14780 bytes, cache None, age None
+top-level keys: ['success', 'products', 'pagination']
+products: 20 | other top-level: {'success': 'true', 'pagination': '{"currentPage": 1, "totalPages": 72, "totalCount": 1439, "limit": 20, "hasMore":…'}
+product keys: [('_id', 20), ('name', 20), ('brand', 20), ('__v', 20), ('accords', 20), ('archivedImages', 20), ('category', 20), ('cloneOf', 20), ('createdAt', 20), ('description', 20), ('details', 20), ('discountEligible', 20), ('driveFileId', 20), ('featured', 20), ('images', 20), ('inStock', 20), ('notes', 20), ('rating', 20), ('reviews', 20), ('sizes', 20), ('totalMl', 20), ('type', 20), ('updatedAt', 20), ('manuallyDisabled', 2)]
+   _id: "6af7151460958a6dcfdbb22a"
+   name: "Jasmine Musk EDP Intense"
+   brand: "Narciso Rodriguez"
+   __v: 0
+   accords: []
+   archivedImages: []
+   category: "Women"
+   cloneOf: ""
+   createdAt: "2026-11-13T13:48:04.011Z"
+   description: ""
+   details: {"concentration": "Eau de Parfum"}
+   discountEligible: true
+   driveFileId: ""
+   featured: false
+   images: []
+   inStock: true
+   notes: {"top": [], "middle": [], "base": []}
+   rating: 0
+   reviews: 0
+   sizes: [{"size": "3ml", "price": 350, "_id": "6af715140f4d657bb57379ac"}, {"size": "5ml", "price": 520, "_id": "6af715140f4d657bb57379ad"}, {"size": "8ml", "price": 810, "_id": "6af715140f4d657bb57379ae"}, {"size": "10ml", "pri…
+   totalMl: 100
+   type: "Designers"
+   updatedAt: "2026-11-13T13:48:04.011Z"
+  values of _id: [('"6af7151460958a6dcfdbb22a"', 1), ('"6af7151260958a6dcfdbb229"', 1), ('"6af7150260958a6dcfdbb228"', 1), ('"6af0087060958a6dcfdafa3b"', 1), ('"6af0087060958a6dcfdafa3c"', 1), ('"6af0087060958a6dcfdafa3a"', 1), ('"6af0086360958a6dcfdafa39"', 1), ('"6af0085660958a6dcfdafa38"', 1), ('"6aead8d7f4c343f02f7e88d2"', 1), ('"6aead8d6f4c343f02f7e88d1"', 1), ('"6aead8cef4c343f02f7e88cd"', 1), ('"6aead8cef4c343f02f7e88ce"', 1)]
+  values of name: [('"Jasmine Musk EDP Intense"', 1), ('"Peut-Etre EDP 2020"', 1), ('"Saffron Lazuli"', 1), ('"Celestial Whispers"', 1), ('"Untitled L\'Eau"', 1), ('"Soul Of Forest"', 1), ('"Jean Lowe Noir"', 1), ('"Stardust"', 1), ('"Coco Mademoiselle EDP Intense"', 1), ('"Divine"', 1), ('"Le Male Aviator EDT"', 1), ('"DesirToxic L\'intense"', 1)]
+  values of brand: [('"Maison Margelia"', 3), ('"Chanel"', 2), ('"Rayhaan"', 2), ('"Givenchy"', 2), ('"Narciso Rodriguez"', 1), ('"Lancôme Luxury"', 1), ('"Caroline Herrera"', 1), ('"Maison Alhambra"', 1), ('"Afnan"', 1), ('"Jean Paul Gaultier"', 1), ('"M. Micallef"', 1), ('"Dolce & Gabbana"', 1)]
+  values of category: [('"Unisex"', 16), ('"Women"', 4)]
+  values of cloneOf: [('""', 14), ('"Louis Vuitton Ombré Nomade"', 1), ('"Angels\' Share on the Rocks"', 1), ('"5%  NA"', 1), ('"LV Attrape-Rêves"', 1), ('"Nishane Ani X"', 1), ('"Printemps Blanc by Maison Mataha"', 1)]
+  values of createdAt: [('"2026-11-08T05:28:16.370Z"', 3), ('"2026-11-04T07:03:39.348Z"', 3), ('"2026-11-04T07:03:42.450Z"', 2), ('"2026-11-04T07:03:37.859Z"', 2), ('"2026-11-04T07:03:33.174Z"', 2), ('"2026-11-13T13:48:04.011Z"', 1), ('"2026-11-13T13:48:02.705Z"', 1), ('"2026-11-13T13:47:46.018Z"', 1), ('"2026-11-08T05:28:03.447Z"', 1), ('"2026-11-08T05:27:50.579Z"', 1), ('"2026-11-04T07:03:51.446Z"', 1), ('"2026-11-04T07:03:50.108Z"', 1)]
+  values of discountEligible: [('true', 13), ('false', 7)]
+  values of images: [('[]', 19), ('["https://pub-97926eff4f114ba1b7d5d42704', 1)]
+  values of sizes: [('[{"size": "3ml", "price": 450, "_id": "6', 3), ('[{"size": "3ml", "price": 280, "_id": "6', 3), ('[{"size": "3ml", "price": 150, "_id": "6', 2), ('[{"size": "3ml", "price": 350, "_id": "6', 1), ('[{"size": "3ml", "price": 340, "_id": "6', 1), ('[{"size": "3ml", "price": 480, "_id": "6', 1), ('[{"size": "3ml", "price": 180, "_id": "6', 1), ('[{"size": "3ml", "price": 420, "_id": "6', 1), ('[{"size": "3ml", "price": 140, "_id": "6', 1), ('[{"size": "3ml", "price": 190, "_id": "6', 1), ('[{"size": "3ml", "price": 440, "_id": "6', 1), ('[{"size": "3ml", "price": 260, "_id": "6', 1)]
+  values of totalMl: [('100', 8), ('97', 3), ('92', 2), ('95', 1), ('86', 1), ('74', 1), ('84', 1), ('94', 1), ('62', 1), ('78', 1)]
+  values of type: [('"Designers"', 15), ('"Middle Eastern"', 5)]
+  values of updatedAt: [('"2026-11-13T13:47:46.018Z"', 3), ('"2026-11-13T13:47:52.448Z"', 3), ('"2026-11-13T13:47:47.469Z"', 3), ('"2026-11-13T13:47:50.763Z"', 2), ('"2026-11-13T13:48:04.011Z"', 1), ('"2026-11-13T13:48:02.705Z"', 1), ('"2026-11-13T13:47:35.741Z"', 1), ('"2026-11-15T08:15:59.611Z"', 1), ('"2026-11-15T02:26:58.316Z"', 1), ('"2026-11-13T13:47:59.648Z"', 1), ('"2026-11-13T13:47:44.736Z"', 1), ('"2026-11-14T14:20:26.275Z"', 1)]
+  values of manuallyDisabled: [('null', 18), ('false', 2)]
+products mentioning 'partial' anywhere: 0
+homepage links: ['/', '/_next/static/chunks/080sj8cprm-ze.css', '/_next/static/chunks/2iho8jepmwwua.js', '/_next/static/media/2a65768255d6b625-s.p.3u4lli0-axodc.woff2', '/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2', '/about', '/account', '/apple-icon.png', '/authenticity', '/cart', '/contact', '/favicon.ico', '/icon.svg', '/logo-crown.png', '/logo-scents-text.png', '/logo-sovereign-text.png', '/privacy', '/returns', '/shipping', '/shop', '/terms']
+  /shop -> 200 in 257 ms; api refs []; mentions partial 0
+  /api/products?category=Partials -> 200 in 367 ms, 0 products
+  /api/products?type=partial -> 200 in 368 ms, 0 products
+  /api/products?search=partial -> 200 in 326 ms, 0 products
+  /api/products?page=2 -> 200 in 436 ms, 20 products
+  /api/products?limit=1000 -> 200 in 829 ms, 1000 products
+  6 reads in 9 s: [200, 200, 200, 200, 200, 200]
 
-==================== sovereignscents.in
-https://sovereignscents.in/ -> 200 in 630 ms, final https://www.sovereignscents.in/, server railway-hikari, shopify headers [], marks ['_next/static']
-https://www.sovereignscents.in/ -> 200 in 265 ms, final https://www.sovereignscents.in/, server railway-hikari, shopify headers [], marks ['_next/static']
-/products.json -> 404 in 275 ms (0 bytes)
-  /wp-json/wc/store/v1/products?per_page=5 -> 404 in 261 ms: ''
-  /wp-json/ -> 404 in 534 ms: ''
-  /api/products -> 200 in 856 ms: '{"success":true,"products":[{"_id":"6af7151460958a6dcfdbb22a","name":"Jasmine Musk EDP Intense","brand":"Narciso Rodriguez","__v":0,"accords":[],"archivedImages":[],"category":"Women","cloneOf":"","cr'
-  /sitemap.xml -> 404 in 275 ms: ''
-  /robots.txt -> 404 in 282 ms: ''
-
-==================== acordell.com
-https://acordell.com/ -> 200 in 2727 ms, final https://acordell.com/, server hcdn, shopify headers [], marks ['woocommerce', 'wp-content']
-https://www.acordell.com/ -> 200 in 5231 ms, final https://acordell.com/, server hcdn, shopify headers [], marks ['woocommerce', 'wp-content']
-/products.json -> 404 in 1041 ms (0 bytes)
-  /wp-json/wc/store/v1/products?per_page=5 -> 200 in 778 ms: '[{"id":17013,"name":"Lattafa Musamam Black Intense EDP 100ml","slug":"lattafa-musamam-black-intense-edp-100ml","parent":0,"type":"simple","variation":"","permalink":"https:\\/\\/acordell.com\\/product\\/l'
-  /wp-json/ -> 200 in 1098 ms: '{"name":"Acordell","description":"Indulge in the Luxury of Fragrance","url":"https:\\/\\/acordell.com","home":"https:\\/\\/acordell.com","gmt_offset":-5,"timezone_string":"America\\/Toronto","page_for_post'
-  /api/products -> 404 in 1029 ms: ''
-  /sitemap.xml -> 200 in 1574 ms: '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//acordell.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schema'
-  /robots.txt -> 200 in 529 ms: 'User-agent: *\r\nDisallow: /wp-content/uploads/wc-logs/\r\nDisallow: /wp-content/uploads/woocommerce_transient_files/\r\nDisallow: /wp-content/uploads/woocommerce_uploads/\r\nDisallow: /*?add-to-cart=\r\nDisall'
+==================== Acordell
+categories -> 200 in 618 ms: 17
+   661 'all-weather' 'All-Weather' count 38
+   752 'beastmode' 'Beastmode' count 43
+   676 'date-wear' 'Date Wear' count 26
+   612 'designer' 'Designer' count 94
+   857 'gym-wear' 'Gym Wear' count 12
+   605 'men' 'Men' count 307
+   606 'middle-eastern' 'Middle Eastern' count 205
+   620 'niche' 'Niche' count 36
+   758 'office-wear' 'Office Wear' count 23
+   677 'party-wear' 'Party Wear' count 22
+   636 'signature-wear' 'Signature Wear' count 49
+   667 'summer-wear' 'Summer Wear' count 24
+   613 'tester' 'Tester' count 118
+   26 'uncategorized' 'Uncategorized' count 1
+   895 'unisex' 'Unisex' count 2
+   733 'winter-wear' 'Winter Wear' count 34
+   607 'women' 'Women' count 160
+products page 1 -> 200 in 1132 ms; total 343, pages 4
+all products read: 343
+   id: 17013
+   name: "Lattafa Musamam Black Intense EDP 100ml"
+   slug: "lattafa-musamam-black-intense-edp-100ml"
+   parent: 0
+   type: "simple"
+   variation: ""
+   permalink: "https://acordell.com/product/lattafa-musamam-black-intense-edp-100ml/"
+   sku: ""
+   short_description: ""
+   description: "<p><!-- ACY2_INTRO_START --></p>\n<p><strong>Lattafa Musamam Black Intense</strong> at Acordell. Read the fragrance description and note breakdown below to learn about its character before choosing a…
+   on_sale: true
+   prices: {"price": "3850", "regular_price": "5900", "sale_price": "3850", "price_range": null, "currency_code": "INR", "currency_symbol": "₹", "currency_minor_unit": 0, "currency_decimal_separator": ".", "curr…
+   price_html: "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\" dir=\"auto\">&#8377;</span>5,900</span></del> <span class=\"screen-reader-te…
+   average_rating: "0"
+   review_count: 0
+   images: [{"id": 17014, "src": "https://acordell.com/wp-content/uploads/2026/11/img_9843.jpeg", "thumbnail": "https://acordell.com/wp-content/uploads/2026/11/img_9843-300x300.jpeg", "srcset": "https://acordell…
+   categories: [{"id": 752, "name": "Beastmode", "slug": "beastmode", "link": "https://acordell.com/product-category/beastmode/"}, {"id": 676, "name": "Date Wear", "slug": "date-wear", "link": "https://acordell.com/…
+   tags: [{"id": 610, "name": "Lattafa", "slug": "lattafa", "link": "https://acordell.com/product-tag/lattafa/"}]
+   brands: [{"id": 611, "name": "Lattafa", "slug": "lattafa", "link": "https://acordell.com/brand/lattafa/"}]
+   attributes: []
+   variations: []
+   grouped_products: []
+   has_options: false
+   is_purchasable: true
+   is_in_stock: true
+   is_on_backorder: false
+   low_stock_remaining: null
+   stock_availability: {"text": "6 in stock", "class": "in-stock"}
+   sold_individually: false
+   weight: ""
+   dimensions: {"length": "", "width": "", "height": ""}
+   formatted_weight: "N/A"
+   formatted_dimensions: "N/A"
+   add_to_cart: {"text": "Add to cart", "description": "Add to cart: &ldquo;Lattafa Musamam Black Intense EDP 100ml&rdquo;", "url": "/wp-json/wc/store/v1/products?per_page=100&#038;page=1&#038;add-to-cart=17013", "si…
+   is_password_protected: false
+   extensions: {}
+   _links: {"self": [{"href": "https://acordell.com/wp-json/wc/store/v1/products/17013", "targetHints": {"allow": ["GET"]}}], "collection": [{"href": "https://acordell.com/wp-json/wc/store/v1/products"}], "relat…
+types: Counter({'simple': 203, 'variable': 140}) | in stock: Counter({True: 304, False: 39}) | stock_availability: Counter({'in-stock': 304, 'out-of-stock': 39})
+partials (name or category): 0 in stock: 0
+   variable e.g. Lancôme Idôle EDP | variations [{"id": 17001, "attributes": [{"name": "Product Type", "value": "100ml-retail"}]}, {"id": 17002, "attributes": [{"name": "Product Type", "value": "100ml-tester"}]}] | attributes [{"id": 8, "name": "Product Type", "taxonomy": "pa_product-type", "has_variations": true, "terms": [{"id": 641, "name": "100ML Retail", "slug": "100ml-retail"}, {"id": 642, "name": "100ML Tester", "slug": "100ml-tester"}, {"id": 685, "name": "150ML Retail", "slug": "150ml-retail"}, {"id": 684, "name…
+   variable e.g. Burberry Her EDP | variations [{"id": 16995, "attributes": [{"name": "Product Type", "value": "100ml-retail"}]}, {"id": 16996, "attributes": [{"name": "Product Type", "value": "100ml-tester"}]}] | attributes [{"id": 8, "name": "Product Type", "taxonomy": "pa_product-type", "has_variations": true, "terms": [{"id": 641, "name": "100ML Retail", "slug": "100ml-retail"}, {"id": 642, "name": "100ML Tester", "slug": "100ml-tester"}, {"id": 685, "name": "150ML Retail", "slug": "150ml-retail"}, {"id": 684, "name…
+search=partial -> 200 in 599 ms: 0 (total 0)
+  6 reads in 14 s: [200, 200, 200, 200, 200, 200]
