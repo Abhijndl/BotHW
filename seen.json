@@ -15763,7 +15763,7 @@
     "fc_listed_at": "2026-11-18T04:45:00",
     "fc_api_seen_at": "2026-11-18T04:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "21497090",
     "fc_phantom": "2026-10-26T07:32:29",
@@ -26114,7 +26114,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -28127,7 +28127,7 @@
   "fc_22618403": {
     "stock": "in_stock",
     "name": "Majorette Nissan Vision Gran Turismo 2020 Metal Street Car Toy - Red",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-nissan-vision-gran-turismo-2020-metal-street-car-toy-red/22618403/product-detail",
     "first_seen": "2026-11-17T14:00:00",
@@ -28252,6 +28252,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
+    "fc_off": "2026-11-18T04:52:08",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-18T04:27:12"
