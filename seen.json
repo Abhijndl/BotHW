@@ -116,7 +116,7 @@
     "fc_listed_at": "2026-09-24T08:45:00",
     "fc_api_seen_at": "2026-11-20T20:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_cart": "n",
@@ -5545,7 +5545,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -14239,7 +14239,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14252,7 +14252,7 @@
     "fc_api_seen_at": "2026-11-20T20:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -14339,7 +14339,7 @@
   "fc_24475217": {
     "stock": "in_stock",
     "name": "Hot Wheels Polestar Die cast Toy car 84/250 -White & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-polestar-die-cast-toy-car-84-250-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -18236,11 +18236,11 @@
     "fc_listed_at": "2026-11-20T20:45:00",
     "fc_api_seen_at": "2026-11-20T20:45:00",
     "fc_trusted": true,
-    "fc_live": "page 0",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-19T14:30:36",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-20T12:43:35",
     "fc_lst_seen": "2026-11-20T13:45:00"
@@ -22334,7 +22334,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22380,7 +22380,7 @@
   "fc_24776077": {
     "stock": "in_stock",
     "name": "Hot Wheels Custom / Personnalise 2020 Honda e (115/250) Toy Car Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-2020-honda-e-115-250-toy-car-blue/24776077/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -23885,7 +23885,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -23908,7 +23908,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -23931,7 +23931,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -23954,7 +23954,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -23977,7 +23977,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -25717,7 +25717,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -27820,7 +27820,7 @@
     "fc_lst_seen": "2026-11-18T04:00:00"
   },
   "fc_19991402": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Majorette Porsche Racing Die Cast Free Wheel Model Toy Car - Blue",
     "price": "₹287",
     "source": "firstcry",
@@ -27828,7 +27828,7 @@
     "first_seen": "2026-11-18T02:45:00",
     "last_seen": "2026-11-20T20:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-20T20:23:40",
+    "last_restock_alert": "2026-11-20T20:58:59",
     "last_price_alert": "",
     "stock_ver": "fc_listing_v3",
     "auto_watch": true,
@@ -27838,7 +27838,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-20T20:51:01",
-    "fc_off": "2026-11-20T20:46:13",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-20T12:46:20"
@@ -27858,7 +27857,7 @@
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
     "fc_api_seen_at": "2026-11-20T20:45:00",
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0"
