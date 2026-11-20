@@ -92,7 +92,7 @@
     "fc_listed_at": "2026-11-20T13:45:00",
     "fc_api_seen_at": "2026-11-20T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "20290029",
     "fc_phantom": "2026-10-24T13:58:46",
@@ -13592,7 +13592,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13689,7 +13689,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14279,7 +14279,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14748,7 +14748,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -15375,7 +15375,7 @@
   "fc_24473477": {
     "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -16132,7 +16132,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -26762,7 +26762,7 @@
     "fc_listed_at": "2026-11-20T13:45:00",
     "fc_api_seen_at": "2026-11-20T13:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24387506",
     "fc_phantom": "2026-11-20T13:41:11",
@@ -27947,7 +27947,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-20T12:51:10",
-    "fc_off": "2026-11-20T13:43:42",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-20T12:46:20"
@@ -27968,7 +27967,7 @@
     "fc_listed_at": "2026-11-19T13:45:00",
     "fc_api_seen_at": "2026-11-20T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0"
@@ -28040,7 +28039,7 @@
   "fc_24995810": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Bike - Red",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-bike-red/24995810/product-detail",
     "first_seen": "2026-11-18T14:00:00",
@@ -28063,7 +28062,7 @@
   "fc_24995809": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Bike - Green",
-    "price": "₹539",
+    "price": "₹599",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-bike-green/24995809/product-detail",
     "first_seen": "2026-11-18T14:00:00",
@@ -28086,7 +28085,7 @@
   "fc_24792195": {
     "stock": "in_stock",
     "name": "Hot Wheels Batman Theme Die Cast Cars Pack of 10 - Multicolor",
-    "price": "₹2699",
+    "price": "₹2999",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-batman-theme-die-cast-cars-pack-of-10-multicolor/24792195/product-detail",
     "first_seen": "2026-11-18T15:45:00",
