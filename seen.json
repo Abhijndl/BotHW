@@ -116,7 +116,7 @@
     "fc_listed_at": "2026-09-24T08:45:00",
     "fc_api_seen_at": "2026-11-20T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_cart": "n",
@@ -4121,7 +4121,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -10408,6 +10408,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-19T22:29:08",
+    "fc_off": "2026-11-20T01:25:47",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14392,7 +14393,7 @@
     "fc_listed_at": "2026-11-20T01:15:00",
     "fc_api_seen_at": "2026-11-20T01:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_cart": "n",
@@ -14546,7 +14547,7 @@
     "fc_cart": "n"
   },
   "fc_24473514": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
     "price": "₹165",
     "source": "firstcry",
@@ -14560,7 +14561,7 @@
     "fc_listed_at": "2026-11-20T01:00:00",
     "fc_api_seen_at": "2026-11-20T01:15:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-19T17:18:53",
@@ -14916,6 +14917,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-19T22:29:08",
+    "fc_off": "2026-11-20T01:25:47",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20423,6 +20425,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-17T16:37:10",
+    "fc_off": "2026-11-20T01:25:47",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -23995,7 +23998,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -25834,7 +25837,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -27277,6 +27280,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-19T22:09:01",
+    "fc_off": "2026-11-20T01:25:47",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27830,7 +27834,7 @@
   "fc_22618403": {
     "stock": "in_stock",
     "name": "Majorette Nissan Vision Gran Turismo 2020 Metal Street Car Toy - Red",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-nissan-vision-gran-turismo-2020-metal-street-car-toy-red/22618403/product-detail",
     "first_seen": "2026-11-17T14:00:00",
@@ -27895,7 +27899,6 @@
     "fc_lst": "out",
     "fc_gid": "13229371",
     "fc_phantom": "2026-11-20T01:09:04",
-    "fc_off": "2026-11-20T01:13:39",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-17T14:01:26",
