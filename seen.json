@@ -11018,7 +11018,7 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹629",
+    "price": "₹643",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -12763,7 +12763,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -26813,7 +26813,7 @@
     "fc_listed_at": "2026-11-20T11:00:00",
     "fc_api_seen_at": "2026-11-20T11:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24387506",
     "fc_phantom": "2026-11-20T10:51:28",
@@ -27082,7 +27082,7 @@
     "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-20T10:38:10",
-    "fc_lst_seen": "2026-11-20T10:45:00"
+    "fc_lst_seen": "2026-11-20T11:00:00"
   },
   "fc_24961455": {
     "stock": "out_of_stock",
