@@ -3571,6 +3571,7 @@
     "fc_gid": "23347148",
     "fc_phantom": "2026-11-03T09:49:03",
     "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-19T13:04:02",
     "fc_lst_seen": "2026-11-20T18:15:00"
   },
@@ -3918,14 +3919,16 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "",
-    "stock_ver": "fc_listing_v3",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-20T13:15:00",
-    "fc_api_seen_at": "2026-11-20T17:45:00",
-    "fc_live": "not in cart",
+    "fc_api_seen_at": "2026-11-20T18:15:00",
+    "fc_trusted": true,
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
-    "fc_cart": "n"
+    "fc_cart": "n",
+    "fc_svc": "0"
   },
   "fc_23075652": {
     "stock": "out_of_stock",
@@ -4538,14 +4541,16 @@
     "alerted_new": true,
     "last_restock_alert": "2026-11-13T14:06:24",
     "last_price_alert": "",
-    "stock_ver": "fc_listing_v3",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:00:00",
-    "fc_api_seen_at": "2026-11-20T17:45:00",
+    "fc_api_seen_at": "2026-11-20T18:15:00",
+    "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "23347148",
     "fc_phantom": "2026-11-13T14:28:49",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-19T12:18:43",
     "fc_lst_seen": "2026-11-19T13:00:00"
   },
@@ -5190,14 +5195,16 @@
     "alerted_new": true,
     "last_restock_alert": "2026-11-18T18:14:22",
     "last_price_alert": "",
-    "stock_ver": "fc_listing_v3",
+    "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T06:15:00",
-    "fc_api_seen_at": "2026-11-20T17:45:00",
+    "fc_api_seen_at": "2026-11-20T18:15:00",
+    "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23347148",
     "fc_phantom": "2026-11-18T18:27:12",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-18T18:48:30",
     "fc_lst_seen": "2026-11-19T06:15:00"
   },
@@ -5566,6 +5573,7 @@
     "fc_gid": "23347148",
     "fc_phantom": "2026-10-31T15:14:46",
     "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-11T20:57:16",
     "fc_lst_seen": "2026-11-20T18:15:00"
   },
@@ -6068,7 +6076,7 @@
     "fc_listed_at": "2026-11-20T18:15:00",
     "fc_api_seen_at": "2026-11-20T18:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "23347148",
     "fc_cart": "n",
@@ -10364,8 +10372,8 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-20T12:51:10",
-    "fc_off": "2026-11-20T18:09:53",
-    "fc_cart": "y"
+    "fc_cart": "y",
+    "fc_svc": "1"
   },
   "fc_22912945": {
     "stock": "in_stock",
@@ -11388,6 +11396,7 @@
     "fc_gid": "21348",
     "fc_phantom": "2026-11-18T18:37:09",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-03T07:59:07",
     "fc_lst_seen": "2026-11-03T19:00:00"
   },
@@ -13566,7 +13575,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13661,7 +13670,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14855,8 +14864,8 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-19T22:29:08",
-    "fc_off": "2026-11-20T18:09:53",
     "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
     "fc_lst_seen": "2026-11-03T08:00:00"
   },
@@ -15335,7 +15344,7 @@
   "fc_24473477": {
     "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -15962,7 +15971,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16055,7 +16064,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -16079,7 +16088,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -20331,7 +20340,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-20T10:59:11",
-    "fc_off": "2026-11-20T18:09:53",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22072,7 +22080,7 @@
     "fc_listed_at": "2026-11-20T18:15:00",
     "fc_api_seen_at": "2026-11-20T18:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-19T13:02:58",
@@ -25728,7 +25736,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -27173,7 +27181,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-20T11:41:04",
-    "fc_off": "2026-11-20T18:09:53",
     "fc_cart": "y",
     "fc_svc": "1"
   },
