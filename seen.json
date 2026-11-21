@@ -11231,7 +11231,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -12692,7 +12692,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -14099,6 +14099,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "18313316",
+    "fc_off": "2026-11-21T10:25:39",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-11T20:57:16",
@@ -14486,7 +14487,7 @@
     "fc_cart": "n"
   },
   "fc_24473514": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '68 Mercury Comet Cyclone Die-Cast Toy Car -White",
     "price": "₹165",
     "source": "firstcry",
@@ -14500,7 +14501,7 @@
     "fc_listed_at": "2026-11-21T09:00:00",
     "fc_api_seen_at": "2026-11-21T10:15:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-21T10:22:23",
@@ -23348,7 +23349,7 @@
     "fc_listed_at": "2026-11-21T10:15:00",
     "fc_api_seen_at": "2026-11-21T10:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-21T07:09:49",
@@ -23923,6 +23924,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24831961",
+    "fc_off": "2026-11-21T10:25:39",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-11T20:57:16",
@@ -27515,7 +27517,7 @@
     "fc_lst_seen": "2026-11-21T10:15:00"
   },
   "kd_OdNZPdVpzk": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "MINI GT LAND ROVER DEFENDER 110 CREW CAB “SKYFALL” [Blister]",
     "price": "₹1499",
     "source": "karzdolls",
