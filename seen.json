@@ -3555,7 +3555,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -5543,7 +5543,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -10960,7 +10960,7 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -14165,7 +14165,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14788,7 +14788,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -15424,7 +15424,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -15888,7 +15888,7 @@
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-17T10:09:17",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-21T09:48:41",
     "fc_lst_seen": "2026-11-21T10:15:00",
     "last_ring": "2026-11-09T05:16:09"
@@ -23348,12 +23348,12 @@
     "fc_listed_at": "2026-11-21T10:15:00",
     "fc_api_seen_at": "2026-11-21T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-21T07:09:49",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-21T10:19:52",
     "fc_lst_seen": "2026-11-21T10:15:00"
   },
@@ -23923,7 +23923,6 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24831961",
-    "fc_off": "2026-11-21T10:24:03",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-11T20:57:16",
@@ -26897,7 +26896,7 @@
     "fc_listed_at": "2026-11-21T10:15:00",
     "fc_api_seen_at": "2026-11-21T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T16:58:04",
@@ -26927,7 +26926,7 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-21T03:45:59",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-20T13:14:38",
     "fc_lst_seen": "2026-11-20T14:15:00"
   },
