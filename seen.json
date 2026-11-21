@@ -3553,7 +3553,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -10355,7 +10355,8 @@
     "fc_gid": "21348",
     "fc_phantom": "2026-11-21T08:02:26",
     "fc_off": "2026-11-21T08:55:08",
-    "fc_cart": "y"
+    "fc_cart": "y",
+    "fc_svc": "1"
   },
   "fc_22912945": {
     "stock": "in_stock",
@@ -11226,7 +11227,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -11376,6 +11377,7 @@
     "fc_gid": "21348",
     "fc_phantom": "2026-11-21T02:09:04",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-03T07:59:07",
     "fc_lst_seen": "2026-11-03T19:00:00"
   },
@@ -14075,7 +14077,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14178,7 +14180,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-11-19T06:05:30.547949+00:00",
+    "mg_wm": "2026-11-21T08:59:08.977189+00:00",
     "fc_live_since": "2026-10-18T13:15:00",
     "ring_test": {
       "sig": "d531c554645b",
@@ -14781,7 +14783,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -14846,6 +14848,7 @@
     "fc_phantom": "2026-11-21T00:23:07",
     "fc_off": "2026-11-21T08:55:08",
     "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
     "fc_lst_seen": "2026-11-03T08:00:00"
   },
@@ -18168,7 +18171,7 @@
     "fc_listed_at": "2026-11-21T08:45:00",
     "fc_api_seen_at": "2026-11-21T08:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24390959",
     "fc_cart": "n",
@@ -23283,7 +23286,7 @@
     "fc_listed_at": "2026-11-21T08:45:00",
     "fc_api_seen_at": "2026-11-21T08:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-16T12:13:29",
@@ -23333,7 +23336,7 @@
     "fc_listed_at": "2026-11-21T08:45:00",
     "fc_api_seen_at": "2026-11-21T08:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-21T07:09:49",
@@ -23893,7 +23896,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -23962,7 +23965,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -27869,7 +27872,7 @@
     "fc_listed_at": "2026-11-19T13:45:00",
     "fc_api_seen_at": "2026-11-21T08:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0"
@@ -28170,5 +28173,19 @@
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": ""
+  },
+  "mg_849ac49a-8c4f-4929-96f0-1452f04af672": {
+    "stock": "in_stock",
+    "name": "MGT1052+MGT970 MiniGT Combo",
+    "price": "₹2899",
+    "source": "minifygram",
+    "url": "https://minifygram.com/product/mgt1052-mgt970-minigt-combo",
+    "first_seen": "2026-11-21T08:45:00",
+    "last_seen": "2026-11-21T08:45:00",
+    "alerted_new": true,
+    "last_restock_alert": "",
+    "last_price_alert": "",
+    "mg_updated_at": "2026-11-21T08:59:08.977189+00:00",
+    "stock_ver": "mg_skus_v1"
   }
 }
