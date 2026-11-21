@@ -11243,7 +11243,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -12701,7 +12701,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -14090,7 +14090,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -15415,8 +15415,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_listing_v3",
     "fc_listed_at": "2026-11-12T18:45:00",
-    "fc_api_seen_at": "2026-11-21T17:00:00",
-    "fc_live": "not in cart",
+    "fc_api_seen_at": "2026-11-21T17:15:00",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24476138",
     "fc_cart": "n",
@@ -15908,8 +15908,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_listing_v3",
     "fc_listed_at": "2026-11-21T16:00:00",
-    "fc_api_seen_at": "2026-11-21T17:00:00",
-    "fc_live": "not in cart",
+    "fc_api_seen_at": "2026-11-21T17:15:00",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-19T09:28:53",
@@ -25261,8 +25261,8 @@
     "fc_phantom": "2026-11-21T06:46:45",
     "fc_cart": "y",
     "fc_svc": "1",
-    "fc_lst_on": "2026-11-21T06:35:06",
-    "fc_lst_seen": "2026-11-21T07:15:00"
+    "fc_lst_on": "2026-11-21T17:25:01",
+    "fc_lst_seen": "2026-11-21T17:15:00"
   },
   "fc_22591626": {
     "stock": "out_of_stock",
