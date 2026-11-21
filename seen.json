@@ -115,7 +115,7 @@
     "fc_listed_at": "2026-09-24T08:45:00",
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_cart": "n",
@@ -10584,7 +10584,7 @@
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "22597417",
     "fc_phantom": "2026-10-24T17:20:27",
     "fc_cart": "y",
@@ -11235,7 +11235,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -11446,7 +11446,7 @@
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "22597417",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -13331,7 +13331,7 @@
     "last_price_alert": "2026-11-03T18:30:28",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-20T16:00:00",
-    "fc_api_seen_at": "2026-11-21T08:00:00",
+    "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
@@ -14092,7 +14092,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14338,14 +14338,14 @@
     "last_price_alert": "2026-11-04T19:03:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-21T08:00:00",
+    "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-20T10:11:12",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-19T17:38:41",
     "fc_lst_seen": "2026-11-20T04:00:00"
   },
@@ -14797,7 +14797,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -14878,7 +14878,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-17T06:15:00",
-    "fc_api_seen_at": "2026-11-21T08:00:00",
+    "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -14925,7 +14925,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-20T06:30:00",
-    "fc_api_seen_at": "2026-11-21T08:00:00",
+    "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -15607,7 +15607,7 @@
     "fc_listed_at": "2026-11-21T08:15:00",
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-02T16:29:36",
@@ -16059,8 +16059,8 @@
     "fc_listed_at": "2026-11-21T08:15:00",
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
-    "fc_lst": "list",
+    "fc_live": "sold out",
+    "fc_lst": "out",
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-18T13:38:21",
     "fc_cart": "n",
@@ -16694,7 +16694,7 @@
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "22597417",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -18252,7 +18252,7 @@
   "fc_24476798": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -Purple",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -19025,7 +19025,7 @@
     "last_price_alert": ""
   },
   "kd_xeLXnP6g1W": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER NISSAN SKYLINE GT-R C-WEST \"2 FAST 2 FURIOUS\" BRIAN O'CONNER BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1799",
     "source": "karzdolls",
@@ -19675,7 +19675,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "kd_QJgnwqwNl6": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN AMR24 #18 LANCE STROLL BLISTER PACKAGING 2024 F1 2024 LAS VEGAS GP [PRE-ORDER]",
     "price": "₹1949",
     "source": "karzdolls",
@@ -19687,7 +19687,7 @@
     "last_price_alert": ""
   },
   "kd_Pqp2mJnL36": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN AMR24 #18 LANCE STROLL 2024 F1 2024 LAS VEGAS GP [Box] [PRE-ORDER]",
     "price": "₹1799",
     "source": "karzdolls",
@@ -19699,7 +19699,7 @@
     "last_price_alert": ""
   },
   "kd_BwL6Pr9g4q": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN AMR24 #14 FERNANDO ALONSO BLISTER PACKAGING2024 F1 2024 LAS VEGAS GP [PRE-ORDER]",
     "price": "₹1949",
     "source": "karzdolls",
@@ -19711,7 +19711,7 @@
     "last_price_alert": ""
   },
   "kd_eKLwYOOgv0": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN AMR24 #14 FERNANDO ALONSO 2024 F1 2024 LAS VEGAS GP [Box] [PRE-ORDER]",
     "price": "₹1799",
     "source": "karzdolls",
@@ -19723,7 +19723,7 @@
     "last_price_alert": ""
   },
   "kd_VbpAQZYprM": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BUGATTI EB110 GT AZZURRO METALLIZZATO MONDIAL DE L'AUTOMOBILE 1992 BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -19735,7 +19735,7 @@
     "last_price_alert": ""
   },
   "kd_P7pRZOVpjm": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BUGATTI EB110 GT AZZURRO METALLIZZATO MONDIAL DE L'AUTOMOBILE 1992 [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -19747,7 +19747,7 @@
     "last_price_alert": ""
   },
   "kd_KbNE7eKpR0": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI TEMERARIO VIOLA PASIFAE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -19759,7 +19759,7 @@
     "last_price_alert": ""
   },
   "kd_6nNVKe8LYk": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI TEMERARIO VIOLA PASIFAE [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -19771,7 +19771,7 @@
     "last_price_alert": ""
   },
   "kd_10gzY7kpAV": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LOTUS 78 #5 MARIO ANDRETTI 1977 US GP WEST WINNER BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -19783,7 +19783,7 @@
     "last_price_alert": ""
   },
   "kd_y7gGGX8gre": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LOTUS 78 #5 MARIO ANDRETTI 1977 US GP WEST WINNER [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -19795,7 +19795,7 @@
     "last_price_alert": ""
   },
   "kd_RWg8Z9BLKe": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER SCANIA 770S B8X4NA HOOKLIFT FLATBED ORANGE [Box] [PRE-ORDER]",
     "price": "₹8899",
     "source": "karzdolls",
@@ -19807,7 +19807,7 @@
     "last_price_alert": ""
   },
   "kd_e7g5We2Lmv": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER TOYOTA VELLFIRE 40 KUHL METALLIC PINK BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -19819,7 +19819,7 @@
     "last_price_alert": ""
   },
   "kd_GwLx0xRLXY": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER TOYOTA VELLFIRE 40 KUHL METALLIC PINK [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -19845,7 +19845,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "kd_4lgOmX0LoQ": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER HYUNDAI CASPER BUTTER CREAM YELLOW PEARL [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -19857,7 +19857,7 @@
     "last_price_alert": ""
   },
   "kd_aPgd8RbgJq": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER HYUNDAI STARIA TAXI [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -19869,7 +19869,7 @@
     "last_price_alert": ""
   },
   "kd_m8pDDqMpv2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER HYUNDAI IONIQ 5 POLICE CAR [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -20421,7 +20421,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "kd_ykL0eJMpRZ": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER HONDA NSX KAIDO HOUSE NOSTALGIC CLASSICS [PRE-ORDER]",
     "price": "₹2099",
     "source": "karzdolls",
@@ -20433,7 +20433,7 @@
     "last_price_alert": ""
   },
   "kd_XqLQjyapvD": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER DATSUN KAIDO 510 WAGON POLICE [PRE-ORDER]",
     "price": "₹2099",
     "source": "karzdolls",
@@ -20445,7 +20445,7 @@
     "last_price_alert": ""
   },
   "kd_rMNMeMkN95": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER CHEVROLET SILVERADO DUALLY KAIDO RACING TEAM V1 [PRE-ORDER]",
     "price": "₹2099",
     "source": "karzdolls",
@@ -20457,7 +20457,7 @@
     "last_price_alert": ""
   },
   "kd_Mbgabz0Nq8": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER SUBARU IMPREZA WRX STI KAIDO WORKS V1 [PRE-ORDER]",
     "price": "₹2099",
     "source": "karzdolls",
@@ -20979,7 +20979,7 @@
     "fc_cart": "n"
   },
   "kd_6nNVKb8LYk": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER MERCEDES-AMG EQS 53 BLUE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -20991,7 +20991,7 @@
     "last_price_alert": ""
   },
   "kd_10gzYokpAV": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER MERCEDES-AMG EQS 53 BLUE [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -21003,7 +21003,7 @@
     "last_price_alert": ""
   },
   "kd_y7gGG78gre": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER TOYOTA 2000GT PEGASUS WHITE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -21015,7 +21015,7 @@
     "last_price_alert": ""
   },
   "kd_RWg8ZJBLKe": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER TOYOTA 2000GT PEGASUS WHITE [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -21027,7 +21027,7 @@
     "last_price_alert": ""
   },
   "kd_e7g5Wb2Lmv": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI COUNTACH LB-WORKS ARMY GREEN BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -21039,7 +21039,7 @@
     "last_price_alert": ""
   },
   "kd_GwLx0rRLXY": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI COUNTACH LB-WORKS ARMY GREEN [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -21051,7 +21051,7 @@
     "last_price_alert": ""
   },
   "kd_E5N414ZLMq": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BMW Z3 TITANIUM SILVER BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -21063,7 +21063,7 @@
     "last_price_alert": ""
   },
   "kd_8JNqydbN4Q": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BMW Z3 TITANIUM SILVER [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -21075,7 +21075,7 @@
     "last_price_alert": ""
   },
   "kd_zONvjmbNBK": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER DUCATI PANIGALE V4 S GIALLO W/ FIGURE [Box] [PRE-ORDER]",
     "price": "₹1699",
     "source": "karzdolls",
@@ -21087,7 +21087,7 @@
     "last_price_alert": ""
   },
   "kd_GvLPeZxpod": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 GT3 RS STAPLE X INOZETEK BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -21099,7 +21099,7 @@
     "last_price_alert": ""
   },
   "kd_GoL194ALBA": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 GT3 RS STAPLE X INOZETEK [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -21111,7 +21111,7 @@
     "last_price_alert": ""
   },
   "kd_EzglwWvpMr": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LB-SILHOUETTE WORKS GT NISSAN 35GT-RR VER.2 INOZETEK EDITION BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -21123,7 +21123,7 @@
     "last_price_alert": ""
   },
   "kd_OyLoyW3gb2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LB-SILHOUETTE WORKS GT NISSAN 35GT-RR VER.2 INOZETEK EDITION [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -22122,7 +22122,7 @@
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-11T03:12:52",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-17T07:32:22",
     "fc_lst_seen": "2026-11-17T08:00:00"
   },
@@ -22476,10 +22476,9 @@
     "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-16T12:23:08",
-    "fc_off": "2026-11-21T08:21:46",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-16T12:46:54",
@@ -22819,7 +22818,7 @@
     "fc_svc": "0"
   },
   "kd_BwL6P9xg4q": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAND ROVER DEFENDER 110 ROYAL HK POLICE TAI PO DISTRICT HK EXCLUSIVE [Blister] [PRE-ORDER]",
     "price": "₹1699",
     "source": "karzdolls",
@@ -22862,8 +22861,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-11-21T08:00:00",
-    "fc_api_seen_at": "2026-11-21T08:00:00",
+    "fc_listed_at": "2026-11-21T08:15:00",
+    "fc_api_seen_at": "2026-11-21T08:15:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "out",
@@ -23408,7 +23407,7 @@
     "fc_phantom": "2026-10-28T11:36:37"
   },
   "kd_GXpKRADLmx": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 GT3 R (992) #77 AO RACING \"SKELETON REXY\" 2026 IMSA PETIT LE MANS [Box] [PRE-ORDER]",
     "price": "₹1799",
     "source": "karzdolls",
@@ -23420,7 +23419,7 @@
     "last_price_alert": ""
   },
   "kd_x7LeG8qgY0": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 GT3 R (992) #77 AO RACING \"SKELETON REXY\" 2026 IMSA PETIT LE MANS BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1949",
     "source": "karzdolls",
@@ -23631,7 +23630,7 @@
     "last_ring": "2026-11-16T10:30:55"
   },
   "kd_OyLoydwgb2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER NISSAN GT-R (R35) LB*WORKS TYPE 1, REAR WING VER 2 VELOCITY BLUE [Box] [PRE-ORDER]",
     "price": "₹899",
     "source": "karzdolls",
@@ -23643,7 +23642,7 @@
     "last_price_alert": ""
   },
   "kd_Ezglw2rpMr": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER TOYOTA TRD 3000GT SILVER [Box] [PRE-ORDER]",
     "price": "₹899",
     "source": "karzdolls",
@@ -23655,7 +23654,7 @@
     "last_price_alert": ""
   },
   "kd_GoL19J2LBA": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 CARRERA RS 2.7 WHITE/BLUE [Box] [PRE-ORDER]",
     "price": "₹899",
     "source": "karzdolls",
@@ -23667,7 +23666,7 @@
     "last_price_alert": ""
   },
   "kd_GvLPejBpod": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 GT3 RS ACID GREEN [Box] [PRE-ORDER]",
     "price": "₹899",
     "source": "karzdolls",
@@ -23679,7 +23678,7 @@
     "last_price_alert": ""
   },
   "kd_zONvjZmNBK": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI COUNTACH 500S BLACK [Box] [PRE-ORDER]",
     "price": "₹899",
     "source": "karzdolls",
@@ -23691,7 +23690,7 @@
     "last_price_alert": ""
   },
   "kd_8JNqyOrN4Q": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER NISSAN SKYLINE GT-R (BNR32 GR.A SPEC) 1991 BATHURST 1000 WINNER [Box] [PRE-ORDER]",
     "price": "₹899",
     "source": "karzdolls",
@@ -23727,7 +23726,7 @@
     "last_price_alert": ""
   },
   "kd_Pqp2mnlL36": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER PORSCHE 911 GT3 R (992) #9 BINGO RACING WITH LM CORSA 2026 JAPAN CUP SUGO RACE 2 WINNER BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1849",
     "source": "karzdolls",
@@ -23739,7 +23738,7 @@
     "last_price_alert": ""
   },
   "kd_e7g5W8DLmv": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN VALKYRIE ESCAPING WHITE [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -23751,7 +23750,7 @@
     "last_price_alert": ""
   },
   "kd_RWg8ZVQLKe": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN VALKYRIE ESCAPING WHITE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -23763,7 +23762,7 @@
     "last_price_alert": ""
   },
   "kd_y7gGG9kgre": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER CHEVROLET CORVETTE ZR1 TORCH RED [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -23775,7 +23774,7 @@
     "last_price_alert": ""
   },
   "kd_10gzYmepAV": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER CHEVROLET CORVETTE ZR1 TORCH RED BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -23799,7 +23798,7 @@
     "last_price_alert": ""
   },
   "kd_KbNE7YqpR0": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER MAZDA MX-5 (NA) PANDEM CLASSIC RED BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -23811,7 +23810,7 @@
     "last_price_alert": ""
   },
   "kd_P7pRZJkpjm": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER HONDA PRELUDE MOONLIT WHITE PEARL [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -23823,7 +23822,7 @@
     "last_price_alert": ""
   },
   "kd_VbpAQljprM": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER HONDA PRELUDE MOONLIT WHITE PEARL BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -23835,7 +23834,7 @@
     "last_price_alert": ""
   },
   "kd_eKLwYrMgv0": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LB*WORKS LAMBORGHINI HURACÁN GT RUBY PURPLE [Box] [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -23847,7 +23846,7 @@
     "last_price_alert": ""
   },
   "kd_BwL6PGxg4q": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LB*WORKS LAMBORGHINI HURACÁN GT RUBY PURPLE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1549",
     "source": "karzdolls",
@@ -24707,7 +24706,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "kd_QJgnw28Nl6": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER INOZETEK X LIBERTY WALK R32 SET 2026 SHOW EDITION [Box] [PRE-ORDER]",
     "price": "₹4499",
     "source": "karzdolls",
@@ -24719,7 +24718,7 @@
     "last_price_alert": ""
   },
   "kd_m8pDDlzpv2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER INOZETEK X TBC SET 2026 SHOW EDITION [Box] [PRE-ORDER]",
     "price": "₹4499",
     "source": "karzdolls",
@@ -25489,7 +25488,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "kd_E5N41PlLMq": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI HURACAN GT3 EVO2 #78 FORTE RACING 2025 IMSA DAYTONA 24 HRS BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1849",
     "source": "karzdolls",
@@ -25501,7 +25500,7 @@
     "last_price_alert": ""
   },
   "kd_GwLx0MnLXY": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BMW M5 (G90) BORUSAN TURKISH BLUE [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -25513,7 +25512,7 @@
     "last_price_alert": ""
   },
   "kd_e7g5WDALmv": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BMW M5 (G90) BORUSAN TURKISH BLUE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -25525,7 +25524,7 @@
     "last_price_alert": ""
   },
   "kd_V2gJEKvpe4": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BMW M4 GT3 EVO #33 610 RACING 2026 CHINA GT SHANGHA [Box] [PRE-ORDER]",
     "price": "₹1799",
     "source": "karzdolls",
@@ -25537,7 +25536,7 @@
     "last_price_alert": ""
   },
   "kd_OyLoy0xgb2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER BMW M4 GT3 EVO #33 610 RACING 2026 CHINA GT SHANGHA BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1949",
     "source": "karzdolls",
@@ -25549,7 +25548,7 @@
     "last_price_alert": ""
   },
   "kd_EzglwOZpMr": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN VALKYRIE COBALT BLUE [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -25561,7 +25560,7 @@
     "last_price_alert": ""
   },
   "kd_GoL19b6LBA": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER ASTON MARTIN VALKYRIE COBALT BLUE BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -25573,7 +25572,7 @@
     "last_price_alert": ""
   },
   "kd_GvLPenXpod": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER JAGUAR C-X75 SATIN GREY [Box] [PRE-ORDER]",
     "price": "₹1249",
     "source": "karzdolls",
@@ -25585,7 +25584,7 @@
     "last_price_alert": ""
   },
   "kd_zONvjWaNBK": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER JAGUAR C-X75 SATIN GREY BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1399",
     "source": "karzdolls",
@@ -25597,7 +25596,7 @@
     "last_price_alert": ""
   },
   "kd_8JNqy9BN4Q": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER LAMBORGHINI HURACAN GT3 EVO2 #78 FORTE RACING 2025 IMSA DAYTONA 24 HRS [Box] [PRE-ORDER]",
     "price": "₹1699",
     "source": "karzdolls",
@@ -27024,7 +27023,7 @@
     "last_ring": "2026-11-20T04:46:59"
   },
   "kd_RWg8ZDyLKe": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER AMC HORNET X HATCHBACK “THE MAN WITH THE GOLDEN GUN” ENGLISH BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1599",
     "source": "karzdolls",
@@ -27036,7 +27035,7 @@
     "last_price_alert": ""
   },
   "kd_y7gGGqbgre": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "PREORDER TUK-TUK \"OCTOPUSSY\" ENGLISH BLISTER PACKAGING [PRE-ORDER]",
     "price": "₹1499",
     "source": "karzdolls",
