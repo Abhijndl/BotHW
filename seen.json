@@ -3553,7 +3553,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -4101,7 +4101,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -5543,7 +5543,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -10359,7 +10359,9 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-20T19:25:03",
-    "fc_cart": "y"
+    "fc_off": "2026-11-21T00:38:55",
+    "fc_cart": "y",
+    "fc_svc": "1"
   },
   "fc_22912945": {
     "stock": "in_stock",
@@ -11381,6 +11383,7 @@
     "fc_gid": "21348",
     "fc_phantom": "2026-11-18T18:37:09",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-03T07:59:07",
     "fc_lst_seen": "2026-11-03T19:00:00"
   },
@@ -12504,7 +12507,7 @@
     "fc_listed_at": "2026-11-20T18:00:00",
     "fc_api_seen_at": "2026-11-21T00:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-20T10:10:14",
@@ -14083,7 +14086,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14849,7 +14852,9 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-21T00:23:07",
+    "fc_off": "2026-11-21T00:38:55",
     "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
     "fc_lst_seen": "2026-11-03T08:00:00"
   },
@@ -20327,6 +20332,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-21T00:23:07",
+    "fc_off": "2026-11-21T00:38:55",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -23282,7 +23288,7 @@
     "fc_listed_at": "2026-11-21T00:30:00",
     "fc_api_seen_at": "2026-11-21T00:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-16T12:13:29",
@@ -24981,7 +24987,7 @@
     "fc_listed_at": "2026-11-21T00:30:00",
     "fc_api_seen_at": "2026-11-21T00:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22592486",
     "fc_phantom": "2026-11-20T05:57:53",
@@ -25263,8 +25269,8 @@
     "stock_ver": "fc_listing_v3",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T05:45:00",
-    "fc_api_seen_at": "2026-11-20T23:45:00",
-    "fc_live": "not in cart",
+    "fc_api_seen_at": "2026-11-21T00:30:00",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "22591626",
     "fc_phantom": "2026-11-16T11:44:17",
@@ -25723,7 +25729,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
