@@ -1,84 +1,82 @@
 #!/usr/bin/env python3
-"""Probe #77: how fast FirstCry lets one request follow another, and whether
-Shopify's /products.json lists the most recently changed products first."""
-import json, sys, threading, time, urllib.request
+"""Probe #78: how fast Whiff Culture's partials list can be read from GitHub."""
+import gzip, json, time, urllib.error, urllib.request
 
 T0 = time.time()
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
+W = "https://www.whiffculture.com"
 
 
 def log(*a):
     print(f"[{time.time() - T0:6.1f}s]", *a, flush=True)
 
 
-src = urllib.request.urlopen("https://raw.githubusercontent.com/Abhijndl/BotHW/main/bot.py", timeout=30).read()
-open("bot_main.py", "wb").write(src)
-sys.path.insert(0, ".")
-import bot_main as B  # noqa: E402
-from curl_cffi import requests as http  # noqa: E402
-
-IMP = {"impersonate": "chrome124"}
-
-
-def shops():
-    for dom in ("zoomsters.in", "toycollectorsindia.com", "kinderlogs.in", "thepeppystore.in", "torquetribe.in",
-                "rywheelz.com"):
-        try:
-            seq = []
-            for page in (1, 2):
-                r = http.get(f"https://{dom}/products.json?limit=250&page={page}", headers=B.COMMON_HEADERS,
-                             timeout=20, **IMP)
-                ps = (r.json() or {}).get("products") or [] if r.status_code == 200 else []
-                seq += [(p.get("updated_at") or "")[:19] for p in ps]
-                time.sleep(0.5)
-            desc = all(a >= b for a, b in zip(seq, seq[1:]))
-            log(f"[SHOP] {dom}: {len(seq)} on pages 1-2; updated_at descending: {desc}; first: {seq[:4]}; "
-                f"page-2 start: {seq[250:252]}")
-            r = http.get(f"https://{dom}/collections.json?limit=250", headers=B.COMMON_HEADERS, timeout=20, **IMP)
-            cols = (r.json() or {}).get("collections") or [] if r.status_code == 200 else []
-            log(f"[SHOP] {dom}: collections.json {r.status_code}, {len(cols)}:",
-                [(c.get("handle"), c.get("products_count")) for c in cols
-                 if any(w in (c.get("handle") or "") for w in ("hot", "wheel", "mini", "gt", "majorette", "matchbox",
-                                                              "kaido", "diecast", "die-cast", "premium", "new"))][:12])
-        except Exception as e:
-            log(f"[SHOP] {dom}: {type(e).__name__} {e}")
-
-
-bg = threading.Thread(target=shops, daemon=True)
-bg.start()
-
-HDR = {**B.COMMON_HEADERS, **B._FC_NOCACHE, "Accept": "application/json, text/javascript, */*; q=0.01",
-       "Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
-       "Referer": B._FC_API_REFERER}
-
-
-def one(i):
-    q = B._fc_api_query(1 + i % 9, 20, {"OutOfStock": "1", "searchrank": str(int(time.time() * 1000))})
+def get(url):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json",
+                                               "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"})
     t1 = time.time()
     try:
-        r = http.get(B._fc_bust(q), headers=HDR, timeout=15, **IMP)
-        return r.status_code, time.time() - t1
-    except Exception as e:
-        return type(e).__name__, time.time() - t1
+        with urllib.request.urlopen(req, timeout=15) as r:
+            code, data, enc, hd = r.status, r.read(), r.headers.get("Content-Encoding", ""), dict(r.headers)
+    except urllib.error.HTTPError as e:
+        return e.code, "", 0, time.time() - t1, dict(e.headers or {})
+    raw = len(data)
+    if "gzip" in enc.lower():
+        data = gzip.decompress(data)
+    return code, data.decode("utf-8", "replace"), raw, time.time() - t1, hd
 
 
-for label, gap, n in (("back to back", 0.0, 60), ("0.3 s apart", 0.3, 60), ("0.6 s apart", 0.6, 40)):
-    codes, lat, t1 = [], [], time.time()
-    for i in range(n):
-        st, dt = one(i)
-        codes.append(st)
+# the collection itself: is there a cheap "something changed" signal?
+for i in range(3):
+    code, body, raw, dt, hd = get(f"{W}/collections/partial-sale.json?_={int(time.time() * 1000)}")
+    try:
+        c = json.loads(body).get("collection") or {}
+    except Exception:
+        c = {}
+    log(f"[COLL] {code} {raw} B {dt:.2f}s products_count={c.get('products_count')} updated_at={c.get('updated_at')} "
+        f"sort={c.get('sort_order')} keys={sorted(c.keys())[:14]} cache={hd.get('Cache-Control') or hd.get('cache-control')} "
+        f"age={hd.get('Age') or hd.get('age')} cf={hd.get('CF-Cache-Status') or hd.get('cf-cache-status')}")
+    time.sleep(1)
+
+code, body, raw, dt, hd = get(f"{W}/collections/partial-sale/products.json?limit=250&_={int(time.time() * 1000)}")
+ps = json.loads(body).get("products") or []
+log(f"[LIST] {code} {len(ps)} products, {raw} B gzipped / {len(body)} B, {dt:.2f}s; "
+    f"first created: {[p.get('created_at', '')[:16] for p in ps[:5]]}; published: {[p.get('published_at', '')[:16] for p in ps[:3]]}")
+newest = sorted(ps, key=lambda p: p.get("created_at") or "", reverse=True)[:5]
+log("[LIST] newest 5:", [(p.get("created_at", "")[:16], p.get("title", "")[:40]) for p in newest])
+log("[LIST] positions of the newest 5 in the list:", [ps.index(p) for p in newest])
+for q in ("sort_by=created-descending", "sort_by=updated-descending"):
+    code, body, raw, dt, hd = get(f"{W}/collections/partial-sale/products.json?limit=10&{q}&_={int(time.time() * 1000)}")
+    try:
+        p2 = json.loads(body).get("products") or []
+    except Exception:
+        p2 = []
+    log(f"[SORT] {q}: {code}, first created: {[p.get('created_at', '')[:16] for p in p2[:5]]}")
+code, body, raw, dt, hd = get(f"{W}/collections/partial-sale/products.json?limit=5&_={int(time.time() * 1000)}")
+log(f"[SMALL] limit=5: {code} {raw} B {dt:.2f}s")
+code, body, raw, dt, hd = get(f"{W}/collections.json?limit=250")
+try:
+    cols = json.loads(body).get("collections") or []
+except Exception:
+    cols = []
+log("[COLLS]", [(c.get("handle"), c.get("products_count"), (c.get("updated_at") or "")[:16]) for c in cols
+                if any(w in (c.get("handle") or "") for w in ("partial", "decant", "new", "flash", "tester", "sale"))])
+
+# pace: the whole partials list every 3 s for 3 minutes, then every 1.5 s for a minute
+for gap, secs in ((3.0, 180), (1.5, 60)):
+    codes, lat, sizes, t1 = [], [], [], time.time()
+    while time.time() - t1 < secs:
+        t2 = time.time()
+        code, body, raw, dt, hd = get(f"{W}/collections/partial-sale/products.json?limit=250&_={int(time.time() * 1000)}")
+        codes.append(code)
         lat.append(dt)
-        if st != 200:
-            break
-        time.sleep(gap)
-    rate = len(codes) / (time.time() - t1)
-    log(f"[FC] {label}: {len(codes)} requests, {sum(1 for c in codes if c == 200)} ok, {rate:.2f}/s, "
-        f"median latency {sorted(lat)[len(lat) // 2]:.2f}s, last {codes[-1]}")
-    if codes[-1] != 200:
-        for k in range(8):
+        sizes.append(raw)
+        if code != 200:
+            log(f"[PACE {gap}s] request {len(codes)} → {code}; retry-after={hd.get('Retry-After') or hd.get('retry-after')}")
             time.sleep(15)
-            st, _ = one(0)
-            log(f"[FC]   +{15 * (k + 1)} s → {st}")
-            if st == 200:
-                break
-bg.join(timeout=60)
+        time.sleep(max(0, gap - (time.time() - t2)))
+    lat.sort()
+    log(f"[PACE {gap}s] {len(codes)} reads, {sum(1 for c in codes if c == 200)} ok, latency median {lat[len(lat) // 2]:.2f}s "
+        f"p90 {lat[int(len(lat) * 0.9)]:.2f}s, {sum(sizes) / max(1, len(sizes)) / 1024:.0f} KB each (gzipped)")
 log("done")
