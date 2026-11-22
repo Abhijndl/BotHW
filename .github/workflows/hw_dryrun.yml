@@ -102,17 +102,7 @@ jobs:
         run: |
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
-          python3 - <<'PY'
-import json
-a = json.load(open("dry/seen.json"))
-m = a.get("_meta", {})
-out = {"meta_keys": sorted(m.keys()), "shop_at": m.get("shop_at"), "health": m.get("health"),
-       "fc_fresh2": m.get("fc_fresh2"), "sources": {}}
-for k, v in a.items():
-    if isinstance(v, dict) and v.get("source"):
-        out["sources"][v["source"]] = out["sources"].get(v["source"], 0) + 1
-json.dump(out, open("hw_dryrun_report.json", "w"), indent=1)
-PY
+          python3 hw_dryrun_report.py
           git add -f hw_dryrun_log.txt hw_dryrun_report.json || true
           git commit -q -m "v18 dry run report [skip ci]" || exit 0
           git push -q origin HEAD:claude/probe
