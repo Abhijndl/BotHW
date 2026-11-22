@@ -6340,7 +6340,7 @@
     "fc_listed_at": "2026-11-17T06:15:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24248198",
     "fc_cart": "n",
@@ -10348,7 +10348,7 @@
     "stock_ver": "fc_listing_v3"
   },
   "fc_23930405": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Safari Mode Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -10362,11 +10362,10 @@
     "fc_listed_at": "2026-10-05T18:30:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T01:58:37",
-    "fc_off": "2026-11-22T08:26:37",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11548,7 +11547,7 @@
     "fc_listed_at": "2026-11-18T09:30:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24248198",
     "fc_phantom": "2026-11-15T03:44:48",
@@ -12510,7 +12509,7 @@
     "fc_listed_at": "2026-11-22T08:30:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T06:32:08",
@@ -14087,7 +14086,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14246,7 +14245,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14711,7 +14710,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -14837,7 +14836,7 @@
     "fc_lst_seen": "2026-11-10T07:30:00"
   },
   "fc_23930428": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Street Beasts Die Cast Free Wheel Toy Car With Smooth Rolling Wheel Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -14851,11 +14850,10 @@
     "fc_listed_at": "2026-11-21T05:00:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T01:58:37",
-    "fc_off": "2026-11-22T08:26:37",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15451,7 +15449,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15474,7 +15472,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -15967,7 +15965,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16198,7 +16196,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -20339,7 +20337,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T08:21:21",
-    "fc_off": "2026-11-22T08:26:37",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -21506,7 +21503,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -23908,7 +23905,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -23977,7 +23974,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24000,7 +23997,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24998,7 +24995,7 @@
     "fc_listed_at": "2026-11-22T08:30:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "22592486",
     "fc_phantom": "2026-11-20T05:57:53",
@@ -25282,7 +25279,7 @@
     "fc_listed_at": "2026-11-21T08:15:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22591626",
     "fc_phantom": "2026-11-21T07:37:10",
@@ -27164,7 +27161,7 @@
     "fc_lst_seen": "2026-11-14T07:45:00"
   },
   "fc_23033008": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Batman Free Wheel Model with Smooth Rolling Wheels Diecast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -27178,11 +27175,10 @@
     "fc_listed_at": "2026-11-19T13:45:00",
     "fc_api_seen_at": "2026-11-22T08:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "unlisted",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-21T20:22:50",
-    "fc_off": "2026-11-22T08:26:37",
     "fc_cart": "y",
     "fc_svc": "1"
   },
