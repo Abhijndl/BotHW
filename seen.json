@@ -3572,7 +3572,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -5607,7 +5607,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -13928,7 +13928,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14338,16 +14337,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795372464
+        "ok": 1795372577
       },
       "fc_www": {
-        "ok": 1795372530
+        "ok": 1795372638
       },
       "fc_cart": {
-        "ok": 1795372525
+        "ok": 1795372637
       },
       "kd": {
-        "ok": 1795372525
+        "ok": 1795372637
       }
     }
   },
@@ -14949,7 +14948,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -18519,21 +18518,21 @@
     "fc_gone": "2026-11-22T15:51:07"
   },
   "fc_24476798": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-11-22T18:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-22T09:44:44",
+    "last_restock_alert": "2026-11-22T18:37:18",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T18:30:00",
     "fc_api_seen_at": "2026-11-22T18:30:00",
     "fc_trusted": true,
-    "fc_live": "page 0",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-21T18:07:29",
@@ -18541,7 +18540,9 @@
     "fc_svc": "1",
     "fc_lst_on": "2026-11-22T18:34:08",
     "fc_lst_seen": "2026-11-22T18:30:00",
-    "fc_gone": "2026-11-22T16:01:46"
+    "alert_log": [
+      "2026-11-22T18:37:18"
+    ]
   },
   "fc_24473498": {
     "stock": "out_of_stock",
@@ -21979,6 +21980,7 @@
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-20T11:00:03",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-20T13:47:08",
     "fc_lst_seen": "2026-11-20T14:15:00",
     "last_ring": "2026-11-20T09:52:04",
@@ -22440,7 +22442,7 @@
     "fc_live": "page 0",
     "fc_lst": "list",
     "fc_gid": "24775936",
-    "fc_phantom": "2026-11-22T18:35:01",
+    "fc_phantom": "2026-11-22T18:36:53",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-22T18:34:08",
@@ -22672,7 +22674,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22695,7 +22697,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -24261,7 +24263,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24284,7 +24286,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24307,7 +24309,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24330,7 +24332,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24353,7 +24355,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
