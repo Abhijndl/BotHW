@@ -30,67 +30,62 @@
   [KD] majorette → 0 (empty right now)
 [*] Karz&Dolls total: 345 (345 in stock)
 [=] Karz&Dolls: no alert-worthy changes (0 minor)
-  [FC-CART] 225 car(s) asked (2 pointed at, 223 in turn) in 6.5s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+  [SHOP] Zoomsters: 829 tracked (393 in stock) of 2154 products
+  [FC-CART] 224 car(s) asked (7 pointed at, 217 in turn) in 8.3s: 58 buyable for 248001; 4 now in, 0 now out, 2 in the cart but not on sale on their page, 1 waiting for their page
 [=] FC cart: no alert-worthy changes (0 minor)
-  [SHOP] Zoomsters: 1668 diecast (944 in stock) of 2154 products
-  [FC-API] quick sweep: 164 in stock from 9 page(s) in 13.2s — fresh ✓ (searchrank, 9 page(s) computed live)
-  [FC-API] brand 1335 in-stock list: 124 (124 in stock) in 6.1s
-  [SHOP] Toy Collectors India: 1679 diecast (478 in stock) of 3000 products
-  [FC-CART] 225 car(s) asked (2 pointed at, 223 in turn) in 1.5s: 55 buyable for 248001; 0 now in, 0 now out, 1 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [FC-LIVE] 2 to confirm, 0 🎯 set(s) read, 0 audited → 18 car(s) seen live in 4.7s; 0 now orderable, 0 not any more
+  [FC-API] quick sweep: 164 in stock from 9 page(s) in 15.2s — fresh ✓ (searchrank, 9 page(s) computed live)
+  [SHOP] Toy Collectors India: 1080 tracked (319 in stock) of 3000 products
+  [FC-API] brand 1335 in-stock list: 124 (124 in stock) in 6.8s
+  [FC-API] stock for pincode: 248001
+  [SHOP] TorqueTribe: 373 tracked (87 in stock) of 1298 products
+  [FC-API] 277 products across 14 page(s) (113 with zero stock) in 16.9s
+  [FC-API] data: fresh ✓ (searchrank, 21 page(s) computed live)
+  [FC-API] subcategories: {'Toy Cars, Trains & Vehicles': 274, 'Sports & Games': 3}
+  [SHOP] The Peppy Store: 379 tracked (222 in stock) of 2928 products
+  [FC-API] brand 1335 whole list: 162 (124 in stock) in 7.8s
+  [FC-API] sample: Majorette Lamborghini Huracan Rescue World Premi | stock=out_of_stock count=0 price=399 mrp=None
+  [SHOP] RyWheelz: 316 tracked (39 in stock) of 457 products
+  [FC-CART] 224 car(s) asked (7 pointed at, 217 in turn) in 2.3s: 58 buyable for 248001; 4 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+  [FC-LIVE] 2 to confirm, 0 🎯 set(s) read, 0 audited → 12 car(s) seen live in 3.5s; 0 now orderable, 0 not any more
+[*] FirstCry total (API): 668 tracked, 123 buyable now (in-stock list complete), 0 aged to delisted
 [=] FirstCry: no alert-worthy changes (0 minor)
-[*] pass 1: FirstCry, Minifygram, Karz&Dolls → 730 products in 24.1s (live: FC cart, FirstCry, Karz&Dolls, Minifygram)
-[=] New source 'shop_zoomsters': baseline 1063 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Zoomsters — tracking 1063 products (685 in stock). Alerts start from the next change.
-[=] New source 'shop_toycollectorsind': baseline 1285 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Toy Collectors India — tracking 1285 products (405 in stock). Alerts start from the next change.
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.5s
-  [SHOP] TorqueTribe: 616 diecast (116 in stock) of 1298 products
+[*] pass 1 (+ full FirstCry catalogue): FirstCry, Minifygram, Karz&Dolls → 1278 products in 50.5s (live: FC cart, FirstCry, Karz&Dolls, Minifygram)
+[=] New source 'shop_zoomsters': baseline 536 items absorbed silently.
+[TG] (no creds) 🏪 <b>Now also watching 11 more stores:</b> Zoomsters, TorqueTribe, Toy Collectors India, RyWheelz, Kinder Logs, The Peppy Store, 303 Diecast, Toy Marche, Funcorp, Toycra, Hobby Shoppy. Your 🎯 cars the
+[=] New source 'shop_toycollectorsind': baseline 887 items absorbed silently.
+[=] New source 'shop_torquetribe': baseline 298 items absorbed silently.
+[=] New source 'shop_thepeppystore': baseline 300 items absorbed silently.
+[=] New source 'shop_rywheelz': baseline 254 items absorbed silently.
   [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.1s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 2: FirstCry, KND fast → 275 products in 1.9s (live: KND fast)
-[=] New source 'shop_torquetribe': baseline 470 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪TorqueTribe — tracking 470 products (89 in stock). Alerts start from the next change.
+  [KD-fast] 5 shelves → 275 (275 in stock) in 1.5s
+  [FC-API] quick sweep: 164 in stock from 9 page(s) in 6.7s — fresh ✓ (searchrank, 9 page(s) computed live)
+  [SHOP] Kinder Logs: 1320 tracked (442 in stock) of 3000 products
+  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+  [FC-LIVE] 2 to confirm, 0 🎯 set(s) read, 0 audited → 12 car(s) seen live in 1.8s; 0 now orderable, 0 not any more
+[*] pass 2: FirstCry, KND fast → 397 products in 8.7s (live: FirstCry, KND fast)
+[=] New source 'shop_kinderlogs': baseline 1091 items absorbed silently.
   [KD-fast] 5 shelves → 275 (275 in stock) in 1.4s
-  [FC-CART] 224 car(s) asked (3 pointed at, 221 in turn) in 1.6s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 3: FirstCry, KND fast → 275 products in 2.0s (live: KND fast)
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.3s
-  [SHOP] The Peppy Store: 626 diecast (381 in stock) of 2928 products
-  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 4: FirstCry, KND fast → 275 products in 1.9s (live: KND fast)
-  [SHOP] RyWheelz: 436 diecast (62 in stock) of 457 products
-[=] New source 'shop_thepeppystore': baseline 461 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪The Peppy Store — tracking 461 products (274 in stock). Alerts start from the next change.
-[=] New source 'shop_rywheelz': baseline 361 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪RyWheelz — tracking 361 products (49 in stock). Alerts start from the next change.
-  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.6s
-  [FC-API] quick sweep: 164 in stock from 9 page(s) in 7.4s — fresh ✓ (searchrank, 9 page(s) computed live)
-  [SHOP] Kinder Logs: 2715 diecast (737 in stock) of 3000 products
+  [SHOP] 303 Diecast: 97 tracked (61 in stock) of 764 products
   [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [FC-LIVE] 2 to confirm, 0 🎯 set(s) read, 0 audited → 12 car(s) seen live in 5.5s; 0 now orderable, 0 not any more
-[*] pass 5: FirstCry, KND fast → 396 products in 13.0s (live: FirstCry, KND fast)
-[=] New source 'shop_kinderlogs': baseline 2257 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Kinder Logs — tracking 2257 products (665 in stock). Alerts start from the next change.
-  [SHOP] 303 Diecast: 143 diecast (87 in stock) of 764 products
+[*] pass 3: FirstCry, KND fast → 275 products in 2.0s (live: KND fast)
+[=] New source 'shop_303diecastshop': baseline 97 items absorbed silently.
+  [KD-fast] 5 shelves → 275 (275 in stock) in 1.5s
+  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.1s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 4: FirstCry, KND fast → 275 products in 1.6s (live: KND fast)
+  [SHOP] Toy Marche: 525 tracked (0 in stock) of 3000 products
+[=] New source 'shop_toymarche': baseline 343 items absorbed silently.
   [KD-fast] 5 shelves → 275 (275 in stock) in 1.4s
-  [FC-CART] 222 car(s) asked (3 pointed at, 219 in turn) in 1.4s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 6: FirstCry, KND fast → 275 products in 1.9s (live: KND fast)
-[=] New source 'shop_303diecastshop': baseline 142 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪303 Diecast — tracking 142 products (86 in stock). Alerts start from the next change.
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.4s
-  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 7: FirstCry, KND fast → 275 products in 1.6s (live: KND fast)
-  [SHOP] Toy Marche: 935 diecast (0 in stock) of 3000 products
-[=] New source 'shop_toymarche': baseline 603 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Toy Marche — tracking 603 products (0 in stock). Alerts start from the next change.
+  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.1s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 5: FirstCry, KND fast → 275 products in 1.5s (live: KND fast)
+  [FC-CART] 222 car(s) asked (3 pointed at, 219 in turn) in 1.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 6: FirstCry → 0 products in 1.7s
+  [SHOP] Toycra: 58 tracked (36 in stock) of 3000 products
+[=] New source 'shop_toycra': baseline 34 items absorbed silently.
   [KD-fast] 5 shelves → 275 (275 in stock) in 1.6s
-  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.5s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 8: FirstCry, KND fast → 275 products in 2.1s (live: KND fast)
-  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 9: FirstCry → 0 products in 1.7s
-  [SHOP] Toycra: 170 diecast (101 in stock) of 3000 products
-[=] New source 'shop_toycra': baseline 70 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Toycra — tracking 70 products (36 in stock). Alerts start from the next change.
+  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 2.1s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 7: FirstCry, KND fast → 275 products in 2.5s (live: KND fast)
+  [SHOP] Hobby Shoppy: 50 tracked (12 in stock) of 2474 products
+[=] New source 'shop_hobbyshoppy': baseline 50 items absorbed silently.
   [MG] 1 products had no SKU row — used product_type fallback
 [*] Minifygram total: 261 of 270 (9 in stock; 1 trading cards, 77 pre-orders)
   [KD] pre-order-minigt → HTTP 404 (category gone)
@@ -120,44 +115,32 @@
   [KD] basic-cars → no chase pieces right now (4 others left out)
   [KD] majorette → 0 (empty right now)
 [*] Karz&Dolls total: 345 (345 in stock)
-  [FC-API] quick sweep: 164 in stock from 9 page(s) in 7.6s — fresh ✓ (searchrank, 9 page(s) computed live)
-  [SHOP] Hobby Shoppy: 52 diecast (13 in stock) of 2474 products
-  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 10.9s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 2.4s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [FC-LIVE] 3 to confirm, 0 🎯 set(s) read, 0 audited → 8 car(s) seen live in 7.3s; 0 now orderable, 0 not any more
-[*] pass 10: FirstCry, Minifygram, Karz&Dolls → 724 products in 15.0s (live: FirstCry, Karz&Dolls, Minifygram)
-[=] New source 'shop_hobbyshoppy': baseline 52 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Hobby Shoppy — tracking 52 products (13 in stock). Alerts start from the next change.
-  [SHOP] Funcorp: 255 diecast (188 in stock) of 1522 products
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.4s
+  [SHOP] Funcorp: 99 tracked (65 in stock) of 1522 products
+  [FC-API] quick sweep: 164 in stock from 9 page(s) in 6.6s — fresh ✓ (searchrank, 9 page(s) computed live)
+  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 7.9s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+  [FC-LIVE] 3 to confirm, 0 🎯 set(s) read, 0 audited → 8 car(s) seen live in 5.2s; 0 now orderable, 0 not any more
+[*] pass 8: FirstCry, Minifygram, Karz&Dolls → 724 products in 12.0s (live: FirstCry, Karz&Dolls, Minifygram)
+[=] New source 'shop_funcorp': baseline 69 items absorbed silently.
+  [SHOP] Zoomsters: 829 tracked (393 in stock) of 2154 products
+  [KD-fast] 5 shelves → 275 (275 in stock) in 1.7s
   [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 11: FirstCry, KND fast → 275 products in 1.9s (live: KND fast)
-[=] New source 'shop_funcorp': baseline 120 items absorbed silently.
-[TG] (no creds) 🆕 <b>New store added:</b> 🏪Funcorp — tracking 120 products (81 in stock). Alerts start from the next change.
-  [SHOP] Zoomsters: 1668 diecast (944 in stock) of 2154 products
+[*] pass 9: FirstCry, KND fast → 275 products in 1.8s (live: KND fast)
+  [KD-fast] 5 shelves → 275 (275 in stock) in 1.6s
+  [FC-CART] 222 car(s) asked (3 pointed at, 219 in turn) in 1.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 10: FirstCry, KND fast → 275 products in 1.7s (live: KND fast)
+  [SHOP] Toy Collectors India: 1080 tracked (319 in stock) of 3000 products
+  [SHOP] TorqueTribe: 373 tracked (87 in stock) of 1298 products
+  [KD-fast] 5 shelves → 275 (275 in stock) in 1.5s
+  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 11: FirstCry, KND fast → 275 products in 1.6s (live: KND fast)
   [KD-fast] 5 shelves → 275 (275 in stock) in 1.6s
   [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
 [*] pass 12: FirstCry, KND fast → 275 products in 1.7s (live: KND fast)
-  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.4s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 13: FirstCry → 0 products in 1.9s
-  [SHOP] Toy Collectors India: 1679 diecast (478 in stock) of 3000 products
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.4s
-  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.1s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 14: FirstCry, KND fast → 275 products in 1.7s (live: KND fast)
-  [SHOP] TorqueTribe: 616 diecast (116 in stock) of 1298 products
-  [FC-CART] 224 car(s) asked (3 pointed at, 221 in turn) in 1.4s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.5s
-  [SHOP] The Peppy Store: 626 diecast (381 in stock) of 2928 products
-  [FC-API] quick sweep: 164 in stock from 9 page(s) in 6.9s — fresh ✓ (searchrank, 9 page(s) computed live)
-  [SHOP] RyWheelz: 436 diecast (62 in stock) of 457 products
-  [FC-API] brand 1335 in-stock list: 124 (124 in stock) in 6.5s
-  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-  [FC-LIVE] 2 to confirm, 0 🎯 set(s) read, 0 audited → 18 car(s) seen live in 4.0s; 0 now orderable, 0 not any more
-[*] pass 15: FirstCry, KND fast → 393 products in 17.6s (live: FirstCry, KND fast)
-  [KD-fast] 5 shelves → 275 (275 in stock) in 1.5s
-  [FC-CART] 223 car(s) asked (3 pointed at, 220 in turn) in 1.2s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
-[*] pass 16: FirstCry, KND fast → 275 products in 1.6s (live: KND fast)
-  [SHOP] Kinder Logs: 2715 diecast (737 in stock) of 3000 products
+  [SHOP] The Peppy Store: 379 tracked (222 in stock) of 2928 products
+  [FC-CART] 225 car(s) asked (3 pointed at, 222 in turn) in 2.3s: 55 buyable for 248001; 0 now in, 0 now out, 2 in the cart but not on sale on their page, 1 on sale with fewer units than you asked for
+[*] pass 13: FirstCry → 0 products in 2.7s
 
-[*] run finished: 16 pass(es) in 163s (0s:Fi+Mi+Ka=24s, 24s:Fi+KN=2s, 32s:Fi+KN=2s, 40s:Fi+KN=2s, 48s:Fi+KN=14s, 61s:Fi+KN=2s, 69s:Fi+KN=2s, 77s:Fi+KN=3s, 85s:Fi=2s, 93s:Fi+Mi+Ka=15s, 108s:Fi+KN=2s, 116s:Fi+KN=3s, 124s:Fi=2s, 132s:Fi+KN=2s, 140s:Fi+KN=18s, 159s:Fi+KN=2s)
-[*] flip recorder: 1 event(s) kept (5000 in fc_cartlog.jsonl)
+[*] run finished: 13 pass(es) in 148s (0s:Fi+Mi+Ka=51s, 50s:Fi+KN=10s, 60s:Fi+KN=3s, 68s:Fi+KN=3s, 76s:Fi+KN=3s, 84s:Fi=3s, 92s:Fi+KN=3s, 100s:Fi+Mi+Ka=12s, 112s:Fi+KN=3s, 120s:Fi+KN=3s, 128s:Fi+KN=2s, 136s:Fi+KN=3s, 144s:Fi=4s)
+[*] FirstCry website: 91 request(s), 0 turned away; cart: 56 call(s)
+[*] flip recorder: 8 event(s) kept (5000 in fc_cartlog.jsonl)
