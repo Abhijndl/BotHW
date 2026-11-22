@@ -12858,7 +12858,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -13732,7 +13732,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13781,7 +13781,7 @@
   "fc_24473712": {
     "stock": "in_stock",
     "name": "Hot Wheels Salt Streaker Die-Cast Toy Car - Blue Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-salt-streaker-die-cast-toy-car-blue-orange/24473712/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13858,7 +13858,7 @@
   "fc_24473515": {
     "stock": "in_stock",
     "name": "Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-go-realla-fast-die-cast-toy-car-black-and-yellow/24473515/product-detail",
     "first_seen": "2026-09-17T04:26:39",
@@ -13920,7 +13920,7 @@
   "fc_24473516": {
     "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -13985,7 +13985,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14395,16 +14394,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795381805
+        "ok": 1795381940
       },
       "fc_www": {
-        "ok": 1795381902
+        "ok": 1795382029
       },
       "fc_cart": {
-        "ok": 1795381901
+        "ok": 1795382030
       },
       "kd": {
-        "ok": 1795381901
+        "ok": 1795382016
       }
     }
   },
@@ -14596,7 +14595,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -26231,7 +26230,7 @@
   "fc_22125600": {
     "stock": "in_stock",
     "name": "Majorette BMW M3 Touring Safari Die-Cast Car White",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-bmw-m3-touring-safari-die-cast-car-white/22125600/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -28360,7 +28359,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
