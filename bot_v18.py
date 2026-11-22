@@ -322,8 +322,8 @@ SOURCE_EVERY = {
     "Karz&Dolls": float(os.getenv("KD_EVERY_S", "120")),
     "KND fast":   KD_FAST_EVERY_S if KD_FAST_EVERY_S > 0 else -1,
     "Hamleys":    float(os.getenv("HM_EVERY_S", "600")),
-    # v18: the Shopify stores — one or two of them each time, most overdue first
-    "Shops":      float(os.getenv("SHOP_TICK_S", "8")),
+    # v18: the Shopify stores (read in a lane of their own; -1 = off)
+    "Shops":      0 if os.getenv("SHOPS_ON", "true").lower() == "true" else -1,
     # Both geo-block GitHub's US runners (HTTP 403 on every call), so on GitHub
     # they're skipped unless explicitly re-enabled. The phone watcher covers them.
     "BigBasket":  float(os.getenv("BB_EVERY_S", "-1" if _ON_GITHUB else "900")),
@@ -2358,6 +2358,9 @@ _FC_LIVE_LOCK = threading.Lock()
 # lag. If the cart can't be asked, the signals decide as before and the alert
 # says the cart wasn't checked.
 FC_CART = os.getenv("FC_CART", "true").lower() == "true"
+# v18: the delivery check's per-car unit count (one request per car) only
+# without the cart — the cart already says how many can reach 248001
+FC_LIVE_COUNT = os.getenv("FC_LIVE_COUNT", "false" if FC_CART else "true").lower() == "true"
 FC_CART_URL = "https://CSC.fcappservices.in/ShoppingCart/ShoppingCart.svc/json/LoadCart"
 FC_CART_BATCH = max(1, int(os.getenv("FC_CART_BATCH", "75")))      # cars per call
 FC_CART_MAX = max(0, int(os.getenv("FC_CART_MAX", "150")))         # cars asked in turn per pass
@@ -2817,7 +2820,7 @@ def fc_live_check(pids, max_pages: int | None = None, gids: dict | None = None) 
     need = [p for p in pids if p in res and res[p].get("svc") != 0
             and not ((res[p].get("cs") or 0) <= 0 and res[p].get("svc") is None)
             and now - res[p].get("at_isv", 0) > 20]
-    if need and time.time() < deadline:
+    if need and FC_LIVE_COUNT and time.time() < deadline:
         fc_delivery_count(need)
     return res
 
@@ -3581,37 +3584,48 @@ FC_NEW_PROBE = os.getenv("FC_NEW_PROBE", "true").lower() == "true"
 _FC_LIST_AT = [0.0]
 
 
-def fc_new_arrivals(prev_fc: dict) -> bool:
-    """Page 1 of FirstCry's in-stock list for your pincode, newest first: True
-    when it shows a Hot Wheels car we've never seen."""
+def fc_new_arrivals(prev_fc: dict) -> dict:
+    """Page 1 of FirstCry's Hot Wheels catalogue, newest first (one request):
+    the cars on it we've never seen, {id: record} — sold out or not, so a new
+    car is watched from the moment it's listed."""
     headers = {**COMMON_HEADERS, **_FC_NOCACHE, "Accept": "application/json, text/javascript, */*; q=0.01",
                "Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
                "Referer": _FC_API_REFERER}
-    q = _fc_api_query(1, FC_API_PAGESIZE, {"OutOfStock": "1", "SortExpression": "NewArrivals",
-                                           **_fc_fresh_params()})
+    q = _fc_api_query(1, FC_API_PAGESIZE, {"SortExpression": "NewArrivals", **_fc_fresh_params()})
     try:
         r = _fcw("get", _fc_bust(q), headers=headers, cookies=_fc_cookies(), timeout=FC_API_TIMEOUT)
     except Exception:
-        return False
+        return {}
     if r.status_code in (403, 429):
         FC_THROTTLED[0] = time.time() + FC_WWW_PAUSE_S
-        return False
+        return {}
     if r.status_code != 200:
-        return False
+        return {}
     try:
         prods = _fc_api_products(_fc_unwrap(r.json()))
     except Exception:
-        return False
-    new = []
+        return {}
+    new = {}
     for p in prods:
         pid = str(_ci(p, *_ID_KEYS) or "").strip()
         nm = _fc_name(str(_ci(p, *_NAME_KEYS) or ""))
         if pid.isdigit() and pid not in prev_fc and nm and not _fc_excluded(nm, "firstcry"):
-            new.append(nm)
+            new[pid] = p
     if new:
-        print(f"  [FC-API] newest-first list shows {len(new)} car(s) we haven't seen "
-              f"({new[0][:50]}) — reading the in-stock list now")
-    return bool(new)
+        print(f"  [FC-API] newest-first shows {len(new)} car(s) we haven't seen "
+              f"({_fc_name(str(_ci(next(iter(new.values())), *_NAME_KEYS) or ''))[:50]}) — reading the lists now")
+    return new
+
+
+def fc_plan(full: bool) -> str:
+    """What this pass does on FirstCry: "list" (read its lists — the cart is
+    asked alongside), "probe" (page 1 newest-first, then the cart) or "cart"."""
+    now = time.time()
+    if FC_THROTTLED[0] > now or _FC_PACE.paused():
+        return "cart"
+    if full or now - _FC_LIST_AT[0] >= FC_LIST_EVERY:
+        return "list"
+    return "probe"
 
 
 def fc_cart_only(prev_fc: dict) -> list:
@@ -3652,8 +3666,10 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
         now = time.time()
         www_ok = FC_THROTTLED[0] <= now and not _FC_PACE.paused()
         list_due = full or not prev_fc or now - _FC_LIST_AT[0] >= FC_LIST_EVERY
+        fresh_new = {}
         if www_ok and not list_due and FC_NEW_PROBE:
-            list_due = fc_new_arrivals(prev_fc)
+            fresh_new = fc_new_arrivals(prev_fc)
+            list_due = bool(fresh_new)
         if not (www_ok and list_due):
             if not www_ok:
                 print("  [FC-API] website paused (403) — FirstCry's cart only this pass")
@@ -3684,6 +3700,17 @@ def scrape_firstcry(prev_all: dict | None = None, full: bool = False) -> list[di
             recs = fc_api_records(inst or {}, prev_fc, quiet=True)
             got = {r["id"][3:] for r in recs}
             delisted = 0
+            if fresh_new and not cat:
+                # v18: new on the newest-first page but not on the in-stock list
+                # (yet): watched from now on — units the catalogue shows count
+                # for a car listed this recently, once its page sells them
+                for r in fc_api_records({k: v for k, v in fresh_new.items() if str(k) not in listed}, prev_fc):
+                    if r["stock"] == "in_stock":
+                        r["fc_cat_in"] = True
+                        r["stock"] = "out_of_stock"
+                    r["stock_count"] = None
+                    recs.append(r)
+                    got.add(r["id"][3:])
             if cat:
                 for r in fc_api_records({k: v for k, v in cat.items() if str(k) not in listed},
                                         prev_fc):
@@ -5179,9 +5206,7 @@ def scrape_shops(seen: dict | None = None) -> list[dict]:
         if lag >= 1:
             due.append((lag, dom))
     out, t0 = [], time.time()
-    for _, dom in sorted(due, reverse=True):
-        if time.time() - t0 > SHOP_BUDGET_S:
-            break
+    for _, dom in sorted(due, reverse=True)[:1]:
         prods = _shop_read(dom)
         _SHOP_AT[dom] = time.time()
         if prods is None:
@@ -5191,6 +5216,61 @@ def scrape_shops(seen: dict | None = None) -> list[dict]:
         print(f"  [SHOP] {_shop_label(dom)}: {len(recs)} diecast ({ins} in stock) of {len(prods)} products")
         out += recs
     return out
+
+
+# v18: the stores are read in a lane of their own (big stores take several
+# requests), and what they found is handled at the start of the next pass
+import queue as _queue
+_SHOP_Q: "_queue.Queue" = _queue.Queue()
+_SHOP_STOP = threading.Event()
+_SHOP_LANE = [None]
+
+
+def shops_start(seen: dict) -> None:
+    if (not (SHOPS_FAST or SHOPS_SLOW) or SOURCE_EVERY.get("Shops", 0) < 0
+            or ACTIVE_SOURCES is not None or _SHOP_LANE[0] is not None):
+        return
+    meta = seen.get("_meta") if isinstance(seen.get("_meta"), dict) else {}
+    snap = {"_meta": {"shop_at": dict(meta.get("shop_at") or {})}}
+
+    def lane():
+        while not _SHOP_STOP.is_set():
+            try:
+                recs = scrape_shops(snap)
+                if recs:
+                    _SHOP_Q.put(recs)
+            except Exception:
+                print(f"[!] Shops error:\n{traceback.format_exc()}")
+            _SHOP_STOP.wait(2)
+
+    _SHOP_LANE[0] = threading.Thread(target=lane, daemon=True)
+    _SHOP_LANE[0].start()
+
+
+def shops_drain(seen: dict, quiet: bool = True) -> int:
+    n = 0
+    while True:
+        try:
+            recs = _SHOP_Q.get_nowait()
+        except _queue.Empty:
+            break
+        try:
+            n += _process(seen, recs, "Shops", quiet)
+        except Exception:
+            print(f"[!] Shops processing error:\n{traceback.format_exc()}")
+    if _SHOP_AT:
+        meta = seen.setdefault("_meta", {})
+        meta["shop_at"] = {**(meta.get("shop_at") if isinstance(meta.get("shop_at"), dict) else {}),
+                           **{k: int(v) for k, v in _SHOP_AT.items()}}
+    return n
+
+
+def shops_stop(seen: dict) -> None:
+    if _SHOP_LANE[0] is None:
+        return
+    _SHOP_STOP.set()
+    _SHOP_LANE[0].join(timeout=25)
+    shops_drain(seen)
 
 
 def _shop_summary(changes: dict) -> list:
@@ -5237,7 +5317,7 @@ def health_check(seen: dict) -> None:
     st = meta.setdefault("health", {})
     now = time.time()
     changed = False
-    for name, h in _HEALTH.items():
+    for name, h in list(_HEALTH.items()):
         rec = st.setdefault(name, {})
         if h.get("ok", 0) > rec.get("ok", 0):
             rec["ok"] = int(h["ok"])
@@ -6432,7 +6512,6 @@ def _source_table(snap: dict, fc_full: bool):
             ("Hamleys",    scrape_hamleys),
             ("Karz&Dolls", scrape_karzanddolls),
             ("KND fast",   lambda: scrape_karzanddolls(fast=True)),
-            ("Shops",      lambda: scrape_shops(snap)),
             ("BigBasket",  scrape_bigbasket),
             ("Blinkit",    scrape_blinkit))
 
@@ -6648,6 +6727,11 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_full: bool, label: str
     t0 = time.time()
     snap = dict(seen)            # scrapers read this; only the main thread writes `seen`
     sources = [(n, fn) for n, fn in _source_table(snap, fc_full) if n in names]
+    if "FirstCry" in names and FC_CART and fc_plan(fc_full) == "list":
+        # v18: reading FirstCry's lists takes a while — its cart is asked
+        # alongside, so a car turning buyable doesn't wait for them
+        prev_fc = {k[3:]: v for k, v in snap.items() if k.startswith("fc_") and isinstance(v, dict)}
+        sources.append(("FC cart", lambda: fc_cart_only(prev_fc)))
     total, errors, live = 0, [], []
     first_products = []
     with ThreadPoolExecutor(max_workers=max(1, min(SRC_WORKERS, len(sources)))) as ex:
@@ -6680,10 +6764,7 @@ def run_pass(seen: dict, names: list, first_run: bool, fc_full: bool, label: str
         if meta.get("mg_wm") != _MG_LAST_WM[0]:
             meta["mg_wm"] = _MG_LAST_WM[0]
             _save_seen_file(seen)
-    if "Shops" in names and _SHOP_AT:
-        meta = seen.setdefault("_meta", {})
-        meta["shop_at"] = {**(meta.get("shop_at") if isinstance(meta.get("shop_at"), dict) else {}),
-                           **{k: int(v) for k, v in _SHOP_AT.items()}}
+
 
     if first_run and FIRST_RUN_SILENT and first_products:
         # First run only learns the baseline — no flood of "new" alerts.
@@ -6754,6 +6835,8 @@ def main():
     # run can stay on as long as RUN_SECONDS says
     last = {n: look_back for n in all_names}
     last_full = look_back
+    if not first_run:
+        shops_start(seen)
     while True:
         t = time.time()
         pass_no += 1
@@ -6761,6 +6844,10 @@ def main():
             tg_updates(seen)                  # v18: 🔕 / 🔔 taps and /muted
         except Exception:
             print(f"[TG] updates skipped:\n{traceback.format_exc()}")
+        try:
+            shops_drain(seen, quiet=pass_no > 1)
+        except Exception:
+            print(f"[!] Shops skipped:\n{traceback.format_exc()}")
         names = [n for n in all_names if ACTIVE_SOURCES is None and _due(n, t, last[n])
                  or ACTIVE_SOURCES is not None and (pass_no == 1 or n == "FirstCry") and _due(n, t, t)]
         for n in names:
@@ -6803,6 +6890,10 @@ def main():
                 print("[*] no run waiting to take over (trigger skipped or late) — still watching")
                 extended = True
         time.sleep(max(0.0, nxt - time.time()))
+    try:
+        shops_stop(seen)
+    except Exception:
+        print(f"[!] Shops stop failed:\n{traceback.format_exc()}")
     _fc_fresh_save(seen)
     took = time.time() - t_run
     print(f"\n[*] run finished: {pass_no} pass(es) in {took:.0f}s ({', '.join(timings)})")
