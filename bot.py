@@ -323,7 +323,7 @@ SOURCE_EVERY = {
     "KND fast":   KD_FAST_EVERY_S if KD_FAST_EVERY_S > 0 else -1,
     "Hamleys":    float(os.getenv("HM_EVERY_S", "600")),
     # v18: the Shopify stores (read in a lane of their own; -1 = off)
-    "Shops":      0 if os.getenv("SHOPS_ON", "true").lower() == "true" else -1,
+    "Shops":      0 if os.getenv("SHOPS_ON", "false").lower() == "true" else -1,
     # Both geo-block GitHub's US runners (HTTP 403 on every call), so on GitHub
     # they're skipped unless explicitly re-enabled. The phone watcher covers them.
     "BigBasket":  float(os.getenv("BB_EVERY_S", "-1" if _ON_GITHUB else "900")),
@@ -6831,6 +6831,20 @@ def main():
                 v["alerted_new"] = True
         print(f"[~] Migrated {len(seen)} legacy seen entries (marked already-alerted).")
 
+    if SOURCE_EVERY.get("Shops", -1) < 0:
+        # the Shopify stores are off: nothing of theirs is kept
+        drop = [k for k, v in seen.items() if k.startswith("shop_") or
+                (isinstance(v, dict) and str(v.get("source", "")).startswith("shop_"))]
+        meta = seen.get("_meta") if isinstance(seen.get("_meta"), dict) else {}
+        for k in drop:
+            seen.pop(k, None)
+        for k in ("shop_at", "shops_note"):
+            meta.pop(k, None)
+        for k in [k for k in (meta.get("health") or {}) if k.startswith("shop:")]:
+            meta["health"].pop(k, None)
+        if drop:
+            print(f"[~] Shopify stores are off — {len(drop)} of their products forgotten")
+            _save_seen_file(seen)
     if not first_run:
         try:
             ring_setup(seen)          # v17.5: a test of the ringing alerts once they're set up
