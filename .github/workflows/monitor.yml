@@ -58,12 +58,13 @@ jobs:
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
 
           # ── Speed ───────────────────────────────────────────────────────────
-          # Each run checks FirstCry 4 times, 12 s apart (at 0, 12, 24 and 36 s),
-          # and ends before the next every-minute trigger, so FirstCry is
-          # watched about every 15 s around the clock. Other stores are checked
-          # in each run's first pass when due (see below).
-          RUN_SECONDS: "40"
-          FC_EVERY: "12"
+          # v18: each run stays on 100 s and checks every 8 s. FirstCry's cart
+          # (its own server, never blocked) is asked about the cars in turn on
+          # every pass — your 🎯 cars about every 15 s; its in-stock list is
+          # read every FC_LIST_EVERY s, page 1 of it newest-first in between.
+          # Every store is checked whenever it falls due (see below).
+          RUN_SECONDS: "100"
+          FC_EVERY: "8"
           # If no next run is waiting when the 40 s are up (cron-job.org sent no
           # trigger in minutes ending in 5, and the :x0 one ~35 s late), the run
           # keeps checking up to this many seconds more, until one is waiting.
@@ -73,14 +74,14 @@ jobs:
           # brand-new car often shows units there minutes before FirstCry's
           # in-stock list has it (v16.3). Every check in between reads the
           # in-stock list.
-          FC_CATALOGUE_EVERY: "120"
+          FC_CATALOGUE_EVERY: "600"
           # v17.8: Majorette on FirstCry (brand 1335): its in-stock list every
           # 36 s, its whole list with each full sweep. Alerts for Majorette cars
           # named DTM / Motorsport / GT3 or one of your marques ("dtm,marques";
           # "dtm" = DTM only, "all" = every Majorette car). FC_EXTRA_BRANDS ""
           # turns it off.
           FC_EXTRA_BRANDS: "1335"
-          FC_EXTRA_EVERY: "36"
+          FC_EXTRA_EVERY: "120"
           MAJORETTE_TRACK: "dtm,marques"
           # Seconds between checks for the other stores (-1 = off). Minifygram
           # also gets a tiny "anything changed?" check every 12 s, so its new
@@ -91,14 +92,61 @@ jobs:
           # special stocks (and the 2-car chase shelf) — every 15 s: their hyped
           # cars come back for under a minute (29 Oct recorder). Only the full
           # 2-minute check above marks a car sold out.
-          KD_FAST_EVERY_S: "15"
-          HM_EVERY_S: "600"
+          KD_FAST_EVERY_S: "10"
+          # v18: Hamleys shows GitHub's servers a Cloudflare challenge on every
+          # page (since early Nov) — off. "600" turns it back on.
+          HM_EVERY_S: "-1"
+
+          # ── v18: FirstCry's website, one request at a time ───────────────────
+          # From 19-20 Nov FirstCry turned the bot away (403) when it asked for
+          # many pages at once. Probe #77: 160 requests one after another (up to
+          # 2.2 a second) all went through. So one request at a time, with this
+          # many a second at most; a 403 pauses the website FC_WWW_PAUSE_S and
+          # halves the pace for a while.
+          FC_WWW_RATE: "3"
+          FC_WWW_PAUSE_S: "45"
+          FC_LIST_EVERY: "45"
+          FC_TAT_SWEEP: "40"
+          FC_LIVE_MAX: "4"
+          FC_LIVE_AUDIT: "1"
+          # While the website pauses us, a car FirstCry's cart says yes to twice,
+          # this many seconds apart, alerts without its page ("0" = off).
+          FC_PAGELESS_S: "20"
+
+          # ── v18: more stores (Shopify) ───────────────────────────────────────
+          # Off for now (22 Nov). "true" turns them on.
+          SHOPS_ON: "false"
+          # Read about every SHOP_EVERY_S s (SHOPS) / SHOP_SLOW_EVERY_S (SHOPS_SLOW).
+          # Your 🎯 cars there alert one by one with a straight-to-checkout link;
+          # the store's other new / back-in-stock cars come as one line.
+          SHOPS: "zoomsters.in,torquetribe.in,toycollectorsindia.com,rywheelz.com,kinderlogs.in,thepeppystore.in,303diecastshop.in"
+          SHOPS_SLOW: "toymarche.com,funcorp.in,toycra.com,hobbyshoppy.in"
+          SHOP_EVERY_S: "90"
+          SHOP_SLOW_EVERY_S: "600"
+          # A store unreadable this many hours gets one Telegram note (and one
+          # when it's back).
+          HEALTH_WARN_H: "3"
 
           # ── Alerts ───────────────────────────────────────────────────────────
           SILENT: "true"            # only ping on real changes
           FIRST_RUN_SILENT: "true"  # first run learns a baseline silently
           MAX_ALERT_PRICE: "0"      # 0 = no price cap on NEW alerts
           DEBUG: "false"
+          # v18: multi-packs (5-packs, gift packs, sets of N) alert only when
+          # their name has one of these — the Ferrari 5-packs, Batman, Safari
+          # Mode … stay quiet. "" = alert on every multi-pack again.
+          MULTIPACK_OK: "porsche,911,fast furious,fast & furious,fast and furious,skyline,gt-r,gtr,premium,car culture,team transport,boulevard,rlc,treasure hunt"
+          # v18: how often one car may alert as back in stock in 24 h — your 🎯
+          # cars / the rest (Treasure Hunts and chases aren't capped).
+          ALERT_CAP_TARGET: "3"
+          ALERT_CAP_OTHER: "1"
+          # v18: at most this many 🎯 cars of one store get their own message in
+          # one go; the rest of a big drop share one message.
+          SOLO_MAX: "6"
+          # v18: 🔕 under an alert mutes that car for MUTE_DAYS days (🔔 undoes it;
+          # /muted lists them, /unmuteall clears them).
+          TG_BUTTONS: "true"
+          MUTE_DAYS: "30"
           # Keywords that get an extra 🎯 flag in alerts.
           WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
 
@@ -115,7 +163,7 @@ jobs:
           # its case-checklist series. (CallMeBot's free calls come ~1 min late.)
           RING_ON: "porsche,911,930,934,935,959,964,993,918,carrera,singer,taycan,skyline,ferrari,laferrari,testarossa,f40,f50,enzo,sf90"
           RING_KINDS: ""              # Treasure Hunts of other cars don't ring (of these three they do)
-          RING_CAR_H: "12"            # the same car rings at most every 12 h
+          RING_CAR_H: "24"            # v18: the same car rings at most once a day
           RING_GAP_MIN: "3"           # minutes between two calls (WhatsApp still goes)
           RING_QUIET: "00:00-07:00"   # no calls then (India time), except Treasure Hunts; "" = any hour
 
@@ -145,7 +193,7 @@ jobs:
           # send you and the delivery date. Cars are asked this many per check
           # (🎯 cars get half the turns):
           FC_CART: "true"
-          FC_CART_MAX: "150"
+          FC_CART_MAX: "225"
           # A 🎯 car the cart confirmed may alert again this many minutes after
           # its last alert; any other car at most once every this many hours.
           FC_CART_COOLDOWN_MIN: "30"
@@ -154,7 +202,7 @@ jobs:
           # FirstCry's delivery check for your pincode (what the page itself uses)
           # before it's sent. Product pages of your 🎯 cars that are out of stock
           # are read directly — this many colour sets per pass:
-          FC_LIVE_POLL: "4"
+          FC_LIVE_POLL: "0"
           # A restock confirmed on the product page may alert again after this
           # many hours (unconfirmed ones keep 24 h).
           FC_RESTOCK_COOLDOWN_H: "1"
@@ -170,8 +218,7 @@ jobs:
           # alert was gone within minutes then needs this many units for 12 h
           # ("0" turns these checks off).
           FC_SURE_UNITS: "5"
-          # Catalogue pages fetched at once. If the log ever shows HTTP 429,
-          # FirstCry is objecting to the pace — set this to "5".
+          # (v18: pages now go one at a time whatever this says — FC_WWW_RATE)
           FC_API_PARALLEL: "10"
           # HTML-fallback tuning only (unused while the JSON API works).
           FC_WATCH_MAX: "25"
