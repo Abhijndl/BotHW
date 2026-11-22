@@ -12763,7 +12763,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -13630,7 +13630,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13816,7 +13816,7 @@
   "fc_24473516": {
     "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -14278,20 +14278,23 @@
       "s": "none",
       "since": "2026-11-22T13:30:00"
     },
-    "mute": {},
-    "tg_upd": 377047292,
+    "mute": {
+      "fc_22125600": 1797960328.9327013,
+      "fc_24783759": 1797960344.9183238
+    },
+    "tg_upd": 377047294,
     "health": {
       "mg": {
-        "ok": 1795368140
+        "ok": 1795368253
       },
       "fc_www": {
-        "ok": 1795368239
+        "ok": 1795368361
       },
       "fc_cart": {
-        "ok": 1795368235
+        "ok": 1795368359
       },
       "kd": {
-        "ok": 1795368235
+        "ok": 1795368348
       }
     }
   },
@@ -14436,7 +14439,7 @@
   "fc_24475217": {
     "stock": "in_stock",
     "name": "Hot Wheels Polestar Die cast Toy car 84/250 -White & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-polestar-die-cast-toy-car-84-250-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14482,7 +14485,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14598,7 +14601,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-22T17:12:24",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15029,7 +15031,7 @@
   "fc_24475499": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Vehicle Surf and Turf Blue 240/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-vehicle-surf-and-turf-blue-240-250-blue/24475499/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -25925,9 +25927,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-16T17:15:00",
-    "fc_api_seen_at": "2026-11-22T15:15:00",
+    "fc_api_seen_at": "2026-11-22T17:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "22176036",
     "fc_phantom": "2026-11-16T15:59:03",
@@ -26036,30 +26038,33 @@
     "fc_lst_seen": "2026-11-22T17:15:00"
   },
   "fc_22125600": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Majorette BMW M3 Touring Safari Die-Cast Car White",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-bmw-m3-touring-safari-die-cast-car-white/22125600/product-detail",
     "first_seen": "2026-11-10T17:15:00",
     "last_seen": "2026-11-22T17:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-21T04:23:08",
+    "last_restock_alert": "2026-11-22T17:24:40",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-22T08:00:00",
-    "fc_api_seen_at": "2026-11-22T15:15:00",
+    "fc_api_seen_at": "2026-11-22T17:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
-    "fc_lst": "cat",
+    "fc_live": "ok",
+    "fc_lst": "out",
     "fc_gid": "22176036",
     "fc_phantom": "2026-11-21T04:42:43",
-    "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_off": "2026-11-22T17:25:11",
+    "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-21T04:58:43",
     "fc_lst_seen": "2026-11-21T05:30:00",
-    "fc_gone": "2026-11-22T15:38:14"
+    "alert_log": [
+      "2026-11-22T17:24:40"
+    ]
   },
   "fc_22063529": {
     "stock": "out_of_stock",
@@ -27077,9 +27082,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-13T15:30:00",
-    "fc_api_seen_at": "2026-11-22T15:15:00",
+    "fc_api_seen_at": "2026-11-22T17:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "22176036",
     "fc_phantom": "2026-11-13T14:36:18",
@@ -27103,9 +27108,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-22T15:15:00",
+    "fc_api_seen_at": "2026-11-22T17:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "22176036",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -27297,7 +27302,7 @@
     "fc_listed_at": "2026-11-22T17:15:00",
     "fc_api_seen_at": "2026-11-22T17:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T11:05:51",
