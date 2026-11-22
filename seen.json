@@ -10481,6 +10481,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-22T21:19:13",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -13971,19 +13972,20 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-1970-custom-plymouth-road-runner-die-cast-toy-car-orange/24473731/product-detail",
     "first_seen": "2026-09-17T08:04:41",
-    "last_seen": "2026-11-22T21:00:00",
+    "last_seen": "2026-11-22T21:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-10-20T08:58:39",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-22T21:00:00",
-    "fc_api_seen_at": "2026-11-22T21:00:00",
+    "fc_api_seen_at": "2026-11-22T21:15:00",
     "fc_trusted": true,
     "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14393,16 +14395,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795382165
+        "ok": 1795382290
       },
       "fc_www": {
-        "ok": 1795382273
+        "ok": 1795382398
       },
       "fc_cart": {
-        "ok": 1795382274
+        "ok": 1795382399
       },
       "kd": {
-        "ok": 1795382263
+        "ok": 1795382389
       }
     }
   },
@@ -14712,6 +14714,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-22T21:18:27",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15070,6 +15073,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-22T21:19:13",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20738,6 +20742,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
+    "fc_off": "2026-11-22T21:19:13",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -24374,7 +24379,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24397,7 +24402,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24420,7 +24425,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24443,7 +24448,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -27683,6 +27688,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
+    "fc_off": "2026-11-22T21:19:13",
     "fc_cart": "y",
     "fc_svc": "1"
   },
