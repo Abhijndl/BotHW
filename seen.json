@@ -14394,16 +14394,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795384568
+        "ok": 1795384694
       },
       "fc_www": {
-        "ok": 1795384619
+        "ok": 1795384736
       },
       "fc_cart": {
-        "ok": 1795384620
+        "ok": 1795384738
       },
       "kd": {
-        "ok": 1795384610
+        "ok": 1795384727
       }
     }
   },
@@ -14595,7 +14595,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -18634,11 +18634,11 @@
     "fc_listed_at": "2026-11-22T21:45:00",
     "fc_api_seen_at": "2026-11-22T21:45:00",
     "fc_trusted": true,
-    "fc_live": "page 0",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-17T04:57:55",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:53:58",
     "fc_lst_seen": "2026-11-22T21:00:00",
@@ -28384,7 +28384,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-22T21:46:13",
+    "fc_off": "2026-11-22T21:58:56",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
