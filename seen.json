@@ -14385,16 +14385,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795379648
+        "ok": 1795379764
       },
       "fc_www": {
-        "ok": 1795379698
+        "ok": 1795379822
       },
       "fc_cart": {
-        "ok": 1795379701
+        "ok": 1795379825
       },
       "kd": {
-        "ok": 1795379699
+        "ok": 1795379812
       }
     }
   },
@@ -14657,7 +14657,7 @@
     "fc_listed_at": "2026-11-22T20:30:00",
     "fc_api_seen_at": "2026-11-22T20:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24525296",
     "fc_cart": "n",
@@ -14998,7 +14998,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -22746,7 +22746,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22769,7 +22769,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -23622,11 +23622,11 @@
     "fc_listed_at": "2026-11-22T20:30:00",
     "fc_api_seen_at": "2026-11-22T20:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "23345424",
     "fc_phantom": "2026-11-12T17:24:14",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-22T18:51:23",
     "fc_lst_seen": "2026-11-22T20:30:00",
