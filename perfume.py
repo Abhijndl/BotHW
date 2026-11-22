@@ -18,6 +18,7 @@ import os
 import re
 import signal
 import subprocess
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -51,7 +52,7 @@ def W(wid, store, site, coll, label, new, every, variants=None, gone=False, note
 
 
 WATCHES = [
-    W("whiff-partials", "Whiff Culture", WHIFF, "partial-sale", "partials", "NEW PARTIAL", 10, notes=True),
+    W("whiff-partials", "Whiff Culture", WHIFF, "partial-sale", "partials", "NEW PARTIAL", 2, notes=True),
     W("scentoria-partials", "Scentoria", SCENTORIA, "partials", "partials", "NEW PARTIAL", 15, gone=True),
     W("scentira-partials", "Scentira", SCENTIRA, "partials", "partials", "NEW PARTIAL", 20, variants=r"\bpartial\b"),
     W("sovereign-partials", "Sovereign Scents", SOVEREIGN, "", "partials", "NEW PARTIAL", 15, kind="sovereign",
@@ -97,6 +98,17 @@ SALES_FIRST = float(os.getenv("PERFUME_SALES_FIRST_S", "45"))
 PUSH_EVERY = float(os.getenv("PERFUME_PUSH_EVERY_S", "300"))
 PULL_RETRY = float(os.getenv("PERFUME_PULL_RETRY_S", "60"))
 PULL_TRIES = int(os.getenv("PERFUME_PULL_TRIES", "4"))
+# The lists in FAST are read in a lane of their own, so a slow read elsewhere (a
+# store with several pages) never holds them up. After a new or returning item
+# there they're read every BURST_EVERY seconds for BURST_FOR — Whiff Culture
+# adds its partials in waves of five to ten within a few minutes (14, 19, 20 Nov).
+# (Probe #78 from GitHub: its whole partials list is 43 KB and answers in 0.08 s;
+# 60 reads 3 s apart and 40 reads 1.5 s apart all went through.) If a FAST
+# list's store refuses this runner twice, the run hands over to a fresh one.
+FAST = {x for x in re.split(r"[\s,;]+", os.getenv("PERFUME_FAST", "whiff-partials")) if x}
+BURST_EVERY = float(os.getenv("PERFUME_BURST_EVERY_S", "1.5"))
+BURST_FOR = float(os.getenv("PERFUME_BURST_FOR_S", "900"))
+LOCK = threading.RLock()
 SEND_GAP = float(os.getenv("PERFUME_SEND_GAP_S", "1.1"))
 STATE = os.getenv("PERFUME_STATE", "perfume.json")
 BRANCH = os.getenv("PERFUME_STATE_BRANCH", "").strip()
@@ -388,9 +400,9 @@ def wstate(st, w):
     return st["w"].setdefault(w["id"], {"items": {}})
 
 
-def check(st, w, now):
-    """Read one list; returns (events, '') or (None, why it failed)."""
-    prods, why = fetch(w)
+def check(st, w, now, got=None):
+    """Read one list (or use the read in `got`); returns (events, '') or (None, why it failed)."""
+    prods, why = got if got is not None else fetch(w)
     if prods is None:
         return None, why
     ws = wstate(st, w)
@@ -514,7 +526,8 @@ def pull(tries=PULL_TRIES):
 def push(st, why):
     if not BRANCH or not _can_push[0]:
         return
-    data = dump(st)
+    with LOCK:
+        data = dump(st)
     if data == _pushed[0]:
         return
     rc, blob, err = git(["hash-object", "-w", "--stdin"], data)
@@ -819,6 +832,64 @@ def deliver(st, w, ev, now):
     return bool(keep)
 
 
+def handle(st, w, ev, why, now, pause, refused):
+    """After one read: a warning when it keeps failing, a pause when the store refuses
+    us, and the alerts. True when something was sent."""
+    if ev is None:
+        log(f"{w['id']}: read failed: {why}")
+        failed(st, w, now, why)
+        if why in REFUSED:
+            refused[w["site"]] = refused.get(w["site"], 0) + 1
+            pause[w["site"]] = time.time() + (BACKOFF_FIRST if refused[w["site"]] == 1 else BACKOFF)
+        return False
+    refused.pop(w["site"], None)
+    recovered(st, w)
+    return deliver(st, w, ev, now) if ev else False
+
+
+def fetch_safe(w):
+    try:
+        return fetch(w)
+    except Exception as e:
+        return None, f"unexpected data ({type(e).__name__})"
+
+
+def fast_lane(st, run, shared):
+    """The FAST lists, read on their own: every `every` seconds, every BURST_EVERY
+    for BURST_FOR after news."""
+    fast = [w for w in WATCHES if w["id"] in FAST]
+    nxt = {w["id"]: 0.0 for w in fast}
+    burst = {}
+    while not shared["stop"].is_set():
+        now = time.time()
+        w = None
+        if _can_push[0]:
+            w = next((w for w in fast if now >= nxt[w["id"]] and now >= shared["pause"].get(w["site"], 0)), None)
+        if w is None:
+            shared["stop"].wait(0.1)
+            continue
+        got = fetch_safe(w)
+        with LOCK:
+            now = time.time()
+            try:
+                ev, why = check(st, w, now, got)
+            except Exception as e:
+                ev, why = None, "unexpected data"
+                log(f"{w['id']}: error {e!r}")
+            if handle(st, w, ev, why, now, shared["pause"], shared["refused"]):
+                shared["urgent"] = True
+                burst[w["id"]] = now + BURST_FOR
+            shared["tried"].add(w["id"])
+            run["checks"] += 1
+            run["to"] = int(time.time())
+            save(st)
+        gap = BURST_EVERY if burst.get(w["id"], 0) > time.time() else w["every"]
+        nxt[w["id"]] = time.time() + gap
+        p = shared["pause"].get(w["site"], 0)
+        if p > time.time():
+            nxt[w["id"]] = min(nxt[w["id"]], p)
+
+
 def check_sales(st, site, store, now):
     """A note when the store starts a sale: a sale-like collection that's new or no longer empty."""
     cs = []
@@ -886,6 +957,11 @@ def main():
     pause, tried, refused = {}, set(), {}
     greeted = queued = handed = False
     last_push = next_pull = t0
+    shared = {"stop": threading.Event(), "pause": pause, "refused": refused, "tried": tried, "urgent": False}
+    lane = None
+    if any(w["id"] in FAST for w in WATCHES):
+        lane = threading.Thread(target=fast_lane, args=(st, run, shared), daemon=True)
+        lane.start()
     try:
         while not os.path.exists(STOP) and time.time() - t0 < MAX_RUN:
             now = time.time()
@@ -893,61 +969,67 @@ def main():
                 if now >= next_pull:
                     next_pull = now + PULL_RETRY
                     if pull(tries=1):
+                        with LOCK:
+                            fresh = load()
+                            st.clear()
+                            st.update(fresh)
                         _can_push[0] = True
-                        st = load()
                         log("memory readable again; watching")
                 if not _can_push[0]:
                     time.sleep(0.2)
                     continue
-            w = next((w for w in WATCHES if now >= due[w["id"]] and now >= pause.get(w["site"], 0)), None)
+            w = next((w for w in WATCHES if w["id"] not in FAST and now >= due[w["id"]]
+                      and now >= pause.get(w["site"], 0)), None)
             sale = next((s for s in sites if now >= sales_due[s[0]] and now >= pause.get(s[0], 0)), None)
             if w is None and sale is None:
                 time.sleep(0.2)
                 continue
             urgent = False
-            if w is not None:
-                try:
-                    ev, why = check(st, w, now)
-                except Exception as e:
-                    ev, why = None, "unexpected data"
-                    log(f"{w['id']}: error {e!r}")
-                if ev is None:
-                    log(f"{w['id']}: read failed: {why}")
-                    failed(st, w, now, why)
-                    if why in REFUSED:
-                        refused[w["site"]] = refused.get(w["site"], 0) + 1
-                        pause[w["site"]] = time.time() + (BACKOFF_FIRST if refused[w["site"]] == 1 else BACKOFF)
+            got = fetch_safe(w) if w is not None else None
+            LOCK.acquire()
+            try:
+                now = time.time()
+                if w is not None:
+                    try:
+                        ev, why = check(st, w, now, got)
+                    except Exception as e:
+                        ev, why = None, "unexpected data"
+                        log(f"{w['id']}: error {e!r}")
+                    urgent = handle(st, w, ev, why, now, pause, refused)
+                    due[w["id"]] = time.time() + w["every"]
+                    if w["site"] in pause and pause[w["site"]] > time.time():
+                        due[w["id"]] = min(due[w["id"]], pause[w["site"]])
+                    tried.add(w["id"])
+                    run["checks"] += 1
                 else:
-                    refused.pop(w["site"], None)
-                    recovered(st, w)
-                    urgent = deliver(st, w, ev, now) if ev else False
-                due[w["id"]] = time.time() + w["every"]
-                if w["site"] in pause and pause[w["site"]] > time.time():
-                    due[w["id"]] = min(due[w["id"]], pause[w["site"]])
-                tried.add(w["id"])
-                run["checks"] += 1
-            else:
-                try:
-                    urgent = check_sales(st, sale[0], sale[1], now)
-                except Exception as e:
-                    log(f"{sale[1]}: sales check error {e!r}")
-                sales_due[sale[0]] = time.time() + SALES_EVERY
-            if (not handed and sites and all(refused.get(s, 0) >= 2 for s, _ in sites)
-                    and handoff_ok(st, now)):
-                handed = True
-                if queue_next():
-                    st["handoffs"].append(int(now))
-                    log("every store is refusing this runner (too many requests); handing over to a fresh run")
-                    break
-            flush(st)
-            run["to"] = int(time.time())
-            st["run"] = run
-            if not greeted and len(tried) == len(WATCHES):
-                greeted = True
-                before = (st.get("hello"), st.get("cover"))
-                greet(st)
-                urgent = urgent or (st.get("hello"), st.get("cover")) != before
-            save(st)
+                    try:
+                        urgent = check_sales(st, sale[0], sale[1], now)
+                    except Exception as e:
+                        log(f"{sale[1]}: sales check error {e!r}")
+                    sales_due[sale[0]] = time.time() + SALES_EVERY
+                fast_refused = any(refused.get(x["site"], 0) >= 2 for x in WATCHES if x["id"] in FAST)
+                if (not handed and sites and (all(refused.get(s, 0) >= 2 for s, _ in sites) or fast_refused)
+                        and handoff_ok(st, now)):
+                    handed = True
+                    if queue_next():
+                        st["handoffs"].append(int(now))
+                        who = next((f"{x['store']}'s {x['label']} are" for x in WATCHES if x["id"] in FAST
+                                    and refused.get(x["site"], 0) >= 2), "every store is")
+                        log(f"{who} refusing this runner (too many requests); handing over to a fresh run")
+                        break
+                flush(st)
+                run["to"] = int(time.time())
+                st["run"] = run
+                if not greeted and len(tried) == len(WATCHES):
+                    greeted = True
+                    before = (st.get("hello"), st.get("cover"))
+                    greet(st)
+                    urgent = urgent or (st.get("hello"), st.get("cover")) != before
+                save(st)
+                if shared["urgent"]:
+                    urgent, shared["urgent"] = True, False
+            finally:
+                LOCK.release()
             if urgent or time.time() - last_push >= PUSH_EVERY:
                 push(st, "news" if urgent else "regular")
                 last_push = time.time()
@@ -955,9 +1037,13 @@ def main():
                 queued = True
                 queue_next()
     finally:
-        flush(st, force=True)
-        st["run"] = run
-        save(st)
+        shared["stop"].set()
+        if lane is not None:
+            lane.join(timeout=20)
+        with LOCK:
+            flush(st, force=True)
+            st["run"] = run
+            save(st)
         push(st, "end of run")
         log(f"stopped after {run['checks']} checks")
         open(DONE, "w").close()
