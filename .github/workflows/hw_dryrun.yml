@@ -1,0 +1,118 @@
+name: HW v18 dry run (temporary)
+# Runs the new bot for 150 s against the live stores with NO Telegram, NO calls
+# and NO push to main — it reads main's seen.json and keeps its own copy here.
+on:
+  push:
+    branches: [claude/probe]
+    paths: [bot_v18.py, .github/workflows/hw_dryrun.yml, hw_dryrun_trigger.txt]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hw-dryrun
+  cancel-in-progress: true
+
+jobs:
+  dryrun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/probe
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: main's state
+        run: |
+          git fetch -q --depth=1 origin main
+          mkdir -p dry && cd dry
+          git show origin/main:seen.json > seen.json
+          git show origin/main:hw_cases.json > hw_cases.json
+          git show origin/main:fc_cartlog.jsonl > fc_cartlog.jsonl
+          cp ../bot_v18.py bot.py
+      - name: Run v18 (no Telegram)
+        working-directory: dry
+        env:
+          RUN_SECONDS: "150"
+          FC_EVERY: "8"
+          RUN_EXTEND_S: "0"
+          FC_CATALOGUE_EVERY: "300"
+          FC_EXTRA_BRANDS: "1335"
+          FC_EXTRA_EVERY: "90"
+          MAJORETTE_TRACK: "dtm,marques"
+          MG_EVERY_S: "120"
+          KD_EVERY_S: "120"
+          KD_FAST_EVERY_S: "10"
+          HM_EVERY_S: "-1"
+          FC_WWW_RATE: "1.0"
+          FC_WWW_PAUSE_S: "45"
+          FC_LIST_EVERY: "45"
+          FC_TAT_SWEEP: "80"
+          FC_LIVE_MAX: "4"
+          FC_LIVE_AUDIT: "1"
+          FC_PAGELESS_S: "20"
+          SHOPS: "zoomsters.in,torquetribe.in,toycollectorsindia.com,rywheelz.com,kinderlogs.in,thepeppystore.in,303diecastshop.in"
+          SHOPS_SLOW: "toymarche.com,funcorp.in,toycra.com,hobbyshoppy.in"
+          SHOP_EVERY_S: "60"
+          SHOP_SLOW_EVERY_S: "300"
+          HEALTH_WARN_H: "3"
+          SILENT: "true"
+          FIRST_RUN_SILENT: "true"
+          MAX_ALERT_PRICE: "0"
+          DEBUG: "false"
+          MULTIPACK_OK: "porsche,911,fast furious,fast & furious,fast and furious,skyline,gt-r,gtr,premium,car culture,team transport,boulevard,rlc,treasure hunt"
+          ALERT_CAP_TARGET: "3"
+          ALERT_CAP_OTHER: "1"
+          SOLO_MAX: "6"
+          TG_BUTTONS: "true"
+          MUTE_DAYS: "30"
+          WATCHLIST: "rlc,treasure hunt,team transport,car culture,boulevard,premium,silhouettes,kaido house,liberty walk"
+          RING_ON: "porsche,911,930,934,935,959,964,993,918,carrera,singer,taycan,skyline,ferrari,laferrari,testarossa,f40,f50,enzo,sf90"
+          RING_KINDS: ""
+          RING_CAR_H: "24"
+          RING_GAP_MIN: "3"
+          RING_QUIET: "00:00-07:00"
+          FC_EXCLUDE: "monster truck,monster jam,monstred,hopper ball,track set,trackset,track and,track with,track builder,track creator,playset,play set,race off,raceway,speedway,garage,car wash,loop dash,loop track,launch & loop,launcher,stunt track,hot wheels city,ultimate garage,super loop,pit stop,action set,crash & track,ultimate,water bottle,sipper,canteen,sunglass,digital watch,wrist watch,t-shirt,tshirt,sweatshirt,sandwich box,lunch box,tiffin,play ball,school bag,backpack,umbrella,raincoat,socks,slippers,sandals,shoes,bicycle,car case,storage case,carry case,storage box"
+          FC_MARQUES: "porsche,ferrari,lamborghini,supra,skyline,gt-r,gtr,nissan,datsun,rx-7,rx7,mazda,civic,type r,nsx,honda,toyota,ae86,silvia,evo,lancer,subaru,wrx,impreza,celica,mr2,bmw,m3,m4,audi,rs6,mercedes,amg,bugatti,mclaren,aston martin,koenigsegg,pagani,alfa romeo,countach,aventador,huracan,diablo,testarossa,f40,f50,911,930,993,959,carrera,singer,mustang,corvette,camaro,challenger,charger,plymouth,bentley,ford gt,premium,car culture,team transport,boulevard,rlc,treasure hunt,silver series,fast furious,exotics,legends,silhouettes,japan historics,modern classics"
+          FC_WATCH: "https://www.firstcry.com/hot-wheels/hot-wheels-premium-fast-and-furious-die-cast-toy-car-for-adult-collectors-orange/21161951/product-detail"
+          FC_CART: "true"
+          FC_CART_MAX: "225"
+          FC_CART_COOLDOWN_MIN: "30"
+          FC_CART_COOLDOWN_OTHER_H: "6"
+          FC_LIVE_POLL: "2"
+          FC_RESTOCK_COOLDOWN_H: "1"
+          FC_MIN_ALERT_STOCK_TARGET: "1"
+          FC_MIN_ALERT_STOCK: "2"
+          FC_SURE_UNITS: "5"
+          FC_API_PARALLEL: "10"
+          FC_WATCH_MAX: "25"
+          FC_ROTATE_PER_RUN: "18"
+          MG_BRANDS: "hotwheels,mattel,minigt,mini gt,kaido house"
+          MG_CATEGORIES: "trading card,tcg"
+          KD_STOCK_COUNT: "true"
+          SRC_WORKERS: "6"
+          FC_WORKERS: "10"
+          HM_WORKERS: "8"
+        run: python bot.py 2>&1 | tee ../hw_dryrun_log.txt
+      - name: Keep the log on the probe branch
+        if: always()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          python3 - <<'PY'
+import json
+a = json.load(open("dry/seen.json"))
+m = a.get("_meta", {})
+out = {"meta_keys": sorted(m.keys()), "shop_at": m.get("shop_at"), "health": m.get("health"),
+       "fc_fresh2": m.get("fc_fresh2"), "sources": {}}
+for k, v in a.items():
+    if isinstance(v, dict) and v.get("source"):
+        out["sources"][v["source"]] = out["sources"].get(v["source"], 0) + 1
+json.dump(out, open("hw_dryrun_report.json", "w"), indent=1)
+PY
+          git add -f hw_dryrun_log.txt hw_dryrun_report.json || true
+          git commit -q -m "v18 dry run report [skip ci]" || exit 0
+          git push -q origin HEAD:claude/probe
