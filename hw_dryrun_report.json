@@ -1,0 +1,82 @@
+{
+ "meta_keys": [
+  "fc_fresh",
+  "fc_live_since",
+  "fc_offset",
+  "health",
+  "mg_wm",
+  "ring_call",
+  "ring_test",
+  "shop_at"
+ ],
+ "shop_at": {
+  "zoomsters.in": 1795360410,
+  "toycollectorsindia.com": 1795360460,
+  "torquetribe.in": 1795360483,
+  "thepeppystore.in": 1795360497,
+  "rywheelz.com": 1795360499,
+  "kinderlogs.in": 1795360509,
+  "303diecastshop.in": 1795360530,
+  "toymarche.com": 1795360540,
+  "toycra.com": 1795360636
+ },
+ "health": {
+  "fc_www": {
+   "ok": 1795360650
+  },
+  "kd": {
+   "ok": 1795360629
+  },
+  "shop:zoomsters.in": {
+   "ok": 1795360410
+  },
+  "fc_cart": {
+   "ok": 1795360651
+  },
+  "mg": {
+   "ok": 1795360626
+  },
+  "shop:toycollectorsindia.com": {
+   "ok": 1795360460
+  },
+  "shop:torquetribe.in": {
+   "ok": 1795360483
+  },
+  "shop:thepeppystore.in": {
+   "ok": 1795360497
+  },
+  "shop:rywheelz.com": {
+   "ok": 1795360499
+  },
+  "shop:kinderlogs.in": {
+   "ok": 1795360509
+  },
+  "shop:303diecastshop.in": {
+   "ok": 1795360530
+  },
+  "shop:toymarche.com": {
+   "ok": 1795360540
+  },
+  "shop:toycra.com": {
+   "ok": 1795360636
+  }
+ },
+ "fc_fresh2": null,
+ "sources": {
+  "firstcry": 709,
+  "minifygram": 295,
+  "hamleys": 64,
+  "bigbasket": 2,
+  "karzdolls": 684,
+  "blinkit": 1,
+  "shop_zoomsters": 1063,
+  "shop_toycollectorsind": 1285,
+  "shop_thepeppystore": 461,
+  "shop_torquetribe": 470,
+  "shop_kinderlogs": 2257,
+  "shop_rywheelz": 361,
+  "shop_303diecastshop": 142,
+  "shop_toymarche": 603,
+  "shop_toycra": 70
+ }
+}
