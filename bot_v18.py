@@ -5110,6 +5110,7 @@ SHOP_NAMES = {"zoomsters.in": "Zoomsters", "torquetribe.in": "TorqueTribe",
               "303diecastshop.in": "303 Diecast", "toymarche.com": "Toy Marche", "funcorp.in": "Funcorp",
               "toycra.com": "Toycra", "hobbyshoppy.in": "Hobby Shoppy"}
 _SHOP_WANT = re.compile(r"hot\s*-?\s*wheels?|\bmini\s*-?\s*gt\b|\bkaido\b|\bmatch\s*-?\s*box\b|\bmajorette\b", re.I)
+_SHOP_KEEP = re.compile(r"\bmini\s*-?\s*gt\b|\bkaido\b", re.I)
 _SHOP_AT: dict = {}         # store -> when it was last read (this run; seen.json keeps it between runs)
 _SHOP_OFF: dict = {}        # store -> epoch until which it's left alone (it said 429/403)
 
@@ -5142,6 +5143,10 @@ def _shop_records(dom: str, prods: list) -> list:
         if vendor and _SHOP_WANT.search(vendor) and not _SHOP_WANT.search(title):
             name = f"{vendor} {title}"             # "(MGT01006) RB VCARB 01" → "Mini GT (MGT01006) …"
         name = (name + chase_tag(f"{tags} {ptype}", name))[:180]
+        # only what you hunt: Mini GT / Kaido House, chase pieces and your 🎯
+        # cars (marques, premium lines, watchlist) — not every mainline car
+        if not (_SHOP_KEEP.search(name) or hw_priority(name) or _is_marque_flagged({"name": name})):
+            continue
         vs = [v for v in (p.get("variants") or []) if isinstance(v, dict)]
         avail = [v for v in vs if v.get("available")]
         pick = avail[0] if avail else (vs[0] if vs else {})
@@ -5213,7 +5218,7 @@ def scrape_shops(seen: dict | None = None) -> list[dict]:
             continue
         recs = _shop_records(dom, prods)
         ins = sum(1 for r in recs if r["stock"] == "in_stock")
-        print(f"  [SHOP] {_shop_label(dom)}: {len(recs)} diecast ({ins} in stock) of {len(prods)} products")
+        print(f"  [SHOP] {_shop_label(dom)}: {len(recs)} tracked ({ins} in stock) of {len(prods)} products")
         out += recs
     return out
 
@@ -6620,6 +6625,15 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
         for pid in items:
             seen.setdefault(pid, {})["alerted_new"] = True
         print(f"[=] New source '{s}': baseline {len(items)} items absorbed silently.")
+        if s.startswith("shop_"):
+            meta = seen.setdefault("_meta", {})
+            if not meta.get("shops_note"):
+                meta["shops_note"] = 1
+                tg(f"🏪 <b>Now also watching {len(SHOPS_FAST + SHOPS_SLOW)} more stores:</b> "
+                   + ", ".join(_shop_label(x) for x in SHOPS_FAST + SHOPS_SLOW)
+                   + ". Your 🎯 cars there (and their Treasure Hunts / chases) alert one by one with a "
+                     "straight-to-checkout link; their other Mini GT news comes as one line a store.")
+            continue
         tg(f"🆕 <b>New store added:</b> {SRC.get(s, s)} — tracking {len(items)} products "
            f"({ins} in stock). Alerts start from the next change.")
 
@@ -6897,6 +6911,8 @@ def main():
     _fc_fresh_save(seen)
     took = time.time() - t_run
     print(f"\n[*] run finished: {pass_no} pass(es) in {took:.0f}s ({', '.join(timings)})")
+    print(f"[*] FirstCry website: {_FC_PACE.n} request(s), {_FC_PACE.blocked} turned away; "
+          f"cart: {_FC_CART_STATS['calls']} call(s)")
     if _ON_GITHUB and took > RUN_SECONDS + RUN_EXTEND_S + 25:
         # visible in the run's summary and through the API, without the logs
         print(f"::notice title=Long run ({took:.0f}s)::{', '.join(timings)[:900]}")
