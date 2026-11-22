@@ -2728,7 +2728,7 @@
   "fc_23075651": {
     "stock": "in_stock",
     "name": "Hot Wheels Classic TV Series Batmobile (144/250) Die Cast Toy Car - Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-classic-tv-series-batmobile-144-250-die-cast-toy-car-purple/23075651/product-detail",
     "first_seen": "2026-07-18T21:31:20",
@@ -4121,7 +4121,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -12756,7 +12756,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -13872,6 +13872,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14272,16 +14273,16 @@
     "tg_upd": 377047292,
     "health": {
       "mg": {
-        "ok": 1795364766
+        "ok": 1795364881
       },
       "fc_www": {
-        "ok": 1795364811
+        "ok": 1795364935
       },
       "fc_cart": {
-        "ok": 1795364810
+        "ok": 1795364936
       },
       "kd": {
-        "ok": 1795364810
+        "ok": 1795364922
       }
     }
   },
@@ -14586,7 +14587,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-22T16:15:55",
+    "fc_off": "2026-11-22T16:27:59",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15549,7 +15550,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15572,7 +15573,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -19418,6 +19419,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T15:16:01",
     "fc_lst_seen": "2026-11-17T16:30:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -21703,7 +21705,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22217,7 +22219,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22653,7 +22655,7 @@
   "fc_24776070": {
     "stock": "in_stock",
     "name": "Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-feline-lucky-92-250-toy-car-gold-and-red-black/24776070/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -25959,7 +25961,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
