@@ -12675,6 +12675,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T13:43:53",
+    "fc_off": "2026-11-23T03:31:49",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-22T13:51:18",
@@ -12866,7 +12867,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -13740,7 +13741,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13789,7 +13790,7 @@
   "fc_24473712": {
     "stock": "in_stock",
     "name": "Hot Wheels Salt Streaker Die-Cast Toy Car - Blue Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-salt-streaker-die-cast-toy-car-blue-orange/24473712/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13841,7 +13842,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13866,7 +13867,7 @@
   "fc_24473515": {
     "stock": "in_stock",
     "name": "Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-go-realla-fast-die-cast-toy-car-black-and-yellow/24473515/product-detail",
     "first_seen": "2026-09-17T04:26:39",
@@ -13928,7 +13929,7 @@
   "fc_24473516": {
     "stock": "in_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
@@ -14403,16 +14404,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795404605
+        "ok": 1795404727
       },
       "fc_www": {
-        "ok": 1795404668
+        "ok": 1795404783
       },
       "fc_cart": {
-        "ok": 1795404669
+        "ok": 1795404779
       },
       "kd": {
-        "ok": 1795404669
+        "ok": 1795404779
       }
     }
   },
@@ -14604,7 +14605,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -16357,7 +16358,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
