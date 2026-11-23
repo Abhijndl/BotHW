@@ -2734,7 +2734,7 @@
   "fc_23075651": {
     "stock": "in_stock",
     "name": "Hot Wheels Classic TV Series Batmobile (144/250) Die Cast Toy Car - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-classic-tv-series-batmobile-144-250-die-cast-toy-car-purple/23075651/product-detail",
     "first_seen": "2026-07-18T21:31:20",
@@ -4134,7 +4134,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -14406,16 +14406,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795407386
+        "ok": 1795407511
       },
       "fc_www": {
-        "ok": 1795407457
+        "ok": 1795407588
       },
       "fc_cart": {
-        "ok": 1795407454
+        "ok": 1795407585
       },
       "kd": {
-        "ok": 1795407454
+        "ok": 1795407563
       }
     }
   },
@@ -22461,7 +22461,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -28166,21 +28166,21 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-scudeia-ferrari-hp-red-black/24999461/product-detail",
     "first_seen": "2026-11-16T10:30:00",
-    "last_seen": "2026-11-23T04:00:00",
+    "last_seen": "2026-11-23T04:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-16T16:02:21",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-23T04:00:00",
-    "fc_api_seen_at": "2026-11-23T04:00:00",
+    "fc_api_seen_at": "2026-11-23T04:15:00",
     "fc_trusted": true,
     "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "0",
     "fc_phantom": "2026-11-16T16:02:53",
     "fc_cart": "y",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-20T17:09:05",
     "fc_lst_seen": "2026-11-20T17:15:00",
     "last_ring": "2026-11-16T10:38:43",
