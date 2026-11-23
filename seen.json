@@ -14396,16 +14396,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795398846
+        "ok": 1795398967
       },
       "fc_www": {
-        "ok": 1795398875
+        "ok": 1795398994
       },
       "fc_cart": {
-        "ok": 1795398876
+        "ok": 1795398995
       },
       "kd": {
-        "ok": 1795398863
+        "ok": 1795398984
       }
     }
   },
@@ -16193,7 +16193,7 @@
     "fc_listed_at": "2026-11-23T01:45:00",
     "fc_api_seen_at": "2026-11-23T01:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-21T10:01:47",
@@ -26246,7 +26246,7 @@
     "fc_listed_at": "2026-11-23T01:45:00",
     "fc_api_seen_at": "2026-11-23T01:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "22176036",
     "fc_phantom": "2026-11-21T04:42:43",
