@@ -3791,7 +3791,7 @@
     "fc_listed_at": "2026-11-23T12:15:00",
     "fc_api_seen_at": "2026-11-23T12:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -12977,13 +12977,13 @@
     "fc_lst_seen": "2026-11-23T12:15:00"
   },
   "fc_24194169": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari 5 Pack Die-Cast Toy Cars With Free Wheel 1:64 Scale, Set of 5 - Red",
     "price": "₹809",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-ferrari-5-pack-die-cast-toy-cars-with-free-wheel-1-64-scale-set-of-5-red/24194169/product-detail",
     "first_seen": "2026-09-14T06:24:40",
-    "last_seen": "2026-11-23T12:00:00",
+    "last_seen": "2026-11-23T12:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-23T11:20:59",
     "last_price_alert": "2026-11-05T09:50:29",
@@ -12992,16 +12992,17 @@
     "fc_listed_at": "2026-11-23T12:00:00",
     "fc_api_seen_at": "2026-11-23T12:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-23T11:22:28",
     "fc_off": "2026-11-23T12:12:18",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T11:43:21",
     "fc_lst_seen": "2026-11-23T11:45:00",
     "last_ring": "2026-11-22T05:57:06",
+    "fc_gone": "2026-11-23T12:17:47",
     "alert_log": [
       "2026-11-22T17:42:13",
       "2026-11-23T08:44:23",
@@ -14440,16 +14441,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795436163
+        "ok": 1795436284
       },
       "fc_www": {
-        "ok": 1795436215
+        "ok": 1795436339
       },
       "fc_cart": {
-        "ok": 1795436214
+        "ok": 1795436337
       },
       "kd": {
-        "ok": 1795436214
+        "ok": 1795436337
       }
     }
   },
@@ -22505,7 +22506,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22578,7 +22579,7 @@
   "fc_24776064": {
     "stock": "in_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-64-dodge-330-126-250-toy-car-red/24776064/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22749,7 +22750,7 @@
   "fc_24776080": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail",
     "first_seen": "2026-10-17T17:00:00",
@@ -22829,7 +22830,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22852,7 +22853,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22898,7 +22899,7 @@
   "fc_24776077": {
     "stock": "in_stock",
     "name": "Hot Wheels Custom / Personnalise 2020 Honda e (115/250) Toy Car Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-2020-honda-e-115-250-toy-car-blue/24776077/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22923,7 +22924,7 @@
   "fc_24776076": {
     "stock": "in_stock",
     "name": "Hot Wheels Custom/Personnalise 72 Chevy Luv (127/250) Die-Cast Toy Car - White & Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-72-chevy-luv-127-250-die-cast-toy-car-white-and-blue/24776076/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22947,7 +22948,7 @@
   "fc_24776070": {
     "stock": "in_stock",
     "name": "Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-feline-lucky-92-250-toy-car-gold-and-red-black/24776070/product-detail",
     "first_seen": "2026-10-17T17:15:00",
