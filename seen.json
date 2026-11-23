@@ -3791,7 +3791,7 @@
     "fc_listed_at": "2026-11-23T12:15:00",
     "fc_api_seen_at": "2026-11-23T12:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -14311,7 +14311,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14441,16 +14441,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795436763
+        "ok": 1795436890
       },
       "fc_www": {
-        "ok": 1795436845
+        "ok": 1795436975
       },
       "fc_cart": {
-        "ok": 1795436847
+        "ok": 1795436976
       },
       "kd": {
-        "ok": 1795436833
+        "ok": 1795436959
       }
     }
   },
@@ -15238,7 +15238,7 @@
     "fc_listed_at": "2026-11-23T12:15:00",
     "fc_api_seen_at": "2026-11-23T12:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_cart": "n",
@@ -18678,7 +18678,7 @@
   "fc_24473498": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Armored Batmobile Die-Cast Toy Car - Black",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-armored-batmobile-die-cast-toy-car-black/24473498/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -18690,14 +18690,14 @@
     "fc_listed_at": "2026-11-23T12:15:00",
     "fc_api_seen_at": "2026-11-23T12:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
-    "fc_lst": "out",
+    "fc_live": "sold out",
+    "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-17T04:57:55",
     "fc_cart": "n",
     "fc_svc": "0",
-    "fc_lst_on": "2026-11-23T06:34:33",
-    "fc_lst_seen": "2026-11-23T07:45:00",
+    "fc_lst_on": "2026-11-23T12:29:25",
+    "fc_lst_seen": "2026-11-23T12:15:00",
     "fc_gone": "2026-11-22T20:43:52",
     "alert_log": [
       "2026-11-22T19:54:05"
@@ -22037,7 +22037,7 @@
   "fc_24762155": {
     "stock": "out_of_stock",
     "name": "Hot Wheels '88 Mitsubishi Starion Die Cast Free Wheel Toy Car - Black",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-88-mitsubishi-starion-die-cast-free-wheel-toy-car-black/24762155/product-detail",
     "first_seen": "2026-10-13T15:15:00",
