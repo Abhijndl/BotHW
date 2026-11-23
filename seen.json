@@ -14405,16 +14405,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795408323
+        "ok": 1795408341
       },
       "fc_www": {
-        "ok": 1795408328
+        "ok": 1795408436
       },
       "fc_cart": {
-        "ok": 1795408324
+        "ok": 1795408435
       },
       "kd": {
-        "ok": 1795408328
+        "ok": 1795408434
       }
     }
   },
@@ -22459,7 +22459,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22533,7 +22533,7 @@
   "fc_24776064": {
     "stock": "in_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-64-dodge-330-126-250-toy-car-red/24776064/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22899,7 +22899,7 @@
   "fc_24776070": {
     "stock": "in_stock",
     "name": "Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-feline-lucky-92-250-toy-car-gold-and-red-black/24776070/product-detail",
     "first_seen": "2026-10-17T17:15:00",
