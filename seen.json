@@ -14040,6 +14040,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14457,16 +14458,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795470012
+        "ok": 1795470122
       },
       "fc_www": {
-        "ok": 1795470077
+        "ok": 1795470215
       },
       "fc_cart": {
-        "ok": 1795470079
+        "ok": 1795470216
       },
       "kd": {
-        "ok": 1795470078
+        "ok": 1795470200
       }
     }
   },
@@ -22779,7 +22780,7 @@
   "fc_24776080": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail",
     "first_seen": "2026-10-17T17:00:00",
@@ -22858,7 +22859,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22881,7 +22882,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -24480,7 +24481,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24503,7 +24504,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24526,7 +24527,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24549,7 +24550,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -28280,7 +28281,7 @@
     "fc_listed_at": "2026-11-23T21:30:00",
     "fc_api_seen_at": "2026-11-23T21:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "0",
     "fc_phantom": "2026-11-16T16:02:53",
