@@ -10482,6 +10482,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-23T02:05:33",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14395,16 +14396,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795399448
+        "ok": 1795399568
       },
       "fc_www": {
-        "ok": 1795399492
+        "ok": 1795399626
       },
       "fc_cart": {
-        "ok": 1795399494
+        "ok": 1795399627
       },
       "kd": {
-        "ok": 1795399473
+        "ok": 1795399616
       }
     }
   },
@@ -15073,6 +15074,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-23T02:05:33",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -19622,6 +19624,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -20742,6 +20745,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
+    "fc_off": "2026-11-23T02:05:33",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22761,7 +22765,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -27687,6 +27691,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
+    "fc_off": "2026-11-23T02:05:33",
     "fc_cart": "y",
     "fc_svc": "1"
   },
