@@ -14465,16 +14465,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795473968
+        "ok": 1795474083
       },
       "fc_www": {
-        "ok": 1795474029
+        "ok": 1795474166
       },
       "fc_cart": {
-        "ok": 1795474031
+        "ok": 1795474167
       },
       "kd": {
-        "ok": 1795474023
+        "ok": 1795474154
       }
     }
   },
@@ -19708,7 +19708,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -28509,20 +28508,19 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-porsche-racing-die-cast-free-wheel-model-toy-car-blue/19991402/product-detail",
     "first_seen": "2026-11-18T02:45:00",
-    "last_seen": "2026-11-23T22:30:00",
+    "last_seen": "2026-11-23T22:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-22T15:29:35",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-23T22:30:00",
+    "fc_api_seen_at": "2026-11-23T22:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-23T22:37:33",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28620,18 +28618,17 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-bike-red/24995810/product-detail",
     "first_seen": "2026-11-18T14:00:00",
-    "last_seen": "2026-11-23T22:30:00",
+    "last_seen": "2026-11-23T22:45:00",
     "alerted_new": true,
     "last_restock_alert": "",
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-23T22:30:00",
+    "fc_api_seen_at": "2026-11-23T22:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-23T22:37:33",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
