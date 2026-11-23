@@ -13854,7 +13854,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14416,23 +14416,23 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795424168
+        "ok": 1795424295
       },
       "fc_www": {
-        "ok": 1795424238
+        "ok": 1795424376
       },
       "fc_cart": {
-        "ok": 1795424235
+        "ok": 1795424377
       },
       "kd": {
-        "ok": 1795424235
+        "ok": 1795424363
       }
     }
   },
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14595,7 +14595,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -15781,7 +15781,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -16373,7 +16373,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -23804,11 +23804,11 @@
     "fc_listed_at": "2026-11-23T08:45:00",
     "fc_api_seen_at": "2026-11-23T08:45:00",
     "fc_trusted": true,
-    "fc_live": "page 0",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T04:31:40",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-22T17:44:13",
     "fc_lst_seen": "2026-11-22T17:45:00",
@@ -24400,7 +24400,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24469,7 +24469,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -28441,6 +28441,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-23T08:58:11",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
