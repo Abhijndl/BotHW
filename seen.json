@@ -13810,7 +13810,7 @@
     "fc_listed_at": "2026-11-23T06:15:00",
     "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-19T03:06:40",
@@ -14413,16 +14413,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795414574
+        "ok": 1795414693
       },
       "fc_www": {
-        "ok": 1795414650
+        "ok": 1795414764
       },
       "fc_cart": {
-        "ok": 1795414649
+        "ok": 1795414761
       },
       "kd": {
-        "ok": 1795414640
+        "ok": 1795414753
       }
     }
   },
@@ -14721,19 +14721,19 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
-    "last_seen": "2026-11-23T06:00:00",
+    "last_seen": "2026-11-23T06:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-22T14:23:03",
     "last_price_alert": "2026-11-22T14:10:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T15:00:00",
-    "fc_api_seen_at": "2026-11-23T06:00:00",
+    "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-23T06:06:21",
+    "fc_off": "2026-11-23T06:18:45",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15029,7 +15029,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -21775,7 +21775,7 @@
     "fc_listed_at": "2026-11-23T06:15:00",
     "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-22T05:29:16",
@@ -23830,12 +23830,12 @@
     "fc_listed_at": "2026-11-23T06:15:00",
     "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-22T18:22:37",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-23T06:02:50",
     "fc_lst_seen": "2026-11-23T06:15:00",
     "fc_gone": "2026-11-22T18:22:47",
@@ -24563,24 +24563,23 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-car-culture-team-transport-rob-n-pinks-car-and-17-ford-f-150-raptor-in-white/24854849/product-detail",
     "first_seen": "2026-10-26T16:00:00",
-    "last_seen": "2026-11-23T06:00:00",
+    "last_seen": "2026-11-23T06:15:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-23T05:30:45",
     "last_price_alert": "2026-11-04T18:00:43",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-11-23T06:00:00",
-    "fc_api_seen_at": "2026-11-23T06:00:00",
+    "fc_listed_at": "2026-11-23T06:15:00",
+    "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-22T10:35:57",
-    "fc_off": "2026-11-23T06:11:01",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T06:10:33",
-    "fc_lst_seen": "2026-11-23T06:00:00",
+    "fc_lst_seen": "2026-11-23T06:15:00",
     "alert_log": [
       "2026-11-23T05:30:45"
     ]
@@ -28222,7 +28221,7 @@
     "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24995810",
     "fc_phantom": "2026-11-16T10:46:19",
     "fc_cart": "y",
@@ -28536,8 +28535,9 @@
     "fc_api_seen_at": "2026-11-23T06:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-23T06:18:10",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
