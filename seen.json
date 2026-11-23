@@ -11375,7 +11375,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -14419,16 +14419,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795425621
+        "ok": 1795425842
       },
       "fc_www": {
-        "ok": 1795425736
+        "ok": 1795425864
       },
       "fc_cart": {
-        "ok": 1795425738
+        "ok": 1795425860
       },
       "kd": {
-        "ok": 1795425714
+        "ok": 1795425859
       }
     }
   },
@@ -15250,7 +15250,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -16326,7 +16326,7 @@
   "fc_24472644": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Audi TT Safari Die Cast Free Wheel Toy Car - White",
-    "price": "₹179",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-audi-tt-safari-die-cast-free-wheel-toy-car-white/24472644/product-detail",
     "first_seen": "2026-09-19T22:32:04",
@@ -16345,8 +16345,8 @@
     "fc_phantom": "2026-11-18T13:38:21",
     "fc_cart": "y",
     "fc_svc": "1",
-    "fc_lst_on": "2026-11-23T06:49:01",
-    "fc_lst_seen": "2026-11-23T07:30:00",
+    "fc_lst_on": "2026-11-23T09:23:42",
+    "fc_lst_seen": "2026-11-23T09:15:00",
     "fc_gone": "2026-11-22T16:10:45"
   },
   "fc_24476435": {
@@ -27336,7 +27336,6 @@
     "fc_lst": "out",
     "fc_gid": "22176036",
     "fc_phantom": "2026-11-13T14:36:18",
-    "fc_off": "2026-11-23T09:21:18",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T09:11:02",
