@@ -11404,7 +11404,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -14043,7 +14043,7 @@
     "fc_listed_at": "2026-11-23T22:30:00",
     "fc_api_seen_at": "2026-11-23T22:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
@@ -14465,16 +14465,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795473606
+        "ok": 1795473727
       },
       "fc_www": {
-        "ok": 1795473659
+        "ok": 1795473770
       },
       "fc_cart": {
-        "ok": 1795473661
+        "ok": 1795473771
       },
       "kd": {
-        "ok": 1795473652
+        "ok": 1795473763
       }
     }
   },
@@ -14785,7 +14785,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-23T22:30:43",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -14999,7 +14998,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -19703,7 +19702,7 @@
     "fc_listed_at": "2026-11-23T22:30:00",
     "fc_api_seen_at": "2026-11-23T22:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
