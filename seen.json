@@ -14415,16 +14415,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795417330
+        "ok": 1795417448
       },
       "fc_www": {
-        "ok": 1795417366
+        "ok": 1795417474
       },
       "fc_cart": {
-        "ok": 1795417363
+        "ok": 1795417473
       },
       "kd": {
-        "ok": 1795417363
+        "ok": 1795417473
       }
     }
   },
@@ -14735,7 +14735,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-23T06:51:30",
+    "fc_off": "2026-11-23T07:03:57",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15713,7 +15713,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15736,7 +15736,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -15870,6 +15870,7 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-02T16:29:36",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-10-31T07:01:27",
     "fc_lst_seen": "2026-10-31T07:30:00",
     "last_ring": "2026-11-02T16:28:43",
@@ -16334,7 +16335,7 @@
     "fc_listed_at": "2026-11-23T07:00:00",
     "fc_api_seen_at": "2026-11-23T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-18T13:38:21",
@@ -21954,7 +21955,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21989,7 +21990,7 @@
     "fc_listed_at": "2026-11-23T07:00:00",
     "fc_api_seen_at": "2026-11-23T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-13T09:49:37",
@@ -22474,7 +22475,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22549,7 +22550,7 @@
   "fc_24776064": {
     "stock": "in_stock",
     "name": "Hot Wheels 64 Dodge 330 (126/250) Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-64-dodge-330-126-250-toy-car-red/24776064/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22916,7 +22917,7 @@
   "fc_24776070": {
     "stock": "in_stock",
     "name": "Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-feline-lucky-92-250-toy-car-gold-and-red-black/24776070/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -23778,7 +23779,6 @@
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T04:30:13",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T14:43:30",
     "fc_lst_seen": "2026-11-22T14:45:00",
     "fc_gone": "2026-11-23T04:30:12",
@@ -23807,7 +23807,6 @@
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T04:31:40",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T17:44:13",
     "fc_lst_seen": "2026-11-22T17:45:00",
     "fc_gone": "2026-11-23T04:31:40",
@@ -23833,7 +23832,7 @@
     "fc_listed_at": "2026-11-23T07:00:00",
     "fc_api_seen_at": "2026-11-23T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T06:37:24",
@@ -28890,7 +28889,7 @@
     "fc_listed_at": "2026-11-23T07:00:00",
     "fc_api_seen_at": "2026-11-23T07:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-23T06:56:50",
