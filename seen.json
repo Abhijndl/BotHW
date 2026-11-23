@@ -13001,7 +13001,7 @@
     "fc_listed_at": "2026-11-23T16:45:00",
     "fc_api_seen_at": "2026-11-23T16:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-23T11:22:28",
@@ -14448,16 +14448,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795452968
+        "ok": 1795453102
       },
       "fc_www": {
-        "ok": 1795453059
+        "ok": 1795453174
       },
       "fc_cart": {
-        "ok": 1795453060
+        "ok": 1795453171
       },
       "kd": {
-        "ok": 1795453045
+        "ok": 1795453162
       }
     }
   },
@@ -14500,7 +14500,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -16208,7 +16208,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16247,7 +16247,7 @@
     "fc_listed_at": "2026-11-23T16:45:00",
     "fc_api_seen_at": "2026-11-23T16:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-21T10:01:47",
@@ -16284,7 +16284,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16383,7 +16383,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -22578,14 +22578,15 @@
     "fc_listed_at": "2026-11-23T16:45:00",
     "fc_api_seen_at": "2026-11-23T16:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "unlisted",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T16:04:13",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-23T16:03:48",
     "fc_lst_seen": "2026-11-23T16:45:00",
+    "fc_hold": "2026-11-23T16:59:15",
     "fc_gone": "2026-11-23T16:51:56",
     "alert_log": [
       "2026-11-23T16:03:51"
@@ -26305,7 +26306,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -28496,6 +28497,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-23T16:58:19",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
