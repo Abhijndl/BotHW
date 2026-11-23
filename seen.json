@@ -10476,13 +10476,12 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-23T00:45:00",
+    "fc_api_seen_at": "2026-11-23T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-23T00:56:05",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -13872,7 +13871,7 @@
     "fc_api_seen_at": "2026-11-23T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -14269,7 +14268,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14396,16 +14395,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795395848
+        "ok": 1795395962
       },
       "fc_www": {
-        "ok": 1795395902
+        "ok": 1795396037
       },
       "fc_cart": {
-        "ok": 1795395904
+        "ok": 1795396038
       },
       "kd": {
-        "ok": 1795395895
+        "ok": 1795396026
       }
     }
   },
@@ -15068,13 +15067,12 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-23T00:45:00",
+    "fc_api_seen_at": "2026-11-23T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-23T00:56:05",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15167,7 +15165,7 @@
     "fc_api_seen_at": "2026-11-23T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -20737,13 +20735,12 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-23T00:45:00",
+    "fc_api_seen_at": "2026-11-23T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-23T00:56:05",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27682,13 +27679,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-23T00:45:00",
+    "fc_api_seen_at": "2026-11-23T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-23T00:56:05",
     "fc_cart": "y",
     "fc_svc": "1"
   },
