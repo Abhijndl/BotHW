@@ -13986,7 +13986,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14270,7 +14269,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14397,16 +14396,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795396925
+        "ok": 1795397048
       },
       "fc_www": {
-        "ok": 1795396995
+        "ok": 1795397129
       },
       "fc_cart": {
-        "ok": 1795396997
+        "ok": 1795397130
       },
       "kd": {
-        "ok": 1795396988
+        "ok": 1795397120
       }
     }
   },
@@ -15225,7 +15224,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -28387,6 +28386,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-23T01:25:29",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
