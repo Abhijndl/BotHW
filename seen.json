@@ -12702,7 +12702,7 @@
     "fc_listed_at": "2026-11-23T17:30:00",
     "fc_api_seen_at": "2026-11-23T17:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-23T03:51:18",
@@ -14448,16 +14448,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795455487
+        "ok": 1795455602
       },
       "fc_www": {
-        "ok": 1795455505
+        "ok": 1795455646
       },
       "fc_cart": {
-        "ok": 1795455506
+        "ok": 1795455648
       },
       "kd": {
-        "ok": 1795455497
+        "ok": 1795455648
       }
     }
   },
@@ -22019,7 +22019,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22577,7 +22577,7 @@
     "fc_listed_at": "2026-11-23T17:30:00",
     "fc_api_seen_at": "2026-11-23T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T17:00:27",
@@ -26306,7 +26306,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -27605,7 +27605,7 @@
     "fc_listed_at": "2026-11-23T17:30:00",
     "fc_api_seen_at": "2026-11-23T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T11:05:51",
@@ -28516,7 +28516,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-23T17:15:00",
+    "fc_api_seen_at": "2026-11-23T17:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_gid": "19991405",
