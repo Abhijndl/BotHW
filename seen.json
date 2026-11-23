@@ -14439,16 +14439,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795440863
+        "ok": 1795440983
       },
       "fc_www": {
-        "ok": 1795440933
+        "ok": 1795441073
       },
       "fc_cart": {
-        "ok": 1795440932
+        "ok": 1795441075
       },
       "kd": {
-        "ok": 1795440924
+        "ok": 1795441060
       }
     }
   },
@@ -19678,6 +19678,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -22749,7 +22750,7 @@
   "fc_24776080": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail",
     "first_seen": "2026-10-17T17:00:00",
@@ -22829,7 +22830,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -24429,7 +24430,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24452,7 +24453,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24475,7 +24476,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24498,7 +24499,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24521,7 +24522,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -28471,13 +28472,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-23T13:15:00",
+    "fc_api_seen_at": "2026-11-23T13:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-23T13:25:28",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28581,12 +28581,11 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-23T13:15:00",
+    "fc_api_seen_at": "2026-11-23T13:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-23T13:25:28",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
