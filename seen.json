@@ -14465,16 +14465,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795474444
+        "ok": 1795474567
       },
       "fc_www": {
-        "ok": 1795474512
+        "ok": 1795474619
       },
       "fc_cart": {
-        "ok": 1795474513
+        "ok": 1795474621
       },
       "kd": {
-        "ok": 1795474499
+        "ok": 1795474612
       }
     }
   },
@@ -15082,7 +15082,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -22889,7 +22889,7 @@
   "fc_24776079": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Tags (166/250) Die Cast Toy Car - Red & White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-tags-166-250-die-cast-toy-car-red-and-white/24776079/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22935,7 +22935,7 @@
   "fc_24776077": {
     "stock": "in_stock",
     "name": "Hot Wheels Custom / Personnalise 2020 Honda e (115/250) Toy Car Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-2020-honda-e-115-250-toy-car-blue/24776077/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -22960,7 +22960,7 @@
   "fc_24776076": {
     "stock": "in_stock",
     "name": "Hot Wheels Custom/Personnalise 72 Chevy Luv (127/250) Die-Cast Toy Car - White & Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-custom-personnalise-72-chevy-luv-127-250-die-cast-toy-car-white-and-blue/24776076/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -28496,7 +28496,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
