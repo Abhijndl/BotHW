@@ -14405,16 +14405,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795407847
+        "ok": 1795407973
       },
       "fc_www": {
-        "ok": 1795407958
+        "ok": 1795408084
       },
       "fc_cart": {
-        "ok": 1795407955
+        "ok": 1795408086
       },
       "kd": {
-        "ok": 1795407943
+        "ok": 1795408064
       }
     }
   },
@@ -14724,6 +14724,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-23T04:27:16",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15699,7 +15700,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15722,7 +15723,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -18647,11 +18648,11 @@
     "fc_listed_at": "2026-11-23T04:15:00",
     "fc_api_seen_at": "2026-11-23T04:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "list",
     "fc_gid": "24473477",
     "fc_phantom": "2026-11-17T04:57:55",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:53:58",
     "fc_lst_seen": "2026-11-22T21:00:00",
@@ -21938,7 +21939,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -21961,7 +21962,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -23739,7 +23740,7 @@
     "fc_lst_seen": "2026-11-23T04:15:00"
   },
   "fc_24783761": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 20 Dodge Charger Hellcat (134/250) Toy Car - Orange",
     "price": "₹165",
     "source": "firstcry",
@@ -23752,16 +23753,17 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-22T17:30:00",
-    "fc_api_seen_at": "2026-11-23T03:00:00",
+    "fc_api_seen_at": "2026-11-23T04:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24783761",
-    "fc_phantom": "2026-11-22T12:32:08",
+    "fc_phantom": "2026-11-23T04:28:06",
     "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-22T14:43:30",
     "fc_lst_seen": "2026-11-22T14:45:00",
+    "fc_gone": "2026-11-23T04:28:04",
     "alert_log": [
       "2026-11-23T04:25:58"
     ]
@@ -23780,13 +23782,13 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-22T17:45:00",
-    "fc_api_seen_at": "2026-11-23T03:15:00",
+    "fc_api_seen_at": "2026-11-23T04:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T03:27:47",
-    "fc_off": "2026-11-23T03:15:31",
+    "fc_off": "2026-11-23T04:28:04",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-22T17:44:13",
@@ -23813,7 +23815,7 @@
     "fc_listed_at": "2026-11-23T04:15:00",
     "fc_api_seen_at": "2026-11-23T04:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-22T18:22:37",
@@ -26228,7 +26230,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
