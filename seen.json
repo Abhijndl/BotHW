@@ -11517,6 +11517,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-21T02:09:04",
+    "fc_off": "2026-11-23T03:26:08",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-03T07:59:07",
@@ -13841,7 +13842,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14403,16 +14404,16 @@
     "tg_upd": 377047299,
     "health": {
       "mg": {
-        "ok": 1795404246
+        "ok": 1795404371
       },
       "fc_www": {
-        "ok": 1795404326
+        "ok": 1795404446
       },
       "fc_cart": {
-        "ok": 1795404327
+        "ok": 1795404439
       },
       "kd": {
-        "ok": 1795404304
+        "ok": 1795404439
       }
     }
   },
@@ -16356,7 +16357,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
