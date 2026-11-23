@@ -14431,16 +14431,16 @@
     "tg_upd": 377047300,
     "health": {
       "mg": {
-        "ok": 1795430761
+        "ok": 1795430889
       },
       "fc_www": {
-        "ok": 1795430841
+        "ok": 1795430974
       },
       "fc_cart": {
-        "ok": 1795430840
+        "ok": 1795430973
       },
       "kd": {
-        "ok": 1795430827
+        "ok": 1795430957
       }
     }
   },
@@ -14739,19 +14739,18 @@
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-68-mercury-comet-cyclone-die-cast-toy-car-white/24473514/product-detail",
     "first_seen": "2026-09-17T10:41:09",
-    "last_seen": "2026-11-23T10:30:00",
+    "last_seen": "2026-11-23T10:45:00",
     "alerted_new": true,
     "last_restock_alert": "2026-11-22T14:23:03",
     "last_price_alert": "2026-11-22T14:10:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T15:00:00",
-    "fc_api_seen_at": "2026-11-23T10:30:00",
+    "fc_api_seen_at": "2026-11-23T10:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-23T10:36:57",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -22806,7 +22805,7 @@
     "fc_listed_at": "2026-11-23T10:45:00",
     "fc_api_seen_at": "2026-11-23T10:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-20T09:47:04",
@@ -24443,7 +24442,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24466,7 +24465,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24512,7 +24511,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
