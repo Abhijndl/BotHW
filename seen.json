@@ -14439,16 +14439,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795440376
+        "ok": 1795440494
       },
       "fc_www": {
-        "ok": 1795440448
+        "ok": 1795440581
       },
       "fc_cart": {
-        "ok": 1795440446
+        "ok": 1795440582
       },
       "kd": {
-        "ok": 1795440446
+        "ok": 1795440569
       }
     }
   },
@@ -15738,7 +15738,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15761,7 +15761,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
