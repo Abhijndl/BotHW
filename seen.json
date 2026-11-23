@@ -3791,7 +3791,7 @@
     "fc_listed_at": "2026-11-23T12:00:00",
     "fc_api_seen_at": "2026-11-23T12:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -14310,7 +14310,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14440,16 +14440,16 @@
     "tg_upd": 377047302,
     "health": {
       "mg": {
-        "ok": 1795435208
+        "ok": 1795435326
       },
       "fc_www": {
-        "ok": 1795435276
+        "ok": 1795435391
       },
       "fc_cart": {
-        "ok": 1795435275
+        "ok": 1795435388
       },
       "kd": {
-        "ok": 1795435275
+        "ok": 1795435387
       }
     }
   },
