@@ -14059,7 +14059,7 @@
     "fc_listed_at": "2026-11-24T10:30:00",
     "fc_api_seen_at": "2026-11-24T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795516806
+        "ok": 1795516928
       },
       "fc_www": {
-        "ok": 1795516864
+        "ok": 1795516973
       },
       "fc_cart": {
-        "ok": 1795516863
+        "ok": 1795516972
       },
       "kd": {
-        "ok": 1795516853
+        "ok": 1795516973
       }
     }
   },
@@ -15805,7 +15805,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -16231,7 +16231,7 @@
     "fc_listed_at": "2026-11-24T10:30:00",
     "fc_api_seen_at": "2026-11-24T10:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-24T10:16:47",
@@ -18720,6 +18720,7 @@
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-24T04:31:16",
     "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-24T08:24:18",
     "fc_lst_seen": "2026-11-24T08:45:00",
     "fc_gone": "2026-11-24T08:52:38",
@@ -19731,7 +19732,7 @@
     "fc_listed_at": "2026-11-24T10:30:00",
     "fc_api_seen_at": "2026-11-24T10:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
