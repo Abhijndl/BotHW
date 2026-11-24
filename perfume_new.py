@@ -10,6 +10,7 @@ the Hot Wheels tracker: each run watches for PERFUME_MAX_RUN_S seconds, makes
 sure the next run is queued, and keeps its memory (perfume.json) on the
 perfume-state branch, so it never writes to main.
 """
+import email.utils
 import gzip
 import hashlib
 import html
@@ -293,12 +294,24 @@ def page_products(body):
     return arr if isinstance(arr, list) else None
 
 
+def version(h):
+    try:
+        return email.utils.parsedate_to_datetime(h.get("Date")).timestamp(), int(h.get("Age") or 0)
+    except Exception:
+        return None
+
+
+def same(a, b):
+    """Same cached page: it keeps its Date, or (on some pages) its Date minus Age."""
+    return bool(a and b) and (a[0] == b[0] or abs((a[0] - a[1]) - (b[0] - b[1])) <= 2)
+
+
 def stamp(url, headers):
-    """Which version of a cached page the site would send (its Date), for a few hundred bytes."""
+    """Which version of a cached page the site would send, for a few hundred bytes."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA, **headers})
     try:
         with urllib.request.urlopen(req, timeout=10) as r:
-            return r.headers.get("Date") if r.status == 200 else None
+            return version(r.headers) if r.status == 200 else None
     except Exception:
         return None
 
@@ -307,7 +320,7 @@ def fetch_next(w):
     """Whiff Culture's new site (since 24 Nov); the page is downloaded only when it changes."""
     url, hd = f"{w['site']}/collections/{w['coll']}", {"RSC": "1"}
     last = _page.get(w["id"])
-    if last and last[0] and time.time() - last[2] < NEXT_FULL and stamp(url, hd) == last[0]:
+    if last and last[0] and time.time() - last[2] < NEXT_FULL and same(stamp(url, hd), last[0]):
         return last[1], ""
     info = {}
     try:            # no cache-buster: read the site's cache like any visitor
@@ -338,10 +351,10 @@ def fetch_next(w):
         acc = [a["name"] for a in p.get("accords") or [] if isinstance(a, dict) and isinstance(a.get("name"), str)]
         out.append({"id": pid, "title": title, "handle": slug, "variants": vs, "scent": ", ".join(acc[:3]).lower(),
                     "url": f"{w['site']}/products/{slug}" if slug else w["page"]})
-    made = info.get("Date")
-    if last and made and made != last[0]:
-        log(f"{w['id']}: the site remade this page ({made}, {info.get('Age', '?')} s ago)")
-    _page[w["id"]] = (made, out, time.time())
+    ver = version(info)
+    if last and last[0] and ver and not same(ver, last[0]):
+        log(f"{w['id']}: the site remade this page ({info.get('Date')}, age {info.get('Age', '?')} s)")
+    _page[w["id"]] = (ver, out, time.time())
     return out, ""
 
 
