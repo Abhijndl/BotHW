@@ -10525,13 +10525,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-24T17:15:00",
+    "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T17:29:49",
+    "fc_off": "2026-11-24T17:41:56",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -13034,7 +13034,6 @@
     "fc_lst": "out",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-24T15:02:28",
-    "fc_off": "2026-11-24T17:30:48",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T20:41:01",
@@ -14481,16 +14480,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795541885
+        "ok": 1795542127
       },
       "fc_www": {
-        "ok": 1795541909
+        "ok": 1795542200
       },
       "fc_cart": {
-        "ok": 1795541910
+        "ok": 1795542201
       },
       "kd": {
-        "ok": 1795541910
+        "ok": 1795542193
       }
     }
   },
@@ -15157,13 +15156,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-24T17:15:00",
+    "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T17:29:49",
+    "fc_off": "2026-11-24T17:41:56",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15744,7 +15743,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-24T10:45:00",
-    "fc_api_seen_at": "2026-11-24T17:00:00",
+    "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -20853,13 +20852,13 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-24T17:15:00",
+    "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T17:29:49",
+    "fc_off": "2026-11-24T17:41:56",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22637,7 +22636,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T18:21:49",
@@ -22694,7 +22693,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-17T05:44:07",
@@ -22828,7 +22827,7 @@
   "fc_24776080": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail",
     "first_seen": "2026-10-17T17:00:00",
@@ -22868,7 +22867,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-21T13:17:55",
@@ -22894,7 +22893,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:47:47",
@@ -22910,7 +22909,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -23885,7 +23884,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T04:30:13",
@@ -23913,7 +23912,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T20:47:22",
@@ -23944,7 +23943,7 @@
     "fc_listed_at": "2026-11-24T14:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-24T15:51:44",
@@ -27578,7 +27577,7 @@
     "fc_listed_at": "2026-11-24T17:30:00",
     "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T17:09:22",
@@ -27612,7 +27611,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T11:27:29",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T11:36:50",
     "fc_lst_seen": "2026-11-24T12:00:00",
     "fc_gone": "2026-11-24T11:27:47",
@@ -27666,7 +27664,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T13:17:57",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T17:05:44",
     "fc_lst_seen": "2026-11-24T17:15:00",
     "fc_gone": "2026-11-24T13:17:57",
@@ -27695,7 +27692,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T11:05:51",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T16:00:00",
     "last_ring": "2026-11-20T04:46:59",
@@ -27879,13 +27875,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-24T17:15:00",
+    "fc_api_seen_at": "2026-11-24T17:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T17:29:49",
+    "fc_off": "2026-11-24T17:41:56",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28557,7 +28553,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
@@ -29961,7 +29956,6 @@
     "fc_gid": "25045654",
     "fc_phantom": "2026-11-24T17:02:53",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T16:00:00",
     "fc_gone": "2026-11-24T17:02:53"
@@ -30035,7 +30029,6 @@
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T15:10:47",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:45:00",
     "fc_gone": "2026-11-24T15:11:08"
@@ -30082,7 +30075,6 @@
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T17:10:43",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_gone": "2026-11-24T17:10:43"
   }
 }
