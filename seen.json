@@ -13832,7 +13832,7 @@
     "fc_listed_at": "2026-11-24T07:15:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-03T08:18:55",
@@ -13857,7 +13857,7 @@
     "fc_listed_at": "2026-11-23T06:30:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-19T03:06:40",
@@ -13885,7 +13885,7 @@
     "fc_listed_at": "2026-11-21T14:45:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-15T03:04:43",
@@ -13973,7 +13973,7 @@
     "fc_listed_at": "2026-11-24T08:00:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
@@ -14021,7 +14021,7 @@
     "fc_listed_at": "2026-11-24T08:00:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
@@ -14468,16 +14468,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795507329
+        "ok": 1795507443
       },
       "fc_www": {
-        "ok": 1795507354
+        "ok": 1795507460
       },
       "fc_cart": {
-        "ok": 1795507355
+        "ok": 1795507461
       },
       "kd": {
-        "ok": 1795507355
+        "ok": 1795507453
       }
     }
   },
@@ -14788,7 +14788,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-24T07:51:53",
+    "fc_off": "2026-11-24T08:03:45",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15768,7 +15768,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15791,7 +15791,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -22049,7 +22049,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -23854,7 +23854,7 @@
     "fc_listed_at": "2026-11-24T08:00:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T04:30:13",
@@ -23882,7 +23882,7 @@
     "fc_listed_at": "2026-11-24T08:00:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T20:47:22",
@@ -23912,7 +23912,7 @@
     "fc_listed_at": "2026-11-24T08:00:00",
     "fc_api_seen_at": "2026-11-24T08:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T06:37:24",
