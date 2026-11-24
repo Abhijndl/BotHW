@@ -1,70 +1,82 @@
 #!/usr/bin/env python3
-"""Probe #83: the new Whiff reader against the live site and the real memory (no Telegram), plus cache headers."""
-import gzip, json, os, re, sys, time, urllib.error, urllib.request
-
-os.environ["PERFUME_STATE"] = "whiff_state.json"
-sys.path.insert(0, ".")
-import perfume_new as P
+"""Probe #84: is Whiff Culture's partials page behind its search list, and do HEAD requests show page versions."""
+import gzip, json, re, time, urllib.error, urllib.request
 
 T0 = time.time()
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
+B = "https://www.whiffculture.com"
 
 
 def log(*a):
     print(f"[{time.time() - T0:6.1f}s]", *a, flush=True)
 
 
-st = P.load()
-now = time.time()
-for w in [w for w in P.WATCHES if w["store"] == "Whiff Culture"]:
-    t = time.time()
-    prods, why = P.fetch(w)
-    dt = time.time() - t
-    if prods is None:
-        log(f"[DRY] {w['id']}: FAILED {why}")
-        continue
-    ev, why = P.check(st, w, now, (prods, ""))
-    ws = st["w"][w["id"]]
-    log(f"[DRY] {w['id']}: read {len(prods)} in {dt:.2f}s, in stock {sum(1 for p in prods if P.available(p['variants']))}, "
-        f"events {len(ev)} {[(k, p['title']) for k, _, p, _ in ev][:8]} | memory n={ws.get('n')} learnt={ws.get('learnt')}")
-    sample = next((p for p in prods if P.available(p["variants"])), prods[0])
-    log(f"[DRY] {w['id']} sample alert:\n" + P.alert_text(w, "new", sample, sample["variants"]))
-
-UA = P.UA
-B = P.WHIFF
-
-
-def get(url, extra=None, accept="*/*"):
+def req(url, extra=None, accept="*/*", method="GET"):
     h = {"User-Agent": UA, "Accept": accept, "Accept-Encoding": "gzip"}
     h.update(extra or {})
     t = time.time()
     try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=25) as r:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=h, method=method), timeout=25) as r:
             body, hd, code = r.read(), dict(r.headers), r.status
     except urllib.error.HTTPError as e:
         body, hd, code = e.read() or b"", dict(e.headers or {}), e.code
     raw = len(body)
-    if "gzip" in (hd.get("Content-Encoding") or "").lower():
+    if "gzip" in (hd.get("Content-Encoding") or "").lower() and body:
         body = gzip.decompress(body)
-    return code, body.decode("utf-8", "replace"), {k: v for k, v in hd.items() if k.lower() != "content-security-policy"}, time.time() - t, raw
+    return code, body.decode("utf-8", "replace"), hd, time.time() - t, raw
 
 
-for path, extra in (("/collections/partial-bottles", {"RSC": "1"}), ("/new-arrivals", {"RSC": "1"}), ("/sitemap.xml", None)):
-    code, body, hd, dt, raw = get(B + path, extra)
-    log(f"[HDR] {path}: {code} {dt:.2f}s gz={raw} raw={len(body)} headers={json.dumps(hd)[:900]}")
-    if path == "/new-arrivals":
-        ps = P.page_products(body) or []
-        log("[NEW] first 12:", [(p.get("name"), P.gid(p.get("shopifyId")), p.get("isPartialBottle"),
-                                any(v.get("inStock") for v in p.get("variants") or [])) for p in ps[:12]])
-        ids = [int(P.gid(p.get("shopifyId")) or 0) for p in ps]
-        log(f"[NEW] sorted newest-first by id: {ids == sorted(ids, reverse=True)}; partials among 250: "
-            f"{sum(1 for p in ps if p.get('isPartialBottle'))}")
-    if path == "/sitemap.xml":
-        mods = re.findall(r"<url>\s*<loc>([^<]+)</loc>(?:\s*<lastmod>([^<]+)</lastmod>)?", body)
-        log(f"[MAP] {len(mods)} urls, with lastmod: {sum(1 for _, m in mods if m)}; newest lastmods:",
-            sorted(((m, u) for u, m in mods if m), reverse=True)[:8])
-        log("[MAP] sample:", body[:700].replace("\n", " "))
-        for i in range(2):
-            time.sleep(5)
-            code, body2, hd2, dt2, raw2 = get(B + path)
-            log(f"[MAP] again: {code} {dt2:.2f}s cache={hd2.get('X-Vercel-Cache')} same={body2 == body}")
+def products(body):
+    i = body.find('"initialProducts":')
+    if i < 0:
+        return None
+    return json.JSONDecoder().raw_decode(body, i + len('"initialProducts":'))[0]
+
+
+def v(hd):
+    return f"date={hd.get('Date')} age={hd.get('Age')} cache={hd.get('X-Vercel-Cache')} len={hd.get('Content-Length')}"
+
+
+# 1. HEAD vs GET
+for i in range(3):
+    c1, b1, h1, d1, r1 = req(B + "/collections/partial-bottles", {"RSC": "1"}, "text/x-component", "HEAD")
+    c2, b2, h2, d2, r2 = req(B + "/collections/partial-bottles", {"RSC": "1"}, "text/x-component")
+    log(f"[HEAD] {c1} {d1:.2f}s bytes={r1} {v(h1)} | GET {c2} {d2:.2f}s bytes={r2} {v(h2)}")
+    time.sleep(3)
+c, b, h, d, r = req(B + "/collections/partial-bottles", None, "text/html", "HEAD")
+log(f"[HEAD html] {c} {d:.2f}s bytes={r} {v(h)}")
+
+# 2. partials in the search list but not on the partials page
+c, body, h, d, r = req(B + "/api/products", None, "application/json")
+sp = json.loads(body)["products"]
+log(f"[API] {c} {d:.2f}s {v(h)} n={len(sp)}")
+c, body, h, d, r = req(B + "/collections/partial-bottles", {"RSC": "1"}, "text/x-component")
+pb = products(body) or []
+pslugs = {p.get("slug") for p in pb}
+part = [p for p in sp if re.search(r"\bpartial", str(p.get("name", "")), re.I)]
+extra = [p for p in part if p.get("slug") not in pslugs]
+missing = [p.get("slug") for p in pb if p.get("slug") not in {q.get("slug") for q in sp}]
+log(f"[CMP] partial-looking in search: {len(part)}, on partials page: {len(pb)}, extra in search: {len(extra)}, "
+    f"on page but not in search: {len(missing)} {missing[:10]}")
+for p in extra[:25]:
+    slug = p.get("slug")
+    c, body, h, d, r = req(f"{B}/products/{slug}", {"RSC": "1"}, "text/x-component")
+    m = re.search(r'"slug":"' + re.escape(slug) + r'".{0,400}?', body)
+    sid = re.search(r'"shopifyId":"gid://shopify/Product/(\d+)"', body)
+    i = body.find('"variants":[')
+    vs = json.JSONDecoder().raw_decode(body, i + len('"variants":'))[0] if i >= 0 else []
+    flags = {k: re.search(r'"' + k + r'":(true|false)', body).group(1) if re.search(r'"' + k + r'":(true|false)', body) else None
+             for k in ("isPartialBottle", "isTester", "isSale")}
+    log(f"[EXTRA] {p.get('brand')} | {p.get('name')} | {slug} -> {c} {d:.2f}s {v(h)} id={sid.group(1) if sid else None} "
+        f"stock={[x.get('inStock') for x in vs][:4]} price={p.get('defaultPrice')} {flags}")
+
+# 3. product-page shape, for a known partial
+if pb:
+    slug = pb[-1].get("slug")
+    c, body, h, d, r = req(f"{B}/products/{slug}", {"RSC": "1"}, "text/x-component")
+    i = body.find('"shopifyId"')
+    log(f"[PROD] {slug}: {c} bytes={r} {v(h)} keys-near: {body[max(0, i - 300):i + 200]}")
+    for k in ('"product":{', '"initialProduct":', '"productData":'):
+        log(f"[PROD] has {k}: {k in body}")
 log("done")
