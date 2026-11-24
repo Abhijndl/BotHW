@@ -121,7 +121,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-24T17:45:00",
+    "fc_api_seen_at": "2026-11-24T18:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -11564,7 +11564,7 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T09:30:00",
-    "fc_api_seen_at": "2026-11-24T17:45:00",
+    "fc_api_seen_at": "2026-11-24T18:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -12729,7 +12729,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-24T06:45:00",
-    "fc_api_seen_at": "2026-11-24T17:45:00",
+    "fc_api_seen_at": "2026-11-24T18:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -13027,17 +13027,17 @@
     "last_price_alert": "2026-11-05T09:50:29",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-11-23T21:00:00",
-    "fc_api_seen_at": "2026-11-24T17:30:00",
+    "fc_listed_at": "2026-11-24T18:00:00",
+    "fc_api_seen_at": "2026-11-24T18:00:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-24T17:44:08",
     "fc_cart": "n",
-    "fc_svc": "1",
-    "fc_lst_on": "2026-11-23T20:41:01",
-    "fc_lst_seen": "2026-11-23T21:00:00",
+    "fc_svc": "0",
+    "fc_lst_on": "2026-11-24T18:08:57",
+    "fc_lst_seen": "2026-11-24T18:00:00",
     "last_ring": "2026-11-22T05:57:06",
     "fc_gone": "2026-11-24T17:44:08",
     "alert_log": [
@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795543686
+        "ok": 1795543927
       },
       "fc_www": {
-        "ok": 1795543694
+        "ok": 1795544019
       },
       "fc_cart": {
-        "ok": 1795543696
+        "ok": 1795544018
       },
       "kd": {
-        "ok": 1795543695
+        "ok": 1795544000
       }
     }
   },
@@ -14660,7 +14660,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14802,6 +14802,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-24T18:09:42",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15314,7 +15315,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15662,7 +15663,7 @@
   "fc_24473477": {
     "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -16587,7 +16588,7 @@
   "fc_24473475": {
     "stock": "out_of_stock",
     "name": "Hot Wheels 16 Cadillac Die Cast Free Wheel Toy Car - Grey",
-    "price": "₹164",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-16-cadillac-die-cast-free-wheel-toy-car-grey/24473475/product-detail",
     "first_seen": "2026-09-19T23:00:34",
@@ -23899,7 +23900,7 @@
   "fc_24783759": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Aston Martin DB5 Safari Edition/Edition Safari (243/250) Toy Car - White",
-    "price": "₹159",
+    "price": "₹179",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-aston-martin-db5-safari-edition-edition-safari-243-250-toy-car-white/24783759/product-detail",
     "first_seen": "2026-10-21T16:45:00",
@@ -24532,7 +24533,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24555,7 +24556,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -28578,7 +28579,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T18:01:57",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28687,7 +28687,6 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-24T18:01:22",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
