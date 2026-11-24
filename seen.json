@@ -13793,7 +13793,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14465,16 +14465,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795486323
+        "ok": 1795486445
       },
       "fc_www": {
-        "ok": 1795486366
+        "ok": 1795486494
       },
       "fc_cart": {
-        "ok": 1795486365
+        "ok": 1795486496
       },
       "kd": {
-        "ok": 1795486356
+        "ok": 1795486486
       }
     }
   },
@@ -14667,7 +14667,7 @@
   "fc_24475139": {
     "stock": "in_stock",
     "name": "Hot Wheels Cruise Bruiser Die Cast Toy Car 87/250 - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cruise-bruiser-die-cast-toy-car-87-250-purple/24475139/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -25831,11 +25831,11 @@
     "fc_listed_at": "2026-11-24T02:00:00",
     "fc_api_seen_at": "2026-11-24T02:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "list",
     "fc_gid": "22591609",
     "fc_phantom": "2026-11-23T07:40:43",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-23T15:34:08",
     "fc_lst_seen": "2026-11-23T16:00:00",
