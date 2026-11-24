@@ -10520,6 +10520,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-24T02:41:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -12712,7 +12713,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-23T17:30:00",
-    "fc_api_seen_at": "2026-11-24T02:15:00",
+    "fc_api_seen_at": "2026-11-24T02:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -14464,16 +14465,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795487883
+        "ok": 1795488001
       },
       "fc_www": {
-        "ok": 1795487944
+        "ok": 1795488067
       },
       "fc_cart": {
-        "ok": 1795487946
+        "ok": 1795488068
       },
       "kd": {
-        "ok": 1795487945
+        "ok": 1795488068
       }
     }
   },
@@ -15144,6 +15145,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-24T02:41:00",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -19707,6 +19709,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -20828,6 +20831,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
+    "fc_off": "2026-11-24T02:41:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22501,7 +22505,7 @@
     "fc_api_seen_at": "2026-11-24T02:30:00",
     "fc_trusted": true,
     "fc_live": "sold out",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_phantom": "2026-11-19T04:49:01",
     "fc_cart": "n",
@@ -24465,7 +24469,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24488,7 +24492,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24511,7 +24515,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24534,7 +24538,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24557,7 +24561,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -25866,7 +25870,6 @@
     "fc_lst": "out",
     "fc_gid": "22591626",
     "fc_phantom": "2026-11-21T07:37:10",
-    "fc_off": "2026-11-24T02:27:35",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-21T08:04:57",
@@ -27827,6 +27830,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
+    "fc_off": "2026-11-24T02:41:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28523,6 +28527,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-24T02:40:40",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28631,6 +28636,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-24T02:40:40",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
