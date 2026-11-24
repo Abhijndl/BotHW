@@ -14468,16 +14468,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795505641
+        "ok": 1795505768
       },
       "fc_www": {
-        "ok": 1795505672
+        "ok": 1795505800
       },
       "fc_cart": {
-        "ok": 1795505674
+        "ok": 1795505801
       },
       "kd": {
-        "ok": 1795505673
+        "ok": 1795505786
       }
     }
   },
@@ -22596,9 +22596,9 @@
     "fc_gone": "2026-11-22T15:40:56"
   },
   "fc_24776075": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels 2019 Audi R8 Spyder (130/250) Toy Car -Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-2019-audi-r8-spyder-130-250-toy-car-silver/24776075/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -22611,14 +22611,15 @@
     "fc_listed_at": "2026-11-24T07:30:00",
     "fc_api_seen_at": "2026-11-24T07:30:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T18:21:49",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T06:19:08",
     "fc_lst_seen": "2026-11-24T07:30:00",
+    "fc_gone": "2026-11-24T07:35:09",
     "alert_log": [
       "2026-11-23T16:03:51",
       "2026-11-23T17:00:06",
@@ -24502,7 +24503,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24525,7 +24526,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24548,7 +24549,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24571,7 +24572,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
