@@ -43,7 +43,8 @@ def W(wid, store, site, coll, label, new, every, variants=None, gone=False, note
     list drops what sells out, so an in-stock item missing from it counts as sold out.
     notes: the store writes 'A floral, sweet ... fragrance' in its descriptions.
     kind: shopify, sovereign (its own /api/products), woo (WooCommerce Store API, through
-    searches kept to names matching match, or a query) or odoo (a shop page, query = its path).
+    searches kept to names matching match, or a query), odoo (a shop page, query = its path)
+    or next (a Next.js collection page, coll = its slug).
     page: the list for people. pages: read at most this many pages. about: summary text."""
     return {"id": wid, "store": store, "site": site, "coll": coll, "label": label, "new": new,
             "every": every, "variants": variants, "gone": gone, "notes": notes, "kind": kind,
@@ -52,15 +53,15 @@ def W(wid, store, site, coll, label, new, every, variants=None, gone=False, note
 
 
 WATCHES = [
-    W("whiff-partials", "Whiff Culture", WHIFF, "partial-sale", "partials", "NEW PARTIAL", 2, notes=True),
+    W("whiff-partials", "Whiff Culture", WHIFF, "partial-bottles", "partials", "NEW PARTIAL", 2, notes=True, kind="next"),
     W("scentoria-partials", "Scentoria", SCENTORIA, "partials", "partials", "NEW PARTIAL", 15, gone=True),
     W("scentira-partials", "Scentira", SCENTIRA, "partials", "partials", "NEW PARTIAL", 20, variants=r"\bpartial\b"),
     W("sovereign-partials", "Sovereign Scents", SOVEREIGN, "", "partials", "NEW PARTIAL", 15, kind="sovereign",
       query="partials=only", page=f"{SOVEREIGN}/shop?collection=partials"),
     W("acordell-partials", "Acordell", ACORDELL, "", "partials & decants", "NEW PARTIAL / DECANT", 60, kind="woo",
       search=["partial", "decant", "sample"], match=r"\b(partials?|decants?|samples?)\b", page=f"{ACORDELL}/shop/"),
-    W("whiff-flash", "Whiff Culture", WHIFF, "flash-sale", "flash sale", "NEW IN FLASH SALE", 30, notes=True),
-    W("whiff-testers", "Whiff Culture", WHIFF, "testers", "testers", "NEW TESTER", 30, notes=True),
+    W("whiff-flash", "Whiff Culture", WHIFF, "sale", "flash sale", "NEW IN FLASH SALE", 30, notes=True, kind="next"),
+    W("whiff-testers", "Whiff Culture", WHIFF, "testers", "testers", "NEW TESTER", 30, notes=True, kind="next"),
     W("scentoria-deals", "Scentoria", SCENTORIA, "deals-of-the-week", "hot deals", "NEW HOT DEAL", 30),
     W("scentoria-festive", "Scentoria", SCENTORIA, "festive-sale", "festive sale", "NEW IN FESTIVE SALE", 30),
     W("scentira-clearance", "Scentira", SCENTIRA, "clearance", "clearance", "NEW IN CLEARANCE", 30),
@@ -102,8 +103,8 @@ PULL_TRIES = int(os.getenv("PERFUME_PULL_TRIES", "4"))
 # store with several pages) never holds them up. After a new or returning item
 # there they're read every BURST_EVERY seconds for BURST_FOR — Whiff Culture
 # adds its partials in waves of five to ten within a few minutes (14, 19, 20 Nov).
-# (Probe #78 from GitHub: its whole partials list is 43 KB and answers in 0.08 s;
-# 60 reads 3 s apart and 40 reads 1.5 s apart all went through.) If a FAST
+# (Probe #82 from GitHub, on the new site: the partials page is 48 KB and comes from
+# the site's cache in 0.1–0.5 s; 50 reads 2 s apart all went through.) If a FAST
 # list's store refuses this runner twice, the run hands over to a fresh one.
 FAST = {x for x in re.split(r"[\s,;]+", os.getenv("PERFUME_FAST", "whiff-partials")) if x}
 BURST_EVERY = float(os.getenv("PERFUME_BURST_EVERY_S", "1.5"))
@@ -155,9 +156,9 @@ def host(site):
 
 
 # ── reading the stores ───────────────────────────────────────────────────────
-def get(url, timeout=10, accept="application/json"):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept,
-                                               "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"})
+def get(url, timeout=10, accept="application/json", headers=None):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept, "Accept-Encoding": "gzip",
+                                               "Accept-Language": "en-IN,en;q=0.9", **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             code, data, enc = r.status, r.read(), r.headers.get("Content-Encoding", "")
@@ -268,7 +269,63 @@ def fetch_odoo(w):
     return out, ""
 
 
+def gid(x):
+    return str(x or "").rsplit("/", 1)[-1]
+
+
+def plain(x):
+    return None if isinstance(x, str) and x.startswith("$") else x
+
+
+def page_products(body):
+    """The list a Next.js page hands to the browser ("initialProducts")."""
+    i = body.find('"initialProducts":')
+    if i < 0:            # full page: same data inside its script strings
+        body = "".join(json.loads(f'"{s}"') for s in re.findall(r'self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)', body))
+        i = body.find('"initialProducts":')
+    if i < 0:
+        return None
+    arr, _ = json.JSONDecoder().raw_decode(body, i + len('"initialProducts":'))
+    return arr if isinstance(arr, list) else None
+
+
+def fetch_next(w):
+    """Whiff Culture's new site (since 24 Nov), same Shopify ids as before."""
+    try:            # no cache-buster: read the site's cache like any visitor
+        code, body = get(f"{w['site']}/collections/{w['coll']}", timeout=15, accept="text/x-component",
+                         headers={"RSC": "1"})
+    except Exception as e:
+        return None, type(e).__name__
+    if code != 200:
+        return None, f"HTTP {code}"
+    try:
+        ps = page_products(body)
+    except ValueError:
+        ps = None
+    if ps is None:
+        return None, "not the usual product list"
+    out = []
+    for p in ps:
+        if not isinstance(p, dict) or not isinstance(p.get("name"), str):
+            continue
+        pid, slug = gid(p.get("shopifyId")) or str(p.get("slug") or ""), plain(p.get("slug"))
+        if not pid:
+            continue
+        title, brand = p["name"].strip(), str(plain(p.get("brand")) or "").strip()
+        if brand and not title.lower().startswith(brand.lower()):
+            title = f"{brand} {title}"
+        vs = [{"id": gid(v.get("shopifyVariantId") or v.get("id")), "title": str(plain(v.get("size")) or ""),
+               "price": num(plain(v.get("price"))), "compare_at_price": num(plain(v.get("originalPrice"))),
+               "available": v.get("inStock") is True} for v in p.get("variants") or [] if isinstance(v, dict)]
+        acc = [a["name"] for a in p.get("accords") or [] if isinstance(a, dict) and isinstance(a.get("name"), str)]
+        out.append({"id": pid, "title": title, "handle": slug, "variants": vs, "scent": ", ".join(acc[:3]).lower(),
+                    "url": f"{w['site']}/products/{slug}" if slug else w["page"]})
+    return out, ""
+
+
 def fetch(w):
+    if w.get("kind") == "next":
+        return fetch_next(w)
     if w.get("kind") == "odoo":
         return fetch_odoo(w)
     if w.get("kind") == "sovereign":
@@ -360,6 +417,8 @@ def offer_text(vs):
 
 
 def accords(p):
+    if p.get("scent"):
+        return p["scent"]
     text = re.sub(r"<[^>]+>", " ", p.get("body_html") or "")
     m = re.search(r"\bAn?\s+([a-z][a-z ,&-]{2,60}?)\s+fragrance\b", text)
     return m.group(1).strip() if m else ""
