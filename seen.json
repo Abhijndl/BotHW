@@ -12927,7 +12927,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -14480,16 +14480,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795534446
+        "ok": 1795534577
       },
       "fc_www": {
-        "ok": 1795534527
+        "ok": 1795534662
       },
       "fc_cart": {
-        "ok": 1795534528
+        "ok": 1795534661
       },
       "kd": {
-        "ok": 1795534504
+        "ok": 1795534646
       }
     }
   },
@@ -22605,12 +22605,12 @@
     "fc_listed_at": "2026-11-24T15:30:00",
     "fc_api_seen_at": "2026-11-24T15:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:18:38",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:30:00",
     "fc_gone": "2026-11-24T15:01:05",
@@ -27684,7 +27684,7 @@
     "fc_listed_at": "2026-11-24T15:30:00",
     "fc_api_seen_at": "2026-11-24T15:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T11:05:51",
@@ -28551,7 +28551,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
@@ -28681,12 +28680,11 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-24T15:15:00",
+    "fc_api_seen_at": "2026-11-24T15:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-24T15:26:07",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
@@ -29499,11 +29497,11 @@
     "fc_listed_at": "2026-11-24T15:30:00",
     "fc_api_seen_at": "2026-11-24T15:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:30:00",
