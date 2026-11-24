@@ -10525,13 +10525,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-24T22:15:00",
+    "fc_api_seen_at": "2026-11-24T22:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T22:20:04",
+    "fc_off": "2026-11-24T22:32:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14483,16 +14483,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795559412
+        "ok": 1795559648
       },
       "fc_www": {
-        "ok": 1795559449
+        "ok": 1795559739
       },
       "fc_cart": {
-        "ok": 1795559450
+        "ok": 1795559740
       },
       "kd": {
-        "ok": 1795559450
+        "ok": 1795559732
       }
     }
   },
@@ -14535,7 +14535,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -15159,13 +15159,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-24T22:15:00",
+    "fc_api_seen_at": "2026-11-24T22:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T22:20:04",
+    "fc_off": "2026-11-24T22:32:00",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -16327,7 +16327,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16567,7 +16567,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -19419,7 +19419,7 @@
   "fc_24476887": {
     "stock": "in_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
@@ -20855,13 +20855,13 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-24T22:15:00",
+    "fc_api_seen_at": "2026-11-24T22:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T22:20:04",
+    "fc_off": "2026-11-24T22:32:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -26387,7 +26387,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹156",
+    "price": "₹155",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -27881,13 +27881,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-24T22:15:00",
+    "fc_api_seen_at": "2026-11-24T22:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T22:20:04",
+    "fc_off": "2026-11-24T22:32:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28578,12 +28578,13 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-24T22:15:00",
+    "fc_api_seen_at": "2026-11-24T22:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-24T22:31:25",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28687,11 +28688,12 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-24T22:15:00",
+    "fc_api_seen_at": "2026-11-24T22:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-24T22:31:25",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
