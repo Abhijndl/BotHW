@@ -109,6 +109,7 @@ PULL_TRIES = int(os.getenv("PERFUME_PULL_TRIES", "4"))
 FAST = {x for x in re.split(r"[\s,;]+", os.getenv("PERFUME_FAST", "whiff-partials")) if x}
 BURST_EVERY = float(os.getenv("PERFUME_BURST_EVERY_S", "1.5"))
 BURST_FOR = float(os.getenv("PERFUME_BURST_FOR_S", "900"))
+NEXT_FULL = float(os.getenv("PERFUME_NEXT_FULL_S", "120"))
 LOCK = threading.RLock()
 SEND_GAP = float(os.getenv("PERFUME_SEND_GAP_S", "1.1"))
 STATE = os.getenv("PERFUME_STATE", "perfume.json")
@@ -141,6 +142,7 @@ _last_send = [0.0]
 _pushed = [None]
 _outbox = []
 _can_push = [True]
+_page = {}           # watch id → (page version, products, read at)
 
 
 def log(msg):
@@ -156,12 +158,14 @@ def host(site):
 
 
 # ── reading the stores ───────────────────────────────────────────────────────
-def get(url, timeout=10, accept="application/json", headers=None):
+def get(url, timeout=10, accept="application/json", headers=None, info=None):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept, "Accept-Encoding": "gzip",
                                                "Accept-Language": "en-IN,en;q=0.9", **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             code, data, enc = r.status, r.read(), r.headers.get("Content-Encoding", "")
+            if info is not None:
+                info.update(r.headers.items())
     except urllib.error.HTTPError as e:
         return e.code, ""
     if "gzip" in enc.lower():
@@ -289,11 +293,25 @@ def page_products(body):
     return arr if isinstance(arr, list) else None
 
 
+def stamp(url, headers):
+    """Which version of a cached page the site would send (its Date), for a few hundred bytes."""
+    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA, **headers})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            return r.headers.get("Date") if r.status == 200 else None
+    except Exception:
+        return None
+
+
 def fetch_next(w):
-    """Whiff Culture's new site (since 24 Nov), same Shopify ids as before."""
+    """Whiff Culture's new site (since 24 Nov); the page is downloaded only when it changes."""
+    url, hd = f"{w['site']}/collections/{w['coll']}", {"RSC": "1"}
+    last = _page.get(w["id"])
+    if last and last[0] and time.time() - last[2] < NEXT_FULL and stamp(url, hd) == last[0]:
+        return last[1], ""
+    info = {}
     try:            # no cache-buster: read the site's cache like any visitor
-        code, body = get(f"{w['site']}/collections/{w['coll']}", timeout=15, accept="text/x-component",
-                         headers={"RSC": "1"})
+        code, body = get(url, timeout=15, accept="text/x-component", headers=hd, info=info)
     except Exception as e:
         return None, type(e).__name__
     if code != 200:
@@ -320,6 +338,10 @@ def fetch_next(w):
         acc = [a["name"] for a in p.get("accords") or [] if isinstance(a, dict) and isinstance(a.get("name"), str)]
         out.append({"id": pid, "title": title, "handle": slug, "variants": vs, "scent": ", ".join(acc[:3]).lower(),
                     "url": f"{w['site']}/products/{slug}" if slug else w["page"]})
+    made = info.get("Date")
+    if last and made and made != last[0]:
+        log(f"{w['id']}: the site remade this page ({made}, {info.get('Age', '?')} s ago)")
+    _page[w["id"]] = (made, out, time.time())
     return out, ""
 
 
