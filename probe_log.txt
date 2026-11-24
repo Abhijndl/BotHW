@@ -1,7 +1,7 @@
-[  0.9s] whiff-testers: [('back', 'Paco Rabanne 1 MILLION ELIXIR PARFUM INTENSE Tester')]
-09:14:26 [perfume] whiff-flash: the site remade this page (Tue, 24 Nov 2026 09:14:24 GMT, age 1 s)
-09:14:27 [perfume] whiff-testers: the site remade this page (Tue, 24 Nov 2026 09:14:24 GMT, age 1 s)
-done: 30 rounds {'GET partial-bottles': 1, 'GET sale': 2, 'GET testers': 2, 'HEAD partial-bottles': 29, 'HEAD sale': 29, 'HEAD testers': 29}
-whiff-partials version (1795510950.0, 26) in stock 19
-whiff-flash version (1795511664.0, 1) in stock 57
-whiff-testers version (1795511664.0, 1) in stock 41
+[  0.3s] whiff-testers: [('back', 'Paco Rabanne 1 MILLION ELIXIR PARFUM INTENSE Tester')]
+09:34:25 [perfume] whiff-testers: the site remade this page 4 s ago
+09:35:28 [perfume] whiff-testers: the site remade this page 4 s ago
+done: 25 rounds {'GET partial-bottles': 1, 'GET sale': 1, 'GET testers': 3, 'HEAD partial-bottles': 24, 'HEAD sale': 24, 'HEAD testers': 24}
+whiff-partials version 1795512597.0 in stock 19
+whiff-flash version 1795511843.0 in stock 57
+whiff-testers version 1795512924.0 in stock 41
