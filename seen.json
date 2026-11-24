@@ -13845,7 +13845,7 @@
     "fc_listed_at": "2026-11-24T09:15:00",
     "fc_api_seen_at": "2026-11-24T09:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-03T08:18:55",
@@ -14063,7 +14063,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14351,7 +14350,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14482,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795512260
+        "ok": 1795512371
       },
       "fc_www": {
-        "ok": 1795512356
+        "ok": 1795512486
       },
       "fc_cart": {
-        "ok": 1795512353
+        "ok": 1795512484
       },
       "kd": {
-        "ok": 1795512335
+        "ok": 1795512470
       }
     }
   },
@@ -16231,7 +16230,7 @@
     "fc_listed_at": "2026-11-24T09:15:00",
     "fc_api_seen_at": "2026-11-24T09:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-17T10:09:17",
@@ -19734,7 +19733,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -22657,11 +22655,11 @@
     "fc_listed_at": "2026-11-24T09:15:00",
     "fc_api_seen_at": "2026-11-24T09:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T06:38:31",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-24T06:19:08",
     "fc_lst_seen": "2026-11-24T07:45:00",
     "fc_gone": "2026-11-24T06:38:31",
@@ -24498,7 +24496,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24521,7 +24519,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24544,7 +24542,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24567,7 +24565,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24590,7 +24588,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -25872,7 +25870,7 @@
     "fc_gid": "22591609",
     "fc_phantom": "2026-11-24T05:19:13",
     "fc_cart": "y",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-24T06:34:53",
     "fc_lst_seen": "2026-11-24T07:15:00",
     "fc_gone": "2026-11-24T05:19:13",
