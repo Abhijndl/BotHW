@@ -1,37 +1,35 @@
 #!/usr/bin/env python3
-"""Probe #88: page-version checks on all three Whiff pages, live, for 90 s (no Telegram)."""
-import os, sys, time, urllib.request
+"""Probe #89: the new Hot Wheels case on FirstCry (24 Nov) - can it reach 248001, and which pincodes can it reach?"""
+import json, os, sys, time
 
-os.environ["PERFUME_STATE"] = "whiff_state.json"
+os.environ.setdefault("FC_PINCODE", "248001")
+os.environ["FC_WWW_RATE"] = "1.5"
 sys.path.insert(0, ".")
-import perfume_new as P
+import bot_now as B
 
-calls = {}
-_open = urllib.request.urlopen
-
-
-def counting(req, *a, **k):
-    key = (req.get_method(), req.full_url.rsplit("/", 1)[-1])
-    calls[key] = calls.get(key, 0) + 1
-    return _open(req, *a, **k)
-
-
-urllib.request.urlopen = counting
-st = P.load()
-ws = [w for w in P.WATCHES if w["store"] == "Whiff Culture"]
+CARS = {"25045161": "Skyline GT-R BNR34 (J-Imports, black)", "25045673": "Porsche 908-3 Gulf",
+        "25045680": "Porsche 911 Turbo Cabriolet", "25045641": "Toyota AE86 Trueno", "25045647": "Mazda RX-7",
+        "25045653": "1985 Honda CR-X", "25045466": "Mercedes CLA (alerted)", "25045658": "Mazda RX-3 (alerted)"}
+PINS = {"248001": "Dehradun", "249401": "Haridwar", "247001": "Saharanpur", "110001": "Delhi", "122001": "Gurgaon",
+        "201301": "Noida", "160017": "Chandigarh", "302001": "Jaipur", "400001": "Mumbai", "411001": "Pune",
+        "560001": "Bengaluru", "500001": "Hyderabad", "600001": "Chennai", "700001": "Kolkata", "226001": "Lucknow"}
+ids = list(CARS)
 t0 = time.time()
-n = 0
-while time.time() - t0 < 75:
-    t = time.time()
-    for w in ws:
-        prods, why = P.fetch(w)
-        ev, _ = P.check(st, w, time.time(), (prods, why)) if prods is not None else (None, why)
-        if ev:
-            print(f"[{time.time() - t0:5.1f}s] {w['id']}: {[(k, p['title']) for k, _, p, _ in ev]}", flush=True)
-        if prods is None:
-            print(f"[{time.time() - t0:5.1f}s] {w['id']}: FAILED {why}", flush=True)
-    n += 1
-    time.sleep(max(0, 3 - (time.time() - t)))
-print(f"done: {n} rounds", {f"{m} {u}": c for (m, u), c in sorted(calls.items())}, flush=True)
-for w in ws:
-    print(w["id"], "version", P._page[w["id"]][0], "in stock", sum(1 for i in st["w"][w["id"]]["items"].values() if i.get("a")))
+print(time.strftime("%H:%M:%S UTC", time.gmtime()), flush=True)
+page = B.fc_page("25045161")
+print("[PAGE] Skyline page read:", json.dumps({k: {kk: vv for kk, vv in (v or {}).items() if kk in ("cs", "svc", "isv", "name", "price")}
+                                              for k, v in (page or {}).items()})[:1500], flush=True)
+for pid in ("25045673", "25045680", "25045641"):
+    pg = B.fc_page(pid)
+    print(f"[PAGE] {CARS[pid]}:", json.dumps({k: {kk: vv for kk, vv in (v or {}).items() if kk in ("cs", "svc", "isv")}
+                                              for k, v in (pg or {}).items() if k in CARS}), flush=True)
+for pin, city in PINS.items():
+    svc = B.fc_delivery(ids, pin)
+    cnt = B.fc_delivery_count(ids, pin)
+    cart = B.fc_cart_check(ids, pin) or {}
+    row = []
+    for pid, name in CARS.items():
+        c = cart.get(pid) or {}
+        row.append(f"{name.split(' (')[0][:18]}: svc={svc.get(pid)} units={cnt.get(pid)} cart={'Y' if c.get('ok') else 'n'}{'' if c.get('n') is None else '/' + str(c.get('n'))}")
+    print(f"[PIN] {pin} {city}: " + " | ".join(row), flush=True)
+print(f"done in {time.time() - t0:.0f}s", flush=True)
