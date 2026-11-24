@@ -14483,16 +14483,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795517535
+        "ok": 1795517648
       },
       "fc_www": {
-        "ok": 1795517583
+        "ok": 1795517707
       },
       "fc_cart": {
-        "ok": 1795517584
+        "ok": 1795517702
       },
       "kd": {
-        "ok": 1795517570
+        "ok": 1795517694
       }
     }
   },
@@ -16232,7 +16232,7 @@
     "fc_listed_at": "2026-11-24T10:45:00",
     "fc_api_seen_at": "2026-11-24T10:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-24T10:16:47",
@@ -25607,11 +25607,11 @@
     "fc_listed_at": "2026-11-24T10:45:00",
     "fc_api_seen_at": "2026-11-24T10:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "list",
     "fc_gid": "22592486",
     "fc_phantom": "2026-11-20T05:57:53",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-24T07:53:21",
     "fc_lst_seen": "2026-11-24T08:30:00",
@@ -27599,11 +27599,11 @@
     "fc_listed_at": "2026-11-24T10:45:00",
     "fc_api_seen_at": "2026-11-24T10:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-21T12:11:20",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-21T11:21:44",
     "fc_lst_seen": "2026-11-21T12:15:00",
@@ -27676,11 +27676,11 @@
     "fc_listed_at": "2026-11-24T10:45:00",
     "fc_api_seen_at": "2026-11-24T10:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "list",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T11:05:51",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-23T17:36:57",
     "fc_lst_seen": "2026-11-23T18:15:00",
