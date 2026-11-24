@@ -1,5 +1,7 @@
-whiff menu sales: {} 0.31s
-https://www.scentoria.co.in sales: {'christmas-sale': (0, 'Christmas Sale'), 'diwali-sale': (0, 'Diwali Sale')} 0.47s
-https://www.scentira.in sales: {'body-mist-sale': (14, 'Body Mist Sale'), 'carnival-sale': (0, 'Carnival Sale'), 'carnival-sale-10': (0, 'Carnival Sale 10%'), 'carnival-sale-15': (0, 'Carnival Sale 15%'), 'carnival-sale-20': (0, 'Carnival Sale 20%'), 'carnival-sale-25': (0, 'Carnival Sale 25%'), 'carnival-sale-30': (0, 'Carnival Sale 30%'), 'carnival-sale-40-off': (0, 'Carnival Sale 40% Off'), 'carnival-sale-50': (0, 'Carnival Sale 50%'), 'carnival-sale-bundle': (3, 'Carnival Sale Bundle'), 'deo-sale': (10, 'Deo Sale'), 'diwali-sale': (324, 'Diwali Sale'), 'pay-day-sale': (420, 'NEW ARRIVALS'), 'sale': (2, 'Sale'), 'sale-25off': (0, 'sale-25off'), 'sale-30off': (0, 'sale-30off'), 'sale-40': (0, 'sale-40%')} 0.67s
-https://www.sillageperfumes.in sales: {'rakshabandhan-sale': (128, 'Rakhi Sale'), 'rakhi-sale-15-off': (2, 'Rakhi Sale 15% off'), 'rakhi-sale-5-off': (0, 'Rakhi Sale 5% off')} 0.27s
-check_sales whiff -> False {}
+[  0.9s] whiff-testers: [('back', 'Paco Rabanne 1 MILLION ELIXIR PARFUM INTENSE Tester')]
+09:14:26 [perfume] whiff-flash: the site remade this page (Tue, 24 Nov 2026 09:14:24 GMT, age 1 s)
+09:14:27 [perfume] whiff-testers: the site remade this page (Tue, 24 Nov 2026 09:14:24 GMT, age 1 s)
+done: 30 rounds {'GET partial-bottles': 1, 'GET sale': 2, 'GET testers': 2, 'HEAD partial-bottles': 29, 'HEAD sale': 29, 'HEAD testers': 29}
+whiff-partials version (1795510950.0, 26) in stock 19
+whiff-flash version (1795511664.0, 1) in stock 57
+whiff-testers version (1795511664.0, 1) in stock 41
