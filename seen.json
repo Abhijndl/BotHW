@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795523651
+        "ok": 1795523777
       },
       "fc_www": {
-        "ok": 1795523735
+        "ok": 1795523847
       },
       "fc_cart": {
-        "ok": 1795523737
+        "ok": 1795523846
       },
       "kd": {
-        "ok": 1795523715
+        "ok": 1795523846
       }
     }
   },
@@ -22604,7 +22604,7 @@
     "fc_listed_at": "2026-11-24T12:30:00",
     "fc_api_seen_at": "2026-11-24T12:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T12:20:11",
@@ -22905,7 +22905,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -24550,7 +24550,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
