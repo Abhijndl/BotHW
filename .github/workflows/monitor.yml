@@ -17,14 +17,13 @@ on:
 
 permissions:
   contents: write           # needed so the job can commit seen.json back
-  actions: read             # lets a run see whether the next run is already waiting
+  actions: write            # lets a run see whether the next run is waiting, and queue it if not
 
 # One run at a time. A trigger that arrives while a run is going waits in line;
 # if yet another arrives meanwhile, GitHub drops the older waiting one and it
-# shows as a grey "cancelled" run — harmless, nothing is missed. Two
-# cron-job.org jobs keep a run waiting almost all the time, so runs follow each
-# other back to back; when none is waiting, the current run stays on
-# (RUN_EXTEND_S) instead of leaving a gap.
+# shows as a grey "cancelled" run — harmless, nothing is missed. v18.2: each run
+# queues the next one itself near its end (CHAIN_LEAD_S) when none is waiting,
+# so cron-job.org is only a backup and can fire every 10 minutes.
 concurrency:
   group: hw-monitor
   cancel-in-progress: false
@@ -32,7 +31,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
 
     steps:
       # ref: main = the LATEST state at start. Without it, a run that was queued
@@ -58,12 +57,14 @@ jobs:
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
 
           # ── Speed ───────────────────────────────────────────────────────────
-          # v18: each run stays on 100 s and checks every 8 s. FirstCry's cart
+          # v18.2: each run stays on 280 s (was 100: ~13 s lost at every hand-over,
+          # 12% of the time) and checks every 8 s. FirstCry's cart
           # (its own server, never blocked) is asked about the cars in turn on
           # every pass — your 🎯 cars about every 15 s; its in-stock list is
           # read every FC_LIST_EVERY s, page 1 of it newest-first in between.
           # Every store is checked whenever it falls due (see below).
-          RUN_SECONDS: "100"
+          RUN_SECONDS: "280"
+          CHAIN_LEAD_S: "90"
           FC_EVERY: "8"
           # If no next run is waiting when the 40 s are up (cron-job.org sent no
           # trigger in minutes ending in 5, and the :x0 one ~35 s late), the run

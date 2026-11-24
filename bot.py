@@ -300,6 +300,9 @@ FC_EVERY      = max(5.0, float(os.getenv("FC_EVERY", "12")))
 # and the :x0 one came ~35 s late — gaps of 65-84 s without a single check.
 # If GitHub can't be asked, the run ends on time as before.
 RUN_EXTEND_S  = max(0.0, float(os.getenv("RUN_EXTEND_S", "0")))
+# v18.2: with CHAIN_LEAD_S seconds left, a run that sees no successor waiting
+# queues the next run itself, so the chain doesn't need a trigger every minute
+CHAIN_LEAD_S  = max(0.0, float(os.getenv("CHAIN_LEAD_S", "0")))
 # How often the WHOLE FirstCry catalogue (sold-out cars included) is read, in
 # seconds. Every pass reads FirstCry's in-stock list; the catalogue keeps new
 # sold-out listings and names/prices current — and a brand-new car often shows
@@ -6574,6 +6577,34 @@ def _successor_waiting():
                for x in runs)
 
 
+def _queue_next_run() -> bool:
+    """Start the next run of this workflow (it waits in line until this one ends)."""
+    repo, tok = os.getenv("GITHUB_REPOSITORY", ""), os.getenv("GITHUB_TOKEN", "")
+    if not (repo and tok):
+        return False
+    wf = os.getenv("GITHUB_WORKFLOW_REF", "").split("@")[0].rsplit("/", 1)[-1] or "monitor.yml"
+    hdr = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28",
+           "User-Agent": "hw-tracker", "Authorization": f"Bearer {tok}"}
+    try:
+        r = http.post(f"https://api.github.com/repos/{repo}/actions/workflows/{wf}/dispatches",
+                      headers=hdr, json={"ref": "main"}, timeout=10)
+        return r.status_code == 204
+    except Exception:
+        return False
+
+
+def _chain_next(elapsed: float, chained: bool) -> bool:
+    """Near the end of a run, make sure the next run is waiting (asked again each pass until it is)."""
+    if chained or not (CHAIN_LEAD_S and _ON_GITHUB) or elapsed < RUN_SECONDS - CHAIN_LEAD_S:
+        return chained
+    if _successor_waiting():
+        return True
+    if _queue_next_run():
+        print("[*] queued the next run (none was waiting)")
+        return True
+    return False
+
+
 def _absence_check(seen: dict, products: list, src_key: str) -> list:
     """Karz & Dolls category pages list the whole category and simply DROP a car
     when it sells out, so a car we believed in stock that is missing from a
@@ -6872,6 +6903,7 @@ def main():
     look_back = t_run - 60
     pass_no = 0
     extended = False
+    chained = False
     timings = []
     # v18: every store is checked whenever it fell due since its own last check
     # (the first pass looks back a minute, to the end of the run before), so a
@@ -6923,6 +6955,7 @@ def main():
         timings.append(f"{int(t - t_run)}s:{'+'.join(n[:2] for n in names) or '-'}={time.time() - t:.0f}s")
         if first_run or RUN_SECONDS <= 0:
             break
+        chained = _chain_next(time.time() - t_run, chained)
         nxt = t + FC_EVERY
         if nxt - t_run > RUN_SECONDS:
             # time's up — unless nobody is waiting to take over (a skipped or
