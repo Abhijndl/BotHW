@@ -14482,16 +14482,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795515965
+        "ok": 1795516086
       },
       "fc_www": {
-        "ok": 1795515988
+        "ok": 1795516098
       },
       "fc_cart": {
-        "ok": 1795515989
+        "ok": 1795516096
       },
       "kd": {
-        "ok": 1795515974
+        "ok": 1795516096
       }
     }
   },
@@ -14803,7 +14803,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-24T10:15:17",
+    "fc_off": "2026-11-24T10:27:40",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -23906,7 +23906,7 @@
     "fc_listed_at": "2026-11-24T10:15:00",
     "fc_api_seen_at": "2026-11-24T10:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-23T20:47:22",
@@ -24502,7 +24502,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24571,7 +24571,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
