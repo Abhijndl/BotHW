@@ -3595,7 +3595,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -3806,10 +3806,10 @@
     "fc_listed_at": "2026-11-24T11:00:00",
     "fc_api_seen_at": "2026-11-24T11:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23076120",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T08:54:54",
     "fc_lst_seen": "2026-11-24T11:00:00",
@@ -4168,7 +4168,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -11641,6 +11641,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "22597417",
+    "fc_off": "2026-11-24T11:02:18",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-11T20:57:16",
@@ -14482,16 +14483,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795518027
+        "ok": 1795518142
       },
       "fc_www": {
-        "ok": 1795518100
+        "ok": 1795518212
       },
       "fc_cart": {
-        "ok": 1795518100
+        "ok": 1795518210
       },
       "kd": {
-        "ok": 1795518100
+        "ok": 1795518209
       }
     }
   },
@@ -16232,7 +16233,7 @@
     "fc_listed_at": "2026-11-24T11:00:00",
     "fc_api_seen_at": "2026-11-24T11:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-24T10:16:47",
@@ -22568,7 +22569,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -23019,7 +23020,7 @@
   "fc_24776070": {
     "stock": "in_stock",
     "name": "Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-feline-lucky-92-250-toy-car-gold-and-red-black/24776070/product-detail",
     "first_seen": "2026-10-17T17:15:00",
