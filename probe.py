@@ -1,137 +1,118 @@
 #!/usr/bin/env python3
-"""Probe #81: read Whiff Culture's product data from its pages, and how fresh it is."""
-import gzip, json, re, time, urllib.error, urllib.request
+"""Probe #82: does Whiff Culture's new site keep the same products, and how often do its lists refresh."""
+import gzip, hashlib, json, re, time, urllib.error, urllib.request
 
 T0 = time.time()
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
 B = "https://www.whiffculture.com"
-OLD = {"14942891868528", "14942899601776", "14942903468400", "14942919033200", "14942923620720"}
+OLD = json.load(open("whiff_old.json"))
 
 
 def log(*a):
     print(f"[{time.time() - T0:6.1f}s]", *a, flush=True)
 
 
-def get(url, extra=None, accept="text/html,application/json;q=0.9,*/*;q=0.8", data=None, timeout=25):
+def get(url, extra=None, accept="text/html,application/json;q=0.9,*/*;q=0.8", timeout=25):
     h = {"User-Agent": UA, "Accept": accept, "Accept-Encoding": "gzip", "Accept-Language": "en-IN,en;q=0.9"}
     h.update(extra or {})
-    req = urllib.request.Request(url, headers=h, data=data)
+    req = urllib.request.Request(url, headers=h)
     t = time.time()
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            body, hd, code, final = r.read(), dict(r.headers), r.status, r.geturl()
+            body, hd, code = r.read(), dict(r.headers), r.status
     except urllib.error.HTTPError as e:
-        body, hd, code, final = e.read() or b"", dict(e.headers or {}), e.code, url
+        body, hd, code = e.read() or b"", dict(e.headers or {}), e.code
     except Exception as e:
-        return 0, f"{type(e).__name__}: {e}", {}, url, time.time() - t
+        return 0, f"{type(e).__name__}: {e}", {}, time.time() - t, 0
+    raw = len(body)
     if "gzip" in (hd.get("Content-Encoding") or "").lower():
         try:
             body = gzip.decompress(body)
         except Exception:
             pass
-    return code, body.decode("utf-8", "replace"), hd, final, time.time() - t
+    return code, body.decode("utf-8", "replace"), hd, time.time() - t, raw
 
 
-def products(rsc):
-    i = rsc.find('"initialProducts":')
+def rsc(path):
+    return get(B + path, {"RSC": "1"}, accept="text/x-component")
+
+
+def products(body):
+    i = body.find('"initialProducts":')
     if i < 0:
         return None
-    arr, _ = json.JSONDecoder().raw_decode(rsc, i + len('"initialProducts":'))
+    arr, _ = json.JSONDecoder().raw_decode(body, i + len('"initialProducts":'))
     return arr
 
 
+def sid(p):
+    return str(p.get("shopifyId") or "").rsplit("/", 1)[-1]
+
+
+def avail(p):
+    return any(v.get("inStock") is True for v in p.get("variants") or [])
+
+
 def cache(hd):
-    return f"cache={hd.get('X-Vercel-Cache')} age={hd.get('Age')}"
+    return f"{hd.get('X-Vercel-Cache')} age={hd.get('Age')}"
 
 
-# 1. the partials list from the RSC payload
-code, rsc, hd, final, dt = get(B + "/collections/partial-bottles", {"RSC": "1"}, accept="text/x-component")
-log(f"[RSC] {code} {dt:.2f}s len={len(rsc)} {cache(hd)}")
-ps = products(rsc) or []
-log(f"[RSC] {len(ps)} products; keys of first: {sorted(ps[0].keys()) if ps else None}")
-if ps:
-    log("[RSC] first product:", json.dumps(ps[0])[:2500])
-    ids = {str(p.get("shopifyId", "")).rsplit("/", 1)[-1] for p in ps}
-    log(f"[RSC] old ids found: {len(OLD & ids)}/5")
-    log("[RSC] inStock values:", {str(k): sum(1 for p in ps if p.get("inStock") == k) for k in (True, False, None)})
-    for k in ("variants", "sizes", "price", "compareAtPrice", "createdAt", "publishedAt", "updatedAt", "tags"):
-        if k in ps[0]:
-            log(f"[RSC] {k} of first:", json.dumps(ps[0][k])[:600])
-    log("[RSC] newest 5 by shopify id:", [(p.get("shopifyId", "").rsplit("/", 1)[-1], p.get("name"), p.get("inStock"))
-                                          for p in sorted(ps, key=lambda p: int(str(p.get("shopifyId", "0")).rsplit("/", 1)[-1] or 0))[-5:]])
-# client chunks referenced only from the payload
-chunks = sorted(set(re.findall(r'static/chunks/[^"]+\.js', rsc)))
-log(f"[RSC] {len(chunks)} chunks referenced")
-lines = [l for l in rsc.split("\n") if re.match(r"^[0-9a-f]+:I\[", l)]
-for l in lines:
-    if re.search(r"Collection|Product|Grid|Shop|Listing", l):
-        log("[RSC] client ref:", l[:400])
-for c in chunks:
-    if "/app/" not in c and not re.search(r"collection|product", c, re.I):
-        continue
-    code, js, hd2, _, _ = get(B + "/_next/" + c, accept="*/*")
-    hits = []
-    for m in re.finditer(r'fetch\(|/api/[a-zA-Z][\w/\-]*|revalidate|router\.refresh|setInterval|useSWR|useQuery', js):
-        hits.append(js[max(0, m.start() - 120):m.end() + 160].replace("\n", " "))
-    log(f"[JS] {c} len={len(js)} hits={len(hits)}")
-    for h in hits[:10]:
-        log("     ", h)
+# 1. same products as before?
+for wid, path in (("whiff-partials", "/collections/partial-bottles"), ("whiff-flash", "/collections/sale"),
+                  ("whiff-flash", "/collections/flash-sale"), ("whiff-testers", "/collections/testers")):
+    code, body, hd, dt, raw = rsc(path)
+    ps = products(body) or []
+    new = {sid(p): avail(p) for p in ps}
+    old = OLD[wid]
+    both = set(new) & set(old)
+    agree = sum(1 for k in both if new[k] == old[k])
+    log(f"[SAME] {path}: {code} {dt:.2f}s gz={raw} raw={len(body)} {cache(hd)} n={len(ps)} in={sum(new.values())} | "
+        f"old n={len(old)} in={sum(old.values())} | overlap={len(both)} stock agrees={agree}")
+    only_new = [(p.get("brand"), p.get("name"), avail(p)) for p in ps if sid(p) not in old]
+    log(f"[SAME] {path}: not in old memory ({len(only_new)}):", only_new[:12])
+    flips = [(p.get("name"), old[sid(p)], avail(p)) for p in ps if sid(p) in old and old[sid(p)] != avail(p)]
+    log(f"[SAME] {path}: stock differs ({len(flips)}):", flips[:12])
+    if ps and wid == "whiff-flash":
+        log("[SAME] a sale product:", json.dumps({k: ps[0].get(k) for k in ("name", "brand", "defaultPrice", "originalPrice", "isSale", "tags", "variants")})[:900])
 
-# 2. other lists
-for c in ("partial-sale", "sale", "testers", "vials"):
-    code, body, hd, final, dt = get(B + "/collections/" + c, {"RSC": "1"}, accept="text/x-component")
-    pp = products(body) or []
-    log(f"[COLL] {c}: {code} {dt:.2f}s len={len(body)} {cache(hd)} products={len(pp)} in={sum(1 for p in pp if p.get('inStock'))}")
+# 2. menu, sitemap and the routes the cache purge mentions
+code, body, hd, dt, raw = get(B + "/api/menu", accept="application/json")
+log(f"[MENU] {code} {dt:.2f}s {cache(hd)} :: {body[:1500]}")
+code, body, hd, dt, raw = get(B + "/sitemap.xml", accept="application/xml")
+locs = re.findall(r"<loc>([^<]+)</loc>", body)
+log(f"[MAP] {code} {dt:.2f}s {cache(hd)} {len(locs)} urls; collections:",
+    sorted({u.split('/collections/')[1] for u in locs if '/collections/' in u})[:80])
+log("[MAP] non-product urls:", [u for u in locs if "/products/" not in u][:60])
+for path in ("/new-arrivals", "/collections/new-arrivals", "/collections/new", "/shop", "/catalog", "/collections/all"):
+    code, body, hd, dt, raw = rsc(path)
+    ps = products(body)
+    arrays = len(re.findall(r'"shopifyId":"gid://shopify/Product/', body))
+    log(f"[ROUTE] {path}: {code} {dt:.2f}s gz={raw} {cache(hd)} initialProducts={None if ps is None else len(ps)} shopifyIds={arrays}")
+code, body, hd, dt, raw = get(B + "/api/products", accept="application/json")
+try:
+    ap = json.loads(body)["products"]
+except Exception:
+    ap = []
+log(f"[APIP] {code} {dt:.2f}s gz={raw} {cache(hd)} cc={hd.get('Cache-Control')} n={len(ap)} keys={sorted(ap[0].keys()) if ap else None}")
+if ap:
+    part = [p for p in ap if p.get("isPartialBottle") or "partial" in str(p.get("name", "")).lower()]
+    log(f"[APIP] partial-looking: {len(part)}; sample:", json.dumps(part[:1])[:900])
 
-# 3. api guesses
-for u in ("/api/products", "/api/products?collection=partial-bottles", "/api/collections/partial-bottles",
-          "/api/collection/partial-bottles", "/api/collections?slug=partial-bottles", "/api/search?q=partial",
-          "/api/inventory", "/api/stock", "/api/products/rayhaan-nocturno-elixir-partial", "/api/revalidate"):
-    code, body, hd, final, dt = get(B + u, accept="application/json")
-    log(f"[API] {u}: {code} {dt:.2f}s ctype={hd.get('Content-Type')} len={len(body)} :: {body[:200]!r}")
-
-# 4. a product page
-if ps:
-    slug = ps[0].get("slug")
-    for i in range(2):
-        code, body, hd, final, dt = get(f"{B}/products/{slug}", {"RSC": "1"}, accept="text/x-component")
-        log(f"[PROD] {slug}: {code} {dt:.2f}s len={len(body)} {cache(hd)}")
-    for m in list(re.finditer(r'"inStock"|availableForSale|quantityAvailable|inventory', body))[:3]:
-        log("[PROD] around:", body[max(0, m.start() - 300):m.end() + 300].replace("\n", " "))
-
-# 5. the shop's myshopify name from an old copy of the site
-for u in ("https://web.archive.org/web/2025id_/https://www.whiffculture.com/",
-          "https://web.archive.org/web/2026id_/https://www.whiffculture.com/collections/partial-sale"):
-    code, body, hd, final, dt = get(u, timeout=40)
-    shops = sorted(set(re.findall(r'([a-z0-9][a-z0-9\-]*\.myshopify\.com)', body)))
-    log(f"[ARCH] {u}: {code} {dt:.2f}s final={final} len={len(body)} shops={shops}")
-    if shops:
-        break
-else:
-    shops = []
-for s in shops[:2]:
-    q = ('{collection(handle:"partial-bottles"){products(first:250){nodes{id title handle availableForSale '
-         'variants(first:3){nodes{id title availableForSale price{amount} compareAtPrice{amount}}}}}}}')
-    for ver in ("2025-01", "2025-07"):
-        code, body, hd, final, dt = get(f"https://{s}/api/{ver}/graphql.json", {"Content-Type": "application/json"},
-                                        accept="application/json", data=json.dumps({"query": q}).encode())
-        log(f"[SF] {s} {ver}: {code} {dt:.2f}s len={len(body)} :: {body[:400]!r}")
-        try:
-            nodes = json.loads(body)["data"]["collection"]["products"]["nodes"]
-            log(f"[SF] {len(nodes)} products, in stock {sum(1 for n in nodes if n['availableForSale'])}")
-            break
-        except Exception as e:
-            log("[SF] parse:", type(e).__name__)
-
-# 6. how fresh is the cached list (every 20 s for 6 min)
-t_end = time.time() + 360
+# 3. how often the lists refresh (every 30 s for 12 min)
+prev = {}
+t_end = time.time() + 720
 while time.time() < t_end:
-    code, body, hd, final, dt = get(B + "/collections/partial-bottles", {"RSC": "1"}, accept="text/x-component")
-    code2, body2, hd2, _, dt2 = get(B + f"/collections/partial-bottles?_={int(time.time()*1000)}", {"RSC": "1"},
-                                    accept="text/x-component")
-    pp = products(body) or []
-    log(f"[FRESH] {code} {dt:.2f}s {cache(hd)} n={len(pp)} in={sum(1 for p in pp if p.get('inStock'))} | "
-        f"busted {code2} {dt2:.2f}s {cache(hd2)} same={body2 == body}")
-    time.sleep(20)
+    row = []
+    for path in ("/collections/partial-bottles", "/collections/sale", "/collections/testers"):
+        code, body, hd, dt, raw = rsc(path)
+        ps = products(body) or []
+        h = hashlib.md5(json.dumps(sorted((sid(p), avail(p)) for p in ps)).encode()).hexdigest()[:8]
+        ch = "" if prev.get(path) in (None, h) else " CHANGED"
+        prev[path] = h
+        row.append(f"{path.rsplit('/', 1)[1]} {code} {cache(hd)} n={len(ps)} in={sum(avail(p) for p in ps)} {h}{ch}")
+    code, body, hd, dt, raw = get(B + "/api/products", accept="application/json")
+    row.append(f"api {code} {cache(hd)} gz={raw}")
+    log("[FRESH] " + " | ".join(row))
+    time.sleep(30)
 log("done")
