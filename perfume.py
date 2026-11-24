@@ -133,7 +133,7 @@ BULK_ROWS = 25
 PAGE = 250
 MAX_PAGES = 8
 KEEP_DAYS = 30
-SALE_RE = re.compile(r"\b(sales?|clearance|deals?|flash|offers?|steals?)\b", re.I)
+SALE_RE = re.compile(r"\b(sales?|clearance|deals?|flash|offers?|steals?|black\s*friday|cyber\s*monday)\b", re.I)
 SALE_SKIP = re.compile(r"^cs-|exclud|eligible", re.I)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
@@ -971,8 +971,12 @@ def fast_lane(st, run, shared):
             nxt[w["id"]] = min(nxt[w["id"]], p)
 
 
-def check_sales(st, site, store, now):
-    """A note when the store starts a sale: a sale-like collection that's new or no longer empty."""
+def sale_like(site, h, t):
+    watched = {w["coll"] for w in WATCHES if w["site"] == site}
+    return h not in watched and not SALE_SKIP.search(h) and bool(SALE_RE.search(h.replace("-", " ") + " " + t))
+
+
+def shopify_sales(site):
     cs = []
     for page in range(1, 4):
         try:
@@ -981,17 +985,44 @@ def check_sales(st, site, store, now):
         except Exception:
             got = None
         if not isinstance(got, list):
-            return False
+            return None
         cs += [c for c in got if isinstance(c, dict)]
         if len(got) < 250:
             break
-    watched = {w["coll"] for w in WATCHES if w["site"] == site}
     cur = {}
     for c in cs:
         h, t, n = c.get("handle"), str(c.get("title") or ""), c.get("products_count")
-        if (isinstance(h, str) and isinstance(n, int) and h not in watched and not SALE_SKIP.search(h)
-                and SALE_RE.search(h.replace("-", " ") + " " + t)):
+        if isinstance(h, str) and isinstance(n, int) and sale_like(site, h, t):
             cur[h] = (n, t.strip() or h)
+    return cur
+
+
+def next_sales(site):
+    """Sale links in the site's menu, with how many products each page has."""
+    try:
+        code, body = get(f"{site}/api/menu")
+        links = json.loads(body).get("links") if code == 200 else None
+    except Exception:
+        links = None
+    if not isinstance(links, list):
+        return None
+    cur = {}
+    for x in links:
+        m = re.fullmatch(r"/collections/([\w-]+)", str(x.get("href") or "")) if isinstance(x, dict) else None
+        t = str(x.get("label") or "").strip() if m else ""
+        if m and sale_like(site, m.group(1), t):
+            prods, _ = fetch_next({"id": f"sale:{m.group(1)}", "site": site, "coll": m.group(1), "page": site})
+            if prods is None:
+                return None
+            cur[m.group(1)] = (len(prods), t or m.group(1))
+    return cur
+
+
+def check_sales(st, site, store, now, kind="shopify"):
+    """A note when the store starts a sale: a sale-like collection that's new or no longer empty."""
+    cur = next_sales(site) if kind == "next" else shopify_sales(site)
+    if cur is None:
+        return False
     sales = st.setdefault("sales", {})
     known = sales.get(host(site))
     sales[host(site)] = {h: n for h, (n, _) in cur.items()}
@@ -1033,7 +1064,8 @@ def main():
     t0 = time.time()
     run = {"no": os.getenv("GITHUB_RUN_NUMBER", ""), "checks": 0, "from": int(t0)}
     due = {w["id"]: t0 for w in WATCHES}
-    sites = list(dict.fromkeys((w["site"], w["store"]) for w in WATCHES if w.get("kind", "shopify") == "shopify"))
+    kinds = {w["site"]: w.get("kind", "shopify") for w in WATCHES}
+    sites = list(dict.fromkeys((w["site"], w["store"]) for w in WATCHES if kinds[w["site"]] in ("shopify", "next")))
     sales_due = {s: t0 + SALES_FIRST for s, _ in sites}
     pause, tried, refused = {}, set(), {}
     greeted = queued = handed = False
@@ -1084,7 +1116,7 @@ def main():
                     run["checks"] += 1
                 else:
                     try:
-                        urgent = check_sales(st, sale[0], sale[1], now)
+                        urgent = check_sales(st, sale[0], sale[1], now, kinds[sale[0]])
                     except Exception as e:
                         log(f"{sale[1]}: sales check error {e!r}")
                     sales_due[sale[0]] = time.time() + SALES_EVERY
