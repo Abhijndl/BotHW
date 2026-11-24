@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795530726
+        "ok": 1795530848
       },
       "fc_www": {
-        "ok": 1795530761
+        "ok": 1795530887
       },
       "fc_cart": {
-        "ok": 1795530760
+        "ok": 1795530888
       },
       "kd": {
-        "ok": 1795530760
+        "ok": 1795530874
       }
     }
   },
@@ -15016,7 +15016,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -16326,7 +16326,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16566,7 +16566,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -19419,7 +19419,7 @@
   "fc_24476887": {
     "stock": "in_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
@@ -22105,13 +22105,12 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T16:00:00",
-    "fc_api_seen_at": "2026-11-24T14:15:00",
+    "fc_api_seen_at": "2026-11-24T14:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-24T14:07:12",
-    "fc_off": "2026-11-24T14:22:56",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-22T14:06:55",
@@ -22190,7 +22189,7 @@
     "fc_listed_at": "2026-11-24T14:30:00",
     "fc_api_seen_at": "2026-11-24T14:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-20T11:00:03",
@@ -22608,7 +22607,7 @@
     "fc_listed_at": "2026-11-24T14:30:00",
     "fc_api_seen_at": "2026-11-24T14:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:18:38",
@@ -27689,11 +27688,11 @@
     "fc_listed_at": "2026-11-24T14:30:00",
     "fc_api_seen_at": "2026-11-24T14:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T11:05:51",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-23T17:36:57",
     "fc_lst_seen": "2026-11-23T18:15:00",
     "last_ring": "2026-11-20T04:46:59",
@@ -28580,6 +28579,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-24T14:34:47",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
