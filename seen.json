@@ -10531,7 +10531,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T16:17:19",
+    "fc_off": "2026-11-24T16:29:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14480,16 +14480,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795537687
+        "ok": 1795537706
       },
       "fc_www": {
-        "ok": 1795537686
+        "ok": 1795537805
       },
       "fc_cart": {
-        "ok": 1795537687
+        "ok": 1795537802
       },
       "kd": {
-        "ok": 1795537690
+        "ok": 1795537793
       }
     }
   },
@@ -15161,7 +15161,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T16:17:19",
+    "fc_off": "2026-11-24T16:29:26",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -18004,7 +18004,7 @@
     "fc_listed_at": "2026-11-24T16:15:00",
     "fc_api_seen_at": "2026-11-24T16:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-11-21T13:53:55",
@@ -20857,7 +20857,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T16:17:19",
+    "fc_off": "2026-11-24T16:29:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22042,7 +22042,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22065,7 +22065,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22604,7 +22604,7 @@
     "fc_listed_at": "2026-11-24T16:15:00",
     "fc_api_seen_at": "2026-11-24T16:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:18:38",
@@ -23926,7 +23926,7 @@
     ]
   },
   "fc_24783699": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels 70 Plymouth Aar Cuda 245/250 Toy Car -Yellow",
     "price": "₹165",
     "source": "firstcry",
@@ -23941,16 +23941,15 @@
     "fc_listed_at": "2026-11-24T14:30:00",
     "fc_api_seen_at": "2026-11-24T15:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-24T15:51:44",
     "fc_off": "2026-11-24T15:45:13",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T14:16:22",
     "fc_lst_seen": "2026-11-24T14:30:00",
-    "fc_gone": "2026-11-24T15:51:44",
     "alert_log": [
       "2026-11-24T12:40:59",
       "2026-11-24T13:20:17",
@@ -27883,7 +27882,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T16:17:19",
+    "fc_off": "2026-11-24T16:29:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -29806,7 +29805,7 @@
     "fc_listed_at": "2026-11-24T16:15:00",
     "fc_api_seen_at": "2026-11-24T16:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "25045670",
     "fc_cart": "n",
