@@ -10524,13 +10524,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-24T09:15:00",
+    "fc_api_seen_at": "2026-11-24T09:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T09:29:24",
+    "fc_off": "2026-11-24T09:42:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11414,7 +11414,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795513203
+        "ok": 1795513323
       },
       "fc_www": {
-        "ok": 1795513248
+        "ok": 1795513358
       },
       "fc_cart": {
-        "ok": 1795513247
+        "ok": 1795513356
       },
       "kd": {
-        "ok": 1795513247
+        "ok": 1795513355
       }
     }
   },
@@ -14533,7 +14533,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -15015,7 +15015,7 @@
   "fc_24503903": {
     "stock": "in_stock",
     "name": "Hot Wheels Uncertain-T Die Cast Free Wheel Toy Car - Metallic Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-uncertain-t-die-cast-free-wheel-toy-car-metallic-red/24503903/product-detail",
     "first_seen": "2026-09-17T17:26:00",
@@ -15156,13 +15156,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-24T09:15:00",
+    "fc_api_seen_at": "2026-11-24T09:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T09:29:24",
+    "fc_off": "2026-11-24T09:42:00",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -16244,7 +16244,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16322,7 +16322,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16421,7 +16421,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -16562,7 +16562,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -19413,7 +19413,7 @@
   "fc_24476887": {
     "stock": "in_stock",
     "name": "Hot Wheels 23 Ram 1500 HW Dirt Series die cast toy vehicle - Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-hw-dirt-series-die-cast-toy-vehicle-purple/24476887/product-detail",
     "first_seen": "2026-09-22T11:18:50",
@@ -20848,13 +20848,13 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-24T09:15:00",
+    "fc_api_seen_at": "2026-11-24T09:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T09:29:24",
+    "fc_off": "2026-11-24T09:42:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27855,13 +27855,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-24T09:15:00",
+    "fc_api_seen_at": "2026-11-24T09:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T09:29:24",
+    "fc_off": "2026-11-24T09:42:00",
     "fc_cart": "y",
     "fc_svc": "1"
   },
