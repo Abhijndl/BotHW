@@ -13033,6 +13033,7 @@
     "fc_lst": "out",
     "fc_gid": "24194169",
     "fc_phantom": "2026-11-23T20:49:28",
+    "fc_off": "2026-11-24T14:57:27",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T20:41:01",
@@ -14478,16 +14479,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795532046
+        "ok": 1795532165
       },
       "fc_www": {
-        "ok": 1795532121
+        "ok": 1795532247
       },
       "fc_cart": {
-        "ok": 1795532122
+        "ok": 1795532248
       },
       "kd": {
-        "ok": 1795532107
+        "ok": 1795532234
       }
     }
   },
@@ -14530,7 +14531,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -28553,7 +28554,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
@@ -28688,6 +28688,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-24T14:56:02",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
