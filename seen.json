@@ -14047,6 +14047,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14465,16 +14466,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795487524
+        "ok": 1795487651
       },
       "fc_www": {
-        "ok": 1795487569
+        "ok": 1795487695
       },
       "fc_cart": {
-        "ok": 1795487566
+        "ok": 1795487705
       },
       "kd": {
-        "ok": 1795487566
+        "ok": 1795487684
       }
     }
   },
@@ -15726,9 +15727,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-12T18:45:00",
-    "fc_api_seen_at": "2026-11-23T21:00:00",
+    "fc_api_seen_at": "2026-11-24T02:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24476138",
     "fc_cart": "n",
@@ -15764,7 +15765,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -18673,31 +18674,31 @@
     "fc_gone": "2026-11-22T15:51:07"
   },
   "fc_24476798": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-11-24T02:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-23T19:56:15",
+    "last_restock_alert": "2026-11-24T02:34:12",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T21:00:00",
-    "fc_api_seen_at": "2026-11-23T21:00:00",
+    "fc_api_seen_at": "2026-11-24T02:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
-    "fc_lst": "list",
+    "fc_live": "ok",
+    "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-23T20:25:20",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-23T20:34:43",
     "fc_lst_seen": "2026-11-23T21:00:00",
-    "fc_gone": "2026-11-23T20:25:20",
     "alert_log": [
-      "2026-11-23T19:56:15"
+      "2026-11-23T19:56:15",
+      "2026-11-24T02:34:12"
     ]
   },
   "fc_24473498": {
@@ -19708,6 +19709,7 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -22014,7 +22016,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22037,7 +22039,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22422,12 +22424,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T09:45:00",
-    "fc_api_seen_at": "2026-11-24T02:15:00",
+    "fc_api_seen_at": "2026-11-24T02:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "list",
+    "fc_lst": "out",
     "fc_gid": "24776095",
     "fc_phantom": "2026-11-18T03:10:38",
+    "fc_off": "2026-11-24T02:33:28",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-21T08:51:00",
