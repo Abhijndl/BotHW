@@ -3502,8 +3502,11 @@ def _fc_cart_apply(out: list, prev_fc: dict, word: dict) -> list:
         if pageless:
             r["fc_page_unchecked"] = True
             _FC_CY.pop(p, None)
-        if v and before != st and not v.get("fc_cart") and proposed.get(p) != st and not r.get("fc_first_read"):
+        listed_new = bool(v and v.get("fc_new_pending") and _hours_since(v["fc_new_pending"]) < 24)
+        if (v and before != st and not v.get("fc_cart") and proposed.get(p) != st and not r.get("fc_first_read")
+                and not listed_new):
             # its first cart answer, and nothing else said so: a correction, not news
+            # (v18.1: except a car listed in the last day - its first yes is the news)
             r["fc_first_read"] = True
             n_fix += 1
         r["stock"] = st
@@ -5976,6 +5979,7 @@ def _priority_rank(d) -> int:
 # default; its restock still alerts normally. Set ALERT_NEW_SOLD_OUT=true to get
 # them back.
 ALERT_NEW_SOLD_OUT = os.getenv("ALERT_NEW_SOLD_OUT", "false").lower() == "true"
+ALERT_LISTED_TARGET = os.getenv("ALERT_LISTED_TARGET", "true").lower() == "true"
 
 
 def _dedupe(items: list, seen_keys: set) -> list:
@@ -6081,11 +6085,18 @@ def build_alert(ch: dict, shown: set | None = None) -> str | None:
     # These are worth knowing about: hit the 💙 wishlist button on the site so
     # Minifygram notifies you when they restock. Next run the bot will catch the
     # restock itself too.
-    bs = (_dedupe([d for d in ch["back_soon"] if _within_budget(d)], shown)
-          if ALERT_NEW_SOLD_OUT else [])
+    # v18.1: a 🎯 car FirstCry has just listed but won't send to you yet is still
+    # worth knowing about (24 Nov: the Skyline BNR34) - ALERT_LISTED_TARGET
+    bs = _flagged_first(_dedupe([d for d in ch["back_soon"] if _within_budget(d) and (
+        ALERT_NEW_SOLD_OUT or (ALERT_LISTED_TARGET and d.get("source") == "firstcry" and _is_flagged(d)))], shown))
     if bs:
-        parts.append(("\n" if parts else "") + "👀 <b>NEW listing — sold out (wishlist it!)</b>")
-        parts += ["  " + _line(d) + "  <i>sold out</i>" for d in bs[:8]]
+        parts.append(("\n" if parts else "") + "👀 <b>JUST LISTED — not in stock for you yet</b>")
+        parts += ["  " + _line(d) + (f"  <i>can't be ordered to {FC_PINCODE} yet</i>" if d.get("source") == "firstcry"
+                                     else "  <i>sold out</i>") for d in bs[:8]]
+        if len(bs) > 8:
+            parts.append(f"  …and {len(bs) - 8} more")
+        if any(d.get("source") == "firstcry" for d in bs):
+            parts.append("  I'll alert the moment FirstCry lets one go to you.")
 
     if not parts:
         return None
@@ -6668,6 +6679,9 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
     # site change) — absorbed with a one-line note. Brand-new FirstCry ids are
     # never absorbed: a case drop really does list 10-20 cars at once.
     BURST_LIMIT = int(os.getenv("DISCOVERY_BURST_LIMIT", "8"))
+    # v18.1: FirstCry lists cases out of id order (24 Nov: a case of 22 at ids
+    # ~8,000 below the newest seen), so "new" means near the newest id, not above it
+    FC_FRESH_WINDOW = int(os.getenv("FC_FRESH_WINDOW", "300000"))
 
     shop_max = {}
     for s in src_keys:
@@ -6683,11 +6697,12 @@ def _process(seen: dict, products: list, store: str, quiet: bool) -> int:
             n = k.rsplit("_", 1)[1]
             return shop_max.get(d["source"], 0) > 0 and n.isdigit() and int(n) > shop_max[d["source"]]
         return (d["source"] == "firstcry" and fc_max_known > 0
-                and k[3:].isdigit() and int(k[3:]) > fc_max_known)
+                and k[3:].isdigit() and int(k[3:]) > fc_max_known - FC_FRESH_WINDOW)
 
     for src_key in src_keys:
         burst = [d for d in (changes["new_listings"] + changes["back_soon"])
-                 if d["source"] == src_key and not _fresh_fc(d) and not d.get("_known")]
+                 if d["source"] == src_key and not _fresh_fc(d) and not d.get("_known")
+                 and not _is_flagged(d)]          # 🎯 cars are never absorbed
         if len(burst) > BURST_LIMIT:
             drop = {d["id"] for d in burst}
             changes["new_listings"] = [d for d in changes["new_listings"] if d["id"] not in drop]
