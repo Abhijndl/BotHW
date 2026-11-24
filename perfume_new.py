@@ -143,7 +143,7 @@ _last_send = [0.0]
 _pushed = [None]
 _outbox = []
 _can_push = [True]
-_page = {}           # watch id → (page version, products, read at)
+_page = {}           # watch id → (when the site made the page, products, read at)
 
 
 def log(msg):
@@ -294,24 +294,21 @@ def page_products(body):
     return arr if isinstance(arr, list) else None
 
 
-def version(h):
+def made(h):
+    """When the site made the cached page it sent: its Date, or now minus Age on pages
+    whose Date is just the time of sending."""
     try:
-        return email.utils.parsedate_to_datetime(h.get("Date")).timestamp(), int(h.get("Age") or 0)
+        return min(email.utils.parsedate_to_datetime(h.get("Date")).timestamp(), time.time() - int(h.get("Age") or 0))
     except Exception:
         return None
 
 
-def same(a, b):
-    """Same cached page: it keeps its Date, or (on some pages) its Date minus Age."""
-    return bool(a and b) and (a[0] == b[0] or abs((a[0] - a[1]) - (b[0] - b[1])) <= 2)
-
-
 def stamp(url, headers):
-    """Which version of a cached page the site would send, for a few hundred bytes."""
+    """When the cached page the site would send was made, for a few hundred bytes."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA, **headers})
     try:
         with urllib.request.urlopen(req, timeout=10) as r:
-            return version(r.headers) if r.status == 200 else None
+            return made(r.headers) if r.status == 200 else None
     except Exception:
         return None
 
@@ -320,8 +317,10 @@ def fetch_next(w):
     """Whiff Culture's new site (since 24 Nov); the page is downloaded only when it changes."""
     url, hd = f"{w['site']}/collections/{w['coll']}", {"RSC": "1"}
     last = _page.get(w["id"])
-    if last and last[0] and time.time() - last[2] < NEXT_FULL and same(stamp(url, hd), last[0]):
-        return last[1], ""
+    if last and last[0] and time.time() - last[2] < NEXT_FULL:
+        m = stamp(url, hd)
+        if m is not None and m <= last[0] + 2:         # same page, or an older copy
+            return last[1], ""
     info = {}
     try:            # no cache-buster: read the site's cache like any visitor
         code, body = get(url, timeout=15, accept="text/x-component", headers=hd, info=info)
@@ -351,10 +350,14 @@ def fetch_next(w):
         acc = [a["name"] for a in p.get("accords") or [] if isinstance(a, dict) and isinstance(a.get("name"), str)]
         out.append({"id": pid, "title": title, "handle": slug, "variants": vs, "scent": ", ".join(acc[:3]).lower(),
                     "url": f"{w['site']}/products/{slug}" if slug else w["page"]})
-    ver = version(info)
-    if last and last[0] and ver and not same(ver, last[0]):
-        log(f"{w['id']}: the site remade this page ({info.get('Date')}, age {info.get('Age', '?')} s)")
-    _page[w["id"]] = (ver, out, time.time())
+    m = made(info)
+    if last and last[0] and m is not None:
+        if m < last[0] - 2 and time.time() - last[2] < 300:
+            log(f"{w['id']}: the site sent an older copy of this page ({info.get('Date')}); kept the newer one")
+            return last[1], ""
+        if m > last[0] + 2:
+            log(f"{w['id']}: the site remade this page {max(0, int(time.time() - m))} s ago")
+    _page[w["id"]] = (m, out, time.time())
     return out, ""
 
 

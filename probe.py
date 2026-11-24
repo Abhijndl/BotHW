@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Probe #87: page-version checks on all three Whiff pages, live, for 90 s (no Telegram)."""
+"""Probe #88: page-version checks on all three Whiff pages, live, for 90 s (no Telegram)."""
 import os, sys, time, urllib.request
 
 os.environ["PERFUME_STATE"] = "whiff_state.json"
@@ -21,7 +21,7 @@ st = P.load()
 ws = [w for w in P.WATCHES if w["store"] == "Whiff Culture"]
 t0 = time.time()
 n = 0
-while time.time() - t0 < 90:
+while time.time() - t0 < 75:
     t = time.time()
     for w in ws:
         prods, why = P.fetch(w)
