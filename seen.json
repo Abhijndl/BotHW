@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795521132
+        "ok": 1795521241
       },
       "fc_www": {
-        "ok": 1795521174
+        "ok": 1795521286
       },
       "fc_cart": {
-        "ok": 1795521175
+        "ok": 1795521287
       },
       "kd": {
-        "ok": 1795521165
+        "ok": 1795521287
       }
     }
   },
@@ -14796,13 +14796,12 @@
     "last_price_alert": "2026-11-22T14:10:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T15:00:00",
-    "fc_api_seen_at": "2026-11-24T11:30:00",
+    "fc_api_seen_at": "2026-11-24T11:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-24T11:42:14",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15114,7 +15113,6 @@
     "fc_lst": "out",
     "fc_gid": "23353372",
     "fc_phantom": "2026-11-18T18:40:15",
-    "fc_off": "2026-11-24T11:52:54",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-21T06:46:42",
@@ -15316,7 +15314,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -22825,7 +22823,7 @@
   "fc_24776080": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 161/250 70 Ford Escort Toy Car -Grey",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-161-250-70-ford-escort-toy-car-grey/24776080/product-detail",
     "first_seen": "2026-10-17T17:00:00",
@@ -22904,7 +22902,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -24526,7 +24524,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24549,7 +24547,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24610,7 +24608,6 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24831961",
-    "fc_off": "2026-11-24T11:51:28",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-11T20:57:16",
@@ -28338,7 +28335,7 @@
     "fc_listed_at": "2026-11-24T11:45:00",
     "fc_api_seen_at": "2026-11-24T11:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "0",
     "fc_phantom": "2026-11-16T16:02:53",
@@ -29037,11 +29034,11 @@
     "fc_listed_at": "2026-11-24T11:45:00",
     "fc_api_seen_at": "2026-11-24T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-23T07:07:15",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-23T08:07:30",
     "fc_lst_seen": "2026-11-23T08:15:00",
     "fc_gone": "2026-11-23T07:07:15",
@@ -29065,11 +29062,11 @@
     "fc_listed_at": "2026-11-24T11:45:00",
     "fc_api_seen_at": "2026-11-24T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24700957",
     "fc_off": "2026-11-24T09:13:51",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T06:33:53",
     "fc_lst_seen": "2026-11-24T06:15:00",
@@ -29091,11 +29088,11 @@
     "fc_listed_at": "2026-11-24T11:45:00",
     "fc_api_seen_at": "2026-11-24T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-23T06:36:32",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-23T06:33:53",
     "fc_lst_seen": "2026-11-24T04:15:00",
     "fc_gone": "2026-11-24T06:12:50",
@@ -29242,11 +29239,11 @@
     "fc_listed_at": "2026-11-24T11:45:00",
     "fc_api_seen_at": "2026-11-24T11:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-24T06:10:01",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-23T07:51:37",
     "fc_lst_seen": "2026-11-24T06:15:00",
