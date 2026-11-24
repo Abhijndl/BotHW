@@ -13892,7 +13892,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -14040,7 +14040,7 @@
     "fc_listed_at": "2026-11-24T04:30:00",
     "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
@@ -14462,16 +14462,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795495202
+        "ok": 1795495322
       },
       "fc_www": {
-        "ok": 1795495248
+        "ok": 1795495382
       },
       "fc_cart": {
-        "ok": 1795495244
+        "ok": 1795495383
       },
       "kd": {
-        "ok": 1795495210
+        "ok": 1795495362
       }
     }
   },
@@ -14677,7 +14677,7 @@
     "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -16208,9 +16208,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T16:30:00",
-    "fc_api_seen_at": "2026-11-23T18:30:00",
+    "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-17T10:09:17",
@@ -16261,14 +16261,14 @@
     "last_price_alert": "2026-11-22T04:28:58",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T17:00:00",
-    "fc_api_seen_at": "2026-11-23T18:30:00",
+    "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "last unit",
     "fc_lst": "list",
     "fc_gid": "24473732",
     "fc_phantom": "2026-11-21T10:01:47",
-    "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-23T15:48:58",
     "fc_lst_seen": "2026-11-23T17:00:00",
     "fc_gone": "2026-11-22T18:59:42"
@@ -19705,7 +19705,7 @@
     "fc_listed_at": "2026-11-24T04:30:00",
     "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
@@ -22603,7 +22603,6 @@
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T18:21:49",
-    "fc_off": "2026-11-24T04:40:43",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T04:19:56",
@@ -24536,7 +24535,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24559,7 +24558,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -25868,6 +25867,7 @@
     "fc_lst": "out",
     "fc_gid": "22591626",
     "fc_phantom": "2026-11-24T02:52:20",
+    "fc_off": "2026-11-24T04:42:14",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-21T08:04:57",
@@ -28507,7 +28507,7 @@
     "fc_gone": "2026-11-22T15:38:12"
   },
   "fc_19991402": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Majorette Porsche Racing Die Cast Free Wheel Model Toy Car - Blue",
     "price": "₹287",
     "source": "firstcry",
@@ -28522,7 +28522,7 @@
     "fc_listed_at": "2026-11-19T13:45:00",
     "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
-    "fc_live": "unlisted",
+    "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
@@ -28991,7 +28991,7 @@
     "fc_listed_at": "2026-11-24T04:30:00",
     "fc_api_seen_at": "2026-11-24T04:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-23T07:07:15",
@@ -29047,7 +29047,6 @@
     "fc_lst": "out",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-23T06:36:32",
-    "fc_off": "2026-11-24T04:30:26",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-23T06:33:53",
