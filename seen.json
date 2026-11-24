@@ -13868,7 +13868,7 @@
     "last_price_alert": "2026-11-04T19:03:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:30:00",
-    "fc_api_seen_at": "2026-11-24T22:00:00",
+    "fc_api_seen_at": "2026-11-24T22:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -13896,7 +13896,7 @@
     "last_price_alert": "2026-11-04T19:03:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T14:45:00",
-    "fc_api_seen_at": "2026-11-24T22:00:00",
+    "fc_api_seen_at": "2026-11-24T22:15:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -14352,7 +14352,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14483,16 +14483,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795558806
+        "ok": 1795559041
       },
       "fc_www": {
-        "ok": 1795558845
+        "ok": 1795559134
       },
       "fc_cart": {
-        "ok": 1795558846
+        "ok": 1795559136
       },
       "kd": {
-        "ok": 1795558846
+        "ok": 1795559135
       }
     }
   },
@@ -14535,7 +14535,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14798,13 +14798,12 @@
     "last_price_alert": "2026-11-22T14:10:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T15:00:00",
-    "fc_api_seen_at": "2026-11-24T22:00:00",
+    "fc_api_seen_at": "2026-11-24T22:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-24T22:12:04",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -16249,7 +16248,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16327,7 +16326,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16426,7 +16425,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -28555,7 +28554,7 @@
     "fc_listed_at": "2026-11-24T22:15:00",
     "fc_api_seen_at": "2026-11-24T22:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28603,9 +28602,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-24T22:00:00",
+    "fc_api_seen_at": "2026-11-24T22:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
