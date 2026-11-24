@@ -14481,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795522569
+        "ok": 1795522686
       },
       "fc_www": {
-        "ok": 1795522613
+        "ok": 1795522742
       },
       "fc_cart": {
-        "ok": 1795522612
+        "ok": 1795522744
       },
       "kd": {
-        "ok": 1795522594
+        "ok": 1795522724
       }
     }
   },
@@ -18007,7 +18007,7 @@
     "fc_listed_at": "2026-11-24T12:15:00",
     "fc_api_seen_at": "2026-11-24T12:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-11-21T13:53:55",
@@ -22604,15 +22604,15 @@
     "fc_listed_at": "2026-11-24T12:15:00",
     "fc_api_seen_at": "2026-11-24T12:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
-    "fc_phantom": "2026-11-24T12:15:30",
+    "fc_phantom": "2026-11-24T12:18:17",
     "fc_cart": "n",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-24T11:05:28",
     "fc_lst_seen": "2026-11-24T12:15:00",
-    "fc_gone": "2026-11-24T12:15:30",
+    "fc_gone": "2026-11-24T12:18:17",
     "alert_log": [
       "2026-11-24T11:05:34",
       "2026-11-24T12:04:26"
@@ -22692,7 +22692,7 @@
     "fc_listed_at": "2026-11-24T12:15:00",
     "fc_api_seen_at": "2026-11-24T12:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-17T05:44:07",
@@ -22906,7 +22906,7 @@
   "fc_24776089": {
     "stock": "in_stock",
     "name": "Hot Wheels Time shifter (109/250) Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-time-shifter-109-250-toy-car-yellow/24776089/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -24505,7 +24505,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24528,7 +24528,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24551,7 +24551,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24574,7 +24574,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24597,7 +24597,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
