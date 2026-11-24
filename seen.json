@@ -3806,7 +3806,7 @@
     "fc_listed_at": "2026-11-24T11:15:00",
     "fc_api_seen_at": "2026-11-24T11:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "23076120",
     "fc_cart": "n",
@@ -14351,7 +14351,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14482,16 +14482,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795519564
+        "ok": 1795519685
       },
       "fc_www": {
-        "ok": 1795519632
+        "ok": 1795519741
       },
       "fc_cart": {
-        "ok": 1795519633
+        "ok": 1795519742
       },
       "kd": {
-        "ok": 1795519633
+        "ok": 1795519742
       }
     }
   },
@@ -24506,7 +24506,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24529,7 +24529,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24552,7 +24552,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24575,7 +24575,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24598,7 +24598,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -27588,7 +27588,7 @@
     ]
   },
   "fc_24961457": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium 1:64 Scale Formula 1 2025 Atlassian Williams Racing #23 Die cast model car- Blue",
     "price": "₹719",
     "source": "firstcry",
@@ -27603,14 +27603,15 @@
     "fc_listed_at": "2026-11-24T11:15:00",
     "fc_api_seen_at": "2026-11-24T11:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24961456",
-    "fc_phantom": "2026-11-21T12:11:20",
-    "fc_cart": "y",
+    "fc_phantom": "2026-11-24T11:27:29",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-21T11:21:44",
     "fc_lst_seen": "2026-11-21T12:15:00",
+    "fc_gone": "2026-11-24T11:27:47",
     "alert_log": [
       "2026-11-24T11:25:41"
     ]
@@ -28572,7 +28573,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T11:17:00",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
