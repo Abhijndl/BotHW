@@ -6843,7 +6843,7 @@
     "last_price_alert": ""
   },
   "kd_6nNVYyXgYk": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "HOT WHEELS POP CULTURE SET OF 5",
     "price": "₹2469",
     "source": "karzdolls",
@@ -10531,7 +10531,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T21:44:41",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14482,16 +14481,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795557012
+        "ok": 1795557247
       },
       "fc_www": {
-        "ok": 1795557048
+        "ok": 1795557354
       },
       "fc_cart": {
-        "ok": 1795557049
+        "ok": 1795557356
       },
       "kd": {
-        "ok": 1795557049
+        "ok": 1795557355
       }
     }
   },
@@ -15164,7 +15163,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-24T21:44:41",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20859,7 +20857,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T21:44:41",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27885,7 +27882,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-24T21:44:41",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28553,7 +28549,7 @@
     "fc_listed_at": "2026-11-24T21:45:00",
     "fc_api_seen_at": "2026-11-24T21:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28601,9 +28597,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-24T21:00:00",
+    "fc_api_seen_at": "2026-11-24T21:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
