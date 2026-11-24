@@ -14043,7 +14043,7 @@
     "fc_listed_at": "2026-11-24T00:30:00",
     "fc_api_seen_at": "2026-11-24T00:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
@@ -14465,16 +14465,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795480808
+        "ok": 1795480921
       },
       "fc_www": {
-        "ok": 1795480852
+        "ok": 1795480971
       },
       "fc_cart": {
-        "ok": 1795480853
+        "ok": 1795480972
       },
       "kd": {
-        "ok": 1795480852
+        "ok": 1795480962
       }
     }
   },
@@ -16301,7 +16301,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -19703,7 +19703,7 @@
     "fc_listed_at": "2026-11-24T00:30:00",
     "fc_api_seen_at": "2026-11-24T00:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
@@ -26329,7 +26329,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
