@@ -1,7 +1,5 @@
-[  0.1s] read 1: 174 products, 19 in stock, events 0, took 0.14s, calls {'HEAD': 0, 'GET': 1}
-[  2.1s] read 2: 174 products, 19 in stock, events 0, took 0.07s, calls {'HEAD': 1, 'GET': 1}
-[  4.0s] read 3: 174 products, 19 in stock, events 0, took 0.05s, calls {'HEAD': 2, 'GET': 1}
-[ 18.1s] read 10: 174 products, 19 in stock, events 0, took 0.05s, calls {'HEAD': 9, 'GET': 1}
-[ 38.1s] read 20: 174 products, 19 in stock, events 0, took 0.11s, calls {'HEAD': 19, 'GET': 1}
-[ 58.1s] read 30: 174 products, 19 in stock, events 0, took 0.07s, calls {'HEAD': 29, 'GET': 1}
-done: 30 checks, calls {'HEAD': 29, 'GET': 1}, page version Tue, 24 Nov 2026 07:43:42 GMT
+whiff menu sales: {} 0.31s
+https://www.scentoria.co.in sales: {'christmas-sale': (0, 'Christmas Sale'), 'diwali-sale': (0, 'Diwali Sale')} 0.47s
+https://www.scentira.in sales: {'body-mist-sale': (14, 'Body Mist Sale'), 'carnival-sale': (0, 'Carnival Sale'), 'carnival-sale-10': (0, 'Carnival Sale 10%'), 'carnival-sale-15': (0, 'Carnival Sale 15%'), 'carnival-sale-20': (0, 'Carnival Sale 20%'), 'carnival-sale-25': (0, 'Carnival Sale 25%'), 'carnival-sale-30': (0, 'Carnival Sale 30%'), 'carnival-sale-40-off': (0, 'Carnival Sale 40% Off'), 'carnival-sale-50': (0, 'Carnival Sale 50%'), 'carnival-sale-bundle': (3, 'Carnival Sale Bundle'), 'deo-sale': (10, 'Deo Sale'), 'diwali-sale': (324, 'Diwali Sale'), 'pay-day-sale': (420, 'NEW ARRIVALS'), 'sale': (2, 'Sale'), 'sale-25off': (0, 'sale-25off'), 'sale-30off': (0, 'sale-30off'), 'sale-40': (0, 'sale-40%')} 0.67s
+https://www.sillageperfumes.in sales: {'rakshabandhan-sale': (128, 'Rakhi Sale'), 'rakhi-sale-15-off': (2, 'Rakhi Sale 15% off'), 'rakhi-sale-5-off': (0, 'Rakhi Sale 5% off')} 0.27s
+check_sales whiff -> False {}
