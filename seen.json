@@ -11101,7 +11101,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹643",
+    "price": "₹608",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -11137,7 +11137,7 @@
   "fc_15238726": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel X-Blade Bike - Blue",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-x-blade-bike-blue/15238726/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -13496,7 +13496,7 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -14349,7 +14349,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14430,7 +14430,7 @@
   "fc_2701025": {
     "stock": "in_stock",
     "name": "Hot Wheels X-Blade Bike - RED & Black",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-x-blade-bike-red-and-black/2701025/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14480,16 +14480,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795533631
+        "ok": 1795533727
       },
       "fc_www": {
-        "ok": 1795533699
+        "ok": 1795533841
       },
       "fc_cart": {
-        "ok": 1795533698
+        "ok": 1795533840
       },
       "kd": {
-        "ok": 1795533697
+        "ok": 1795533827
       }
     }
   },
@@ -15757,7 +15757,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -22605,7 +22605,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:18:38",
@@ -22636,7 +22636,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T18:21:49",
@@ -22693,7 +22693,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-17T05:44:07",
@@ -22867,7 +22867,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-21T13:17:55",
@@ -22893,7 +22893,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:47:47",
@@ -27575,7 +27575,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-23T15:40:48",
@@ -27603,7 +27603,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T11:27:29",
@@ -28547,7 +28547,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28597,7 +28597,7 @@
     "fc_listed_at": "2026-11-19T13:45:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -29523,7 +29523,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
@@ -29549,7 +29549,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_cart": "n",
@@ -29573,7 +29573,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
@@ -29599,7 +29599,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_phantom": "2026-11-24T15:14:30",
@@ -29625,7 +29625,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
@@ -29650,7 +29650,7 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
@@ -29977,12 +29977,12 @@
     "fc_listed_at": "2026-11-24T15:15:00",
     "fc_api_seen_at": "2026-11-24T15:15:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T15:10:47",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:15:00",
     "fc_gone": "2026-11-24T15:14:20"
