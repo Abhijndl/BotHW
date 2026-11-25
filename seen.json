@@ -121,7 +121,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-25T09:45:00",
+    "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -3803,13 +3803,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-25T07:15:00",
-    "fc_api_seen_at": "2026-11-25T07:15:00",
+    "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "23076120",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-25T05:32:18",
     "fc_lst_seen": "2026-11-25T07:15:00",
     "fc_gone": "2026-11-25T06:51:43",
@@ -11572,7 +11572,7 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T09:30:00",
-    "fc_api_seen_at": "2026-11-25T09:45:00",
+    "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
     "fc_live": "last unit",
     "fc_lst": "list",
@@ -12737,7 +12737,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-25T05:15:00",
-    "fc_api_seen_at": "2026-11-25T09:45:00",
+    "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "cat",
@@ -12936,7 +12936,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -14072,7 +14072,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14493,16 +14492,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795601281
+        "ok": 1795601649
       },
       "fc_www": {
-        "ok": 1795601354
+        "ok": 1795601649
       },
       "fc_cart": {
-        "ok": 1795601355
+        "ok": 1795601650
       },
       "kd": {
-        "ok": 1795601356
+        "ok": 1795601653
       }
     }
   },
@@ -14814,7 +14813,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-25T10:00:41",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15794,7 +15792,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -15817,7 +15815,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -18018,7 +18016,7 @@
     "fc_listed_at": "2026-11-25T10:00:00",
     "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23973353",
     "fc_phantom": "2026-11-21T13:53:55",
@@ -18716,7 +18714,7 @@
   "fc_24476798": {
     "stock": "in_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
@@ -18725,18 +18723,17 @@
     "last_restock_alert": "2026-11-25T09:50:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-11-25T09:15:00",
+    "fc_listed_at": "2026-11-25T10:00:00",
     "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-24T04:31:16",
-    "fc_off": "2026-11-25T10:04:19",
     "fc_cart": "y",
     "fc_svc": "1",
-    "fc_lst_on": "2026-11-24T17:05:44",
-    "fc_lst_seen": "2026-11-24T17:45:00",
+    "fc_lst_on": "2026-11-25T10:10:40",
+    "fc_lst_seen": "2026-11-25T10:00:00",
     "alert_log": [
       "2026-11-25T09:50:06"
     ]
@@ -22684,7 +22681,7 @@
     "fc_listed_at": "2026-11-25T10:00:00",
     "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T06:38:31",
@@ -23805,11 +23802,11 @@
     "fc_listed_at": "2026-11-25T10:00:00",
     "fc_api_seen_at": "2026-11-25T10:00:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23345424",
     "fc_phantom": "2026-11-12T17:24:14",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-25T09:41:00",
     "fc_lst_seen": "2026-11-25T10:00:00",
@@ -29882,11 +29879,11 @@
     "fc_listed_at": "2026-11-25T09:30:00",
     "fc_api_seen_at": "2026-11-25T09:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "last unit",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_new_pending": "2026-11-24T15:10:47",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:30:00",
