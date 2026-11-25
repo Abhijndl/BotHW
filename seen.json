@@ -121,7 +121,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-25T12:45:00",
+    "fc_api_seen_at": "2026-11-25T13:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -10529,13 +10529,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-25T12:45:00",
+    "fc_api_seen_at": "2026-11-25T13:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-25T12:56:06",
+    "fc_off": "2026-11-25T13:07:56",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11571,7 +11571,7 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-25T10:45:00",
-    "fc_api_seen_at": "2026-11-25T12:45:00",
+    "fc_api_seen_at": "2026-11-25T13:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -14490,23 +14490,23 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795611851
+        "ok": 1795612203
       },
       "fc_www": {
-        "ok": 1795611956
+        "ok": 1795612262
       },
       "fc_cart": {
-        "ok": 1795611957
+        "ok": 1795612263
       },
       "kd": {
-        "ok": 1795611957
+        "ok": 1795612250
       }
     }
   },
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14669,7 +14669,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -15167,13 +15167,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-25T12:45:00",
+    "fc_api_seen_at": "2026-11-25T13:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-25T12:56:06",
+    "fc_off": "2026-11-25T13:07:56",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15325,7 +15325,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15673,7 +15673,7 @@
   "fc_24473477": {
     "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -20862,13 +20862,13 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-25T12:45:00",
+    "fc_api_seen_at": "2026-11-25T13:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-25T12:56:06",
+    "fc_off": "2026-11-25T13:07:56",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27638,7 +27638,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T11:27:29",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T11:36:50",
     "fc_lst_seen": "2026-11-24T12:00:00",
     "fc_gone": "2026-11-24T11:27:47",
@@ -27692,7 +27691,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T13:17:57",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T17:05:44",
     "fc_lst_seen": "2026-11-24T17:15:00",
     "fc_gone": "2026-11-24T13:17:57",
@@ -27904,13 +27902,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-25T12:45:00",
+    "fc_api_seen_at": "2026-11-25T13:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-25T12:56:06",
+    "fc_off": "2026-11-25T13:07:56",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28586,6 +28584,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
@@ -30158,6 +30157,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-25T02:53:57",
     "fc_lst_seen": "2026-11-25T04:00:00",
     "fc_gone": "2026-11-25T02:50:39"
