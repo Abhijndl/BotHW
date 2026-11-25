@@ -11423,7 +11423,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -13918,7 +13918,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13943,7 +13943,7 @@
   "fc_24473515": {
     "stock": "in_stock",
     "name": "Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-go-realla-fast-die-cast-toy-car-black-and-yellow/24473515/product-detail",
     "first_seen": "2026-09-17T04:26:39",
@@ -14490,23 +14490,23 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795614605
+        "ok": 1795614845
       },
       "fc_www": {
-        "ok": 1795614657
+        "ok": 1795614950
       },
       "fc_cart": {
-        "ok": 1795614658
+        "ok": 1795614952
       },
       "kd": {
-        "ok": 1795614643
+        "ok": 1795614944
       }
     }
   },
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14669,7 +14669,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -14805,13 +14805,12 @@
     "last_price_alert": "2026-11-22T14:10:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T15:00:00",
-    "fc_api_seen_at": "2026-11-25T13:30:00",
+    "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-25T13:43:02",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15754,9 +15753,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-24T10:45:00",
-    "fc_api_seen_at": "2026-11-25T11:00:00",
+    "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24476138",
     "fc_cart": "n",
@@ -15859,7 +15858,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -16458,7 +16457,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -16726,7 +16725,7 @@
     "fc_listed_at": "2026-11-25T13:45:00",
     "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24503746",
     "fc_phantom": "2026-11-04T03:10:26",
@@ -18711,32 +18710,33 @@
     "fc_gone": "2026-11-22T15:51:07"
   },
   "fc_24476798": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels '23 RAM 1500 Die Cast Toy #234/250 -Purple",
-    "price": "₹179",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-23-ram-1500-die-cast-toy-234-250-purple/24476798/product-detail",
     "first_seen": "2026-09-21T06:42:53",
     "last_seen": "2026-11-25T13:45:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-25T10:21:31",
+    "last_restock_alert": "2026-11-25T13:52:59",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-25T12:00:00",
-    "fc_api_seen_at": "2026-11-25T12:00:00",
+    "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
-    "fc_lst": "list",
+    "fc_live": "ok",
+    "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-25T10:22:12",
-    "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_off": "2026-11-25T13:53:55",
+    "fc_cart": "y",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-25T10:10:40",
     "fc_lst_seen": "2026-11-25T11:00:00",
-    "fc_gone": "2026-11-25T10:22:12",
     "alert_log": [
       "2026-11-25T09:50:06",
-      "2026-11-25T10:21:31"
+      "2026-11-25T10:21:31",
+      "2026-11-25T13:52:59"
     ]
   },
   "fc_24473498": {
@@ -22654,11 +22654,11 @@
     "fc_listed_at": "2026-11-25T13:45:00",
     "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-23T18:21:49",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-24T06:19:08",
     "fc_lst_seen": "2026-11-24T08:15:00",
     "fc_gone": "2026-11-24T10:25:40",
@@ -28580,10 +28580,11 @@
     "fc_listed_at": "2026-11-25T13:45:00",
     "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
@@ -28628,9 +28629,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-25T13:30:00",
+    "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -29447,7 +29448,7 @@
     "fc_listed_at": "2026-11-25T13:45:00",
     "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "25052440",
     "fc_new_pending": "2026-11-24T04:00:52",
@@ -29508,7 +29509,7 @@
     "fc_gid": "25052440",
     "fc_phantom": "2026-11-25T12:45:43",
     "fc_cart": "n",
-    "fc_svc": "0",
+    "fc_svc": "1",
     "fc_lst_on": "2026-11-25T12:30:41",
     "fc_lst_seen": "2026-11-25T13:45:00",
     "fc_gone": "2026-11-25T13:32:58",
@@ -29703,7 +29704,7 @@
     "fc_listed_at": "2026-11-25T13:45:00",
     "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_phantom": "2026-11-25T13:02:24",
@@ -30150,10 +30151,11 @@
     "fc_listed_at": "2026-11-25T13:45:00",
     "fc_api_seen_at": "2026-11-25T13:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-25T02:53:57",
     "fc_lst_seen": "2026-11-25T04:00:00",
     "fc_gone": "2026-11-25T02:50:39"
