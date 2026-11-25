@@ -12716,7 +12716,7 @@
     "fc_gone": "2026-11-22T15:51:07"
   },
   "fc_23033009": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Ferrari Free Wheel Model With Smooth Rolling Wheels Diecast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12724,26 +12724,25 @@
     "first_seen": "2026-09-08T13:23:02",
     "last_seen": "2026-11-25T04:15:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-24T05:34:45",
+    "last_restock_alert": "2026-11-25T04:26:06",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-24T06:45:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-24T05:56:25",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_svc": "0",
     "fc_lst_on": "2026-11-24T06:03:41",
     "fc_lst_seen": "2026-11-24T06:45:00",
     "last_ring": "2026-11-22T02:56:52",
-    "fc_gone": "2026-11-24T06:04:47",
     "alert_log": [
-      "2026-11-24T04:20:53",
-      "2026-11-24T05:34:45"
+      "2026-11-24T05:34:45",
+      "2026-11-25T04:26:06"
     ]
   },
   "fc_21827562": {
@@ -14483,16 +14482,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795580408
+        "ok": 1795580764
       },
       "fc_www": {
-        "ok": 1795580472
+        "ok": 1795580764
       },
       "fc_cart": {
-        "ok": 1795580474
+        "ok": 1795580768
       },
       "kd": {
-        "ok": 1795580458
+        "ok": 1795580768
       }
     }
   },
@@ -22596,7 +22595,7 @@
     "fc_lst_seen": "2026-11-25T04:15:00"
   },
   "fc_24775936": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Die-Cast Toy Car McLaren W1 (74/250) - Green",
     "price": "₹165",
     "source": "firstcry",
@@ -22611,14 +22610,16 @@
     "fc_listed_at": "2026-11-24T17:00:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T13:18:38",
-    "fc_cart": "y",
+    "fc_off": "2026-11-25T04:23:13",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T17:00:00",
+    "fc_gone": "2026-11-25T04:25:58",
     "alert_log": [
       "2026-11-24T11:05:34",
       "2026-11-24T12:04:26",
@@ -22670,7 +22671,7 @@
     "fc_listed_at": "2026-11-25T04:15:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-24T06:38:31",
@@ -25621,11 +25622,11 @@
     "fc_listed_at": "2026-11-25T04:15:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "page 0",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "22592486",
     "fc_phantom": "2026-11-20T05:57:53",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T07:53:21",
     "fc_lst_seen": "2026-11-24T08:30:00",
@@ -28561,7 +28562,7 @@
     "fc_listed_at": "2026-11-25T04:15:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28610,9 +28611,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-25T04:00:00",
+    "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -29910,11 +29911,11 @@
     "fc_listed_at": "2026-11-25T04:00:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "cat",
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T15:10:47",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-24T15:21:01",
     "fc_lst_seen": "2026-11-25T03:45:00",
@@ -29941,7 +29942,6 @@
     "fc_gid": "25045654",
     "fc_phantom": "2026-11-24T15:12:22",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:21:01",
     "fc_lst_seen": "2026-11-24T15:30:00",
     "fc_gone": "2026-11-24T15:12:22"
@@ -29967,7 +29967,6 @@
     "fc_gid": "25045654",
     "fc_phantom": "2026-11-24T17:02:53",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T16:00:00",
     "fc_gone": "2026-11-24T17:02:53"
@@ -30089,7 +30088,6 @@
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T17:10:43",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_gone": "2026-11-24T17:10:43"
   },
   "fc_19991405": {
@@ -30108,7 +30106,7 @@
     "fc_listed_at": "2026-11-25T04:15:00",
     "fc_api_seen_at": "2026-11-25T04:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "list",
     "fc_gid": "19991405",
     "fc_cart": "n",
