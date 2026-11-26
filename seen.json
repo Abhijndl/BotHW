@@ -10545,7 +10545,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T19:43:58",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14379,7 +14378,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14510,16 +14509,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795722607
+        "ok": 1795722844
       },
       "fc_www": {
-        "ok": 1795722647
+        "ok": 1795722936
       },
       "fc_cart": {
-        "ok": 1795722648
+        "ok": 1795722938
       },
       "kd": {
-        "ok": 1795722648
+        "ok": 1795722937
       }
     }
   },
@@ -14689,7 +14688,7 @@
   "fc_24473478": {
     "stock": "in_stock",
     "name": "Hot Wheels Donut Drifter Die-Cast Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-donut-drifter-die-cast-toy-car-brown/24473478/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -15197,7 +15196,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T19:43:58",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15349,7 +15347,7 @@
   "fc_24473460": {
     "stock": "in_stock",
     "name": "Hot Wheels AKei Swap Die Cast Free Wheel Toy Car - Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-akei-swap-die-cast-free-wheel-toy-car-blue/24473460/product-detail",
     "first_seen": "2026-09-18T04:41:22",
@@ -15700,7 +15698,7 @@
   "fc_24473477": {
     "stock": "in_stock",
     "name": "Hot Wheels Disney Mickey Mouse Die-Cast Toy Car - Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-disney-mickey-mouse-die-cast-toy-car-red/24473477/product-detail",
     "first_seen": "2026-09-18T17:46:15",
@@ -20901,7 +20899,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T19:43:58",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27963,7 +27960,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T19:43:58",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28658,13 +28654,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T19:30:00",
+    "fc_api_seen_at": "2026-11-26T19:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T19:43:58",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28768,12 +28763,11 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-26T19:30:00",
+    "fc_api_seen_at": "2026-11-26T19:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-26T19:43:58",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
