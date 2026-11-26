@@ -10545,7 +10545,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T13:11:13",
+    "fc_off": "2026-11-26T13:23:40",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14509,16 +14509,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795699333
+        "ok": 1795699575
       },
       "fc_www": {
-        "ok": 1795699332
+        "ok": 1795699646
       },
       "fc_cart": {
-        "ok": 1795699334
+        "ok": 1795699645
       },
       "kd": {
-        "ok": 1795699338
+        "ok": 1795699645
       }
     }
   },
@@ -15196,7 +15196,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T13:11:13",
+    "fc_off": "2026-11-26T13:23:40",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20898,7 +20898,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T13:11:13",
+    "fc_off": "2026-11-26T13:23:40",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27955,7 +27955,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T13:11:13",
+    "fc_off": "2026-11-26T13:23:40",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28650,13 +28650,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T13:00:00",
+    "fc_api_seen_at": "2026-11-26T13:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T13:13:11",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28760,12 +28759,11 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-26T13:00:00",
+    "fc_api_seen_at": "2026-11-26T13:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-26T13:13:11",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
@@ -30102,7 +30100,7 @@
     "fc_listed_at": "2026-11-26T13:15:00",
     "fc_api_seen_at": "2026-11-26T13:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045654",
     "fc_phantom": "2026-11-25T14:05:06",
@@ -30141,7 +30139,7 @@
     "fc_svc": "1",
     "fc_lst_on": "2026-11-26T06:02:01",
     "fc_lst_seen": "2026-11-26T07:15:00",
-    "fc_gone": "2026-11-26T13:19:43",
+    "fc_gone": "2026-11-26T13:24:01",
     "alert_log": [
       "2026-11-26T06:02:10",
       "2026-11-26T06:32:32",
@@ -30216,7 +30214,7 @@
     "fc_listed_at": "2026-11-26T13:15:00",
     "fc_api_seen_at": "2026-11-26T13:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "25045654",
     "fc_phantom": "2026-11-26T11:21:32",
@@ -30277,7 +30275,7 @@
     "fc_listed_at": "2026-11-26T13:15:00",
     "fc_api_seen_at": "2026-11-26T13:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T17:10:43",
@@ -30590,7 +30588,7 @@
     "last_price_alert": ""
   },
   "kd_m8pDDVwpv2": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "ORACLE RED BULL RACING NO 1",
     "price": "₹799",
     "source": "karzdolls",
@@ -30600,6 +30598,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-11-26T13:10:10",
     "last_price_alert": "",
+    "fc_phantom": "2026-11-26T13:26:21",
     "alert_log": [
       "2026-11-26T13:10:10"
     ]
