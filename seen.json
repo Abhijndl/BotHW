@@ -122,7 +122,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-26T14:45:00",
+    "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -2855,8 +2855,8 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
-    "fc_listed_at": "2026-11-26T12:15:00",
-    "fc_api_seen_at": "2026-11-26T14:45:00",
+    "fc_listed_at": "2026-11-26T15:00:00",
+    "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "out",
@@ -4315,8 +4315,8 @@
     "last_restock_alert": "2026-11-07T07:04:39",
     "last_price_alert": "2026-10-23T08:37:07",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-11-20T13:15:00",
-    "fc_api_seen_at": "2026-11-25T11:00:00",
+    "fc_listed_at": "2026-11-26T15:00:00",
+    "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "out",
@@ -11582,7 +11582,7 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-25T10:45:00",
-    "fc_api_seen_at": "2026-11-26T14:45:00",
+    "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -14085,10 +14085,11 @@
     "fc_listed_at": "2026-11-26T15:00:00",
     "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14509,16 +14510,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795705568
+        "ok": 1795705804
       },
       "fc_www": {
-        "ok": 1795705592
+        "ok": 1795705886
       },
       "fc_cart": {
-        "ok": 1795705593
+        "ok": 1795705887
       },
       "kd": {
-        "ok": 1795705593
+        "ok": 1795705887
       }
     }
   },
@@ -14830,7 +14831,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-26T14:57:56",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -16450,7 +16450,6 @@
     "fc_gid": "24472644",
     "fc_phantom": "2026-11-25T08:08:08",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-25T08:06:26",
     "fc_lst_seen": "2026-11-25T09:00:00",
     "fc_gone": "2026-11-25T08:08:11",
@@ -19771,7 +19770,7 @@
     "fc_listed_at": "2026-11-26T15:00:00",
     "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
@@ -21909,7 +21908,7 @@
     "fc_listed_at": "2026-11-26T06:15:00",
     "fc_api_seen_at": "2026-11-26T13:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-22T05:29:16",
@@ -22152,7 +22151,7 @@
     "fc_listed_at": "2026-11-23T16:00:00",
     "fc_api_seen_at": "2026-11-26T13:45:00",
     "fc_trusted": true,
-    "fc_live": "sold out",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-25T15:04:36",
@@ -24737,7 +24736,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-23T09:00:00",
-    "fc_api_seen_at": "2026-11-26T14:45:00",
+    "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -24768,7 +24767,7 @@
     "fc_listed_at": "2026-11-26T15:00:00",
     "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-26T14:58:52",
@@ -28650,13 +28649,13 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T14:45:00",
+    "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T14:55:41",
+    "fc_off": "2026-11-26T15:07:44",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -29184,7 +29183,7 @@
     "fc_listed_at": "2026-11-26T15:00:00",
     "fc_api_seen_at": "2026-11-26T15:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-24T13:16:35",
