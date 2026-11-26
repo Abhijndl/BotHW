@@ -10537,7 +10537,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T01:14:29",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -13855,7 +13854,7 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-03T08:18:55",
@@ -13877,9 +13876,9 @@
     "last_price_alert": "2026-11-04T19:03:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:30:00",
-    "fc_api_seen_at": "2026-11-26T01:00:00",
+    "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-19T03:06:40",
@@ -13905,9 +13904,9 @@
     "last_price_alert": "2026-11-04T19:03:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T14:45:00",
-    "fc_api_seen_at": "2026-11-26T01:00:00",
+    "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "cat",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-15T03:04:43",
@@ -13995,7 +13994,7 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-27T18:48:49",
@@ -14043,7 +14042,7 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-10-29T06:36:07",
@@ -14072,7 +14071,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14493,16 +14491,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795656001
+        "ok": 1795656279
       },
       "fc_www": {
-        "ok": 1795656041
+        "ok": 1795656335
       },
       "fc_cart": {
-        "ok": 1795656042
+        "ok": 1795656336
       },
       "kd": {
-        "ok": 1795656042
+        "ok": 1795656335
       }
     }
   },
@@ -14814,6 +14812,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-26T01:21:40",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15178,7 +15177,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T01:14:29",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -19752,7 +19750,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -20875,7 +20872,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T01:14:29",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -24559,7 +24555,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24582,7 +24578,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24628,7 +24624,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -26477,9 +26473,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-23T11:30:00",
-    "fc_api_seen_at": "2026-11-26T01:00:00",
+    "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22005522",
     "fc_phantom": "2026-11-23T11:09:30",
@@ -26507,9 +26503,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-23T11:30:00",
-    "fc_api_seen_at": "2026-11-26T01:00:00",
+    "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22005522",
     "fc_phantom": "2026-11-16T07:18:32",
@@ -27925,7 +27921,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T01:14:29",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28597,7 +28592,7 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28645,9 +28640,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T01:00:00",
+    "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -29597,11 +29592,12 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:45:00",
     "fc_gone": "2026-11-24T15:10:47"
@@ -29622,10 +29618,11 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25044731",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:45:00",
     "fc_gone": "2026-11-24T15:12:12"
@@ -29670,7 +29667,7 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_phantom": "2026-11-26T01:06:53",
@@ -29705,6 +29702,7 @@
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:45:00",
     "fc_gone": "2026-11-24T15:10:47"
@@ -30128,11 +30126,12 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T17:10:43",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_gone": "2026-11-24T17:10:43"
   },
   "fc_25045656": {
@@ -30174,7 +30173,7 @@
     "fc_listed_at": "2026-11-26T01:15:00",
     "fc_api_seen_at": "2026-11-26T01:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
