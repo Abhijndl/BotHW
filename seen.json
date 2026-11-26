@@ -14509,16 +14509,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795701724
+        "ok": 1795701966
       },
       "fc_www": {
-        "ok": 1795701758
+        "ok": 1795702049
       },
       "fc_cart": {
-        "ok": 1795701759
+        "ok": 1795702050
       },
       "kd": {
-        "ok": 1795701750
+        "ok": 1795702050
       }
     }
   },
@@ -14830,6 +14830,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-26T14:03:15",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -16751,7 +16752,7 @@
     "fc_listed_at": "2026-11-26T14:00:00",
     "fc_api_seen_at": "2026-11-26T14:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24503746",
     "fc_phantom": "2026-11-04T03:10:26",
@@ -28419,7 +28420,7 @@
     "fc_listed_at": "2026-11-26T14:00:00",
     "fc_api_seen_at": "2026-11-26T14:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "0",
     "fc_phantom": "2026-11-25T09:32:47",
@@ -30549,7 +30550,7 @@
     "last_price_alert": ""
   },
   "kd_aPgd8GogJq": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "ORACLE RED BULL RACING NO 22",
     "price": "₹799",
     "source": "karzdolls",
