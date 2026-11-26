@@ -121,9 +121,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_cart": "n",
@@ -10531,13 +10531,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T00:50:43",
+    "fc_off": "2026-11-26T01:02:02",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14072,6 +14072,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14492,16 +14493,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795654809
+        "ok": 1795655047
       },
       "fc_www": {
-        "ok": 1795654850
+        "ok": 1795655137
       },
       "fc_cart": {
-        "ok": 1795654851
+        "ok": 1795655139
       },
       "kd": {
-        "ok": 1795654851
+        "ok": 1795655138
       }
     }
   },
@@ -14813,7 +14814,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-26T00:51:22",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15172,13 +15172,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T00:50:43",
+    "fc_off": "2026-11-26T01:02:02",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20868,13 +20868,13 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T00:50:43",
+    "fc_off": "2026-11-26T01:02:02",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -24535,7 +24535,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24558,7 +24558,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24581,7 +24581,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24604,7 +24604,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24627,7 +24627,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -26397,7 +26397,7 @@
     "fc_listed_at": "2026-11-26T01:00:00",
     "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "22005522",
     "fc_cart": "n",
@@ -27918,13 +27918,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-26T00:50:43",
+    "fc_off": "2026-11-26T01:02:02",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28600,7 +28600,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T02:37:33",
     "fc_lst_seen": "2026-11-22T04:15:00",
     "last_ring": "2026-11-22T02:47:43",
@@ -28620,12 +28619,13 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-26T01:01:27",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28729,11 +28729,12 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-26T00:45:00",
+    "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-26T01:01:27",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
@@ -29653,7 +29654,7 @@
     "fc_gone": "2026-11-24T15:14:20"
   },
   "fc_25045466": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "Hot Wheels Mercedes-Benz CLA HW (HW EURO ) Die cast car Orange",
     "price": "₹179",
     "source": "firstcry",
@@ -29661,24 +29662,24 @@
     "first_seen": "2026-11-24T15:00:00",
     "last_seen": "2026-11-26T01:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-25T17:49:26",
+    "last_restock_alert": "2026-11-26T01:02:14",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-26T01:00:00",
     "fc_api_seen_at": "2026-11-26T01:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "ok",
     "fc_lst": "list",
     "fc_gid": "25044731",
-    "fc_phantom": "2026-11-24T17:07:11",
-    "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_phantom": "2026-11-26T01:02:56",
+    "fc_cart": "y",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-25T17:50:38",
     "fc_lst_seen": "2026-11-26T01:00:00",
-    "fc_gone": "2026-11-26T01:00:02",
     "alert_log": [
-      "2026-11-25T17:49:26"
+      "2026-11-25T17:49:26",
+      "2026-11-26T01:02:14"
     ]
   },
   "fc_25045161": {
@@ -30175,7 +30176,6 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-25T02:53:57",
     "fc_lst_seen": "2026-11-25T04:00:00",
     "fc_gone": "2026-11-25T02:50:39"
