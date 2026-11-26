@@ -14509,16 +14509,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795710007
+        "ok": 1795710246
       },
       "fc_www": {
-        "ok": 1795710048
+        "ok": 1795710339
       },
       "fc_cart": {
-        "ok": 1795710050
+        "ok": 1795710340
       },
       "kd": {
-        "ok": 1795710049
+        "ok": 1795710332
       }
     }
   },
@@ -14830,6 +14830,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-26T16:21:26",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15265,10 +15266,10 @@
     "fc_listed_at": "2026-11-26T16:15:00",
     "fc_api_seen_at": "2026-11-26T16:15:00",
     "fc_trusted": true,
-    "fc_live": "last unit",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24472644",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-26T15:02:14",
     "fc_lst_seen": "2026-11-26T16:15:00",
@@ -15840,7 +15841,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -26772,7 +26773,7 @@
     "fc_listed_at": "2026-11-26T16:15:00",
     "fc_api_seen_at": "2026-11-26T16:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "19931382",
     "fc_cart": "n",
@@ -28657,6 +28658,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-26T16:22:58",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
