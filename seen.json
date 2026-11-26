@@ -12937,7 +12937,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -14499,16 +14499,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795683242
+        "ok": 1795683485
       },
       "fc_www": {
-        "ok": 1795683288
+        "ok": 1795683585
       },
       "fc_cart": {
-        "ok": 1795683289
+        "ok": 1795683587
       },
       "kd": {
-        "ok": 1795683289
+        "ok": 1795683587
       }
     }
   },
@@ -19765,7 +19765,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -22613,7 +22612,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -27646,7 +27645,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-25T05:22:29",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-26T07:51:18",
     "fc_lst_seen": "2026-11-26T08:00:00",
     "fc_gone": "2026-11-25T05:22:29",
@@ -27676,7 +27674,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T11:27:29",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-26T07:51:18",
     "fc_lst_seen": "2026-11-26T08:00:00",
     "fc_gone": "2026-11-24T11:27:47",
@@ -27705,7 +27702,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-20T10:19:40",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-26T07:51:18",
     "fc_lst_seen": "2026-11-26T08:00:00",
     "fc_gone": "2026-11-22T15:40:56"
@@ -27731,7 +27727,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-24T13:17:57",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-24T17:05:44",
     "fc_lst_seen": "2026-11-24T17:15:00",
     "fc_gone": "2026-11-24T13:17:57",
@@ -28652,6 +28647,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-26T08:55:38",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
