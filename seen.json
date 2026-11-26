@@ -3596,7 +3596,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -5688,7 +5688,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -14360,7 +14360,7 @@
   "fc_18313316": {
     "stock": "in_stock",
     "name": "Hot Wheels Track Fleet 1:64 Scale Die-Cast Toy Semi Rodger - Blue & White",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-track-fleet-1-64-scale-die-cast-toy-semi-rodger-blue-and-white/18313316/product-detail",
     "first_seen": "2026-09-17T08:31:27",
@@ -14491,16 +14491,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795670409
+        "ok": 1795670765
       },
       "fc_www": {
-        "ok": 1795670474
+        "ok": 1795670767
       },
       "fc_cart": {
-        "ok": 1795670476
+        "ok": 1795670766
       },
       "kd": {
-        "ok": 1795670475
+        "ok": 1795670768
       }
     }
   },
@@ -15113,7 +15113,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -21868,7 +21868,7 @@
     "fc_gone": "2026-11-22T17:21:16"
   },
   "fc_24761909": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mach Speeder Die Cast Free Wheel Toy Car - Blue & Black",
     "price": "₹164",
     "source": "firstcry",
@@ -21882,14 +21882,15 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_live": "not in cart",
+    "fc_lst": "list",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-22T05:29:16",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-26T05:10:51",
     "fc_lst_seen": "2026-11-26T05:15:00",
+    "fc_gone": "2026-11-26T05:24:28",
     "alert_log": [
       "2026-11-25T17:07:59"
     ]
@@ -22122,9 +22123,9 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T16:00:00",
-    "fc_api_seen_at": "2026-11-26T04:30:00",
+    "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-25T15:04:36",
@@ -22207,12 +22208,11 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-24T21:11:38",
     "fc_cart": "n",
-    "fc_svc": "1",
     "fc_lst_on": "2026-11-24T20:57:20",
     "fc_lst_seen": "2026-11-24T21:00:00",
     "last_ring": "2026-11-24T21:09:18",
@@ -24540,7 +24540,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24609,7 +24609,7 @@
   "fc_24831964": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Galactic Express Wheel Car - White",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-galactic-express-wheel-car-white/24831964/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -24632,7 +24632,7 @@
   "fc_24831963": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Haulzilla Wheel Car - Blue",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-haulzilla-wheel-car-blue/24831963/product-detail",
     "first_seen": "2026-10-26T14:30:00",
@@ -28603,7 +28603,7 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28632,6 +28632,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-26T05:22:31",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28650,9 +28651,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T05:00:00",
+    "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -28735,12 +28736,12 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-26T05:00:00",
+    "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-26T05:10:55",
+    "fc_off": "2026-11-26T05:25:46",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
@@ -29356,7 +29357,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "25052440",
-    "fc_phantom": "2026-11-24T04:22:31",
+    "fc_phantom": "2026-11-26T05:22:12",
     "fc_off": "2026-11-26T05:19:24",
     "fc_cart": "y",
     "fc_svc": "1",
@@ -29453,7 +29454,7 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25052440",
     "fc_new_pending": "2026-11-24T04:00:52",
@@ -29475,7 +29476,7 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25052440",
     "fc_new_pending": "2026-11-24T04:00:52",
@@ -29533,7 +29534,7 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "out",
     "fc_gid": "25052440",
     "fc_phantom": "2026-11-25T12:45:43",
@@ -29928,7 +29929,7 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-26T05:19:46",
@@ -30039,11 +30040,11 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "25045654",
     "fc_phantom": "2026-11-25T14:05:06",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-25T12:40:38",
     "fc_lst_seen": "2026-11-25T14:45:00",
     "fc_gone": "2026-11-25T14:05:06",
@@ -30191,7 +30192,7 @@
     "fc_listed_at": "2026-11-26T05:15:00",
     "fc_api_seen_at": "2026-11-26T05:15:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045654",
     "fc_new_pending": "2026-11-24T17:10:43",
