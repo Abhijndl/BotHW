@@ -12740,7 +12740,7 @@
     "fc_listed_at": "2026-11-26T07:30:00",
     "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-26T06:10:06",
@@ -13610,7 +13610,7 @@
     "stock_ver": "mg_skus_v1"
   },
   "mg_1f6b2803-8cab-4542-8a3c-d13a29d51853": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "KHMG173 Honda NSX V2",
     "price": "₹1799",
     "source": "minifygram",
@@ -13618,13 +13618,16 @@
     "first_seen": "2026-09-16T08:48:41",
     "last_seen": "2026-11-26T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "",
+    "last_restock_alert": "2026-11-26T07:34:16",
     "last_price_alert": "",
     "mg_updated_at": "2026-10-22T15:44:16.85606+00:00",
-    "stock_ver": "mg_skus_v1"
+    "stock_ver": "mg_skus_v1",
+    "alert_log": [
+      "2026-11-26T07:34:16"
+    ]
   },
   "mg_ad9dfbfd-fae4-4415-bfdb-cfde88a4d302": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "KHMG162 BMW M3 Kaido V1",
     "price": "₹1799",
     "source": "minifygram",
@@ -13632,10 +13635,13 @@
     "first_seen": "2026-09-16T08:52:41",
     "last_seen": "2026-11-26T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-16T09:06:44",
+    "last_restock_alert": "2026-11-26T07:34:16",
     "last_price_alert": "",
     "mg_updated_at": "2026-10-27T19:48:54.086753+00:00",
-    "stock_ver": "mg_skus_v1"
+    "stock_ver": "mg_skus_v1",
+    "alert_log": [
+      "2026-11-26T07:34:16"
+    ]
   },
   "mg_76033d4f-35da-4892-a4df-b396e1128a0b": {
     "stock": "out_of_stock",
@@ -14475,7 +14481,7 @@
       "wa": "",
       "call": "Checking Authorization for …... Using bot: @CallMeBot_API8 Autorization OK User:… Text to speech:Hello! This is your Hot Wheels tracker. Calls are working. When a car on your list comes in stock, your phone will ring like this, and the alert is in Telegram. Converting mp3 file. Starting Telegram Audio Call. Checking if line is busy... Script started! Script ended before Timeout. Result: Call Rejected by user End.-"
     },
-    "ring_call": "2026-11-26T07:02:25",
+    "ring_call": "2026-11-26T07:32:10",
     "fc_fresh": {
       "s": "none",
       "since": "2026-11-22T13:30:00"
@@ -14492,16 +14498,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795678204
+        "ok": 1795678456
       },
       "fc_www": {
-        "ok": 1795678262
+        "ok": 1795678562
       },
       "fc_cart": {
-        "ok": 1795678264
+        "ok": 1795678561
       },
       "kd": {
-        "ok": 1795678263
+        "ok": 1795678553
       }
     }
   },
@@ -15462,7 +15468,7 @@
     "fc_gone": "2026-11-22T15:51:07"
   },
   "mg_39c21008-6855-444a-b758-f3f9cd9c93b2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MiniGT961 Supra A80 TS Gold",
     "price": "₹999",
     "source": "minifygram",
@@ -15470,10 +15476,13 @@
     "first_seen": "2026-09-18T09:41:31",
     "last_seen": "2026-11-26T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-09-18T12:02:13",
+    "last_restock_alert": "2026-11-26T07:34:16",
     "last_price_alert": "",
     "mg_updated_at": "2026-10-22T16:06:07.785431+00:00",
-    "stock_ver": "mg_skus_v1"
+    "stock_ver": "mg_skus_v1",
+    "alert_log": [
+      "2026-11-26T07:34:16"
+    ]
   },
   "fc_24514773": {
     "stock": "out_of_stock",
@@ -20899,7 +20908,7 @@
     ]
   },
   "mg_a09fe8c3-da07-49ca-b071-ce34c4a93ff2": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MGT1143 Porsche 911 GT3 R #77 \"AO Racing Skeleton Rexy\"",
     "price": "₹1899",
     "source": "minifygram",
@@ -20907,12 +20916,15 @@
     "first_seen": "2026-10-05T21:15:00",
     "last_seen": "2026-11-26T07:30:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-10-31T16:11:12",
+    "last_restock_alert": "2026-11-26T07:32:08",
     "last_price_alert": "",
     "mg_updated_at": "2026-11-22T19:38:45.833073+00:00",
     "stock_ver": "mg_skus_v1",
     "fc_phantom": "2026-10-31T16:12:37",
-    "last_ring": "2026-10-31T16:11:14"
+    "last_ring": "2026-11-26T07:32:10",
+    "alert_log": [
+      "2026-11-26T07:32:08"
+    ]
   },
   "fc_23835981": {
     "stock": "in_stock",
@@ -24585,7 +24597,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -28604,7 +28616,7 @@
     "fc_listed_at": "2026-11-26T07:30:00",
     "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_cart": "n",
@@ -28627,13 +28639,13 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T07:15:00",
+    "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-26T07:22:44",
+    "fc_off": "2026-11-26T07:34:52",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28652,9 +28664,9 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-26T06:45:00",
+    "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_gid": "19991405",
     "fc_cart": "n",
     "fc_svc": "0",
@@ -28737,12 +28749,12 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-26T07:15:00",
+    "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-26T07:22:44",
+    "fc_off": "2026-11-26T07:34:52",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
@@ -29109,6 +29121,7 @@
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-25T06:31:38",
     "fc_cart": "n",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-25T06:30:39",
     "fc_lst_seen": "2026-11-25T07:00:00",
     "fc_gone": "2026-11-25T06:31:38",
@@ -29313,7 +29326,7 @@
     "fc_listed_at": "2026-11-26T07:30:00",
     "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24700957",
     "fc_phantom": "2026-11-24T13:16:35",
@@ -29661,7 +29674,7 @@
     "fc_listed_at": "2026-11-26T07:30:00",
     "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25044731",
     "fc_phantom": "2026-11-26T07:12:49",
@@ -29755,7 +29768,6 @@
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T15:10:47",
     "fc_cart": "n",
-    "fc_svc": "1",
     "fc_lst_on": "2026-11-24T15:18:11",
     "fc_lst_seen": "2026-11-24T15:45:00",
     "fc_gone": "2026-11-24T15:10:47"
@@ -29879,8 +29891,8 @@
     "last_restock_alert": "2026-11-25T14:01:36",
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
-    "fc_listed_at": "2026-11-26T07:00:00",
-    "fc_api_seen_at": "2026-11-26T07:15:00",
+    "fc_listed_at": "2026-11-26T07:30:00",
+    "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
     "fc_live": "not in cart",
     "fc_lst": "out",
@@ -30224,7 +30236,6 @@
     "fc_gid": "25044731",
     "fc_new_pending": "2026-11-24T17:10:43",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-26T06:02:39",
     "fc_lst_seen": "2026-11-26T06:30:00",
     "fc_gone": "2026-11-24T17:10:43"
@@ -30502,7 +30513,7 @@
     "fc_listed_at": "2026-11-26T07:30:00",
     "fc_api_seen_at": "2026-11-26T07:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25053200",
     "fc_cart": "n",
