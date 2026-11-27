@@ -10561,7 +10561,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-27T12:55:47",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11449,7 +11448,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -12963,7 +12962,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -13854,7 +13853,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13956,7 +13955,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13981,7 +13980,7 @@
   "fc_24473515": {
     "stock": "in_stock",
     "name": "Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-go-realla-fast-die-cast-toy-car-black-and-yellow/24473515/product-detail",
     "first_seen": "2026-09-17T04:26:39",
@@ -14041,28 +14040,32 @@
     "fc_gone": "2026-11-22T15:39:41"
   },
   "fc_24473516": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mini Jcw Electric Die-Cast Toy Car - Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mini-jcw-electric-die-cast-toy-car-light-green/24473516/product-detail",
     "first_seen": "2026-09-17T05:26:39",
     "last_seen": "2026-11-27T13:00:00",
     "alerted_new": true,
-    "last_restock_alert": "2026-11-21T12:42:02",
+    "last_restock_alert": "2026-11-27T13:06:53",
     "last_price_alert": "2026-11-04T20:04:06",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24473511",
-    "fc_phantom": "2026-11-20T05:39:33",
-    "fc_cart": "y",
+    "fc_phantom": "2026-11-27T13:07:13",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-21T12:58:48",
-    "fc_lst_seen": "2026-11-27T13:00:00"
+    "fc_lst_seen": "2026-11-27T13:00:00",
+    "fc_gone": "2026-11-27T13:07:13",
+    "alert_log": [
+      "2026-11-27T13:06:53"
+    ]
   },
   "fc_24473511": {
     "stock": "out_of_stock",
@@ -14108,7 +14111,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14501,7 +14503,7 @@
   },
   "_meta": {
     "fc_offset": 0,
-    "mg_wm": "2026-11-27T10:21:09.823653+00:00",
+    "mg_wm": "2026-11-27T13:06:41.095329+00:00",
     "fc_live_since": "2026-10-18T13:15:00",
     "ring_test": {
       "sig": "d531c554645b",
@@ -14529,16 +14531,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795784524
+        "ok": 1795784815
       },
       "fc_www": {
-        "ok": 1795784541
+        "ok": 1795784832
       },
       "fc_cart": {
-        "ok": 1795784542
+        "ok": 1795784833
       },
       "kd": {
-        "ok": 1795784535
+        "ok": 1795784833
       }
     }
   },
@@ -14581,7 +14583,7 @@
   "fc_24476799": {
     "stock": "in_stock",
     "name": "Hot Wheels Tooned Volkswagen Golf Mk1 Die Cast Car #172/250 -Yelllow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-tooned-volkswagen-golf-mk1-die-cast-car-172-250-yelllow/24476799/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -14685,7 +14687,7 @@
   "fc_24475217": {
     "stock": "in_stock",
     "name": "Hot Wheels Polestar Die cast Toy car 84/250 -White & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-polestar-die-cast-toy-car-84-250-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -15216,7 +15218,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-27T12:55:47",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15298,7 +15299,7 @@
   "fc_24475499": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Vehicle Surf and Turf Blue 240/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-vehicle-surf-and-turf-blue-240-250-blue/24475499/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15906,7 +15907,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -16277,7 +16278,7 @@
   "fc_24476003": {
     "stock": "in_stock",
     "name": "Hot Wheels 96 Chevrolet Impala SS Die Cast Toy car 242/250 - Metallic green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-96-chevrolet-impala-ss-die-cast-toy-car-242-250-metallic-green/24476003/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -16305,7 +16306,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16332,7 +16333,7 @@
   "fc_24475737": {
     "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16383,7 +16384,7 @@
   "fc_24476803": {
     "stock": "in_stock",
     "name": "Hot Wheels '76 Chevy Chevette Die cast toy car #76/250 -Light Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-76-chevy-chevette-die-cast-toy-car-76-250-light-green/24476803/product-detail",
     "first_seen": "2026-09-19T22:25:57",
@@ -16481,7 +16482,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -16505,7 +16506,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -16622,7 +16623,7 @@
   "fc_24476804": {
     "stock": "in_stock",
     "name": "Hot Wheels Cupra e-Racer Die cast Toy car #37/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-cupra-e-racer-die-cast-toy-car-37-250-blue/24476804/product-detail",
     "first_seen": "2026-09-19T22:56:08",
@@ -20921,7 +20922,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-27T12:53:27",
+    "fc_off": "2026-11-27T13:05:17",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -24021,7 +24022,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24783761",
     "fc_phantom": "2026-11-27T08:32:13",
@@ -26466,7 +26467,7 @@
   "fc_22618398": {
     "stock": "in_stock",
     "name": "Majorette Audi RS 6 Avant Metal street Cars - Black",
-    "price": "₹155",
+    "price": "₹156",
     "source": "firstcry",
     "url": "https://www.firstcry.com/majorette/majorette-audi-rs-6-avant-metal-street-cars-black/22618398/product-detail",
     "first_seen": "2026-11-10T17:15:00",
@@ -27995,7 +27996,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-27T12:55:47",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -29502,7 +29502,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_new_pending": "2026-11-24T04:00:52",
@@ -29867,7 +29867,7 @@
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_lst": "list",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-26T04:30:17",
     "fc_cart": "y",
@@ -29893,7 +29893,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-26T05:53:42",
@@ -29922,7 +29922,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-26T10:00:46",
@@ -29951,7 +29951,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-25T14:21:49",
@@ -29976,7 +29976,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-26T06:14:38",
@@ -30033,7 +30033,7 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-26T10:29:38",
@@ -30048,7 +30048,7 @@
     ]
   },
   "fc_25045670": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Mini JCW Electric Die cast toy car- Dark Green",
     "price": "₹179",
     "source": "firstcry",
@@ -30062,15 +30062,16 @@
     "fc_listed_at": "2026-11-27T13:00:00",
     "fc_api_seen_at": "2026-11-27T13:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "25045670",
     "fc_phantom": "2026-11-27T10:31:00",
     "fc_new_pending": "2026-11-24T15:10:47",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-27T10:25:48",
     "fc_lst_seen": "2026-11-27T13:00:00",
+    "fc_gone": "2026-11-27T13:03:46",
     "alert_log": [
       "2026-11-27T10:25:54"
     ]
@@ -30675,7 +30676,7 @@
     ]
   },
   "mg_ad5e1c14-e40a-43a7-b110-d14aa07b8c0a": {
-    "stock": "out_of_stock",
+    "stock": "in_stock",
     "name": "[Box] MiniGT1218 Porsche Rexy #77 PO#2 [PRE-ORDER]",
     "price": "₹1699",
     "source": "minifygram",
@@ -30685,7 +30686,7 @@
     "alerted_new": true,
     "last_restock_alert": "2026-11-26T13:55:42",
     "last_price_alert": "",
-    "mg_updated_at": "2026-11-27T10:21:09.823653+00:00",
+    "mg_updated_at": "2026-11-27T13:06:41.095329+00:00",
     "stock_ver": "mg_skus_v1",
     "fc_phantom": "2026-11-26T13:58:22",
     "last_ring": "2026-11-26T13:55:43",
