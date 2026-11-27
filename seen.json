@@ -122,7 +122,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-27T20:15:00",
+    "fc_api_seen_at": "2026-11-27T20:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -11448,7 +11448,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹977",
+    "price": "₹978",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -11597,7 +11597,7 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-27T15:00:00",
-    "fc_api_seen_at": "2026-11-27T20:15:00",
+    "fc_api_seen_at": "2026-11-27T20:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -12762,7 +12762,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-27T10:30:00",
-    "fc_api_seen_at": "2026-11-27T20:15:00",
+    "fc_api_seen_at": "2026-11-27T20:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -12962,7 +12962,7 @@
   "fc_22240184": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado (100/250) Toy Car - White & Silver",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-100-250-toy-car-white-and-silver/22240184/product-detail",
     "first_seen": "2026-09-12T13:28:40",
@@ -14054,7 +14054,7 @@
     "fc_listed_at": "2026-11-27T20:30:00",
     "fc_api_seen_at": "2026-11-27T20:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-27T13:07:13",
@@ -14531,16 +14531,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795811767
+        "ok": 1795812008
       },
       "fc_www": {
-        "ok": 1795811775
+        "ok": 1795812075
       },
       "fc_cart": {
-        "ok": 1795811777
+        "ok": 1795812076
       },
       "kd": {
-        "ok": 1795811776
+        "ok": 1795812076
       }
     }
   },
@@ -14854,7 +14854,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-27T20:28:36",
+    "fc_off": "2026-11-27T20:39:56",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15842,7 +15842,7 @@
   "fc_24525301": {
     "stock": "in_stock",
     "name": "Hot Wheels Semi Twin Mill Die Cast Toy Truck - Blue/Grey",
-    "price": "₹478",
+    "price": "₹477",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-semi-twin-mill-die-cast-toy-truck-blue-grey/24525301/product-detail",
     "first_seen": "2026-09-19T03:26:05",
@@ -22115,7 +22115,7 @@
   "fc_24761947": {
     "stock": "in_stock",
     "name": "Hot Wheels Long Bloc Die Cast Free Wheel Toy Car - Teal Blue & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-long-bloc-die-cast-free-wheel-toy-car-teal-blue-and-black/24761947/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22138,7 +22138,7 @@
   "fc_24761907": {
     "stock": "in_stock",
     "name": "Hot Wheels Hako Type D Die Cast Free Wheel Toy Car - Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hako-type-d-die-cast-free-wheel-toy-car-black/24761907/product-detail",
     "first_seen": "2026-10-13T13:45:00",
@@ -22647,7 +22647,7 @@
   "fc_24775986": {
     "stock": "in_stock",
     "name": "Hot Wheels Vairstrike Die-Cast Toy Car (155/250) - Maroon",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-vairstrike-die-cast-toy-car-155-250-maroon/24775986/product-detail",
     "first_seen": "2026-10-16T16:30:00",
@@ -23107,7 +23107,7 @@
   "fc_24776070": {
     "stock": "in_stock",
     "name": "Hot Wheels Feline Lucky (92/250) Toy Car - Gold & Red/ Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-feline-lucky-92-250-toy-car-gold-and-red-black/24776070/product-detail",
     "first_seen": "2026-10-17T17:15:00",
@@ -28701,6 +28701,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-27T20:37:35",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28719,7 +28720,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-27T20:00:00",
+    "fc_api_seen_at": "2026-11-27T20:30:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_gid": "19991405",
@@ -28812,6 +28813,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-27T20:37:35",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
@@ -30586,7 +30588,6 @@
     "fc_lst": "out",
     "fc_gid": "25053200",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_gone": "2026-11-25T14:09:40"
   },
   "kd_jPp9ZQBgDa": {
@@ -30928,11 +30929,11 @@
     "fc_listed_at": "2026-11-27T20:30:00",
     "fc_api_seen_at": "2026-11-27T20:30:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "25053200",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-27T20:07:10",
     "fc_lst_seen": "2026-11-27T20:30:00",
     "fc_gone": "2026-11-27T20:28:40"
