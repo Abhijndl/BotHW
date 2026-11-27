@@ -220,7 +220,7 @@
     "fc_listed_at": "2026-11-27T15:45:00",
     "fc_api_seen_at": "2026-11-27T15:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22600382",
     "fc_phantom": "2026-11-22T14:11:26",
@@ -11135,7 +11135,7 @@
   "fc_2224357": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Street Power Bike - Blue",
-    "price": "₹643",
+    "price": "₹608",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-street-power-bike-blue/2224357/product-detail",
     "first_seen": "2026-09-01T13:58:45",
@@ -13534,7 +13534,7 @@
   "fc_2232875": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Fat Ride Bike - Green & Black",
-    "price": "₹643",
+    "price": "₹629",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-fat-ride-bike-green-and-black/2232875/product-detail",
     "first_seen": "2026-09-15T16:39:05",
@@ -13854,7 +13854,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13956,7 +13956,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13981,7 +13981,7 @@
   "fc_24473515": {
     "stock": "in_stock",
     "name": "Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-go-realla-fast-die-cast-toy-car-black-and-yellow/24473515/product-detail",
     "first_seen": "2026-09-17T04:26:39",
@@ -14533,16 +14533,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795794604
+        "ok": 1795794847
       },
       "fc_www": {
-        "ok": 1795794665
+        "ok": 1795794958
       },
       "fc_cart": {
-        "ok": 1795794666
+        "ok": 1795794959
       },
       "kd": {
-        "ok": 1795794653
+        "ok": 1795794959
       }
     }
   },
@@ -14689,7 +14689,7 @@
   "fc_24475217": {
     "stock": "in_stock",
     "name": "Hot Wheels Polestar Die cast Toy car 84/250 -White & Black",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-polestar-die-cast-toy-car-84-250-white-and-black/24475217/product-detail",
     "first_seen": "2026-09-17T08:46:42",
@@ -15302,7 +15302,7 @@
   "fc_24475499": {
     "stock": "in_stock",
     "name": "Hot Wheels Die-Cast Vehicle Surf and Turf Blue 240/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-vehicle-surf-and-turf-blue-240-250-blue/24475499/product-detail",
     "first_seen": "2026-09-18T04:36:04",
@@ -15819,7 +15819,7 @@
   "fc_2235646": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel Rolling Thunder Bike - Orange & Black",
-    "price": "₹597",
+    "price": "₹584",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-rolling-thunder-bike-orange-and-black/2235646/product-detail",
     "first_seen": "2026-09-19T01:31:53",
@@ -16281,7 +16281,7 @@
   "fc_24476003": {
     "stock": "in_stock",
     "name": "Hot Wheels 96 Chevrolet Impala SS Die Cast Toy car 242/250 - Metallic green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-96-chevrolet-impala-ss-die-cast-toy-car-242-250-metallic-green/24476003/product-detail",
     "first_seen": "2026-09-19T19:17:20",
@@ -16309,7 +16309,7 @@
   "fc_24476471": {
     "stock": "in_stock",
     "name": "Hot Wheels Mcmurtry Spirling Die Cast Car #25/250 -Dark Green",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-mcmurtry-spirling-die-cast-car-25-250-dark-green/24476471/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16336,7 +16336,7 @@
   "fc_24475737": {
     "stock": "in_stock",
     "name": "Hot Wheels 24/Seven Die cast car 38/250 - Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-24-seven-die-cast-car-38-250-blue/24475737/product-detail",
     "first_seen": "2026-09-19T19:36:05",
@@ -16485,7 +16485,7 @@
   "fc_24476435": {
     "stock": "in_stock",
     "name": "Hot Wheels Circle Tracker die-cast toy car #237/250 - LIght Blue",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-circle-tracker-die-cast-toy-car-237-250-light-blue/24476435/product-detail",
     "first_seen": "2026-09-19T22:36:04",
@@ -24765,7 +24765,7 @@
     "fc_listed_at": "2026-11-27T15:45:00",
     "fc_api_seen_at": "2026-11-27T15:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-27T14:57:58",
@@ -26453,7 +26453,6 @@
     "fc_lst": "out",
     "fc_gid": "22005522",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-27T09:01:27",
     "fc_lst_seen": "2026-11-27T11:00:00",
     "fc_gone": "2026-11-27T10:30:49",
@@ -26531,7 +26530,7 @@
     "fc_listed_at": "2026-11-27T15:45:00",
     "fc_api_seen_at": "2026-11-27T15:45:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "22005522",
     "fc_phantom": "2026-11-23T11:09:30",
