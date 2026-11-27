@@ -5695,7 +5695,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -14090,7 +14090,6 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-17T16:31:55",
     "fc_lst_seen": "2026-11-17T17:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -14511,16 +14510,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795739647
+        "ok": 1795740011
       },
       "fc_www": {
-        "ok": 1795739737
+        "ok": 1795740047
       },
       "fc_cart": {
-        "ok": 1795739738
+        "ok": 1795740048
       },
       "kd": {
-        "ok": 1795739738
+        "ok": 1795740048
       }
     }
   },
@@ -14832,6 +14831,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-27T00:36:09",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15132,7 +15132,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -19778,7 +19778,6 @@
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-17T16:07:06",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-22T19:22:00",
     "fc_lst_seen": "2026-11-22T20:00:00",
     "fc_gone": "2026-11-22T15:39:41"
@@ -24588,7 +24587,7 @@
   "fc_24831962": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Red Planet Transport Wheel Car - Orange",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-red-planet-transport-wheel-car-orange/24831962/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -24611,7 +24610,7 @@
   "fc_24831961": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Two-Lane Ramptop Wheel Car - Yellow",
-    "price": "₹739",
+    "price": "₹738",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-two-lane-ramptop-wheel-car-yellow/24831961/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -28667,6 +28666,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-27T00:37:46",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28775,6 +28775,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-27T00:37:46",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
