@@ -10549,7 +10549,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-27T00:56:06",
+    "fc_off": "2026-11-27T01:08:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11437,7 +11437,7 @@
   "fc_21497092": {
     "stock": "in_stock",
     "name": "Hot Wheels Color Reveal, Set of 2 1:64 Scale Vehicles with Surprise Reveal & Color-Change Feature - Golden White",
-    "price": "₹978",
+    "price": "₹977",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-color-reveal-set-of-2-1-64-scale-vehicles-with-surprise-reveal-and-color-change-feature-golden-white/21497092/product-detail",
     "first_seen": "2026-09-01T16:24:09",
@@ -14514,16 +14514,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795741444
+        "ok": 1795741805
       },
       "fc_www": {
-        "ok": 1795741535
+        "ok": 1795741845
       },
       "fc_cart": {
-        "ok": 1795741536
+        "ok": 1795741846
       },
       "kd": {
-        "ok": 1795741535
+        "ok": 1795741846
       }
     }
   },
@@ -14835,6 +14835,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-27T01:06:08",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15200,7 +15201,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-27T00:56:06",
+    "fc_off": "2026-11-27T01:08:26",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -15845,7 +15846,7 @@
   "fc_24525300": {
     "stock": "in_stock",
     "name": "Hot Wheels Hot Meals Die Cast Toy Truck - Red",
-    "price": "₹477",
+    "price": "₹478",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-hot-meals-die-cast-toy-truck-red/24525300/product-detail",
     "first_seen": "2026-09-19T03:32:25",
@@ -20904,7 +20905,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-27T00:56:06",
+    "fc_off": "2026-11-27T01:08:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -27968,7 +27969,7 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-27T00:56:06",
+    "fc_off": "2026-11-27T01:08:26",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28670,6 +28671,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-27T01:07:37",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28778,6 +28780,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-27T01:07:37",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
