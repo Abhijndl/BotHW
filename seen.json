@@ -3599,7 +3599,7 @@
   "fc_23351188": {
     "stock": "in_stock",
     "name": "Hot Wheels 131/250 Fiat Beast of Turn Die Cat Free Wheel Toy Car- Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-131-250-fiat-beast-of-turn-die-cat-free-wheel-toy-car-red/23351188/product-detail",
     "first_seen": "2026-07-20T08:21:54",
@@ -5696,7 +5696,7 @@
   "fc_23351681": {
     "stock": "in_stock",
     "name": "Hot Wheels 144/250 Classic TV Series Batmobile Die Cat Free Wheel Toy Car- Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-144-250-classic-tv-series-batmobile-die-cat-free-wheel-toy-car-purple/23351681/product-detail",
     "first_seen": "2026-08-08T04:07:23",
@@ -10550,7 +10550,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-27T02:44:22",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -14515,16 +14514,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795747808
+        "ok": 1795748048
       },
       "fc_www": {
-        "ok": 1795747847
+        "ok": 1795748134
       },
       "fc_cart": {
-        "ok": 1795747848
+        "ok": 1795748136
       },
       "kd": {
-        "ok": 1795747848
+        "ok": 1795748135
       }
     }
   },
@@ -14836,6 +14835,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-27T02:51:29",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15136,7 +15136,7 @@
   "fc_23355053": {
     "stock": "in_stock",
     "name": "Hot Wheels Die Cast Free Wheel 165/250 Gone Mad Toy Car - Brown",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-die-cast-free-wheel-165-250-gone-mad-toy-car-brown/23355053/product-detail",
     "first_seen": "2026-09-17T19:01:54",
@@ -15201,7 +15201,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-27T02:44:22",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20906,7 +20905,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-27T02:44:22",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -22159,11 +22157,11 @@
     "fc_listed_at": "2026-11-23T16:00:00",
     "fc_api_seen_at": "2026-11-26T19:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "page 0",
     "fc_lst": "out",
     "fc_gid": "24761907",
     "fc_phantom": "2026-11-25T15:04:36",
-    "fc_cart": "n",
+    "fc_cart": "y",
     "fc_lst_on": "2026-11-22T14:06:55",
     "fc_lst_seen": "2026-11-22T14:45:00",
     "fc_gone": "2026-11-25T15:04:35",
@@ -27972,7 +27970,6 @@
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-27T02:44:22",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28673,6 +28670,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-27T02:52:51",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28781,6 +28779,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-27T02:52:51",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
