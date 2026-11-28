@@ -122,7 +122,7 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-09-24T08:45:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "out",
@@ -10554,13 +10554,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-05T18:30:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-28T06:59:11",
+    "fc_off": "2026-11-28T07:11:09",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -11597,7 +11597,7 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-27T15:00:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_lst": "list",
@@ -12765,7 +12765,7 @@
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
-    "fc_lst": "list",
+    "fc_lst": "cat",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-28T05:12:54",
     "fc_cart": "n",
@@ -14530,16 +14530,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795849451
+        "ok": 1795849805
       },
       "fc_www": {
-        "ok": 1795849561
+        "ok": 1795849869
       },
       "fc_cart": {
-        "ok": 1795849562
+        "ok": 1795849870
       },
       "kd": {
-        "ok": 1795849554
+        "ok": 1795849856
       }
     }
   },
@@ -14855,6 +14855,7 @@
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
+    "fc_off": "2026-11-28T07:06:38",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -15214,13 +15215,13 @@
     "last_price_alert": "2026-11-04T18:02:21",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-21T05:00:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-28T06:59:11",
+    "fc_off": "2026-11-28T07:11:09",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T08:33:57",
@@ -20922,13 +20923,13 @@
     "last_price_alert": "2026-11-04T18:05:19",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-10-06T13:15:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-28T06:59:11",
+    "fc_off": "2026-11-28T07:11:09",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -24773,7 +24774,7 @@
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-27T14:57:58",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-28T05:10:45",
     "fc_lst_seen": "2026-11-28T07:00:00",
     "fc_gone": "2026-11-28T07:02:28",
@@ -27765,7 +27766,7 @@
   "fc_24961455": {
     "stock": "out_of_stock",
     "name": "Hot Wheels Premium F1 Race Team Oracle Red Bull Racing #22 Die cast toy car -Navy Blue",
-    "price": "₹719",
+    "price": "₹799",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-premium-f1-race-team-oracle-red-bull-racing-22-die-cast-toy-car-navy-blue/24961455/product-detail",
     "first_seen": "2026-11-12T18:45:00",
@@ -27999,13 +28000,13 @@
     "last_price_alert": "",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-22T15:05:15",
-    "fc_off": "2026-11-28T06:59:11",
+    "fc_off": "2026-11-28T07:11:09",
     "fc_cart": "y",
     "fc_svc": "1"
   },
@@ -28713,6 +28714,7 @@
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
+    "fc_off": "2026-11-28T07:07:20",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28731,7 +28733,7 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-28T06:30:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "no delivery",
     "fc_gid": "19991405",
@@ -28824,6 +28826,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
+    "fc_off": "2026-11-28T07:07:20",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
