@@ -11982,7 +11982,7 @@
     "fc_listed_at": "2026-11-28T04:45:00",
     "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "23074178",
     "fc_cart": "n",
@@ -12749,7 +12749,7 @@
     "fc_gone": "2026-11-22T15:51:07"
   },
   "fc_23033009": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Ferrari Free Wheel Model With Smooth Rolling Wheels Diecast Toy Cars Pack of 5 - Multicolor",
     "price": "₹809",
     "source": "firstcry",
@@ -12764,16 +12764,16 @@
     "fc_listed_at": "2026-11-27T10:30:00",
     "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
-    "fc_live": "ok",
+    "fc_live": "not in cart",
     "fc_lst": "out",
     "fc_gid": "21348",
-    "fc_phantom": "2026-11-28T03:17:14",
-    "fc_off": "2026-11-28T04:46:33",
-    "fc_cart": "y",
+    "fc_phantom": "2026-11-28T04:55:35",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-27T09:54:32",
     "fc_lst_seen": "2026-11-27T10:30:00",
     "last_ring": "2026-11-22T02:56:52",
+    "fc_gone": "2026-11-28T04:55:35",
     "alert_log": [
       "2026-11-27T07:16:54",
       "2026-11-28T03:04:34",
@@ -13851,7 +13851,7 @@
   "fc_24473724": {
     "stock": "in_stock",
     "name": "Hot Wheels '85 Honda City Turbo II Die-Cast Toy Car - White",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-85-honda-city-turbo-ii-die-cast-toy-car-white/24473724/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13953,7 +13953,7 @@
   "fc_24473512": {
     "stock": "in_stock",
     "name": "Hot Wheels Datsun 620 Die-Cast Toy Car -Purple",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-datsun-620-die-cast-toy-car-purple/24473512/product-detail",
     "first_seen": "2026-09-17T04:21:12",
@@ -13978,7 +13978,7 @@
   "fc_24473515": {
     "stock": "in_stock",
     "name": "Hot Wheels Go Realla Fast Die-Cast Toy Car - Black & Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-go-realla-fast-die-cast-toy-car-black-and-yellow/24473515/product-detail",
     "first_seen": "2026-09-17T04:26:39",
@@ -14529,23 +14529,23 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795841408
+        "ok": 1795841769
       },
       "fc_www": {
-        "ok": 1795841530
+        "ok": 1795841831
       },
       "fc_cart": {
-        "ok": 1795841529
+        "ok": 1795841832
       },
       "kd": {
-        "ok": 1795841508
+        "ok": 1795841825
       }
     }
   },
   "fc_24473502": {
     "stock": "in_stock",
     "name": "Hot Wheels Twin Dorado Die-Cast Toy Car -Red",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-twin-dorado-die-cast-toy-car-red/24473502/product-detail",
     "first_seen": "2026-09-17T08:42:39",
@@ -15909,7 +15909,7 @@
   "fc_24473503": {
     "stock": "in_stock",
     "name": "Hot Wheels Eggshelleracer Die-Cast Toy Car - Orange",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-eggshelleracer-die-cast-toy-car-orange/24473503/product-detail",
     "first_seen": "2026-09-19T04:26:51",
@@ -16508,7 +16508,7 @@
   "fc_24473509": {
     "stock": "in_stock",
     "name": "Hot Wheels Party Wagon Die-Cast Toy Car - Yellow",
-    "price": "₹165",
+    "price": "₹164",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-party-wagon-die-cast-toy-car-yellow/24473509/product-detail",
     "first_seen": "2026-09-19T22:41:12",
@@ -18780,6 +18780,7 @@
     "fc_lst": "out",
     "fc_gid": "24476138",
     "fc_phantom": "2026-11-27T12:29:54",
+    "fc_off": "2026-11-28T04:55:23",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-27T17:36:23",
@@ -22709,7 +22710,7 @@
     "fc_listed_at": "2026-11-28T04:45:00",
     "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-28T03:34:46",
@@ -22738,7 +22739,7 @@
     "fc_listed_at": "2026-11-28T04:45:00",
     "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24775936",
     "fc_phantom": "2026-11-27T19:11:25",
@@ -24585,7 +24586,7 @@
   "fc_24831965": {
     "stock": "in_stock",
     "name": "Hot Wheels Super Rigs Aqualiner Wheel Car - Green",
-    "price": "₹738",
+    "price": "₹739",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-super-rigs-aqualiner-wheel-car-green/24831965/product-detail",
     "first_seen": "2026-10-26T14:15:00",
@@ -27473,7 +27474,7 @@
     "fc_listed_at": "2026-11-28T04:45:00",
     "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "24387506",
     "fc_phantom": "2026-11-27T09:39:39",
@@ -28584,6 +28585,7 @@
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "22618403",
+    "fc_off": "2026-11-28T04:56:04",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-17T14:01:26",
@@ -28694,13 +28696,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-28T04:30:00",
+    "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-28T04:44:01",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28807,12 +28808,11 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-28T04:30:00",
+    "fc_api_seen_at": "2026-11-28T04:45:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-28T04:44:01",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
