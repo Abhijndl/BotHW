@@ -4179,7 +4179,7 @@
   "fc_23076121": {
     "stock": "in_stock",
     "name": "Hot Wheels Head Gasket (167/250) Die Cast Free Wheel Toy Car - Orange & Blue",
-    "price": "₹164",
+    "price": "₹165",
     "source": "firstcry",
     "url": "https://www.firstcry.com/hot-wheels/hot-wheels-head-gasket-167-250-die-cast-free-wheel-toy-car-orange-and-blue/23076121/product-detail",
     "first_seen": "2026-07-21T06:56:41",
@@ -12764,12 +12764,12 @@
     "fc_listed_at": "2026-11-28T07:00:00",
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "21348",
     "fc_phantom": "2026-11-28T05:12:54",
     "fc_cart": "n",
-    "fc_svc": "1",
+    "fc_svc": "0",
     "fc_lst_on": "2026-11-28T06:49:33",
     "fc_lst_seen": "2026-11-28T07:00:00",
     "last_ring": "2026-11-22T02:56:52",
@@ -14530,16 +14530,16 @@
     "tg_upd": 377047303,
     "health": {
       "mg": {
-        "ok": 1795849206
+        "ok": 1795849451
       },
       "fc_www": {
-        "ok": 1795849269
+        "ok": 1795849561
       },
       "fc_cart": {
-        "ok": 1795849270
+        "ok": 1795849562
       },
       "kd": {
-        "ok": 1795849270
+        "ok": 1795849554
       }
     }
   },
@@ -14849,13 +14849,12 @@
     "last_price_alert": "2026-11-22T14:10:50",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-22T15:00:00",
-    "fc_api_seen_at": "2026-11-28T06:45:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24473511",
     "fc_phantom": "2026-11-22T14:42:48",
-    "fc_off": "2026-11-28T06:51:09",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-10-27T04:45:17",
@@ -22920,7 +22919,7 @@
     "fc_listed_at": "2026-11-28T07:00:00",
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "no delivery",
     "fc_lst": "list",
     "fc_gid": "24776095",
     "fc_phantom": "2026-11-27T17:20:52",
@@ -24744,7 +24743,7 @@
     "fc_listed_at": "2026-11-28T07:00:00",
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24854849",
     "fc_phantom": "2026-10-26T16:32:40",
@@ -24754,7 +24753,7 @@
     "fc_gone": "2026-11-22T15:40:56"
   },
   "fc_24854849": {
-    "stock": "in_stock",
+    "stock": "out_of_stock",
     "name": "Hot Wheels Premium Car culture team Transport Rob 'N Pinks Car and 17 FOrd F-150 Raptor in White",
     "price": "₹1259",
     "source": "firstcry",
@@ -24769,14 +24768,15 @@
     "fc_listed_at": "2026-11-28T07:00:00",
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
-    "fc_live": "ok",
-    "fc_lst": "out",
+    "fc_live": "not in cart",
+    "fc_lst": "list",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-27T14:57:58",
-    "fc_cart": "y",
+    "fc_cart": "n",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-28T05:10:45",
     "fc_lst_seen": "2026-11-28T07:00:00",
+    "fc_gone": "2026-11-28T07:02:28",
     "alert_log": [
       "2026-11-27T14:31:24",
       "2026-11-28T02:50:38"
@@ -24798,7 +24798,7 @@
     "fc_listed_at": "2026-11-28T07:00:00",
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
-    "fc_live": "not in cart",
+    "fc_live": "sold out",
     "fc_lst": "out",
     "fc_gid": "24854849",
     "fc_phantom": "2026-11-26T14:58:52",
@@ -27812,7 +27812,6 @@
     "fc_gid": "24961456",
     "fc_phantom": "2026-11-26T17:19:50",
     "fc_cart": "n",
-    "fc_svc": "0",
     "fc_lst_on": "2026-11-28T06:34:33",
     "fc_lst_seen": "2026-11-28T06:45:00",
     "last_ring": "2026-11-26T09:28:11",
@@ -28593,7 +28592,7 @@
     "fc_listed_at": "2026-11-28T07:00:00",
     "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
-    "fc_live": "no delivery",
+    "fc_live": "not in cart",
     "fc_lst": "list",
     "fc_gid": "22618403",
     "fc_cart": "n",
@@ -28708,13 +28707,12 @@
     "stock_ver": "fc_api_v3_p248001_m2",
     "auto_watch": true,
     "fc_listed_at": "2026-11-19T13:45:00",
-    "fc_api_seen_at": "2026-11-28T06:30:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "19991405",
     "fc_phantom": "2026-11-22T14:10:50",
-    "fc_off": "2026-11-28T06:37:45",
     "fc_cart": "y",
     "fc_svc": "1",
     "last_ring": "2026-11-22T04:06:00"
@@ -28821,12 +28819,11 @@
     "last_price_alert": "2026-11-20T13:34:44",
     "stock_ver": "fc_api_v3_p248001_m2",
     "fc_listed_at": "2026-11-23T06:15:00",
-    "fc_api_seen_at": "2026-11-28T06:30:00",
+    "fc_api_seen_at": "2026-11-28T07:00:00",
     "fc_trusted": true,
     "fc_live": "ok",
     "fc_lst": "out",
     "fc_gid": "24995810",
-    "fc_off": "2026-11-28T06:41:01",
     "fc_cart": "y",
     "fc_svc": "1",
     "fc_lst_on": "2026-11-18T14:00:21",
